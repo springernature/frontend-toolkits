@@ -1,0 +1,14 @@
+{
+	"command": {
+		"publish": {
+			"ignoreChanges": [
+				"ignored-file",
+				"*.md"
+			]
+		}
+	},
+	"packages": [
+		"toolkits/**/packages/*"
+	],
+	"version": "independent"
+}

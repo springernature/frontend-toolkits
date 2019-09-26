@@ -1,0 +1,10 @@
+{
+	"extends": [
+		"@springernature/eslint-config",
+		"@springernature/eslint-config/node",
+		"@springernature/eslint-config/jest"
+	],
+  "parserOptions": {
+    "ecmaVersion": 9
+  }
+}

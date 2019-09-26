@@ -1,0 +1,13 @@
+/**
+ * Typography
+ * Font settings
+ */
+
+$is-flagship-journal: false !default;
+$primary-font: if($is-flagship-journal, 'Harding', 'Lora');
+$font-family-serif: $primary-font, Palatino, Times, 'Times New Roman', serif;
+$font-family-sans: Source Sans Pro, arial, helvetica, sans-serif;
+
+// Define your base size in EMs
+// http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
+$context--font-size-base: 1.7em;

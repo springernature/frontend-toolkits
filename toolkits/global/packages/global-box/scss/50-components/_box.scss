@@ -1,0 +1,15 @@
+/**
+ * @springernature/global-box
+ * A container with 4 sides
+ *
+ */
+
+.c-box {
+	@include box;
+
+	// Circular box
+	// A container with no corners
+	&--circle {
+		@include box--circle;
+	}
+}

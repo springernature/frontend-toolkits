@@ -1,0 +1,63 @@
+{
+  "name": "frontend-toolkits",
+  "description": "Frontend Component Toolkits for the Elements Design System",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springernature/frontend-toolkits.git"
+  },
+  "keywords": [
+    "frontend",
+    "fed",
+    "toolkits",
+    "elements",
+    "components"
+  ],
+  "author": "Springer Nature",
+  "scripts": {
+    "build": "npm run lint && npm run test && npm run validate",
+    "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
+    "create": "sn-package-create",
+    "lint": "npm run lint:js",
+    "lint:js": "eslint .",
+    "publish": "sn-package-publish",
+    "test": "jest --colors --coverage --passWithNoTests",
+    "test:ci": "jest --passWithNoTests --runInBand",
+    "validate": "sn-package-validate"
+  },
+  "bugs": {
+    "url": "https://github.com/springernature/frontend-toolkits/issues"
+  },
+  "homepage": "https://github.com/springernature/frontend-toolkits#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/runtime": "^7.5.4",
+    "@springernature/eslint-config": "^2.1.1",
+    "@springernature/frontend-package-manager": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^21.27.2",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-unicorn": "^4.0.3",
+    "jest": "^24.9.0",
+    "lerna": "^3.16.4"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "modulePaths": [
+      "<rootDir>/"
+    ],
+    "verbose": true,
+    "testRegex": "__tests__/.*\\.js$",
+    "collectCoverageFrom": [
+      "toolkits/**/packages/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "docs/"
+    ]
+  }
+}
