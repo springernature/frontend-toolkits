@@ -1,0 +1,11 @@
+@function z($layer-name, $layer-variant: null, $map: $z-layers) {
+	@if not map-has-key($map, $layer) {
+		@warn "No z-index found in $z-layers map for `#{$layer}`. Property omitted.";
+	}
+	@if ($layer-variant != null) {
+		@return map-get(map-get($map, $layer-name), $layer-variant);
+	} 
+	@else {
+		@return map-get($map, $layer-name);
+	}
+}

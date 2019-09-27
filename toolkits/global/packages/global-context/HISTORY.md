@@ -1,0 +1,81 @@
+# History
+
+## 4.1.0 (2019-09-24)
+    * Create overflow utility classes
+    
+## 4.0.1 (2019-09-13)
+    * Added mixin for u-list-inline
+
+## 4.0.0 (2019-09-13)
+    * Remove margin-left rule on li in list-reset
+
+## 3.0.0 (2019-07-31)
+    * Remove u-flex-split and u-flex-unsplit
+    
+## 2.7.0 (2019-07-26)
+    * Added global SVG icons to img folder
+
+## 2.6.0 (2019-07-25)
+    * Share heading sizes as variables
+	* Reset the base font-size to 10px for the use of REMs
+
+## 2.5.0 (2019-07-24)
+    * Added utility classes for heading style from h1 to h4
+
+## 2.4.0 (2019-07-22)
+    * Added u-display-inline-block utility
+
+## 2.3.0 (2019-07-04)
+    * Added getDataOptions helper and test
+    * Restructured tests folder to include 'unit' folder for consistency
+
+## 2.2.0 (2019-07-03)
+    * Added JavaScript helpers folder
+    * Added makeArray helper and test
+
+## 2.1.0 (2019-06-26)
+
+    * Added utility classes for clear float, positioning, scrollbar
+    * Added function for z-index layers
+
+## 2.0.0 (2019-06-21)
+
+    * Added utility classes for buttons reset, clearfix, font smoothing, word wrap, inline list
+    * BREAKING: mixin `flex-split` replaced with `u-flex-split` in flex.scss
+    * BREAKING: mixin `flex-unsplit` replaced with `u-flex-unsplit` in flex.scss
+    * BREAKING: mixin `hide` replaced with `u-hide` in hiding.scss
+    * BREAKING: mixin `show` replaced with `u-show` in hiding.scss
+    * BREAKING: mixin `visually-hidden` replaced with `u-visually-hidden` in hiding.scss
+    * BREAKING: mixin `visually-unhide` replaced with `u-visually-unhide` in hiding.scss
+    * BREAKING: mixin `hide-text` replaced with `u-hide-text` in hiding.scss
+    * BREAKING: mixin `list-reset` replaced with `u-list-reset` in lists.scss
+    * BREAKING: mixin `shadow` replaced with `u-shadow` in style.scss
+    * BREAKING: mixin `double-underline` replaced with `u-double-underline` in typography.scss
+    * BREAKING: mixin `small-caps` replaced with `u-small-caps` in typography.scss
+
+## 1.1.0 (2019-06-19)
+
+    * Adds utility class and mixin `u-custom-list-number`
+
+## 1.0.0 (2019-06-13)
+
+    * BREAKING: class `u-visually-hidden` replaced with `u-hide`
+    * BREAKING: new `u-visually-hidden` class now shows for screenreaders
+    * BREAKING: Remame breakpoints.scss to media-query.scss in 30-mixins
+
+## 0.0.4 (2019-05-08)
+
+    * Added utility classes for vertical alignment in tables
+
+## 0.0.3 (2019-04-29)
+
+    * Add map-key-get helper function
+
+## 0.0.2 (2019-04-29)
+
+    * Add u-js-hide class
+
+## 0.0.1 (2019-04-29)
+
+    * Shared cross-brand context
+    * Experimental

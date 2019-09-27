@@ -1,4 +1,4 @@
-# Contributing to frontend-toolkit-utilities
+# Contributing to frontend-toolkits
 
 When contributing to an existing package, or building a new one, work should:
 
@@ -47,6 +47,6 @@ To add a new package to Snyk:
 
 1. Make sure that you are authorised via your GutHub account
 2. Log into Snyk and switch to the `springernature` organisation
-3. Switch to the `Projects` tab and search for `frontend-toolkit-utilities`
+3. Switch to the `Projects` tab and search for `frontend-toolkits`
 4. Click the + icon to add your new package
 5. Add the target path to the `package.json` file e.g. `packages/my-package/package.json`

@@ -8,7 +8,7 @@
 		}
 	},
 	"packages": [
-		"toolkits/**/packages/*"
+		"**/packages/*"
 	],
 	"version": "independent"
 }

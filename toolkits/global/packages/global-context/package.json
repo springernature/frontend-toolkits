@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/global-context",
+  "version": "4.1.0",
+  "license": "MIT",
+  "description": "Template for providing boostrapping for all components and products",
+  "keywords": [],
+  "author": "Springer Nature"
+}

@@ -1,0 +1,21 @@
+@mixin u-list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin custom-list-number {
+	float: left;
+	width: 3em;
+	padding-right: 0.5em;
+	margin-left: -3.5em;
+	text-align: right;
+}
+
+@mixin u-list-inline {
+	@include u-list-reset;
+
+	> li {
+		display: inline;
+	}
+}
