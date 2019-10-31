@@ -1,4 +1,0 @@
-@mixin u-shadow {
-	border: 1px solid $context--shadow-border-color; // make optional?
-	box-shadow: $context--shadow-style $context--shadow-color;
-}
