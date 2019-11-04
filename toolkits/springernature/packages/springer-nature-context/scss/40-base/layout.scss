@@ -1,0 +1,70 @@
+/*
+ * Layout
+ * Universal layout styles
+ */
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100%;
+	font-family: $font-family-serif;
+	line-height: 1.76;
+	color: color('mineshaft');
+	background: color('alabaster');
+	font-size: 1.7em; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+	letter-spacing: 0.01em;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+figure {
+	margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+	margin: 0;
+	padding: 0;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
