@@ -1,0 +1,22 @@
+/**
+ * Forms
+ * Default form styles
+ */
+
+fieldset {
+	border: 0;
+}
+
+input:focus,
+button:focus,
+select:focus {
+	outline: 3px solid color('lemon');
+}
+
+button:active {
+	outline: 0;
+}
+
+input + label {
+	padding-left: 0.5em;
+}
