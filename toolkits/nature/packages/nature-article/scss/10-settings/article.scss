@@ -1,0 +1,43 @@
+/**
+ * Settings
+ * Article component configuration
+ */
+
+$article--link-color: color('blue');
+$article--link-border-color: color('steel');
+$article--link-focus-color: color('lemon');
+$article--box-color: color('soft-steel');
+$article--important-color: color('orange');
+$article--key-step-color: color('blue');
+$article--citations-count-color-primary: color('blue');
+$article--citations-count-color-secondary: white;
+
+$article--breakpoints: (
+	'sml': 'lap',
+	'med': 'portable',
+	'lrg': 'desk'
+);
+
+$article--font-sizes: (
+	'font-size-1': 1.3rem,
+	'font-size-2': 1.4rem,
+	'font-size-3': 1.6rem,
+	'font-size-4': 1.7rem,
+	'font-size-5': 1.8rem,
+	'font-size-6': 2.4rem,
+	'font-size-7': 2.5rem,
+	'font-size-8': 2.8rem,
+	'font-size-9': 3rem,
+	'font-size-10': 4rem,
+	'font-size-11': 5rem,
+	'font-size-12': 6rem
+);
+
+$article--grey-palette: (
+	'grey-1': greyscale(0),
+	'grey-2': greyscale(20),
+	'grey-3': greyscale(25),
+	'grey-4': greyscale(30),
+	'grey-5': greyscale(45),
+	'grey-6': greyscale(70)
+);
