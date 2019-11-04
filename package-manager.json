@@ -23,7 +23,8 @@
       "gif",
       "png",
       "svg",
-      "md"
+      "md",
+      "ico"
     ],
     "fonts": [
       "woff",
