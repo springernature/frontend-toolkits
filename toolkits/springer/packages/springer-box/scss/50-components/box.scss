@@ -1,0 +1,28 @@
+.c-box {
+	background-color: $box--background-color;
+	border-radius: $box--border-radius;
+	box-shadow: $box--box-shadow;
+	border: $box--border;
+	line-height: $box--line-height;
+	padding: $box--padding;
+}
+
+.c-box__heading {
+	@include font-size($box--heading-font-size);
+	border-bottom: $box--border;
+	margin: $box--heading-margin;
+	padding: $box--heading-padding;
+}
+
+.c-box__item {
+	@include u-text-interface;
+	@include unvisited-link;
+	@include interface-link;
+	display: block;
+	margin-bottom: $box--margin-bottom;
+}
+
+.c-box__item-text {
+	display: block;
+	max-width: 90%;
+}

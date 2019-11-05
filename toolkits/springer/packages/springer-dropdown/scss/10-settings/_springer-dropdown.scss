@@ -1,0 +1,17 @@
+$dropdown--menu-padding-x: get-spacing(sm);
+$dropdown--menu-padding-y: get-spacing(xs);
+$dropdown--menu-background-color: white;
+$dropdown--menu-border-radius: 3px;
+$dropdown--menu-border-color: greyscale(85);
+$dropdown--menu-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+$dropdown--menu-width: 180px;
+$dropdown--menu-arrow-width: 16px;
+$dropdown--menu-arrow-height: 8px;
+$dropdown--menu-z-index: 100; // TODO: z-index mixin and sass list
+
+$dropdown--button-caret-color: currentColor;
+
+$dropdown--link-padding: get-spacing(xxs) $dropdown--menu-padding-x;
+$dropdown--link-background-color: transparent;
+$dropdown--link-background-color-hover: color('action-light');
+$dropdown--link-color-hover: white;

@@ -1,0 +1,42 @@
+.u-text-xs {
+	@include font-size($font-size-xs);
+}
+
+.u-text-sm {
+	@include font-size($font-size-sm);
+}
+
+.u-text-md {
+	@include font-size($font-size-md);
+}
+
+.u-text-lg {
+	@include font-size($font-size-lg);
+}
+
+.u-text-sans-serif {
+	@include u-text-sans-serif;
+}
+
+.u-text-serif {
+	@include u-text-serif;
+}
+
+.u-text-font-smoothing {
+	@include u-text-font-smoothing;
+}
+
+.u-text-right {
+	@include u-text-right;
+}
+
+@each $weight, $value in $font-weight {
+	.u-text-#{$weight} {
+		@include u-text-weight($weight);
+	}
+}
+
+.u-word-wrap {
+	@include word-wrap;
+}
+

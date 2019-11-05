@@ -1,0 +1,87 @@
+.c-media {
+	display: block;
+
+	@include media-query('sm') {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.c-media--stacked {
+	@include media-query('sm') {
+		display: block;
+	}
+}
+
+.c-media__figure {
+	position: relative;
+
+	@include media-query('sm') {
+		max-width: 30%;
+		flex: 1 0 30%;
+	}
+
+	a {
+		display: block;
+	}
+
+}
+
+.c-media--stacked .c-media__figure {
+	max-width: none;
+
+	@include media-query('sm') {
+		margin-bottom: $media--figure-bottom-spacing-desktop;
+	}
+}
+
+
+// allows for whatever source order you prefer i.e. image on left or right
+.c-media__body + .c-media__figure,
+.c-media__figure + .c-media__body {
+	margin-top: $media--figure-bottom-spacing-mobile;
+
+	@include media-query('sm') {
+		margin-top: 0;
+		margin-left: $media--image-body-gutter;
+
+		.c-media--stacked & {
+			margin-left: 0;
+		}
+	}
+}
+
+.c-media__body,
+.c-media__title {
+	@include u-text-weight(normal);
+}
+
+.c-media__body {
+	flex: 1 1 auto;
+
+	p {
+		margin: 0;
+	}
+}
+
+.c-media__title {
+	margin-bottom: $media--title-bottom-spacing;
+}
+
+.c-media__play {
+	width: 40px;
+	height: 40px;
+	background-color: $media--play-bg;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	&::after {
+		@include triangle($direction: right, $size-y: $media--triangle-height, $size-x: $media--triangle-width, $color: $media--triangle-color);
+		margin-left: 3px;
+	}
+}

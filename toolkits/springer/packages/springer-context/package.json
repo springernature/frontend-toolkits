@@ -1,0 +1,19 @@
+{
+  "name": "@springernature/springer-context",
+  "version": "11.0.0",
+  "license": "MIT",
+  "description": "Boostrapping for all Springer components and products",
+  "keywords": [
+    "components",
+    "elements",
+    "bootstrap",
+    "baseline",
+    "scss",
+    "js"
+  ],
+  "author": "Springer Nature",
+  "extendsPackage": "global-context@5.3.0",
+  "peerDependencies": {
+    "rfs": "^8.0.4"
+  }
+}

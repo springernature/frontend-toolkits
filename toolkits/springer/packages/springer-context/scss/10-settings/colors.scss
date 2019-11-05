@@ -1,0 +1,34 @@
+/**
+ * Colour palette
+ *
+ */
+
+$colors: (
+	'accent': #ee7d11,
+	'corporate': #00285a,
+	'corporate-light': scale-color(#00285a, $lightness: 10%),
+	'error': #c40606,
+	'warning': #fc0,
+	'success': #71ab0b,
+	'visited': #4500a7,
+	'action-base': #004aa7,
+	'action-light': scale-color(#004aa7, $lightness: 10%),
+	'action-dull': #97bfd8,
+	'action-background-base': #ebf6ff,
+	'action-background-light': #f7fbfe,
+	'action-focus': #fc0
+);
+
+/**
+ * Color and gray scales
+ *
+ */
+
+$page-base: #fcfcfc;
+$greyscale-base: black;
+$greyscale-min: 20;
+$greyscale-max: 95;
+$greyscale-stops: 5;
+
+$foreground-dark: #333; // dark color used in foreground-color function
+$foreground-light: #f2f2f2; // light color used in foreground-color function

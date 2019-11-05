@@ -1,0 +1,53 @@
+// pubgrade (ads) put a 1px image as first child of the body which we need to hide
+body > img[src*=pbgrd] {
+	display: none;
+}
+
+.c-ad {
+	@include font-size($ad--font-size);
+	@include u-text-sans-serif;
+	display: none;
+
+	.js & {
+		@include media-query('md') {
+			display: block;
+		}
+	}
+}
+
+.c-ad iframe {
+	border: none;
+	overflow: auto;
+	vertical-align: top;
+}
+
+.c-ad--LB1 {
+	background-color: $ad--leaderboard-bg-color;
+	padding: $ad--leaderboard-padding;
+	text-align: center;
+}
+
+.c-ad--LB1 iframe {
+	max-width: 970px;
+	height: 90px;
+}
+
+.c-ad--LB1 .c-ad__inner {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.c-ad--SKY1 iframe {
+	width: 160px;
+	height: 600px;
+}
+
+.c-ad--MPU1 iframe {
+	width: 300px;
+	height: 250px;
+}
+
+.c-ad__label {
+	margin-bottom: $ad--label-margin-bottom;
+	color: $ad--label-color;
+}

@@ -1,0 +1,75 @@
+.c-header {
+	@include u-text-furniture;
+}
+
+.c-header {
+	background: $springer-header--background;
+	padding: $springer-header--padding-y $springer-header--padding-x;
+	border-bottom: 1px solid $springer-header--border-color;
+}
+
+.c-header__container {
+	@include container;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-header__brand {
+	margin-right: $springer-header--brand-spacing;
+}
+
+.c-header__navigation {
+	display: flex;
+	align-items: center;
+}
+
+.c-header__menu {
+	@include u-list-reset;
+	display: flex;
+}
+
+.c-header__item {
+	color: $springer-header--item-color;
+
+	& + & {
+		&::before {
+			@include font-size(1em);
+			content: "\2022";
+			float: left;
+			font-family: serif;
+			line-height: inherit;
+			margin: 0 get-spacing(sm);
+			position: relative;
+			text-align: center;
+			top: 2px;
+		}
+	}
+}
+
+.c-header__link {
+	@include interface-link;
+	color: $springer-header--item-color;
+
+	&:visited {
+		color: $springer-header--item-color;
+	}
+
+	&:hover {
+		color: $springer-header--item-color;
+	}
+}
+
+.c-header__link--search {
+	display: block; // needed for ie10 otherwise the margin-right doesn't get applied correctly
+	background: transparent;
+	border: none;
+	margin: 0 get-spacing(lg) 0 0;
+}
+
+/**
+ * Added with JavaScript via header-menu.js
+ */
+.c-header__menu-button {
+	@include u-button-reset;
+}

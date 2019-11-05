@@ -1,0 +1,16 @@
+$pagination-padding: get-spacing(xs);
+$pagination-border-radius: 3px;
+$pagination-font-size: $font-size-xs;
+$pagination-item-spacing: get-spacing(xxs);
+
+$pagination-link-padding: get-spacing(xxs, xs);
+$pagination-link-color: color('action-base');
+$pagination-link-color-active: #fff;
+$pagination-link-color-disabled: greyscale(60);
+$pagination-link-background-color-hover: greyscale(90);
+$pagination-link-background-color-active: color('action-base');
+
+$pagination-icon-color: greyscale(60);
+$pagination-icon-clickable-color: color('action-base');
+$pagination-icon-width: 16px;
+$pagination-icon-height: 12px;

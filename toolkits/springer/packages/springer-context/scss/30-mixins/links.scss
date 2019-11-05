@@ -1,0 +1,132 @@
+/**
+ * Default link style
+ *
+ */
+
+@mixin base-link {
+	color: color('action-base');
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+
+	&.visited,
+	&:visited {
+		color: color('visited');
+	}
+
+	&.hover,
+	&:hover {
+		color: color('action-light');
+		text-decoration: none;
+	}
+
+	&.active,
+	&:active {
+		color: color('corporate-light');
+		text-decoration: none;
+	}
+
+	&.focus,
+	&:focus {
+		outline: 4px solid color('action-focus');
+	}
+}
+
+/**
+ * Interface links
+ *
+ */
+
+@mixin interface-link {
+	text-decoration: none;
+
+	&.active,
+	&:active,
+	&.hover,
+	&:hover {
+		text-decoration: underline;
+		text-decoration-skip-ink: auto;
+	}
+}
+
+/**
+ * Alternative link color
+ *
+ */
+
+@mixin gray-link {
+	color: greyscale(40);
+
+	&.visited,
+	&:visited,
+	&.hover,
+	&:hover {
+		color: greyscale(40);
+	}
+}
+
+/**
+ * Deemphasised link color
+ *
+ */
+
+@mixin deemphasised-link {
+	color: greyscale();
+
+	&.visited,
+	&:visited {
+		color: greyscale();
+	}
+}
+
+/**
+ * Unvisited
+ *
+ */
+
+@mixin unvisited-link {
+	&.visited,
+	&:visited {
+		color: color('action-base');
+	}
+
+	&.hover,
+	&:hover {
+		color: color('action-light');
+	}
+}
+
+/**
+ * Inherited
+ *
+ */
+
+@mixin inherited-link {
+	color: inherit;
+
+	&.visited,
+	&:visited {
+		color: inherit;
+	}
+
+	&.hover,
+	&:hover {
+		color: inherit;
+	}
+}
+
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
+ */
+
+@mixin link-like {
+	@include base-link;
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+}

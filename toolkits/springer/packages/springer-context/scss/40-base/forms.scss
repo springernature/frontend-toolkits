@@ -1,0 +1,25 @@
+button {
+	line-height: inherit; // override the global normalize
+}
+
+button,
+input,
+select,
+textarea {
+	&:focus {
+		outline: 4px solid color('action-focus');
+	}
+}
+
+input[type="file"]:focus-within {
+	outline: 4px solid color('action-focus');
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+	&:focus {
+		outline: none;
+	}
+}
