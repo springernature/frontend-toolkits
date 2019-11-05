@@ -1,5 +1,9 @@
 # History
 
+## 0.19.0 (2019-11-05)
+	* Minfies favicon ico and svg
+	* Adds manifest and browserconfig documentation to readme
+
 ## 0.18.2 (2019-11-05)
 	* Update to latest verison of the package manager
 
