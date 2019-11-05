@@ -1,5 +1,8 @@
 # History
 
+## 0.18.2 (2019-11-05)
+	* Update to latest verison of the package manager
+
 ## 0.18.1 (2019-11-05)
 	* Fix bug where package didn't extend on publication
 
