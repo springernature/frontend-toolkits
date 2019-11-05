@@ -40,7 +40,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^3.0.0",
-    "@springernature/frontend-package-manager": "^4.0.0",
+    "@springernature/frontend-package-manager": "^4.0.1",
     "@springernature/sasslint-config": "^1.2.0",
     "@springernature/util-eslint-runner": "^0.0.3",
     "acorn": "^7.1.0",
@@ -69,8 +69,8 @@
       "docs/"
     ],
     "restoreMocks": true,
-	  "transformIgnorePatterns": [
-		  "/node_modules/(?!(@springernature/global-context))/"
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
   "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"
