@@ -60,5 +60,8 @@ typings/
 # next.js build output
 .next
 
-# mac
+# Mac
 .DS_Store
+
+# Local package installs
+toolkits/**/packages/**/package-lock.json
