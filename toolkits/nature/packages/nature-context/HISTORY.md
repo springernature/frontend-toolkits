@@ -1,5 +1,9 @@
 # History
 
+## 0.18.0 (2019-11-05)
+	* Remove $font-family-sans as we can now take this value from global
+	* Update to global-context@7.0.0
+
 ## 0.17.0 (2019-11-04)
 	* Add favicon images and example HTML
 
