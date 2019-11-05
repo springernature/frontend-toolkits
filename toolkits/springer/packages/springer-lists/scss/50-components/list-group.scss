@@ -1,0 +1,24 @@
+.c-list-group {
+	@include u-list-reset;
+	line-height: $list-group--line-height;
+}
+
+.c-list-group__item > a {
+	@include interface-link;
+}
+
+.c-list-group--sm .c-list-group__item {
+	padding: $list-group--padding-sm;
+}
+
+.c-list-group--md .c-list-group__item {
+	padding: $list-group--padding-md;
+}
+
+.c-list-group--lg .c-list-group__item {
+	padding: $list-group--padding-lg;
+}
+
+.c-list-group--bordered .c-list-group__item:not(:last-child) {
+	border-bottom: 1px solid $list-group--border-color;
+}

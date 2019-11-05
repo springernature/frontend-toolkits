@@ -17,6 +17,7 @@
 		* [`package.json`](#packagejson)
 	* [SASS](#sass)
 	* [Javascript](#javascript)
+* [NPM Scripts](#npm-scripts)
 * [Testing](#testing)
 * [Linting](#linting)
 * [Continuous integration](#continuous-integration)
@@ -132,6 +133,54 @@ $name-of-package--other-name
 ### Javascript
 
 When writing Javascript you should follow the guidelines in the [Springer Nature Frontend Playbook](https://github.com/springernature/frontend-playbook/blob/master/javascript/)
+
+## NPM Scripts
+
+The following script commands are available:
+
+* `npm run bootstrap:local`
+
+   Bootstrap all package dependencies for running tests and using components locally. This is run automatically on CI.
+
+* `npm run build`
+
+   Run the `lint`, `test`, and `validate` scripts before pushing.
+
+* `npm run build:ci`
+
+   As above, but run on CI. Do not use locally.
+
+* `npm run create`
+
+   Run the `create` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-creation).
+
+* `npm run lint`
+
+   Run code linting for `Javascript` and `SASS`.
+
+* `npm run lint:sass`
+
+   Run code linting for `SASS`.
+
+* `npm run lint:js`
+
+   Run code linting for `Javascript`.
+
+* `npm run publish`
+
+   Run the `publish` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-publication).
+
+* `npm run test`
+
+   Run unit tests via `Jest`.
+
+* `npm run test:ci`
+
+   Run unit tests on CI. Do not use locally.
+
+* `npm run validate`
+
+   Run the `validate` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-validation).
 
 ## Testing
 

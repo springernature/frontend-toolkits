@@ -1,0 +1,75 @@
+.c-pagination {
+	@include u-list-reset;
+	display: flex;
+	align-items: center;
+	font-size: $pagination-font-size;
+	padding: $pagination-padding;
+	line-height: 1;
+}
+
+.c-pagination__item {
+	margin-right: $pagination-item-spacing;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.c-pagination__link {
+	display: block;
+	padding: $pagination-link-padding;
+	text-decoration: none;
+	border-radius: $pagination-border-radius;
+	color: $pagination-link-color;
+
+	&:focus,
+	&:visited,
+	&:hover {
+		color: $pagination-link-color;
+	}
+
+	&:hover {
+		background-color: $pagination-link-background-color-hover;
+	}
+}
+
+.c-pagination__link--disabled {
+	color: $pagination-link-color-disabled;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	&:focus,
+	&:visited,
+	&:hover {
+		color: $pagination-link-color-disabled;
+	}
+}
+
+.c-pagination__link--active {
+	background-color: $pagination-link-background-color-active;
+	color: $pagination-link-color-active;
+
+	&:focus,
+	&:visited,
+	&:hover {
+		background-color: $pagination-link-background-color-active;
+		color: $pagination-link-color-active;
+	}
+}
+
+.c-pagination__link--ellipsis {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.c-pagination__icon {
+	fill: $pagination-icon-color;
+	width: $pagination-icon-width;
+	height: $pagination-icon-height;
+}
+
+.c-pagination__icon--active {
+	fill: $pagination-icon-clickable-color;
+}

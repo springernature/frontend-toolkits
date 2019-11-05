@@ -1,0 +1,11 @@
+@include class-stack('u-hide', $less-than: true) {
+	@include u-hide;
+}
+
+@include class-stack('u-visually-hidden', $less-than: true) {
+	@include u-visually-hidden;
+}
+
+.u-visually-hidden-focus {
+	@include visually-hidden-focus;
+}

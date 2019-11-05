@@ -19,6 +19,7 @@
   ],
   "author": "Springer Nature",
   "scripts": {
+    "bootstrap:local": "lerna bootstrap --nohoist=** --no-ci",
     "build": "npm run lint && npm run test && npm run validate",
     "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
     "create": "sn-package-create",
@@ -66,6 +67,10 @@
     ],
     "coveragePathIgnorePatterns": [
       "docs/"
+    ],
+    "restoreMocks": true,
+	  "transformIgnorePatterns": [
+		  "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
   "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"

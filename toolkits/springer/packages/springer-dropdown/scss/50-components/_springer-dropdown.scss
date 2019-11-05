@@ -1,0 +1,79 @@
+.c-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.c-dropdown__button {
+	@include u-button-reset;
+	display: inline-block;
+	white-space: nowrap;
+
+	&::after {
+		@include triangle($direction: bottom, $size-x: 10px, $size-y: 4px, $color: $dropdown--button-caret-color);
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: get-spacing(xs);
+	}
+}
+
+.c-dropdown__menu {
+	@include u-list-reset;
+	@include u-text-interface;
+	background-color: $dropdown--menu-background-color;
+	border-radius: $dropdown--menu-border-radius;
+	border: 1px solid $dropdown--menu-border-color;
+	box-shadow: $dropdown--menu-box-shadow;
+	padding: $dropdown--menu-padding-y 0;
+	position: absolute;
+	top: 100%;
+	transform: translateY($dropdown--menu-arrow-height);
+	width: $dropdown--menu-width;
+	z-index: $dropdown--menu-z-index;
+
+	&::before,
+	&::after {
+		position: absolute;
+		bottom: 100%;
+	}
+
+	// Create triangle border
+	&::before {
+		@include triangle($direction: top, $size-y: $dropdown--menu-arrow-height + 1, $size-x: $dropdown--menu-arrow-width + 2, $color: $dropdown--menu-border-color);
+		left: get-spacing(sm);
+		transform: translateX(-1px);
+	}
+
+	// Create triangle
+	&::after {
+		@include triangle($direction: top, $size-y: $dropdown--menu-arrow-height, $size-x: $dropdown--menu-arrow-width, $color: $dropdown--menu-background-color);
+		left: get-spacing(sm);
+	}
+}
+
+.c-dropdown__menu--right {
+	left: auto;
+	right: 0;
+
+	&::before,
+	&::after {
+		left: auto;
+		right: get-spacing(sm);
+	}
+
+	&::before {
+		transform: translateX(1px);
+	}
+}
+
+.c-dropdown__link {
+	@include interface-link;
+	@include inherited-link;
+	display: block;
+	padding: $dropdown--link-padding;
+	background-color: $dropdown--link-background-color;
+
+	&:hover {
+		background-color: $dropdown--link-background-color-hover;
+		color: $dropdown--link-color-hover;
+	}
+}

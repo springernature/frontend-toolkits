@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/springer-pagination",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A component for the controls of pagination",
+  "keywords": [],
+  "author": "Springer Nature"
+}
