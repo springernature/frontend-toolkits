@@ -17,12 +17,12 @@ function loadFonts(config) {
 			document.documentElement.dispatchEvent(event);
 			try {
 				sessionStorage.fontsLoaded = true;
-			} catch (e) {
+			} catch (error) {
 				throw new Error('webfont.js: cannot set fontsloaded in session storage');
 			}
 		})
-		.catch(e => {
-			throw new Error(e);
+		.catch(error => {
+			throw new Error(error);
 		});
 }
 
@@ -31,7 +31,7 @@ function init(config) {
 
 	try {
 		fontsStored = sessionStorage.getItem('fontsLoaded');
-	} catch (err) {
+	} catch (error) {
 		throw new Error('webfont.js: cannot get fontsloaded from session storage');
 	}
 

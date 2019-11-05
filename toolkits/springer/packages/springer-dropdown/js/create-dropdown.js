@@ -1,7 +1,7 @@
 import {constants} from './constants';
 import {Dropdown} from './dropdown';
 
-const createButtonEl = text => {
+const createButtonElement = text => {
 	const button = document.createElement('button');
 	button.textContent = text;
 	button.className = constants.BUTTON;
@@ -11,9 +11,9 @@ const createButtonEl = text => {
 	return button;
 };
 
-const createDropdownEl = (buttonEl, links) => {
-	const dropdownEl = document.createElement('div');
-	dropdownEl.className = constants.DROPDOWN;
+const createdropdownElementement = (buttonElement, links) => {
+	const dropdownElement = document.createElement('div');
+	dropdownElement.className = constants.DROPDOWN;
 
 	const menu = document.createElement('ul');
 	menu.className = constants.MENU;
@@ -28,17 +28,17 @@ const createDropdownEl = (buttonEl, links) => {
 			a.href = link.href;
 			a.textContent = link.textContent;
 
-			li.appendChild(a);
-			menu.appendChild(li);
+			li.append(a);
+			menu.append(li);
 		} else {
 			throw new Error(`Expected an array of links but received an array containing ${link.tagName}`);
 		}
 	});
 
-	dropdownEl.appendChild(buttonEl);
-	dropdownEl.appendChild(menu);
+	dropdownElement.append(buttonElement);
+	dropdownElement.append(menu);
 
-	return dropdownEl;
+	return dropdownElement;
 };
 
 const createDropdown = options => {
@@ -47,13 +47,13 @@ const createDropdown = options => {
 	}
 
 	const dropdownOptions = Object.prototype.hasOwnProperty.call(options, 'DROPDOWN_OPTIONS') ? options.DROPDOWN_OPTIONS : {};
-	const buttonEl = createButtonEl(options.BUTTON_TEXT);
-	const dropdownEl = createDropdownEl(buttonEl, options.LINKS);
+	const buttonElement = createButtonElement(options.BUTTON_TEXT);
+	const dropdownElement = createdropdownElementement(buttonElement, options.LINKS);
 
-	const dropdown = new Dropdown(buttonEl, dropdownOptions);
+	const dropdown = new Dropdown(buttonElement, dropdownOptions);
 	dropdown.init();
 
-	return dropdownEl;
+	return dropdownElement;
 };
 
 export {createDropdown};

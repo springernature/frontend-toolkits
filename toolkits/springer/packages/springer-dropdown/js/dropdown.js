@@ -51,8 +51,8 @@ const Dropdown = class {
 	 * Event Handlers
 	 */
 
-	_handleButtonClick(e) {
-		e.preventDefault();
+	_handleButtonClick(event) {
+		event.preventDefault();
 		if (this._isOpen) {
 			this._close();
 		} else {
@@ -60,9 +60,9 @@ const Dropdown = class {
 		}
 	}
 
-	_handleButtonEnter(e) {
-		if (e.key === 'Enter') {
-			e.preventDefault();
+	_handleButtonEnter(event) {
+		if (event.key === 'Enter') {
+			event.preventDefault();
 
 			if (this._isOpen) {
 				this._close();
@@ -92,19 +92,19 @@ const Dropdown = class {
 		} while (element !== this._dropdownEl && element !== null && element.nodeType === 1);
 	}
 
-	_handleKeydown(e) {
-		if (e.key === 'Escape' && this._isOpen) {
+	_handleKeydown(event) {
+		if (event.key === 'Escape' && this._isOpen) {
 			this._close();
 			this._buttonEl.focus();
 		}
 
-		if (e.key === 'Tab' && this._isOpen) {
+		if (event.key === 'Tab' && this._isOpen) {
 			window.requestAnimationFrame(() => this._handleTargetOutside(document.activeElement));
 		}
 	}
 
-	_handleClick(e) {
-		const target = e.target;
+	_handleClick(event) {
+		const target = event.target;
 		this._handleTargetOutside(target);
 	}
 

@@ -67,6 +67,10 @@
     ],
     "coveragePathIgnorePatterns": [
       "docs/"
+    ],
+    "restoreMocks": true,
+	  "transformIgnorePatterns": [
+		  "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
   "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"
