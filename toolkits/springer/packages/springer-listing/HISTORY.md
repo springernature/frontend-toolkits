@@ -1,3 +1,6 @@
+## 0.0.3 (2019-11-05)
+    * Increase font size of title
+
 ## 0.0.2 (2019-10-21)
     * set font family on component
 
