@@ -1,3 +1,7 @@
+## 11.1.0 (2019-11-05)
+    * Bumps global-context extends version to 7.1.0
+    * Update font-size in settings for listings and meta components
+
 ## 11.0.0 (2019-11-04)
     * BREAKING: Removes author-list from the context as it should be a package using extends
 
