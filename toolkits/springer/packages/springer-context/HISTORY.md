@@ -1,3 +1,7 @@
+## 12.0.0 (2019-11-06)
+    * Rename links to springer-links
+    * Bumps global-context extends version to 8.0.0
+
 ## 11.1.0 (2019-11-05)
     * Bumps global-context extends version to 7.1.0
     * Update font-size in settings for listings and meta components
