@@ -1,3 +1,7 @@
+## 12.1.0 (2019-11-06)
+	* Restructures colors into folder
+	* Import shared colors from global
+
 ## 12.0.0 (2019-11-06)
     * Rename links to springer-links
     * Bumps global-context extends version to 8.0.0

@@ -1,5 +1,9 @@
 # History
 
+## 0.20.0 (2019-11-06)
+	* Restructures colors into folder
+	* Import shared colors from global
+
 ## 0.19.0 (2019-11-05)
 	* Minfies favicon ico and svg
 	* Adds manifest and browserconfig documentation to readme
