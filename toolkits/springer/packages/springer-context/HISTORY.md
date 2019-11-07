@@ -1,3 +1,6 @@
+## 12.2.0 (2019-11-07)
+    * Bumps global-context extends version to 9.1.0
+
 ## 12.1.0 (2019-11-06)
 	* Restructures colors into folder
 	* Import shared colors from global
