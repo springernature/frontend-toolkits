@@ -1,9 +1,9 @@
 {
   "name": "@springernature/nature-context",
-  "version": "0.18.2",
+  "version": "0.21.0",
   "license": "MIT",
   "description": "Boostrapping for all Nature components and products",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": "global-context@7.0.0"
+  "extendsPackage": "global-context@9.1.0"
 }

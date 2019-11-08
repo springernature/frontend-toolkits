@@ -1,5 +1,16 @@
 # History
 
+## 0.21.0 (2019-11-07)
+    * Bumps global-context extends version to 9.1.0
+
+## 0.20.0 (2019-11-06)
+	* Restructures colors into folder
+	* Import shared colors from global
+
+## 0.19.0 (2019-11-05)
+	* Minfies favicon ico and svg
+	* Adds manifest and browserconfig documentation to readme
+
 ## 0.18.2 (2019-11-05)
 	* Update to latest verison of the package manager
 

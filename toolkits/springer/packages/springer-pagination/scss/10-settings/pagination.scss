@@ -1,16 +1,18 @@
-$pagination-padding: get-spacing(xs);
-$pagination-border-radius: 3px;
-$pagination-font-size: $font-size-xs;
-$pagination-item-spacing: get-spacing(xxs);
+$springer-pagination--background: greyscale(95);
+$springer-pagination--border-color: greyscale(80);
+$springer-pagination--padding: get-spacing(md);
+$springer-pagination--border-radius: 3px;
+$springer-pagination--font-size: $font-size-xs;
+$springer-pagination--item-spacing: get-spacing(xxs);
 
-$pagination-link-padding: get-spacing(xxs, xs);
-$pagination-link-color: color('action-base');
-$pagination-link-color-active: #fff;
-$pagination-link-color-disabled: greyscale(60);
-$pagination-link-background-color-hover: greyscale(90);
-$pagination-link-background-color-active: color('action-base');
+$springer-pagination--link-padding: get-spacing(xxs, xs);
+$springer-pagination--link-color: color('action-base');
+$springer-pagination--link-color-active: #fff;
+$springer-pagination--link-color-disabled: greyscale(60);
+$springer-pagination--link-background-color-hover: greyscale(90);
+$springer-pagination--link-background-color-active: color('action-base');
 
-$pagination-icon-color: greyscale(60);
-$pagination-icon-clickable-color: color('action-base');
-$pagination-icon-width: 16px;
-$pagination-icon-height: 12px;
+$springer-pagination--icon-color: greyscale(60);
+$springer-pagination--icon-clickable-color: color('action-base');
+$springer-pagination--icon-width: 16px;
+$springer-pagination--icon-height: 12px;

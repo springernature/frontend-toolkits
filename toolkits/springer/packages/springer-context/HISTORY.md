@@ -1,3 +1,18 @@
+## 12.2.0 (2019-11-07)
+    * Bumps global-context extends version to 9.1.0
+
+## 12.1.0 (2019-11-06)
+	* Restructures colors into folder
+	* Import shared colors from global
+
+## 12.0.0 (2019-11-06)
+    * Rename links to springer-links
+    * Bumps global-context extends version to 8.0.0
+
+## 11.1.0 (2019-11-05)
+    * Bumps global-context extends version to 7.1.0
+    * Update font-size in settings for listings and meta components
+
 ## 11.0.0 (2019-11-04)
     * BREAKING: Removes author-list from the context as it should be a package using extends
 

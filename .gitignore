@@ -65,3 +65,7 @@ typings
 
 # Local package installs
 toolkits/**/packages/**/package-lock.json
+
+# IDE
+/.idea/
+.vscode/
