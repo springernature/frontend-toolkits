@@ -39,10 +39,10 @@ Ensure you have [`nvm` installed](https://github.com/creationix/nvm/blob/master/
 To install dependencies:
 
 ```
-$ npm install
+$ npm ci
 ```
 
-We hope to switch to `npm ci` when Node 10 is in LTS.
+We install from the `package-lock.json` file to ensure that all tests, linting, and validation are run under the same conditions.
 
 ## What is a toolkit?
 
