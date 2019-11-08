@@ -1,4 +1,4 @@
-# Springer pagination
+# Springer Pagination
 
 A component for the controls of pagination.
 
