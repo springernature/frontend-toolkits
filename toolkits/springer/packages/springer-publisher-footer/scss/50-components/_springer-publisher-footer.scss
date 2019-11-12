@@ -1,6 +1,6 @@
 .c-publisher-footer {
 	@include u-text-furniture;
-	background-color: $publisher-footer--background-color;
+	background-color: $springer-publisher-footer--background-color;
 }
 
 .c-publisher-footer__container {
@@ -8,35 +8,35 @@
 }
 
 .c-publisher-footer__section {
-	border-top: $publisher-footer--border;
-	padding-top: $publisher-footer--padding;
-	padding-bottom: $publisher-footer--padding;
+	border-top: $springer-publisher-footer--border;
+	padding-top: $springer-publisher-footer--padding;
+	padding-bottom: $springer-publisher-footer--padding;
 }
 
 .c-publisher-footer__section--compact {
-	padding-top: $publisher-footer--padding-compact;
-	padding-bottom: $publisher-footer--padding-compact;
+	padding-top: $springer-publisher-footer--padding-compact;
+	padding-bottom: $springer-publisher-footer--padding-compact;
 }
 
 .c-publisher-footer__menu {
-	column-gap: $publisher-footer--column-gap;
+	column-gap: $springer-publisher-footer--column-gap;
 
 	@include media-query('xs') {
-		column-count: $publisher-footer--columns-at-narrow;
+		column-count: $springer-publisher-footer--columns-at-narrow;
 	}
 
 	@include media-query('md') {
-		column-count: $publisher-footer--columns-at-wide;
-		column-gap: $publisher-footer--column-gap-large;
+		column-count: $springer-publisher-footer--columns-at-wide;
+		column-gap: $springer-publisher-footer--column-gap-large;
 	}
 }
 
 .c-publisher-footer__menu-group {
 	break-inside: avoid-column;
 	overflow: hidden; // avoid menu-group breaking into two columns for IE10
-	padding-left: $publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
-	margin-left: 0 - $publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
-	padding-bottom: $publisher-footer--menu-section-padding-bottom;
+	padding-left: $springer-publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
+	margin-left: 0 - $springer-publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
+	padding-bottom: $springer-publisher-footer--menu-section-padding-bottom;
 
 	@include media-query('md') {
 		padding-bottom: 0;
@@ -45,9 +45,9 @@
 
 .c-publisher-footer__heading {
 	@include u-text-furniture;
-	color: $publisher-footer--heading-color;
-	font-weight: $publisher-footer--heading-weight;
-	margin-bottom: $publisher-footer--heading-margin-bottom;
+	color: $springer-publisher-footer--heading-color;
+	font-weight: $springer-publisher-footer--heading-weight;
+	margin-bottom: $springer-publisher-footer--heading-margin-bottom;
 }
 
 .c-publisher-footer__list {
@@ -55,7 +55,7 @@
 }
 
 .c-publisher-footer__item {
-	padding: $publisher-footer--item-padding;
+	padding: $springer-publisher-footer--item-padding;
 }
 
 .c-publisher-footer__link {
