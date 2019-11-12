@@ -1,0 +1,65 @@
+.c-publisher-footer {
+	@include u-text-furniture;
+	background-color: $springer-publisher-footer--background-color;
+}
+
+.c-publisher-footer__container {
+	@include container;
+}
+
+.c-publisher-footer__section {
+	border-top: $springer-publisher-footer--border;
+	padding-top: $springer-publisher-footer--padding;
+	padding-bottom: $springer-publisher-footer--padding;
+}
+
+.c-publisher-footer__section--compact {
+	padding-top: $springer-publisher-footer--padding-compact;
+	padding-bottom: $springer-publisher-footer--padding-compact;
+}
+
+.c-publisher-footer__menu {
+	column-gap: $springer-publisher-footer--column-gap;
+
+	@include media-query('xs') {
+		column-count: $springer-publisher-footer--columns-at-narrow;
+	}
+
+	@include media-query('md') {
+		column-count: $springer-publisher-footer--columns-at-wide;
+		column-gap: $springer-publisher-footer--column-gap-large;
+	}
+}
+
+.c-publisher-footer__menu-group {
+	break-inside: avoid-column;
+	overflow: hidden; // avoid menu-group breaking into two columns for IE10
+	padding-left: $springer-publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
+	margin-left: 0 - $springer-publisher-footer--focus-border-size; // prevent focus border from being cut off by overflow
+	padding-bottom: $springer-publisher-footer--menu-section-padding-bottom;
+
+	@include media-query('md') {
+		padding-bottom: 0;
+	}
+}
+
+.c-publisher-footer__heading {
+	@include u-text-furniture;
+	color: $springer-publisher-footer--heading-color;
+	font-weight: $springer-publisher-footer--heading-weight;
+	margin-bottom: $springer-publisher-footer--heading-margin-bottom;
+}
+
+.c-publisher-footer__list {
+	@include u-list-reset;
+}
+
+.c-publisher-footer__item {
+	padding: $springer-publisher-footer--item-padding;
+}
+
+.c-publisher-footer__link {
+	@include u-text-furniture;
+	@include interface-link;
+	@include gray-link;
+}
