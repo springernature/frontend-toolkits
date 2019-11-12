@@ -1,5 +1,6 @@
 ## 12.2.2 (2019-11-12)
     * Bumps global-context extends version to 9.1.2
+    * Bumps version of springer-context package
 
 ## 12.2.1 (2019-11-08)
     * Bumps global-context extends version to 9.1.1
