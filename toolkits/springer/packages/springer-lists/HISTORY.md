@@ -1,3 +1,6 @@
+## 3.1.0 (2019-11-13)
+    * Bumps peer dependency springer-context to 12.2.2
+
 ## 3.0.0 (2019-10-07)
 	* Breaking: Adds bottom margin to terms and paragraphs within the component
 
