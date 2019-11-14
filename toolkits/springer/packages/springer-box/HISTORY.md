@@ -1,4 +1,4 @@
-## 3.0.0 (2019-11-13)
+## 2.1.0 (2019-11-13)
     * Bumps peer dependency springer-context to 12.2.2
     
 ## 2.0.0 (2019-09-12)
