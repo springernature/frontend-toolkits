@@ -1,0 +1,14 @@
+.c-user-metadata {
+	@include u-text-sans-serif;
+	@include font-size($springer-user-metadata--font-size);
+	color: $springer-user-metadata--font-colour;
+	line-height: $springer-user-metadata--line-height;
+}
+
+.c-user-metadata__item {
+	margin: 0;
+}
+
+.c-user-metadata__item:not(first-child) {
+	margin-top: $springer-user-metadata--item-margin-top;
+}
