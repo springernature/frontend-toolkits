@@ -1,3 +1,6 @@
+## 1.2.3 (2019-11-19)
+	* Renames sass filenames for consistent toolkit style
+
 ## 1.2.2 (2019-08-27)
     * Fixes incorrect assignment that prevented being able to tab into the dropdown
     * Closes menu when tab out of the dropdown

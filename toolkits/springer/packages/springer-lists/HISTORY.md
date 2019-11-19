@@ -1,3 +1,6 @@
+## 3.1.1 (2019-11-19)
+	* Renames sass filenames for consistent toolkit style
+
 ## 3.1.0 (2019-11-13)
     * Bumps peer dependency springer-context to 12.2.2
 

@@ -1,5 +1,8 @@
 # History
 
+## 0.1.2 (2019-11-19)
+	* Renames sass filenames for consistent toolkit style
+
 ## 0.1.1 (2019-10-14)
     * Use darker grey on link color  
     

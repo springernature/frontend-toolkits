@@ -1,3 +1,6 @@
+## 0.0.8 (2019-11-19)
+	* Renames sass filenames for consistent toolkit style
+
 ## 0.0.7 (2019-08-14)
 	* Set color on item instead of link to handle bullet point color
 

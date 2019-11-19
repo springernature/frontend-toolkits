@@ -1,5 +1,8 @@
 # History
 
+## 0.2.1 (2019-11-19)
+	* Renames sass filenames for consistent toolkit style
+
 ## 0.2.0 (2019-10-15)
 	* Remove article spacing variables as we now get values from global
 
