@@ -29,7 +29,11 @@
     "publish": "sn-package-publish",
     "test": "jest --colors --coverage --passWithNoTests",
     "test:ci": "jest --passWithNoTests --runInBand",
-    "validate": "sn-package-validate"
+    "validate": "sn-package-validate",
+    "validate:global": "sn-package-validate -t global",
+    "validate:nature": "sn-package-validate -t nature",
+    "validate:springer": "sn-package-validate -t springer",
+    "validate:springernature": "sn-package-validate -t springernature"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
@@ -40,7 +44,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^3.0.0",
-    "@springernature/frontend-package-manager": "^4.0.1",
+    "@springernature/frontend-package-manager": "^4.0.3",
     "@springernature/sasslint-config": "^1.2.0",
     "@springernature/util-eslint-runner": "^0.0.3",
     "acorn": "^7.1.0",

@@ -182,6 +182,22 @@ The following script commands are available:
 
    Run the `validate` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-validation).
 
+* `npm run validate:global`
+
+   Run the validate script, filtered by the global toolkit.
+
+* `npm run validate:nature`
+
+   Run the validate script, filtered by the nature toolkit.
+
+* `npm run validate:springer`
+
+   Run the validate script, filtered by the springer toolkit.
+
+* `npm run validate:springernature`
+
+   Run the validate script, filtered by the springernature toolkit.
+
 ## Testing
 
 Tests for your package should be written in your `packages/<prefix>-name-of-package/__tests_` folder. For example, unit tests for `global-name-of-package` should live in `packages/global-name-of-package/__tests__/unit/*.js`.
