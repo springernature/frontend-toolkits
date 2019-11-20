@@ -37,6 +37,9 @@
     "__tests__": [
       "js",
       "json"
+    ],
+    "__mocks__": [
+      "js"
     ]
   },
   "CSSDirectoryStructure": {
