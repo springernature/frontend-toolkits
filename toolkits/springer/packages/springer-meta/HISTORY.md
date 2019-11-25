@@ -1,5 +1,5 @@
 ## 0.0.4 (2019-11-25)
-    * Use system fonts 
+    * Use system font for sans serif
 
 ## 0.0.3 (2019-11-05)
     * Decrease font-size on component
