@@ -1,3 +1,6 @@
+## 0.0.5 (2019-11-25)
+    * Bump package version   
+    
 ## 0.0.4 (2019-11-25)
     * Use system font for sans serif
 
