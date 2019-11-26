@@ -1,0 +1,11 @@
+{
+  "name": "@springernature/nature-card",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "",
+  "keywords": [],
+  "author": "Springer Nature",
+  "extendsPackage": {
+    "@springernature/global-card" : "~0.1.1"
+  }
+}
