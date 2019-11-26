@@ -5,9 +5,7 @@
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": {
-    "@springernature/global-card" : "~0.1.1"
-  },
+  "extendsPackage": "global-card@0.1.1",
   "peerDependencies": {
     "@springernature/nature-context": "^0.18.2"
   }
