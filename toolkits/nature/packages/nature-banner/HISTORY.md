@@ -1,5 +1,9 @@
 # History
 
+## 0.1.2 (2019-11-26)
+    * Add global-banner in extendsPackage
+    * Add nature-context in peerDependencies 
+    
 ## 0.1.1 (2019-10-14)
     * Use darker grey on link color  
     
