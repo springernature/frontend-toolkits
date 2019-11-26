@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springer-author-list",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "description": "Springer branded extension of the global author-list",
   "keywords": [
@@ -9,6 +9,6 @@
   "author": "Springer Nature",
   "extendsPackage": "global-author-list@1.0.0",
   "peerDependencies": {
-    "@springernature/springer-context": "12.2.2"
+    "@springernature/springer-context": "12.3.0"
   }
 }
