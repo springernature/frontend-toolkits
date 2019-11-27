@@ -1,11 +1,11 @@
 {
   "name": "@springernature/nature-card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": "global-card@0.1.1",
+  "extendsPackage": "global-card@0.2.0",
   "peerDependencies": {
     "@springernature/nature-context": "^0.18.2"
   }
