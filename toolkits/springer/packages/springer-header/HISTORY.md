@@ -1,3 +1,6 @@
+## 1.0.0 (2019-12-09)
+	* Removes dot from in-between header items, now just margin spacing applies
+
 ## 0.0.7 (2019-08-14)
 	* Set color on item instead of link to handle bullet point color
 

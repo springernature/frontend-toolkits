@@ -31,19 +31,10 @@
 
 .c-header__item {
 	color: $springer-header--item-color;
+	margin-right: get-spacing(sm);
 
-	& + & {
-		&::before {
-			@include font-size(1em);
-			content: "\2022";
-			float: left;
-			font-family: serif;
-			line-height: inherit;
-			margin: 0 get-spacing(sm);
-			position: relative;
-			text-align: center;
-			top: 2px;
-		}
+	&:last-child {
+		margin-right: 0;
 	}
 }
 
