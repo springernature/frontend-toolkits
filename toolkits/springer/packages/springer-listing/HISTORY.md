@@ -1,3 +1,6 @@
+## 0.0.5 (2019-12-10)
+    * Lower font size on title
+
 ## 0.0.4 (2019-11-25)
     * Use system font for sans serif
     

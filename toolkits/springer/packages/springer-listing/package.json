@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springer-listing",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "description": "Display of scannable content typically within a list",
   "keywords": [],
