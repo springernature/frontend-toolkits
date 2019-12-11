@@ -1,3 +1,6 @@
+## 1.1.0 (2019-01-09)
+	* Adds JS to generate dropdown menu
+
 ## 1.0.1 (2019-12-12)
 	* Increases the margin between header items
 	
