@@ -3,12 +3,12 @@
 	@include font-size($springer-user-metadata--font-size);
 	color: $springer-user-metadata--font-colour;
 	line-height: $springer-user-metadata--line-height;
-	padding-top: $springer-user-metadata--padding;
+	padding-top: $springer-user-metadata--padding-y;
 }
 
 .c-user-metadata__item {
 	margin-top: 0;
-	margin-bottom: $springer-publisher-footer--padding-compact;
+	margin-bottom: $springer-user-metadata--item-margin-y;
 
 	&:last-child {
 		margin-bottom: 0;
