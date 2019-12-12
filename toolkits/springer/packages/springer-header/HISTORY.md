@@ -1,3 +1,6 @@
+## 1.0.1 (2019-12-12)
+	* Increases the margin between header items
+	
 ## 1.0.0 (2019-12-09)
 	* Removes dot from in-between header items, now just margin spacing applies
 
