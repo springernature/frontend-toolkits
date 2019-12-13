@@ -1,5 +1,8 @@
 # History
 
+## 0.1.3 (2019-12-13)
+    * Rename file to use underscore to align with global-banner
+
 ## 0.1.2 (2019-11-26)
     * Add global-banner in extendsPackage
     * Add nature-context in peerDependencies 
