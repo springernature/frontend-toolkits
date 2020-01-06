@@ -31,8 +31,8 @@ const Expander = class {
 	 * Event Handlers
 	 */
 
-	_handleButtonClick(e) {
-		e.preventDefault();
+	_handleButtonClick(event) {
+		event.preventDefault();
 
 		if (this._isOpen) {
 			this._close();
@@ -41,9 +41,9 @@ const Expander = class {
 		}
 	}
 
-	_handleButtonEnter(e) {
-		if (e.key === 'Enter') {
-			e.preventDefault();
+	_handleButtonEnter(event) {
+		if (event.key === 'Enter') {
+			event.preventDefault();
 
 			if (this._isOpen) {
 				this._close();
@@ -53,13 +53,13 @@ const Expander = class {
 		}
 	}
 
-	_handleDocumentKeydown(e) {
-		if (e.key === 'Escape') {
+	_handleDocumentKeydown(event) {
+		if (event.key === 'Escape') {
 			this._close();
 			this._triggerEl.focus();
 		}
 
-		if (e.key === 'Tab') {
+		if (event.key === 'Tab') {
 			window.requestAnimationFrame(() => {
 				if (!this._targetTabbableItems.includes(document.activeElement)) {
 					this._close();
@@ -68,8 +68,8 @@ const Expander = class {
 		}
 	}
 
-	_handleDocumentClick(e) {
-		let target = e.target;
+	_handleDocumentClick(event) {
+		let target = event.target;
 
 		if (target === this._targetEl || target === this._triggerEl || this._targetEl.contains(target) || this._triggerEl.contains(target)) {
 			return;
@@ -103,6 +103,7 @@ const Expander = class {
 	 */
 
 	_updateAriaAttributes() {
+		// eslint-disable-next-line unicorn/consistent-function-scoping
 		const setBooleanAttribute = (element, attribute) => {
 			if (element.hasAttribute(attribute)) {
 				const attributeAsBoolean = element.getAttribute(attribute) === 'true';
