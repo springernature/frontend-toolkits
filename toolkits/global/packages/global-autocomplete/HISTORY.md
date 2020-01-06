@@ -1,5 +1,8 @@
 # History
 
+## 2.0.0 (2020-01-06)
+    * Refactor based on new linting rules
+
 ## 1.0.3 (2020-01-06)
     * Update demo with config options
 

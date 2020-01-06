@@ -1,4 +1,4 @@
-const autoComplete = args => {
+const autoComplete = arguments_ => {
 	const {
 		selector,
 		resultSelector,
@@ -13,7 +13,7 @@ const autoComplete = args => {
 		headers = {},
 		searchError,
 		resultsCallBack
-	} = args;
+	} = arguments_;
 
 	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
 		console.error('Please provide selector, resultsCallBack, and endpoint or staticResultsData');
@@ -40,7 +40,7 @@ const autoComplete = args => {
 			event.preventDefault();
 			if (suggestions().length > 0) {
 				suggestions()[0].focus();
-				input.value = suggestions()[0].innerText;
+				input.value = suggestions()[0].textContent;
 			}
 		}
 	};
@@ -70,21 +70,21 @@ const autoComplete = args => {
 
 			let activeElement = document.activeElement;
 			let nextSibling = activeElement.nextSibling;
-			let prevSibling = activeElement.previousSibling;
+			let previousSibling = activeElement.previousSibling;
 			let currentIndex = parseInt(activeElement.dataset.index, 10);
 
 			switch (event.key) {
 				case 'ArrowDown':
 					if (nextSibling) {
-						input.value = ((currentIndex + 1) < suggestions().length) ? nextSibling.innerText : currentSearchTerm;
+						input.value = ((currentIndex + 1) < suggestions().length) ? nextSibling.textContent : currentSearchTerm;
 						nextSibling.focus();
 					}
 					break;
 
 				case 'ArrowUp':
-					if (prevSibling) {
-						input.value = prevSibling.innerText;
-						prevSibling.focus();
+					if (previousSibling) {
+						input.value = previousSibling.textContent;
+						previousSibling.focus();
 					} else {
 						input.focus();
 						input.value = currentSearchTerm;
@@ -100,17 +100,17 @@ const autoComplete = args => {
 			}
 		});
 
-		suggestions().forEach(el => {
-			el.addEventListener('click', () => {
+		suggestions().forEach(element => {
+			element.addEventListener('click', () => {
 				if (onSelect) {
-					onSelect(el.textContent);
+					onSelect(element.textContent);
 				}
 				removeSuggestions();
 			});
-			el.addEventListener('keyup', event => {
+			element.addEventListener('keyup', event => {
 				if (event.key === 'Enter') {
 					if (onSelect) {
-						onSelect(el.textContent);
+						onSelect(element.textContent);
 					}
 					removeSuggestions();
 				}
@@ -155,8 +155,8 @@ const autoComplete = args => {
 				} else {
 					searchError();
 				}
-			}).catch(err => {
-				reject(err);
+			}).catch(error => {
+				reject(error);
 			});
 		});
 
@@ -170,8 +170,8 @@ const autoComplete = args => {
 		Promise.race([
 			fetchData,
 			fetchTimeout
-		]).catch(err => {
-			searchError(err);
+		]).catch(error => {
+			searchError(error);
 		});
 	};
 

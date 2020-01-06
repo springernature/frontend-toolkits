@@ -1,3 +1,6 @@
+/* eslint-disable unicorn/no-abusive-eslint-disable */
+/* eslint-disable */
+
 import {autoComplete} from '../js/index.js';
 
 const showResults = results => {
