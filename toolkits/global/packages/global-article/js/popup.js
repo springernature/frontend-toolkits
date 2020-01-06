@@ -26,7 +26,7 @@
  *
  */
 
-window.Component.Popup = (function (win, doc) {
+window.Component.Popup = (function (win, document_) {
 	'use strict';
 
 	var COMPONENT_CLASS = 'c-author-popup';
@@ -62,7 +62,7 @@ window.Component.Popup = (function (win, doc) {
 				this.content.classList.add(HIDE_PRINT_CLASS);
 			}
 
-			doc.body.appendChild(this.content);
+			document_.body.append(this.content);
 		},
 		bindEvents: function () {
 			var self = this;
@@ -71,21 +71,21 @@ window.Component.Popup = (function (win, doc) {
 			self.clickAwayListener = self.closeOnClickAway.bind(self);
 
 			self.content.querySelector('.' + CLOSE_CLASS).addEventListener('click', self.closeListener);
-			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (el) {
-				el.addEventListener('focus', self.closeListener);
+			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (element) {
+				element.addEventListener('focus', self.closeListener);
 			});
-			doc.addEventListener('keyup', self.escapeListener);
-			doc.addEventListener('click', self.clickAwayListener);
+			document_.addEventListener('keyup', self.escapeListener);
+			document_.addEventListener('click', self.clickAwayListener);
 			win.addEventListener('resize', self.closeListener);
 		},
 		unbindEvents: function () {
 			var self = this;
 			self.content.querySelector('.' + CLOSE_CLASS).removeEventListener('click', self.closeListener);
-			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (el) {
-				el.removeEventListener('focus', self.closeListener);
+			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (element) {
+				element.removeEventListener('focus', self.closeListener);
 			});
-			doc.removeEventListener('keyup', self.escapeListener);
-			doc.removeEventListener('click', self.clickAwayListener);
+			document_.removeEventListener('keyup', self.escapeListener);
+			document_.removeEventListener('click', self.clickAwayListener);
 			win.removeEventListener('resize', self.closeListener);
 		},
 		open: function () {
@@ -111,9 +111,9 @@ window.Component.Popup = (function (win, doc) {
 			this.content.style.display = 'none';
 			this.returnFocus();
 		},
-		toggle: function (e) {
-			if (e) {
-				e.stopPropagation();
+		toggle: function (event) {
+			if (event) {
+				event.stopPropagation();
 			}
 			if (this.isOpen) {
 				this.close();
@@ -121,18 +121,18 @@ window.Component.Popup = (function (win, doc) {
 				this.open();
 			}
 		},
-		closeOnEscape: function (e) {
-			if (e.keyCode === ESC_KEY_CODE) {
+		closeOnEscape: function (event) {
+			if (event.keyCode === ESC_KEY_CODE) {
 				this.close();
 			}
 		},
-		closeOnClickAway: function (e) {
-			if (!e.target.closest('.' + COMPONENT_CLASS)) {
+		closeOnClickAway: function (event) {
+			if (!event.target.closest('.' + COMPONENT_CLASS)) {
 				this.close();
 			}
 		},
 		pos: function () {
-			var documentElement = doc.documentElement;
+			var documentElement = document_.documentElement;
 			var scroll = documentElement.scrollTop;
 			var metrics = this.trigger.getClientRects()[0];
 			var offset = {
@@ -143,7 +143,7 @@ window.Component.Popup = (function (win, doc) {
 			var arrow = this.content.querySelector('.' + COMPONENT_ARROW_CLASS);
 
 			var windowWidth = documentElement.clientWidth;
-			var availableWidth = Math.min(doc.querySelector(this.columnSelector).offsetWidth, windowWidth);
+			var availableWidth = Math.min(document_.querySelector(this.columnSelector).offsetWidth, windowWidth);
 
 			var arrowHeight = 12;
 			var arrowWidth = 20;

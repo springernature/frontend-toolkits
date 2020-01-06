@@ -18,35 +18,35 @@ function AriaButton() {
 
 	/*
      * Private Function
-     * @returns {boolean} - true if the $el can be focused by default, false if it can't
+     * @returns {boolean} - true if the $element can be focused by default, false if it can't
      * not checking if disabled with tabindex=-1, as can still be focused by clicking
      */
-	var canFocus = function ($el) {
-		if (!$el.is(':hidden') && !$el.is(':disabled')) {
+	var canFocus = function ($element) {
+		if (!$element.is(':hidden') && !$element.is(':disabled')) {
 			return false;
 		}
-		return $el.is(':input, a[href], area[href], iframe');
+		return $element.is(':input, a[href], area[href], iframe');
 	};
 
 	var methods = {
 		init: function () {
 			return this.each(function () {
-				var $el = $(this);
-				if (!$el.is('button')) {
-					$el.attr('role', 'button');
-					if (!canFocus($el)) {
+				var $element = $(this);
+				if (!$element.is('button')) {
+					$element.attr('role', 'button');
+					if (!canFocus($element)) {
 						// used for :focus styling, e.g on an anchor tag without href
-						$el.addClass('role-button');
+						$element.addClass('role-button');
 						// if there is not already a valid tabindex apply default
-						if (isNaN($el.attr('tabindex'))) {
-							$el.attr('tabindex', '0');
+						if (isNaN($element.attr('tabindex'))) {
+							$element.attr('tabindex', '0');
 						}
 					}
 					// replicate the spacebar & enter key functionality to be consistent with native button
-					$el.on('keypress', function (e) {
-						if (e.which === 32 || e.which === 13) {
-							e.preventDefault();
-							$el.triggerHandler('click');
+					$element.on('keypress', function (event) {
+						if (event.which === 32 || event.which === 13) {
+							event.preventDefault();
+							$element.triggerHandler('click');
 						}
 					});
 				}
@@ -54,10 +54,10 @@ function AriaButton() {
 		},
 		destroy: function () {
 			return this.each(function () {
-				var $el = $(this);
-				$el.removeAttr('role tabindex');
-				$el.removeClass('role-button');
-				$el.off('keypress');
+				var $element = $(this);
+				$element.removeAttr('role tabindex');
+				$element.removeClass('role-button');
+				$element.off('keypress');
 			});
 		}
 	};

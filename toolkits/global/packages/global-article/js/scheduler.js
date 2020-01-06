@@ -15,7 +15,9 @@ window.Component.Scheduler = (function ($, win) {
 		var dot = name.indexOf('.');
 		/* eslint-disable no-negated-condition */
 		return {
+			// eslint-disable-next-line unicorn/prefer-string-slice
 			ev: (dot !== -1) ? name.substr(0, dot) : name,
+			// eslint-disable-next-line unicorn/prefer-string-slice
 			ns: (dot !== -1) ? name.substr(dot + 1) : null
 		};
 	};
@@ -26,11 +28,11 @@ window.Component.Scheduler = (function ($, win) {
      * @param {Function} predicate - Function to apply as a test on each item in `arr`
      * @return {Array} A new array with the filtered items removed
      */
-	var reject = function (arr, predicate) {
+	var reject = function (array, predicate) {
 		var results = [];
-		for (var i = 0; arr[i]; ++i) {
-			if (!predicate(arr[i])) {
-				results.push(arr[i]);
+		for (var i = 0; array[i]; ++i) {
+			if (!predicate(array[i])) {
+				results.push(array[i]);
 			}
 		}
 		return results;
@@ -56,8 +58,8 @@ window.Component.Scheduler = (function ($, win) {
 		var ns = info.ns;
 		/* eslint-disable no-use-before-define */
 		if (!_events[ev]) {
-			$win.on(namespace(ev), function (e) {
-				self.notify(ev, e);
+			$win.on(namespace(ev), function (event) {
+				self.notify(ev, event);
 			});
 			_events[ev] = true;
 		}

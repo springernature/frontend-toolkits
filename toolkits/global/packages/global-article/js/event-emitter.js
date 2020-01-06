@@ -35,9 +35,9 @@ EventEmitter.prototype = {
 	},
 	emit: function (ev) {
 		var listeners = this.listeners[ev] || [];
-		var args = [].slice.call(arguments, 1);
+		var emitArguments = [].slice.call(arguments, 1);
 		for (var i = 0; listeners[i]; ++i) {
-			listeners[i].fn.apply(listeners[i].scope, args);
+			listeners[i].fn.apply(listeners[i].scope, emitArguments);
 		}
 	}
 };

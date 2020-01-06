@@ -1,5 +1,5 @@
 
-window.Component.ReadingCompanion = (function (win, doc) {
+window.Component.ReadingCompanion = (function (win, document_) {
 	'use strict';
 
 	var READING_COMPANION_CLASS = 'c-reading-companion';
@@ -31,15 +31,16 @@ window.Component.ReadingCompanion = (function (win, doc) {
 
 	var _container = null;
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function select(container, selector) {
 		return Array.prototype.slice.call(container.querySelectorAll(selector));
 	}
 
 	function cleanLinks(html) {
-		var d = doc.createElement('div');
+		var d = document_.createElement('div');
 		d.innerHTML = html;
 		select(d, 'a').forEach(function (a) {
-			var s = doc.createElement('span');
+			var s = document_.createElement('span');
 			s.innerHTML = a.innerHTML;
 			a.parentNode.replaceChild(s, a);
 		});
@@ -76,20 +77,21 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		findImages: function (node) {
 			var images = [];
 			var self = this;
-			select(node, 'picture > img').forEach(function (el) {
-				images.push(self.placeholderFor(el));
+			select(node, 'picture > img').forEach(function (element) {
+				images.push(self.placeholderFor(element));
 			});
 			return images;
 		},
 
 		placeholderFor: function (node) {
-			var src = node.getAttribute('data-supp-info-image') || node.src;
+			var source = node.getAttribute('data-supp-info-image') || node.src;
 			var alt = node.alt || '';
-			var sep = src.indexOf('?') === -1 ? '?' : '&';
+			// eslint-disable-next-line no-negated-condition
+			var separator = !source.includes('?') ? '?' : '&';
 			return [
 				'<picture>',
-				'<source type="image/webp" ' + DATA_SRCSET_ATTR + '="' + src + sep + 'as=webp">',
-				'<img ' + DATA_SRC_ATTR + '="' + src + '" alt="' + alt + '">',
+				'<source type="image/webp" ' + DATA_SRCSET_ATTR + '="' + source + separator + 'as=webp">',
+				'<img ' + DATA_SRC_ATTR + '="' + source + '" alt="' + alt + '">',
 				'</picture>'
 			].join('');
 		},
@@ -110,6 +112,7 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		}
 	};
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function Reference(node) {
 		var citation = node.querySelector('.c-article-references__text');
 		this.id = citation.id;
@@ -120,8 +123,8 @@ window.Component.ReadingCompanion = (function (win, doc) {
 
 	Reference.prototype.findLinks = function (node) {
 		var links = [];
-		select(node, '.c-article-references__links a').forEach(function (el) {
-			links.push(new ReferenceLink(el));
+		select(node, '.c-article-references__links a').forEach(function (element) {
+			links.push(new ReferenceLink(element));
 		});
 		return links;
 	};
@@ -130,13 +133,14 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		return [
 			'<li class="' + READING_COMPANION_CLASS + '__reference-item">',
 			'<p class="' + READING_COMPANION_CLASS + '__reference-citation" id="' + REFERENCE_ID_PREFIX + this.id + '">' + this.citation + '</p>',
-			(this.links.length) ? ('<ul class="' + READING_COMPANION_CLASS + '__reference-links">' + this.links.map(function (link) {
+			(this.links.length > 0) ? ('<ul class="' + READING_COMPANION_CLASS + '__reference-links">' + this.links.map(function (link) {
 				return link.render();
 			}).join('') + '</ul>') : '',
 			'</li>'
 		].join('');
 	};
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function ReferenceLink(node) {
 		this.href = node.href;
 		this.text = node.textContent;
@@ -146,15 +150,18 @@ window.Component.ReadingCompanion = (function (win, doc) {
 	};
 
 	function sectionById(id) {
-		return doc.getElementById(SECTION_ID_PREFIX + id);
+		// eslint-disable-next-line unicorn/prefer-query-selector
+		return document_.getElementById(SECTION_ID_PREFIX + id);
 	}
 
 	function figureById(id) {
-		return doc.getElementById(FIGURE_ID_PREFIX + id);
+		// eslint-disable-next-line unicorn/prefer-query-selector
+		return document_.getElementById(FIGURE_ID_PREFIX + id);
 	}
 
 	function referenceById(id) {
-		return doc.getElementById(REFERENCE_ID_PREFIX + id);
+		// eslint-disable-next-line unicorn/prefer-query-selector
+		return document_.getElementById(REFERENCE_ID_PREFIX + id);
 	}
 
 	function switchToTabAndScroll(name, node) {
@@ -185,40 +192,40 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		});
 	}
 
-	function switchToTab(name, opts) {
+	function switchToTab(name, options) {
 		var next = _container.querySelector('.' + READING_COMPANION_CLASS + '__' + name);
-		var prev = _container.querySelector('.' + READING_COMPANION_CLASS + '__panel' + ACTIVE_MODIFIER);
+		var previous = _container.querySelector('.' + READING_COMPANION_CLASS + '__panel' + ACTIVE_MODIFIER);
 		var defered;
-		var nextBtn;
-		var prevBtn;
+		var nextButton;
+		var previousButton;
 
-		if (!next || !prev) {
+		if (!next || !previous) {
 			return;
 		}
 
 		defered = next.querySelector('img[' + DATA_SRC_ATTR + ']');
-		nextBtn = _container.querySelector('button[' + ARIA_CONTROLS_ATTR + '=' + next.id + ']');
+		nextButton = _container.querySelector('button[' + ARIA_CONTROLS_ATTR + '=' + next.id + ']');
 
 		if (defered) {
 			loadDeferedAssets(next);
 		}
 
-		if (prev) {
-			prevBtn = _container.querySelector('button[' + ARIA_CONTROLS_ATTR + '=' + prev.id + ']');
-			prevBtn.setAttribute(ARIA_SELECTED_ATTR, 'false');
-			prevBtn.setAttribute(TABINDEX_ATTR, '-1');
-			prevBtn.classList.remove(READING_COMPANION_CLASS + '__tab' + ACTIVE_MODIFIER);
-			prev.classList.remove(READING_COMPANION_CLASS + '__panel' + ACTIVE_MODIFIER);
-			prev.removeAttribute(TABINDEX_ATTR);
+		if (previous) {
+			previousButton = _container.querySelector('button[' + ARIA_CONTROLS_ATTR + '=' + previous.id + ']');
+			previousButton.setAttribute(ARIA_SELECTED_ATTR, 'false');
+			previousButton.setAttribute(TABINDEX_ATTR, '-1');
+			previousButton.classList.remove(READING_COMPANION_CLASS + '__tab' + ACTIVE_MODIFIER);
+			previous.classList.remove(READING_COMPANION_CLASS + '__panel' + ACTIVE_MODIFIER);
+			previous.removeAttribute(TABINDEX_ATTR);
 		}
 
-		nextBtn.setAttribute(ARIA_SELECTED_ATTR, 'true');
-		nextBtn.removeAttribute(TABINDEX_ATTR);
-		nextBtn.classList.add(READING_COMPANION_CLASS + '__tab' + ACTIVE_MODIFIER);
+		nextButton.setAttribute(ARIA_SELECTED_ATTR, 'true');
+		nextButton.removeAttribute(TABINDEX_ATTR);
+		nextButton.classList.add(READING_COMPANION_CLASS + '__tab' + ACTIVE_MODIFIER);
 		next.classList.add(READING_COMPANION_CLASS + '__panel' + ACTIVE_MODIFIER);
 		next.setAttribute(TABINDEX_ATTR, '0');
-		if (opts && opts.focus) {
-			nextBtn.focus();
+		if (options && options.focus) {
+			nextButton.focus();
 		}
 
 		setTabWidth();
@@ -239,19 +246,19 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		_container.style.width = width + 'px';
 	}
 
-	function insertReturnButton(ref, source) {
-		var btn = ref.querySelector('.' + READING_COMPANION_CLASS + '__return');
-		if (btn) {
-			btn.parentNode.removeChild(btn);
+	function insertReturnButton(reference, source) {
+		var button = reference.querySelector('.' + READING_COMPANION_CLASS + '__return');
+		if (button) {
+			button.remove();
 		}
-		btn = doc.createElement('a');
-		btn.href = '#' + source.id;
-		btn.appendChild(doc.createTextNode('Return to ref ' + source.textContent + ' in article'));
-		btn.className = READING_COMPANION_CLASS + '__return';
-		btn.addEventListener('click', function () {
-			btn.parentNode.removeChild(btn);
+		button = document_.createElement('a');
+		button.href = '#' + source.id;
+		button.append(document_.createTextNode('Return to ref ' + source.textContent + ' in article'));
+		button.className = READING_COMPANION_CLASS + '__return';
+		button.addEventListener('click', function () {
+			button.remove();
 		});
-		ref.appendChild(btn);
+		reference.append(button);
 	}
 
 	function scrollIntoView(element, parent) {
@@ -271,7 +278,7 @@ window.Component.ReadingCompanion = (function (win, doc) {
 	}
 
 	function bindEvents(scheduler, emitter) {
-		var article = doc.querySelector('div[' + COMPONENT_ATTR + '=article-container]');
+		var article = document_.querySelector('div[' + COMPONENT_ATTR + '=article-container]');
 		var sectionsList = _container.querySelector('.' + READING_COMPANION_CLASS + '__sections-list');
 		var advert = _container.querySelector('.js-ad');
 		var tabBar = _container.querySelector('.' + READING_COMPANION_CLASS + '__tabs');
@@ -287,12 +294,12 @@ window.Component.ReadingCompanion = (function (win, doc) {
 			return ((advert) ? advert.offsetHeight : 0) + _offset + ((tabBar) ? 80 : 20);
 		};
 
-		emitter.on('nav.section', function (id, prevId) {
-			var prev = prevId && sectionById(prevId);
+		emitter.on('nav.section', function (id, previousId) {
+			var previous = previousId && sectionById(previousId);
 			var next = id && sectionById(id);
 
-			if (prev) {
-				prev.classList.remove(ACTIVE_SECTION_CLASS);
+			if (previous) {
+				previous.classList.remove(ACTIVE_SECTION_CLASS);
 			}
 			if (next) {
 				next.classList.add(ACTIVE_SECTION_CLASS);
@@ -305,11 +312,11 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		});
 
 		emitter.on('nav.reference', function (id, source) {
-			var ref = referenceById(id);
+			var reference = referenceById(id);
 			if (source) {
-				insertReturnButton(ref, source);
+				insertReturnButton(reference, source);
 			}
-			switchToTabAndScroll('references', ref);
+			switchToTabAndScroll('references', reference);
 		});
 
 		scheduler.on('scroll resize orientationchange', function () {
@@ -322,7 +329,7 @@ window.Component.ReadingCompanion = (function (win, doc) {
 			}
 
 			var height = _container.offsetHeight;
-			var intersection = article.getBoundingClientRect().bottom - doc.documentElement.clientTop - (height + _offset);
+			var intersection = article.getBoundingClientRect().bottom - document_.documentElement.clientTop - (height + _offset);
 
 			if (_container.classList.contains(STICKY_CLASS + STICKY_MODIFIER)) {
 				sections.style.maxHeight = (win.innerHeight - calcOffset()) + 'px';
@@ -342,13 +349,15 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		});
 
 		if (tabBar) {
-			tabBar.addEventListener('keydown', function (e) {
-				var active = doc.activeElement.parentNode;
+			tabBar.addEventListener('keydown', function (event) {
+				var active = document_.activeElement.parentNode;
 				var next;
 
-				if (e.keyCode === 37) {
+				// eslint-disable-next-line unicorn/prefer-event-key
+				if (event.keyCode === 37) {
 					next = active.previousElementSibling || _container.querySelector('.' + READING_COMPANION_CLASS + '__tabs > li:last-child');
-				} else if (e.keyCode === 39) {
+				// eslint-disable-next-line unicorn/prefer-event-key
+				} else if (event.keyCode === 39) {
 					next = active.nextElementSibling || _container.querySelector('.' + READING_COMPANION_CLASS + '__tabs > li:first-child');
 				}
 				if (next) {
@@ -356,9 +365,9 @@ window.Component.ReadingCompanion = (function (win, doc) {
 				}
 			}, false);
 
-			select(tabBar, '.' + READING_COMPANION_CLASS + '__tab').forEach(function (el) {
-				el.addEventListener('click', function (e) {
-					switchToTab(e.target.getAttribute(TAB_NAME_ATTR), {focus: true});
+			select(tabBar, '.' + READING_COMPANION_CLASS + '__tab').forEach(function (element) {
+				element.addEventListener('click', function (event) {
+					switchToTab(event.target.getAttribute(TAB_NAME_ATTR), {focus: true});
 				}, false);
 			});
 		}
@@ -368,18 +377,18 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		var map = {
 			sections: function (sections) {
 				var items = [];
-				sections.forEach(function (el) {
-					items.push(new Section(el));
+				sections.forEach(function (element) {
+					items.push(new Section(element));
 				});
 
-				return (items.length) ? '<ul class="' + READING_COMPANION_CLASS + '__sections-list">' + items.map(function (item) {
+				return (items.length > 0) ? '<ul class="' + READING_COMPANION_CLASS + '__sections-list">' + items.map(function (item) {
 					return item.render();
 				}).join('') + '</ul>' : '';
 			},
 			figures: function (figures) {
 				var items = [];
-				figures.forEach(function (el) {
-					var fig = new Figure(el);
+				figures.forEach(function (element) {
+					var fig = new Figure(element);
 					if (fig.id) {
 						items.push(fig);
 					}
@@ -395,8 +404,8 @@ window.Component.ReadingCompanion = (function (win, doc) {
 			},
 			references: function (references) {
 				var items = [];
-				references.forEach(function (el) {
-					items.push(new Reference(el));
+				references.forEach(function (element) {
+					items.push(new Reference(element));
 				});
 
 				if (!items.length) { // eslint-disable-line unicorn/explicit-length-check
@@ -419,21 +428,23 @@ window.Component.ReadingCompanion = (function (win, doc) {
 		return '<ul class="' + READING_COMPANION_CLASS + '__tabs" role="tablist">' + tabs.join('') + '</ul>';
 	}
 
-	function insert(el, html) {
-		el.insertAdjacentHTML('afterbegin', html);
+	// eslint-disable-next-line unicorn/consistent-function-scoping
+	function insert(element, html) {
+		element.insertAdjacentHTML('afterbegin', html);
 	}
 
 	function buildTabs() {
 		var tabs = ['sections', 'figures', 'references'].map(function (name) {
-			var container = doc.querySelector('.' + READING_COMPANION_CLASS + '__' + name);
-			var html = htmlFor(name, select(doc, '.js-' + READING_COMPANION_CLASS + '-' + name + '-item'));
+			var container = document_.querySelector('.' + READING_COMPANION_CLASS + '__' + name);
+			var html = htmlFor(name, select(document_, '.js-' + READING_COMPANION_CLASS + '-' + name + '-item'));
+			// eslint-disable-next-line unicorn/prefer-string-slice
 			var tab = htmlForTab(name, name.charAt(0).toUpperCase() + name.substring(1));
 
 			if (html && container) {
 				container.setAttribute('aria-labelledby', 'tab-' + name);
 				insert(container, '<div class="' + READING_COMPANION_CLASS + '__scroll-pane">' + html + '</div>');
 			} else if (container) {
-				container.parentNode.removeChild(container);
+				container.remove();
 			}
 
 			return (html && container) ? tab : false;
@@ -462,7 +473,7 @@ window.Component.ReadingCompanion = (function (win, doc) {
 					return;
 				}
 
-				_container = doc.querySelector('[' + COMPONENT_ATTR + '=reading-companion-sticky]');
+				_container = document_.querySelector('[' + COMPONENT_ATTR + '=reading-companion-sticky]');
 
 				if (!_container) {
 					return;

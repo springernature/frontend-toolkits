@@ -12,7 +12,7 @@
  */
 
 function DeviceState() {
-	$.deviceState = function (opts) {
+	$.deviceState = function (options) {
 		var mq;
 
 		if (window.getComputedStyle) {
@@ -22,7 +22,7 @@ function DeviceState() {
 		}
 
 		// return the current media query
-		if (!opts) {
+		if (!options) {
 			return mq;
 		}
 
@@ -34,11 +34,11 @@ function DeviceState() {
 		}
 
 		// compare current to options
-		if (opts.gt) {
-			return mq > opts.gt;
+		if (options.gt) {
+			return mq > options.gt;
 		}
-		if (opts.lt) {
-			return mq < opts.lt;
+		if (options.lt) {
+			return mq < options.lt;
 		}
 
 		return null;

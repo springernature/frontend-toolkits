@@ -3,7 +3,7 @@
 /**
 	 * Rotating Background Icons
 	 * rotate a background icon, fallback to change icon
-	 * @param {Object} $el - jQuery object for the element that contains icon to rotate
+	 * @param {Object} $element - jQuery object for the element that contains icon to rotate
 	 * @param {Object} options - overwrite/add to default options
 	 *
 	 * Example usage:
@@ -47,7 +47,7 @@ function AnimateIcon() {
 	var methods = {
 		init: function (options) {
 			return this.each(function () {
-				var $el = $(this);
+				var $element = $(this);
 				var active = true;
 				var defaults = {
 					iconToggleClass: 'js-icon-toggle',
@@ -61,9 +61,9 @@ function AnimateIcon() {
 				options = $.extend(defaults, options);
 
 				// Save our newly created settings
-				$el.data('icon-settings', options);
+				$element.data('icon-settings', options);
 
-				var $icon = $(options.iconLocatorSelector, $el).length ? $(options.iconLocatorSelector, $el) : false;
+				var $icon = $(options.iconLocatorSelector, $element).length > 0 ? $(options.iconLocatorSelector, $element) : false;
 
 				// restricted to certain media queries
 				if (options.activeMediaQuery && options.activeMediaQuery instanceof Object && (options.activeMediaQuery.lt || options.activeMediaQuery.gt)) {
@@ -87,7 +87,7 @@ function AnimateIcon() {
 				}
 
 				if (options.bindToClick) {
-					$el.on('click', function () {
+					$element.on('click', function () {
 						if (active && $icon) {
 							toggle($icon, options);
 						}
@@ -99,9 +99,9 @@ function AnimateIcon() {
 		animate: function (options) {
 			var extraOptions = options || {};
 			return this.each(function () {
-				var $el = $(this);
-				var options = $el.data('icon-settings');
-				var $icon = $(options.iconLocatorSelector, $el).length ? $(options.iconLocatorSelector, $el) : false;
+				var $element = $(this);
+				var options = $element.data('icon-settings');
+				var $icon = $(options.iconLocatorSelector, $element).length > 0 ? $(options.iconLocatorSelector, $element) : false;
 				$.extend(options, extraOptions);
 				if ($icon) {
 					toggle($icon, options);

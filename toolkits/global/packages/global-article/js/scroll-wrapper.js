@@ -15,8 +15,8 @@ function ScrollWrapper() {
 
 	return {
 		init: function (elements, debounce, scheduler) {
-			(elements || []).forEach(function (el) {
-				this.bindEvents(el, debounce, scheduler);
+			(elements || []).forEach(function (element) {
+				this.bindEvents(element, debounce, scheduler);
 			}, this);
 		},
 

@@ -30,16 +30,16 @@ window.Component.AuthorList = (function ($) {
 			// jscs:disable maximumLineLength
 
 			var $children = $authors.children();
-			var numAuthors = $children.length;
+			var numberAuthors = $children.length;
 
 			var exceedsLimit = function (limit) {
-				return numAuthors > limit && !(numAuthors === limit + 1 && $children.get(limit).className.indexOf('author-group') !== -1);
+				return numberAuthors > limit && !(numberAuthors === limit + 1 && $children.get(limit).className.includes('author-group'));
 			};
 
 			var articleTitle = function () {
 				var $title = $authors.closest('div').find('h3[itemprop]');
 				if ($title.length > 0) {
-					return $title.get(0).innerText;
+					return $title.get(0).textContent;
 				}
 				return 'this article';
 			};
@@ -57,7 +57,7 @@ window.Component.AuthorList = (function ($) {
 			var AUTHOR_LIST_CLASS = 'c-author-list';
 
 			var fewerAuthorsItem = '<li class="' + AUTHOR_LIST_CLASS + '__show-less ' + HIDE_CLASS + '"><a href="javascript:;" class="' + ETAL_CLASS + '" aria-label="Show fewer authors for ' + articleTitle() + '">- ' + ETAL_EXPANDED_TEXT + '</a></li>';
-			var moreAuthorsItem = '<li class="' + AUTHOR_LIST_CLASS + '__show-more ' + extraMoreAuthorsClasses + '"><a href="javascript:;" class="' + ETAL_CLASS + '" title="Show all ' + numAuthors + ' authors" aria-label="Show all ' + numAuthors + ' authors for ' + articleTitle() + '">' + ETAL_COLLAPSED_TEXT + '</a></li>';
+			var moreAuthorsItem = '<li class="' + AUTHOR_LIST_CLASS + '__show-more ' + extraMoreAuthorsClasses + '"><a href="javascript:;" class="' + ETAL_CLASS + '" title="Show all ' + numberAuthors + ' authors" aria-label="Show all ' + numberAuthors + ' authors for ' + articleTitle() + '">' + ETAL_COLLAPSED_TEXT + '</a></li>';
 
 			if (exceedsFullscreenLimit || exceedsSmallscreenLimit) {
 				$authors.addClass(ETAL_COLLAPSED_CLASS).find('li').eq(-1).before(moreAuthorsItem).find(SEPARATOR_SELECTOR).addClass(moreAuthorsHideClass);
@@ -65,21 +65,21 @@ window.Component.AuthorList = (function ($) {
 			}
 
 			if (exceedsFullscreenLimit) {
-				$children.slice(2, numAuthors - 1).addClass('js-author-etal');
+				$children.slice(2, numberAuthors - 1).addClass('js-author-etal');
 			}
 			if (exceedsSmallscreenLimit) {
-				$children.slice(2, numAuthors - 1).addClass('js-smaller-author-etal');
+				$children.slice(2, numberAuthors - 1).addClass('js-smaller-author-etal');
 			}
 		};
 
-		var removeSvgFrom = function ($el) {
-			var svg = $el[0] && $el[0].querySelector('svg');
+		var removeSvgFrom = function ($element) {
+			var svg = $element[0] && $element[0].querySelector('svg');
 			if (svg) {
-				$el[0].removeChild(svg);
+				$element[0].removeChild(svg);
 			}
 		};
 
-		var authorPopup = function (e, $link) {
+		var authorPopup = function (event, $link) {
 			var POPUP_CLASS = 'c-author-popup';
 			var AUTHOR_LINK_CLASS = POPUP_CLASS + '__link';
 			var AUTHOR_LIST_CLASS = POPUP_CLASS + '__author-list';
@@ -98,9 +98,9 @@ window.Component.AuthorList = (function ($) {
 				var presentAddresses = [];
 
 				$item.find('sup').find('a').each(function () {
-					var $el = $(this);
-					if (!$el.next('span[data-present-affiliation="true"]').length) { // eslint-disable-line unicorn/explicit-length-check
-						hrefs.push($el.prop('href').replace(/^[^#]*/, ''));
+					var $element = $(this);
+					if (!$element.next('span[data-present-affiliation="true"]').length) { // eslint-disable-line unicorn/explicit-length-check
+						hrefs.push($element.prop('href').replace(/^[^#]*/, ''));
 					}
 				});
 				hrefs.forEach(function (href) {
@@ -109,16 +109,16 @@ window.Component.AuthorList = (function ($) {
 					var presentID = authorInfo.getAttribute('id');
 
 					if (affiliationAddress !== null) {
-						affiliations.push(affiliationAddress.innerText);
+						affiliations.push(affiliationAddress.textContent);
 					}
 
-					if (presentID !== null && presentID.indexOf('n') > -1) {
+					if (presentID !== null && presentID.includes('n')) {
 						var presentAddress = authorInfo.querySelector('.js-present-address');
 						// eslint-disable-next-line no-negated-condition
 						if (presentAddress !== null) {
-							notes.push(presentAddress.innerText.replace(/^\s*present\s+address:?\s*/i, ''));
+							notes.push(presentAddress.textContent.replace(/^\s*present\s+address:?\s*/i, ''));
 						} else {
-							notes.push(authorInfo.innerText);
+							notes.push(authorInfo.textContent);
 						}
 					}
 				});
@@ -189,7 +189,7 @@ window.Component.AuthorList = (function ($) {
 				setFocusOn: 'h3#author-' + id,
 				mainColSelector: '.c-page-layout__main, div.main-column'
 			});
-			popup.toggle(e);
+			popup.toggle(event);
 		};
 
 		var deduplicatePresentAddresses = function (affiliations, presentAddresses) {
@@ -246,13 +246,13 @@ window.Component.AuthorList = (function ($) {
 
 		$authors.find('a').addClass('js-no-scroll');
 		$authors.find('sup').find('a').prop('tabIndex', '-1'); // don't let the hidden affiliation links get keyboard focus
-		$authors.delegate('a', 'click', function (e) {
-			var $link = $(e.target).closest('a');
+		$authors.delegate('a', 'click', function (event) {
+			var $link = $(event.target).closest('a');
 			if ($link.hasClass(ETAL_CLASS)) {
-				toggleAuthors(e, $link);
+				toggleAuthors(event, $link);
 			} else if (popupGroup && !$link.parent().is('sup')) {
-				authorPopup(e, $link);
-				e.preventDefault();
+				authorPopup(event, $link);
+				event.preventDefault();
 			}
 		});
 	};

@@ -14,9 +14,9 @@ var MathJaxInitialiser = {
 
 				TEX.Parse.Augment({
 					myBevelFraction: function (name) {
-						var num = this.ParseArg(name);
+						var number = this.ParseArg(name);
 						var den = this.ParseArg(name);
-						this.Push(MML.mfrac(num, den).With({bevelled: true}));
+						this.Push(MML.mfrac(number, den).With({bevelled: true}));
 					}
 				});
 			});
@@ -37,13 +37,14 @@ var MathJaxInitialiser = {
 		return config;
 	},
 
-	load: function (src) {
+	load: function (source) {
 		setTimeout(function () {
 			var d = document;
+			// eslint-disable-next-line unicorn/prefer-query-selector
 			var f = d.getElementsByTagName('script')[0];
 			var s = d.createElement('script');
 			s.async = true;
-			s.src = src;
+			s.src = source;
 			f.parentNode.insertBefore(s, f);
 		}, 1);
 	}

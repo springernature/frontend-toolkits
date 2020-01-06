@@ -14,11 +14,11 @@ window.Component.TabGroup = (function () {
 	var TAB_ITEM_SELECTOR = '[data-component-tab-item]';
 	var TAB_ACTIVE_ITEM_CLASS = 'c-article-tabs__active-tab';
 
-	var TabGroup = function ($el) {
-		this.$el = $el;
-		this.id = $el.attr('id');
-		this.$tabs = $el.find('[role="tab"]');
-		this.$content = $el.find('[role="tabpanel"]');
+	var TabGroup = function ($element) {
+		this.$el = $element;
+		this.id = $element.attr('id');
+		this.$tabs = $element.find('[role="tab"]');
+		this.$content = $element.find('[role="tabpanel"]');
 		this.numTabs = this.$tabs.length;
 		this.tabsWidth = 0;
 		this.tabsHeight = 0;
@@ -45,8 +45,8 @@ window.Component.TabGroup = (function () {
 			// get non-active tab height to work out content position later
 			self.tabsHeight = self.$tabs.eq(nonActive).height();
 
-			$('#' + self.id).on('click', 'button', function (e) {
-				self.click(e);
+			$('#' + self.id).on('click', 'button', function (event) {
+				self.click(event);
 			});
 			scheduler.on('resize orientationchange', function () {
 				self.redraw();
@@ -54,9 +54,9 @@ window.Component.TabGroup = (function () {
 			self.redraw();
 		},
 
-		click: function (e) {
-			var el = $(e.target);
-			var id = el.parents(TAB_ITEM_SELECTOR).attr('id');
+		click: function (event) {
+			var element = $(event.target);
+			var id = element.parents(TAB_ITEM_SELECTOR).attr('id');
 
 			this.switchTo(id);
 		},

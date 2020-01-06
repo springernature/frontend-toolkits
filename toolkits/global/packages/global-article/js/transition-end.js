@@ -3,7 +3,7 @@ function TransitionEnd() {
 	'use strict';
 
 	var transition = (function () {
-		var el = document.createElement('fake');
+		var element = document.createElement('fake');
 		var transitions = {
 			transition: 'transitionend',
 			MozTransition: 'transitionend',
@@ -11,7 +11,7 @@ function TransitionEnd() {
 		};
 
 		for (var t in transitions) {
-			if (transitions.hasOwnProperty(t) && el.style[t] !== undefined) { // eslint-disable-line no-prototype-builtins
+			if (transitions.hasOwnProperty(t) && element.style[t] !== undefined) { // eslint-disable-line no-prototype-builtins
 				return transitions[t];
 			}
 		}

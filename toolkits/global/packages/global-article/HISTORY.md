@@ -1,5 +1,8 @@
 # History
 
+## 9.0.0 (2020-01-06)
+	* Refactor for new linting rules
+
 ## 8.0.4 (2020-01-02)
 	* Add styles for show article history link
 

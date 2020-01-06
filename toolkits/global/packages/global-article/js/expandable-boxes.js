@@ -42,6 +42,7 @@ function Boxes() {
 		});
 	}
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function titleFor(box) {
 		var caption = box.querySelector('figcaption:first-of-type');
 		return caption && caption.textContent ? caption.textContent : 'this box';
