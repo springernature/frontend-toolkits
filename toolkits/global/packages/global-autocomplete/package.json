@@ -1,0 +1,11 @@
+{
+  "name": "@springernature/global-autocomplete",
+  "version": "1.0.3",
+  "license": "MIT",
+  "description": "Autocomplete/suggest component",
+  "keywords": [],
+  "author": "Jon Stevens",
+  "peerDependencies": {
+    "@springernature/global-context": "^5.0.1"
+  }
+}

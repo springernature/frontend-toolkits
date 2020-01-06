@@ -1,0 +1,127 @@
+/**
+ * @springernature/global-banner
+ * A container with text and link
+ *
+ */
+
+.c-banner {
+	border-bottom: $banner--border;
+	background-color: $banner--background-color;
+	padding-bottom: $banner--padding-y;
+	font-family: $banner--font;
+	font-size: $banner--font-size;
+	margin: 0 auto;
+	position: relative;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: -1px;
+		width: 100vw;
+		border-bottom: $banner--border;
+	}
+
+	&:before {
+		background: $banner--background-color;
+		right: 100%;
+	}
+
+	&:after {
+		background-color: $banner--background-color;
+		left: 100%;
+	}
+}
+
+.c-banner--compact {
+	font-size: $banner--font-size-small;
+	padding-bottom: $banner--padding-y-compact;
+
+	.c-banner__item {
+		padding-top: $banner--padding-y-compact;
+	}
+}
+
+.c-banner--inverted {
+	background-color: $banner--background-color-inverted;
+	color: $banner--color-inverted;
+
+	&:before {
+		background-color: $banner--background-color-inverted;
+	}
+
+	&:after {
+		background-color: $banner--background-color-inverted;
+	}
+
+	.c-banner__link {
+		color: $banner--color-inverted;
+
+		&:hover,
+		&:visited {
+			color: $banner--color-inverted;
+		}
+	}
+}
+
+.c-banner--marketing {
+	background-color: $banner--background-color-marketing;
+	border-bottom: $banner--border-marketing;
+	color: $banner--color-marketing;
+
+	&:before {
+		background-color: $banner--background-color-marketing;
+		border-bottom: $banner--border-marketing;
+	}
+
+	&:after {
+		background-color: $banner--background-color-marketing;
+		border-bottom: $banner--border-marketing;
+	}
+
+	.c-banner__link {
+		color: $banner--color-marketing;
+
+		&:hover,
+		&:visited {
+			color: $banner--color-marketing;
+		}
+	}
+}
+
+.c-banner__container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.c-banner__container--center {
+	justify-content: center;
+}
+
+.c-banner__item {
+	flex: 0 1 auto;
+	padding-top: $banner--padding-y;
+	margin: 0;
+}
+
+.c-banner__link {
+	color: $banner--link-color;
+
+	&:visited,
+	&:hover {
+		color: $banner--link-color;
+	}
+}
+
+.c-banner__link--underline {
+	text-decoration: underline;
+
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@springernature/global-banner",
+  "version": "0.1.1",
+  "license": "MIT",
+  "description": "Represents a box with text",
+  "keywords": [],
+  "author": "Springer Nature",
+  "peerDependencies": {
+    "@springernature/global-context": "^9.2.1"
+  }
+}

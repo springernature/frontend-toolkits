@@ -1,0 +1,57 @@
+<form accept-charset="utf-8">
+	<!-- please consider https://github.com/springernature/frontend-playbook/blob/master/security/secure-markup.md#use-sane-form-defaults -->
+	<fieldset>
+		<legend>This form will record the names your fish:</legend>
+
+		<div class="c-input-group">
+			<label for="test-input-0" class="c-input-group__label">Email</label>
+			<input id="test-input-0" name="test-input-0" type="text" class="c-input-group__control" value="" required aria-required="true" maxlength="999">
+		</div>
+
+		<div class="c-input-row">
+			<div class="c-input-group c-input-row__item">
+				<label for="test-input-2" class="c-input-group__label">Name</label>
+				<input id="test-input-2" name="test-input-2" type="text" class="c-input-group__control" value="" maxlength="999">
+			</div>
+
+			<div class="c-input-group c-input-row__item">
+				<label for="test-input-3" class="c-input-group__label">Surname</label>
+				<input id="test-input-3" name="test-input-3" type="text" class="c-input-group__control" value="" maxlength="999">
+			</div>
+		</div>
+
+		<div class="c-input-group">
+			<label for="fish-select" class="c-input-group__label">Select input</label>
+			<select id="fish-select" class="c-input-group__control">
+				<option value="">--Please choose a fish--</option>
+				<option value="trout">Trout</option>
+				<option value="dogfish">Dogfish</option>
+				<option value="turbot">Turbot</option>
+				<option value="guppy">Guppy</option>
+				<option value="pike">Pike</option>
+				<option value="gurnard">Gurnard</option>
+			</select>
+		</div>
+
+		<div class="c-input-group">
+			<label for="test-input-4" class="c-input-group__label">Describe your fish</label>
+			<textarea rows="4" id="test-input-4" name="test-input-4" class="c-input-group__control c-input-group__control--textarea" value="" maxlength="999"></textarea>
+		</div>
+
+		<div class="c-input-group">
+			<label for="test-input-5" class="c-input-group__label c-input-group__label--check">Bottom feeder?</label>
+			<input id="test-input-5" name="test-input-5" type="checkbox" class=" c-input-group__control c-input-group__control--check" value="" required aria-required="true">
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Pick the type of water which your fish likes to live in: </legend>
+		<div class="c-input-group">
+			<label for="test-input-6" class="c-input-group__label c-input-group__label--radio">Fresh water</label>
+			<input id="test-input-6" name="water" type="radio" value="freshwater" checked class=" c-input-group__control c-input-group__control--radio" value="">
+			<label for="test-input-7" class="c-input-group__label c-input-group__label--radio">Salt water</label>
+			<input id="test-input-7" name="water" type="radio"  value="saltwater" class="c-input-group__control c-input-group__control--radio" value="">
+			<label for="test-input-8" class="c-input-group__label c-input-group__label--radio">Brackish water</label>
+			<input id="test-input-8" name="water" type="radio"  value="brackishwater" class="c-input-group__control c-input-group__control--radio" value="">
+		</div>
+	</fieldset>
+</form>

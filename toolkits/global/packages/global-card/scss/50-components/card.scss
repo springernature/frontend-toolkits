@@ -1,0 +1,81 @@
+// base styles
+// -----------
+
+.c-card {
+	display: flex;
+	background-color: $card--background;
+	flex-direction: column;
+	font-size: $card--font-size;
+	min-width: 0;
+	padding: $card--padding-x;
+	position: relative;
+}
+
+.c-card__image {
+	display: block;
+	margin-bottom: $card--padding;
+	flex: 0 1 auto;
+	width: 100%;
+
+	// Not direct child due to picture element usage
+	img {
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+.c-card__body {
+	padding: $card--padding;
+	flex: 1 1 auto;
+}
+
+.c-card__title {
+	font-size: $card--title-font-size;
+	font-weight: $card--title-font-weight;
+	margin-bottom: $card--spacing;
+}
+
+.c-card__summary {
+	line-height: 1.4;
+
+	> p {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.c-card__link {
+	@include u-faux-block-link;
+}
+
+// modifiers
+// ---------
+
+// --flush
+.c-card--flush {
+	.c-card__body {
+		padding: 0;
+	}
+}
+
+// --major
+.c-card--major {
+	font-size: $card--major-font-size;
+
+	.c-card__title {
+		font-size: $card--major-title-font-size;
+	}
+}
+
+// --dark
+.c-card--dark {
+	background-color: $card--dark-background;
+	color: $card--dark-color;
+
+	.c-card__title {
+		color: $card--dark-title-color;
+	}
+}
