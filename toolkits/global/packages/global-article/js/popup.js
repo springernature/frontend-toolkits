@@ -62,7 +62,8 @@ window.Component.Popup = (function (win, document_) {
 				this.content.classList.add(HIDE_PRINT_CLASS);
 			}
 
-			document_.body.append(this.content);
+			// eslint-disable-next-line unicorn/prefer-node-append
+			document_.body.appendChild(this.content);
 		},
 		bindEvents: function () {
 			var self = this;

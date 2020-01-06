@@ -86,8 +86,8 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		placeholderFor: function (node) {
 			var source = node.getAttribute('data-supp-info-image') || node.src;
 			var alt = node.alt || '';
-			// eslint-disable-next-line no-negated-condition
-			var separator = !source.includes('?') ? '?' : '&';
+			// eslint-disable-next-line unicorn/prefer-includes
+			var separator = source.indexOf('?') === -1 ? '?' : '&';
 			return [
 				'<picture>',
 				'<source type="image/webp" ' + DATA_SRCSET_ATTR + '="' + source + separator + 'as=webp">',
@@ -249,16 +249,20 @@ window.Component.ReadingCompanion = (function (win, document_) {
 	function insertReturnButton(reference, source) {
 		var button = reference.querySelector('.' + READING_COMPANION_CLASS + '__return');
 		if (button) {
-			button.remove();
+			// eslint-disable-next-line unicorn/prefer-node-remove
+			button.parentNode.removeChild(button);
 		}
 		button = document_.createElement('a');
 		button.href = '#' + source.id;
-		button.append(document_.createTextNode('Return to ref ' + source.textContent + ' in article'));
+		// eslint-disable-next-line unicorn/prefer-node-append
+		button.appendChild(document_.createTextNode('Return to ref ' + source.textContent + ' in article'));
 		button.className = READING_COMPANION_CLASS + '__return';
 		button.addEventListener('click', function () {
-			button.remove();
+			// eslint-disable-next-line unicorn/prefer-node-remove
+			button.parentNode.removeChild(button);
 		});
-		reference.append(button);
+		// eslint-disable-next-line unicorn/prefer-node-append
+		reference.appendChild(button);
 	}
 
 	function scrollIntoView(element, parent) {
@@ -444,7 +448,8 @@ window.Component.ReadingCompanion = (function (win, document_) {
 				container.setAttribute('aria-labelledby', 'tab-' + name);
 				insert(container, '<div class="' + READING_COMPANION_CLASS + '__scroll-pane">' + html + '</div>');
 			} else if (container) {
-				container.remove();
+				// eslint-disable-next-line unicorn/prefer-node-remove
+				container.parentNode.removeChild(container);
 			}
 
 			return (html && container) ? tab : false;
