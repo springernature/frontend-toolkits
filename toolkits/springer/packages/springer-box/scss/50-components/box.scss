@@ -2,9 +2,16 @@
 	background-color: $box--background-color;
 	border-radius: $box--border-radius;
 	box-shadow: $box--box-shadow;
-	border: $box--border;
+	border-top: $box--border;
+	border-right: $box--border;
+	border-bottom: $box--border;
+	border-left: $box--border;
 	line-height: $box--line-height;
 	padding: $box--padding;
+}
+
+.c-box--keyline {
+	border-bottom: $box--border-keyline;
 }
 
 .c-box__heading {
