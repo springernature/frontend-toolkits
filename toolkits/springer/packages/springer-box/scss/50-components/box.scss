@@ -10,8 +10,16 @@
 	padding: $box--padding;
 }
 
-.c-box--keyline {
-	border-bottom: $box--border-keyline;
+.c-box--error {
+	border-bottom: $box--border-error;
+}
+
+.c-box--warning {
+	border-bottom: $box--border-warning;
+}
+
+.c-box--success {
+	border-bottom: $box--border-success;
 }
 
 .c-box__heading {
