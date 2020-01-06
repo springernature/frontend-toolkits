@@ -40,6 +40,16 @@
     ],
     "__mocks__": [
       "js"
+    ],
+    "demo": [
+      "js",
+      "json",
+      "dust",
+      "html",
+      "hbs",
+      "scss",
+      "css",
+      "md"
     ]
   },
   "CSSDirectoryStructure": {
