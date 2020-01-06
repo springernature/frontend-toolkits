@@ -1,5 +1,9 @@
 # History
 
+## 9.0.1 (2020-01-06)
+	* BUG: Javascript errors in IE10 after linting fixes
+		* Revert use of `append`, `includes`, `remove`
+
 ## 9.0.0 (2020-01-06)
 	* Refactor for new linting rules
 

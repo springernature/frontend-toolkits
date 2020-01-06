@@ -41,7 +41,8 @@ function LoadDisqus() {
 
 		dsq.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
 
-		(document.querySelectorAll('head')[0] || document.querySelectorAll('body')[0]).append(dsq);
+		// eslint-disable-next-line unicorn/prefer-node-append
+		(document.querySelectorAll('head')[0] || document.querySelectorAll('body')[0]).appendChild(dsq);
 		disqusLoaded = true;
 	};
 
