@@ -1,0 +1,74 @@
+@import '../../../../bourbon-neat/core/neat';
+
+/// Creates collapsed grid object that consumes the gutters of its container,
+/// for use in nested layouts.
+///
+/// @group 30-mixins
+/// @alias grid-collapse
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-collapse.scss
+@mixin global-grid-collapse($args...) {
+	@include grid-collapse($args...);
+}
+
+/// Creates a grid column of requested size.
+///
+/// @group 30-mixins
+/// @alias grid-column
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-column.scss
+@mixin global-grid-column($args...) {
+	@include grid-column($args...);
+}
+
+/// Creates a grid container with clearfix.
+///
+/// @group 30-mixins
+/// @alias grid-container
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-container.scss
+@mixin global-grid-container($args...) {
+	@include grid-container($args...);
+}
+
+/// `grid-media` allows you to change your layout based on a media query.
+/// For example, an object can span 3 columns on small screens and 6 columns
+/// on large screens.
+///
+/// You can take this a step further and set different grid attributes like
+/// gutter size and total column count for each media query. So, for example,
+/// you can have a `1rem` gutter on small screens, and a `2rem` gutter on large
+/// screens.
+///
+/// @group 30-mixins
+/// @alias grid-media
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-media.scss
+@mixin global-grid-media($args...) {
+	@include grid-media($args...);
+}
+
+/// Push or pull a grid column by manipulating its left margin.
+///
+/// @group 30-mixins
+/// @alias grid-push
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-push.scss
+@mixin global-grid-push($args...) {
+	@include grid-push($args...);
+}
+
+/// Shift columns and reorder them within their container using relative
+/// positioning.
+///
+/// @group 30-mixins
+/// @alias grid-shift
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-shift.scss
+@mixin global-grid-shift($args...) {
+	@include grid-shift($args...);
+}
+
+/// Creates a series of guide lines using the `background-image` property on a
+/// grid container to visualise the columns and gutters of the grid.
+///
+/// @group 30-mixins
+/// @alias grid-visual
+/// @link https://github.com/thoughtbot/neat/blob/v2.0.0/core/neat/mixins/_grid-visual.scss
+@mixin global-grid-visual($args...) {
+	@include grid-visual($args...);
+}
