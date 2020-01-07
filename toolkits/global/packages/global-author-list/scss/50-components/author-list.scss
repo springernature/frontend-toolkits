@@ -1,0 +1,14 @@
+.c-author-list {
+	@include u-list-comma-separated;
+	font-size: $global-author-list--font-size;
+	color: $global-author-list--color;
+}
+
+.c-author-list--compact {
+	line-height: $global-author-list--compact-line-height;
+	font-size: $global-author-list--compact-font-size;
+}
+
+.c-author-list--truncated {
+	@include u-list-truncated;
+}

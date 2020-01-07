@@ -1,0 +1,35 @@
+.c-autocomplete {
+	margin: 10px auto 0;
+	width: 380px;
+	height: 50px;
+	font-size: 20px;
+	border: 1px solid #eee;
+	padding: 5px 10px 5px 0;
+	text-indent: 15px;
+}
+
+.c-results-container {
+	margin: auto;
+	width: 390px;
+	border: 1px solid #eee;
+	position: relative;
+	line-height: 30px;
+	border-top: none;
+	max-height: 300px;
+	overflow-y: scroll;
+	background: #fff;
+	overflow-x: hidden;
+
+	&__result {
+		width: 100%;
+		padding: 15px 0 5% 15px;
+		text-align: left;
+		cursor: pointer;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: #e7eff4;
+		}
+	}
+}

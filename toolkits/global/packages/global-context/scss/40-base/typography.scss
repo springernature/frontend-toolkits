@@ -1,0 +1,12 @@
+/**
+ * Typography
+ * Set base font size
+ */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: $context--font-size-base;
+}
