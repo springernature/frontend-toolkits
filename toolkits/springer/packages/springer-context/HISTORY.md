@@ -1,5 +1,8 @@
 # History
 
+## 12.4.0 (2020-01-06)
+    * Added colors utility 
+    
 ## 12.3.0 (2019-11-20)
     * Bumps global-context extends version to 9.2.0
 
