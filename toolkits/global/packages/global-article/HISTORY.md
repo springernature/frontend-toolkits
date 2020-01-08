@@ -1,5 +1,8 @@
 # History
 
+## 9.1.0 (2020-01-08)
+	* Allow call to action buttons to appear as sticky elements above the reading companion tabs
+
 ## 9.0.2 (2020-01-07)
 	* Fix spacing between successive `.c-article-info-details` elements
 
