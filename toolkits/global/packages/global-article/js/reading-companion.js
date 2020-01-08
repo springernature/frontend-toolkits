@@ -286,6 +286,7 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		var sectionsList = _container.querySelector('.' + READING_COMPANION_CLASS + '__sections-list');
 		var advert = _container.querySelector('.js-ad');
 		var tabBar = _container.querySelector('.' + READING_COMPANION_CLASS + '__tabs');
+		var ctaLink = _container.querySelector('.' + READING_COMPANION_CLASS + '__cta a');
 		var sections = null;
 
 		if (!sectionsList) {
@@ -347,6 +348,10 @@ window.Component.ReadingCompanion = (function (win, document_) {
 
 			if (tabBar) {
 				tabBar.style.maxWidth = _maxTabWidth + 'px';
+			}
+
+			if (ctaLink) {
+				ctaLink.style.maxWidth = _maxTabWidth + 'px';
 			}
 
 			reflowWidth();
@@ -437,6 +442,11 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		element.insertAdjacentHTML('afterbegin', html);
 	}
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
+	function insertBefore(element, html) {
+		element.insertAdjacentHTML('beforebegin', html);
+	}
+
 	function buildTabs() {
 		var tabs = ['sections', 'figures', 'references'].map(function (name) {
 			var container = document_.querySelector('.' + READING_COMPANION_CLASS + '__' + name);
@@ -457,11 +467,13 @@ window.Component.ReadingCompanion = (function (win, document_) {
 			return Boolean(tab);
 		});
 
+		var firstTabPanel = _container.querySelector('.' + READING_COMPANION_CLASS + '__panel');
+
 		var tabCount = tabs.length;
 		if (tabCount > 1) {
-			insert(_container, buildTabBar(tabs));
+			insertBefore(firstTabPanel, buildTabBar(tabs));
 		} else if (tabCount === 1) {
-			insert(_container, '<h3 class="' + READING_COMPANION_CLASS + '__heading">Sections</h3>');
+			insertBefore(firstTabPanel, '<h3 class="' + READING_COMPANION_CLASS + '__heading">Sections</h3>');
 		}
 		return tabCount;
 	}
