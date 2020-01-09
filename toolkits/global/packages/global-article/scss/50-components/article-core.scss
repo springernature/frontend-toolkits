@@ -1,0 +1,18 @@
+/**
+ * Article Core
+ * Article styles for all browsers
+ */
+
+.c-article-author-institutional-author,
+.c-article-author-information__list,
+.c-article-references,
+.c-article-author-affiliation__list,
+.c-article-author-authors-search,
+.c-article-supplementary__list,
+.c-article-further-reading__list,
+.c-article-footnote--listed,
+.c-article-references__nav,
+.c-article-change-list {
+	list-style: none;
+	padding: 0;
+}

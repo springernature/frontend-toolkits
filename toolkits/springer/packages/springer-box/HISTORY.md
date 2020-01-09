@@ -1,5 +1,9 @@
 # History
 
+## 2.3.0 (2020-01-06)
+    * Add status style and remove border shortcut
+    * Bumps peer dependency springer-context to 12.4.0
+    
 ## 2.2.0 (2019-11-20)
     * Bumps peer dependency springer-context to 12.3.0
     

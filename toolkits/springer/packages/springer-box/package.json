@@ -1,11 +1,11 @@
 {
   "name": "@springernature/springer-box",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "license": "MIT",
   "description": "Springer box component",
   "keywords": [],
   "author": "Springer Nature",
   "peerDependencies": {
-    "@springernature/springer-context": "12.3.0"
+    "@springernature/springer-context": "12.4.0"
   }
 }
