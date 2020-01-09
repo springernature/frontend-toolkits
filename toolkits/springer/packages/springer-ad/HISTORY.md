@@ -1,3 +1,6 @@
+## 1.1.1 (2020-01-09)
+	* Added margin-top to MPU
+	
 ## 1.1.0 (2020-01-09)
 	* Added background to MPU
 
