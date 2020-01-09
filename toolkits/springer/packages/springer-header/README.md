@@ -49,7 +49,7 @@ Example usage in an app in conjunction with the springer-dropdown:
 ```html
 <!-- ... -->
 <nav>
-    <ul class="c-header__menu" data-header-menu>
+    <ul class="c-header__menu" data-enhanced-menu>
         <li class="c-header__item">
             <a class="c-header__link" href="#">Menu item 1</a>
         </li>
@@ -62,7 +62,7 @@ Example usage in an app in conjunction with the springer-dropdown:
 ```
 
 ```javascript
-const headerMenu = document.querySelector('[data-header-menu]');
+const headerMenu = document.querySelector('[data-enhanced-menu]');
 
 if (!headerMenu) {
     return;
