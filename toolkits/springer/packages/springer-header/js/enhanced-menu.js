@@ -7,7 +7,7 @@ const createMenuDropdown = menu => {
 	const items = menu.querySelectorAll('li');
 	const links = makeArray(items).map(item => item.querySelector('a'));
 
-	const dropdownEl = createDropdown({
+	const dropdownElement = createDropdown({
 		BUTTON_TEXT: 'Menu',
 		LINKS: links,
 		DROPDOWN_OPTIONS: {
@@ -17,7 +17,7 @@ const createMenuDropdown = menu => {
 		}
 	});
 
-	menu.parentNode.insertBefore(dropdownEl, menu.nextSibling);
+	menu.parentNode.insertBefore(dropdownElement, menu.nextSibling);
 };
 
 const enhancedMenu = () => {
