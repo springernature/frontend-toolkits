@@ -2,20 +2,36 @@
  * Settings
  * Article component configuration
  */
-
-$article--link-color: color('blue');
-$article--link-border-color: color('steel');
-$article--link-focus-color: color('lemon');
 $article--box-color: color('soft-steel');
 $article--important-color: color('orange');
 $article--key-step-color: color('blue');
+$article--page-background-color: white;
+$article--section-title-background-color: greyscale(80);
+$article--subject-background-color: color('soft-steel');
+
 $article--citations-count-color-primary: color('blue');
 $article--citations-count-color-secondary: white;
 
+$article--cta-button-background-color: color('blue');
+$article--cta-button-background-hover-color: white;
+$article--cta-button-color: white;
+$article--cta-button-hover-color: color('blue');
+$article--cta-button-icon-color: str-slice(ie-hex-str(white), 4);
+$article--cta-button-icon-hover-color: str-slice(ie-hex-str(color('blue')), 4);
+$article--cta-button-border-color: color('blue');
+
+$article--link-color: color('blue');
+$article--link-icon-color: str-slice(ie-hex-str(color('blue')), 4);
+$article--link-border-color: color('steel');
+$article--link-focus-color: color('lemon');
+
+$article--cta-button-border-radius: 2px;
+$article--bibliographic-information-list-layout: (map-get($article--breakpoints, 'sml'), map-get($article--breakpoints, 'lrg'));
+
 $article--breakpoints: (
-	'sml': 'lap',
-	'med': 'portable',
-	'lrg': 'desk'
+	'sml': map-key-get($breakpoints, 'lap'),
+	'med': map-key-get($breakpoints, 'portable'),
+	'lrg': map-key-get($breakpoints, 'desk')
 );
 
 $article--font-sizes: (
@@ -39,5 +55,6 @@ $article--grey-palette: (
 	'grey-3': greyscale(25),
 	'grey-4': greyscale(30),
 	'grey-5': greyscale(45),
-	'grey-6': greyscale(70)
+	'grey-6': greyscale(70),
+	'grey-7': greyscale(80)
 );

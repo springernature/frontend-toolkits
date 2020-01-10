@@ -1,5 +1,8 @@
 # History
 
+## 0.3.0 (2020-01-10)
+	* House keeping: Move settings from oscar-sites-nature/article-bootstrap into nature-article.scss
+
 ## 0.2.0 (2019-10-15)
 	* Remove article spacing variables as we now get values from global
 
