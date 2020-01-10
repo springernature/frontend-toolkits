@@ -1,0 +1,13 @@
+/// The global grid settings
+///
+/// @group 10-settings
+$global-grid--settings: (
+	columns: 12,
+	gutter: 16px,
+	direction: ltr
+);
+
+/// Assign the settings in `$global-grid` to `$neat-grid`.
+///
+/// @group 10-settings
+$neat-grid: $global-grid--settings;

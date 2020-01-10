@@ -133,6 +133,10 @@
 	}
 }
 
+.c-article-info-details + .c-article-info-details {
+	margin-top: 0;
+}
+
 .c-article-aop {
 	font-size: map-get($article--font-sizes, 'font-size-2');
 	color: map-get($article--grey-palette, 'grey-3');

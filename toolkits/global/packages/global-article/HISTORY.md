@@ -1,5 +1,15 @@
 # History
 
+## 9.1.0 (2020-01-08)
+	* Allow call to action buttons to appear as sticky elements above the reading companion tabs
+
+## 9.0.2 (2020-01-07)
+	* Fix spacing between successive `.c-article-info-details` elements
+
+## 9.0.1 (2020-01-06)
+	* BUG: Javascript errors in IE10 after linting fixes
+		* Revert use of `append`, `includes`, `remove`
+
 ## 9.0.0 (2020-01-06)
 	* Refactor for new linting rules
 

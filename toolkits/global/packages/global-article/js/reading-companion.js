@@ -86,8 +86,8 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		placeholderFor: function (node) {
 			var source = node.getAttribute('data-supp-info-image') || node.src;
 			var alt = node.alt || '';
-			// eslint-disable-next-line no-negated-condition
-			var separator = !source.includes('?') ? '?' : '&';
+			// eslint-disable-next-line unicorn/prefer-includes
+			var separator = source.indexOf('?') === -1 ? '?' : '&';
 			return [
 				'<picture>',
 				'<source type="image/webp" ' + DATA_SRCSET_ATTR + '="' + source + separator + 'as=webp">',
@@ -249,16 +249,20 @@ window.Component.ReadingCompanion = (function (win, document_) {
 	function insertReturnButton(reference, source) {
 		var button = reference.querySelector('.' + READING_COMPANION_CLASS + '__return');
 		if (button) {
-			button.remove();
+			// eslint-disable-next-line unicorn/prefer-node-remove
+			button.parentNode.removeChild(button);
 		}
 		button = document_.createElement('a');
 		button.href = '#' + source.id;
-		button.append(document_.createTextNode('Return to ref ' + source.textContent + ' in article'));
+		// eslint-disable-next-line unicorn/prefer-node-append
+		button.appendChild(document_.createTextNode('Return to ref ' + source.textContent + ' in article'));
 		button.className = READING_COMPANION_CLASS + '__return';
 		button.addEventListener('click', function () {
-			button.remove();
+			// eslint-disable-next-line unicorn/prefer-node-remove
+			button.parentNode.removeChild(button);
 		});
-		reference.append(button);
+		// eslint-disable-next-line unicorn/prefer-node-append
+		reference.appendChild(button);
 	}
 
 	function scrollIntoView(element, parent) {
@@ -282,6 +286,7 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		var sectionsList = _container.querySelector('.' + READING_COMPANION_CLASS + '__sections-list');
 		var advert = _container.querySelector('.js-ad');
 		var tabBar = _container.querySelector('.' + READING_COMPANION_CLASS + '__tabs');
+		var ctaLink = _container.querySelector('.' + READING_COMPANION_CLASS + '__cta a');
 		var sections = null;
 
 		if (!sectionsList) {
@@ -343,6 +348,10 @@ window.Component.ReadingCompanion = (function (win, document_) {
 
 			if (tabBar) {
 				tabBar.style.maxWidth = _maxTabWidth + 'px';
+			}
+
+			if (ctaLink) {
+				ctaLink.style.maxWidth = _maxTabWidth + 'px';
 			}
 
 			reflowWidth();
@@ -433,6 +442,11 @@ window.Component.ReadingCompanion = (function (win, document_) {
 		element.insertAdjacentHTML('afterbegin', html);
 	}
 
+	// eslint-disable-next-line unicorn/consistent-function-scoping
+	function insertBefore(element, html) {
+		element.insertAdjacentHTML('beforebegin', html);
+	}
+
 	function buildTabs() {
 		var tabs = ['sections', 'figures', 'references'].map(function (name) {
 			var container = document_.querySelector('.' + READING_COMPANION_CLASS + '__' + name);
@@ -444,7 +458,8 @@ window.Component.ReadingCompanion = (function (win, document_) {
 				container.setAttribute('aria-labelledby', 'tab-' + name);
 				insert(container, '<div class="' + READING_COMPANION_CLASS + '__scroll-pane">' + html + '</div>');
 			} else if (container) {
-				container.remove();
+				// eslint-disable-next-line unicorn/prefer-node-remove
+				container.parentNode.removeChild(container);
 			}
 
 			return (html && container) ? tab : false;
@@ -452,11 +467,13 @@ window.Component.ReadingCompanion = (function (win, document_) {
 			return Boolean(tab);
 		});
 
+		var firstTabPanel = _container.querySelector('.' + READING_COMPANION_CLASS + '__panel');
+
 		var tabCount = tabs.length;
 		if (tabCount > 1) {
-			insert(_container, buildTabBar(tabs));
+			insertBefore(firstTabPanel, buildTabBar(tabs));
 		} else if (tabCount === 1) {
-			insert(_container, '<h3 class="' + READING_COMPANION_CLASS + '__heading">Sections</h3>');
+			insertBefore(firstTabPanel, '<h3 class="' + READING_COMPANION_CLASS + '__heading">Sections</h3>');
 		}
 		return tabCount;
 	}

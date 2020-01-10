@@ -33,7 +33,8 @@ window.Component.AuthorList = (function ($) {
 			var numberAuthors = $children.length;
 
 			var exceedsLimit = function (limit) {
-				return numberAuthors > limit && !(numberAuthors === limit + 1 && $children.get(limit).className.includes('author-group'));
+				// eslint-disable-next-line unicorn/prefer-includes
+				return numberAuthors > limit && !(numberAuthors === limit + 1 && $children.get(limit).className.indexOf('author-group') !== -1);
 			};
 
 			var articleTitle = function () {
@@ -112,7 +113,8 @@ window.Component.AuthorList = (function ($) {
 						affiliations.push(affiliationAddress.textContent);
 					}
 
-					if (presentID !== null && presentID.includes('n')) {
+					// eslint-disable-next-line unicorn/prefer-includes
+					if (presentID !== null && presentID.indexOf('n') > -1) {
 						var presentAddress = authorInfo.querySelector('.js-present-address');
 						// eslint-disable-next-line no-negated-condition
 						if (presentAddress !== null) {
