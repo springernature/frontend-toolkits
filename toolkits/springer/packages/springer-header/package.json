@@ -5,8 +5,7 @@
   "description": "Publisher level header",
   "keywords": [],
   "author": "Springer Nature",
-  "dependencies": {
-    "@springernature/global-context": "~2.3.0",
-    "@springernature/springer-dropdown": "~1.2.2"
+  "peerDependencies": {
+    "@springernature/springer-context": "~12.4.0"
   }
 }
