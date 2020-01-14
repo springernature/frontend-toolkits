@@ -5,5 +5,8 @@
   "description": "Springer branding for global-banner",
   "keywords": [],
   "author": "Springernature",
-  "extendsPackage": "global-banner@0.1.1"
+  "extendsPackage": "global-banner@0.1.1",
+  "peerDependencies": {
+    "@springernature/springer-context": "^12.4.0"
+  }
 }
