@@ -7,6 +7,14 @@
 	@include interface-link;
 }
 
+.c-list-group--xxs .c-list-group__item {
+	padding: $list-group--padding-xxs;
+}
+
+.c-list-group--xs .c-list-group__item {
+	padding: $list-group--padding-xs;
+}
+
 .c-list-group--sm .c-list-group__item {
 	padding: $list-group--padding-sm;
 }
