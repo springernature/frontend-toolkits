@@ -1,5 +1,8 @@
 # History
 
+## 12.5.0 (2020-01-14)
+    * Added favicons
+
 ## 12.4.0 (2020-01-06)
     * Added colors utility 
     
