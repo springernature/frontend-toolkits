@@ -48,12 +48,12 @@ Favicon image files are provided in the [img/favicons](img/favicons) folder, and
     "short_name": "",
     "icons": [
         {
-            "src": "/path-to-your-app-assets/images/favicons/nature/android-chrome-192x192.png",
+            "src": "/path-to-your-app-assets/images/favicons/springer-or-bmc/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/path-to-your-app-assets/static/images/favicons/nature/android-chrome-512x512.png",
+            "src": "/path-to-your-app-assets/static/images/favicons/springer-or-bmc/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
@@ -81,6 +81,6 @@ Favicon image files are provided in the [img/favicons](img/favicons) folder, and
 
 ## License
 
-[MIT License][info-license] &copy; 2018, Springer Nature
+[MIT License][info-license] &copy; 2020, Springer Nature
 
 [info-license]: https://github.com/springernature/frontend-springer-toolkit/blob/master/LICENCE
