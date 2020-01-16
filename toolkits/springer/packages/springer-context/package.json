@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springer-context",
-  "version": "13.0.0",
+  "version": "13.0.1",
   "license": "MIT",
   "description": "Bootstrapping for all Springer components and products",
   "keywords": [
@@ -12,7 +12,7 @@
     "js"
   ],
   "author": "Springer Nature",
-  "extendsPackage": "global-context@9.2.1",
+  "extendsPackage": "global-context@10.0.0",
   "peerDependencies": {
     "rfs": "^8.0.4"
   }
