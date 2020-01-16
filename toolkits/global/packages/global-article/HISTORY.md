@@ -1,5 +1,8 @@
 # History
 
+## 9.2.1 (2020-01-16)
+	* Fix inline mathjax equations displaying outside the container
+
 ## 9.2.0 (2020-01-15)
 	* Adjust font size within author pop up
 	
