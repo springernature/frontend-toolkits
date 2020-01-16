@@ -1,5 +1,8 @@
 # History
 
+## 9.2.0 (2020-01-15)
+	* Adjust font size within author pop up
+	
 ## 9.1.0 (2020-01-08)
 	* Allow call to action buttons to appear as sticky elements above the reading companion tabs
 
