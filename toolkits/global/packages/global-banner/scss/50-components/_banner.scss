@@ -7,7 +7,7 @@
 .c-banner {
 	border-bottom: $banner--border;
 	background-color: $banner--background-color;
-	padding-bottom: $banner--padding-y;
+	padding: $banner--padding-y $banner--padding-x;
 	font-family: $banner--font;
 	font-size: $banner--font-size;
 	margin: 0 auto;
@@ -44,50 +44,55 @@
 }
 
 .c-banner--inverted {
-	background-color: $banner--background-color-inverted;
-	color: $banner--color-inverted;
+	background-color: $banner--contrast-background-color;
+	color: $banner--contrast-color;
 
 	&:before {
-		background-color: $banner--background-color-inverted;
+		background-color: $banner--contrast-background-color;
 	}
 
 	&:after {
-		background-color: $banner--background-color-inverted;
+		background-color: $banner--contrast-background-color;
 	}
 
 	.c-banner__link {
-		color: $banner--color-inverted;
+		color: $banner--contrast-color;
 
 		&:hover,
 		&:visited {
-			color: $banner--color-inverted;
+			color: $banner--contrast-color;
 		}
 	}
 }
 
 .c-banner--marketing {
-	background-color: $banner--background-color-marketing;
-	border-bottom: $banner--border-marketing;
-	color: $banner--color-marketing;
+	background-color: $banner--marketing-background-color;
+	border-bottom: $banner--marketing-border;
+	color: $banner--marketing-color;
 
 	&:before {
-		background-color: $banner--background-color-marketing;
-		border-bottom: $banner--border-marketing;
+		background-color: $banner--marketing-background-color;
+		border-bottom: $banner--marketing-border;
 	}
 
 	&:after {
-		background-color: $banner--background-color-marketing;
-		border-bottom: $banner--border-marketing;
+		background-color: $banner--marketing-background-color;
+		border-bottom: $banner--marketing-border;
 	}
 
 	.c-banner__link {
-		color: $banner--color-marketing;
+		color: $banner--marketing-color;
 
 		&:hover,
 		&:visited {
-			color: $banner--color-marketing;
+			color: $banner--marketing-color;
 		}
 	}
+}
+
+.c-banner--flush {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .c-banner__container {
@@ -103,7 +108,6 @@
 
 .c-banner__item {
 	flex: 0 1 auto;
-	padding-top: $banner--padding-y;
 	margin: 0;
 }
 
