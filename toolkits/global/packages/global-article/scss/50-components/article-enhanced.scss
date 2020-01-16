@@ -1837,6 +1837,12 @@
 	}
 }
 
+.mathjax-tex .MathJax {
+	display: inline-block;
+	overflow: auto;
+	max-width: 100%;
+}
+
 .c-article-equation__number {
 	min-width: 35px;
 }
