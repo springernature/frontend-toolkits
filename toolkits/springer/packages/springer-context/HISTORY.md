@@ -1,5 +1,10 @@
 # History
 
+## 13.0.0 (2020-01-16)
+    * Removed springer-floats
+    * Removed colors from springer-context utilities
+    * Bumps global-context extends version to 10.0.0
+
 ## 12.5.0 (2020-01-14)
     * Added favicons
 
