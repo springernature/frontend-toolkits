@@ -1,5 +1,8 @@
 # History
 
+## 0.3.2 (2020-01-17)
+    * Change function call get-spacing to spacing
+
 ## 0.3.1 (2020-01-17)
     * Bump global-banner dependency version
 

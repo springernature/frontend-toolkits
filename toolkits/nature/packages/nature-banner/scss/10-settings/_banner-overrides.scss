@@ -3,14 +3,14 @@
  * Brand overrides for banner
  */
 
-$banner--padding-y: get-spacing(10);
-$banner--padding-x: get-spacing(20);
+$banner--padding-y: spacing(10);
+$banner--padding-x: spacing(20);
 $banner--border: 0;
 $banner--font-size: 1.6rem;
 $banner--font-size-small: 1.4rem;
 $banner--link-color: greyscale(25);
-$banner--compact-padding-y: get-spacing(4);
-$banner--compact-padding-x: get-spacing(4);
+$banner--compact-padding-y: spacing(4);
+$banner--compact-padding-x: spacing(4);
 $banner--contrast-background-color: greyscale(5);
 $banner--marketing-background-color: color('blue');
 $banner--marketing-border: 0;
