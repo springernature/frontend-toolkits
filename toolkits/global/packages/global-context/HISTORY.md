@@ -1,5 +1,8 @@
 # History
 
+## 10.0.0 (2020-01-16)
+    * Renamed u-open-access-color to u-color-open-access
+    
 ## 9.2.1 (2019-11-21)
     * Use for-of instead of for loop in makeArray 
 

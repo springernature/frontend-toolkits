@@ -58,6 +58,7 @@
 	&__author-list {
 		list-style: none;
 		font-family: $font-family-serif;
+		font-size: map-get($article--font-sizes, 'font-size-3');
 		padding: 0;
 		margin-top: 0;
 		clear: both;
@@ -1834,6 +1835,12 @@
 			padding-left: 16px;
 		}
 	}
+}
+
+.mathjax-tex .MathJax {
+	display: inline-block;
+	overflow: auto;
+	max-width: 100%;
 }
 
 .c-article-equation__number {

@@ -1,5 +1,16 @@
 # History
 
+## 13.0.1 (2020-01-16)
+    * Bumps global-context extends version to 10.0.0
+
+## 13.0.0 (2020-01-16)
+    * Removed springer-floats
+    * Rename color to springer-color to avoid clashing with global version 
+    * Bumps global-context extends version to 9.2.1
+
+## 12.5.0 (2020-01-14)
+    * Added favicons
+
 ## 12.4.0 (2020-01-06)
     * Added colors utility 
     
