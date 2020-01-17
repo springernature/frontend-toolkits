@@ -1,5 +1,11 @@
 # History
 
+## 0.2.0 (2019-01-15)
+    * Removes pseudo elements and dependency on overflow
+    * Adds horizontal padding to the banner and --flush modifier
+    * Renames variables to group by modifier
+    * Updates documentation
+
 ## 0.1.1 (2019-11-25)
     * Add global-context to peer dependencies
 
