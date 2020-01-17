@@ -1,5 +1,8 @@
 # History
 
+## 0.3.0 (2019-01-17)
+    * Rename inverted class to contrast
+
 ## 0.2.0 (2019-01-15)
     * Removes pseudo elements and dependency on overflow
     * Adds horizontal padding to the banner and --flush modifier
