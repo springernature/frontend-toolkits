@@ -1,9 +1,12 @@
 # History
 
-## 0.3.0 (2019-01-17)
+## 0.3.1 (2020-01-17)
+    * Fix variable reference to padding-y-compact
+
+## 0.3.0 (2020-01-17)
     * Rename inverted class to contrast
 
-## 0.2.0 (2019-01-15)
+## 0.2.0 (2020-01-15)
     * Removes pseudo elements and dependency on overflow
     * Adds horizontal padding to the banner and --flush modifier
     * Renames variables to group by modifier
