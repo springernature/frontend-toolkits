@@ -1,0 +1,15 @@
+/**
+ * Settings
+ * Brand overrides for global-banner
+ */
+
+$banner--padding-y: get-spacing('sm');
+$banner--padding-y-compact: get-spacing('xxs');
+$banner--font: $font-family-sans;
+$banner--font-size: 1.6rem;
+$banner--font-size-small: 1.4rem;
+$banner--link-color: color('action-base');
+$banner--background-color: color('action-background-light');;
+$banner--border: 1px solid color('corporate-light');
+
+
