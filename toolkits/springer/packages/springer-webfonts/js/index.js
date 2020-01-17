@@ -3,7 +3,7 @@ import FontFaceObserver from 'fontfaceobserver';
 /**
  * 1. No need to throw this.
  *	  Access to browser storage can be blocked in the browser settings and that is a valid user choice.
- *	  The try catch is required because sessionStorage will still be defined and JavaScript will error.
+ *	  The try catch is required because sessionStorage will still be defined and JavaScript will error but we want it to fail silently.
  */
 
 function loadFonts(config) {
