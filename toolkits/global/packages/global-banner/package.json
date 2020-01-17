@@ -6,6 +6,6 @@
   "keywords": [],
   "author": "Springer Nature",
   "peerDependencies": {
-    "@springernature/global-context": "^9.2.1"
+    "@springernature/global-context": "^10.0.0"
   }
 }
