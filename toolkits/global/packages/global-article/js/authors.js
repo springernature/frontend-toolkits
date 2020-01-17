@@ -96,7 +96,6 @@ window.Component.AuthorList = (function ($) {
 				var hrefs = [];
 				var notes = [];
 				var affiliations = [];
-				var presentAddresses = [];
 
 				$item.find('sup').find('a').each(function () {
 					var $element = $(this);
@@ -106,26 +105,27 @@ window.Component.AuthorList = (function ($) {
 				});
 				hrefs.forEach(function (href) {
 					var authorInfo = document.querySelector(href);
-					var affiliationAddress = authorInfo.querySelector(AFFILIATIONS_ADDRESS);
-					var presentID = authorInfo.getAttribute('id');
+					if (authorInfo) {
+						var affiliationAddress = authorInfo.querySelector(AFFILIATIONS_ADDRESS);
+						var presentID = authorInfo.getAttribute('id');
 
-					if (affiliationAddress !== null) {
-						affiliations.push(affiliationAddress.textContent);
-					}
+						if (affiliationAddress !== null) {
+							affiliations.push(affiliationAddress.textContent);
+						}
 
-					// eslint-disable-next-line unicorn/prefer-includes
-					if (presentID !== null && presentID.indexOf('n') > -1) {
-						var presentAddress = authorInfo.querySelector('.js-present-address');
-						// eslint-disable-next-line no-negated-condition
-						if (presentAddress !== null) {
-							notes.push(presentAddress.textContent.replace(/^\s*present\s+address:?\s*/i, ''));
-						} else {
-							notes.push(authorInfo.textContent);
+						// eslint-disable-next-line unicorn/prefer-includes
+						if (presentID !== null && presentID.indexOf('n') > -1) {
+							var presentAddress = authorInfo.querySelector('.js-present-address');
+							if (presentAddress) {
+								notes.push(presentAddress.textContent);
+							} else {
+								notes.push(authorInfo.textContent);
+							}
 						}
 					}
 				});
 
-				affiliations = deduplicatePresentAddresses(affiliations.concat(notes), presentAddresses); // eslint-disable-line no-use-before-define
+				affiliations = notes.concat(affiliations);
 
 				if ($correspLink.length > 0) {
 					affiliations.push('<a href="' + $correspLink.prop('href') + '" class="' + AUTHOR_LINK_CLASS + '" rel="nofollow">Contact ' + $link.html() + '</a>');
@@ -192,21 +192,6 @@ window.Component.AuthorList = (function ($) {
 				mainColSelector: '.c-page-layout__main, div.main-column'
 			});
 			popup.toggle(event);
-		};
-
-		var deduplicatePresentAddresses = function (affiliations, presentAddresses) {
-			var n = affiliations.length;
-			var m;
-			while (n--) {
-				m = presentAddresses.length;
-				while (m--) {
-					if (presentAddresses[m] === affiliations[n]) {
-						presentAddresses.splice(m, 1);
-						affiliations.splice(n, 1);
-					}
-				}
-			}
-			return affiliations;
 		};
 
 		var toggleAuthors = function () {
