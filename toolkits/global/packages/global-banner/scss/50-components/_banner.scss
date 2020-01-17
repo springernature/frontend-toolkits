@@ -36,10 +36,10 @@
 
 .c-banner--compact {
 	font-size: $banner--font-size-small;
-	padding-bottom: $banner--padding-y-compact;
+	padding-bottom: $banner--compact-padding-y;
 
 	.c-banner__item {
-		padding-top: $banner--padding-y-compact;
+		padding-top: $banner--compact-padding-y;
 	}
 }
 
