@@ -1,11 +1,14 @@
 # History
 
+## 9.3.0 (2020-01-17)
+	* Slightly simplify author JS to go with updated article XSLT
+
 ## 9.2.1 (2020-01-16)
 	* Fix inline mathjax equations displaying outside the container
 
 ## 9.2.0 (2020-01-15)
 	* Adjust font size within author pop up
-	
+
 ## 9.1.0 (2020-01-08)
 	* Allow call to action buttons to appear as sticky elements above the reading companion tabs
 
