@@ -1,3 +1,6 @@
+## 0.0.5 (2019-01-17)
+	* Stops throwing errors related to storage
+
 ## 0.0.4 (2019-06-20)
 	* Reverts change to make font face observer a peer dependency
 

@@ -1,5 +1,11 @@
 import FontFaceObserver from 'fontfaceobserver';
 
+/**
+ * 1. No need to throw this.
+ *	  Access to browser storage can be blocked in the browser settings and that is a valid user choice.
+ *	  The try catch is required because sessionStorage will still be defined and JavaScript will error.
+ */
+
 function loadFonts(config) {
 	const fonts = [].concat.apply([], config.map(font => {
 		return font.weights.map(weight => {
@@ -18,7 +24,7 @@ function loadFonts(config) {
 			try {
 				sessionStorage.fontsLoaded = true;
 			} catch (error) {
-				throw new Error('webfont.js: cannot set fontsloaded in session storage');
+				// -- See note 1
 			}
 		})
 		.catch(error => {
@@ -32,7 +38,7 @@ function init(config) {
 	try {
 		fontsStored = sessionStorage.getItem('fontsLoaded');
 	} catch (error) {
-		throw new Error('webfont.js: cannot get fontsloaded from session storage');
+		// -- See note 1
 	}
 
 	if (fontsStored) {
