@@ -1,5 +1,8 @@
 # History
 
+## 0.3.1 (2020-01-17)
+    * Bump global-banner dependency version
+
 ## 0.3.0 (2020-01-17)
     * Rename file to banner-overrides to allow brand settings to be imported separately
 
