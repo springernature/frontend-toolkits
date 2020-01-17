@@ -1,5 +1,8 @@
 # History
 
+## 0.2.0 (2019-01-17)
+    * Update variable names to match global-banner
+
 ## 0.1.3 (2019-12-13)
     * Rename file to use underscore to align with global-banner
 

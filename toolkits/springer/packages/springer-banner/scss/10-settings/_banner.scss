@@ -3,20 +3,6 @@
  * Brand overrides for global-banner
  */
 
-$banner--padding-y: 12px;
-$banner--padding-y-compact: 4px;
-$banner--font: $font-family-sans;
-$banner--font-size: 16px;
-$banner--font-size-small: 14px;
-$banner--background-color-inverted: black;
-$banner--color-inverted: white;
-$banner--background-color-marketing: ghostwhite;
-$banner--border-marketing: 1px solid lightblue;
-$banner--color-marketing: black;
-
-// Overrides
 $banner--link-color: color('action-base');
-$banner--background-color: color('action-background-light');;
+$banner--background-color: color('action-background-light');
 $banner--border: 1px solid color('corporate-light');
-
-
