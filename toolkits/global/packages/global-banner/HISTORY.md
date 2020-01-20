@@ -1,5 +1,8 @@
 # History
 
+## 0.3.2 (2020-01-20)
+    * Fix padding on compact modifier
+
 ## 0.3.1 (2020-01-17)
     * Fix variable reference to padding-y-compact
 
