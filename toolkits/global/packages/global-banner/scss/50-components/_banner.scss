@@ -36,11 +36,7 @@
 
 .c-banner--compact {
 	font-size: $banner--font-size-small;
-	padding-bottom: $banner--compact-padding-y;
-
-	.c-banner__item {
-		padding-top: $banner--compact-padding-y;
-	}
+	padding: $banner--compact-padding-y $banner--compact-padding-x;
 }
 
 .c-banner--contrast {
