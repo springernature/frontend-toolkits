@@ -12,26 +12,6 @@
 	font-size: $banner--font-size;
 	margin: 0 auto;
 	position: relative;
-
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: -1px;
-		width: 100vw;
-		border-bottom: $banner--border;
-	}
-
-	&:before {
-		background: $banner--background-color;
-		right: 100%;
-	}
-
-	&:after {
-		background-color: $banner--background-color;
-		left: 100%;
-	}
 }
 
 .c-banner--compact {
@@ -42,14 +22,6 @@
 .c-banner--contrast {
 	background-color: $banner--contrast-background-color;
 	color: $banner--contrast-color;
-
-	&:before {
-		background-color: $banner--contrast-background-color;
-	}
-
-	&:after {
-		background-color: $banner--contrast-background-color;
-	}
 
 	.c-banner__link {
 		color: $banner--contrast-color;
@@ -65,16 +37,6 @@
 	background-color: $banner--marketing-background-color;
 	border-bottom: $banner--marketing-border;
 	color: $banner--marketing-color;
-
-	&:before {
-		background-color: $banner--marketing-background-color;
-		border-bottom: $banner--marketing-border;
-	}
-
-	&:after {
-		background-color: $banner--marketing-background-color;
-		border-bottom: $banner--marketing-border;
-	}
 
 	.c-banner__link {
 		color: $banner--marketing-color;

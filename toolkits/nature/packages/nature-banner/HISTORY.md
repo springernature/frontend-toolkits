@@ -1,5 +1,8 @@
 # History
 
+## 0.3.4 (2020-01-21)
+    * Bump global-banner dependency version
+
 ## 0.3.3 (2020-01-21)
     * Bump global-banner dependency version
  

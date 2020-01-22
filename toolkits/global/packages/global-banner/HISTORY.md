@@ -1,5 +1,8 @@
 # History
 
+## 0.3.3 (2020-01-21)
+    * Fully remove pseudo elements
+
 ## 0.3.2 (2020-01-20)
     * Fix padding on compact modifier
 
