@@ -1,5 +1,8 @@
 # History
 
+## 0.4.0 (2020-01-22)
+	* Rename file to article-overrides to allow brand settings to be imported separately
+
 ## 0.3.0 (2020-01-10)
 	* House keeping: Move settings from oscar-sites-nature/article-bootstrap into nature-article.scss
 
