@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2020-01-23)
+    * Major release
+
 ## 0.3.3 (2020-01-21)
     * Fully remove pseudo elements
 
