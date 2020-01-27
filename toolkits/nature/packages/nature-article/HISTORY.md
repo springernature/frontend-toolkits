@@ -1,5 +1,8 @@
 # History
 
+## 0.5.0 (2020-01-27)
+	* Update the extends package version of global article from 7.2.0 to 9.3.0
+
 ## 0.4.0 (2020-01-23)
 	* Renames 10-settings/article.scss to article-overrides.scss to allow brand settings to be imported separately  
 
