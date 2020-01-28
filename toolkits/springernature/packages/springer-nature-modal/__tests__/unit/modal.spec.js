@@ -25,12 +25,6 @@ describe('Modal', () => {
 		document.body.innerHTML = '';
 	});
 
-	test('should be log an error to console ', () => {
-		const modalEl = document.querySelector('.c-modal');
-
-		expect(modalEl.classList.contains('js-hide')).toBe(true);
-	});
-
 	test('should be hidden initially', () => {
 		const modalEl = document.querySelector('.c-modal');
 
@@ -96,80 +90,5 @@ describe('Modal', () => {
 			});
 		});
 
-	});
-
-	xdescribe('When the ESC key is pressed', () => {
-		let modalEl;
-		let trigger;
-
-		const ESCAPE_KEY_CODE = 27;
-
-		// const event = new KeyboardEvent('keydown', {'keyCode': ESCAPE_KEY_CODE});
-
-		const event = document.createEvent('KeyboardEvent');
-		const initMethod = typeof event.initKeyboardEvent !== 'undefined' ? 'initKeyboardEvent' : 'initKeyEvent';
-		event[initMethod](
-			'keydown', // event type : keydown, keyup, keypress
-			true, // bubbles
-			true, // cancelable
-			window, // viewArg: should be window
-			false, // ctrlKeyArg
-			false, // altKeyArg
-			false, // shiftKeyArg
-			false, // metaKeyArg
-			ESCAPE_KEY_CODE, // keyCodeArg : unsigned long the virtual key code, else 0
-			0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
-		);
-
-		beforeEach(() => {
-			modalEl = document.querySelector('.c-modal');
-			trigger = document.querySelector('.modal1-trigger');
-			trigger.click(); // Ensure modal is open
-
-			// modalEl.dispatchEvent(event);
-		});
-
-		test('and the modal is already open, it should hide the modal', () => {
-			modalEl.dispatchEvent(event); // Trigger the pressing of the escape key
-
-			expect(modalEl.classList.contains('js-hide')).toBe(true);
-		});
-	});
-
-	xdescribe('When the Tab key is pressed in a way that would take focus away from the modal', () => {
-		let modalEl;
-		let trigger;
-
-		const TAB_KEY_CODE = 9;
-
-		// const event = new KeyboardEvent('keydown', {'keyCode': ESCAPE_KEY_CODE});
-
-		const event = document.createEvent('KeyboardEvent');
-		const initMethod = typeof event.initKeyboardEvent !== 'undefined' ? 'initKeyboardEvent' : 'initKeyEvent';
-		event[initMethod](
-			'keydown', // event type : keydown, keyup, keypress
-			true, // bubbles
-			true, // cancelable
-			window, // viewArg: should be window
-			false, // ctrlKeyArg
-			false, // altKeyArg
-			false, // shiftKeyArg
-			false, // metaKeyArg
-			TAB_KEY_CODE, // keyCodeArg : unsigned long the virtual key code, else 0
-			0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
-		);
-
-		beforeEach(() => {
-			modalEl = document.querySelector('.c-modal');
-			trigger = document.querySelector('.modal1-trigger');
-			trigger.click(); // Ensure modal is open
-			modalEl.querySelector('[data-component="modal-close"]').focus(); // Ensure the last focusable element is focused
-		});
-
-		test('should retain focus inside the modal', () => {
-			modalEl.dispatchEvent(event); // Trigger the pressing of the escape key
-
-			expect(document.activeElement).toBe(modalEl);
-		});
 	});
 });
