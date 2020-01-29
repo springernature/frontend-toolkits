@@ -6,7 +6,7 @@ class Modal {
 		}
 		this.modal = modalElement;
 		this.modalId = this.modal.getAttribute('id');
-		this.trigger = document.querySelector(`[data-modal-for='${this.modalId}']`);
+		this.triggers = Array.from(document.querySelectorAll(`[data-modal-for='${this.modalId}']`));
 		this.closeButtons = document.querySelectorAll(`#${this.modalId} [data-component-modal-close]`);
 		this.isMouseMove = false;
 		this.preModalFocussedElement = null;
@@ -17,10 +17,12 @@ class Modal {
 	}
 
 	_registerEvents() {
-		if (this.trigger) {
-			this.trigger.addEventListener('click', event => {
-				event.preventDefault();
-				this.toggleModal();
+		if (this.triggers.length > 0) {
+			this.triggers.forEach(trigger => {
+				trigger.addEventListener('click', event => {
+					event.preventDefault();
+					this.toggleModal();
+				});
 			});
 		}
 		if (this.closeButtons.length > 0) {

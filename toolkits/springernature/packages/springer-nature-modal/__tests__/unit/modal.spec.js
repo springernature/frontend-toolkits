@@ -2,6 +2,7 @@ import Modal from '../../js/modal';
 
 describe('Modal', () => {
 	const html = `<a class="modal1-trigger" data-modal-for="modal1" href="#">Modal trigger link</a>
+	<a class="modal1-trigger2" data-modal-for="modal1" href="#">Another trigger link</a>
 		<div data-component-modal id="modal1" class="c-modal js-hide" tabindex="0">
 			<div class="c-modal--content">
 				<h4 class="c-modal--title u-mb20">Modal Title</h4>
@@ -33,13 +34,15 @@ describe('Modal', () => {
 
 	describe('When it\'s trigger is clicked', () => {
 		let modalEl;
-		let trigger;
+		let trigger1;
+		let trigger2;
 
 		beforeEach(() => {
 			modalEl = document.querySelector('.c-modal');
-			trigger = document.querySelector('.modal1-trigger');
+			trigger1 = document.querySelector('.modal1-trigger');
+			trigger2 = document.querySelector('.modal1-trigger2');
 
-			trigger.click();
+			trigger1.click();
 		});
 
 		test('should be shown and focus given to the first focusable element', () => {
@@ -56,7 +59,14 @@ describe('Modal', () => {
 		});
 
 		test('should hidden after it\'s trigger has been clicked again', () => {
-			trigger.click();
+			trigger1.click();
+
+			expect(modalEl.classList.contains('js-hide')).toBe(true);
+			expect(modalEl.getAttribute('aria-hidden')).toBe('true');
+		});
+
+		test('should also be hidden if the second trigger was clicked', () => {
+			trigger2.click();
 
 			expect(modalEl.classList.contains('js-hide')).toBe(true);
 			expect(modalEl.getAttribute('aria-hidden')).toBe('true');
