@@ -58,7 +58,7 @@ describe('Modal', () => {
 			expect(modalEl).toBe(lastBodyEl);
 		});
 
-		test('should hidden after it\'s trigger has been clicked again', () => {
+		test('should be hidden after it\'s trigger has been clicked again', () => {
 			trigger1.click();
 
 			expect(modalEl.classList.contains('js-hide')).toBe(true);
