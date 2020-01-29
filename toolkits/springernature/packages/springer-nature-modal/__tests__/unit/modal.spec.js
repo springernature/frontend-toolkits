@@ -90,7 +90,7 @@ describe('Modal', () => {
 			let closeModalLink;
 
 			beforeEach(() => {
-				closeModalLink = document.querySelector('.close-modal-link');
+				closeModalLink = document.querySelector('[data-component-modal-close]');
 
 				closeModalLink.click();
 			});
