@@ -1,5 +1,8 @@
 # History
 
+## 9.3.1 (2020-01-30)
+	* Tidy up fonts used in author popups and big consortia lists
+
 ## 9.3.0 (2020-01-17)
 	* Slightly simplify author JS to go with updated article XSLT
 

@@ -12,6 +12,7 @@
 	min-width: 300px;
 	max-width: 650px;
 	z-index: 75;
+	font-family: $font-family-serif;
 
 	&__close {
 		position: absolute;
@@ -50,6 +51,7 @@
 	}
 
 	&__footer-heading {
+		font-family: $font-family-sans;
 		font-size: map-get($article--font-sizes, 'font-size-3');
 		font-weight: 700;
 		margin: 0;
@@ -57,7 +59,6 @@
 
 	&__author-list {
 		list-style: none;
-		font-family: $font-family-serif;
 		font-size: map-get($article--font-sizes, 'font-size-3');
 		padding: 0;
 		margin-top: 0;
@@ -614,6 +615,7 @@
 	padding: 0;
 	list-style: none;
 	font-size: map-get($article--font-sizes, 'font-size-3');
+	font-family: $font-family-sans;
 }
 
 .c-article-author-authors-search__item {
@@ -648,6 +650,10 @@
 .c-article-author-institutional-author__author-name {
 	display: inline;
 	list-style: none;
+}
+
+.c-article-author-institutional-author__sub-division {
+	font-size: map-get($article--font-sizes, 'font-size-4');
 }
 
 .c-article-supplementary {
