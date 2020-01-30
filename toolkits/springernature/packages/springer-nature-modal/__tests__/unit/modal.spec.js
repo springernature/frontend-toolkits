@@ -76,7 +76,7 @@ describe('Modal', () => {
 			let closeBtn;
 
 			beforeEach(() => {
-				closeBtn = document.querySelector('.c-modal--close');
+				closeBtn = document.querySelectorAll('[data-component-modal-close]')[0];
 
 				closeBtn.click();
 			});
@@ -86,11 +86,11 @@ describe('Modal', () => {
 			});
 		});
 
-		describe('When a link with the close modal class is clicked', () => {
+		describe('When a link with the close modal data attribute is clicked', () => {
 			let closeModalLink;
 
 			beforeEach(() => {
-				closeModalLink = document.querySelector('[data-component-modal-close]');
+				closeModalLink = document.querySelectorAll('[data-component-modal-close]')[1];
 
 				closeModalLink.click();
 			});

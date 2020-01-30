@@ -12,7 +12,7 @@ Display a modal (pop-up) window
         <div class="c-modal--body">
             <p>This is the modal! It has a <a data-component-modal-close class="close-modal-link btn-close" href="">link</a> that can also close it.</p>
         </div>
-        <button data-component="modal-close" class="c-modal--close btn-close link-like">&times;</button>
+        <button data-component-modal-close class="c-modal--close btn-close link-like">&times;</button>
     </div>
 </div>
 ```
