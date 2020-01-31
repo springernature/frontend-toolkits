@@ -1,7 +1,7 @@
 # History
 
 ## 13.1.0 (2020-01-31)
-    * Added blue colour
+    * Changed action-base colour
 
 ## 13.0.1 (2020-01-16)
     * Bumps global-context extends version to 10.0.0
