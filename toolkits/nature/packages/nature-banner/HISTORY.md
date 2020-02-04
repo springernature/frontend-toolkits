@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2020-02-04)
+    * Bump nature-context peerDependencies
+
 ## 1.0.0 (2020-01-23)
     * Major release
 
