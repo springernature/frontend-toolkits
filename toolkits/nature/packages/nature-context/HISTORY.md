@@ -1,5 +1,8 @@
 # History
 
+## 0.22.0 (2020-02-04)
+    * Adds 'action-base' and 'action-light' to the colour selection
+
 ## 0.21.0 (2019-11-07)
     * Bumps global-context extends version to 9.1.0
 
