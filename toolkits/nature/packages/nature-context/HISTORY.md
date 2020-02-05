@@ -1,5 +1,8 @@
 # History
 
+## 0.23.0 (2020-02-04)
+    * Correct path to colors/default in core
+
 ## 0.22.0 (2020-02-04)
     * Adds 'action-base' and 'action-light' to the colour selection
 
