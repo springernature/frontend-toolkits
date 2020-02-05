@@ -1,5 +1,8 @@
 # History
 
+## 1.0.1 (2020-02-05)
+    * Align text center
+
 ## 1.0.0 (2020-01-23)
     * Major release
 

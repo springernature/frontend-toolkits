@@ -6,13 +6,11 @@ Full width banner used for displaying informational messages.
 
 ```html
 <div class="c-banner">
-    <div class="c-banner__container">
-        <p class="c-banner__item">Simple banner example</p> 
-    </div>
+    Simple banner example
 </div>
 ```
 
-`c-banner__container` uses flex and will space-apart each 'item'. For example:
+`c-banner__container` allows you to have two child items, one on either side of the banner. For example:
 
 ```html
 <div class="c-banner">
