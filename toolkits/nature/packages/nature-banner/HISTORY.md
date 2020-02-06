@@ -1,5 +1,8 @@
 # History
 
+## 1.2.1 (2020-02-06)
+    * Bump global-banner dependency version
+
 ## 1.2.0 (2020-02-05)
     * Bump nature-context peerDependencies
     * Update $banner--marketing-background-color value
