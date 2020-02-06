@@ -1,11 +1,11 @@
 {
   "name": "@springernature/nature-banner",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": "global-banner@1.0.0",
+  "extendsPackage": "global-banner@1.0.1",
   "peerDependencies": {
     "@springernature/nature-context": "~0.23.0"
   }

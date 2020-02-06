@@ -1,5 +1,8 @@
 # History
 
+## 1.1.1 (2020-02-06)
+    * Bump global-banner dependency version
+
 ## 1.1.0 (2020-01-31)
     * Added marketing colours
 
