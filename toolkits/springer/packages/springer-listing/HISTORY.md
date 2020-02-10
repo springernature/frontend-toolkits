@@ -1,3 +1,6 @@
+## 0.0.6 (2020-02-10)
+    * Remove webfont usage
+
 ## 0.0.5 (2019-12-10)
     * Lower font size on title
 
