@@ -15,11 +15,11 @@
 }
 
 .u-text-sans-serif {
-	@include u-text-sans-serif;
+	font-family: $font-family-sans;
 }
 
 .u-text-serif {
-	@include u-text-serif;
+	font-family: $font-family-serif;
 }
 
 .u-text-font-smoothing {

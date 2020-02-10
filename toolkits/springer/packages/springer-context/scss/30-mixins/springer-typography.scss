@@ -1,29 +1,3 @@
-@mixin u-webfont($type: 'serif') {
-	$family-fallback: $font-family-serif-fallback;
-	$family: $font-family-serif;
-
-	@if $type == 'sans' {
-		$family-fallback: $font-family-sans-fallback;
-		$family: $font-family-sans;
-	}
-	@else if $type != 'sans' AND $type != 'serif' {
-		@warn 'Permitted values to u-webfont mixin are "sans" or "serif"';
-	}
-	font-family: $family-fallback;
-
-	html.webfonts-loaded & {
-		font-family: $family;
-	}
-}
-
-@mixin u-text-serif {
-	@include u-webfont('serif');
-}
-
-@mixin u-text-sans-serif {
-	font-family: $font-family-system-sans;
-}
-
 @mixin u-text-font-smoothing {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -31,12 +5,12 @@
 
 @mixin u-text-furniture {
 	@include font-size($font-size-furniture);
-	font-family: $font-family-system-sans;
+	font-family: $font-family-sans;
 }
 
 @mixin u-text-interface {
 	@include font-size($font-size-interface);
-	font-family: $font-family-system-sans;
+	font-family: $font-family-sans;
 	line-height: $line-height-tight;
 }
 
