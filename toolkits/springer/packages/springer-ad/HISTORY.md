@@ -1,5 +1,6 @@
-## 1.1.2 (2020-02-10)
+## 2.0.0 (2020-02-10)
 	* Remove webfont usage
+	* Bump peer dependency
 
 ## 1.1.1 (2020-01-09)
 	* Added margin-top to MPU
