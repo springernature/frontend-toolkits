@@ -1,5 +1,9 @@
 # History
 
+## 14.0.0 (2020-02-10)
+    * BREAKING: Remove usage of webfont
+    * BREAKING: Rename global to typography    
+
 ## 13.1.0 (2020-01-31)
     * Changed colour for links
 
