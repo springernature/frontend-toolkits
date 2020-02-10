@@ -1,3 +1,6 @@
+## 1.0.0 (2019-02-10)
+    * Release major version
+    
 ## 0.0.5 (2019-01-17)
 	* Stops throwing errors related to storage
 
