@@ -1,4 +1,4 @@
-## 0.0.6 (2020-02-10)
+## 1.0.0 (2020-02-10)
     * Update font family
     * Add peer dependency for context  
 
