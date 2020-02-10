@@ -1,3 +1,7 @@
+## 2.0.0 (2020-02-10)
+    * Update font family
+    * Add peer dependency for context  
+
 ## 1.1.1 (2019-12-12)
 	* Use correct settings and renamed to indicate direction
 

@@ -1,6 +1,6 @@
 .c-user-metadata {
-	@include u-text-sans-serif;
 	@include font-size($springer-user-metadata--font-size);
+	font-family: $font-family-sans;
 	color: $springer-user-metadata--font-colour;
 	line-height: $springer-user-metadata--line-height;
 	padding-top: $springer-user-metadata--padding-y;

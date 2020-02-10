@@ -1,3 +1,7 @@
+## 1.0.0 (2020-02-10)
+    * Update font family
+    * Add peer dependency for context   
+
 ## 0.0.5 (2019-11-25)
     * Bump package version   
     
