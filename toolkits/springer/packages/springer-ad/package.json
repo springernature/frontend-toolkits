@@ -1,11 +1,11 @@
 {
   "name": "@springernature/springer-ad",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "description": "adverts",
   "keywords": [],
   "author": "Springer Nature",
   "peerDependencies": {
-    "@springernature/springer-context": "^12.4.0"
+    "@springernature/springer-context": "^14.0.0"
   }
 }
