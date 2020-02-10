@@ -2,7 +2,8 @@
 
 ## 14.0.0 (2020-02-10)
     * BREAKING: Remove usage of webfont
-    * BREAKING: Rename global to typography    
+    * BREAKING: Rename global to typography
+    * Adds springer-typography so global typography can be used    
 
 ## 13.1.0 (2020-01-31)
     * Changed colour for links
