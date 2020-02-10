@@ -1,5 +1,8 @@
 # History
 
+## 14.0.1 (2020-02-10)
+    * BUG: Remove usage of webfont in headings
+    
 ## 14.0.0 (2020-02-10)
     * BREAKING: Remove usage of webfont
     * BREAKING: Rename global to typography
