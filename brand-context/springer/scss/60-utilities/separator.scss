@@ -1,0 +1,11 @@
+.u-separator {
+	height: 1px;
+	background-color: greyscale($greyscale-min, 0.3);
+	border: none;
+	margin-top: 0;
+	margin-bottom: 16px;
+
+	&:first-child {
+		display: none;
+	}
+}

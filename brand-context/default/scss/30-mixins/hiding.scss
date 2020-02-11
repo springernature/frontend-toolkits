@@ -1,0 +1,44 @@
+@mixin u-hide {
+	display: none;
+	visibility: hidden;
+}
+
+@mixin u-show {
+	display: block;
+	visibility: visible;
+}
+
+@mixin u-show-inline {
+	display: inline;
+	visibility: visible;
+}
+
+@mixin u-visually-hidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: 0 - 100%;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+}
+
+@mixin u-visually-unhide {
+	border: 0;
+	clip: initial;
+	height: auto;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+
+@mixin u-hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	direction: ltr;
+	vertical-align: bottom;
+}

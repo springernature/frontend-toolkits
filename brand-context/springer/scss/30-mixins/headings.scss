@@ -1,0 +1,63 @@
+@mixin heading-link {
+	a {
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			color: color('action-base');
+		}
+
+		&:visited {
+			color: color('visited');
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:active {
+			color: color('action-light');
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin h1 {
+	@include heading-link;
+	@include font-size($font-size-xxl);
+	font-family: $font-family-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: (42 / 32);
+	margin-bottom: 0.5em;
+}
+
+@mixin h2 {
+	@include heading-link;
+	@include font-size($font-size-xl);
+	font-family: $font-family-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: (36 / 26);
+	margin-bottom: 0.5em;
+}
+
+@mixin h3 {
+	@include heading-link;
+	@include font-size($font-size-lg);
+	font-family: $font-family-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: (28 / 21);
+	margin-bottom: 0.7em;
+}
+
+@mixin h4 {
+	@include heading-link;
+	@include font-size($font-size-md);
+	font-family: $font-family-serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: (28 / 20);
+	margin-bottom: 0.7em;
+}

@@ -1,0 +1,21 @@
+@each $size, $value in $global-spacing {
+	@include class-stack('u-margin-top-#{$size}', true) {
+		margin-top: get-spacing($size);
+	}
+
+	@include class-stack('u-margin-right-#{$size}') {
+		margin-right: get-spacing($size);
+	}
+
+	@include class-stack('u-margin-bottom-#{$size}') {
+		margin-bottom: get-spacing($size);
+	}
+
+	@include class-stack('u-margin-left-#{$size}') {
+		margin-left: get-spacing($size);
+	}
+}
+
+.u-margin-reset {
+	margin: 0;
+}
