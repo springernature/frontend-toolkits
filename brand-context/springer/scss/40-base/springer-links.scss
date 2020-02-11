@@ -1,0 +1,7 @@
+a {
+	@include base-link;
+
+	> img {
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,31 @@
+/**
+ * Basic
+ * Some default CSS styles
+ */
+
+body {
+	font-size: 13px;
+	line-height: 1.5;
+	font-family: $font-family-serif;
+}
+
+a {
+	text-decoration: none;
+	color: color('blue');
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}

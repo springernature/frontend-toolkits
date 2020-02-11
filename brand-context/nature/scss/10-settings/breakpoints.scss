@@ -1,0 +1,12 @@
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+
+$breakpoints: (
+	'palm': 300px,
+	'lap': 480px,
+	'portable': 640px,
+	'desk': 875px,
+	'large': 1200px
+);
