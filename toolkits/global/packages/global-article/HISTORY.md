@@ -1,5 +1,8 @@
 # History
 
+## 9.3.2 (2020-02-11)
+	* Revert changes from 9.2.1 - they're causing a lot of layout issues (we might revisit what to do about inline equations overflowing, but since they're rare and this is tricky we may not)
+
 ## 9.3.1 (2020-01-30)
 	* Tidy up fonts used in author popups and big consortia lists
 
