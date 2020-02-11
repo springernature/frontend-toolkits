@@ -1,4 +1,4 @@
-# Global Context
+# Brand Context
 
 Set the context (baseline) for branded products. This package is used as a template and your product should use the context for a specific brand that inherits from this.
 
