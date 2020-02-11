@@ -7,7 +7,7 @@ Set the context for Springer Nature branded products.
 
 ## Global Context
 
-This package inherits from the [`global-context` package](https://github.com/springernature/frontend-global-toolkit/tree/master/packages/global-context), which details everything that is included with `springer-nature-context`. This README will detail anything that is added for this specific brand.
+This package inherits from the [`global-context` package](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-context), which details everything that is included with `springer-nature-context`. This README will detail anything that is added for this specific brand.
 
 ## Fonts
 
