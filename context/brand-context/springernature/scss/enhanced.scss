@@ -5,20 +5,20 @@
 
 @import '10-settings/breakpoints';
 @import '10-settings/colors';
-@import '10-settings/keyframes';
-@import '10-settings/style';
+@import '../../default/scss/10-settings/keyframes';
+@import '../../default/scss/10-settings/style';
 @import '10-settings/typography';
 
-@import '20-functions/colors';
-@import '20-functions/helpers';
+@import '../../default/scss/20-functions/colors';
+@import '../../default/scss/20-functions/helpers';
 
-@import '30-mixins/media-query';
-@import '30-mixins/flex';
-@import '30-mixins/hiding';
-@import '30-mixins/keyframes';
-@import '30-mixins/lists';
-@import '30-mixins/style';
-@import '30-mixins/typography';
+@import '../../default/scss/30-mixins/media-query';
+@import '../../default/scss/30-mixins/flex';
+@import '../../default/scss/30-mixins/hiding';
+@import '../../default/scss/30-mixins/keyframes';
+@import '../../default/scss/30-mixins/lists';
+@import '../../default/scss/30-mixins/style';
+@import '../../default/scss/30-mixins/typography';
 
 @import '40-base/layout';
 @import '40-base/links';
