@@ -1,5 +1,8 @@
 # History
 
+## 14.0.2 (2020-02-11)
+    * BUG: Set base context font size up to 1.8em
+
 ## 14.0.1 (2020-02-10)
     * BUG: Remove usage of webfont in headings
     
