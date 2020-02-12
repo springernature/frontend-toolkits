@@ -1,5 +1,8 @@
 # History
 
+## 13.0.0 (2020-02-12)
+    * Give $context--font-size-h3 a fix size in rems to avoid it taking the base font
+
 ## 12.0.0 (2020-02-12)
     * Update the $context--font-size-base to align it with our imprints
 
