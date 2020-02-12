@@ -3,6 +3,7 @@
 ## 0.25.0 (2020-02-12)
 	* Update to global-context@12.0.0
 	* Remove brand override of global $context--font-size-base variable
+	* Update version
 
 ## 0.24.0 (2020-02-12)
 	* Update to global-context@11.0.0
