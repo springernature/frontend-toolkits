@@ -1,5 +1,8 @@
 # History
 
+## 12.0.0 (2020-02-12)
+    * Update the $context--font-size-base to align it with our imprints
+
 ## 11.0.0 (2020-02-12)
     * BREAKING: Renames link utility to be consistent with other utilities
     * Adds mixins and utilities for u-link-inherit and u-link-underline
