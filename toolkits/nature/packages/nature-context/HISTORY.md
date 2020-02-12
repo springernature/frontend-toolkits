@@ -1,5 +1,9 @@
 # History
 
+## 0.24.0 (2020-02-12)
+	* Update to global-context@11.0.0
+	* @import links from global
+
 ## 0.23.0 (2020-02-04)
     * Correct path to colors/default in core
 
