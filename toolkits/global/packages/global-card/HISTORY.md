@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2020-02-12)
+    * Update call to global faux block mixin
+    * Update global contet peer dependency version
+
 ## 0.2.1 (2019-11-29)
     * Allow image to shrink
     

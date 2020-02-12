@@ -48,7 +48,7 @@
 }
 
 .c-card__link {
-	@include u-faux-block-link;
+	@include u-link-faux-block();
 }
 
 // modifiers
