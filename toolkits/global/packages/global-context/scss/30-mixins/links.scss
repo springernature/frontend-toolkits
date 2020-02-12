@@ -1,4 +1,27 @@
-@mixin u-faux-block-link {
+@mixin u-link-inherit() {
+	color: inherit;
+
+	&.visited,
+	&:visited {
+		color: inherit;
+	}
+
+	&.hover,
+	&:hover {
+		color: inherit;
+	}
+}
+
+@mixin u-link-underline() {
+	text-decoration: underline;
+
+	&.hover,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@mixin u-link-faux-block() {
 	&::before {
 		content: '';
 		position: absolute;
