@@ -71,6 +71,7 @@
 }
 
 .c-banner__link {
+	@include u-link-underline();
 	color: $banner--link-color;
 
 	&:visited,

@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2020-02-12)
+    * BREAKING: Bumnp global-context dependency
+    * Sets underline on links
+
 ## 1.0.1 (2020-02-05)
     * Align text center
 
