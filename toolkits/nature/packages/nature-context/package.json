@@ -5,5 +5,5 @@
   "description": "Boostrapping for all Nature components and products",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": "global-context@11.0.0"
+  "extendsPackage": "global-context@12.0.0"
 }
