@@ -1,3 +1,7 @@
+## 2.0.0 (2019-02-12)
+    * BREAKING: Bumnp global-context dependency
+    * Correct link inherit mixin call
+
 ## 1.2.2 (2019-08-27)
     * Fixes incorrect assignment that prevented being able to tab into the dropdown
     * Closes menu when tab out of the dropdown
