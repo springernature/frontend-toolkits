@@ -1,5 +1,9 @@
 # History
 
+## 15.0.0 (2020-02-12)
+	* Update to global-context@11.0.0
+	* Remove inherited link mixin as comes @from global
+
 ## 14.0.3 (2020-02-12)
     * Makes all label elements sans-serif font to fix those on springer branded pages that incorrectly had serif
 
