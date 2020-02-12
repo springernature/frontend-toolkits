@@ -14,7 +14,7 @@ Meta data for user such as login status, ip address, business partner associatio
         Springer Affiliates (3000093925)  - Consortium BusinessPartner (555555) 
     </p>
     <p class="c-user-metadata__item" data-test="icp-licence">
-        <a class="u-inherited-link" href="http://www.miibeian.gov.cn" lang="zh-Hans">
+        <a class="u-link-inherit" href="http://www.miibeian.gov.cn" lang="zh-Hans">
             沪ICP备15051854号-3
         </a>
     </p>

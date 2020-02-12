@@ -67,7 +67,7 @@
 
 .c-dropdown__link {
 	@include interface-link;
-	@include inherited-link;
+	@include u-link-inherit;
 	display: block;
 	padding: $dropdown--link-padding;
 	background-color: $dropdown--link-background-color;
