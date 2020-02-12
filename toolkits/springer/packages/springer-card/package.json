@@ -1,12 +1,12 @@
 {
   "name": "@springernature/springer-card",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "extendsPackage": "global-card@0.2.0",
+  "extendsPackage": "global-card@1.0.0",
   "peerDependencies": {
-    "@springernature/springer-context": "^12.3.0"
+    "@springernature/springer-context": "^15.0.0"
   }
 }
