@@ -1,4 +1,4 @@
-# History
+# History 
 
 ## 0.26.0 (2020-02-12)
 	* Update to global-context@13.0.0
