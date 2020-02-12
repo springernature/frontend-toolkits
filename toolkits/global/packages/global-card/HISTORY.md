@@ -1,6 +1,6 @@
 # History
 
-## 1.0.0 (2019-02-12)
+## 1.0.0 (2020-02-12)
     * Update call to global faux block mixin
     * Update global contet peer dependency version
 
