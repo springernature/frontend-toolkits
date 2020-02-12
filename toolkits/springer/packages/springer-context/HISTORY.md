@@ -1,5 +1,8 @@
 # History
 
+## 14.0.3 (2020-02-12)
+    * Makes all label elements sans-serif font to fix those on springer branded pages that incorrectly had serif
+
 ## 14.0.2 (2020-02-11)
     * BUG: Set base context font size up to 1.8em
 
