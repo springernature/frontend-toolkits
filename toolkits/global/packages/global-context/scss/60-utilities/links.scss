@@ -1,3 +1,11 @@
-.u-faux-block-link {
-	@include u-faux-block-link;
+.u-link-inherit {
+	@include u-link-inherit();
+}
+
+.u-link-underline {
+	@include u-link-underline();
+}
+
+.u-link-faux-block {
+	@include u-link-faux-block();
 }
