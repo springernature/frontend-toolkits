@@ -1,5 +1,9 @@
 # History
 
+## 11.0.0 (2020-02-12)
+    * BREAKING: Renames link utility to be consistent with other utilities
+    * Adds mixins and utilities for u-link-inherit and u-link-underline
+
 ## 10.0.0 (2020-01-16)
     * Renamed u-open-access-color to u-color-open-access
     
