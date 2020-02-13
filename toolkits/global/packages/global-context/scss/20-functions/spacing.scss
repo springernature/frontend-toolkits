@@ -1,0 +1,25 @@
+@function spacing($keys...) {
+	@if length($context--spacing) == 0 {
+		@error 'No values found in $context--spacing.';
+	}
+
+	@if length($keys) > 4 {
+		@error 'spacing() accepts a maximum of 4 arguments.';
+	}
+
+	$context--spacing-value: ();
+
+	@each $key in $keys {
+		@if index($context--spacing, $key) {
+			$i: index($context--spacing, $key);
+
+			$context--spacing-value: append($context--spacing-value, nth($context--spacing, $i) * 1px); // Add current item in loop to $context--spacing-value list
+		}
+
+		@else {
+			@error '#{$key} is not defined in $context--spacing. Permitted values are #{$context--spacing}.';
+		}
+	}
+
+	@return $context--spacing-value;
+}

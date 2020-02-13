@@ -1,0 +1,17 @@
+@function _getSpacingUtilityValue($value) {
+	$value: if(type-of($value) == string, unquote($value), $value);
+
+	@return if(type-of($value) == number and $value > 0, $value * 1px, $value);
+}
+
+@each $property-group, $pair in $context--spacing-utility-names {
+	$utility-values: if($property-group == margin, join($context--spacing, $context--spacing-margin-keywords), $context--spacing);
+
+	@each $name, $property in $pair {
+		@each $value in $utility-values {
+			.u-#{$name}-#{$value} {
+				#{$property}: _getSpacingUtilityValue($value);
+			}
+		}
+	}
+}
