@@ -1,4 +1,4 @@
-@function _getSpacingUtilityValue($value) {
+@function _get-spacing-utility-value($value) {
 	$value: if(type-of($value) == string, unquote($value), $value);
 
 	@return if(type-of($value) == number and $value > 0, $value * 1px, $value);
@@ -10,7 +10,7 @@
 	@each $name, $property in $pair {
 		@each $value in $utility-values {
 			.u-#{$name}-#{$value} {
-				#{$property}: _getSpacingUtilityValue($value);
+				#{$property}: _get-spacing-utility-value($value);
 			}
 		}
 	}
