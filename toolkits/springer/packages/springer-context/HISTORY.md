@@ -1,5 +1,9 @@
 # History
 
+## 16.0.0 (2020-02-13)
+	* Update to global-context@13.0.0
+	* Remove $context--font-size-base from settings as in now coming from global
+
 ## 15.0.1 (2020-02-12)
 	* Remove reference to old interface mixin
 
