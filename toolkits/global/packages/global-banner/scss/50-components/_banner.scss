@@ -79,13 +79,3 @@
 		color: $banner--link-color;
 	}
 }
-
-.c-banner__link--underline {
-	text-decoration: underline;
-
-	&:active,
-	&:focus,
-	&:hover {
-		text-decoration: none;
-	}
-}
