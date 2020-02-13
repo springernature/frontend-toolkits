@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2020-02-13)
+    * BREAKING: bump global-banner dependency version
+    * bump springer context dependency version
+
 ## 1.1.1 (2020-02-06)
     * Bump global-banner dependency version
 
