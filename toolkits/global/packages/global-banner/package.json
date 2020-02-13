@@ -1,11 +1,11 @@
 {
   "name": "@springernature/global-banner",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Full width banner used for displaying informational messages",
   "keywords": [],
   "author": "Springer Nature",
   "peerDependencies": {
-    "@springernature/global-context": "^10.0.0"
+    "@springernature/global-context": "^13.0.0"
   }
 }

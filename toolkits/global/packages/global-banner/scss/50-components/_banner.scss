@@ -71,20 +71,11 @@
 }
 
 .c-banner__link {
+	@include u-link-underline();
 	color: $banner--link-color;
 
 	&:visited,
 	&:hover {
 		color: $banner--link-color;
-	}
-}
-
-.c-banner__link--underline {
-	text-decoration: underline;
-
-	&:active,
-	&:focus,
-	&:hover {
-		text-decoration: none;
 	}
 }
