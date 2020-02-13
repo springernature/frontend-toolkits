@@ -1,5 +1,8 @@
 # History
 
+## 15.0.1 (2020-02-12)
+	* Remove reference to old interface mixin
+
 ## 15.0.0 (2020-02-12)
 	* Update to global-context@11.0.0
 	* Remove inherited link mixin as comes @from global
