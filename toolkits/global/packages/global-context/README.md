@@ -11,6 +11,7 @@ As well as the SCSS helpers documented here, we also have a collection of [JavaS
 	- [Foreground color](#foreground-color)
 	- [Layers](#layers)
 - [Icons](#icons)
+- [Spacing](#spacing)
 
 ## Breakpoints
 
@@ -177,8 +178,36 @@ For further information on the various implementation methods, please read this 
 
 The Icons have been optimised, you should not need to optimise them further.
 
+## Spacing
+
+A helper function - `spacing()` - is provided for adding values to margin and padding in your scss files.
+
+The function takes up to 4 values as it's arguments, and will check that the value(s) passed are present in the `$context--spacing` map.
+
+```scss
+margin: spacing(12); // Outputs margin: 12px;
+margin: spacing(12, 16); // Outputs margin: 12px 16px;
+padding: spacing(12); // Outputs padding: 12px;
+padding: spacing(12, 24, 16); // Outputs padding: 12px 24px 16px;
+```
+
+A spacing utility file is also provided, which generates utility classes from the spacing settings in the following format:
+
+**Margin**
+
+`u-ma-*`, `u-ml-*`, `u-mt-*`, `u-mr-*`, `u-mb-*`
+
+**Padding**
+
+`u-pa-*`, `u-pl-*`, `u-pt-*`, `u-pr-*`, `u-pb-*`
+
+```html
+<div class="u-ma-12"></div>
+<div class="u-pa-12"></div>
+```
+
 ## License
 
-[MIT License][info-license] &copy; 2019, Springer Nature
+[MIT License][info-license] &copy; 2020, Springer Nature
 
 [info-license]: https://github.com/springernature/frontend-nature-toolkit/blob/master/LICENCE
