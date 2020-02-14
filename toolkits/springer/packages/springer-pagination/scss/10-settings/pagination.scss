@@ -1,11 +1,11 @@
 $springer-pagination--background: greyscale(95);
 $springer-pagination--border-color: greyscale(80);
-$springer-pagination--padding: get-spacing(md);
+$springer-pagination--padding: spacing(16);
 $springer-pagination--border-radius: 3px;
 $springer-pagination--font-size: $font-size-xs;
-$springer-pagination--item-spacing: get-spacing(xxs);
+$springer-pagination--item-spacing: spacing(4);
 
-$springer-pagination--link-padding: get-spacing(xxs, xs);
+$springer-pagination--link-padding: spacing(4, 8);
 $springer-pagination--link-color: color('action-base');
 $springer-pagination--link-color-active: #fff;
 $springer-pagination--link-color-disabled: greyscale(40);
