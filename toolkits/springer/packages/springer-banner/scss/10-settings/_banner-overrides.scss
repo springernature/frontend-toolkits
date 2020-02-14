@@ -3,8 +3,8 @@
  * Brand overrides for global-banner
  */
 
-$banner--padding-y: get-spacing('sm');
-$banner--padding-y-compact: get-spacing('xxs');
+$banner--padding-y: spacing(16);
+$banner--padding-y-compact: spacing(4);
 $banner--font: $font-family-sans;
 $banner--font-size: 1.6rem;
 $banner--font-size-small: 1.4rem;
