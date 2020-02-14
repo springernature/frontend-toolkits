@@ -1,5 +1,9 @@
 # History
 
+## 17.0.3 (2020-02-14)
+	♥ Container settings to use spacing instead of get-spacing
+	♥ Tables to use spacing instead of get-spacing
+
 ## 17.0.2 (2020-02-14)
 	♥ Bump global-context to 13.1.1
 
