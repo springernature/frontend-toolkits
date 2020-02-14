@@ -1,5 +1,8 @@
 # History
 
+## 13.1.1 (2020-02-14)
+    * Returns the value instead of a list if spacing function is called with a single argument
+
 ## 13.1.0 (2020-02-13)
     * Adds context--spacing list
     * Adds spacing function
