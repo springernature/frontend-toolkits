@@ -22,7 +22,7 @@
 	}
 
 	// If the length is 1, don't return type 'list'
-	// This allows maths operations to be done on the value
+	// This allows maths operations to be done on a single value. E.g. spacing(12) * 2.
 	@if length($context--spacing-value == 1) {
 		@return nth($context--spacing-value, 1);
 	}
