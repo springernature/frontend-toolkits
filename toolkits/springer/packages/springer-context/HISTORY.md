@@ -1,5 +1,9 @@
 # History
 
+## 17.0.0 (2020-02-14)
+	♥ BREAKING: Rename spacing.scss to spacing-springer.scss in settings and functions
+	♥ Bump global-context to 13.1.0 to bring in global-spacing
+
 ## 16.0.0 (2020-02-13)
 	* Update to global-context@13.0.0
 	* Remove $context--font-size-base from settings as in now coming from global
