@@ -1,5 +1,10 @@
 # History
 
+## 13.1.0 (2020-02-13)
+    * Adds context--spacing list
+    * Adds spacing function
+    * Adds utilities for margin and padding based on spacing
+
 ## 13.0.0 (2020-02-12)
     * Give $context--font-size-h3 a size in rems to avoid it taking the base font size in ems
 
