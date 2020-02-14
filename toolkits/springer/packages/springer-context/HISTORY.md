@@ -1,5 +1,8 @@
 # History
 
+## 17.0.1 (2020-02-14)
+	♥ Import spacing functions into enhanced
+
 ## 17.0.0 (2020-02-14)
 	♥ BREAKING: Rename spacing.scss to spacing-springer.scss in settings and functions
 	♥ Bump global-context to 13.1.0 to bring in global-spacing
