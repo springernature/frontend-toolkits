@@ -1,8 +1,11 @@
 {
   "name": "@springernature/springer-publisher-footer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Springer branded site footer",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "peerDependencies": {
+    "@springernature/springer-context": "17.0.3"
+  }
 }
