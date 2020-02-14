@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0 (2020-02-14)
+	* BREAKING: Bump springer-context dependency to 17.0.3
+	* Use spacing instead of get-spacing
+
 ## 2.3.0 (2020-01-06)
     * Add status style and remove border shortcut
     * Bumps peer dependency springer-context to 12.4.0
