@@ -1,5 +1,8 @@
 # History
 
+## 0.27.2 (2020-02-14)
+	♥ Bump global-context to 13.1.1
+
 ## 0.27.1 (2020-02-14)
 	♥ Import spacing settings into enhanced
 
