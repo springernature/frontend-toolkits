@@ -7,6 +7,6 @@
   "author": "Springer Nature",
   "extendsPackage": "global-banner@2.0.0",
   "peerDependencies": {
-    "@springernature/nature-context": "~0.26.0"
+    "@springernature/nature-context": "~0.27.1"
   }
 }
