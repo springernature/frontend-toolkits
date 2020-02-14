@@ -1,7 +1,7 @@
 # History
 
 ## 2.0.1 (2020-02-14)
-    * Set banner spacing to valid values
+    * Set banner spacing to valid values 
     * Bump nature context dependency version
 
 ## 2.0.0 (2020-02-13)
