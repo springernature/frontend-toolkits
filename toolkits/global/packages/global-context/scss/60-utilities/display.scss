@@ -12,6 +12,7 @@
 
 .u-display-flex {
 	display: flex;
+	width: 100%; // Caters for an ie bug with nested flex when child is a column
 }
 
 .u-display-grid {
