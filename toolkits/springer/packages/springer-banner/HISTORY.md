@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0 (2020-02-14)
+	* BREAKING: Bump springer-context dependency to 17.0.3
+	* Use spacing instead of get-spacing
+
 ## 2.0.0 (2020-02-13)
     * BREAKING: bump global-banner dependency version
     * bump springer context dependency version

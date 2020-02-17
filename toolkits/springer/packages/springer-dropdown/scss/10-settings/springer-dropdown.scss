@@ -1,5 +1,5 @@
-$dropdown--menu-padding-x: get-spacing(sm);
-$dropdown--menu-padding-y: get-spacing(xs);
+$dropdown--menu-padding-x: spacing(16);
+$dropdown--menu-padding-y: spacing(8);
 $dropdown--menu-background-color: white;
 $dropdown--menu-border-radius: 3px;
 $dropdown--menu-border-color: greyscale(85);
@@ -11,7 +11,7 @@ $dropdown--menu-z-index: 100; // TODO: z-index mixin and sass list
 
 $dropdown--button-caret-color: currentColor;
 
-$dropdown--link-padding: get-spacing(xxs) $dropdown--menu-padding-x;
+$dropdown--link-padding: spacing(4) $dropdown--menu-padding-x;
 $dropdown--link-background-color: transparent;
 $dropdown--link-background-color-hover: color('action-light');
 $dropdown--link-color-hover: white;

@@ -1,3 +1,9 @@
+# History
+
+## 2.0.0 (2020-02-14)
+	* BREAKING: Add springer-context dependency
+	* Use spacing instead of get-spacing
+
 ## 1.0.3 (2019-08-13)
 	* Stops applying margin left to media__body or media__image if it's a stacked media
 

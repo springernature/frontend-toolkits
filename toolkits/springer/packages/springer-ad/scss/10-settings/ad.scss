@@ -1,10 +1,10 @@
 $ad--font-size: $font-size-xs;
 $ad--leaderboard-bg-color: greyscale(95);
-$ad--leaderboard-padding: get-spacing(xs);
+$ad--leaderboard-padding: spacing(8);
 $ad--mpu-background-color: greyscale(95);
-$ad--mpu-margin-top: get-spacing(lg);
-$ad--mpu-padding-top: get-spacing(xs);
-$ad--mpu-padding-bottom: get-spacing(lg);
-$ad--mpu-label-margin-bottom: get-spacing(xs);
-$ad--label-margin-bottom: get-spacing(xxs);
+$ad--mpu-margin-top: spacing(24);
+$ad--mpu-padding-top: spacing(8);
+$ad--mpu-padding-bottom: spacing(24);
+$ad--mpu-label-margin-bottom: spacing(8);
+$ad--label-margin-bottom: spacing(4);
 $ad--label-color: greyscale(40);

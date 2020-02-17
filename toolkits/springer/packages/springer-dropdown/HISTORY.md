@@ -1,4 +1,11 @@
-## 2.0.0 (2019-02-12)
+# History
+
+## 3.0.0 (2020-02-14)
+	* BREAKING: Bump springer-context dependency to 17.0.3
+	* Use spacing instead of get-spacing
+	* Add brand peerDependency
+
+## 2.0.0 (2020-02-12)
     * BREAKING: Bumnp global-context dependency
     * Correct link inherit mixin call
 

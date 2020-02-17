@@ -1,8 +1,11 @@
 # History
 
+## 4.0.0 (2020-02-14)
+	* BREAKING: Bump springer-context dependency to 17.0.3
+	* Use spacing instead of get-spacing
+
 ## 3.3.0 (2020-01-14)
     * Adds xs and xxs variants to list group
-    
 
 ## 3.2.0 (2019-11-20)
     * Bumps peer dependency springer-context to 12.3.0

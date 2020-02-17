@@ -1,4 +1,14 @@
-# History 
+# History
+
+## 0.27.2 (2020-02-14)
+	♥ Bump global-context to 13.1.1
+
+## 0.27.1 (2020-02-14)
+	♥ Import spacing settings into enhanced
+
+## 0.27.0 (2020-02-14)
+	♥ BREAKING: Rename spacing.scss to spacing-nature.scss in settings
+	♥ Bump global-context to 13.1.0 to bring in global-spacing
 
 ## 0.26.0 (2020-02-12)
 	* Update to global-context@13.0.0

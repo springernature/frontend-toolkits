@@ -1,3 +1,9 @@
+# History
+
+## 3.0.0 (2020-02-14)
+	* BREAKING: Bumps springer-context dependency to 17.0.3
+	* Use spacing instead of get-spacing
+
 ## 2.0.0 (2020-02-10)
     * Update font family
     * Add peer dependency for context  
