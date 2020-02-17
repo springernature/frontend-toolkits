@@ -1,9 +1,9 @@
 $media--play-bg: #000;
 $media--play-arrow-color: #fff;
-$media--title-bottom-spacing: get-spacing(sm);
-$media--image-body-gutter: get-spacing(md);
-$media--figure-bottom-spacing-desktop: get-spacing(md);
-$media--figure-bottom-spacing-mobile: get-spacing(sm);
+$media--title-bottom-spacing: spacing(16);
+$media--image-body-gutter: spacing(16);
+$media--figure-bottom-spacing-desktop: spacing(16);
+$media--figure-bottom-spacing-mobile: spacing(16);
 $media--triangle-height: 14px;
 $media--triangle-width: 8px;
 $media--triangle-color: #fff

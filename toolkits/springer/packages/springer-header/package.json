@@ -1,8 +1,11 @@
 {
   "name": "@springernature/springer-header",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Publisher level header",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "peerDependencies": {
+    "@springernature/springer-context": "17.0.3"
+  }
 }

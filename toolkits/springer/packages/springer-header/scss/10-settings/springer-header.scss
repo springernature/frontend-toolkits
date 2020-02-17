@@ -1,6 +1,6 @@
 $springer-header--background: greyscale(90) linear-gradient($page-base, greyscale(90));
-$springer-header--padding-y: get-spacing(sm);
+$springer-header--padding-y: spacing(16);
 $springer-header--padding-x: 0;
 $springer-header--border-color: greyscale(80);
-$springer-header--brand-spacing: get-spacing(xl);
+$springer-header--brand-spacing: spacing(32);
 $springer-header--item-color: inherit;

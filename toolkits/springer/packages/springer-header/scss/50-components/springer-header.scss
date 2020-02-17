@@ -31,7 +31,7 @@
 
 .c-header__item {
 	color: $springer-header--item-color;
-	margin-right: get-spacing(lg);
+	margin-right: spacing(24);
 
 	&:last-child {
 		margin-right: 0;
@@ -55,7 +55,7 @@
 	display: block; // needed for ie10 otherwise the margin-right doesn't get applied correctly
 	background: transparent;
 	border: none;
-	margin: 0 get-spacing(lg) 0 0;
+	margin: 0 spacing(24) 0 0;
 }
 
 /**
