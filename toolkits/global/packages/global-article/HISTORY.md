@@ -1,5 +1,8 @@
 # History
 
+## 9.4.0 (2020-02-17)
+	* Add new class for use on article body container for replacing .main-column eventually
+
 ## 9.3.2 (2020-02-11)
 	* Revert changes from 9.2.1 - they're causing a lot of layout issues (we might revisit what to do about inline equations overflowing, but since they're rare and this is tricky we may not)
 
