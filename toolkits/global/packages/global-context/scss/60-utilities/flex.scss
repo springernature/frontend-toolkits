@@ -1,38 +1,38 @@
-.u-flex-align-center {
-	align-items: center;
+// Applied to flex element
+
+.u-flex-direction-row {
+	flex-direction: row;
 }
 
-.u-flex-align-baseline {
-	align-items: baseline;
-}
-
-.u-flex-justify-space-between {
-	justify-content: space-between;
-}
-
-.u-flex-justify-center {
-	justify-content: center;
-}
-
-.u-flex-justify-left {
-	justify-content: left;
+.u-flex-direction-column {
+	flex-direction: column;
 }
 
 .u-flex-wrap {
 	flex-wrap: wrap;
 }
 
-.u-flex-inline {
-	display: inline-flex;
+.u-align-items-center {
+	align-items: center;
 }
 
-.u-flex-row {
-	flex-direction: row;
+.u-align-items-baseline {
+	align-items: baseline;
 }
 
-.u-flex-column {
-	flex-direction: column;
+.u-justify-content-space-between {
+	justify-content: space-between;
 }
+
+.u-justify-content-center {
+	justify-content: center;
+}
+
+.u-justify-content-left {
+	justify-content: left;
+}
+
+// Applied to flex child elements
 
 .u-flex-grow {
 	flex: 1 0 auto;
@@ -48,4 +48,16 @@
 
 .u-flex-static {
 	flex: 0 0 auto;
+}
+
+.u-align-self-center {
+	align-self: center;
+}
+
+.u-align-self-start {
+	align-self: flex-start;
+}
+
+.u-align-self-end {
+	align-self: flex-end;
 }

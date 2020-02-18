@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-context",
-  "version": "13.1.2",
+  "version": "14.0.0",
   "license": "MIT",
   "description": "Template for providing bootstrapping for all components and products",
   "keywords": [],
