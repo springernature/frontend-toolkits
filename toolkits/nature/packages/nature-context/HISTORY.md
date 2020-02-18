@@ -1,5 +1,8 @@
 # History
 
+## 0.28.0 (2020-02-18)
+	* Bump global-context to 14.0.0
+
 ## 0.27.2 (2020-02-14)
 	♥ Bump global-context to 13.1.1
 
