@@ -1,5 +1,8 @@
 # History
 
+## 3.0.1 (2020-02-18)
+	* Use appendChild instead of append for IE support
+
 ## 3.0.0 (2020-02-14)
 	* BREAKING: Bump springer-context dependency to 17.0.3
 	* Use spacing instead of get-spacing
