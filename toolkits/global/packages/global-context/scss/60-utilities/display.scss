@@ -15,6 +15,10 @@
 	width: 100%; // Caters for an ie bug with nested flex when child is a column
 }
 
+.u-display-inline-flex {
+	display: inline-flex;
+}
+
 .u-display-grid {
 	display: grid;
 }
