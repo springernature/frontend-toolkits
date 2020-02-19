@@ -6,7 +6,6 @@
  .c-article-metrics__heading {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
-	clear: both;
 	a {
 		color: inherit;
 	}
@@ -18,12 +17,13 @@
 }
 
 .c-article-metrics__section--left {
-	list-style: none;
-	margin: 0;
-	padding: 0;
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	flex-shrink: 1;
 	flex-basis: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
 	@include media-query(map-get($article--breakpoints, 'med'), 'min') {	
 		flex-basis: 60%;
 	}
@@ -178,8 +178,8 @@
 .c-article-metrics__posts {
 	li {
 		border-bottom: 1px solid map-get($article--grey-palette, 'grey-6');
-		padding-bottom: $article--vertical-spacing-medium;
 		margin-bottom: $article--vertical-spacing-medium;
+		padding-bottom: $article--vertical-spacing-medium;
 
 		&:first-child {
 			padding-top: 0;
@@ -188,12 +188,12 @@
 }
 
 .c-article-metrics__altmetric-key {
-    width: 16px;
-    height: 16px;
 	border-radius: 50%;
-	margin-right: $article--vertical-spacing-small;
-	float: left;
 	display: block;
+	float: left;
+	height: 16px;
+	margin-right: $article--vertical-spacing-small;
+	width: 16px;
 
 	> span {
 		font-weight: bold;
