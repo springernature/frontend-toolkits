@@ -1,5 +1,8 @@
 # History
 
+## 18.2.1 (2020-02-19)
+	* Fix typo in import of container
+
 ## 18.2.0 (2020-02-19)
 	* Imports container from global instead of brand
 
