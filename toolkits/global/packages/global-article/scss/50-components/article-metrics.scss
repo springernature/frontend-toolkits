@@ -3,9 +3,10 @@
  * Article metrics styles
  */
 
- .c-article-metrics__heading {
+.c-article-metrics__heading {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
+
 	a {
 		color: inherit;
 	}
@@ -72,7 +73,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: $article--vertical-spacing-medium;
-	
+
 	li {
 		padding-top: $article--vertical-spacing-small;
 		padding-right: $article--vertical-spacing-small;
@@ -100,7 +101,7 @@
 		font-size: map-get($article--font-sizes, 'font-size-7');
 		font-weight: 500;
 	}
-	
+
 	dd {
 		font-size: map-get($article--font-sizes, 'font-size-5');
 	}
@@ -138,10 +139,12 @@
 		flex-basis: 75%;
 		justify-content: right;
 	}
+
 	ul {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	li {
 		flex-basis: 100%;
 		padding: $article--vertical-spacing-small 0 0 $article--vertical-spacing-medium;
@@ -165,6 +168,7 @@
 			@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
 				grid-template-columns: repeat(3, 33%);
 			}
+
 			li {
 				font-size: map-get($article--font-sizes, 'font-size-2');
 			}
@@ -179,8 +183,8 @@
 		color: map-get($article--grey-palette, 'grey-4');
 		font-size: map-get($article--font-sizes, 'font-size-3');
 	}
-	
-	a { 
+
+	a {	
 		color: inherit;
 	}
 }
@@ -233,6 +237,7 @@
 			background-color: $color;
 		}
 	}
+
 	& + span {
 		display: block;
 		margin-left: calc(16px + 8px);
