@@ -1,5 +1,8 @@
 # History
 
+## 0.30.0 (2020-02-19)
+	* Imports container into enhanced.scss
+
 ## 0.29.0 (2020-02-19)
 	* Bump global-context to 14.1.0
 
