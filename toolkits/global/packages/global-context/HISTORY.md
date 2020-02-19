@@ -1,5 +1,8 @@
 # History
 
+## 14.1.0 (2020-02-19)
+    * Adds container
+
 ## 14.0.0 (2020-02-18)
     * BREAKING: Renames flex utility classes to match the property they set
 
