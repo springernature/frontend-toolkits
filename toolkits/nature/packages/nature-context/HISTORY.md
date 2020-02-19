@@ -1,5 +1,8 @@
 # History
 
+## 0.30.1 (2020-02-19)
+	* Fix typo in import of container
+
 ## 0.30.0 (2020-02-19)
 	* Imports container into enhanced.scss
 
