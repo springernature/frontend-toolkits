@@ -6,6 +6,7 @@
 // frontend-global-toolkit
 @import '10-settings/keyframes';
 @import '10-settings/colors/shared';
+@import '10-settings/container';
 @import '10-settings/spacing';
 @import '10-settings/style';
 @import '10-settings/typography';
@@ -13,7 +14,6 @@
 // frontend-springer-toolkit
 @import '10-settings/breakpoints';
 @import '10-settings/colors/default';
-@import '10-settings/container';
 @import '10-settings/spacing-springer';
 @import '10-settings/typography-springer';
 
@@ -30,6 +30,7 @@
 // frontend-global-toolkit
 @import '30-mixins/buttons';
 @import '30-mixins/clearfix';
+@import '30-mixins/container';
 @import '30-mixins/hiding';
 @import '30-mixins/keyframes';
 @import '30-mixins/links';
@@ -40,7 +41,6 @@
 
 // frontend-springer-toolkit
 @import '30-mixins/class-stack';
-@import '30-mixins/container';
 @import '30-mixins/headings';
 @import '30-mixins/triangle';
 @import '30-mixins/wrap';
