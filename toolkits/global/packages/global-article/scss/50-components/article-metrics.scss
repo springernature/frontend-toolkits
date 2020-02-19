@@ -68,9 +68,19 @@
 	border-bottom: 2px solid map-get($article--grey-palette, 'grey-1');
 }
 
-.c-article-metrics__numbers li {
-	display: inline-block;
-	padding-right: $article--vertical-spacing-small;
+.c-article-metrics__numbers {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: $article--vertical-spacing-medium;
+	
+	li {
+		padding-top: $article--vertical-spacing-small;
+		padding-right: $article--vertical-spacing-small;
+
+		@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+			padding-top: 0;
+		}
+	}
 }
 
 .c-article-metrics__access-citation {
