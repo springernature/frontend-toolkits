@@ -9,7 +9,7 @@
 }
 
 .c-header__container {
-	@include container;
+	@include u-container;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

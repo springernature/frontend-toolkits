@@ -1,5 +1,12 @@
 # History
 
+## 18.2.3 (2020-02-19)
+	* Remove imports to deleted files
+
+## 18.2.2 (2020-02-19)
+	* Fix import order in enhanced.scss
+	* Remove redundant container and spacing files
+
 ## 18.2.1 (2020-02-19)
 	* Fix typo in import of container
 

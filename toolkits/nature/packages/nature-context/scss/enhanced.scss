@@ -3,15 +3,16 @@
  * Bootstrap the rest of the styles on cut the mustard
  */
 
+// Dependency settings
 @import '10-settings/breakpoints';
 @import '10-settings/colors/default';
 @import '10-settings/colors/shared';
+@import '10-settings/spacing';
+
 @import '10-settings/container';
 @import '10-settings/keyframes';
-@import '10-settings/spacing';
-@import '10-settings/spacing-nature';
 @import '10-settings/style';
-@import '10-settings/typography'; // from global-context
+@import '10-settings/typography';
 @import '10-settings/typography-nature';
 
 @import '20-functions/colors';
