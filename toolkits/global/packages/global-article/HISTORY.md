@@ -1,5 +1,8 @@
 # History
 
+## 10.1.0 (2020-02-19)
+	* Add styles for peer review reports
+
 ## 10.0.0 (2020-02-17)
 	* Add new brand styles for metrics page corresponding to a different markup
 
