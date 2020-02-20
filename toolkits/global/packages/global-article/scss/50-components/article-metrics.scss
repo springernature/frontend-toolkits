@@ -65,6 +65,7 @@
 .c-article-metrics__section-heading {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
+	font-weight: bold;
 	font-family: $font-family-serif;
 	border-bottom: 2px solid map-get($article--grey-palette, 'grey-1');
 }

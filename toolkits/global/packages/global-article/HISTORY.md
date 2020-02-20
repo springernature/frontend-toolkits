@@ -2,7 +2,6 @@
 
 ## 10.1.2 (2020-02-20)
 	* Set font-family to sans for the content in the metrics page
-	* Remove font-weight for section headings in metrics page
 	* Adjust padding and alignment in access and citations section
 
 ## 10.1.1 (2020-02-19)
