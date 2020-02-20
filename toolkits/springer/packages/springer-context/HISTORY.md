@@ -1,5 +1,8 @@
 # History
 
+## 18.2.4 (2020-02-20)
+	* Remove redundant margin.scss utility file
+
 ## 18.2.3 (2020-02-19)
 	* Remove imports to deleted files
 
