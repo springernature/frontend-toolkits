@@ -1,5 +1,14 @@
 # History
 
+## 10.1.1 (2020-02-19)
+	* Bump to kick of travis :(
+
+## 10.1.0 (2020-02-19)
+	* Add styles for peer review reports
+
+## 10.0.0 (2020-02-17)
+	* Add new brand styles for metrics page corresponding to a different markup
+
 ## 9.3.2 (2020-02-11)
 	* Revert changes from 9.2.1 - they're causing a lot of layout issues (we might revisit what to do about inline equations overflowing, but since they're rare and this is tricky we may not)
 
