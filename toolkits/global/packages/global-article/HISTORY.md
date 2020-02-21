@@ -1,5 +1,8 @@
 # History
 
+## 10.1.2 (2020-02-20)
+	* Add variable for the font-weight in section headings in the metrics page.
+
 ## 10.1.1 (2020-02-19)
 	* Bump to kick of travis :(
 
