@@ -1,6 +1,7 @@
 # History
 
 ## 10.1.2 (2020-02-20)
+	* Adjust padding and alignment in access and citations section
 	* Add variable for the font-weight in section headings in the metrics page.
 
 ## 10.1.1 (2020-02-19)

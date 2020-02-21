@@ -76,7 +76,8 @@
 
 	li {
 		padding-top: $article--vertical-spacing-small;
-		padding-right: $article--vertical-spacing-small;
+		padding-right: $article--vertical-spacing-medium;
+		flex-grow: 1;
 
 		@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
 			padding-top: 0;
