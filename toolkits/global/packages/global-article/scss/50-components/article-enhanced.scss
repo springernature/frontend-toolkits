@@ -447,7 +447,17 @@
 	background-color: #fdf5f2;
 }
 
-.c-article-events__item > span {
+.c-article-peer-review {
+	background-color: #f0f7fa;
+	font-size: map-get($article--font-sizes, 'font-size-3');
+	font-family: $font-family-sans;
+	margin-top: -16px;
+	margin-bottom: 40px;
+	padding: $article--vertical-spacing-small;
+}
+
+.c-article-events__item > span,
+.c-article-peer-review > a {
 	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20viewBox%3D'125%2025%2016%2016'%20enable-background%3D'new%20125%2025%2016%2016'%3E%3Cpath%20fill%3D'%23215F90'%20d%3D'M133%2025c-4.374%200-8%203.626-8%208s3.626%208%208%208%208-3.626%208-8-3.626-8-8-8zm1.173%2012.48c0%20.107%200%20.32-.32.32h-1.707c-.213%200-.32-.106-.32-.32v-5.76c0-.213.106-.32.32-.32h1.707c.213%200%20.32.213.32.32v5.76zM133%2030.333c-1.067%200-1.173-.534-1.173-1.067%200-.64.213-1.066%201.173-1.066s1.173.426%201.173%201.066c0%20.534-.106%201.067-1.173%201.067z'%2F%3E%3C%2Fsvg%3E") no-repeat 0 50%;
 	padding-left: 24px;
 }
