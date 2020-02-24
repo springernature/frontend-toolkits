@@ -18,22 +18,30 @@ ol {
 
 /*
  * Headings
- * classes used to maintain the semantically appropriate heading levels
- * NOT for use on non-headings
- * if additional headings are needed they should be created via
- * additional classes, never via location dependant styling
  */
 
-h5 {
-	font-size: 1.2rem;
+h1 {
+	@include u-h1();
 }
 
-h1,
-h2,
-h3,
+h2 {
+	@include u-h2();
+}
+
+h3 {
+	@include u-h3();
+}
+
+h4 {
+	@include u-h4();
+}
+
 h5 {
-	font-family: $font-family-serif;
-	font-weight: normal;
+	@include u-h4();
+}
+
+h6 {
+	@include u-h4();
 }
 
 p:empty {

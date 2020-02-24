@@ -1,0 +1,20 @@
+/**
+ * Classes used to maintain the semantically appropriate heading levels
+ * NOT for use on non-headings
+ */
+
+.u-h1 {
+	@include u-h1();
+}
+
+.u-h2 {
+	@include u-h2();
+}
+
+.u-h3 {
+	@include u-h3();
+}
+
+.u-h4 {
+	@include u-h4();
+}
