@@ -1,4 +1,4 @@
-## 1.0.1 (2020-02-23)
+## 1.0.1 (2020-02-24)
 	* Stops throwing errors related to FontFaceObserver timeout
 
 ## 1.0.0 (2020-02-10)
