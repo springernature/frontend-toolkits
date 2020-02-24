@@ -15,6 +15,7 @@
 .c-article-metrics__body {
 	display: flex;
 	flex-wrap: wrap;
+	font-family: $font-family-sans;
 }
 
 .c-article-metrics__section--left {
@@ -38,6 +39,19 @@
 	}
 }
 
+.c-article-metrics__explanation {
+	color: map-get($article--grey-palette, 'grey-1');
+	font-size: map-get($article--font-sizes, 'font-size-2');
+	line-height: $article--vertical-spacing-large;
+
+	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+		padding-left: 60px;
+	}
+	@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+		padding-left: 80px;
+	}
+}
+
 .c-article-metrics__section--right {
 	flex-grow: 0;
 	flex-shrink: 1;
@@ -45,26 +59,12 @@
 	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
 		flex-basis: 40%;
 	}
-
-	p {
-		color: map-get($article--grey-palette, 'grey-1');
-		font-size: map-get($article--font-sizes, 'font-size-2');
-		line-height: $article--vertical-spacing-large;
-
-
-		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
-			padding-left: 60px;
-		}
-		@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
-			padding-left: 80px;
-		}
-	}
 }
 
 .c-article-metrics__section-heading {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
-	font-weight: bold;
+	font-weight: $article-metrics-section-heading-font-weight;
 	font-family: $font-family-serif;
 	border-bottom: 2px solid map-get($article--grey-palette, 'grey-1');
 }
@@ -76,7 +76,8 @@
 
 	li {
 		padding-top: $article--vertical-spacing-small;
-		padding-right: $article--vertical-spacing-small;
+		padding-right: $article--vertical-spacing-medium;
+		flex-grow: 1;
 
 		@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
 			padding-top: 0;
@@ -98,7 +99,7 @@
 	}
 
 	dt {
-		font-size: map-get($article--font-sizes, 'font-size-7');
+		font-size: map-get($article--font-sizes, 'font-size-6');
 		font-weight: 500;
 	}
 
