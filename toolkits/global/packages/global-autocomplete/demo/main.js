@@ -33,13 +33,20 @@ const args = {
 	onSelect: onSelect,
 	searchError: onError,
 	endpoint: 'autocomplete?q=',
-  //staticResultsData: animalsList,	// OPTIONAL: Provide either endpoint or array of data - if both are provided array be used
+	// staticResultsData: animalsList,	// OPTIONAL: Provide either endpoint or array of data - if both are provided array be used
 	timeout: 2000,		// OPTIONAL: Set a timeout for the fetch request, onError will be called if fetch request timeouts, default is 2000
 	minChars: 1,			// OPTIONAL: Minimum characters to be typed before request is sent, default is 0
 	inputDelay: 300,	// OPTIONAL: Delay between keypress and request being sent, default is 300
 	headers: {
 		Accept: 'application/json; version=2'
 	},
+	// httpMethod: 'POST', // OPTIONAL: Set which HTTP method must be used to emit the fetch request to the suggestions endpoint, default is 'GET'
+	// bodyTemplate: term => { // OPTIONAL: Object template to build the body to be passed into the fetch request to the suggestions endpoint
+	// 	return {
+	// 		text: term,
+	// 		size: 20
+	// 	};
+	// },
 	resultsContainerSelector: '.c-results-container',
 	resultSelector: '.c-results-container__result',
 	resultsCallBack: showResults
