@@ -89,7 +89,7 @@
 	display: flex;
 	flex-flow: column;
 	color: map-get($article--grey-palette, 'grey-1');
-	
+
 	&:nth-child(1) {
 		order: 2;
 	}
