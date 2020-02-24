@@ -10,21 +10,16 @@ import FontFaceObserver from 'fontfaceobserver';
  */
 
 function loadFonts(config) {
-	const fonts = [].concat.apply([], config.map(font => {
+	const fonts = (config || []).map(font => {
 		return font.weights.map(weight => {
-			try {
-				return new FontFaceObserver(font.name, {
-					weight: weight
-				});
-			} catch (error) {
-				// -- See note 2
-			}
+			const observer = new FontFaceObserver(font.name, {
+				weight: weight
+			});
+			return observer.load();
 		});
-	}));
+	});
 
-	return Promise.all(fonts.map(font => {
-		return font.load();
-	}))
+	return Promise.all(fonts)
 		.then(() => {
 			const event = new CustomEvent('webfonts-loaded');
 			document.documentElement.dispatchEvent(event);
@@ -34,8 +29,8 @@ function loadFonts(config) {
 				// -- See note 1
 			}
 		})
-		.catch(error => {
-			throw new Error(error);
+		.catch(() => {
+			// -- See note 2
 		});
 }
 
