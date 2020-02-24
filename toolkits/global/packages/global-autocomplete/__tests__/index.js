@@ -59,17 +59,37 @@ describe('Autocomplete', () => {
 		});
 
 		describe('Typing into the text input', () => {
-			test('Should send request to the specified endpoint', async () => {
+			test('Should by default send a GET request to the configured endpoint', async () => {
 				let auto = autoComplete(args);
 				auto.enable();
 				input.value = 'burdmen';
 				input.dispatchEvent(new Event('keyup'));
 
 				await waitFor(2);
-				expect(fetchSpy).toHaveBeenCalledWith(url + 'burdmen', {"content-type": "application/json", "headers": headers});
+				expect(fetchSpy).toHaveBeenCalledWith(url + 'burdmen', {"content-type": "application/json", "headers": headers, "method": 'GET'});
 
 			});
 
+			test('Should send a request using the configured HTTP method and bodyTemplate', async () => {
+				const bodyTemplate = term => {
+					return {
+						text: term,
+						size: 20
+					};
+				};
+				let auto = autoComplete({
+					...args,
+					httpMethod: 'POST',
+					bodyTemplate,
+				});
+				auto.enable();
+				input.value = 'burdmen';
+				input.dispatchEvent(new Event('keyup'));
+
+				await waitFor(2);
+				expect(fetchSpy).toHaveBeenCalledWith(url, {"content-type": "application/json", "headers": headers, "method": "POST", "body": JSON.stringify(bodyTemplate('burdmen'))});
+
+			});
 			test('Or use provided data', async () => {
 				let newArgs = Object.assign({
 					endpoint: null,

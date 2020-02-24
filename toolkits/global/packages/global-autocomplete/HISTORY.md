@@ -1,5 +1,8 @@
 # History
 
+## 2.1.0 (2020-02-24)
+    * Add support for other http methods than GET
+
 ## 2.0.0 (2020-01-06)
     * Refactor based on new linting rules
 
