@@ -3,6 +3,16 @@
  * Article styles for browsers that pass CTM
  */
 
+.c-article-main-column {
+	width: 60.2%;
+	margin-right: 8.6%;
+
+	@include media-query(map-get($article--breakpoints, 'med'), 'max') {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
 .c-author-popup {
 	padding: $article--vertical-spacing-medium 40px $article--vertical-spacing-medium $article--vertical-spacing-large;
 	background-color: white;
