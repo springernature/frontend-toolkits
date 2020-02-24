@@ -1,5 +1,8 @@
 # History
 
+## 10.2.1 (2020-02-24)
+	* Fix the max-height for the pdf download button
+
 ## 10.2.0 (2020-02-24)
 	* Add new class for use on article body container for replacing .main-column eventually
 
