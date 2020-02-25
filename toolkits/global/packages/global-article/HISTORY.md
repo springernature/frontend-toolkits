@@ -1,5 +1,8 @@
 # History
 
+## 10.3.0 (2020-02-25)
+	* Remove the need to pass mainColSelector as we can use the .js-main-column as the hook
+
 ## 10.2.0 (2020-02-24)
 	* Add new class for use on article body container for replacing .main-column eventually
 
