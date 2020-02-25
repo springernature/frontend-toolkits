@@ -1,5 +1,21 @@
 # History
 
+## 0.30.2 (2020-02-19)
+	* Fix import order in enhanced.scss
+	* Remove redundant functions folder
+
+## 0.30.1 (2020-02-19)
+	* Fix typo in import of container
+
+## 0.30.0 (2020-02-19)
+	* Imports container into enhanced.scss
+
+## 0.29.0 (2020-02-19)
+	* Bump global-context to 14.1.0
+
+## 0.28.0 (2020-02-18)
+	* Bump global-context to 14.0.0
+
 ## 0.27.2 (2020-02-14)
 	♥ Bump global-context to 13.1.1
 

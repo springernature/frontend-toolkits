@@ -43,7 +43,7 @@
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
-    "@springernature/eslint-config": "^4.0.0",
+    "@springernature/eslint-config": "^4.0.1",
     "@springernature/frontend-package-manager": "^4.0.3",
     "@springernature/sasslint-config": "^1.2.0",
     "@springernature/util-eslint-runner": "^0.0.3",

@@ -11,7 +11,7 @@ const createButtonElement = text => {
 	return button;
 };
 
-const createdropdownElementement = (buttonElement, links) => {
+const createDropdownElement = (buttonElement, links) => {
 	const dropdownElement = document.createElement('div');
 	dropdownElement.className = constants.DROPDOWN;
 
@@ -28,15 +28,15 @@ const createdropdownElementement = (buttonElement, links) => {
 			a.href = link.href;
 			a.textContent = link.textContent;
 
-			li.append(a);
-			menu.append(li);
+			li.appendChild(a);
+			menu.appendChild(li);
 		} else {
 			throw new Error(`Expected an array of links but received an array containing ${link.tagName}`);
 		}
 	});
 
-	dropdownElement.append(buttonElement);
-	dropdownElement.append(menu);
+	dropdownElement.appendChild(buttonElement);
+	dropdownElement.appendChild(menu);
 
 	return dropdownElement;
 };
@@ -48,7 +48,7 @@ const createDropdown = options => {
 
 	const dropdownOptions = Object.prototype.hasOwnProperty.call(options, 'DROPDOWN_OPTIONS') ? options.DROPDOWN_OPTIONS : {};
 	const buttonElement = createButtonElement(options.BUTTON_TEXT);
-	const dropdownElement = createdropdownElementement(buttonElement, options.LINKS);
+	const dropdownElement = createDropdownElement(buttonElement, options.LINKS);
 
 	const dropdown = new Dropdown(buttonElement, dropdownOptions);
 	dropdown.init();

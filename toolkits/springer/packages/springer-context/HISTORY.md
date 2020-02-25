@@ -1,5 +1,27 @@
 # History
 
+## 18.2.4 (2020-02-20)
+	* Remove redundant margin.scss utility file
+
+## 18.2.3 (2020-02-19)
+	* Remove imports to deleted files
+
+## 18.2.2 (2020-02-19)
+	* Fix import order in enhanced.scss
+	* Remove redundant container and spacing files
+
+## 18.2.1 (2020-02-19)
+	* Fix typo in import of container
+
+## 18.2.0 (2020-02-19)
+	* Imports container from global instead of brand
+
+## 18.1.0 (2020-02-19)
+	* Bump global-context to 14.1.0
+
+## 18.0.0 (2020-02-18)
+	* Bump global-context to 14.0.0
+
 ## 17.0.3 (2020-02-14)
 	♥ Container settings to use spacing instead of get-spacing
 	♥ Tables to use spacing instead of get-spacing
