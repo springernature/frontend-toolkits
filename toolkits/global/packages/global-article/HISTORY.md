@@ -1,5 +1,8 @@
 # History
 
+## 10.2.0 (2020-02-24)
+	* Add new class for use on article body container for replacing .main-column eventually
+
 ## 10.1.2 (2020-02-20)
 	* Set font-family to sans for the content in the metrics page
 	* Adjust padding and alignment in access and citations section

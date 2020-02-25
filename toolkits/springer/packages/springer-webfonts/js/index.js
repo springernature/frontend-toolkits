@@ -4,20 +4,22 @@ import FontFaceObserver from 'fontfaceobserver';
  * 1. No need to throw this.
  *	  Access to browser storage can be blocked in the browser settings and that is a valid user choice.
  *	  The try catch is required because sessionStorage will still be defined and JavaScript will error but we want it to fail silently.
+ *
+ * 2. No need to throw this.
+ *	  The try catch is required because FontFaceObserver will reject the promise with a new Error if the default timeout is exceeded. We want it to fail silently.
  */
 
 function loadFonts(config) {
-	const fonts = [].concat.apply([], config.map(font => {
+	const fonts = (config || []).map(font => {
 		return font.weights.map(weight => {
-			return new FontFaceObserver(font.name, {
+			const observer = new FontFaceObserver(font.name, {
 				weight: weight
 			});
+			return observer.load();
 		});
-	}));
+	});
 
-	return Promise.all(fonts.map(font => {
-		return font.load();
-	}))
+	return Promise.all(fonts)
 		.then(() => {
 			const event = new CustomEvent('webfonts-loaded');
 			document.documentElement.dispatchEvent(event);
@@ -27,8 +29,8 @@ function loadFonts(config) {
 				// -- See note 1
 			}
 		})
-		.catch(error => {
-			throw new Error(error);
+		.catch(() => {
+			// -- See note 2
 		});
 }
 
