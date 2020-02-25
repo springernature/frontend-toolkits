@@ -1,5 +1,8 @@
 # History
 
+## 2.1.1 (2020-02-25)
+	* Set text-decoration: none on links within header-brand
+
 ## 2.1.0 (2020-02-19)
 	* Use global container mixin
 	* Bump global-context peer dependency to 18.2.3
