@@ -133,16 +133,16 @@ describe('Autocomplete', () => {
 		});
 
 		describe('A response with zero suggestions', () => {
-			test('Should add "no results" to the list', async () => {
+			test('Should not error out because the "no results" situation is the job of the resultsCallBack', async () => {
 				let auto = autoComplete(args);
 				auto.enable();
 
-				setMockFetch({ok: true, status: 200, json: () => { return [] }});
+				setMockFetch({ok: true, status: 200, json: () => { return []; }});
 				input.value = 'bur';
 				input.dispatchEvent(new Event('keyup'));
 
 				await waitFor(2);
-				expect(mockResultsCallback).toHaveBeenCalledWith(['No results']);
+				expect(mockResultsCallback).toHaveBeenCalledWith([]);
 			});
 		});
 });

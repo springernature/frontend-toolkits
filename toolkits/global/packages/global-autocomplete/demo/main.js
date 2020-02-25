@@ -9,6 +9,10 @@ const showResults = results => {
 	const resultsContainer = document.createElement('div');
 	resultsContainer.className = 'c-results-container';
 
+	// Assuming results is an array
+	if(results.length === 0) {
+		results.push['No results'];
+	}
 	results.forEach(datum => {
 		const result = document.createElement('div');
 		result.textContent = datum;

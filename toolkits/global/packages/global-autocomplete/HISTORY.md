@@ -1,7 +1,9 @@
 # History
 
-## 2.1.0 (2020-02-24)
+## 3.0.0 (2020-02-25)
     * Add support for other http methods than GET
+    * Enable consumption of non array data. Data massage is now fully delegated to `resultsCallback`
+    * BREAKING: Handling 'No results' is now delegated to resultsCallBack
 
 ## 2.0.0 (2020-01-06)
     * Refactor based on new linting rules

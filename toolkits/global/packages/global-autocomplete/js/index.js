@@ -122,18 +122,10 @@ const autoComplete = arguments_ => {
 
 	const generateSuggestions = data => {
 		removeSuggestions();
-		let resultsLength = data.length;
-		if (resultsLength > 0) {
-			input.addEventListener('keyup', inputEvents);
-		} else {
-			data.push('No results');
-		}
-
 		document.addEventListener('click', removeSuggestions);
+		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
-		if (resultsLength > 0) {
-			addSuggestionEventListeners();
-		}
+		addSuggestionEventListeners();
 	};
 
 	const handleData = term => {
