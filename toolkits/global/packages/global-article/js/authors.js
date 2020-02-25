@@ -188,8 +188,7 @@ window.Component.AuthorList = (function ($) {
 				arrow: true,
 				close: true,
 				offset: 50,
-				setFocusOn: 'h3#author-' + id,
-				mainColSelector: '.c-page-layout__main, div.main-column'
+				setFocusOn: 'h3#author-' + id
 			});
 			popup.toggle(event);
 		};
