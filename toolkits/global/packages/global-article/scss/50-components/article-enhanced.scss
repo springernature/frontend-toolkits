@@ -2186,7 +2186,17 @@
 }
 
 .c-pdf-download {
+	display: flex;
 	margin-bottom: $article--vertical-spacing-large;
+	max-height: 48px;
+
+	@include media-query(map-get($article--breakpoints, 'sml'), 'min') {
+		max-height: none;
+	}
+
+	@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+		max-height: 48px;
+	}
 }
 
 .c-pdf-download__link {
@@ -2197,10 +2207,10 @@
 	border: 1px solid $article--cta-button-border-color;
 	border-radius: $article--cta-button-border-radius;
 	text-decoration: none;
-	padding: $article--vertical-spacing-medium $article--vertical-spacing-large;
-	line-height: 1.4;
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	font-family: $font-family-sans;
+	flex: 1;
+	padding: 13px 24px;
 }
 
 .c-pdf-download__link:visited {
