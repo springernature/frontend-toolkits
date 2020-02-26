@@ -11,7 +11,7 @@ const showResults = results => {
 
 	// Assuming results is an array
 	if(results.length === 0) {
-		results.push['No results'];
+		results.push('No results');
 	}
 	results.forEach(datum => {
 		const result = document.createElement('div');
