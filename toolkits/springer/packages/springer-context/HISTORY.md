@@ -1,5 +1,8 @@
 # History
 
+## 18.3.0 (2020-02-26)
+	* Add info color to color map and utility class 
+	
 ## 18.2.4 (2020-02-20)
 	* Remove redundant margin.scss utility file
 
