@@ -1,5 +1,8 @@
 # History
 
+## 0.31.1 (2020-02-26)
+	* Import typography mixins into enhanced
+
 ## 0.31.0 (2020-02-24)
 	* Adds heading utility mixins and classes
 	* Heading styles dependent upon $is-flagship-journal to avoid breaking changes to mosaic
