@@ -45,7 +45,7 @@ const args = {
 		Accept: 'application/json; version=2'
 	},
 	// httpMethod: 'POST', // OPTIONAL: Defaults to 'GET'
-	// bodyTemplate: term => { // OPTIONAL: Object template to build the body to be passed into the fetch request to the suggestions endpoint
+	// bodyTemplate: term => { // OPTIONAL: template for the body data
 	// 	return {
 	// 		text: term,
 	// 		size: 20
