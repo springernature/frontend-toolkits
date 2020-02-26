@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-article",
-  "version": "10.3.0",
+  "version": "10.3.1",
   "description": "Frontend package for article display",
   "license": "MIT",
   "peerDependencies": {

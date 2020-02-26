@@ -1,5 +1,8 @@
 # History
 
+## 10.3.1 (2020-02-25)
+	* Fix the max-height for the pdf download button
+
 ## 10.3.0 (2020-02-25)
 	* Remove the need to pass mainColSelector as we can use the .js-main-column as the hook
 
