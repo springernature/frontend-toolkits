@@ -44,7 +44,7 @@ const args = {
 	headers: {
 		Accept: 'application/json; version=2'
 	},
-	// httpMethod: 'POST', // OPTIONAL: Set which HTTP method must be used to emit the fetch request to the suggestions endpoint, default is 'GET'
+	// httpMethod: 'POST', // OPTIONAL: Defaults to 'GET'
 	// bodyTemplate: term => { // OPTIONAL: Object template to build the body to be passed into the fetch request to the suggestions endpoint
 	// 	return {
 	// 		text: term,
