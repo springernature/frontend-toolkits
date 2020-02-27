@@ -58,6 +58,8 @@
 
 	&--textarea {
 		height: auto;
+		overflow: auto;
+		resize: vertical;
 	}
 
 	// Unstyle the caret on `<select>`s in IE10+.
