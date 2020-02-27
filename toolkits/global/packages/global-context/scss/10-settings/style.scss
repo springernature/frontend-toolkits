@@ -4,6 +4,11 @@
  *
  */
 
+@import '../20-functions/colors';
+
+// Keyline
+$context--keyline-border-color: greyscale(70);
+
 // Shadow
 $context--shadow-border-color: black;
 $context--shadow-color: black;
