@@ -3,19 +3,17 @@
  * Bootstrap the rest of the styles on cut the mustard
  */
 
-// frontend-global-toolkit
 // Dependency settings
 @import '10-settings/keyframes';
+@import '10-settings/colors/default';
 @import '10-settings/colors/shared';
 @import '10-settings/spacing';
 
+// Other settings
 @import '10-settings/container';
 @import '10-settings/style';
 @import '10-settings/typography';
-
-// frontend-springer-toolkit
 @import '10-settings/breakpoints';
-@import '10-settings/colors/default';
 @import '10-settings/typography-springer';
 
 // frontend-global-toolkit
