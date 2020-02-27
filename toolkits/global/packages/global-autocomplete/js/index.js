@@ -11,6 +11,8 @@ const autoComplete = arguments_ => {
 		inputDelay = 300,
 		requestTimeout = 2000,
 		headers = {},
+		httpMethod = 'GET',
+		bodyTemplate,
 		searchError,
 		resultsCallBack
 	} = arguments_;
@@ -120,18 +122,10 @@ const autoComplete = arguments_ => {
 
 	const generateSuggestions = data => {
 		removeSuggestions();
-		let resultsLength = data.length;
-		if (resultsLength > 0) {
-			input.addEventListener('keyup', inputEvents);
-		} else {
-			data.push('No results');
-		}
-
 		document.addEventListener('click', removeSuggestions);
+		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
-		if (resultsLength > 0) {
-			addSuggestionEventListeners();
-		}
+		addSuggestionEventListeners();
 	};
 
 	const handleData = term => {
@@ -141,10 +135,21 @@ const autoComplete = arguments_ => {
 		}
 
 		const fetchData = new Promise((resolve, reject) => {
-			fetch(endpoint + term, {
+			let fetchURL;
+			const fetchParameters = {
 				'content-type': 'application/json',
-				headers
-			}).then(response => {
+				headers,
+				method: httpMethod
+			};
+
+			if (bodyTemplate) {
+				fetchURL = endpoint;
+				fetchParameters.body = JSON.stringify(bodyTemplate(term));
+			} else {
+				fetchURL = endpoint + term;
+			}
+
+			fetch(fetchURL, fetchParameters).then(response => {
 				if (response.status === 200 && response.ok) {
 					return response.json();
 				}

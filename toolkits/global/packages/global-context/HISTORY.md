@@ -1,5 +1,8 @@
 # History
 
+## 14.2.0 (2020-02-27)
+    * Adds keyline
+
 ## 14.1.0 (2020-02-19)
     * Adds container
 
