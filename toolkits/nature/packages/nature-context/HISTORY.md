@@ -1,5 +1,8 @@
 # History
 
+## 0.32.1 (2020-02-27)
+	* Rename style.scss to style-nature.scss to stop clash with global-context
+
 ## 0.32.0 (2020-02-27)
 	* Bump global-context to 14.2.0
 
