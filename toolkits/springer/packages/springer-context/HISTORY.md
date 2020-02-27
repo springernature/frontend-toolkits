@@ -1,5 +1,8 @@
 # History
 
+## 18.4.1 (2020-02-27)
+	* Change import order of settings
+
 ## 18.4.0 (2020-02-27)
 	* Bump global-context to 14.2.0
 
