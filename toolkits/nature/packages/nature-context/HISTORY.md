@@ -1,5 +1,8 @@
 # History
 
+## 0.32.0 (2020-02-27)
+	* Bump global-context to 14.2.0
+
 ## 0.31.1 (2020-02-26)
 	* Import typography mixins into enhanced
 

@@ -1,5 +1,8 @@
 # History
 
+## 18.4.0 (2020-02-27)
+	* Bump global-context to 14.2.0
+
 ## 18.3.0 (2020-02-26)
 	* Add info color to color map and utility class 
 	
