@@ -142,7 +142,7 @@ window.Component.AuthorList = (function ($) {
 
 				if ($item.length > 0) {
 					var $clone = $item.clone();
-					$clone.find('.c-article-author-authors-search__title.js-search-name').remove();
+					$clone.find('.js-search-name').remove();
 					return $clone.html();
 				}
 				return '';
