@@ -88,6 +88,31 @@
 	}
 }
 
+.c-author-popup .c-article-button {
+	color: $article--cta-button-color;
+	background: $article--cta-button-background-color;
+	border: 1px solid $article--cta-button-border-color;
+	border-radius: $article--cta-button-border-radius;
+	text-decoration: none;
+	font-size: map-get($article--font-sizes, 'font-size-3');
+	font-family: $font-family-sans;
+	display: block;
+	width: 100%;
+	padding-top: $article--vertical-spacing-small;
+	padding-bottom: $article--vertical-spacing-small;
+	text-align: center;
+
+	&:visited {
+		color: $article--cta-button-color;
+	}
+	
+	&:hover {
+		color: $article--cta-button-hover-color;
+		background: $article--cta-button-background-hover-color;
+		text-decoration: none;
+	}
+}
+
 .c-article-title {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
@@ -652,32 +677,6 @@
 			margin-top: 0;
 		}
 	}
-}
-
-.c-author-popup .c-article-button {
-	color: $article--cta-button-color;
-	background: $article--cta-button-background-color;
-	border: 1px solid $article--cta-button-border-color;
-	border-radius: $article--cta-button-border-radius;
-	text-decoration: none;
-	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
-	display: block;
-	width: 100%;
-	padding-top: $article--vertical-spacing-small;
-	padding-bottom: $article--vertical-spacing-small;
-	text-align: center;
-
-	&:visited {
-		color: $article--cta-button-color;
-	}
-	
-	&:hover {
-		color: $article--cta-button-hover-color;
-		background: $article--cta-button-background-hover-color;
-		text-decoration: none;
-	}
-	
 }
 
 .c-article-author-institutional-author {
