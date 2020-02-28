@@ -88,50 +88,6 @@
 	}
 }
 
-.c-author-popup .c-article-author-authors-search__list {
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-}
-
-.c-author-popup .c-article-author-authors-search__list-item--left {	
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
-		flex-basis: 40%;
-	}
-}
-.c-author-popup .c-article-author-authors-search__list-item--right {
-	margin-top: $article--vertical-spacing-medium;
-	
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
-		margin-top: 0;
-	}
-}
-
-.c-author-popup .c-article-author-authors-search__list-item--right .c-article-identifiers {
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
-		justify-content: flex-end;
-	}
-}
-
-.c-author-popup .c-article-author-authors-search {
-	&__button-link {
-		color: $article--cta-button-color;
-		background: $article--cta-button-background-color;
-		border: 1px solid $article--cta-button-border-color;
-		border-radius: $article--cta-button-border-radius;
-		text-decoration: none;
-		font-size: map-get($article--font-sizes, 'font-size-3');
-		font-family: $font-family-sans;
-		display: block;
-		width: 100%;
-		padding-top: $article--vertical-spacing-small;
-		padding-bottom: $article--vertical-spacing-small;
-		text-align: center;
-	}
-}
-
 .c-article-title {
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
@@ -652,19 +608,19 @@
 	margin-left: 0;
 }
 
-.c-article-author-authors__list {
+.c-article-authors__list {
 	padding: 0;
 	list-style: none;
 	margin-top: 0;
 	margin-bottom: $article--vertical-spacing-large;
 }
 
-.c-article-author-authors-search {
+.c-article-authors-search {
 	margin-top: 0;
 	margin-bottom: $article--vertical-spacing-large;
 }
 
-.c-article-author-authors-search__title {
+.c-article-authors-search__title {
 	color: map-get($article--grey-palette, 'grey-3');
 	font-weight: 700;
 	font-family: $font-family-sans;
@@ -673,17 +629,55 @@
 	font-size: map-get($article--font-sizes, 'font-size-4');
 }
 
-.c-article-author-authors-search__list {
-	margin-bottom: $article--vertical-spacing-small;
-	margin-top: 0;
-	padding: 0;
-	list-style: none;
+.c-article-authors-search__item {
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	font-family: $font-family-sans;
 }
 
-.c-article-author-authors-search__item {
-	display: inline;
+.c-author-popup .c-article-authors-search__list {
+	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item--left {	
+		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+			flex-basis: 40%;
+		}
+	}
+	&-item--right {
+		margin-top: $article--vertical-spacing-medium;
+		
+		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+			margin-top: 0;
+		}
+	}
+}
+
+.c-author-popup .c-article-button {
+	color: $article--cta-button-color;
+	background: $article--cta-button-background-color;
+	border: 1px solid $article--cta-button-border-color;
+	border-radius: $article--cta-button-border-radius;
+	text-decoration: none;
+	font-size: map-get($article--font-sizes, 'font-size-3');
+	font-family: $font-family-sans;
+	display: block;
+	width: 100%;
+	padding-top: $article--vertical-spacing-small;
+	padding-bottom: $article--vertical-spacing-small;
+	text-align: center;
+
+	&:visited {
+		color: $article--cta-button-color;
+	}
+	
+	&:hover {
+		color: $article--cta-button-hover-color;
+		background: $article--cta-button-background-hover-color;
+		text-decoration: none;
+	}
+	
 }
 
 .c-article-author-institutional-author {
@@ -2257,13 +2251,11 @@
 	padding: 13px 24px;
 }
 
-.c-pdf-download__link:visited,
-.c-article-author-authors-search__button-link:visited {
+.c-pdf-download__link:visited {
 	color: $article--cta-button-color;
 }
 
-.c-pdf-download__link:hover,
-.c-article-author-authors-search__button-link:hover {
+.c-pdf-download__link:hover {
 	color: $article--cta-button-hover-color;
 	background: $article--cta-button-background-hover-color;
 	text-decoration: none;
@@ -2316,6 +2308,12 @@
 
 .c-article-identifiers__open {
 	color: $article--important-color; // this is the same across brands
+}
+
+.c-author-popup .c-article-identifiers {
+	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+		justify-content: flex-end;
+	}
 }
 
 .c-article-associated-content__container {
