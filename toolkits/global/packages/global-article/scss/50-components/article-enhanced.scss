@@ -86,13 +86,6 @@
 		color: $article--link-color;
 		text-decoration: none;
 	}
-	.c-article-button__link {
-		display: block;
-		width: 100%;
-		padding-top: $article--vertical-spacing-small;
-		padding-bottom: $article--vertical-spacing-small;
-		text-align: center;
-	}
 }
 
 .c-author-popup .c-article-author-authors-search__list {
@@ -122,14 +115,21 @@
 	}
 }
 
-.c-article-button__link {
-	color: $article--cta-button-color;
-	background: $article--cta-button-background-color;
-	border: 1px solid $article--cta-button-border-color;
-	border-radius: $article--cta-button-border-radius;
-	text-decoration: none;
-	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+.c-author-popup .c-article-author-authors-search {
+	&__button-link {
+		color: $article--cta-button-color;
+		background: $article--cta-button-background-color;
+		border: 1px solid $article--cta-button-border-color;
+		border-radius: $article--cta-button-border-radius;
+		text-decoration: none;
+		font-size: map-get($article--font-sizes, 'font-size-3');
+		font-family: $font-family-sans;
+		display: block;
+		width: 100%;
+		padding-top: $article--vertical-spacing-small;
+		padding-bottom: $article--vertical-spacing-small;
+		text-align: center;
+	}
 }
 
 .c-article-title {
@@ -2258,12 +2258,12 @@
 }
 
 .c-pdf-download__link:visited,
-.c-article-button__link:visited  {
+.c-article-author-authors-search__button-link:visited {
 	color: $article--cta-button-color;
 }
 
 .c-pdf-download__link:hover,
-.c-article-button__link:hover {
+.c-article-author-authors-search__button-link:hover {
 	color: $article--cta-button-hover-color;
 	background: $article--cta-button-background-hover-color;
 	text-decoration: none;
