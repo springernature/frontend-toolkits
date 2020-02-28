@@ -143,7 +143,7 @@ window.Component.AuthorList = (function ($) {
 				if ($item.length > 0) {
 					var $clone = $item.clone();
 					$clone.find('.c-article-author-authors-search__title.js-search-name').remove();
-					return '<h4 class="' + FOOTER_HEADING + '">Search for this author in:</h4>' + $clone.html();
+					return $clone.html();
 				}
 				return '';
 			};
