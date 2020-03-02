@@ -674,8 +674,9 @@
 	}
 	&-item--right {
 		margin-top: $article--vertical-spacing-medium;
-		
 		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+			text-align: right;
+			flex: 1;	
 			margin-top: 0;
 		}
 	}
