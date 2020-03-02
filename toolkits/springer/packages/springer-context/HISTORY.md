@@ -1,5 +1,8 @@
 # History
 
+## 18.4.2 (2020-02-28)
+	* Change html font-family to sans-serif
+
 ## 18.4.1 (2020-02-27)
 	* Change import order of settings
 
