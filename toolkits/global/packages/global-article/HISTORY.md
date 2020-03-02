@@ -1,5 +1,8 @@
 # History
 
+## 11.0.0 (2020-03-03)
+	* Convert `InternalNavigation` to use `module.exports`
+
 ## 10.4.0 (2020-03-03)
 	* Change markup and aligment for elements in the footer inside the author popup
 
