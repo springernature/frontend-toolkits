@@ -57,7 +57,9 @@
 		font-size: map-get($article--font-sizes, 'font-size-4');
 		font-weight: 700;
 		float: left;
+		padding-right: $article--vertical-spacing-small;
 		margin-bottom: $article--vertical-spacing-small;
+		margin-top: 4px;
 	}
 
 	&__footer-heading {
