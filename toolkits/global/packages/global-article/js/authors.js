@@ -135,7 +135,7 @@ window.Component.AuthorList = (function ($) {
 			var getHeadingHtml = function ($link) {
 				var html = $link.html();
 
-				return '<h2 id="author-dialog" class="' + HEADING_CLASS + '">Author Information</h2><h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>'; // eslint-disable-line no-use-before-define
+				return '<h2 id="author-dialog" class="' + HEADING_CLASS + '">Author Information</h2><h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>' + getOrcidHtml($item) ; // eslint-disable-line no-use-before-define
 			};
 			var getFooterHtml = function (id) {
 				var $item = $('#' + id);
@@ -180,7 +180,6 @@ window.Component.AuthorList = (function ($) {
 			} else {
 				html += getBodyHtml($linkCopy, $item);
 				html += getFooterHtml(id);
-				html += getOrcidHtml($item);
 			}
 			html += '</section></div>';
 
