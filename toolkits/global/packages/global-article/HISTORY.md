@@ -1,5 +1,8 @@
 # History
 
+## 10.4.0 (2020-03-03)
+	* Change markup and aligment for elements in the footer inside the author popup
+
 ## 10.3.1 (2020-02-25)
 	* Fix the max-height for the pdf download button
 
