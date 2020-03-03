@@ -88,7 +88,6 @@ window.Component.AuthorList = (function ($) {
 			var HEADING_CLASS = 'u-visually-hidden';
 			var SUBHEADING_CLASS = POPUP_CLASS + '__subheading';
 			var ORCID_CLASS = 'c-article-orcid';
-			var FOOTER_HEADING = POPUP_CLASS + '__footer-heading';
 
 			var getBodyHtml = function ($link, $item) {
 				var correspId = $link.data('corresp-id');
@@ -135,7 +134,7 @@ window.Component.AuthorList = (function ($) {
 			var getHeadingHtml = function ($link) {
 				var html = $link.html();
 
-				return '<h2 id="author-dialog" class="' + HEADING_CLASS + '">Author Information</h2><h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>' + getOrcidHtml($item) ; // eslint-disable-line no-use-before-define
+				return '<h2 id="author-dialog" class="' + HEADING_CLASS + '">Author Information</h2><h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>' + getOrcidHtml($item); // eslint-disable-line no-use-before-define
 			};
 			var getFooterHtml = function (id) {
 				var $item = $('#' + id);
