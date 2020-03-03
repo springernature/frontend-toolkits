@@ -1,5 +1,8 @@
 # History
 
+## 3.0.1 (2020-02-25)
+    * Add `main` property to package.json to make `import @springernature/global-autocomplete` statement work
+
 ## 3.0.0 (2020-02-25)
     * Add support for other http methods than GET
     * Enable consumption of non array data. Data massage is now fully delegated to `resultsCallback`
