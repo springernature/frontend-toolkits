@@ -18,7 +18,7 @@ function loadFonts(config) {
 			return observer.load()
 				.catch(() => {
 					// - See note 2
-				})
+				});
 		});
 	});
 
@@ -31,7 +31,7 @@ function loadFonts(config) {
 			} catch (error) {
 				// -- See note 1
 			}
-		})
+		});
 }
 
 function init(config) {
