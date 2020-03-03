@@ -1,10 +1,11 @@
 {
   "name": "@springernature/global-autocomplete",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "description": "Autocomplete/suggest component",
   "keywords": [],
   "author": "Jon Stevens",
+  "main": "js/index.js",
   "peerDependencies": {
     "@springernature/global-context": "^5.0.1"
   }
