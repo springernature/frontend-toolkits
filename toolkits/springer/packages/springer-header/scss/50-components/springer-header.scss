@@ -26,6 +26,14 @@
 	}
 }
 
+.c-header__qualifier {
+	margin-left: spacing(24);
+
+	@include media-query(sm, max) {
+		display: none;
+	}
+}
+
 .c-header__navigation {
 	display: flex;
 	align-items: center;

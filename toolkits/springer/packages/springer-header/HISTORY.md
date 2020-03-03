@@ -1,5 +1,8 @@
 # History
 
+## 2.2.0 (2020-03-03)
+	* Add styles for brand qualifier
+
 ## 2.1.1 (2020-02-25)
 	* Set text-decoration: none on links within header-brand
 
