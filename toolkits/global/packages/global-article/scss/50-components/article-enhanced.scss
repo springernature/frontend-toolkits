@@ -107,7 +107,7 @@
 	&:visited {
 		color: $article--cta-button-color;
 	}
-	
+
 	&:hover {
 		color: $article--cta-button-hover-color;
 		background: $article--cta-button-background-hover-color;
@@ -668,11 +668,13 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&-item--left {	
+
+	&-item--left {
 		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
 			flex-basis: 40%;
 		}
 	}
+
 	&-item--right {
 		margin-top: $article--vertical-spacing-medium;
 		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
