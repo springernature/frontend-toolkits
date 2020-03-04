@@ -1,3 +1,6 @@
+## 1.0.2 (2020-03-04)
+	* Changes where we catch font face observer load rejected promises as needs to be caught on obersver.load() calls
+
 ## 1.0.1 (2020-02-24)
 	* Stops throwing errors related to FontFaceObserver timeout
 

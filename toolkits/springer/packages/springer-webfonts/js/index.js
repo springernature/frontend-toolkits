@@ -15,7 +15,10 @@ function loadFonts(config) {
 			const observer = new FontFaceObserver(font.name, {
 				weight: weight
 			});
-			return observer.load();
+			return observer.load()
+				.catch(() => {
+					// - See note 2
+				});
 		});
 	});
 
@@ -28,9 +31,6 @@ function loadFonts(config) {
 			} catch (error) {
 				// -- See note 1
 			}
-		})
-		.catch(() => {
-			// -- See note 2
 		});
 }
 
