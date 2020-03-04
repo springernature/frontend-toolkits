@@ -8,5 +8,6 @@
   "extendsPackage": "global-card@0.2.0",
   "peerDependencies": {
     "@springernature/nature-context": "^0.18.2"
-  }
+  },
+  "brandContext": "^1.0.0"
 }

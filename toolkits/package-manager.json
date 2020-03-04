@@ -62,7 +62,7 @@
       "60-utilities"
     ]
   },
-  "enforceContextFileNaming": [
+  "enforceBrandFileNaming": [
     "scss/10-settings"
   ]
 }
