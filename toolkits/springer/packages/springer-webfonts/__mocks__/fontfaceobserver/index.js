@@ -1,6 +1,5 @@
-const load = jest.fn().mockImplementation(() => new Promise((resolve, reject) => resolve()));
+const load = jest.fn().mockImplementation(() => new Promise((resolve) => resolve()));
 const mock = jest.fn().mockImplementation(() => {
-		return {load: load}
-	}
-);
+	return {load: load};
+});
 export default mock;
