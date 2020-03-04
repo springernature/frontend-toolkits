@@ -13,7 +13,7 @@
 
 .c-input-row__item {
 	align-self: stretch;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 	padding-right: $global-form--grid-gutter-width / 2;
 	padding-left:  $global-form--grid-gutter-width / 2;
 }
@@ -42,7 +42,7 @@
 }
 
 .c-input-group__control {
-	@include global-form-input
+	@include global-form-input;
 
 	&--check {
 		width: auto;
