@@ -1,5 +1,7 @@
 # History
 
+## 0.6.0 (2020-03-04)
+	* Update the extends package version of global article from 9.3.2 to 11.0.0
 ## 0.5.2 (2020-02-11)
 	* Update the extends package version of global article from 9.3.1 to 9.3.2
 
