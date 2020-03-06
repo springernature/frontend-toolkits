@@ -1,8 +1,34 @@
 import {Expander} from '../js/expander';
 
+/**
+ * Constants
+ */
+
 const className = {
 	HIDE: 'u-js-hide',
 	OPEN: 'is-open'
+};
+
+const createKeydownEvent = key => {
+	const event = new Event('keydown', {
+		bubbles: true
+	});
+
+	switch (key) {
+		case 'Enter':
+			event.key = 'Enter';
+			break;
+		case 'Escape':
+			event.key = 'Escape';
+			break;
+		case 'Tab':
+			event.key = 'Tab';
+			break;
+		default:
+			throw new Error(`${key} was should be 'Enter' or 'Escape'`);
+	}
+
+	return event;
 };
 
 describe('Expander', () => {
@@ -30,6 +56,13 @@ describe('Expander', () => {
 			}
 		};
 
+		const pressEnterKeyTwice = () => {
+			for (let i = 0; i < 2; i++) {
+				const keydownEnterEvent = createKeydownEvent('Enter');
+				element.BUTTON.dispatchEvent(keydownEnterEvent);
+			}
+		};
+
 		test('Should open when button is clicked', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -41,12 +74,35 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
+		test('Should open when enter key is pressed', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownEnterEvent = createKeydownEvent('Enter');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+		});
+
 		test('Should close when button is clicked a second time', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
 			clickButtonTwice();
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
+
+		test('Should close when enter key is pressed a second time', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			pressEnterKeyTwice();
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
@@ -65,6 +121,46 @@ describe('Expander', () => {
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
+		test('Should set aria attributes when enter key is pressed', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.TARGET.setAttribute('aria-hidden', 'true');
+			// When
+			const keydownEnterEvent = createKeydownEvent('Enter');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
+		});
+
+		test('Should unset aria attributes when button is clicked a second time', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.TARGET.setAttribute('aria-hidden', 'true');
+			// When
+			clickButtonTwice();
+			// Then
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
+		});
+
+		test('Should unset aria attributes when enter key is pressed a second time', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.TARGET.setAttribute('aria-hidden', 'true');
+			// When
+			pressEnterKeyTwice();
+			// Then
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
+		});
+
 		test('Should make target element focusable and focus on it when button is clicked', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -75,11 +171,21 @@ describe('Expander', () => {
 			expect(element.TARGET).toEqual(document.activeElement);
 		});
 
+		test('Should make target element focusable and focus on it when enter key is pressed', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownEnterEvent = createKeydownEvent('Enter');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.TARGET).toEqual(document.activeElement);
+		});
+
 		test('Should close when click off the target', () => {
 			// Given
 			const outsideElement = document.createElement('div');
 			element.TARGET.parentNode.insertBefore(outsideElement, element.TARGET.nextSibling);
-
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.click();
@@ -88,6 +194,26 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
+
+		test('Should close and set focus on trigger when tab out of the target', done => {
+			// Given
+			const outsideElement = document.createElement('div');
+			outsideElement.setAttribute('tabindex', '-1');
+			element.TARGET.parentNode.insertBefore(outsideElement, element.TARGET.nextSibling);
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.click();
+			outsideElement.focus();
+			// When
+			const keydownTabEvent = createKeydownEvent('Tab');
+			element.TARGET.dispatchEvent(keydownTabEvent);
+			// Then
+			window.requestAnimationFrame(() => {
+				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				done();
+			});
 		});
 
 		test('Should not close when click on the open target', () => {
@@ -116,33 +242,16 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
-		test('Should unset aria attributes when button is clicked a second time', () => {
-			// Given
-			const expander = new Expander(element.BUTTON, element.TARGET);
-			expander.init();
-			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
-			// When
-			clickButtonTwice();
-			// Then
-			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
-		});
-
 		test('Should use TARGET_HIDE_CLASS option if it is passed to constructor', () => {
 			// Given
 			const targetHideClassOption = 'new-target-hide-class';
 			element.TARGET.className = targetHideClassOption;
-
 			const expander = new Expander(element.BUTTON, element.TARGET, {
 				TARGET_HIDE_CLASS: targetHideClassOption
 			});
-
 			expander.init();
-
 			// When
 			element.BUTTON.click();
-
 			// Then
 			expect(element.TARGET.classList.contains(targetHideClassOption)).toBe(false);
 		});
@@ -150,16 +259,12 @@ describe('Expander', () => {
 		test('Should use TRIGGER_OPEN_CLASS option if it is passed to constructor', () => {
 			// Given
 			const triggerOpenClassOption = 'new-trigger-open-class';
-
 			const expander = new Expander(element.BUTTON, element.TARGET, {
 				TRIGGER_OPEN_CLASS: triggerOpenClassOption
 			});
-
 			expander.init();
-
 			// When
 			element.BUTTON.click();
-
 			// Then
 			expect(element.BUTTON.classList.contains(triggerOpenClassOption)).toBe(true);
 		});
@@ -167,16 +272,12 @@ describe('Expander', () => {
 		test('Should use TRIGGER_OPEN_LABEL option if it is passed to constructor', () => {
 			// Given
 			const triggerOpenLabelOption = 'new-trigger-open-label';
-
 			const expander = new Expander(element.BUTTON, element.TARGET, {
 				TRIGGER_OPEN_LABEL: triggerOpenLabelOption
 			});
-
 			expander.init();
-
 			// When
 			element.BUTTON.click();
-
 			// Then
 			expect(element.BUTTON.textContent).toEqual(triggerOpenLabelOption);
 		});
@@ -185,17 +286,13 @@ describe('Expander', () => {
 			// Given
 			const clickOffElement = document.createElement('div');
 			element.TARGET.parentNode.insertBefore(clickOffElement, element.TARGET.nextSibling);
-
 			const expander = new Expander(element.BUTTON, element.TARGET, {
 				CLOSE_ON_CLICKOFF: false
 			});
-
 			expander.init();
 			element.BUTTON.click();
-
 			// When
 			clickOffElement.click();
-
 			// Then
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});

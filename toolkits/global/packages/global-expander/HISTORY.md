@@ -1,17 +1,18 @@
 # History
 
-## 0.3.0 (2020-01-06)
+## 0.3.1 (2020-03-06)
+    * Bug Fix: this._tabbableItems is null
+    * Bug Fix: Set focus back on trigger after tabbing out of the target
+    * Adds tests for keyboard interactions
 
+## 0.3.0 (2020-01-06)
     * Refactor for linting changes
 
 ## 0.2.0 (2019-12-04)
-
     * Add autofocus option
 
 ## 0.1.1 (2019-11-27)
-
     * Sets focus on first tabbable child of target when open
 
 ## 0.1.0 (2019-11-20)
-
     * Initial version
