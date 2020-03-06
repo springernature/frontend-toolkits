@@ -1,5 +1,8 @@
 # History
 
+## 0.3.2 (2020-03-06)
+    * Bug Fix: Adds keyboard button interaction with 'Space' keypress
+
 ## 0.3.1 (2020-03-06)
     * Bug Fix: this._tabbableItems is null
     * Bug Fix: Set focus back on trigger after tabbing out of the target
