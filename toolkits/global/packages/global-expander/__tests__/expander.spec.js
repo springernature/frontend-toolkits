@@ -18,6 +18,9 @@ const createKeydownEvent = key => {
 		case 'Enter':
 			event.key = 'Enter';
 			break;
+		case 'Space':
+			event.key = 'Space';
+			break;
 		case 'Escape':
 			event.key = 'Escape';
 			break;
@@ -25,7 +28,7 @@ const createKeydownEvent = key => {
 			event.key = 'Tab';
 			break;
 		default:
-			throw new Error(`${key} was should be 'Enter' or 'Escape'`);
+			throw new Error('key should be "Enter", "Space, "Escape" or "Tab"');
 	}
 
 	return event;
@@ -63,6 +66,13 @@ describe('Expander', () => {
 			}
 		};
 
+		const pressSpaceKeyTwice = () => {
+			for (let i = 0; i < 2; i++) {
+				const keydownEnterEvent = createKeydownEvent('Space');
+				element.BUTTON.dispatchEvent(keydownEnterEvent);
+			}
+		};
+
 		test('Should open when button is clicked', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -86,6 +96,18 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
+		test('Should open when space key is pressed', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownEnterEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+		});
+
 		test('Should close when button is clicked a second time', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -103,6 +125,17 @@ describe('Expander', () => {
 			expander.init();
 			// When
 			pressEnterKeyTwice();
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
+
+		test('Should close when space key is pressed a second time', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			pressSpaceKeyTwice();
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
@@ -156,6 +189,19 @@ describe('Expander', () => {
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			pressEnterKeyTwice();
+			// Then
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
+		});
+
+		test('Should unset aria attributes when space key is pressed a second time', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.TARGET.setAttribute('aria-hidden', 'true');
+			// When
+			pressSpaceKeyTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');

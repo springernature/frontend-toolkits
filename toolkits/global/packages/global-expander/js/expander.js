@@ -25,7 +25,7 @@ const Expander = class {
 		this._isOpen = false;
 
 		this._handleButtonClick = this._handleButtonClick.bind(this);
-		this._handleButtonEnter = this._handleButtonEnter.bind(this);
+		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 		this._handleDocumentClick = this._handleDocumentClick.bind(this);
 		this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
 	}
@@ -44,8 +44,8 @@ const Expander = class {
 		}
 	}
 
-	_handleButtonEnter(event) {
-		if (event.key === 'Enter') {
+	_handleButtonKeydown(event) {
+		if (event.key === 'Enter' || event.key === 'Space') {
 			event.preventDefault();
 
 			if (this._isOpen) {
@@ -184,7 +184,7 @@ const Expander = class {
 			this._triggerEl.setAttribute('href', 'javascript:;');
 		}
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
-		this._triggerEl.addEventListener('keydown', this._handleButtonEnter);
+		this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
 	}
 };
 
