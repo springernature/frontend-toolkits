@@ -18,6 +18,9 @@ const Expander = class {
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
+		this._targetTabbableItems = makeArray(target.querySelectorAll(
+			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+		));
 
 		this._isOpen = false;
 
@@ -63,6 +66,7 @@ const Expander = class {
 			window.requestAnimationFrame(() => {
 				if (!this._targetTabbableItems.includes(document.activeElement)) {
 					this._close();
+					this._triggerEl.focus();
 				}
 			});
 		}
@@ -135,12 +139,8 @@ const Expander = class {
 		}
 
 		if (this._options.AUTOFOCUS) {
-			const tabbableItems = makeArray(this._targetEl.querySelectorAll(
-				'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-			));
-
-			if (tabbableItems.length > 0) {
-				const firstTabbableItem = tabbableItems[0];
+			if (this._targetTabbableItems.length > 0) {
+				const firstTabbableItem = this._targetTabbableItems[0];
 				firstTabbableItem.focus();
 
 				if (firstTabbableItem.setSelectionRange) {
