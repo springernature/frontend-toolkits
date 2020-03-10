@@ -1,5 +1,8 @@
 # History
 
+## 12.0.0 (2020-03-10)
+	* Convert `Scheduler` to use `module.exports` and remove jQuery
+
 ## 11.0.0 (2020-03-03)
 	* Convert `InternalNavigation` to use `module.exports`
 
