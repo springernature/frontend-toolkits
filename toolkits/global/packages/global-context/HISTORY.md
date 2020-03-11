@@ -1,5 +1,8 @@
 # History
 
+## 14.2.1 (2020-03-11)
+    * Update open access color to improve contrast  
+    
 ## 14.2.0 (2020-02-27)
     * Adds keyline
 
