@@ -172,11 +172,13 @@ const Dropdown = class {
 		}
 
 		if (this._options.DROPDOWN_CLASSES.length > 0) {
-			this._options.DROPDOWN_CLASSES.forEach(classname => {
-				if (classname.length > 0) {
-					this._dropdownEl.classList.add(classname);
+			// for each classname passed in
+			for (let i = 0; i < this._options.DROPDOWN_CLASSES.length; i++) {
+				// if the classname is not blank
+				if (this._options.DROPDOWN_CLASSES[i].length > 0) {
+					this._dropdownEl.classList.add(this._options.DROPDOWN_CLASSES[i]);
 				}
-			});
+			}
 		}
 
 		if (this._options.MENU_POSITION === 'right') {
