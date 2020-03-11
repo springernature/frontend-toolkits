@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2020-03-11)
+	* BREAKING: DROPDOWN_CLASS option now called DROPDOWN_CLASSES and can take multiple classnmes in an array
+
 ## 3.0.1 (2020-02-18)
 	* Use appendChild instead of append for IE support
 
