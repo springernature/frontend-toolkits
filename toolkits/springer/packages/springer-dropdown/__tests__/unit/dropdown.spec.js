@@ -15,7 +15,7 @@ const selector = {
 const defaultOptions = {
 	BUTTON_CLASS: '',
 	CLICK_OUTSIDE: true,
-	DROPDOWN_CLASS: '',
+	DROPDOWN_CLASSES: [''],
 	HIDE_CLASS: 'u-hide',
 	HIDE_INITIALLY: true,
 	MENU_POSITION: 'left'
@@ -307,9 +307,9 @@ describe('springer-dropdown', () => {
 
 	describe('configuration options', () => {
 		describe('via function parameter', () => {
-			test('DROPDOWN_CLASS: Should add additional className to dropdown', () => {
+			test('DROPDOWN_CLASSES: Should add additional className to dropdown', () => {
 				// When
-				dropdown({DROPDOWN_CLASS: 'additional-dropdown-class'});
+				dropdown({DROPDOWN_CLASSES: ['additional-dropdown-class']});
 
 				// Then
 				expect(element.DROPDOWN.classList.contains('additional-dropdown-class')).toBe(true);
@@ -356,7 +356,7 @@ describe('springer-dropdown', () => {
 		});
 
 		describe('via data-* attributes', () => {
-			test('DROPDOWN_CLASS: Should add additional className to dropdown', () => {
+			test('DROPDOWN_CLASSES: Should add additional className to dropdown', () => {
 				// Given
 				element.BUTTON.setAttribute('data-dropdown-dropdown-class', 'additional-dropdown-class');
 

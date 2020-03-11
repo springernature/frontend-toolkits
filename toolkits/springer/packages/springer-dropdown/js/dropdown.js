@@ -11,7 +11,7 @@ const selector = {
 const defaultOptions = {
 	BUTTON_CLASS: '',
 	CLICK_OUTSIDE: true,
-	DROPDOWN_CLASS: '',
+	DROPDOWN_CLASSES: [''],
 	HIDE_CLASS: 'u-hide',
 	HIDE_INITIALLY: true,
 	MENU_POSITION: 'left'
@@ -171,8 +171,12 @@ const Dropdown = class {
 			this._menuEl.classList.add(this._options.HIDE_CLASS);
 		}
 
-		if (this._options.DROPDOWN_CLASS.length > 0) {
-			this._dropdownEl.classList.add(this._options.DROPDOWN_CLASS);
+		if (this._options.DROPDOWN_CLASSES.length > 0) {
+			this._options.DROPDOWN_CLASSES.forEach((classname) => {
+				if (classname.length > 0) {
+					this._dropdownEl.classList.add(classname);
+				}
+			})
 		}
 
 		if (this._options.MENU_POSITION === 'right') {

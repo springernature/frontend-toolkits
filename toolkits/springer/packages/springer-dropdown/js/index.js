@@ -6,7 +6,7 @@ import {Dropdown} from './dropdown';
  * Data Attribute API
  */
 const attributes = {
-	DROPDOWN_CLASS: constants.DATA_COMPONENT + '-dropdown-class',
+	DROPDOWN_CLASSES: [constants.DATA_COMPONENT + '-dropdown-class'],
 	HIDE_CLASS: constants.DATA_COMPONENT + '-hide-class',
 	HIDE_INITIALLY: constants.DATA_COMPONENT + '-hide-initially',
 	CLICK_OUTSIDE: constants.DATA_COMPONENT + '-click-outside'
