@@ -1,6 +1,7 @@
 import {dropdown} from '../../js';
 import {Dropdown} from '../../js/dropdown';
 import {constants} from '../../js/constants';
+import classPrivateFieldLooseBase from "@babel/runtime/helpers/esm/classPrivateFieldLooseBase";
 
 /**
  * Local Constants
@@ -315,6 +316,15 @@ describe('springer-dropdown', () => {
 				expect(element.DROPDOWN.classList.contains('additional-dropdown-class')).toBe(true);
 			});
 
+			test('DROPDOWN_CLASSES: Should add additional classNames to dropdown if there are multiple', () => {
+				// When
+				dropdown({DROPDOWN_CLASSES: ['additional-dropdown-class', 'another-class']});
+
+				// Then
+				expect(element.DROPDOWN.classList.contains('additional-dropdown-class')).toBe(true);
+				expect(element.DROPDOWN.classList.contains('another-class')).toBe(true);
+			});
+
 			test('HIDE_INITIALLY: Should not initially add HIDE_CLASS className to menu when set to false', () => {
 				// When
 				dropdown({HIDE_INITIALLY: false});
@@ -365,6 +375,18 @@ describe('springer-dropdown', () => {
 
 				// Then
 				expect(element.DROPDOWN.classList.contains('additional-dropdown-class')).toBe(true);
+			});
+
+			test('DROPDOWN_CLASSES: Should add additional classNames to dropdown if there are multiple', () => {
+				// Given
+				element.BUTTON.setAttribute('data-dropdown-dropdown-class', 'additional-dropdown-class another-class');
+
+				// When
+				dropdown();
+
+				// Then
+				expect(element.DROPDOWN.classList.contains('additional-dropdown-class')).toBe(true);
+				expect(element.DROPDOWN.classList.contains('another-class')).toBe(true);
 			});
 
 			test('HIDE_INITIALLY: Should initially add HIDE_CLASS className to menu', () => {
