@@ -172,11 +172,11 @@ const Dropdown = class {
 		}
 
 		if (this._options.DROPDOWN_CLASSES.length > 0) {
-			this._options.DROPDOWN_CLASSES.forEach((classname) => {
+			this._options.DROPDOWN_CLASSES.forEach(classname => {
 				if (classname.length > 0) {
 					this._dropdownEl.classList.add(classname);
 				}
-			})
+			});
 		}
 
 		if (this._options.MENU_POSITION === 'right') {
