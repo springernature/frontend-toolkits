@@ -1,5 +1,9 @@
 # History
 
+## 0.32.2 (2020-03-11)
+    * Update open access color to improve contrast
+    * Bump global-context to 14.2.1
+    
 ## 0.32.1 (2020-02-27)
 	* Rename style.scss to style-nature.scss to stop clash with global-context
 
