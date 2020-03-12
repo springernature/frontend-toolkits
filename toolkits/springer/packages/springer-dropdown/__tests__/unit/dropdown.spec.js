@@ -1,7 +1,6 @@
 import {dropdown} from '../../js';
 import {Dropdown} from '../../js/dropdown';
 import {constants} from '../../js/constants';
-import classPrivateFieldLooseBase from "@babel/runtime/helpers/esm/classPrivateFieldLooseBase";
 
 /**
  * Local Constants
