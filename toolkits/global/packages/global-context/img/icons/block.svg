@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>icon-icon / block</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon-/-block" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="block" fill="#CCCCCC" x="0" y="0" width="24" height="24"></rect>
-    </g>
-</svg>
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h24v24h-24z" fill="#ccc" fill-rule="evenodd"/></svg>

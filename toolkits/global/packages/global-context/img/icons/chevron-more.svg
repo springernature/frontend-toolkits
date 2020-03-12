@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>icon-icon / chevron-more</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M12.5857864,13 L9.29289322,9.70710678 C8.90236893,9.31658249 8.90236893,8.68341751 9.29289322,8.29289322 C9.68341751,7.90236893 10.3165825,7.90236893 10.7071068,8.29289322 L14.7071068,12.2928932 C15.0976311,12.6834175 15.0976311,13.3165825 14.7071068,13.7071068 L10.7071068,17.7071068 C10.3165825,18.0976311 9.68341751,18.0976311 9.29289322,17.7071068 C8.90236893,17.3165825 8.90236893,16.6834175 9.29289322,16.2928932 L12.5857864,13 Z" id="path-1"></path>
-    </defs>
-    <g id="icon-/-chevron-more" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <use id="chevron-more" fill="#666666" transform="translate(12.000000, 13.000000) rotate(-270.000000) translate(-12.000000, -13.000000) " xlink:href="#path-1"></use>
-    </g>
-</svg>
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m12.5857864 13-3.29289318-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368928-.39052429 1.41421358 0l4 3.99999998c.3905243.3905243.3905243 1.0236893 0 1.4142136l-4 4c-.3905243.3905243-1.02368929.3905243-1.41421358 0s-.39052429-1.0236893 0-1.4142136z" fill="#666" fill-rule="evenodd" transform="matrix(0 1 -1 0 25 1)"/></svg>
