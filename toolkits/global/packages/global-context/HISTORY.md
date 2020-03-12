@@ -1,5 +1,9 @@
 # History
 
+## 15.0.0 (2020-03-12)
+    * Update icons
+    * Rename icons   
+
 ## 14.2.1 (2020-03-11)
     * Update open access color to improve contrast  
     
@@ -101,7 +105,7 @@
 
 ## 2.6.0 (2019-07-25)
     * Share heading sizes as variables
-	* Reset the base font-size to 10px for the use of REMs
+    * Reset the base font-size to 10px for the use of REMs
 
 ## 2.5.0 (2019-07-24)
     * Added utility classes for heading style from h1 to h4
