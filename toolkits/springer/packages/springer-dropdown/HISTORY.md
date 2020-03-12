@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2020-03-12)
+    * Uses className element property instead of classList method to add classnames to dropdown
+
 ## 3.0.1 (2020-02-18)
 	* Use appendChild instead of append for IE support
 

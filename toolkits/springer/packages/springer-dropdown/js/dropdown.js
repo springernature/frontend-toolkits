@@ -172,7 +172,7 @@ const Dropdown = class {
 		}
 
 		if (this._options.DROPDOWN_CLASS.length > 0) {
-			this._dropdownEl.classList.add(this._options.DROPDOWN_CLASS);
+			this._dropdownEl.className = this._options.DROPDOWN_CLASS;
 		}
 
 		if (this._options.MENU_POSITION === 'right') {
