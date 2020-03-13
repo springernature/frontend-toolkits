@@ -2,7 +2,7 @@
  *
  * Popups should be created and managed by PopupGroup instances.
  *
- * var group = new Popup.Group();
+ * var group = new PopupGroup();
  *
  * A new popup instance is added to the group by calling PopupGroup#spawn
  *
@@ -26,7 +26,7 @@
  *
  */
 
-window.Component.Popup = (function (win, document_) {
+var PopupGroup = (function (window, document) {
 	'use strict';
 
 	var COMPONENT_CLASS = 'c-author-popup';
@@ -38,6 +38,44 @@ window.Component.Popup = (function (win, document_) {
 	var ABOVE = '-above';
 	var BELOW = '-below';
 	var ESC_KEY_CODE = 27;
+	var CLICK = 'click';
+	var FOCUS = 'focus';
+	var RESIZE = 'resize';
+	var KEYUP = 'keyup';
+
+	var link = function (classes, text) {
+		return '<a href="javascript:;" class="' + classes.join(' ') + '">' + text + '</a>';
+	};
+
+	var px = function (value) {
+		return value + 'px';
+	};
+
+	var focusElement = function (element) {
+		var isA = function (name) {
+			return element.nodeName.toLowerCase() === name;
+		};
+
+		var isInteractive = function () {
+			var hasTabIndex = element.hasAttribute('tabindex');
+			var isLink = isA('a') && element.href;
+			var isButton = isA('button');
+			var isInput = isA('input');
+			var isTextArea = isA('textarea');
+
+			if (element.getAttribute('disabled')) {
+				return false;
+			}
+			return hasTabIndex || isLink || isButton || isInput || isTextArea;
+		};
+
+		if (element) {
+			if (!isInteractive()) {
+				element.setAttribute('tabindex', '-1');
+			}
+			element.focus();
+		}
+	};
 
 	var Popup = function (trigger, content, group, options) {
 		this.id = content.id;
@@ -51,8 +89,8 @@ window.Component.Popup = (function (win, document_) {
 	};
 	Popup.prototype = {
 		build: function () {
-			var focus = '<a href="javascript:;" class="' + FOCUS_CATCHER_CLASS + ' u-visually-hidden">Return to place in article</a>';
-			var close = '<a href="javascript:;" class="' + COMPONENT_CLOSE_CLASS + ' ' + CLOSE_CLASS + '">Close</a>';
+			var focus = link([FOCUS_CATCHER_CLASS, 'u-visually-hidden'], 'Return to place in article');
+			var close = link([COMPONENT_CLOSE_CLASS, CLOSE_CLASS], 'Close');
 			var arrow = '<div class="' + COMPONENT_ARROW_CLASS + ' ' + COMPONENT_ARROW_CLASS + '-' + ABOVE + '"></div>';
 
 			this.content.insertAdjacentHTML('afterbegin', focus);
@@ -61,9 +99,8 @@ window.Component.Popup = (function (win, document_) {
 			if (!this.content.classList.contains(HIDE_PRINT_CLASS)) {
 				this.content.classList.add(HIDE_PRINT_CLASS);
 			}
-
 			// eslint-disable-next-line unicorn/prefer-node-append
-			document_.body.appendChild(this.content);
+			document.body.appendChild(this.content);
 		},
 		bindEvents: function () {
 			var self = this;
@@ -71,23 +108,23 @@ window.Component.Popup = (function (win, document_) {
 			self.escapeListener = self.closeOnEscape.bind(self);
 			self.clickAwayListener = self.closeOnClickAway.bind(self);
 
-			self.content.querySelector('.' + CLOSE_CLASS).addEventListener('click', self.closeListener);
+			self.content.querySelector('.' + CLOSE_CLASS).addEventListener(CLICK, self.closeListener);
 			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (element) {
-				element.addEventListener('focus', self.closeListener);
+				element.addEventListener(FOCUS, self.closeListener);
 			});
-			document_.addEventListener('keyup', self.escapeListener);
-			document_.addEventListener('click', self.clickAwayListener);
-			win.addEventListener('resize', self.closeListener);
+			document.addEventListener(KEYUP, self.escapeListener);
+			document.addEventListener(CLICK, self.clickAwayListener);
+			window.addEventListener(RESIZE, self.closeListener);
 		},
 		unbindEvents: function () {
 			var self = this;
-			self.content.querySelector('.' + CLOSE_CLASS).removeEventListener('click', self.closeListener);
+			self.content.querySelector('.' + CLOSE_CLASS).removeEventListener(CLICK, self.closeListener);
 			self.content.querySelectorAll('.' + FOCUS_CATCHER_CLASS).forEach(function (element) {
-				element.removeEventListener('focus', self.closeListener);
+				element.removeEventListener(FOCUS, self.closeListener);
 			});
-			document_.removeEventListener('keyup', self.escapeListener);
-			document_.removeEventListener('click', self.clickAwayListener);
-			win.removeEventListener('resize', self.closeListener);
+			document.removeEventListener(KEYUP, self.escapeListener);
+			document.removeEventListener(CLICK, self.clickAwayListener);
+			window.removeEventListener(RESIZE, self.closeListener);
 		},
 		open: function () {
 			this.group.close();
@@ -99,9 +136,9 @@ window.Component.Popup = (function (win, document_) {
 
 			var pos = this.pos();
 
-			this.content.style.top = pos.top + 'px';
-			this.content.style.left = pos.left + 'px';
-			this.content.style.right = pos.right + 'px';
+			this.content.style.top = px(pos.top);
+			this.content.style.left = px(pos.left);
+			this.content.style.right = px(pos.right);
 			this.content.style.visibility = 'visible';
 
 			this.focus();
@@ -133,7 +170,7 @@ window.Component.Popup = (function (win, document_) {
 			}
 		},
 		pos: function () {
-			var documentElement = document_.documentElement;
+			var documentElement = document.documentElement;
 			var scroll = documentElement.scrollTop;
 			var metrics = this.trigger.getClientRects()[0];
 			var offset = {
@@ -144,7 +181,7 @@ window.Component.Popup = (function (win, document_) {
 			var arrow = this.content.querySelector('.' + COMPONENT_ARROW_CLASS);
 
 			var windowWidth = documentElement.clientWidth;
-			var availableWidth = Math.min(document_.querySelector(this.columnSelector).offsetWidth, windowWidth);
+			var availableWidth = Math.min(document.querySelector(this.columnSelector).offsetWidth, windowWidth);
 
 			var arrowHeight = 12;
 			var arrowWidth = 20;
@@ -163,9 +200,9 @@ window.Component.Popup = (function (win, document_) {
 			}
 
 			if (availableWidth < 600) {
-				arrow.style.left = (offset.left + 5) + 'px';
+				arrow.style.left = px(offset.left + 5);
 			} else {
-				arrow.style.left = Math.max(Math.round((metrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5) + 'px';
+				arrow.style.left = px(Math.max(Math.round((metrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5));
 			}
 
 			return {
@@ -174,15 +211,14 @@ window.Component.Popup = (function (win, document_) {
 				top: (position === ABOVE) ? above : below
 			};
 		},
-
 		focus: function () {
 			var target = this.content.querySelector(this.focusSelector);
 			if (target) {
-				target.focus();
+				focusElement(target);
 			}
 		},
 		returnFocus: function () {
-			this.trigger.focus();
+			focusElement(this.trigger);
 		}
 	};
 
@@ -209,7 +245,11 @@ window.Component.Popup = (function (win, document_) {
 		}
 	};
 
-	return {
-		Group: Group
+	return function () {
+		return Group;
 	};
 })(window, document);
+
+if (typeof module !== 'undefined') {
+	module.exports = PopupGroup;
+}

@@ -1,5 +1,8 @@
 # History
 
+## 13.0.0 (2020-03-13)
+	* Convert `PopupGroup` and `Popup` to use `module.exports`
+
 ## 12.0.0 (2020-03-10)
 	* Convert `Scheduler` to use `module.exports` and remove jQuery
 
