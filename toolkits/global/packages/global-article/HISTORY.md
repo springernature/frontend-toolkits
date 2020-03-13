@@ -1,5 +1,8 @@
 # History
 
+## 13.0.1 (2020-03-13)
+	* Remove unsupported popup group options from author popups
+
 ## 13.0.0 (2020-03-13)
 	* Convert `PopupGroup` and `Popup` to use `module.exports`
 
