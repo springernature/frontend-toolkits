@@ -7,7 +7,7 @@ describe('AriaButton', () => {
 	});
 
 	let $element = null;
-	
+
 	function appendSectionTitle() {
 		document.body.innerHTML = `<h2 class="c-article-section__title js-section-title js-c-reading-companion-sections-item" id="author-information">Author information</h2>`;
 		$element = $('.js-section-title');
@@ -30,7 +30,7 @@ describe('AriaButton', () => {
 		expect($.fn.giveButtonRole).toBeDefined();
 	});
 
-	test('Should give a role button to an element when it is not a button ', () => {				
+	test('Should give a role button to an element when it is not a button ', () => {
 		appendSectionTitle();
 		ariaButton();
 		$element.giveButtonRole();
@@ -43,7 +43,7 @@ describe('AriaButton', () => {
 		ariaButton();
 		$element.giveButtonRole();
 
-		expect(document.querySelector('.js-link').classList).not.toContain('role-button');
+		expect(document.querySelector('.js-link').classList.contains('role-button')).toBe(false);
 	});
 
 	test('Should be able to render a :focus style when an element is not focusable by default', () => {
@@ -61,7 +61,7 @@ describe('AriaButton', () => {
 		ariaButton();
 		$element.giveButtonRole();
 
-		expect(document.querySelector('.js-link').classList).not.toContain('role-button');
+		expect(document.querySelector('.js-link').classList.contains('role-button')).toBe(false);
 	});
 
 	test('Should remove capability of receiving focus on a given element', () => {
