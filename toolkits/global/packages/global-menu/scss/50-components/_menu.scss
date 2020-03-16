@@ -12,7 +12,7 @@
 }
 
 .c-menu__item:not(:last-child) {
-	margin-right: 16px;
+	margin-right: $menu--spacing;
 }
 
 .c-menu__link {
@@ -50,7 +50,7 @@
 }
 
 .c-menu--vertical .c-menu__item:not(:last-child) {
-	margin-bottom: 16px;
+	margin-bottom: $menu--vertical-spacing;
 	margin-left: 0;
 }
 
@@ -60,8 +60,8 @@
  */
 
 .c-menu--keyline .c-menu__item:not(:last-child) {
-	margin-right: 16px;
-	padding-right: 16px;
+	margin-right: $menu--spacing;
+	padding-right: $menu--spacing;
 	border-right: $menu--keyline-border;
 }
 
@@ -71,8 +71,8 @@
  */
 
 .c-menu--vertical.c-menu--keyline .c-menu__item:not(:last-child) {
-	margin: 0 0 16px;
-	padding: 0 0 16px;
+	margin: 0 0 $menu--vertical-spacing;
+	padding: 0 0 $menu--vertical-spacing;
 	border-right: none;
 	border-bottom: $menu--keyline-border;
 }
@@ -89,7 +89,7 @@
 }
 
 .c-menu--padded .c-menu__link {
-	padding: 16px;
+	padding: $menu--padded-spacing;
 	display: block;
 
 	&:hover {
