@@ -183,9 +183,6 @@ window.Component.AuthorList = (function ($) {
 			html += '</section></div>';
 
 			var popup = popupGroup.spawn($link[0], $(html)[0], {
-				arrow: true,
-				close: true,
-				offset: 50,
 				setFocusOn: 'h3#author-' + id
 			});
 			popup.toggle(event);

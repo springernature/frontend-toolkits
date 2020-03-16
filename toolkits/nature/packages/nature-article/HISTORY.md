@@ -1,5 +1,11 @@
 # History
 
+## 0.8.1 (2020-03-13)
+	* Update the extends package version of global article from 13.0.0 to 13.0.1
+
+## 0.8.0 (2020-03-13)
+	* Update the extends package version of global article from 12.0.0 to 13.0.0
+
 ## 0.7.0 (2020-03-10)
 	* Update the extends package version of global article from 11.0.0 to 12.0.0
 
