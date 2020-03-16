@@ -1,0 +1,112 @@
+/**
+ * Default menu
+ *
+ */
+
+.c-menu {
+	@include u-list-reset();
+	font-size: $menu--font-size;
+	font-family: $menu--font-family;
+	display: flex;
+	line-height: $menu--line-height;
+}
+
+.c-menu__item:not(:last-child) {
+	margin-right: $menu--spacing;
+}
+
+.c-menu__link {
+	display: inline-block;
+	text-decoration: none;
+	color: $menu--link-color;
+
+	&:visited,
+	&:active {
+		color: $menu--link-color;
+	}
+
+	&:hover {
+		text-decoration: underline;
+		$color: $menu--link-color-hover;
+	}
+}
+
+/**
+ * Small menu
+ *
+ */
+
+.c-menu--small {
+	font-size: $menu--small-font-size;
+}
+
+/**
+ * Vertical menu
+ *
+ */
+
+.c-menu--vertical {
+	flex-direction: column;
+}
+
+.c-menu--vertical .c-menu__item:not(:last-child) {
+	margin-bottom: $menu--vertical-spacing;
+	margin-left: 0;
+}
+
+/**
+ * Keyline menu
+ *
+ */
+
+.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin-right: $menu--spacing;
+	padding-right: $menu--spacing;
+	border-right: $menu--keyline-border;
+}
+
+/**
+ * Vertical Keyline menu
+ *
+ */
+
+.c-menu--vertical.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin: 0 0 $menu--vertical-spacing;
+	padding: 0 0 $menu--vertical-spacing;
+	border-right: none;
+	border-bottom: $menu--keyline-border;
+}
+
+/**
+ * Padded menu
+ *
+ */
+
+.c-menu--padded .c-menu__item:not(:last-child),
+.c-menu--padded.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin: 0;
+	padding: 0;
+}
+
+.c-menu--padded .c-menu__link {
+	padding: $menu--padded-spacing;
+	display: block;
+
+	&:hover {
+		background-color: $menu--padded-link-background-color-hover;
+	}
+}
+
+/**
+ * Vertical Padded menu
+ *
+ */
+
+.c-menu--vertical.c-menu--padded .c-menu__item:not(:last-child) {
+	margin: 0;
+	padding: 0;
+}
+
+.c-menu--inherit .c-menu__link {
+	@include u-link-inherit();
+}
