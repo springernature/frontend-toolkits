@@ -1,5 +1,8 @@
 # History
 
+## 0.5.0 (2020-03-17)
+    * Bump global article version to 14.0.0
+
 ## 0.4.1 (2020-03-13)
     * Bump global article version to 13.0.1
 
