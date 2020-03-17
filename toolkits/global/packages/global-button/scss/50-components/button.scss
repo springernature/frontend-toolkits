@@ -1,0 +1,48 @@
+/**
+ * Regular buttons
+ *
+ * <button class="button">text</button>
+ * <button class="button button--primary">text</button>
+ * <button class="button button--primary button__icon-left"><svg>...</svg><span>text</span></button>
+ *
+ */
+
+.c-button {
+	// Add default button styles to all buttons
+
+	@include button($default);
+
+	// Enhance with Themes
+
+	&--primary {
+		@include button-theme($primary);
+	}
+
+	&--ghost {
+		@include button-theme($ghost);
+	}
+
+	// Adding Icons
+	// Icons should be inline SVG
+	// SVG Path colors change on hover
+	// Maximum size 24px x 24px
+
+	//&__icon-left {
+	//    @include button-icon-left;
+	//}
+	//
+	//&__icon-right {
+	//    @include button-icon-right;
+	//}
+
+	// Disabled buttons
+
+	&--disabled {
+		@include button-disabled;
+	}
+
+	&--inline {
+		display: inline-block;
+		width: auto;
+	}
+}

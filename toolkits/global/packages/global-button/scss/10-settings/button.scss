@@ -1,0 +1,59 @@
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+
+$default: (
+	'color': color('action-base'),
+	'backgroundColor': greyscale(95),
+	'backgroundImage': linear-gradient(to bottom, $page-base, greyscale(95)),
+	'borderColor': greyscale(70),
+	'visitedColor': color('action-base'),
+	'hoverColor': white,
+	'hoverBorderColor': greyscale(40),
+	'hoverBackgroundColor': greyscale(40),
+	'hoverBackgroundImage': none,
+	'focusBorderColor': greyscale(40)
+);
+
+$ghost: (
+	'color': greyscale(),
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'borderColor': greyscale(70),
+	'visitedColor': greyscale(),
+	'hoverColor': greyscale(),
+	'hoverBorderColor': greyscale(40),
+	'hoverBackgroundColor': greyscale(95, 0.5),
+	'hoverBackgroundImage': none,
+	'focusBorderColor': greyscale(40),
+	'activeBackgroundColor': greyscale(95)
+);
+
+$primary: (
+	'color': white,
+	'backgroundColor': mix(white, color('corporate-light'), 20%),
+	'backgroundImage': linear-gradient(to bottom, mix(white, color('corporate-light'), 30%), mix(white, color('corporate-light'), 20%)),
+	'borderColor': color('corporate-light', 0.5),
+	'visitedColor': white,
+	'hoverColor': white,
+	'hoverBorderColor': color('action-light'),
+	'hoverBackgroundColor': color('action-light'),
+	'hoverBackgroundImage': none,
+	'focusBorderColor': color('action-light'),
+	'activeBorderColor': color('action-dull')
+);
+
+$disabled: (
+	'color': greyscale(),
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'borderColor': greyscale(70),
+	'visitedColor': greyscale(),
+	'hoverColor': greyscale(),
+	'hoverBorderColor': greyscale(70),
+	'hoverBackgroundColor': transparent,
+	'hoverBackgroundImage': none,
+	'focusBorderColor': greyscale(70)
+);
