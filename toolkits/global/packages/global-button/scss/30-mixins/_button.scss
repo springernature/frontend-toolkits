@@ -144,6 +144,6 @@
 
 @mixin button-disabled {
 	@include button-theme($disabled);
-	opacity: 0.5;
+	opacity: map-get($button--disabled, 'opacity');
 	cursor: default;
 }
