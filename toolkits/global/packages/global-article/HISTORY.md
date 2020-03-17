@@ -1,5 +1,8 @@
 # History
 
+## 14.0.0 (2019-03-17)
+	* Remove `TabGroup` and associated styles, it's no longer used
+
 ## 13.0.1 (2020-03-13)
 	* Remove unsupported popup group options from author popups
 
