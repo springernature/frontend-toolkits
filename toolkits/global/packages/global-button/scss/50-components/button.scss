@@ -10,16 +10,16 @@
 .c-button {
 	// Add default button styles to all buttons
 
-	@include button($default);
+	@include button($button--default);
 
 	// Enhance with Themes
 
 	&--primary {
-		@include button-theme($primary);
+		@include button-theme($button--primary);
 	}
 
 	&--ghost {
-		@include button-theme($ghost);
+		@include button-theme($button--ghost);
 	}
 
 	// Adding Icons

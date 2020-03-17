@@ -4,7 +4,7 @@
  *
  */
 
-$default: (
+$button--default: (
 	'color': color('action-base'),
 	'backgroundColor': greyscale(95),
 	'backgroundImage': linear-gradient(to bottom, $page-base, greyscale(95)),
@@ -17,7 +17,7 @@ $default: (
 	'focusBorderColor': greyscale(40)
 );
 
-$ghost: (
+$button--ghost: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
@@ -31,7 +31,7 @@ $ghost: (
 	'activeBackgroundColor': greyscale(95)
 );
 
-$primary: (
+$button--primary: (
 	'color': white,
 	'backgroundColor': mix(white, color('corporate-light'), 20%),
 	'backgroundImage': linear-gradient(to bottom, mix(white, color('corporate-light'), 30%), mix(white, color('corporate-light'), 20%)),
@@ -45,12 +45,13 @@ $primary: (
 	'activeBorderColor': color('action-dull')
 );
 
-$disabled: (
+$button--disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
 	'borderColor': greyscale(70),
 	'visitedColor': greyscale(),
+	'opacity': 0.67,
 	'hoverColor': greyscale(),
 	'hoverBorderColor': greyscale(70),
 	'hoverBackgroundColor': transparent,
