@@ -19,11 +19,16 @@
 	@include button-theme($button--ghost);
 }
 
-.c-button--disabled {
-	@include button-disabled;
+.c-button--contrast {
+	@include button-theme($button--primary);
+	border-color: white;
 }
 
 .c-button--inline {
 	display: inline-block;
 	width: auto;
+}
+
+.c-button--disabled {
+	@include button-disabled;
 }
