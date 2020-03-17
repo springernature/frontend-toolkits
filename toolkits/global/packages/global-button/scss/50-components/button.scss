@@ -8,41 +8,22 @@
  */
 
 .c-button {
-	// Add default button styles to all buttons
-
 	@include button($button--default);
+}
 
-	// Enhance with Themes
+.c-button--primary {
+	@include button-theme($button--primary);
+}
 
-	&--primary {
-		@include button-theme($button--primary);
-	}
+.c-button--ghost {
+	@include button-theme($button--ghost);
+}
 
-	&--ghost {
-		@include button-theme($button--ghost);
-	}
+.c-button--disabled {
+	@include button-disabled;
+}
 
-	// Adding Icons
-	// Icons should be inline SVG
-	// SVG Path colors change on hover
-	// Maximum size 24px x 24px
-
-	//&__icon-left {
-	//    @include button-icon-left;
-	//}
-	//
-	//&__icon-right {
-	//    @include button-icon-right;
-	//}
-
-	// Disabled buttons
-
-	&--disabled {
-		@include button-disabled;
-	}
-
-	&--inline {
-		display: inline-block;
-		width: auto;
-	}
+.c-button--inline {
+	display: inline-block;
+	width: auto;
 }
