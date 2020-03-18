@@ -5,6 +5,7 @@ $button-base--border-radius: 2px;
 
 $button-shared--border-width: 1px;
 $button-shared--border-style: solid;
+$button-shared--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 
 /**
  * Button Themes
