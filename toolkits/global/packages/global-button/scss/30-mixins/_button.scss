@@ -121,10 +121,12 @@
 
 	&:hover {
 		border-color: map-get($theme, 'hoverBorderColor');
+		text-decoration: map-get($theme, 'hoverTextDecoration');
 	}
 
 	&:focus {
 		border-color: map-get($theme, 'focusBorderColor');
+		text-decoration: map-get($theme, 'focusTextDecoration');
 	}
 
 	&:hover,
@@ -132,7 +134,6 @@
 		color: map-get($theme, 'hoverColor');
 		background-color: map-get($theme, 'hoverBackgroundColor');
 		background-image: map-get($theme, 'hoverBackgroundImage');
-		text-decoration: none;
 
 		svg path {
 			fill: map-get($theme, 'hoverColor');

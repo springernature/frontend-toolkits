@@ -17,20 +17,22 @@ $button--default: (
 	'color': color('action-base'),
 	'backgroundColor': greyscale(95),
 	'backgroundImage': linear-gradient(to bottom, $page-base, greyscale(95)),
-	'borderColor': greyscale(70),
+	'borderColor': greyscale(80),
 	'visitedColor': color('action-base'),
 	'hoverColor': white,
 	'hoverBorderColor': greyscale(40),
 	'hoverBackgroundColor': greyscale(40),
 	'hoverBackgroundImage': none,
-	'focusBorderColor': greyscale(40)
+	'hoverTextDecoration': none,
+	'focusBorderColor': greyscale(40),
+	'focusTextDecoration': none
 );
 
 $button--ghost: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'borderColor': greyscale(70),
+	'borderColor': greyscale(80),
 	'visitedColor': greyscale(),
 	'hoverColor': greyscale(),
 	'hoverBorderColor': greyscale(40),
@@ -58,7 +60,7 @@ $button--disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'borderColor': greyscale(70),
+	'borderColor': greyscale(80),
 	'visitedColor': greyscale(),
 	'opacity': 0.67,
 	'hoverColor': greyscale(),
