@@ -7,12 +7,12 @@
 @mixin button-shared {
 	@include u-text-interface;
 	display: block;
-	border-width: 1px;
-	border-style: solid;
+	border-width: $button-shared--border-width;
+	border-style: $button-shared--border-style;
 	position: relative;
 	cursor: pointer;
 	text-decoration: none;
-	transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+	//transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 /**
@@ -25,12 +25,12 @@
 
 @mixin button-base {
 	@include button-shared;
-	text-align: left;
+	border-radius: $button-base--border-radius;
+	text-align: $button-base--text-align;
 	margin: 0;
-	padding: spacing(8, 16);
+	padding: $button-base--padding;
 	width: 100%;
-	border-radius: 2px;
-	line-height: 1.6em;
+	line-height: $button-base--line-height;
 }
 
 // Add base button styles
@@ -146,7 +146,7 @@
  */
 
 @mixin button-disabled {
-	@include button-theme($disabled);
+	@include button-theme($button--disabled);
 	opacity: map-get($button--disabled, 'opacity');
 	cursor: default;
 }
