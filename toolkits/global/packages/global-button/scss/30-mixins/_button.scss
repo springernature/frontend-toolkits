@@ -119,21 +119,24 @@
 		color: map-get($theme, 'visitedColor');
 	}
 
-	&:hover,
-	.kb_user &:focus {
-		color: map-get($theme, 'hoverColor');
+	&:hover {
 		border-color: map-get($theme, 'hoverBorderColor');
-		background-color: map-get($theme, 'hoverBackgroundColor');
-		background-image: map-get($theme, 'hoverBackgroundImage');
-
-		svg path {
-			fill: map-get($theme, 'hoverColor');
-		}
 	}
 
 	&:focus {
 		border-color: map-get($theme, 'focusBorderColor');
+	}
+
+	&:hover,
+	&:focus {
+		color: map-get($theme, 'hoverColor');
+		background-color: map-get($theme, 'hoverBackgroundColor');
+		background-image: map-get($theme, 'hoverBackgroundImage');
 		text-decoration: none;
+
+		svg path {
+			fill: map-get($theme, 'hoverColor');
+		}
 	}
 }
 
