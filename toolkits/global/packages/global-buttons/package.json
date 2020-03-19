@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "description": "Button styles to use on buttons and links",
-  "keywords": ["button"],
+  "keywords": ["buttons"],
   "author": "Springer Nature",
   "peerDependencies": {
     "@springernature/global-context": "^15.0.0"
