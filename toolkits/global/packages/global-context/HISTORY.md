@@ -1,5 +1,8 @@
 # History
 
+## 15.0.1 (2020-03-19)
+    * Update icons
+
 ## 15.0.0 (2020-03-12)
     * Update icons
     * Rename icons   
