@@ -43,32 +43,6 @@
 	}
 }
 
-// Adding Icons
-
-//@mixin button-icon-left {
-//    > svg {
-//        @include vertical-align('absolute');
-//        left: 12px;
-//        margin: 0;
-//    }
-//
-//    > svg + span {
-//        padding-left: spacing(16);
-//    }
-//}
-//
-//@mixin button-icon-right {
-//    > svg {
-//        @include vertical-align('absolute');
-//        right: 12px;
-//        margin: 0;
-//    }
-//
-//    > span:last-child {
-//        padding-right: spacing(16);
-//    }
-//}
-
 /**
  * Circular button
  *
