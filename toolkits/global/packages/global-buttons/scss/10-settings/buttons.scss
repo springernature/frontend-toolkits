@@ -32,20 +32,6 @@ $button--default: (
 	'focusTextDecoration': none
 );
 
-$button--ghost: (
-	'color': greyscale(),
-	'backgroundColor': transparent,
-	'backgroundImage': none,
-	'borderColor': greyscale(80),
-	'visitedColor': greyscale(),
-	'hoverColor': greyscale(),
-	'hoverBorderColor': greyscale(40),
-	'hoverBackgroundColor': greyscale(95, 0.5),
-	'hoverBackgroundImage': none,
-	'focusBorderColor': greyscale(40),
-	'activeBackgroundColor': greyscale(95)
-);
-
 $button--primary: (
 	'color': white,
 	'backgroundColor': mix(white, color('corporate-light'), 20%),

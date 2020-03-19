@@ -11,15 +11,6 @@
 	@include button-theme($button--primary);
 }
 
-.c-button--ghost {
-	@include button-theme($button--ghost);
-}
-
-.c-button--contrast {
-	@include button-theme($button--primary);
-	border-color: white;
-}
-
 .c-button--inline {
 	display: inline-block;
 	width: auto;
