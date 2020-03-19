@@ -1,5 +1,10 @@
 # History
 
+## 15.1.0 (2020-03-19)
+    * Renames tables.scss to layout.scss
+    * Renames vertical align utilities
+    * Adds u-full-height utility   
+
 ## 15.0.0 (2020-03-12)
     * Update icons
     * Rename icons   
