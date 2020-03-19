@@ -24,7 +24,7 @@
 @mixin u-h2() {
 	@include _heading-base();
 	font-size: $context--font-size-h2;
-	margin-bottom: spacing(24);
+	margin-bottom: spacing(8);
 	font-family: $font-family-serif;
 	font-weight: $context--heading-font-weight;
 }
@@ -32,7 +32,7 @@
 @mixin u-h3() {
 	@include _heading-base();
 	font-size: $context--font-size-h3;
-	margin-bottom: spacing(16);
+	margin-bottom: spacing(8);
 	font-family: $font-family-serif;
 	font-weight: $context--heading-font-weight;
 }
@@ -40,7 +40,7 @@
 @mixin u-h4() {
 	@include _heading-base();
 	font-size: $context--font-size-h4;
-	margin-bottom: spacing(16);
+	margin-bottom: spacing(8);
 	font-family: $font-family-sans;
 	font-weight: $context--heading-font-weight;
 }
