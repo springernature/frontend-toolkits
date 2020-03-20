@@ -519,7 +519,7 @@ var ReadingCompanion = (function (win, document_) {
 				doSetup(mq);
 			}
 		};
-	}
+	};
 })(window, document);
 
 if (typeof module !== 'undefined') {
