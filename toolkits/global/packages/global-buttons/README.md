@@ -19,18 +19,6 @@ Button styles to use on buttons and links.
 <button class="c-button c-button--primary">text</button>
 ```
 
-**Ghost**
-
-A button with border outline and transparent background.
-```html
-<button class="c-button c-button--ghost">text</button>
-```
-
-**Contrast**
-```html
-<button class="c-button c-button--contrast">text</button>
-```
-
 **Inline**
 ```html
 <button class="c-button c-button--inline">text</button>
