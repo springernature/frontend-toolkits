@@ -79,13 +79,8 @@ describe('Reading Companion', () => {
 			writable: true,
 			value: jest.fn().mockImplementation(query => ({
 			  matches: false,
-			  media: query,
-			  onchange: null,
 			  addListener: jest.fn(),
-			  removeListener: jest.fn(),
-			  addEventListener: jest.fn(),
-			  removeEventListener: jest.fn(),
-			  dispatchEvent: jest.fn(),
+			  removeListener: jest.fn()
 			})),
 		  });
 	}
@@ -383,6 +378,7 @@ describe('Reading Companion', () => {
 	});
 
 	test('Should switch to reference tab and focus on the selected reference when clicking on a reference link', () => {
+		// TODO: add more tests for insertReturnButton function
 		includeMockReferences();
 		initReadingCompanion();
 
@@ -394,6 +390,5 @@ describe('Reading Companion', () => {
 		emitter.emit('nav.reference', 'ref-CR1', null);
 
 		expect(referencesTab.getAttribute('aria-selected')).toBe('true');
-
 	});
 });
