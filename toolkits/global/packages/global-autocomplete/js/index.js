@@ -46,7 +46,6 @@ const autoComplete = arguments_ => {
 				if (selectOnSuggestionBrowsing) {
 					input.value = suggestions()[0].textContent;
 				}
-
 			}
 		}
 	};
