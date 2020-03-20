@@ -187,7 +187,7 @@ describe('Reading Companion', () => {
 		expect(tabs.children.length).toBe(3);
 	});
 
-	test('Should set sections as default active tab', () => {
+	test('Should set sections as the default active tab', () => {
 		includeMockFigures();
 		includeMockReferences();
 		initReadingCompanion();
@@ -197,7 +197,7 @@ describe('Reading Companion', () => {
 		expect(tabs.querySelector('[data-tab-target="sections"]').getAttribute('aria-selected')).toBe('true');
 	});
 
-	test('Should create list of items which contains a anchor element to the existing abstract section', () => {
+	test('Should create a list of items which contains an anchor element to the existing abstract section', () => {
 		initReadingCompanion();
 		const sections = readingCompanionContainer.querySelector('.c-reading-companion__sections-list');
 
@@ -205,7 +205,7 @@ describe('Reading Companion', () => {
 		expect(document.querySelector('.c-reading-companion__sections-list').firstElementChild.textContent).toBe('Abstract');
 	});
 
-	test('Should create list of items with existent figures', () => {
+	test('Should create a list of items with existent figures', () => {
 		includeMockFigures();
 		initReadingCompanion();
 
@@ -256,7 +256,7 @@ describe('Reading Companion', () => {
 		expect(figures.firstElementChild.querySelector('.c-reading-companion__figure-full-link').textContent).toBe('Full size image');
 	});
 
-	test('Should create list of items with existent references and its corresponding related info when references exist', () => {
+	test('Should create a list of items with existent references and its corresponding related info', () => {
 		includeMockReferences();
 		initReadingCompanion();
 
@@ -267,7 +267,7 @@ describe('Reading Companion', () => {
 		expect(references.firstElementChild.querySelector('.c-reading-companion__reference-links')).not.toBeNull();
 	});
 
-	test('Should move the active tab to the last when keydown is 37', () => {
+	test('Should move the active tab to the last when typing on the left arrow key', () => {
 		includeMockReferences();
 		includeMockFigures();
 		initReadingCompanion();
@@ -282,7 +282,7 @@ describe('Reading Companion', () => {
 		expect(lastTab.classList.contains('c-reading-companion__tab--active')).toBeTruthy();
 	});
 
-	test('Should move the active tab to the previous element sibling if there is an active element', () => {
+	test('Should move the active tab to the previous sibling element if there is an active element', () => {
 		includeMockReferences();
 		includeMockFigures();
 		initReadingCompanion();		
@@ -300,7 +300,7 @@ describe('Reading Companion', () => {
 		expect(tabs.querySelector('[data-tab-target="figures"]').getAttribute('aria-selected')).toBe('true');
 	});
 	
-	test('Should move the active tab to the first when keydown is 39', () => {
+	test('Should move the active tab to the first when typing on the right arrow key', () => {
 		includeMockReferences();
 		includeMockFigures();
 		initReadingCompanion();
@@ -315,7 +315,7 @@ describe('Reading Companion', () => {
 		expect(firstTab.classList.contains('c-reading-companion__tab--active')).toBeTruthy();
 	});
 
-	test('Should move the active tab to the next element sibling if there is an active element', () => {
+	test('Should move the active tab to the next sibling element if there is an active element', () => {
 		includeMockReferences();
 		includeMockFigures();
 		initReadingCompanion();		
@@ -357,7 +357,7 @@ describe('Reading Companion', () => {
 		expect(document.querySelector('#rc-sec-Sec1').classList.contains('c-reading-companion__section-item--active')).toBeTruthy();
 	});
 
-	test('Should switch to figure tab and focus on the selected figure when clicking on a figure link', () => {
+	test('Should switch to the figure tab and focus on the selected figure when clicking on a figure link', () => {
 		includeMockFigures();
 		addFigLinkSection();
 		initReadingCompanion();
@@ -377,7 +377,7 @@ describe('Reading Companion', () => {
 		expect(selectedFigure.scrollIntoView).toHaveBeenCalledWith({block: 'start'});
 	});
 
-	test('Should switch to reference tab and focus on the selected reference when clicking on a reference link', () => {
+	test('Should switch to the references tab and focus on the selected reference when clicking on a reference link', () => {
 		// TODO: add more tests for insertReturnButton function
 		includeMockReferences();
 		initReadingCompanion();
