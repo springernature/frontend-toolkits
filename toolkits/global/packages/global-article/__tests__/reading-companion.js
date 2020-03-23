@@ -65,7 +65,6 @@ describe('Reading Companion', () => {
 		readingCompanionContainer = document.querySelector('.c-reading-companion');
 	});
 
-
 	beforeAll(() => {
 		mockWindow();
 	});
@@ -77,50 +76,50 @@ describe('Reading Companion', () => {
 		document.body.innerHTML = null;
 	});
 
-	describe('When no existing figures or references', () => {
-		function overrideHeadingToNotAllowCharacters() {
-			document.querySelector('.c-article-section__title').textContent = '%Ab_s!tract';
-		}
+	function overrideHeadingToNotAllowCharacters() {
+		document.querySelector('.c-article-section__title').textContent = '%Ab_s!tract';
+	}
 
-		test('Should be able to initiate the reading companion', () => {
-			initReadingCompanion();
-			expect(readingCompanion.init).toBeDefined();
-		});
+	test('Should be able to initiate the reading companion', () => {
+		initReadingCompanion();
+		expect(readingCompanion.init).toBeDefined();
+	});
+	
+	test('Should set and define the content container for the sections tab', () => {
+		initReadingCompanion();
 		
-		test('Should set and define the content container for the sections tab', () => {
-			initReadingCompanion();
-			
-			expect(readingCompanionContainer.querySelector('.c-reading-companion__scroll-pane')).toBeDefined();
+		expect(readingCompanionContainer.querySelector('.c-reading-companion__scroll-pane')).toBeDefined();
 
-			const ariaLabelledbyAttribute = readingCompanionContainer.querySelector('.c-reading-companion__sections').getAttribute('aria-labelledby');
-			
-			expect(ariaLabelledbyAttribute).not.toBeNull();
-			expect(ariaLabelledbyAttribute).toBe('tab-sections');
-		});
+		const ariaLabelledbyAttribute = readingCompanionContainer.querySelector('.c-reading-companion__sections').getAttribute('aria-labelledby');
+		
+		expect(ariaLabelledbyAttribute).not.toBeNull();
+		expect(ariaLabelledbyAttribute).toBe('tab-sections');
+	});
 
-		test('Should remove non text and numbers from the heading before adding the data-track-label', () => {
-			overrideHeadingToNotAllowCharacters();
-			initReadingCompanion();
-	
-			const firstSection = readingCompanionContainer.querySelector('.c-reading-companion__sections-list').firstElementChild;
+	test('Should remove non text and numbers from the heading before adding the data-track-label', () => {
+		overrideHeadingToNotAllowCharacters();
+		initReadingCompanion();
 
-			expect(firstSection.querySelector('a').getAttribute('data-track-label')).toBe('link:Abstract');
-		});
-	
+		const firstSection = readingCompanionContainer.querySelector('.c-reading-companion__sections-list').firstElementChild;
+
+		expect(firstSection.querySelector('a').getAttribute('data-track-label')).toBe('link:Abstract');
+	});
+
+	test('Should create a list of items which contains an anchor element to the existing abstract section', () => {
+		initReadingCompanion();
+
+		const sections = readingCompanionContainer.querySelector('.c-reading-companion__sections-list');
+
+		expect(sections).not.toBeNull();
+		expect(sections.firstElementChild.textContent).toBe('Abstract');
+	});
+
+	describe('When no existing figures or references', () => {
 		test('Should create only a heading Section', () => {
 			initReadingCompanion();
 
 			expect(document.querySelector('.c-reading-companion__heading')).not.toBeNull();
 			expect(document.querySelector('.c-reading-companion__tabs')).toBeNull();
-		});
-	
-		test('Should create a list of items which contains an anchor element to the existing abstract section', () => {
-			initReadingCompanion();
-
-			const sections = readingCompanionContainer.querySelector('.c-reading-companion__sections-list');
-	
-			expect(sections).not.toBeNull();
-			expect(sections.firstElementChild.textContent).toBe('Abstract');
 		});
 	});
 
