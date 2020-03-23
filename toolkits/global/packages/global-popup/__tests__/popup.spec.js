@@ -13,11 +13,11 @@ describe('PopupGroup', () => {
 
 	});
 
-	it('should open the popup above the trigger by default', () => {
+	it('should position the popup above the trigger by default', () => {
 
 	});
 
-	it('should open the pop below the trigger if not enough space in viewport', () => {
+	it('should position the popup below the trigger if not enough space in viewport', () => {
 
 	});
 
@@ -25,27 +25,7 @@ describe('PopupGroup', () => {
 
 	});
 
-	it('should close the popup if the user clicks out of it', () => {
-
-	});
-
-	it('should close the popup if the user clicks the close button', () => {
-
-	});
-
-	it('should close the popup if a keyboard user presses escape', () => {
-
-	});
-
 	it('should close the popup if a keyboard user focuses on the close button and presses space', () => {
-
-	});
-
-	it('should focus the first link in the content', () => {
-
-	});
-
-	it('should allow the focus target be overridden', () => {
 
 	});
 
@@ -55,5 +35,25 @@ describe('PopupGroup', () => {
 
 	it('should stop event propagation on toggle', () => {
 
+	});
+
+	it('should close the popup if the user clicks out of it', () => {
+		// this should be covered by using global expander component
+	});
+
+	it('should close the popup if the user clicks the close button', () => {
+		// this should be covered by using global expander component
+	});
+
+	it('should close the popup if a keyboard user presses escape', () => {
+		// this should be covered by using global expander component - needs to be added to ge
+	});
+
+	it('should focus the first link in the content', () => {
+		// this should be covered by using global expander component
+	});
+
+	it('should allow the focus target be overridden', () => {
+		// this should be covered by using global expander component - needs to be added to ge
 	});
 });
