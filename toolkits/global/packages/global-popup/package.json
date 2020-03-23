@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/global-popup",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Openable and closeable popups that take html as an argument",
+  "keywords": [],
+  "author": "Springer Nature"
+}
