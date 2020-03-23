@@ -1,5 +1,14 @@
 # History
 
+## 0.34.0 (2020-03-23)
+	* Bump global-context to 15.2.0
+
+## 0.33.0 (2020-03-19)
+	* Bump global-context to 15.1.0
+
+## 0.32.3 (2020-03-18)
+    * Increase font sizes and reduce margins on headings in accordance with brand
+
 ## 0.32.2 (2020-03-11)
     * Update open access color to improve contrast
     * Bump global-context to 14.2.1
