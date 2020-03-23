@@ -30,6 +30,10 @@ describe('Reading Companion', () => {
 		  });
 	}
 
+	function overrideHeadingToNotAllowCharacters() {
+		document.querySelector('.c-article-section__title').textContent = '%Ab_s!tract';
+	}
+
 	beforeEach(() => {
 		document.body.innerHTML = `
 			<body>
@@ -75,10 +79,6 @@ describe('Reading Companion', () => {
 
 		document.body.innerHTML = null;
 	});
-
-	function overrideHeadingToNotAllowCharacters() {
-		document.querySelector('.c-article-section__title').textContent = '%Ab_s!tract';
-	}
 
 	test('Should be able to initiate the reading companion', () => {
 		initReadingCompanion();
