@@ -1,5 +1,8 @@
 # History
 
+## 15.1.1 (2020-03-20)
+    * Update icons
+
 ## 15.1.0 (2020-03-19)
     * Renames tables.scss to layout.scss
     * Renames vertical align utilities
