@@ -4,5 +4,8 @@
   "license": "MIT",
   "description": "Openable and closeable popups that take html as an argument",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "dependencies": {
+    "@springernature/global-expander": "^0.3.2"
+  }
 }
