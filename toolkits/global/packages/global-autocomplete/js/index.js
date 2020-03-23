@@ -14,7 +14,8 @@ const autoComplete = arguments_ => {
 		httpMethod = 'GET',
 		bodyTemplate,
 		searchError,
-		resultsCallBack
+		resultsCallBack,
+		selectOnSuggestionBrowsing = true
 	} = arguments_;
 
 	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
@@ -42,7 +43,9 @@ const autoComplete = arguments_ => {
 			event.preventDefault();
 			if (suggestions().length > 0) {
 				suggestions()[0].focus();
-				input.value = suggestions()[0].textContent;
+				if (selectOnSuggestionBrowsing) {
+					input.value = suggestions()[0].textContent;
+				}
 			}
 		}
 	};
@@ -73,23 +76,33 @@ const autoComplete = arguments_ => {
 			let activeElement = document.activeElement;
 			let nextSibling = activeElement.nextSibling;
 			let previousSibling = activeElement.previousSibling;
-			let currentIndex = parseInt(activeElement.dataset.index, 10);
+			let currentIndex = Array.from(activeElement.parentNode.children).indexOf(activeElement);
 
 			switch (event.key) {
 				case 'ArrowDown':
 					if (nextSibling) {
-						input.value = ((currentIndex + 1) < suggestions().length) ? nextSibling.textContent : currentSearchTerm;
+						if (selectOnSuggestionBrowsing) {
+							if ((currentIndex + 1) < suggestions().length) {
+								input.value = nextSibling.textContent;
+							} else {
+								input.value = currentSearchTerm;
+							}
+						}
 						nextSibling.focus();
 					}
 					break;
 
 				case 'ArrowUp':
 					if (previousSibling) {
-						input.value = previousSibling.textContent;
+						if (selectOnSuggestionBrowsing) {
+							input.value = previousSibling.textContent;
+						}
 						previousSibling.focus();
 					} else {
 						input.focus();
-						input.value = currentSearchTerm;
+						if (selectOnSuggestionBrowsing) {
+							input.value = currentSearchTerm;
+						}
 					}
 					break;
 
