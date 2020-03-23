@@ -18,11 +18,11 @@ $button-shared--transition: 0.25s ease, color 0.25s ease, border-color 0.25s eas
  */
 
 $button--default: (
-	'color': color('action-base'),
+	'color': darkblue,
 	'backgroundColor': greyscale(95),
-	'backgroundImage': linear-gradient(to bottom, $page-base, greyscale(95)),
+	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
 	'borderColor': greyscale(80),
-	'visitedColor': color('action-base'),
+	'visitedColor': darkblue,
 	'hoverColor': white,
 	'hoverBorderColor': greyscale(40),
 	'hoverBackgroundColor': greyscale(40),
@@ -34,16 +34,16 @@ $button--default: (
 
 $button--primary: (
 	'color': white,
-	'backgroundColor': mix(white, color('corporate-light'), 20%),
-	'backgroundImage': linear-gradient(to bottom, mix(white, color('corporate-light'), 30%), mix(white, color('corporate-light'), 20%)),
-	'borderColor': color('corporate-light', 0.5),
+	'backgroundColor': darkblue,
+	'backgroundImage': none,
+	'borderColor': blue,
 	'visitedColor': white,
 	'hoverColor': white,
-	'hoverBorderColor': color('action-light'),
-	'hoverBackgroundColor': color('action-light'),
+	'hoverBorderColor': blue,
+	'hoverBackgroundColor': blue,
 	'hoverBackgroundImage': none,
-	'focusBorderColor': color('action-light'),
-	'activeBorderColor': color('action-dull')
+	'focusBorderColor': blue,
+	'activeBorderColor': blue
 );
 
 $button--disabled: (
