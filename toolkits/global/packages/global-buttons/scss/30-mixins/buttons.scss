@@ -5,14 +5,15 @@
  */
 
 @mixin button-shared {
-	@include u-text-interface;
 	display: block;
 	border-width: $button-shared--border-width;
 	border-style: $button-shared--border-style;
-	position: relative;
 	cursor: pointer;
+	font-family: $button-base--font-family;
+	font-size: $button-base--font-size-normal;
 	text-decoration: none;
 	transition: $button-shared--transition;
+	position: relative;
 }
 
 /**

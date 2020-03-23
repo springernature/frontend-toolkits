@@ -14,6 +14,16 @@ Button styles to use on buttons and links.
 
 ### Modifiers
 
+**Small**
+```html
+<button class="c-button c-button--small">text</button>
+```
+
+**Large**
+```html
+<button class="c-button c-button--large">text</button>
+```
+
 **Primary**
 ```html
 <button class="c-button c-button--primary">text</button>
