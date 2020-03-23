@@ -1,5 +1,8 @@
 # History
 
+## 15.2.0 (2020-03-23)
+    * Add u-color-inherit
+
 ## 15.1.1 (2020-03-20)
     * Update icons
 
