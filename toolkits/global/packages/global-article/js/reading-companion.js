@@ -486,7 +486,7 @@ var ReadingCompanion = (function (win, document_) {
 				var initialised = false;
 
 				var setup = function (mql) {
-					if (initialised || mql.matches) { // eslint-disable-line no-use-before-define
+					if (initialised || mql.matches) {
 						return;
 					}
 
@@ -506,7 +506,7 @@ var ReadingCompanion = (function (win, document_) {
 						switchToTab('sections');
 					}
 
-					initialised = true; // eslint-disable-line no-use-before-define
+					initialised = true;
 				};
 
 				var doSetup = function (mql) {
