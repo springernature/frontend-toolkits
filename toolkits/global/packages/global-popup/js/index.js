@@ -1,3 +1,3 @@
+const PopupGroup;
 
-
-export {popup};
+export {PopupGroup};
