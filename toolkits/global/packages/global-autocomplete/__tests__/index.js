@@ -118,6 +118,75 @@ describe('Autocomplete', () => {
 			});
 		});
 
+		describe('Browsing the suggestions', () => {
+			const showResults = results => {
+				// Update UI with results returned from server, e.g.
+
+				const resultsContainer = document.createElement('div');
+				resultsContainer.className = 'c-results-container';
+
+				results.forEach(datum => {
+					const result = document.createElement('div');
+					result.textContent = datum;
+					result.tabIndex = '0'; // So you can focus/tab through the results
+					result.className = 'c-results-container__result';
+					resultsContainer.appendChild(result);
+				});
+				document.querySelector('.c-autocomplete').insertAdjacentHTML('afterend', resultsContainer.outerHTML);
+			};
+
+			test('Update the text input if selectOnSuggestionBrowsing is true', async () => {
+				let auto = autoComplete({
+					...args,
+					endpoint: null,
+					staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
+					resultsCallBack: showResults
+				});
+
+				auto.enable();
+
+				input.value = 'Wa';
+				input.dispatchEvent(new KeyboardEvent('keyup'));
+
+				await waitFor(2);
+
+				input.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown' }));
+				expect(input.value).toBe('Wallaby');
+
+				document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown' }));
+				expect(input.value).toBe('Walrus');
+
+				document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp' }));
+				expect(input.value).toBe('Wallaby');
+			});
+
+			test('Do not update the text input if selectOnSuggestionBrowsing is false', async () => {
+				let auto = autoComplete({
+					...args,
+					endpoint: null,
+					staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
+					resultsCallBack: showResults,
+					selectOnSuggestionBrowsing: false
+				});
+
+				auto.enable();
+
+				input.value = 'Wa';
+				input.dispatchEvent(new KeyboardEvent('keyup'));
+
+				await waitFor(2);
+
+				input.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown' }));
+				expect(input.value).toBe('Wa');
+
+				document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown' }));
+				expect(input.value).toBe('Wa');
+
+				document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp' }));
+				expect(input.value).toBe('Wa');
+			});
+		});
+
 		describe('A bad response', () => {
 			test('Should call the error function provided in the config', async () => {
 				let auto = autoComplete(args);

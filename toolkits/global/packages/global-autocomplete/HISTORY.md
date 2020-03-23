@@ -1,5 +1,9 @@
 # History
 
+## 3.1.0 (2020-03-20)
+    * Add `selectOnSuggestionBrowsing` setting to disable input text update as user browses the suggestions.
+    * Remove expectation from user to provide `data-index` on each suggestion element.
+
 ## 3.0.1 (2020-02-25)
     * Add `main` property to package.json to make `import @springernature/global-autocomplete` statement work
 
