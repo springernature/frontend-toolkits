@@ -1,5 +1,8 @@
 # History
 
+## 15.0.0 (2019-03-20)
+	* Convert `ReadingCompanion` to use `module.exports` and add unit tests for it
+
 ## 14.0.0 (2019-03-17)
 	* Remove `TabGroup` and associated styles, it's no longer used
 
