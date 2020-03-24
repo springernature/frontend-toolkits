@@ -1,7 +1,6 @@
 # History
 
 ## 19.0.0 (2020-03-24)
-    * Renames icons
     * Deletes duplicated icons
 
 ## 18.7.0 (2020-03-23)
