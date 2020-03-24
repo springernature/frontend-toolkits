@@ -7,10 +7,10 @@
 @mixin button-shared {
 	display: block;
 	cursor: pointer;
-	font-family: $button-base--font-family;
-	font-size: $button-base--font-size-normal;
+	font-family: $button--font-family;
+	font-size: $button--font-size-normal;
 	text-decoration: none;
-	transition: $button-shared--transition;
+	transition: $button--transition;
 	position: relative;
 }
 
@@ -24,12 +24,12 @@
 
 @mixin button-base {
 	@include button-shared;
-	border-radius: $button-base--border-radius;
-	text-align: $button-base--text-align;
+	border-radius: $button--border-radius;
+	text-align: $button--text-align;
 	margin: 0;
-	padding: $button-base--padding;
+	padding: $button--padding;
 	width: 100%;
-	line-height: $button-base--line-height;
+	line-height: $button--line-height;
 }
 
 // Add base button styles
