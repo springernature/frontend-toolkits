@@ -1,5 +1,8 @@
 # History
 
+## 15.1.0 (2019-03-24)
+	* Add test coverage for `ShareBox` component
+
 ## 15.0.0 (2019-03-20)
 	* Convert `ReadingCompanion` to use `module.exports` and add unit tests for it
 

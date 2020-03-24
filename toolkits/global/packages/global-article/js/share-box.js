@@ -180,7 +180,7 @@ function ShareBox() {
 	var _selectUrlToShare = function _selectUrlToShare(node) {
 		var selection = window.getSelection();
 
-		if (selection && node) {
+		if (node) {
 			selection.selectAllChildren(node);
 		} else {
 			selection.removeAllRanges();
