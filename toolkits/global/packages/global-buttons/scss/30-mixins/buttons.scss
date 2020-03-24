@@ -43,41 +43,6 @@
 }
 
 /**
- * Circular button
- *
- */
-
-// Add base button styles
-// with optional theme styles on top
-
-@mixin circle-button($theme: false) {
-	@include circle-button-base;
-	@if $theme {
-		@include circle-button-theme($theme);
-	}
-}
-
-// Base button styles
-// No theme
-
-@mixin circle-button-base {
-	@include button-shared;
-	margin: 0 auto;
-	padding: 0;
-	width: 3em;
-	height: 3em;
-	border-radius: 50%;
-	line-height: calc(3em - 2px);
-	text-align: center;
-}
-
-// Add theme variations
-
-@mixin circle-button-theme($theme) {
-	@include button-theme($theme);
-}
-
-/**
  * Add button theme
  *
  */
