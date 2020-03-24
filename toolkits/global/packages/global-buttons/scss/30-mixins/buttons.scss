@@ -1,35 +1,20 @@
-/**
- * Base button shared styles
- * Shared between regular and circle
- *
- */
-
-@mixin button-shared {
-	display: block;
-	cursor: pointer;
-	font-family: $button--font-family;
-	font-size: $button--font-size-normal;
-	text-decoration: none;
-	transition: $button--transition;
-	position: relative;
-}
-
-/**
- * Regular button
- *
- */
-
 // Base button styles
 // No theme
 
 @mixin button-base {
-	@include button-shared;
-	border-radius: $button--border-radius;
-	text-align: $button--text-align;
+	cursor: pointer;
+	display: block;
 	margin: 0;
-	padding: $button--padding;
+	position: relative;
+	text-decoration: none;
 	width: 100%;
+	border-radius: $button--border-radius;
+	font-family: $button--font-family;
+	font-size: $button--font-size-normal;
 	line-height: $button--line-height;
+	padding: $button--padding;
+	text-align: $button--text-align;
+	transition: $button--transition;
 }
 
 // Add base button styles
