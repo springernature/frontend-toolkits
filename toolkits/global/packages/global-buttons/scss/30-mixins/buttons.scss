@@ -6,8 +6,6 @@
 
 @mixin button-shared {
 	display: block;
-	border-width: $button-shared--border-width;
-	border-style: $button-shared--border-style;
 	cursor: pointer;
 	font-family: $button-base--font-family;
 	font-size: $button-base--font-size-normal;
@@ -88,7 +86,7 @@
 	color: map-get($theme, 'color');
 	background-color: map-get($theme, 'backgroundColor');
 	background-image: map-get($theme, 'backgroundImage');
-	border-color: map-get($theme, 'borderColor');
+	border: map-get($theme, 'border');
 
 	&:visited {
 		color: map-get($theme, 'visitedColor');

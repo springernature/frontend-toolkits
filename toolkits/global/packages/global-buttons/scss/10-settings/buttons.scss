@@ -5,15 +5,14 @@
 
 $button-base--text-align: left;
 $button-base--padding: 8px;
-$button-base--font-size-normal: 16px;
+$button-base--font-size-normal: 1.6rem;
 $button-base--line-height: 1.4;
 $button-base--font-family: sans-serif;
 $button-base--border-radius: 2px;
-$button-shared--border-width: 1px;
-$button-shared--border-style: solid;
+$button-shared--border-width-style: 1px solid;
 $button-shared--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-$button--font-size-small: 14px;
-$button--font-size-large: 18px;
+$button--font-size-small: 1.4rem;
+$button--font-size-large: 1.8rem;
 $button--line-height-small: 1.2;
 $button--line-height-large: 1.6;
 
@@ -27,7 +26,7 @@ $button--default: (
 	'color': darkblue,
 	'backgroundColor': greyscale(95),
 	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
-	'borderColor': greyscale(80),
+	'border': $button-shared--border-width-style greyscale(80),
 	'visitedColor': darkblue,
 	'hoverColor': white,
 	'hoverBorderColor': greyscale(40),
@@ -42,7 +41,7 @@ $button--primary: (
 	'color': white,
 	'backgroundColor': darkblue,
 	'backgroundImage': none,
-	'borderColor': blue,
+	'border': $button-shared--border-width-style blue,
 	'visitedColor': white,
 	'hoverColor': white,
 	'hoverBorderColor': blue,
@@ -56,7 +55,7 @@ $button--disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'borderColor': greyscale(80),
+	'border': $button-shared--border-width-style greyscale(80),
 	'visitedColor': greyscale(),
 	'opacity': 0.7,
 	'hoverColor': greyscale(),
