@@ -26,6 +26,7 @@
 	width: auto;
 }
 
-.c-button--disabled {
+.c-button--disabled,
+.c-button:disabled {
 	@include button-disabled;
 }
