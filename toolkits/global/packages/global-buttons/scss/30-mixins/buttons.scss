@@ -43,12 +43,12 @@
 	}
 
 	&:hover {
-		border-color: map-get($theme, 'hoverBorderColor');
+		border: map-get($theme, 'hoverBorder');
 		text-decoration: map-get($theme, 'hoverTextDecoration');
 	}
 
 	&:focus {
-		border-color: map-get($theme, 'focusBorderColor');
+		border: map-get($theme, 'focusBorder');
 		text-decoration: map-get($theme, 'focusTextDecoration');
 	}
 

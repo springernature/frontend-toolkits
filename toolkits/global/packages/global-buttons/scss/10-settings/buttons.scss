@@ -27,11 +27,11 @@ $button--default: (
 	'border': $button--border-width-style greyscale(80),
 	'visitedColor': darkblue,
 	'hoverColor': white,
-	'hoverBorderColor': greyscale(40),
+	'hoverBorder': $button--border-width-style greyscale(40),
 	'hoverBackgroundColor': greyscale(40),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorderColor': greyscale(40),
+	'focusBorder': $button--border-width-style greyscale(40),
 	'focusTextDecoration': none
 );
 
@@ -42,11 +42,11 @@ $button--primary: (
 	'border': $button--border-width-style blue,
 	'visitedColor': white,
 	'hoverColor': white,
-	'hoverBorderColor': blue,
+	'hoverBorder': $button--border-width-style blue,
 	'hoverBackgroundColor': blue,
 	'hoverBackgroundImage': none,
-	'focusBorderColor': blue,
-	'activeBorderColor': blue
+	'focusBorder': $button--border-width-style blue,
+	'activeBorder': $button--border-width-style blue
 );
 
 $button--disabled: (
@@ -57,10 +57,10 @@ $button--disabled: (
 	'visitedColor': greyscale(),
 	'opacity': 0.7,
 	'hoverColor': greyscale(),
-	'hoverBorderColor': greyscale(70),
+	'hoverBorder': $button--border-width-style greyscale(80),
 	'hoverBackgroundColor': transparent,
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorderColor': greyscale(70),
+	'focusBorder': $button--border-width-style greyscale(80),
 	'focusTextDecoration': none
 );
