@@ -1,10 +1,13 @@
 # History
 
+## 19.0.0 (2020-03-24)
+    * BREAKING: Deletes duplicated icons
+
 ## 18.7.0 (2020-03-23)
-	* Bump global-context to 15.2.0
+    * Bump global-context to 15.2.0
 
 ## 18.6.0 (2020-03-19)
-	* Bump global-context to 15.1.0
+    * Bump global-context to 15.1.0
 
 ## 18.5.1 (2020-03-04)
     * Bump global-context to 14.2.1
