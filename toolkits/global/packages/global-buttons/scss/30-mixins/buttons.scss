@@ -3,11 +3,11 @@
 
 @mixin button-base {
 	cursor: pointer;
-	display: block;
+	display: inline-block;
 	margin: 0;
 	position: relative;
 	text-decoration: none;
-	width: 100%;
+	width: auto;
 	border-radius: $button--border-radius;
 	font-family: $button--font-family;
 	font-size: $button--font-size-normal;

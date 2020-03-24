@@ -19,9 +19,9 @@
 	@include button-theme($button--primary);
 }
 
-.c-button--inline {
-	display: inline-block;
-	width: auto;
+.c-button--block {
+	display: block;
+	width: 100%;
 }
 
 .c-button--disabled,
