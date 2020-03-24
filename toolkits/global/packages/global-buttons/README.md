@@ -29,9 +29,9 @@ Button styles to use on buttons and links.
 <button class="c-button c-button--primary">text</button>
 ```
 
-**Inline**
+**Block**
 ```html
-<button class="c-button c-button--inline">text</button>
+<button class="c-button c-button--block">text</button>
 ```
 
 **Disabled**
