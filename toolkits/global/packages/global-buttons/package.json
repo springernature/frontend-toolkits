@@ -1,0 +1,11 @@
+{
+  "name": "@springernature/global-button",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Button styles to use on buttons and links",
+  "keywords": ["buttons"],
+  "author": "Springer Nature",
+  "peerDependencies": {
+    "@springernature/global-context": "^15.2.0"
+  }
+}

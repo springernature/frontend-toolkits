@@ -1,0 +1,30 @@
+/**
+ * Regular buttons
+ *
+ */
+
+.c-button {
+	@include button($button--default);
+}
+
+.c-button--small {
+	font-size: $button--font-size-small;
+}
+
+.c-button--large {
+	font-size: $button--font-size-large;
+}
+
+.c-button--primary {
+	@include button-theme($button--primary);
+}
+
+.c-button--block {
+	display: block;
+	width: 100%;
+}
+
+.c-button--disabled,
+.c-button:disabled {
+	@include button-disabled;
+}
