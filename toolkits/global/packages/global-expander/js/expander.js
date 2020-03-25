@@ -21,7 +21,7 @@ const Expander = class {
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
-
+		this._focusTarget = null;
 		this._isOpen = false;
 
 		this._handleButtonClick = this._handleButtonClick.bind(this);
@@ -138,7 +138,12 @@ const Expander = class {
 			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
 		}
 
-		if (this._options.AUTOFOCUS) {
+		if ((typeof this._options.AUTOFOCUS) === 'string') {
+			this._focusTarget = document.querySelector(this._options.AUTOFOCUS);
+			if (this._focusTarget) {
+				document.querySelector(this._options.AUTOFOCUS).focus();
+			}
+		} else if (this._options.AUTOFOCUS === true) {
 			if (this._targetTabbableItems.length > 0) {
 				const firstTabbableItem = this._targetTabbableItems[0];
 				firstTabbableItem.focus();

@@ -343,7 +343,7 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
-		test('Should use AUTOFOCUS option if it is passed to constructor', () => {
+		test('Should focus on first tabbable element if AUTOFOCUS option equals true', () => {
 			// Given
 			element.TARGET.innerHTML = '<input type="text" value="value">';
 			const expander = new Expander(element.BUTTON, element.TARGET, {
@@ -357,6 +357,20 @@ describe('Expander', () => {
 			expect(input).toEqual(document.activeElement);
 			expect(input.selectionStart === 0).toBe(true);
 			expect(input.selectionEnd === input.value.length).toBe(true);
+		});
+
+		test('Should focus on a specific element if AUTOFOCUS option equals a string with a css selector', () => {
+			// Given
+			element.TARGET.innerHTML = '<input type="text" value="value"><p class="bobby" tabindex="-1"></p>';
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: '.bobby'
+			});
+			expander.init();
+			// When
+			element.BUTTON.click();
+			// Then
+			const span = document.querySelector('.bobby');
+			expect(document.activeElement).toBe(span);
 		});
 	});
 });
