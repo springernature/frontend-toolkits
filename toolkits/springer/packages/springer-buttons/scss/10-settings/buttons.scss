@@ -10,7 +10,7 @@ $button--font-family: $font-family-sans;
 $button--font-size-small: $font-size-xs;
 $button--font-size-normal: $font-size-sm;
 $button--font-size-large: $font-size-md;
-$button--padding: 8px;
+$button--padding: spacing(8);
 $button--text-align: left;
 $button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 
