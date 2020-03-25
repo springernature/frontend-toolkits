@@ -1,15 +1,3 @@
-.c-button {
-	@include font-size($button--font-size-normal)
-}
-
-.c-button--small {
-	@include font-size($button--font-size-small)
-}
-
-.c-button--large {
-	@include font-size($button--font-size-large)
-}
-
 .c-button--ghost {
 	@include button-theme($button--ghost);
 }
