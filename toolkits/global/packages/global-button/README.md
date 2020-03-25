@@ -1,4 +1,4 @@
-# Global Buttons
+# Global Button
 
 Button styles to use on buttons and links.
 

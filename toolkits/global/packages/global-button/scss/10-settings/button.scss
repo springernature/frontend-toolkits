@@ -23,7 +23,7 @@ $button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 $button--default: (
 	'color': darkblue,
 	'backgroundColor': greyscale(95),
-	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
+	'backgroundImage': none,
 	'border': $button--border-width-style greyscale(80),
 	'visitedColor': darkblue,
 	'hoverColor': white,
@@ -46,7 +46,6 @@ $button--primary: (
 	'hoverBackgroundColor': blue,
 	'hoverBackgroundImage': none,
 	'focusBorder': $button--border-width-style blue,
-	'activeBorder': $button--border-width-style blue
 );
 
 $button--disabled: (
