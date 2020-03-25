@@ -328,7 +328,7 @@ describe('Expander', () => {
 			expect(element.BUTTON.textContent).toEqual(triggerOpenLabelOption);
 		});
 
-		test('Should close target if target is clocked off if CLOSE_ON_FOCUS_OUT option used', () => {
+		test('Should use CLOSE_ON_FOCUS_OUT option if it is passed to constructor', () => {
 			// Given
 			const clickOffElement = document.createElement('div');
 			element.TARGET.parentNode.insertBefore(clickOffElement, element.TARGET.nextSibling);
