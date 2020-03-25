@@ -328,12 +328,12 @@ describe('Expander', () => {
 			expect(element.BUTTON.textContent).toEqual(triggerOpenLabelOption);
 		});
 
-		test('Should close target if target is clocked off if CLOSE_IF_NOT_FOCUSED option used', () => {
+		test('Should close target if target is clocked off if CLOSE_ON_FOCUS_OUT option used', () => {
 			// Given
 			const clickOffElement = document.createElement('div');
 			element.TARGET.parentNode.insertBefore(clickOffElement, element.TARGET.nextSibling);
 			const expander = new Expander(element.BUTTON, element.TARGET, {
-				CLOSE_IF_NOT_FOCUSED: false
+				CLOSE_ON_FOCUS_OUT: false
 			});
 			expander.init();
 			element.BUTTON.click();

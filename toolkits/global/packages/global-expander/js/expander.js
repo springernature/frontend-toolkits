@@ -8,7 +8,7 @@ const defaultOptions = {
 	TARGET_HIDE_CLASS: 'u-js-hide',
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
-	CLOSE_IF_NOT_FOCUSED: true,
+	CLOSE_ON_FOCUS_OUT: true,
 	AUTOFOCUS: false
 };
 
@@ -62,7 +62,7 @@ const Expander = class {
 			this._triggerEl.focus();
 		}
 
-		if (this._options.CLOSE_IF_NOT_FOCUSED) {
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			if (event.key === 'Tab') {
 				window.requestAnimationFrame(() => {
 					if (!this._targetTabbableItems.includes(document.activeElement)) {
@@ -91,7 +91,7 @@ const Expander = class {
 	_setupTemporaryEventListeners() {
 		document.addEventListener('keydown', this._handleDocumentKeydown);
 
-		if (this._options.CLOSE_IF_NOT_FOCUSED) {
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			document.addEventListener('click', this._handleDocumentClick);
 		}
 	}
@@ -99,7 +99,7 @@ const Expander = class {
 	_removeTemporaryEventListeners() {
 		document.removeEventListener('keydown', this._handleDocumentKeydown);
 
-		if (this._options.CLOSE_IF_NOT_FOCUSED) {
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			document.removeEventListener('click', this._handleDocumentClick);
 		}
 	}
