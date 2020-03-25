@@ -141,7 +141,7 @@ const Expander = class {
 		if ((typeof this._options.AUTOFOCUS) === 'string') {
 			this._focusTarget = document.querySelector(this._options.AUTOFOCUS);
 			if (this._focusTarget) {
-				document.querySelector(this._options.AUTOFOCUS).focus();
+				this._focusTarget.focus();
 			}
 		} else if (this._options.AUTOFOCUS === true) {
 			if (this._targetTabbableItems.length > 0) {
