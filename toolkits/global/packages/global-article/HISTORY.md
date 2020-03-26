@@ -1,5 +1,8 @@
 # History
 
+## 16.0.0 (2019-03-26)
+	* Convert `AuthorList` to use `module.exports`
+
 ## 15.1.0 (2019-03-24)
 	* Add test coverage for `ShareBox` component
 

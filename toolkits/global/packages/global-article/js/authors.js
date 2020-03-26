@@ -1,4 +1,4 @@
-/* global jQuery */
+/* global jQuery, $ */
 
 /**
  *
@@ -7,7 +7,7 @@
  *
  */
 
-window.Component.AuthorList = (function ($) {
+function AuthorList () {
 	'use strict';
 
 	var create = function ($authors, popupGroup, options) {
@@ -241,4 +241,9 @@ window.Component.AuthorList = (function ($) {
 	return {
 		create: create
 	};
-})(jQuery);
+};
+
+if (typeof module !== 'undefined') {
+	module.exports = AuthorList;
+}
+
