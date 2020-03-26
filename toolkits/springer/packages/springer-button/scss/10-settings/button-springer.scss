@@ -1,0 +1,78 @@
+/**
+ *  Button settings
+ *
+ */
+
+$button--border-radius: 2px;
+$button--border-width-style: 1px solid;
+$button--line-height: 1.3;
+$button--font-family: $font-family-sans;
+$button--font-size-small: $font-size-xs;
+$button--font-size-normal: $font-size-sm;
+$button--font-size-large: $font-size-md;
+$button--padding: spacing(8);
+$button--text-align: left;
+$button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+
+$button--default: (
+	'color': color('action-base'),
+	'backgroundColor': greyscale(95),
+	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
+	'border': $button--border-width-style greyscale(80),
+	'visitedColor': color('action-base'),
+	'hoverColor': white,
+	'hoverBorder': $button--border-width-style greyscale(40),
+	'hoverBackgroundColor': greyscale(40),
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style greyscale(40),
+	'focusTextDecoration': none
+);
+
+$button--primary: (
+	'color': white,
+	'backgroundColor': mix(white, color('corporate-light'), 20%),
+	'backgroundImage': linear-gradient(to bottom, mix(white, color('corporate-light'), 30%), mix(white, color('corporate-light'), 20%)),
+	'border': $button--border-width-style color('corporate-light', 0.5),
+	'visitedColor': white,
+	'hoverColor': white,
+	'hoverBorder': $button--border-width-style color('action-light'),
+	'hoverBackgroundColor': color('action-light'),
+	'hoverBackgroundImage': none,
+	'focusBorder': $button--border-width-style color('action-light')
+);
+
+$button--ghost: (
+	'color': greyscale(),
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'borderColor': greyscale(70),
+	'visitedColor': greyscale(),
+	'hoverColor': greyscale(),
+	'hoverBorderColor': greyscale(40),
+	'hoverBackgroundColor': greyscale(95, 0.5),
+	'hoverBackgroundImage': none,
+	'focusBorderColor': greyscale(40),
+);
+
+$button--disabled: (
+	'color': greyscale(),
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'border': $button--border-width-style greyscale(80),
+	'visitedColor': greyscale(),
+	'opacity': 0.67,
+	'hoverColor': greyscale(),
+	'hoverBorder': $button--border-width-style greyscale(80),
+	'hoverBackgroundColor': transparent,
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style greyscale(80),
+	'focusTextDecoration': none
+);
