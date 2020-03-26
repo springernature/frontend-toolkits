@@ -1,5 +1,9 @@
 # History
 
+## 0.35.0 (2020-03-26)
+	* Bump global-context to 15.2.1
+	* Use global breakpoints
+
 ## 0.34.0 (2020-03-23)
 	* Bump global-context to 15.2.0
 

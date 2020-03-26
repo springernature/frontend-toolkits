@@ -2,11 +2,11 @@
  *	Settings
  *	Nature specific article component configuration (overrides configuration from global-article/10-settings)
 */
- 
+
 $article--breakpoints: (
-	'sml': map-key-get($breakpoints, 'lap'),
-	'med': map-key-get($breakpoints, 'portable'),
-	'lrg': map-key-get($breakpoints, 'desk')
+	'sml': map-key-get($breakpoints, 'sm'),
+	'med': map-key-get($breakpoints, 'md'),
+	'lrg': map-key-get($breakpoints, 'lg')
 );
 
 $article--link-color: color('blue');
