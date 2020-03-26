@@ -1,5 +1,9 @@
 # History
 
+## 19.1.0 (2020-03-26)
+	* Bump global-context to 15.2.1
+	* Use global breakpoints
+
 ## 19.0.0 (2020-03-24)
     * BREAKING: Deletes duplicated icons
 
