@@ -29,7 +29,7 @@ A component for the controls of pagination.
             </a>
         </li>
         <li class="c-pagination__item">
-            <span class="c-pagination__link c-pagination__link--disabled c-pagination__link--ellipsis">…</span>
+            <span class="c-pagination__link c-pagination__link--disabled c-pagination--ellipsis">…</span>
         </li>
         <li class="c-pagination__item">
             <a href="/news?type=articles&amp;pageSize=1&amp;page=22" class="c-pagination__link">
