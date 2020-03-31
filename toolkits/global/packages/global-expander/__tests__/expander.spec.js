@@ -328,12 +328,12 @@ describe('Expander', () => {
 			expect(element.BUTTON.textContent).toEqual(triggerOpenLabelOption);
 		});
 
-		test('Should use CLOSE_ON_CLICKOFF option if it is passed to constructor', () => {
+		test('Should use CLOSE_ON_FOCUS_OUT option if it is passed to constructor', () => {
 			// Given
 			const clickOffElement = document.createElement('div');
 			element.TARGET.parentNode.insertBefore(clickOffElement, element.TARGET.nextSibling);
 			const expander = new Expander(element.BUTTON, element.TARGET, {
-				CLOSE_ON_CLICKOFF: false
+				CLOSE_ON_FOCUS_OUT: false
 			});
 			expander.init();
 			element.BUTTON.click();
