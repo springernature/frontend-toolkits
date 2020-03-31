@@ -1,5 +1,8 @@
 # History
 
+## 15.2.1 (2020-03-26)
+    * Add sensible defaults for global breakpoints
+
 ## 15.2.0 (2020-03-23)
     * Add u-color-inherit
 
