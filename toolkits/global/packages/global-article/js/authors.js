@@ -1,4 +1,4 @@
-/* global jQuery, $ */
+/* global $ */
 
 /**
  *
@@ -7,7 +7,7 @@
  *
  */
 
-function AuthorList () {
+function AuthorList() {
 	'use strict';
 
 	var create = function ($authors, popupGroup, options) {
@@ -241,7 +241,7 @@ function AuthorList () {
 	return {
 		create: create
 	};
-};
+}
 
 if (typeof module !== 'undefined') {
 	module.exports = AuthorList;
