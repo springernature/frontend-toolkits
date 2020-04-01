@@ -1,5 +1,9 @@
 # History
 
+## 0.3.3 (2020-03-25)
+    * Changes option from CLOSE_ON_CLICKOFF to CLOSE_ON_FOCUS_OUT
+    * option ensures target is closed if user clicks or tabs out of target
+
 ## 0.3.2 (2020-03-06)
     * Bug Fix: Adds keyboard button interaction with 'Space' keypress
 

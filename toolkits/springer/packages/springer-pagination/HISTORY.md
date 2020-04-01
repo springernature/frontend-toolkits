@@ -1,5 +1,10 @@
 # History
 
+## 3.0.0 (2020-03-27)
+    * Update pagination design
+    * Add springer-button dependency
+    * Rename ellipsis class name
+	
 ## 2.0.0 (2020-02-14)
 	* BREAKING: Add springer-context dependency
 	* Use spacing instead of get-spacing

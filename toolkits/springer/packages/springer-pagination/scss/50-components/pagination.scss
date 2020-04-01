@@ -1,19 +1,19 @@
 .c-pagination {
 	@include u-list-reset;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	font-size: $springer-pagination--font-size;
 	padding: $springer-pagination--padding;
-	line-height: 1;
-	border-top: 1px solid $springer-pagination--border-color;
-	border-bottom: 1px solid $springer-pagination--border-color;
-	background-color: $springer-pagination--background;
-	justify-content: center;
-	width: 100%;
+
+	@include media-query('sm') {
+		justify-content: center;
+	}
 }
 
 .c-pagination__item {
-	margin-right: $springer-pagination--item-spacing;
+	margin-right: $springer-pagination--item-margin-right;
+	margin-bottom: $springer-pagination--item-margin-bottom;
 
 	&:last-child {
 		margin-right: 0;
@@ -21,50 +21,27 @@
 }
 
 .c-pagination__link {
-	display: block;
-	padding: $springer-pagination--link-padding;
-	text-decoration: none;
-	border-radius: $springer-pagination--border-radius;
-	color: $springer-pagination--link-color;
-
-	&:focus,
-	&:visited,
-	&:hover {
-		color: $springer-pagination--link-color;
-	}
-
-	&:hover {
-		background-color: $springer-pagination--link-background-color-hover;
-	}
+	@include button($button--default);
+	min-width: $springer-pagination--item-width;
+	text-align: center;
 }
 
 .c-pagination__link--disabled {
-	color: $springer-pagination--link-color-disabled;
-
-	&:hover {
-		background-color: transparent;
-	}
-
-	&:focus,
-	&:visited,
-	&:hover {
-		color: $springer-pagination--link-color-disabled;
-	}
+	@include button-disabled;
 }
 
 .c-pagination__link--active {
-	background-color: $springer-pagination--link-background-color-active;
-	color: $springer-pagination--link-color-active;
-
-	&:focus,
-	&:visited,
-	&:hover {
-		background-color: $springer-pagination--link-background-color-active;
-		color: $springer-pagination--link-color-active;
-	}
+	color: $springer-pagination--link-active-color;
+	border-color: $springer-pagination--link-active-border-color;
+	background-color: $springer-pagination--link-active-background-color;
+	background-image: none;
+	cursor: default;
 }
 
-.c-pagination__link--ellipsis {
+.c-pagination__ellipsis {
+	background: none;
+	border: 0;
+	min-width: auto;
 	padding-left: 0;
 	padding-right: 0;
 }

@@ -1,11 +1,12 @@
 {
   "name": "@springernature/springer-pagination",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "A component for the controls of pagination",
   "keywords": [],
   "author": "Springer Nature",
   "peerDependencies": {
-    "@springernature/springer-context": "17.0.3"
+    "@springernature/springer-context": "^19.1.0",
+    "@springernature/springer-button": "^0.1.0"
   }
 }
