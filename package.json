@@ -77,5 +77,8 @@
       "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
-  "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"
+  "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
