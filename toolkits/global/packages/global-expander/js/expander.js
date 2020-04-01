@@ -8,7 +8,7 @@ const defaultOptions = {
 	TARGET_HIDE_CLASS: 'u-js-hide',
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
-	CLOSE_ON_CLICKOFF: true,
+	CLOSE_ON_FOCUS_OUT: true,
 	AUTOFOCUS: false
 };
 
@@ -62,13 +62,15 @@ const Expander = class {
 			this._triggerEl.focus();
 		}
 
-		if (event.key === 'Tab') {
-			window.requestAnimationFrame(() => {
-				if (!this._targetTabbableItems.includes(document.activeElement)) {
-					this._close();
-					this._triggerEl.focus();
-				}
-			});
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
+			if (event.key === 'Tab') {
+				window.requestAnimationFrame(() => {
+					if (!this._targetTabbableItems.includes(document.activeElement)) {
+						this._close();
+						this._triggerEl.focus();
+					}
+				});
+			}
 		}
 	}
 
@@ -89,7 +91,7 @@ const Expander = class {
 	_setupTemporaryEventListeners() {
 		document.addEventListener('keydown', this._handleDocumentKeydown);
 
-		if (this._options.CLOSE_ON_CLICKOFF) {
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			document.addEventListener('click', this._handleDocumentClick);
 		}
 	}
@@ -97,7 +99,7 @@ const Expander = class {
 	_removeTemporaryEventListeners() {
 		document.removeEventListener('keydown', this._handleDocumentKeydown);
 
-		if (this._options.CLOSE_ON_CLICKOFF) {
+		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			document.removeEventListener('click', this._handleDocumentClick);
 		}
 	}
