@@ -1,5 +1,8 @@
 # History
 
+## 0.11.0 (2020-04-01)
+	* Update the extends package version of global article from 15.0.0 to 16.0.0
+
 ## 0.10.1 (2020-03-26)
     * Fix mapping to global breakpoints
 
