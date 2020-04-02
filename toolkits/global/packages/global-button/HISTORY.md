@@ -1,7 +1,8 @@
 # History
 
-## 0.2.0 (2020-04-02)
+## 0.1.1 (2020-04-02)
     * Add padding to .c-button--large
+    * Use spacing function for padding values 
     * Update global-context peer dependency version
 
 ## 0.1.0 (2020-03-25)
