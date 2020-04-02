@@ -1,12 +1,12 @@
 {
   "name": "@springernature/springer-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Springer branding for global-buttons",
   "keywords": ["button"],
   "author": "Springer Nature",
-  "extendsPackage": "global-button@0.1.0",
+  "extendsPackage": "global-button@0.1.1",
   "peerDependencies": {
-    "@springernature/springer-context": "^19.0.0"
+    "@springernature/springer-context": "^19.1.0"
   }
 }
