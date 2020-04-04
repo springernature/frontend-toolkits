@@ -67,10 +67,13 @@
 
 .c-dropdown__link {
 	@include interface-link;
-	@include u-link-inherit;
 	display: block;
 	padding: $dropdown--link-padding;
 	background-color: $dropdown--link-background-color;
+
+	&:visited {
+		color: $dropdown--link-color;
+	}
 
 	&:hover {
 		background-color: $dropdown--link-background-color-hover;
