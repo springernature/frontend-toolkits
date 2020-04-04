@@ -1,5 +1,8 @@
 # History
 
+## 3.0.3 (2020-04-04)
+    * Sets colour on links
+
 ## 3.0.2 (2020-03-12)
     * Uses className element property instead of classList method to add classnames to dropdown
 
