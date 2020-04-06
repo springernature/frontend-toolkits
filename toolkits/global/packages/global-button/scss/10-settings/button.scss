@@ -10,9 +10,10 @@ $button--font-family: sans-serif;
 $button--font-size-small: 1.4rem;
 $button--font-size-normal: 1.6rem;
 $button--font-size-large: 1.8rem;
+$button--icon-margin: spacing(8);
 $button--padding: spacing(8);
 $button--padding-large: spacing(16);
-$button--text-align: center;
+$button--justify-content: center;
 $button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 
 /**
