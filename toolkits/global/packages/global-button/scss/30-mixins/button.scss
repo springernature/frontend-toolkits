@@ -2,8 +2,9 @@
 // No theme
 
 @mixin button-base {
+	align-items: center;
 	cursor: pointer;
-	display: inline-block;
+	display: inline-flex;
 	margin: 0;
 	position: relative;
 	text-decoration: none;
@@ -12,8 +13,8 @@
 	font-family: $button--font-family;
 	font-size: $button--font-size-normal;
 	line-height: $button--line-height;
+	justify-content: $button--justify-content;
 	padding: $button--padding;
-	text-align: $button--text-align;
 	transition: $button--transition;
 }
 
