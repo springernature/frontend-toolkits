@@ -1,5 +1,12 @@
 # History
 
+## 0.2.0 (2020-04-06)
+    * Rename .c-button--block to .c-button--full-width
+    * Replace inline-block with inline-flex
+    * Add icon spacing to buttons
+    * Replace text-align with justify-content and variable rename 
+    * Update Readme
+
 ## 0.1.1 (2020-04-02)
     * Add padding to .c-button--large
     * Use spacing function for padding values 
