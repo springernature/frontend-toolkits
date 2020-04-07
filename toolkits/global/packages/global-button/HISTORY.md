@@ -5,6 +5,7 @@
     * Replace inline-block with inline-flex
     * Add icon spacing to buttons
     * Replace text-align with justify-content and variable rename 
+    * Move border-radius from base to themes
     * Update Readme
 
 ## 0.1.1 (2020-04-02)
