@@ -2,9 +2,9 @@
 
 ## 0.2.0 (2020-04-06)
     * BREAKING: Rename .c-button--block to .c-button--full-width
+    * BREAKING: Replace text-align with justify-content and variable rename
     * Replace inline-block with inline-flex
     * Add SVG spacing to buttons with .c-button-icon--left and .c-button-icon--right
-    * Replace text-align with justify-content and variable rename 
     * Move border-radius from base to themes
     * Update readme
 
