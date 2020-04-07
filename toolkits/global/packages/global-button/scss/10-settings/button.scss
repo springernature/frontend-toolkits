@@ -22,7 +22,7 @@ $button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
  */
 
 $button--default: (
-	'border-radius': $button--border-radius,
+	'border-radius': 2px,
 	'color': darkblue,
 	'backgroundColor': greyscale(95),
 	'backgroundImage': none,
