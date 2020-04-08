@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "description": "card component",
-  "keywords": ["card"],
+  "keywords": [
+    "card"
+  ],
   "author": "Springer Nature",
   "peerDependencies": {
     "@springernature/global-context": "^11.0.0"
