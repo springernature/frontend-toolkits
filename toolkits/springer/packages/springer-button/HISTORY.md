@@ -2,9 +2,10 @@
 
 ## 0.2.0 (2020-04-08)
     * Fixed typo in $button--padding-large
-    * Replace variable from $button--text-align to $button--justify-content
-    * Move border-radius from base to themes
-    * Bump extendsPackage to latest
+    * Changes to be compatible with global-button@0.2.0
+        * Replace variable from $button--text-align to $button--justify-content
+        * Move border-radius from base to themes
+        * Bump extendsPackage to latest
 
 ## 0.1.1 (2020-04-02)
     * Bump extendsPackage and peerDependencies to latest
