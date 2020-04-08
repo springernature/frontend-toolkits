@@ -26,7 +26,6 @@ $button--default: (
 	'backgroundColor': greyscale(95),
 	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
 	'border': $button--border-width-style greyscale(80),
-	'border-radius': 2px,
 	'visitedColor': color('action-base'),
 	'hoverColor': white,
 	'hoverBorder': $button--border-width-style greyscale(40),
