@@ -20,9 +20,21 @@
 	@include button-theme($button--primary);
 }
 
-.c-button--block {
-	display: block;
+.c-button--full-width {
+	display: flex;
 	width: 100%;
+}
+
+.c-button--icon-left {
+	svg {
+		margin-right: $button--icon-margin;
+	 }
+}
+
+.c-button--icon-right {
+	svg {
+		margin-left: $button--icon-margin;
+	 }
 }
 
 .c-button--disabled,
