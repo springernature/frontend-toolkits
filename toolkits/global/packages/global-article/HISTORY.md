@@ -1,5 +1,8 @@
 # History
 
+## 18.0.0 (2019-04-09)
+	* Remove the mapping $article--breakpoints within article.scss
+
 ## 17.0.0 (2019-04-08)
 	* Remove the mapping $article--breakpoints and use breakpoints from global-context
 
