@@ -1,5 +1,17 @@
 # History
 
+## 0.13.1 (2020-04-09)
+	* Update the version number to get new global
+
+## 0.13.0 (2020-04-09)
+	* Update the extends package version of global article from 17.0.0 to 18.0.0
+
+## 0.12.0 (2020-04-08)
+	* Remove $article--breakpoints as we will use the global-context
+
+## 0.11.0 (2020-04-01)
+	* Update the extends package version of global article from 15.0.0 to 16.0.0
+
 ## 0.10.1 (2020-03-26)
     * Fix mapping to global breakpoints
 

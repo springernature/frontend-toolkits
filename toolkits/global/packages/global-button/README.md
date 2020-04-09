@@ -29,9 +29,25 @@ Button styles to use on buttons and links.
 <button class="c-button c-button--primary">text</button>
 ```
 
-**Block**
+**Full width**
 ```html
-<button class="c-button c-button--block">text</button>
+<button class="c-button c-button--full-width">text</button>
+```
+
+**Icon left**
+```html
+<button class="c-button c-button--icon-left">
+    <svg></svg>
+    <span>text</span>
+</button>
+```
+
+**Icon right**
+```html
+<button class="c-button c-button--icon-right">
+    <span>text</span>
+    <svg></svg>
+</button>
 ```
 
 **Disabled**

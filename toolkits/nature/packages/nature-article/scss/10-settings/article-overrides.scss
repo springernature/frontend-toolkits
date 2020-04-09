@@ -3,12 +3,6 @@
  *	Nature specific article component configuration (overrides configuration from global-article/10-settings)
 */
 
-$article--breakpoints: (
-	'sml': map-key-get($breakpoints, 'sm'),
-	'med': map-key-get($breakpoints, 'md'),
-	'lrg': map-key-get($breakpoints, 'lg')
-);
-
 $article--link-color: color('blue');
 $article--link-icon-color: str-slice(ie-hex-str(color('blue')), 4);
 $article--link-border-color: color('steel');
