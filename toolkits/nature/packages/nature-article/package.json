@@ -6,5 +6,5 @@
   "peerDependencies": {
     "@springernature/nature-context": "^0.14.1"
   },
-  "extendsPackage": "global-article@17.0.0"
+  "extendsPackage": "global-article@18.0.0"
 }
