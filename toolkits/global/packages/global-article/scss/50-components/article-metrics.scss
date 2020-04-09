@@ -26,7 +26,7 @@
 	margin: 0;
 	padding: 0;
 
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {	
+	@include media-query('md', 'min') {	
 		flex-basis: 60%;
 	}
 
@@ -44,10 +44,10 @@
 	font-size: map-get($article--font-sizes, 'font-size-2');
 	line-height: $article--vertical-spacing-large;
 
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+	@include media-query('md', 'min') {
 		padding-left: 60px;
 	}
-	@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+	@include media-query('lg', 'min') {
 		padding-left: 80px;
 	}
 }
@@ -56,7 +56,7 @@
 	flex-grow: 0;
 	flex-shrink: 1;
 	
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+	@include media-query('md', 'min') {
 		flex-basis: 40%;
 	}
 }
@@ -79,7 +79,7 @@
 		padding-right: $article--vertical-spacing-medium;
 		flex-grow: 1;
 
-		@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+		@include media-query('lg', 'min') {
 			padding-top: 0;
 		}
 	}
@@ -115,7 +115,7 @@
 	margin: 0 auto;
 	min-width: 80px;
 
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+	@include media-query('md', 'min') {
 		margin: 0;
 	}
 }
@@ -123,7 +123,7 @@
 .c-article-metrics__altmetric-donut {
 	padding-bottom: $article--vertical-spacing-large;
 
-	@include media-query(map-get($article--breakpoints, 'sml'), 'min') {
+	@include media-query('sm', 'min') {
 		display: flex;
 		align-items: center;
 	}
@@ -132,11 +132,11 @@
 .c-article-metrics__legend {
 	margin-top: $article--vertical-spacing-large;
 
-	@include media-query(map-get($article--breakpoints, 'sml'), 'min') {
+	@include media-query('sm', 'min') {
 		margin-top: 0;
 	}
 
-	@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+	@include media-query('md', 'min') {
 		flex-basis: 75%;
 		justify-content: right;
 	}
@@ -150,7 +150,7 @@
 		flex-basis: 100%;
 		padding: $article--vertical-spacing-small 0 0 $article--vertical-spacing-medium;
 
-		@include media-query(map-get($article--breakpoints, 'med'), 'min') {
+		@include media-query('md', 'min') {
 			flex: 0 1 130px;
 		}
 	}
@@ -161,12 +161,12 @@
 			grid-auto-rows: auto;
 			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 
-			@include media-query(map-get($article--breakpoints, 'sml'), 'min') {
+			@include media-query('sm', 'min') {
 				padding-left: $article--vertical-spacing-medium;
 				grid-template-columns: repeat(2, 50%);
 			}
 
-			@include media-query(map-get($article--breakpoints, 'lrg'), 'min') {
+			@include media-query('lg', 'min') {
 				grid-template-columns: repeat(3, 33%);
 			}
 

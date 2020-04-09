@@ -3,12 +3,6 @@
  * Article component configuration
  */
 
-$article--breakpoints: (
-	'sml': 200px,
-	'med': 400px,
-	'lrg': 900px
-);
-
 /* Spacing defined by the 8-Point grid - https://spec.fm/specifics/8-pt-grid */
 $article--vertical-spacing-large: 24px;
 $article--vertical-spacing-medium: 16px;
