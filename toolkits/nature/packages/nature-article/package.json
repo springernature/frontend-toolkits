@@ -1,10 +1,10 @@
 {
   "name": "@springernature/nature-article",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Frontend package for Nature articles",
   "license": "MIT",
   "peerDependencies": {
     "@springernature/nature-context": "^0.14.1"
   },
-  "extendsPackage": "global-article@16.0.0"
+  "extendsPackage": "global-article@18.0.0"
 }
