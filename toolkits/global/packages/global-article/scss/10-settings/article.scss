@@ -21,7 +21,7 @@ $article--key-step-color: blue;
 $article--citations-count-color-primary: blue;
 $article--citations-count-color-secondary: white;
 $article--subject-background-color: white;
-$article--bibliographic-information-list-layout: (map-get($article--breakpoints, 'sml'), map-get($article--breakpoints, 'lrg'));
+$article--bibliographic-information-list-layout: ('sm', 'lg');
 $article--page-background-color: white;
 
 $article--cta-button-background-color: blue;
