@@ -1,5 +1,8 @@
 # History
 
+## 18.0.1 (2020-04-14)
+	* Debugging for issue where it appears `closest` polyfill isn't being applied sometimes
+
 ## 18.0.0 (2019-04-09)
 	* Remove the mapping $article--breakpoints within article.scss
 

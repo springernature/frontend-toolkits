@@ -1,4 +1,4 @@
-
+/* global Sentry */
 var InternalNavigation = (function (window, document) {
 	'use strict';
 
@@ -70,7 +70,12 @@ var InternalNavigation = (function (window, document) {
 		}
 
 		function handleClick(event) {
-			var target = event.target.closest('a');
+			var target = null;
+			if (event.target && event.target.closest) {
+				target = event.target.closest('a');
+			} else if (Sentry && Sentry.captureMessage) {
+				Sentry.captureMessage('failed to find link ' + event.target);
+			}
 			if (!target || !target.hash || (_exclude && target.classList.contains(_exclude))) {
 				return;
 			}
