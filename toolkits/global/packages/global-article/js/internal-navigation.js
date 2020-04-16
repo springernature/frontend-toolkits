@@ -1,4 +1,3 @@
-/* global Sentry */
 var InternalNavigation = (function (window, document) {
 	'use strict';
 
