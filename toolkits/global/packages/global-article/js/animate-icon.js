@@ -1,4 +1,4 @@
-/* global Component $ */
+/* global $ */
 
 /**
 	 * Rotating Background Icons
@@ -10,8 +10,7 @@
 	 * $.animateIcon();
 	 * $.animateIcon({
 	 * 		fallbackIconStartClass: 'icon-arrow-down-12x7-white',
-	 *		fallbackIconRotatedClass: 'icon-arrow-up-12x7-white',
-	 *		activeMediaQuery: {lt: 875}
+	 *		fallbackIconRotatedClass: 'icon-arrow-up-12x7-white'
 	 * });
 	 *
 	 */
@@ -54,7 +53,6 @@ function AnimateIcon() {
 					iconLocatorSelector: '.icon-rotate',
 					fallbackIconStartClass: 'icon-arrow-down-12x7-gray',
 					fallbackIconRotatedClass: 'icon-arrow-up-12x7-gray',
-					activeMediaQuery: null,
 					bindToClick: true
 				};
 				options = options || {};
@@ -64,27 +62,6 @@ function AnimateIcon() {
 				$element.data('icon-settings', options);
 
 				var $icon = $(options.iconLocatorSelector, $element).length > 0 ? $(options.iconLocatorSelector, $element) : false;
-
-				// restricted to certain media queries
-				if (options.activeMediaQuery && options.activeMediaQuery instanceof Object && (options.activeMediaQuery.lt || options.activeMediaQuery.gt)) {
-					if ($.deviceState(options.activeMediaQuery)) {
-						active = true;
-					} else {
-						active = false;
-					}
-					Component.Scheduler.on('scroll resize orientationchange', function () {
-						if ($.deviceState(options.activeMediaQuery)) {
-							active = true;
-						} else {
-							active = false;
-						}
-
-						// return to starting state when no longer active
-						if (!active && $icon) {
-							$icon.toggleClass(options.iconToggleClass, false);
-						}
-					});
-				}
 
 				if (options.bindToClick) {
 					$element.on('click', function () {
