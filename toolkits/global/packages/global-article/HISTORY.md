@@ -1,5 +1,8 @@
 # History
 
+## 18.0.2 (2020-04-16)
+	* Fix debugging for issue where it appears `closest` polyfill isn't being applied sometimes
+
 ## 18.0.1 (2020-04-14)
 	* Debugging for issue where it appears `closest` polyfill isn't being applied sometimes
 
