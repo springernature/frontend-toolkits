@@ -1,5 +1,9 @@
 # History
 
+## 19.0.0 (2020-04-16)
+	* Remove support for `activeMediaQuery` from animate icon, we don't seem to have anything that still uses this
+	* Remove `deviceState` now it's not needed for  `activeMediaQuery`
+
 ## 18.0.3 (2020-04-16)
 	* Fix unused variable from lint comment
 
