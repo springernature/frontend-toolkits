@@ -1,5 +1,8 @@
 # History
 
+## 0.13.3 (2020-04-14)
+	* Update the extends package version of global article from 18.0.1 to 18.0.3
+
 ## 0.13.2 (2020-04-14)
 	* Update the extends package version of global article from 18.0.0 to 18.0.1
 

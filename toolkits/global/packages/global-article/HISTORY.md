@@ -1,5 +1,8 @@
 # History
 
+## 18.0.3 (2020-04-16)
+	* Fix unused variable from lint comment
+
 ## 18.0.2 (2020-04-16)
 	* Fix debugging for issue where it appears `closest` polyfill isn't being applied sometimes
 
