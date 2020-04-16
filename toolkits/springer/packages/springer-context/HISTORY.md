@@ -1,5 +1,9 @@
 # History
 
+## 19.1.1 (2020-04-16)
+    * Change visited color
+    * Remove element state colors from heading-link mixin to maintain consistency with regular links
+
 ## 19.1.0 (2020-03-26)
 	* Bump global-context to 15.2.1
 	* Use global breakpoints
