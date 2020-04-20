@@ -72,8 +72,6 @@ var InternalNavigation = (function (window, document) {
 			var target = null;
 			if (event.target && event.target.closest) {
 				target = event.target.closest('a');
-			} else if (window.Raven && window.Raven.captureMessage) {
-				window.Raven.captureMessage('failed to find link ' + event.target);
 			}
 			if (!target || !target.hash || (_exclude && target.classList.contains(_exclude))) {
 				return;
