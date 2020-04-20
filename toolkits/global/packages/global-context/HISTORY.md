@@ -1,5 +1,9 @@
 # History
 
+## 15.3.1 (2020-04-20)
+    * Add error, info and success icon
+    * Update warning icon
+
 ## 15.2.1 (2020-03-26)
     * Add sensible defaults for global breakpoints
 
