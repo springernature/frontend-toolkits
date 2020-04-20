@@ -51,12 +51,12 @@ describe('Authors', () => {
 		});
 	
 		test('Should register click events for each author name', () => {
-			$.fn.delegate = jest.fn();
+			jest.spyOn($.fn, 'delegate');
 	
 			authorList.create($(selector));
 	
 			expect($('.c-author-list').delegate).toHaveBeenCalled();
-	
+
 			jest.clearAllMocks();
 		});
 
