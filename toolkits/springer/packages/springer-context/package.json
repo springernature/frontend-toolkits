@@ -12,7 +12,7 @@
     "js"
   ],
   "author": "Springer Nature",
-  "extendsPackage": "global-context@15.2.1",
+  "extendsPackage": "global-context@15.3.1",
   "peerDependencies": {
     "rfs": "^8.0.4"
   }
