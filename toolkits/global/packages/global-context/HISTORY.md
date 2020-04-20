@@ -1,6 +1,6 @@
 # History
 
-## 15.3.1 (2020-03-26)
+## 15.3.1 (2020-04-20)
     * Add error, info and success icon
     * Update warning icon
 
