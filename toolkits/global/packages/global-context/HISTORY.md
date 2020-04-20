@@ -1,7 +1,7 @@
 # History
 
 ## 15.3.1 (2020-04-20)
-    * Add rss, error, info and success icon
+    * Add error, info and success icon
     * Update warning icon
 
 ## 15.2.1 (2020-03-26)

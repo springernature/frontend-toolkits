@@ -1,5 +1,8 @@
 # History
 
+## 19.2.1 (2020-04-20)
+    * Update rss icon
+
 ## 19.1.1 (2020-04-16)
     * Change visited color
     * Remove element state colors from heading-link mixin to maintain consistency with regular links
