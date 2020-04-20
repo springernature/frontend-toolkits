@@ -1,5 +1,8 @@
 # History
 
+## 19.3.0 (2020-04-20)
+    * Bump global-context to 15.3.1
+
 ## 19.2.1 (2020-04-20)
     * Update rss icon
 
