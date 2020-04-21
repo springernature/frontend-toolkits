@@ -6,13 +6,6 @@ describe('Authors', () => {
 	let selector;
 
 	window.$ = $;
-	
-	function insertArticleSubtitle() {
-		let subtitle = document.createElement('div');
-		subtitle.innerHTML = '<h3 itemprop="subtitle">subtitle</h3>';
-		selector.parentNode.insertBefore(subtitle, selector);
-		subtitle.appendChild(selector);
-	}
 
 	function createAuthorListWithTruncate(options, popup = null) {
 		authorList = new AuthorList();
@@ -101,7 +94,14 @@ describe('Authors', () => {
 	describe('When truncating', () => {
 		let showLessHandler;
 		let showMoreHandler;
-		
+
+		function insertArticleSubtitle() {
+			let subtitle = document.createElement('div');
+			subtitle.innerHTML = '<h3 itemprop="subtitle">subtitle</h3>';
+			selector.parentNode.insertBefore(subtitle, selector);
+			subtitle.appendChild(selector);
+		}
+
 		function initAuthorListToTruncate(length = { number: 10 }, truncate = {
 			etalSmallscreen: 2,
 			etal: 7
