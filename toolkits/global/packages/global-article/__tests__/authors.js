@@ -90,7 +90,6 @@ describe('Authors', () => {
 		});
 	});
 
-
 	describe('When truncating', () => {
 		let showLessHandler;
 		let showMoreHandler;
