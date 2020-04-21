@@ -1,24 +1,6 @@
 @mixin heading-link {
 	a {
-		text-decoration: none;
-
-		&:hover,
-		&:active {
-			color: color('action-base');
-		}
-
-		&:visited {
-			color: color('visited');
-		}
-
-		&:hover {
-			text-decoration: underline;
-		}
-
-		&:active {
-			color: color('action-light');
-			text-decoration: none;
-		}
+		@include interface-link;
 	}
 }
 

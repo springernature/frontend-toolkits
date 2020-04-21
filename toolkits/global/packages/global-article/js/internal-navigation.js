@@ -1,4 +1,3 @@
-
 var InternalNavigation = (function (window, document) {
 	'use strict';
 
@@ -70,7 +69,10 @@ var InternalNavigation = (function (window, document) {
 		}
 
 		function handleClick(event) {
-			var target = event.target.closest('a');
+			var target = null;
+			if (event.target && event.target.closest) {
+				target = event.target.closest('a');
+			}
 			if (!target || !target.hash || (_exclude && target.classList.contains(_exclude))) {
 				return;
 			}

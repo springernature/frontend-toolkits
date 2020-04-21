@@ -1,5 +1,15 @@
 # History
 
+## 19.3.0 (2020-04-20)
+    * Bump global-context to 15.3.1
+
+## 19.2.1 (2020-04-20)
+    * Update rss icon
+
+## 19.1.1 (2020-04-16)
+    * Change visited color
+    * Remove element state colors from heading-link mixin to maintain consistency with regular links
+
 ## 19.1.0 (2020-03-26)
 	* Bump global-context to 15.2.1
 	* Use global breakpoints
