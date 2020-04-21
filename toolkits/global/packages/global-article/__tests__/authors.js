@@ -237,7 +237,7 @@ describe('Authors', () => {
 			expect(document.querySelector('.js-etal-collapsed')).toBeNull();
 		});
 
-		test('Should show the hidden left out over authors the authors list length exceeds the full screen ', () => {
+		test('Should show the hidden left out over authors when the authors list length exceeds the full screen ', () => {
 			initAuthorListAndClickToExpand();
 			
 			expect(showMoreHandler.classList.contains('u-js-hide')).toBeTruthy();
@@ -245,7 +245,7 @@ describe('Authors', () => {
 			expect(showLessHandler.classList.contains('u-js-hide')).toBeFalsy();
 		});
 
-		test('Should show the hidden left out over authors the authors list length exceeds the small screen ', () => {
+		test('Should show the hidden left out over authors when the authors list length exceeds the small screen ', () => {
 			initAuthorListAndClickToExpand({ number: 6 });
 
 			expect(showMoreHandler.classList.contains('js-mq480-show-inline')).toBeFalsy();			
