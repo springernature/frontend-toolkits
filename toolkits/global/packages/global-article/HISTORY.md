@@ -1,5 +1,8 @@
 # History
 
+## 18.1.0 (2019-04-21)
+	* Add test coverage for `Authors` component
+
 ## 18.0.0 (2019-04-09)
 	* Remove the mapping $article--breakpoints within article.scss
 
