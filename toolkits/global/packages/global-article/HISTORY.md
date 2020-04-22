@@ -1,5 +1,8 @@
 # History
 
+## 19.2.0 (2019-04-21)
+	* Add test coverage for `Authors` component
+
 ## 19.1.0 (2020-04-20)
 	* `closest` polyfill doesn't work in IE on SVG elements, since `InternalNavigation` isn't triggered from any elements using SVG we can just guard against the error and carry on
 
