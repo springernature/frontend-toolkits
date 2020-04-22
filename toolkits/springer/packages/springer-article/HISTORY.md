@@ -1,5 +1,8 @@
 # History
 
+## 0.7.0 (2020-04-21)
+    * Giving the build a bump
+
 ## 0.6.0 (2020-04-21)
     * Bump global article version to 19.1.0
 
