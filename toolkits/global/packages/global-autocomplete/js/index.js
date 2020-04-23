@@ -31,7 +31,7 @@ const autoComplete = arguments_ => {
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'ArrowUp', 'Escape', 'Enter', 'Tab'];
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
 
 	let inputTimer = null;
 	let fetchTimer = null;
@@ -39,7 +39,7 @@ const autoComplete = arguments_ => {
 
 	// Keyboard Event Listeners for text input
 	const inputEvents = event => {
-		if (event.key === 'ArrowDown') {
+		if (/ArrowDown|Down/.test(event.key)) {
 			event.preventDefault();
 			if (suggestions().length > 0) {
 				suggestions()[0].focus();
