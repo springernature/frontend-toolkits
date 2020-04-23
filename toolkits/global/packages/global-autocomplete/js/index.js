@@ -89,9 +89,7 @@ const autoComplete = arguments_ => {
 					}
 					nextSibling.focus();
 				}
-			}
-
-			else if (/ArrowUp|Up/.test(event.key)) {
+			} else if (/ArrowUp|Up/.test(event.key)) {
 				if (previousSibling) {
 					if (selectOnSuggestionBrowsing) {
 						input.value = previousSibling.textContent;
