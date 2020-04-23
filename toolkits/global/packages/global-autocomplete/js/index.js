@@ -68,7 +68,7 @@ const autoComplete = arguments_ => {
 		}
 
 		container().addEventListener('keydown', event => {
-			if (['Escape', 'ArrowUp', 'ArrowDown'].includes(event.key)) {
+			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
 			}
@@ -78,40 +78,35 @@ const autoComplete = arguments_ => {
 			let previousSibling = activeElement.previousSibling;
 			let currentIndex = Array.from(activeElement.parentNode.children).indexOf(activeElement);
 
-			switch (event.key) {
-				case 'ArrowDown':
-					if (nextSibling) {
-						if (selectOnSuggestionBrowsing) {
-							if ((currentIndex + 1) < suggestions().length) {
-								input.value = nextSibling.textContent;
-							} else {
-								input.value = currentSearchTerm;
-							}
-						}
-						nextSibling.focus();
-					}
-					break;
-
-				case 'ArrowUp':
-					if (previousSibling) {
-						if (selectOnSuggestionBrowsing) {
-							input.value = previousSibling.textContent;
-						}
-						previousSibling.focus();
-					} else {
-						input.focus();
-						if (selectOnSuggestionBrowsing) {
+			if (/ArrowDown|Down/.test(event.key)) {
+				if (nextSibling) {
+					if (selectOnSuggestionBrowsing) {
+						if ((currentIndex + 1) < suggestions().length) {
+							input.value = nextSibling.textContent;
+						} else {
 							input.value = currentSearchTerm;
 						}
 					}
-					break;
+					nextSibling.focus();
+				}
+			}
 
-				case 'Escape':
-					removeSuggestions();
-					input.value = currentSearchTerm;
-					break;
-				default:
-					break;
+			else if (/ArrowUp|Up/.test(event.key)) {
+				if (previousSibling) {
+					if (selectOnSuggestionBrowsing) {
+						input.value = previousSibling.textContent;
+					}
+					previousSibling.focus();
+				} else {
+					input.focus();
+					if (selectOnSuggestionBrowsing) {
+						input.value = currentSearchTerm;
+					}
+				}
+			}
+			else if (event.key === 'Escape') {
+				removeSuggestions();
+				input.value = currentSearchTerm;
 			}
 		});
 
