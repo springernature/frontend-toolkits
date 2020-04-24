@@ -101,8 +101,7 @@ const autoComplete = arguments_ => {
 						input.value = currentSearchTerm;
 					}
 				}
-			}
-			else if (event.key === 'Escape') {
+			} else if (event.key === 'Escape') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
 			}
