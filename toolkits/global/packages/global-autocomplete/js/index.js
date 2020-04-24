@@ -31,7 +31,7 @@ const autoComplete = arguments_ => {
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'ArrowUp', 'Escape', 'Enter', 'Tab'];
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
 
 	let inputTimer = null;
 	let fetchTimer = null;
@@ -39,7 +39,7 @@ const autoComplete = arguments_ => {
 
 	// Keyboard Event Listeners for text input
 	const inputEvents = event => {
-		if (event.key === 'ArrowDown') {
+		if (/ArrowDown|Down/.test(event.key)) {
 			event.preventDefault();
 			if (suggestions().length > 0) {
 				suggestions()[0].focus();
@@ -68,7 +68,7 @@ const autoComplete = arguments_ => {
 		}
 
 		container().addEventListener('keydown', event => {
-			if (['Escape', 'ArrowUp', 'ArrowDown'].includes(event.key)) {
+			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
 			}
@@ -78,40 +78,32 @@ const autoComplete = arguments_ => {
 			let previousSibling = activeElement.previousSibling;
 			let currentIndex = Array.from(activeElement.parentNode.children).indexOf(activeElement);
 
-			switch (event.key) {
-				case 'ArrowDown':
-					if (nextSibling) {
-						if (selectOnSuggestionBrowsing) {
-							if ((currentIndex + 1) < suggestions().length) {
-								input.value = nextSibling.textContent;
-							} else {
-								input.value = currentSearchTerm;
-							}
-						}
-						nextSibling.focus();
-					}
-					break;
-
-				case 'ArrowUp':
-					if (previousSibling) {
-						if (selectOnSuggestionBrowsing) {
-							input.value = previousSibling.textContent;
-						}
-						previousSibling.focus();
-					} else {
-						input.focus();
-						if (selectOnSuggestionBrowsing) {
+			if (/ArrowDown|Down/.test(event.key)) {
+				if (nextSibling) {
+					if (selectOnSuggestionBrowsing) {
+						if ((currentIndex + 1) < suggestions().length) {
+							input.value = nextSibling.textContent;
+						} else {
 							input.value = currentSearchTerm;
 						}
 					}
-					break;
-
-				case 'Escape':
-					removeSuggestions();
-					input.value = currentSearchTerm;
-					break;
-				default:
-					break;
+					nextSibling.focus();
+				}
+			} else if (/ArrowUp|Up/.test(event.key)) {
+				if (previousSibling) {
+					if (selectOnSuggestionBrowsing) {
+						input.value = previousSibling.textContent;
+					}
+					previousSibling.focus();
+				} else {
+					input.focus();
+					if (selectOnSuggestionBrowsing) {
+						input.value = currentSearchTerm;
+					}
+				}
+			} else if (event.key === 'Escape') {
+				removeSuggestions();
+				input.value = currentSearchTerm;
 			}
 		});
 

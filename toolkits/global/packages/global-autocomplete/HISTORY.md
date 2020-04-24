@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2020-04-23)
+    * Allow for Explorer's non standard keypress identifiers
+
 ## 3.1.0 (2020-03-20)
     * Add `selectOnSuggestionBrowsing` setting to disable input text update as user browses the suggestions.
     * Remove expectation from user to provide `data-index` on each suggestion element.
