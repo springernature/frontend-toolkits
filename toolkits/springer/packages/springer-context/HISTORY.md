@@ -1,5 +1,8 @@
 # History
 
+## 20.0.0 (2020-04-27)
+    * Rename springer-arrow-righ.svg to springer-arrow-right.svg
+
 ## 19.3.0 (2020-04-20)
     * Bump global-context to 15.3.1
 
