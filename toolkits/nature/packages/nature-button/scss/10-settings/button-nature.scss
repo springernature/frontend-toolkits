@@ -23,7 +23,7 @@ $button--primary: (
 	'backgroundImage': none,
 	'border': $button--border-width-style color('blue'),
 	'visitedColor': white,
-	'hoverColor': white,
+	'hoverColor': color('blue'),
 	'hoverBorder': $button--border-width-style color('blue'),
 	'hoverBackgroundColor': white,
 	'hoverBackgroundImage': none,
