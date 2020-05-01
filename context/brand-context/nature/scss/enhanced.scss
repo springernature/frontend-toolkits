@@ -3,25 +3,17 @@
  * Bootstrap the rest of the styles on cut the mustard
  */
 
-// Default setting, functions, mixins
+// Default settings, functions, mixins
 @import '../../default/scss/abstracts';
 
-// Nature specific abstracts
-@import '10-settings/colors/default';
-@import '10-settings/keyframes';
-@import '10-settings/style';
-@import '10-settings/typography';
-@import '10-settings/global'; // temp, will be removed eventually
+// Nature settings, functions, mixins
+@import 'abstracts';
 
-@import '30-mixins/typography';
-
-// 40-base, default
-@import '../../default/scss/40-base/typography';
-
-// 40-base, nature
+// 40-base
 @import '40-base/forms';
 @import '40-base/layout';
 @import '40-base/links';
 @import '40-base/lists';
 @import '40-base/tables';
+@import '../../default/scss/40-base/typography';
 @import '40-base/typography';

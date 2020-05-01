@@ -7,12 +7,9 @@
 // Default setting, functions, mixins
 @import '../../default/scss/abstracts';
 
-// Nature specific abstracts
-@import '10-settings/colors/default';
-@import '10-settings/global'; // temp, will be removed eventually
+// Nature settings, functions, mixins
+@import 'abstracts';
 
-// 40-base, default
+// 40-base
 @import '../../default/scss/40-base/normalize';
-
-// 40-base, nature
 @import '40-base/basic';
