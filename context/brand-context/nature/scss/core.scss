@@ -4,16 +4,26 @@
  * both do and dont cut the mustard, keep to a minimum
  */
 
+// 10-settings
+
 @import '10-settings/colors/default';
 @import '../../default/scss/10-settings/typography.scss';
 
+// 20-functions
+
 @import '../../default/scss/20-functions/colors';
+
+// 30-mixins
 
 @import '../../default/scss/30-mixins/hiding';
 @import '../../default/scss/30-mixins/lists';
 @import '../../default/scss/30-mixins/typography';
 
-@import '10-settings/global'; // temp, will be removed eventually
+// temp, will be removed eventually
+
+@import '10-settings/global';
+
+// 40-base
 
 @import '../../default/scss/40-base/normalize';
 @import '40-base/basic';

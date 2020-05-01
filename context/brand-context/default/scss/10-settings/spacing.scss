@@ -1,0 +1,18 @@
+$context--spacing: (0, 2, 4, 8, 16, 24, 32, 48, 64);
+$context--spacing-margin-keywords: (auto);
+$context--spacing-utility-names: (
+	margin: (
+		'ma' 'margin',
+		'mt' 'margin-top',
+		'mr' 'margin-right',
+		'mb' 'margin-bottom',
+		'ml' 'margin-left'
+	),
+	padding: (
+		'pa' 'padding',
+		'pt' 'padding-top',
+		'pr' 'padding-right',
+		'pb' 'padding-bottom',
+		'pl' 'padding-left'
+	)
+);
