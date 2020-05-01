@@ -3,49 +3,25 @@
  * Bootstrap the rest of the styles on cut the mustard
  */
 
-// 10-settings
+// Default setting, functions, mixins
+@import '../../default/scss/abstracts';
 
-@import '../../default/scss/10-settings/breakpoints';
+// Nature specific abstracts
 @import '10-settings/colors/default';
-@import '../../default/scss/10-settings/colors/shared';
-@import '../../default/scss/10-settings/spacing';
-
-@import '../../default/scss/10-settings/container';
 @import '10-settings/keyframes';
 @import '10-settings/style';
-@import '../../default/scss/10-settings/typography';
 @import '10-settings/typography';
+@import '10-settings/global'; // temp, will be removed eventually
 
-// 20-functions
-
-@import '../../default/scss/20-functions/colors';
-@import '../../default/scss/20-functions/helpers';
-@import '../../default/scss/20-functions/spacing';
-
-// temp, will be removed eventually
-
-@import '10-settings/global';
-
-// 30-mixins
-
-@import '../../default/scss/30-mixins/media-query';
-@import '../../default/scss/30-mixins/clearfix';
-@import '../../default/scss/30-mixins/container';
-@import '../../default/scss/30-mixins/hiding';
-@import '../../default/scss/30-mixins/icons';
-@import '../../default/scss/30-mixins/keyframes';
-@import '../../default/scss/30-mixins/links';
-@import '../../default/scss/30-mixins/lists';
-@import '../../default/scss/30-mixins/style';
-@import '../../default/scss/30-mixins/typography';
 @import '30-mixins/typography';
 
-// 40-base
+// 40-base, default
+@import '../../default/scss/40-base/typography';
 
+// 40-base, nature
 @import '40-base/forms';
 @import '40-base/layout';
 @import '40-base/links';
 @import '40-base/lists';
 @import '40-base/tables';
-@import '../../default/scss/40-base/typography';
 @import '40-base/typography';
