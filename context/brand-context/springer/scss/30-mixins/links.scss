@@ -96,25 +96,6 @@
 }
 
 /**
- * Inherited
- *
- */
-
-@mixin inherited-link {
-	color: inherit;
-
-	&.visited,
-	&:visited {
-		color: inherit;
-	}
-
-	&.hover,
-	&:hover {
-		color: inherit;
-	}
-}
-
-/**
  * Link like
  * Style non-links to look like links
  * Remember to add aria

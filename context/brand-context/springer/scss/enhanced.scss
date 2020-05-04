@@ -3,42 +3,14 @@
  * Bootstrap the rest of the styles on cut the mustard
  */
 
-@import '../../default/scss/10-settings/keyframes';
-@import '../../default/scss/10-settings/colors/shared';
-@import '../../default/scss/10-settings/style';
-@import '../../default/scss/10-settings/typography';
-@import '10-settings/breakpoints';
-@import '10-settings/colors/default';
-@import '10-settings/container';
-@import '10-settings/typography-springer';
-@import '10-settings/spacing';
+// Default setting, functions, mixins
+@import '../../default/scss/abstracts';
 
-@import '../../default/scss/20-functions/colors';
-@import '../../default/scss/20-functions/helpers';
-@import '20-functions/em';
-@import '20-functions/spacing';
-@import '20-functions/strip-unit';
-
-@import '../../default/scss/30-mixins/buttons';
-@import '../../default/scss/30-mixins/clearfix';
-@import '../../default/scss/30-mixins/hiding';
-@import '../../default/scss/30-mixins/keyframes';
-@import '../../default/scss/30-mixins/links';
-@import '../../default/scss/30-mixins/lists';
-@import '../../default/scss/30-mixins/media-query';
-@import '../../default/scss/30-mixins/style';
-@import '../../default/scss/30-mixins/typography';
-@import '30-mixins/class-stack';
-@import '30-mixins/container';
-@import '30-mixins/headings';
-@import '30-mixins/triangle';
-@import '30-mixins/wrap';
-@import '30-mixins/springer-hiding';
-@import '30-mixins/springer-links';
-@import '30-mixins/springer-typography';
+// Springer settings, functions, mixins
+@import 'abstracts';
 
 @import '40-base/forms';
 @import '40-base/layout';
-@import '40-base/springer-links';
+@import '40-base/links';
 @import '40-base/tables';
 @import '40-base/typography';
