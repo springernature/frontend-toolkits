@@ -1,20 +1,35 @@
 # Brand Context
 
-Set the context (baseline) for branded products. This package is used as a template and your product should use the context for a specific brand that inherits from this.
+The context contains a single package - `brand-context` - that is configured (validated,published) in the same way as a toolkit package. It is very similar in structure to a toolkit package but with a few specific settings and rules.
+
+The purpose of the `brand-context` is to set the `CSS` context for branded products. It sets the _baseline_ for your product by configuring one of the available brands.
+
+- **Default**
+- **Nature**
+- **Springer**
+- **SpringerNature**.
+
+The **default** brand provides shared SASS _variables_, _functions_ and _mixins_ and well as some default styles that can be used by all products, such as `normalize.scss`. You can use default by itself to provide an un-branded baseline for your product.
+
+All the other brands - **Nature**, **Springer**, **SpringerNature** - _include_ the default brand, then build on top of that to provide brand specific SASS _variables_, _functions_ and _mixins_, as well as baseline brand specific styling to help you get started with your product.
+
+A `brand-context` configuration is required by _ALL_ products that want to use components from one of the toolkits, and all components within the toolkits are built to work with at least _one_ of the brand configurations.
+
+## Default brand
 
 - [Breakpoints](#breakpoints)
 - [Colors](#colors)
 	- [Greyscale](#greyscale)
 	- [Color](#color)
 	- [Foreground color](#foreground-color)
-	- [Layers](#layers)
+- [Layers](#layers)
 - [Icons](#icons)
 
-## Breakpoints
+### Breakpoints
 
 The `media-query` @mixin is provided for handling breakpoints. Breakpoint values are provided at the `10-settings` level using the `$breakpoints` map.
 
-### Usage
+#### Usage
 
 **range**
 
@@ -37,11 +52,11 @@ The `media-query` @mixin is provided for handling breakpoints. Breakpoint values
 @include media-query('breakpoint-name', 'min', $custom-map) {}
 ```
 
-## Colors
+### Colors
 
 Functions are provided for accessing colors from your context.
 
-### Greyscale
+#### Greyscale
 
 - Grey colors work by having a base grey color, then allowing various degrees of lightness on a scale
 - The lightness is measured in percentages
@@ -58,7 +73,7 @@ $greyscale-stops     // the allowed interval for percentages
 - A helper function - `greyscale()` - is provided for adding grey colors to your scss files
 - The following lightness values are available `0, 5, 10, 15, 20 ... 80`
 
-#### Examples
+**Examples**
 
 ```scss
 color: greyscale();        // returns result of greyscale($greyscale-min) - greyscale(0)
@@ -80,14 +95,14 @@ color: greyscale(30, 0.62);    // 30% greyscale with 60% transparency, rounded d
 color: greyscale(30, 0.68);    // 30% greyscale with 70% transparency, rounded up
 ```
 
-**other usage examples:**
+**Other usage examples:**
 
 ```scss
 background-color: greyscale();
 border-bottom: 1px solid greyscale(80);
 ```
 
-#### Matching mosaic greyscale
+**Matching mosaic greyscale**
 
 The following are the closest matches to grey colors as defined in the mosaic styleguide:
 * off-black: `greyscale(0)`
@@ -96,7 +111,7 @@ The following are the closest matches to grey colors as defined in the mosaic st
 * medial-grey: `greyscale(70)`
 * light-grey: `greyscale(80)`
 
-### Color
+#### Color
 
 There are three maps that store color palettes:
 
@@ -106,7 +121,7 @@ There are three maps that store color palettes:
 
 A helper function - `color()` - is provided for adding colors to your scss files.
 
-#### Examples
+**Examples**
 
 ```scss
 color: color('blue')                                               // returns color from $colors map
@@ -122,14 +137,14 @@ color: color('blue', 0.5)                            // returns the color from $
 color: color('npj-primary', $brand-colors, 0.62)     // returns the color from $brand-colors with 60% transparency
 ```
 
-**other usage examples:**
+**Other usage examples:**
 
 ```scss
 background-color: color('grape');
 border: 1px solid color('lemon');
 ```
 
-### Foreground color
+#### Foreground color
 
 - Given a (background) color, this function will return either a predefined light (`$foreground-light`) or dark (`$foreground-dark`) color to be used in the foreground
 - The `foreground-color()` function will choose the correct color to allow for a high enough contrast ratio between background and foreground
@@ -142,11 +157,11 @@ color: foreground-color('npj-primary', $brand-colors);     // returns the foregr
 color: foreground-color($var);                             // returns the foreground color for color stored as variable
 ```
 
-## Layers
+### Layers
 
 Function provided for accessing z-index from your context.
 
-### Z
+#### Z
 
 The following variable is set:
 
@@ -156,7 +171,7 @@ $z-layers //default layers values
 
 A helper function - `z()` - is provided for adding z-index to your scss files
 
-#### Examples
+**Examples**
 
 ```scss
 z-index: z("layer-name"); //return "default" z-index
@@ -165,7 +180,7 @@ z-index: z("layer-name", $my-map); //return z-index from $my-map map
 z-index: z("layer-name", "layer-variant", $my-map); //return z-index a name and variant from $my-map map
 ```
 
-## Icons
+### Icons
 A [set of icons](img/icons) is provided for use across all brands. Implementation is currently done at the product level due to the varying ways SVG Icons can be implemented. There is no agreed approach to this currently in Springer Nature. 
 
 There is a recommendation that [SVG sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/) are used, but this is a choice. The sprite can be made manually or if you use Gulp then they can be made automatically with [SVG Store](https://www.npmjs.com/package/gulp-svgstore).
@@ -175,8 +190,8 @@ For further information on the various implementation methods, please read this 
 
 The Icons have been optimised, you should not need to optimise them further.
 
-## License
+### License
 
-[MIT License][info-license] &copy; 2019, Springer Nature
+[MIT License][info-license] &copy; 2020, Springer Nature
 
 [info-license]: https://github.com/springernature/frontend-nature-toolkit/blob/master/LICENCE
