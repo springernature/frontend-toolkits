@@ -2,8 +2,6 @@
 
 Set the context (baseline) for branded products. This package is used as a template and your product should use the context for a specific brand that inherits from this.
 
-As well as the SCSS helpers documented here, we also have a collection of [JavaScript helpers](/js/).
-
 - [Breakpoints](#breakpoints)
 - [Colors](#colors)
 	- [Greyscale](#greyscale)
