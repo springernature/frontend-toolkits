@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 (2019-06-21)
+	* BUG: 10-settings/colors.scss missing greyscale options required by colour mapping mixin
+
 ## 2.0.1 (2019-06-21)
 	* BUG: 30-mixins/breakpoints.scss from global renamed 30-mixins/media-query
 

@@ -22,3 +22,14 @@ $colors: (
 	'blue': #007e99,
 	'red': #c64040,
 );
+
+/**
+ * Color and gray scales
+ *
+ */
+
+$page-base: #f8f;
+$greyscale-base: #555;
+$greyscale-min: 20;
+$greyscale-max: 95;
+$greyscale-stops: 5;
