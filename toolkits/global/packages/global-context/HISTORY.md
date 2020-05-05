@@ -1,5 +1,8 @@
 # History
 
+## 15.4.0 (2020-05-04)
+    * Add arrow-top and arrow-bottom icons
+
 ## 15.3.1 (2020-04-20)
     * Add error, info and success icon
     * Update warning icon
