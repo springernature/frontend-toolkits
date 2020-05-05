@@ -1,5 +1,7 @@
 # Default brand
 
+Use this context configuration in your product to skin components with the `default` brand. The components you use should all be from the `global` toolkit.
+
 - [Breakpoints](#breakpoints)
 - [Colors](#colors)
 	- [Greyscale](#greyscale)
