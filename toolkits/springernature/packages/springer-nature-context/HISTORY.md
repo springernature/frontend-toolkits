@@ -1,6 +1,6 @@
 # History
 
-## 2.0.2 (2019-06-21)
+## 2.0.2 (2020-05-04)
 	* BUG: 10-settings/colors.scss missing greyscale options required by colour mapping mixin
 
 ## 2.0.1 (2019-06-21)
