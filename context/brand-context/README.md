@@ -1,6 +1,6 @@
 # Brand Context
 
-The `brand-context` package contains baseline configurations that provide skaffolding for products and toolkit components within each of the supported brands:
+The `brand-context` package contains baseline configurations that provide scaffolding for products and toolkit components within each of the supported brands:
 
 - [Default](./default/README.md)
 - Nature
