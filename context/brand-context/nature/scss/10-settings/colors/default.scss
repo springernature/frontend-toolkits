@@ -1,0 +1,175 @@
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+
+// greyscale settings
+$greyscale-base: #222;
+$greyscale-min: 0;
+$greyscale-max: 80;
+
+// round greys to multiples of $greyscale-stops
+$greyscale-stops: 5;
+
+// dark color used in foreground-color function
+$foreground-dark: #222;
+
+// light color used in foreground-color function
+$foreground-light: #eee;
+
+// default colors
+$colors: (
+	'blue': #069,
+	'steel': #bcd2dc,
+	'grape': #bee188,
+	'lemon': #fece3e,
+	'orange': #b74616,
+	'soft-steel': #dae5ea,
+	'strawberry': #f59094,
+	'plum': #bfaad9,
+	'yellow': #ff9,
+	'ivory': #f4f3e1,
+	'blueberry': #a6d8e7,
+	'honeydew': #e7f6e6,
+	'nature-primary': #940720,
+	'nature-secondary': #a12a3f,
+	'nature-tertiary': #d7c8c8,
+	'action-base': #004b83,
+	'action-light': scale-color(#004b83, $lightness: 10%)
+);
+
+// nature sub-brands
+$brand-colors: (
+	'blood-cancer-journal-primary': #b1062e,
+	'blood-cancer-journal-secondary': #ba2a4b,
+	'blood-cancer-journal-tertiary': #ead6da,
+	'bone-research-primary': #060a6b,
+	'bone-research-secondary': #3a388f,
+	'bone-research-tertiary': #deddfe,
+	'cell-death-disease-primary': #0b7eb7,
+	'cell-death-disease-secondary': #1390ce,
+	'cell-death-disease-tertiary': #e2edf2,
+	'cell-death-discovery-primary': #0168b3,
+	'cell-death-discovery-secondary': #287fbf,
+	'cell-death-discovery-tertiary': #dbeaec,
+	'cell-discovery-primary': #251314,
+	'cell-discovery-secondary': #57292c,
+	'cell-discovery-tertiary': #ecdbdb,
+	'clinical-translational-gastroenterology-primary': #2c74c0,
+	'clinical-translational-gastroenterology-secondary': #3e89d9,
+	'clinical-translational-gastroenterology-tertiary': #eaf4fe,
+	'clinical-translational-immunology-primary': #024da1,
+	'clinical-translational-immunology-secondary': #2f74c0,
+	'clinical-translational-immunology-tertiary': #dbecfe,
+	'emerging-microbes-infections-primary': #039cc6,
+	'emerging-microbes-infections-secondary': #0788ab,
+	'emerging-microbes-infections-tertiary': #dbeaec,
+	'experimental-molecular-medicine-primary': #f37020,
+	'experimental-molecular-medicine-secondary': #c44a00,
+	'experimental-molecular-medicine-tertiary': #dbeaec,
+	'horticulture-research-primary': #b1ceba,
+	'horticulture-research-secondary': #457c56,
+	'horticulture-research-tertiary': #ece2bd,
+	'international-journal-oral-science-primary': #4b1540,
+	'international-journal-oral-science-secondary': #732062,
+	'international-journal-oral-science-tertiary': #e3d8e1,
+	'science-applications-primary': #339,
+	'science-applications-secondary': #1556bc,
+	'science-applications-tertiary': #dbdfec,
+	'microsystems-nanoengineering-primary': #133ea7,
+	'microsystems-nanoengineering-secondary': #2856c6,
+	'microsystems-nanoengineering-tertiary': #dbdfec,
+	'nature-astronomy-primary': #516b78,
+	'nature-astronomy-secondary': #6a8a9a,
+	'nature-astronomy-tertiary': #d8e1e6,
+	'nature-biomedical-engineering-primary': #85237f,
+	'nature-biomedical-engineering-secondary': #905ba4,
+	'nature-biomedical-engineering-tertiary': #e5d8eb,
+	'nature-climate-change-primary': #0098bc,
+	'nature-climate-change-secondary': #23a5c3,
+	'nature-climate-change-tertiary': #b2d8e1,
+	'nature-communications-primary': #f2f7fa,
+	'nature-communications-secondary': #dee6e8,
+	'nature-communications-tertiary': #e7eff1,
+	'nature-ecology-evolution-primary': #7c7640,
+	'nature-ecology-evolution-secondary': #959d46,
+	'nature-ecology-evolution-tertiary': #dbdacc,
+	'nature-energy-primary': #ec6608,
+	'nature-energy-secondary': #e06106,
+	'nature-energy-tertiary': #fdd4b1,
+	'nature-human-behaviour-primary': #00497d,
+	'nature-human-behaviour-secondary': #025692,
+	'nature-human-behaviour-tertiary': #e3edf5,
+	'nature-immunology-primary': #046293,
+	'nature-immunology-secondary': #147db5,
+	'nature-immunology-tertiary': #bae3fa,
+	'nature-microbiology-primary': #814997,
+	'nature-microbiology-secondary': #905ba4,
+	'nature-microbiology-tertiary': #e5d8eb,
+	'nature-nanotechnology-primary': #e2a928,
+	'nature-nanotechnology-secondary': #967015,
+	'nature-nanotechnology-tertiary': #f0dbad,
+	'nature-physics-primary': #33009c,
+	'nature-physics-secondary': #591adc,
+	'nature-physics-tertiary': #ebe6f4,
+	'nature-photonics-primary': #0d6cb6,
+	'nature-photonics-secondary': #0c5d9c,
+	'nature-photonics-tertiary': #ebf6ff,
+	'nature-plants-primary': #3c7815,
+	'nature-plants-secondary': #508031,
+	'nature-plants-tertiary': #d0e0c7,
+	'nature-reviews-chemistry-primary': #19675d,
+	'nature-reviews-chemistry-secondary': #328379,
+	'nature-reviews-chemistry-tertiary': #cfdcda,
+	'nature-reviews-materials-primary': #009adf,
+	'nature-reviews-materials-secondary': #007dba,
+	'nature-reviews-materials-tertiary': #cfe2ec,
+	'nature-reviews: disease-primers-primary': #71a029,
+	'nature-reviews: disease-primers-secondary': #7dad32,
+	'nature-reviews: disease-primers-tertiary': #d2eaaf,
+	'nature-sustainability-primary': #c83c1c,
+	'nature-sustainability-secondary': #cf5337,
+	'nature-sustainability-tertiary': #ffe8e5,
+	'npj-primary': #eee,
+	'npj-secondary': #e5e4e4,
+	'npj-tertiary': #f6f5f5,
+	'nutrition-diabetes-primary': #2c3890,
+	'nutrition-diabetes-secondary': #404eb5,
+	'nutrition-diabetes-tertiary': #dcdff5,
+	'oncogenesis-primary': #2e475d,
+	'oncogenesis-secondary': #466c8d,
+	'oncogenesis-tertiary': #cfdbe5,
+	'palgrave-communications-primary': #feecd8,
+	'palgrave-communications-secondary': #fce3c8,
+	'palgrave-communications-tertiary': #fdf0e2,
+	'primary-care-respiratory-journal-primary': #005993,
+	'primary-care-respiratory-journal-secondary': #1873af,
+	'primary-care-respiratory-journal-tertiary': #c8e9ff,
+	'scientific-data-primary': #164880,
+	'scientific-data-secondary': #2e6eb7,
+	'scientific-data-tertiary': #cbddf2,
+	'scientific-reports-primary': #cedde4,
+	'scientific-reports-secondary': #f1f9fc,
+	'scientific-reports-tertiary': #fbfeff,
+	'signal-transduction-targeted-therapy-primary': #1f94ba,
+	'signal-transduction-targeted-therapy-secondary': #1b7fa0,
+	'signal-transduction-targeted-therapy-tertiary': #b9e5ef,
+	'translational-psychiatry-primary': #dacec2,
+	'translational-psychiatry-secondary': #9e7a56,
+	'translational-psychiatry-tertiary': #f0e8df
+);
+
+// top level subject areas
+$subject-areas-colors: (
+	'biological-sciences-primary': #6c5d84,
+	'biological-sciences-secondary': #f3f0fc,
+	'earth-environmental-sciences-primary': #7f3f5c,
+	'earth-environmental-sciences-secondary': #f4f9f4,
+	'health-sciences-primary': #ac3f3f,
+	'health-sciences-secondary': #fff1f1,
+	'physical-sciences-primary': #506c96,
+	'physical-sciences-secondary': #f5fbff,
+	'scientific-community-society-primary': #7f3f5c,
+	'scientific-community-society-secondary': #fcf0f7
+);

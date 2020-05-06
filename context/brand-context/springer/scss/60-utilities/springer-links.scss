@@ -1,0 +1,61 @@
+/**
+ * Default link style
+ *
+ */
+
+.u-base-link {
+	@include base-link;
+}
+
+/**
+ * Interface links
+ *
+ */
+
+.u-interface-link {
+	@include interface-link;
+}
+
+/**
+ * Alternate link style
+ *
+ */
+
+.u-gray-link {
+	@include gray-link;
+}
+
+.u-deemphasised-link {
+	@include deemphasised-link;
+}
+
+/**
+ * Unvisited
+ * Override visited color
+ *
+ */
+
+.u-unvisited {
+	@include unvisited-link;
+}
+
+/**
+ * Link Inherit
+ * Make links inherit color from parent
+ *
+ */
+
+.u-link-inherit {
+	@include u-link-inherit;
+}
+
+/**
+ * Link Like
+ * Make non-anchor tags appear as links
+ *
+ */
+
+.u-link-like {
+	@include link-like;
+}
+

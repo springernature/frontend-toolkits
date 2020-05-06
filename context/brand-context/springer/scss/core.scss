@@ -1,0 +1,15 @@
+/**
+ * Core
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+
+// Default setting, functions, mixins
+@import '../../default/scss/abstracts';
+
+// Springer settings, functions, mixins
+@import 'abstracts';
+
+// 40-base
+@import '../../default/scss/40-base/normalize';
+@import "40-base/basic";

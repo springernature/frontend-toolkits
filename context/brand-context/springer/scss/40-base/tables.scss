@@ -1,0 +1,18 @@
+table {
+	border: 1px solid greyscale(65);
+	width: 100%;
+	margin-bottom: spacing(32);
+}
+
+th,
+td {
+	@include font-size($font-size-sm);
+	border: 1px solid greyscale(65);
+	padding: 0.3em 0.6em;
+	vertical-align: top;
+}
+
+th {
+	background: greyscale(90);
+	text-align: left;
+}

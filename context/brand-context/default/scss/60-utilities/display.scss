@@ -1,0 +1,28 @@
+.u-display-block {
+	display: block;
+}
+
+.u-display-inline {
+	display: inline;
+}
+
+.u-display-inline-block {
+	display: inline-block;
+}
+
+.u-display-flex {
+	display: flex;
+	width: 100%; // Caters for an ie bug with nested flex when child is a column
+}
+
+.u-display-inline-flex {
+	display: inline-flex;
+}
+
+.u-display-grid {
+	display: grid;
+}
+
+.u-display-table {
+	display: table;
+}

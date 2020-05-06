@@ -1,0 +1,31 @@
+.u-list-style-number {
+	list-style-type: decimal;
+}
+
+.u-list-style-bullet {
+	list-style-type: disc;
+}
+
+.u-list-style-none {
+	list-style-type: none;
+}
+
+.u-list-reset {
+	@include u-list-reset;
+}
+
+.u-list-inline {
+	@include u-list-inline;
+}
+
+.u-custom-list-number {
+	@include custom-list-number;
+}
+
+.u-list-comma-separated {
+	@include u-list-comma-separated;
+}
+
+.u-list-truncated {
+	@include u-list-truncated;
+}

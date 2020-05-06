@@ -1,0 +1,84 @@
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+
+/// Extract a breakpoint value from a map.
+///
+/// @parameter {string} $breakpoint-name - the breakpoint name from which to extract a value
+/// @parameter {map} $map - the breakpoint map to use
+@function _get-breakpoint($breakpoint-name, $map) {
+	@if map-has-key($map, $breakpoint-name) {
+		$output: map-get($map, $breakpoint-name);
+		@return $output;
+	}
+	@else {
+		@warn "`#{$breakpoint-name}` is not a valid breakpoint name.";
+		@return null;
+	}
+}
+
+/// Check for a valid media query type.
+///
+/// @parameter {string} $type - the type of media query
+@function _get-breakpoint-type($type) {
+	$valid-types: 'min', 'max', 'range';
+	$index: index($valid-types, $type);
+
+	@if $index {
+		@return $type;
+	}
+	@else {
+		@warn "`#{$type}` is not a valid media query type.";
+		@return null;
+	}
+}
+
+/// Media query helper.
+///
+/// @parameter {string|list} $media-query - breakpoint name or list of two breakpoint names
+/// @parameter {string} $type - the type of media query
+/// @parameter {map} $map - the map of breakpoints, name:value
+@mixin media-query($media-query, $type: 'min', $map: $breakpoints) {
+	$breakpoint-type: _get-breakpoint-type($type);
+
+	// Range based media query
+	@if $breakpoint-type == 'range' {
+		@if type-of($media-query) == list {
+			$first-breakpoint: _get-breakpoint(nth($media-query, 1), $map);
+			$second-breakpoint: _get-breakpoint(nth($media-query, 2), $map);
+
+			@if $first-breakpoint and $second-breakpoint {
+				@media only screen and (min-width: $first-breakpoint) and (max-width: ($second-breakpoint - 1)) {
+					@content;
+				}
+			}
+		}
+		@else {
+			@warn 'Media queries of type `range` only accept a list.';
+		}
+	}
+
+	// Max-width media query
+	@if $breakpoint-type == 'max' {
+		$breakpoint-value: _get-breakpoint($media-query, $map);
+
+		@if $breakpoint-value {
+			@media only screen and (max-width: ($breakpoint-value - 1)) {
+				@content;
+			}
+		}
+	}
+
+	// Min-width media query
+	@if $breakpoint-type == 'min' {
+		$breakpoint-value: _get-breakpoint($media-query, $map);
+
+		@if $breakpoint-value {
+			@media only screen and (min-width: ($breakpoint-value)) {
+				@content;
+			}
+		}
+	}
+}

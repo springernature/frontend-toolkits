@@ -61,5 +61,8 @@
       "50-components",
       "60-utilities"
     ]
-  }
+  },
+  "enforceBrandFileNaming": [
+    "scss/10-settings"
+  ]
 }

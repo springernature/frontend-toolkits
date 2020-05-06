@@ -1,0 +1,63 @@
+// Applied to flex element
+
+.u-flex-direction-row {
+	flex-direction: row;
+}
+
+.u-flex-direction-column {
+	flex-direction: column;
+}
+
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-align-items-center {
+	align-items: center;
+}
+
+.u-align-items-baseline {
+	align-items: baseline;
+}
+
+.u-justify-content-space-between {
+	justify-content: space-between;
+}
+
+.u-justify-content-center {
+	justify-content: center;
+}
+
+.u-justify-content-left {
+	justify-content: left;
+}
+
+// Applied to flex child elements
+
+.u-flex-grow {
+	flex: 1 0 auto;
+}
+
+.u-flex-grow-shrink {
+	flex: 1 1 auto;
+}
+
+.u-flex-shrink {
+	flex: 0 1 auto;
+}
+
+.u-flex-static {
+	flex: 0 0 auto;
+}
+
+.u-align-self-center {
+	align-self: center;
+}
+
+.u-align-self-start {
+	align-self: flex-start;
+}
+
+.u-align-self-end {
+	align-self: flex-end;
+}

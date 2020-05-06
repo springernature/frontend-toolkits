@@ -1,0 +1,64 @@
+/*
+ * Layout
+ * Universal layout styles
+ */
+
+html {
+	font-family: $font-family-sans;
+	height: 100%;
+	overflow-y: scroll;
+	font-size: 62.5%;
+	box-sizing: border-box;
+	color: greyscale($greyscale-min);
+	line-height: $line-height-base;
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 100%;
+	min-height: 100%;
+	background: $page-base;
+	font-size: 1.8em; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+}
+
+figure {
+	margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+[contenteditable],
+[tabindex="0"] {
+	&:focus {
+		outline: 4px solid color('action-focus');
+	}
+}

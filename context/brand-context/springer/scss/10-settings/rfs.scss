@@ -1,0 +1,8 @@
+/**
+ * Responsive Font Size
+ * Sets up the configuration for the RFS external dependency
+ * See the README for more information
+ */
+
+$rfs-rem-value: 10; // tells the responsive font size plugin that we have set font size to 10px on the html element (62.5% which is effectively 10px)
+$rfs-factor: 1.6; // determines the strength of the responsive font size plugin font size resizing

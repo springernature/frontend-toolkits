@@ -1,0 +1,16 @@
+$keyframes: (
+	example-transition: (
+		0%: (
+			background: black
+		),
+		25%: (
+			background: #555
+		),
+		75%: (
+			background: #999
+		),
+		100%: (
+			background: transparent
+		)
+	)
+);
