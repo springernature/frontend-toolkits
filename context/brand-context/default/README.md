@@ -12,7 +12,7 @@ Use this context configuration in your product to skin components with the `defa
 
 ## Breakpoints
 
-The `media-query` @mixin is provided for handling breakpoints. Breakpoint values are provided at the `10-settings` level using the `$breakpoints` map.
+The `media-query` mixin is provided for handling breakpoints. Breakpoint values are provided at the `10-settings` level using the `$breakpoints` map.
 
 ### Usage
 
