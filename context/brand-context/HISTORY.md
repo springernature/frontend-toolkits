@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2020-05-07)
+ * Adds springer nature heading typography and utilities
+
 ## 1.0.1 (2020-05-06)
 	* BUG: 30-mixins/links.scss missing from abstracts.scss in default
 
