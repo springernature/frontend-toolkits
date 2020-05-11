@@ -100,7 +100,7 @@ var ReadingCompanion = (function (win, document_) {
 				return [
 					'<li class="' + READING_COMPANION_CLASS + '__figure-item">',
 					'<figure>',
-					'<figcaption><b class="' + READING_COMPANION_CLASS + '__figure-title" id="' + FIGURE_ID_PREFIX + this.id + '">' + this.caption + '</b></figcaption>',
+					'<figcaption><b class="' + READING_COMPANION_CLASS + '__figure-title u-font-family-serif" id="' + FIGURE_ID_PREFIX + this.id + '">' + this.caption + '</b></figcaption>',
 					this.images.join(''),
 					(this.link) ? '<p class="' + READING_COMPANION_CLASS + '__figure-links">' : '',
 					(this.link) ? '<a href="#' + this.id + '" data-track="click" data-track-action="figure anchor" data-track-label="link">View in article</a>' : '',
@@ -132,7 +132,7 @@ var ReadingCompanion = (function (win, document_) {
 		Reference.prototype.render = function () {
 			return [
 				'<li class="' + READING_COMPANION_CLASS + '__reference-item">',
-				'<p class="' + READING_COMPANION_CLASS + '__reference-citation" id="' + REFERENCE_ID_PREFIX + this.id + '">' + this.citation + '</p>',
+				'<p class="' + READING_COMPANION_CLASS + '__reference-citation u-font-family-serif" id="' + REFERENCE_ID_PREFIX + this.id + '">' + this.citation + '</p>',
 				(this.links.length > 0) ? ('<ul class="' + READING_COMPANION_CLASS + '__reference-links">' + this.links.map(function (link) {
 					return link.render();
 				}).join('') + '</ul>') : '',
@@ -473,7 +473,7 @@ var ReadingCompanion = (function (win, document_) {
 			if (tabCount > 1) {
 				insertBefore(firstTabPanel, buildTabBar(tabs));
 			} else if (tabCount === 1) {
-				insertBefore(firstTabPanel, '<h3 class="' + READING_COMPANION_CLASS + '__heading">Sections</h3>');
+				insertBefore(firstTabPanel, '<h3 class="' + READING_COMPANION_CLASS + '__heading u-font-family-sans">Sections</h3>');
 			}
 			return tabCount;
 		}

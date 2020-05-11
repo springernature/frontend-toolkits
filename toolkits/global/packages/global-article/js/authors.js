@@ -172,7 +172,7 @@ function AuthorList() {
 			var $linkCopy = $link.clone();
 			removeSvgFrom($linkCopy);
 
-			var html = '<div role="region" id="popup-' + id + '" class="' + POPUP_CLASS + '" aria-labelledby="' + id + '" aria-describedby="author-dialog"><section>';
+			var html = '<div role="region" id="popup-' + id + '" class="' + POPUP_CLASS + ' u-font-family-serif" aria-labelledby="' + id + '" aria-describedby="author-dialog"><section>';
 			html += getHeadingHtml($linkCopy);
 			if (id.match(/^group/)) { // eslint-disable-line  unicorn/prefer-starts-ends-with
 				html += getGroupHtml(id);
@@ -246,4 +246,3 @@ function AuthorList() {
 if (typeof module !== 'undefined') {
 	module.exports = AuthorList;
 }
-

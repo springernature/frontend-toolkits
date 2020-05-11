@@ -1,5 +1,8 @@
 # History
 
+## 19.3.0 (2019-05-11)
+	* Use utility classes to set font family in a few places to cut the number of times these need to be repeated in the css
+
 ## 19.2.0 (2019-04-21)
 	* Add test coverage for `Authors` component
 
