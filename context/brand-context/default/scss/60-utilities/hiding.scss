@@ -50,3 +50,11 @@
 .u-hide-overflow {
 	overflow: hidden;
 }
+
+/* hide from print */
+
+@media print {
+	.u-hide-print {
+		display: none;
+	}
+}
