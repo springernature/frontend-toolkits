@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2020-05-13)
+    * Use @springernature/global-javascript instead of deprecated global-context
+
 ## 0.3.3 (2020-03-25)
     * Changes option from CLOSE_ON_CLICKOFF to CLOSE_ON_FOCUS_OUT
     * option ensures target is closed if user clicks or tabs out of target
