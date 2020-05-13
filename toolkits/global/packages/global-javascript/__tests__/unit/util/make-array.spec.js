@@ -1,4 +1,4 @@
-import {makeArray} from '../../../js/helpers';
+import {makeArray} from '../../../src/helpers';
 
 describe('makeArray', () => {
 	test('Should take a node list and return an array', () => {
