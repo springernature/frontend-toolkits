@@ -1,4 +1,4 @@
-import {getDataOptions} from '../../../js/helpers';
+import {getDataOptions} from '../../../src/helpers';
 
 describe('getDataOptions', () => {
 	const DataOptions = {
