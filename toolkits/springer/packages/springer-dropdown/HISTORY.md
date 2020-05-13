@@ -1,5 +1,10 @@
 # History
 
+## 4.0.0 (2020-05-13)
+    * BREAKING: switch to use new `brand-context` dependency
+    * BREAKING: switch to use new `global-javascript` dependency
+    * BREAKING: change the name of the SASS endpoints
+
 ## 3.0.3 (2020-04-04)
     * Sets colour on links
 
