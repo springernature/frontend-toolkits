@@ -41,6 +41,16 @@
     "__mocks__": [
       "js"
     ],
+    "src": [
+      "js",
+      "json",
+      "md"
+    ],
+    "dist": [
+      "js",
+      "json",
+      "md"
+    ],
     "demo": [
       "js",
       "json",
