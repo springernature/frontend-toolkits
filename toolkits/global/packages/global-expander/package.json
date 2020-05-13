@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-expander",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "description": "Frontend package for expanding a target when clicking a toggle",
   "license": "MIT",
-  "peerDependencies": {
-    "@springernature/global-context": "9.1.2"
+  "dependencies": {
+    "@springernature/global-javascript": "^2.0.0"
   }
 }
