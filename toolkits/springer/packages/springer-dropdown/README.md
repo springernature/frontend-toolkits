@@ -79,6 +79,20 @@ dropdown({
 </div>
 ```
 
+#### SASS
+
+Add styling for the Dropdown by incorporating the settings and component into your application `scss` endpoint, for example:
+
+```scss
+// enhanced.scss
+
+// 10-settings
+@import '@springernature/springer-dropdown/scss/10-settings/dropdown';
+
+// 50-components
+@import '@springernature/springer-dropdown/scss/50-components/enhanced';
+```
+
 ## Create Dropdown
 
 Some situations require the dropdown to be built using JavaScript.  This can be done with the `createDropdown` method.
