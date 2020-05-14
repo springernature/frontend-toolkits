@@ -11,7 +11,7 @@ A collection of JavaScript helpers to achieve common, repetitive tasks.
 You can import as many of the named exports from the helpers as you require for your project.
 
 ```javascript
-    import {helper1, helper2} from '@springernature/global-context/helpers';
+    import {helper1, helper2} from '@springernature/global-javascript/helpers';
 ```
 
 **Util**

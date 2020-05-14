@@ -1,7 +1,14 @@
 # History
 
-## 1.1.0 (2020-05-07)
- * Adds springer nature heading typography and utilities
+
+## 2.0.0 (2020-05-12)
+	* FEATURE: add `.u-hide-print` utility class
+	* BREAKING: rename old style utility files
+		* typography-nature.scss => typography.scss
+		* springer-colors.scss => colors.scss
+		* springer-hiding.scss => hiding.scss
+		* springer-links.scss => links.scss
+		* springer-lists.scss => lists.scss
 
 ## 1.0.1 (2020-05-06)
 	* BUG: 30-mixins/links.scss missing from abstracts.scss in default
