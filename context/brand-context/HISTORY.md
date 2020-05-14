@@ -1,5 +1,7 @@
 # History
 
+## 2.1.0 (2020-05-14)
+ * Adds springer nature heading typography and utilities
 
 ## 2.0.0 (2020-05-12)
 	* FEATURE: add `.u-hide-print` utility class
