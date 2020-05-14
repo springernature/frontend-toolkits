@@ -5,7 +5,6 @@
   "description": "Display a contextual list of links controlled by a toggle",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^2.0.0",
   "dependencies": {
     "@springernature/global-javascript": "^2.0.0"
   }
