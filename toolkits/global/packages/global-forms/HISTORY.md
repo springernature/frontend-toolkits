@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2020-21-05)
+    * Allows you to specify a label font size and margin
+
 ## 0.0.3 (2020-03-04)
     * BUG: allow row items to shrink as well as grow
 
