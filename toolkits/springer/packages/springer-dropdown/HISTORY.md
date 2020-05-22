@@ -1,5 +1,8 @@
 # History
 
+## 4.0.1 (2020-05-22)
+    * Bump `brand-context` dependency
+
 ## 4.0.1 (2020-05-14)
     * BUG: npx command fails on install via artifactory
         * Possible fix: Explicitly state version in npx command
