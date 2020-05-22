@@ -1,5 +1,9 @@
 # History
 
+## 4.0.1 (2020-05-14)
+    * BUG: npx command fails on install via artifactory
+        * Possible fix: Explicitly state version in npx command
+
 ## 4.0.0 (2020-05-13)
     * BREAKING: switch to use new `brand-context` dependency
     * BREAKING: switch to use new `global-javascript` dependency
