@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2020-05-22)
+    * BREAKING: switch to use new `brand-context` dependency
+
 ## 3.1.0 (2020-02-26)
     * Add info status style
     * Bumps peer dependency springer-context to 18.3.0
