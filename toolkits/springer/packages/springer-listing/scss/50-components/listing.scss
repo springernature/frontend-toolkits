@@ -2,7 +2,7 @@
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
-	font-family: $springer-listing--font-family;
+	font-family: $listing--font-family;
 }
 
 .c-listing--row {
@@ -10,15 +10,15 @@
 }
 
 .c-listing__text-column {
-	flex: $springer-listing--text-column-flex;
+	flex: $listing--text-column-flex;
 }
 
 .c-listing__title {
-	@include font-size($springer-listing--title-font-size);
-	font-family: $springer-listing--title-font-family;
-	font-weight: $springer-listing--title-font-weight;
-	line-height: $springer-listing--title-line-height;
-	margin-bottom: $springer-listing--title-margin-bottom;
+	@include font-size($listing--title-font-size);
+	font-family: $listing--title-font-family;
+	font-weight: $listing--title-font-weight;
+	line-height: $listing--title-line-height;
+	margin-bottom: $listing--title-margin-bottom;
 
 	a {
 		@include interface-link;
@@ -26,8 +26,8 @@
 }
 
 .c-listing__authors {
-	@include font-size($springer-listing--author-font-size);
-	font-weight: $springer-listing--author-font-weight;
+	@include font-size($listing--author-font-size);
+	font-weight: $listing--author-font-weight;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -35,8 +35,8 @@
 }
 
 .c-listing__text {
-	@include font-size($springer-listing--text-font-size);
-	margin-bottom: $springer-listing--text-margin-bottom;
+	@include font-size($listing--text-font-size);
+	margin-bottom: $listing--text-margin-bottom;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -48,25 +48,25 @@
 }
 
 .c-listing__text--light {
-	color: $springer-listing--text-color-light;
+	color: $listing--text-color-light;
 }
 
 .c-listing__image {
-	margin-left: $springer-listing--image-margin-left;
+	margin-left: $listing--image-margin-left;
 
 	img {
-		border: $springer-listing--image-border;
-		width: $springer-listing--image-width;
+		border: $listing--image-border;
+		width: $listing--image-width;
 	}
 }
 
 .c-listing__view-options {
-	@include font-size($springer-listing--text-font-size);
+	@include font-size($listing--text-font-size);
 	@include u-list-reset;
 
 	> li {
 		display: inline-block;
-		margin-right: $springer-listing--view-options-margin-right;
+		margin-right: $listing--view-options-margin-right;
 
 		> a {
 			display: flex;
@@ -76,6 +76,6 @@
 }
 
 .c-listing__view-options-icon {
-	margin-right: $springer-listing--view-options-icon-margin-right;
+	margin-right: $listing--view-options-icon-margin-right;
 	fill: currentColor;
 }
