@@ -1,24 +1,24 @@
 .c-meta {
-	@include font-size($springer-meta--font-size);
-	font-family: $springer-meta--font-family;
+	@include font-size($meta--font-size);
+	font-family: $meta--font-family;
 	display: flex;
 	flex-wrap: wrap;
-	color: $springer-meta--color;
-	line-height: $springer-meta--line-height;
+	color: $meta--color;
+	line-height: $meta--line-height;
 }
 
 .c-meta__item {
 	flex: 0 1 auto;
-	margin-bottom: $springer-meta--margin-bottom;
+	margin-bottom: $meta--margin-bottom;
 
 	&:not(:last-child) {
-		padding-right: $springer-meta--padding-right;
-		margin-right: $springer-meta--margin-right;
-		border-right: $springer-meta--border;
+		padding-right: $meta--padding-right;
+		margin-right: $meta--margin-right;
+		border-right: $meta--border;
 	}
 }
 
 .c-meta__type {
 	text-transform: uppercase;
-	font-weight: $springer-meta--font-weight;
+	font-weight: $meta--font-weight;
 }
