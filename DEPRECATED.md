@@ -44,3 +44,12 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `global-spacing`  
    Now part of the `default` brand in [`brand-context`](https://github.com/springernature/frontend-toolkits/tree/master/context).
+
+* `springer-copyright`  
+   No longer needed.
+
+* `springer-button`  
+   Now part of the [`global-button`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-button).
+
+* `nature-button`  
+   Now part of the [`global-button`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-button).
