@@ -1,3 +1,9 @@
+# History
+
+## 4.0.0 (2020-05-22)
+    * BREAKING: switch to use new `brand-context` dependency
+    * BREAKING: rename `scss` files and variables
+
 ## 3.0.0 (2020-02-14)
 	* BREAKING: Bump springer-context dependency to 17.0.3
 	* Use spacing instead of get-spacing
