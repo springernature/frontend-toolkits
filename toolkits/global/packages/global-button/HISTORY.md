@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2020-05-22)
+	* BREAKING: switch to use new `brand-context` dependency
+
 ## 0.2.0 (2020-04-06)
     * BREAKING: Rename .c-button--block to .c-button--full-width
     * BREAKING: Replace text-align with justify-content and variable rename
