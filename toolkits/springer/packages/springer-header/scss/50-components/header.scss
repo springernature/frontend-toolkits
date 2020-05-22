@@ -3,9 +3,9 @@
 }
 
 .c-header {
-	background: $springer-header--background;
-	padding: $springer-header--padding-y $springer-header--padding-x;
-	border-bottom: 1px solid $springer-header--border-color;
+	background: $header--background;
+	padding: $header--padding-y $header--padding-x;
+	border-bottom: 1px solid $header--border-color;
 }
 
 .c-header__container {
@@ -16,7 +16,7 @@
 }
 
 .c-header__brand {
-	margin-right: $springer-header--brand-spacing;
+	margin-right: $header--brand-spacing;
 
 	a,
 	a:visited,
@@ -45,7 +45,7 @@
 }
 
 .c-header__item {
-	color: $springer-header--item-color;
+	color: $header--item-color;
 	margin-right: spacing(24);
 
 	&:last-child {
@@ -55,14 +55,14 @@
 
 .c-header__link {
 	@include interface-link;
-	color: $springer-header--item-color;
+	color: $header--item-color;
 
 	&:visited {
-		color: $springer-header--item-color;
+		color: $header--item-color;
 	}
 
 	&:hover {
-		color: $springer-header--item-color;
+		color: $header--item-color;
 	}
 }
 
