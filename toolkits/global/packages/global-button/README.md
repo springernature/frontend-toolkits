@@ -4,6 +4,21 @@ Button styles to use on buttons and links.
 
 ## Usage
 
+To include `global-button` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+
+```scss
+// Pick ONE of the brands below to include
+@import '@springernature/global-button/scss/10-settings/default';
+@import '@springernature/global-button/scss/10-settings/springer';
+@import '@springernature/global-button/scss/10-settings/nature';
+
+// Incude this with your other mixins
+@import '@springernature/global-button/scss/30-mixins/button';
+
+// Incude this with your other components
+@import '@springernature/global-button/scss/50-components/button';
+```
+
 ### Basic usage
 
 ```html
@@ -12,7 +27,28 @@ Button styles to use on buttons and links.
 <a class="c-button" href="#">text</a> 
 ```
 
-### Modifiers
+### Themes
+
+Add theme classes for different branding styles. If a theme does not exist for the brand you are using it will fallback to the default syle.
+
+**Primary**
+```html
+<button class="c-button c-button--primary">text</button>
+```
+
+**Ghost**
+```html
+<button class="c-button c-button--ghost">text</button>
+```
+
+**Disabled**
+```html
+<button class="c-button c-button--disabled" disabled>text</button>
+```
+
+### Variants
+
+Variant modifiers can be added to the default class, as well as to themes.
 
 **Small**
 ```html
@@ -22,11 +58,6 @@ Button styles to use on buttons and links.
 **Large**
 ```html
 <button class="c-button c-button--large">text</button>
-```
-
-**Primary**
-```html
-<button class="c-button c-button--primary">text</button>
 ```
 
 **Full width**
@@ -48,9 +79,4 @@ Button styles to use on buttons and links.
     <span>text</span>
     <svg></svg>
 </button>
-```
-
-**Disabled**
-```html
-<button class="c-button c-button--disabled" disabled>text</button>
 ```
