@@ -10,16 +10,22 @@
 /* button themes */
 
 .c-button--primary {
-	@include button-theme($button--primary);
+	@if variable-exists('button--primary') {
+		@include button-theme($button--primary);
+	}
 }
 
 .c-button--ghost {
-	@include button-theme($button--ghost);
+	@if variable-exists('button--ghost') {
+		@include button-theme($button--ghost);
+	}
 }
 
 .c-button--disabled,
 .c-button:disabled {
-	@include button-disabled;
+	@if variable-exists('button--disabled') {
+		@include button-disabled;
+	}
 }
 
 /* button variants */
