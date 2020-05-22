@@ -1,14 +1,14 @@
 .c-user-metadata {
-	@include font-size($springer-user-metadata--font-size);
+	@include font-size($user-metadata--font-size);
 	font-family: $font-family-sans;
-	color: $springer-user-metadata--font-colour;
-	line-height: $springer-user-metadata--line-height;
-	padding-top: $springer-user-metadata--padding-y;
+	color: $user-metadata--font-colour;
+	line-height: $user-metadata--line-height;
+	padding-top: $user-metadata--padding-y;
 }
 
 .c-user-metadata__item {
 	margin-top: 0;
-	margin-bottom: $springer-user-metadata--item-margin-y;
+	margin-bottom: $user-metadata--item-margin-y;
 
 	&:last-child {
 		margin-bottom: 0;
