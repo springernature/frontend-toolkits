@@ -2,6 +2,7 @@
 
 ## 4.0.0 (2020-05-22)
     * BREAKING: switch to use new `brand-context` dependency
+    * BREAKING: rename `scss` files and variables
 
 ## 3.1.0 (2020-02-26)
     * Add info status style

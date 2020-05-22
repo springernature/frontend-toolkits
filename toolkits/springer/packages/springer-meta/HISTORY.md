@@ -2,7 +2,7 @@
 
 ## 2.0.0 (2020-05-22)
     * BREAKING: switch to use new `brand-context` dependency
-	* BREAKING: rename `scss` variables
+    * BREAKING: rename `scss` files and variables
 
 ## 1.0.0 (2020-02-10)
     * Update font family

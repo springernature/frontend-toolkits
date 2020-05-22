@@ -2,7 +2,7 @@
 
 ## 3.0.0 (2020-05-22)
     * BREAKING: switch to use new `brand-context` dependency
-	* BREAKING: rename `scss` files and variables
+    * BREAKING: rename `scss` files and variables
 
 ## 2.2.0 (2020-03-03)
 	* Add styles for brand qualifier
