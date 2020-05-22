@@ -7,7 +7,7 @@
 	@include button($button--default);
 }
 
-/* button types */
+/* button themes */
 
 .c-button--primary {
 	@include button-theme($button--primary);
