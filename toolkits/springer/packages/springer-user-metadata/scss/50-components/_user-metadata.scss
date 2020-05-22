@@ -1,0 +1,16 @@
+.c-user-metadata {
+	@include font-size($user-metadata--font-size);
+	font-family: $font-family-sans;
+	color: $user-metadata--font-colour;
+	line-height: $user-metadata--line-height;
+	padding-top: $user-metadata--padding-y;
+}
+
+.c-user-metadata__item {
+	margin-top: 0;
+	margin-bottom: $user-metadata--item-margin-y;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
