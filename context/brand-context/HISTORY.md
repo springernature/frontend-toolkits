@@ -1,7 +1,10 @@
 # History
 
+## 2.1.1 (2020-05-22)
+    * BUG: missing dependency `rfs`, used for `font-size()` in Springer brand
+
 ## 2.1.0 (2020-05-14)
- * Adds springer nature heading typography and utilities
+    * Adds springer nature heading typography and utilities
 
 ## 2.0.0 (2020-05-12)
 	* FEATURE: add `.u-hide-print` utility class

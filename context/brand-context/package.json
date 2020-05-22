@@ -1,8 +1,11 @@
 {
   "name": "@springernature/brand-context",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "license": "MIT",
   "description": "Bootstrapping for all components and products",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "dependencies": {
+    "rfs": "^8.0.4"
+  }
 }
