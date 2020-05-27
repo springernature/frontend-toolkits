@@ -1,0 +1,69 @@
+// pubgrade (ads) put a 1px image as first child of the body which we need to hide
+body > img[src*=pbgrd] {
+	display: none;
+}
+
+.c-ad {
+	@include font-size($ad--font-size);
+	font-family: $font-family-sans;
+	display: none;
+
+	.js & {
+		@include media-query('md') {
+			display: block;
+		}
+	}
+}
+
+.c-ad iframe {
+	border: none;
+	overflow: auto;
+	vertical-align: top;
+}
+
+.c-ad--LB1 {
+	background-color: $ad--leaderboard-bg-color;
+	padding: $ad--leaderboard-padding;
+	text-align: center;
+}
+
+.c-ad--LB1 iframe {
+	max-width: 970px;
+	height: 90px;
+}
+
+.c-ad--LB1 .c-ad__inner {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.c-ad--SKY1 iframe {
+	width: 160px;
+	height: 600px;
+}
+
+.c-ad--MPU1 {
+	background-color: $ad--mpu-background-color;
+	margin-top: $ad--mpu-margin-top;
+	padding-top: $ad--mpu-padding-top;
+	padding-bottom: $ad--mpu-padding-bottom;
+}
+
+.c-ad--MPU1 .c-ad__label {
+	margin-bottom: $ad--mpu-label-margin-bottom;
+}
+
+.c-ad--MPU1 .c-ad__inner {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.c-ad--MPU1 iframe {
+	width: 300px;
+	height: 250px;
+}
+
+.c-ad__label {
+	margin-bottom: $ad--label-margin-bottom;
+	color: $ad--label-color;
+}
