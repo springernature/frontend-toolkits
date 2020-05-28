@@ -4,7 +4,7 @@ body > img[src*=pbgrd] {
 }
 
 .c-ad {
-	@include font-size($ad--font-size);
+	font-size: $ad--font-size;
 	font-family: $ad--font-family;
 	display: none;
 
