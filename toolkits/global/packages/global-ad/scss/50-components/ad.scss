@@ -21,44 +21,44 @@ body > img[src*=pbgrd] {
 	vertical-align: top;
 }
 
-.c-ad--LB1 {
+.c-ad--leaderboard {
 	background-color: $ad--leaderboard-bg-color;
 	padding: $ad--leaderboard-padding;
 	text-align: center;
 }
 
-.c-ad--LB1 iframe {
+.c-ad--leaderboard iframe {
 	max-width: 970px;
 	height: 90px;
 }
 
-.c-ad--LB1 .c-ad__inner {
+.c-ad--leaderboard .c-ad__inner {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.c-ad--SKY1 iframe {
+.c-ad--skyscraper iframe {
 	width: 160px;
 	height: 600px;
 }
 
-.c-ad--MPU1 {
+.c-ad--mpu {
 	background-color: $ad--mpu-background-color;
 	margin-top: $ad--mpu-margin-top;
 	padding-top: $ad--mpu-padding-top;
 	padding-bottom: $ad--mpu-padding-bottom;
 }
 
-.c-ad--MPU1 .c-ad__label {
+.c-ad--mpu .c-ad__label {
 	margin-bottom: $ad--mpu-label-margin-bottom;
 }
 
-.c-ad--MPU1 .c-ad__inner {
+.c-ad--mpu .c-ad__inner {
 	margin: 0 auto;
 	width: 300px;
 }
 
-.c-ad--MPU1 iframe {
+.c-ad--mpu iframe {
 	width: 300px;
 	height: 250px;
 }
