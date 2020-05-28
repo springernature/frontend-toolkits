@@ -13,9 +13,7 @@ Catering for ad slots, specifically:
 <div class="c-ad c-ad--LB1">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
-        <div>
-<!--ad slot content here-->
-        </div>
+        <!--ad slot content here-->
     </div>
 </div>
 
@@ -23,9 +21,7 @@ Catering for ad slots, specifically:
 <div class="c-ad c-ad--MPU1">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
-        <div>
-<!--ad slot content here-->
-        </div>
+        <!--ad slot content here-->
     </div>
 </div>
 
@@ -33,9 +29,7 @@ Catering for ad slots, specifically:
 <div class="c-ad c-ad--SKY1">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
-        <div>
-<!--ad slot content here-->
-        </div>
+        <!--ad slot content here-->
     </div>
 </div>
 ```
