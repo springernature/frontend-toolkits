@@ -15,6 +15,8 @@ A class name of `.js` on the document root element will be used to bootstrap vis
 
 ## Usage
 
+### HTML
+
 ```html
 <button data-modal-for="example-modal" class="c-modal__trigger">Click this button to open the modal</button>
 
@@ -27,6 +29,8 @@ A class name of `.js` on the document root element will be used to bootstrap vis
 </div>
 ```
 
+### Javascript
+
 ```javascript
 import Modal from '@springernature/springernature-modal';
 
@@ -38,6 +42,23 @@ exampleModal.open();
 
 // Programmatically closes the modal
 exampleModal.closes();
+```
+
+### CSS
+
+Import the core styles into your main stylesheet
+
+```scss
+// core.scss
+@import '@springernature/springernature-modal/scss/50-components/core';
+```
+
+Import the enhanced settings and styles into your main stylesheet
+
+```scss
+// enhanced.scss
+@import '@springernature/springernature-modal/scss/10-settings/springernature';
+@import '@springernature/springernature-modal/scss/50-components/enhanced';
 ```
 
 #### Required markup and attributes
