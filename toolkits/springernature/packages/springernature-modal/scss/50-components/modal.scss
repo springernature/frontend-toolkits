@@ -31,16 +31,36 @@
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 1.48;
+		margin-bottom: 20px;
 	}
 
 	&--close {
-		color: $model--close-color;
-		font-size: 32px;
+		// Button styles should come from global-buttons?
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		background-color: #666;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
+		background-position: center;
+		background-size: 12px;
+		background-repeat: no-repeat;
+		border: 0;
+		border-radius: 50px;
+		color: #fff;
+		cursor: pointer;
+		font-family: inherit;
+		font-size: 24px;
+		font-weight: inherit;
+		height: 24px;
+		line-height: 24px;
+		padding: 0;
 		position: absolute;
-		top: 15px;
 		right: 15px;
+		top: 15px;
+		width: 24px;
 
 		&:hover {
+			background-color: darken(#666, 20%);
 			text-decoration: none;
 		}
 	}
