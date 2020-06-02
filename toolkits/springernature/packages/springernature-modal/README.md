@@ -7,12 +7,10 @@ Display a modal (pop-up) window
 ```html
 <button data-modal-for="example-modal">Click this button to open the modal</button>
 <div data-component-modal id="example-modal" class="c-modal js-hide" tabindex="0">
-    <div class="c-modal--content">
-        <h4 class="c-modal--title">Modal Title</h4>
-        <div class="c-modal--body">
-            <p>This is the modal! It has a <a data-component-modal-close href="">link</a> that can also close it.</p>
-        </div>
-        <button data-component-modal-close class="c-modal--close">close modal</button>
+    <div class="c-modal__content">
+        <h4 class="c-modal__title">Modal Title</h4>
+        <p>This is the modal! It has a <a data-component-modal-close href="">link</a> that can also close it.</p>
+        <button data-component-modal-close class="c-modal__close">close modal</button>
     </div>
 </div>
 ```
