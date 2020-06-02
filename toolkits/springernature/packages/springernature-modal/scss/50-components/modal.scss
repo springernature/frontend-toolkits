@@ -39,7 +39,7 @@
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
-		background-color: #666;
+		background-color: $model--close-color;
 		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
 		background-position: center;
 		background-size: 12px;
@@ -60,7 +60,7 @@
 		width: 24px;
 
 		&:hover {
-			background-color: darken(#666, 20%);
+			background-color: darken($model--close-color, 20%);
 			text-decoration: none;
 		}
 	}
