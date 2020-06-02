@@ -26,11 +26,12 @@
 	display: none;
 
 	&--open {
-		align-items: center;
+		align-items: flex-start;
 		background-color: rgba(0, 0, 0, 0.4);
 		content: '';
 		display: flex;
 		justify-content: center;
+		overflow-y: scroll;
 		height: 100%;
 		left: 0;
 		position: fixed;
@@ -47,18 +48,11 @@
 		box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
 		border-radius: 3px;
 		margin: 30px;
-		height: 0;
 		max-height: 95%;
-		max-width: 620px;
+		max-width: $modal--max-width;
 		overflow-y: scroll;
 		position: relative;
-		transition: height 0.2s ease-out;
 	}
-
-	&--open .c-modal__content {
-		height: auto;
-	}
-
 
 	&__close {
 		// Button styles should come from global-buttons?
@@ -76,7 +70,7 @@
 		color: #fff;
 		cursor: pointer;
 		font-family: inherit;
-		font-size: 24px;
+		font-size: 32px;
 		font-weight: inherit;
 		height: 24px;
 		line-height: 24px;
