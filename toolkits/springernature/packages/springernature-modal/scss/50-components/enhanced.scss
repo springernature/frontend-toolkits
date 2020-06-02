@@ -91,40 +91,8 @@
 			text-decoration: none;
 		}
 	}
-
-	.hidden-within-modal {
-		display: none;
-	}
-
-	.unstyle-within-modal {
-		background-color: transparent;
-		border: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	.shown-only-within-modal {
-		display: inline-block;
-	}
-
-	.copy-button-modal {
-		font-size: 12px;
-		left: 150px;
-		position: absolute;
-		top: 35px;
-	}
-}
-
-.shown-only-within-modal {
-	display: none;
 }
 
 html.has-modal {
 	overflow: hidden;
-
-	.c-header,
-	main,
-	.c-footer {
-		filter: blur(1px);
-	}
 }
