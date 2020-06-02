@@ -1,14 +1,22 @@
+/**
+ * Component
+ * Brand styling
+ */
+
 .js .c-modal {
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.4);
-	content: '';
-	display: flex;
-	justify-content: center;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
+	display: none;
+
+	&--open {
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.4);
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
 
 	&__content {
 		background-color: #fff;
