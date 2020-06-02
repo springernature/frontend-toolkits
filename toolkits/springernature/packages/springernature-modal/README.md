@@ -8,11 +8,11 @@ Display a modal (pop-up) window
 <button data-modal-for="example-modal">Click this button to open the modal</button>
 <div data-component-modal id="example-modal" class="c-modal js-hide" tabindex="0">
     <div class="c-modal--content">
-        <h4 class="c-modal--title u-mb20">Modal Title</h4>
+        <h4 class="c-modal--title">Modal Title</h4>
         <div class="c-modal--body">
-            <p>This is the modal! It has a <a data-component-modal-close class="close-modal-link btn-close" href="">link</a> that can also close it.</p>
+            <p>This is the modal! It has a <a data-component-modal-close href="">link</a> that can also close it.</p>
         </div>
-        <button data-component-modal-close class="c-modal--close btn-close link-like">&times;</button>
+        <button data-component-modal-close class="c-modal--close">close modal</button>
     </div>
 </div>
 ```
@@ -23,7 +23,11 @@ import Modal from '@springernature/springernature-modal';
 const modalElement = document.querySelector('#example-modal'); //For multiple modals, prefer `document.querySelectorAll('[data-component-modal]');` and initilise on each instance
 const exampleModal = new Modal(modalElement);
 
-exampleModal.show(); // Programmatically opens the modal.
+// Programmatically opens the modal
+exampleModal.open();
+
+// Programmatically closes the modal
+exampleModal.closes();
 ```
 
 
