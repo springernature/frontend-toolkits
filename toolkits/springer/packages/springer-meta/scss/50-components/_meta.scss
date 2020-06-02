@@ -1,14 +1,12 @@
 .c-meta {
 	@include font-size($meta--font-size);
 	font-family: $meta--font-family;
-	display: flex;
-	flex-wrap: wrap;
 	color: $meta--color;
 	line-height: $meta--line-height;
 }
 
 .c-meta__item {
-	flex: 0 1 auto;
+	display: inline-block;
 	margin-bottom: $meta--margin-bottom;
 
 	&:not(:last-child) {
