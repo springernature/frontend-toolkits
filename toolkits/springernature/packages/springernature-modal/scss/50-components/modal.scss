@@ -10,7 +10,7 @@
 	top: 0;
 	width: 100%;
 
-	&--content {
+	&__content {
 		background-color: #fff;
 		overflow-y: auto;
 		border-top: 3px solid $model--border-color;
@@ -27,14 +27,14 @@
 		width: 100%;
 	}
 
-	&--title {
+	&__title {
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 1.48;
 		margin-bottom: 20px;
 	}
 
-	&--close {
+	&__close {
 		// Button styles should come from global-buttons?
 		overflow: hidden;
 		text-indent: 100%;
