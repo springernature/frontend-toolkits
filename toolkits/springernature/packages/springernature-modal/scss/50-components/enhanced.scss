@@ -1,0 +1,92 @@
+/**
+ * Modal Component
+ * Enhanced styling
+ */
+
+.c-modal {
+	&__content {
+		background-color: #fff;
+		overflow-y: auto;
+		border-top: 3px solid $modal--border-color;
+		font-family: $font-family-serif;
+		height: auto;
+		padding: 30px;
+		width: 100%;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.48;
+		margin-bottom: 20px;
+	}
+}
+
+.js .c-modal {
+	display: none;
+
+	&--open {
+		align-items: flex-start;
+		background-color: rgba(0, 0, 0, 0.4);
+		content: '';
+		display: flex;
+		justify-content: center;
+		overflow-y: scroll;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	&__trigger {
+		display: inherit;
+		display: unset;
+	}
+
+	&__content {
+		box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 3px;
+		margin: 30px;
+		max-height: 95%;
+		max-width: $modal--max-width;
+		overflow-y: scroll;
+		position: relative;
+	}
+
+	&__close {
+		// Button styles should come from global-buttons?
+		display: block;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		background-color: $modal--close-color;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
+		background-position: center;
+		background-size: 12px;
+		background-repeat: no-repeat;
+		border: 0;
+		border-radius: 50px;
+		color: #fff;
+		cursor: pointer;
+		font-family: inherit;
+		font-size: 32px;
+		font-weight: inherit;
+		height: 24px;
+		line-height: 24px;
+		padding: 0;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		width: 24px;
+
+		&:hover {
+			background-color: darken($modal--close-color, 20%);
+			text-decoration: none;
+		}
+	}
+}
+
+html.has-modal {
+	overflow: hidden;
+}

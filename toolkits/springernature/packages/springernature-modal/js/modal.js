@@ -63,23 +63,23 @@ class Modal {
 		this.preModalFocussedElement = document.activeElement;
 		document.querySelector('html').classList.add('has-modal');
 		document.body.append(this.modal);
-		this.modal.classList.remove('js-hide');
+		this.modal.classList.add('c-modal--open');
 		this.modal.setAttribute('aria-hidden', false);
 		this.firstFocusableEl.focus();
 	}
 
 	close() {
 		document.querySelector('html').classList.remove('has-modal');
-		this.modal.classList.add('js-hide');
+		this.modal.classList.remove('c-modal--open');
 		this.modal.setAttribute('aria-hidden', true);
 		this._restoreFocus();
 	}
 
 	toggleModal() {
-		if (this.modal.classList.contains('js-hide')) {
-			this.open();
-		} else {
+		if (this.modal.classList.contains('c-modal--open')) {
 			this.close();
+		} else {
+			this.open();
 		}
 	}
 

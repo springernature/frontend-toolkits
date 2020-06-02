@@ -3,13 +3,11 @@ import Modal from '../../js/modal';
 describe('Modal', () => {
 	const html = `<a class="modal1-trigger" data-modal-for="modal1" href="#">Modal trigger link</a>
 	<a class="modal1-trigger2" data-modal-for="modal1" href="#">Another trigger link</a>
-		<div data-component-modal id="modal1" class="c-modal js-hide" tabindex="0">
-			<div class="c-modal--content">
-				<h4 class="c-modal--title u-mb20">Modal Title</h4>
-				<div class="c-modal--body">
-					<p>This is the modal! It has a <a data-component-modal-close class="close-modal-link btn-close" href="">link</a> that can also close it.</p>
-				</div>
-				<button data-component-modal-close class="c-modal--close btn-close link-like">&times;</button>
+		<div data-component-modal id="modal1" class="c-modal" tabindex="0">
+			<div class="c-modal__content">
+				<h4 class="c-modal__title u-mb20">Modal Title</h4>
+				<p>This is the modal! It has a <a data-component-modal-close href="">link</a> that can also close it.</p>
+				<button data-component-modal-close class="c-modal__close">&times;</button>
 			</div>
 		</div>`;
 
@@ -29,7 +27,7 @@ describe('Modal', () => {
 	test('should be hidden initially', () => {
 		const modalEl = document.querySelector('.c-modal');
 
-		expect(modalEl.classList.contains('js-hide')).toBe(true);
+		expect(modalEl.classList.contains('c-modal--open')).toBe(false);
 	});
 
 	describe('When it\'s trigger is clicked', () => {
@@ -46,7 +44,7 @@ describe('Modal', () => {
 		});
 
 		test('should be shown and focus given to the first focusable element', () => {
-			expect(modalEl.classList.contains('js-hide')).toBe(false);
+			expect(modalEl.classList.contains('c-modal--open')).toBe(true);
 			expect(modalEl.getAttribute('aria-hidden')).toBe('false');
 			expect(document.activeElement).toBe(modalEl.querySelector('a'));
 		});
@@ -61,14 +59,14 @@ describe('Modal', () => {
 		test('should be hidden after it\'s trigger has been clicked again', () => {
 			trigger1.click();
 
-			expect(modalEl.classList.contains('js-hide')).toBe(true);
+			expect(modalEl.classList.contains('c-modal--open')).toBe(false);
 			expect(modalEl.getAttribute('aria-hidden')).toBe('true');
 		});
 
 		test('should also be hidden if the second trigger was clicked', () => {
 			trigger2.click();
 
-			expect(modalEl.classList.contains('js-hide')).toBe(true);
+			expect(modalEl.classList.contains('c-modal--open')).toBe(false);
 			expect(modalEl.getAttribute('aria-hidden')).toBe('true');
 		});
 
@@ -82,7 +80,7 @@ describe('Modal', () => {
 			});
 
 			test('should dismiss the opened modal', () => {
-				expect(modalEl.classList.contains('js-hide')).toBe(true);
+				expect(modalEl.classList.contains('c-modal--open')).toBe(false);
 			});
 		});
 
@@ -96,7 +94,7 @@ describe('Modal', () => {
 			});
 
 			test('should dismiss the opened modal', () => {
-				expect(modalEl.classList.contains('js-hide')).toBe(true);
+				expect(modalEl.classList.contains('c-modal--open')).toBe(false);
 			});
 		});
 
