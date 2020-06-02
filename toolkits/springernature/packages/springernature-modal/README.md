@@ -41,7 +41,7 @@ const exampleModal = new Modal(modalElement);
 exampleModal.open();
 
 // Programmatically closes the modal
-exampleModal.closes();
+exampleModal.close();
 ```
 
 ### CSS
