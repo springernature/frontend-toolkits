@@ -1,37 +1,16 @@
 /**
- * Component
- * Brand styling
+ * Modal Component
+ * Enhanced styling
  */
 
-.js .c-modal {
-	display: none;
-
-	&--open {
-		align-items: center;
-		background-color: rgba(0, 0, 0, 0.4);
-		display: flex;
-		justify-content: center;
-		height: 100%;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
+.c-modal {
 	&__content {
 		background-color: #fff;
 		overflow-y: auto;
 		border-top: 3px solid $modal--border-color;
-		box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
-		border-radius: 3px;
+		font-family: $font-family-serif;
 		height: auto;
-		margin: 30px;
-		max-height: 95%;
-		max-width: 620px;
-		overflow-y: scroll;
-		position: relative;
 		padding: 30px;
-		transition: height 0.2s ease-out;
 		width: 100%;
 	}
 
@@ -41,9 +20,49 @@
 		line-height: 1.48;
 		margin-bottom: 20px;
 	}
+}
+
+.js .c-modal {
+	display: none;
+
+	&--open {
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.4);
+		content: '';
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	&__trigger {
+		display: inherit;
+		display: unset;
+	}
+
+	&__content {
+		box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 3px;
+		margin: 30px;
+		height: 0;
+		max-height: 95%;
+		max-width: 620px;
+		overflow-y: scroll;
+		position: relative;
+		transition: height 0.2s ease-out;
+	}
+
+	&--open .c-modal__content {
+		height: auto;
+	}
+
 
 	&__close {
 		// Button styles should come from global-buttons?
+		display: block;
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
