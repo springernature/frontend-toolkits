@@ -1,4 +1,5 @@
 .c-meta {
+	@include u-list-reset();
 	@include font-size($meta--font-size);
 	font-family: $meta--font-family;
 	color: $meta--color;
