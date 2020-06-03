@@ -7,10 +7,6 @@
 	@include interface-link;
 }
 
-.c-list-group--xxs .c-list-group__item {
-	padding: $list-group--padding-xxs;
-}
-
 .c-list-group--xs .c-list-group__item {
 	padding: $list-group--padding-xs;
 }
@@ -29,4 +25,12 @@
 
 .c-list-group--bordered .c-list-group__item:not(:last-child) {
 	border-bottom: 1px solid $list-group--border-color;
+}
+
+.c-list-group--flush .c-list-group__item:first-child {
+	padding-top: 0;
+}
+
+.c-list-group--flush .c-list-group__item:last-child {
+	padding-bottom: 0;
 }
