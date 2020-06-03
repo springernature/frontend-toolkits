@@ -1,5 +1,14 @@
 # History
 
+## 2.2.0 (2020-06-03)
+    * FEATURE: Change heading typography to improve page hierarchy
+        * All headings to use $line-height-tight
+        * All headings to have 1em margin bottom
+        * All headings to stop using rfs mixin
+        * h1: 28px => 32px
+        * h2: 26px => 28px
+        * h4: serif => sans-serif
+
 ## 2.1.1 (2020-05-22)
     * BUG: missing dependency `rfs`, used for `font-size()` in Springer brand
 
