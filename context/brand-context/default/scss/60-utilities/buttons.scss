@@ -3,57 +3,45 @@
  * These are for styled branded buttons
  */
 
-// Regular buttons
+// Default button
 
 .u-button {
-	@include button($button--default);
+	@include button-default;
 }
 
-// button themes
+// Button themes
 
 .u-button--primary {
-	@if variable-exists('button--primary') {
-		@include button-theme($button--primary);
-	}
+	@include button-primary
 }
 
 .u-button--ghost {
-	@if variable-exists('button--ghost') {
-		@include button-theme($button--ghost);
-	}
+	@include button-ghost
 }
 
 .u-button--disabled,
 .u-button:disabled {
-	@if variable-exists('button--disabled') {
-		@include button-disabled;
-	}
+	@include button-disabled
 }
 
-// button variants
+// Button variants
 
 .u-button--small {
-	font-size: $button--font-size-small;
+	@include button-small;
 }
 
 .u-button--large {
-	font-size: $button--font-size-large;
-	padding: $button--padding-large;
+	@include button-large;
 }
 
 .u-button--full-width {
-	display: flex;
-	width: 100%;
+	@include button-full-width;
 }
 
 .u-button--icon-left {
-	svg {
-		margin-right: $button--icon-margin;
-	 }
+	@include button-icon-left;
 }
 
 .u-button--icon-right {
-	svg {
-		margin-left: $button--icon-margin;
-	 }
+	@include button-icon-right;
 }

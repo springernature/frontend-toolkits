@@ -1,3 +1,67 @@
+/**
+ * Entrypoints
+ *
+ */
+
+// Default button
+
+@mixin button-default {
+	@include button($button--default);
+}
+
+// Button themes
+
+@mixin button-primary {
+	@if variable-exists('button--primary') {
+		@include button-theme($button--primary);
+	}
+}
+
+@mixin button-ghost {
+	@if variable-exists('button--ghost') {
+		@include button-theme($button--ghost);
+	}
+}
+
+@mixin button-disabled {
+	@if variable-exists('button--disabled') {
+		@include button-theme($button--disabled);
+	}
+}
+
+// Button variants
+
+@mixin button-small {
+	font-size: $button--font-size-small;
+}
+
+@mixin button-large {
+	font-size: $button--font-size-large;
+	padding: $button--padding-large;
+}
+
+@mixin button-full-width {
+	display: flex;
+	width: 100%;
+}
+
+@mixin button-icon-left {
+	svg {
+		margin-right: $button--icon-margin;
+	}
+}
+
+@mixin button-icon-right {
+	svg {
+		margin-left: $button--icon-margin;
+	}
+}
+
+/**
+ * Style mixins
+ *
+ */
+
 // Base button styles
 // No theme
 
@@ -27,10 +91,7 @@
 	}
 }
 
-/**
- * Add button theme
- *
- */
+// Add button theme
 
 @mixin button-theme($theme) {
 	color: map-get($theme, 'color');
@@ -62,16 +123,10 @@
 			fill: map-get($theme, 'hoverColor');
 		}
 	}
-}
 
-/**
- * Disabled Button
- *
- */
-
-@mixin button-disabled {
-	@include button-theme($button--disabled);
-	opacity: map-get($button--disabled, 'opacity');
-	cursor: default;
+	@if $theme == $button--disabled {
+		opacity: map-get($button--disabled, 'opacity');
+		cursor: default;
+	}
 }
 
