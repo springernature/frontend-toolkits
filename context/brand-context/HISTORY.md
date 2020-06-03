@@ -1,5 +1,8 @@
 # History
 
+## 2.2.1 (2020-06-03)
+    * BUG: unquote use of native css min/max variables to fix scss compilation error
+
 ## 2.2.0 (2020-06-03)
     * FEATURE: Change heading typography to improve page hierarchy
         * All headings to use $line-height-tight

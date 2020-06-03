@@ -11,7 +11,7 @@
 @mixin h1 {
 	@include heading-base;
 	font-size: $font-size-h1;
-	font-size: min(max($font-size-h1-min, 4vw), $font-size-h1);
+	font-size: unquote('min(max(#{$font-size-h1-min}, 4vw), #{$font-size-h1})');
 	font-family: $font-family-serif;
 	font-weight: $font-weight-normal;
 }
@@ -19,7 +19,7 @@
 @mixin h2 {
 	@include heading-base;
 	font-size: $font-size-h2;
-	font-size: min(max($font-size-h2-min, 3.5vw), $font-size-h2);
+	font-size: unquote('min(max(#{$font-size-h2-min}, 3.5vw), #{$font-size-h2})');
 	font-family: $font-family-serif;
 	font-weight: $font-weight-normal;
 }
@@ -27,7 +27,7 @@
 @mixin h3 {
 	@include heading-base;
 	font-size: $font-size-h3;
-	font-size: min(max($font-size-h3-min, 3vw), $font-size-h3);
+	font-size: unquote('min(max(#{$font-size-h3-min}, 3vw), #{$font-size-h3})');
 	font-family: $font-family-serif;
 	font-weight: $font-weight-normal;
 }
@@ -35,7 +35,7 @@
 @mixin h4 {
 	@include heading-base;
 	font-size: $font-size-h4;
-	font-size: min(max($font-size-h4-min, 2.5vw), $font-size-h4);
+	font-size: unquote('min(max(#{$font-size-h4-min}, 2.5vw), #{$font-size-h4})');
 	font-family: $font-family-sans;
 	font-weight: $font-weight-bold;
 }
