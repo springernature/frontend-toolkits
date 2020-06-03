@@ -5,9 +5,5 @@
   "description": "A component for the controls of pagination",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^2.1.1",
-  "peerDependencies": {
-    "@springernature/springer-context": "^19.1.0",
-    "@springernature/springer-button": "^0.1.0"
-  }
+  "brandContext": "^3.0.0"
 }

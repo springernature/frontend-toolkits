@@ -21,12 +21,13 @@
 }
 
 .c-pagination__link {
-	@include button($button--default);
+	@include button-default;
 	min-width: $pagination--item-width;
 	text-align: center;
 }
 
 .c-pagination__link--disabled {
+	@include button-default;
 	@include button-disabled;
 }
 
