@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2020-06-03)
+    * BREAKING: switch to use new `brand-context` dependency
+	* BREAKING: rename `scss` variables
+
 ## 3.0.0 (2020-03-27)
     * Update pagination design
     * Add springer-button dependency

@@ -1,15 +1,15 @@
-$springer-pagination--padding: spacing(16);
-$springer-pagination--font-size: $font-size-xs;
+$pagination--padding: spacing(16);
+$pagination--font-size: $font-size-xs;
 
-$springer-pagination--link-active-color: white;
-$springer-pagination--link-active-border-color: greyscale(40);
-$springer-pagination--link-active-background-color: greyscale(40);
+$pagination--link-active-color: white;
+$pagination--link-active-border-color: greyscale(40);
+$pagination--link-active-background-color: greyscale(40);
 
-$springer-pagination--item-margin-right: spacing(16);
-$springer-pagination--item-margin-bottom: spacing(8);
-$springer-pagination--item-width: 30px;
+$pagination--item-margin-right: spacing(16);
+$pagination--item-margin-bottom: spacing(8);
+$pagination--item-width: 30px;
 
-$springer-pagination--icon-color: greyscale(60);
-$springer-pagination--icon-clickable-color: color('action-base');
-$springer-pagination--icon-width: 16px;
-$springer-pagination--icon-height: 12px;
+$pagination--icon-color: greyscale(60);
+$pagination--icon-clickable-color: color('action-base');
+$pagination--icon-width: 16px;
+$pagination--icon-height: 12px;
