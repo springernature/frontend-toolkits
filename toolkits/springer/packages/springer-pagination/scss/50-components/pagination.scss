@@ -3,8 +3,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	font-size: $springer-pagination--font-size;
-	padding: $springer-pagination--padding;
+	font-size: $pagination--font-size;
+	padding: $pagination--padding;
 
 	@include media-query('sm') {
 		justify-content: center;
@@ -12,8 +12,8 @@
 }
 
 .c-pagination__item {
-	margin-right: $springer-pagination--item-margin-right;
-	margin-bottom: $springer-pagination--item-margin-bottom;
+	margin-right: $pagination--item-margin-right;
+	margin-bottom: $pagination--item-margin-bottom;
 
 	&:last-child {
 		margin-right: 0;
@@ -21,19 +21,20 @@
 }
 
 .c-pagination__link {
-	@include button($button--default);
-	min-width: $springer-pagination--item-width;
+	@include button-default;
+	min-width: $pagination--item-width;
 	text-align: center;
 }
 
 .c-pagination__link--disabled {
+	@include button-default;
 	@include button-disabled;
 }
 
 .c-pagination__link--active {
-	color: $springer-pagination--link-active-color;
-	border-color: $springer-pagination--link-active-border-color;
-	background-color: $springer-pagination--link-active-background-color;
+	color: $pagination--link-active-color;
+	border-color: $pagination--link-active-border-color;
+	background-color: $pagination--link-active-background-color;
 	background-image: none;
 	cursor: default;
 }
@@ -47,11 +48,11 @@
 }
 
 .c-pagination__icon {
-	fill: $springer-pagination--icon-color;
-	width: $springer-pagination--icon-width;
-	height: $springer-pagination--icon-height;
+	fill: $pagination--icon-color;
+	width: $pagination--icon-width;
+	height: $pagination--icon-height;
 }
 
 .c-pagination__icon--active {
-	fill: $springer-pagination--icon-clickable-color;
+	fill: $pagination--icon-clickable-color;
 }

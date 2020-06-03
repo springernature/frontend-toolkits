@@ -4,6 +4,8 @@ A component for the controls of pagination.
 
 ## Example
 
+_**Note**: You need to use the springer icon map for icons_
+
 #### HTML
 ```html
 <nav>
