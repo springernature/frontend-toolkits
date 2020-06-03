@@ -20,7 +20,8 @@
 	box-shadow: $context--shadow-style $context--shadow-color;
 }
 
-// Button element reset
+// <button> element reset
+// Does not reset the branded buttons provided in context
 @mixin u-button-reset {
 	background-color: transparent;
 	border: 0;
