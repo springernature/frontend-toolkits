@@ -1,5 +1,10 @@
 # History
 
+## 3.0.0 (2020-06-03)
+	* FEATURE: include branded button styles from `global-button` so they can be used in components
+	* BREAKING: Move `u-button-reset` mixin/utility to avoid confusion
+	    * From `60-utilities/buttons` to `60-utilities/style`
+
 ## 2.2.1 (2020-06-03)
     * BUG: unquote use of native css min/max variables to fix scss compilation error
 
