@@ -11,7 +11,13 @@ $font-size-xxl: 32px;
 $font-size-h1: 3.2rem;
 $font-size-h2: 2.8rem;
 $font-size-h3: 2.4rem;
-$font-size-h4: 1.8rem;
+$font-size-h4: 2rem;
+
+// Fluid typography
+$font-size-h1-min: $font-size-h2;
+$font-size-h2-min: $font-size-h3;
+$font-size-h3-min: $font-size-h4;
+$font-size-h4-min: 1.8rem; // Body typography size
 
 $font-size-furniture: $font-size-sm;
 $font-size-interface: $font-size-sm;
