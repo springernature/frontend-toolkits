@@ -1,0 +1,65 @@
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+
+$button--border-width-style: 1px solid;
+$button--line-height: 1.3;
+$button--font-family: sans-serif;
+$button--font-size-small: 1.4rem;
+$button--font-size-normal: 1.6rem;
+$button--font-size-large: 1.8rem;
+$button--icon-margin: spacing(8);
+$button--padding: spacing(8);
+$button--padding-large: spacing(16);
+$button--justify-content: center;
+$button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+
+// Button Themes
+// Variables to set themes styles
+
+$button--default: (
+	'border-radius': 2px,
+	'color': darkblue,
+	'backgroundColor': greyscale(95),
+	'backgroundImage': none,
+	'border': $button--border-width-style greyscale(80),
+	'visitedColor': darkblue,
+	'hoverColor': white,
+	'hoverBorder': $button--border-width-style greyscale(40),
+	'hoverBackgroundColor': greyscale(40),
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style greyscale(40),
+	'focusTextDecoration': none
+);
+
+$button--primary: (
+	'color': white,
+	'backgroundColor': darkblue,
+	'backgroundImage': none,
+	'border': $button--border-width-style blue,
+	'visitedColor': white,
+	'hoverColor': white,
+	'hoverBorder': $button--border-width-style blue,
+	'hoverBackgroundColor': blue,
+	'hoverBackgroundImage': none,
+	'focusBorder': $button--border-width-style blue,
+);
+
+$button--disabled: (
+	'color': greyscale(),
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'border': $button--border-width-style greyscale(80),
+	'visitedColor': greyscale(),
+	'opacity': 0.7,
+	'hoverColor': greyscale(),
+	'hoverBorder': $button--border-width-style greyscale(80),
+	'hoverBackgroundColor': transparent,
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style greyscale(80),
+	'focusTextDecoration': none
+);

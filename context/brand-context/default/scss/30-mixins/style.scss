@@ -11,8 +11,18 @@
 	}
 }
 
-// Utilities
+// Style Utilities
+// Have conrresponding utility classes
+
+// Box shadow
 @mixin u-shadow {
 	border: 1px solid $context--shadow-border-color; // make optional?
 	box-shadow: $context--shadow-style $context--shadow-color;
+}
+
+// Button element reset
+@mixin u-button-reset {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
 }
