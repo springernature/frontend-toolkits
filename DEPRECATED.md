@@ -53,3 +53,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `nature-button`  
    Now part of the [`global-button`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-button).
+
+* `springer-nature-modal`  
+   Replaced by [`springernature-modal`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springernature/packages/springernature-modal).
