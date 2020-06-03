@@ -7,6 +7,7 @@ Use this context configuration in your product to skin components with the `defa
 	- [Greyscale](#greyscale)
 	- [Color](#color)
 	- [Foreground color](#foreground-color)
+- [Buttons](#buttons)
 - [Layers](#layers)
 - [Icons](#icons)
 
@@ -140,6 +141,151 @@ color: foreground-color(30);                               // returns the foregr
 color: foreground-color('blue');                           // returns the foreground color for the color from $colors
 color: foreground-color('npj-primary', $brand-colors);     // returns the foreground color for the color from $brand-colors
 color: foreground-color($var);                             // returns the foreground color for color stored as variable
+```
+
+## Buttons
+
+The context comes with branded button styles to use on buttons and links.
+
+### Use via `@mixin`
+
+If button styles are available for you brand then you get mixins included via the context
+
+#### Basic usage
+
+```scss
+// Default
+.my-class {
+	@include button-default;
+}
+```
+
+#### Themes
+
+Add theme classes for different branding styles. If a theme does not exist for the brand you are using it will be ignored.
+
+```scss
+// Primary
+.my-class {
+	@include button-default;
+	@include button-primary;
+}
+
+// Ghost
+.my-class {
+	@include button-default;
+	@include button-ghost;
+}
+
+// Disabled
+.my-class {
+	@include button-default;
+	@include button-disabled;
+}
+```
+
+#### Variants
+
+Variant modifiers can be added to the default class, as well as to themes.
+
+```scss
+// Small
+.my-class {
+	@include button-default;
+	@include button-small;
+}
+
+// Large
+.my-class {
+	@include button-default;
+	@include button-large;
+}
+
+
+// Full width
+.my-class {
+	@include button-default;
+	@include button-full-width;
+}
+
+// Icon left
+.my-class {
+	@include button-default;
+	@include button-icon-left;
+}
+
+// Icon right
+.my-class {
+	@include button-default;
+	@include button-icon-right;
+}
+```
+
+### Use via utility classes
+
+The button utility classes are an exception to how utilities usually work, as they modify the styling of elements. For this reason it is preferable to use the relevant `@mixin` within an existing component, but the utility classes can be used if you need them.
+
+```scss
+// Incude the button utility classes
+@import '@springernature/brand-context/default/scss/60-utilities/buttons';
+```
+
+#### Basic usage
+
+```html
+<button class="c-button">text</button>
+
+<a class="c-button" href="#">text</a> 
+```
+
+#### Themes
+
+Add theme classes for different branding styles. If a theme does not exist for the brand you are using it will be ignored.
+
+```html
+<!-- Primary -->
+<button class="c-button c-button--primary">text</button>
+
+<!-- Ghost -->
+<button class="c-button c-button--ghost">text</button>
+
+<!-- Disabled -->
+<button class="c-button c-button--disabled" disabled>text</button>
+```
+
+#### Variants
+
+Variant modifiers can be added to the default class, as well as to themes.
+
+```html
+<!-- Small -->
+<button class="c-button c-button--small">text</button>
+```
+
+```html
+<!-- Large -->
+<button class="c-button c-button--large">text</button>
+```
+
+```html
+<!-- Full width -->
+<button class="c-button c-button--full-width">text</button>
+```
+
+```html
+<!-- Icon left -->
+<button class="c-button c-button--icon-left">
+    <svg></svg>
+    <span>text</span>
+</button>
+```
+
+```html
+<!-- Icon right -->
+<button class="c-button c-button--icon-right">
+    <span>text</span>
+    <svg></svg>
+</button>
 ```
 
 ## Layers
