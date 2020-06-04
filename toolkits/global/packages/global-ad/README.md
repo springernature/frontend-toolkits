@@ -5,12 +5,14 @@ Catering for ad slots, specifically:
 - mpu ad slots (300x250)
 - skyscraper ad slots (160x600)
 
+Minimum height set for leaderboard and mpu slots to prevent reflow of layout.
+
 ## Usage
 
 #### HTML
 ```html
 <!--leaderboard-->
-<div class="c-ad c-ad--leaderboard">
+<div class="c-ad c-ad--728x90">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
@@ -18,7 +20,7 @@ Catering for ad slots, specifically:
 </div>
 
 <!--mpu-->
-<div class="c-ad c-ad--mpu">
+<div class="c-ad c-ad--300x250">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
@@ -26,7 +28,7 @@ Catering for ad slots, specifically:
 </div>
 
 <!--skyscraper-->
-<div class="c-ad c-ad--skyscraper">
+<div class="c-ad c-ad--160x600">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
