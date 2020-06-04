@@ -1,8 +1,3 @@
-// pubgrade (ads) put a 1px image as first child of the body which we need to hide
-body > img[src*=pbgrd] {
-	display: none;
-}
-
 .c-ad {
 	display: none;
 	font-size: $ad--font-size;
