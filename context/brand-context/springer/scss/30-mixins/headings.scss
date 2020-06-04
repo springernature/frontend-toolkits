@@ -1,45 +1,41 @@
-@mixin heading-link {
+@mixin heading-base {
+	font-style: normal;
+	margin-bottom: 1em;
+	line-height: $line-height-tight;
+
 	a {
 		@include interface-link;
 	}
 }
 
 @mixin h1 {
-	@include heading-link;
-	@include font-size($font-size-xxl);
+	@include heading-base;
+	font-size: $font-size-h1;
+	font-size: unquote('min(max(#{$font-size-h1-min}, 4vw), #{$font-size-h1})');
 	font-family: $font-family-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height: (42 / 32);
-	margin-bottom: 0.5em;
+	font-weight: $font-weight-normal;
 }
 
 @mixin h2 {
-	@include heading-link;
-	@include font-size($font-size-xl);
+	@include heading-base;
+	font-size: $font-size-h2;
+	font-size: unquote('min(max(#{$font-size-h2-min}, 3.5vw), #{$font-size-h2})');
 	font-family: $font-family-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height: (36 / 26);
-	margin-bottom: 0.5em;
+	font-weight: $font-weight-normal;
 }
 
 @mixin h3 {
-	@include heading-link;
-	@include font-size($font-size-lg);
+	@include heading-base;
+	font-size: $font-size-h3;
+	font-size: unquote('min(max(#{$font-size-h3-min}, 3vw), #{$font-size-h3})');
 	font-family: $font-family-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height: (28 / 21);
-	margin-bottom: 0.7em;
+	font-weight: $font-weight-normal;
 }
 
 @mixin h4 {
-	@include heading-link;
-	@include font-size($font-size-md);
-	font-family: $font-family-serif;
-	font-style: normal;
-	font-weight: 700;
-	line-height: (28 / 20);
-	margin-bottom: 0.7em;
+	@include heading-base;
+	font-size: $font-size-h4;
+	font-size: unquote('min(max(#{$font-size-h4-min}, 2.5vw), #{$font-size-h4})');
+	font-family: $font-family-sans;
+	font-weight: $font-weight-bold;
 }

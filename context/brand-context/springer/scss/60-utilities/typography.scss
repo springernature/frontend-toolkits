@@ -30,10 +30,12 @@
 	@include u-text-right;
 }
 
-@each $weight, $value in $font-weight {
-	.u-text-#{$weight} {
-		@include u-text-weight($weight);
-	}
+.u-text-normal {
+	font-weight: $font-weight-normal;
+}
+
+.u-text-bold {
+	font-weight: $font-weight-bold;
 }
 
 .u-word-wrap {

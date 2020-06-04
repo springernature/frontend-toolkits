@@ -1,21 +1,16 @@
 /**
  *  Button settings
+ *  Springer
  *
  */
-
-// Default button setting
-@import 'default';
 
 $button--font-family: $font-family-sans;
 $button--font-size-small: $font-size-xs;
 $button--font-size-normal: $font-size-sm;
 $button--font-size-large: $font-size-sm;
 
-/**
- * Button Themes
- * Variables to set themes styles
- *
- */
+// Button Themes
+// Variables to set themes styles
 
 $button--default: (
 	'color': color('action-base'),

@@ -6,6 +6,7 @@
 
 @import '10-settings/colors/default';
 @import '10-settings/typography';
+@import '10-settings/buttons'; // needs to appear after colors & typography
 
 @import '20-functions/em';
 @import '20-functions/strip-unit';

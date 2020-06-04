@@ -24,6 +24,9 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 * `global-button-test`  
    Simple demonstration package from the start of this project. Never meant for production use.
 
+* `global-button`  
+   Now included with [`brand-context`](https://github.com/springernature/frontend-toolkits/tree/master/context).
+
 * `global-colors`  
    Now part of the `default` brand in [`brand-context`](https://github.com/springernature/frontend-toolkits/tree/master/context).
 
@@ -53,3 +56,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `nature-button`  
    Now part of the [`global-button`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-button).
+
+* `springer-nature-modal`  
+   Replaced by [`springernature-modal`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springernature/packages/springernature-modal).

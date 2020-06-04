@@ -7,8 +7,9 @@
 @import '10-settings/breakpoints';
 @import '10-settings/colors/default';
 @import '10-settings/colors/shared';
-@import '10-settings/spacing'; // needs to appear before container
-@import '10-settings/container';
+@import '10-settings/spacing';
+@import '10-settings/buttons'; // needs to appear after spacing
+@import '10-settings/container'; // needs to appear after spacing
 @import '10-settings/keyframes';
 @import '10-settings/layers';
 @import '10-settings/style';
