@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2020-06-04)
+    * BREAKING: switch to use new `brand-context` dependency
+	* BREAKING: rename `scss` variables
+
 ## 3.1.1 (2020-04-23)
     * Allow for Explorer's non standard keypress identifiers
 
