@@ -3,7 +3,7 @@
 	width: 380px;
 	height: 50px;
 	font-size: 20px;
-	border: 1px solid #eee;
+	border: 1px solid $autocomplete--border-color;
 	padding: 5px 10px 5px 0;
 	text-indent: 15px;
 }
@@ -11,7 +11,7 @@
 .c-results-container {
 	margin: auto;
 	width: 390px;
-	border: 1px solid #eee;
+	border: 1px solid $autocomplete--border-color;
 	position: relative;
 	line-height: 30px;
 	border-top: none;
@@ -29,7 +29,7 @@
 		&:hover,
 		&:focus,
 		&:active {
-			background: #e7eff4;
+			background: $autocomplete--results-bg-color;
 		}
 	}
 }
