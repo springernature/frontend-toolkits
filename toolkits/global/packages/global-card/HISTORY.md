@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2020-06-05)
+    * BREAKING: switch to use new `brand-context` dependency
+    * FEATURE: Add branding configurations for default, springer, nature
+
 ## 1.0.0 (2020-02-12)
     * Update call to global faux block mixin
     * Update global contet peer dependency version
