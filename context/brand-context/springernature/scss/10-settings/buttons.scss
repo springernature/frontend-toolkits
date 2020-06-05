@@ -9,6 +9,8 @@ $button--border-radius: 26px;
 $button--font-size-normal: 1.4rem;
 $button--padding: 10px 35px;
 $button--padding-large: 10px 35px;
+$button--letter-spacing: 0.7px;
+$button--font-family: $font-family-sans;
 
 /**
  * Button Themes
@@ -43,21 +45,5 @@ $button--primary: (
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $button--border-width-style color('midnight'),
-	'focusTextDecoration': none
-);
-
-$button--disabled: (
-	'color': white,
-	'backgroundColor': transparent,
-	'backgroundImage': none,
-	'border': $button--border-width-style white,
-	'visitedColor': white,
-	'opacity': 0.7,
-	'hoverColor': white,
-	'hoverBorder': $button--border-width-style white,
-	'hoverBackgroundColor': transparent,
-	'hoverBackgroundImage': none,
-	'hoverTextDecoration': none,
-	'focusBorder': $button--border-width-style white,
 	'focusTextDecoration': none
 );
