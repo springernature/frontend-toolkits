@@ -1,0 +1,65 @@
+.c-ad {
+	display: none;
+	font-size: $ad--font-size;
+	font-family: $ad--font-family;
+	padding: $ad--leaderboard-padding;
+	text-align: center;
+
+	.js & {
+		@include media-query('md') {
+			display: block;
+		}
+	}
+}
+
+.c-ad--728x90,
+.c-ad--970x90 {
+	// Leaderboards
+	background-color: $ad--leaderboard-bg-color;
+
+	.c-ad__inner {
+		min-height: $ad--leaderboard-ad-inner-min-height;
+	}
+
+	iframe {
+		max-width: 970px;
+		height: $ad--leaderboard-height;
+	}
+}
+
+.c-ad--160x600 {
+	// Skyscraper
+	padding: 0;
+	text-align: left;
+
+	iframe {
+		width: 160px;
+		height: 600px;
+	}
+}
+
+.c-ad--300x250 {
+	// MPU
+	background-color: $ad--mpu-background-color;
+
+	iframe {
+		width: 300px;
+		height: $ad--mpu-height;
+	}
+
+	.c-ad__inner {
+		min-height: $ad--mpu-ad-inner-min-height;
+	}
+}
+
+.c-ad iframe {
+	border: none;
+	overflow: auto;
+	vertical-align: top;
+}
+
+.c-ad__label {
+	margin-bottom: $ad--label-margin-bottom;
+	color: $ad--label-color;
+	line-height: $ad--label-line-height;
+}
