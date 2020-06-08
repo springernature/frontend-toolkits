@@ -10,7 +10,7 @@ To include `global-card` in your application, you need to choose **ONE** brand f
 @import '@springernature/global-card/scss/10-settings/springer';
 @import '@springernature/global-card/scss/10-settings/nature';
 
-// Incude this with your other components
+// Include this with your other components
 @import '@springernature/global-card/scss/50-components/card';
 ```
 

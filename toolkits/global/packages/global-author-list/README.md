@@ -12,7 +12,7 @@ To include `global-author-list` in your application, you need to choose **ONE** 
 @import '@springernature/global-author-list/scss/10-settings/default';
 @import '@springernature/global-author-list/scss/10-settings/springer';
 
-// Incude this with your other components
+// Include this with your other components
 @import '@springernature/global-author-list/scss/50-components/author-list';
 ```
 

@@ -12,7 +12,7 @@ To include `global-banner` in your application, you need to choose **ONE** brand
 @import '@springernature/global-banner/scss/10-settings/springer';
 @import '@springernature/global-banner/scss/10-settings/nature';
 
-// Incude this with your other components
+// Include this with your other components
 @import '@springernature/global-banner/scss/50-components/banner';
 ```
 

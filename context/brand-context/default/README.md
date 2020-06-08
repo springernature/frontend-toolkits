@@ -226,7 +226,7 @@ Variant modifiers can be added to the default class, as well as to themes.
 The button utility classes are an exception to how utilities usually work, as they modify the styling of elements. For this reason it is preferable to use the relevant `@mixin` within an existing component, but the utility classes can be used if you need them.
 
 ```scss
-// Incude the button utility classes
+// Include the button utility classes
 @import '@springernature/brand-context/default/scss/60-utilities/buttons';
 ```
 

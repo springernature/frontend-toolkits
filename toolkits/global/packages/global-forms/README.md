@@ -10,6 +10,6 @@ The `global-forms` component currently uses the `DEFAULT` brand only.
 // Inlcude this with your settings
 @import '@springernature/global-forms/scss/10-settings/default';
 
-// Incude this with your other components
+// Include this with your other components
 @import '@springernature/global-forms/scss/50-components/forms';
 ```

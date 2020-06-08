@@ -10,7 +10,7 @@ The `global-menu` component currently uses the `DEFAULT` brand only.
 // Inlcude this with your settings
 @import '@springernature/global-menu/scss/10-settings/default';
 
-// Incude this with your other components
+// Include this with your other components
 @import '@springernature/global-menu/scss/50-components/menu';
 ```
 
