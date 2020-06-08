@@ -1,5 +1,8 @@
 # History
 
+## 4.0.3 (2020-06-08)
+    * Bump to latest brand-context
+
 ## 4.0.2 (2020-05-22)
     * Bump `brand-context` dependency
 

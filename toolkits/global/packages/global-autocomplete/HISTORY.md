@@ -1,5 +1,8 @@
 # History
 
+## 4.0.1 (2020-06-08)
+    * Update README
+
 ## 4.0.0 (2020-06-04)
     * BREAKING: switch to use new `brand-context` dependency
 	* BREAKING: rename `scss` variables

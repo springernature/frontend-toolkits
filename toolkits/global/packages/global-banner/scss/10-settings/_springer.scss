@@ -1,7 +1,10 @@
 /**
- * Settings
- * Brand overrides for global-banner
+ * @springernature/global-banner
+ * Springer skin settings
  */
+
+// Default button setting
+@import 'default';
 
 $banner--padding-y: spacing(16);
 $banner--padding-y-compact: spacing(4);
@@ -14,5 +17,3 @@ $banner--border: 1px solid color('corporate-light');
 $banner--marketing-background-color: color('action-base');
 $banner--marketing-border: 0;
 $banner--marketing-color: white;
-
-
