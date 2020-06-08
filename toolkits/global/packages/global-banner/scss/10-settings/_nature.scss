@@ -1,7 +1,10 @@
 /**
- * Settings
- * Brand overrides for banner
+ * @springernature/global-banner
+ * Nature skin settings
  */
+
+// Default button setting
+@import 'default';
 
 $banner--padding-y: spacing(8);
 $banner--padding-x: spacing(24);

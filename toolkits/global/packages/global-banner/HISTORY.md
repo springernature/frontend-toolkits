@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0 (2020-06-08)
+    * BREAKING: switch to use new `brand-context` dependency
+    * FEATURE: Add branding configurations for default, springer, nature
+
 ## 2.0.0 (2020-02-13)
     * BREAKING: Bump global-context dependency
     * Sets underline on links
