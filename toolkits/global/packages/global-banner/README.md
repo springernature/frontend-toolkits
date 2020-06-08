@@ -4,7 +4,7 @@ Full width banner used for displaying informational messages.
 
 ## Branding
 
-To include global-banner in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+To include `global-banner` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
 
 ```scss
 // Pick ONE of the brands below to include
