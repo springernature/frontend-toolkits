@@ -5,15 +5,15 @@ The separation strings `, `, ` & ` and ` ... ` are set in the CSS using pseudo-e
 
 ## Branding
 
-To include global-banner in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+To include `global-author-list` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-banner/scss/10-settings/default';
-@import '@springernature/global-banner/scss/10-settings/springer';
+@import '@springernature/global-author-list/scss/10-settings/default';
+@import '@springernature/global-author-list/scss/10-settings/springer';
 
 // Incude this with your other components
-@import '@springernature/global-banner/scss/50-components/banner';
+@import '@springernature/global-author-list/scss/50-components/author-list';
 ```
 
 ## Usage

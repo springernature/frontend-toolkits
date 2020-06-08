@@ -1,9 +1,11 @@
 /**
  * @springernature/global-forms
- * form mixin
+ * form mixins
  *
  */
-@mixin global-form-input (
+
+// Input box
+@mixin form-input (
 	$padding: $global-form--padding,
 	$border: $global-form--border-color,
 	$background: $global-form--background-color,

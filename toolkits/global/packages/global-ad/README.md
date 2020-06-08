@@ -7,6 +7,18 @@ Catering for ad slots, specifically:
 
 Minimum height set for leaderboard and mpu slots to prevent reflow of layout.
 
+## Branding
+
+The `global-ad` component currently uses the `DEFAULT` brand only.
+
+```scss
+// Inlcude this with your settings
+@import '@springernature/global-ad/scss/10-settings/default';
+
+// Incude this with your other components
+@import '@springernature/global-ad/scss/50-components/ad';
+```
+
 ## Usage
 
 #### HTML
