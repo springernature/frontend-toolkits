@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2020-06-08)
+    * BREAKING: switch to use new `brand-context` dependency
+    * FEATURE: Add branding configurations for default, springer
+
 ## 1.0.1 (2019-11-25)
     * Add global-context to peer dependencies
 
