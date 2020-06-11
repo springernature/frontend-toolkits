@@ -12,7 +12,7 @@ Minimum height set for leaderboard and mpu slots to prevent reflow of layout.
 The `global-ad` component currently uses the `DEFAULT` brand only.
 
 ```scss
-// Inlcude this with your settings
+// Include this with your settings
 @import '@springernature/global-ad/scss/10-settings/default';
 
 // Include this with your other components
@@ -24,33 +24,33 @@ The `global-ad` component currently uses the `DEFAULT` brand only.
 #### HTML
 ```html
 <!--leaderboard-->
-<div class="c-ad c-ad--728x90">
+<aside class="c-ad c-ad--728x90">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
     </div>
-</div>
+</aside>
 
-<div class="c-ad c-ad--970x90">
+<aside class="c-ad c-ad--970x90">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
     </div>
-</div>
+</aside>
 
 <!--mpu-->
-<div class="c-ad c-ad--300x250">
+<aside class="c-ad c-ad--300x250">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
     </div>
-</div>
+</aside>
 
 <!--skyscraper-->
-<div class="c-ad c-ad--160x600">
+<aside class="c-ad c-ad--160x600">
     <div class="c-ad__inner">
         <p class="c-ad__label">Advertisement</p>
         <!--ad slot content here-->
     </div>
-</div>
+</aside>
 ```

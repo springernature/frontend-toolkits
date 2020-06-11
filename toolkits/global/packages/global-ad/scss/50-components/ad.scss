@@ -1,7 +1,5 @@
 .c-ad {
 	display: none;
-	font-size: $ad--font-size;
-	font-family: $ad--font-family;
 	padding: $ad--leaderboard-padding;
 	text-align: center;
 
@@ -59,6 +57,9 @@
 }
 
 .c-ad__label {
+	font-size: $ad--font-size;
+	font-family: $ad--font-family;
+	font-weight: $ad--font-weight;
 	margin-bottom: $ad--label-margin-bottom;
 	color: $ad--label-color;
 	line-height: $ad--label-line-height;
