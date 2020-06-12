@@ -1,6 +1,6 @@
-import {Popup} from '../js/index.js';
+import {Popups} from '../js/index.js';
 
-describe('Popup', () => {
+describe('Popups', () => {
 	beforeEach(() => {
 		document.body.innerHTML = `
 			<span data-popup data-popup-target="popupContent1"></span>
@@ -15,8 +15,8 @@ describe('Popup', () => {
 	});
 
 	it('should build a popup that includes the arrow and close button html', () => {
-		const popup = new Popup('c-popup');
-		popup.init();
+		const popups = new Popups('c-popup');
+		popups.init();
 
 		expect(document.querySelector('.c-popup__arrow')).toBeTruthy();
 		expect(document.querySelector('.c-popup__close')).toBeTruthy();
