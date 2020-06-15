@@ -3,7 +3,7 @@
 }
 
 .c-header {
-	background-color: #fff;
+	background-color: $header--background-color;
 	padding: $header--padding-y $header--padding-x;
 	border-bottom: 4px solid color('corporate');
 }
