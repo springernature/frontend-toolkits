@@ -16,6 +16,7 @@ You can import as many of the named exports from the helpers as you require for 
 
 **Util**
 - [makeArray](#makearray)
+- [createEvent](#createevent)
 
 
 **Dom**
@@ -35,6 +36,32 @@ const elementsArray = makeArray(elementsNodeList);
 elementsArray.forEach(element => {
 	// Do something
 });
+```
+
+#### createEvent
+Simple wrapper for [`customEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) that enforces an event namespace of the form `namespace:event`.
+
+This should be the **default** method for component module communication, where the name of the component is used as the namespace.
+
+```javascript
+const elementToBind = document.getElementById('element');
+
+// Create event namespaced to component
+const event = createEvent('eventName', 'componentName', {
+	bubbles:true,
+	cancelable: true,
+	detail: {
+		hazcheeseburger: true
+	}
+});
+
+// Dispatch event
+elementToBind.dispatchEvent(event);
+
+// Listen for event
+elementToBind.addEventListener('componentName:eventName', function (event) {
+	// Do something
+}, false);
 ```
 
 ### Dom
