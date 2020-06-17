@@ -34,7 +34,7 @@ const elementsNodeList = document.querySelectorAll('.elements');
 const elementsArray = makeArray(elementsNodeList);
 
 elementsArray.forEach(element => {
-	// Do something
+    // Do something
 });
 ```
 
@@ -48,11 +48,11 @@ const elementToBind = document.getElementById('element');
 
 // Create event namespaced to component
 const event = createEvent('eventName', 'componentName', {
-	bubbles:true,
-	cancelable: true,
-	detail: {
-		hazcheeseburger: true
-	}
+    bubbles:true,
+    cancelable: true,
+    detail: {
+        hazcheeseburger: true
+    }
 });
 
 // Dispatch event
@@ -60,7 +60,7 @@ elementToBind.dispatchEvent(event);
 
 // Listen for event
 elementToBind.addEventListener('componentName:eventName', function (event) {
-	// Do something
+    // Do something
 }, false);
 ```
 
@@ -78,9 +78,9 @@ Because it returns an Object, it is easy to merge with other options Objects, su
 ```javascript
 // my-component.js
 const DataOptions = {
-	OPTION_1: 'data-mycomponent-option1',
-	OPTION_2: 'data-mycomponent-option2',
-	OPTION_3: 'data-mycomponent-option3',
+    OPTION_1: 'data-mycomponent-option1',
+    OPTION_2: 'data-mycomponent-option2',
+    OPTION_3: 'data-mycomponent-option3',
 };
 
 const component = document.querySelector('.my-component');
