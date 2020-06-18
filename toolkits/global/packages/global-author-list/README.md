@@ -3,6 +3,19 @@
 A styled list of comma separated authors with the final author being preceded by an " & ".
 The separation strings `, `, ` & ` and ` ... ` are set in the CSS using pseudo-elements.
 
+## Branding
+
+To include `global-author-list` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+
+```scss
+// Pick ONE of the brands below to include
+@import '@springernature/global-author-list/scss/10-settings/default';
+@import '@springernature/global-author-list/scss/10-settings/springer';
+
+// Include this with your other components
+@import '@springernature/global-author-list/scss/50-components/author-list';
+```
+
 ## Usage
 
 ```html

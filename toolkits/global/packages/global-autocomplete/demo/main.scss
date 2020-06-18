@@ -2,8 +2,9 @@
 
 // we must not add `node_modules/` to the SASS includePaths config,
 //   so use relative paths here. Paths are be relative to this file.
-@import '../node_modules/@springernature/global-context/scss/core.scss';
-@import '../node_modules/@springernature/global-context/scss/enhanced.scss';
+@import '../node_modules/@springernature/brand-context/scss/core';
+@import '../node_modules/@springernature/brand-context/scss/enhanced';
 
 // component SCSS
-@import '../scss/50-components/autocomplete.scss';
+@import '../scss/10-settings/default';
+@import '../scss/50-components/autocomplete';

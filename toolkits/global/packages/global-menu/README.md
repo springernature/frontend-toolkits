@@ -2,6 +2,18 @@
 
 Create common navigation patterns for list elements.
 
+## Branding
+
+The `global-menu` component currently uses the `DEFAULT` brand only.
+
+```scss
+// Inlcude this with your settings
+@import '@springernature/global-menu/scss/10-settings/default';
+
+// Include this with your other components
+@import '@springernature/global-menu/scss/50-components/menu';
+```
+
 ## Usage
 
 ### Basic usage
