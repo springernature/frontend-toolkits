@@ -2,7 +2,7 @@ import {createEvent} from '../../../src/helpers';
 
 describe('createEvent: customEvent supported', () => {
 	it('Should be defined as a function', () => {
-		expect(function () {
+		expect(() => {
 			createEvent('test', 'component');
 		}).not.toThrow();
 	});
@@ -25,7 +25,7 @@ describe('createEvent: customEvent supported', () => {
 	});
 
 	it('Should throw when no namespace defined', () => {
-		expect(function () {
+		expect(() => {
 			createEvent('test');
 		}).toThrowError(new Error('Missing namespace in `createEvent` function'));
 	});
@@ -55,7 +55,7 @@ describe('createEvent: customEvent NOT supported', () => {
 	});
 
 	it('Should be defined as a function', () => {
-		expect(function () {
+		expect(() => {
 			createEvent('test', 'component');
 		}).not.toThrow();
 	});
@@ -78,7 +78,7 @@ describe('createEvent: customEvent NOT supported', () => {
 	});
 
 	it('Should throw when no namespace defined', () => {
-		expect(function () {
+		expect(() => {
 			createEvent('test');
 		}).toThrowError(new Error('Missing namespace in `createEvent` function'));
 	});
