@@ -1,0 +1,49 @@
+
+ /**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+
+$button--border-radius: 26px;
+$button--font-size-normal: 1.4rem;
+$button--padding: 10px 35px;
+$button--padding-large: 10px 35px;
+$button--letter-spacing: 0.7px;
+$button--font-family: $font-family-sans;
+
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+
+$button--default: (
+	'color': color('midnight'),
+	'backgroundColor': color('alabaster'),
+	'backgroundImage': none,
+	'border': $button--border-width-style color('midnight'),
+	'visitedColor': color('midnight'),
+	'hoverColor': color('alabaster'),
+	'hoverBorder': $button--border-width-style color('midnight'),
+	'hoverBackgroundColor': color('midnight'),
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style color('midnight'),
+	'focusTextDecoration': none
+);
+
+$button--primary: (
+	'color': color('alabaster'),
+	'backgroundColor': color('midnight'),
+	'backgroundImage': none,
+	'border': $button--border-width-style color('midnight'),
+	'visitedColor': color('alabaster'),
+	'hoverColor': color('midnight'),
+	'hoverBorder': $button--border-width-style color('midnight'),
+	'hoverBackgroundColor': color('alabaster'),
+	'hoverBackgroundImage': none,
+	'hoverTextDecoration': none,
+	'focusBorder': $button--border-width-style color('midnight'),
+	'focusTextDecoration': none
+);

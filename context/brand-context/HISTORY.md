@@ -1,5 +1,8 @@
 # History
 
+## 3.2.0 (2020-06-18)
+    * FEATURE: Add springernature button styles
+
 ## 3.1.0 (2020-06-09)
     * Add filter icon
 
