@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-status-message",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Create common display pattern for status messages eg: error/alert/update",
+  "keywords": [],
+  "author": "Springernature",
+  "brandContext": "^3.0.0"
+}
