@@ -1,11 +1,9 @@
 {
   "name": "@springernature/springer-meta",
-  "version": "1.0.0",
+  "version": "2.1.1",
   "license": "MIT",
   "description": "Brief information about the content",
   "keywords": [],
   "author": "Springer Nature",
-  "peerDependencies": {
-    "@springernature/springer-context": "^14.0.0"
-  }
+  "brandContext": "^3.0.0"
 }

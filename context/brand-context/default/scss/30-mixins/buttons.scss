@@ -1,0 +1,134 @@
+/**
+ * Entrypoints
+ *
+ */
+
+// Default button
+
+@mixin button-default {
+	@include button($button--default);
+}
+
+// Button themes
+
+@mixin button-primary {
+	@if variable-exists('button--primary') {
+		@include button-theme($button--primary);
+	}
+}
+
+@mixin button-ghost {
+	@if variable-exists('button--ghost') {
+		@include button-theme($button--ghost);
+	}
+}
+
+@mixin button-disabled {
+	@if variable-exists('button--disabled') {
+		@include button-theme($button--disabled);
+	}
+}
+
+// Button variants
+
+@mixin button-small {
+	font-size: $button--font-size-small;
+}
+
+@mixin button-large {
+	font-size: $button--font-size-large;
+	padding: $button--padding-large;
+}
+
+@mixin button-full-width {
+	display: flex;
+	width: 100%;
+}
+
+@mixin button-icon-left {
+	svg {
+		margin-right: $button--icon-margin;
+	}
+}
+
+@mixin button-icon-right {
+	svg {
+		margin-left: $button--icon-margin;
+	}
+}
+
+/**
+ * Style mixins
+ *
+ */
+
+// Base button styles
+// No theme
+
+@mixin button-base {
+	align-items: center;
+	cursor: pointer;
+	display: inline-flex;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	width: auto;
+	font-family: $button--font-family;
+	font-size: $button--font-size-normal;
+	line-height: $button--line-height;
+	justify-content: $button--justify-content;
+	padding: $button--padding;
+	transition: $button--transition;
+	border-radius: $button--border-radius;
+	letter-spacing: $button--letter-spacing;
+}
+
+// Add base button styles
+// with optional theme styles on top
+
+@mixin button($theme: false) {
+	@include button-base;
+	@if $theme {
+		@include button-theme($theme);
+	}
+}
+
+// Add button theme
+
+@mixin button-theme($theme) {
+	color: map-get($theme, 'color');
+	background-color: map-get($theme, 'backgroundColor');
+	background-image: map-get($theme, 'backgroundImage');
+	border: map-get($theme, 'border');
+
+	&:visited {
+		color: map-get($theme, 'visitedColor');
+	}
+
+	&:hover {
+		border: map-get($theme, 'hoverBorder');
+		text-decoration: map-get($theme, 'hoverTextDecoration');
+	}
+
+	&:focus {
+		border: map-get($theme, 'focusBorder');
+		text-decoration: map-get($theme, 'focusTextDecoration');
+	}
+
+	&:hover,
+	&:focus {
+		color: map-get($theme, 'hoverColor');
+		background-color: map-get($theme, 'hoverBackgroundColor');
+		background-image: map-get($theme, 'hoverBackgroundImage');
+
+		svg path {
+			fill: map-get($theme, 'hoverColor');
+		}
+	}
+
+	@if $theme == $button--disabled {
+		opacity: map-get($button--disabled, 'opacity');
+		cursor: default;
+	}
+}
+

@@ -1,3 +1,6 @@
 {
-  "prefix": "global"
+  "prefix": "global",
+  "enforceBrandFileNaming": [
+    "scss/10-settings"
+  ]
 }

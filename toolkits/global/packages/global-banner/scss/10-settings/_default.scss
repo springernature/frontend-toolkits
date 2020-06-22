@@ -1,0 +1,27 @@
+/**
+ * @springernature/global-banner
+ * Default skin settings
+ *
+ */
+
+$banner--padding-y: 12px;
+$banner--padding-x: 12px;
+$banner--font: $font-family-sans;
+$banner--font-size: 16px;
+$banner--font-size-small: 14px;
+$banner--link-color: gray;
+$banner--background-color: white;
+$banner--border: 1px solid lightgray;
+
+// --compact
+$banner--compact-padding-y: 4px;
+$banner--compact-padding-x: 4px;
+
+// --contrast
+$banner--contrast-background-color: black;
+$banner--contrast-color: white;
+
+// --marketing
+$banner--marketing-background-color: ghostwhite;
+$banner--marketing-border: 1px solid lightblue;
+$banner--marketing-color: black;

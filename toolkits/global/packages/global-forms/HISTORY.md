@@ -1,5 +1,15 @@
 # History
 
+## 3.0.0 (2020-06-08)
+    * BREAKING: Rename mixin and component files
+    * Update README
+
+## 2.0.0 (2020-06-04)
+    * BREAKING: switch to use new `brand-context` dependency
+
+## 1.0.0 (2020-21-05)
+    * Allows for configuration of label font and margin
+
 ## 0.0.3 (2020-03-04)
     * BUG: allow row items to shrink as well as grow
 

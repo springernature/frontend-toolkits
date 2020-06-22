@@ -1,0 +1,11 @@
+/**
+ * Modal Component
+ * Core styling
+ */
+
+.c-modal {
+	&__trigger,
+	&__close {
+		display: none;
+	}
+}

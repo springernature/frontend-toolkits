@@ -1,5 +1,16 @@
 # History
 
+## 6.0.0 (2020-06-03)
+    * FEATURE: Adds --flush modifier to remove padding top / bottom of first / last item
+    * BREAKING: 
+        * Remove --xxs modifier
+        * --sm padding drops from 16px to 8px
+        * Bump brand-context to 3.0.0
+
+## 5.0.0 (2020-05-22)
+    * BREAKING: switch to use new `brand-context` dependency
+    * BREAKING: rename `scss` files and variables
+
 ## 4.0.0 (2020-02-14)
 	* BREAKING: Bump springer-context dependency to 17.0.3
 	* Use spacing instead of get-spacing

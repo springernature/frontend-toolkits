@@ -222,7 +222,7 @@ To publish a new package please follow the [contributing guidelines](CONTRIBUTIN
 
 The frontend-toolkits repository is licensed under the [MIT License][info-license].
 All packages within this repository are licensed under the [MIT License][info-license].
-Copyright &copy; 2019, Springer Nature
+Copyright &copy; 2020, Springer Nature
 
 [info-license]: LICENCE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg

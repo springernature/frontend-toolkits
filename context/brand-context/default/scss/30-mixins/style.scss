@@ -1,0 +1,29 @@
+@mixin keyline($direction: bottom, $size: 16) {
+	$valid-directions: (top, right, bottom, left);
+
+	@if index($valid-directions, $direction) {
+		border-#{$direction}: 1px solid $context--keyline-border-color;
+		padding-#{$direction}: spacing($size);
+		margin-#{$direction}: spacing($size);
+	}
+	@else {
+		@warn '$direction should be one of #{$valid-directions}, but was #{$direction}';
+	}
+}
+
+// Style Utilities
+// Have conrresponding utility classes
+
+// Box shadow
+@mixin u-shadow {
+	border: 1px solid $context--shadow-border-color; // make optional?
+	box-shadow: $context--shadow-style $context--shadow-color;
+}
+
+// <button> element reset
+// Does not reset the branded buttons provided in context
+@mixin u-button-reset {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}

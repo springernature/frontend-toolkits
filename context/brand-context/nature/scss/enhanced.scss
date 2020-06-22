@@ -1,0 +1,19 @@
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+
+// Default settings, functions, mixins
+@import '../../default/scss/abstracts';
+
+// Nature settings, functions, mixins
+@import 'abstracts';
+
+// 40-base
+@import '40-base/forms';
+@import '40-base/layout';
+@import '40-base/links';
+@import '40-base/lists';
+@import '40-base/tables';
+@import '../../default/scss/40-base/typography';
+@import '40-base/typography';

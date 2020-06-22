@@ -1,0 +1,81 @@
+
+
+/* Input row component */
+
+.c-input-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-right: -$global-form--grid-gutter-width / 2;
+	margin-left: -$global-form--grid-gutter-width / 2;
+
+}
+
+.c-input-row__item {
+	align-self: stretch;
+	flex: 1 1 auto;
+	padding-right: $global-form--grid-gutter-width / 2;
+	padding-left:  $global-form--grid-gutter-width / 2;
+}
+
+/* Input group component */
+
+.c-input-group {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.c-input-group__label {
+	display: inline-block;
+	line-height: 2;
+	font-size: $global-form--label-font-size;
+	margin-bottom: $global-form--label-spacing;
+
+
+	&--check {
+		padding-right: 0.5rem;
+	}
+}
+
+.c-input-group__required {
+	color: $global-form--color-required;
+}
+
+.c-input-group__control {
+	@include global-form-input;
+
+	&--check {
+		width: auto;
+		height: auto;
+	}
+
+	&--radio {
+		width: auto;
+		height: auto;
+		margin: 0 0.5rem;
+		display: inline-block;
+	}
+
+	&--textarea {
+		height: auto;
+		overflow: auto;
+		resize: vertical;
+	}
+
+	// Unstyle the caret on `<select>`s in IE10+.
+
+	&::-ms-expand {
+		background-color: transparent;
+		border: 0;
+	}
+}
+
+.c-input-group input[disabled],
+.c-input-group textarea[disabled],
+.c-input-group input[disabled]:hover,
+.c-input-group textarea[disabled]:hover {
+	background: $global-form--background-color-disabled;
+	border-color: $global-form--border-color-disabled;
+	color: $global-form--color-disabled;
+	cursor: not-allowed;
+}

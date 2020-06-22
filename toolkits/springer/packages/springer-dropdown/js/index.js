@@ -1,4 +1,4 @@
-import {makeArray, getDataOptions} from '@springernature/global-context/js/helpers';
+import {makeArray, getDataOptions} from '@springernature/global-javascript/src/helpers';
 import {constants} from './constants';
 import {Dropdown} from './dropdown';
 

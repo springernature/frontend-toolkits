@@ -1,0 +1,20 @@
+/**
+ * @springernature/global-banner
+ * Nature skin settings
+ */
+
+// Default button setting
+@import 'default';
+
+$banner--padding-y: spacing(8);
+$banner--padding-x: spacing(24);
+$banner--border: 0;
+$banner--font-size: 1.6rem;
+$banner--font-size-small: 1.4rem;
+$banner--link-color: greyscale(25);
+$banner--compact-padding-y: spacing(4);
+$banner--compact-padding-x: spacing(4);
+$banner--contrast-background-color: greyscale(5);
+$banner--marketing-background-color: color('action-base');
+$banner--marketing-border: 0;
+$banner--marketing-color: white;

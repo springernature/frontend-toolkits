@@ -1,5 +1,12 @@
 # History
 
+## 4.0.1 (2020-06-08)
+    * Bump to latest brand-context
+
+## 4.0.0 (2020-05-22)
+    * BREAKING: switch to use new `brand-context` dependency
+    * BREAKING: rename `scss` files and variables
+
 ## 3.1.0 (2020-02-26)
     * Add info status style
     * Bumps peer dependency springer-context to 18.3.0

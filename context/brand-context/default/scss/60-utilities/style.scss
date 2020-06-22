@@ -1,0 +1,9 @@
+.u-shadow {
+	@include u-shadow;
+}
+
+// <button> element reset
+// Does not reset the branded buttons provided in context
+.u-button-reset {
+	@include u-button-reset;
+}

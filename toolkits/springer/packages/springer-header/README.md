@@ -42,7 +42,7 @@ Publisher level header for Springer products.
 ## Dropdown menu
 
 If you want functionality where the menu should be a dropdown on small screens, then you need to create the dropdown from your app.
-The [springer-dropdown](https://github.com/springernature/frontend-springer-toolkit/tree/master/packages/springer-dropdown) has a helper called `createDropdown` that will create the dropdown HTML and instance.
+The [springer-dropdown](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springer/packages/springer-dropdown) has a helper called `createDropdown` that will create the dropdown HTML and instance.
 
 Example usage in an app in conjunction with the springer-dropdown:
 

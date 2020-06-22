@@ -1,0 +1,13 @@
+{
+  "name": "@springernature/global-javascript",
+  "version": "2.1.0",
+  "license": "MIT",
+  "description": "Globally shared Javascript helpers",
+  "keywords": [
+    "javascript",
+    "modules",
+    "helpers",
+    "es6"
+  ],
+  "author": "Springer Nature"
+}
