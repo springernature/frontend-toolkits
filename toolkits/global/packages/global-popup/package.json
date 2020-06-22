@@ -5,5 +5,8 @@
   "license": "MIT",
   "peerDependencies": {
     "@springernature/global-context": "15.2.1"
+  },
+  "dependencies": {
+    "@springernature/global-javascript": "^2.1.0"
   }
 }

@@ -1,4 +1,4 @@
-import {makeArray, getDataOptions} from '@springernature/global-context/js/helpers';
+import {makeArray, getDataOptions} from '@springernature/global-javascript/src/helpers';
 
 const Popups = class {
 	constructor(className) {
@@ -14,56 +14,58 @@ const Popups = class {
 		document.body.appendChild(content);
 	}
 
-	_computePositions(trigger, content) {
+	_px(value) {
+		return value + 'px';
+	};
+
+	_calcPosition(trigger, content) {
 		const distanceScrolled = document.documentElement.scrollTop;
 		const triggerMetrics = trigger.getBoundingClientRect();
 		const offset = {
 			top: triggerMetrics.top + distanceScrolled,
 			left: triggerMetrics.left
 		};
-
 		const arrow = content.querySelector(`.${this._arrowClass}`);
-
 		const windowWidth = document.documentElement.clientWidth;
 		const availableWidth = Math.min(document.querySelector(this.columnSelector).offsetWidth, windowWidth);
-
 		const arrowHeight = 12;
 		const arrowWidth = 20;
 
-		// distance from top of visible viewport - height of content html - height of arrow html
-		// i.e. calculate where the popup needs to go in the space between the trigger and the top of the viewport
-		const above = offset.top - this.content.offsetHeight - arrowHeight;
+		// calc where to position the popup above the trigger
+		// (trigger's distance from top of viewport - popup content's height - arrow's height)
+		const abovePositioning = offset.top - this.content.offsetHeight - arrowHeight;
 
+		// calc where to position the popup below the trigger
+		// (trigger's distance from top of viewport + trigger's height + arrow's height)
+		const belowPositioning = offset.top + triggerMetrics.height + arrowHeight;
 
-		// distance from top of visible viewport + height of trigger + height of arrow html
-		// i.e. calculate where the popup needs to go relative to trigger's top:0 position
-		const below = offset.top + triggerMetrics.height + arrowHeight;
+		// calc popup's overrun of the width of the viewport
+		// (trigger's distance from left of viewport + popup content's width - window's width)
+		// const overrun = offset.left + this.content.offsetWidth - windowWidth;
 
-
-		const overrun = triggerMetrics.left + this.content.offsetWidth - windowWidth + 20;
-
-
-		let position = ABOVE;
-
-		if (above < distanceScrolled) {
-			position = BELOW;
-			arrow.classList.remove(COMPONENT_ARROW_CLASS + '-' + ABOVE);
-			arrow.classList.add(COMPONENT_ARROW_CLASS + '-' + BELOW);
+		let position = 'above';
+		// if there is not enough room for popup above trigger
+		if (abovePositioning < distanceScrolled) {
+			position = 'below';
+			arrow.classList.remove(this._arrowClass + '--above');
+			arrow.classList.add(this._arrowClass + '--below');
 		} else {
-			arrow.classList.remove(COMPONENT_ARROW_CLASS + '-' + BELOW);
-			arrow.classList.add(COMPONENT_ARROW_CLASS + '-' + ABOVE);
+			arrow.classList.remove(this._arrowClass + '--below');
+			arrow.classList.add(this._arrowClass + '--above');
 		}
 
 		if (availableWidth < 600) {
-			arrow.style.left = px(offset.left + 5);
+			// on mobile just position arrow 5px from trigger left
+			arrow.style.left = this._px(offset.left + 5);
 		} else {
-			arrow.style.left = px(Math.max(Math.round((triggerMetrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5));
+			// position arrow in middle of trigger
+			arrow.style.left = this._px(Math.round((triggerMetrics.width / 2) - arrowWidth));
 		}
 
 		return {
-			left: (availableWidth < 600) ? 5 : Math.max(5, offset.left - 10),
-			right: 5,
-			top: (position === ABOVE) ? above : below
+			left: (availableWidth < 600) ? 5 : offset.left,
+			right: 5, // width: 100% for absolutely positioned element
+			top: (position === 'above') ? abovePositioning : belowPositioning
 		};
 	}
 
