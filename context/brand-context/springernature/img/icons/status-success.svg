@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>error</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="success-box" transform="translate(-18.000000, -23.000000)">
+            <g id="icon-success" transform="translate(18.000000, 23.000000)">
+                <circle id="Oval" fill="#00A69D" cx="11.5" cy="11.5" r="11.5"></circle>
+                <path d="M6.13333333,11.8091398 L10.7558824,16.4833333 C10.7558824,16.4833333 12.8980392,12.8107527 14.4764706,10.9188172 C16.054902,8.9155914 17.6333333,7.02365591 17.6333333,7.02365591 L17.1823529,6.13333333 C17.1823529,6.13333333 14.7019608,8.02526882 13.2362745,9.58333333 C11.7705882,11.2526882 10.4176471,12.8107527 10.4176471,12.8107527 L7.59901961,10.2510753 L6.13333333,11.8091398 L6.13333333,11.8091398 Z" id="success" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

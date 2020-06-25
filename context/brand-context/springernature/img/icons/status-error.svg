@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>error</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="error-box" transform="translate(-18.000000, -23.000000)">
+            <g id="icon-/-error" transform="translate(18.000000, 23.000000)">
+                <circle id="Combined-Shape" fill="#C64040" cx="11.5" cy="11.5" r="11.5"></circle>
+                <polygon id="error" fill="#FFFFFF" points="7.61760871 16.6300001 11.3150001 12.9326088 15.0123914 16.6300001 16.6300001 15.0123914 12.9326088 11.3150001 16.6300001 7.61760871 15.0123914 6 11.3150001 9.69739134 7.61760871 6 6 7.61760871 9.69739134 11.3150001 6 15.0123914"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
