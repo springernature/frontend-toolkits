@@ -1,5 +1,8 @@
 # History
 
+## 3.2.1 (2020-06-18)
+    * Add a woff2 version of npg-stix-regular font
+
 ## 3.2.0 (2020-06-18)
     * FEATURE: Add springernature button styles
 
