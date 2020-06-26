@@ -1,5 +1,8 @@
 # History
 
+## 3.2.2 (2020-06-26)
+    * Refactors search.svg to remove excess artbox
+    
 ## 3.2.1 (2020-06-18)
     * Add a woff2 version of npg-stix-regular font
 
