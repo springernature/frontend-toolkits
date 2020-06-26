@@ -5,9 +5,11 @@ const Popup = class {
 		this._trigger = trigger;
 		this._id = id;
 		this._content = document.getElementById(this._id);
-		this._expander = new Expander(this._trigger, this._content);
+		this._columnSelector = '[data-popup-column]';
 		this._className = 'c-popup';
 		this._isOpen = false;
+		this._openClass = 'is-open';
+		this._hideClass = 'u-js-hide';
 		this._arrowClass = `${this._className}__arrow`;
 		this._closeClass = `${this._className}__close`;
 		this._closeButton = `<a href="javascript:;" class=${this._closeClass}>Close</a>`;
@@ -24,6 +26,10 @@ const Popup = class {
 		document.body.appendChild(this._content);
 	}
 
+	_getCloseButton() {
+		return this._content.querySelector(`.${this._closeClass}`);
+	}
+
 	_positionPopup() {
 		this._isOpen = true;
 
@@ -34,8 +40,8 @@ const Popup = class {
 	}
 
 	_close() {
-		if (!this._isOpen) return;
-		this._closeButton.click();
+		this._content.classList.remove(this._openClass);
+		this._content.classList.add(this._hideClass);
 		this._isOpen = false;
 		window.removeEventListener('resize', this._closeHandler);
 	}
@@ -45,7 +51,8 @@ const Popup = class {
 	};
 
 	_bindEvents() {
-		this._expander.init();
+		const expander = new Expander(this._trigger, this._content);
+		expander.init();
 
 		this._trigger.addEventListener('click', event => {
 			event.preventDefault();
@@ -54,28 +61,28 @@ const Popup = class {
 			window.addEventListener('resize', this._closeHandler);
 		});
 
-		this._closeButton.addEventListener('click', event => {
+		this._getCloseButton().addEventListener('click', event => {
 			event.preventDefault();
 			this._close();
 		});
 	}
 
-	_calcPositioning(trigger, content) {
+	_calcPositioning() {
 		const distanceScrolled = document.documentElement.scrollTop;
-		const triggerMetrics = trigger.getBoundingClientRect();
+		const triggerMetrics = this._trigger.getBoundingClientRect();
 		const offset = {
 			top: triggerMetrics.top + distanceScrolled,
 			left: triggerMetrics.left
 		};
-		const arrow = content.querySelector(`.${this._arrowClass}`);
+		const arrow = this._content.querySelector(`.${this._arrowClass}`);
 		const windowWidth = document.documentElement.clientWidth;
-		const availableWidth = Math.min(document.querySelector(this.columnSelector).offsetWidth, windowWidth);
+		const availableWidth = Math.min(document.querySelector(this._columnSelector).offsetWidth, windowWidth);
 		const arrowHeight = 12;
 		const arrowWidth = 20;
 
 		// calc where to position the popup above the trigger
 		// (trigger's distance from top of viewport - popup content's height - arrow's height)
-		const abovePositioning = offset.top - this.content.offsetHeight - arrowHeight;
+		const abovePositioning = offset.top - this._content.offsetHeight - arrowHeight;
 
 		// calc where to position the popup below the trigger
 		// (trigger's distance from top of viewport + trigger's height + arrow's height)
