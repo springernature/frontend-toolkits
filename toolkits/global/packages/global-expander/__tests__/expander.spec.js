@@ -358,6 +358,23 @@ describe('Expander', () => {
 			expect(input.selectionStart === 0).toBe(true);
 			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
+
+		test('Should call BEFORE_FOCUS function if passed to constructor', () => {
+			// Given
+			const callback = () => {
+				const div = document.createElement('div');
+				div.setAttribute('data-before-focus', "");
+				document.body.appendChild(div);
+			};
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				BEFORE_FOCUS: callback
+			});
+			expander.init();
+			// When
+			element.BUTTON.click();
+			// Then
+			expect(document.querySelector('[data-before-focus]')).not.toBe(null);
+		});
 	});
 });
 

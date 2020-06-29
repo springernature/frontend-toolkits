@@ -9,7 +9,8 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	AUTOFOCUS: false
+	AUTOFOCUS: false,
+	BEFORE_FOCUS: undefined
 };
 
 const Expander = class {
@@ -138,6 +139,10 @@ const Expander = class {
 
 		if (this._options.TRIGGER_OPEN_LABEL) {
 			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
+		}
+
+		if (this._options.BEFORE_FOCUS) {
+			this._options.BEFORE_FOCUS();
 		}
 
 		if (this._options.AUTOFOCUS) {

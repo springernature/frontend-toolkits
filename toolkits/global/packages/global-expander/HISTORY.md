@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2020-06-29)
+    * Adds beforeFocus option for calling a function just before target focus
+
 ## 1.0.0 (2020-05-13)
     * Use @springernature/global-javascript instead of deprecated global-context
 

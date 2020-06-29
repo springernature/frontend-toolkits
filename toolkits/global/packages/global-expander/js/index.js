@@ -8,7 +8,8 @@ const attributes = {
 	TRIGGER_OPEN_CLASS: DATA_COMPONENT + '-trigger-open-class',
 	TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',
 	CLOSE_ON_CLICKOFF: DATA_COMPONENT + '-close-on-clickoff',
-	AUTOFOCUS: DATA_COMPONENT + '-autofocus'
+	AUTOFOCUS: DATA_COMPONENT + '-autofocus',
+	BEFORE_FOCUS: DATA_COMPONENT + '-before-focus'
 };
 
 /**
