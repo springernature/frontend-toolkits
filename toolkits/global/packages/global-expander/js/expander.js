@@ -1,4 +1,4 @@
-import {makeArray} from '@springernature/global-javascript/src/helpers';
+import {makeArray} from '../../global-javascript/src/helpers';
 
 /**
  * Local Constants

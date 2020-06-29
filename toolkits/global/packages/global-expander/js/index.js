@@ -1,4 +1,4 @@
-import {makeArray, getDataOptions} from '@springernature/global-javascript/src/helpers';
+import {makeArray, getDataOptions} from '../../global-javascript/src/helpers';
 import {Expander} from './expander';
 
 const DATA_COMPONENT = 'data-expander';

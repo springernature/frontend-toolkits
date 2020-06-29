@@ -1,5 +1,5 @@
-import {makeArray} from '@springernature/global-javascript/src/helpers';
-import {Popup} from '@springernature/global-popup/js/popup';
+import {makeArray} from '../../global-javascript/src/helpers/';
+import {Popup} from './popup';
 
 /**
  * Data Attribute API
