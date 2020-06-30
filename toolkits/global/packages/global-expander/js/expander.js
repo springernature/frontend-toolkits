@@ -169,8 +169,7 @@ const Expander = class {
 		this._updateAriaAttributes();
 		this._setupTemporaryEventListeners();
 	}
-
-
+	
 	close() {
 		if (!this._isOpen) {
 			return;
