@@ -1,4 +1,4 @@
-import {makeArray} from '../../global-javascript/src/helpers';
+import {makeArray, createEvent} from '@springernature/global-javascript/src/helpers';
 
 /**
  * Local Constants
@@ -9,7 +9,8 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	AUTOFOCUS: false
+	AUTOFOCUS: false,
+	FOCUS_EVENT: false
 };
 
 const Expander = class {
@@ -38,9 +39,9 @@ const Expander = class {
 		event.preventDefault();
 
 		if (this._isOpen) {
-			this._close();
+			this.close();
 		} else {
-			this._open();
+			this.open();
 		}
 	}
 
@@ -49,16 +50,16 @@ const Expander = class {
 			event.preventDefault();
 
 			if (this._isOpen) {
-				this._close();
+				this.close();
 			} else {
-				this._open();
+				this.open();
 			}
 		}
 	}
 
 	_handleDocumentKeydown(event) {
 		if (event.key === 'Escape') {
-			this._close();
+			this.close();
 			this._triggerEl.focus();
 		}
 
@@ -66,7 +67,7 @@ const Expander = class {
 			if (event.key === 'Tab') {
 				window.requestAnimationFrame(() => {
 					if (!this._targetTabbableItems.includes(document.activeElement)) {
-						this._close();
+						this.close();
 						this._triggerEl.focus();
 					}
 				});
@@ -81,7 +82,7 @@ const Expander = class {
 			return;
 		}
 
-		this._close();
+		this.close();
 	}
 
 	/**
@@ -123,10 +124,14 @@ const Expander = class {
 	}
 
 	/**
+	 * @public
+	 */
+
+	/**
 	 * Toggling
 	 */
 
-	_open() {
+	open() {
 		if (this._isOpen) {
 			return;
 		}
@@ -138,6 +143,13 @@ const Expander = class {
 
 		if (this._options.TRIGGER_OPEN_LABEL) {
 			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
+		}
+
+		if (this._options.FOCUS_EVENT) {
+			const event = createEvent('focusTarget', 'globalExpander', {
+				bubbles: false
+			});
+			this._triggerEl.dispatchEvent(event);
 		}
 
 		if (this._options.AUTOFOCUS) {
@@ -158,7 +170,7 @@ const Expander = class {
 		this._setupTemporaryEventListeners();
 	}
 
-	_close() {
+	close() {
 		if (!this._isOpen) {
 			return;
 		}
@@ -175,10 +187,6 @@ const Expander = class {
 		this._updateAriaAttributes();
 		this._removeTemporaryEventListeners();
 	}
-
-	/**
-	 * @public
-	 */
 
 	init() {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
