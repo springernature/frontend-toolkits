@@ -51,10 +51,10 @@ const Popup = class {
 	};
 
 	_bindEvents() {
-		const expander = new Expander(this._trigger, this._content);
+		const expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
 		expander.init();
 
-		this._trigger.addEventListener('click', event => {
+		this._trigger.addEventListener('globalExpander:focusEvent', event => {
 			event.preventDefault();
 			if (this._isOpen) return;
 			this._positionPopup();
