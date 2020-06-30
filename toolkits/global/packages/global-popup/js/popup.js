@@ -8,8 +8,7 @@ const Popup = class {
 		this._columnSelector = '[data-popup-column]';
 		this._className = 'c-popup';
 		this._isOpen = false;
-		this._openClass = 'is-open';
-		this._hideClass = 'u-js-hide';
+		this._expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
 		this._arrowClass = `${this._className}__arrow`;
 		this._closeClass = `${this._className}__close`;
 		this._closeButton = `<a href="javascript:;" class=${this._closeClass}>Close</a>`;
@@ -40,8 +39,7 @@ const Popup = class {
 	}
 
 	_close() {
-		this._trigger.classList.remove(this._openClass);
-		this._content.classList.add(this._hideClass);
+		this._expander.close();
 		this._isOpen = false;
 		window.removeEventListener('resize', this._closeHandler);
 	}
@@ -51,8 +49,7 @@ const Popup = class {
 	};
 
 	_bindEvents() {
-		const expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
-		expander.init();
+		this._expander.init();
 
 		this._trigger.addEventListener('globalExpander:focusEvent', event => {
 			event.preventDefault();
