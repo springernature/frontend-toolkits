@@ -37,6 +37,7 @@ myExpander.init();
 | TRIGGER_OPEN_LABEL | -             | String  | Text to set on the trigger when open                                                                                  |
 | CLOSE_ON_FOCUS_OUT  | true          | Boolean | Closes when you click or tab outside of the target                                                                           |
 | AUTOFOCUS          | false         | Boolean | Set focus on the first tabbable element inside the target (will highlight text if appropriate, e.g. input with value) |
+| FOCUS_EVENT          | false         | Boolean | Dispatch custom event on trigger just before expander focuses on target |
 
 The data attribute options are the same, but are lowercase and hyphenated (and strings where the option is a boolean):
 
@@ -45,6 +46,7 @@ The data attribute options are the same, but are lowercase and hyphenated (and s
 - `data-expander-trigger-open-label`
 - `data-expander-close-on-clickoff`
 - `data-expander-autofocus`
+- `data-expander-focus-event`
 
 Note: data attribute options will take precedence over any options set during initialisation.
 
