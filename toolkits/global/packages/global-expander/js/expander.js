@@ -1,4 +1,4 @@
-import {makeArray} from '@springernature/global-javascript/src/helpers';
+import {makeArray, createEvent} from '@springernature/global-javascript/src/helpers';
 
 /**
  * Local Constants
@@ -9,7 +9,8 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	AUTOFOCUS: false
+	AUTOFOCUS: false,
+	FOCUS_EVENT: false
 };
 
 const Expander = class {
@@ -138,6 +139,13 @@ const Expander = class {
 
 		if (this._options.TRIGGER_OPEN_LABEL) {
 			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
+		}
+
+		if (this._options.FOCUS_EVENT) {
+			const event = createEvent('focusTarget', 'globalExpander', {
+				bubbles: false
+			});
+			this._triggerEl.dispatchEvent(event);
 		}
 
 		if (this._options.AUTOFOCUS) {

@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2020-06-30)
+    * Adds option to fire custom event just before expander focuses on target
+
 ## 1.0.0 (2020-05-13)
     * Use @springernature/global-javascript instead of deprecated global-context
 
