@@ -142,7 +142,9 @@ const Expander = class {
 		}
 
 		if (this._options.BEFORE_FOCUS) {
+			/* eslint-disable new-cap */
 			this._options.BEFORE_FOCUS();
+			/* eslint-enable new-cap */
 		}
 
 		if (this._options.AUTOFOCUS) {
