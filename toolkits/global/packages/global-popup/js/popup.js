@@ -40,7 +40,7 @@ const Popup = class {
 	}
 
 	_close() {
-		this._content.classList.remove(this._openClass);
+		this._trigger.classList.remove(this._openClass);
 		this._content.classList.add(this._hideClass);
 		this._isOpen = false;
 		window.removeEventListener('resize', this._closeHandler);
