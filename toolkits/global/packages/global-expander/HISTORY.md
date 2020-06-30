@@ -1,5 +1,8 @@
 # History
 
+## 1.1.1 (2020-06-30)
+    * Makes it clear that open and close methods are public
+
 ## 1.1.0 (2020-06-30)
     * Adds option to fire custom event just before expander focuses on target
 

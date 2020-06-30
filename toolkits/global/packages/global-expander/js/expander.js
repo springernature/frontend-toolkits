@@ -41,7 +41,7 @@ const Expander = class {
 		if (this._isOpen) {
 			this._close();
 		} else {
-			this._open();
+			this.open();
 		}
 	}
 
@@ -52,7 +52,7 @@ const Expander = class {
 			if (this._isOpen) {
 				this._close();
 			} else {
-				this._open();
+				this.open();
 			}
 		}
 	}
@@ -124,10 +124,14 @@ const Expander = class {
 	}
 
 	/**
+	 * @public
+	 */
+
+	/**
 	 * Toggling
 	 */
 
-	_open() {
+	open() {
 		if (this._isOpen) {
 			return;
 		}
@@ -166,7 +170,8 @@ const Expander = class {
 		this._setupTemporaryEventListeners();
 	}
 
-	_close() {
+
+	close() {
 		if (!this._isOpen) {
 			return;
 		}
@@ -183,10 +188,6 @@ const Expander = class {
 		this._updateAriaAttributes();
 		this._removeTemporaryEventListeners();
 	}
-
-	/**
-	 * @public
-	 */
 
 	init() {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {

@@ -28,6 +28,13 @@ const myExpander = new Expander(trigger, target, options);
 myExpander.init();
 ``` 
 
+You can also manually open and close any instance of expander with:
+
+```javascript
+expander.open();
+expander.close();
+```
+
 ### Options
 
 | Option             | Default Value | Type    | Description |
