@@ -39,9 +39,9 @@ const Expander = class {
 		event.preventDefault();
 
 		if (this._isOpen) {
-			this._close();
+			this.close();
 		} else {
-			this._open();
+			this.open();
 		}
 	}
 
@@ -50,16 +50,16 @@ const Expander = class {
 			event.preventDefault();
 
 			if (this._isOpen) {
-				this._close();
+				this.close();
 			} else {
-				this._open();
+				this.open();
 			}
 		}
 	}
 
 	_handleDocumentKeydown(event) {
 		if (event.key === 'Escape') {
-			this._close();
+			this.close();
 			this._triggerEl.focus();
 		}
 
@@ -67,7 +67,7 @@ const Expander = class {
 			if (event.key === 'Tab') {
 				window.requestAnimationFrame(() => {
 					if (!this._targetTabbableItems.includes(document.activeElement)) {
-						this._close();
+						this.close();
 						this._triggerEl.focus();
 					}
 				});
@@ -82,7 +82,7 @@ const Expander = class {
 			return;
 		}
 
-		this._close();
+		this.close();
 	}
 
 	/**
@@ -124,10 +124,14 @@ const Expander = class {
 	}
 
 	/**
+	 * @public
+	 */
+
+	/**
 	 * Toggling
 	 */
 
-	_open() {
+	open() {
 		if (this._isOpen) {
 			return;
 		}
@@ -166,7 +170,7 @@ const Expander = class {
 		this._setupTemporaryEventListeners();
 	}
 
-	_close() {
+	close() {
 		if (!this._isOpen) {
 			return;
 		}
@@ -183,10 +187,6 @@ const Expander = class {
 		this._updateAriaAttributes();
 		this._removeTemporaryEventListeners();
 	}
-
-	/**
-	 * @public
-	 */
 
 	init() {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
