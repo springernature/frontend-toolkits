@@ -358,6 +358,32 @@ describe('Expander', () => {
 			expect(input.selectionStart === 0).toBe(true);
 			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
+
+		test('Should not fire focus event by default', () => {
+			// Given
+			const button = document.querySelector('[data-expander]');
+			const spy = jest.spyOn(button, 'dispatchEvent');
+			const expander = new Expander(element.BUTTON, element.TARGET, {});
+			expander.init();
+			// When
+			element.BUTTON.click();
+			// Then
+			expect(spy).not.toHaveBeenCalled();
+		});
+
+		test('Should fire event if FOCUS_EVENT: true option passed to constructor', () => {
+			// Given
+			const button = document.querySelector('[data-expander]');
+			const spy = jest.spyOn(button, 'dispatchEvent');
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				FOCUS_EVENT: true
+			});
+			expander.init();
+			// When
+			element.BUTTON.click();
+			// Then
+			expect(spy).toHaveBeenCalled();
+		});
 	});
 });
 

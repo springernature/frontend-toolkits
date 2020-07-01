@@ -50,7 +50,8 @@ describe('Data Attribute API', () => {
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
 			CLOSE_ON_CLICKOFF: false,
-			AUTOFOCUS: true
+			AUTOFOCUS: true,
+			FOCUS_EVENT: false
 		};
 
 		// When
@@ -67,7 +68,8 @@ describe('Data Attribute API', () => {
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
 			CLOSE_ON_CLICKOFF: false,
-			AUTOFOCUS: true
+			AUTOFOCUS: true,
+			FOCUS_EVENT: false
 		};
 
 		// When
@@ -79,7 +81,8 @@ describe('Data Attribute API', () => {
 			TRIGGER_OPEN_CLASS: 'data-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'data-trigger-shown-label',
 			CLOSE_ON_CLICKOFF: 'true',
-			AUTOFOCUS: 'false'
+			AUTOFOCUS: 'false',
+			FOCUS_EVENT: false
 		});
 	});
 });
