@@ -27,7 +27,7 @@ popup();
 Three data attribute are required:
 
 | Data attribute     | Type    | Description |
-|--------------------|---------|-----------------------------------------------------------------------------------------------------------------------|
+|--------------------|---------|-------------|
 | data-popup         | Boolean | This is the popup trigger i.e. clicking this will open a popup |
 | data-popup-target  | String  | This is the id of the element in the DOM that Global Popup will use to build the popup contents |
 
