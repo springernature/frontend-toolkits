@@ -1,6 +1,6 @@
 .c-breadcrumb {
 	@include u-list-inline;
-	@include font-size($breadcrumb-font-size-sm);
+	font-size: $breadcrumb-font-size;
 	font-family: $breadcrumb-font-family;
 	color: $breadcrumb-color;
 }
