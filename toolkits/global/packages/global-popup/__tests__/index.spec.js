@@ -1,12 +1,19 @@
-import {Popups} from '../js/index.js';
+import {popup} from '../js/index';
+import {Popup} from '../js/popup';
 
-describe('Popups', () => {
+jest.mock('../js/popup');
+
+describe('Global Popup: index.js (Data Attribute API)', () => {
 	beforeEach(() => {
+		Popup.mockClear();
+
 		document.body.innerHTML = `
-			<span data-popup data-popup-target="popupContent1"></span>
-			<div id="popupContent1" class="c-popup">
-				<p>Some popup text</p>
-			</div>			
+			<main data-popup-column>
+				<span data-popup data-popup-target="popupContent1"></span>
+				<div id="popupContent1">
+					<p>Some popup text</p>
+				</div>			
+			</main>		
 		`
 	});
 
@@ -14,55 +21,33 @@ describe('Popups', () => {
 		document.getElementsByTagName('html')[0].innerHTML = '';
 	});
 
-	it('should build a popup that includes the arrow and close button html', () => {
-		const popups = new Popups('c-popup');
-		popups.init();
+	it('should instantiate Popup if correct data attributes exist', () => {
+		// When
+		popup();
 
-		expect(document.querySelector('.c-popup__arrow')).toBeTruthy();
-		expect(document.querySelector('.c-popup__close')).toBeTruthy();
+		// Then
+		expect(Popup).toHaveBeenCalled();
 	});
 
-	it('should position the popup above the trigger by default', () => {
+	it('should instantiate multiple Popups', () => {
+		// Given
+		const div = document.createElement('div');
+		div.innerHTML = `
+			<span data-popup data-popup-target="popupContent2"></span>
+			<div id="popupContent2">
+				<p>Some popup text</p>
+			</div>			
+		`;
+		document.querySelector('[data-popup-column]').appendChild(div);
+		const trigger = document.querySelector('[data-popup-target="popupContent1"]');
+		const trigger2 = document.querySelector('[data-popup-target="popupContent2"]');
 
-	});
+		// When
+		popup();
 
-	it('should position the popup below the trigger if not enough space in viewport', () => {
-
-	});
-
-	it('should move focus back to trigger if user tabs beyond last element in popup', () => {
-
-	});
-
-	it('should close the popup if a keyboard user focuses on the close button and presses space', () => {
-
-	});
-
-	it('should close one popup when another opens', () => {
-
-	});
-
-	it('should stop event propagation on toggle', () => {
-
-	});
-
-	it('should close the popup if the user clicks out of it', () => {
-		// this should be covered by using global expander component
-	});
-
-	it('should close the popup if the user clicks the close button', () => {
-		// this should be covered by using global expander component
-	});
-
-	it('should close the popup if a keyboard user presses escape', () => {
-		// this should be covered by using global expander component - needs to be added to ge
-	});
-
-	it('should focus the first link in the content', () => {
-		// this should be covered by using global expander component
-	});
-
-	it('should allow the focus target be overridden', () => {
-		// this should be covered by using global expander component - needs to be added to ge
+		// Then
+		expect(Popup).toHaveBeenCalledTimes(2);
+		expect(Popup).toHaveBeenNthCalledWith(1, trigger, 'popupContent1');
+		expect(Popup).toHaveBeenNthCalledWith(2, trigger2, 'popupContent2');
 	});
 });

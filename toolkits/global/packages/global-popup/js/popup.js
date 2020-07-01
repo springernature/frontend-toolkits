@@ -1,4 +1,4 @@
-import {Expander} from '../../global-expander/js/expander.js';
+import {Expander} from '../../global-expander/js/expander';
 
 const Popup = class {
 	constructor(trigger, id) {
@@ -61,6 +61,20 @@ const Popup = class {
 		this._getCloseButton().addEventListener('click', event => {
 			event.preventDefault();
 			this._close();
+		});
+
+		this._getCloseButton().addEventListener('keydown', event => {
+			if (event.key === 'Enter' || event.key === 'Space') {
+				event.preventDefault();
+				this._close();
+			}
+		});
+
+		this._content.addEventListener('keydown', event => {
+			if (event.key === 'Escape') {
+				event.preventDefault();
+				this._close();
+			}
 		});
 	}
 

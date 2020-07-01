@@ -5,7 +5,7 @@ import {Popup} from './popup';
  * Data Attribute API
  */
 
-export const popup = () => {
+const popup = () => {
 	const triggers = makeArray(document.querySelectorAll('[data-popup]'));
 	if (triggers.length === 0) return;
 	triggers.forEach(trigger => {
@@ -15,3 +15,5 @@ export const popup = () => {
 		new Popup(trigger, targetElement);
 	});
 };
+
+export {popup};
