@@ -1,7 +1,7 @@
 {
   "name": "@springernature/global-popup",
   "version": "0.1.0",
-  "description": "Click a trigger element to build and display a popup based on html that it takes as an argument",
+  "description": "Builds and styles a popup that can be opened and closed",
   "license": "MIT",
   "peerDependencies": {
     "@springernature/global-context": "15.2.1"
