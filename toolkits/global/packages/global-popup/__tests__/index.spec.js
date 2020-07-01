@@ -8,12 +8,10 @@ describe('Global Popup: index.js (Data Attribute API)', () => {
 		Popup.mockClear();
 
 		document.body.innerHTML = `
-			<main data-popup-column>
-				<span data-popup data-popup-target="popupContent1"></span>
-				<div id="popupContent1">
-					<p>Some popup text</p>
-				</div>			
-			</main>		
+			<span data-popup data-popup-target="popupContent1"></span>
+			<div id="popupContent1">
+				<p>Some popup text</p>
+			</div>			
 		`
 	});
 
@@ -38,7 +36,7 @@ describe('Global Popup: index.js (Data Attribute API)', () => {
 				<p>Some popup text</p>
 			</div>			
 		`;
-		document.querySelector('[data-popup-column]').appendChild(div);
+		document.querySelector('[data-popup]').parentNode.appendChild(div);
 		const trigger = document.querySelector('[data-popup-target="popupContent1"]');
 		const trigger2 = document.querySelector('[data-popup-target="popupContent2"]');
 

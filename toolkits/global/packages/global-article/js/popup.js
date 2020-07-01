@@ -199,7 +199,7 @@ var PopupGroup = (function (window, document) {
 				arrow.classList.add(COMPONENT_ARROW_CLASS + '-' + ABOVE);
 			}
 
-			if (availableWidth < 600) {
+			if (z < 600) {
 				arrow.style.left = px(offset.left + 5);
 			} else {
 				arrow.style.left = px(Math.max(Math.round((metrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5));

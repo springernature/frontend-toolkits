@@ -5,7 +5,6 @@ const Popup = class {
 		this._trigger = trigger;
 		this._id = id;
 		this._content = document.getElementById(this._id);
-		this._columnSelector = '[data-popup-column]';
 		this._className = 'c-popup';
 		this._isOpen = false;
 		this._expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
@@ -51,7 +50,7 @@ const Popup = class {
 	_bindEvents() {
 		this._expander.init();
 
-		this._trigger.addEventListener('globalExpander:focusEvent', event => {
+		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
 			if (this._isOpen) return;
 			this._positionPopup();
@@ -87,7 +86,6 @@ const Popup = class {
 		};
 		const arrow = this._content.querySelector(`.${this._arrowClass}`);
 		const windowWidth = document.documentElement.clientWidth;
-		const availableWidth = Math.min(document.querySelector(this._columnSelector).offsetWidth, windowWidth);
 		const arrowHeight = 12;
 		const arrowWidth = 20;
 
@@ -110,7 +108,7 @@ const Popup = class {
 			arrow.classList.add(this._arrowClass + '--above');
 		}
 
-		if (availableWidth < 600) {
+		if (windowWidth < 600) {
 			// just position arrow 5px from trigger left
 			arrow.style.left = this._px(offset.left + 5);
 		} else {
@@ -119,8 +117,8 @@ const Popup = class {
 		}
 
 		return {
-			left: (availableWidth < 600) ? 5 : offset.left,
-			right: 5, // grow across page
+			left: (windowWidth < 600) ? 5 : offset.left,
+			right: 5, // grow across page (width of popup controlled by css max-width)
 			top: (position === 'above') ? abovePositioning : belowPositioning
 		};
 	}

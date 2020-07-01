@@ -9,12 +9,10 @@ function getCloseBtn() {
 describe('Global Popup: popup.js', () => {
 	beforeEach(() => {
 		document.body.innerHTML = `
-			<main data-popup-column>
-				<span data-test-trigger></span>
-				<div id="popupContent1">
-					<p>Some popup text</p>
-				</div>			
-			</main>
+			<span data-test-trigger></span>
+			<div id="popupContent1">
+				<p>Some popup text</p>
+			</div>			
 		`;
 		trigger = document.querySelector('[data-test-trigger]');
 	});
@@ -142,12 +140,10 @@ describe('Global Popup: popup.js', () => {
 	it('should close one popup when another opens', () => {
 		const html = document.createElement('div');
 		html.innerHTML = `
-			<main data-popup-column>
-				<span data-test-trigger-2></span>
-				<div id="popupContent2">
-					<p>Some popup text</p>
-				</div>			
-			</main>
+			<span data-test-trigger-2></span>
+			<div id="popupContent2">
+				<p>Some popup text</p>
+			</div>			
 		`;
 		document.body.appendChild(html);
 

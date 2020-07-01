@@ -18,12 +18,10 @@ popup();
 ```
 
 ```html
-<main data-popup-column>
-    <span data-popup data-popup-target="popupContent1">Popup trigger</span>
-    <div id="popupContent1">
-        <p>Some popup text</p>
-    </div>			
-</main>
+<span data-popup data-popup-target="popupContent1">Popup trigger</span>
+<div id="popupContent1">
+    <p>Some popup text</p>
+</div>			
 ```
 
 Three data attribute are required:
@@ -32,7 +30,6 @@ Three data attribute are required:
 |--------------------|---------|-----------------------------------------------------------------------------------------------------------------------|
 | data-popup         | Boolean | This is the popup trigger i.e. clicking this will open a popup |
 | data-popup-target  | String  | This is the id of the element in the DOM that Global Popup will use to build the popup contents |
-| data-popup-column  | Boolean | The popup will be constrained inside the width of this element |
 
 #### Directly
 
@@ -44,18 +41,8 @@ new Popup(trigger, 'popupContent1');
 ```
 
 ```html
-<main data-popup-column>
-    <span>Popup trigger</span>
-    <div id="popupContent1">
-        <p>Some popup text</p>
-    </div>			
-</main>
+<span>Popup trigger</span>
+<div id="popupContent1">
+    <p>Some popup text</p>
+</div>			
 ```
-
-One data attribute is required:
-
-| Data attribute     | Type    | Description |
-|--------------------|---------|-----------------------------------------------------------------------------------------------------------------------|
-| data-popup-column  | Boolean | The popup will be constrained inside the width of this element |
-
-
