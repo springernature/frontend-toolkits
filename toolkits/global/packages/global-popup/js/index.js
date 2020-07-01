@@ -15,7 +15,7 @@ const popup = () => {
 			return;
 		}
 		const targetElementSelector = trigger.getAttribute('data-popup-target');
-		if (!targetElementSelector) {
+		if (!targetElementSelector && !document.querySelector(targetElementSelector)) {
 			return;
 		}
 		/* eslint-disable no-new */
