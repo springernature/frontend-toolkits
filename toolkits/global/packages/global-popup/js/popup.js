@@ -4,7 +4,7 @@ const Popup = class {
 	constructor(trigger, id) {
 		this._trigger = trigger;
 		this._id = id;
-		this._content = document.getElementById(this._id);
+		this._content = document.querySelector(`#${this._id}`);
 		this._className = 'c-popup';
 		this._isOpen = false;
 		this._expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
@@ -45,14 +45,16 @@ const Popup = class {
 
 	_px(value) {
 		return value + 'px';
-	};
+	}
 
 	_bindEvents() {
 		this._expander.init();
 
 		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
-			if (this._isOpen) return;
+			if (this._isOpen) {
+				return;
+			}
 			this._positionPopup();
 			window.addEventListener('resize', this._closeHandler);
 		});
