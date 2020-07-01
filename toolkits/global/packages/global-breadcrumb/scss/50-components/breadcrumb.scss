@@ -1,13 +1,14 @@
 .c-breadcrumb {
-    @include u-list-inline;
-    @include font-size($breadcrumb-font-size-sm);
-    font-family: $breadcrumb-font-family;
-    color: $breadcrumb-color;
+	@include u-list-inline;
+	@include font-size($breadcrumb-font-size-sm);
+	font-family: $breadcrumb-font-family;
+	color: $breadcrumb-color;
 }
+
 .c-breadcrumb__link {
-    color: $breadcrumb-link-color;
+	color: $breadcrumb-link-color;
 }
 
 .c-breadcrumb__chevron {
-    margin: 0 $breadcrumb-chevron-spacing;
+	margin: 0 $breadcrumb-chevron-spacing;
 }
