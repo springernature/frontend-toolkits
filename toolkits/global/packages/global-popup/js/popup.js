@@ -111,7 +111,7 @@ const Popup = class {
 		}
 
 		if (availableWidth < 600) {
-			// on narrow just position arrow 5px from trigger left
+			// just position arrow 5px from trigger left
 			arrow.style.left = this._px(offset.left + 5);
 		} else {
 			// position arrow in middle of trigger
