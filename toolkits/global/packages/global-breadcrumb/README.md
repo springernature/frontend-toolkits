@@ -30,7 +30,7 @@ The `global-breadcrumb` component currently uses the `DEFAULT` brand only.
         </svg>
     </li>
     <li class="c-breadcrumb__item">
-        Link 3
+        Text 3
     </li>
 </ul>
 ```
