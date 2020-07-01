@@ -24,7 +24,7 @@ popup();
 </div>			
 ```
 
-Three data attribute are required:
+Two data attribute are required:
 
 | Data attribute     | Type    | Description |
 |--------------------|---------|-------------|
