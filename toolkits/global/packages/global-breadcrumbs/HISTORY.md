@@ -1,3 +1,6 @@
+## 0.2.0 (2020-07-01)
+    * Change default link color
+
 ## 0.1.0 (2020-07-01)
     * Add font size variation for Nature
 

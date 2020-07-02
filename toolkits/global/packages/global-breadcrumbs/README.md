@@ -2,7 +2,7 @@
 
 ## Branding
 
-The `global-breadcrumbs` component currently uses the `DEFAULT` brand only.
+The `global-breadcrumbs` component currently uses the `DEFAULT` and `NATURE` brand only.
 
 ```scss
 // Include this with your settings
