@@ -1,22 +1,22 @@
 /**
- * Responsive Font Sizes v9.0.3
+ * Responsive Font Sizes v8.0.4
  * https://github.com/twbs/rfs
  * https://github.com/twbs/rfs/blob/main/LICENSE
  */
 
 // Configuration
 // Adapted from:
-// https://github.com/twbs/rfs/blob/v9.0.3/scss.scss
+// https://github.com/twbs/rfs/blob/v8.0.4/scss.scss
 
-// Base value
-$rfs-base-value: 1.25rem;
-$rfs-unit: rem;
+// Base font size
+$rfs-base-font-size: 1.25rem;
+$rfs-font-size-unit: rem;
 
-@if $rfs-unit != rem and $rfs-unit != px {
-  @error "`#{$rfs-unit}` is not a valid unit for $rfs-unit. Use `px` or `rem`.";
+@if $rfs-font-size-unit != rem and $rfs-font-size-unit != px {
+  @error "`#{$rfs-font-size-unit}` is not a valid unit for $rfs-font-size-unit. Use `px` or `rem`.";
 }
 
-// Breakpoint at where values start decreasing if screen width is smaller
+// Breakpoint at where font-size starts decreasing if screen width is smaller
 $rfs-breakpoint: 1200px;
 $rfs-breakpoint-unit: px;
 
@@ -24,18 +24,15 @@ $rfs-breakpoint-unit: px;
   @error "`#{$rfs-breakpoint-unit}` is not a valid unit for $rfs-breakpoint-unit. Use `px`, `em` or `rem`.";
 }
 
-// Resize values based on screen height and width
+// Resize font size based on screen height and width
 $rfs-two-dimensional: false;
 
 // Factor of decrease
 $rfs-factor: 10;
 
-@if type-of($rfs-factor) != number or $rfs-factor <= 1 {
+@if type-of($rfs-factor) != "number" or $rfs-factor <= 1 {
   @error "`#{$rfs-factor}` is not a valid  $rfs-factor, it must be greater than 1.";
 }
-
-// Mode. Possibilities: "min-media-query", "max-media-query"
-$rfs-mode: min-media-query;
 
 // Generate enable or disable classes. Possibilities: false, "enable" or "disable"
 $rfs-class: false;
@@ -46,32 +43,27 @@ $rfs-rem-value: 16;
 // Safari iframe resize bug: https://github.com/twbs/rfs/issues/14
 $rfs-safari-iframe-resize-bug-fix: false;
 
-// Disable RFS by setting $enable-rfs to false
-$enable-rfs: true;
+// Disable RFS by setting $enable-responsive-font-sizes to false
+$enable-responsive-font-sizes: true;
 
-// Cache $rfs-base-value unit
-$rfs-base-value-unit: unit($rfs-base-value);
+// Cache $rfs-base-font-size unit
+$rfs-base-font-size-unit: unit($rfs-base-font-size);
 
-// Remove px-unit from $rfs-base-value for calculations
-@if $rfs-base-value-unit == px {
-  $rfs-base-value: $rfs-base-value / ($rfs-base-value * 0 + 1);
+// Remove px-unit from $rfs-base-font-size for calculations
+@if $rfs-base-font-size-unit == "px" {
+  $rfs-base-font-size: $rfs-base-font-size / ($rfs-base-font-size * 0 + 1);
 }
-@else if $rfs-base-value-unit == rem {
-  $rfs-base-value: $rfs-base-value / ($rfs-base-value * 0 + 1 / $rfs-rem-value);
+@else if $rfs-base-font-size-unit == "rem" {
+  $rfs-base-font-size: $rfs-base-font-size / ($rfs-base-font-size * 0 + 1 / $rfs-rem-value);
 }
 
 // Cache $rfs-breakpoint unit to prevent multiple calls
 $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 
 // Remove unit from $rfs-breakpoint for calculations
-@if $rfs-breakpoint-unit-cache == px {
+@if $rfs-breakpoint-unit-cache == "px" {
   $rfs-breakpoint: $rfs-breakpoint / ($rfs-breakpoint * 0 + 1);
 }
-@else if $rfs-breakpoint-unit-cache == rem or $rfs-breakpoint-unit-cache == "em" {
+@else if $rfs-breakpoint-unit-cache == "rem" or $rfs-breakpoint-unit-cache == "em" {
   $rfs-breakpoint: $rfs-breakpoint / ($rfs-breakpoint * 0 + 1 / $rfs-rem-value);
 }
-
-// Calculate the media query value
-$rfs-mq-value: if($rfs-breakpoint-unit == px, #{$rfs-breakpoint}px, #{$rfs-breakpoint / $rfs-rem-value}#{$rfs-breakpoint-unit});
-$rfs-mq-property-width: if($rfs-mode == max-media-query, max-width, min-width);
-$rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height);
