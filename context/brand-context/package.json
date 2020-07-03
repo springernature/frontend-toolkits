@@ -4,8 +4,5 @@
   "license": "MIT",
   "description": "Bootstrapping for all components and products",
   "keywords": [],
-  "author": "Springer Nature",
-  "dependencies": {
-    "rfs": "^8.0.4"
-  }
+  "author": "Springer Nature"
 }
