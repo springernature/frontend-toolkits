@@ -1,5 +1,8 @@
 # History
 
+## 3.2.3 (2020-07-03)
+    * Prevent hover from removing focus outline on springernature and nature context
+    
 ## 3.2.2 (2020-06-26)
     * Refactors search.svg to remove excess artbox
     
