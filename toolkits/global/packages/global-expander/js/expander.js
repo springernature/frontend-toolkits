@@ -118,7 +118,7 @@ const Expander = class {
 				element.setAttribute(attribute, (!attributeAsBoolean).toString());
 			}
 		};
-
+		setBooleanAttribute(this._triggerEl, 'aria-pressed');
 		setBooleanAttribute(this._triggerEl, 'aria-expanded');
 		setBooleanAttribute(this._targetEl, 'aria-hidden');
 	}

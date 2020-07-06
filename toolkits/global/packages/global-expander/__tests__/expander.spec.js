@@ -146,11 +146,13 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			element.BUTTON.click();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
@@ -159,12 +161,14 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			const keydownEnterEvent = createKeydownEvent('Enter');
 			element.BUTTON.dispatchEvent(keydownEnterEvent);
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
@@ -173,11 +177,13 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			clickButtonTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
@@ -186,11 +192,13 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			pressEnterKeyTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
@@ -199,11 +207,13 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
 			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			pressSpaceKeyTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
