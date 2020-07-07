@@ -1,11 +1,14 @@
 # History
 
+## 3.2.4 (2020-07-07)
+    * Setup for A/B test to make all fonts on some nature journals use sans-serif 
+
 ## 3.2.3 (2020-07-03)
     * Prevent hover from removing focus outline on springernature and nature context
-    
+
 ## 3.2.2 (2020-06-26)
     * Refactors search.svg to remove excess artbox
-    
+
 ## 3.2.1 (2020-06-18)
     * Add a woff2 version of npg-stix-regular font
 
