@@ -1,7 +1,7 @@
 /**
- * @param  {function} func - function to execute
- * @param  {number} wait - timeout to execute
- * @param  {boolean} immediate - execute the callback immediately
+ * @param {function} func - function to execute
+ * @param {number} wait - timeout to execute
+ * @param {boolean} immediate - execute the callback immediately
  */
 
 export const debounce = (func, wait, immediate) => {
