@@ -2,47 +2,45 @@ import {debounce} from "../../../src/helpers";
 
 beforeEach(() => jest.useFakeTimers());
 
-describe('debounce', () => {
-	test('Should not call func if time is less that the wait time', () => {
-		const func = jest.fn();
-		const debouncedCallback = debounce(func, 500, false);
+test('Should not call func if time is less that the wait time', () => {
+	const func = jest.fn();
+	const debouncedFunc = debounce(func, 500, false);
 
-		// Call it several times with 100ms between each call
-		for(let i = 0; i < 5; i++) {
-			jest.advanceTimersByTime(100);
-			debouncedCallback();
-		}
+	// Call it several times with 100ms between each call
+	for(let i = 0; i < 5; i++) {
+		jest.advanceTimersByTime(100);
+		debouncedFunc();
+	}
 
-		// Fast-forward to wait time
-		jest.advanceTimersByTime(500);
+	// Fast-forward to wait time
+	jest.advanceTimersByTime(500);
 
-		expect(func).toHaveBeenCalledTimes(1);
-	});
+	expect(func).toHaveBeenCalledTimes(1);
+});
 
-	test('immediate falsey', () => {
-		const func = jest.fn();
-		const debouncedCallback = debounce(func, 200, false);
+test('immediate falsey', () => {
+	const func = jest.fn();
+	const debouncedFunc = debounce(func, 200, false);
 
-		debouncedCallback();
-		expect(func).not.toBeCalled();
+	debouncedFunc();
+	expect(func).not.toBeCalled();
 
-		// Fast-forward until all timers have been executed
-		jest.runAllTimers();
+	// Fast-forward until all timers have been executed
+	jest.runAllTimers();
 
-		expect(func).toBeCalled();
-		expect(func).toHaveBeenCalledTimes(1);
-	});
+	expect(func).toBeCalled();
+	expect(func).toHaveBeenCalledTimes(1);
+});
 
-	test('immediate truthy', () => {
-		const func = jest.fn();
-		const debouncedCallback = debounce(func, 200, true);
+test('immediate truthy', () => {
+	const func = jest.fn();
+	const debouncedFunc = debounce(func, 200, true);
 
-		debouncedCallback();
-		expect(func).toBeCalled();
+	debouncedFunc();
+	expect(func).toBeCalled();
 
-		// Fast-forward until all timers have been executed
-		jest.runAllTimers();
+	// Fast-forward until all timers have been executed
+	jest.runAllTimers();
 
-		expect(func).toHaveBeenCalledTimes(1);
-	});
+	expect(func).toHaveBeenCalledTimes(1);
 });
