@@ -9,6 +9,7 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
+	TARGET_FOCUS: false,
 	AUTOFOCUS: false,
 	FOCUS_EVENT: false
 };
@@ -152,6 +153,11 @@ const Expander = class {
 			this._triggerEl.dispatchEvent(event);
 		}
 
+		if (this._options.TARGET_FOCUS) {
+			this._targetEl.setAttribute('tabindex', '-1');
+			this._targetEl.focus();
+		}
+
 		if (this._options.AUTOFOCUS) {
 			if (this._targetTabbableItems.length > 0) {
 				const firstTabbableItem = this._targetTabbableItems[0];
@@ -161,9 +167,6 @@ const Expander = class {
 					firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
 				}
 			}
-		} else {
-			this._targetEl.setAttribute('tabindex', '-1');
-			this._targetEl.focus();
 		}
 
 		this._updateAriaAttributes();
