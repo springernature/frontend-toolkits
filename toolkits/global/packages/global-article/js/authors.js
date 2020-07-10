@@ -81,7 +81,7 @@ function AuthorList() {
 		};
 
 		var authorPopup = function (event, $link) {
-			var POPUP_CLASS = 'c-author-popup';
+			var POPUP_CLASS = 'c-popup';
 			var AUTHOR_LINK_CLASS = POPUP_CLASS + '__link';
 			var AUTHOR_LIST_CLASS = POPUP_CLASS + '__author-list';
 			var AFFILIATIONS_ADDRESS = '.c-article-author-affiliation__address';
