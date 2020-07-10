@@ -1,5 +1,8 @@
 # History
 
+## 20.0.0 (2019-07-10)
+	* Remmoves basic popup styles from author popups as replaced by Global Popup
+
 ## 19.2.0 (2019-04-21)
 	* Add test coverage for `Authors` component
 

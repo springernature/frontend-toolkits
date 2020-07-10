@@ -81,7 +81,7 @@ function AuthorList() {
 		};
 
 		var authorPopup = function (event, $link) {
-			var POPUP_CLASS = 'c-popup';
+			var POPUP_CLASS = 'c-author-popup';
 			var AUTHOR_LINK_CLASS = POPUP_CLASS + '__link';
 			var AUTHOR_LIST_CLASS = POPUP_CLASS + '__author-list';
 			var AFFILIATIONS_ADDRESS = '.c-article-author-affiliation__address';
@@ -172,7 +172,7 @@ function AuthorList() {
 			var $linkCopy = $link.clone();
 			removeSvgFrom($linkCopy);
 
-			var html = '<div role="region" id="popup-' + id + '" class="' + POPUP_CLASS + '" aria-labelledby="' + id + '" aria-describedby="author-dialog"><section>';
+			var html = '<div role="region" id="popup-' + id + '" class="c-popup ' + POPUP_CLASS + '" aria-labelledby="' + id + '" aria-describedby="author-dialog"><section>';
 			html += getHeadingHtml($linkCopy);
 			if (id.match(/^group/)) { // eslint-disable-line  unicorn/prefer-starts-ends-with
 				html += getGroupHtml(id);
