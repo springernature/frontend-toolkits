@@ -1,8 +1,8 @@
 .c-popup {
 	position: absolute;
 	font-family: $font-family-serif;
-	z-index: 100;
-	padding: $c-popup--padding-vertical $c-popup--padding-right $c-popup--padding-vertical $c-popup--padding-left;
+	z-index: $c-popup--zindex;
+	padding: $c-popup--padding;
 	border: 1px solid $c-popup--border-color;
 	box-shadow: $c-popup--box-shadow;
 	min-width: $c-popup--min-width;
