@@ -1,4 +1,3 @@
-/* global $ */
 const {Popup} = require('@springernature/global-popup/js/popup');
 
 /**
@@ -49,7 +48,7 @@ function AuthorList() {
 				item.className = cls;
 				var link = document.createElement('a');
 				link.className = ETAL_CLASS;
-				link.setAttribute('href', 'javascript:;');
+				link.setAttribute('href', 'javascript:;'); // eslint-disable-line no-script-url
 				link.setAttribute('aria-label', label);
 				link.setAttribute('title', label);
 				link.innerHTML = text;
@@ -83,12 +82,12 @@ function AuthorList() {
 				children[countAuthors - 2].parentNode.insertBefore(moreAuthorsItem, children[countAuthors - 2]);
 				authors.appendChild(fewerAuthorsItem);
 
-				Array.prototype.slice.call(children, 2, countAuthors - 1).forEach(function (el) {
+				Array.prototype.slice.call(children, 2, countAuthors - 1).forEach(function (element) {
 					if (exceedsFullscreenLimit) {
-						el.classList.add('js-author-etal');
+						element.classList.add('js-author-etal');
 					}
 					if (exceedsSmallscreenLimit) {
-						el.classList.add('js-smaller-author-etal');
+						element.classList.add('js-smaller-author-etal');
 					}
 				});
 			}
@@ -138,7 +137,7 @@ function AuthorList() {
 
 			var getBodyHtml = function (link, item) {
 				var correspId = link.getAttribute('data-corresp-id');
-				var correspLink = correspId ? document.getElementById('corresp-' + correspId) : null;
+				var correspLink = correspId ? document.querySelector('#corresp-' + correspId) : null;
 				var hrefs = [];
 				var notes = [];
 				var affiliations = [];
@@ -199,13 +198,13 @@ function AuthorList() {
 			};
 
 			var getFooterHtml = function (id) {
-				var item = document.getElementById(id);
+				var item = document.querySelector('#' + id);
 
 				if (item) {
 					var clone = item.cloneNode(true);
 					var name = clone.querySelector('.js-search-name');
 					if (name) {
-						name.parentNode.removeChild(name);
+						name.parentNode.removeChild(name); // eslint-disable-line unicorn/prefer-node-remove
 					}
 					return clone.innerHTML;
 				}
@@ -213,7 +212,7 @@ function AuthorList() {
 			};
 
 			var getGroupHtml = function (id) {
-				var item = document.getElementById(id);
+				var item = document.querySelector('#' + id);
 
 				if (item) {
 					var clone = item.cloneNode(true);
@@ -223,7 +222,7 @@ function AuthorList() {
 						ul.classList.add('c-article-author-institutional-author__author-list--popup');
 					}
 					if (h3) {
-						h3.parentNode.removeChild(h3);
+						h3.parentNode.removeChild(h3); // eslint-disable-line unicorn/prefer-node-remove
 					}
 					return clone.innerHTML.replace(/[\r\n]/g, '');
 				}
@@ -250,7 +249,7 @@ function AuthorList() {
 			div.innerHTML = html;
 			document.body.appendChild(div);
 
-			new Popup(link, `popup-${id}`);
+			new Popup(link, `popup-${id}`); // eslint-disable-line no-new
 		};
 
 		if (options.etal) {
@@ -259,14 +258,13 @@ function AuthorList() {
 
 		authors.classList.add('js-no-scroll');
 
-		Array.prototype.slice.call(authors.querySelectorAll('sup > a'), 0).forEach(function (el) {
-			el.setAttribute('tabIndex', '-1');
+		Array.prototype.slice.call(authors.querySelectorAll('sup > a'), 0).forEach(function (element) {
+			element.setAttribute('tabIndex', '-1');
 		});
 
-		Array.prototype.slice.call(authors.querySelectorAll('a[data-author-popup]')).forEach(function(link){
+		Array.prototype.slice.call(authors.querySelectorAll('a[data-author-popup]')).forEach(function (link) {
 			authorPopup(link);
 		});
-
 
 		authors.addEventListener('click', function (event) {
 			var link = event.target.closest('a');
