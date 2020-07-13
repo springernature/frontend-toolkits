@@ -1,5 +1,10 @@
 # History
 
+## 2.2.0 (2020-07-10)
+    * FEATURE: getCookie util
+    * FEATURE: throttle util
+    * FEATURE: debounce util
+
 ## 2.1.0 (2020-06-17)
     * FEATURE: createEvent, custom namespaced events
 
