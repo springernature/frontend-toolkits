@@ -1,16 +1,23 @@
 /**
  * @param {function} func - function to execute
- * @param {number} wait - timeout to execute
- * @param {boolean} immediate - execute the callback immediately
+ * @param {object=} - customEvent options
+ * @return {function} - debounced function
  */
 
-export const debounce = (func, wait, immediate) => {
+export const debounce = (func, {wait = 'raf', immediate = false} = {}) => {
+	const raf = (wait === 'raf');
+
+	if (!raf && typeof wait !== 'number') {
+		return;
+	}
+
 	let timeout;
 
+	// Return a function to run debounced
 	return function () {
-		const context = this;
-		const args = arguments; // eslint-disable-line unicorn/prevent-abbreviations
-		const later = function () {
+		let context = this;
+		let args = arguments; // eslint-disable-line unicorn/prevent-abbreviations
+		const later = () => {
 			timeout = null;
 			if (!immediate) {
 				func.apply(context, args);
@@ -18,8 +25,17 @@ export const debounce = (func, wait, immediate) => {
 		};
 		const callNow = immediate && !timeout;
 
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
+		// If there's a timer, cancel it
+		if (timeout) {
+			if (raf) {
+				window.cancelAnimationFrame(timeout);
+			} else {
+				console.log('into clear timeout');
+				clearTimeout(timeout);
+			}
+		}
+
+		timeout = raf ? window.requestAnimationFrame(() => func.apply(context, args)) : setTimeout(later, wait);
 
 		if (callNow) {
 			func.apply(context, args);

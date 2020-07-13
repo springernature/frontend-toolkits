@@ -1,46 +1,83 @@
 import {debounce} from "../../../src/helpers";
 
-beforeEach(() => jest.useFakeTimers());
+describe('requestAnimationFrame', () => {
+	test('Should not call func until the next animation frame after the last call', done => {
+		const func = jest.fn();
+		const debouncedFunc = debounce(func);
 
-test('Should not call func if time is less that the wait time', () => {
-	const func = jest.fn();
-	const debouncedFunc = debounce(func, 500, false);
+		for(let i = 0; i < 5; i++) {
+			debouncedFunc();
+		}
 
-	// Call it several times with 100ms between each call
-	for(let i = 0; i < 5; i++) {
-		jest.advanceTimersByTime(100);
+		expect(func).not.toHaveBeenCalled();
+
+		window.requestAnimationFrame(() => {
+			expect(func).toHaveBeenCalledTimes(1);
+			done();
+		});
+	});
+
+	test('When immediate is true, it should call func the first time', done => {
+		const func = jest.fn();
+		const debouncedFunc = debounce(func, {immediate: true});
+
 		debouncedFunc();
-	}
+		expect(func).toBeCalledTimes(1);
 
-	// Fast-forward to wait time
-	jest.advanceTimersByTime(500);
+		// Call it several times with 100ms between each call
+		for(let i = 0; i < 5; i++) {
+			debouncedFunc();
+		}
 
-	expect(func).toHaveBeenCalledTimes(1);
+		window.requestAnimationFrame(() => {
+			expect(func).toHaveBeenCalledTimes(2);
+			done();
+		});
+	});
 });
 
-test('immediate falsey', () => {
-	const func = jest.fn();
-	const debouncedFunc = debounce(func, 200, false);
+describe('setTimeout', () => {
+	beforeEach(() => jest.useFakeTimers());
 
-	debouncedFunc();
-	expect(func).not.toBeCalled();
+	test('Should not call func until the wait time has passed after the last call', () => {
+		const func = jest.fn();
+		const debouncedFunc = debounce(func, {wait: 200});
 
-	// Fast-forward until all timers have been executed
-	jest.runAllTimers();
+		// Call it several times with 100ms between each call
+		for(let i = 0; i < 5; i++) {
+			jest.advanceTimersByTime(100);
+			debouncedFunc();
+		}
 
-	expect(func).toBeCalled();
-	expect(func).toHaveBeenCalledTimes(1);
+		expect(func).not.toHaveBeenCalled();
+
+		jest.runAllTimers();
+
+		expect(func).toBeCalled();
+		expect(func).toHaveBeenCalledTimes(1);
+	});
+
+	test('When immediate is true, it should call func the first time', () => {
+		const func = jest.fn();
+		const debouncedFunc = debounce(func, {wait: 200, immediate: true});
+
+		debouncedFunc();
+		expect(func).toBeCalledTimes(1);
+
+		jest.runAllTimers();
+
+		for(let i = 0; i < 5; i++) {
+			jest.advanceTimersByTime(100);
+			debouncedFunc();
+		}
+
+		jest.runAllTimers();
+
+		expect(func).toHaveBeenCalledTimes(2);
+	});
 });
 
-test('immediate truthy', () => {
-	const func = jest.fn();
-	const debouncedFunc = debounce(func, 200, true);
 
-	debouncedFunc();
-	expect(func).toBeCalled();
 
-	// Fast-forward until all timers have been executed
-	jest.runAllTimers();
 
-	expect(func).toHaveBeenCalledTimes(1);
-});
+
