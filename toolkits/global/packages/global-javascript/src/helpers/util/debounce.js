@@ -1,6 +1,8 @@
 /**
  * @param {function} func - function to execute
- * @param {object=} - customEvent options
+ * @param {Object} options
+ * @param {number | string} options.wait - Time in ms
+ * @param {Boolean} options.immediate - Whether the func should be called immediately
  * @return {function} - debounced function
  */
 
