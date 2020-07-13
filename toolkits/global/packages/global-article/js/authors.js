@@ -247,7 +247,7 @@ function AuthorList() {
 
 			var div = document.createElement('div');
 			div.innerHTML = html;
-			document.body.appendChild(div);
+			document.body.appendChild(div.firstChild);
 
 			new Popup(link, `popup-${id}`); // eslint-disable-line no-new
 		};
