@@ -1,7 +1,7 @@
 /**
  * @param {function} func - function to execute
  * @param {number} wait - timeout to execute
- * @returns {function(...[*]=)}
+ * @return {function} - throttled function
  */
 
 export const throttle = (func, wait = 100) => {
