@@ -1,8 +1,8 @@
 /**
  * @param {function} func - function to execute
  * @param {Object} options
- * @param {number | string} options.wait - Time in ms
- * @param {Boolean} options.immediate - Whether the func should be called immediately
+ * @param {number | string} options.wait - Time in ms, defaults to 'raf'
+ * @param {Boolean} options.immediate - Whether the func should be called immediately, defaults to false
  * @return {function} - debounced function
  */
 
