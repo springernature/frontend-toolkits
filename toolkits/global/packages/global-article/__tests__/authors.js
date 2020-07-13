@@ -1,5 +1,7 @@
 import AuthorList from '../js/authors';
 
+jest.mock('@springernature/global-popup/js/popup');
+
 describe('Authors', () => {
 	let authorList;
 	let selector;
