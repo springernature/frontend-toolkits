@@ -1,4 +1,5 @@
 import AuthorList from '../js/authors';
+import {Popup} from '@springernature/global-popup/js/popup';
 
 jest.mock('@springernature/global-popup/js/popup');
 
