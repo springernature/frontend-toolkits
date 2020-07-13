@@ -82,8 +82,6 @@ describe('Authors', () => {
 
 			authorList.create(selector);
 
-			console.log(selector.addEventListener);
-
 			expect(selector.addEventListener).toHaveBeenCalled();
 			expect(selector.addEventListener.mock.calls[0]).toBe('click');
 			jest.clearAllMocks();
