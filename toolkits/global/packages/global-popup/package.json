@@ -7,6 +7,7 @@
     "@springernature/brand-context": "3.2.4"
   },
   "dependencies": {
-    "@springernature/global-javascript": "^2.1.0"
+    "@springernature/global-javascript": "^2.1.0",
+    "@springernature/global-expander": "^1.2.0"
   }
 }
