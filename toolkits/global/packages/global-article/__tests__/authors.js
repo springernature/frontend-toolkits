@@ -316,6 +316,10 @@ describe('Authors', () => {
 			<ul>`;
 		}
 
+		beforeEach(() => {
+			setUpDOM();
+		});
+
 		afterEach(() => {
 			jest.clearAllMocks();
 			document.body.innerHTML = '';
