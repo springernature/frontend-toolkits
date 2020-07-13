@@ -17,6 +17,9 @@ You can import as many of the named exports from the helpers as you require for 
 **Util**
 - [makeArray](#makearray)
 - [createEvent](#createevent)
+- [getCookie](#getcookie)
+- [getCookie](#debounce)
+- [getCookie](#throttle)
 
 
 **Dom**
@@ -62,6 +65,42 @@ elementToBind.dispatchEvent(event);
 elementToBind.addEventListener('componentName:eventName', function (event) {
     // Do something
 }, false);
+```
+
+#### getCookie
+Retrieves a cookie by name from `document.cookie`.
+
+```javascript
+const myCookie = getCookie('name-of-cookie');
+```
+
+#### debounce
+Allows sequential calls to a function to be grouped together so that the function will only be called once.
+The call will be made once the timeframe has passed after the last call.
+
+The `debounce` function accepts two arguments, `func,` and an options object that accepts `wait` and `immediate`.
+`func` is the function to debounce; `wait` is the time (in ms) that should pass after the last function call; `immediate` allows the function to be called once _before_ the timer begins.
+
+`debounce` returns a function and will use `requestAnimationFrame` if no wait time is passed in.
+`immediate` defaults to `false`.
+
+Common use cases are when you want to execute a handler only at the end of a series of events, for example when making asynchronous requests in response to a users input.
+
+```javascript
+const input = document.querySelector('input.autocomplete');
+input.addEventListener('input', debounce(myHandler, {wait: 200, immediate: true}));
+```
+
+#### throttle
+Allows a function to be called once within a set timeframe. Additional function calls within the timeframe will be ignored.
+The `throttle` function accepts two arguments, `func`, which is the function to throttle, and `wait`, which is the duration of the throttle (in ms).
+
+`throttle` returns a function with a default `wait` time of 100.
+
+Common use cases are when you want to consistently execute a handler but at a decreased ratio to the browsers default 1:1, for example scroll and resize event handlers.
+
+```javascript
+document.addEventListener('scroll', throttle(myHandler, 200));
 ```
 
 ### Dom
