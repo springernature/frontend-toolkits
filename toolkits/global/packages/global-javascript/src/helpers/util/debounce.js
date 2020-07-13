@@ -32,7 +32,6 @@ export const debounce = (func, {wait = 'raf', immediate = false} = {}) => {
 			if (raf) {
 				window.cancelAnimationFrame(timeout);
 			} else {
-				console.log('into clear timeout');
 				clearTimeout(timeout);
 			}
 		}
