@@ -1,4 +1,5 @@
 /* global $ */
+const {Popup} = require('@springernature/global-popup/js/popup');
 
 /**
  *
@@ -10,7 +11,7 @@
 function AuthorList() {
 	'use strict';
 
-	var create = function ($authors, popupGroup, options) {
+	var create = function (authors, options) {
 		options = options || {};
 
 		var ETAL_CLASS = 'js-etal';
@@ -20,88 +21,138 @@ function AuthorList() {
 		var AUTHORS_EXPANDED_CLASS = 'js-authors-expanded';
 		var HIDE_CLASS = 'u-js-hide';
 		var SMALLSCREEN_SHOW_CLASS = 'js-mq480-show-inline';
-		var SMALLSCREEN_HIDE_CLASS = 'js-mq480-hide';
-		var SEPARATOR_SELECTOR = '.js-separator';
 
 		var exceedsFullscreenLimit;
 		var exceedsSmallscreenLimit;
 
 		var truncate = function (smallscreenLimit, fullscreenLimit) {
 			// jscs:disable maximumLineLength
-
-			var $children = $authors.children();
-			var numberAuthors = $children.length;
+			var children = authors.querySelectorAll('li');
+			var countAuthors = children.length;
 
 			var exceedsLimit = function (limit) {
 				// eslint-disable-next-line unicorn/prefer-includes
-				return numberAuthors > limit && !(numberAuthors === limit + 1 && $children.get(limit).className.indexOf('author-group') !== -1);
+				return countAuthors > limit && !(countAuthors === limit + 1 && children[limit].classList.contains('c-article-author-institutional-author__author-name'));
 			};
 
 			var articleTitle = function () {
-				var $title = $authors.closest('div').find('h3[itemprop]');
-				if ($title.length > 0) {
-					return $title.get(0).textContent;
+				var container = authors.closest('div');
+				var title = container ? container.querySelector('h3[itemprop]') : null;
+				if (title) {
+					return title.textContent;
 				}
 				return 'this article';
+			};
+
+			var expandCollapseItem = function (cls, label, text) {
+				var item = document.createElement('li');
+				item.className = cls;
+				var link = document.createElement('a');
+				link.className = ETAL_CLASS;
+				link.setAttribute('href', 'javascript:;');
+				link.setAttribute('aria-label', label);
+				link.setAttribute('title', label);
+				link.innerHTML = text;
+				item.appendChild(link);
+				return item;
 			};
 
 			exceedsFullscreenLimit = exceedsLimit(fullscreenLimit);
 			exceedsSmallscreenLimit = exceedsLimit(smallscreenLimit);
 
 			var extraMoreAuthorsClasses = '';
-			var moreAuthorsHideClass = HIDE_CLASS;
 			if (exceedsSmallscreenLimit && !exceedsFullscreenLimit) {
 				extraMoreAuthorsClasses = HIDE_CLASS + ' ' + SMALLSCREEN_SHOW_CLASS;
-				moreAuthorsHideClass = SMALLSCREEN_HIDE_CLASS;
 			}
 
 			var AUTHOR_LIST_CLASS = 'c-author-list';
 
-			var fewerAuthorsItem = '<li class="' + AUTHOR_LIST_CLASS + '__show-less ' + HIDE_CLASS + '"><a href="javascript:;" class="' + ETAL_CLASS + '" aria-label="Show fewer authors for ' + articleTitle() + '">- ' + ETAL_EXPANDED_TEXT + '</a></li>';
-			var moreAuthorsItem = '<li class="' + AUTHOR_LIST_CLASS + '__show-more ' + extraMoreAuthorsClasses + '"><a href="javascript:;" class="' + ETAL_CLASS + '" title="Show all ' + numberAuthors + ' authors" aria-label="Show all ' + numberAuthors + ' authors for ' + articleTitle() + '">' + ETAL_COLLAPSED_TEXT + '</a></li>';
+			var fewerAuthorsItem = expandCollapseItem(
+				AUTHOR_LIST_CLASS + '__show-less ' + HIDE_CLASS,
+				'Show fewer authors for ' + articleTitle(),
+				'-' + ETAL_EXPANDED_TEXT
+			);
+			var moreAuthorsItem = expandCollapseItem(
+				AUTHOR_LIST_CLASS + '__show-more ' + extraMoreAuthorsClasses,
+				'Show all ' + countAuthors + ' authors for ' + articleTitle(),
+				ETAL_COLLAPSED_TEXT
+			);
 
 			if (exceedsFullscreenLimit || exceedsSmallscreenLimit) {
-				$authors.addClass(ETAL_COLLAPSED_CLASS).find('li').eq(-1).before(moreAuthorsItem).find(SEPARATOR_SELECTOR).addClass(moreAuthorsHideClass);
-				$authors.append(fewerAuthorsItem);
-			}
+				authors.classList.add(ETAL_COLLAPSED_CLASS);
+				children[countAuthors - 2].parentNode.insertBefore(moreAuthorsItem, children[countAuthors - 2]);
+				authors.appendChild(fewerAuthorsItem);
 
-			if (exceedsFullscreenLimit) {
-				$children.slice(2, numberAuthors - 1).addClass('js-author-etal');
-			}
-			if (exceedsSmallscreenLimit) {
-				$children.slice(2, numberAuthors - 1).addClass('js-smaller-author-etal');
+				Array.prototype.slice.call(children, 2, countAuthors - 1).forEach(function (el) {
+					if (exceedsFullscreenLimit) {
+						el.classList.add('js-author-etal');
+					}
+					if (exceedsSmallscreenLimit) {
+						el.classList.add('js-smaller-author-etal');
+					}
+				});
 			}
 		};
 
-		var removeSvgFrom = function ($element) {
-			var svg = $element[0] && $element[0].querySelector('svg');
-			if (svg) {
-				$element[0].removeChild(svg);
+		var toggleAuthors = function () {
+			var items = authors.querySelectorAll('li');
+			var itemCount = items.length;
+
+			if (authors.classList.contains(ETAL_COLLAPSED_CLASS)) {
+				authors.classList.add(AUTHORS_EXPANDED_CLASS);
+				authors.classList.remove(ETAL_COLLAPSED_CLASS);
+				if (exceedsFullscreenLimit) {
+					items[itemCount - 4].classList.add(HIDE_CLASS);
+					items[itemCount - 1].classList.remove(HIDE_CLASS);
+				} else if (exceedsSmallscreenLimit) {
+					items[itemCount - 4].classList.remove(SMALLSCREEN_SHOW_CLASS);
+					items[itemCount - 1].classList.add(SMALLSCREEN_SHOW_CLASS);
+				}
+			} else {
+				authors.classList.add(ETAL_COLLAPSED_CLASS);
+				authors.classList.remove(AUTHORS_EXPANDED_CLASS);
+				if (exceedsFullscreenLimit) {
+					items[itemCount - 4].classList.remove(HIDE_CLASS);
+				} else if (exceedsSmallscreenLimit) {
+					items[itemCount - 4].classList.add(SMALLSCREEN_SHOW_CLASS);
+					items[itemCount - 1].classList.remove(SMALLSCREEN_SHOW_CLASS);
+				}
+				items[itemCount - 1].classList.add(HIDE_CLASS);
 			}
 		};
 
-		var authorPopup = function (event, $link) {
+		var authorPopup = function (link) {
 			var POPUP_CLASS = 'c-author-popup';
 			var AUTHOR_LINK_CLASS = POPUP_CLASS + '__link';
 			var AUTHOR_LIST_CLASS = POPUP_CLASS + '__author-list';
 			var AFFILIATIONS_ADDRESS = '.c-article-author-affiliation__address';
-			var HEADING_CLASS = 'u-visually-hidden';
 			var SUBHEADING_CLASS = POPUP_CLASS + '__subheading';
 			var ORCID_CLASS = 'c-article-orcid';
 
-			var getBodyHtml = function ($link, $item) {
-				var correspId = $link.data('corresp-id');
-				var $correspLink = correspId ? $('#corresp-' + correspId) : [];
+			var removeSvgFrom = function (element) {
+				var svg = element && element.querySelector('svg');
+				if (svg) {
+					element.removeChild(svg);
+				}
+			};
+
+			var getBodyHtml = function (link, item) {
+				var correspId = link.getAttribute('data-corresp-id');
+				var correspLink = correspId ? document.getElementById('corresp-' + correspId) : null;
 				var hrefs = [];
 				var notes = [];
 				var affiliations = [];
 
-				$item.find('sup').find('a').each(function () {
-					var $element = $(this);
-					if (!$element.next('span[data-present-affiliation="true"]').length) { // eslint-disable-line unicorn/explicit-length-check
-						hrefs.push($element.prop('href').replace(/^[^#]*/, ''));
+				var isPresentAffiliation = function (node) {
+					return node && node.getAttribute('data-present-affiliation') === 'true';
+				};
+
+				Array.prototype.slice.call(item.querySelectorAll('sup > a'), 0).forEach(function (element) {
+					if (!isPresentAffiliation(element.nextElementSibling)) {
+						hrefs.push(element.hash);
 					}
 				});
+
 				hrefs.forEach(function (href) {
 					var authorInfo = document.querySelector(href);
 					if (authorInfo) {
@@ -126,114 +177,101 @@ function AuthorList() {
 
 				affiliations = notes.concat(affiliations);
 
-				if ($correspLink.length > 0) {
-					affiliations.push('<a href="' + $correspLink.prop('href') + '" class="' + AUTHOR_LINK_CLASS + '" rel="nofollow">Contact ' + $link.html() + '</a>');
+				if (correspLink) {
+					affiliations.push('<a href="' + correspLink.getAttribute('href') + '" class="' + AUTHOR_LINK_CLASS + '" rel="nofollow">Contact ' + link.innerHTML + '</a>');
 				}
 				return '<ul class="' + AUTHOR_LIST_CLASS + '"><li>' + affiliations.join('</li><li>') + '</li></ul>';
 			};
-			var getHeadingHtml = function ($link) {
-				var html = $link.html();
 
-				return '<h2 id="author-dialog" class="' + HEADING_CLASS + '">Author Information</h2><h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>' + getOrcidHtml($item); // eslint-disable-line no-use-before-define
+			var getHeadingHtml = function (link, item) {
+				var html = link.innerHTML;
+				return '<h3 id="author-' + id + '" class="' + SUBHEADING_CLASS + '" tabindex="0">' + html + '</h3>' + getOrcidHtml(item); // eslint-disable-line no-use-before-define
 			};
+
+			var getOrcidHtml = function (item) {
+				var orcid = item.querySelector('a.js-orcid');
+				var html = '';
+
+				if (orcid) {
+					html = '<a class="' + ORCID_CLASS + '" href="' + orcid.getAttribute('href') + '" target="_blank" rel="noopener"><span class="' + ORCID_CLASS + '__text">View ORCID ID profile</span></a>';
+				}
+				return html;
+			};
+
 			var getFooterHtml = function (id) {
-				var $item = $('#' + id);
+				var item = document.getElementById(id);
 
-				if ($item.length > 0) {
-					var $clone = $item.clone();
-					$clone.find('.js-search-name').remove();
-					return $clone.html();
+				if (item) {
+					var clone = item.cloneNode(true);
+					var name = clone.querySelector('.js-search-name');
+					if (name) {
+						name.parentNode.removeChild(name);
+					}
+					return clone.innerHTML;
 				}
 				return '';
 			};
+
 			var getGroupHtml = function (id) {
-				var $item = $('#' + id);
-				if ($item.length > 0) {
-					var $clone = $item.clone();
-					$clone.find('h3').remove();
-					$clone.find('ul').addClass('c-article-author-institutional-author__author-list--popup');
-					return $clone.html().replace(/[\r\n]/g, '');
+				var item = document.getElementById(id);
+
+				if (item) {
+					var clone = item.cloneNode(true);
+					var h3 = clone.querySelector('h3');
+					var ul = clone.querySelector('ul');
+					if (ul) {
+						ul.classList.add('c-article-author-institutional-author__author-list--popup');
+					}
+					if (h3) {
+						h3.parentNode.removeChild(h3);
+					}
+					return clone.innerHTML.replace(/[\r\n]/g, '');
 				}
 				return '';
 			};
-			var getOrcidHtml = function ($item) {
-				var $orcid = $item[0].querySelector('a.js-orcid');
-				var $html = '';
 
-				if ($orcid !== null) {
-					$html = '<a class="' + ORCID_CLASS + '"title="View ORCID ID profile" href="' + $orcid.getAttribute('href') + '" target="_blank" rel="noopener"><span class="' + ORCID_CLASS + '__text">View ORCID ID profile</span></a><div>';
-				}
-				return $html;
-			};
+			var id = link.getAttribute('data-author-popup');
+			var item = link.closest('li');
 
-			var id = $link.prop('href').split('#').pop();
-			var $item = $link.closest('li');
+			var clone = link.cloneNode(true);
+			removeSvgFrom(clone);
 
-			var $linkCopy = $link.clone();
-			removeSvgFrom($linkCopy);
-
-			var html = '<div role="region" id="popup-' + id + '" class="c-popup ' + POPUP_CLASS + '" aria-labelledby="' + id + '" aria-describedby="author-dialog"><section>';
-			html += getHeadingHtml($linkCopy);
+			var html = '<div role="region" id="popup-' + id + '" class="c-popup ' + POPUP_CLASS + ' u-font-family-serif u-js-hide" aria-labelledby="' + id + '"><section>';
+			html += getHeadingHtml(clone, item);
 			if (id.match(/^group/)) { // eslint-disable-line  unicorn/prefer-starts-ends-with
 				html += getGroupHtml(id);
 			} else {
-				html += getBodyHtml($linkCopy, $item);
+				html += getBodyHtml(clone, item);
 				html += getFooterHtml(id);
 			}
 			html += '</section></div>';
 
-			var popup = popupGroup.spawn($link[0], $(html)[0], {
-				setFocusOn: 'h3#author-' + id
-			});
-			popup.toggle(event);
-		};
+			var div = document.createElement('div');
+			div.innerHTML = html;
+			document.body.appendChild(div);
 
-		var toggleAuthors = function () {
-			if ($authors.hasClass(ETAL_COLLAPSED_CLASS)) {
-				// if expanding
-				$authors.addClass(AUTHORS_EXPANDED_CLASS);
-				$authors.removeClass(ETAL_COLLAPSED_CLASS);
-				if (exceedsFullscreenLimit) {
-					$authors.find('li').eq(-3).addClass(HIDE_CLASS); // ellipsis separator
-					$authors.find('li').eq(-2).find(SEPARATOR_SELECTOR).removeClass(HIDE_CLASS); // last item separator
-					$authors.find('li:last').removeClass(HIDE_CLASS);
-				} else if (exceedsSmallscreenLimit) {
-					$authors.find('li').eq(-3).removeClass(SMALLSCREEN_SHOW_CLASS); // ellipsis separator
-					$authors.find('li').eq(-2).find(SEPARATOR_SELECTOR).removeClass(SMALLSCREEN_HIDE_CLASS); // last item separator
-					$authors.find('li:last').addClass(SMALLSCREEN_SHOW_CLASS);
-				}
-			} else {
-				// if contracting
-				$authors.addClass(ETAL_COLLAPSED_CLASS);
-				$authors.removeClass(AUTHORS_EXPANDED_CLASS);
-				if (exceedsFullscreenLimit) {
-					$authors.find('li').eq(-3).removeClass(HIDE_CLASS); // ellipsis separator
-					$authors.find('li').eq(-2).find(SEPARATOR_SELECTOR).addClass(HIDE_CLASS); // last item separator
-				} else if (exceedsSmallscreenLimit) {
-					$authors.find('li').eq(-3).addClass(SMALLSCREEN_SHOW_CLASS); // ellipsis separator
-					$authors.find('li').eq(-2).find(SEPARATOR_SELECTOR).addClass(SMALLSCREEN_HIDE_CLASS); // last item separator
-					$authors.find('li:last').removeClass(SMALLSCREEN_SHOW_CLASS);
-				}
-				$authors.find('li:last').addClass(HIDE_CLASS);
-			}
-			if (popupGroup) {
-				popupGroup.close();
-			}
+			new Popup(link, `popup-${id}`);
 		};
 
 		if (options.etal) {
 			truncate(options.etalSmallscreen || options.etal, options.etal);
 		}
 
-		$authors.find('a').addClass('js-no-scroll');
-		$authors.find('sup').find('a').prop('tabIndex', '-1'); // don't let the hidden affiliation links get keyboard focus
-		$authors.delegate('a', 'click', function (event) {
-			var $link = $(event.target).closest('a');
-			if ($link.hasClass(ETAL_CLASS)) {
-				toggleAuthors(event, $link);
-			} else if (popupGroup && !$link.parent().is('sup')) {
-				authorPopup(event, $link);
-				event.preventDefault();
+		authors.classList.add('js-no-scroll');
+
+		Array.prototype.slice.call(authors.querySelectorAll('sup > a'), 0).forEach(function (el) {
+			el.setAttribute('tabIndex', '-1');
+		});
+
+		Array.prototype.slice.call(authors.querySelectorAll('a[data-author-popup]')).forEach(function(link){
+			authorPopup(link);
+		});
+
+
+		authors.addEventListener('click', function (event) {
+			var link = event.target.closest('a');
+			if (link && link.classList.contains(ETAL_CLASS)) {
+				toggleAuthors();
 			}
 		});
 	};
@@ -246,4 +284,3 @@ function AuthorList() {
 if (typeof module !== 'undefined') {
 	module.exports = AuthorList;
 }
-
