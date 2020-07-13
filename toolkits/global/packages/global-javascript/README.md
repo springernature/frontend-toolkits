@@ -75,7 +75,7 @@ const myCookie = getCookie('name-of-cookie');
 ```
 
 #### debounce
-Allows sequential calls to function to be grouped together so that the function will only be called once.
+Allows sequential calls to a function to be grouped together so that the function will only be called once.
 The call will be made once the timeframe has passed after the last call.
 
 The `debounce` function accepts two arguments, `func,` and an options object that accepts `wait` and `immediate`.
