@@ -1,3 +1,6 @@
+## 0.4.0 (2020-07-13)
+    * Use hex color for links
+
 ## 0.3.0 (2020-07-02)
     * Add status to links
 
