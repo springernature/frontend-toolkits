@@ -5,8 +5,8 @@
 	padding: $c-popup--padding-vertical $c-popup--padding-right $c-popup--padding-vertical $c-popup--padding-left;
 	border: 1px solid $c-popup--border-color;
 	box-shadow: $c-popup--box-shadow;
-	min-width: 300px;
-	max-width: 650px;
+	min-width: $c-popup--min-width;
+	max-width: $c-popup--max-width;
 	background-color: $c-popup--background-color;
 }
 
