@@ -1,10 +1,8 @@
-import AuthorList from '../js/authors';
-
-jest.mock('@springernature/global-popup/js/popup');
-const {Popup} = jest.requireActual('@springernature/global-popup/js/popup');
-
 jest.mock('@springernature/global-expander/js/expander');
 const {Expander} = jest.requireActual('@springernature/global-expander/js/expander');
+jest.mock('@springernature/global-popup/js/popup');
+const {Popup} = jest.requireActual('@springernature/global-popup/js/popup');
+import AuthorList from '../js/authors';
 
 describe('Authors', () => {
 	let authorList;
