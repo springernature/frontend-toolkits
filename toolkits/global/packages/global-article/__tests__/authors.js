@@ -1,7 +1,8 @@
 import AuthorList from '../js/authors';
-import {Popup} from '@springernature/global-popup/js/popup';
 
 jest.mock('@springernature/global-popup/js/popup');
+
+const {Popup} = jest.requireActual('@springernature/global-popup/js/popup');
 
 describe('Authors', () => {
 	let authorList;
@@ -86,7 +87,7 @@ describe('Authors', () => {
 			authorList.create(selector);
 
 			expect(selector.addEventListener).toHaveBeenCalled();
-			expect(selector.addEventListener.mock.calls[0]).toBe('click');
+			expect(selector.addEventListener.mock.calls[0][0]).toBe('click');
 			jest.clearAllMocks();
 		});
 	});
