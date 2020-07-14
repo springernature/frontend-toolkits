@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@springernature/global-expander": "~1.2.0",
-    "@springernature/global-popup": "~0.1.0"
+    "@springernature/global-popup": "~0.2.0"
   },
   "devDependencies": {
     "jquery": "^3.4.1"
