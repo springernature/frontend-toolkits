@@ -68,10 +68,12 @@ describe('Expander', () => {
 
 		const pressSpaceKeyTwice = () => {
 			for (let i = 0; i < 2; i++) {
-				const keydownEnterEvent = createKeydownEvent('Space');
-				element.BUTTON.dispatchEvent(keydownEnterEvent);
+				const keydownSpaceEvent = createKeydownEvent('Space');
+				element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			}
 		};
+
+		const linkButtonHTML = '<a href="javascript:;" role="button" data-expander data-expander-target="#unique">link button</a>';
 
 		test('Should open when button is clicked', () => {
 			// Given
@@ -101,8 +103,8 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
-			const keydownEnterEvent = createKeydownEvent('Space');
-			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
@@ -110,12 +112,12 @@ describe('Expander', () => {
 
 		test('Should open when space key is pressed on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = '<a href="javascript:;" role="button" data-expander data-expander-target="#unique">link button</a>';
+			element.BUTTON.outerHTML = linkButtonHTML;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
-			const keydownEnterEvent = createKeydownEvent('Space');
-			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
@@ -156,7 +158,7 @@ describe('Expander', () => {
 
 		test('Should close when space key is pressed a second time on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = '<a href="javascript:;" role="button" data-expander data-expander-target="#unique">link button</a>';
+			element.BUTTON.outerHTML = linkButtonHTML;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
@@ -199,7 +201,7 @@ describe('Expander', () => {
 
 		test('Should set aria attributes when space key is pressed on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = '<a href="javascript:;" role="button" data-expander data-expander-target="#unique">link button</a>';
+			element.BUTTON.outerHTML = linkButtonHTML;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
@@ -285,8 +287,8 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
-			const keydownEnterEvent = createKeydownEvent('Space');
-			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.TARGET).toEqual(document.activeElement);
 		});
@@ -307,8 +309,8 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET, {TARGET_FOCUS: false});
 			expander.init();
 			// When
-			const keydownEnterEvent = createKeydownEvent('Space');
-			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.TARGET).not.toEqual(document.activeElement);
 		});
