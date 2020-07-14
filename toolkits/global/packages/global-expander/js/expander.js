@@ -47,7 +47,7 @@ const Expander = class {
 	}
 
 	_handleButtonKeydown(event) {
-		if (event.key === 'Enter' || event.key === ' ') {
+		if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
 			event.preventDefault();
 
 			if (this._isOpen) {
