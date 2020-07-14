@@ -9,7 +9,7 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	TARGET_FOCUS: false,
+	TARGET_FOCUS: true,
 	AUTOFOCUS: false,
 	FOCUS_EVENT: false
 };
