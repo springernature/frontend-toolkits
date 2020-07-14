@@ -1,5 +1,11 @@
 # History
 
+## 1.3.0 (2020-07-14)
+    * Fix bug with detecting 'Space' key
+    * Add TARGET_FOCUS option to control focus moving to target
+    * Add tests for 'Space' key on non-native button
+    * Add tests for TARGET_FOCUS option 
+
 ## 1.2.0 (2020-07-06)
     * Add aria-pressed to support non-native buttons
     
