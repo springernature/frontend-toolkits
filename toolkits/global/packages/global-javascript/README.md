@@ -20,10 +20,11 @@ You can import as many of the named exports from the helpers as you require for 
 - [getCookie](#getcookie)
 - [getCookie](#debounce)
 - [getCookie](#throttle)
+- [onetrust](#onetrust)
 
 
 **Dom**
-- [getDataOptions](#getDataOptions)
+- [getDataOptions](#getdataoptions)
 
 ### Util
 Util helpers are used to help achieve JavaScript tasks that do not involve touching the DOM.
@@ -102,6 +103,38 @@ Common use cases are when you want to consistently execute a handler but at a de
 ```javascript
 document.addEventListener('scroll', throttle(myHandler, 200));
 ```
+
+#### onetrust
+OneTrust is the cookie management tool we use in order to aid GDPR compliance.
+This helper exports two named functions, `checkConsent` and `isConsentBannerClosed`.
+
+##### checkConsent
+
+Takes a OneTrust category string and returns a boolean representing whether the category has been consent to (retrieved from the `OptanonConsent` cookie).
+
+Valid categories are: 
+
+- "strictlyNecessary"
+- "performance"
+- "functional"
+- "targetingFirstParty"
+- "targetingThirdParty"
+
+```javascript
+checkConsent('targetingThirdParty');
+```
+
+An error will be thrown if an invalid category is passed in.
+
+##### isConsentBannerClosed
+
+Returns a boolean representing whether the cookie consent banner has been closed (retrieved from the `OptanonAlertBoxClosed` cookie).
+
+```javascript
+isConsentBannerClosed();
+```
+
+
 
 ### Dom
 Dom helpers are used to help achieve JavaScript tasks that involve getting information from, or manipulating the DOM.
