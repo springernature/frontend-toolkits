@@ -1,6 +1,8 @@
 jest.mock('../../global-expander/js/expander');
 jest.mock('@springernature/global-expander/js/expander');
 jest.mock('@springernature/global-popup/js/popup');
+const {Expander} = jest.fn(() => {});
+const {Popup} = jest.fn(() => {});
 import AuthorList from '../js/authors';
 
 describe('Authors', () => {
