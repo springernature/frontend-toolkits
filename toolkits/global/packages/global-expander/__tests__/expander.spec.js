@@ -21,6 +21,9 @@ const createKeydownEvent = key => {
 		case 'Space':
 			event.key = ' ';
 			break;
+		case 'Spacebar':
+			event.key = 'Spacebar';
+			break;
 		case 'Escape':
 			event.key = 'Escape';
 			break;
@@ -28,7 +31,7 @@ const createKeydownEvent = key => {
 			event.key = 'Tab';
 			break;
 		default:
-			throw new Error('key should be "Enter", " " (Space), "Escape" or "Tab"');
+			throw new Error('key should be "Enter", " " (Space), "Spacebar", "Escape" or "Tab"');
 	}
 
 	return event;
@@ -120,6 +123,19 @@ describe('Expander', () => {
 			expander.init();
 			// When
 			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+		});
+
+		test('Should open when spacebar key is pressed on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownSpaceEvent = createKeydownEvent('Spacebar');
 			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
