@@ -73,7 +73,10 @@ describe('Expander', () => {
 			}
 		};
 
-		const linkButtonHTML = '<a href="javascript:;" role="button" data-expander data-expander-target="#unique">link button</a>';
+		let linkButtonElement = document.createElement('a');
+		linkButtonElement.setAttribute('role', 'button');
+		linkButtonElement.setAttribute('href', '#anchor');
+		linkButtonElement.textContent = 'link anchor button';
 
 		test('Should open when button is clicked', () => {
 			// Given
@@ -112,7 +115,7 @@ describe('Expander', () => {
 
 		test('Should open when space key is pressed on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = linkButtonHTML;
+			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
@@ -158,7 +161,7 @@ describe('Expander', () => {
 
 		test('Should close when space key is pressed a second time on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = linkButtonHTML;
+			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
@@ -166,6 +169,25 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
+
+		test('Should set href attribute on anchor link button', () => {
+			// Given
+			element.BUTTON = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			// When
+			expander.init();
+			// Then
+			expect(element.BUTTON.getAttribute('href')).toBe('javascript:;');
+		});
+
+		test('Should not set href attribute on native button', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			// When
+			expander.init();
+			// Then
+			expect(element.BUTTON.hasAttribute('href')).toBe(false);
 		});
 
 		test('Should set aria attributes when button is clicked', () => {
@@ -201,7 +223,7 @@ describe('Expander', () => {
 
 		test('Should set aria attributes when space key is pressed on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = linkButtonHTML;
+			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
@@ -449,7 +471,7 @@ describe('Expander', () => {
 
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and space key pressed on non-native button', () => {
 			// Given
-			element.BUTTON.outerHTML = linkButtonHTML;
+			element.BUTTON.outerHTML = linkButtonElement;
 			element.TARGET.innerHTML = '<input type="text" value="value">';
 			const expander = new Expander(element.BUTTON, element.TARGET, {
 				AUTOFOCUS: 'firstTabbable'
