@@ -1,0 +1,38 @@
+.c-popup {
+	position: absolute;
+	font-family: $font-family-serif;
+	z-index: $c-popup--zindex;
+	padding: $c-popup--padding;
+	border: 1px solid $c-popup--border-color;
+	box-shadow: $c-popup--box-shadow;
+	min-width: $c-popup--min-width;
+	max-width: $c-popup--max-width;
+	background-color: $c-popup--background-color;
+}
+
+.c-popup__close {
+	position: absolute;
+	display: block;
+	top: $c-popup--close-top;
+	right: $c-popup--close-right;
+	height: 12px;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'12'%20height%3D'12'%20viewBox%3D'0%200%2012%2012'%3E%3Cpath%20fill%3D'%23666666'%20d%3D'M1.8%2012l-1.7-1.7%2010.2-10.3%201.7%201.7-10.2%2010.3zm10.1-1.7l-1.7%201.7-10.2-10.3%201.7-1.7%2010.2%2010.3z'%2F%3E%3C%2Fsvg%3E") no-repeat;
+	padding-right: 12px;
+	text-indent: -9999em;
+}
+
+.c-popup__arrow {
+	width: 30px;
+	height: 20px;
+	position: absolute;
+}
+
+.c-popup__arrow--above {
+	bottom: -20px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAYAAACaq43EAAABwUlEQVR4Aa3TNZAUURSF4bbxyYsMT3AiJCJBclI8wz3DLSUmIsHd130Xd0lwlxAbnx5uV70u/nrj8qpOnd2W+7WNaWD9TaSOSq2IRkJGK1Yimc5KXZVsj0XDb7nvPwxc4BUtgp9LLRf0ITYDbiEOtEPqkGRE4HxJuFU40CGppQJ+wOYScAtwoC+ktkm69DvVYUu7CJP58zd5XAYsrhHtefLk8Zq5c2Z/kn8LarM0/lbxhtuALBV/u+VF8AuCz6uC/vj+/fvO8ePGXFbDXXRRCPsQ21Ft//6T6IjHIpPLvJK3r169OjJzxrQLGJ5H57xmCPsYwYCK40XwQcFHEU0kUomh4aEDixYuaAPkJ6uSU8kStgBbGuqoDqoOCH5b8Ji6U/fzp09ty5YtPXz37p1fHgxADy/A9UCkJtwR/I5pmsEzZ85sXLVy+T28yzxhhqgk74NGLTjivHr9du/ECeMOGLIIA9HRPFIAWjPuYLulwxqaQ1wfBVwT7gC3K8OMhhKuAVcwGr9/wsClS6OAasYZSzvfBcK4Ooo7rglneLcmhhJ3gSIEasf1NgADZxPU4Frx0uFAQqXRWmEdNwgSZhPkdq5/CJIYT+Zfl2UAAAAASUVORK5CYII=") no-repeat 0 0;
+}
+
+.c-popup__arrow--below {
+	top: -20px;
+	background: url("data:image/gif;base64,R0lGODlhHgAUAPMJAOTl5+3t7+/w8t/g4ujp6vHy9Orr7eXm6P///wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QAT8AIfkEBQAACQAsAAAAAB4AFAAABEcwyUmrvTjrzbv/YCiOZGkmx3FSh4Coa4vMcHkY81zU4gHkOQLvcwgAgYEhp3g8JonG5jHVYUqbA2XFem0+Mdxuk2oJi721CAA7") no-repeat 0 0;
+}

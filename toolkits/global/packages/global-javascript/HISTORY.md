@@ -1,5 +1,9 @@
 # History
 
+## 2.3.0 (2020-07-14)
+    * FEATURE: checkConsent util
+    * FEATURE: isConsentBannerClosed util
+
 ## 2.2.0 (2020-07-10)
     * FEATURE: getCookie util
     * FEATURE: throttle util

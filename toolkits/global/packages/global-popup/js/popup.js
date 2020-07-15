@@ -1,4 +1,4 @@
-import {Expander} from '../../global-expander/js/expander';
+import {Expander} from '@springernature/global-expander/js/expander';
 
 const Popup = class {
 	constructor(trigger, id) {
