@@ -1,5 +1,8 @@
 # History
 
+## 1.2.0 (2020-07-06)
+    * Add aria-pressed to support non-native buttons
+    
 ## 1.1.1 (2020-06-30)
     * Makes it clear that open and close methods are public
 

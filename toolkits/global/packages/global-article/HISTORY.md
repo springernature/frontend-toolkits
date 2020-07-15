@@ -1,5 +1,11 @@
 # History
 
+## 20.0.0 (2019-07-13)
+	* Removes basic popup styles from article-enhanced.scss as replaced by Global Popup
+	* Removes popup component from Global Article
+	* Uses Global Popup js in Global Article authors.js
+	* Adds Global-Expander and Global-Popup as js dependencies of Global-Article
+
 ## 19.2.0 (2019-04-21)
 	* Add test coverage for `Authors` component
 
