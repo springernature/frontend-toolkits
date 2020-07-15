@@ -113,7 +113,7 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
-		test('Should open when space key is pressed on non-native button', () => {
+		test('Should open when space key is pressed on anchor link button', () => {
 			// Given
 			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -159,7 +159,7 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
 		});
 
-		test('Should close when space key is pressed a second time on non-native button', () => {
+		test('Should close when space key is pressed a second time on anchor link button', () => {
 			// Given
 			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -221,7 +221,7 @@ describe('Expander', () => {
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
-		test('Should set aria attributes when space key is pressed on non-native button', () => {
+		test('Should set aria attributes when space key is pressed on anchor link button', () => {
 			// Given
 			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -469,7 +469,7 @@ describe('Expander', () => {
 			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
 
-		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and space key pressed on non-native button', () => {
+		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and space key pressed on anchor link button', () => {
 			// Given
 			element.BUTTON.outerHTML = linkButtonElement;
 			element.TARGET.innerHTML = '<input type="text" value="value">';
