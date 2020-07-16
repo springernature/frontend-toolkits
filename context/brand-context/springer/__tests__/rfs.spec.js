@@ -11,10 +11,10 @@ describe('Test RFS mixin', () => {
 				"font-size": "1rem"
 			},
 			".large": {
-    			"font-size": "1.6rem",
+				"font-size": "1.6rem",
 			},
 			"@media (max-width: 1200px)": {
-    			".large": {
+				".large": {
 					"font-size": "calc(1.46875rem + .10938vw)",
 				},
 				".rem": {
