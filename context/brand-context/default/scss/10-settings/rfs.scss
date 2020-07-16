@@ -28,7 +28,7 @@ $rfs-breakpoint-unit: px;
 $rfs-two-dimensional: false;
 
 // Factor of decrease
-$rfs-factor: 10;
+$rfs-factor: 1.2;
 
 @if type-of($rfs-factor) != "number" or $rfs-factor <= 1 {
   @error "`#{$rfs-factor}` is not a valid  $rfs-factor, it must be greater than 1.";
@@ -38,7 +38,7 @@ $rfs-factor: 10;
 $rfs-class: false;
 
 // 1 rem = $rfs-rem-value px
-$rfs-rem-value: 16;
+$rfs-rem-value: 10;
 
 // Safari iframe resize bug: https://github.com/twbs/rfs/issues/14
 $rfs-safari-iframe-resize-bug-fix: false;

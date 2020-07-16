@@ -8,6 +8,7 @@ $rfs-base-font-size: 1.25rem; // Always set here for caching purposes
 $rfs-font-size-unit: rem; // Always set here for caching purposes
 $rfs-breakpoint: 1200px; // Always set here for caching purposes
 $rfs-breakpoint-unit: px; // Always set here for caching purposes
+
 $rfs-rem-value: 10; // tells the responsive font size plugin that we have set font size to 10px on the html element (62.5% which is effectively 10px)
 $rfs-factor: 1.6; // determines the strength of the responsive font size plugin font size resizing
 

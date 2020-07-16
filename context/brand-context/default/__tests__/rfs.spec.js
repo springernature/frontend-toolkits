@@ -11,14 +11,14 @@ describe('Test RFS mixin', () => {
 				"font-size": "1rem"
 			},
 			".large": {
-				"font-size": "1.5rem",
+				"font-size": "1.6rem",
 			},
 			"@media (max-width: 1200px)": {
 				".large": {
-					"font-size": "calc(1.275rem + .3vw)",
+					"font-size": "calc(1.54167rem + .04861vw)",
 				},
 				".rem": {
-					"font-size": "calc(1.325rem + .9vw)",
+					"font-size": "calc(1.875rem + .10417vw)",
 				}
 			},
 			".important": {
@@ -28,7 +28,7 @@ describe('Test RFS mixin', () => {
 				"font-size": "2rem",
 			},
 			".small": {
-				"font-size": ".625rem",
+				"font-size": ".5rem",
 			},
 			".special": {
 				"font-size": "inherit",
