@@ -21,6 +21,11 @@
       "svg",
       "ttf",
       "json"
+    ],
+    "__tests__": [
+      "js",
+      "json",
+      "scss"
     ]
   },
   "CSSDirectoryStructure": {

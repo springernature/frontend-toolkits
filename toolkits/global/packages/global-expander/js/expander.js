@@ -9,7 +9,7 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	AUTOFOCUS: false,
+	AUTOFOCUS: null,
 	FOCUS_EVENT: false
 };
 
@@ -46,7 +46,7 @@ const Expander = class {
 	}
 
 	_handleButtonKeydown(event) {
-		if (event.key === 'Enter' || event.key === 'Space') {
+		if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
 			event.preventDefault();
 
 			if (this._isOpen) {
@@ -152,18 +152,23 @@ const Expander = class {
 			this._triggerEl.dispatchEvent(event);
 		}
 
-		if (this._options.AUTOFOCUS) {
-			if (this._targetTabbableItems.length > 0) {
-				const firstTabbableItem = this._targetTabbableItems[0];
-				firstTabbableItem.focus();
+		switch (this._options.AUTOFOCUS) {
+			case 'firstTabbable':
+				if (this._targetTabbableItems.length > 0) {
+					const firstTabbableItem = this._targetTabbableItems[0];
+					firstTabbableItem.focus();
 
-				if (firstTabbableItem.setSelectionRange) {
-					firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
+					if (firstTabbableItem.setSelectionRange) {
+						firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
+					}
 				}
-			}
-		} else {
-			this._targetEl.setAttribute('tabindex', '-1');
-			this._targetEl.focus();
+				break;
+			case 'target':
+				this._targetEl.setAttribute('tabindex', '-1');
+				this._targetEl.focus();
+				break;
+			default:
+				break;
 		}
 
 		this._updateAriaAttributes();
