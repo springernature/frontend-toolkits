@@ -1,5 +1,12 @@
 # History
 
+## 2.0.0 (2020-07-15)
+    * Refactor AUTOFOCUS from boolean to string to set options
+    * Update readme on refactored AUTOFOCUS option
+    * Fix bug with detecting 'Space' key
+    * Add tests for 'Space' key on trigger
+    * Add tests for anchor link button
+
 ## 1.2.0 (2020-07-06)
     * Add aria-pressed to support non-native buttons
     

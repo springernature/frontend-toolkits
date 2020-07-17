@@ -19,7 +19,10 @@ const createKeydownEvent = key => {
 			event.key = 'Enter';
 			break;
 		case 'Space':
-			event.key = 'Space';
+			event.key = ' ';
+			break;
+		case 'Spacebar':
+			event.key = 'Spacebar';
 			break;
 		case 'Escape':
 			event.key = 'Escape';
@@ -28,7 +31,7 @@ const createKeydownEvent = key => {
 			event.key = 'Tab';
 			break;
 		default:
-			throw new Error('key should be "Enter", "Space, "Escape" or "Tab"');
+			throw new Error('key should be "Enter", " " (Space), "Spacebar", "Escape" or "Tab"');
 	}
 
 	return event;
@@ -68,10 +71,15 @@ describe('Expander', () => {
 
 		const pressSpaceKeyTwice = () => {
 			for (let i = 0; i < 2; i++) {
-				const keydownEnterEvent = createKeydownEvent('Space');
-				element.BUTTON.dispatchEvent(keydownEnterEvent);
+				const keydownSpaceEvent = createKeydownEvent('Space');
+				element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			}
 		};
+
+		let linkButtonElement = document.createElement('a');
+		linkButtonElement.setAttribute('role', 'button');
+		linkButtonElement.setAttribute('href', '#anchor');
+		linkButtonElement.textContent = 'link anchor button';
 
 		test('Should open when button is clicked', () => {
 			// Given
@@ -96,13 +104,39 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
-		test('Should open when space key is pressed', () => {
+		test('Should open when space key is pressed on native button', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			// When
-			const keydownEnterEvent = createKeydownEvent('Space');
-			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+		});
+
+		test('Should open when space key is pressed on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+		});
+
+		test('Should open when spacebar key is pressed on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			const keydownSpaceEvent = createKeydownEvent('Spacebar');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
@@ -141,6 +175,37 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
 		});
 
+		test('Should close when space key is pressed a second time on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			// When
+			pressSpaceKeyTwice();
+			// Then
+			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
+
+		test('Should set href attribute on anchor link button', () => {
+			// Given
+			element.BUTTON = linkButtonElement;
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			// When
+			expander.init();
+			// Then
+			expect(element.BUTTON.getAttribute('href')).toBe('javascript:;');
+		});
+
+		test('Should not set href attribute on native button', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			// When
+			expander.init();
+			// Then
+			expect(element.BUTTON.hasAttribute('href')).toBe(false);
+		});
+
 		test('Should set aria attributes when button is clicked', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -158,6 +223,23 @@ describe('Expander', () => {
 
 		test('Should set aria attributes when enter key is pressed', () => {
 			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET);
+			expander.init();
+			element.BUTTON.setAttribute('aria-expanded', 'false');
+			element.BUTTON.setAttribute('aria-pressed', 'false');
+			element.TARGET.setAttribute('aria-hidden', 'true');
+			// When
+			const keydownEnterEvent = createKeydownEvent('Enter');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
+		});
+
+		test('Should set aria attributes when space key is pressed on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
@@ -217,9 +299,11 @@ describe('Expander', () => {
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
-		test('Should make target element focusable and focus on it when button is clicked', () => {
+		test('Should make target element focusable and focus on it when button is clicked and AUTOFOCUS: target', () => {
 			// Given
-			const expander = new Expander(element.BUTTON, element.TARGET);
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: 'target'
+			});
 			expander.init();
 			// When
 			element.BUTTON.click();
@@ -227,13 +311,28 @@ describe('Expander', () => {
 			expect(element.TARGET).toEqual(document.activeElement);
 		});
 
-		test('Should make target element focusable and focus on it when enter key is pressed', () => {
+		test('Should make target element focusable and focus on it when enter key is pressed and AUTOFOCUS: target', () => {
 			// Given
-			const expander = new Expander(element.BUTTON, element.TARGET);
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: 'target'
+			});
 			expander.init();
 			// When
 			const keydownEnterEvent = createKeydownEvent('Enter');
 			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			expect(element.TARGET).toEqual(document.activeElement);
+		});
+
+		test('Should make target element focusable and focus on it when space key is pressed and AUTOFOCUS: target', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: 'target'
+			});
+			expander.init();
+			// When
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			expect(element.TARGET).toEqual(document.activeElement);
 		});
@@ -353,15 +452,50 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
-		test('Should use AUTOFOCUS option if it is passed to constructor', () => {
+		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and button is clicked on', () => {
 			// Given
 			element.TARGET.innerHTML = '<input type="text" value="value">';
 			const expander = new Expander(element.BUTTON, element.TARGET, {
-				AUTOFOCUS: true
+				AUTOFOCUS: 'firstTabbable'
 			});
 			expander.init();
 			// When
 			element.BUTTON.click();
+			// Then
+			const input = element.TARGET.querySelector('input');
+			expect(input).toEqual(document.activeElement);
+			expect(input.selectionStart === 0).toBe(true);
+			expect(input.selectionEnd === input.value.length).toBe(true);
+		});
+
+		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and enter key pressed on native button', () => {
+			// Given
+			element.TARGET.innerHTML = '<input type="text" value="value">';
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: 'firstTabbable'
+			});
+			expander.init();
+			// When
+			const keydownEnterEvent = createKeydownEvent('Enter');
+			element.BUTTON.dispatchEvent(keydownEnterEvent);
+			// Then
+			const input = element.TARGET.querySelector('input');
+			expect(input).toEqual(document.activeElement);
+			expect(input.selectionStart === 0).toBe(true);
+			expect(input.selectionEnd === input.value.length).toBe(true);
+		});
+
+		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and space key pressed on anchor link button', () => {
+			// Given
+			element.BUTTON.outerHTML = linkButtonElement;
+			element.TARGET.innerHTML = '<input type="text" value="value">';
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				AUTOFOCUS: 'firstTabbable'
+			});
+			expander.init();
+			// When
+			const keydownSpaceEvent = createKeydownEvent('Space');
+			element.BUTTON.dispatchEvent(keydownSpaceEvent);
 			// Then
 			const input = element.TARGET.querySelector('input');
 			expect(input).toEqual(document.activeElement);
