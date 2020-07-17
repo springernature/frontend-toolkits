@@ -1,3 +1,6 @@
+## 0.4.0 (2020-07-13)
+    * Add link color for Nature
+
 ## 0.3.0 (2020-07-02)
     * Add status to links
 
