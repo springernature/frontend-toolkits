@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2020-07-16)
+    * BREAKING: RFS now part of context, no need to include in apps 
+
 ## 3.2.4 (2020-07-07)
     * Setup for A/B test to make all fonts on some nature journals use sans-serif 
 
