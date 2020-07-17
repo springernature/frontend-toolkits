@@ -1,5 +1,8 @@
 # History
 
+## 0.4.0 (2020-07-16)
+    * Adds border radius to popup
+
 ## 0.3.0 (2020-07-14)
     * Adds styling to Global Popup
     
