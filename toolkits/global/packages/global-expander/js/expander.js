@@ -25,10 +25,14 @@ const Expander = class {
 
 		this._isOpen = false;
 
-		this._handleButtonClick = this._handleButtonClick.bind(this);
-		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
-		this._handleDocumentClick = this._handleDocumentClick.bind(this);
-		this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
+		if (this._options.AUTOFOCUS === null || this._options.AUTOFOCUS === 'firstTabbable' || this._options.AUTOFOCUS === 'target') {
+			this._handleButtonClick = this._handleButtonClick.bind(this);
+			this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
+			this._handleDocumentClick = this._handleDocumentClick.bind(this);
+			this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
+		} else {
+			throw new Error(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		}
 	}
 
 	/**
@@ -152,23 +156,20 @@ const Expander = class {
 			this._triggerEl.dispatchEvent(event);
 		}
 
-		switch (this._options.AUTOFOCUS) {
-			case 'firstTabbable':
-				if (this._targetTabbableItems.length > 0) {
-					const firstTabbableItem = this._targetTabbableItems[0];
-					firstTabbableItem.focus();
+		if (this._options.AUTOFOCUS === null) {
+			this._triggerEl.focus();
+		} else if (this._options.AUTOFOCUS === 'firstTabbable') {
+			if (this._targetTabbableItems.length > 0) {
+				const firstTabbableItem = this._targetTabbableItems[0];
+				firstTabbableItem.focus();
 
-					if (firstTabbableItem.setSelectionRange) {
-						firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
-					}
+				if (firstTabbableItem.setSelectionRange) {
+					firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
 				}
-				break;
-			case 'target':
-				this._targetEl.setAttribute('tabindex', '-1');
-				this._targetEl.focus();
-				break;
-			default:
-				break;
+			}
+		} else if (this._options.AUTOFOCUS === 'target') {
+			this._targetEl.setAttribute('tabindex', '-1');
+			this._targetEl.focus();
 		}
 
 		this._updateAriaAttributes();
