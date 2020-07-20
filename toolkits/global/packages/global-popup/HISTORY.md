@@ -1,5 +1,8 @@
 # History
 
+## 0.4.1 (2020-07-20)
+    * Updates close icon to global icon set
+
 ## 0.4.0 (2020-07-16)
     * Adds border radius to popup
 
