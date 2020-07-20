@@ -452,6 +452,33 @@ describe('Expander', () => {
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
 		});
 
+		it('Should throw error when incorrect string option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: 'firstTabbbbbbbbbbable'
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
+		it('Should throw error when number option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: 1234
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
+		it('Should throw error when boolean option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: true
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and button is clicked on', () => {
 			// Given
 			element.TARGET.innerHTML = '<input type="text" value="value">';
