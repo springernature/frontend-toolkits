@@ -299,6 +299,33 @@ describe('Expander', () => {
 			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
+		it('Should throw error when incorrect string option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: 'firstTabbbbbbbbbbable'
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
+		it('Should throw error when number option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: 1234
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
+		it('Should throw error when boolean option set on AUTOFOCUS', () => {
+			expect(() => {
+				const expander = new Expander(element.BUTTON, element.TARGET, {
+					AUTOFOCUS: true
+				});
+				expander.init()
+			}).toThrow(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
+		});
+
 		test('Should make target element focusable and focus on it when button is clicked and AUTOFOCUS: target', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET, {
