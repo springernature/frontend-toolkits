@@ -16,23 +16,19 @@ const defaultOptions = {
 const Expander = class {
 	constructor(trigger, target, options = {}) {
 		this._options = Object.assign({}, defaultOptions, options);
+		this._autoFocusElement = trigger;
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
-
 		this._isOpen = false;
 
-		if (this._options.AUTOFOCUS === null || this._options.AUTOFOCUS === 'firstTabbable' || this._options.AUTOFOCUS === 'target') {
-			this._handleButtonClick = this._handleButtonClick.bind(this);
-			this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
-			this._handleDocumentClick = this._handleDocumentClick.bind(this);
-			this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
-		} else {
-			throw new Error(`AUTOFOCUS should be null, 'firstTabbable' or 'target'`);
-		}
+		this._handleButtonClick = this._handleButtonClick.bind(this);
+		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
+		this._handleDocumentClick = this._handleDocumentClick.bind(this);
+		this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
 	}
 
 	/**
@@ -128,6 +124,24 @@ const Expander = class {
 	}
 
 	/**
+	 * AutoFocus
+	 */
+
+	_handleAutoFocus() {
+		if (this._options.AUTOFOCUS === 'target') {
+			this._autoFocusElement = this._targetEl;
+			this._targetEl.setAttribute('tabindex', '-1');
+		}
+		if (this._options.AUTOFOCUS === 'firstTabbable') {
+			this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
+			if (this._autoFocusElement.setSelectionRange) {
+				this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
+			}
+		}
+		this._autoFocusElement.focus();
+	}
+
+	/**
 	 * @public
 	 */
 
@@ -155,23 +169,7 @@ const Expander = class {
 			});
 			this._triggerEl.dispatchEvent(event);
 		}
-
-		if (this._options.AUTOFOCUS === null) {
-			this._triggerEl.focus();
-		} else if (this._options.AUTOFOCUS === 'firstTabbable') {
-			if (this._targetTabbableItems.length > 0) {
-				const firstTabbableItem = this._targetTabbableItems[0];
-				firstTabbableItem.focus();
-
-				if (firstTabbableItem.setSelectionRange) {
-					firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
-				}
-			}
-		} else if (this._options.AUTOFOCUS === 'target') {
-			this._targetEl.setAttribute('tabindex', '-1');
-			this._targetEl.focus();
-		}
-
+		this._handleAutoFocus();
 		this._updateAriaAttributes();
 		this._setupTemporaryEventListeners();
 	}
