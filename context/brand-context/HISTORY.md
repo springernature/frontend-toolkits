@@ -2,7 +2,7 @@
 
 ## 4.1.0 (2020-07-20)
     * Update SpringerNature button styles
-	* FEATURE: Add secondary button styles for SpringerNature
+    * FEATURE: Add secondary button styles for SpringerNature
 
 ## 4.0.0 (2020-07-16)
     * BREAKING: RFS now part of context, no need to include in apps 
