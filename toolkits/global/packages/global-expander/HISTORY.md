@@ -2,7 +2,7 @@
 
 ## 2.0.1 (2020-07-20)
     * Replace switch with if/else if when detecting AUTOFOCUS option
-    * Handle incorrect AUTOFOCUS options 
+    * Move AUTOFOCUS into private helper class
 
 ## 2.0.0 (2020-07-15)
     * Refactor AUTOFOCUS from boolean to string to set options
