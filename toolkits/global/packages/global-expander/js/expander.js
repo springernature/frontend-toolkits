@@ -131,14 +131,15 @@ const Expander = class {
 		if (this._options.AUTOFOCUS === 'target') {
 			this._autoFocusElement = this._targetEl;
 			this._targetEl.setAttribute('tabindex', '-1');
+			this._autoFocusElement.focus();
 		}
 		if (this._options.AUTOFOCUS === 'firstTabbable') {
 			this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
 			if (this._autoFocusElement.setSelectionRange) {
 				this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
 			}
+			this._autoFocusElement.focus();
 		}
-		this._autoFocusElement.focus();
 	}
 
 	/**
