@@ -15,12 +15,12 @@ const Popup = class {
 			this._close();
 		};
 		this._build();
+		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true});
 		this._bindEvents();
 	}
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true});
 		document.body.appendChild(this._content);
 	}
 
