@@ -65,7 +65,7 @@ const Popup = class {
 		});
 
 		this._getCloseButton().addEventListener('keydown', event => {
-			if (event.key === 'Enter' || event.key === 'Space') {
+			if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
 				event.preventDefault();
 				this._close();
 			}
