@@ -16,13 +16,13 @@ const defaultOptions = {
 const Expander = class {
 	constructor(trigger, target, options = {}) {
 		this._options = Object.assign({}, defaultOptions, options);
+		this._autoFocusElement = trigger;
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
-
 		this._isOpen = false;
 
 		this._handleButtonClick = this._handleButtonClick.bind(this);
@@ -124,6 +124,24 @@ const Expander = class {
 	}
 
 	/**
+	 * AutoFocus
+	 */
+
+	_handleAutoFocus() {
+		if (this._options.AUTOFOCUS === 'target') {
+			this._autoFocusElement = this._targetEl;
+			this._targetEl.setAttribute('tabindex', '-1');
+		}
+		if (this._options.AUTOFOCUS === 'firstTabbable') {
+			this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
+			if (this._autoFocusElement.setSelectionRange) {
+				this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
+			}
+		}
+		this._autoFocusElement.focus();
+	}
+
+	/**
 	 * @public
 	 */
 
@@ -151,28 +169,9 @@ const Expander = class {
 			});
 			this._triggerEl.dispatchEvent(event);
 		}
-
-		switch (this._options.AUTOFOCUS) {
-			case 'firstTabbable':
-				if (this._targetTabbableItems.length > 0) {
-					const firstTabbableItem = this._targetTabbableItems[0];
-					firstTabbableItem.focus();
-
-					if (firstTabbableItem.setSelectionRange) {
-						firstTabbableItem.setSelectionRange(0, firstTabbableItem.value.length);
-					}
-				}
-				break;
-			case 'target':
-				this._targetEl.setAttribute('tabindex', '-1');
-				this._targetEl.focus();
-				break;
-			default:
-				break;
-		}
-
 		this._updateAriaAttributes();
 		this._setupTemporaryEventListeners();
+		this._handleAutoFocus();
 	}
 
 	close() {
