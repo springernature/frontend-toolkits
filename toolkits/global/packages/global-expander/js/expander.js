@@ -135,9 +135,6 @@ const Expander = class {
 		}
 		if (this._options.AUTOFOCUS === 'firstTabbable') {
 			this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
-			if (this._autoFocusElement.setSelectionRange) {
-				this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
-			}
 			this._autoFocusElement.focus();
 		}
 	}
@@ -170,9 +167,9 @@ const Expander = class {
 			});
 			this._triggerEl.dispatchEvent(event);
 		}
-		this._handleAutoFocus();
 		this._updateAriaAttributes();
 		this._setupTemporaryEventListeners();
+		this._handleAutoFocus();
 	}
 
 	close() {

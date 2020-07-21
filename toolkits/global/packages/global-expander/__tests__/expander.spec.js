@@ -464,8 +464,6 @@ describe('Expander', () => {
 			// Then
 			const input = element.TARGET.querySelector('input');
 			expect(input).toEqual(document.activeElement);
-			expect(input.selectionStart === 0).toBe(true);
-			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
 
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and enter key pressed on native button', () => {
@@ -481,8 +479,6 @@ describe('Expander', () => {
 			// Then
 			const input = element.TARGET.querySelector('input');
 			expect(input).toEqual(document.activeElement);
-			expect(input.selectionStart === 0).toBe(true);
-			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
 
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and space key pressed on anchor link button', () => {
@@ -499,8 +495,6 @@ describe('Expander', () => {
 			// Then
 			const input = element.TARGET.querySelector('input');
 			expect(input).toEqual(document.activeElement);
-			expect(input.selectionStart === 0).toBe(true);
-			expect(input.selectionEnd === input.value.length).toBe(true);
 		});
 
 		test('Should not fire focus event by default', () => {
