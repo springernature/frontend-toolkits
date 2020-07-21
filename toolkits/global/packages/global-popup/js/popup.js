@@ -7,7 +7,7 @@ const Popup = class {
 		this._content = document.querySelector(`#${this._id}`);
 		this._className = 'c-popup';
 		this._isOpen = false;
-		this._expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
+		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true});
 		this._arrowClass = `${this._className}__arrow`;
 		this._closeClass = `${this._className}__close`;
 		this._closeButton = `<a href="javascript:;" class="${this._closeClass}">Close</a>`;
