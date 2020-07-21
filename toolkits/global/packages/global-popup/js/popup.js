@@ -9,7 +9,7 @@ const Popup = class {
 		this._isOpen = false;
 		this._arrowClass = `${this._className}__arrow`;
 		this._closeClass = `${this._className}__close`;
-		this._closeButton = `<a href="javascript:;" class="${this._closeClass}">Close</a>`;
+		this._closeButton = `<button class="${this._closeClass}">Close</button>`;
 		this._arrow = `<div class="${this._arrowClass}"></div>`;
 		this._closeHandler = () => {
 			this._close();
