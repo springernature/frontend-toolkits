@@ -11,6 +11,7 @@ $button--padding: 10px 35px;
 $button--padding-large: 10px 35px;
 $button--letter-spacing: 0.7px;
 $button--font-family: $font-family-sans;
+$button--transition: background-color 0.2s;
 
 /**
  * Button Themes
@@ -19,31 +20,28 @@ $button--font-family: $font-family-sans;
  */
 
 $button--default: (
-	'color': color('midnight'),
-	'backgroundColor': color('alabaster'),
-	'backgroundImage': none,
-	'border': $button--border-width-style color('midnight'),
-	'visitedColor': color('midnight'),
-	'hoverColor': color('alabaster'),
-	'hoverBorder': $button--border-width-style color('midnight'),
-	'hoverBackgroundColor': color('midnight'),
-	'hoverBackgroundImage': none,
-	'hoverTextDecoration': none,
-	'focusBorder': $button--border-width-style color('midnight'),
-	'focusTextDecoration': none
-);
-
-$button--primary: (
-	'color': color('alabaster'),
+	'color': white,
 	'backgroundColor': color('midnight'),
 	'backgroundImage': none,
 	'border': $button--border-width-style color('midnight'),
-	'visitedColor': color('alabaster'),
+	'visitedColor': white,
 	'hoverColor': color('midnight'),
 	'hoverBorder': $button--border-width-style color('midnight'),
-	'hoverBackgroundColor': color('alabaster'),
+	'hoverBackgroundColor': white,
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $button--border-width-style color('midnight'),
-	'focusTextDecoration': none
+	'focusTextDecoration': none,
+	'fontWeight': bold,
+);
+
+$button--primary: $button--default;
+
+$button--secondary: (
+	'color': color('midnight'),
+	'visitedColor': color('midnight'),
+	'backgroundColor': white,
+	'hoverColor': white,
+	'hoverBackgroundColor': color('midnight'),
+	'fontWeight': normal,
 );
