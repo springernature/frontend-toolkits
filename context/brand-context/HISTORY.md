@@ -1,5 +1,8 @@
 # History
 
+## 4.2.0 (2020-07-22)
+    * Add default variable $font-family-serif-save-data and uae within nature
+    
 ## 4.1.0 (2020-07-20)
     * Update SpringerNature button styles
     * FEATURE: Add secondary button styles for SpringerNature

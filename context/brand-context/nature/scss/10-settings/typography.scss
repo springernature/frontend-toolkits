@@ -10,6 +10,7 @@ $primary-font: if($is-flagship-journal, Harding, Lora);
 	$font-family-serif: $font-family-sans;
 } @else {
 	$font-family-serif: $primary-font, Palatino, serif;
+	$font-family-serif-save-data: Palatino, serif;
 }
 
 $context--heading-font-weight: if($is-flagship-journal, bold, normal);
