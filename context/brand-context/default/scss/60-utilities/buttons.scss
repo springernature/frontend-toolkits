@@ -15,6 +15,10 @@
 	@include button-primary
 }
 
+.u-button--secondary {
+	@include button-secondary
+}
+
 .u-button--ghost {
 	@include button-ghost
 }
