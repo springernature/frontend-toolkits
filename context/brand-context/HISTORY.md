@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2020-07-22)
+    * Add default variable $font-family-serif-save-data and use within nature
+
 ## 4.0.0 (2020-07-16)
     * BREAKING: RFS now part of context, no need to include in apps 
 
