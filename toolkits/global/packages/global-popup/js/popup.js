@@ -11,7 +11,6 @@ const Popup = class {
 		this._closeClass = `${this._className}__close`;
 		this._closeButton = `<button class="${this._closeClass}"><span class="u-visually-hidden">Close</span></button>`;
 		this._arrow = `<div class="${this._arrowClass}"></div>`;
-		this._focusCatcher = `<button aria-hidden="true" class="js-focus-catcher u-visually-hidden" tabindex="-1"></button>`;
 		this._closeHandler = () => {
 			this._close();
 		};
@@ -22,11 +21,7 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-
-		if (!document.querySelector('button.js-focus-catcher')) {
-			document.body.insertAdjacentHTML('beforeend', this._focusCatcher);
-		}
-		document.body.insertBefore(document.querySelector('button.js-focus-catcher'), this._content.nextElementSibling);
+		document.body.appendChild(this._content);
 	}
 
 	_getCloseButton() {
@@ -52,22 +47,12 @@ const Popup = class {
 		return value + 'px';
 	}
 
-	_toggleFocusCatcherTabIndex() {
-		const focusCatcherElement = document.querySelector('button.js-focus-catcher');
-
-		if (focusCatcherElement.getAttribute('tabindex') === '-1') {
-			focusCatcherElement.setAttribute('tabindex', '0');
-		} else {
-			focusCatcherElement.setAttribute('tabindex', '-1');
-		}
-	}
-
 	_bindEvents() {
 		this._expander.init();
 
 		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
-			this._toggleFocusCatcherTabIndex();
+
 			if (this._isOpen) {
 				return;
 			}
@@ -78,7 +63,6 @@ const Popup = class {
 		this._trigger.addEventListener('globalExpander:close', event => {
 			event.preventDefault();
 			this._close();
-			this._toggleFocusCatcherTabIndex();
 		});
 
 		this._getCloseButton().addEventListener('click', event => {
