@@ -23,6 +23,7 @@ const Expander = class {
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
+		this._lastTargetTabbableItem = this._targetTabbableItems[this._targetTabbableItems.length - 1];
 		this._isOpen = false;
 
 		this._handleButtonClick = this._handleButtonClick.bind(this);
@@ -65,12 +66,13 @@ const Expander = class {
 
 		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			if (event.key === 'Tab') {
-				window.requestAnimationFrame(() => {
-					if (!this._targetTabbableItems.includes(document.activeElement)) {
+				if (event.target === this._lastTargetTabbableItem) {
+					event.preventDefault();
+					window.requestAnimationFrame(() => {
 						this.close();
 						this._triggerEl.focus();
-					}
-				});
+					});
+				}
 			}
 		}
 	}
