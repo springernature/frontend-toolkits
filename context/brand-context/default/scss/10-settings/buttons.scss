@@ -19,14 +19,13 @@ $button--padding: spacing(8);
 $button--padding-large: spacing(16);
 $button--justify-content: center;
 $button--transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-$button--border-radius: null;
+$button--border-radius: 2px;
 $button--letter-spacing: null;
 
 // Button Themes
 // Variables to set themes styles
 
 $button--default: (
-	'border-radius': 2px,
 	'color': darkblue,
 	'backgroundColor': greyscale(95),
 	'backgroundImage': none,
@@ -38,7 +37,8 @@ $button--default: (
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $button--border-width-style greyscale(40),
-	'focusTextDecoration': none
+	'focusTextDecoration': none,
+	'fontWeight': normal,
 );
 
 $button--primary: (
@@ -52,6 +52,7 @@ $button--primary: (
 	'hoverBackgroundColor': blue,
 	'hoverBackgroundImage': none,
 	'focusBorder': $button--border-width-style blue,
+	'fontWeight': normal,
 );
 
 $button--disabled: (
@@ -67,5 +68,6 @@ $button--disabled: (
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $button--border-width-style greyscale(80),
-	'focusTextDecoration': none
+	'focusTextDecoration': none,
+	'fontWeight': normal,
 );

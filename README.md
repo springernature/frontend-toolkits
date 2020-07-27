@@ -206,6 +206,8 @@ Tests for your package should be written in your `packages/<prefix>-name-of-pack
 * To run all the tests for a particular package use `npm test <name-of-package>`
 * To run an individual test use `npm test <name-of-test-file>`
 
+**NOTE**: Make sure that you bootstrap all package dependencies before running tests using `npm run bootstrap:local`.
+
 ## Linting
 
 Javascript linting is enforced using the [Springer Nature Eslint config](https://www.npmjs.com/package/@springernature/eslint-config) across all packages. Run the linter using `npm run lint` from within the project on the command line.
