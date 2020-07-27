@@ -60,11 +60,6 @@ const Popup = class {
 			window.addEventListener('resize', this._closeHandler);
 		});
 
-		this._trigger.addEventListener('globalExpander:close', event => {
-			event.preventDefault();
-			this._close();
-		});
-
 		this._getCloseButton().addEventListener('click', event => {
 			event.preventDefault();
 			this._close();
