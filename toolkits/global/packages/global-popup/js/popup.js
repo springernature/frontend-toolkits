@@ -22,7 +22,7 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		// check focus catcher doesnt already exist - and set one focus catcher button
+
 		if (!document.querySelector('button.js-focus-catcher')) {
 			document.body.insertAdjacentHTML('beforeend', this._focusCatcher);
 		}
@@ -52,7 +52,7 @@ const Popup = class {
 		return value + 'px';
 	}
 
-	_updateFocusCatcherTabIndex() {
+	_toggleFocusCatcherTabIndex() {
 		const focusCatcherElement = document.querySelector('button.js-focus-catcher');
 
 		if (focusCatcherElement.getAttribute('tabindex') === '-1') {
@@ -67,7 +67,7 @@ const Popup = class {
 
 		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
-			this._updateFocusCatcherTabIndex();
+			this._toggleFocusCatcherTabIndex();
 			if (this._isOpen) {
 				return;
 			}
@@ -78,7 +78,7 @@ const Popup = class {
 		this._trigger.addEventListener('globalExpander:close', event => {
 			event.preventDefault();
 			this._close();
-			this._updateFocusCatcherTabIndex();
+			this._toggleFocusCatcherTabIndex();
 		});
 
 		this._getCloseButton().addEventListener('click', event => {
