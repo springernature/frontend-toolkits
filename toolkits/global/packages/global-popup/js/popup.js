@@ -11,17 +11,22 @@ const Popup = class {
 		this._closeClass = `${this._className}__close`;
 		this._closeButton = `<button class="${this._closeClass}"><span class="u-visually-hidden">Close</span></button>`;
 		this._arrow = `<div class="${this._arrowClass}"></div>`;
+		this._focusCatcher = `<button aria-hidden="true" class="js-focus-catcher u-visually-hidden" tabindex="-1"></button>`;
 		this._closeHandler = () => {
 			this._close();
 		};
 		this._build();
-		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true});
+		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true, CLOSE_EVENT: true});
 		this._bindEvents();
 	}
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		document.body.appendChild(this._content);
+		// check focus catcher doesnt already exist - and set one focus catcher button
+		if (!document.querySelector('button.js-focus-catcher')) {
+			document.body.insertAdjacentHTML('beforeend', this._focusCatcher);
+		}
+		document.body.insertBefore(document.querySelector('button.js-focus-catcher'), this._content.nextElementSibling);
 	}
 
 	_getCloseButton() {
@@ -47,16 +52,33 @@ const Popup = class {
 		return value + 'px';
 	}
 
+	_updateFocusCatcherTabIndex() {
+		const focusCatcherElement = document.querySelector('button.js-focus-catcher');
+
+		if (focusCatcherElement.getAttribute('tabindex') === '-1') {
+			focusCatcherElement.setAttribute('tabindex', '0');
+		} else {
+			focusCatcherElement.setAttribute('tabindex', '-1');
+		}
+	}
+
 	_bindEvents() {
 		this._expander.init();
 
 		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
+			this._updateFocusCatcherTabIndex();
 			if (this._isOpen) {
 				return;
 			}
 			this._positionPopup();
 			window.addEventListener('resize', this._closeHandler);
+		});
+
+		this._trigger.addEventListener('globalExpander:close', event => {
+			event.preventDefault();
+			this._close();
+			this._updateFocusCatcherTabIndex();
 		});
 
 		this._getCloseButton().addEventListener('click', event => {
@@ -68,6 +90,7 @@ const Popup = class {
 			if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
 				event.preventDefault();
 				this._close();
+				this._trigger.focus();
 			}
 		});
 
@@ -75,6 +98,7 @@ const Popup = class {
 			if (event.key === 'Escape') {
 				event.preventDefault();
 				this._close();
+				this._trigger.focus();
 			}
 		});
 	}
