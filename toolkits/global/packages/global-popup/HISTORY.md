@@ -1,9 +1,9 @@
 # History
 
 ## 0.4.2 (2020-07-21)
-    * Bump global-expander to 2.0.1 
-        * Set AUTOFOCUS: target to retain behaviour from previous version (1.2.0)
+    * Bump global-expander to 2.0.2
     * Bump global-javascript to 2.3.0
+    * Set AUTOFOCUS: target to retain behaviour from previous version (1.2.0)
     * Close button changes
         * Fix unable to reach close button
         * Fix keyboard space key not closing popup and update test
