@@ -30,6 +30,10 @@ const createKeydownEvent = key => {
 		case 'Tab':
 			event.key = 'Tab';
 			break;
+		case 'TabShift':
+			event.key = 'Tab';
+			event.shiftKey = true;
+			break;
 		default:
 			throw new Error('key should be "Enter", " " (Space), "Spacebar", "Escape" or "Tab"');
 	}
@@ -360,6 +364,23 @@ describe('Expander', () => {
 			// When
 			const keydownTabEvent = createKeydownEvent('Tab');
 			element.ANCHOR.dispatchEvent(keydownTabEvent);
+			// Then
+			window.requestAnimationFrame(() => {
+				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				done();
+			});
+		});
+
+		test('Should close and set focus on trigger when tab out backwards of the target', done => {
+			// Given
+			element.ANCHOR = document.querySelector('a');
+			const expander = new Expander(element.BUTTON, element.TARGET, {AUTOFOCUS: 'target'});
+			expander.init();
+			element.BUTTON.click();
+			// When
+			const keydownTabShiftEvent = createKeydownEvent('TabShift');
+			element.ANCHOR.dispatchEvent(keydownTabShiftEvent);
 			// Then
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
