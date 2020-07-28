@@ -1,7 +1,7 @@
 # History
 
-## 2.0.2 (2020-07-27)
-    * Detect last tabbable item on tab out to set focus on trigger    
+## 2.0.2 (2020-07-28)
+    * Refactor when to focus back to trigger during tabbing 
 
 ## 2.0.1 (2020-07-20)
     * Replace switch with if/else if when detecting AUTOFOCUS option
