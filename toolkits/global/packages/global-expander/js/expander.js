@@ -66,13 +66,15 @@ const Expander = class {
 
 		if (this._options.CLOSE_ON_FOCUS_OUT) {
 			if (event.key === 'Tab') {
-				if (event.target === this._lastTargetTabbableItem) {
-					event.preventDefault();
-					window.requestAnimationFrame(() => {
+				window.requestAnimationFrame(() => {
+					if (!this._targetTabbableItems.includes(document.activeElement)) {
+						if (event.target === this._lastTargetTabbableItem) {
+							event.preventDefault();
+						}
 						this.close();
 						this._triggerEl.focus();
-					});
-				}
+					}
+				});
 			}
 		}
 	}
