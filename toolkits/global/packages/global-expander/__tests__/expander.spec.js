@@ -360,7 +360,6 @@ describe('Expander', () => {
 			// When
 			const keydownTabEvent = createKeydownEvent('Tab');
 			element.ANCHOR.dispatchEvent(keydownTabEvent);
-
 			// Then
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);

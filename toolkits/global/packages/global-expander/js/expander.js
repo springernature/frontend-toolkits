@@ -65,16 +65,24 @@ const Expander = class {
 		}
 
 		if (this._options.CLOSE_ON_FOCUS_OUT) {
-			if (event.key === 'Tab') {
-				window.requestAnimationFrame(() => {
-					if (!this._targetTabbableItems.includes(document.activeElement)) {
-						if (event.target === this._lastTargetTabbableItem) {
-							event.preventDefault();
-						}
+			if (event.key === 'Tab' && event.shiftKey === true) {
+				if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
+					event.preventDefault();
+					window.requestAnimationFrame(() => {
 						this.close();
 						this._triggerEl.focus();
-					}
-				});
+					});
+				}
+			}
+
+			if (event.key === 'Tab') {
+				if (event.target === this._lastTargetTabbableItem) {
+					event.preventDefault();
+					window.requestAnimationFrame(() => {
+						this.close();
+						this._triggerEl.focus();
+					});
+				}
 			}
 		}
 	}
