@@ -22,6 +22,10 @@
 	padding-right: 16px;
 }
 
+.c-popup__close-text {
+	@include u-visually-hidden;
+}
+
 .c-popup__arrow {
 	width: 30px;
 	height: 20px;
