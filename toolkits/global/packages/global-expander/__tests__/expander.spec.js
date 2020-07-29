@@ -27,12 +27,12 @@ const createKeydownEvent = key => {
 		case 'Escape':
 			event.key = 'Escape';
 			break;
-		case 'Tab':
-			event.key = 'Tab';
-			break;
 		case 'TabShift':
 			event.key = 'Tab';
 			event.shiftKey = true;
+			break;
+		case 'Tab':
+			event.key = 'Tab';
 			break;
 		default:
 			throw new Error('key should be "Enter", " " (Space), "Spacebar", "Escape" or "Tab"');
