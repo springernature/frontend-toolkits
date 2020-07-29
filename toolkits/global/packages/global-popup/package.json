@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-popup",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Builds and styles a popup that can be opened and closed",
   "license": "MIT",
   "peerDependencies": {
