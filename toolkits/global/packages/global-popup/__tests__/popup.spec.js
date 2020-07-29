@@ -12,7 +12,7 @@ describe('Global Popup: popup.js', () => {
 			<span data-test-trigger></span>
 			<div id="popupContent1">
 				<p>Some popup text</p>
-			</div>			
+			</div>
 		`;
 		trigger = document.querySelector('[data-test-trigger]');
 	});
@@ -68,7 +68,7 @@ describe('Global Popup: popup.js', () => {
 		expect(document.querySelector('.is-open')).not.toBe(null);
 
 		const closeBtn = getCloseBtn();
-		const event = new KeyboardEvent('keydown', {key: 'Space'});
+		const event = new KeyboardEvent('keydown', {key: ' '});
 		closeBtn.dispatchEvent(event);
 
 		expect(document.querySelector('.is-open')).toBe(null);
@@ -143,7 +143,7 @@ describe('Global Popup: popup.js', () => {
 			<span data-test-trigger-2></span>
 			<div id="popupContent2">
 				<p>Some popup text</p>
-			</div>			
+			</div>
 		`;
 		document.body.appendChild(html);
 

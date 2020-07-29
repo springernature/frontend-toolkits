@@ -7,15 +7,16 @@ const Popup = class {
 		this._content = document.querySelector(`#${this._id}`);
 		this._className = 'c-popup';
 		this._isOpen = false;
-		this._expander = new Expander(this._trigger, this._content, {FOCUS_EVENT: true});
 		this._arrowClass = `${this._className}__arrow`;
 		this._closeClass = `${this._className}__close`;
-		this._closeButton = `<a href="javascript:;" class="${this._closeClass}">Close</a>`;
+		this._closeTextClass = `${this._className}__close-text`;
+		this._closeButton = `<button class="${this._closeClass}"><span class="${this._closeTextClass}">Close</span></button>`;
 		this._arrow = `<div class="${this._arrowClass}"></div>`;
 		this._closeHandler = () => {
 			this._close();
 		};
 		this._build();
+		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true, CLOSE_EVENT: true});
 		this._bindEvents();
 	}
 
@@ -52,6 +53,7 @@ const Popup = class {
 
 		this._trigger.addEventListener('globalExpander:focusTarget', event => {
 			event.preventDefault();
+
 			if (this._isOpen) {
 				return;
 			}
@@ -65,9 +67,10 @@ const Popup = class {
 		});
 
 		this._getCloseButton().addEventListener('keydown', event => {
-			if (event.key === 'Enter' || event.key === 'Space') {
+			if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
 				event.preventDefault();
 				this._close();
+				this._trigger.focus();
 			}
 		});
 
@@ -75,6 +78,7 @@ const Popup = class {
 			if (event.key === 'Escape') {
 				event.preventDefault();
 				this._close();
+				this._trigger.focus();
 			}
 		});
 	}
