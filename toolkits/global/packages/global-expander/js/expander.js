@@ -23,7 +23,6 @@ const Expander = class {
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
-		this._lastTargetTabbableItem = this._targetTabbableItems[this._targetTabbableItems.length - 1];
 		this._isOpen = false;
 
 		this._handleButtonClick = this._handleButtonClick.bind(this);
@@ -76,7 +75,7 @@ const Expander = class {
 			}
 
 			if (event.key === 'Tab') {
-				if (event.target === this._lastTargetTabbableItem) {
+				if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
 					event.preventDefault();
 					window.requestAnimationFrame(() => {
 						this.close();
