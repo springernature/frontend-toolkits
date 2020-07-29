@@ -54,6 +54,7 @@ describe('Expander', () => {
 
 		element.BUTTON = document.querySelector('button');
 		element.TARGET = document.querySelector('div');
+		element.FIRSTTABBABLE = document.querySelector('a');
 	});
 
 	describe('Expander Class Definition', () => {
@@ -357,13 +358,12 @@ describe('Expander', () => {
 
 		test('Should close and set focus on trigger when tab out of the target', done => {
 			// Given
-			element.ANCHOR = document.querySelector('a');
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.click();
 			// When
 			const keydownTabEvent = createKeydownEvent('Tab');
-			element.ANCHOR.dispatchEvent(keydownTabEvent);
+			element.FIRSTTABBABLE.dispatchEvent(keydownTabEvent);
 			// Then
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
@@ -374,13 +374,12 @@ describe('Expander', () => {
 
 		test('Should close and set focus on trigger when tab out backwards of the target', done => {
 			// Given
-			element.ANCHOR = document.querySelector('a');
 			const expander = new Expander(element.BUTTON, element.TARGET, {AUTOFOCUS: 'target'});
 			expander.init();
 			element.BUTTON.click();
 			// When
 			const keydownTabShiftEvent = createKeydownEvent('TabShift');
-			element.ANCHOR.dispatchEvent(keydownTabShiftEvent);
+			element.FIRSTTABBABLE.dispatchEvent(keydownTabShiftEvent);
 			// Then
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
