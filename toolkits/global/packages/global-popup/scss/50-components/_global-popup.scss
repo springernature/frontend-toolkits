@@ -5,8 +5,7 @@
 	padding: $c-popup--padding;
 	border: 1px solid $c-popup--border-color;
 	box-shadow: $c-popup--box-shadow;
-	min-width: $c-popup--min-width;
-	max-width: $c-popup--max-width;
+	width: auto;
 	border-radius: $c-popup--border-radius;
 	background-color: $c-popup--background-color;
 }

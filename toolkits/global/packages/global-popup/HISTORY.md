@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2020-07-31)
+    * Removes min-width and max-width from css as will be set in js
+    * Adds width: auto to css
+
 ## 0.4.2 (2020-07-29)
     * Bump global-expander to 2.0.2
     * Bump global-javascript to 2.3.0
