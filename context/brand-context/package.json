@@ -4,5 +4,8 @@
   "license": "MIT",
   "description": "Bootstrapping for all components and products",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "devDependencies": {
+    "@springernature/util-sass-compiler": "^0.1.0"
+  }
 }
