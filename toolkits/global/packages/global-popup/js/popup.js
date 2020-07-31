@@ -41,8 +41,6 @@ const Popup = class {
 
 		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
-		this._content.style.left = this._px(pos.left);
-		this._content.style.right = this._px(pos.right);
 		if (this._options.max_width) {
 			this._content.style.maxWidth = this._options.max_width;
 		}
@@ -136,8 +134,6 @@ const Popup = class {
 		}
 
 		return {
-			left: (windowWidth < 600) ? 5 : offset.left,
-			right: 5, // grow across page (width of popup controlled by css max-width)
 			top: (position === 'above') ? abovePositioning : belowPositioning
 		};
 	}
