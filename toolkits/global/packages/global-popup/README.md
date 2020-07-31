@@ -53,9 +53,12 @@ new Popup(trigger, 'popupContent1', { MIN_WIDTH: "100px", MAX_WIDTH: "600px", HO
 
 ```html
 <div class="some-classname">
-    <span>Popup trigger</span>
-    <div id="popupContent1">
-        <p>Some popup text</p>
+    <div>
+        <span>Popup trigger</span>
+        <div id="popupContent1">
+            <p>Some popup text</p>
+        </div>
     </div>
-</div>			
+</div>
+			
 ```
