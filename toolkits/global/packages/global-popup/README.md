@@ -34,7 +34,7 @@ Two data attributes are required:
 | data-popup         | Boolean | This is the popup trigger i.e. clicking this will open a popup |
 | data-popup-target  | String  | This is the id of the element in the DOM that Global Popup will use to build the popup contents |
 
-There are also options:
+There are also options (add these to trigger element):
 
 | Data attribute        | Type    | Description |
 |-----------------------|---------|-------------|
