@@ -30,6 +30,7 @@ const Popup = class {
 		}
 
 		hook.appendChild(this._content);
+		hook.style.position = 'relative';
 	}
 
 	_getCloseButton() {
