@@ -18,8 +18,8 @@ popup();
 ```
 
 ```html
-<div data-popup-hook>
-    <span data-popup data-popup-target="popupContent1">Popup trigger</span>
+<div class="hook-selector">
+    <span data-popup data-popup-hook="hook-selector" data-popup-target="popupContent1">Popup trigger</span>
     <div id="popupContent1">
         <p>Some popup text</p>
     </div>
