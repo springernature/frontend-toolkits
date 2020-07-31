@@ -1,5 +1,12 @@
-import {makeArray} from '../../global-javascript/src/helpers';
+import {makeArray, getDataOptions} from '../../global-javascript/src/helpers';
 import {Popup} from './popup';
+
+const DATA_COMPONENT = 'data-popup';
+
+const optionSelectors = {
+	MIN_WIDTH: DATA_COMPONENT + '-min-width',
+	MAX_WIDTH: DATA_COMPONENT + '-max-width'
+};
 
 /**
  * Data Attribute API
@@ -18,8 +25,10 @@ const popup = () => {
 		if (!targetElementSelector && !document.querySelector(targetElementSelector)) {
 			return;
 		}
+
+		const dataOptions = getDataOptions(trigger, optionSelectors);
 		/* eslint-disable no-new */
-		new Popup(trigger, targetElementSelector);
+		new Popup(trigger, targetElementSelector, Object.assign({}, dataOptions));
 		/* eslint-enable no-new */
 	});
 };

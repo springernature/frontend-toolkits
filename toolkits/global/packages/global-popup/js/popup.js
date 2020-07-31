@@ -1,9 +1,10 @@
 import {Expander} from '@springernature/global-expander/js/expander';
 
 const Popup = class {
-	constructor(trigger, id) {
+	constructor(trigger, id, options = {}) {
 		this._trigger = trigger;
 		this._id = id;
+		this._options = options;
 		this._content = document.querySelector(`#${this._id}`);
 		this._className = 'c-popup';
 		this._isOpen = false;
@@ -22,7 +23,13 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		document.body.appendChild(this._content);
+		let hook = this._trigger.parentNode;
+
+		if (document.querySelector(this._options.HOOK)) {
+			hook = document.querySelector(this._options.HOOK);
+		}
+
+		hook.appendChild(this._content);
 	}
 
 	_getCloseButton() {
@@ -32,10 +39,16 @@ const Popup = class {
 	_positionPopup() {
 		this._isOpen = true;
 
-		var pos = this._calcPositioning();
+		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
 		this._content.style.left = this._px(pos.left);
 		this._content.style.right = this._px(pos.right);
+		if (this._options.max_width) {
+			this._content.style.maxWidth = this._options.max_width;
+		}
+		if (this._options.min_width) {
+			this._content.style.minWidth = this._options.min_width;
+		}
 	}
 
 	_close() {
