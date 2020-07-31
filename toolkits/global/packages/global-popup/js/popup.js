@@ -41,11 +41,11 @@ const Popup = class {
 
 		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
-		if (this._options.max_width) {
-			this._content.style.maxWidth = this._options.max_width;
+		if (this._options.MAX_WIDTH) {
+			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
-		if (this._options.min_width) {
-			this._content.style.minWidth = this._options.min_width;
+		if (this._options.MIN_WIDTH) {
+			this._content.style.minWidth = this._options.MIN_WIDTH;
 		}
 	}
 

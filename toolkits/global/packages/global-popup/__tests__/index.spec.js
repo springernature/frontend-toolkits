@@ -45,7 +45,30 @@ describe('Global Popup: index.js (Data Attribute API)', () => {
 
 		// Then
 		expect(Popup).toHaveBeenCalledTimes(2);
-		expect(Popup).toHaveBeenNthCalledWith(1, trigger, 'popupContent1');
-		expect(Popup).toHaveBeenNthCalledWith(2, trigger2, 'popupContent2');
+		expect(Popup).toHaveBeenNthCalledWith(1, trigger, 'popupContent1', {});
+		expect(Popup).toHaveBeenNthCalledWith(2, trigger2, 'popupContent2', {});
+	});
+
+	it('should use data attr option if present in DOM', () => {
+		// Given
+		document.body.innerHTML = `
+		<div class="test-selector">
+			<div>
+				<span data-popup data-popup-hook=".test-selector" data-popup-target="popupContent3"></span>
+				<div id="popupContent3" class="c-popup">
+					<p>Some popup text</p>
+				</div>	
+			</div>
+		</div>
+		`;
+
+		// When
+		popup();
+		const trigger = document.querySelector('[data-popup]');
+		trigger.click();
+
+		// Then
+		expect(Popup).toHaveBeenCalledTimes(1);
+		expect(Popup).toHaveBeenNthCalledWith(1, trigger, 'popupContent3', {HOOK: '.test-selector'});
 	});
 });

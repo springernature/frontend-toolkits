@@ -5,7 +5,8 @@ const DATA_COMPONENT = 'data-popup';
 
 const optionSelectors = {
 	MIN_WIDTH: DATA_COMPONENT + '-min-width',
-	MAX_WIDTH: DATA_COMPONENT + '-max-width'
+	MAX_WIDTH: DATA_COMPONENT + '-max-width',
+	HOOK: DATA_COMPONENT + '-hook'
 };
 
 /**
@@ -28,6 +29,7 @@ const popup = () => {
 
 		const dataOptions = getDataOptions(trigger, optionSelectors);
 		/* eslint-disable no-new */
+		console.log('calling with\n', trigger, targetElementSelector, Object.assign({}, dataOptions));
 		new Popup(trigger, targetElementSelector, Object.assign({}, dataOptions));
 		/* eslint-enable no-new */
 	});
