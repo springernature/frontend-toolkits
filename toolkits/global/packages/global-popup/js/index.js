@@ -29,7 +29,6 @@ const popup = () => {
 
 		const dataOptions = getDataOptions(trigger, optionSelectors);
 		/* eslint-disable no-new */
-		console.log('calling with\n', trigger, targetElementSelector, Object.assign({}, dataOptions));
 		new Popup(trigger, targetElementSelector, Object.assign({}, dataOptions));
 		/* eslint-enable no-new */
 	});
