@@ -1,9 +1,10 @@
 import {Expander} from '@springernature/global-expander/js/expander';
 
 const Popup = class {
-	constructor(trigger, id) {
+	constructor(trigger, id, options = {}) {
 		this._trigger = trigger;
 		this._id = id;
+		this._options = options;
 		this._content = document.querySelector(`#${this._id}`);
 		this._className = 'c-popup';
 		this._isOpen = false;
@@ -22,7 +23,14 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		document.body.appendChild(this._content);
+		let hook = this._trigger.parentNode;
+
+		if (document.querySelector(this._options.HOOK)) {
+			hook = document.querySelector(this._options.HOOK);
+		}
+
+		hook.appendChild(this._content);
+		hook.style.position = 'relative';
 	}
 
 	_getCloseButton() {
@@ -32,10 +40,14 @@ const Popup = class {
 	_positionPopup() {
 		this._isOpen = true;
 
-		var pos = this._calcPositioning();
+		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
-		this._content.style.left = this._px(pos.left);
-		this._content.style.right = this._px(pos.right);
+		if (this._options.MAX_WIDTH) {
+			this._content.style.maxWidth = this._options.MAX_WIDTH;
+		}
+		if (this._options.MIN_WIDTH) {
+			this._content.style.minWidth = this._options.MIN_WIDTH;
+		}
 	}
 
 	_close() {
@@ -123,8 +135,6 @@ const Popup = class {
 		}
 
 		return {
-			left: (windowWidth < 600) ? 5 : offset.left,
-			right: 5, // grow across page (width of popup controlled by css max-width)
 			top: (position === 'above') ? abovePositioning : belowPositioning
 		};
 	}

@@ -10,7 +10,7 @@ describe('Global Popup: popup.js', () => {
 	beforeEach(() => {
 		document.body.innerHTML = `
 			<span data-test-trigger></span>
-			<div id="popupContent1">
+			<div id="popupContent1" class="c-popup">
 				<p>Some popup text</p>
 			</div>
 		`;
@@ -40,9 +40,7 @@ describe('Global Popup: popup.js', () => {
 		trigger.dispatchEvent(event);
 
 		expect(spy).toHaveBeenCalled();
-		expect(typeof spy.mock.results[0].value.left).toBe('number');
 		expect(typeof spy.mock.results[0].value.top).toBe('number');
-		expect(typeof spy.mock.results[0].value.right).toBe('number');
 
 	});
 
@@ -157,5 +155,14 @@ describe('Global Popup: popup.js', () => {
 		trigger2.click();
 
 		expect(trigger.classList.contains('is-open')).toBe(false);
+	});
+
+	it('should set css style if passed in as option', () => {
+		new Popup(trigger, 'popupContent1', { MAX_WIDTH: "600px" });
+
+		trigger.click();
+		const popup = document.querySelector('.c-popup');
+
+		expect(popup.style.maxWidth).toBe("600px");
 	});
 });

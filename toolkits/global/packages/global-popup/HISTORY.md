@@ -1,5 +1,10 @@
 # History
 
+## 1.0.0 (2020-07-31)
+    * Removes min-width and max-width from css and sets in js as option
+    * Adds width: auto to css
+    * Adds logic and option for hook which inserts popup in to parent of trigger unless specified in option
+
 ## 0.4.2 (2020-07-29)
     * Bump global-expander to 2.0.2
     * Bump global-javascript to 2.3.0
