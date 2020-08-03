@@ -6,8 +6,7 @@
   "keywords": [],
   "author": "Springer Nature",
   "brandContext": "^3.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "@springernature/global-javascript": "^2.3.0"
+  "dependencies": {
+    "@springernature/global-javascript": "^2.0.0"
   }
 }

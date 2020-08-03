@@ -27,7 +27,7 @@
     "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
     "publish": "sn-package-publish",
-    "test": "jest --colors --passWithNoTests",
+    "test": "jest --colors --coverage --passWithNoTests",
     "test:ci": "jest --passWithNoTests --runInBand",
     "validate": "sn-package-validate",
     "validate:global": "sn-package-validate -t global",
