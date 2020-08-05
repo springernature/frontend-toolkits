@@ -41,7 +41,7 @@ const Popup = class {
 		this._isOpen = true;
 
 		const pos = this._calcPositioning();
-		this._content.style.top = this._px(pos.top);
+		this._content.style.top = this._px(pos);
 		if (this._options.MAX_WIDTH) {
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
@@ -107,21 +107,20 @@ const Popup = class {
 		const arrowHeight = 12;
 		const arrowWidth = 20;
 
-		// calc where to position the popup above the trigger
-		// (trigger's distance from top of viewport - popup content's height - arrow's height)
-		const abovePositioning = offset.top - this._content.offsetHeight - arrowHeight;
+		// calc space above trigger
+		const spaceAbove = offset.top - this._content.offsetHeight - arrowHeight;
 
-		// calc where to position the popup below the trigger
-		// (trigger's distance from top of viewport + trigger's height + arrow's height)
-		const belowPositioning = offset.top + triggerMetrics.height + arrowHeight;
+		const abovePosition = 0 - this._content.offsetHeight - arrowHeight;
+		const belowPosition = 0 + triggerMetrics.height + arrowHeight;
 
-		let position = 'above';
+		let top;
 		// if there is not enough room for popup above trigger
-		if (abovePositioning < distanceScrolled) {
-			position = 'below';
+		if (spaceAbove < distanceScrolled) {
+			top = belowPosition;
 			arrow.classList.remove(this._arrowClass + '--above');
 			arrow.classList.add(this._arrowClass + '--below');
 		} else {
+			top = abovePosition;
 			arrow.classList.remove(this._arrowClass + '--below');
 			arrow.classList.add(this._arrowClass + '--above');
 		}
@@ -134,9 +133,7 @@ const Popup = class {
 			arrow.style.left = this._px(Math.round((triggerMetrics.width / 2) - arrowWidth));
 		}
 
-		return {
-			top: (position === 'above') ? abovePositioning : belowPositioning
-		};
+		return top;
 	}
 };
 
