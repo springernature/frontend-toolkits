@@ -41,7 +41,7 @@ const Popup = class {
 		this._isOpen = true;
 
 		const pos = this._calcPositioning();
-		this._content.style.top = this._px(pos.top);
+		this._content.style.top = this._px(pos);
 		if (this._options.MAX_WIDTH) {
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
@@ -113,13 +113,14 @@ const Popup = class {
 		const abovePosition = 0 - this._content.offsetHeight - arrowHeight;
 		const belowPosition = 0 + triggerMetrics.height + arrowHeight;
 
-		let position = 'above';
+		let top;
 		// if there is not enough room for popup above trigger
 		if (spaceAbove < distanceScrolled) {
-			position = 'below';
+			top = belowPosition;
 			arrow.classList.remove(this._arrowClass + '--above');
 			arrow.classList.add(this._arrowClass + '--below');
 		} else {
+			top = abovePosition;
 			arrow.classList.remove(this._arrowClass + '--below');
 			arrow.classList.add(this._arrowClass + '--above');
 		}
@@ -132,9 +133,7 @@ const Popup = class {
 			arrow.style.left = this._px(Math.round((triggerMetrics.width / 2) - arrowWidth));
 		}
 
-		return {
-			top: (position === 'above') ? abovePosition : belowPosition
-		};
+		return top;
 	}
 };
 
