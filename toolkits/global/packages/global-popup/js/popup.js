@@ -133,7 +133,7 @@ const Popup = class {
 		}
 
 		return {
-			top: (position === 'above') ? abovePositioning : belowPositioning;
+			top: (position === 'above') ? abovePositioning : belowPositioning
 		};
 	}
 };
