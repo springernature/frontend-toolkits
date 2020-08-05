@@ -2,6 +2,7 @@
 
 ## 1.0.1 (2020-08-05)
     * Fixes issue with position calculation
+    * Makes styles js only
     
 ## 1.0.0 (2020-07-31)
     * Removes min-width and max-width from css and sets in js as option.
