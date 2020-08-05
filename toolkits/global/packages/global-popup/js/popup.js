@@ -108,12 +108,10 @@ const Popup = class {
 		const arrowWidth = 20;
 
 		// calc where to position the popup above the trigger
-		// (trigger's distance from top of viewport - popup content's height - arrow's height)
-		const abovePositioning = offset.top - this._content.offsetHeight - arrowHeight;
+		const abovePositioning = 0 - this._content.offsetHeight - arrowHeight;
 
 		// calc where to position the popup below the trigger
-		// (trigger's distance from top of viewport + trigger's height + arrow's height)
-		const belowPositioning = offset.top + triggerMetrics.height + arrowHeight;
+		const belowPositioning = 0 + triggerMetrics.height + arrowHeight;
 
 		let position = 'above';
 		// if there is not enough room for popup above trigger
@@ -135,7 +133,7 @@ const Popup = class {
 		}
 
 		return {
-			top: (position === 'above') ? abovePositioning : belowPositioning
+			top: (position === 'above') ? abovePositioning : belowPositioning;
 		};
 	}
 };
