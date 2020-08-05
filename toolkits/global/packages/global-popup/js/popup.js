@@ -108,14 +108,14 @@ const Popup = class {
 		const arrowWidth = 20;
 
 		// calc space above trigger
-		const abovePositioning = offset.top - this._content.offsetHeight - arrowHeight;
+		const spaceAbove = offset.top - this._content.offsetHeight - arrowHeight;
 
 		const abovePosition = 0 - this._content.offsetHeight - arrowHeight;
 		const belowPosition = 0 + triggerMetrics.height + arrowHeight;
 
 		let position = 'above';
 		// if there is not enough room for popup above trigger
-		if (abovePositioning < distanceScrolled) {
+		if (spaceAbove < distanceScrolled) {
 			position = 'below';
 			arrow.classList.remove(this._arrowClass + '--above');
 			arrow.classList.add(this._arrowClass + '--below');
