@@ -23,14 +23,7 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		let hook = this._trigger.parentNode;
-
-		if (document.querySelector(this._options.HOOK)) {
-			hook = document.querySelector(this._options.HOOK);
-		}
-
-		hook.appendChild(this._content);
-		hook.style.position = 'relative';
+		document.body.appendChild(this._content);
 	}
 
 	_getCloseButton() {
@@ -41,7 +34,8 @@ const Popup = class {
 		this._isOpen = true;
 
 		const pos = this._calcPositioning();
-		this._content.style.top = this._px(pos);
+		this._content.style.top = this._px(pos.top);
+		this._content.style.transform = `translateX(${pos.left}px)`;
 		if (this._options.MAX_WIDTH) {
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
@@ -110,8 +104,8 @@ const Popup = class {
 		// calc space above trigger
 		const spaceAbove = offset.top - this._content.offsetHeight - arrowHeight;
 
-		const abovePosition = 0 - this._content.offsetHeight - arrowHeight;
-		const belowPosition = 0 + triggerMetrics.height + arrowHeight;
+		const abovePosition = offset.top - this._content.offsetHeight - arrowHeight;
+		const belowPosition = offset.top + triggerMetrics.height + arrowHeight;
 
 		let top;
 		// if there is not enough room for popup above trigger
@@ -133,7 +127,10 @@ const Popup = class {
 			arrow.style.left = this._px(Math.round((triggerMetrics.width / 2) - arrowWidth));
 		}
 
-		return top;
+		return {
+			left: (windowWidth < 600) ? 0 : offset.left,
+			top: top
+		}
 	}
 };
 

@@ -1,5 +1,9 @@
 # History
 
+## 1.1.0 (2020-08-06)
+    * Removes hook option
+    * Popups are now always direct children of <body> to fix mobile layout issues
+
 ## 1.0.1 (2020-08-05)
     * Fixes issue with position calculation
     * Makes styles js only
