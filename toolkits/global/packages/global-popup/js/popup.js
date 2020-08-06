@@ -130,7 +130,7 @@ const Popup = class {
 		return {
 			left: (windowWidth < 600) ? 0 : offset.left,
 			top: top
-		}
+		};
 	}
 };
 
