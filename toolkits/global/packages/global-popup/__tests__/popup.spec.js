@@ -40,7 +40,7 @@ describe('Global Popup: popup.js', () => {
 		trigger.dispatchEvent(event);
 
 		expect(spy).toHaveBeenCalled();
-		expect(typeof spy.mock.results[0].value).toBe('number');
+		expect(typeof spy.mock.results[0].value.top).toBe('number');
 
 	});
 

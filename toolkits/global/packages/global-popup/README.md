@@ -18,11 +18,9 @@ popup();
 ```
 
 ```html
-<div class="hook-selector">
-    <span data-popup data-popup-hook="hook-selector" data-popup-target="popupContent1">Popup trigger</span>
-    <div id="popupContent1">
-        <p>Some popup text</p>
-    </div>
+<span data-popup data-popup-target="popupContent1">Popup trigger</span>
+<div id="popupContent1">
+    <p>Some popup text</p>
 </div>
 
 ```
@@ -40,7 +38,6 @@ There are also options (add these to trigger element):
 |-----------------------|---------|-------------|
 | data-popup-min-width  | String  | Sets a min-width in css on the popup, e.g. "100px" |
 | data-popup-max-width  | String  | Sets a max-width in css on the popup, e.g. "600px" |
-| data-popup-hook       | String  | CSS selector. A popup will be inserted in to and positioned relative to this element. If this option is ommitted it defaults to the parent of the trigger. |
 
 #### Directly
 
@@ -48,17 +45,14 @@ There are also options (add these to trigger element):
 import {Popup} from 'global-popup/js/popup';
 
 const trigger = document.querySelector('span');
-new Popup(trigger, 'popupContent1', { MIN_WIDTH: "100px", MAX_WIDTH: "600px", HOOK: ".some-classname" });
+new Popup(trigger, 'popupContent1', { MIN_WIDTH: "100px", MAX_WIDTH: "600px" });
 ```
 
 ```html
-<div class="some-classname">
-    <div>
-        <span>Popup trigger</span>
-        <div id="popupContent1">
-            <p>Some popup text</p>
-        </div>
+<div>
+    <span>Popup trigger</span>
+    <div id="popupContent1">
+        <p>Some popup text</p>
     </div>
-</div>
-			
+</div>		
 ```
