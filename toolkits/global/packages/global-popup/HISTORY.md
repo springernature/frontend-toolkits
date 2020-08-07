@@ -1,7 +1,7 @@
 # History
 
 ## 1.1.1 (2020-08-07)
-    * Tidy up of js
+    * Tidy up of js -> Remove redundant spaceAbove variable
 
 ## 1.1.0 (2020-08-06)
     * Removes hook option
