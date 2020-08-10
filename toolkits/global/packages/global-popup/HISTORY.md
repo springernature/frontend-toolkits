@@ -1,5 +1,9 @@
 # History
 
+## 1.1.1 (2020-08-10)
+    * Makes box shadow and border colour consisten with box component
+    * Refactors above and below arrow elements to be css only
+
 ## 1.1.0 (2020-08-06)
     * Removes hook option
     * Popups are now always direct children of <body> to fix mobile layout issues
