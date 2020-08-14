@@ -1,5 +1,8 @@
 # History
 
+## 1.1.3 (2020-08-14)
+    * A better fix for an issue with border colours not being found
+
 ## 1.1.2 (2020-08-13)
     * Fixes bug with popup border colour not being found on non-Springer products
 
