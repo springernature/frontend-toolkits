@@ -1,3 +1,6 @@
+## 0.5.0 (2020-07-13)
+    * Removed font size for Nature
+
 ## 0.4.0 (2020-07-13)
     * Add link color for Nature
 
