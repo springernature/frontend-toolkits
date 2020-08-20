@@ -20,7 +20,7 @@ const checkConsent = category => {
 	}
 
 	const consent = getCookie('OptanonConsent');
-	
+
 	if (consent) {
 		const consentGroups = consent.split('groups=').pop().split('&')[0];
 		const colonEncoding = '%3A';
