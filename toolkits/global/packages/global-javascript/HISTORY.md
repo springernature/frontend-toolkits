@@ -1,5 +1,8 @@
 # History
 
+## 2.3.1 (2020-08-19)
+    * BUG: Fix checkConsent util
+
 ## 2.3.0 (2020-07-14)
     * FEATURE: checkConsent util
     * FEATURE: isConsentBannerClosed util
