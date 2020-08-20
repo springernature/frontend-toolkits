@@ -20,10 +20,13 @@ const checkConsent = category => {
 	}
 
 	const consent = getCookie('OptanonConsent');
-	const consentGroups = consent.split('groups=').pop().split('&')[0];
-	const colonEncoding = '%3A';
 
-	return consentGroups.includes(validCategories[category] + colonEncoding + '1');
+	if (consent) {
+		const consentGroups = consent.split('groups=').pop().split('&')[0];
+		const colonEncoding = '%3A';
+
+		return consentGroups.includes(validCategories[category] + colonEncoding + '1');
+	}
 };
 
 /**
