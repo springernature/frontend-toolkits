@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/global-status-message",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Global Status Message component",
+  "keywords": [],
+  "author": "Matteo Gildone"
+}
