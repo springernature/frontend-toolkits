@@ -11,12 +11,14 @@
  */
 
 export const setCookie = (name, value, options = {}) => {
+	const {path, domain, 'max-age': maxAge, expires, secure, samesite} = options;
+
 	document.cookie = encodeURIComponent(name) +
 		'=' + value +
-		(options.path ? (';path=' + options.path) : '') +
-		(options.domain ? (';domain=' + options.domain) : '') +
-		(options['max-age'] ? (';max-age=' + options['max-age']) : '') +
-		(options.expires ? (';expires=' + options.expires) : '') +
-		(options.secure ? (';secure') : '') +
-		(options.samesite ? (';samesite=' + options.samesite) : '');
+		(path ? (';path=' + path) : '') +
+		(domain ? (';domain=' + domain) : '') +
+		(maxAge ? (';max-age=' + maxAge) : '') +
+		(expires ? (';expires=' + expires) : '') +
+		(secure ? (';secure') : '') +
+		(samesite ? (';samesite=' + samesite) : '');
 };
