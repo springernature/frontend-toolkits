@@ -4,7 +4,7 @@
  * @param {Object} [options] - The attribute values for the cookie. See https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie for attribute descriptions
  * @param {string} [options.path]
  * @param {string} [options.domain]
- * @param {number} [options.max-age]
+ * @param {string} [options.max-age]
  * @param {string} [options.expires]
  * @param {string} [options.secure]
  * @param {string} [options.samesite]
