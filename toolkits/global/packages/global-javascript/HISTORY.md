@@ -1,5 +1,9 @@
 # History
 
+## 2.4.0 (2020-08-24)
+    * FEATURE: setCookie util
+    * FEATURE: deleteCookie util
+
 ## 2.3.1 (2020-08-20)
     * BUG: Fix checkConsent util - Adds safety check for cookie existence 
 
