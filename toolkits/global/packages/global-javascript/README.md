@@ -18,6 +18,8 @@ You can import as many of the named exports from the helpers as you require for 
 - [makeArray](#makearray)
 - [createEvent](#createevent)
 - [getCookie](#getcookie)
+- [setCookie](#setcookie)
+- [deleteCookie](#deletecookie)
 - [debounce](#debounce)
 - [throttle](#throttle)
 - [onetrust](#onetrust)
