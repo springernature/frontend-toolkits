@@ -75,6 +75,39 @@ Retrieves a cookie by name from `document.cookie`.
 const myCookie = getCookie('name-of-cookie');
 ```
 
+#### setCookie
+Sets a cookie with a name, value and attributes using `document.cookie`.
+Configurable options are:
+
+- `path` (string)
+- `domain` (string)
+- `max-age` (number as string)
+- `expires` (string)
+- `secure` (string)
+- `samesite` (string) 
+
+```javascript
+setCookie('name-of-cookie', 'cookie-value', {
+    path: '/',
+    domain: 'mydomain.com',
+    'max-age': '31536000'
+});
+```
+
+#### deleteCookie
+Expires a cookie by name from `document.cookie`.
+Configurable options are:
+
+- `path` (string)
+- `domain` (string)
+
+```javascript
+deleteCookie('name-of-cookie', {
+    path: '/',
+    domain: 'mydomain.com',
+});
+```
+
 #### debounce
 Allows sequential calls to a function to be grouped together so that the function will only be called once.
 The call will be made once the timeframe has passed after the last call.
