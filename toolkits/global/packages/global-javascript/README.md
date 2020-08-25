@@ -18,6 +18,8 @@ You can import as many of the named exports from the helpers as you require for 
 - [makeArray](#makearray)
 - [createEvent](#createevent)
 - [getCookie](#getcookie)
+- [setCookie](#setcookie)
+- [deleteCookie](#deletecookie)
 - [debounce](#debounce)
 - [throttle](#throttle)
 - [onetrust](#onetrust)
@@ -73,6 +75,39 @@ Retrieves a cookie by name from `document.cookie`.
 
 ```javascript
 const myCookie = getCookie('name-of-cookie');
+```
+
+#### setCookie
+Sets a cookie with a name, value and attributes using `document.cookie`.
+Configurable options are:
+
+- `path` (string)
+- `domain` (string)
+- `max-age` (number as string)
+- `expires` (string)
+- `secure` (string)
+- `samesite` (string) 
+
+```javascript
+setCookie('name-of-cookie', 'cookie-value', {
+    path: '/',
+    domain: 'mydomain.com',
+    'max-age': '31536000'
+});
+```
+
+#### deleteCookie
+Expires a cookie by name from `document.cookie`.
+Configurable options are:
+
+- `path` (string)
+- `domain` (string)
+
+```javascript
+deleteCookie('name-of-cookie', {
+    path: '/',
+    domain: 'mydomain.com',
+});
 ```
 
 #### debounce
