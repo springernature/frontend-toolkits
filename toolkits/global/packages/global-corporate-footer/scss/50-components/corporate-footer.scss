@@ -8,7 +8,6 @@
 
 .c-corporate-footer__legal {
 	@include font-size($corporate-footer--font-size);
-	font-size: $corporate-footer--font-size;
 	color: $corporate-footer--text-color;
 	margin-bottom: $corporate-footer--margin-bottom;
 	padding-top: $corporate-footer--legal-padding-top;
