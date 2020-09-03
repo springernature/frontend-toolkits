@@ -1,5 +1,8 @@
 # History
 
+## 0.1.2 (2020-09-03)
+    * Remove duplicate font-size
+
 ## 0.1.1 (2020-09-02)
     * Use font-size mixin
     * Use pixel value for nature font-size to workaround clash of mixin
