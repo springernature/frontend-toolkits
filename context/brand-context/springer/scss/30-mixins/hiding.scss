@@ -39,12 +39,13 @@
 @mixin visually-hidden-focus {
 	&:active,
 	&:focus {
-		position: static;
+		position: static !important;
 		width: auto;
 		height: auto;
 		overflow: visible;
 		clip: auto;
 		white-space: normal;
 		clip-path: none;
+		margin: 0;
 	}
 }
