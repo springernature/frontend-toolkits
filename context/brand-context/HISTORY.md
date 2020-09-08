@@ -1,7 +1,7 @@
 # History
 
 ## 4.2.1 (2020-09-07) 
-    * BUG: `.u-visually-hidden-focus` is not working
+    * BUG: `.u-visually-hidden-focus` reset margin and position override
 
 ## 4.2.0 (2020-07-22)
     * Add default variable $font-family-serif-save-data and uae within nature
