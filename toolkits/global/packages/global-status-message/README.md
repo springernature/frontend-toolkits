@@ -14,6 +14,11 @@ The `global-status-message` component currently uses the `DEFAULT` brand only.
 
 ## Usage
 
+The status message could be simply text with an icon or a small box.
+Modifiers like  `success`, `warning`, `error` and `info` will change the background of the svg if used.
+The `boxed` modifier will add padding and a border around the text and icon if present.
+Combining `boxed` with `success`, `warning`, `error` or `info` will also add a border bottom with the color based on the status.
+
 #### HTML 
 
 ```html
@@ -28,7 +33,7 @@ The `global-status-message` component currently uses the `DEFAULT` brand only.
 
 **Boxed** 
 
-Sets a border around the status message
+Sets a border and padding around the status message.
 
 ```html
 <div class="c-status-message c-status-message--success u-mb-24 c-status-message--boxed">
