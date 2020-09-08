@@ -1,5 +1,8 @@
 # History
 
+## 4.2.1 (2020-09-08)
+    * Fix references to defunct `global-spacing` in SpringerNature context.
+
 ## 4.2.0 (2020-07-22)
     * Add default variable $font-family-serif-save-data and uae within nature
     
