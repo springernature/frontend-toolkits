@@ -1,5 +1,8 @@
 # History
 
+## 4.2.2 (2020-09-08) 
+    * BUG: `.u-visually-hidden-focus` reset margin and position override
+
 ## 4.2.1 (2020-09-08)
     * Fix references to defunct `global-spacing` in SpringerNature context.
 
