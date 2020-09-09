@@ -22,10 +22,8 @@ Combining `boxed` with `success`, `warning`, `error` or `info` will also add a b
 #### HTML 
 
 ```html
-<div class="c-status-message c-status-message--success u-mb-24">
-    <svg class="c-icon c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
-        <use xlink:href="#icon-success"></use>
-    </svg>Your text example
+<div class="c-status-message">
+    Your text example
 </div>
 ```
 
