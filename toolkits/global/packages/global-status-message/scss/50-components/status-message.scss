@@ -1,0 +1,42 @@
+.c-status-message {
+	@include font-size($status-message--font-size);
+	position: relative;
+	font-family: $status-message--font-family;
+	display: flex;
+	width: 100%; // Caters for an ie bug with nested flex when child is a column
+	align-items: center;
+}
+
+.c-status-message--boxed {
+	background-color: $status-message--background-color;
+	border-radius: $status-message--border-radius;
+	border: $status-message--border;
+	line-height: $status-message--line-height;
+	padding: $status-message--gutter;
+}
+
+.c-status-message__heading {
+	@include font-size($status-message--font-size);
+	font-family: $status-message--font-family;
+	font-weight: $status-message--font-weight;
+}
+
+.c-status-message__icon {
+	margin-right: $status-message--gutter-icon;
+}
+
+.c-status-message__icon--top {
+	align-self: flex-start;
+}
+
+@each $color, $value in $status-message-theme {
+	.c-status-message--#{$color} {
+		.c-status-message__icon {
+			color: $value;
+		}
+	}
+
+	.c-status-message--boxed.c-status-message--#{$color} {
+		border-bottom: $status-message--boxed-border solid $value;
+	}
+}
