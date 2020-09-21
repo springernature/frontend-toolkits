@@ -6,6 +6,7 @@ import {makeArray, createEvent} from '@springernature/global-javascript/src/help
 
 const defaultOptions = {
 	TARGET_HIDE_CLASS: 'u-js-hide',
+	TARGET_HIDE_INITIALLY: undefined,
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
@@ -194,18 +195,19 @@ const Expander = class {
 		this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
 
 		this.initClose();
+		this._updateAriaAttributes();
 
 		this._removeTemporaryEventListeners();
 	}
 
 	initClose() {
-		this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+		if (!this._targetEl.classList.contains(this._options.TARGET_HIDE_CLASS)) {
+			this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+		}
 
 		if (this._options.TRIGGER_OPEN_LABEL) {
 			this._triggerEl.textContent = this._originalTriggerText;
 		}
-
-		this._updateAriaAttributes();
 	}
 
 	init() {
@@ -214,7 +216,12 @@ const Expander = class {
 			this._triggerEl.setAttribute('href', 'javascript:;');
 		}
 
-		this.initClose();
+		if (this._options.TARGET_HIDE_INITIALLY) {
+			this.initClose();
+			this._triggerEl.setAttribute('aria-pressed', 'false');
+			this._triggerEl.setAttribute('aria-expanded', 'false');
+			this._targetEl.setAttribute('aria-hidden', 'true');
+		}
 
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
 		this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);

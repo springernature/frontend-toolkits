@@ -545,6 +545,19 @@ describe('Expander', () => {
 			// Then
 			expect(spy).toHaveBeenCalled();
 		});
+
+		test('Should collapse the target if TARGET_HIDE_INITIALLY is true', () => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				TARGET_HIDE_INITIALLY: true
+			});
+			expander.init();
+
+			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
+			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
+			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+		});
 	});
 });
 
