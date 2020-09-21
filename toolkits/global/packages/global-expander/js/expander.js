@@ -6,7 +6,7 @@ import {makeArray, createEvent} from '@springernature/global-javascript/src/help
 
 const defaultOptions = {
 	TARGET_HIDE_CLASS: 'u-js-hide',
-	TARGET_HIDE_INITIALLY: undefined,
+	TARGET_OPEN_INITIALLY: undefined,
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
@@ -24,8 +24,11 @@ const Expander = class {
 		this._targetTabbableItems = makeArray(target.querySelectorAll(
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
-		this._isOpen = false;
-
+		if (typeof this._options.TARGET_OPEN_INITIALLY === 'boolean') {
+			this._isOpen = this._options.TARGET_OPEN_INITIALLY;
+		} else {
+			this._isOpen = false;
+		}
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 		this._handleDocumentClick = this._handleDocumentClick.bind(this);
@@ -123,16 +126,33 @@ const Expander = class {
 
 	_updateAriaAttributes() {
 		// eslint-disable-next-line unicorn/consistent-function-scoping
-		const setBooleanAttribute = (element, attribute) => {
-			if (element.hasAttribute(attribute)) {
-				const attributeAsBoolean = element.getAttribute(attribute) === 'true';
+		this._triggerEl.setAttribute('aria-pressed', this._isOpen.toString());
+		this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
+		this._targetEl.setAttribute('aria-hidden', (!this._isOpen).toString());
+	}
 
-				element.setAttribute(attribute, (!attributeAsBoolean).toString());
-			}
-		};
-		setBooleanAttribute(this._triggerEl, 'aria-pressed');
-		setBooleanAttribute(this._triggerEl, 'aria-expanded');
-		setBooleanAttribute(this._targetEl, 'aria-hidden');
+	/**
+	 * Class attributes
+	 */
+
+	_updateClassAttributes() {
+		if (this._isOpen) {
+			this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
+			this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
+		} else {
+			this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+			this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+		}
+	}
+
+	/**
+	 * Trigger Label
+	 */
+
+	_updateTriggerLabel() {
+		if (this._options.TRIGGER_OPEN_LABEL) {
+			this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
+		}
 	}
 
 	/**
@@ -168,20 +188,17 @@ const Expander = class {
 
 		this._isOpen = true;
 
-		this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
-		this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
-
-		if (this._options.TRIGGER_OPEN_LABEL) {
-			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
-		}
-
 		if (this._options.FOCUS_EVENT) {
 			const event = createEvent('focusTarget', 'globalExpander', {
 				bubbles: false
 			});
 			this._triggerEl.dispatchEvent(event);
 		}
+
+		this._updateTriggerLabel();
 		this._updateAriaAttributes();
+		this._updateClassAttributes();
+
 		this._setupTemporaryEventListeners();
 		this._handleAutoFocus();
 	}
@@ -192,22 +209,12 @@ const Expander = class {
 		}
 
 		this._isOpen = false;
-		this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
 
-		this.initClose();
+		this._updateTriggerLabel();
 		this._updateAriaAttributes();
+		this._updateClassAttributes();
 
 		this._removeTemporaryEventListeners();
-	}
-
-	initClose() {
-		if (!this._targetEl.classList.contains(this._options.TARGET_HIDE_CLASS)) {
-			this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
-		}
-
-		if (this._options.TRIGGER_OPEN_LABEL) {
-			this._triggerEl.textContent = this._originalTriggerText;
-		}
 	}
 
 	init() {
@@ -216,12 +223,9 @@ const Expander = class {
 			this._triggerEl.setAttribute('href', 'javascript:;');
 		}
 
-		if (this._options.TARGET_HIDE_INITIALLY) {
-			this.initClose();
-			this._triggerEl.setAttribute('aria-pressed', 'false');
-			this._triggerEl.setAttribute('aria-expanded', 'false');
-			this._targetEl.setAttribute('aria-hidden', 'true');
-		}
+		this._updateTriggerLabel();
+		this._updateAriaAttributes();
+		this._updateClassAttributes();
 
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
 		this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
