@@ -1,5 +1,9 @@
 # History
 
+## 2.1.0 (2020-09-21)
+    * Use isOpen as source of truth
+    * Add option TARGET_OPEN_INITIALLY
+
 ## 2.0.2 (2020-07-28)
     * Refactor when to focus back to trigger during tabbing 
 

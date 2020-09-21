@@ -40,6 +40,7 @@ expander.close();
 | Option             | Default Value | Type    | Description |
 |--------------------|---------------|---------|------------------------------------------------------------------------------------------------------------------------------------|
 | TARGET_HIDE_CLASS  | 'u-js-hide'   | String  | HTML class to be toggled on the target                                                                                             |
+| TARGET_OPEN_INITIALLY  | -   | Boolean  | Rules if the expander is initially open                                                                                              |
 | TRIGGER_OPEN_CLASS | -             | String  | HTML class to be toggled to the trigger                                                                                            |
 | TRIGGER_OPEN_LABEL | -             | String  | Text to set on the trigger when open                                                                                               |
 | CLOSE_ON_FOCUS_OUT | true          | Boolean | Closes when you click or tab outside of the target                                                                                 |
