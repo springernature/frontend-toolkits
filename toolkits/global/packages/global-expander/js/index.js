@@ -4,6 +4,7 @@ import {Expander} from './expander';
 const DATA_COMPONENT = 'data-expander';
 
 const attributes = {
+	TARGET_OPEN_INITIALLY: DATA_COMPONENT + '-open-initially',
 	TARGET_HIDE_CLASS: DATA_COMPONENT + '-hide-class',
 	TRIGGER_OPEN_CLASS: DATA_COMPONENT + '-trigger-open-class',
 	TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',

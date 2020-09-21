@@ -17,6 +17,7 @@ describe('Data Attribute API', () => {
 			<button id="button2"
 					data-expander
 					data-expander-target="#target2"
+					data-expander-open-initially="data-target-open-initially"
 					data-expander-hide-class="data-target-hide-class"
 					data-expander-trigger-open-class="data-trigger-open-class"
 					data-expander-trigger-open-label="data-trigger-shown-label"
@@ -46,6 +47,7 @@ describe('Data Attribute API', () => {
 	test('Should use options passed during initialisation', () => {
 		// Given
 		const initialisationOptions = {
+			TARGET_OPEN_INITIALLY: 'init-target-open-initially',
 			TARGET_HIDE_CLASS: 'init-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
@@ -64,6 +66,7 @@ describe('Data Attribute API', () => {
 	test('Should use options passed via data-* attributes over options passed during initialisation', () => {
 		// Given
 		const initialisationOptions = {
+			TARGET_OPEN_INITIALLY: 'init-target-open-initially',
 			TARGET_HIDE_CLASS: 'init-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
@@ -77,6 +80,7 @@ describe('Data Attribute API', () => {
 
 		// Then
 		expect(Expander).toHaveBeenNthCalledWith(2, elements.button2, elements.target2, {
+			TARGET_OPEN_INITIALLY: 'data-target-open-initially',
 			TARGET_HIDE_CLASS: 'data-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'data-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'data-trigger-shown-label',
