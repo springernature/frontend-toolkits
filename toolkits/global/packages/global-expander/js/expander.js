@@ -191,8 +191,14 @@ const Expander = class {
 		}
 
 		this._isOpen = false;
-
 		this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+
+		this.initClose();
+
+		this._removeTemporaryEventListeners();
+	}
+
+	initClose() {
 		this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
 
 		if (this._options.TRIGGER_OPEN_LABEL) {
@@ -200,7 +206,6 @@ const Expander = class {
 		}
 
 		this._updateAriaAttributes();
-		this._removeTemporaryEventListeners();
 	}
 
 	init() {
@@ -208,6 +213,9 @@ const Expander = class {
 			// eslint-disable-next-line no-script-url
 			this._triggerEl.setAttribute('href', 'javascript:;');
 		}
+
+		this.initClose();
+
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
 		this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
 	}
