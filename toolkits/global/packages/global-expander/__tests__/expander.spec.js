@@ -546,35 +546,9 @@ describe('Expander', () => {
 			expect(spy).toHaveBeenCalled();
 		});
 
-		test('Should expand the target if TARGET_OPEN_INITIALLY is true', () => {
-			// Given
-			const expander = new Expander(element.BUTTON, element.TARGET, {
-				TARGET_OPEN_INITIALLY: true
-			});
-			expander.init();
-
-			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
-			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
-		});
-
-		test('Should collapse the target if TARGET_OPEN_INITIALLY is undefined', () => {
+		test('Should collapse the target on init', () => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
-			expander.init();
-
-			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
-			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
-		});
-
-		test('Should collapse the target if TARGET_OPEN_INITIALLY is false', () => {
-			// Given
-			const expander = new Expander(element.BUTTON, element.TARGET, {
-				TARGET_OPEN_INITIALLY: false
-			});
 			expander.init();
 
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
