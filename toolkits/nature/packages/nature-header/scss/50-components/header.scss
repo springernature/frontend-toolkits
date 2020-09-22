@@ -42,6 +42,10 @@
 	margin-bottom: spacing(0);
 	padding: $header--site-navigation-padding;
 	text-align: $header--site-navigation-text-align;
+
+	&:last-child {
+		padding: $header--site-navigation-last-child-padding;
+	}
 }
 
 .c-header__site-navigation--show-at-md {
@@ -57,10 +61,6 @@
 	.c-header__link:not(:first-child) {
 		margin-left: $header--site-navigation-margin-left;
 	}
-}
-
-.c-header__site-navigation--last {
-	padding: $header--site-navigation-last-padding;
 }
 
 .c-header__container {
