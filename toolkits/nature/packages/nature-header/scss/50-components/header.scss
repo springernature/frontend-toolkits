@@ -59,6 +59,10 @@
 	}
 }
 
+.c-header__site-navigation--last {
+	padding: $header--site-navigation-last-padding;
+}
+
 .c-header__container {
 	@include u-container();
 }
