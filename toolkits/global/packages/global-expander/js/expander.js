@@ -24,7 +24,6 @@ const Expander = class {
 			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
 		));
 		this._isOpen = false;
-
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 		this._handleDocumentClick = this._handleDocumentClick.bind(this);
@@ -122,16 +121,33 @@ const Expander = class {
 
 	_updateAriaAttributes() {
 		// eslint-disable-next-line unicorn/consistent-function-scoping
-		const setBooleanAttribute = (element, attribute) => {
-			if (element.hasAttribute(attribute)) {
-				const attributeAsBoolean = element.getAttribute(attribute) === 'true';
+		this._triggerEl.setAttribute('aria-pressed', this._isOpen.toString());
+		this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
+		this._targetEl.setAttribute('aria-hidden', (!this._isOpen).toString());
+	}
 
-				element.setAttribute(attribute, (!attributeAsBoolean).toString());
-			}
-		};
-		setBooleanAttribute(this._triggerEl, 'aria-pressed');
-		setBooleanAttribute(this._triggerEl, 'aria-expanded');
-		setBooleanAttribute(this._targetEl, 'aria-hidden');
+	/**
+	 * Class attributes
+	 */
+
+	_updateClassAttributes() {
+		if (this._isOpen) {
+			this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
+			this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
+		} else {
+			this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+			this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+		}
+	}
+
+	/**
+	 * Trigger Label
+	 */
+
+	_updateTriggerLabel() {
+		if (this._options.TRIGGER_OPEN_LABEL) {
+			this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
+		}
 	}
 
 	/**
@@ -167,20 +183,17 @@ const Expander = class {
 
 		this._isOpen = true;
 
-		this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
-		this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
-
-		if (this._options.TRIGGER_OPEN_LABEL) {
-			this._triggerEl.textContent = this._options.TRIGGER_OPEN_LABEL;
-		}
-
 		if (this._options.FOCUS_EVENT) {
 			const event = createEvent('focusTarget', 'globalExpander', {
 				bubbles: false
 			});
 			this._triggerEl.dispatchEvent(event);
 		}
+
+		this._updateTriggerLabel();
 		this._updateAriaAttributes();
+		this._updateClassAttributes();
+
 		this._setupTemporaryEventListeners();
 		this._handleAutoFocus();
 	}
@@ -192,14 +205,10 @@ const Expander = class {
 
 		this._isOpen = false;
 
-		this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
-		this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
-
-		if (this._options.TRIGGER_OPEN_LABEL) {
-			this._triggerEl.textContent = this._originalTriggerText;
-		}
-
+		this._updateTriggerLabel();
 		this._updateAriaAttributes();
+		this._updateClassAttributes();
+
 		this._removeTemporaryEventListeners();
 	}
 
@@ -208,6 +217,11 @@ const Expander = class {
 			// eslint-disable-next-line no-script-url
 			this._triggerEl.setAttribute('href', 'javascript:;');
 		}
+
+		this._updateTriggerLabel();
+		this._updateAriaAttributes();
+		this._updateClassAttributes();
+
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
 		this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
 	}

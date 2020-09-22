@@ -1,5 +1,10 @@
 # History
 
+## 2.1.0 (2020-09-21)
+    * Use `_isOpen` state flag as the source of truth to toggle aria and class
+        attributes as well as the trigger's label upon `init`/`open`/`close`
+        events.
+
 ## 2.0.2 (2020-07-28)
     * Refactor when to focus back to trigger during tabbing 
 
