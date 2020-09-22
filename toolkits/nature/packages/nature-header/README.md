@@ -19,7 +19,7 @@ Publisher level header for Nature products.
                 </a>
                 <div class="c-header__layout c-header__layout--right">
                     <!-- optional site navigation link -->
-                    <div class="c-header__site-navigation c-header__site-navigation--show--at-md">
+                    <div class="c-header__site-navigation c-header__site-navigation--show-at-md">
                         <a class="c-header__link" href="#">
                             <span>View all Nature Research journals</span>
                         </a>

@@ -44,7 +44,7 @@
 	text-align: $header--site-navigation-text-align;
 }
 
-.c-header__site-navigation--show--at-md {
+.c-header__site-navigation--show-at-md {
 	display: none;
 	@include media-query('md') {
 		display: flex;
