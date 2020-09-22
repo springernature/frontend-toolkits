@@ -43,7 +43,8 @@ const enhancedHeader = () => {
 		}
 
 		trigger.insertAdjacentElement('afterend', targetElement);
-		targetElement.classList.add(classNames.JSHIDE, classNames.TETHERED);
+		targetElement.classList.add(classNames.JSHIDE);
+		targetElement.classList.add(classNames.TETHERED);
 
 		const expander = new Expander(trigger, targetElement);
 
