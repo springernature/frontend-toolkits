@@ -4,7 +4,7 @@
 	padding: $header-expander--padding;
 	font-size: $header-expander--font-size;
 
-  	a {
+	a {
 		@include u-link-inherit();
 	}
 
@@ -31,7 +31,7 @@
 }
 
 .c-header-expander__heading {
-  	display: inline-block;
+	display: inline-block;
 	line-height: $header-expander--heading-line-height;
 	font-size: $header-expander--heading-font-size;
 	font-family: $header-expander--heading-font-family;
@@ -87,7 +87,7 @@
 	left: 0;
 	text-align: left;
 	width: auto;
-    min-width: $header-expander--js-min-width;
+	min-width: $header-expander--js-min-width;
 	border-radius: $header-expander--js-border-radius;
 	@include media-query('sm') {
 		width: $header-expander--js-width;
