@@ -39,7 +39,6 @@ expander.close();
 
 | Option             | Default Value | Type    | Description |
 |--------------------|---------------|---------|------------------------------------------------------------------------------------------------------------------------------------|
-| TARGET_OPEN_INITIALLY  | -   | Boolean  | Rules if the expander is initially open                                                                                              |
 | TARGET_HIDE_CLASS  | 'u-js-hide'   | String  | HTML class to be toggled on the target                                                                                             |
 | TRIGGER_OPEN_CLASS | -             | String  | HTML class to be toggled to the trigger                                                                                            |
 | TRIGGER_OPEN_LABEL | -             | String  | Text to set on the trigger when open                                                                                               |
@@ -51,7 +50,6 @@ expander.close();
 
 The data attribute options are the same, but are lowercase and hyphenated (and strings where the option is a boolean):
 
-- `data-expander-target-open-initially`
 - `data-expander-target-hide-class`
 - `data-expander-trigger-open-class`
 - `data-expander-trigger-open-label`
