@@ -6,7 +6,7 @@ import {makeArray, createEvent} from '@springernature/global-javascript/src/help
 
 const defaultOptions = {
 	TARGET_HIDE_CLASS: 'u-js-hide',
-	TARGET_OPEN_INITIALLY: undefined,
+	TARGET_OPEN_INITIALLY: false,
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
@@ -26,8 +26,6 @@ const Expander = class {
 		));
 		if (typeof this._options.TARGET_OPEN_INITIALLY === 'boolean') {
 			this._isOpen = this._options.TARGET_OPEN_INITIALLY;
-		} else {
-			this._isOpen = false;
 		}
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
