@@ -20,6 +20,11 @@ const selectors = {
 const enhancedHeader = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
 	const header = document.querySelector(selectors.HEADER);
+	const triggerAttributes = [
+		{attribute: 'role', value: 'button'},
+		{attribute: 'aria-pressed', value: 'false'},
+		{attribute: 'aria-expanded', value: 'false'}
+	];
 
 	if (triggers.length === 0 || !header) {
 		return;
@@ -33,12 +38,12 @@ const enhancedHeader = () => {
 			return;
 		}
 
-		trigger.setAttribute('role', 'button');
-		trigger.setAttribute('aria-pressed', 'false');
-		trigger.setAttribute('aria-expanded', 'false');
+		for (let {attribute, value} of triggerAttributes) {
+			trigger.setAttribute(attribute, value);
+		}
+
 		trigger.insertAdjacentElement('afterend', targetElement);
-		targetElement.classList.add(classNames.JSHIDE);
-		targetElement.classList.add(classNames.TETHERED);
+		targetElement.classList.add(classNames.JSHIDE, classNames.TETHERED);
 
 		const expander = new Expander(trigger, targetElement);
 
