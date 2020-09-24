@@ -17,7 +17,7 @@ Publisher level header for Nature products.
                         <img src="path/to/logo.svg" alt="logo name">
                     </picture>
                 </a>
-                <div class="c-header__layout c-header__layout--right">
+                <div class="c-header__layout">
                     <!-- optional site navigation link -->
                     <div class="c-header__site-navigation c-header__site-navigation--show-at-md">
                         <a class="c-header__link" href="#">
