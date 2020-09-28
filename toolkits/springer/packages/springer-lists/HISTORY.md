@@ -1,5 +1,9 @@
 # History
 
+## 6.1.0 (2020-09-28)
+    * Add list-columned
+    * Update README with example
+
 ## 6.0.0 (2020-06-03)
     * FEATURE: Adds --flush modifier to remove padding top / bottom of first / last item
     * BREAKING: 
