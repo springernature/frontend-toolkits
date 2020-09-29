@@ -5,6 +5,10 @@
 	display: flex;
 	width: 100%; // Caters for an ie bug with nested flex when child is a column
 	align-items: center;
+
+	*:last-child {
+		margin-bottom: spacing(0);
+	}
 }
 
 .c-status-message--boxed {
