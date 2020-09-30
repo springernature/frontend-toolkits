@@ -222,4 +222,4 @@ const autoComplete = arguments_ => {
 	};
 };
 
-module.exports = autoComplete;
+export default autoComplete;
