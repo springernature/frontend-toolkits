@@ -10,22 +10,6 @@
 	padding: $box--padding;
 }
 
-.c-box--error {
-	border-bottom: $box--border-error;
-}
-
-.c-box--warning {
-	border-bottom: $box--border-warning;
-}
-
-.c-box--info {
-	border-bottom: $box--border-info;
-}
-
-.c-box--success {
-	border-bottom: $box--border-success;
-}
-
 .c-box__heading {
 	@include font-size($box--heading-font-size);
 	border-bottom: $box--border;
