@@ -47,10 +47,6 @@
 	display: inline-block;
 	margin-right: $header-expander--item-margin-right;
 	margin-bottom: $header-expander--item-margin-bottom;
-
-	&:last-child {
-		margin-bottom: spacing(0);
-	}
 }
 
 .c-header-expander__item--keyline {

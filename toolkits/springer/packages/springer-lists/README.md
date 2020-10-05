@@ -4,6 +4,19 @@ Components for working with lists.
 
 ## Examples
 
+### List Columned
+#### HTML
+```html
+<ul class="c-list-columned">
+    <li class="c-list-columned__item">
+        <!-- Content -->
+    </li>
+    <li class="c-list-columned__item">
+        <!-- Content -->
+    </li>
+</ul>
+```
+
 ### List Description
 #### HTML
 ```html

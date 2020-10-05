@@ -21,14 +21,11 @@
 	justify-content: space-between;
 }
 
-.c-header__layout--right {
-	justify-content: normal;
-}
-
 .c-header__logo {
 	display: flex;
 	margin-right: $header--logo-margin-right;
 	max-height: $header--logo-max-height;
+	transform: translateZ(0); // promote new layer for mobile safari to avoid mangled logo during layout repaint
 
 	@include media-query('md') {
 		margin-right: spacing(0);
@@ -42,6 +39,10 @@
 	margin-bottom: spacing(0);
 	padding: $header--site-navigation-padding;
 	text-align: $header--site-navigation-text-align;
+
+	&:last-child {
+		padding: $header--site-navigation-last-child-padding;
+	}
 }
 
 .c-header__site-navigation--show-at-md {

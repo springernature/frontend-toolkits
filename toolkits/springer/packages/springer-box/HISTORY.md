@@ -1,5 +1,8 @@
 # History
 
+## 5.0.0 (2020-10-01)
+    * Remove styling for statuses to avoid confusion with global-status-message package
+
 ## 4.0.1 (2020-06-08)
     * Bump to latest brand-context
 
