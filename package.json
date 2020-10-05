@@ -71,7 +71,8 @@
       "**/packages/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
-      "docs/"
+      "docs/",
+      "demo/"
     ],
     "restoreMocks": true,
     "transformIgnorePatterns": [
