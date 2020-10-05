@@ -48,9 +48,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 * `global-spacing`  
    Now part of the `default` brand in [`brand-context`](https://github.com/springernature/frontend-toolkits/tree/master/context).
 
-* `springer-ad`  
-   Now part of the [`global-ad`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-ad).
-
 * `springer-copyright`  
    No longer needed.
 
@@ -77,3 +74,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `springer-nature-modal`  
    Replaced by [`springernature-modal`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springernature/packages/springernature-modal).
+
+* `springer-ad`  
+   Now part of the [`global-ad`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-ad).
