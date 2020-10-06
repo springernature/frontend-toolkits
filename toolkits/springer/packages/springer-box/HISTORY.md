@@ -1,5 +1,8 @@
 # History
 
+## 5.1.0 (2020-10-06)
+    * Add grey background class
+
 ## 5.0.0 (2020-10-01)
     * Remove styling for statuses to avoid confusion with global-status-message package
 
