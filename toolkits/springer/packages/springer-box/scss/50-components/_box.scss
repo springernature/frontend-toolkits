@@ -10,6 +10,10 @@
 	padding: $box--padding;
 }
 
+.c-box--background-grey {
+	background-color: $box--background-color-grey;
+}
+
 .c-box__heading {
 	@include font-size($box--heading-font-size);
 	border-bottom: $box--border;
