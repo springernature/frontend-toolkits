@@ -1,5 +1,10 @@
 # History
 
+## 6.0.0 (2020-10-06)
+    * BREAKING: box-shadow no longer included in box styling without modifier
+    * Add class to add grey background to box
+    * Add class to remove border of box
+
 ## 5.0.0 (2020-10-01)
     * Remove styling for statuses to avoid confusion with global-status-message package
 
