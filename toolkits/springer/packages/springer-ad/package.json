@@ -1,9 +1,0 @@
-{
-  "name": "@springernature/springer-ad",
-  "version": "4.0.0",
-  "license": "MIT",
-  "description": "adverts",
-  "keywords": [],
-  "author": "Springer Nature",
-  "brandContext": "^2.1.1"
-}
