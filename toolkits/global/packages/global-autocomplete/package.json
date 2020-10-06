@@ -6,5 +6,5 @@
   "keywords": [],
   "author": "Jon Stevens",
   "main": "js/index.js",
-  "brandContext": "^3.0.0"
+  "brandContext": "^4.2.2"
 }
