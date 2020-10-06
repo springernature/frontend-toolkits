@@ -154,9 +154,9 @@ The following script commands are available:
 
    Run the `create` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-creation).
 
-* `npm run demo`
+* `npm run demo -- -p name-of-package`
 
-   Create a static example file from a `demo` folder. Part of [frontend package manager](https://github.com/springernature/frontend-package-manager#create-styleguide-demo).
+   Create a static example file from a `demo` folder. Part of [frontend package manager](https://github.com/springernature/frontend-package-manager#create-styleguide-demo). For example `npm run demo -- -p global-autocomplete`.
 
 * `npm run lint`
 
