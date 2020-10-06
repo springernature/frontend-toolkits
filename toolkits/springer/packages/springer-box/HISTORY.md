@@ -2,7 +2,7 @@
 
 ## 5.1.0 (2020-10-06)
     * Add class to add grey background to box
-    * Add class to remove border of box
+    * Add class to remove border and box-shadow of box
 
 ## 5.0.0 (2020-10-01)
     * Remove styling for statuses to avoid confusion with global-status-message package
