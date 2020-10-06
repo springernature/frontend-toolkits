@@ -1,7 +1,6 @@
 .c-box {
 	background-color: $box--background-color;
 	border-radius: $box--border-radius;
-	box-shadow: $box--box-shadow;
 	border: $box--border;
 	line-height: $box--line-height;
 	padding: $box--padding;
@@ -11,9 +10,12 @@
 	background-color: $box--background-color-grey;
 }
 
+.c-box--shadowed {
+	box-shadow: $box--box-shadow;
+}
+
 .c-box--borderless {
 	border: none;
-	box-shadow: none;
 }
 
 .c-box__heading {
