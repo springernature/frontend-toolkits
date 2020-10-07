@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0 (2020-10-06)
+    * BREAKING: Use ESM exports
+	* BREAKING: Update major version of brand-context
+
 ## 4.0.1 (2020-06-08)
     * Update README
 

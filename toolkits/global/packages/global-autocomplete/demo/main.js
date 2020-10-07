@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/no-abusive-eslint-disable */
 /* eslint-disable */
 
-import {autoComplete} from '../js/index.js';
+import autoComplete from '../js/index.js';
 
 const showResults = results => {
 	// Update UI with results returned from server, e.g.
@@ -37,30 +37,21 @@ const args = {
 	onSelect: onSelect,
 	searchError: onError,
 	endpoint: 'autocomplete?q=',
-	// staticResultsData: animalsList,	// OPTIONAL: Provide either endpoint or array of data - if both are provided array be used
 	timeout: 2000,		// OPTIONAL: Set a timeout for the fetch request, onError will be called if fetch request timeouts, default is 2000
-	minChars: 1,			// OPTIONAL: Minimum characters to be typed before request is sent, default is 0
+	minChars: 1,		// OPTIONAL: Minimum characters to be typed before request is sent, default is 0
 	inputDelay: 300,	// OPTIONAL: Delay between keypress and request being sent, default is 300
-	// selectOnSuggestionBrowsing: false,  // OPTIONAL: Update the text input as the user browses the suggestions, default is true
 	headers: {
 		Accept: 'application/json; version=2'
 	},
-	// httpMethod: 'POST', // OPTIONAL: Defaults to 'GET'
-	// bodyTemplate: term => { // OPTIONAL: template for the body data
-	// 	return {
-	// 		text: term,
-	// 		size: 20
-	// 	};
-	// },
 	resultsContainerSelector: '.c-results-container',
 	resultSelector: '.c-results-container__result',
 	resultsCallBack: showResults
 };
 
 const myAutoComplete = autoComplete(args);
-// myAutoComplete.enable();
-// END SAMPLE USAGE CODE
-// BEGIN HACKS FOR DEMO PURPOSES
+
+/* End example. Code below is just for this demo */
+
 //  the following code hacks window.fetch for local demoimg
 const response = {
 	status: 200,

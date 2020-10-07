@@ -23,6 +23,7 @@
     "build": "npm run lint && npm run test && npm run validate",
     "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
     "create": "sn-package-create",
+    "demo": "sn-package-demo",
     "lint": "util-eslint-runner --name 'lint:js' --pattern 'toolkits/**/packages/**/*.js' && npm run lint:sass",
     "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
@@ -44,7 +45,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
-    "@springernature/frontend-package-manager": "^5.1.3",
+    "@springernature/frontend-package-manager": "^6.1.2",
     "@springernature/sasslint-config": "^1.2.1",
     "@springernature/util-eslint-runner": "^0.0.3",
     "@springernature/util-sass-compiler": "^0.1.0",
@@ -71,7 +72,8 @@
       "**/packages/**/*.js"
     ],
     "coveragePathIgnorePatterns": [
-      "docs/"
+      "docs/",
+      "demo/"
     ],
     "restoreMocks": true,
     "transformIgnorePatterns": [
