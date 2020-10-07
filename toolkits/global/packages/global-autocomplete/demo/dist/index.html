@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>@springernature/global-autocomplete</title>
+		<script type="module">
+			const autoComplete = arguments_ => {
+	const {
+		selector,
+		resultSelector,
+		resultsContainerSelector,
+		endpoint,
+		staticResultsData,
+		minChars = 0,
+		componentName,
+		onSelect,
+		inputDelay = 300,
+		requestTimeout = 2000,
+		headers = {},
+		httpMethod = 'GET',
+		bodyTemplate,
+		searchError,
+		resultsCallBack,
+		selectOnSuggestionBrowsing = true
+	} = arguments_;
+
+	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
+		console.error('Please provide selector, resultsCallBack, and endpoint or staticResultsData');
+		return;
+	}
+
+	const input = document.querySelector(selector);
+	const container = () => {
+		return document.querySelector(`${resultsContainerSelector}`);
+	};
+	const suggestions = () => {
+		return Array.from(document.querySelectorAll(`${resultSelector}`));
+	};
+
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
+
+	let inputTimer = null;
+	let fetchTimer = null;
+	let currentSearchTerm;
+
+	// Keyboard Event Listeners for text input
+	const inputEvents = event => {
+		if (/ArrowDown|Down/.test(event.key)) {
+			event.preventDefault();
+			if (suggestions().length > 0) {
+				suggestions()[0].focus();
+				if (selectOnSuggestionBrowsing) {
+					input.value = suggestions()[0].textContent;
+				}
+			}
+		}
+	};
+
+	const removeSuggestions = event => {
+		if (event && event.target.matches(`[data-component=${componentName}]`)) {
+			return;
+		}
+		input.removeEventListener('keyup', inputEvents);
+		if (container()) {
+			container().remove();
+		}
+		document.removeEventListener('click', removeSuggestions);
+		input.focus();
+	};
+
+	const addSuggestionEventListeners = () => {
+		if (container() === null) {
+			return;
+		}
+
+		container().addEventListener('keydown', event => {
+			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+
+			let activeElement = document.activeElement;
+			let nextSibling = activeElement.nextSibling;
+			let previousSibling = activeElement.previousSibling;
+			let currentIndex = Array.from(activeElement.parentNode.children).indexOf(activeElement);
+
+			if (/ArrowDown|Down/.test(event.key)) {
+				if (nextSibling) {
+					if (selectOnSuggestionBrowsing) {
+						if ((currentIndex + 1) < suggestions().length) {
+							input.value = nextSibling.textContent;
+						} else {
+							input.value = currentSearchTerm;
+						}
+					}
+					nextSibling.focus();
+				}
+			} else if (/ArrowUp|Up/.test(event.key)) {
+				if (previousSibling) {
+					if (selectOnSuggestionBrowsing) {
+						input.value = previousSibling.textContent;
+					}
+					previousSibling.focus();
+				} else {
+					input.focus();
+					if (selectOnSuggestionBrowsing) {
+						input.value = currentSearchTerm;
+					}
+				}
+			} else if (event.key === 'Escape') {
+				removeSuggestions();
+				input.value = currentSearchTerm;
+			}
+		});
+
+		suggestions().forEach(element => {
+			element.addEventListener('click', () => {
+				if (onSelect) {
+					onSelect(element.textContent);
+				}
+				removeSuggestions();
+			});
+			element.addEventListener('keyup', event => {
+				if (event.key === 'Enter') {
+					if (onSelect) {
+						onSelect(element.textContent);
+					}
+					removeSuggestions();
+				}
+			});
+		});
+	};
+
+	const generateSuggestions = data => {
+		removeSuggestions();
+		document.addEventListener('click', removeSuggestions);
+		input.addEventListener('keyup', inputEvents);
+		resultsCallBack.call(undefined, data);
+		addSuggestionEventListeners();
+	};
+
+	const handleData = term => {
+		if (staticResultsData) {
+			generateSuggestions(staticResultsData);
+			return;
+		}
+
+		const fetchData = new Promise((resolve, reject) => {
+			let fetchURL;
+			const fetchParameters = {
+				'content-type': 'application/json',
+				headers,
+				method: httpMethod
+			};
+
+			if (bodyTemplate) {
+				fetchURL = endpoint;
+				fetchParameters.body = JSON.stringify(bodyTemplate(term));
+			} else {
+				fetchURL = endpoint + term;
+			}
+
+			fetch(fetchURL, fetchParameters).then(response => {
+				if (response.status === 200 && response.ok) {
+					return response.json();
+				}
+			}).then(responseJson => {
+				if (responseJson) {
+					generateSuggestions(responseJson);
+					resolve();
+				} else {
+					searchError();
+				}
+			}).catch(error => {
+				reject(error);
+			});
+		});
+
+		let fetchTimeout = new Promise((resolve, reject) => {
+			fetchTimer = setTimeout(() => {
+				clearTimeout(fetchTimer);
+				reject(new Error('Timed out'));
+			}, requestTimeout);
+		});
+
+		Promise.race([
+			fetchData,
+			fetchTimeout
+		]).catch(error => {
+			searchError(error);
+		});
+	};
+
+	const listenForInput = event => {
+		currentSearchTerm = input.value;
+		if (!eventKeys.includes(event.key) && input.value.length >= minChars) {
+			if (!inputTimer) {
+				inputTimer = setTimeout(() => {
+					window.clearTimeout(inputTimer);
+					inputTimer = null;
+					handleData(input.value);
+				}, inputDelay);
+			}
+		}
+
+		if (event.key === 'Escape') {
+			removeSuggestions(event);
+		}
+		if (event.key === 'Enter') {
+			event.preventDefault();
+		}
+	};
+
+	const enable = () => {
+		if (input) {
+			input.addEventListener('keyup', listenForInput);
+		}
+	};
+
+	const disable = () => {
+		removeSuggestions();
+		input.removeEventListener('keyup', listenForInput);
+	};
+
+	return {
+		enable: enable,
+		disable: disable
+	};
+};
+
+/* eslint-disable unicorn/no-abusive-eslint-disable */
+
+const showResults = results => {
+	// Update UI with results returned from server, e.g.
+
+	const resultsContainer = document.createElement('div');
+	resultsContainer.className = 'c-results-container';
+
+	// Assuming results is an array
+	if(results.length === 0) {
+		results.push('No results');
+	}
+	results.forEach(datum => {
+		const result = document.createElement('div');
+		result.textContent = datum;
+		result.tabIndex = '0'; // So you can focus/tab through the results
+		result.className = 'c-results-container__result';
+		resultsContainer.appendChild(result);
+	});
+	document.querySelector('[data-component-autocomplete]').insertAdjacentElement('afterend', resultsContainer);
+};
+
+const onSelect = result => {
+	// Update UI with selected result
+};
+
+const onError = error => {
+	// Update UI with error state
+	// Optionally call myAutoComplete.disable();
+};
+
+const args = {
+	selector: '[data-component-autocomplete]',
+	onSelect: onSelect,
+	searchError: onError,
+	endpoint: 'autocomplete?q=',
+	timeout: 2000,		// OPTIONAL: Set a timeout for the fetch request, onError will be called if fetch request timeouts, default is 2000
+	minChars: 1,		// OPTIONAL: Minimum characters to be typed before request is sent, default is 0
+	inputDelay: 300,	// OPTIONAL: Delay between keypress and request being sent, default is 300
+	headers: {
+		Accept: 'application/json; version=2'
+	},
+	resultsContainerSelector: '.c-results-container',
+	resultSelector: '.c-results-container__result',
+	resultsCallBack: showResults
+};
+
+const myAutoComplete = autoComplete(args);
+
+/* End example. Code below is just for this demo */
+
+//  the following code hacks window.fetch for local demoimg
+const response = {
+	status: 200,
+	ok: true,
+	json: () => {
+		const term = window.lastQuery.replace(args.endpoint, '').toLowerCase();
+		return animalsList.filter(animal => animal.toLowerCase().includes(term));
+	}
+};
+window.fetch = (endpointAndTerm) => {
+	window.lastQuery = endpointAndTerm;
+	return Promise.resolve(response);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('#searchForm button').style.display = 'none';
+});
+
+myAutoComplete.enable();
+
+const animalsList = [
+	'Aardvark',
+	'Aardwolf',
+	'African buffalo',
+	'African elephant',
+	'African leopard',
+	'Albatross',
+	'Alligator',
+	'Alpaca',
+	'American buffalo (bison)',
+	'American robin',
+	'Amphibian',
+	'Anaconda',
+	'Angelfish',
+	'Anglerfish',
+	'Ant',
+	'Anteater',
+	'Antelope',
+	'Antlion',
+	'Ape',
+	'Aphid',
+	'Arabian leopard',
+	'Arctic Fox',
+	'Arctic Wolf',
+	'Armadillo',
+	'Arrow crab',
+	'Asp',
+	'Ass (donkey)',
+	'Baboon',
+	'Badger',
+	'Bald eagle',
+	'Bali cattle',
+	'Bandicoot',
+	'Barnacle',
+	'Barracuda',
+	'Basilisk',
+	'Bass',
+	'Bat',
+	'Beaked whale',
+	'Bear',
+	'Beaver',
+	'Bedbug',
+	'Bee',
+	'Beetle',
+	'Bird',
+	'Bison',
+	'Black panther',
+	'Black widow spider',
+	'Blackbird',
+	'Blue bird',
+	'Blue jay',
+	'Blue whale',
+	'Boa',
+	'Boar',
+	'Bobcat',
+	'Bobolink',
+	'Bonobo',
+	'Booby',
+	'Bovid',
+	'Box jellyfish',
+	'Buffalo, African',
+	'Buffalo, American (bison)',
+	'Bug',
+	'Butterfly',
+	'Buzzard',
+	'Camel',
+	'Canid',
+	'Cape buffalo',
+	'Capybara',
+	'Cardinal',
+	'Caribou',
+	'Carp',
+	'Cat',
+	'Caterpillar',
+	'Catfish',
+	'Catshark',
+	'Cattle',
+	'Centipede',
+	'Cephalopod',
+	'Chameleon',
+	'Cheetah',
+	'Chickadee',
+	'Chicken',
+	'Chimpanzee',
+	'Chinchilla',
+	'Chipmunk',
+	'Cicada',
+	'Clam',
+	'Clownfish',
+	'Cobra',
+	'Cockroach',
+	'Cod',
+	'Condor',
+	'Constrictor',
+	'Coral',
+	'Cougar',
+	'Cow',
+	'Coyote',
+	'Crab',
+	'Crane fly',
+	'Crane',
+	'Crawdad',
+	'Crayfish',
+	'Cricket',
+	'Crocodile',
+	'Crow',
+	'Cuckoo',
+	'Damselfly',
+	'Deer',
+	'Dingo',
+	'Dinosaur',
+	'Dog',
+	'Dolphin',
+	'Donkey',
+	'Dormouse',
+	'Dove',
+	'Dragon',
+	'Dragonfly',
+	'Duck breeds',
+	'Duck',
+	'Dung beetle',
+	'Eagle',
+	'Earthworm',
+	'Earwig',
+	'Echidna',
+	'Eel',
+	'Egret',
+	'Elephant seal',
+	'Elephant',
+	'Elk',
+	'Emu',
+	'English pointer',
+	'Ermine',
+	'Falcon',
+	'Ferret',
+	'Finch',
+	'Firefly',
+	'Fish',
+	'Flamingo',
+	'Flea',
+	'Fly',
+	'Flyingfish',
+	'Fowl',
+	'Fox',
+	'Frog',
+	'Fruit bat',
+	'Galliform',
+	'Gamefowl',
+	'Gayal',
+	'Gazelle',
+	'Gecko',
+	'Gerbil',
+	'Giant panda',
+	'Giant squid',
+	'Gibbon',
+	'Gila monster',
+	'Giraffe',
+	'Goat',
+	'Goldfish',
+	'Goose',
+	'Gopher',
+	'Gorilla',
+	'Grasshopper',
+	'Great blue heron',
+	'Great white shark',
+	'Grizzly bear',
+	'Ground shark',
+	'Ground sloth',
+	'Grouse',
+	'Guan',
+	'Guanaco',
+	'Guinea pig',
+	'Guineafowl',
+	'Gull',
+	'Guppy',
+	'Guppy',
+	'Haddock',
+	'Halibut',
+	'Hammerhead shark',
+	'Hamster',
+	'Hare',
+	'Harrier',
+	'Hawk',
+	'Hedgehog',
+	'Hermit crab',
+	'Heron',
+	'Herring',
+	'Hippopotamus',
+	'Hookworm',
+	'Hornet',
+	'Horse',
+	'Hoverfly',
+	'Hummingbird',
+	'Humpback whale',
+	'Hyena',
+	'Iguana',
+	'Impala',
+	'Irukandji jellyfish',
+	'Jackal',
+	'Jaguar',
+	'Jay',
+	'Jellyfish',
+	'Junglefowl',
+	'Kangaroo mouse',
+	'Kangaroo rat',
+	'Kangaroo',
+	'Kingfisher',
+	'Kite',
+	'Kiwi',
+	'Koala',
+	'Koi',
+	'Komodo dragon',
+	'Krill',
+	'Lab rat',
+	'Ladybug',
+	'Lamprey',
+	'Land snail',
+	'Landfowl',
+	'Lark',
+	'Leech',
+	'Lemming',
+	'Lemur',
+	'Leopard',
+	'Leopon',
+	'Limpet',
+	'Lion',
+	'Lizard',
+	'Llama',
+	'Llama',
+	'Lobster',
+	'Locust',
+	'Loon',
+	'Louse',
+	'Lungfish',
+	'Lynx',
+	'Macaw',
+	'Mackerel',
+	'Magpie',
+	'Mammal',
+	'Manatee',
+	'Mandrill',
+	'Manta ray',
+	'Marlin',
+	'Marmoset',
+	'Marmot',
+	'Marsupial',
+	'Marten',
+	'Mastodon',
+	'Meadowlark',
+	'Meerkat',
+	'Mink',
+	'Minnow',
+	'Mite',
+	'Mockingbird',
+	'Mole',
+	'Mollusk',
+	'Mongoose',
+	'Monitor lizard',
+	'Monkey',
+	'Moose',
+	'Mosquito',
+	'Moth',
+	'Mountain goat',
+	'Mouse',
+	'Mule',
+	'Muskox',
+	'Narwhal',
+	'Newt',
+	'Nightingale',
+	'Ocelot',
+	'Octopus',
+	'Opossum',
+	'Orangutan',
+	'Orca',
+	'Ostrich',
+	'Otter',
+	'Owl',
+	'Ox',
+	'Panda',
+	'Panther',
+	'Panthera hybrid',
+	'Parakeet',
+	'Parrot',
+	'Parrotfish',
+	'Partridge',
+	'Peacock',
+	'Peafowl',
+	'Pelican',
+	'Penguin',
+	'Perch',
+	'Peregrine falcon',
+	'Pheasant',
+	'Pig',
+	'Pigeon',
+	'Pike',
+	'Pilot whale',
+	'Pinniped',
+	'Piranha',
+	'Planarian',
+	'Platypus',
+	'Polar bear',
+	'Pony',
+	'Porcupine',
+	'Porpoise',
+	'Portuguese man o\' war',
+	'Possum',
+	'Prairie dog',
+	'Prawn',
+	'Praying mantis',
+	'Primate',
+	'Ptarmigan',
+	'Puffin',
+	'Puma',
+	'Python',
+	'Quail',
+	'Quelea',
+	'Quokka',
+	'Rabbit',
+	'Raccoon',
+	'Rainbow trout',
+	'Rat',
+	'Rattlesnake',
+	'Raven',
+	'Red panda',
+	'Reindeer',
+	'Reptile',
+	'Rhinoceros',
+	'Right whale',
+	'Ringneck dove',
+	'Roadrunner',
+	'Rodent',
+	'Rook',
+	'Rooster',
+	'Roundworm',
+	'Saber-toothed cat',
+	'Sailfish',
+	'Salamander',
+	'Salmon',
+	'Sawfish',
+	'Scale insect',
+	'Scallop',
+	'Scorpion',
+	'Sea lion',
+	'Sea slug',
+	'Sea snail',
+	'Seahorse',
+	'Shark',
+	'Sheep breeds',
+	'Sheep',
+	'Shrew',
+	'Shrimp',
+	'Siamese fighting fish',
+	'Silkworm',
+	'Silverfish',
+	'Skink',
+	'Skunk',
+	'Sloth',
+	'Slug',
+	'Smelt',
+	'Snail',
+	'Snake',
+	'Snipe',
+	'Snow leopard',
+	'Society finch',
+	'Sockeye salmon',
+	'Sole',
+	'Spacecat',
+	'Sparrow',
+	'Sperm whale',
+	'Spider monkey',
+	'Spider',
+	'Spoonbill',
+	'Squid',
+	'Squirrel',
+	'Star-nosed mole',
+	'Starfish',
+	'Steelhead trout',
+	'Stingray',
+	'Stoat',
+	'Stork',
+	'Sturgeon',
+	'Sugar glider',
+	'Swallow',
+	'Swan',
+	'Swift',
+	'Swordfish',
+	'Swordtail',
+	'Tahr',
+	'Takin',
+	'Tapir',
+	'Tarantula',
+	'Tarsier',
+	'Tasmanian devil',
+	'Termite',
+	'Tern',
+	'Thrush',
+	'Tick',
+	'Tiger shark',
+	'Tiger',
+	'Tiglon',
+	'Toad',
+	'Tortoise',
+	'Toucan',
+	'Trapdoor spider',
+	'Tree frog',
+	'Trout',
+	'Tuna',
+	'Turkey breeds',
+	'Turkey',
+	'Turtle',
+	'Tyrannosaurus',
+	'Urial',
+	'Vampire bat',
+	'Vampire squid',
+	'Vicuna',
+	'Viper',
+	'Vole',
+	'Vulture',
+	'Wallaby',
+	'Walrus',
+	'Warbler',
+	'Wasp',
+	'Water Boa',
+	'Water buffalo',
+	'Weasel',
+	'Whale',
+	'Whippet',
+	'Whitefish',
+	'Whooping crane',
+	'Wildcat',
+	'Wildebeest',
+	'Wildfowl',
+	'Wolf',
+	'Wolverine',
+	'Wombat',
+	'Woodpecker',
+	'Worm',
+	'Wren',
+	'X-ray fish',
+	'Xerinae',
+	'Yak',
+	'Yellow perch',
+	'Zebra finch',
+	'Zebra',
+];
+
+		</script>
+		<style>
+			/* demo page styles */
+			body{padding:2%}
+		</style>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/* =========================================================================
+   $NORMALIZE
+   normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
+   ========================================================================= */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+	font-family: sans-serif;
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 3 */
+	-webkit-text-size-adjust: 100%;
+	/* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+	/* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+	border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+	/* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+	display: none;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Responsive Font Sizes v8.0.4
+ * https://github.com/twbs/rfs
+ * https://github.com/twbs/rfs/blob/main/LICENSE
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ * Return a greyscale color based on $greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Entrypoints
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+/**
+ * Responsive Font Sizes v8.0.4
+ * https://github.com/twbs/rfs
+ * https://github.com/twbs/rfs/blob/main/LICENSE
+ */
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8em;
+}
+
+/**
+ * @springernature/global-autocomplete
+ * Default skin settings
+ *
+ */
+.c-autocomplete {
+	margin: 10px auto 0;
+	width: 380px;
+	height: 50px;
+	font-size: 20px;
+	border: 1px solid #eee;
+	padding: 5px 10px 5px 0;
+	text-indent: 15px;
+}
+
+.c-results-container {
+	margin: auto;
+	width: 390px;
+	border: 1px solid #eee;
+	position: relative;
+	line-height: 30px;
+	border-top: none;
+	max-height: 300px;
+	overflow-y: scroll;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.c-results-container__result {
+	width: 100%;
+	padding: 15px 0 5% 15px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.c-results-container__result:hover, .c-results-container__result:focus, .c-results-container__result:active {
+	background: #e7eff4;
+}
+
+		</style>
+	</head>
+	<body>
+		<h1>Example Autocomplete</h1>
+
+<p>Choose your favourite animal from a long list</p>
+
+<form action="#endpoint" method="post" id="searchForm" class="c-autocomplete-form">
+	<div>
+		<label for="searchFormTextInput" class="c-autocomplete-form__label">Search for an Animal:</label>
+		<input type="text" autocomplete="off" data-component-autocomplete id="searchFormTextInput" class="c-autocomplete">
+	</div>
+	<button type="submit">Search</button>
+</form>
+
+
+	</body>
+</html>
