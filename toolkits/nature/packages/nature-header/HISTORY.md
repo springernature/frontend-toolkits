@@ -1,5 +1,9 @@
 # History
 
+## 1.0.1 (2020-10-08)
+    * Maintain logo alignment when scaling SVG
+    * Bump global-expander to 2.1.0
+
 ## 1.0.0 (2020-09-24)
     * Remove .c-header__layout--right
     * Promote new layer in `.c-header__logo` for mobile safari to avoid mangled logo during log in/my account layout repaint
