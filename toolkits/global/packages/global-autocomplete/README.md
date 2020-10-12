@@ -21,4 +21,6 @@ Please see contents of `demo/` folder for sample client JS.
 A full handlebars demo is also in the demo folder, but following is the only HTML the
  component actually requires:
 
+```html
 <input type="text" autocomplete="off" class="c-autocomplete" data-component-autocomplete>
+```
