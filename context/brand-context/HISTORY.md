@@ -1,7 +1,7 @@
 # History
 
 ## 4.3.0 (2020-12-10) 
-    * Add `arrow` mixin
+    * Add `arrow` mixin and `url-encode` function
 
 ## 4.2.2 (2020-09-08) 
     * BUG: `.u-visually-hidden-focus` reset margin and position override
