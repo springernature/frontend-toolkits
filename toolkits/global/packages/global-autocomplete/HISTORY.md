@@ -1,5 +1,8 @@
 # History
 
+## 5.0.1 (2020-10-12)
+    * BUG: unescaped HTML in README
+
 ## 5.0.0 (2020-10-06)
     * BREAKING: Use ESM exports
 	* BREAKING: Update major version of brand-context
