@@ -1,0 +1,42 @@
+@use '../20-functions/url-encode';
+
+// Variable arrow, useful for things like accordions
+@mixin arrow($colorHex, $direction, $size) {
+	$svg-string: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#{$colorHex}" d="M4.516 7.548c.436-.446 1.043-.481 1.576 0L10 11.295l3.908-3.747c.533-.481 1.141-.446 1.574 0 .436.445.408 1.197 0 1.615-.406.418-4.695 4.502-4.695 4.502a1.095 1.095 0 0 1-1.576 0S4.924 9.581 4.516 9.163s-.436-1.17 0-1.615z" /></svg>';
+
+	&:before {
+		content: ' ';
+		width: $size * 4;
+		height: $size * 4;
+		background-image: url('data:image/svg+xml;charset=utf-8,#{url-encode($svg-string)}');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0;
+		float: left;
+		transition: transform 0.3s;
+		cursor: pointer;
+
+		@if $direction == down {
+			transform: translateY(-1px) translateX(-5px) rotate(0deg);
+		}
+
+		@if $direction == right {
+			transform: translateY(-1px) translateX(-7px) rotate(-90deg);
+		}
+
+		@if $direction == up {
+			transform: translateY(-1px) translateX(-5px) rotate(180deg);
+		}
+
+		@if $direction == left {
+			transform: translateY(4px) translateX(-7px) rotate(90deg);
+		}
+	}
+
+	&.position-right {
+		&:before {
+			float: right;
+			opacity: 0.5;
+		}
+	}
+}
