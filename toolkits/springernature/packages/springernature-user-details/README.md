@@ -1,4 +1,4 @@
-# Springer Nature Modal
+# Springer Nature User Details
 
 Display current signed in user; click to expand to reveal more details
 
