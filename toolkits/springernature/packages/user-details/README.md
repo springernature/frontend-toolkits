@@ -1,0 +1,61 @@
+# Springer Nature Modal
+
+Display current signed in user; click to expand to reveal more details
+
+## Requirements
+
+A class name of `.js` on the document root element will be required to enable visual styles for the user info drop down. The class should be added via a micro (but blocking) script, placed as far up in the <head> of the document as possible.
+
+```javascript
+<script>
+    // JS Detection Script
+    (function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
+</script>
+```
+
+## Usage
+
+### HTML
+
+```html
+<section data-component-dropbox class="c-user-details">
+    <button data-component-user-details-open class="c-user-details__open link-like u-ml10 position-right" data-expander data-expander-target="#user">
+        <span data-component-user-first-name>{{first_name}}</span>
+        <span class="u-pr10" data-component-user-last-name>{{last_name}}</span>
+    </button>
+    <div id="user" class="c-user-details__content" data-component-user-details>
+        <span class="c-user-details__content-item u-font-12">Signed in as</span>
+        <div class="c-user-details__content-item c-user-details__email u-mb10" data-component-user-email>{{email_address}}</div>
+        <ul class="c-user-details__links">
+            <li class="c-user-details__link u-cursor-pointer">
+                <a class="c-user__logout logout-link u-block" href="{{ logoutUri }}"
+                data-component-logout>Log out</a>
+            </li>
+        </ul>
+    </div>
+</section>
+```
+
+### Javascript
+
+```javascript
+import userDetails from '@springernature/user-details/js';
+
+userDetails();
+```
+
+### CSS
+
+Import the core styles into your main stylesheet
+
+```scss
+// core.scss
+@import '@springernature/user-details/scss/50-components/core';
+```
+
+Import the enhanced settings and styles into your main stylesheet
+
+```scss
+// enhanced.scss
+@import '@springernature/user-details/scss/50-components/enhanced';
+```
