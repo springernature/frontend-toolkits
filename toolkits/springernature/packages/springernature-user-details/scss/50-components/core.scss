@@ -1,3 +1,6 @@
+@use '../60-mixins/utilities/layout';
+@use '../60-mixins/utilities/typography';
+
 .c-user-details {
 	align-self: center;
 	text-align: right;
