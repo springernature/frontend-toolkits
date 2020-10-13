@@ -2,8 +2,8 @@
   "name": "@springernature/springernature-user-details",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "Springer Nature branded user details component",
+  "description": "Springer Nature branded logged-in user details component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^1.0.0"
+  "brandContext": "^4.3.0"
 }
