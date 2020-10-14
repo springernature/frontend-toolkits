@@ -6,11 +6,10 @@
 		height: 30px;
 
 		&__open {
-			@include arrow($darker-grey, up, 4px);
-
+			@include arrow($darker-grey, down, 4px);
 
 			&.open {
-				@include arrow($darker-grey, down, 4px);
+				@include arrow($darker-grey, up, 4px);
 			}
 		}
 
@@ -25,13 +24,15 @@
 
 		&__content-item {
 			padding: 0 12px;
+			font-size: 12px;
 		}
 
 		&__link {
 			padding: 7px 12px;
 
 			&:hover {
-				background-color: #e7eff4;
+				background-color: $medium-blue;
+				color: #fff;
 			}
 		}
 	}
