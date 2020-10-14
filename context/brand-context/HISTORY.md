@@ -1,5 +1,8 @@
 # History
 
+## 4.3.1 (2020-14-10) 
+    * Remove css prop and change import
+
 ## 4.3.0 (2020-12-10) 
     * Add `arrow` mixin and `url-encode` function
 
