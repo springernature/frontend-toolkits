@@ -1,4 +1,4 @@
-@use '../20-functions/url-encode';
+@import '../20-functions/url-encode';
 
 // Variable arrow, useful for things like accordions
 @mixin arrow($colorHex, $direction, $size) {
