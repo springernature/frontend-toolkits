@@ -18,7 +18,7 @@ A class name of `.js` on the document root element will be required to enable vi
 ### HTML
 
 ```html
-<section data-component-dropbox class="c-user-details">
+<section class="c-user-details">
     <button data-component-user-details-open class="c-user-details__open link-like u-ml10 u-position-right" data-expander data-expander-target="#user">
         <span data-component-user-first-name>{{first_name}}</span>
         <span class="u-pr10" data-component-user-last-name>{{last_name}}</span>
@@ -29,9 +29,8 @@ A class name of `.js` on the document root element will be required to enable vi
         <ul class="c-user-details__links">
             <li class="c-user-details__link u-cursor-pointer">
                 {{#if logoutUri}}
-                    <a class="c-user__logout logout-link u-block u-font-12" href="{{ logoutUri }}"
-                    data-component-logout
-                    {{{ googleAnalytics  category="Submission" action="Click" label="Logout" }}}>Log out</a>
+                    <a class="c-user__logout logout-link u-block u-font-12" href="{{logoutUri}}"
+                    data-component-logout>Log out</a>
                 {{/if}}
             </li>
         </ul>
