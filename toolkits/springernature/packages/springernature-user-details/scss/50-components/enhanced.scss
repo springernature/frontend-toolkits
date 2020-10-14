@@ -1,15 +1,16 @@
 @use '@springernature/brand-context/default/scss/30-mixins/arrow/scss';
+@use '../10-settings/colours';
 
 .c-user-details {
 	.js & {
 		height: 30px;
 
 		&__open {
-			@include arrow(map-get($global-colors, darker-grey), up, 4px);
+			@include arrow($darker-grey, up, 4px);
 
 
 			&.open {
-				@include arrow(map-get($global-colors, darker-grey), down, 4px);
+				@include arrow($darker-grey, down, 4px);
 			}
 		}
 
