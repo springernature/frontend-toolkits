@@ -26,26 +26,6 @@ user-details {
 }
 logoutUri
 
-```html
-<section class="c-user-details">
-    <button data-component-user-details-open class="c-user-details__open link-like u-ml10 u-position-right" data-expander data-expander-target="#user">
-        <span data-component-user-first-name>{{first_name}}</span>
-        <span class="u-pr10" data-component-user-last-name>{{last_name}}</span>
-    </button>
-    <div id="user" class="c-user-details__content" data-component-user-details>
-        <span class="c-user-details__content-item u-font-12 u-color-darker-grey">Signed in as</span>
-        <div class="c-user-details__content-item c-user-details__email u-mb10 u-font-12" data-component-user-email>{{email_address}}</div>
-        <ul class="c-user-details__links">
-            <li class="c-user-details__link u-cursor-pointer">
-                {{#if logoutUri}}
-                    <a class="c-user__logout logout-link u-block u-font-12" href="{{logoutUri}}"
-                    data-component-logout>Log out</a>
-                {{/if}}
-            </li>
-        </ul>
-    </div>
-</section>
-```
 
 ### Javascript
 
