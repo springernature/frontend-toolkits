@@ -1,5 +1,5 @@
-@use '@springernature/brand-context/default/scss/30-mixins/arrow/scss';
-@use '../10-settings/colours';
+@import '@springernature/brand-context/default/scss/30-mixins/arrow/scss';
+@import '../10-settings/colours';
 
 .c-user-details {
 	.js & {
