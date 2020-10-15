@@ -5,7 +5,7 @@
   "description": "Springer Nature branded logged-in user details component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^4.3.0",
+  "brandContext": "^4.3.1",
   "dependencies": {
     "@springernature/global-expander": "^2.0.2"
   }
