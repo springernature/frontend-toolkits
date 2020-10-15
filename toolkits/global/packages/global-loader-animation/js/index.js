@@ -8,7 +8,7 @@ class CssLoader {
 	create() {
 		const loader = document.createElement('div');
 		loader.innerHTML = '<div></div><div></div>';
-		loader.className = 'lds-ripple';
+		loader.className = 'c-loader-animation';
 		loader.style.top = this.yCoord;
 		this.loader = loader;
 	}
