@@ -1,0 +1,41 @@
+@import '@springernature/brand-context/default/scss/30-mixins/arrow/scss';
+@import '@springernature/brand-context/default/scss/60-utilities/layout';
+@import '@springernature/brand-context/default/scss/60-utilities/positioning';
+@import '../10-settings/colours';
+
+.c-user-details {
+	.js & {
+		height: 30px;
+
+		&__open {
+			@include arrow($darker-grey, down, 4px);
+
+			&.open {
+				@include arrow($darker-grey, up, 4px);
+			}
+		}
+
+		&__content {
+			position: absolute;
+			z-index: 1;
+			height: auto;
+			padding: 5px 0;
+			text-align: left;
+			box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.3);
+		}
+
+		&__content-item {
+			padding: 0 12px;
+			font-size: 12px;
+		}
+
+		&__link {
+			padding: 7px 12px;
+
+			&:hover {
+				background-color: $medium-blue;
+				color: #fff;
+			}
+		}
+	}
+}

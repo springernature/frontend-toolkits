@@ -1,0 +1,27 @@
+@import '../60-utilities/layout';
+@import '../60-utilities/typography';
+
+.c-user-details {
+	align-self: center;
+	text-align: right;
+
+	&__content {
+		min-width: 250px;
+		background: #fff;
+		padding: 5px 0;
+		right: 0;
+	}
+
+	&__links {
+		list-style-type: none;
+		margin: 0;
+		padding: 5px 0 0 0;
+		border-top: 1px solid #e7eff4;
+	}
+
+	&__logout {
+		&:hover {
+			color: #fff;
+		}
+	}
+}
