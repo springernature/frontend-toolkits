@@ -37,8 +37,8 @@
 
 .c-loader-animation {
 	position: fixed;
-	width: 100px;
-	height: 100px;
+	width: $size;
+	height: $size;
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translate(-100%, -100%) scale(0.5) translate(50px, 50px);
@@ -48,21 +48,21 @@
 	div {
 		box-sizing: content-box;
 		position: absolute;
-		border-width: 16px;
+		border-width: $border-width;
 		border-style: solid;
 		opacity: 1;
 		border-radius: 50%;
 		-webkit-animation: lds-ripple 1.9s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 		animation: lds-ripple 1.9s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-		width: 100px;
-		height: 100px;
+		width: $size;
+		height: $size;
 
 		&:nth-child(1) {
-			border-color: #3c9cd7;
+			border-color: $main-color;
 		}
 
 		&:nth-child(2) {
-			border-color: #ddd;
+			border-color: $secondaey-color;
 			-webkit-animation-delay: -0.95s;
 			animation-delay: -0.95s;
 		}
