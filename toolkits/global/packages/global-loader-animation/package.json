@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-loader-animation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Loader animation to show when making requests",
+  "keywords": [],
+  "author": "Springernature",
+  "brandContext": "^4.3.0"
+}
