@@ -17,6 +17,15 @@ A class name of `.js` on the document root element will be required to enable vi
 
 ### HTML
 
+The component assumes you have the following data available to your template:
+
+user-details {
+    first_name
+    last_name
+    email_address
+}
+logoutUri
+
 ```html
 <section class="c-user-details">
     <button data-component-user-details-open class="c-user-details__open link-like u-ml10 u-position-right" data-expander data-expander-target="#user">
