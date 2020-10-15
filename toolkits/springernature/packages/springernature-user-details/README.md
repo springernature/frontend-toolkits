@@ -41,8 +41,8 @@ Import the core styles into your main stylesheet
 
 ```scss
 // core.scss
-@import '../60-utilities/layout';
-@import '../60-utilities/typography';
+@import '@springernature/user-details/scss/60-utilities/layout';
+@import '@springernature/user-details/scss/60-utilities/typography';
 @import '@springernature/user-details/scss/50-components/core';
 ```
 
@@ -50,6 +50,6 @@ Import the enhanced settings and styles into your main stylesheet
 
 ```scss
 // enhanced.scss
-@import '../10-settings/colours';
+@import '@springernature/user-details/scss/10-settings/colours';
 @import '@springernature/user-details/scss/50-components/enhanced';
 ```
