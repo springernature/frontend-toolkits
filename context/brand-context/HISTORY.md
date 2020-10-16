@@ -1,12 +1,15 @@
 # History
 
-## 4.3.1 (2020-14-10) 
+## 4.3.2 (2020-10-16)
+    * Add `$font-size-zzz` and `$font-weight-zzz` variables for nature context
+
+## 4.3.1 (2020-14-10)
     * Remove css prop and change import
 
-## 4.3.0 (2020-12-10) 
+## 4.3.0 (2020-12-10)
     * Add `arrow` mixin and `url-encode` function
 
-## 4.2.2 (2020-09-08) 
+## 4.2.2 (2020-09-08)
     * BUG: `.u-visually-hidden-focus` reset margin and position override
 
 ## 4.2.1 (2020-09-08)
@@ -14,16 +17,16 @@
 
 ## 4.2.0 (2020-07-22)
     * Add default variable $font-family-serif-save-data and uae within nature
-    
+
 ## 4.1.0 (2020-07-20)
     * Update SpringerNature button styles
     * FEATURE: Add secondary button styles for SpringerNature
 
 ## 4.0.0 (2020-07-16)
-    * BREAKING: RFS now part of context, no need to include in apps 
+    * BREAKING: RFS now part of context, no need to include in apps
 
 ## 3.2.4 (2020-07-07)
-    * Setup for A/B test to make all fonts on some nature journals use sans-serif 
+    * Setup for A/B test to make all fonts on some nature journals use sans-serif
 
 ## 3.2.3 (2020-07-03)
     * Prevent hover from removing focus outline on springernature and nature context
