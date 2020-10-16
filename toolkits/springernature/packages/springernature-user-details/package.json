@@ -1,11 +1,11 @@
 {
   "name": "@springernature/springernature-user-details",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "description": "Springer Nature branded logged-in user details component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^4.3.0",
+  "brandContext": "^4.3.1",
   "dependencies": {
     "@springernature/global-expander": "^2.0.2"
   }
