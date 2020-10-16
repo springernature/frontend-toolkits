@@ -13,6 +13,17 @@ $primary-font: if($is-flagship-journal, Harding, Lora);
 	$font-family-serif-save-data: Palatino, serif;
 }
 
+$font-size-xxs: 12px;
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-lg: 24px;
+$font-size-xl: 28px;
+$font-size-xxl: 32px;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
 $context--heading-font-weight: if($is-flagship-journal, bold, normal);
 $context--heading-line-height: 1.3;
 
