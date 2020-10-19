@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2020-10-19)
+    * Changes FOCUS_EVENT to OPEN_EVENT as open event is what is needed on Oscar components at this time and for any future consumer this will likely be a more useful event than the focus event in any case.
+
 ## 2.1.0 (2020-09-21)
     * Use `_isOpen` state flag as the source of truth to toggle aria and class
         attributes as well as the trigger's label upon `init`/`open`/`close`

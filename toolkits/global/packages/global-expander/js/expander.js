@@ -10,7 +10,7 @@ const defaultOptions = {
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
 	AUTOFOCUS: null,
-	FOCUS_EVENT: false
+	OPEN_EVENT: false
 };
 
 const Expander = class {
@@ -183,12 +183,6 @@ const Expander = class {
 
 		this._isOpen = true;
 
-		if (this._options.FOCUS_EVENT) {
-			const event = createEvent('focusTarget', 'globalExpander', {
-				bubbles: false
-			});
-			this._triggerEl.dispatchEvent(event);
-		}
 
 		this._updateTriggerLabel();
 		this._updateAriaAttributes();
@@ -196,6 +190,13 @@ const Expander = class {
 
 		this._setupTemporaryEventListeners();
 		this._handleAutoFocus();
+
+		if (this._options.OPEN_EVENT) {
+			const event = createEvent('open', 'globalExpander', {
+				bubbles: false
+			});
+			this._triggerEl.dispatchEvent(event);
+		}
 	}
 
 	close() {
