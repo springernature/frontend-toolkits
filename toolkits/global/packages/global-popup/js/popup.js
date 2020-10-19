@@ -34,7 +34,6 @@ const Popup = class {
 		this._isOpen = true;
 
 		if (this._options.MAX_WIDTH) {
-			console.log('i just set the max width');
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
 		if (this._options.MIN_WIDTH) {
