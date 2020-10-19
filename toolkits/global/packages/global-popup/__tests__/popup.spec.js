@@ -36,7 +36,7 @@ describe('Global Popup: popup.js', () => {
 		trigger.click();
 
 		// mock global expander's sending of event
-		const event = new CustomEvent('globalExpander:focusEvent');
+		const event = new CustomEvent('globalExpander:open');
 		trigger.dispatchEvent(event);
 
 		expect(spy).toHaveBeenCalled();
@@ -123,7 +123,7 @@ describe('Global Popup: popup.js', () => {
 		trigger.click();
 
 		// mock global expander's sending of event
-		const event = new CustomEvent('globalExpander:focusEvent');
+		const event = new CustomEvent('globalExpander:open');
 		trigger.dispatchEvent(event);
 
 		expect(document.querySelector('.is-open')).not.toBe(null);
