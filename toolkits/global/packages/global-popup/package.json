@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "@springernature/global-javascript": "^2.3.0",
-    "@springernature/global-expander": "^2.0.2"
+    "@springernature/global-expander": "^3.0.0"
   }
 }
