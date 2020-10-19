@@ -1,5 +1,3 @@
-
-
 /* Input row component */
 
 .c-input-row {
@@ -8,7 +6,6 @@
 	flex-direction: row;
 	margin-right: -$global-form--grid-gutter-width / 2;
 	margin-left: -$global-form--grid-gutter-width / 2;
-
 }
 
 .c-input-row__item {
@@ -31,7 +28,6 @@
 	font-size: $global-form--label-font-size;
 	margin-bottom: $global-form--label-spacing;
 
-
 	&--check {
 		padding-right: 0.5rem;
 	}
@@ -42,7 +38,7 @@
 }
 
 .c-input-group__control {
-	@include global-form-input;
+	@include form-input;
 
 	&--check {
 		width: auto;
