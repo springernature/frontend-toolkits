@@ -182,8 +182,7 @@ const Expander = class {
 		}
 
 		this._isOpen = true;
-
-
+		
 		this._updateTriggerLabel();
 		this._updateAriaAttributes();
 		this._updateClassAttributes();
