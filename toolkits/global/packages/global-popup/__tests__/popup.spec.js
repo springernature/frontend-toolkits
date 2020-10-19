@@ -30,7 +30,7 @@ describe('Global Popup: popup.js', () => {
 		expect(document.querySelector('.c-popup__close')).not.toBe(null);
 	});
 
-	it('should calculate number values for popup positioning', () => {
+	it('should calculate number values for popup positioning', done => {
 		const popup = new Popup(trigger, 'popupContent1');
 		const spy = jest.spyOn(popup, '_calcPositioning');
 		trigger.click();
@@ -39,8 +39,11 @@ describe('Global Popup: popup.js', () => {
 		const event = new CustomEvent('globalExpander:open');
 		trigger.dispatchEvent(event);
 
-		expect(spy).toHaveBeenCalled();
-		expect(typeof spy.mock.results[0].value.top).toBe('number');
+		setTimeout(() => {
+			expect(spy).toHaveBeenCalled();
+			expect(typeof spy.mock.results[0].value.top).toBe('number');
+			done();
+		},100)
 
 	});
 
@@ -157,12 +160,19 @@ describe('Global Popup: popup.js', () => {
 		expect(trigger.classList.contains('is-open')).toBe(false);
 	});
 
-	it('should set css style if passed in as option', () => {
+	it('should set css style if passed in as option', done => {
 		new Popup(trigger, 'popupContent1', { MAX_WIDTH: "600px" });
 
 		trigger.click();
-		const popup = document.querySelector('.c-popup');
 
-		expect(popup.style.maxWidth).toBe("600px");
+		// mock global expander's sending of event
+		const event = new CustomEvent('globalExpander:open');
+		trigger.dispatchEvent(event);
+
+		setTimeout(() => {
+			const popup = document.querySelector('.c-popup');
+			expect(popup.style.maxWidth).toBe("600px");
+			done();
+		},100)
 	});
 });

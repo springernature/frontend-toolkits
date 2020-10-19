@@ -33,15 +33,16 @@ const Popup = class {
 	_positionPopup() {
 		this._isOpen = true;
 
-		const pos = this._calcPositioning();
-		this._content.style.top = this._px(pos.top);
-		this._content.style.transform = `translateX(${pos.left}px)`;
 		if (this._options.MAX_WIDTH) {
+			console.log('i just set the max width');
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
 		if (this._options.MIN_WIDTH) {
 			this._content.style.minWidth = this._options.MIN_WIDTH;
 		}
+		const pos = this._calcPositioning();
+		this._content.style.top = this._px(pos.top);
+		this._content.style.transform = `translateX(${pos.left}px)`;
 	}
 
 	_close() {
