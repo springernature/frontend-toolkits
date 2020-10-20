@@ -8,8 +8,6 @@
 			margin-left: 10px;
 			right: 0;
 			color: $link-color;
-			text-decoration: none;
-			vertical-align: baseline;
 
 			&.open {
 				@include arrow($darker-grey, up, 4px);
