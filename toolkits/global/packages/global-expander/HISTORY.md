@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2020-10-20)
+    * Changes FOCUS_EVENT to OPEN_EVENT.
+
 ## 2.1.0 (2020-09-21)
     * Use `_isOpen` state flag as the source of truth to toggle aria and class
         attributes as well as the trigger's label upon `init`/`open`/`close`

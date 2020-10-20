@@ -532,12 +532,12 @@ describe('Expander', () => {
 			expect(spy).not.toHaveBeenCalled();
 		});
 
-		test('Should fire event if FOCUS_EVENT: true option passed to constructor', () => {
+		test('Should fire event if OPEN_EVENT: true option passed to constructor', () => {
 			// Given
 			const button = document.querySelector('[data-expander]');
 			const spy = jest.spyOn(button, 'dispatchEvent');
 			const expander = new Expander(element.BUTTON, element.TARGET, {
-				FOCUS_EVENT: true
+				OPEN_EVENT: true
 			});
 			expander.init();
 			// When
