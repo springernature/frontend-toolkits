@@ -1,6 +1,6 @@
 # History
 
-## 3.0.0 (2020-10-19)
+## 3.0.0 (2020-10-20)
     * Changes FOCUS_EVENT to OPEN_EVENT.
 
 ## 2.1.0 (2020-09-21)
