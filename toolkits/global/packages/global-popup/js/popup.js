@@ -17,7 +17,7 @@ const Popup = class {
 			this._close();
 		};
 		this._build();
-		this._expander = new Expander(this._trigger, this._content, {AUTOFOCUS: 'target', FOCUS_EVENT: true, CLOSE_EVENT: true});
+		this._expander = new Expander(this._trigger, this._content, {OPEN_EVENT: true});
 		this._bindEvents();
 	}
 
@@ -33,15 +33,15 @@ const Popup = class {
 	_positionPopup() {
 		this._isOpen = true;
 
-		const pos = this._calcPositioning();
-		this._content.style.top = this._px(pos.top);
-		this._content.style.transform = `translateX(${pos.left}px)`;
 		if (this._options.MAX_WIDTH) {
 			this._content.style.maxWidth = this._options.MAX_WIDTH;
 		}
 		if (this._options.MIN_WIDTH) {
 			this._content.style.minWidth = this._options.MIN_WIDTH;
 		}
+		const pos = this._calcPositioning();
+		this._content.style.top = this._px(pos.top);
+		this._content.style.transform = `translateX(${pos.left}px)`;
 	}
 
 	_close() {
@@ -57,13 +57,17 @@ const Popup = class {
 	_bindEvents() {
 		this._expander.init();
 
-		this._trigger.addEventListener('globalExpander:focusTarget', event => {
+		this._trigger.addEventListener('globalExpander:open', event => {
 			event.preventDefault();
 
 			if (this._isOpen) {
 				return;
 			}
-			this._positionPopup();
+			requestAnimationFrame(() => {
+				this._positionPopup();
+				this._content.focus();
+			});
+
 			window.addEventListener('resize', this._closeHandler);
 		});
 

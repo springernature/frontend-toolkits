@@ -9,6 +9,13 @@
 		right: 0;
 	}
 
+	&__open {
+		text-decoration: none;
+		vertical-align: baseline;
+		background: none;
+		border: 0;
+	}
+
 	&__link {
 		cursor: pointer;
 	}

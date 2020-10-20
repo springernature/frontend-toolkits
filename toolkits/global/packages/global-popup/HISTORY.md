@@ -1,5 +1,11 @@
 # History
 
+## 2.0.0 (2020-10-19)
+    * Removes use Global Expander AUTOFOCUS, FOCUS_EVENT and CLOSE_EVENT options
+    * Uses Global Expander's new OPEN_EVENT option
+    * Global Popup now waits until the next tick using rAF before positioning the popup to allow the popup to finish rendering before calculating it's height 
+    * Global Popup now focuses on the popup once Global Expander has finished opening it
+    
 ## 1.1.3 (2020-08-14)
     * A better fix for an issue with border colours not being found
 
