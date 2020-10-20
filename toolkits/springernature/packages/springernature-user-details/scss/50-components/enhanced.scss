@@ -16,7 +16,7 @@
 
 		&__content {
 			position: absolute;
-			z-index: 1;
+			z-index: $zindex-level-highest;
 			height: auto;
 			padding: 5px 0;
 			text-align: left;
