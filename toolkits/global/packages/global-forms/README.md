@@ -7,7 +7,7 @@ This module gives you some generic styles for text, checkbox, radio button, text
 The `global-forms` component currently uses the `DEFAULT` brand only.
 
 ```scss
-// Inlcude this with your settings
+// Include this with your settings
 @import '@springernature/global-forms/scss/10-settings/default';
 
 // Include this with your other components
