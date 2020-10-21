@@ -34,6 +34,8 @@ submission {
 
 It requires the springernature-user-details component. You will need to import the global context and the user details components.
 
+The template assumes you are using handlebars and there is minimal use of built-in helpers - if you are using a different template then the `if` with tags will need to be changed.
+
 ### Javascript
 
 ```javascript
