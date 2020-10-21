@@ -1,6 +1,6 @@
 # Springer Nature User Details
 
-Springer nature branded header component, with SN journal logo, optional journal specific logo, and the user-details component.
+Springer nature branded header component, with Springer Nature Editorial logo, optional journal logo, and the user-details component.
 
 ## Requirements
 
@@ -19,12 +19,18 @@ A class name of `.js` on the document root element will be required to enable vi
 
 The component assumes you have the following data available to your template:
 
+logoutUri
+showJournalLogo - boolean to indicate whether or not there is a journal logo
+backUrl - if you want the logos in the header wrapped in a link (usually to the home/list page)
 user-details {
     first_name
     last_name
     email_address
 }
-logoutUri
+submission {
+    journalId
+    journalName
+}
 
 It requires the springernature-user-details component. You will need to import the global context and the user details components.
 
@@ -32,7 +38,6 @@ It requires the springernature-user-details component. You will need to import t
 
 ```javascript
 import userDetails from '@springernature/user-details/js';
-
 userDetails();
 ```
 
@@ -42,8 +47,10 @@ Import the core styles into your main stylesheet
 
 ```scss
 // core
-@import '@springernature/springernature-user-details/scss/10-settings/typography';
+@import '@springernature/springernature-header/scss/10-settings/colours';
+@import '@springernature/springernature-header/scss/10-settings/layout';
 @import '@springernature/brand-context/default/scss/30-mixins/media-query';
+@import '@springernature/springernature-user-details/scss/10-settings/typography';
 @import '@springernature/springernature-user-details/scss/50-components/core';
 @import '@springernature/springernature-header/scss/50-components/core';
 ```
@@ -54,9 +61,7 @@ Import the enhanced settings and styles into your main stylesheet
 // enhanced.scss
 @import '@springernature/brand-context/default/scss/10-settings/breakpints';
 @import '@springernature/springernature-user-details/scss/10-settings/colours';
-@import '@springernature/springernature-header/scss/10-settings/colours';
 @import '@springernature/springernature-header/scss/10-settings/fonts';
-@import '@springernature/springernature-header/scss/10-settings/layout';
 @import '@springernature/springernature-user-details/scss/50-components/enhanced';
 @import '@springernature/springernature-header/scss/50-components/enhanced';
 ```
