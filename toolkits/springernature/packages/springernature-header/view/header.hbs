@@ -1,0 +1,36 @@
+<header class="c-header">
+    <div class="c-header__inner">
+        <div class="c-header__content">
+            <div class="u-flex-wrap">
+                <a data-test="header-logo-link" data-component="back-submissions" href="{{backUrl}}" class="u-flex-wrap header-logo-link" title="Back to manuscript list">
+                    <img alt="Springer Nature" width="209" src="/images/header_logo_SN.svg" class="{{#if showJournalLogo}}with-journal-logo {{/if}}site-logo">
+                    {{#if showJournalLogo}}
+                        <span class="hide journal-title" data-component-journal-title>{{submission.journalName}}</span>
+                        {{#if submission.journalId}}
+                            <img alt="" height="45" src="//ca-branding.live.public.springernature.io/journals/{{submission.journalId}}/logo.svg" class="journal-logo" 
+                            data-component-journal-logo onerror="this.classList.add('hide');document.querySelector('[data-component-journal-title]').classList.remove('hide');">
+                        {{/if}}
+                    {{/if}}
+                </a>
+            </div>
+
+            {{#userDetails}}
+                <section class="c-user-details">
+                    <button data-component-user-details-open class="c-user-details__open" data-expander data-expander-target="#user">
+                        <span data-component-user-first-name>{{first_name}}</span>
+                        <span class="c-user-details__last-name" data-component-user-last-name>{{last_name}}</span>
+                    </button>
+                    <div id="user" class="c-user-details__content" data-component-user-details>
+                        <span class="c-user-details__content-item">Signed in as</span>
+                        <div class="c-user-details__content-item c-user-details__email" data-component-user-email>{{email_address}}</div>
+                        <ul class="c-user-details__links">
+                            <li class="c-user-details__link">
+                                <a class="c-user__logout" href="{{logoutUri}}" data-component-logout>Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            {{/userDetails}}
+        </div>
+    </div>
+</header>

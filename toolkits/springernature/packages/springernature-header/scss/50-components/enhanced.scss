@@ -1,0 +1,32 @@
+.js {
+	.c-header__content {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: calc(100% - 64px);
+		float: left;
+		margin-left: 32px;
+	}
+
+	.site-logo,
+	.journal-logo {
+		@include media-query('md') {
+			width: auto;
+		}
+
+		width: 44%;
+		height: auto;
+		max-width: 209px;
+	}
+
+	.site-title {
+		color: #1a2d59;
+		font-family: $fontMerriweather;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.logout-link {
+		white-space: nowrap;
+	}
+}
