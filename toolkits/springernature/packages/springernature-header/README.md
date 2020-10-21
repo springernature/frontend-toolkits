@@ -21,7 +21,7 @@ The component assumes you have the following data available to your template:
 
 logoutUri
 showJournalLogo - boolean to indicate whether or not there is a journal logo
-backUrl - if you want the logos in the header wrapped in a link (usually to the home/list page)
+backUrl - the href for the anchor wrapping the header logos (usually to the home page)
 user-details {
     first_name
     last_name
