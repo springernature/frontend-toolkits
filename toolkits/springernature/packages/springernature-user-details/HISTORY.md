@@ -1,5 +1,8 @@
 # History
 
+## 1.2.0 (2020-10-20)
+	* Make z-index configurable
+
 ## 1.1.1 (2020-10-15)
 	* Move style from enhanced to core
 
