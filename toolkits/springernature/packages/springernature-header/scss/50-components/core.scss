@@ -3,7 +3,7 @@
 	background-color: #fff;
 	box-sizing: content-box;
 	color: #7d7d7d;
-	min-height: $global-header-height;
+	min-height: $header--header-height;
 	border-bottom: 5px solid #3c9cd7;
 	padding: 20px 0;
 	width: 100%;
@@ -11,7 +11,7 @@
 }
 
 .c-header__inner {
-	max-width: $max-content-width;
+	max-width: $header--content-width;
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -45,9 +45,9 @@
 		font-size: 2.7rem;
 	}
 	
-	font-family: $fontMerriweather;
+	font-family: $font-family-serif;
 	line-height: 4.6rem;
 	font-size: 2rem;
 	font-size: 1.5rem;
-	color: map-get($global-colors, darker-grey);
+	color: color('mineshaft');
 }
