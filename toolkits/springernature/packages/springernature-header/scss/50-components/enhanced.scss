@@ -8,8 +8,8 @@
 		margin-left: 32px;
 	}
 
-	.site-logo,
-	.journal-logo {
+	.c-header__site-logo,
+	.c-header__journal-logo {
 		@include media-query('md') {
 			width: auto;
 		}
@@ -17,16 +17,5 @@
 		width: 44%;
 		height: auto;
 		max-width: 209px;
-	}
-
-	.site-title {
-		color: #1a2d59;
-		font-family: $font-family-serif;
-		font-size: 18px;
-		font-weight: 700;
-	}
-
-	.logout-link {
-		white-space: nowrap;
 	}
 }

@@ -2,12 +2,12 @@
     <div class="c-header__inner">
         <div class="c-header__content">
             <div class="u-flex-wrap">
-                <a data-test="header-logo-link" data-component="back-submissions" href="{{backUrl}}" class="u-flex-wrap header-logo-link" title="Back to manuscript list">
-                    <img alt="Springer Nature" width="209" src="/images/header_logo_SN.svg" class="{{#if showJournalLogo}}with-journal-logo {{/if}}site-logo">
+                <a data-test="c-header__logo-link" data-component="back-submissions" href="{{backUrl}}" class="u-flex-wrap header-logo-link" title="Back to manuscript list">
+                    <img alt="Springer Nature" width="209" src="/images/header_logo_SN.svg" class="{{#if showJournalLogo}}with-journal-logo {{/if}}c-header__site-logo">
                     {{#if showJournalLogo}}
-                        <span class="hide journal-title" data-component-journal-title>{{submission.journalName}}</span>
+                        <span class="hide c-header__journal-title" data-component-journal-title>{{submission.journalName}}</span>
                         {{#if submission.journalId}}
-                            <img alt="" height="45" src="//ca-branding.live.public.springernature.io/journals/{{submission.journalId}}/logo.svg" class="journal-logo" 
+                            <img alt="" height="45" src="//ca-branding.live.public.springernature.io/journals/{{submission.journalId}}/logo.svg" class="c-header__journal-logo" 
                             data-component-journal-logo onerror="this.classList.add('hide');document.querySelector('[data-component-journal-title]').classList.remove('hide');">
                         {{/if}}
                     {{/if}}

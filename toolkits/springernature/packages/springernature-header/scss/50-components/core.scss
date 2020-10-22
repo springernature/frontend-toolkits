@@ -17,12 +17,12 @@
 	padding-right: 20px;
 }
 
-.header-logo-link {
+.c-header__logo-link {
 	text-decoration: none;
 	font-size: 25px;
 }
 
-.site-logo {
+.c-header__site-logo {
 	margin: 0 30px 10px 0;
 	max-height: 50px;
 
@@ -31,12 +31,12 @@
 	}
 }
 
-.journal-logo {
+.c-header__journal-logo {
 	margin-bottom: 10px;
 	max-width: 323px;
 }
 
-.journal-title {
+.c-header__journal-title {
 	@include from-tablet {
 		font-size: 2.2rem;
 	}
