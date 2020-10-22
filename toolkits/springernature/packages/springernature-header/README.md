@@ -51,7 +51,6 @@ Import the core styles into your main stylesheet
 // core
 @import '@springernature/brand-context/springernature/scss/core';
 
-@import '@springernature/springernature-header/scss/10-settings/colours';
 @import '@springernature/springernature-header/scss/10-settings/layout';
 @import '@springernature/springernature-user-details/scss/10-settings/typography'; // if including user-details data
 @import '@springernature/springernature-user-details/scss/50-components/core'; // if including user-details data

@@ -27,7 +27,7 @@
 	max-height: 50px;
 
 	&.with-journal-logo {
-		border-right: 2px solid map-get($global-colors, darker-grey);
+		border-right: 2px solid color('mineshaft');
 	}
 }
 
