@@ -1,0 +1,57 @@
+.c-header {
+	position: relative;
+	background-color: #fff;
+	box-sizing: content-box;
+	color: #7d7d7d;
+	min-height: $header--header-height;
+	border-bottom: 5px solid #3c9cd7;
+	padding: 20px 0;
+	width: 100%;
+	top: 0;	
+}
+
+.c-header__inner {
+	max-width: $header--content-width;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.c-header__logo-link {
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.c-header__site-logo {
+	margin: 0 30px 10px 0;
+	max-height: 50px;
+
+	&.with-journal-logo {
+		border-right: 2px solid color('mineshaft');
+	}
+}
+
+.c-header__journal-logo {
+	margin-bottom: 10px;
+	max-width: 323px;
+}
+
+.c-header__journal-title {
+	@include from-tablet {
+		font-size: 2.2rem;
+	}
+	
+	@include from-desktop {
+		font-size: 2.7rem;
+	}
+	
+	font-family: $font-family-serif;
+	line-height: 4.6rem;
+	font-size: 2rem;
+	font-size: 1.5rem;
+	color: color('mineshaft');
+
+	&.hide {
+		display: none;
+	}
+}

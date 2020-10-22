@@ -1,0 +1,31 @@
+.js {
+	.c-header__content {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: calc(100% - 64px);
+		float: left;
+		margin-left: 32px;
+	}
+
+	.c-header__site-logo,
+	.c-header__journal-logo {
+		@include media-query('md') {
+			width: auto;
+		}
+
+		width: 44%;
+		height: auto;
+		max-width: 209px;
+	}
+}
+
+.c-header__content-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-header__logo-link {
+	display: flex;
+	flex-wrap: wrap;
+}
