@@ -32,9 +32,9 @@ submission {
     journalName
 }
 
-It requires the springernature-user-details component. You will need to import the global context and the user details components.
+The springernature header optionally includes the user-details component [springernature-user-details component](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springernature/packages/springernature-user-details). You will also need to import the [global context](https://github.com/springernature/frontend-toolkits/tree/master/context/brand-context/default).
 
-The template assumes you are using handlebars and there is minimal use of built-in helpers - if you are using a different template then the `if` with tags will need to be changed.
+The template assumes you are using handlebars and there is minimal use of built-in helpers - if you are using a different templating language then the tags will need to be modified.
 
 ### Javascript
 
