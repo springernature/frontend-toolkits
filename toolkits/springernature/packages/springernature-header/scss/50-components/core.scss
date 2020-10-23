@@ -23,12 +23,8 @@
 }
 
 .c-header__site-logo {
-	margin: 0 30px 10px 0;
 	max-height: 50px;
-
-	&.with-journal-logo {
-		border-right: 2px solid color('mineshaft');
-	}
+	margin: 0 30px 10px 0;
 }
 
 .c-header__journal-logo {
