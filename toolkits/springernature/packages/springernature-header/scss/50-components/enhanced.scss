@@ -3,29 +3,43 @@
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		width: calc(100% - 64px);
-		float: left;
-		margin-left: 32px;
+
+		@include media-query('lg') {
+			width: calc(100% - 64px);
+			margin-left: 32px;
+		}
 	}
 
 	.c-header__site-logo,
 	.c-header__journal-logo {
-		@include media-query('md') {
+		@include media-query('lg') {
 			width: auto;
 		}
 
-		width: 44%;
 		height: auto;
+		width: 48%;
+		min-width: 130px;
 		max-width: 209px;
 	}
-}
 
-.c-header__content-block {
-	display: flex;
-	flex-wrap: wrap;
-}
+	.c-header__site-logo.with-journal-logo {
+		@include media-query('md') {
+			border-right: 2px solid color('mineshaft');
+		}
+	}
 
-.c-header__logo-link {
-	display: flex;
-	flex-wrap: wrap;
+	.c-header__content-block {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.c-header__logo-link {
+		display: flex;
+		flex-basis: 60%;
+		flex-wrap: wrap;
+
+		@include media-query('md') {
+			flex-basis: 70%;
+		}
+	}
 }
