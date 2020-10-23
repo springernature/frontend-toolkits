@@ -12,12 +12,8 @@
 
 	.c-header__site-logo,
 	.c-header__journal-logo {
-		@include media-query('lg') {
-			width: auto;
-		}
-
+		width: auto;
 		height: auto;
-		width: 48%;
 		min-width: 130px;
 		max-width: 209px;
 	}
