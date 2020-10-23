@@ -1,5 +1,8 @@
 # History
 
+## 0.3.0 (2020-10-23)
+	* Fix for explorer img sizing
+
 ## 0.2.0 (2020-10-21)
 	* Update styles
 
