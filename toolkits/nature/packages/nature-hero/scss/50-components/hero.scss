@@ -8,7 +8,7 @@
 	}
 }
 
-.u-container .c-hero {
+.c-hero--flush-md-max {
 	@include media-query('md', 'max') {
 		margin-left: $hero--container-margin-left;
 		margin-right: $hero--container-margin-right;
@@ -25,8 +25,10 @@
 	}
 }
 
-.c-hero__image,
 .c-hero__copy {
+	display: flex;
+	flex-direction: column;
+
 	@include media-query('md') {
 		flex: 1 1 auto;
 	}
@@ -34,7 +36,7 @@
 
 .c-hero__image {
 	@include media-query('md') {
-		flex-basis: 50%;
+		flex: 1 1 50%;
 		max-width: none;
 		position: relative;
 		overflow: hidden;
