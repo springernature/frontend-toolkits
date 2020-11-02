@@ -18,6 +18,6 @@
 }
 
 .c-meta__type {
-	text-transform: uppercase;
+	text-transform: $meta--text-transform;
 	font-weight: $meta--font-weight;
 }

@@ -9,6 +9,7 @@ To include `global-meta` in your application, you need to choose **ONE** brand f
 ```scss
 // Pick ONE of the brands below to include
 @import '@springernature/global-meta/scss/10-settings/default';
+@import '@springernature/global-meta/scss/10-settings/nature';
 @import '@springernature/global-meta/scss/10-settings/springer';
 
 // Include this with your other components
@@ -29,7 +30,7 @@ To include `global-meta` in your application, you need to choose **ONE** brand f
     <span class="c-meta__item">15 October 2019</span>
 </div>
 
-<!-- force uppercase -->
+<!-- differentiate an item -->
 <div class="c-meta">
     <span class="c-meta__item">
         <span class="c-meta__type">Editorial</span>
