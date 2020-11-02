@@ -1,0 +1,18 @@
+$hero--color: white;
+$hero--image-min-height: 260px;
+$hero--container-margin-left: -$context--container-padding;
+$hero--container-margin-right: -$context--container-padding;
+$hero--link-color: inherit;
+$hero--link-color-hover: inherit;
+$hero--copy-background-color: #29303c;
+$hero--copy-padding: spacing(16);
+$hero--copy-padding-at-lg: spacing(32);
+$hero--copy-max-width: calc(40% + 8px); // Half the global-gutter
+$hero--title-font-weight: bold;
+$hero--title-line-height: 1.2;
+$hero--title-font-size: 2.4rem;
+$hero--title-font-size-at-xl: 3.2rem;
+$hero--title-margin: spacing(16);
+$hero--summary-line-height: 1.4;
+$hero--summary-font-size: 1.4rem;
+$hero--summary-margin-bottom: spacing(0);
