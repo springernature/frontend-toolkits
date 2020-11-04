@@ -1,7 +1,7 @@
 .c-meta {
 	@include u-list-reset();
-	@include font-size($meta--font-size);
 	font-family: $meta--font-family;
+	font-size: $meta--font-size;
 	color: $meta--color;
 	line-height: $meta--line-height;
 }
