@@ -1,5 +1,8 @@
 # History
 
+## 0.2.0 (2020-11-04)
+    * Remove use of rfs font-size mixin
+
 ## 0.1.2 (2020-09-03)
     * Remove duplicate font-size
 
