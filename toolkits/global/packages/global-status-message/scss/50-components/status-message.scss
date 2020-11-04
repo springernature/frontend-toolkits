@@ -1,5 +1,5 @@
 .c-status-message {
-	@include font-size($status-message--font-size);
+	font-size: $status-message--font-size;
 	position: relative;
 	font-family: $status-message--font-family;
 	display: flex;
@@ -20,7 +20,7 @@
 }
 
 .c-status-message__heading {
-	@include font-size($status-message--font-size);
+	font-size: $status-message--font-size;
 	font-family: $status-message--font-family;
 	font-weight: $status-message--font-weight;
 }
