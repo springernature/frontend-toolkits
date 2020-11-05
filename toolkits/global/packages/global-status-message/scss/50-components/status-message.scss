@@ -1,10 +1,10 @@
 .c-status-message {
-	@include font-size($status-message--font-size);
-	position: relative;
-	font-family: $status-message--font-family;
 	display: flex;
-	width: 100%; // Caters for an ie bug with nested flex when child is a column
 	align-items: center;
+	font-family: $status-message--font-family;
+	font-size: $status-message--font-size;
+	position: relative;
+	width: 100%; // Caters for an ie bug with nested flex when child is a column
 
 	*:last-child {
 		margin-bottom: spacing(0);
@@ -20,8 +20,8 @@
 }
 
 .c-status-message__heading {
-	@include font-size($status-message--font-size);
 	font-family: $status-message--font-family;
+	font-size: $status-message--font-size;
 	font-weight: $status-message--font-weight;
 }
 

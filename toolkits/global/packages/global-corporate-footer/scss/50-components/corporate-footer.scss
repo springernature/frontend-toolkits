@@ -1,14 +1,14 @@
 .c-corporate-footer {
-	font-family: $corporate-footer--font-family;
 	background-color: $corporate-footer--background-color;
 	border-top: $corporate-footer--border;
+	font-family: $corporate-footer--font-family;
 	padding-top: $corporate-footer--padding-top;
 	padding-bottom: $corporate-footer--padding-bottom;
 }
 
 .c-corporate-footer__legal {
-	@include font-size($corporate-footer--font-size);
 	color: $corporate-footer--text-color;
+	font-size: $corporate-footer--font-size;
 	margin-bottom: $corporate-footer--margin-bottom;
 	padding-top: $corporate-footer--legal-padding-top;
 }
