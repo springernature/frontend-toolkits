@@ -1,5 +1,8 @@
 # History
 
+## 1.3.0 (2020-11-06)
+	* Make arrow colour same as text
+
 ## 1.2.0 (2020-10-20)
 	* Make z-index configurable
 
