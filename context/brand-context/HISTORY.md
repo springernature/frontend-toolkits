@@ -1,5 +1,13 @@
 # History
 
+## 5.0.0 (2020-11-10)
+    * BREAKING: Tidies up typography definitions
+        * Remove $is-sans
+        * Rename $is-flagship-journal to $is-nature-branded
+        * Rename $primary-font to $font-primary and set as font stack depending on $is-flagship
+        * Add $font-secondary
+        * Replace $font-family-serif-save-data with $save-data conditional
+
 ## 4.3.2 (2020-10-16)
     * Add `$font-size-zzz` and `$font-weight-zzz` variables for nature context
 
