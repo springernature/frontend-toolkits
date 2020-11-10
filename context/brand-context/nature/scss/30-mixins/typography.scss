@@ -6,41 +6,37 @@
 // Headings
 
 @mixin _heading-base() {
-	font-weight: $context--heading-font-weight;
-	@if $is-flagship-journal {
+	font-weight: $font-weight-heading;
+	line-height: $line-height-heading;
+	@if $is-nature-branded {
 		@include u-font-smoothing();
-		line-height: $context--heading-line-height;
 	}
 }
 
 @mixin u-h1() {
 	@include _heading-base();
-	font-size: $context--font-size-h1;
+	font-size: $font-size-h1;
 	margin-bottom: spacing(24);
-	font-family: $font-family-serif;
-	font-weight: $context--heading-font-weight;
+	font-family: $font-primary;
 }
 
 @mixin u-h2() {
 	@include _heading-base();
-	font-size: $context--font-size-h2;
+	font-size: $font-size-h2;
 	margin-bottom: spacing(8);
-	font-family: $font-family-serif;
-	font-weight: $context--heading-font-weight;
+	font-family: $font-primary;
 }
 
 @mixin u-h3() {
 	@include _heading-base();
-	font-size: $context--font-size-h3;
+	font-size: $font-size-h3;
 	margin-bottom: spacing(8);
-	font-family: $font-family-serif;
-	font-weight: $context--heading-font-weight;
+	font-family: $font-primary;
 }
 
 @mixin u-h4() {
 	@include _heading-base();
-	font-size: $context--font-size-h4;
+	font-size: $font-size-h4;
 	margin-bottom: spacing(8);
-	font-family: $font-family-sans;
-	font-weight: $context--heading-font-weight;
+	font-family: $font-secondary;
 }
