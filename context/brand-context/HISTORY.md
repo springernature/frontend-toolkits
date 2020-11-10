@@ -1,5 +1,8 @@
 # History
 
+## 5.0.1 (2020-11-10)
+    * Make non nature branded headings bold
+
 ## 5.0.0 (2020-11-10)
     * BREAKING: Tidies up typography definitions
         * Remove $is-sans
