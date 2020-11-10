@@ -3,15 +3,10 @@
  * Font settings
  */
 
-$is-flagship-journal: false !default;
-$is-sans: false !default;
-$primary-font: if($is-flagship-journal, Harding, Lora);
-@if $is-sans == true {
-	$font-family-serif: $font-family-sans;
-} @else {
-	$font-family-serif: $primary-font, Palatino, serif;
-	$font-family-serif-save-data: Palatino, serif;
-}
+$is-nature-branded: false !default;
+$save-data: false !default;
+$font-primary: if($is-nature-branded, (if($save-data, (Palatino, serif), (Harding, Palatino, serif))), $font-family-sans);
+$font-secondary: $font-family-sans;
 
 $font-size-xxs: 12px;
 $font-size-xs: 14px;
@@ -21,13 +16,13 @@ $font-size-lg: 24px;
 $font-size-xl: 28px;
 $font-size-xxl: 32px;
 
+$font-size-h1: if($is-nature-branded, 3.2rem, 3rem);
+$font-size-h2: 2.4rem;
+$font-size-h3: if($is-nature-branded, 2rem, 1.7rem);
+$font-size-h4: if($is-nature-branded, 1.8rem, 1.4rem);
+
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$font-weight-heading: if($is-nature-branded, $font-weight-bold, $font-weight-normal);
 
-$context--heading-font-weight: if($is-flagship-journal, bold, normal);
-$context--heading-line-height: 1.3;
-
-$context--font-size-h1: if($is-flagship-journal, 3.2rem, 3rem);
-$context--font-size-h2: 2.4rem;
-$context--font-size-h3: if($is-flagship-journal, 2rem, 1.7rem);
-$context--font-size-h4: if($is-flagship-journal, 1.8rem, 1.4rem);
+$line-height-heading: 1.3;
