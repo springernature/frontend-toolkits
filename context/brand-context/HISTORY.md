@@ -1,5 +1,8 @@
 # History
 
+## 5.0.2 (2020-11-11)
+    * Makes typography variable names more consistent
+
 ## 5.0.1 (2020-11-10)
     * Make non nature branded headings bold
 

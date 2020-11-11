@@ -17,26 +17,26 @@
 	@include _heading-base();
 	font-size: $font-size-h1;
 	margin-bottom: spacing(24);
-	font-family: $font-primary;
+	font-family: $font-family-primary;
 }
 
 @mixin u-h2() {
 	@include _heading-base();
 	font-size: $font-size-h2;
 	margin-bottom: spacing(8);
-	font-family: $font-primary;
+	font-family: $font-family-primary;
 }
 
 @mixin u-h3() {
 	@include _heading-base();
 	font-size: $font-size-h3;
 	margin-bottom: spacing(8);
-	font-family: $font-primary;
+	font-family: $font-family-primary;
 }
 
 @mixin u-h4() {
 	@include _heading-base();
 	font-size: $font-size-h4;
 	margin-bottom: spacing(8);
-	font-family: $font-secondary;
+	font-family: $font-family-secondary;
 }
