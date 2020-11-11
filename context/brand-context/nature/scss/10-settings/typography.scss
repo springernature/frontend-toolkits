@@ -5,8 +5,9 @@
 
 $is-nature-branded: false !default;
 $save-data: false !default;
-$font-primary: if($is-nature-branded, (if($save-data, (Palatino, serif), (Harding, Palatino, serif))), $font-family-sans);
-$font-secondary: $font-family-sans;
+$font-family-serif: if($is-nature-branded, (if($save-data, (Palatino, serif), (Harding, Palatino, serif))), $font-family-serif);
+$font-family-primary: if($is-nature-branded, $font-family-serif, $font-family-sans);
+$font-family-secondary: $font-family-sans;
 
 $font-size-xxs: 12px;
 $font-size-xs: 14px;
