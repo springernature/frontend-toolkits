@@ -23,6 +23,6 @@ $font-size-h4: if($is-nature-branded, 1.8rem, 1.4rem);
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-heading: if($is-nature-branded, $font-weight-bold, $font-weight-normal);
+$font-weight-heading: $font-weight-bold;
 
 $line-height-heading: 1.3;
