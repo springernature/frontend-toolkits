@@ -1,3 +1,7 @@
+## 0.6.0 (2020-11-11)
+    * Update $breadcrumbs-chevron-spacing to reposition chevron
+    * Removed unused $breadcrumbs-bottom-spacing
+    
 ## 0.5.0 (2020-08-20)
     * Removed font size for Nature
 
