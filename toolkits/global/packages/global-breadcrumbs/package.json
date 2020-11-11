@@ -1,9 +1,9 @@
 {
     "name": "@springernature/global-breadcrumbs",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "license": "MIT",
     "description": "breadcrumbs",
     "keywords": [],
     "author": "Springer Nature",
     "brandContext": "^3.2.2"
-  } 
+  }
