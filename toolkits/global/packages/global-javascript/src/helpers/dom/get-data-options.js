@@ -13,7 +13,7 @@ const getDataOptions = (element, attributeMap) => {
 			const attributeValue = element.hasAttribute(value) && element.getAttribute(value);
 
 			if (attributeValue) {
-				dataOptions[key] = attributeValue;
+				dataOptions[key] = (attributeValue === 'true' || attributeValue === 'false') ? attributeValue === 'true' : attributeValue;
 			}
 		}
 	}
