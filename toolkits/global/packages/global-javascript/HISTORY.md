@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2020-11-13)
+    * BREAKING: Convert "true" and "false" attributes to boolean
+
 ## 2.4.0 (2020-08-24)
     * FEATURE: setCookie util
     * FEATURE: deleteCookie util
