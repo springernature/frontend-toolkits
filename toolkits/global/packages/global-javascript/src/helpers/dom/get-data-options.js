@@ -13,6 +13,8 @@ const getDataOptions = (element, attributeMap) => {
 			const attributeValue = element.hasAttribute(value) && element.getAttribute(value);
 
 			if (attributeValue) {
+				// 'true' and 'false' attribute values need to be converted to a boolean
+				// Checking equality against 'true' will return a boolean of true or false. e.g. 'false' === 'true' returns false
 				dataOptions[key] = (attributeValue === 'true' || attributeValue === 'false') ? attributeValue === 'true' : attributeValue;
 			}
 		}
