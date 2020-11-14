@@ -1,5 +1,8 @@
 # History
 
+## 3.0.1 (2020-11-14)
+    * BUG: Bump global-javascript dependency version to fix "false" data-attributes being true
+
 ## 3.0.0 (2020-10-20)
     * Changes FOCUS_EVENT to OPEN_EVENT.
 
