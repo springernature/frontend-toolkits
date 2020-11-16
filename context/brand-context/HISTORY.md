@@ -1,5 +1,8 @@
 # History
 
+## 6.0.0 (2020-11-16)
+    * BREAKING: Switch springer to `u-` for heading utilities and mixins
+
 ## 5.0.2 (2020-11-11)
     * Makes typography variable names more consistent
 
