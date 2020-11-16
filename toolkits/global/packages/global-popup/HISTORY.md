@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2020-11-16)
+    * BREAKING: bump to latest brand context, global-javascript and global-expander
+
 ## 2.0.0 (2020-10-19)
     * Removes use Global Expander AUTOFOCUS, FOCUS_EVENT and CLOSE_EVENT options
     * Uses Global Expander's new OPEN_EVENT option
