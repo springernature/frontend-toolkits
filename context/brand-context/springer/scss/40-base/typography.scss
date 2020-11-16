@@ -12,24 +12,24 @@ h4,
 
 h1,
 .h1 {
-	@include h1;
+	@include u-h1;
 }
 
 h2,
 .h2 {
-	@include h2;
+	@include u-h2;
 }
 
 h3,
 .h3 {
-	@include h3;
+	@include u-h3;
 }
 
 h4,
 .h4,
 h5,
 h6 {
-	@include h4;
+	@include u-h4;
 }
 
 p,
