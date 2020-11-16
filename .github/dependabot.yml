@@ -1,0 +1,13 @@
+# Specify the day for weekly checks
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      # Check for npm updates on Sundays at 9am UTC
+      day: "sunday"
+      time: "09:00"
+    commit-message:
+      prefix: "[skip travis]"
