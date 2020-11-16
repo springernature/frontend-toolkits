@@ -4,6 +4,6 @@
   "description": "Frontend package for expanding a target when clicking a toggle",
   "license": "MIT",
   "dependencies": {
-    "@springernature/global-javascript": "^2.3.0"
+    "@springernature/global-javascript": "^3.0.0"
   }
 }
