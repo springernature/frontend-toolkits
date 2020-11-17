@@ -77,3 +77,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `springer-ad`  
    Now part of the [`global-ad`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-ad).
+
+* `springer-meta`
+   Now part of the [`global-meta`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-meta).
