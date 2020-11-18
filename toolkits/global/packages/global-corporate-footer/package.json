@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "description": "corporate footer",
   "license": "MIT",
+  "author": "Springer Nature",
   "brandContext": "^6.0.0"
 }
