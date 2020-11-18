@@ -1,3 +1,7 @@
+## 1.0.0 (2020-11-18)
+    * Major version release
+    * Bump `brand-context` version
+
 ## 0.6.0 (2020-11-11)
     * Update $breadcrumbs-chevron-spacing to reposition chevron
     * Removed unused $breadcrumbs-bottom-spacing
