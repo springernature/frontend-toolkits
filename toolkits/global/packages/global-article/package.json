@@ -5,8 +5,8 @@
   "license": "MIT",
   "brandContext": "^6.0.0",
   "dependencies": {
-    "@springernature/global-javascript": "^3.0.0",
-    "@springernature/global-expander": "^3.0.1"
+    "@springernature/global-expander": "~3.0.1",
+    "@springernature/global-popup": "~3.0.0"
   },
   "devDependencies": {
     "jquery": "^3.4.1"
