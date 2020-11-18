@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2020-11-18)
+    * Major version release
+    * Bump `brand-context` version
+
 ## 0.0.3 (2020-06-08)
     * Update README
 
