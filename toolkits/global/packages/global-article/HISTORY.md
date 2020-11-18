@@ -1,5 +1,10 @@
 # History
 
+## 21.0.0 (2020-11-18)
+    * BREAKING: 
+        * Switch to use brand-context
+        * Bump global-javascript and global-expander dependencies
+
 ## 20.0.0 (2019-07-13)
 	* Removes basic popup styles from article-enhanced.scss as replaced by Global Popup
 	* Removes popup component from Global Article
