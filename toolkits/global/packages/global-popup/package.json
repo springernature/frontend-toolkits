@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Builds and styles a popup that can be opened and closed",
   "license": "MIT",
-  "brandContext": "^5.0.2",
+  "brandContext": "^6.0.0",
   "dependencies": {
     "@springernature/global-javascript": "^3.0.0",
     "@springernature/global-expander": "^3.0.1"

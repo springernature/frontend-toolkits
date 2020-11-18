@@ -1,6 +1,6 @@
 # History
 
-## 3.0.0 (2020-11-16)
+## 3.0.0 (2020-11-18)
     * BREAKING: 
         * Switch to use brand-context
         * Bump global-javascript and global-expander dependencies
