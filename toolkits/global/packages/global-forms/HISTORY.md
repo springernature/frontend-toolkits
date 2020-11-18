@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2020-11-18)
+    * Bump `brand-context` version
+
 ## 3.0.1 (2020-10-19)
     * Refer to mixin name in component file correctly
     
