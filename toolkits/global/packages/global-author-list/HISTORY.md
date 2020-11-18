@@ -1,5 +1,8 @@
 # History
 
+## 2.0.1 (2020-11-18)
+    * Bump `brand-context` version
+
 ## 2.0.0 (2020-06-08)
     * BREAKING: switch to use new `brand-context` dependency
     * FEATURE: Add branding configurations for default, springer
