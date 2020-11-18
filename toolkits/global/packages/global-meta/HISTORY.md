@@ -1,5 +1,8 @@
 # History
 
+## 1.3.1 (2020-11-18)
+    * Bump `brand-context` version
+
 ## 1.3.0 (2020-11-12)
     * Update Nature settings to match existing c-meta style from app
 
