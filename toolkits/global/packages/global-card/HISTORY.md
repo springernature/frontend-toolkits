@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 (2020-11-18)
+    * Bump `brand-context` version
+
 ## 2.0.1 (2020-06-08)
     * Update README
 

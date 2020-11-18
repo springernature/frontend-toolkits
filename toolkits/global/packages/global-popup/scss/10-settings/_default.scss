@@ -1,0 +1,13 @@
+/**
+ * Popup
+ * Default branding for component
+ */
+
+$popup--padding: spacing(16, 32, 16, 24);
+$popup--close-top: spacing(16);
+$popup--close-right: spacing(16);
+$popup--box-shadow: 0 0 5px 0 greyscale(50, 0.1);
+$popup--border-color: rgba(151, 191, 216, .3);
+$popup--border-radius: spacing(2);
+$popup--background-color: #fff;
+$popup--zindex: 100;

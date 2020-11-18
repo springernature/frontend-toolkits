@@ -1,5 +1,11 @@
 # History
 
+## 3.0.0 (2020-11-18)
+    * BREAKING: 
+        * Switch to use brand-context
+        * Bump global-javascript and global-expander dependencies
+        * Rename files and variables in line with other packages
+
 ## 2.0.0 (2020-10-19)
     * Removes use Global Expander AUTOFOCUS, FOCUS_EVENT and CLOSE_EVENT options
     * Uses Global Expander's new OPEN_EVENT option
