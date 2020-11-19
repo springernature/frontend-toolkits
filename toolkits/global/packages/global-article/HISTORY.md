@@ -1,5 +1,8 @@
 # History
 
+## 21.0.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
 ## 21.0.0 (2020-11-18)
     * BREAKING: 
         * Switch to use brand-context
