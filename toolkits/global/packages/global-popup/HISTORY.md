@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2020-11-19)
+    * Fix references to old variable name
+
 ## 3.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
