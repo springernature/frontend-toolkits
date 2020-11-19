@@ -1,5 +1,8 @@
 # History
 
+## 6.0.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
 ## 6.0.0 (2020-11-16)
     * BREAKING: Switch springer to `u-` for heading utilities and mixins
 

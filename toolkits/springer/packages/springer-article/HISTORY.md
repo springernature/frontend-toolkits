@@ -1,5 +1,8 @@
 # History
 
+## 0.7.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
 ## 0.7.0 (2020-04-21)
     * Giving the build a bump
 

@@ -1,5 +1,8 @@
 # History
 
+## 0.15.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
 ## 0.15.0 (2020-04-20)
 	* Update the extends package version of global article from 19.0.0 to 19.1.0
 

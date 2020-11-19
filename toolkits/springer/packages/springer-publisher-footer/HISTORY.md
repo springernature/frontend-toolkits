@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2020-11-19)
+    * Bump `brand-context` version
+
 ## 3.0.1 (2020-06-08)
     * Bump to latest brand-context
 
