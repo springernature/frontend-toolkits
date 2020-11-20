@@ -62,7 +62,7 @@ You can validate all the packages by running `npm run validate` from within the 
 
 The creation, validation and publication of packages is controlled via the [Frontend Package Manager](https://github.com/springernature/frontend-package-manager).
 
-The `README` for that repository provides information on the package creation wizard, which can be run with `npm run create`, as well as detailing additional options for package validation, as well how packages are [automatically published via travis](#publishing).
+The `README` for that repository provides information on the package creation wizard, which can be run with `npm run create`, as well as detailing additional options for package validation, as well how packages are [automatically published via Travis](#publishing).
 
 ### Package structure
 
@@ -218,7 +218,7 @@ Javascript linting is enforced using the [Springer Nature Eslint config](https:/
 
 ## Continuous integration
 
-This repository uses [Travis CI](https://travis-ci.com/) and builds are run on all Pull Requests. On each build travis will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
+This repository uses [Travis CI](https://travis-ci.com/) and builds are run on all Pull Requests. On each build Travis will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
 
 ### Publishing
 
