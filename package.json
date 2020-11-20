@@ -19,6 +19,7 @@
   ],
   "author": "Springer Nature",
   "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
     "bootstrap:local": "lerna bootstrap --nohoist=** --no-ci",
     "build": "npm run lint && npm run test && npm run validate",
     "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
