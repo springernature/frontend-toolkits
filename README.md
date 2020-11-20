@@ -218,7 +218,7 @@ Javascript linting is enforced using the [Springer Nature Eslint config](https:/
 
 ## Continuous integration
 
-This repository uses [Travis CI](https://travis-ci.org/) and builds are run on all Pull Requests. On each build travis will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
+This repository uses [Travis CI](https://travis-ci.com/) and builds are run on all Pull Requests. On each build travis will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
 
 ### Publishing
 
@@ -232,7 +232,7 @@ Copyright &copy; 2020, Springer Nature
 
 [info-license]: LICENCE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
-[info-build]: https://travis-ci.org/springernature/frontend-toolkits
+[info-build]: https://travis-ci.com/springernature/frontend-toolkits
 [badge-build]: https://badgen.net/travis/springernature/frontend-toolkits?icon=travis
 [info-node]: .nvmrc
 [badge-node]: https://img.shields.io/badge/node-lts/carbon-brightgreen.svg
