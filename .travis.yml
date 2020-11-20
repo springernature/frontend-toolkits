@@ -6,7 +6,7 @@ language: node_js
 env:
   global:
     - CHANGED_FILES=$(git diff --name-only $TRAVIS_COMMIT_RANGE)
-    - AUTHOR_NAME=$(git log -1 $TRAVIS_COMMIT --pretty="%aN")
+    - AUTHOR_NAME=$(git show -s --format='%an' $TRAVIS_PULL_REQUEST_SHA)
 
 # cache the node modules
 cache:
