@@ -6,7 +6,6 @@ language: node_js
 env:
   global:
     - CHANGED_FILES=$(git diff --name-only $TRAVIS_COMMIT_RANGE)
-    - DEPENDABOT=$($TRAVIS_PULL_REQUEST_BRANCH =~ /^dependabot.+/)
 
 # cache the node modules
 cache:
@@ -23,13 +22,12 @@ branches:
 # build notification
 notifications:
   email:
-    - feds@springernature.com
+    - fed-systems@springernature.com
   slack:
     secure: IuzH6deMfNVaPujvbWt+kXk6AAuX0z3FvPsWeHTPNPT1F25ITFKAObxbgTJ6qhxmm5bJRENE0EyrC+z/J0Je0opt7cA8V5/HCt40S/uxYNZ/JqVADWi2mdLJwi9Ysb2ulED4wn2dk4/HJXglLryaiY/+mCCEZLA+4dvktfBXrnzbgnBwtSowYD/fRAsRES1Ga/n3K18rg6YF68U6r/CyAmv26wq/J36ZtON3yjFmWugSzVtF3fTu1dRMDC+O4JJRH2GyGzlj+OM1aaPOF0oEyQaWsbsdnHEwIbKcqR/xKhFePWPdcn/Hvm1/uF/Yxix0FMPU3+AFsyNwYVbM3C/VfcdI4F4kNRJfRfuPpCkRQafJkOXZJdQgE+NP4NzwZ9FdbVrtb/sl8WTvBjaoRAmSFHyWZ3VZ+nNiOF7634LFkXjhR+iKh9IFvhhnluA5st2mQxOZyJjUFsESetz8yQtLhNkreu3Y/+xrkl3SgdyPlHsfB3FOjFfrTQl637iLBpDPJ0kOKjsiPJIMQ+gS+4wy3+9j4HianZSd8dKPkZBONguS6ykGecjYlhriuzezm4QxJBILfYSs37gGEPFigDrrBx78DHqFEfQWHQsannkf+fKtenLfRxCg3dt4gQ8m2jik3ZLeE9czOhCBIaZMGohuvXynvUbRwP1x1N38CTfNS4k=
 
 script:
-  - echo $DEPENDABOT
-  - lerna bootstrap --hoist && npm run build:ci
+  - ./build.sh
 
 # Auto-publish after script
 after_success:
