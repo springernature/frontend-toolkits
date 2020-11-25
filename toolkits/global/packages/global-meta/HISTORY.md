@@ -1,5 +1,17 @@
 # History
 
+## 1.3.2 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
+## 1.3.1 (2020-11-18)
+    * Bump `brand-context` version
+
+## 1.3.0 (2020-11-12)
+    * Update Nature settings to match existing c-meta style from app
+
+## 1.2.1 (2020-11-06)
+    * Adjust font size in Nature settings 
+    
 ## 1.2.0 (2020-11-04)
     * Remove use of rfs font-size mixin
 

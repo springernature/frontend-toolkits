@@ -1,14 +1,17 @@
 /**
  * Meta
- * Springer branding for component
+ * Nature branding for component
  */
 
 // Default button setting
 @import 'default';
 
-$meta--font-size: 1.4rem;
+$meta--font-size: 1.2rem;
 $meta--font-family: $font-family-sans;
-$meta--border: 1px solid greyscale(80);
-$meta--color: greyscale(40);
-$meta--margin-bottom: 4px;
+$meta--border: 1px solid #bbb;
+$meta--color: inherit;
+$meta--line-height: 1.4;
+$meta--margin-bottom: spacing(4);
+$meta--margin-right: spacing(0);
+$meta--padding-right: spacing(4);
 $meta--text-transform: none;
