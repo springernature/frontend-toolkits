@@ -9,3 +9,5 @@ updates:
       # Check for npm updates on Sundays at 9am UTC
       day: "sunday"
       time: "09:00"
+    # Disable version updates for npm dependencies
+    open-pull-requests-limit: 0
