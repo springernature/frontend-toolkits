@@ -1,5 +1,25 @@
 # History
 
+## 6.0.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
+## 6.0.0 (2020-11-16)
+    * BREAKING: Switch springer to `u-` for heading utilities and mixins
+
+## 5.0.2 (2020-11-11)
+    * Makes typography variable names more consistent
+
+## 5.0.1 (2020-11-10)
+    * Make non nature branded headings bold
+
+## 5.0.0 (2020-11-10)
+    * BREAKING: Tidies up typography definitions
+        * Remove $is-sans
+        * Rename $is-flagship-journal to $is-nature-branded
+        * Rename $primary-font to $font-primary and set as font stack depending on $is-flagship
+        * Add $font-secondary
+        * Replace $font-family-serif-save-data with $save-data conditional
+
 ## 4.3.2 (2020-10-16)
     * Add `$font-size-zzz` and `$font-weight-zzz` variables for nature context
 

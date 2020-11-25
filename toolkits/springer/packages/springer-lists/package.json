@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-lists",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "license": "MIT",
   "description": "Springer lists components",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^3.0.0"
+  "brandContext": "^6.0.0"
 }

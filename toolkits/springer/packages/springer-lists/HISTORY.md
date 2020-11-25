@@ -1,5 +1,8 @@
 # History
 
+## 6.1.1 (2020-11-19)
+    * Bump `brand-context` version
+
 ## 6.1.0 (2020-09-28)
     * Add list-columned
     * Update README with example

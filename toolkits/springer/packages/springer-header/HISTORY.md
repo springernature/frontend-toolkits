@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2020-11-19)
+    * Bump `brand-context` version
+
 ## 3.1.0 (2020-06-15)
     * Uses white background in Springer header
     * Uses thick 4px bottom border in Springer header

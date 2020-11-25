@@ -1,13 +1,11 @@
 {
   "name": "@springernature/global-popup",
-  "version": "2.0.0",
+  "version": "3.0.2",
   "description": "Builds and styles a popup that can be opened and closed",
   "license": "MIT",
-  "peerDependencies": {
-    "@springernature/brand-context": "3.2.4"
-  },
+  "brandContext": "^6.0.0",
   "dependencies": {
-    "@springernature/global-javascript": "^2.3.0",
-    "@springernature/global-expander": "^3.0.0"
+    "@springernature/global-javascript": "^3.0.0",
+    "@springernature/global-expander": "^3.0.1"
   }
 }

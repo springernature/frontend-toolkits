@@ -1,5 +1,13 @@
 # History
 
+## 21.0.1 (2020-11-19)
+    * Bump to get latest version package-manager with updated post install script
+
+## 21.0.0 (2020-11-18)
+    * BREAKING: 
+        * Switch to use brand-context
+        * Bump global-expander and global-popup dependencies
+
 ## 20.0.0 (2019-07-13)
 	* Removes basic popup styles from article-enhanced.scss as replaced by Global Popup
 	* Removes popup component from Global Article

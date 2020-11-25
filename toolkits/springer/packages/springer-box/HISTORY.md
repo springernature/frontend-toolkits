@@ -1,5 +1,8 @@
 # History
 
+## 6.0.1 (2020-11-19)
+    * Bump `brand-context` version
+
 ## 6.0.0 (2020-10-06)
     * BREAKING: box-shadow no longer included in box styling without modifier
     * Add class to add grey background to box

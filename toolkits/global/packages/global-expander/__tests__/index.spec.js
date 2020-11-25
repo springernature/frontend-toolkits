@@ -80,8 +80,8 @@ describe('Data Attribute API', () => {
 			TARGET_HIDE_CLASS: 'data-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'data-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'data-trigger-shown-label',
-			CLOSE_ON_CLICKOFF: 'true',
-			AUTOFOCUS: 'false',
+			CLOSE_ON_CLICKOFF: true,
+			AUTOFOCUS: false,
 			OPEN_EVENT: false
 		});
 	});
