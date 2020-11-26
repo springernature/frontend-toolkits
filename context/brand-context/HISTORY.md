@@ -1,5 +1,8 @@
 # History
 
+## 6.1.0 (2020-11-26)
+    * Adds light-blue color to Nature brand context settings
+
 ## 6.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
