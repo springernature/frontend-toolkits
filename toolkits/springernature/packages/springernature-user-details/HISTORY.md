@@ -1,5 +1,8 @@
 # History
 
+## 1.3.1 (2020-11-26)
+	* Use global colours
+
 ## 1.3.0 (2020-11-06)
 	* Make arrow colour same as text
 
