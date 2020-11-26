@@ -2,6 +2,7 @@
 
 ## 1.3.1 (2020-11-26)
 	* Adds correct filenames README.md
+
 ## 1.3.0 (2020-11-06)
 	* Make arrow colour same as text
 
