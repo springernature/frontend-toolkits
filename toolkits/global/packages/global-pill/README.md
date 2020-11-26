@@ -9,7 +9,7 @@ The `global-pill` component currently uses the `DEFAULT` and `NATURE` brand only
 @import '@springernature/global-pill/scss/10-settings/default';
 
 // Include this with your other components
-@import '@springernature/global-pill/scss/50-components/breadcrumbs';
+@import '@springernature/global-pill/scss/50-components/pill';
 ```
 
 #### HTML
