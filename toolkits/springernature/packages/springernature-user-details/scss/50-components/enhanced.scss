@@ -3,14 +3,14 @@
 		height: 30px;
 
 		&__open {
-			@include arrow($link-color, down, 4px);
+			@include arrow(map-get-($colors, blue), down, 4px);
 
 			margin-left: 10px;
 			right: 0;
-			color: $link-color;
+			color: map-get-($colors, blue);
 
 			&.open {
-				@include arrow($link-color, up, 4px);
+				@include arrow(map-get-($colors, blue), up, 4px);
 			}
 		}
 
@@ -32,7 +32,7 @@
 			padding: 7px 12px;
 
 			&:hover {
-				background-color: $medium-blue;
+				background-color: map-get($colors, midnight);
 				color: #fff;
 			}
 		}
