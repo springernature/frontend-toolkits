@@ -1,5 +1,8 @@
 # History
 
+## 21.1.0 (2020-12-04)
+    * Add article--font-family default setting and override for Nature
+
 ## 21.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
