@@ -1,5 +1,8 @@
 # History
 
+## 1.3.3 (2020-12-07)
+	* Fix for css map-get
+
 ## 1.3.2 (2020-11-26)
 	* Use global colours
 
