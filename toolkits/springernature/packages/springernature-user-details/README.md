@@ -52,7 +52,6 @@ Import the enhanced settings and styles into your main stylesheet
 ```scss
 // enhanced.scss
 @import '@springernature/brand-context/default/scss/enhanced';
-@import '@springernature/springernature-user-details/scss/10-settings/colours';
 @import '@springernature/springernature-user-details/scss/10-settings/layout';
 @import '@springernature/brand-context/default/scss/30-mixins/arrow';
 @import '@springernature/springernature-user-details/scss/50-components/enhanced';
