@@ -1,21 +1,21 @@
 .c-header-expander {
-	background-color: $header-expander--background-color;
-	color: $header-expander--color;
-	padding: $header-expander--padding;
-	font-size: $header-expander--font-size;
+	background-color: black;
+	color: greyscale(90);
+	padding: spacing(24) spacing(0) spacing(0);
+	font-size: 1.4rem;
 
 	a {
 		@include u-link-inherit();
 	}
 
 	button {
-		border: $header-expander--button-border;
-		color: $header-expander--button-color;
-		background-color: $header-expander--button-background-color;
+		border: 1px solid white;
+		color: white;
+		background-color: transparent;
 
 		&:hover {
-			background-color: $header-expander--button-hover-background-color;
-			color: $header-expander--button-hover-color;
+			background-color: white;
+			color: black;
 		}
 	}
 }
@@ -25,17 +25,17 @@
 }
 
 .c-header-expander__keyline {
-	border-bottom: $header-expander--keyline-border;
-	padding-bottom: $header-expander--keyline-padding;
-	margin-bottom: spacing(0);
+	border-bottom: 1px solid greyscale(20);
+	padding-bottom: spacing(16);
+	margin-bottom: 0;
 }
 
 .c-header-expander__heading {
 	display: inline-block;
-	line-height: $header-expander--heading-line-height;
-	font-size: $header-expander--heading-font-size;
-	font-family: $header-expander--heading-font-family;
-	font-weight: $header-expander--heading-font-weight;
+	line-height: 1.4;
+	font-size: 2rem;
+	font-family: $font-family-sans;
+	font-weight: $font-weight-normal;
 }
 
 .c-header-expander__list {
@@ -45,13 +45,13 @@
 
 .c-header-expander__item {
 	display: inline-block;
-	margin-right: $header-expander--item-margin-right;
-	margin-bottom: $header-expander--item-margin-bottom;
+	margin-right: spacing(16);
+	margin-bottom: spacing(16);
 }
 
 .c-header-expander__item--keyline {
-	border-left: $header-expander--item-border-left;
-	padding-left: $header-expander--item-padding-left;
+	border-left: 1px solid white;
+	padding-left: spacing(16);
 }
 
 .c-header-expander__link {
@@ -61,13 +61,13 @@
 	white-space: nowrap;
 
 	> svg {
-		margin-left: $header-expander--link-svg-margin-left;
+		margin-left: spacing(8);
 	}
 }
 
 .c-header-expander__form {
 	@include media-query('md') {
-		max-width: $header-expander--search-max-width;
+		max-width: 600px;
 	}
 }
 
@@ -78,16 +78,12 @@
 .c-header-expander.has-tethered {
 	position: absolute;
 	top: 100%; // top of the tether element
-	transform: $header-expander--js-transform;
+	transform: translateY(8px);
 	z-index: 1;
 	left: 0;
-	text-align: left;
 	width: auto;
-	min-width: $header-expander--js-min-width;
-	border-radius: $header-expander--js-border-radius;
-	@include media-query('sm') {
-		width: $header-expander--js-width;
-	}
+	min-width: 225px;
+	border-radius: 0 0 2px 2px;
 
 	.c-header-expander__item {
 		display: block;
@@ -95,14 +91,14 @@
 	}
 
 	.c-header-expander__item--keyline {
-		border-top: $header-expander--js-item-border-top;
+		border-top: 1px solid white;
 		border-left: none;
-		padding-top: $header-expander--js-item-padding-top;
+		padding-top: spacing(16);
 		padding-left: spacing(0);
 	}
 
 	.c-header-expander__keyline {
-		margin-bottom: $header-expander--js-keyline-margin-bottom;
+		margin-bottom: spacing(16);
 		padding-top: spacing(0);
 
 		&:only-child,
@@ -114,8 +110,7 @@
 }
 
 .c-header-expander--tray.has-tethered {
-	padding: $header-expander--js-tray-padding;
+	width: 100%;
+	padding: spacing(32) spacing(0) spacing(24);
 	transform: none;
-	min-width: $header-expander--js-tray-min-width;
-	width: $header-expander--js-tray-width;
 }

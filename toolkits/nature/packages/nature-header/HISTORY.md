@@ -1,5 +1,10 @@
 # History
 
+## 3.0.0 (2020-12-10)
+    * BREAKING: 
+        * Removes settings files as component is not configurable
+        * Renames classes to allow more shared styles 
+
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
