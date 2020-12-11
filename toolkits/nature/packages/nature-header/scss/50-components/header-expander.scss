@@ -1,7 +1,7 @@
 .c-header-expander {
 	background-color: black;
 	color: greyscale(90);
-	padding: spacing(24) spacing(0) spacing(0);
+	padding: spacing(24) 0 0;
 	font-size: 1.4rem;
 
 	a {
@@ -39,19 +39,14 @@
 }
 
 .c-header-expander__list {
-	padding: spacing(0);
-	margin: spacing(0);
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .c-header-expander__item {
-	display: inline-block;
-	margin-right: spacing(16);
-	margin-bottom: spacing(16);
-}
-
-.c-header-expander__item--keyline {
-	border-left: 1px solid white;
-	padding-left: spacing(16);
+	margin: 0 spacing(8) spacing(8);
 }
 
 .c-header-expander__link {
@@ -77,7 +72,7 @@
 
 .c-header-expander.has-tethered {
 	position: absolute;
-	top: 100%; // top of the tether element
+	top: 100%; // bottom of the tether element
 	transform: translateY(8px);
 	z-index: 1;
 	left: 0;
@@ -85,32 +80,28 @@
 	min-width: 225px;
 	border-radius: 0 0 2px 2px;
 
-	.c-header-expander__item {
+	.c-header-expander__list {
 		display: block;
-		margin-right: spacing(0);
+	}
+
+	.c-header-expander__item {
+		margin-right: 0;
 	}
 
 	.c-header-expander__item--keyline {
 		border-top: 1px solid white;
-		border-left: none;
 		padding-top: spacing(16);
-		padding-left: spacing(0);
 	}
 
-	.c-header-expander__keyline {
+	.c-header-expander__keyline:not(:only-child),
+	.c-header-expander__keyline:not(:last-child) {
 		margin-bottom: spacing(16);
-		padding-top: spacing(0);
-
-		&:only-child,
-		&:last-child {
-			border: 0;
-			padding-bottom: spacing(0);
-		}
+		padding-top: 0
 	}
 }
 
 .c-header-expander--tray.has-tethered {
 	width: 100%;
-	padding: spacing(32) spacing(0) spacing(24);
+	padding: spacing(32) 0 spacing(24);
 	transform: none;
 }

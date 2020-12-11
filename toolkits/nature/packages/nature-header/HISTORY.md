@@ -1,5 +1,9 @@
 # History
 
+## 3.0.1 (2020-12-11)
+    * Use flex instead of inline block for non js version
+    * Improve spacing
+
 ## 3.0.0 (2020-12-11)
     * BREAKING: 
         * Removes settings files as component is not configurable
