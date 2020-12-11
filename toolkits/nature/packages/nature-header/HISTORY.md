@@ -1,5 +1,9 @@
 # History
 
+## 3.0.2 (2020-12-11)
+    * Improve spacing on expander
+    * Remove redundant keyline class
+
 ## 3.0.1 (2020-12-11)
     * Use flex instead of inline block for non js version
     * Improve spacing
