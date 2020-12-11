@@ -1,6 +1,6 @@
 # History
 
-## 3.0.0 (2020-12-10)
+## 3.0.0 (2020-12-11)
     * BREAKING: 
         * Removes settings files as component is not configurable
         * Renames classes to allow more shared styles 
