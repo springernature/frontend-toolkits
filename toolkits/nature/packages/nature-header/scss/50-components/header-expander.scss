@@ -1,8 +1,10 @@
 .c-header-expander {
 	background-color: black;
+	border-bottom: 1px solid greyscale(5); // non-js
 	color: greyscale(90);
-	padding: spacing(24) 0 0;
+	padding: spacing(16) 0;
 	font-size: 1.4rem;
+	line-height: 1.2;
 
 	a {
 		@include u-link-inherit();
@@ -24,12 +26,6 @@
 	@include u-container;
 }
 
-.c-header-expander__keyline {
-	border-bottom: 1px solid greyscale(20);
-	padding-bottom: spacing(16);
-	margin-bottom: 0;
-}
-
 .c-header-expander__heading {
 	display: inline-block;
 	line-height: 1.4;
@@ -46,7 +42,7 @@
 }
 
 .c-header-expander__item {
-	margin: 0 spacing(8) spacing(8);
+	margin: 0 spacing(16) spacing(8) 0;
 }
 
 .c-header-expander__link {
@@ -79,24 +75,21 @@
 	width: auto;
 	min-width: 225px;
 	border-radius: 0 0 2px 2px;
+	border-bottom: 0;
 
 	.c-header-expander__list {
 		display: block;
 	}
 
 	.c-header-expander__item {
-		margin-right: 0;
+		margin: 0;
+		padding: spacing(8) 0;
 	}
 
 	.c-header-expander__item--keyline {
 		border-top: 1px solid white;
 		padding-top: spacing(16);
-	}
-
-	.c-header-expander__keyline:not(:only-child),
-	.c-header-expander__keyline:not(:last-child) {
-		margin-bottom: spacing(16);
-		padding-top: 0;
+		margin-top: spacing(8);
 	}
 }
 
