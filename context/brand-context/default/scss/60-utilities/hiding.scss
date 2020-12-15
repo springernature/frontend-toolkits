@@ -56,3 +56,22 @@
 		display: none;
 	}
 }
+
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+
+@each $breakpoint, $value in $breakpoints {
+	@include media-query('#{$breakpoint}') {
+		.u-hide-at-#{$breakpoint},
+		.js .u-js-hide-at-#{$breakpoint} {
+			@include u-hide;
+		}
+
+		.u-show-at-#{$breakpoint},
+		.js .u-js-show-at-#{$breakpoint} {
+			@include u-show;
+		}
+	}
+}

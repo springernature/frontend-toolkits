@@ -1,5 +1,18 @@
 # History
 
+## 3.0.2 (2020-12-11)
+    * Improve spacing on expander
+    * Remove redundant keyline class
+
+## 3.0.1 (2020-12-11)
+    * Use flex instead of inline block for non js version
+    * Improve spacing
+
+## 3.0.0 (2020-12-11)
+    * BREAKING: 
+        * Removes settings files as component is not configurable
+        * Renames classes to allow more shared styles 
+
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 

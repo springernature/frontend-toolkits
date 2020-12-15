@@ -1,21 +1,25 @@
 .c-header {
-	background-color: $header--background-color;
-	border-bottom: $header--brand-border;
-	font-size: $header--font-size;
-	margin-bottom: $header--margin-bottom;
+	background-color: white;
+	border-bottom: 5px solid black;
+	font-size: 1.6rem;
+	margin-bottom: spacing(16);
+	line-height: 1.4;
+}
 
-	> :last-child {
-		margin-bottom: spacing(0);
+.c-header__row {
+	position: relative;
+	padding: spacing(8) 0;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid greyscale(80);
 	}
 }
 
-.c-header__row-border {
-	border-bottom: $header--row-border-border-bottom;
-	margin-bottom: $header--row-border-margin-bottom;
-	position: relative;
+.c-header__row--flush {
+	padding: 0;
 }
 
-.c-header__layout {
+.c-header__split {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -23,7 +27,7 @@
 
 .c-header__logo {
 	display: flex;
-	margin-right: $header--logo-margin-right;
+	margin-right: spacing(16);
 	transform: translateZ(0); // promote new layer for mobile safari to avoid mangled logo during layout repaint
 
 	@include media-query('md') {
@@ -31,35 +35,7 @@
 	}
 
 	img {
-		max-height: $header--logo-max-height;
-	}
-}
-
-.c-header__site-navigation {
-	display: flex;
-	align-items: center;
-	flex: 0 1 auto;
-	margin-bottom: spacing(0);
-	padding: $header--site-navigation-padding;
-	text-align: $header--site-navigation-text-align;
-
-	&:last-child {
-		padding: $header--site-navigation-last-child-padding;
-	}
-}
-
-.c-header__site-navigation--show-at-md {
-	display: none;
-	@include media-query('md') {
-		display: flex;
-	}
-}
-
-.c-header__site-navigation--border {
-	border-left: $header--site-navigation-border-border-left;
-
-	.c-header__link:not(:first-child) {
-		margin-left: $header--site-navigation-margin-left;
+		max-height: 32px;
 	}
 }
 
@@ -72,46 +48,58 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	flex: 1 1 100%;
-	line-height: $header--menu-line-height;
-	margin-left: $header--menu-margin-left;
-	margin-bottom: $header--menu-margin-bottom;
+	flex: 0 1 auto;
+	line-height: 1.4;
+	margin: 0 (0 - spacing(8)); // Make flush with edge
+}
+
+.c-header__menu--primary {
+	font-weight: $font-weight-bold;
+}
+
+.c-header__menu--secondary {
+	@include media-query('lg', 'max') {
+		display: none;
+	}
 }
 
 .c-header__item {
 	display: flex;
-	font-weight: $header--item-font-weight;
-	margin-right: $header--item-margin-right;
-	position: relative;
 
-	&:last-child {
-		margin-right: spacing(0);
+	&:not(:first-child) {
+		margin-left: spacing(8);
 	}
 }
 
 .c-header__item--pipe {
-	@include media-query('sm') {
+	@include media-query('md') {
 		white-space: nowrap;
-
-		&:before {
-			content: '';
-			border-left: $header--item-border-left;
-			padding-top: $header--item-padding-top;
-			padding-left: $header--item-padding-left;
-			padding-bottom: $header--item-padding-bottom;
-		}
+		border-left: 2px solid greyscale(80);
+		padding-left: spacing(8);
 	}
+}
+
+.c-header__row--flush .c-header__item {
+	padding-top: spacing(8);
+	padding-bottom: spacing(8);
 }
 
 .c-header__link {
 	@include u-link-inherit();
+	padding: spacing(8);
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
 
 	> svg {
-		margin-left: $header--link-margin-left;
-		transition-duration: $header--link-transition-duration;
+		margin-left: spacing(4);
+		transition-duration: 0.2s;
+	}
+}
+
+.c-header__nature-research {
+	@include media-query('md', 'max') {
+		display: none;
 	}
 }
 
@@ -126,34 +114,23 @@
  Javascript Enhancements
  */
 
-.c-header__menu {
-	.c-header__link {
-		padding: $header--link-padding;
+.c-header__link.is-open {
+	color: color('blue');
+	background-color: greyscale(80);
+	border-radius: 2px;
+	text-decoration: none;
 
-		&.is-open {
-			color: $header--link-hover-color;
-			background-color: $header--link-hover-background-color;
-			border-radius: $header--link-hover-border-radius;
-			text-decoration: none;
-
-			svg {
-				fill: $header--link-hover-color;
-				transform: rotate(180deg);
-			}
-		}
+	svg {
+		fill: currentColor;
 	}
+}
 
-	.c-header__link--dropdown {
-		&:focus,
-		&:hover {
-			color: $header--link-hover-color;
-			background-color: $header--link-hover-background-color;
-			border-radius: $header--link-hover-border-radius;
-			text-decoration: none;
+.c-header__item--dropdown-menu {
+	position: relative;
 
-			svg {
-				fill: $header--link-hover-color;
-			}
+	.c-header__link.is-open {
+		svg {
+			transform: rotate(180deg);
 		}
 	}
 }
