@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2020-12-15)
+    * Remove use of rfs font-size mixin
+
 ## 4.0.2 (2020-11-19)
     * Bump `brand-context` version
 

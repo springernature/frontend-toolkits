@@ -14,7 +14,7 @@
 }
 
 .c-listing__title {
-	@include font-size($listing--title-font-size);
+	font-size: $listing--title-font-size;
 	font-family: $listing--title-font-family;
 	font-weight: $listing--title-font-weight;
 	line-height: $listing--title-line-height;
@@ -26,7 +26,7 @@
 }
 
 .c-listing__authors {
-	@include font-size($listing--author-font-size);
+	font-size: $listing--author-font-size;
 	font-weight: $listing--author-font-weight;
 
 	&:last-child {
@@ -35,7 +35,7 @@
 }
 
 .c-listing__text {
-	@include font-size($listing--text-font-size);
+	font-size: $listing--text-font-size;
 	margin-bottom: $listing--text-margin-bottom;
 
 	&:last-child {
@@ -61,8 +61,8 @@
 }
 
 .c-listing__view-options {
-	@include font-size($listing--text-font-size);
 	@include u-list-reset;
+	font-size: $listing--text-font-size;
 
 	> li {
 		display: inline-block;

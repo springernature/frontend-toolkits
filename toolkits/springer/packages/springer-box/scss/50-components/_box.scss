@@ -19,7 +19,7 @@
 }
 
 .c-box__heading {
-	@include font-size($box--heading-font-size);
+	font-size: $box--heading-font-size;
 	border-bottom: $box--border;
 	margin: $box--heading-margin;
 	padding: $box--heading-padding;

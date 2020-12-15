@@ -1,6 +1,6 @@
 .c-user-metadata {
-	@include font-size($user-metadata--font-size);
 	font-family: $font-family-sans;
+	font-size: $user-metadata--font-size;
 	color: $user-metadata--font-colour;
 	line-height: $user-metadata--line-height;
 	padding-top: $user-metadata--padding-y;
