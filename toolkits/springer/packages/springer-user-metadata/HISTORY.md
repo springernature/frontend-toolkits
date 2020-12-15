@@ -1,5 +1,8 @@
 # History
 
+## 4.1.1 (2020-12-15)
+    * Bump package version to get changes from 4.1.0 
+
 ## 4.1.0 (2020-12-15)
     * Remove use of rfs font-size mixin
 
