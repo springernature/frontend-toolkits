@@ -3,7 +3,7 @@
 The `brand-context` package contains baseline configurations that provide scaffolding for products and toolkit components within each of the supported brands:
 
 - [Default](./default/README.md)
-- Nature
+- [Nature](./nature/README.md)
 - Springer
 - SpringerNature
 
