@@ -1,5 +1,8 @@
 # History
 
+## 6.2.0 (2020-12-11)
+    * Adds media-query hiding utilities
+
 ## 6.1.0 (2020-11-26)
     * Adds light-blue color to Nature brand context settings
 

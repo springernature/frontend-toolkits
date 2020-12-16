@@ -1,5 +1,11 @@
 # History
 
+## 1.1.l1 (2020-12-07)
+	* Fixed typo with missing sibling selector
+
+## 1.1.0 (2020-12-01)
+	* Handle conditionally displaying leaderboard ad when there is no institutional access banner
+
 ## 1.0.1 (2020-11-18)
     * Bump to get latest version package-manager with updated post install script
 
