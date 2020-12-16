@@ -1,5 +1,8 @@
 # History
 
+## 2.1.0 (2020-12-16)
+    * Adds modifier to add keyline to first list element only
+
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
