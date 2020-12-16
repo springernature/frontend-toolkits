@@ -1,5 +1,8 @@
 # History
 
+## 1.3.5 (2020-12-08)
+	* Update template and scss to remove flickering
+
 ## 1.3.4 (2020-12-08)
 	* Update readme and template
 

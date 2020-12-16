@@ -3,18 +3,29 @@
 		height: 30px;
 
 		&__open {
-			@include arrow(map-get($colors, blue), down, 4px);
+			@include arrow(map-get($colors, 'blue'), down, 4px);
 
 			margin-left: 10px;
 			right: 0;
-			color: map-get($colors, blue);
+			color: map-get($colors, 'blue');
+			text-decoration: none;
+			vertical-align: baseline;
+			border: none;
+			background: none;
+			text-decoration: none;
+			cursor: pointer;
 
 			&.open {
-				@include arrow(map-get($colors, blue), up, 4px);
+				@include arrow(map-get($colors, 'blue'), up, 4px);
+
+				&+.c-user-details__content { 
+					display: block;
+				}
 			}
 		}
 
 		&__content {
+			display: none;
 			position: absolute;
 			z-index: $zindex-level-highest;
 			height: auto;
