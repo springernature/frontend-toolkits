@@ -81,3 +81,31 @@ and [makeArray](https://github.com/springernature/frontend-toolkits/tree/master/
     </div>
 </div>
 ```
+
+#### Keylines
+
+The classname `c-header-expander__item--keyline` can be used to apply a keyline above an item in a list, as follows:
+
+```html
+<li class="c-header-expander__item c-header-expander__item--keyline">
+    <a href="some url">Some text</a>
+</li>
+```
+
+Also, if you do not know upfront which list item will need a keyline, you may be able to use the `c-header-expander__item--keyline-first-item-only` classname to ensure that the first list item with the classname gets the keyline. This is useful in circumstances where list items can be present or not present depending on configuration, i.e. you never know what list items you will have on a given page upfront. As follows:  
+
+```html
+<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+    <a href="some url">Some text</a>
+</li>
+<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+    <a href="some url">Some text</a>
+</li>
+<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+    <a href="some url">Some text</a>
+</li>
+<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
+    <a href="some url">Some text</a>
+</li>
+```
+In the above example, even though they all have the same classnames, only the first occurence will have the keyline displayed above it.
