@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2020-12-16)
+    * Adds modifier to add keyline to first list element only
+
 ## 3.0.2 (2020-12-11)
     * Improve spacing on expander
     * Remove redundant keyline class

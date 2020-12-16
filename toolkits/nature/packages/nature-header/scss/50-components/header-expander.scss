@@ -91,6 +91,11 @@
 		padding-top: spacing(16);
 		margin-top: spacing(8);
 	}
+
+	.c-header-expander__item--keyline-first-item-only ~ .c-header-expander__item--keyline-first-item-only {
+		border-top: none;
+		padding-top: 0;
+	}
 }
 
 .c-header-expander--tray.has-tethered {
