@@ -1,5 +1,5 @@
 .u-display-none {
-	display: none;
+	display: none !important;
 }
 
 /* hide from both screenreaders and browsers */
@@ -35,7 +35,7 @@
 /* make invisible but retain dimensions */
 
 .u-invisible {
-	visibility: hidden;
+	visibility: hidden !important;
 }
 
 /* hide only the text, keep element visible */
@@ -53,7 +53,7 @@
 
 @media print {
 	.u-hide-print {
-		display: none;
+		display: none !important;
 	}
 }
 
