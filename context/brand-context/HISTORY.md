@@ -1,5 +1,8 @@
 # History
 
+## 6.3.0 (2020-12-11)
+    * Adds !important to utlities that hide content to prevent selector specificity trumping hide utlity classnames 
+
 ## 6.2.0 (2020-12-11)
     * Adds media-query hiding utilities
 

@@ -2,7 +2,7 @@
 	display: block;
 
 	.js & {
-		display: none;
+		display: none !important;
 	}
 }
 
