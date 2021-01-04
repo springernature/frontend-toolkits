@@ -1,7 +1,7 @@
 # History
 
 ## 7.0.0 (2021-01-04)
-    * BREAKING: Move font-weight utilities to default context
+    * BREAKING: font-weight utilities moved from SPRINGER to DEFAULT context
 
 ## 6.3.0 (2020-12-11)
     * Adds !important to utlities that hide content to prevent selector specificity trumping hide utlity classnames 
