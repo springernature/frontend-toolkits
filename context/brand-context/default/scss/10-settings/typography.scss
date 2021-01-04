@@ -7,6 +7,9 @@ $font-family-serif: serif;
 $font-family-serif-save-data: $font-family-serif;
 $font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
 // Define your base size in EMs
 // http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
 $context--font-size-base: 1.8em;
