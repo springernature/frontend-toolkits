@@ -1,5 +1,8 @@
 # History
 
+## 3.2.0 (2020-01-07)
+    * Add font weight to c-header__menu--secondary 
+
 ## 3.1.0 (2020-12-16)
     * Adds modifier to add keyline to first list element only
 

@@ -58,6 +58,8 @@
 }
 
 .c-header__menu--secondary {
+	font-weight: $font-weight-bold;
+
 	@include media-query('lg', 'max') {
 		display: none;
 	}
