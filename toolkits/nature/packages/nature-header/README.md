@@ -49,7 +49,7 @@ Publisher level header for Nature products.
     <div class="c-header__row">
         <div class="c-header__container">
             <div class="c-header__split">
-                <ul class="c-header__menu c-header__menu--journal">
+                <ul class="c-header__menu">
                     <li class="c-header__item c-header__item--dropdown-menu">
                         <a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander>
                             <span>Explore <span class="c-header__show-text">our content</span></span>
@@ -79,7 +79,7 @@ Publisher level header for Nature products.
                     </li>
                 </ul>
 
-                <ul class="c-header__menu c-header__menu--updates">
+                <ul class="c-header__menu c-header__menu--tools">
                     <li class="c-header__item">
                         <a class="c-header__link" href="#">
                             <span>Sign up for alerts</span>
