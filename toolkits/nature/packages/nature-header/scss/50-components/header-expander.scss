@@ -26,6 +26,12 @@
 	@include u-container;
 }
 
+.c-header-expander__keyline {
+	border-bottom: 1px solid greyscale(20);
+	padding-bottom: spacing(16);
+	margin-bottom: 0;
+}
+
 .c-header-expander__heading {
 	display: inline-block;
 	line-height: 1.4;
