@@ -1,5 +1,10 @@
 # History
 
+## 4.0.0 (2020-01-13)
+    * BREAKING: Refactored to update nature header in narrow viewport
+    * Updated README with updated example
+    * Add back keyline for expander (used in search dropdown)
+
 ## 3.2.0 (2020-01-07)
     * Add font weight to c-header__menu--secondary 
 
