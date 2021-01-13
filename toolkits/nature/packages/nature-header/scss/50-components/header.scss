@@ -25,14 +25,13 @@
 	justify-content: space-between;
 }
 
-.c-header__logo {
-	display: flex;
-	margin-right: spacing(16);
-	transform: translateZ(0); // promote new layer for mobile safari to avoid mangled logo during layout repaint
+.c-header__logo-container {
+	flex: 1 1 0;
+	margin-right: spacing(24);
+}
 
-	@include media-query('md') {
-		margin-right: spacing(0);
-	}
+.c-header__logo {
+	transform: translateZ(0); // promote new layer for mobile safari to avoid mangled logo during layout repaint
 
 	img {
 		max-height: 32px;
@@ -53,11 +52,25 @@
 	margin: 0 (0 - spacing(8)); // Make flush with edge
 }
 
-.c-header__menu--primary {
+.c-header__menu--global {
+	justify-content: flex-end;
+}
+
+.c-header__menu--global .c-header__item {
+	svg {
+		display: none;
+
+		@include media-query('sm') {
+			display: block;
+		}
+	}
+}
+
+.c-header__menu--journal {
 	font-weight: $font-weight-bold;
 }
 
-.c-header__menu--secondary {
+.c-header__menu--updates {
 	font-weight: $font-weight-bold;
 
 	@include media-query('lg', 'max') {
@@ -68,16 +81,21 @@
 .c-header__item {
 	display: flex;
 
-	&:not(:first-child) {
-		margin-left: spacing(8);
+	@include media-query('sm') {
+		&:not(:first-child) {
+			margin-left: spacing(8);
+		}
 	}
 }
 
 .c-header__item--pipe {
-	@include media-query('md') {
-		white-space: nowrap;
-		border-left: 2px solid greyscale(80);
-		padding-left: spacing(8);
+	border-left: 2px solid greyscale(80);
+	padding-left: spacing(8);
+}
+
+.c-header__item--nature-research {
+	@include media-query('md', 'max') {
+		display: none;
 	}
 }
 
@@ -96,12 +114,6 @@
 	> svg {
 		margin-left: spacing(4);
 		transition-duration: 0.2s;
-	}
-}
-
-.c-header__nature-research {
-	@include media-query('md', 'max') {
-		display: none;
 	}
 }
 
