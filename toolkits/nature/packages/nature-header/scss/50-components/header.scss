@@ -48,11 +48,13 @@
 	align-items: center;
 	flex-wrap: wrap;
 	flex: 0 1 auto;
+	font-weight: $font-weight-bold;
 	line-height: 1.4;
 	margin: 0 (0 - spacing(8)); // Make flush with edge
 }
 
 .c-header__menu--global {
+	font-weight: $font-weight-normal;
 	justify-content: flex-end;
 }
 
@@ -66,13 +68,7 @@
 	}
 }
 
-.c-header__menu--journal {
-	font-weight: $font-weight-bold;
-}
-
-.c-header__menu--updates {
-	font-weight: $font-weight-bold;
-
+.c-header__menu--tools {
 	@include media-query('lg', 'max') {
 		display: none;
 	}
