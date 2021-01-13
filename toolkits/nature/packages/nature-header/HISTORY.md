@@ -1,6 +1,6 @@
 # History
 
-## 4.0.0 (2020-01-13)
+## 4.0.0 (2021-01-13)
     * BREAKING: Refactored to update nature header in narrow viewport
     * Updated README with updated example
     * Add back keyline for expander (used in search dropdown)
