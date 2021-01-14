@@ -1,5 +1,8 @@
 # History
 
+## 8.0.0 (2021-01-14)
+    * BREAKING: Removes important from utilities that hide content as not needed anymore
+
 ## 7.0.0 (2021-01-04)
     * BREAKING: font-weight utilities moved from SPRINGER to DEFAULT context
 
