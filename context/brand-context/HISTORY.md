@@ -1,7 +1,7 @@
 # History
 
 ## 8.0.1 (2021-01-14)
-    * BREAKING: Removes important from the hiding utility mixin as not needed anymore
+    * Removes important from the hiding utility mixin as not needed anymore
 
 ## 8.0.0 (2021-01-14)
     * BREAKING: Removes important from utility classnames that hide content as not needed anymore
