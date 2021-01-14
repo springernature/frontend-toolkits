@@ -1,7 +1,10 @@
 # History
 
+## 9.0.0 (2021-01-14)
+    * BREAKING: Removes important from the hiding utility mixin as not needed anymore
+
 ## 8.0.0 (2021-01-14)
-    * BREAKING: Removes important from utilities that hide content as not needed anymore
+    * BREAKING: Removes important from utility classnames that hide content as not needed anymore
 
 ## 7.0.0 (2021-01-04)
     * BREAKING: font-weight utilities moved from SPRINGER to DEFAULT context
