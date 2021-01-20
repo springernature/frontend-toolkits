@@ -6,6 +6,12 @@ A component for the controls of pagination.
 
 To include `global-pagination` component currently uses the `DEFAULT` brand only.
 
+```scss
+@import '@springernature/global-pagination/scss/10-settings/default';
+// Include this with your other components
+@import '@springernature/global-pagination/scss/50-components/pagination';
+```
+
 ## Example
 
 #### HTML
