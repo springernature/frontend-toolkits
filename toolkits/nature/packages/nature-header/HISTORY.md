@@ -1,5 +1,8 @@
 # History
 
+## 4.0.1 (2021-01-20)
+    * Zeros the line-height on logo to cater for use with <h1> 
+
 ## 4.0.0 (2021-01-13)
     * BREAKING: Refactored to update nature header in narrow viewport
     * Updated README with updated example

@@ -28,6 +28,7 @@
 .c-header__logo-container {
 	flex: 1 1 0;
 	margin-right: spacing(24);
+	line-height: 0; // Can be an h1 or a div
 }
 
 .c-header__logo {
