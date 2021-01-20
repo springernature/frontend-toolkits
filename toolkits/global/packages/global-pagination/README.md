@@ -14,7 +14,7 @@ To include `global-pagination` component currently uses the `DEFAULT` brand only
     <ul class="c-pagination">
         <li class="c-pagination__item">
             <span class="c-pagination__link c-pagination__link--disabled">
-                <svg class="c-icon u-margin-right-xs c-pagination__icon" aria-hidden="true">
+                <svg class="c-icon c-pagination__icon" aria-hidden="true">
                     <use xlink:href="#icon-arrow-left"></use>
                 </svg>
             </span>
@@ -42,7 +42,7 @@ To include `global-pagination` component currently uses the `DEFAULT` brand only
         </li>
         <li class="c-pagination__item">
             <a href="/news?type=articles&amp;pageSize=1&amp;page=2" rel="next" class="c-pagination__link">
-                <svg class="c-icon u-margin-left-xs c-pagination__icon c-pagination__icon--active" aria-hidden="true">
+                <svg class="c-icon c-pagination__icon c-pagination__icon--active" aria-hidden="true">
                     <use xlink:href="#icon-arrow-right"></use>
                 </svg>
             </a>
