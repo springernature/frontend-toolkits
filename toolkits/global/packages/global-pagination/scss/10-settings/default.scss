@@ -1,0 +1,15 @@
+$pagination--padding: spacing(16);
+$pagination--font-size: $font-size-xs;
+
+$pagination--link-active-color: white;
+$pagination--link-active-border-color: greyscale(40);
+$pagination--link-active-background-color: greyscale(40);
+
+$pagination--item-margin-right: spacing(16);
+$pagination--item-margin-bottom: spacing(8);
+$pagination--item-width: 30px;
+
+$pagination--icon-color: greyscale(60);
+$pagination--icon-clickable-color: color('action-base');
+$pagination--icon-width: 16px;
+$pagination--icon-height: 12px;
