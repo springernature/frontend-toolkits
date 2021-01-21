@@ -1,5 +1,10 @@
 # History
 
+## 4.1.0 (2021-01-21)
+    * Expander full width at narrow viewports
+    * Aligned last expander in list of dropdown to right of screen to prevent horizontal scroll
+    * Reduced font-size and space between chevrons on journal menu items to get all on one line for 320px/'xs' breakpoint and above    
+
 ## 4.0.1 (2021-01-20)
     * Zeros the line-height on logo to cater for use with <h1> 
 
