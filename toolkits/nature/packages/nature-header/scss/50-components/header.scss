@@ -137,7 +137,9 @@
 }
 
 .c-header__item--dropdown-menu {
-	position: relative;
+	@include media-query('sm') {
+		position: relative;
+	}
 
 	.c-header__link.is-open {
 		svg {
