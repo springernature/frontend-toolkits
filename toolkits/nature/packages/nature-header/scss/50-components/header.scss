@@ -69,6 +69,18 @@
 	}
 }
 
+.c-header__menu--journal {
+	font-size: 1.4rem;
+
+	@include media-query('sm') {
+		flex-wrap: nowrap;
+	}
+
+	@include media-query('sm') {
+		font-size: 1.6rem;
+	}
+}
+
 .c-header__menu--tools {
 	@include media-query('lg', 'max') {
 		display: none;
@@ -109,8 +121,12 @@
 	white-space: nowrap;
 
 	> svg {
-		margin-left: spacing(4);
+		margin-left: spacing(2);
 		transition-duration: 0.2s;
+
+		@include media-query('sm') {
+			margin-left: spacing(4);
+		}
 	}
 }
 
@@ -137,7 +153,9 @@
 }
 
 .c-header__item--dropdown-menu {
-	position: relative;
+	@include media-query('sm') {
+		position: relative;
+	}
 
 	.c-header__link.is-open {
 		svg {
@@ -146,3 +164,16 @@
 	}
 }
 
+.c-header__menu--journal .c-header__item--dropdown-menu:last-child {
+	.c-header-expander.has-tethered {
+		@include media-query('sm') {
+			left: auto;
+			right: 0;
+		}
+
+		@include media-query('md') {
+			left: 0;
+			right: auto;
+		}
+	}
+}
