@@ -164,3 +164,16 @@
 	}
 }
 
+.c-header__menu--journal .c-header__item--dropdown-menu:last-child {
+	.c-header-expander.has-tethered {
+		@include media-query('sm') {
+			left: auto;
+			right: 0;
+		}
+
+		@include media-query('md') {
+			left: 0;
+			right: auto;
+		}
+	}
+}
