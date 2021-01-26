@@ -1,5 +1,8 @@
 # History
 
+## 4.1.1 (2021-01-26)
+    * Capilatize first letter in links 
+
 ## 4.1.0 (2021-01-21)
     * Expander full width at narrow viewports
     * Aligned last expander in list of dropdown to right of screen to prevent horizontal scroll
