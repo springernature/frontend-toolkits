@@ -1,5 +1,8 @@
 # History
 
+## 1.3.3 (2021-01-26)
+    * Remove nature $meta--font-size override to improve accessibility
+
 ## 1.3.2 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
