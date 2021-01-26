@@ -1,0 +1,15 @@
+.c-list-columned {
+	column-gap: $global-list-columned--column-gap;
+
+	@include media-query('sm') {
+		column-count: 2;
+	}
+
+	@include media-query('md') {
+		column-count: 3;
+	}
+}
+
+.c-list-columned__item {
+	margin-bottom: $global-list-columned--margin-bottom;
+}

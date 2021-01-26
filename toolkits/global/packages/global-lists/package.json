@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-lists",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Provide different styled lists",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^6.0.0"
+}
