@@ -32,8 +32,7 @@
 }
 
 .c-card__title {
-	font-size: $card--title-font-size;
-	font-weight: $card--title-font-weight;
+	@include u-h3;
 	margin-bottom: $card--spacing;
 }
 
