@@ -1,0 +1,39 @@
+.c-list-description {
+	font-size: $global-list-description--font-size;
+	font-family: $font-family-sans;
+	line-height: $global-list-description--line-height;
+	margin-bottom: 0;
+	width: 100%; // fix text breaking layout in IE10
+
+	@if $global-list-description--is-interface-link {
+		a {
+			@include u-link-interface;
+		}
+	}
+}
+
+.c-list-description__item {
+	margin-bottom: $global-list-description--wrapper-margin-bottom;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.c-list-description__term {
+	font-weight: $global-list-description--font-weight;
+	margin-bottom: $global-list-description--margin-bottom;
+}
+
+.c-list-description__details {
+	display: block;
+}
+
+.c-list-description__details p {
+	display: block;
+	margin-bottom:  $global-list-description--margin-bottom;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

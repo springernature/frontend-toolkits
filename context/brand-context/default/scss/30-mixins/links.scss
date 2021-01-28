@@ -31,3 +31,15 @@
 		right: 0;
 	}
 }
+
+@mixin u-link-interface {
+	text-decoration: none;
+
+	&.active,
+	&:active,
+	&.hover,
+	&:hover {
+		text-decoration: underline;
+		text-decoration-skip-ink: auto;
+	}
+}
