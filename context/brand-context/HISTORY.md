@@ -1,5 +1,8 @@
 # History
 
+## 8.0.2 (2021-01-27)
+    * Removes 'is-nature-branded' conditional for heading font sizes as the else condition is for legacy design 
+
 ## 8.0.1 (2021-01-14)
     * Removes important from the hiding utility mixin as not needed anymore
 

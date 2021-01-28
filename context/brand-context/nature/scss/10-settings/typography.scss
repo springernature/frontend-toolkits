@@ -17,10 +17,10 @@ $font-size-lg: 24px;
 $font-size-xl: 28px;
 $font-size-xxl: 32px;
 
-$font-size-h1: if($is-nature-branded, 3.2rem, 3rem);
+$font-size-h1: 3.2rem;
 $font-size-h2: 2.4rem;
-$font-size-h3: if($is-nature-branded, 2rem, 1.7rem);
-$font-size-h4: if($is-nature-branded, 1.8rem, 1.4rem);
+$font-size-h3: 2rem;
+$font-size-h4: 1.8rem;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;

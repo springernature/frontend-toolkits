@@ -1,5 +1,7 @@
 # Brand Context
 
+[![NPM version][badge-npm]][info-npm]
+
 The `brand-context` package contains baseline configurations that provide scaffolding for products and toolkit components within each of the supported brands:
 
 - [Default](./default/README.md)
@@ -33,3 +35,5 @@ Make sure that the product and all components used by that product depend on the
 [MIT License][info-license] &copy; 2020, Springer Nature
 
 [info-license]: https://github.com/springernature/frontend-nature-toolkit/blob/master/LICENCE
+[info-npm]: https://www.npmjs.com/package/@springernature/brand-context
+[badge-npm]: https://img.shields.io/npm/v/@springernature/brand-context.svg
