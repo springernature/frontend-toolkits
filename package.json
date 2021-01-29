@@ -49,6 +49,7 @@
     "@springernature/frontend-package-manager": "^6.1.3",
     "@springernature/sasslint-config": "^1.2.1",
     "@springernature/util-eslint-runner": "^0.0.3",
+    "@springernature/util-sass-compiler": "^0.1.0",
     "acorn": "^7.1.0",
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
