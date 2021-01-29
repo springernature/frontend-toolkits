@@ -1,5 +1,8 @@
 # History
 
+## 2.0.4 (2021-01-26)
+    * Uses h3 for card title to fix size inconsistency
+    
 ## 2.0.3 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
