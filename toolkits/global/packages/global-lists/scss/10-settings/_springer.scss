@@ -7,5 +7,12 @@
 @import 'default';
 
 // Springer overrides
-$global-list-description--is-interface-link: true;
 $global-list-group--is-interface-link: true;
+$global-list-group--border-color: greyscale(80);
+$global-list-group--line-height: $line-height-tight;
+
+$global-list-description--is-interface: true;
+$global-list-description--font-weight: $font-weight-bold;
+$global-list-description--margin-bottom: 0.25em;
+
+$global-list-columned--margin-bottom: 0.25em;
