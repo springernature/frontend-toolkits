@@ -7,7 +7,7 @@
 
 	@if $global-list-description--is-interface-link {
 		a {
-			@include u-link-interface;
+			@include interface-link;
 		}
 	}
 }
