@@ -1,17 +1,17 @@
 .u-text-xs {
-	@include font-size($font-size-xs);
+	font-size: $font-size-xs;
 }
 
 .u-text-sm {
-	@include font-size($font-size-sm);
+	font-size: $font-size-sm;
 }
 
 .u-text-md {
-	@include font-size($font-size-md);
+	font-size: $font-size-md;
 }
 
 .u-text-lg {
-	@include font-size($font-size-lg);
+	font-size: $font-size-lg;
 }
 
 .u-text-sans-serif {

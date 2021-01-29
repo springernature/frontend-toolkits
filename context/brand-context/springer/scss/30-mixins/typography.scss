@@ -4,13 +4,13 @@
 }
 
 @mixin u-text-furniture {
-	@include font-size($font-size-furniture);
 	font-family: $font-family-sans;
+	font-size: $font-size-furniture;
 }
 
 @mixin u-text-interface {
-	@include font-size($font-size-interface);
 	font-family: $font-family-sans;
+	font-size: $font-size-interface;
 	line-height: $line-height-tight;
 }
 
@@ -19,7 +19,7 @@
 }
 
 @mixin u-text-size($size) {
-	@include font-size(size);
+	font-size: $size;
 }
 
 @mixin u-text-weight($weight) {
