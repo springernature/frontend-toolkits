@@ -18,10 +18,6 @@
 	text-align: right;
 }
 
-@mixin u-text-size($size) {
-	font-size: $size;
-}
-
 @mixin u-text-weight($weight) {
 	font-weight: $weight;
 }
