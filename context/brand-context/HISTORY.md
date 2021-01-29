@@ -1,5 +1,10 @@
 # History
 
+## 9.0.0 (2021-01-29)
+    * BREAKING: Removes RFS from brand-context
+        * Replaces font-size mixin with static value
+        * Removes u-text-size mixin
+
 ## 8.0.1 (2021-01-14)
     * Removes important from the hiding utility mixin as not needed anymore
 
