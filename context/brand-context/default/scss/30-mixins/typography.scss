@@ -20,3 +20,9 @@
 	overflow-wrap: break-word;
 	word-break: break-word;
 }
+
+@mixin u-text-interface {
+	font-family: $font-family-sans;
+	font-size: $font-size-interface;
+	line-height: $line-height-tight;
+}
