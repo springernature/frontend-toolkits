@@ -5,7 +5,7 @@
 
 @if $global-list-group--is-interface {
 	.c-list-group__item > a {
-		@include interface-link;
+		@include u-link-interface;
 	}
 }
 

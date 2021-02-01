@@ -1,18 +1,12 @@
 .c-list-description {
 	margin-bottom: 0;
 	width: 100%; // fix text breaking layout in IE10
-
-	@if not $global-list-description--is-interface {
-		font-size: $global-list-description--font-size;
-		font-family: $font-family-sans;
-		line-height: $global-list-description--line-height;
-	}
-
+	
 	@if $global-list-description--is-interface {
 		@include u-text-interface;
 
 		a {
-			@include interface-link;
+			@include u-link-interface;
 		}
 	}
 }
