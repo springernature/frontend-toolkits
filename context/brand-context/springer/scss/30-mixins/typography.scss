@@ -8,12 +8,6 @@
 	font-family: $font-family-sans;
 }
 
-@mixin u-text-interface {
-	@include font-size($font-size-interface);
-	font-family: $font-family-sans;
-	line-height: $line-height-tight;
-}
-
 @mixin u-text-right {
 	text-align: right;
 }
