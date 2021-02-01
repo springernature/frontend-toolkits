@@ -1,5 +1,10 @@
 # History
 
+## 9.0.0 (2021-01-29)
+    * BREAKING: Removes RFS from brand-context
+        * Replaces font-size mixin with static value
+        * Removes u-text-size mixin
+
 ## 8.0.2 (2021-01-27)
     * Removes 'is-nature-branded' conditional for heading font sizes as the else condition is for legacy design 
 
