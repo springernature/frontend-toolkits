@@ -5,7 +5,7 @@
 	font-weight: lighter;
 	font-size: $context--font-size-h1;
 	margin-bottom: spacing(48);
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
   line-height: 1.2;
 }
 
@@ -13,7 +13,7 @@
 	font-weight: lighter;
 	font-size: $context--font-size-h2;
 	margin-bottom:  spacing(32);
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
   line-height: $context--heading-line-height;
 }
 
@@ -21,7 +21,7 @@
 	font-weight: bold;
 	font-size: $context--font-size-h3;
 	margin-bottom: spacing(24);
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
   line-height: $context--heading-line-height;
 }
 
@@ -29,7 +29,7 @@
 	font-weight: normal;
 	font-size: $context--font-size-h3;
 	margin-bottom: spacing(16);
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
   line-height: $context--heading-line-height;
 }
 
@@ -37,7 +37,7 @@
 	font-weight: bold;
 	font-size: $context--font-size-base;
 	margin-bottom: spacing(16);
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
   line-height: 1.2;
 }
 
@@ -47,18 +47,18 @@
 
 @mixin u-meta-large() {
 	font-weight: normal;
-  font-family: $font-family-sans;
+  font-family: $context--font-family-sans;
   font-size: $context--font-size-h3;
 }
 
 @mixin u-meta-medium() {
 	font-weight: normal;
-  font-family: $font-family-sans;
+  font-family: $context--font-family-sans;
   font-size: $context--font-size-base;
 }
 
 @mixin u-meta-small() {
   @include u-small();
 	font-weight: normal;
-  font-family: $font-family-sans;
+  font-family: $context--font-family-sans;
 }

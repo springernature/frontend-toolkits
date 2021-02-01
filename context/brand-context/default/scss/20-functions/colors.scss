@@ -1,17 +1,17 @@
 /**
- * Return a greyscale color based on $greyscale-base
+ * Return a greyscale color based on $context--greyscale-base
  *
- * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
  * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
  *
  */
 
-@function greyscale($val: $greyscale-min, $opacity: 1) {
+@function greyscale($val: $context--greyscale-min, $opacity: 1) {
 	$opacity: round($opacity * 10) / 10;
-	$lightness: if($val < $greyscale-min, $greyscale-min, $val);
-	$lightness: if($lightness > $greyscale-max, $greyscale-max, $lightness);
-	$rounded: round($lightness / $greyscale-stops) * $greyscale-stops;
-	$color: lighten($greyscale-base, $rounded);
+	$lightness: if($val < $context--greyscale-min, $context--greyscale-min, $val);
+	$lightness: if($lightness > $context--greyscale-max, $context--greyscale-max, $lightness);
+	$rounded: round($lightness / $context--greyscale-stops) * $context--greyscale-stops;
+	$color: lighten($context--greyscale-base, $rounded);
 
 	@return rgba($color, $opacity);
 }
@@ -27,7 +27,7 @@
 @function color($name, $keys...) {
 	$v1: if(length($keys) > 0, nth($keys, 1), null);
 	$v2: if(length($keys) > 1, nth($keys, 2), null);
-	$map: if(type-of($v1) == 'map', $v1, $colors);
+	$map: if(type-of($v1) == 'map', $v1, $context--colors);
 	$opacity: if(type-of($v1) == 'number', $v1, $v2);
 	$opacity: if($opacity, round($opacity * 10) / 10, 1); // round to one decimal place
 
@@ -53,20 +53,20 @@
  *
  */
 
-@function foreground-color($bgcolor: 0, $map: $colors) {
+@function foreground-color($bgcolor: 0, $map: $context--colors) {
 	$bgcolor: if(type-of($bgcolor) == 'number', gray($bgcolor), $bgcolor);
 	$bgcolor: if(type-of($bgcolor) == 'string', color($bgcolor, $map), $bgcolor);
 	$bg-luma: luma($bgcolor);
-	$c1-luma: luma($foreground-dark);
-	$c2-luma: luma($foreground-light);
+	$c1-luma: luma($context--foreground-dark);
+	$c2-luma: luma($context--foreground-light);
 	$c1-diff: abs($bg-luma - $c1-luma);
 	$c2-diff: abs($bg-luma - $c2-luma);
 
 	@if $c1-diff > $c2-diff {
-		@return $foreground-dark;
+		@return $context--foreground-dark;
 	}
 	@else {
-		@return $foreground-light;
+		@return $context--foreground-light;
 	}
 }
 

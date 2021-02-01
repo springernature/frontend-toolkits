@@ -3,11 +3,11 @@
 }
 
 .u-sans-serif {
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 }
 
 .u-serif {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 }
 
 .u-small-caps {
@@ -27,11 +27,11 @@
 }
 
 .u-text-normal {
-	font-weight: $font-weight-normal;
+	font-weight: $context--font-weight-normal;
 }
 
 .u-text-bold {
-	font-weight: $font-weight-bold;
+	font-weight: $context--font-weight-bold;
 }
 
 .u-double-underline {

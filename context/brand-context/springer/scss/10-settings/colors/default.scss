@@ -3,7 +3,7 @@
  *
  */
 
-$colors: (
+$context--colors: (
 	'accent': #ee7d11,
 	'corporate': #00285a,
 	'corporate-light': scale-color(#00285a, $lightness: 10%),
@@ -25,11 +25,11 @@ $colors: (
  *
  */
 
-$page-base: #fcfcfc;
-$greyscale-base: black;
-$greyscale-min: 20;
-$greyscale-max: 95;
-$greyscale-stops: 5;
+$context--page-background: #fcfcfc;
+$context--greyscale-base: black;
+$context--greyscale-min: 20;
+$context--greyscale-max: 95;
+$context--greyscale-stops: 5;
 
-$foreground-dark: #333; // dark color used in foreground-color function
-$foreground-light: #f2f2f2; // light color used in foreground-color function
+$context--foreground-dark: #333; // dark color used in foreground-color function
+$context--foreground-light: #f2f2f2; // light color used in foreground-color function

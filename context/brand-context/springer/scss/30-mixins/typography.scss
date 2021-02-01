@@ -4,7 +4,7 @@
 }
 
 @mixin u-text-furniture {
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: $font-size-furniture;
 }
 
@@ -30,33 +30,33 @@
 
 @mixin u-h1 {
 	@include heading-base;
-	font-size: $font-size-h1;
-	font-size: unquote('min(max(#{$font-size-h1-min}, 4vw), #{$font-size-h1})');
-	font-family: $font-family-serif;
-	font-weight: $font-weight-normal;
+	font-size: $context--font-size-h1;
+	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
+	font-family: $context--font-family-serif;
+	font-weight: $context--font-weight-normal;
 }
 
 @mixin u-h2 {
 	@include heading-base;
-	font-size: $font-size-h2;
-	font-size: unquote('min(max(#{$font-size-h2-min}, 3.5vw), #{$font-size-h2})');
-	font-family: $font-family-serif;
-	font-weight: $font-weight-normal;
+	font-size: $context--font-size-h2;
+	font-size: unquote('min(max(#{$context--font-size-h2-min}, 3.5vw), #{$context--font-size-h2})');
+	font-family: $context--font-family-serif;
+	font-weight: $context--font-weight-normal;
 }
 
 @mixin u-h3 {
 	@include heading-base;
-	font-size: $font-size-h3;
-	font-size: unquote('min(max(#{$font-size-h3-min}, 3vw), #{$font-size-h3})');
-	font-family: $font-family-serif;
-	font-weight: $font-weight-normal;
+	font-size: $context--font-size-h3;
+	font-size: unquote('min(max(#{$context--font-size-h3-min}, 3vw), #{$context--font-size-h3})');
+	font-family: $context--font-family-serif;
+	font-weight: $context--font-weight-normal;
 }
 
 @mixin u-h4 {
 	@include heading-base;
-	font-size: $font-size-h4;
-	font-size: unquote('min(max(#{$font-size-h4-min}, 2.5vw), #{$font-size-h4})');
-	font-family: $font-family-sans;
-	font-weight: $font-weight-bold;
+	font-size: $context--font-size-h4;
+	font-size: unquote('min(max(#{$context--font-size-h4-min}, 2.5vw), #{$context--font-size-h4})');
+	font-family: $context--font-family-sans;
+	font-weight: $context--font-weight-bold;
 }
 

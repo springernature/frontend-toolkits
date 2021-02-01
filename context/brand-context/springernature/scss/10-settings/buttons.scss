@@ -5,13 +5,13 @@
  *
  */
 
-$button--border-radius: 26px;
-$button--font-size-normal: 1.4rem;
-$button--padding: 10px 35px;
-$button--padding-large: 10px 35px;
-$button--letter-spacing: 0.7px;
-$button--font-family: $font-family-sans;
-$button--transition: background-color 0.2s;
+$context--button-border-radius: 26px;
+$context--button-font-size-normal: 1.4rem;
+$context--button-padding: 10px 35px;
+$context--button-padding-large: 10px 35px;
+$context--button-letter-spacing: 0.7px;
+$context--button-font-family: $context--font-family-sans;
+$context--button-transition: background-color 0.2s;
 
 /**
  * Button Themes
@@ -19,25 +19,25 @@ $button--transition: background-color 0.2s;
  *
  */
 
-$button--default: (
+$context--button-default: (
 	'color': white,
 	'backgroundColor': color('midnight'),
 	'backgroundImage': none,
-	'border': $button--border-width-style color('midnight'),
+	'border': $context--button-border-width-style color('midnight'),
 	'visitedColor': white,
 	'hoverColor': color('midnight'),
-	'hoverBorder': $button--border-width-style color('midnight'),
+	'hoverBorder': $context--button-border-width-style color('midnight'),
 	'hoverBackgroundColor': white,
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorder': $button--border-width-style color('midnight'),
+	'focusBorder': $context--button-border-width-style color('midnight'),
 	'focusTextDecoration': none,
 	'fontWeight': bold,
 );
 
-$button--primary: $button--default;
+$context--button-primary: $context--button-default;
 
-$button--secondary: (
+$context--button-secondary: (
 	'color': color('midnight'),
 	'visitedColor': color('midnight'),
 	'backgroundColor': white,

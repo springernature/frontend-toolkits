@@ -13,7 +13,7 @@ Use this context configuration in your product to skin components with the `defa
 
 ## Breakpoints
 
-The `media-query` mixin is provided for handling breakpoints. Breakpoint values are provided at the `10-settings` level using the `$breakpoints` map.
+The `media-query` mixin is provided for handling breakpoints. Breakpoint values are provided at the `10-settings` level using the `$context--breakpoints` map.
 
 ### Usage
 
@@ -50,10 +50,10 @@ Functions are provided for accessing colors from your context.
 The following variables are set:
 
 ```scss
-$greyscale-base      // the dark base color off which all greys are based
-$greyscale-min       // the minimum lightness percentage
-$greyscale-max       // the maximum lightness percentage
-$greyscale-stops     // the allowed interval for percentages
+$context--greyscale-base      // the dark base color off which all greys are based
+$context--greyscale-min       // the minimum lightness percentage
+$context--greyscale-max       // the maximum lightness percentage
+$context--greyscale-stops     // the allowed interval for percentages
 ```
 
 - A helper function - `greyscale()` - is provided for adding grey colors to your scss files
@@ -62,7 +62,7 @@ $greyscale-stops     // the allowed interval for percentages
 #### Examples
 
 ```scss
-color: greyscale();        // returns result of greyscale($greyscale-min) - greyscale(0)
+color: greyscale();        // returns result of greyscale($context--greyscale-min) - greyscale(0)
 color: greyscale(8);       // rounds up to nearest stop, so returns result of greyscale(10)
 color: greyscale(20);      // returns grey with 20% transparency
 color: greyscale(25);      // returns grey with 25% transparency
@@ -132,12 +132,12 @@ border: 1px solid color('lemon');
 
 ### Foreground color
 
-- Given a (background) color, this function will return either a predefined light (`$foreground-light`) or dark (`$foreground-dark`) color to be used in the foreground
+- Given a (background) color, this function will return either a predefined light (`$context--foreground-light`) or dark (`$context--foreground-dark`) color to be used in the foreground
 - The `foreground-color()` function will choose the correct color to allow for a high enough contrast ratio between background and foreground
 
 ```scss
-color: foreground-color();                                 // returns the foreground color for $greyscale-base
-color: foreground-color(30);                               // returns the foreground color for 30% $greyscale-base
+color: foreground-color();                                 // returns the foreground color for $context--greyscale-base
+color: foreground-color(30);                               // returns the foreground color for 30% $context--greyscale-base
 color: foreground-color('blue');                           // returns the foreground color for the color from $colors
 color: foreground-color('npj-primary', $brand-colors);     // returns the foreground color for the color from $brand-colors
 color: foreground-color($var);                             // returns the foreground color for color stored as variable
@@ -297,7 +297,7 @@ Function provided for accessing z-index from your context.
 The following variable is set:
 
 ```scss
-$z-layers //default layers values
+$context--z-layers //default layers values
 ```
 
 A helper function - `z()` - is provided for adding z-index to your scss files
