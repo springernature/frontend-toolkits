@@ -1,5 +1,8 @@
 # History
 
+## 9.0.1 (2021-02-01)
+    * Fix reference to old $open-access-color variable in colors utility
+
 ## 9.0.0 (2021-02-01)
     * BREAKING: 
         * Updates context variables to consistently use the `context--` prefix
