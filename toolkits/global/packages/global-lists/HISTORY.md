@@ -1,3 +1,7 @@
+## 2.0.1 (2021-02-02)
+    * BUG: add comparison on is-interface if condition
+    * Include unconditionally `u-text-interface`
+
 ## 2.0.0 (2021-02-01)
     * Update `brand-context` to v9.0.0
     * Use new versions of mixins
