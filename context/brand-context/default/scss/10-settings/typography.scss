@@ -3,24 +3,28 @@
  * Font settings
  */
 
-$font-family-serif: serif;
-$font-family-serif-save-data: $font-family-serif;
-$font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$context--font-family-serif: serif;
+$context--font-family-serif-save-data: $context--font-family-serif;
+$context--font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+$context--font-weight-normal: 400;
+$context--font-weight-bold: 700;
 
-$line-height-base: 1.61803398875; // golden ratio
-$line-height-tight: 1.4;
+$context--line-height-base: 1.61803398875; // golden ratio
+$context--line-height-tight: 1.4;
 
 // Define your base size in EMs
 // http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
 $context--font-size-base: 1.8em;
 
-$font-size-interface: 16px;
+$context--font-size-interface: 16px;
 
 // Headings
-$context--font-size-h1: 3rem;
+$context--font-size-h1: 3.2rem;
 $context--font-size-h2: 2.4rem;
-$context--font-size-h3: 1.8rem;
-$context--font-size-h4: 1.4rem;
+$context--font-size-h3: 2rem;
+$context--font-size-h4: 1.8rem;
+
+$context--line-height-base: 1.61803398875; // golden ratio
+$context--line-height-tight: 1.4;
+$context--line-height-heading: $context--line-height-tight;

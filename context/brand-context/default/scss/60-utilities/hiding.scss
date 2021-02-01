@@ -62,7 +62,7 @@
  * intentionally avoids 'max' and 'range' to prevent bloat
  */
 
-@each $breakpoint, $value in $breakpoints {
+@each $breakpoint, $value in $context--breakpoints {
 	@include media-query('#{$breakpoint}') {
 		.u-hide-at-#{$breakpoint},
 		.js .u-js-hide-at-#{$breakpoint} {

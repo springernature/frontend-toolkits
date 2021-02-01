@@ -4,9 +4,9 @@ $global-list-columned--margin-bottom: 12px;
 
 // Description list
 $global-list-description--wrapper-margin-bottom: spacing(24);
-$global-list-description--font-weight: 700;
+$global-list-description--font-weight: $context--font-weight-bold;
 $global-list-description--font-size: 16px;
-$global-list-description--line-height: 1.4;
+$global-list-description--line-height: $context--line-height-tight;
 $global-list-description--margin-bottom: 12px;
 $global-list-description--is-interface: false;
 
@@ -16,5 +16,5 @@ $global-list-group--padding-xs: spacing(4) 0;
 $global-list-group--padding-sm: spacing(8) 0;
 $global-list-group--padding-md: spacing(16) 0;
 $global-list-group--padding-lg: spacing(24) 0;
-$global-list-group--line-height: 1.4;
+$global-list-group--line-height: $context--line-height-tight;
 $global-list-group--is-interface: false;

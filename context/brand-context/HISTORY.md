@@ -1,7 +1,9 @@
 # History
 
-## 9.0.0 (2021-01-29)
-    * BREAKING: Removes RFS from brand-context
+## 9.0.0 (2021-02-01)
+    * BREAKING: 
+        * Updates context variables to consistently use the `context--` prefix
+        * Removes RFS from brand-context
         * Replaces font-size mixin with static value
         * Removes u-text-size mixin
 

@@ -4,13 +4,13 @@
  */
 
 html {
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	height: 100%;
 	overflow-y: scroll;
 	font-size: 62.5%;
 	box-sizing: border-box;
-	color: greyscale($greyscale-min);
-	line-height: $line-height-base;
+	color: greyscale($context--greyscale-min);
+	line-height: $context--line-height-base;
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: subpixel-antialiased;
 }

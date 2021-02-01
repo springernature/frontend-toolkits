@@ -13,7 +13,7 @@
 		@content;
 	}
 
-	@each $breakpoint, $value in $breakpoints {
+	@each $breakpoint, $value in $context--breakpoints {
 		@include media-query('#{$breakpoint}') {
 			.#{$classname}-at-#{$breakpoint} {
 				@content;
@@ -23,7 +23,7 @@
 
 	@if type-of($less-than) == bool {
 		@if $less-than {
-			@each $breakpoint, $value in $breakpoints {
+			@each $breakpoint, $value in $context--breakpoints {
 				@include media-query('#{$breakpoint}', 'max') {
 					.#{$classname}-at-lt-#{$breakpoint} {
 						@content;

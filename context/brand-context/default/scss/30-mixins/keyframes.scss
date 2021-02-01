@@ -2,11 +2,11 @@
 ///
 /// @parameter {string} $name - the name of the keyframe set
 @function _get-properties-by-keyframe-name($name) {
-	$valid-keyframe: map-keys($keyframes);
+	$valid-keyframe: map-keys($context--keyframes);
 	$index: index($valid-keyframe, $name);
 
 	@if $index {
-		@return map-get($keyframes, $name);
+		@return map-get($context--keyframes, $name);
 	}
 	@else {
 		@warn "`#{$name}` is not a valid keyframe name.";
@@ -18,7 +18,7 @@
 ///
 /// @parameter {string} $name - the name of the keyframe set
 @mixin keyframes-generator($name) {
-	$properties: _get-properties-by-keyframe-name($name);	
+	$properties: _get-properties-by-keyframe-name($name);
 	@if $properties {
 		@keyframes #{$name} {
 			@each $key, $property in $properties {

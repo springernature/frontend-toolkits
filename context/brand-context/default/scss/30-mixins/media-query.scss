@@ -40,7 +40,7 @@
 /// @parameter {string|list} $media-query - breakpoint name or list of two breakpoint names
 /// @parameter {string} $type - the type of media query
 /// @parameter {map} $map - the map of breakpoints, name:value
-@mixin media-query($media-query, $type: 'min', $map: $breakpoints) {
+@mixin media-query($media-query, $type: 'min', $map: $context--breakpoints) {
 	$breakpoint-type: _get-breakpoint-type($type);
 
 	// Range based media query

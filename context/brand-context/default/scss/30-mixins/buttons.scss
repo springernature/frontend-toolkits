@@ -1,49 +1,44 @@
-/**
- * Entrypoints
- *
- */
-
 // Default button
 
 @mixin button-default {
-	@include button($button--default);
+	@include button($context--button-default);
 }
 
 // Button themes
 
 @mixin button-primary {
 	@if variable-exists('button--primary') {
-		@include button-theme($button--primary);
+		@include button-theme($context--button-primary);
 	}
 }
 
 @mixin button-secondary {
 	@if variable-exists('button--secondary') {
-		@include button-theme($button--secondary);
+		@include button-theme($context--button-secondary);
 	}
 }
 
 @mixin button-ghost {
 	@if variable-exists('button--ghost') {
-		@include button-theme($button--ghost);
+		@include button-theme($context--button-ghost);
 	}
 }
 
 @mixin button-disabled {
 	@if variable-exists('button--disabled') {
-		@include button-theme($button--disabled);
+		@include button-theme($context--button-disabled);
 	}
 }
 
 // Button variants
 
 @mixin button-small {
-	font-size: $button--font-size-small;
+	font-size: $context--button-font-size-small;
 }
 
 @mixin button-large {
-	font-size: $button--font-size-large;
-	padding: $button--padding-large;
+	font-size: $context--button-font-size-large;
+	padding: $context--button-padding-large;
 }
 
 @mixin button-full-width {
@@ -53,13 +48,13 @@
 
 @mixin button-icon-left {
 	svg {
-		margin-right: $button--icon-margin;
+		margin-right: $context--button-icon-margin;
 	}
 }
 
 @mixin button-icon-right {
 	svg {
-		margin-left: $button--icon-margin;
+		margin-left: $context--button-icon-margin;
 	}
 }
 
@@ -79,14 +74,14 @@
 	position: relative;
 	text-decoration: none;
 	width: auto;
-	font-family: $button--font-family;
-	font-size: $button--font-size-normal;
-	line-height: $button--line-height;
-	justify-content: $button--justify-content;
-	padding: $button--padding;
-	transition: $button--transition;
-	border-radius: $button--border-radius;
-	letter-spacing: $button--letter-spacing;
+	font-family: $context--button-font-family;
+	font-size: $context--button-font-size-normal;
+	line-height: $context--button-line-height;
+	justify-content: $context--button-justify-content;
+	padding: $context--button-padding;
+	transition: $context--button-transition;
+	border-radius: $context--button-border-radius;
+	letter-spacing: $context--button-letter-spacing;
 }
 
 // Add base button styles
@@ -133,8 +128,8 @@
 		}
 	}
 
-	@if $theme == $button--disabled {
-		opacity: map-get($button--disabled, 'opacity');
+	@if $theme == $context--button-disabled {
+		opacity: map-get($context--button-disabled, 'opacity');
 		cursor: default;
 	}
 }

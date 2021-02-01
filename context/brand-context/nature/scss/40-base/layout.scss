@@ -10,7 +10,7 @@ html {
 
 body {
 	min-height: 100%;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	line-height: 1.76;
 	color: greyscale();
 	background: greyscale(80);

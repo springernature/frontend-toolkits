@@ -7,44 +7,44 @@
 // Button Themes
 // Variables to set themes styles
 
-$button--default: (
+$context--button-default: (
 	'color': color('blue'),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'border': $button--border-width-style color('blue'),
+	'border': $context--button-border-width-style color('blue'),
 	'visitedColor': color('blue'),
 	'hoverColor': white,
-	'hoverBorder': $button--border-width-style color('blue'),
+	'hoverBorder': $context--button-border-width-style color('blue'),
 	'hoverBackgroundColor': color('blue'),
 	'hoverBackgroundImage': none,
-	'focusBorder': $button--border-width-style color('blue')
+	'focusBorder': $context--button-border-width-style color('blue')
 );
 
-$button--primary: (
+$context--button-primary: (
 	'color': white,
 	'backgroundColor': color('blue'),
 	'backgroundImage': none,
-	'border': $button--border-width-style color('blue'),
+	'border': $context--button-border-width-style color('blue'),
 	'visitedColor': white,
 	'hoverColor': color('blue'),
-	'hoverBorder': $button--border-width-style color('blue'),
+	'hoverBorder': $context--button-border-width-style color('blue'),
 	'hoverBackgroundColor': white,
 	'hoverBackgroundImage': none,
-	'focusBorder': $button--border-width-style color('blue')
+	'focusBorder': $context--button-border-width-style color('blue')
 );
 
-$button--disabled: (
+$context--button-disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'border': $button--border-width-style greyscale(80),
+	'border': $context--button-border-width-style greyscale(80),
 	'visitedColor': greyscale(),
 	'opacity': 0.7,
 	'hoverColor': greyscale(),
-	'hoverBorder': $button--border-width-style greyscale(80),
+	'hoverBorder': $context--button-border-width-style greyscale(80),
 	'hoverBackgroundColor': transparent,
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorder': $button--border-width-style greyscale(80),
+	'focusBorder': $context--button-border-width-style greyscale(80),
 	'focusTextDecoration': none
 );

@@ -5,21 +5,21 @@
  */
 
 // greyscale settings
-$greyscale-base: #222;
-$greyscale-min: 0;
-$greyscale-max: 80;
+$context--greyscale-base: #222;
+$context--greyscale-min: 0;
+$context--greyscale-max: 80;
 
-// round greys to multiples of $greyscale-stops
-$greyscale-stops: 5;
+// round greys to multiples of $context--greyscale-stops
+$context--greyscale-stops: 5;
 
 // dark color used in foreground-color function
-$foreground-dark: #222;
+$context--foreground-dark: #222;
 
 // light color used in foreground-color function
-$foreground-light: #eee;
+$context--foreground-light: #eee;
 
 // default colors
-$colors: (
+$context--colors: (
 	'blue': #069,
 	'light-blue': #ebf6ff,
 	'steel': #bcd2dc,
