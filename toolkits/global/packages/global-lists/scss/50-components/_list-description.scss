@@ -1,10 +1,9 @@
 .c-list-description {
 	margin-bottom: 0;
 	width: 100%; // fix text breaking layout in IE10
-	
-	@if $global-list-description--is-interface {
-		@include u-text-interface;
+	@include u-text-interface;
 
+	@if ($global-list-description--is-interface == true) {
 		a {
 			@include u-link-interface;
 		}

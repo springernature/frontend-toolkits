@@ -3,7 +3,7 @@
 	line-height: $global-list-group--line-height;
 }
 
-@if $global-list-group--is-interface {
+@if ($global-list-group--is-interface == true) {
 	.c-list-group__item > a {
 		@include u-link-interface;
 	}
