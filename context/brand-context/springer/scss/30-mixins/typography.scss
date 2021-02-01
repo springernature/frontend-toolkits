@@ -21,7 +21,7 @@
 @mixin heading-base {
 	font-style: normal;
 	margin-bottom: 1em;
-	line-height: $line-height-tight;
+	line-height: $context--line-height-tight;
 
 	a {
 		@include interface-link;

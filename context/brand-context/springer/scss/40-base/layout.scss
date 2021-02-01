@@ -10,7 +10,7 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
 	color: greyscale($context--greyscale-min);
-	line-height: $line-height-base;
+	line-height: $context--line-height-base;
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: subpixel-antialiased;
 }

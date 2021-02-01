@@ -22,7 +22,7 @@
 }
 
 @mixin u-text-interface {
-	font-family: $font-family-sans;
-	font-size: $font-size-interface;
-	line-height: $line-height-tight;
+	font-family: $context--font-family-sans;
+	font-size: $context--font-size-interface;
+	line-height: $context--line-height-tight;
 }
