@@ -32,23 +32,6 @@
 }
 
 /**
- * Interface links
- *
- */
-
-@mixin interface-link {
-	text-decoration: none;
-
-	&.active,
-	&:active,
-	&.hover,
-	&:hover {
-		text-decoration: underline;
-		text-decoration-skip-ink: auto;
-	}
-}
-
-/**
  * Alternative link color
  *
  */
