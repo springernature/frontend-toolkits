@@ -7,15 +7,15 @@ $is-nature-branded: false !default;
 $save-data: false !default;
 $context--font-family-serif: if($is-nature-branded, (if($save-data, (Palatino, serif), (Harding, Palatino, serif))), $context--font-family-serif);
 $context--font-family-primary: if($is-nature-branded, $context--font-family-serif, $context--font-family-sans);
-$font-family-secondary: $context--font-family-sans;
+$context--font-family-secondary: $context--font-family-sans;
 
-$font-size-xxs: 12px;
-$font-size-xs: 14px;
-$font-size-sm: 16px;
-$font-size-md: 18px;
-$font-size-lg: 24px;
-$font-size-xl: 28px;
-$font-size-xxl: 32px;
+$context--font-size-xxs: 12px;
+$context--font-size-xs: 14px;
+$context--font-size-sm: 16px;
+$context--font-size-md: 18px;
+$context--font-size-lg: 24px;
+$context--font-size-xl: 28px;
+$context--font-size-xxl: 32px;
 
 $context--font-size-h1: 3.2rem;
 $context--font-size-h2: 2.4rem;
