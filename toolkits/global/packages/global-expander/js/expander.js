@@ -116,14 +116,18 @@ const Expander = class {
 	}
 
 	/**
-	 * Aria
+	 * Attributes
 	 */
 
-	_updateAriaAttributes() {
+	_updateAttributes() {
 		// eslint-disable-next-line unicorn/consistent-function-scoping
-		this._triggerEl.setAttribute('aria-pressed', this._isOpen.toString());
 		this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
-		this._targetEl.setAttribute('aria-hidden', (!this._isOpen).toString());
+
+		if (this._isOpen) {
+			this._targetEl.removeAttribute('hidden');
+		} else {
+			this._targetEl.setAttribute('hidden', '');
+		}
 	}
 
 	/**
@@ -184,7 +188,7 @@ const Expander = class {
 		this._isOpen = true;
 
 		this._updateTriggerLabel();
-		this._updateAriaAttributes();
+		this._updateAttributes();
 		this._updateClassAttributes();
 
 		this._setupTemporaryEventListeners();
@@ -206,7 +210,7 @@ const Expander = class {
 		this._isOpen = false;
 
 		this._updateTriggerLabel();
-		this._updateAriaAttributes();
+		this._updateAttributes();
 		this._updateClassAttributes();
 
 		this._removeTemporaryEventListeners();
@@ -219,7 +223,7 @@ const Expander = class {
 		}
 
 		this._updateTriggerLabel();
-		this._updateAriaAttributes();
+		this._updateAttributes();
 		this._updateClassAttributes();
 
 		this._triggerEl.addEventListener('click', this._handleButtonClick);
