@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0 (2020-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 2.1.0 (2020-12-15)
     * Remove use of rfs font-size mixin
     
