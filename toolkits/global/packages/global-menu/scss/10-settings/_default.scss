@@ -1,6 +1,12 @@
+/**
+ * @springernature/global-menu
+ * Default skin settings
+ *
+ */
+
 // Base Settings
 $menu--font-size: 1.6rem;
-$menu--font-family: $font-family-sans;
+$menu--font-family: $context--font-family-sans;
 $menu--link-color: inherit;
 $menu--link-color-hover: $menu--link-color;
 $menu--spacing: 16px;
