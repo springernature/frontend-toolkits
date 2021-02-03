@@ -5,7 +5,7 @@ $status-message-theme: (
 	"warning": #edbc53
 );
 
-$status-message--font-family: $font-family-sans;
+$status-message--font-family: $context--font-family-sans;
 $status-message--font-size: $font-size-sm;
 $status-message--border-radius: 2px;
 $status-message--boxed-border: 4px;
@@ -14,4 +14,4 @@ $status-message--border: 1px solid greyscale(80);
 $status-message--line-height: 1.3;
 $status-message--gutter: spacing(16);
 $status-message--gutter-icon: spacing(8);
-$status-message--font-weight: $font-weight-bold;
+$status-message--font-weight: $context--font-weight-bold;
