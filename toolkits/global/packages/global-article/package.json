@@ -3,7 +3,7 @@
   "version": "21.1.0",
   "description": "Frontend package for article display",
   "license": "MIT",
-  "brandContext": "^6.0.0",
+  "brandContext": "^9.0.1",
   "dependencies": {
     "@springernature/global-expander": "~3.0.1",
     "@springernature/global-popup": "~3.0.0"
