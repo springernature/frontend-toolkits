@@ -1,5 +1,8 @@
 # History
 
+## 9.0.3 (2021-02-03)
+    * Fix reference to old $page-base variable
+
 ## 9.0.2 (2021-02-03)
     * Fix reference to old $font-size-* and $font-family-secondary variables
 
