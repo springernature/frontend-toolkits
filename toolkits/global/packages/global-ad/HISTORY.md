@@ -2,7 +2,7 @@
 
 ## 2.0.0 (2021-02-03)
     * Bump `brand-context` version
-    * Update font-family-sans variable reference
+    * Update context variable references to use `context--` prefix
 
 ## 1.1.1 (2020-12-07)
 	* Fixed typo with missing sibling selector
