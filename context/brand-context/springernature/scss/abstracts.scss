@@ -4,12 +4,18 @@
  * These files don’t output any CSS when compiled
  */
 
+// 10-settings
 // These settings must come first, as other settings can reference them
 @import '10-settings/breakpoints';
 @import '10-settings/colors/default';
 @import '10-settings/typography';
-
+@import '10-settings/container';
+// needs to appear after colors & typography
 @import '10-settings/buttons';
+@import '10-settings/links';
+@import '10-settings/tables';
 
 // 30-mixins
+@import '30-mixins/links';
+@import '30-mixins/media-query';
 @import '30-mixins/typography';

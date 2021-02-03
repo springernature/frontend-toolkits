@@ -1,0 +1,24 @@
+table {
+	font-size: $table-font-size;
+	line-height: $table-line-height;
+	border-collapse: collapse;
+	border: $table-border;
+	width: 100%;
+	margin-bottom: $table-margin-bottom;
+}
+
+th,
+td {
+	padding: $table-cell-padding;
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	border-bottom: $table-header-border-bottom;
+}
+
+td {
+	font-family: $font-family-sans;
+	border-bottom: $table-row-border-bottom;
+}

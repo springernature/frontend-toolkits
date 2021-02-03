@@ -5,20 +5,37 @@
 
 // default colors
 $context--colors: (
-	'mineshaft': #222,
-	'emperor': #555,
-	'dove': #666,
-	'alto': #ddd,
-	'mercury': #e8e8e8,
-	'concrete': #f3f3f3,
-	'alabaster': #f8f8f8,
-	'midnight': #183642,
-	'orange': #f58220,
-	'yellow': #edbc53,
-	'brightblue': #3c9cd7,
-	'emerald': #00b8b0,
-	'lime': #b6bd04,
+	// Global colours
+	'black': #222,				// mineshaft
+	'white': #fff,
+	'red': #c40606,
+	'yellow': #fc0,
+	'blue': #004b83,
+	'blue-light': #0063ab,
+	'purple': #a345c9,
+	'grey-dark1': #555,			// emperor
+	'grey-dark2': #666,			// dove
+	'grey-light1': #f8f8f8,		// alabaster
+	'grey-light2': #f3f3f3,		// concrete
+	'grey-mid1': #dadada,		// alto
+
+	// SN Accent colours
 	'lilac':  #9d7eb8,
-	'blue': #007e99,
-	'red': #c64040,
+	'emerald': #00b8b0,
+	'orange': #f58220,
+	'lime': #b6bd04,
+	'bright-blue': #3c9cd7,		// brightblue
+
+	// SN Corporate colours
+	'gunmetal-blue': #183642,	// midnight
+	'electric-blue': #486a7e,
+	'pewter-blue': #8faec1,
+	'gainsboro-blue': #cedbe0,
+	'alice-blue': #ecf1f4,
 );
+
+$context--page-background-color: color('grey-light1');
+$context--border-color: color('grey-mid1');
+$context--focus-color: color('yellow');
+$context--error-color: color('red');
+$context--success-color: color('emerald');

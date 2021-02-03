@@ -1,0 +1,35 @@
+@mixin from-tablet {
+	@include media-query('tablet-width', 'min', $breakpoints) {
+		@content;
+	}
+}
+
+@mixin from-wide-tablet {
+	@include media-query('tablet-wide-width', 'min', $breakpoints) {
+		@content;
+	}
+}
+
+@mixin from-desktop {
+	@include media-query('desktop-width', 'min', $breakpoints) {
+		@content;
+	}
+}
+
+@mixin from-wide-layout {
+	@include media-query('wide-layout', 'min', $breakpoints) {
+		@content;
+	}
+}
+
+@mixin until-tablet {
+	@include media-query('tablet-width', 'max', $breakpoints) {
+		@content;
+	}
+}
+
+@mixin until-desktop {
+	@include media-query('desktop-width', 'max', $breakpoints) {
+		@content;
+	}
+}

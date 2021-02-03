@@ -1,0 +1,7 @@
+.u-link-text {
+	@include link-text();
+}
+
+.u-link-text--large {
+	@include link-text('large');
+}

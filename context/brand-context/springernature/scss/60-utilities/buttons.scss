@@ -1,0 +1,37 @@
+/**
+ * Button utilities
+ * These are for styled branded buttons
+ */
+
+// Default button
+
+.u-button {
+	border: 4px solid transparent;
+	box-shadow: 0 0 0 1px $button--brand-color;
+
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+// Button themes
+
+.u-button--primary {
+	@include button-primary
+}
+
+.u-button--secondary {
+	@include button-secondary;
+
+	&:hover {
+		box-shadow: none;
+		border: $button--border-width-style $button--brand-color;
+	}
+}
+
+// Button variants
+
+.u-button--small {
+	padding: spacing(8) spacing(16);
+}

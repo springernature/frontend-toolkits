@@ -4,19 +4,49 @@
  */
 
 $context--font-family-serif: 'Merriweather', serif;
-$context--font-family-sans: 'Daytona', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$context--font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+$context--primary-text-color: color('black');
+$context--secondary-text-color: color('grey-dark2');
 
-/**
-* Typography
-* Heading settings
-*/
+$context--font-size-sm: 1.4rem;
+$context--font-size-md: 1.6rem;
+$context--font-size-lg: 1.8rem;
+$context--font-size-xl: 2rem;
+$context--font-size-xxl: 2.4rem;
+$context--font-size-xxxl: 3.5rem;
 
-$context--heading-line-height: 1.3;
-$context--base-html-font: 10px;
-$context--font-size-small: 1.2rem;
+$context--font-size-h1: $context--font-size-xxxl;
+$context--font-size-h2: $context--font-size-xxl;
+$context--font-size-h3: $context--font-size-xl;
+$context--font-size-h4: $context--font-size-lg;
+$context--font-size-h5: $context--font-size-md;
+// Define your base size in EMs
+// http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
 $context--font-size-base: 1.6em;
-$context--font-size-h1: 4.5rem;
-$context--font-size-h2: 3.5rem;
-$context--font-size-h3: 1.8rem;
-$context--font-size-h5: 1.8rem;
+
+$context--line-height-h1: 4.2rem;
+$context--line-height-h2: 2.8rem;
+$context--line-height-h3: 2.4rem;
+$context--line-height-h4: 2.4rem;
+$context--line-height-h5: 1.9rem;
+
+// Fluid typography
+$context--font-size-h1-min: $context--font-size-h2;
+$context--font-size-h2-min: $context--font-size-h3;
+$context--font-size-h3-min: $context--font-size-h4;
+$context--font-size-h4-min: $context--font-size-h4;
+$context--font-size-h5-min: $context--font-size-h5;
+$context--line-height-h1-min: $context--line-height-h2;
+$context--line-height-h2-min: $context--line-height-h3;
+$context--line-height-h3-min: $context--line-height-h4;
+$context--line-height-h4-min: $context--line-height-h4;
+$context--line-height-h5-min: $context--line-height-h5;
+
+$context--font-weight-light: 300;
+$context--font-weight-normal: 400;
+$context--font-weight-bold: 700;
+
+$context--line-height-base: 1.875; // For body text
+$context--line-height-md: 1.5;
+$context--line-height-tight: 1.4;
