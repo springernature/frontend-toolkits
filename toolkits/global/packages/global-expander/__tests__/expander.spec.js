@@ -95,6 +95,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should open when enter key is pressed', () => {
@@ -107,6 +108,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should open when space key is pressed on native button', () => {
@@ -119,6 +121,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should open when space key is pressed on anchor link button', () => {
@@ -132,6 +135,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should open when spacebar key is pressed on anchor link button', () => {
@@ -145,6 +149,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should close when button is clicked a second time', () => {
@@ -156,6 +161,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
 		test('Should close when enter key is pressed a second time', () => {
@@ -167,6 +173,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
 		test('Should close when space key is pressed a second time', () => {
@@ -178,6 +185,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
 		test('Should close when space key is pressed a second time on anchor link button', () => {
@@ -190,6 +198,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
 		test('Should set href attribute on anchor link button', () => {
@@ -216,14 +225,10 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			element.BUTTON.click();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
 		test('Should set aria attributes when enter key is pressed', () => {
@@ -231,15 +236,11 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			const keydownEnterEvent = createKeydownEvent('Enter');
 			element.BUTTON.dispatchEvent(keydownEnterEvent);
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
 		test('Should set aria attributes when space key is pressed on anchor link button', () => {
@@ -248,15 +249,11 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			const keydownEnterEvent = createKeydownEvent('Enter');
 			element.BUTTON.dispatchEvent(keydownEnterEvent);
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('true');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('true');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('false');
 		});
 
 		test('Should unset aria attributes when button is clicked a second time', () => {
@@ -264,14 +261,10 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			clickButtonTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
 		test('Should unset aria attributes when enter key is pressed a second time', () => {
@@ -279,14 +272,10 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			pressEnterKeyTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
 		test('Should unset aria attributes when space key is pressed a second time', () => {
@@ -294,14 +283,10 @@ describe('Expander', () => {
 			const expander = new Expander(element.BUTTON, element.TARGET);
 			expander.init();
 			element.BUTTON.setAttribute('aria-expanded', 'false');
-			element.BUTTON.setAttribute('aria-pressed', 'false');
-			element.TARGET.setAttribute('aria-hidden', 'true');
 			// When
 			pressSpaceKeyTwice();
 			// Then
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 		});
 
 		test('Should make target element focusable and focus on it when button is clicked and AUTOFOCUS: target', () => {
@@ -354,6 +339,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
 		test('Should close and set focus on trigger when tab out of the target', done => {
@@ -368,6 +354,7 @@ describe('Expander', () => {
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 				done();
 			});
 		});
@@ -384,6 +371,7 @@ describe('Expander', () => {
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 				done();
 			});
 		});
@@ -398,6 +386,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should not close when click on a child of the open target', () => {
@@ -412,6 +401,7 @@ describe('Expander', () => {
 			// Then
 			expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should use TARGET_HIDE_CLASS option if it is passed to constructor', () => {
@@ -467,6 +457,7 @@ describe('Expander', () => {
 			clickOffElement.click();
 			// Then
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and button is clicked on', () => {
@@ -552,9 +543,8 @@ describe('Expander', () => {
 			expander.init();
 
 			expect(element.BUTTON.getAttribute('aria-expanded')).toBe('false');
-			expect(element.BUTTON.getAttribute('aria-pressed')).toBe('false');
-			expect(element.TARGET.getAttribute('aria-hidden')).toBe('true');
 			expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 	});
 });
