@@ -1,6 +1,6 @@
 # History
 
-## 4.0.0 (2010-02-03)
+## 4.0.0 (2021-02-03)
     * BREAKING: 
         * Remove aria-pressed attribute and update tests.
         * Replace aria-hidden with hidden attribute and update tests.
