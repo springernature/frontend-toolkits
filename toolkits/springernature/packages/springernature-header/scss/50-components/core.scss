@@ -7,7 +7,7 @@
 	border-bottom: 5px solid #3c9cd7;
 	padding: 20px 0;
 	width: 100%;
-	top: 0;	
+	top: 0;
 }
 
 .c-header__inner {
@@ -36,12 +36,12 @@
 	@include media-query('md') {
 		font-size: 2.2rem;
 	}
-	
+
 	@include media-query('lg') {
 		font-size: 2.7rem;
 	}
-	
-	font-family: $font-family-serif;
+
+	font-family: $context--font-family-serif;
 	line-height: 4.6rem;
 	font-size: 2rem;
 	font-size: 1.5rem;
