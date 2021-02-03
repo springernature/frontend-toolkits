@@ -1,5 +1,10 @@
 # History
 
+## 5.1.0 (2021-02-03)
+    * Remove aria-pressed
+    * Remove aria-expanded and u-js-hide. These are handled in global-expander.
+    * Bump global-expander to 4.0.0
+
 ## 5.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
