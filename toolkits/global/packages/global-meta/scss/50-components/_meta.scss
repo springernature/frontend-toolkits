@@ -17,6 +17,17 @@
 	}
 }
 
+.c-meta__item--block-at-xl {
+	@include media-query('xl') {
+		display: block;
+
+		&:not(:last-child) {
+			padding-right: 0;
+			border-right: none;
+		}
+	}
+}
+
 .c-meta__type {
 	text-transform: $meta--text-transform;
 	font-weight: $meta--font-weight;

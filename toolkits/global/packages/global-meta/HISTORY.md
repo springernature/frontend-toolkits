@@ -1,5 +1,8 @@
 # History
 
+## 1.4.0 (2021-02-02)
+    * Add modifier to stack list items at `xl` breakpoint
+
 ## 1.3.3 (2021-01-26)
     * Remove nature $meta--font-size override to improve accessibility
 
