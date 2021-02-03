@@ -1,4 +1,4 @@
-/*
+/**
  * Layout
  * Universal layout styles
  */
@@ -11,11 +11,12 @@ html {
 
 body {
 	min-height: 100%;
-	font-family: $context--font-family-serif;
-	line-height: 1.76;
-	color: color('mineshaft');
-	background: color('alabaster');
-	font-size: 1.7em; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+	font-family: $font-family-serif;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $primary-text-color;
+	background: $page-background-color;
+	font-size: $font-size-base;
 	letter-spacing: 0.01em;
 }
 
