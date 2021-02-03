@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0 (2020-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 4.1.1 (2021-01-26)
     * Capilatize first letter in links 
 

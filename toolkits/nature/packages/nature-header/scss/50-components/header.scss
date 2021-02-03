@@ -49,13 +49,13 @@
 	align-items: center;
 	flex-wrap: wrap;
 	flex: 0 1 auto;
-	font-weight: $font-weight-bold;
+	font-weight: $context--font-weight-bold;
 	line-height: 1.4;
 	margin: 0 (0 - spacing(8)); // Make flush with edge
 }
 
 .c-header__menu--global {
-	font-weight: $font-weight-normal;
+	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
 }
 
