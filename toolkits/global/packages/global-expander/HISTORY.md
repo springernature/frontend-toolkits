@@ -1,5 +1,10 @@
 # History
 
+## 4.0.0 (2010-02-03)
+    * BREAKING: 
+        * Remove aria-pressed attribute and update tests.
+        * Replace aria-hidden with hidden attribute and update tests.
+
 ## 3.0.2 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
