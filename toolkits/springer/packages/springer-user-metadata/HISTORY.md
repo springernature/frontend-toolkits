@@ -1,5 +1,9 @@
 # History
 
+## 5.0.1 (2021-02-03)
+    * Bump `brand-context` version
+    * Fix reference to old font-size-* variable
+
 ## 5.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix

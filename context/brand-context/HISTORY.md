@@ -1,5 +1,8 @@
 # History
 
+## 9.0.2 (2021-02-03)
+    * Fix reference to old $font-size-* and $font-family-secondary variables
+
 ## 9.0.1 (2021-02-01)
     * Fix reference to old $open-access-color variable in colors utility
 

@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-pagination",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "A component for the controls of pagination",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^8.0.1"
+  "brandContext": "^9.0.2"
 }
