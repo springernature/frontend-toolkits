@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2021-02-03)
+    * Bump global-expander to 4.0.0
+
 ## 4.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
