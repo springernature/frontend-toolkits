@@ -24,7 +24,7 @@
 	}
 
 	&__footer-heading {
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 		font-size: map-get($article--font-sizes, 'font-size-3');
 		font-weight: 700;
 		margin: 0;
@@ -58,7 +58,7 @@
 	border-radius: $article--cta-button-border-radius;
 	text-decoration: none;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	display: block;
 	width: 100%;
 	padding-top: $article--vertical-spacing-small;
@@ -90,7 +90,7 @@
 
 .c-author-list {
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	list-style: none;
 	margin-bottom: 0;
 	padding: 0;
@@ -121,7 +121,7 @@
 
 .c-article-info-details {
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	margin-bottom: $article--vertical-spacing-small;
 	margin-top: $article--vertical-spacing-medium;
 
@@ -147,7 +147,7 @@
 }
 
 .c-article-section {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	clear: both;
 }
 
@@ -158,13 +158,13 @@
 }
 
 .c-article-section__subtitle {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-weight: 700;
 	margin-bottom: $article--vertical-spacing-small;
 }
 
 .c-article-section__content {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin-bottom: 40px;
 }
 
@@ -214,7 +214,7 @@
 
 .c-article-section__figure-credit {
 	font-size: map-get($article--font-sizes, 'font-size-1');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	margin-bottom: $article--vertical-spacing-medium;
 }
 
@@ -256,7 +256,7 @@
 	font-weight: 700;
 	transition: background-color .2s ease-out, color .2s ease-out;
 	margin-bottom: 10px;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	display: inline-block;
 }
 
@@ -285,7 +285,7 @@
 
 .c-article-figure-subtitle {
 	font-size: map-get($article--font-sizes, 'font-size-5');
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 }
 
 .c-article-figure-content {
@@ -312,7 +312,7 @@
 }
 
 .c-article-figure-description {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin: 0 0 $article--vertical-spacing-large 0;
 }
 
@@ -413,7 +413,7 @@
 .c-article-events {
 	clear: both;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	list-style: none;
 	margin-bottom: 0;
 	margin-top: $article--vertical-spacing-medium;
@@ -438,7 +438,7 @@
 .c-article-peer-review {
 	background-color: #f0f7fa;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	margin-top: -16px;
 	margin-bottom: 40px;
 	padding: $article--vertical-spacing-small;
@@ -465,7 +465,7 @@
 .c-article-change-list__heading {
 	color: map-get($article--grey-palette, 'grey-3');
 	display: inline;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-weight: bold;
 	margin-right: 0.5em;
 }
@@ -477,7 +477,7 @@
 
 .c-article-references__heading {
 	font-weight: bold;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-size: map-get($article--font-sizes, 'font-size-4');
 	margin: $article--vertical-spacing-large 0 4px;
 }
@@ -498,7 +498,7 @@
 
 .c-article-references__counter {
 	/* grade-c-hide */
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-size: map-get($article--font-sizes, 'font-size-6');
 	line-height: 1.4;
 	text-align: right;
@@ -518,7 +518,7 @@
 	flex-basis: 100%;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	font-weight: bold;
 	margin: 0;
@@ -541,7 +541,7 @@
 .c-article-references__download > a {
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	font-weight: bold;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 }
 
 .c-article-references__download svg {
@@ -578,7 +578,7 @@
 .c-article-author-affiliation__address {
 	color: inherit;
 	font-style: italic;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-weight: 400;
 	font-size: map-get($article--font-sizes, 'font-size-4');
 	margin: 0;
@@ -611,7 +611,7 @@
 .c-article-authors-search__title {
 	color: map-get($article--grey-palette, 'grey-3');
 	font-weight: 700;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	margin: 0;
 	padding: 0;
 	font-size: map-get($article--font-sizes, 'font-size-4');
@@ -619,7 +619,7 @@
 
 .c-article-authors-search__item {
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 }
 
 .c-author-popup .c-article-authors-search__list {
@@ -653,7 +653,7 @@
 
 .c-article-author-institutional-author__name {
 	font-weight: 700;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-size: map-get($article--font-sizes, 'font-size-4');
 	margin: 0;
 	padding: 0;
@@ -687,7 +687,7 @@
 		padding: 0 0 0 30px;
 		margin-bottom: $article--vertical-spacing-small;
 		margin-left: 20px;
-		font-family: $font-family-serif;
+		font-family: $context--font-family-serif;
 		font-size: map-get($article--font-sizes, 'font-size-4');
 		font-weight: 700;
 
@@ -711,7 +711,7 @@
 		> span {
 			width: 40px;
 			line-height: 1.4;
-			font-family: $font-family-serif;
+			font-family: $context--font-family-serif;
 			font-weight: 400;
 			text-align: right;
 			position: absolute;
@@ -752,7 +752,7 @@
 	}
 
 	&__caption {
-		font-family: $font-family-serif;
+		font-family: $context--font-family-serif;
 		margin: 1px 0 20px 0;
 	}
 
@@ -762,7 +762,7 @@
 }
 
 .c-article__fullwidth-body {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	clear: both;
 
 	&--access {
@@ -832,7 +832,7 @@
 
 .c-article-table-subtitle {
 	font-size: map-get($article--font-sizes, 'font-size-5');
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 }
 
 .c-article-table__inline-caption {
@@ -842,7 +842,7 @@
 }
 
 .c-article-table-container {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin-bottom: $article--vertical-spacing-large;
 }
 
@@ -855,7 +855,7 @@
 	border-collapse: collapse;
 	border-spacing: 0;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	margin-bottom: 0;
 	width: 100%;
 }
@@ -923,7 +923,7 @@
 
 .c-article-further-reading__title {
 	font-size: map-get($article--font-sizes, 'font-size-4');
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -970,7 +970,7 @@
 
 .c-article-subject-list {
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -996,7 +996,7 @@
 
 .c-article-compound-article-link {
 	font-size: map-get($article--font-sizes, 'font-size-5');
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 }
 
 .c-article-compound-container {
@@ -1088,7 +1088,7 @@
 		box-sizing: border-box;
 		padding-right: $article--vertical-spacing-small;
 		font-size: map-get($article--font-sizes, 'font-size-3');
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 
 		@include media-query('lg', 'max') {
 			flex: 0 0 100%;
@@ -1111,7 +1111,7 @@
 
 .c-bibliographic-information__citation,
 .c-bibliographic-information__download-citation {
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: 1.6rem;
 	margin-bottom: $article--vertical-spacing-small;
 }
@@ -1127,12 +1127,12 @@
 .c-code-block {
 	padding: 20px;
 	margin: 0 0 $article--vertical-spacing-large 0;
-	border: 1px solid $foreground-light;
+	border: 1px solid $context--foreground-light;
 	font-family: monospace;
 }
 
 .c-code-block__heading {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-weight: normal;
 	margin-bottom: $article--vertical-spacing-medium;
 }
@@ -1191,7 +1191,7 @@
 }
 
 .c-blockquote__body {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	font-weight: bold;
 	font-style: italic;
 }
@@ -1243,12 +1243,12 @@
 	padding: 30px 0 20px 20px;
 	border-bottom: 2px solid;
 	border-top: 2px solid;
-	border-image: linear-gradient(to right, white, white 23%, $foreground-light 0, $foreground-light 74%, white 23%, white) 10;
+	border-image: linear-gradient(to right, white, white 23%, $context--foreground-light 0, $context--foreground-light 74%, white 23%, white) 10;
 	font-size: map-get($article--font-sizes, 'font-size-1');
 
 	&__title {
 		font-weight: 700;
-		font-family: $font-family-serif;
+		font-family: $context--font-family-serif;
 		font-size: map-get($article--font-sizes, 'font-size-4');
 		line-height: 1.3;
 		margin-bottom: 10px;
@@ -1279,7 +1279,7 @@
 			width: 75px;
 			min-height: 75px;
 			left: 6%;
-			background-color: $foreground-light;
+			background-color: $context--foreground-light;
 			transform: rotateY(-20deg) perspective(195px);
 			box-shadow: inset -2px 1px #8e8e8e;
 		}
@@ -1336,7 +1336,7 @@
 .c-key-step__heading {
 	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20viewBox%3D'125%2025%2016%2016'%20enable-background%3D'new%20125%2025%2016%2016'%3E%3Cpath%20fill%3D'%23215F90'%20d%3D'M133%2025c-4.374%200-8%203.626-8%208s3.626%208%208%208%208-3.626%208-8-3.626-8-8-8zm1.173%2012.48c0%20.107%200%20.32-.32.32h-1.707c-.213%200-.32-.106-.32-.32v-5.76c0-.213.106-.32.32-.32h1.707c.213%200%20.32.213.32.32v5.76zM133%2030.333c-1.067%200-1.173-.534-1.173-1.067%200-.64.213-1.066%201.173-1.066s1.173.426%201.173%201.066c0%20.534-.106%201.067-1.173%201.067z'%2F%3E%3C%2Fsvg%3E") no-repeat 0 50%;
 	color: $article--key-step-color;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-weight: bold;
 	padding-left: 20px;
 	text-transform: uppercase;
@@ -1349,7 +1349,7 @@
 
 .c-key-step__body {
 	color: map-get($article--grey-palette, 'grey-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: map-get($article--font-sizes, 'font-size-2');
 	line-height: 1.4;
 	margin: 0;
@@ -1361,7 +1361,7 @@
 
 .c-troubleshooting-step {
 	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20viewBox%3D'125%2025%2016%2016'%20enable-background%3D'new%20125%2025%2016%2016'%3E%3Cpath%20fill%3D'%23215F90'%20d%3D'M133%2025c-4.374%200-8%203.626-8%208s3.626%208%208%208%208-3.626%208-8-3.626-8-8-8zm1.173%2012.48c0%20.107%200%20.32-.32.32h-1.707c-.213%200-.32-.106-.32-.32v-5.76c0-.213.106-.32.32-.32h1.707c.213%200%20.32.213.32.32v5.76zM133%2030.333c-1.067%200-1.173-.534-1.173-1.067%200-.64.213-1.066%201.173-1.066s1.173.426%201.173%201.066c0%20.534-.106%201.067-1.173%201.067z'%2F%3E%3C%2Fsvg%3E") no-repeat 0 50%;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-weight: bold;
 	font-size: map-get($article--font-sizes, 'font-size-2');
 	padding-left: 20px;
@@ -1370,7 +1370,7 @@
 
 .c-timing-step {
 	color: map-get($article--grey-palette, 'grey-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: map-get($article--font-sizes, 'font-size-1');
 	margin: 0 0 $article--vertical-spacing-small 0;
 }
@@ -1500,7 +1500,7 @@
 		}
 
 		&__index {
-			font-family: $font-family-serif;
+			font-family: $context--font-family-serif;
 			font-size: map-get($article--font-sizes, 'font-size-6');
 			line-height: 1.4;
 			text-align: right;
@@ -1516,7 +1516,7 @@
 
 	&__description {
 		font-size: map-get($article--font-sizes, 'font-size-3');
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 		margin-bottom: $article--vertical-spacing-small;
 	}
 
@@ -1530,7 +1530,7 @@
 		border: 1px solid map-get($article--grey-palette, 'grey-6');
 		display: inline-block;
 		margin-bottom: $article--vertical-spacing-small;
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 		font-size: map-get($article--font-sizes, 'font-size-2');
 		font-weight: 700;
 		padding: $article--vertical-spacing-small 10px;
@@ -1543,7 +1543,7 @@
 
 	&__additional-info {
 		color: map-get($article--grey-palette, 'grey-3');
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 		font-size: map-get($article--font-sizes, 'font-size-1');
 		margin-bottom: $article--vertical-spacing-large;
 	}
@@ -1577,12 +1577,12 @@
 }
 
 .c-article-correspondence__article {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin-bottom: $article--vertical-spacing-large;
 }
 
 .c-article-correspondence__back-to-article {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin-bottom: $article--vertical-spacing-medium;
 
 	&--link {
@@ -1781,7 +1781,7 @@
 
 	&__number {
 		display: block;
-		font-family: $font-family-sans;
+		font-family: $context--font-family-sans;
 		text-align: left;
 		vertical-align: middle;
 		margin: 12px 0 16px;
@@ -1827,7 +1827,7 @@
 }
 
 .c-reading-companion__heading {
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	font-size: map-get($article--font-sizes, 'font-size-3');
 	font-weight: bold;
 	padding: 0 $article--vertical-spacing-medium $article--vertical-spacing-small;
@@ -1945,7 +1945,7 @@
 
 .c-reading-companion__section-item {
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	padding: 0;
 
 	a {
@@ -2002,7 +2002,7 @@
 
 .c-reading-companion__reference-citation {
 	margin: 0;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 }
 
 .c-reading-companion__reference-links {
@@ -2021,7 +2021,7 @@
 
 .c-reading-companion__figure-title {
 	font-weight: bold;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	display: block;
 	margin: 0 0 $article--vertical-spacing-small;
 }
@@ -2072,7 +2072,7 @@
 	flex-wrap: wrap;
 	line-height: 1.3;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 }
 
 .c-article-metrics-bar__item {
@@ -2141,7 +2141,7 @@
 	border-radius: $article--cta-button-border-radius;
 	text-decoration: none;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	flex: 1;
 	padding: 13px 24px;
 }
@@ -2163,7 +2163,7 @@
 .c-article-identifiers {
 	@include u-list-reset;
 	font-size: map-get($article--font-sizes, 'font-size-3');
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 	line-height: 1.3;
 	display: flex;
 	flex-wrap: wrap;
@@ -2225,7 +2225,7 @@
 
 .c-article-associated-content__collection,
 .c-article-associated-content__item {
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	margin-bottom: $article--vertical-spacing-large;
 	overflow: hidden;
 }

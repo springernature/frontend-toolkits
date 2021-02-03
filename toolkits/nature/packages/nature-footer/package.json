@@ -1,9 +1,9 @@
 {
     "name": "@springernature/nature-footer",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "license": "MIT",
     "description": "Nature branded footer",
     "keywords": [],
     "author": "Springer Nature",
-    "brandContext": "^4.2.2"
+    "brandContext": "^9.0.1"
 }

@@ -1,7 +1,7 @@
 .js {
 	.c-popup {
 		position: absolute;
-		font-family: $font-family-serif;
+		font-family: $context--font-family-serif;
 		z-index: $popup--zindex;
 		padding: $popup--padding;
 		border: 1px solid $popup--border-color;

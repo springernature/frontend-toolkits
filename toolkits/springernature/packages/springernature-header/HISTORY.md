@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2021-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 0.3.2 (2020-11-25)
 	* Fix border colour, make example template more generic
 

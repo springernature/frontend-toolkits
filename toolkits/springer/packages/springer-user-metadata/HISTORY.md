@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0 (2021-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 4.1.1 (2020-12-15)
     * Bump package version to get changes from 4.1.0 
 

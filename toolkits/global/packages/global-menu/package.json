@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-menu",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Create common navigation patterns for list elements",
   "keywords": [],
   "author": "Springernature",
-  "brandContext": "^6.0.0"
+  "brandContext": "^9.0.1"
 }

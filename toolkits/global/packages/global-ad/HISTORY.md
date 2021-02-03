@@ -1,6 +1,10 @@
 # History
 
-## 1.1.l1 (2020-12-07)
+## 2.0.0 (2021-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
+## 1.1.1 (2020-12-07)
 	* Fixed typo with missing sibling selector
 
 ## 1.1.0 (2020-12-01)

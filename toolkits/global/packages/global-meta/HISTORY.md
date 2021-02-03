@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2021-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 1.4.0 (2021-02-02)
     * Add modifier to stack list items at `xl` breakpoint
 

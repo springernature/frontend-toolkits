@@ -15,7 +15,7 @@
 .c-article-metrics__body {
 	display: flex;
 	flex-wrap: wrap;
-	font-family: $font-family-sans;
+	font-family: $context--font-family-sans;
 }
 
 .c-article-metrics__section--left {
@@ -26,7 +26,7 @@
 	margin: 0;
 	padding: 0;
 
-	@include media-query('md', 'min') {	
+	@include media-query('md', 'min') {
 		flex-basis: 60%;
 	}
 
@@ -55,7 +55,7 @@
 .c-article-metrics__section--right {
 	flex-grow: 0;
 	flex-shrink: 1;
-	
+
 	@include media-query('md', 'min') {
 		flex-basis: 40%;
 	}
@@ -65,7 +65,7 @@
 	line-height: 1.4;
 	margin-bottom: $article--vertical-spacing-medium;
 	font-weight: $article-metrics-section-heading-font-weight;
-	font-family: $font-family-serif;
+	font-family: $context--font-family-serif;
 	border-bottom: 2px solid map-get($article--grey-palette, 'grey-1');
 }
 
@@ -177,7 +177,7 @@
 	}
 }
 
-.c-article-metrics__posts .c-card__title { 
+.c-article-metrics__posts .c-card__title {
 	font-size: map-get($article--font-sizes, 'font-size-4');
 
 	& + span {
@@ -185,7 +185,7 @@
 		font-size: map-get($article--font-sizes, 'font-size-3');
 	}
 
-	a {	
+	a {
 		color: inherit;
 	}
 }

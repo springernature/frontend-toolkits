@@ -1,5 +1,9 @@
 # History
 
+## 22.0.0 (2021-02-03)
+    * Bump `brand-context` version
+    * Update context variable references to use `context--` prefix
+
 ## 21.1.0 (2020-12-04)
     * Add article--font-family default setting and override for Nature
 

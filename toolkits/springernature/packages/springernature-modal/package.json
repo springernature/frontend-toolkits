@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springernature-modal",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "Springer Nature branded modal pop-up window",
   "keywords": [
@@ -8,5 +8,5 @@
     "pop-up"
   ],
   "author": "Springer Nature",
-  "brandContext": "^3.0.0"
+  "brandContext": "^9.0.1"
 }
