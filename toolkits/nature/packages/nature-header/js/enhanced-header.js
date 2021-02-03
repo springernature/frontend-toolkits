@@ -22,7 +22,6 @@ const enhancedHeader = () => {
 	const header = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
 		{attribute: 'role', value: 'button'},
-		{attribute: 'aria-pressed', value: 'false'},
 		{attribute: 'aria-expanded', value: 'false'}
 	];
 

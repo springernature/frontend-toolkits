@@ -50,10 +50,8 @@ describe('enhancedHeader', () => {
 		// Then
 		expect(element.button1.getAttribute('role')).toBe('button');
 		expect(element.button1.getAttribute('aria-expanded')).toBe('false');
-		expect(element.button1.getAttribute('aria-pressed')).toBe('false');
 		expect(element.button2.getAttribute('role')).toBe('button');
 		expect(element.button2.getAttribute('aria-expanded')).toBe('false');
-		expect(element.button2.getAttribute('aria-pressed')).toBe('false');
 	});
 
 	test('should append target after respective triggers', () => {
