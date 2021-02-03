@@ -38,5 +38,5 @@
 	@include _heading-base();
 	font-size: $context--font-size-h4;
 	margin-bottom: spacing(8);
-	font-family: $font-family-secondary;
+	font-family: $context--font-family-secondary;
 }
