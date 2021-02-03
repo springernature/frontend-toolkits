@@ -1,9 +1,12 @@
-$corporate-footer--font-family: $font-family-sans;
+/**
+ * @springernature/global-corporate-footer
+ * Springer skin settings
+ */
+
+// Default button setting
+@import 'default';
+
 $corporate-footer--background-color: greyscale(95);
 $corporate-footer--border: 1px solid greyscale(80);
-$corporate-footer--legal-padding-top: spacing(4);
 $corporate-footer--font-size: 1.6rem;
 $corporate-footer--text-color: greyscale(40);
-$corporate-footer--margin-bottom: spacing(0);
-$corporate-footer--padding-top: spacing(16);
-$corporate-footer--padding-bottom: spacing(24);

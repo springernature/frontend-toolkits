@@ -1,8 +1,8 @@
 {
   "name": "@springernature/global-corporate-footer",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "corporate footer",
   "license": "MIT",
   "author": "Springer Nature",
-  "brandContext": "^6.0.0"
+  "brandContext": "^9.0.1"
 }
