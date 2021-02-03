@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-banner",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "license": "MIT",
   "description": "Full width banner used for displaying informational messages",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^6.0.0"
+  "brandContext": "^9.0.1"
 }
