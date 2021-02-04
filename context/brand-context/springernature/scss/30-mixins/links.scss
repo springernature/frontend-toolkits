@@ -4,29 +4,29 @@
  */
 
 @mixin base-link {
-	color: $link-color;
+	color: $context--link-color;
 	text-decoration: underline;
 	text-decoration-skip-ink: auto;
 
 	&.visited,
 	&:visited {
-		color: $link-visited-color;
+		color: $context--link-visited-color;
 	}
 
 	&.hover,
 	&:hover {
-		color: $link-hover-color;
+		color: $context--link-hover-color;
 		text-decoration: none;
 	}
 
 	&.active,
 	&:active {
-		color: $link-active-color;
+		color: $context--link-active-color;
 	}
 
 	&.focus,
 	&:focus {
-		outline: spacing(4) solid $focus-color;
+		outline: spacing(4) solid $context--focus-color;
 	}
 }
 
@@ -52,7 +52,7 @@
  */
 
 @mixin link-text($font-size: 'medium') {
-	font-size: map-get($link-text-font-sizes, $font-size);
-	font-family: $font-family-sans;
-	line-height: $link-text-line-height;
+	font-size: map-get($context--link-text-font-sizes, $font-size);
+	font-family: $context--font-family-sans;
+	line-height: $context--link-text-line-height;
 }
