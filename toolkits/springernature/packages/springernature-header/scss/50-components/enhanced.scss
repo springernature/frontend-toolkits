@@ -20,7 +20,7 @@
 
 	.c-header__site-logo.with-journal-logo {
 		@include media-query('md') {
-			border-right: 2px solid map-get($colors, 'mineshaft');
+			border-right: 2px solid color('black');
 		}
 	}
 

@@ -3,14 +3,14 @@
 		height: 30px;
 
 		&__open {
-			@include arrow(map-get($colors, blue), down, 4px);
+			@include arrow(color('blue'), down, 4px);
 
 			margin-left: 10px;
 			right: 0;
-			color: map-get($colors, blue);
+			color: color('blue');
 
 			&.open {
-				@include arrow(map-get($colors, blue), up, 4px);
+				@include arrow(color('blue'), up, 4px);
 			}
 		}
 
@@ -20,7 +20,7 @@
 			height: auto;
 			padding: 5px 0;
 			text-align: left;
-			box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.3);
+			box-shadow: 1px 2px 1px 1px color('black', 0.3);
 		}
 
 		&__content-item {
@@ -32,8 +32,8 @@
 			padding: 7px 12px;
 
 			&:hover {
-				background-color: map-get($colors, 'gunmetal-blue');
-				color: #fff;
+				background-color: color('gunmetal-blue');
+				color: color('white');
 			}
 		}
 	}
