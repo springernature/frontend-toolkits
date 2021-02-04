@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-listing",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "description": "Display of scannable content typically within a list",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^9.0.1"
+  "brandContext": "^9.0.3"
 }

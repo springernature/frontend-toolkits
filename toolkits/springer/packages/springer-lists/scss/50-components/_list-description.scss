@@ -4,7 +4,7 @@
 	width: 100%; // fix text breaking layout in IE10
 
 	a {
-		@include interface-link;
+		@include u-link-interface;
 	}
 }
 
