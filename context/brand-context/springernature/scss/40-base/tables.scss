@@ -1,24 +1,24 @@
 table {
-	font-size: $table-font-size;
-	line-height: $table-line-height;
+	font-size: $context--table-font-size;
+	line-height: $context--table-line-height;
 	border-collapse: collapse;
-	border: $table-border;
+	border: $context--table-border;
 	width: 100%;
-	margin-bottom: $table-margin-bottom;
+	margin-bottom: $context--table-margin-bottom;
 }
 
 th,
 td {
-	padding: $table-cell-padding;
+	padding: $context--table-cell-padding;
 	vertical-align: top;
 }
 
 th {
 	text-align: left;
-	border-bottom: $table-header-border-bottom;
+	border-bottom: $context--table-header-border-bottom;
 }
 
 td {
-	font-family: $font-family-sans;
-	border-bottom: $table-row-border-bottom;
+	font-family: $context--font-family-sans;
+	border-bottom: $context--table-row-border-bottom;
 }

@@ -11,12 +11,12 @@ html {
 
 body {
 	min-height: 100%;
-	font-family: $font-family-serif;
-	font-size: $font-size-base;
-	line-height: $line-height-base;
-	color: $primary-text-color;
-	background: $page-background-color;
-	font-size: $font-size-base;
+	font-family: $context--font-family-serif;
+	font-size: $context--font-size-base;
+	line-height: $context--line-height-base;
+	color: $context--primary-text-color;
+	background: $context--page-background-color;
+	font-size: $context--font-size-base;
 	letter-spacing: 0.01em;
 }
 
