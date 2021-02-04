@@ -8,7 +8,7 @@
 @import 'default';
 
 // base
-$global-author-list--font-size: $font-size-md;
-$global-author-list--color: $primary-text-color;
-$global-author-list--line-height: $line-height-md;
-$global-author-list--font-family: $font-family-sans;
+$global-author-list--font-size: $context--font-size-md;
+$global-author-list--color: $context--primary-text-color;
+$global-author-list--line-height: $context--line-height-md;
+$global-author-list--font-family: $context--font-family-sans;

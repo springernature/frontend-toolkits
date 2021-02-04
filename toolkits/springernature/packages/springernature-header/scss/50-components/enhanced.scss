@@ -20,7 +20,7 @@
 
 	.c-header__site-logo.with-journal-logo {
 		@include media-query('tablet-wide-width') {
-			border-right: 2px solid map-get($context--colors, 'mineshaft');
+			border-right: 2px solid color('black');
 		}
 	}
 
