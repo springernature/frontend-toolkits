@@ -1,0 +1,14 @@
+/**
+ * @springernature/global-author-list
+ * SpringerNature skin settings
+ *
+ */
+
+// Default setting
+@import 'default';
+
+// base
+$global-author-list--font-size: $font-size-md;
+$global-author-list--color: $primary-text-color;
+$global-author-list--line-height: $line-height-md;
+$global-author-list--font-family: $font-family-sans;
