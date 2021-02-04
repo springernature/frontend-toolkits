@@ -7,7 +7,7 @@
 
 .u-button {
 	border: 4px solid transparent;
-	box-shadow: 0 0 0 1px $button--brand-color;
+	box-shadow: 0 0 0 1px $context--button-brand-color;
 
 	&:focus {
 		box-shadow: none;
@@ -26,7 +26,7 @@
 
 	&:hover {
 		box-shadow: none;
-		border: $button--border-width-style $button--brand-color;
+		border: $context--button-border-width-style $context--button-brand-color;
 	}
 }
 
