@@ -1,35 +1,35 @@
 @mixin from-tablet {
-	@include media-query('tablet-width', 'min', $breakpoints) {
+	@include media-query('tablet-width', 'min', $context--breakpoints) {
 		@content;
 	}
 }
 
 @mixin from-wide-tablet {
-	@include media-query('tablet-wide-width', 'min', $breakpoints) {
+	@include media-query('tablet-wide-width', 'min', $context--breakpoints) {
 		@content;
 	}
 }
 
 @mixin from-desktop {
-	@include media-query('desktop-width', 'min', $breakpoints) {
+	@include media-query('desktop-width', 'min', $context--breakpoints) {
 		@content;
 	}
 }
 
 @mixin from-wide-layout {
-	@include media-query('wide-layout', 'min', $breakpoints) {
+	@include media-query('wide-layout', 'min', $context--breakpoints) {
 		@content;
 	}
 }
 
 @mixin until-tablet {
-	@include media-query('tablet-width', 'max', $breakpoints) {
+	@include media-query('tablet-width', 'max', $context--breakpoints) {
 		@content;
 	}
 }
 
 @mixin until-desktop {
-	@include media-query('desktop-width', 'max', $breakpoints) {
+	@include media-query('desktop-width', 'max', $context--breakpoints) {
 		@content;
 	}
 }
