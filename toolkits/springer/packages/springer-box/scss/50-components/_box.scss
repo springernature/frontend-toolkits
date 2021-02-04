@@ -28,7 +28,7 @@
 .c-box__item {
 	@include u-text-interface;
 	@include unvisited-link;
-	@include interface-link;
+	@include u-link-interface;
 	display: block;
 	margin-bottom: $box--margin-bottom;
 }
