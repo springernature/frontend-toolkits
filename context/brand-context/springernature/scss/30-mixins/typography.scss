@@ -40,3 +40,25 @@
 	font-family: $context--font-family-sans;
 	line-height: unquote('min(max(#{$context--line-height-h5-min}, 4vw), #{$context--line-height-h5})');
 }
+
+@mixin u-small() {
+	font-size: $context--font-size-small;
+}
+
+@mixin u-meta-large() {
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
+	font-size: $context--font-size-h3;
+}
+
+@mixin u-meta-medium() {
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
+	font-size: $context--font-size-base;
+}
+
+@mixin u-meta-small() {
+	@include u-small();
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
+}
