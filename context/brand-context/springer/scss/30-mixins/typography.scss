@@ -24,7 +24,7 @@
 	line-height: $context--line-height-tight;
 
 	a {
-		@include interface-link;
+		@include u-link-interface;
 	}
 }
 

@@ -1,5 +1,8 @@
 # History
 
+## 9.0.4 (2021-02-04)
+    * Fix reference to old interface-link mixin
+
 ## 9.0.3 (2021-02-03)
     * Fix reference to old $page-base variable
 
