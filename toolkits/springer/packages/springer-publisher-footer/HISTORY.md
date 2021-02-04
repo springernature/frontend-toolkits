@@ -1,5 +1,9 @@
 # History
 
+## 4.0.1 (2021-02-04)
+    * Bump patch `brand-context` version
+    * Fix reference to old interface-link mixin
+
 ## 4.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix

@@ -60,6 +60,6 @@
 
 .c-publisher-footer__link {
 	@include u-text-furniture;
-	@include interface-link;
+	@include u-link-interface;
 	@include gray-link;
 }
