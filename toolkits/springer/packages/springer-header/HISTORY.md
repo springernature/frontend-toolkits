@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2021-02-04)
+    * Bump `brand-context` version
+    * Fix reference to old interface-link mixin
+
 ## 3.1.1 (2020-11-19)
     * Bump `brand-context` version
 
