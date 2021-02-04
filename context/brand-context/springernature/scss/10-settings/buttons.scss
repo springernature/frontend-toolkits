@@ -11,7 +11,7 @@ $context--button-font-size-normal: 1.4rem;
 $context--button-padding: 16px 32px;
 $context--button-padding-large: 10px 35px;
 $context--button-letter-spacing: 0.7px;
-$context--button-font-family: $font-family-sans;
+$context--button-font-family: $context--font-family-sans;
 $context--button-transition: all 0.2s;
 $context--button-brand-color: color('gunmetal-blue');
 
@@ -22,29 +22,29 @@ $context--button-brand-color: color('gunmetal-blue');
  */
 
 $context--button-default: (
-	'color': white,
+	'color': color('white'),
 	'backgroundColor': $context--button-brand-color,
 	'backgroundImage': none,
 	'border': $context--button-border-width-style $context--button-brand-color,
-	'visitedColor': white,
+	'visitedColor': color('white'),
 	'hoverColor': $context--button-brand-color,
-	'hoverBorder': $context--button-border-width-style white,
-	'hoverBackgroundColor': white,
+	'hoverBorder': $context--button-border-width-style color('white'),
+	'hoverBackgroundColor': color('white'),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorder': $context--button-border-width-style $focus-color,
+	'focusBorder': $context--button-border-width-style $context--focus-color,
 	'focusTextDecoration': none,
-	'fontWeight': bold,
+	'fontWeight': $context--font-weight-bold,
 );
 
 $context--button-primary: $context--button-default;
 
 $context--button-secondary: (
 	'color': $context--button-brand-color,
-	'border': $context--button-border-width-style white,
+	'border': $context--button-border-width-style color('white'),
 	'visitedColor': $context--button-brand-color,
-	'backgroundColor': white,
-	'hoverColor': white,
+	'backgroundColor': color('white'),
+	'hoverColor': color('white'),
 	'hoverBackgroundColor': $context--button-brand-color,
-	'fontWeight': bold,
+	'fontWeight': $context--font-weight-bold,
 );
