@@ -1,5 +1,8 @@
 # History
 
+## 1.0.1 (2021-02-03)
+   * Update media queries to use brand context settings rather than default
+
 ## 1.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
