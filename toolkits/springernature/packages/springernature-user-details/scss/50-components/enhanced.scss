@@ -32,7 +32,7 @@
 			padding: 7px 12px;
 
 			&:hover {
-				background-color: map-get($colors, midnight);
+				background-color: map-get($colors, 'gunmetal-blue');
 				color: #fff;
 			}
 		}
