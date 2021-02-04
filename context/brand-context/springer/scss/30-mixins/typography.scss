@@ -5,7 +5,7 @@
 
 @mixin u-text-furniture {
 	font-family: $context--font-family-sans;
-	font-size: $font-size-furniture;
+	font-size: $context--font-size-furniture;
 }
 
 @mixin u-text-right {

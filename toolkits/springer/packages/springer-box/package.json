@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-box",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "license": "MIT",
   "description": "Springer box component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^6.0.0"
+  "brandContext": "^9.0.2"
 }

@@ -8,8 +8,7 @@ import {Expander} from '@springernature/global-expander/js/expander';
 const DATA_COMPONENT = 'data-header-expander';
 
 const classNames = {
-	TETHERED: 'has-tethered',
-	JSHIDE: 'u-js-hide'
+	TETHERED: 'has-tethered'
 };
 
 const selectors = {
@@ -21,9 +20,7 @@ const enhancedHeader = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
 	const header = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
-		{attribute: 'role', value: 'button'},
-		{attribute: 'aria-pressed', value: 'false'},
-		{attribute: 'aria-expanded', value: 'false'}
+		{attribute: 'role', value: 'button'}
 	];
 
 	if (triggers.length === 0 || !header) {
@@ -43,7 +40,6 @@ const enhancedHeader = () => {
 		}
 
 		trigger.insertAdjacentElement('afterend', targetElement);
-		targetElement.classList.add(classNames.JSHIDE);
 		targetElement.classList.add(classNames.TETHERED);
 
 		const expander = new Expander(trigger, targetElement);
