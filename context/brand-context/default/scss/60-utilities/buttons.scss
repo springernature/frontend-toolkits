@@ -19,6 +19,10 @@
 	@include button-secondary
 }
 
+.u-button--contrast {
+	@include button-contrast
+}
+
 .u-button--ghost {
 	@include button-ghost
 }

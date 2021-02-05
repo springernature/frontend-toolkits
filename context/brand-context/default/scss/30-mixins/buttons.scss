@@ -18,6 +18,12 @@
 	}
 }
 
+@mixin button-contrast {
+	@if variable-exists('context--button-contrast') {
+		@include button-theme($context--button-contrast);
+	}
+}
+
 @mixin button-ghost {
 	@if variable-exists('context--button-ghost') {
 		@include button-theme($context--button-ghost);
