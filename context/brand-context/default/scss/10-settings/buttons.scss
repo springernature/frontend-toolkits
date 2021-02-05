@@ -56,11 +56,11 @@ $context--button-primary: (
 );
 
 $context--button-contrast: (
-	'color': greyscale(),
+	'color': white,
 	'backgroundColor': transparent,
 	'backgroundImage': none,
 	'border': $context--button-border-width-style white,
-	'visitedColor': greyscale(),
+	'visitedColor': white,
 	'hoverColor': greyscale(),
 	'hoverBorder': $context--button-border-width-style white,
 	'hoverBackgroundColor': white,
