@@ -1,5 +1,8 @@
 # History
 
+## 9.1.0 (2021-02-05)
+    * Adds button-contrast to default context
+
 ## 9.0.6 (2021-02-05)
     * Fix button variable name from prevous version
 
