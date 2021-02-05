@@ -1,5 +1,8 @@
 # History
 
+## 9.0.5 (2021-02-05)
+    * Fix variable-exists calls for button
+
 ## 9.0.4 (2021-02-04)
     * Fix reference to old interface-link mixin
 
