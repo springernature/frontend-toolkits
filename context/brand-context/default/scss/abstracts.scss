@@ -4,16 +4,18 @@
  * These files don’t output any CSS when compiled
  */
 
+// These settings must come first, as other settings can reference them
 @import '10-settings/breakpoints';
 @import '10-settings/colors/default';
 @import '10-settings/colors/shared';
 @import '10-settings/spacing';
-@import '10-settings/buttons'; // needs to appear after spacing
-@import '10-settings/container'; // needs to appear after spacing
+@import '10-settings/typography';
+
+@import '10-settings/buttons';
+@import '10-settings/container';
 @import '10-settings/keyframes';
 @import '10-settings/layers';
 @import '10-settings/style';
-@import '10-settings/typography';
 
 @import '20-functions/colors';
 @import '20-functions/helpers';

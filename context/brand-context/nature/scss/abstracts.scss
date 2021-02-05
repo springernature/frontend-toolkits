@@ -4,11 +4,13 @@
  * These files don’t output any CSS when compiled
  */
 
-@import '10-settings/buttons';
+// These settings must come first, as other settings can reference them
 @import '10-settings/colors/default';
+@import '10-settings/typography';
+
+@import '10-settings/buttons';
 @import '10-settings/keyframes';
 @import '10-settings/style';
-@import '10-settings/typography';
 @import '10-settings/global'; // temp, will be removed eventually
 
 @import '30-mixins/typography';
