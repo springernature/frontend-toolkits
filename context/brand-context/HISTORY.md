@@ -1,5 +1,9 @@
 # History
 
+## 9.1.1 (2021-02-05)
+    * Changes the order of abstract imports to ensure dependency settings come first
+      - This fixes a bug where buttons were not using the overriden $context--colors.
+
 ## 9.1.0 (2021-02-05)
     * Adds button-contrast to default context
 
