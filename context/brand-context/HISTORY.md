@@ -1,5 +1,8 @@
 # History
 
+## 9.0.6 (2021-02-05)
+    * Fix button variable name from prevous version
+
 ## 9.0.5 (2021-02-05)
     * Fix variable-exists calls for button
 
