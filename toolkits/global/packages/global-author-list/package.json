@@ -5,5 +5,5 @@
   "description": "Display a styled list of authors with comma separation",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^6.0.0"
+  "brandContext": "^10.0.0"
 }
