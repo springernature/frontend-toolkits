@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2021-02-08)
+    * BREAKING: switch to use new `brand-context` dependency
+    * Update colours keys
+
 ## 1.3.4 (2020-12-08)
 	* Update readme and template
 
