@@ -7,25 +7,31 @@
 // Button themes
 
 @mixin button-primary {
-	@if variable-exists('button--primary') {
+	@if variable-exists('context--button-primary') {
 		@include button-theme($context--button-primary);
 	}
 }
 
 @mixin button-secondary {
-	@if variable-exists('button--secondary') {
+	@if variable-exists('context--button-secondary') {
 		@include button-theme($context--button-secondary);
 	}
 }
 
+@mixin button-contrast {
+	@if variable-exists('context--button-contrast') {
+		@include button-theme($context--button-contrast);
+	}
+}
+
 @mixin button-ghost {
-	@if variable-exists('button--ghost') {
+	@if variable-exists('context--button-ghost') {
 		@include button-theme($context--button-ghost);
 	}
 }
 
 @mixin button-disabled {
-	@if variable-exists('button--disabled') {
+	@if variable-exists('context--button-disabled') {
 		@include button-theme($context--button-disabled);
 	}
 }

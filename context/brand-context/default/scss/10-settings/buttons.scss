@@ -55,6 +55,20 @@ $context--button-primary: (
 	'fontWeight': normal,
 );
 
+$context--button-contrast: (
+	'color': white,
+	'backgroundColor': transparent,
+	'backgroundImage': none,
+	'border': $context--button-border-width-style white,
+	'visitedColor': white,
+	'hoverColor': greyscale(),
+	'hoverBorder': $context--button-border-width-style white,
+	'hoverBackgroundColor': white,
+	'hoverBackgroundImage': none,
+	'focusBorder': $context--button-border-width-style white,
+	'fontWeight': normal,
+);
+
 $context--button-disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
