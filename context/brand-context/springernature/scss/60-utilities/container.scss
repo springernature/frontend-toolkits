@@ -1,7 +1,0 @@
-.u-container {
-	@include u-container();
-	background-color: $context--container-background-color;
-	border: 1px solid $context--container-border-color;
-	box-shadow: $context--container-box-shadow;
-	padding: 0 spacing(16);
-}
