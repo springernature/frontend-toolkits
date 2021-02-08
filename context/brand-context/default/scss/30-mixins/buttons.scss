@@ -40,6 +40,7 @@
 
 @mixin button-small {
 	font-size: $context--button-font-size-small;
+	padding: $context--button-padding-small;
 }
 
 @mixin button-large {
