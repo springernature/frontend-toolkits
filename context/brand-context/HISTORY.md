@@ -11,9 +11,7 @@
         * Update keys and/or values into Springernature colours and breakpoints maps
         * Update Springernature base layer for layout, links
         * Add Springernature base layer for tables
-        * Add Springernature buttons utilities
         * Add Springernature link-text utilities
-        * Add more default brand settings to buttons and container
 
 ## 9.1.1 (2021-02-05)
     * Changes the order of abstract imports to ensure dependency settings come first
