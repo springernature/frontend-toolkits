@@ -16,7 +16,7 @@ $context--button-font-size-normal: 1.6rem;
 $context--button-font-size-large: 1.8rem;
 $context--button-icon-margin: spacing(8);
 $context--button-padding: spacing(8);
-$context--button-padding-small: 0;
+$context--button-padding-small: inherit;
 $context--button-padding-large: spacing(16);
 $context--button-justify-content: center;
 $context--button-transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
