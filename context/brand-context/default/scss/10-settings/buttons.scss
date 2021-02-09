@@ -31,14 +31,18 @@ $context--button-default: (
 	'backgroundColor': greyscale(95),
 	'backgroundImage': none,
 	'border': $context--button-border-width-style greyscale(80),
+	'boxShadow': inherit,
 	'visitedColor': darkblue,
 	'hoverColor': white,
 	'hoverBorder': $context--button-border-width-style greyscale(40),
+	'hoverBoxShadow': inherit,
 	'hoverBackgroundColor': greyscale(40),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $context--button-border-width-style greyscale(40),
 	'focusTextDecoration': none,
+	'focusBoxShadow': inherit,
+	'focusOutline': inherit,
 	'fontWeight': normal,
 );
 
