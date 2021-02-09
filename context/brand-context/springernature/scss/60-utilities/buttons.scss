@@ -17,10 +17,6 @@
 
 // Button themes
 
-.u-button--primary {
-	@include button-primary
-}
-
 .u-button--secondary {
 	@include button-secondary;
 
