@@ -1,17 +1,20 @@
 
- /**
+/**
  *  @springernature/global-button
  *  Button settings
  *
  */
 
-$context--button-border-radius: 26px;
+$context--button-border-radius: 32px;
+$context--button-border-width-style: 4px solid;
 $context--button-font-size-normal: 1.4rem;
-$context--button-padding: 10px 35px;
+$context--button-padding: 16px 32px;
+$context--button-padding-small: 8px 16px;
 $context--button-padding-large: 10px 35px;
 $context--button-letter-spacing: 0.7px;
 $context--button-font-family: $context--font-family-sans;
-$context--button-transition: background-color 0.2s;
+$context--button-transition: all 0.2s;
+$context--button-brand-color: color('gunmetal-blue');
 
 /**
  * Button Themes
@@ -20,28 +23,35 @@ $context--button-transition: background-color 0.2s;
  */
 
 $context--button-default: (
-	'color': white,
-	'backgroundColor': color('midnight'),
+	'color': color('white'),
+	'backgroundColor': $context--button-brand-color,
 	'backgroundImage': none,
-	'border': $context--button-border-width-style color('midnight'),
-	'visitedColor': white,
-	'hoverColor': color('midnight'),
-	'hoverBorder': $context--button-border-width-style color('midnight'),
-	'hoverBackgroundColor': white,
+	'border': $context--button-border-width-style transparent,
+	'boxShadow': 0 0 0 1px $context--button-brand-color,
+	'visitedColor': color('white'),
+	'hoverColor': $context--button-brand-color,
+	'hoverBorder': $context--button-border-width-style color('white'),
+	'hoverBoxShadow': inherit,
+	'hoverBackgroundColor': color('white'),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorder': $context--button-border-width-style color('midnight'),
+	'focusBorder': $context--button-border-width-style $context--focus-color,
 	'focusTextDecoration': none,
-	'fontWeight': bold,
+	'focusBoxShadow': none,
+	'focusOutline': none,
+	'fontWeight': $context--font-weight-bold,
 );
 
 $context--button-primary: $context--button-default;
 
 $context--button-secondary: (
-	'color': color('midnight'),
-	'visitedColor': color('midnight'),
-	'backgroundColor': white,
-	'hoverColor': white,
-	'hoverBackgroundColor': color('midnight'),
-	'fontWeight': normal,
+	'color': $context--button-brand-color,
+	'border': $context--button-border-width-style color('white'),
+	'visitedColor': $context--button-brand-color,
+	'backgroundColor': color('white'),
+	'hoverColor': color('white'),
+	'hoverBorder': $context--button-border-width-style $context--button-brand-color,
+	'hoverBoxShadow': none,
+	'hoverBackgroundColor': $context--button-brand-color,
+	'fontWeight': $context--font-weight-bold,
 );

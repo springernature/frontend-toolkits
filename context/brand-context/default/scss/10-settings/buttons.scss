@@ -16,6 +16,7 @@ $context--button-font-size-normal: 1.6rem;
 $context--button-font-size-large: 1.8rem;
 $context--button-icon-margin: spacing(8);
 $context--button-padding: spacing(8);
+$context--button-padding-small: inherit;
 $context--button-padding-large: spacing(16);
 $context--button-justify-content: center;
 $context--button-transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
@@ -30,14 +31,18 @@ $context--button-default: (
 	'backgroundColor': greyscale(95),
 	'backgroundImage': none,
 	'border': $context--button-border-width-style greyscale(80),
+	'boxShadow': inherit,
 	'visitedColor': darkblue,
 	'hoverColor': white,
 	'hoverBorder': $context--button-border-width-style greyscale(40),
+	'hoverBoxShadow': inherit,
 	'hoverBackgroundColor': greyscale(40),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
 	'focusBorder': $context--button-border-width-style greyscale(40),
 	'focusTextDecoration': none,
+	'focusBoxShadow': inherit,
+	'focusOutline': inherit,
 	'fontWeight': normal,
 );
 

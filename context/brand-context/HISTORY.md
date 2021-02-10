@@ -1,5 +1,18 @@
 # History
 
+## 10.0.0 (2021-02-08)
+
+    * BREAKING:
+        * Add more default brand settings to buttons and container
+        * Use these new default brand settings on corresponding mixins
+        * Update Springernature settings for buttons, container, links, tables
+        and typography
+        * Update Springernature mixins for links, media-query and typography
+        * Update keys and/or values into Springernature colours and breakpoints maps
+        * Update Springernature base layer for layout, links
+        * Add Springernature base layer for tables
+        * Add Springernature link-text utilities
+
 ## 9.1.1 (2021-02-05)
     * Changes the order of abstract imports to ensure dependency settings come first
       - This fixes a bug where buttons were not using the overriden $context--colors.

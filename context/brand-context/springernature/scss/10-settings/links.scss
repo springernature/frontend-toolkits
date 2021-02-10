@@ -1,0 +1,10 @@
+$context--link-color: color('blue');
+$context--link-hover-color: color('blue-light');
+$context--link-visited-color: color('purple');
+$context--link-active-color: color('black');
+
+$context--link-text-font-sizes: (
+	'medium': $context--font-size-md,
+	'large': $context--font-size-lg
+);
+$context--link-text-line-height: 2.4rem;
