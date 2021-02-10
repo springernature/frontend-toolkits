@@ -124,7 +124,7 @@
 	&:focus {
 		border: map-get($theme, 'focusBorder');
 		box-shadow: map-get($theme, 'focusBoxShadow');
-		outline: map-get($theme, 'focusOuline');
+		outline: map-get($theme, 'focusOutline');
 		text-decoration: map-get($theme, 'focusTextDecoration');
 	}
 
@@ -144,4 +144,3 @@
 		cursor: default;
 	}
 }
-
