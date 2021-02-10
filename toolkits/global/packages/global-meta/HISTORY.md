@@ -1,5 +1,10 @@
 # History
 
+## 3.0.0 (2021-02-08)
+    * BREAKING: switch to use new `brand-context` dependency
+    * Add Springernature branding
+
+
 ## 2.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix

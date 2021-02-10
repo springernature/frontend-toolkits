@@ -33,11 +33,11 @@
 }
 
 .c-header__journal-title {
-	@include media-query('tablet-vertical') {
+	@include media-query('tablet-wide-width') {
 		font-size: 2.2rem;
 	}
 
-	@include media-query('tablet') {
+	@include media-query('desktop-width') {
 		font-size: 2.7rem;
 	}
 
@@ -45,9 +45,9 @@
 	line-height: 4.6rem;
 	font-size: 2rem;
 	font-size: 1.5rem;
-	color: color('mineshaft');
+	color: color('black');
+}
 
-	&.hide {
-		display: none;
-	}
+.c-header__journal-title--hide {
+	display: none;
 }

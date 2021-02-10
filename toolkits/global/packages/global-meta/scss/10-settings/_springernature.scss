@@ -1,0 +1,13 @@
+/**
+ * Meta
+ * Springer Nature branding for component
+ */
+
+// Default setting
+@import 'default';
+
+$meta--font-size: $context--font-size-md;
+$meta--font-family: $context--font-family-sans;
+$meta--line-height: $context--line-height-md;
+$meta--color: color('grey-dark2');
+$meta--text-transform: none;

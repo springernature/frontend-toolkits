@@ -4,7 +4,7 @@
 		display: flex;
 		justify-content: space-between;
 
-		@include media-query('tablet') {
+		@include media-query('desktop-width') {
 			width: calc(100% - 64px);
 			margin-left: 32px;
 		}
@@ -19,8 +19,8 @@
 	}
 
 	.c-header__site-logo.with-journal-logo {
-		@include media-query('tablet-vertical') {
-			border-right: 2px solid map-get($context--colors, mineshaft);
+		@include media-query('tablet-wide-width') {
+			border-right: 2px solid color('black');
 		}
 	}
 
@@ -34,7 +34,7 @@
 		flex-basis: 60%;
 		flex-wrap: wrap;
 
-		@include media-query('tablet-vertical') {
+		@include media-query('tablet-wide-width') {
 			flex-basis: 70%;
 		}
 	}

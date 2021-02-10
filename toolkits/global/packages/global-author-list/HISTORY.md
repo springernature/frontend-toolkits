@@ -1,5 +1,11 @@
 # History
 
+## 3.0.0 (2021-02-08)
+
+    * BREAKING: switch to use new `brand-context` dependency
+    * Introduce new settings for line-height and font-family
+    * Add settings layer for Springernature brand
+
 ## 2.1.0 (2021-01-26)
     * Adds Nature skin settings with greyscale color
 

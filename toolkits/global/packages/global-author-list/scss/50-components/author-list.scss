@@ -1,7 +1,9 @@
 .c-author-list {
 	@include u-list-comma-separated;
 	font-size: $global-author-list--font-size;
+	font-family: $global-author-list--font-family;
 	color: $global-author-list--color;
+	line-height: $global-author-list--line-height;
 }
 
 .c-author-list--compact {
