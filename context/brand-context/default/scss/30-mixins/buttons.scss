@@ -40,6 +40,7 @@
 
 @mixin button-small {
 	font-size: $context--button-font-size-small;
+	padding: $context--button-padding-small;
 }
 
 @mixin button-large {
@@ -107,6 +108,7 @@
 	background-color: map-get($theme, 'backgroundColor');
 	background-image: map-get($theme, 'backgroundImage');
 	border: map-get($theme, 'border');
+	box-shadow: map-get($theme, 'boxShadow');
 	font-weight: map-get($theme, 'fontWeight');
 
 	&:visited {
@@ -115,11 +117,14 @@
 
 	&:hover {
 		border: map-get($theme, 'hoverBorder');
+		box-shadow: map-get($theme, 'hoverBoxShadow');
 		text-decoration: map-get($theme, 'hoverTextDecoration');
 	}
 
 	&:focus {
 		border: map-get($theme, 'focusBorder');
+		box-shadow: map-get($theme, 'focusBoxShadow');
+		outline: map-get($theme, 'focusOutline');
 		text-decoration: map-get($theme, 'focusTextDecoration');
 	}
 
@@ -139,4 +144,3 @@
 		cursor: default;
 	}
 }
-

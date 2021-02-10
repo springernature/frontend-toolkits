@@ -1,0 +1,24 @@
+table {
+	font-size: $context--table-font-size;
+	line-height: $context--table-line-height;
+	border-collapse: collapse;
+	border: $context--table-border;
+	width: 100%;
+	margin-bottom: $context--table-margin-bottom;
+}
+
+th,
+td {
+	padding: $context--table-cell-padding;
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	border-bottom: $context--table-header-border-bottom;
+}
+
+td {
+	font-family: $context--font-family-sans;
+	border-bottom: $context--table-row-border-bottom;
+}

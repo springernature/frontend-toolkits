@@ -1,0 +1,41 @@
+/**
+ * Default link style
+ *
+ */
+
+@mixin base-link {
+	color: $context--link-color;
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+
+	&.visited,
+	&:visited {
+		color: $context--link-visited-color;
+	}
+
+	&.hover,
+	&:hover {
+		color: $context--link-hover-color;
+		text-decoration: none;
+	}
+
+	&.active,
+	&:active {
+		color: $context--link-active-color;
+	}
+
+	&.focus,
+	&:focus {
+		outline: spacing(4) solid $context--focus-color;
+	}
+}
+
+/**
+ * Link Text
+ */
+
+@mixin link-text($font-size: 'medium') {
+	font-size: map-get($context--link-text-font-sizes, $font-size);
+	font-family: $context--font-family-sans;
+	line-height: $context--link-text-line-height;
+}

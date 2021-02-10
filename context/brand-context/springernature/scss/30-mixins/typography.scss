@@ -1,64 +1,64 @@
-
 // Headings
 
 @mixin u-h1() {
-	font-weight: lighter;
+	font-weight: $context--font-weight-light;
 	font-size: $context--font-size-h1;
-	margin-bottom: spacing(48);
+	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
+	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-  line-height: 1.2;
+	line-height: unquote('min(max(#{$context--line-height-h1-min}, 4vw), #{$context--line-height-h1})');
 }
 
 @mixin u-h2() {
-	font-weight: lighter;
-	font-size: $context--font-size-h2;
-	margin-bottom:  spacing(32);
+	font-weight: $context--font-weight-normal;
+	font-size: unquote('min(max(#{$context--font-size-h2-min}, 4vw), #{$context--font-size-h2})');
+	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-  line-height: $context--heading-line-height;
+	line-height: unquote('min(max(#{$context--line-height-h2-min}, 4vw), #{$context--line-height-h2})');
 }
 
 @mixin u-h3() {
-	font-weight: bold;
-	font-size: $context--font-size-h3;
-	margin-bottom: spacing(24);
+	font-weight: $context--font-weight-bold;
+	font-size: unquote('min(max(#{$context--font-size-h3-min}, 4vw), #{$context--font-size-h3})');
+	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-  line-height: $context--heading-line-height;
+	line-height: unquote('min(max(#{$context--line-height-h3-min}, 4vw), #{$context--line-height-h3})');
 }
 
 @mixin u-h4() {
-	font-weight: normal;
-	font-size: $context--font-size-h3;
+	font-weight: $context--font-weight-bold;
+	font-size: unquote('min(max(#{$context--font-size-h4-min}, 4vw), #{$context--font-size-h4})');
 	margin-bottom: spacing(16);
-	font-family: $context--font-family-serif;
-  line-height: $context--heading-line-height;
+	font-family: $context--font-family-sans;
+	line-height: unquote('min(max(#{$context--line-height-h4-min}, 4vw), #{$context--line-height-h4})');
 }
 
 @mixin u-h5() {
-	font-weight: bold;
-	font-size: $context--font-size-base;
+	font-weight: $context--font-weight-bold;
+	font-size: unquote('min(max(#{$context--font-size-h5-min}, 4vw), #{$context--font-size-h5})');
 	margin-bottom: spacing(16);
-	font-family: $context--font-family-serif;
-  line-height: 1.2;
+	font-family: $context--font-family-sans;
+	line-height: unquote('min(max(#{$context--line-height-h5-min}, 4vw), #{$context--line-height-h5})');
 }
 
 @mixin u-small() {
-  font-size: $context--font-size-small;
+	font-size: $context--font-size-small;
 }
 
 @mixin u-meta-large() {
-	font-weight: normal;
-  font-family: $context--font-family-sans;
-  font-size: $context--font-size-h3;
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
+	font-size: $context--font-size-h3;
 }
 
 @mixin u-meta-medium() {
-	font-weight: normal;
-  font-family: $context--font-family-sans;
-  font-size: $context--font-size-base;
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
+	font-size: $context--font-size-base;
 }
 
 @mixin u-meta-small() {
-  @include u-small();
-	font-weight: normal;
-  font-family: $context--font-family-sans;
+	@include u-small();
+	font-weight: $context--font-weight-normal;
+	font-family: $context--font-family-sans;
 }
