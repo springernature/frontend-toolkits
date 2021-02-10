@@ -46,8 +46,8 @@
 	font-size: 2rem;
 	font-size: 1.5rem;
 	color: color('black');
+}
 
-	&.hide {
-		display: none;
-	}
+.c-header__journal-title--hide {
+	display: none;
 }

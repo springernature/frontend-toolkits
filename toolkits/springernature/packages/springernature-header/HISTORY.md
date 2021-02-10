@@ -1,8 +1,9 @@
 # History
 
-## 2.0.0 (2021-02-08)
+## 2.0.0 (2021-02-10)
     * BREAKING: switch to use new `brand-context` dependency
     * Update breakpoints and colours keys
+    * Rename `.hide` class to `.c-header__journal-title--hide`
 
 ## 1.0.2 (2021-02-04)
    * Update color map variable
