@@ -2,11 +2,13 @@
 
 ## Branding
 
-The `global-breadcrumbs` component currently uses the `DEFAULT` and `NATURE` brand only.
+To include `global-breadcrumbs` in your application, you need to choose ONE brand from those available. The DEFAULT brand is included in all other brands, and any settings that are not configured will fall back to default.
 
 ```scss
-// Include this with your settings
+// Pick ONE of the brands below to include
 @import '@springernature/global-breadcrumbs/scss/10-settings/default';
+@import '@springernature/global-breadcrumbs/scss/10-settings/nature';
+@import '@springernature/global-breadcrumbs/scss/10-settings/springernature';
 
 // Include this with your other components
 @import '@springernature/global-breadcrumbs/scss/50-components/breadcrumbs';

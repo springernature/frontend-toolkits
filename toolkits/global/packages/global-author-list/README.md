@@ -11,6 +11,8 @@ To include `global-author-list` in your application, you need to choose **ONE** 
 // Pick ONE of the brands below to include
 @import '@springernature/global-author-list/scss/10-settings/default';
 @import '@springernature/global-author-list/scss/10-settings/springer';
+@import '@springernature/global-author-list/scss/10-settings/nature';
+@import '@springernature/global-author-list/scss/10-settings/springernature';
 
 // Include this with your other components
 @import '@springernature/global-author-list/scss/50-components/author-list';
