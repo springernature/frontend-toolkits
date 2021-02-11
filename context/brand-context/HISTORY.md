@@ -1,5 +1,8 @@
 # History
 
+## 10.0.1 (2021-02-11)
+    * Fix button box-shadow on hover for Springernature brand
+
 ## 10.0.0 (2021-02-08)
 
     * BREAKING:
