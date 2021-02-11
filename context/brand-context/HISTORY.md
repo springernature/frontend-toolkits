@@ -1,5 +1,8 @@
 # History
 
+## 10.0.1 (2021-02-11)
+   * corrects font size variable in typography mixin
+
 ## 10.0.0 (2021-02-08)
 
     * BREAKING:
@@ -39,7 +42,7 @@
     * Fix reference to old $open-access-color variable in colors utility
 
 ## 9.0.0 (2021-02-01)
-    * BREAKING: 
+    * BREAKING:
         * Updates context variables to consistently use the `context--` prefix
         * Removes RFS from brand-context
         * Replaces font-size mixin with static value
@@ -48,7 +51,7 @@
         * Move `interface-link` mixin from Springer to Default and rename `u-link-interface`
 
 ## 8.0.2 (2021-01-27)
-    * Removes 'is-nature-branded' conditional for heading font sizes as the else condition is for legacy design 
+    * Removes 'is-nature-branded' conditional for heading font sizes as the else condition is for legacy design
 
 ## 8.0.1 (2021-01-14)
     * Removes important from the hiding utility mixin as not needed anymore
@@ -60,7 +63,7 @@
     * BREAKING: font-weight utilities moved from SPRINGER to DEFAULT context
 
 ## 6.3.0 (2020-12-11)
-    * Adds !important to utlities that hide content to prevent selector specificity trumping hide utlity classnames 
+    * Adds !important to utlities that hide content to prevent selector specificity trumping hide utlity classnames
 
 ## 6.2.0 (2020-12-11)
     * Adds media-query hiding utilities
