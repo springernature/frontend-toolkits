@@ -34,8 +34,8 @@
 .c-card__title {
 	@include u-h3;
 	@if $card--title-font-weight != null {
-      font-weight: $card--title-font-weight;
-    }
+		font-weight: $card--title-font-weight;
+	}
 	margin-bottom: $card--spacing;
 }
 
