@@ -346,6 +346,24 @@ describe('Expander', () => {
 			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
+		test('Should close when tab from last visible tabbable item', done => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET, {AUTOFOCUS: 'target'});
+			expander.init();
+			element.LASTTABBABLE.style.visibility = 'hidden';
+			element.BUTTON.click();
+			// When
+			const keydownTabEvent = createKeydownEvent('Tab');
+			element.FIRSTTABBABLE.dispatchEvent(keydownTabEvent);
+			// Then
+			window.requestAnimationFrame(() => {
+				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				expect(element.TARGET.hasAttribute('hidden')).toBe(true);
+				done();
+			});
+		});
+
 		test('Should close and set focus on trigger when tab out of the target', done => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
