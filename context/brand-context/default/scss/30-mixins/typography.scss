@@ -26,3 +26,25 @@
 	font-size: $context--font-size-interface;
 	line-height: $context--line-height-tight;
 }
+
+// Headings
+
+@mixin u-h1() {
+	font-size: $context--font-size-h1;
+	font-weight: $context--font-weight-bold;
+}
+
+@mixin u-h2() {
+	font-size: $context--font-size-h2;
+	font-weight: $context--font-weight-bold;
+}
+
+@mixin u-h3() {
+	font-size: $context--font-size-h3;
+	font-weight: $context--font-weight-bold;
+}
+
+@mixin u-h4() {
+	font-size: $context--font-size-h4;
+	font-weight: $context--font-weight-bold;
+}
