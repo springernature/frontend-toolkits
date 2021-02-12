@@ -1,10 +1,12 @@
 # History
 
+## 10.0.2 (2021-02-12)
+    * Fix button box-shadow on hover for Springernature brand
+
 ## 10.0.1 (2021-02-11)
-   * corrects font size variable in typography mixin
+    * Corrects font size variable in typography mixin
 
 ## 10.0.0 (2021-02-08)
-
     * BREAKING:
         * Add more default brand settings to buttons and container
         * Use these new default brand settings on corresponding mixins

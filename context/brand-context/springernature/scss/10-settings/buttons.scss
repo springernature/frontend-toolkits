@@ -31,7 +31,7 @@ $context--button-default: (
 	'visitedColor': color('white'),
 	'hoverColor': $context--button-brand-color,
 	'hoverBorder': $context--button-border-width-style color('white'),
-	'hoverBoxShadow': inherit,
+	'hoverBoxShadow': 0 0 0 1px $context--button-brand-color,
 	'hoverBackgroundColor': color('white'),
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
