@@ -70,17 +70,17 @@
 }
 
 .u-h1 {
-	font-size: $context--font-size-h1;
+	@include u-h1();
 }
 
 .u-h2 {
-	font-size: $context--font-size-h2;
+	@include u-h2();
 }
 
 .u-h3 {
-	font-size: $context--font-size-h3;
+	@include u-h3();
 }
 
 .u-h4 {
-	font-size: $context--font-size-h4;
+	@include u-h4();
 }
