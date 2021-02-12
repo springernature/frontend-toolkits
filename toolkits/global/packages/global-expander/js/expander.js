@@ -20,9 +20,6 @@ const Expander = class {
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
-		this._targetTabbableItems = makeArray(target.querySelectorAll(
-			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-		));
 		this._isOpen = false;
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
@@ -155,6 +152,16 @@ const Expander = class {
 	}
 
 	/**
+	 * Tabbable Items
+	 */
+
+	_updateTabbableItems() {
+		this._targetTabbableItems = makeArray(this._targetEl.querySelectorAll(
+			'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+		)).filter(element => window.getComputedStyle(element).getPropertyValue('visibility') !== 'hidden');
+	}
+
+	/**
 	 * AutoFocus
 	 */
 
@@ -190,6 +197,7 @@ const Expander = class {
 		this._updateTriggerLabel();
 		this._updateAttributes();
 		this._updateClassAttributes();
+		this._updateTabbableItems();
 
 		this._setupTemporaryEventListeners();
 		this._handleAutoFocus();
