@@ -73,7 +73,7 @@ const Expander = class {
 				}
 			}
 
-			if (event.key === 'Tab') {
+			if (event.key === 'Tab' && event.shiftKey === false) {
 				if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
 					event.preventDefault();
 					window.requestAnimationFrame(() => {
