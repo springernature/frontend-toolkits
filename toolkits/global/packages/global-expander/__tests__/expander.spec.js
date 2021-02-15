@@ -33,6 +33,7 @@ const createKeydownEvent = key => {
 			break;
 		case 'Tab':
 			event.key = 'Tab';
+			event.shiftKey = false;
 			break;
 		default:
 			throw new Error('key should be "Enter", " " (Space), "Spacebar", "Escape" or "Tab"');
@@ -47,14 +48,17 @@ describe('Expander', () => {
 	beforeEach(() => {
 		document.body.innerHTML = `
 			<button data-expander data-expander-target="#unique">Expander</button>
-			<div id="unique" class=${className.HIDE}>
-				<a href="#">Tabbable element</a>
+			<div id="unique" class=${className.HIDE} hidden>
+				<a href="#">First tabbable element</a>
+				<a href="#">Last tabbable element</a>
 			</div>
 		`;
 
 		element.BUTTON = document.querySelector('button');
 		element.TARGET = document.querySelector('div');
-		element.FIRSTTABBABLE = document.querySelector('a');
+		element.TABBABLES = document.querySelector('#unique').children;
+		element.FIRSTTABBABLE = element.TABBABLES[0];
+		element.LASTTABBABLE = element.TABBABLES[element.TABBABLES.length - 1];
 	});
 
 	describe('Expander Class Definition', () => {
@@ -342,6 +346,24 @@ describe('Expander', () => {
 			expect(element.TARGET.hasAttribute('hidden')).toBe(true);
 		});
 
+		test('Should close when tab from last visible tabbable item', done => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET, {AUTOFOCUS: 'target'});
+			expander.init();
+			element.LASTTABBABLE.style.visibility = 'hidden';
+			element.BUTTON.click();
+			// When
+			const keydownTabEvent = createKeydownEvent('Tab');
+			element.FIRSTTABBABLE.dispatchEvent(keydownTabEvent);
+			// Then
+			window.requestAnimationFrame(() => {
+				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
+				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
+				expect(element.TARGET.hasAttribute('hidden')).toBe(true);
+				done();
+			});
+		});
+
 		test('Should close and set focus on trigger when tab out of the target', done => {
 			// Given
 			const expander = new Expander(element.BUTTON, element.TARGET);
@@ -349,7 +371,7 @@ describe('Expander', () => {
 			element.BUTTON.click();
 			// When
 			const keydownTabEvent = createKeydownEvent('Tab');
-			element.FIRSTTABBABLE.dispatchEvent(keydownTabEvent);
+			element.LASTTABBABLE.dispatchEvent(keydownTabEvent);
 			// Then
 			window.requestAnimationFrame(() => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
@@ -372,6 +394,23 @@ describe('Expander', () => {
 				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(false);
 				expect(element.TARGET.classList.contains(className.HIDE)).toBe(true);
 				expect(element.TARGET.hasAttribute('hidden')).toBe(true);
+				done();
+			});
+		});
+
+		test('Should not close when tab backwards from last tabbable element', done => {
+			// Given
+			const expander = new Expander(element.BUTTON, element.TARGET, {AUTOFOCUS: 'target'});
+			expander.init();
+			element.BUTTON.click();
+			// When
+			const keydownTabShiftEvent = createKeydownEvent('TabShift');
+			element.LASTTABBABLE.dispatchEvent(keydownTabShiftEvent);
+			// Then
+			window.requestAnimationFrame(() => {
+				expect(element.BUTTON.classList.contains(className.OPEN)).toBe(true);
+				expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+				expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 				done();
 			});
 		});

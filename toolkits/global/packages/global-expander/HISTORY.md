@@ -1,5 +1,11 @@
 # History
 
+## 4.0.1 (2021-02-12)
+    * BUG: 
+        * Fix expander incorrectly closing when shift+tab on last item and there are still tabbable items before it
+        * Fix expander not closing when tababble number of items in expander changes
+        * Bump global-javascript to 3.0.1
+
 ## 4.0.0 (2021-02-03)
     * BREAKING: 
         * Remove aria-pressed attribute and update tests.
