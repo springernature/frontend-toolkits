@@ -6,7 +6,7 @@
   "brandContext": "^9.0.1",
   "dependencies": {
     "@springernature/global-expander": "~4.0.1",
-    "@springernature/global-popup": "~3.0.1"
+    "@springernature/global-popup": "~4.1.1"
   },
   "devDependencies": {
     "jquery": "^3.4.1"
