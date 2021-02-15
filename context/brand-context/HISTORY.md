@@ -1,5 +1,8 @@
 # History
 
+## 10.0.3 (2021-02-12)
+    * BUG: all brands except default were using a mixin for headings
+
 ## 10.0.2 (2021-02-12)
     * Fix button box-shadow on hover for Springernature brand
 

@@ -1,5 +1,8 @@
 # History
 
+## 0.1.3 (2021-02-15)
+    * Fix hero image not appearing in IE10
+
 ## 0.1.2 (2021-01-20)
     * Add vertical align to hero image to fix layout on small screens
 
