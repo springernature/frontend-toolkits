@@ -1,5 +1,9 @@
 # History
 
+## 22.1.1 (2021-02-15)
+    * Bump global-expander to 4.0.1
+    * Bump global-javascript to 3.0.1
+
 ## 22.1.0 (2021-02-03)
     * Bump global-expander to 4.0.0
 
