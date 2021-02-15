@@ -7,7 +7,7 @@
   "author": "Springer Nature",
   "brandContext": "^9.0.1",
   "dependencies": {
-    "@springernature/global-javascript": "^3.0.0",
-    "@springernature/global-expander": "^4.0.0"
+    "@springernature/global-javascript": "^3.0.1",
+    "@springernature/global-expander": "^4.0.1"
   }
 }
