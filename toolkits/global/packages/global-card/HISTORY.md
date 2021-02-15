@@ -1,8 +1,16 @@
 # History
 
+## 3.0.0 (2021-02-12)
+    * BREAKING:
+        * Switch to use new `brand-context` dependency
+        * Remove springer settings as it does not override anything any more
+    * FEATURE:
+        * Re-introduce the variable `$card--title-font-weight`
+        * Add branding configurations for springer nature
+
 ## 2.0.4 (2021-01-26)
     * Uses h3 for card title to fix size inconsistency
-    
+
 ## 2.0.3 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
@@ -22,12 +30,12 @@
 
 ## 0.2.1 (2019-11-29)
     * Allow image to shrink
-    
+
 ## 0.2.0 (2019-11-27)
-    * Remove color modifier on link   
+    * Remove color modifier on link
 
 ## 0.1.1 (2019-11-25)
     * Add global-context to peer dependencies
-    
+
 ## 0.1.0 (2019-11-22)
     * Add cards into global toolkit
