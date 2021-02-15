@@ -2,7 +2,7 @@
 
 ## 5.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
-    * Bump global-javascript to 4.0.1
+    * Bump global-javascript to 3.0.1
 
 ## 5.1.0 (2021-02-03)
     * Remove aria-pressed
