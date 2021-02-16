@@ -11,7 +11,7 @@ $status-message--border-radius: 2px;
 $status-message--boxed-border: 4px;
 $status-message--background-color: white;
 $status-message--border: 1px solid greyscale(80);
-$status-message--line-height: 1.3;
+$status-message--line-height: $context--line-height-tight;
 $status-message--gutter: spacing(16);
 $status-message--gutter-icon: spacing(8);
 $status-message--font-weight: $context--font-weight-bold;
