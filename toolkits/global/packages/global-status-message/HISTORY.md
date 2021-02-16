@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 (2021-02-16)
+    * Increase line-height from 1.3 to 1.4 using $context--line-height-tight 
+
 ## 2.0.1 (2021-02-03)
     * Bump `brand-context` version
     * Fix reference to old font-size-* variable
