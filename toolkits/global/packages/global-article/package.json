@@ -1,12 +1,12 @@
 {
   "name": "@springernature/global-article",
-  "version": "22.1.0",
+  "version": "22.1.1",
   "description": "Frontend package for article display",
   "license": "MIT",
   "brandContext": "^9.0.1",
   "dependencies": {
-    "@springernature/global-expander": "~4.0.0",
-    "@springernature/global-popup": "~3.0.0"
+    "@springernature/global-expander": "~4.0.1",
+    "@springernature/global-popup": "~4.1.1"
   },
   "devDependencies": {
     "jquery": "^3.4.1"
