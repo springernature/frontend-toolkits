@@ -1,5 +1,8 @@
 # History
 
+## 10.0.4 (2021-02-17)
+    * Make svg fill in button mixin follow currentColor
+
 ## 10.0.3 (2021-02-12)
     * BUG: all brands except default were using a mixin for headings
 
