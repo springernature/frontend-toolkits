@@ -111,6 +111,10 @@
 	box-shadow: map-get($theme, 'boxShadow');
 	font-weight: map-get($theme, 'fontWeight');
 
+	svg {
+		fill: currentColor;
+	}
+
 	&:visited {
 		color: map-get($theme, 'visitedColor');
 	}
