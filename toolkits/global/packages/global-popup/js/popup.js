@@ -96,8 +96,8 @@ const Popup = class {
 
 	_calcPositioning() {
 		const distanceScrolled = document.documentElement.scrollTop;
-		const triggerMetricsArr = this._trigger.getClientRects();
-		const triggerMetrics = (triggerMetricsArr.length) ? triggerMetricsArr[0] : {top: 0, left: 0};
+		const triggerMetricsCollection = this._trigger.getClientRects();
+		const triggerMetrics = (triggerMetricsCollection.length > 0) ? triggerMetricsCollection[0] : {top: 0, left: 0};
 		const offset = {
 			top: triggerMetrics.top + distanceScrolled,
 			left: triggerMetrics.left
@@ -134,7 +134,7 @@ const Popup = class {
 		if (triggerMetrics.length > 1) {
 			wrapped = true;
 			if (windowWidth > lgBreakPoint) {
-				offset.left = triggerMetrics.left - this._content.offsetWidth / 2 + arrowWidth;
+				offset.left = (triggerMetrics.left - (this._content.offsetWidth / 2)) + arrowWidth;
 			}
 		}
 
@@ -153,12 +153,12 @@ const Popup = class {
 		if (windowWidth < mdBreakPoint) {
 			// just position arrow 5px from trigger left
 			arrow.style.left = this._px(originalOffsetLeft + 5);
-		} else if (!wrapped) {
-			arrow.style.left = this._px(Math.max(Math.round(triggerMetrics.width / 2 - arrowWidth / 2) + ((overrun > 0) ? overrun : 0), 5));
-		} else {
+		} else if (wrapped) {
 			// wrapped text add arrow
 			const triggerStartPos = Math.round((offset.left + this._content.offsetWidth) - triggerMetrics.left - arrowWidth);
 			arrow.style.left = this._px(Math.round(this._content.offsetWidth - triggerStartPos));
+		} else {
+			arrow.style.left = this._px(Math.max(Math.round((triggerMetrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5));
 		}
 
 		return {
