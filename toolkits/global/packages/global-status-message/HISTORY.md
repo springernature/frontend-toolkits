@@ -1,7 +1,7 @@
 # History
 
 ## 2.0.3 (2021-02-18)
-    * Fix icons shink issue
+    * Fix icons shrink issue
 
 ## 2.0.2 (2021-02-16)
     * Increase line-height from 1.3 to 1.4 using $context--line-height-tight 
