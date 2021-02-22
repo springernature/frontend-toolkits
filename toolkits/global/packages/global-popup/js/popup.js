@@ -104,13 +104,13 @@ const Popup = class {
 			left: triggerMetrics.left,
 			right: defaultOffset
 		};
-		
+
 		const originalOffsetLeft = offset.left;
 		const arrow = this._content.querySelector(`.${this._arrowClass}`);
 		const windowWidth = document.documentElement.clientWidth;
 		const arrowHeight = 12;
 		const arrowWidth = 20;
-		const pagePadding =  (this._options.PAGE_PADDING) ? this._options.PAGE_PADDING : 32;
+		const pagePadding = (this._options.PAGE_PADDING) ? this._options.PAGE_PADDING : 32;
 		const mdBreakPoint = 768;
 		const lgBreakPoint = 1024;
 
