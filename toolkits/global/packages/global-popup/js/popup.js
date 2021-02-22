@@ -42,7 +42,7 @@ const Popup = class {
 		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
 		this._content.style.left = this._px(pos.left);
-		this._content.style.right = this._px(5);
+		this._content.style.right = this._px(pos.right);
 	}
 
 	_close() {
@@ -96,20 +96,21 @@ const Popup = class {
 
 	_calcPositioning() {
 		const distanceScrolled = document.documentElement.scrollTop;
+		const defaultOffset = 5;
 		const triggerMetricsCollection = this._trigger.getClientRects();
 		const triggerMetrics = (triggerMetricsCollection.length > 0) ? triggerMetricsCollection[0] : {top: 0, left: 0};
 		const offset = {
 			top: triggerMetrics.top + distanceScrolled,
-			left: triggerMetrics.left
+			left: triggerMetrics.left,
+			right: defaultOffset
 		};
+		
 		const originalOffsetLeft = offset.left;
-
 		const arrow = this._content.querySelector(`.${this._arrowClass}`);
 		const windowWidth = document.documentElement.clientWidth;
 		const arrowHeight = 12;
 		const arrowWidth = 20;
-		const defaultOffsetLeft = 5;
-		const pagePadding = 32;
+		const pagePadding =  (this._options.PAGE_PADDING) ? this._options.PAGE_PADDING : 32;
 		const mdBreakPoint = 768;
 		const lgBreakPoint = 1024;
 
@@ -123,7 +124,7 @@ const Popup = class {
 		const overrun = offset.left + this._content.offsetWidth - windowWidth + pagePadding;
 		if (overrun > 0) {
 			if (overrun > offset.left) {
-				offset.left = defaultOffsetLeft;
+				offset.left = defaultOffset;
 			} else {
 				offset.left -= overrun;
 			}
@@ -162,8 +163,9 @@ const Popup = class {
 		}
 
 		return {
-			left: (windowWidth < mdBreakPoint) ? defaultOffsetLeft : offset.left,
-			top: top
+			left: (windowWidth < mdBreakPoint) ? defaultOffset : offset.left,
+			top: top,
+			right: defaultOffset
 		};
 	}
 };
