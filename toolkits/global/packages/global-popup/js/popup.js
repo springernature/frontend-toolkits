@@ -41,7 +41,8 @@ const Popup = class {
 		}
 		const pos = this._calcPositioning();
 		this._content.style.top = this._px(pos.top);
-		this._content.style.transform = `translateX(${pos.left}px)`;
+		this._content.style.left = this._px(pos.left);
+		this._content.style.right = this._px(pos.right);
 	}
 
 	_close() {
@@ -95,21 +96,48 @@ const Popup = class {
 
 	_calcPositioning() {
 		const distanceScrolled = document.documentElement.scrollTop;
-		const triggerMetrics = this._trigger.getBoundingClientRect();
+		const defaultOffset = 5;
+		const triggerMetricsCollection = this._trigger.getClientRects();
+		const triggerMetrics = (triggerMetricsCollection.length > 0) ? triggerMetricsCollection[0] : {top: 0, left: 0};
 		const offset = {
 			top: triggerMetrics.top + distanceScrolled,
-			left: triggerMetrics.left
+			left: triggerMetrics.left,
+			right: defaultOffset
 		};
+
+		const originalOffsetLeft = offset.left;
 		const arrow = this._content.querySelector(`.${this._arrowClass}`);
 		const windowWidth = document.documentElement.clientWidth;
 		const arrowHeight = 12;
 		const arrowWidth = 20;
+		const pagePadding = (this._options.PAGE_PADDING) ? this._options.PAGE_PADDING : 32;
+		const mdBreakPoint = 768;
+		const lgBreakPoint = 1024;
 
 		// calc space above trigger
 		const spaceAbove = offset.top - this._content.offsetHeight - arrowHeight;
 
 		const abovePosition = offset.top - this._content.offsetHeight - arrowHeight;
 		const belowPosition = offset.top + triggerMetrics.height + arrowHeight;
+
+		// does the popup and its position overrun the width of the page and its padding
+		const overrun = offset.left + this._content.offsetWidth - windowWidth + pagePadding;
+		if (overrun > 0) {
+			if (overrun > offset.left) {
+				offset.left = defaultOffset;
+			} else {
+				offset.left -= overrun;
+			}
+		}
+
+		let wrapped = false;
+		// does the popup trigger content wrap onto multiple lines
+		if (triggerMetrics.length > 1) {
+			wrapped = true;
+			if (windowWidth > lgBreakPoint) {
+				offset.left = (triggerMetrics.left - (this._content.offsetWidth / 2)) + arrowWidth;
+			}
+		}
 
 		let top;
 		// if there is not enough room for popup above trigger
@@ -123,17 +151,21 @@ const Popup = class {
 			arrow.classList.add(this._arrowClass + '--above');
 		}
 
-		if (windowWidth < 600) {
+		if (windowWidth < mdBreakPoint) {
 			// just position arrow 5px from trigger left
-			arrow.style.left = this._px(offset.left + 5);
+			arrow.style.left = this._px(originalOffsetLeft + 5);
+		} else if (wrapped) {
+			// wrapped text add arrow
+			const triggerStartPos = Math.round((offset.left + this._content.offsetWidth) - triggerMetrics.left - arrowWidth);
+			arrow.style.left = this._px(Math.round(this._content.offsetWidth - triggerStartPos));
 		} else {
-			// position arrow in middle of trigger
-			arrow.style.left = this._px(Math.round((triggerMetrics.width / 2) - arrowWidth));
+			arrow.style.left = this._px(Math.max(Math.round((triggerMetrics.width / 2) - (arrowWidth / 2)) + ((overrun > 0) ? overrun : 0), 5));
 		}
 
 		return {
-			left: (windowWidth < 600) ? 0 : offset.left,
-			top: top
+			left: (windowWidth < mdBreakPoint) ? defaultOffset : offset.left,
+			top: top,
+			right: defaultOffset
 		};
 	}
 };

@@ -1,5 +1,9 @@
 # History
 
+## 4.2.0 (2021-02-17)
+    * Fixes bug so that popup/arrow is positioned above trigger
+    * Ensure popup stays within screen width
+
 ## 4.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
     * Bump global-javascript to 3.0.1 
