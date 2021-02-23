@@ -1,5 +1,9 @@
 # History
 
+## 10.0.5 (2021-02-23)
+    * Add default h5 font size
+    * Add placeholders to hold the rules for u-h* mixins
+
 ## 10.0.4 (2021-02-17)
     * Make svg fill in button mixin follow currentColor
 

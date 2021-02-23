@@ -29,22 +29,52 @@
 
 // Headings
 
-@mixin u-h1() {
+
+%u-h1 {
 	font-size: $context--font-size-h1;
 	font-weight: $context--font-weight-bold;
 }
 
-@mixin u-h2() {
+%u-h2 {
 	font-size: $context--font-size-h2;
 	font-weight: $context--font-weight-bold;
 }
 
-@mixin u-h3() {
+%u-h3 {
 	font-size: $context--font-size-h3;
 	font-weight: $context--font-weight-bold;
 }
 
-@mixin u-h4() {
+%u-h4 {
 	font-size: $context--font-size-h4;
 	font-weight: $context--font-weight-bold;
+}
+
+%u-h5 {
+	font-size: $context--font-size-h5;
+	font-weight: $context--font-weight-bold;
+}
+
+@mixin u-heading($arg) {
+	@extend %u-#{$arg};
+}
+
+@mixin u-h1 {
+	@extend %u-h1;
+}
+
+@mixin u-h2 {
+	@extend %u-h2;
+}
+
+@mixin u-h3 {
+	@extend %u-h3;
+}
+
+@mixin u-h4 {
+	@extend %u-h4;
+}
+
+@mixin u-h5 {
+	@extend %u-h5;
 }
