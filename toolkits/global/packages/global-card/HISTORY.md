@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2021-02-23)
+    * Fix letter spacing for SN brand
+
 ## 3.0.1 (2021-02-23)
     * Uses new brand-context
     * Switches to new u-heading mixin for card title which accepts a parameter for the type of heading to use
