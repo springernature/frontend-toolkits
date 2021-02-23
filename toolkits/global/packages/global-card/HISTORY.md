@@ -3,7 +3,7 @@
 ## 3.0.1 (2021-02-23)
     * Uses new brand-context
     * Switches to new u-heading mixin for card title which accepts a parameter for the type of heading to use
-    * Add a default, SN value for the parameter$card--title-heading
+    * Add a default, SN value for the parameter $card--title-heading
 
 ## 3.0.0 (2021-02-12)
     * BREAKING:
