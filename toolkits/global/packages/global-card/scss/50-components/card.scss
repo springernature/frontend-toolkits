@@ -32,7 +32,7 @@
 }
 
 .c-card__title {
-	@include u-h3;
+	@include u-heading($card--title-heading);
 	@if $card--title-font-weight != null {
 		font-weight: $card--title-font-weight;
 	}
