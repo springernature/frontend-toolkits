@@ -1,5 +1,10 @@
 # History
 
+## 10.1.0 (2021-02-23)
+    * Add default h5 font size
+    * Add placeholders to hold the rules for u-h* mixins
+    * Add new u-heading mixin to support heading style switching on global card
+
 ## 10.0.4 (2021-02-17)
     * Make svg fill in button mixin follow currentColor
 
