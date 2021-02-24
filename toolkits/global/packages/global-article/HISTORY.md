@@ -1,5 +1,8 @@
 # History
 
+## 22.1.2 (2021-02-24)
+    * Bump global-popup to 4.2.0
+	
 ## 22.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
     * Bump global-popup to 4.1.1
