@@ -1,5 +1,8 @@
 # History
 
+## 10.1.1 (2021-02-24)
+    * Change font family to serif for SN u-h4,u-h5 
+
 ## 10.1.0 (2021-02-23)
     * Add default h5 font size
     * Add placeholders to hold the rules for u-h* mixins
