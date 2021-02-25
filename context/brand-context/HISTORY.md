@@ -1,7 +1,10 @@
 # History
 
+## 11.0.0 (2021-02-25)
+    * Removes presentational styles from container utility
+    
 ## 10.1.1 (2021-02-24)
-    * Change font family to serif for SN u-h4,u-h5 
+    * Change font family to serif for SN u-h4,u-h5
 
 ## 10.1.0 (2021-02-23)
     * Add default h5 font size
