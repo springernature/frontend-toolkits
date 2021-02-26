@@ -78,20 +78,20 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 * `springer-ad`  
    Now part of the [`global-ad`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-ad).
 
-* `springer-meta`
+* `springer-meta`  
    Now part of the [`global-meta`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-meta).
 
-* `global-article`
-   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
+* `global-article`  
+   This component is only used by the [Oscar repository (private)](https://github.com/springernature/oscar), and has been moved there.
 
-* `nature-article`
-   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
+* `nature-article`  
+   This component is only used by the [Oscar repository (private)](https://github.com/springernature/oscar), and has been moved there.
 
-* `springer-article`
-   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
+* `springer-article`  
+   This component is only used by the [Oscar repository (private)](https://github.com/springernature/oscar), and has been moved there.
 
-* `springer-lists`
+* `springer-lists`  
    Now part of the [`global-lists`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-lists).
 
-* `springer-pagination`
+* `springer-pagination`  
    Now part of the [`global-pagination`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-pagination).
