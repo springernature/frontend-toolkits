@@ -92,3 +92,6 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `springer-lists`
    Now part of the [`global-lists`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-lists).
+
+* `springer-pagination`
+   Now part of the [`global-pagination`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-pagination).
