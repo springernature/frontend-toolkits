@@ -80,3 +80,12 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
 
 * `springer-meta`
    Now part of the [`global-meta`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-meta).
+
+* `global-article`
+   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
+
+* `nature-article`
+   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
+
+* `springer-article`
+   This component is only used in One place now so there is no need to share it [Oscar repository (private)](https://github.com/springernature/oscar).
