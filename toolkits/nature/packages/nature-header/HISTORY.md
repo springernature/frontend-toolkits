@@ -1,7 +1,7 @@
 # History
 
 ## 5.1.2 (2021-03-01)
-    * Captilize first letter in link instead all words in links
+    * Capitalize first letter instead all words in link
     * Update readme
 
 ## 5.1.1 (2021-02-15)
