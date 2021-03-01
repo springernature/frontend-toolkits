@@ -1,5 +1,9 @@
 # History
 
+## 5.1.2 (2021-03-01)
+    * Captilize first letter in link instead all words in links
+    * Update readme
+
 ## 5.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
     * Bump global-javascript to 3.0.1 
