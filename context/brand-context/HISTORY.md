@@ -1,8 +1,12 @@
 # History
 
-## 10.1.2 (2021-02-25)
+## 10.1.3 (2021-03-01)
     * Removes presentational styles from container utility
-    
+
+## 10.1.2 (2021-03-01)
+    * BUG: components reference missing default font-sizes
+    * Add default font sizes 
+
 ## 10.1.1 (2021-02-24)
     * Change font family to serif for SN u-h4,u-h5
 

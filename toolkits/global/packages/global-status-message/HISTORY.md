@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0 (2021-03-01)
+    * Update to brand-context@10.1.2 which fixes a bug for default branding in previous version
+    * Allow colour inheritance for icons and no need for other components/utilities
+
 ## 2.0.3 (2021-02-18)
     * Fix icons shrink issue
 
