@@ -28,6 +28,10 @@
 .c-status-message__icon {
 	flex: 0 0 auto;
 	margin-right: $status-message--gutter-icon;
+	fill: currentColor;
+	transform: translate(0, 0); // Hack to allow for subpixel rendering
+	display: inline-block;
+	vertical-align: text-top;
 }
 
 .c-status-message__icon--top {
