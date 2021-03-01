@@ -7,7 +7,7 @@ Publisher level header for Nature products.
 ### Header
 
 ```html
-<header class="c-header" data-header>
+<div class="c-header" data-header>
     <div class="c-header__row c-header__row--flush">
         <div class="c-header__container">
             <div class="c-header__split">
@@ -49,35 +49,37 @@ Publisher level header for Nature products.
     <div class="c-header__row">
         <div class="c-header__container">
             <div class="c-header__split">
-                <ul class="c-header__menu">
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander>
-                            <span>Explore <span class="c-header__show-text">our content</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#journal-info" class="c-header__link c-header__link--chevron" data-header-expander>
-                            <span>Journal info<span class="c-header__show-text">rmation</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#publish-with-us"
-                           class="c-header__link c-header__link--chevron c-header__link--dropdown-menu" data-header-expander>
-                            <span>Publish <span class="c-header__show-text">with us</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--pipe u-show-lg">
-                        <a class="c-header__link" href="#">
-                            <span>Subscribe</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="c-header__split">
+                    <ul class="c-header__menu c-header__menu--journal">
+                        <li class="c-header__item c-header__item--dropdown-menu">
+                            <a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander>
+                                <span><span class="c-header__show-text">Explore</span> content</span>
+                                <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
+                            </a>
+                        </li>
+    
+                        <li class="c-header__item c-header__item--dropdown-menu">
+                            <a href="#journal-info" class="c-header__link c-header__link--chevron" data-header-expander>
+                                <span>Journal info<span class="c-header__show-text">rmation</span></span>
+                                <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
+                            </a>
+                        </li>
+    
+                        <li class="c-header__item c-header__item--dropdown-menu">
+                            <a href="#publish-with-us"
+                               class="c-header__link c-header__link--chevron c-header__link--dropdown-menu" data-header-expander>
+                                <span>Publish <span class="c-header__show-text">with us</span></span>
+                                <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
+                            </a>
+                        </li>
+    
+                        <li class="c-header__item c-header__item--pipe u-show-lg">
+                            <a class="c-header__link" href="#">
+                                <span>Subscribe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="c-header__menu c-header__menu--tools">
                     <li class="c-header__item">
@@ -96,7 +98,7 @@ Publisher level header for Nature products.
             </div>
         </div>
     </div>
-</header>
+</div>
 ```
 
 Color of border of header is set to black. In oscar-sites-nature the color of border on each journal is defined from Pubserv and set in the app to override default black border.
