@@ -59,7 +59,6 @@ const autoComplete = arguments_ => {
 			container().remove();
 		}
 		document.removeEventListener('click', removeSuggestions);
-		input.focus();
 	};
 
 	const addSuggestionEventListeners = () => {

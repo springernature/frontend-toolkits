@@ -1,5 +1,8 @@
 # History
 
+## 5.0.3 (2020-03-01)
+    * Dont focus input when removing suggestion box
+
 ## 5.0.2 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
