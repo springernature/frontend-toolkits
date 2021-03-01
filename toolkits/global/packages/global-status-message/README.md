@@ -2,7 +2,7 @@
 
 ## Branding
 
-The `global-status-message` component currently uses the `DEFAULT` brand only.
+The `global-status-message` component uses the `DEFAULT` branding across _all_ of our products so that we have consistent styling.
 
 ```scss
 // Include this with your settings
