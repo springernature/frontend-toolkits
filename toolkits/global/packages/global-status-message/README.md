@@ -2,7 +2,7 @@
 
 ## Branding
 
-The `global-status-message` component currently uses the `DEFAULT` brand only.
+The `global-status-message` component uses the `DEFAULT` branding across _all_ of our products.
 
 ```scss
 // Include this with your settings
@@ -23,7 +23,7 @@ The `global-status-message` component currently uses the `DEFAULT` brand only.
 
 <!-- With Icon -->
 <div class="c-status-message">
-    <svg class="c-icon c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
+    <svg class="c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
         <use xlink:href="#icon-success"></use>
     </svg>Your text
 </div>
@@ -51,7 +51,7 @@ Sets a border and padding around the status message.
 
 ```html
 <!-- Default -->
-<div class="c-status-message c-status-message--boxed">...</div>
+<div class="c-status-message c-status-message--success">...</div>
 ```
 <p>
     <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/success.png" />
