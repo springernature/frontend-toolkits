@@ -1,5 +1,9 @@
 # History
 
+## 5.1.2 (2021-03-01)
+    * Capitalize first letter instead all words in link
+    * Update readme
+
 ## 5.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
     * Bump global-javascript to 3.0.1 

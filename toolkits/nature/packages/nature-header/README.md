@@ -11,7 +11,7 @@ Publisher level header for Nature products.
     <div class="c-header__row c-header__row--flush">
         <div class="c-header__container">
             <div class="c-header__split">
-                <div class="c-header__logo-container">
+                <div class="c-header__logo-container"> <!-- can also be <h1> -->
                     <a href="/nature">
                         <picture class="c-header__logo">
                             <source srcset="primary-logo.svg" media="(min-width: 875px)">
@@ -35,8 +35,7 @@ Publisher level header for Nature products.
                     </li>
                     
                     <li class="c-header__item">
-                        <a href="#"
-                           id="login-button" class="c-header__link placeholder">
+                        <a href="#" id="login-button" class="c-header__link placeholder">
                             <span>Login</span>
                             <svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M10.238 16.905a7.96 7.96 0 003.53-1.48c-.874-2.514-2.065-3.936-3.768-4.319V9.83a3.001 3.001 0 10-2 0v1.277c-1.703.383-2.894 1.805-3.767 4.319A7.96 7.96 0 009 17c.419 0 .832-.032 1.238-.095zm4.342-2.172a8 8 0 10-11.16 0c.757-2.017 1.84-3.608 3.49-4.322a4 4 0 114.182 0c1.649.714 2.731 2.305 3.488 4.322zM9 18A9 9 0 119 0a9 9 0 010 18z" fill="#333" fill-rule="evenodd"></path></svg>
                         </a>
@@ -49,35 +48,21 @@ Publisher level header for Nature products.
     <div class="c-header__row">
         <div class="c-header__container">
             <div class="c-header__split">
-                <ul class="c-header__menu">
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander>
-                            <span>Explore <span class="c-header__show-text">our content</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#journal-info" class="c-header__link c-header__link--chevron" data-header-expander>
-                            <span>Journal info<span class="c-header__show-text">rmation</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--dropdown-menu">
-                        <a href="#publish-with-us"
-                           class="c-header__link c-header__link--chevron c-header__link--dropdown-menu" data-header-expander>
-                            <span>Publish <span class="c-header__show-text">with us</span></span>
-                            <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
-                        </a>
-                    </li>
-
-                    <li class="c-header__item c-header__item--pipe u-show-lg">
-                        <a class="c-header__link" href="#">
-                            <span>Subscribe</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="c-header__split">
+                    <ul class="c-header__menu c-header__menu--journal">
+                        <li class="c-header__item c-header__item--dropdown-menu">
+                            <a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander>
+                                <span><span class="c-header__show-text">Explore</span> content</span>
+                                <svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path></svg>
+                            </a>
+                        </li>
+                        <li class="c-header__item c-header__item--pipe u-show-lg">
+                            <a class="c-header__link" href="#">
+                                <span>Subscribe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="c-header__menu c-header__menu--tools">
                     <li class="c-header__item">
