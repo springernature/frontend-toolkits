@@ -1,6 +1,20 @@
 # Nature Hero
 
+[![NPM version][badge-npm]][info-npm]
+
 Hero for Nature products.
+
+## CSS
+
+Include the SCSS in your application
+
+```scss
+// Include this with your settings
+@import '@springernature/nature-hero/scss/10-settings/hero';
+
+// Include this with your other components
+@import '@springernature/nature-hero/scss/50-components/hero';
+```
 
 ## Usage
 
@@ -17,3 +31,6 @@ Hero for Nature products.
     </div>
 </div>
 ```
+
+[info-npm]: https://www.npmjs.com/package/@springernature/nature-hero
+[badge-npm]: https://img.shields.io/npm/v/@springernature/nature-hero.svg
