@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2021-03-02)
+    * Update to brand-context 10.1.3
+
 ## 0.1.3 (2021-02-15)
     * Fix hero image not appearing in IE10
 
