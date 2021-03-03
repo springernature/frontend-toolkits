@@ -56,3 +56,27 @@ new Popup(trigger, 'popupContent1', { MIN_WIDTH: "100px", MAX_WIDTH: "600px" });
     </div>
 </div>		
 ```
+
+### Lazily
+
+If you wish to lazily create a popup the first time the trigger is clicked - for example if building the html for your popup is an expensive operation that you'd like to defer until needed - you can use this pattern:
+
+
+```javascript
+import {Popup} from 'global-popup/js/popup';
+
+const trigger = document.querySelector('span');
+trigger.addEventListener('click', function() {
+    const popup = new Popup(trigger, 'popupContent1');
+    popup.open();
+}, {capture: false, once: true});
+```
+
+```html
+<div>
+    <span>Popup trigger</span>
+    <div id="popupContent1">
+        <p>Some popup text</p>
+    </div>
+</div>
+```

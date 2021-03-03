@@ -21,6 +21,10 @@ const Popup = class {
 		this._bindEvents();
 	}
 
+	open() {
+		this._expander.open();
+	}
+
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
 		document.body.appendChild(this._content);

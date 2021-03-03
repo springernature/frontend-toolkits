@@ -21,6 +21,28 @@ describe('Global Popup: popup.js', () => {
 		document.getElementsByTagName('html')[0].innerHTML = '';
 	});
 
+	it('should open the popup when the trigger is clicked', () => {
+		const popup = new Popup(trigger, 'popupContent1');
+		const spy = jest.spyOn(popup._expander, 'open');
+
+		expect(spy).not.toHaveBeenCalled();
+
+		trigger.click();
+
+		expect(spy).toHaveBeenCalled();
+	});
+
+	it('should open the popup when the open method id called', () => {
+		const popup = new Popup(trigger, 'popupContent1');
+		const spy = jest.spyOn(popup._expander, 'open');
+
+		expect(spy).not.toHaveBeenCalled();
+
+		popup.open();
+
+		expect(spy).toHaveBeenCalled();
+	});
+
 	it('should build a popup that includes the arrow and close button html', () => {
 		new Popup(trigger, 'popupContent1');
 
