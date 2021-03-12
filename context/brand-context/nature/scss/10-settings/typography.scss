@@ -4,8 +4,7 @@
  */
 
 $is-nature-branded: false !default;
-$save-data: false !default;
-$context--font-family-serif: if($is-nature-branded, (if($save-data, (Palatino, serif), (Harding, Palatino, serif))), $context--font-family-serif);
+$context--font-family-serif: if($is-nature-branded, (Harding, Palatino, serif), $context--font-family-serif);
 $context--font-family-primary: if($is-nature-branded, $context--font-family-serif, $context--font-family-sans);
 $context--font-family-secondary: $context--font-family-sans;
 
