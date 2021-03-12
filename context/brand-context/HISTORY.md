@@ -1,5 +1,8 @@
 # History
 
+## 11.0.1 (2021-03-12)
+    * Change h4 to serif in springer context 
+
 ## 11.0.0 (2021-03-12)
     * BREAKING:
         * Remove $save-data variable from typography
