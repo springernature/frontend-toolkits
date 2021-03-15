@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2021-03-15)
+    * Add title overrides in nature settings
+
 ## 3.1.0 (2021-03-15)
     * Change default card title settings 
     * Bump brand context version
