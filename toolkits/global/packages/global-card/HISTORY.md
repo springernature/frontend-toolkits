@@ -1,8 +1,9 @@
 # History
 
-## 3.1.0 (2021-03-12)
+## 3.1.0 (2021-03-15)
     * Change default card title settings 
     * Bump brand context version
+    * Update available settings in readme 
 
 ## 3.0.2 (2021-02-23)
     * Fix letter spacing for SN brand
