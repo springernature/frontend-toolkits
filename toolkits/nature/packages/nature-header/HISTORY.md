@@ -1,5 +1,8 @@
 # History
 
+## 5.1.3 (2021-03-17)
+    * Refactor to generate smaller bundle size
+
 ## 5.1.2 (2021-03-01)
     * Capitalize first letter instead all words in link
     * Update readme

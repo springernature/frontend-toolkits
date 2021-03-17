@@ -20,7 +20,7 @@ const enhancedHeader = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
 	const header = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
-		{attribute: 'role', value: 'button'}
+		{name: 'role', value: 'button'}
 	];
 
 	if (triggers.length === 0 || !header) {
@@ -35,9 +35,9 @@ const enhancedHeader = () => {
 			return;
 		}
 
-		for (let {attribute, value} of triggerAttributes) {
-			trigger.setAttribute(attribute, value);
-		}
+		triggerAttributes.forEach(function (attribute) {
+			trigger.setAttribute(attribute.name, attribute.value);
+		});
 
 		trigger.insertAdjacentElement('afterend', targetElement);
 		targetElement.classList.add(classNames.TETHERED);
