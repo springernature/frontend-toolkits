@@ -1,5 +1,9 @@
 # History
 
+## 5.2.0 (2021-03-22)
+    * Add autofocus option to first tabbable element
+    * Bump `brand-context` version
+
 ## 5.1.3 (2021-03-17)
     * Refactor to generate smaller bundle size
 
