@@ -42,7 +42,7 @@ const enhancedHeader = () => {
 		trigger.insertAdjacentElement('afterend', targetElement);
 		targetElement.classList.add(classNames.TETHERED);
 
-		const expander = new Expander(trigger, targetElement);
+		const expander = new Expander(trigger, targetElement, {AUTOFOCUS: 'firstTabbable'});
 
 		expander.init();
 
