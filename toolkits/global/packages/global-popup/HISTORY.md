@@ -1,5 +1,8 @@
 # History
 
+## 4.4.0 (2021-03-24)
+    * Adds default font family
+    * Adds nature branding
 ## 4.3.0 (2021-03-03)
     * Adds an open method to allow lazily creating a popup when the trigger is clicked
 
