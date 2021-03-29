@@ -36,7 +36,6 @@ describe('Autocomplete', () => {
 		};
 		let fetchSpy;
 		let input;
-		let suggestionContainer;
 
 		beforeAll(() => {
 			setMockFetch(expectedResponse);
@@ -45,7 +44,6 @@ describe('Autocomplete', () => {
 		beforeEach(() => {
 			page.create();
 			input = document.querySelector('.c-autocomplete');
-			// suggestionContainer = document.querySelector('.c-results-container');
 			fetchSpy = jest.spyOn(global, 'fetch');
 		});
 
@@ -168,7 +166,6 @@ describe('Autocomplete', () => {
 					staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
 					resultsCallBack: showResults
 				});
-
 				auto.enable();
 
 				input.value = 'Wa';
@@ -211,7 +208,7 @@ describe('Autocomplete', () => {
 				expect(document.querySelectorAll('.c-results-container').length).toBe(0);
 				expect(document.activeElement).toBe(input);
 
-				
+
 			});
 
 			test('Do not update the text input if selectOnSuggestionBrowsing is false', async () => {
