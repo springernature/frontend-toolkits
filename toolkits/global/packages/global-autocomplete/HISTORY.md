@@ -1,5 +1,8 @@
 # History
 
+## 5.0.4 (2021-03-29)
+    * Return focus to input when removing suggestion box, conditionally
+
 ## 5.0.3 (2021-03-01)
     * Dont focus input when removing suggestion box
 
