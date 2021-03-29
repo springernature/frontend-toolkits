@@ -103,6 +103,7 @@ const autoComplete = arguments_ => {
 			} else if (event.key === 'Escape') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
+				input.focus();
 			}
 		});
 
@@ -112,6 +113,7 @@ const autoComplete = arguments_ => {
 					onSelect(element.textContent);
 				}
 				removeSuggestions();
+				input.focus();
 			});
 			element.addEventListener('keyup', event => {
 				if (event.key === 'Enter') {
@@ -119,6 +121,7 @@ const autoComplete = arguments_ => {
 						onSelect(element.textContent);
 					}
 					removeSuggestions();
+					input.focus();
 				}
 			});
 		});
