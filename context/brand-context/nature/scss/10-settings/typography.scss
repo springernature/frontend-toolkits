@@ -18,8 +18,27 @@ $context--font-size-xxl: 32px;
 
 $context--font-size-h1: 3.2rem;
 $context--font-size-h2: 2.4rem;
-$context--font-size-h3: 2rem;
+$context--font-size-h3: 2.0rem;
 $context--font-size-h4: 1.8rem;
+
+$context--line-height-h1: 3.6rem;
+$context--line-height-h2: 2.6rem;
+$context--line-height-h3: 2.2rem;
+$context--line-height-h4: 2.2rem;
+
+// Fluid typography
+$context--font-size-h1-min: $context--font-size-h2;
+$context--font-size-h2-min: $context--font-size-h3;
+$context--font-size-h3-min: $context--font-size-h4;
+$context--font-size-h4-min: 1.6rem; // Body typography size
+
+$context--line-height-h1-min: $context--line-height-h2;
+$context--line-height-h2-min: $context--line-height-h3;
+$context--line-height-h3-min: $context--line-height-h4;
+$context--line-height-h4-min: $context--line-height-h4;
+
+$context--letter-spacing-min: -0.01875rem;
+$context--letter-spacing: -0.0625rem;
 
 $context--font-weight-normal: 400;
 $context--font-weight-bold: 700;
