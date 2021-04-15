@@ -1,5 +1,8 @@
 # History
 
+## 4.0.2 (2021-04-15)
+    * Bump global-javascript to 3.0.2
+
 ## 4.0.1 (2021-02-12)
     * BUG: 
         * Fix expander incorrectly closing when shift+tab on last item and there are still tabbable items before it

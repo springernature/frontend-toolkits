@@ -1,5 +1,9 @@
 # History
 
+## 5.2.1 (2021-04-15)
+    * Bump global-expander to 4.0.2
+    * Bump global-javascript to 3.0.2
+
 ## 5.2.0 (2021-03-22)
     * Add autofocus option to first tabbable element
     * Bump `brand-context` version
