@@ -1,5 +1,9 @@
 # History
 
+## 11.1.0 (2021-04-14)
+    * Add fluid typography for headings to nature brand
+        * Adjust font-size, line-height and letter-spacing 
+
 ## 11.0.1 (2021-03-12)
     * Change h4 to serif in springer context 
 
