@@ -1,7 +1,7 @@
 # History
 
 ## 4.0.2 (2021-04-15)
-    * Bump global-javascript to 3.0.2
+    * Bump `global-javascript` to 3.0.2
 
 ## 4.0.1 (2021-02-12)
     * BUG: 
