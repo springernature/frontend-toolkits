@@ -2,7 +2,7 @@
   "name": "@springernature/global-javascript",
   "version": "3.0.2",
   "license": "MIT",
-  "description": "Globally shared Javascript helpers",
+  "description": "Globally shared JavaScript helpers",
   "keywords": [
     "javascript",
     "modules",
