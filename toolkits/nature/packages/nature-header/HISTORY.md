@@ -1,5 +1,8 @@
 # History
- 
+
+## 5.2.2 (2021-04-16)
+    * Bump `brand-context` version
+
 ## 5.2.1 (2021-04-15)
     * Bump `global-expander` to 4.0.2
     * Bump `global-javascript` to 3.0.2
