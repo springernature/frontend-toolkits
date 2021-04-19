@@ -1,5 +1,8 @@
 # History
 
+## 11.1.1 (2021-04-15)
+    * Add static value fallback for fluid typography on nature headings
+
 ## 11.1.0 (2021-04-14)
     * Add fluid typography for headings to nature brand
         * Adjust font-size, line-height and letter-spacing 
