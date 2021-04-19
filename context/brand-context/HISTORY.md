@@ -1,5 +1,8 @@
 # History
 
+## 11.1.2 (2021-04-19)
+    * Reorder fallback value on mixin heading
+
 ## 11.1.1 (2021-04-15)
     * Add static value fallback for fluid typography on nature headings
 

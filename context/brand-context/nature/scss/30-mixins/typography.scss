@@ -17,10 +17,10 @@
 	font-family: $context--font-family-primary;
 	font-size: $context--font-size-h1;
 	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
-	letter-spacing: unquote('min(max(#{$context--letter-spacing-min}, 4vw), #{$context--letter-spacing})');
 	letter-spacing: $context--letter-spacing;
-	line-height: unquote('min(max(#{$context--line-height-h1-min}, 4vw), #{$context--line-height-h1})');
+	letter-spacing: unquote('min(max(#{$context--letter-spacing-min}, 4vw), #{$context--letter-spacing})');
 	line-height: $context--line-height-h1;
+	line-height: unquote('min(max(#{$context--line-height-h1-min}, 4vw), #{$context--line-height-h1})');
 	margin-bottom: spacing(24);
 }
 
