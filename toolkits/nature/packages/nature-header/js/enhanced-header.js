@@ -16,6 +16,13 @@ const selectors = {
 	HEADER: '[data-header]'
 };
 
+const findTarget = selector => {
+	if (selector) {
+		return document.querySelector(selector);
+	}
+	return null;
+};
+
 const enhancedHeader = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
 	const header = document.querySelector(selectors.HEADER);
@@ -28,8 +35,7 @@ const enhancedHeader = () => {
 	}
 
 	makeArray(triggers).forEach(trigger => {
-		const targetId = trigger.hasAttribute('href') && trigger.getAttribute('href');
-		const targetElement = document.querySelector(targetId);
+		const targetElement = findTarget(trigger.hash);
 
 		if (!targetElement) {
 			return;

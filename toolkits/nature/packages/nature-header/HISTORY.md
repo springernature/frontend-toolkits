@@ -1,5 +1,8 @@
 # History
 
+## 5.2.3 (2021-04-19)
+    * Attempted fix for error captured in sentry around `hasAttribute` check
+
 ## 5.2.2 (2021-04-16)
     * Bump `brand-context` version
 
