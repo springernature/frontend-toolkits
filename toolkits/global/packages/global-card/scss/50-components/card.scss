@@ -71,7 +71,7 @@
 	font-size: $card--major-font-size;
 
 	.c-card__title {
-		font-size: $card--major-title-font-size;
+		@include u-heading($card--major-title-heading);
 	}
 }
 

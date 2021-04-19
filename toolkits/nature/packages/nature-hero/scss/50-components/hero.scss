@@ -65,13 +65,12 @@
 }
 
 .c-hero__title {
-	font-size: $hero--title-font-size;
-	font-weight: $hero--title-font-weight;
-	line-height: $hero--title-line-height;
+	@include u-h1;
 	margin-bottom: $hero--title-margin;
 
-	@include media-query('xl') {
-		font-size: $hero--title-font-size-at-xl;
+	@include media-query('md') {
+		font-size: $hero--title-font-size-at-md;
+		line-height: $hero--title-line-height-at-md;
 	}
 }
 
