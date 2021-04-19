@@ -1,5 +1,9 @@
 # History
 
+## 1.1.0 (2021-04-19)
+    * Bump brand context version
+    * Adjust hero title to use fluid typography
+
 ## 1.0.0 (2021-03-02)
     * Update to brand-context 10.1.3
 
