@@ -1,5 +1,9 @@
 # History
 
+## 3.2.0 (2021-04-19)
+    * Update card title to use fluid typography
+    * Bump brand context version
+
 ## 3.1.1 (2021-03-15)
     * Add title overrides in nature settings
 
