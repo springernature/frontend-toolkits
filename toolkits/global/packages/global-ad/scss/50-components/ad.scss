@@ -1,4 +1,5 @@
 .c-ad {
+	display: none;
 	text-align: center;
 
 	@include media-query('xs') {
@@ -9,7 +10,6 @@
 .c-ad--728x90,
 .c-ad--970x90 {
 	// Leaderboards
-	display: none;
 	background-color: $ad--leaderboard-bg-color;
 
 	.c-ad__inner {
@@ -36,7 +36,6 @@
 
 .c-ad--160x600 {
 	// Skyscraper
-	display: none;
 	padding: 0;
 	text-align: left;
 
@@ -54,7 +53,6 @@
 
 .c-ad--300x250 {
 	// MPU
-	display: none;
 	background-color: $ad--mpu-background-color;
 	padding: $ad--mpu-padding;
 
