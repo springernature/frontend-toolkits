@@ -1,5 +1,10 @@
 # History
 
+## 2.1.0 (2021-04-21)
+    * Leaderboard and skyscraper to hide at narrower screen widths instead of all ad types
+    * Add Nature settings to customise MPU
+    * Bump `brand-context` version
+
 ## 2.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
