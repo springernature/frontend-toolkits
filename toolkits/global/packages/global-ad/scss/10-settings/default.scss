@@ -17,4 +17,4 @@ $ad--leaderboard-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--
 $ad--mpu-background-color: #f2f2f2;
 $ad--mpu-height: 250px;
 $ad--mpu-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--label-margin-bottom} + #{$ad--mpu-height});
-$ad--mpu-padding: spacing(8);
+$ad--mpu-padding: $ad--padding;
