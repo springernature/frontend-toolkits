@@ -1,5 +1,11 @@
 # History
 
+## 2.1.0 (2021-04-21)
+    * Unhide MPU at `xs` breakpoint
+    * Move `display: none` to known ad sizes. New or unknown ad sizes will always show.
+    * Add Nature settings to customise MPU
+    * Bump `brand-context` version
+
 ## 2.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
