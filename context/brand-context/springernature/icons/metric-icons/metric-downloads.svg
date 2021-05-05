@@ -1,0 +1,14 @@
+<svg id="icon-metric-downloads" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="fttq6lc6ka" x1="0%" x2="100%" y1="50%" y2="50%">
+			<stop offset="0%" stop-color="#356677" stop-opacity="0" />
+			<stop offset="100%" stop-color="#183642" stop-opacity=".797" />
+		</linearGradient>
+	</defs>
+	<g fill="none" fill-rule="evenodd">
+		<circle cx="32" cy="32" r="32" fill="#CEDBE0" />
+		<path fill="url(#fttq6lc6ka)" fill-rule="nonzero" d="M46 18H18v22h28z" opacity=".255" />
+		<path fill="#486A7E"
+				d="M40 46a2 2 0 110 4H24a2 2 0 110-4h16zM24 18v4h-6v18h28V22h-6v-4h6a4 4 0 014 4v18a4 4 0 01-4 4H18a4 4 0 01-4-4V22a4 4 0 014-4h6zm8 0a2 2 0 011.987 1.767L34 20v9.17l2.586-2.584a2 2 0 012.64-.167l.188.167a2 2 0 01.167 2.64l-.167.188-6 6-.012.011-.111.103.062-.056-.013.013a2.015 2.015 0 01-.168.136l-.056.039-.082.052-.049.029a2.007 2.007 0 01-.445.185l-.032.009a1.842 1.842 0 01-.32.056 1.964 1.964 0 01-.135.008h-.024L32 36l-.143-.005.05.003L32 36a2.02 2.02 0 01-.975-.253 2.202 2.202 0 01-.25-.166l-.018-.014a2.011 2.011 0 01-.16-.141l-.011-.012-6-6a2 2 0 012.64-2.995l.188.167L30 29.17V20a2 2 0 012-2z" />
+	</g>
+</svg>

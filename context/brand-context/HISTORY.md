@@ -1,5 +1,8 @@
 # History
 
+## 11.2.0 (2021-05-05)
+    * Introduce Springer Nature metric icons
+
 ## 11.1.2 (2021-04-19)
     * Reorder fallback value on mixin heading
 
