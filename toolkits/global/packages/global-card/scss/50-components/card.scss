@@ -38,6 +38,10 @@
 	}
 	margin-bottom: $card--spacing;
 	letter-spacing: $card--title-letter-spacing;
+
+	@include media-query('sm', 'max') {
+		word-break: break-word;
+	}
 }
 
 .c-card__summary {
