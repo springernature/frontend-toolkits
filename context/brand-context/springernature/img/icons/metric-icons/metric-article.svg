@@ -1,0 +1,25 @@
+<svg id="icon-metric-article" viewBox="0 0 64 64" width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="7kfrmktknb" x1="0%" x2="100%" y1="50%" y2="50%">
+			<stop offset="0%" stop-color="#356677" stop-opacity="0" />
+			<stop offset="100%" stop-color="#183642" stop-opacity=".8" />
+		</linearGradient>
+		<filter id="t63l6k0kda">
+			<feColorMatrix in="SourceGraphic"
+							values="0 0 0 0 0.282353 0 0 0 0 0.415686 0 0 0 0 0.494118 0 0 0 1.000000 0" />
+		</filter>
+	</defs>
+	<g fill="none" fill-rule="evenodd">
+		<circle cx="32" cy="32" r="32" fill="#CEDBE0" />
+		<g filter="url(#t63l6k0kda)">
+			<g transform="translate(8 8)">
+				<path fill="#183642" fill-rule="nonzero"
+						d="M38 6a4 4 0 014 4v28a4 4 0 01-4 4H10a4 4 0 01-4-4V19.657a4 4 0 011.172-2.829l9.656-9.656A4 4 0 0119.657 6H38zm0 4H19.657L10 19.657V38h28V10z" />
+				<path fill="url(#7kfrmktknb)" fill-rule="nonzero" d="M38 10H19.657L10 19.657V38h28z"
+						opacity=".254" />
+				<rect width="20" height="4" x="14" y="20" fill="#666" opacity=".795" rx="2" />
+				<rect width="20" height="4" x="14" y="28" fill="#666" opacity=".48" rx="2" />
+			</g>
+		</g>
+	</g>
+</svg>
