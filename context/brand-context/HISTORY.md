@@ -1,5 +1,8 @@
 # History
 
+## 11.2.1 (2021-05-10)
+    * Patch Springer Nature metric icons with the right contrast ones
+
 ## 11.2.0 (2021-05-05)
     * Introduce Springer Nature metric icons
 
