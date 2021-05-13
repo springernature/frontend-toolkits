@@ -1,5 +1,8 @@
 # History
 
+## 2.0.1 (2021-05-13)
+    * Use new SN branding URL (for logo)
+
 ## 2.0.0 (2021-02-10)
     * BREAKING: switch to use new `brand-context` dependency
     * Update breakpoints and colours keys
