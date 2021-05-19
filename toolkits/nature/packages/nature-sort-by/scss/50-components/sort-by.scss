@@ -1,0 +1,61 @@
+.c-sort-by {
+	position: relative;
+
+	a {
+		@include u-link-inherit();
+	}
+}
+
+.c-sort-by__menu {
+	background-color: black;
+	border-bottom: 1px solid greyscale(5); // non-js
+	color: greyscale(90);
+	padding: spacing(16) 0;
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+.c-sort-by__button {
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	> svg {
+		margin-left: spacing(16);
+	}
+}
+
+.c-sort-by__list {
+	@include u-list-reset;
+	padding: 0;
+	margin: 0;
+}
+
+.c-sort-by__list-item {
+	padding: spacing(8) spacing(16);
+}
+
+/**
+ JavaScript Enhancements
+ */
+
+.c-sort-by__menu.has-tethered {
+	position: absolute;
+	top: 100%; // bottom of the tether element
+	transform: translateY(5px);
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	border-radius: 0 0 2px 2px;
+	border-bottom: 0;
+
+	@include media-query('sm') {
+		transform: translateY(8px);
+		width: auto;
+	}
+
+	@include media-query('md') {
+		min-width: 180px;
+	}
+}
