@@ -23,6 +23,11 @@
 
 	> svg {
 		margin-left: $sort-by--button-svg-margin;
+		transition-duration: .2s;
+	}
+
+	&.is-open > svg {
+		transform: rotate(180deg);
 	}
 }
 
