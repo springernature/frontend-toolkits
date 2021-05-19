@@ -1,12 +1,11 @@
 import {Expander} from '@springernature/global-expander/js/expander';
 import {makeArray} from '@springernature/global-javascript/src/helpers';
 
-
-const generateParams = (value) => {
-	const params = (new URL(document.location)).searchParams;
-	params.set('order', value);
-	return params;
-}
+const generateParameters = value => {
+	const parameters = new URL(document.location).searchParams;
+	parameters.set('order', value);
+	return parameters;
+};
 
 const sortBy = () => {
 	const trigger = document.querySelector('[data-sort-by-trigger]');
@@ -17,14 +16,14 @@ const sortBy = () => {
 		return;
 	}
 
-	radios.forEach((el) => {
-		el.addEventListener('click', (event) => {
+	radios.forEach(element => {
+		element.addEventListener('click', event => {
 			event.preventDefault();
 
-			const value = el.querySelector('input').value;
-			const params = generateParams(value);
-			window.location.replace('/search?' + params);
-		})
+			const value = element.querySelector('input').value;
+			const parameters = generateParameters(value);
+			window.location.replace('/search?' + parameters);
+		});
 	});
 
 	trigger.setAttribute('role', 'button');
