@@ -6,12 +6,12 @@ A sort by dropdown for use on Nature product pages that contain a sortable list 
 
 To configure the component the following html attributes will need to be set:
 
-| Data Attribute          | Description                                                                                 | 
-|-------------------------|---------------------------------------------------------------------------------------------|
-| data-sort-by-trigger    | This should be set on the html element that is clicked in order to open the dropdown menu   |
-| data-sort-by-target     | This should be set on the containing html element of the sort by dropdown menu              |
-| data-sort-by-radio      | This should be set on each list item within the sort by dropdown menu                       |
-| <input value=""         | The value attribute for each radio input should be set with the corresponding url parameter value for page content sorting. For example `value="date_desc"` generates the following url parameter upon page reload: `?ORDER=date_desc`  |
+| Name                    | Description                                                                                 | 
+|------------------------|---------------------------------------------------------------------------------------------|
+| data-sort-by-trigger   | This should be set on the html element that is clicked in order to open the dropdown menu   |
+| data-sort-by-target    | This should be set on the containing html element of the sort by dropdown menu              |
+| data-sort-by-radio     | This should be set on each list item within the sort by dropdown menu                       |
+| <input value=""        | The value attribute for each radio input should be set with the corresponding url parameter value for page content sorting. For example `value="date_desc"` generates the following url parameter upon page reload: `?ORDER=date_desc`  |
 
 This component uses Global Expander. This means you should be aware of the following:
 1. Global Expander will replace the href of the trigger with `javascript:;`. This allows you to put a hash link in for progressive enhancements purposes.
