@@ -52,7 +52,7 @@
 .c-sort-by__menu.has-tethered {
 	position: absolute;
 	top: 100%; // bottom of the tether element
-	transform: translateY(5px);
+	transform: translateY(4px);
 	z-index: 1;
 	left: 0;
 	width: 100%;
@@ -60,7 +60,6 @@
 	border-bottom: 0;
 
 	@include media-query('sm') {
-		transform: translateY(8px);
 		width: auto;
 	}
 
