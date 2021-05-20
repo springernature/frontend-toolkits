@@ -4,6 +4,21 @@ A sort by dropdown for use on Nature product pages that contain a sortable list 
 
 ## Usage
 
+Import the js and scss as follows:
+
+```js
+import {sortBy} from '@springernature/nature-sort-by/js/sort-by';
+
+sortBy();
+```
+
+```scss
+@import '../../node_modules/@springernature/nature-sort-by/scss/10-settings/sort-by';
+@import '../../node_modules/@springernature/nature-sort-by/scss/50-components/sort-by';
+
+```
+
+
 To configure the component the following html attributes will need to be set:
 
 | Name                    | Description                                                                                 | 
