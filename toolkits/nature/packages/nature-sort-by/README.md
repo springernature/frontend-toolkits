@@ -18,6 +18,10 @@ sortBy();
 
 ```
 
+If you plan to use utility classnames such as `u-js-hide` as shown in the examples below, ensure you import the relevant toolkit scss. For example:
+```scss
+@import '../../node_modules/@springernature/brand-context/default/scss/60-utilities/hiding';
+```
 
 To configure the component the following html attributes will need to be set:
 
