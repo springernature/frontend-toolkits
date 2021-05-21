@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2021-05-21)
+    * BREAKING: Use brand context breakpoint names
+
 ## 2.0.1 (2021-05-13)
     * Use new SN branding URL (for logo)
 

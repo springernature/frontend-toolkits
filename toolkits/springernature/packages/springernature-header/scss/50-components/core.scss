@@ -33,11 +33,11 @@
 }
 
 .c-header__journal-title {
-	@include media-query('tablet-wide-width') {
+	@include media-query('md') {
 		font-size: 2.2rem;
 	}
 
-	@include media-query('desktop-width') {
+	@include media-query('lg') {
 		font-size: 2.7rem;
 	}
 
