@@ -38,7 +38,7 @@
 }
 
 .c-input-group__control {
-	@include form-input;
+	@include forms--input;
 
 	&--check {
 		width: auto;

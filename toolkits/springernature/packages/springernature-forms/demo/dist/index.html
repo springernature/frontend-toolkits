@@ -1,0 +1,1704 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>@springernature/springernature-forms</title>
+		<script type="module">
+			// no JS found for package
+		</script>
+		<style>
+			/* demo page styles */
+			body{padding:2%}
+		</style>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+	font-weight: 300;
+	font-size: 3.5rem;
+	font-size: min(max(2.4rem, 4vw), 3.5rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.8rem, 4vw), 4.2rem);
+}
+
+h2 {
+	font-weight: 400;
+	font-size: min(max(2rem, 4vw), 2.4rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.8rem);
+}
+
+h3 {
+	font-weight: 700;
+	font-size: min(max(1.8rem, 4vw), 2rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.4rem);
+}
+
+h4 {
+	font-weight: 700;
+	font-size: min(max(1.8rem, 4vw), 1.8rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.4rem);
+}
+
+h5 {
+	font-weight: 700;
+	font-size: min(max(1.6rem, 4vw), 1.6rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(1.9rem, 4vw), 1.9rem);
+}
+
+/* =========================================================================
+   $NORMALIZE
+   normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
+   ========================================================================= */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+	font-family: sans-serif;
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 3 */
+	-webkit-text-size-adjust: 100%;
+	/* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+	/* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+	border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+	/* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+	display: none;
+}
+
+/**
+ * Basic
+ * Some default CSS styles
+ */
+body {
+	font-size: 13px;
+	line-height: 1.5;
+	font-family: "Merriweather", serif;
+}
+
+a {
+	text-decoration: none;
+	color: #004b83;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+	font-weight: 300;
+	font-size: 3.5rem;
+	font-size: min(max(2.4rem, 4vw), 3.5rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.8rem, 4vw), 4.2rem);
+}
+
+h2 {
+	font-weight: 400;
+	font-size: min(max(2rem, 4vw), 2.4rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.8rem);
+}
+
+h3 {
+	font-weight: 700;
+	font-size: min(max(1.8rem, 4vw), 2rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.4rem);
+}
+
+h4 {
+	font-weight: 700;
+	font-size: min(max(1.8rem, 4vw), 1.8rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(2.4rem, 4vw), 2.4rem);
+}
+
+h5 {
+	font-weight: 700;
+	font-size: min(max(1.6rem, 4vw), 1.6rem);
+	margin-bottom: 16px;
+	font-family: "Merriweather", serif;
+	line-height: min(max(1.9rem, 4vw), 1.9rem);
+}
+
+/*
+ * Headings
+ */
+/**
+ * Layout
+ * Universal layout styles
+ */
+html {
+	height: 100%;
+	overflow-y: scroll;
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100%;
+	font-family: "Merriweather", serif;
+	font-size: 1.6em;
+	line-height: 1.875;
+	color: #222222;
+	background: #f8f8f8;
+	letter-spacing: 0.01em;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+figure {
+	margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+	margin: 0;
+	padding: 0;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+a {
+	color: #004b83;
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+}
+
+a.visited, a:visited {
+	color: #a345c9;
+}
+
+a.hover, a:hover {
+	color: #0063ab;
+	text-decoration: none;
+}
+
+a.active, a:active {
+	color: #222222;
+}
+
+a.focus, a:focus {
+	outline: 4px solid #ffcc00;
+}
+
+table {
+	font-size: 1.6rem;
+	line-height: 1.875;
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+th,
+td {
+	padding: 8px;
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	border-bottom: 3px solid #183642;
+}
+
+td {
+	font-family: "Daytona", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-bottom: 2px solid #dadada;
+}
+
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+[contenteditable]:focus {
+	outline: 3px solid #ffcc00;
+}
+
+input[type="file"]:focus-within {
+	outline: 3px solid #ffcc00;
+}
+
+.c-form__section {
+	margin-bottom: 48px;
+}
+
+.c-form__field {
+	width: 100%;
+	margin-bottom: 24px;
+	line-height: 1.2;
+	font-size: 18px;
+	font-family: "Daytona", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.c-form__field fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.c-form__field {
+		max-width: 480px;
+	}
+}
+
+.c-form__label-text {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+.c-form__hint {
+	display: block;
+	margin-bottom: 8px;
+	color: #666;
+}
+
+.c-form__input {
+	display: block;
+	width: 100%;
+	line-height: 1.4;
+	margin-bottom: 16px;
+	font-family: "Daytona", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 4px;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+
+.c-form__heading {
+	margin-bottom: 32px;
+}
+
+.c-form__subheading {
+	margin-bottom: 8px;
+}
+
+.c-form__radio {
+	display: block;
+	padding: 4px 0;
+}
+
+.c-form__radio [type="radio"] {
+	margin-right: 8px;
+}
+
+.c-form__checkbox {
+	display: block;
+	padding: 4px 0;
+}
+
+.c-form__checkbox [type="checkbox"] {
+	margin-right: 8px;
+}
+
+.c-form__select {
+	display: block;
+	width: 100%;
+	line-height: 1.4;
+	margin-bottom: 16px;
+	font-family: "Daytona", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 4px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	padding: 0;
+	position: relative;
+}
+
+.c-form__select:after {
+	content: '';
+	position: absolute;
+	top: .8em;
+	right: .5em;
+	border-left: .4em solid transparent;
+	border-right: .4em solid transparent;
+	border-top: 0.5em solid #555;
+	display: block;
+}
+
+.c-form__select select {
+	appearance: none;
+	line-height: 1.4;
+	background-color: transparent;
+	border: none;
+	padding: 4px 16px 4px 8px;
+	display: block;
+	width: 100%;
+}
+
+.c-form__select select::-ms-expand {
+	display: none;
+}
+
+.c-form__select .c-form__label-text--inline {
+	display: inline;
+}
+
+.c-form__indent {
+	margin-left: 16px;
+	border-left: 4px solid #666;
+	padding-left: 16px;
+}
+
+.c-form__field-error {
+	color: #c30016;
+	font-weight: 600;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-bottom: 4px;
+}
+
+.c-form__field-error svg {
+	margin-right: .3em;
+}
+
+.c-error-summary {
+	border: solid 4px #c40606;
+	padding: 16px;
+	margin-bottom: 24px;
+}
+
+.c-error-summary__heading {
+	margin-bottom: 8px;
+}
+
+.c-error-summary__general-list,
+.c-error-summary__specific-list {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	color: #c40606;
+	margin-bottom: 8px;
+}
+
+.c-error-summary__specific-list a {
+	font-weight: 600;
+	color: inherit;
+}
+
+.c-error-summary__general-list,
+.c-error-summary__specific-list {
+	line-height: 1.5;
+}
+
+.u-icon {
+	fill: currentColor;
+	transform: translate(0, 0);
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+		</style>
+	</head>
+	<body>
+		<div aria-hidden="true" class="u-display-none">
+	<svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-info" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 0a9 9 0 110 18A9 9 0 019 0zm0 7H7.5l-.117.007a1 1 0 00-.112 1.967l.112.02L7.5 9H8v3h-.5l-.117.007a1 1 0 00-.857.764l-.02.112L6.5 13l.007.117a1 1 0 00.764.857l.112.02L7.5 14h3l.117-.007a1 1 0 00.112-1.967l-.112-.02L10.5 12H10V8l-.007-.117a1 1 0 00-.764-.857l-.112-.02zm0-3.25a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/></symbol><symbol id="icon-warning" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 11.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM9.413 4a1 1 0 011 1l-.003.083-.334 4A1 1 0 019.08 10h-.16a1 1 0 01-.996-.917l-.334-4a1 1 0 01.914-1.08l.041-.002zM9 18A9 9 0 119 0a9 9 0 010 18z"/></symbol></svg>
+</div>
+<h1 class="c-form__heading">Form elements</h1>
+
+
+<div class="u-mb-48">
+	<h2>Contents:</h2>
+
+	<nav>
+		<ul>
+			<li><a href="#text-input">Text input</a></li>
+			<li><a href="#text-area">Text area</a></li>
+			<li><a href="#hint-text">Hint text</a></li>
+			<li><a href="#error-hint">Error hint</a></li>
+			<li><a href="#file-upload">File upload</a></li>
+			<li><a href="#radio-buttons">Radio buttons</a></li>
+			<li><a href="#checkboxes">Checkboxes</a></li>
+			<li><a href="#form-headings">Form headings</a></li>
+			<li><a href="#error-summary">Error summary</a></li>
+			<li><a href="#select-field">Select field</a></li>
+			<li><a href="#form-buttons">Form buttons</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="text-input">Text input</h2>
+
+	<div class="c-form__field">
+		<label for="firstName">
+			<span class="c-form__label-text">First name</span>
+		</label>
+		<input class="c-form__input" type="text" id="firstName" name="firstName" value="" />
+	</div>
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;firstName&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;First name&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot; value=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="text-area">Text area</h2>
+
+	<div class="c-form__field">
+		<label for="feedback">
+			<span class="c-form__label-text">Feedback</span>
+		</label>
+		<textarea class="c-form__input" name="feedback" id="feedback" rows="5"></textarea>
+	</div>
+
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;feedback&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;Feedback&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;textarea class=&quot;c-form__input&quot; name=&quot;feedback&quot; id=&quot;feedback&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="hint-text">Hint text</h2>
+
+	<div class="c-form__field">
+		<label for="password">
+			<span class="c-form__label-text">Password</span>
+			<span class="c-form__hint">Hint: 8 characters or more</span>
+		</label>
+		<input class="c-form__input" type="password" name="password" id="password" value="" />
+	</div>
+
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;password&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;Password&lt;/span&gt;
+		&lt;span class=&quot;c-form__hint&quot;&gt;Hint: 8 characters or more&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input class=&quot;c-form__input&quot; type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; value=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="error-hint">Error hint</h2>
+
+	<div class="c-form__field">
+		<label for="lastName">
+			<span class="c-form__label-text">Last name</span>
+			<span class="c-form__field-error" data-component="error-hint">
+			<svg class="u-icon" width="18" height="18" aria-hidden="true" focusable="false"><use xlink:href="#icon-warning"></use></svg>
+			<span>Enter the last name</span>
+		</span>
+		</label>
+		<input class="c-form__input" type="text" id="lastName" name="lastName" value="" />
+	</div>
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;lastName&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;Last name&lt;/span&gt;
+		&lt;span class=&quot;c-form__field-error&quot; data-component=&quot;error-hint&quot;&gt;
+		&lt;svg class=&quot;u-icon&quot; width=&quot;18&quot; height=&quot;18&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#icon-warning&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+		&lt;span&gt;Enter the last name&lt;/span&gt;
+	&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;lastName&quot; name=&quot;lastName&quot; value=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="file-upload">File upload</h2>
+
+	<div class="c-form__field">
+		<label for="profilePicture">
+			<span class="c-form__label-text">Profile picture (optional)</span>
+			<span class="c-form__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
+		</label>
+		<input class="c-form__input c-form__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
+	</div>
+
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;profilePicture&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;Profile picture (optional)&lt;/span&gt;
+		&lt;span class=&quot;c-form__hint&quot;&gt;Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input class=&quot;c-form__input c-form__input--file&quot; type=&quot;file&quot; id=&quot;profilePicture&quot; name=&quot;profilePicture&quot; accept=&quot;.gif,.jpg,.jpeg,.png&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="radio-buttons">Radio buttons</h2>
+
+	<div class="c-form__field">
+		<fieldset>
+			<legend class="c-form__label-text">
+				<span>Do you already have an account?</span>
+			</legend>
+			<div class="c-form__radio">
+				<input type="radio" name="have-account" value="mr" id="have-account-yes">
+				<label for="have-account-yes">Yes</label>
+			</div>
+			<div class="c-form__radio">
+				<input type="radio" name="have-account" value="mrs" id="have-acount-no">
+				<label for="have-account-no">No</label>
+			</div>
+		</fieldset>
+	</div>
+
+
+<pre><code>	&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;legend class=&quot;c-form__label-text&quot;&gt;
+			&lt;span&gt;Do you already have an account?&lt;/span&gt;
+		&lt;/legend&gt;
+		&lt;div class=&quot;c-form__radio&quot;&gt;
+			&lt;input type=&quot;radio&quot; name=&quot;have-account&quot; value=&quot;mr&quot; id=&quot;have-account-yes&quot;&gt;
+			&lt;label for=&quot;have-account-yes&quot;&gt;Yes&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;c-form__radio&quot;&gt;
+			&lt;input type=&quot;radio&quot; name=&quot;have-account&quot; value=&quot;mrs&quot; id=&quot;have-acount-no&quot;&gt;
+			&lt;label for=&quot;have-account-no&quot;&gt;No&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/fieldset&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="checkboxes">Checkboxes</h2>
+
+	<div class="c-form__field">
+		<div class="c-form__checkbox">
+			<input type="checkbox" name="termsAndConditions" value="" id="termsAndConditions">
+			<label for="termsAndConditions">I agree to <a href="#">the terms and conditions</a></label>
+		</div>
+	</div>
+
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;div class=&quot;c-form__checkbox&quot;&gt;
+		&lt;input type=&quot;checkbox&quot; name=&quot;termsAndConditions&quot; value=&quot;&quot; id=&quot;termsAndConditions&quot;&gt;
+		&lt;label for=&quot;termsAndConditions&quot;&gt;I agree to &lt;a href=&quot;#&quot;&gt;the terms and conditions&lt;/a&gt;&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="form-headings">Form headings</h2>
+
+	<h2 class="c-form__heading">Create your account</h2>
+	<div class="c-form__section">
+		<h4 class="c-form__subheading">Profile information</h4>
+		<div class="c-form__field">
+			<label for="fullName">
+				<span class="c-form__label-text">Full name</span>
+			</label>
+			<input class="c-form__input" type="text" id="fullName" name="fullName" value="" />
+		</div>
+	</div>
+
+<pre><code>&lt;h3 class=&quot;c-form__heading&quot;&gt;Create your account&lt;/h3&gt;
+	&lt;div class=&quot;c-form__section&quot;&gt;
+		&lt;h4 class=&quot;c-form__subheading&quot;&gt;Profile information&lt;/h4&gt;
+		&lt;div class=&quot;c-form__field&quot;&gt;
+			&lt;label for=&quot;fullName&quot;&gt;
+				&lt;span class=&quot;c-form__label-text&quot;&gt;Full name&lt;/span&gt;
+			&lt;/label&gt;
+			&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;fullName&quot; name=&quot;fullName&quot; value=&quot;&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="error-summary">Error summary</h2>
+
+	<div class="c-error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
+		<h3 class="c-error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+		<ul data-test="specific-errors-list" class="c-error-summary__specific-list">
+			<li><a href="#lastName">Enter your last name</a></li>
+			<li><a href="#password">Enter your password</a></li>
+		</ul>
+	</div>
+
+
+<pre><code>&lt;div class=&quot;c-error-summary&quot; role=&quot;group&quot; id=&quot;errorSummary&quot; aria-labelledby=&quot;errorSummaryHeading&quot; tabindex=&quot;-1&quot; data-component=&quot;error-summary&quot;&gt;
+	&lt;h3 class=&quot;c-error-summary__heading&quot; id=&quot;errorSummaryHeading&quot;&gt;Sorry, we couldn't submit the form&lt;/h3&gt;
+	&lt;ul data-test=&quot;specific-errors-list&quot; class=&quot;c-error-summary__specific-list&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#lastName&quot;&gt;Please enter your last name&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#passworde&quot;&gt;Please enter your password&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="select-field">Select field</h2>
+	<div class="c-form__field">
+		<label for="domain">
+			<span class="c-form__label-text">Domain</span>
+		</label>
+		<div class="c-form__select">
+			<select id="domain" name="domain" aria-invalid="true">
+				<option value="">--Please choose a country--</option>
+				<option value="GB">United Kingdom</option>
+				<option value="AL">Albania</option>
+				<option value="AD">Andorra</option>
+				<option value="AT">Austria</option>
+				<option value="BY">Belarus</option>
+				<option value="BE">Belgium</option>
+				<option value="BA">Bosnia and Herzegovina</option>
+				<option value="BG">Bulgaria</option>
+				<option value="HR">Croatia (Hrvatska)</option>
+				<option value="CY">Cyprus</option>
+				<option value="CZ">Czech Republic</option>
+				<option value="FR">France</option>
+				<option value="GI">Gibraltar</option>
+				<option value="DE">Germany</option>
+				<option value="GR">Greece</option>
+				<option value="VA">Holy See (Vatican City State)</option>
+				<option value="HU">Hungary</option>
+				<option value="IT">Italy</option>
+				<option value="LI">Liechtenstein</option>
+				<option value="LU">Luxembourg</option>
+				<option value="MK">Macedonia</option>
+				<option value="MT">Malta</option>
+				<option value="MD">Moldova</option>
+				<option value="MC">Monaco</option>
+				<option value="ME">Montenegro</option>
+				<option value="NL">Netherlands</option>
+				<option value="PL">Poland</option>
+				<option value="PT">Portugal</option>
+				<option value="RO">Romania</option>
+				<option value="SM">San Marino</option>
+				<option value="RS">Serbia</option>
+				<option value="SK">Slovakia</option>
+				<option value="SI">Slovenia</option>
+				<option value="ES">Spain</option>
+				<option value="UA">Ukraine</option>
+				<option value="DK">Denmark</option>
+				<option value="EE">Estonia</option>
+				<option value="FO">Faroe Islands</option>
+				<option value="FI">Finland</option>
+				<option value="GL">Greenland</option>
+				<option value="IS">Iceland</option>
+				<option value="IE">Ireland</option>
+				<option value="LV">Latvia</option>
+				<option value="LT">Lithuania</option>
+				<option value="NO">Norway</option>
+				<option value="SJ">Svalbard and Jan Mayen Islands</option>
+				<option value="SE">Sweden</option>
+				<option value="CH">Switzerland</option>
+				<option value="TR">Turkey</option>
+			</select>
+		</div>
+	</div>
+
+<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
+	&lt;label for=&quot;country&quot;&gt;
+		&lt;span class=&quot;c-form__label-text&quot;&gt;Country&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;div class=&quot;c-form__select&quot;&gt;
+		&lt;select id="country" name="country"&gt;
+			&lt;option value=""&gt;--Please choose a country--&lt;/option&gt;
+			&lt;option value="GB"&gt;United Kingdom&lt;/option&gt;
+			&lt;option value="AL"&gt;Albania&lt;/option&gt;
+			&lt;option value="AD"&gt;Andorra&lt;/option&gt;
+			&lt;option value="AT"&gt;Austria&lt;/option&gt;
+			&lt;option value="BY"&gt;Belarus&lt;/option&gt;
+			&lt;option value="BE"&gt;Belgium&lt;/option&gt;
+			&lt;option value="BA"&gt;Bosnia and Herzegovina&lt;/option&gt;
+			&lt;option value="BG"&gt;Bulgaria&lt;/option&gt;
+			&lt;option value="HR"&gt;Croatia (Hrvatska)&lt;/option&gt;
+			&lt;option value="CY"&gt;Cyprus&lt;/option&gt;
+			&lt;option value="CZ"&gt;Czech Republic&lt;/option&gt;
+			&lt;option value="FR"&gt;France&lt;/option&gt;
+			&lt;option value="GI"&gt;Gibraltar&lt;/option&gt;
+			&lt;option value="DE"&gt;Germany&lt;/option&gt;
+			&lt;option value="GR"&gt;Greece&lt;/option&gt;
+			&lt;option value="VA"&gt;Holy See (Vatican City State)&lt;/option&gt;
+			&lt;option value="HU"&gt;Hungary&lt;/option&gt;
+			&lt;option value="IT"&gt;Italy&lt;/option&gt;
+			&lt;option value="LI"&gt;Liechtenstein&lt;/option&gt;
+			&lt;option value="LU"&gt;Luxembourg&lt;/option&gt;
+			&lt;option value="MK"&gt;Macedonia&lt;/option&gt;
+			&lt;option value="MT"&gt;Malta&lt;/option&gt;
+			&lt;option value="MD"&gt;Moldova&lt;/option&gt;
+			&lt;option value="MC"&gt;Monaco&lt;/option&gt;
+			&lt;option value="ME"&gt;Montenegro&lt;/option&gt;
+			&lt;option value="NL"&gt;Netherlands&lt;/option&gt;
+			&lt;option value="PL"&gt;Poland&lt;/option&gt;
+			&lt;option value="PT"&gt;Portugal&lt;/option&gt;
+			&lt;option value="RO"&gt;Romania&lt;/option&gt;
+			&lt;option value="SM"&gt;San Marino&lt;/option&gt;
+			&lt;option value="RS"&gt;Serbia&lt;/option&gt;
+			&lt;option value="SK"&gt;Slovakia&lt;/option&gt;
+			&lt;option value="SI"&gt;Slovenia&lt;/option&gt;
+			&lt;option value="ES"&gt;Spain&lt;/option&gt;
+			&lt;option value="UA"&gt;Ukraine&lt;/option&gt;
+			&lt;option value="DK"&gt;Denmark&lt;/option&gt;
+			&lt;option value="EE"&gt;Estonia&lt;/option&gt;
+			&lt;option value="FO"&gt;Faroe Islands&lt;/option&gt;
+			&lt;option value="FI"&gt;Finland&lt;/option&gt;
+			&lt;option value="GL"&gt;Greenland&lt;/option&gt;
+			&lt;option value="IS"&gt;Iceland&lt;/option&gt;
+			&lt;option value="IE"&gt;Ireland&lt;/option&gt;
+			&lt;option value="LV"&gt;Latvia&lt;/option&gt;
+			&lt;option value="LT"&gt;Lithuania&lt;/option&gt;
+			&lt;option value="NO"&gt;Norway&lt;/option&gt;
+			&lt;option value="SJ"&gt;Svalbard and Jan Mayen Islands&lt;/option&gt;
+			&lt;option value="SE"&gt;Sweden&lt;/option&gt;
+			&lt;option value="CH"&gt;Switzerland&lt;/option&gt;
+			&lt;option value="TR"&gt;Turkey&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="form-buttons">Form buttons</h2>
+
+	<div class="u-mb-16">
+		<div class="c-form__submit">
+			<button type="submit" class="u-button u-button--primary">Submit</button>
+		</div>
+	</div>
+
+<pre><code>&lt;div class=&quot;c-form__submit&quot;&gt;
+	&lt;button type=&quot;submit&quot; class=&quot;u-button u-button--primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+	</body>
+</html>

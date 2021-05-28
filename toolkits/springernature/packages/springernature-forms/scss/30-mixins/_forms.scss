@@ -1,0 +1,10 @@
+@mixin forms--input {
+	display: block;
+	width: 100%;
+	line-height: 1.4;
+	margin-bottom: $forms--input-margin-bottom;
+	font-family: $context--font-family-sans;
+	padding: $forms--input-padding;
+	border: $forms--input-border;
+	border-radius: $forms--input-border-radius;
+}

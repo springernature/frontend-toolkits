@@ -1,0 +1,121 @@
+.c-form__section {
+	margin-bottom: $forms--section-margin-bottom;
+}
+
+.c-form__field {
+	width: 100%;
+
+	margin-bottom: $forms--field-margin-bottom;
+	line-height: 1.2;
+	font-size: $forms--font-size;
+	font-family: $context--font-family-sans;
+
+	fieldset {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+}
+
+@include from-wide-tablet {
+	.c-form__field {
+		max-width: $forms--input-max-width;
+	}
+}
+
+.c-form__label-text {
+	display: block;
+	font-weight: $context--font-weight-bold;
+	margin-bottom: $forms--label-text-margin-bottom;
+}
+
+.c-form__hint {
+	display: block;
+	margin-bottom: $forms--hint-margin-bottom;
+	color: $forms--hint-color;
+}
+
+.c-form__input {
+	@include forms--input;
+}
+
+.c-form__heading {
+	margin-bottom: $forms--heading-margin-bottom;
+}
+
+.c-form__subheading {
+	margin-bottom: $forms--subheading-margin-bottom;
+}
+
+.c-form__radio {
+	display: block;
+	padding: $forms--radio-padding;
+}
+
+.c-form__radio [type="radio"] {
+	margin-right: $forms--radio-margin-right;
+}
+
+.c-form__checkbox {
+	display: block;
+	padding: $forms--checkbox-padding;
+}
+
+.c-form__checkbox [type="checkbox"] {
+	margin-right: $forms--checkbox-margin-right;
+}
+
+.c-form__select {
+	@include forms--input;
+	padding: 0;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: .8em;
+		right: .5em;
+		border-left: .4em solid transparent;
+		border-right: .4em solid transparent;
+		border-top: .5em solid $forms--select-arrow-color;
+		display: block;
+	}
+
+	& select {
+		appearance: none;
+		line-height: 1.4;
+		background-color: transparent;
+		border: none;
+		padding: $forms--select-padding;
+		display: block;
+		width: 100%;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+.c-form__select
+.c-form__label-text--inline {
+	display: inline;
+}
+
+.c-form__indent {
+	margin-left: $forms--indent-margin-left;
+	border-left: $forms--indent-border-left;
+	padding-left: $forms--indent-padding-left;
+}
+
+.c-form__field-error {
+	color: #c30016;
+	font-weight: $forms--field-error-font-weight;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-bottom: $forms--field-error-margin-bottom;
+
+	svg {
+		margin-right: .3em;
+	}
+}
