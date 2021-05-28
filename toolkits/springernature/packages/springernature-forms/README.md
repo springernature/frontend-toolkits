@@ -23,8 +23,9 @@ Import the SCSS you need in your application
 @import '@springernature/springernature-forms/scss/50-components/forms';
 @import '@springernature/springernature-forms/scss/50-components/errors';
 
-// Include this with your other utilities, since icons are needed for errors
+// Include this with your other utilities, since icons and buttons are needed.
 @import '@springernature/brand-context/default/scss/60-utilities/icons';
+@import '@springernature/brand-context/default/scss/60-utilities/buttons';
 ```
 
 ## Components
