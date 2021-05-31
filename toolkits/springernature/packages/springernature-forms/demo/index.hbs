@@ -1,12 +1,13 @@
 <div aria-hidden="true" class="u-display-none">
-	<svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-info" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 0a9 9 0 110 18A9 9 0 019 0zm0 7H7.5l-.117.007a1 1 0 00-.112 1.967l.112.02L7.5 9H8v3h-.5l-.117.007a1 1 0 00-.857.764l-.02.112L6.5 13l.007.117a1 1 0 00.764.857l.112.02L7.5 14h3l.117-.007a1 1 0 00.112-1.967l-.112-.02L10.5 12H10V8l-.007-.117a1 1 0 00-.764-.857l-.112-.02zm0-3.25a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/></symbol><symbol id="icon-warning" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 11.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM9.413 4a1 1 0 011 1l-.003.083-.334 4A1 1 0 019.08 10h-.16a1 1 0 01-.996-.917l-.334-4a1 1 0 01.914-1.08l.041-.002zM9 18A9 9 0 119 0a9 9 0 010 18z"/></symbol></svg>
+	<svg xmlns="http://www.w3.org/2000/svg">
+		<symbol id="icon-warning" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 11.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM9.413 4a1 1 0 011 1l-.003.083-.334 4A1 1 0 019.08 10h-.16a1 1 0 01-.996-.917l-.334-4a1 1 0 01.914-1.08l.041-.002zM9 18A9 9 0 119 0a9 9 0 010 18z"/></symbol>
+	</svg>
 </div>
-<h1 class="c-form__heading">Form elements</h1>
 
+<h1 class="c-form__heading">Form elements</h1>
 
 <div class="u-mb-48">
 	<h2>Contents:</h2>
-
 	<nav>
 		<ul>
 			<li><a href="#text-input">Text input</a></li>
@@ -26,45 +27,26 @@
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="text-input">Text input</h2>
-
 	<div class="c-form__field">
 		<label for="firstName">
 			<span class="c-form__label-text">First name</span>
 		</label>
 		<input class="c-form__input" type="text" id="firstName" name="firstName" value="" />
 	</div>
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;firstName&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;First name&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot; value=&quot;&quot; /&gt;
-&lt;/div&gt;</code></pre>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="text-area">Text area</h2>
-
 	<div class="c-form__field">
 		<label for="feedback">
 			<span class="c-form__label-text">Feedback</span>
 		</label>
 		<textarea class="c-form__input" name="feedback" id="feedback" rows="5"></textarea>
 	</div>
-
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;feedback&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;Feedback&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;textarea class=&quot;c-form__input&quot; name=&quot;feedback&quot; id=&quot;feedback&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="hint-text">Hint text</h2>
-
 	<div class="c-form__field">
 		<label for="password">
 			<span class="c-form__label-text">Password</span>
@@ -72,21 +54,10 @@
 		</label>
 		<input class="c-form__input" type="password" name="password" id="password" value="" />
 	</div>
-
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;password&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;Password&lt;/span&gt;
-		&lt;span class=&quot;c-form__hint&quot;&gt;Hint: 8 characters or more&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;input class=&quot;c-form__input&quot; type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; value=&quot;&quot; /&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="error-hint">Error hint</h2>
-
 	<div class="c-form__field">
 		<label for="lastName">
 			<span class="c-form__label-text">Last name</span>
@@ -97,23 +68,10 @@
 		</label>
 		<input class="c-form__input" type="text" id="lastName" name="lastName" value="" />
 	</div>
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;lastName&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;Last name&lt;/span&gt;
-		&lt;span class=&quot;c-form__field-error&quot; data-component=&quot;error-hint&quot;&gt;
-		&lt;svg class=&quot;u-icon&quot; width=&quot;18&quot; height=&quot;18&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;use xlink:href=&quot;#icon-warning&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-		&lt;span&gt;Enter the last name&lt;/span&gt;
-	&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;lastName&quot; name=&quot;lastName&quot; value=&quot;&quot; /&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="file-upload">File upload</h2>
-
 	<div class="c-form__field">
 		<label for="profilePicture">
 			<span class="c-form__label-text">Profile picture (optional)</span>
@@ -121,21 +79,10 @@
 		</label>
 		<input class="c-form__input c-form__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
 	</div>
-
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;profilePicture&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;Profile picture (optional)&lt;/span&gt;
-		&lt;span class=&quot;c-form__hint&quot;&gt;Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;input class=&quot;c-form__input c-form__input--file&quot; type=&quot;file&quot; id=&quot;profilePicture&quot; name=&quot;profilePicture&quot; accept=&quot;.gif,.jpg,.jpeg,.png&quot;&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="radio-buttons">Radio buttons</h2>
-
 	<div class="c-form__field">
 		<fieldset>
 			<legend class="c-form__label-text">
@@ -151,50 +98,21 @@
 			</div>
 		</fieldset>
 	</div>
-
-
-<pre><code>	&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;fieldset&gt;
-		&lt;legend class=&quot;c-form__label-text&quot;&gt;
-			&lt;span&gt;Do you already have an account?&lt;/span&gt;
-		&lt;/legend&gt;
-		&lt;div class=&quot;c-form__radio&quot;&gt;
-			&lt;input type=&quot;radio&quot; name=&quot;have-account&quot; value=&quot;mr&quot; id=&quot;have-account-yes&quot;&gt;
-			&lt;label for=&quot;have-account-yes&quot;&gt;Yes&lt;/label&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;c-form__radio&quot;&gt;
-			&lt;input type=&quot;radio&quot; name=&quot;have-account&quot; value=&quot;mrs&quot; id=&quot;have-acount-no&quot;&gt;
-			&lt;label for=&quot;have-account-no&quot;&gt;No&lt;/label&gt;
-		&lt;/div&gt;
-	&lt;/fieldset&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="checkboxes">Checkboxes</h2>
-
 	<div class="c-form__field">
 		<div class="c-form__checkbox">
 			<input type="checkbox" name="termsAndConditions" value="" id="termsAndConditions">
 			<label for="termsAndConditions">I agree to <a href="#">the terms and conditions</a></label>
 		</div>
 	</div>
-
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;div class=&quot;c-form__checkbox&quot;&gt;
-		&lt;input type=&quot;checkbox&quot; name=&quot;termsAndConditions&quot; value=&quot;&quot; id=&quot;termsAndConditions&quot;&gt;
-		&lt;label for=&quot;termsAndConditions&quot;&gt;I agree to &lt;a href=&quot;#&quot;&gt;the terms and conditions&lt;/a&gt;&lt;/label&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="form-headings">Form headings</h2>
-
-	<h2 class="c-form__heading">Create your account</h2>
+	<h3 class="c-form__heading">Create your account</h3>
 	<div class="c-form__section">
 		<h4 class="c-form__subheading">Profile information</h4>
 		<div class="c-form__field">
@@ -204,24 +122,10 @@
 			<input class="c-form__input" type="text" id="fullName" name="fullName" value="" />
 		</div>
 	</div>
-
-<pre><code>&lt;h3 class=&quot;c-form__heading&quot;&gt;Create your account&lt;/h3&gt;
-	&lt;div class=&quot;c-form__section&quot;&gt;
-		&lt;h4 class=&quot;c-form__subheading&quot;&gt;Profile information&lt;/h4&gt;
-		&lt;div class=&quot;c-form__field&quot;&gt;
-			&lt;label for=&quot;fullName&quot;&gt;
-				&lt;span class=&quot;c-form__label-text&quot;&gt;Full name&lt;/span&gt;
-			&lt;/label&gt;
-			&lt;input class=&quot;c-form__input&quot; type=&quot;text&quot; id=&quot;fullName&quot; name=&quot;fullName&quot; value=&quot;&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="error-summary">Error summary</h2>
-
 	<div class="c-error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
 		<h3 class="c-error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
 		<ul data-test="specific-errors-list" class="c-error-summary__specific-list">
@@ -229,16 +133,6 @@
 			<li><a href="#password">Enter your password</a></li>
 		</ul>
 	</div>
-
-
-<pre><code>&lt;div class=&quot;c-error-summary&quot; role=&quot;group&quot; id=&quot;errorSummary&quot; aria-labelledby=&quot;errorSummaryHeading&quot; tabindex=&quot;-1&quot; data-component=&quot;error-summary&quot;&gt;
-	&lt;h3 class=&quot;c-error-summary__heading&quot; id=&quot;errorSummaryHeading&quot;&gt;Sorry, we couldn't submit the form&lt;/h3&gt;
-	&lt;ul data-test=&quot;specific-errors-list&quot; class=&quot;c-error-summary__specific-list&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#lastName&quot;&gt;Please enter your last name&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#passworde&quot;&gt;Please enter your password&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
@@ -302,80 +196,13 @@
 			</select>
 		</div>
 	</div>
-
-<pre><code>&lt;div class=&quot;c-form__field&quot;&gt;
-	&lt;label for=&quot;country&quot;&gt;
-		&lt;span class=&quot;c-form__label-text&quot;&gt;Country&lt;/span&gt;
-	&lt;/label&gt;
-	&lt;div class=&quot;c-form__select&quot;&gt;
-		&lt;select id="country" name="country"&gt;
-			&lt;option value=""&gt;--Please choose a country--&lt;/option&gt;
-			&lt;option value="GB"&gt;United Kingdom&lt;/option&gt;
-			&lt;option value="AL"&gt;Albania&lt;/option&gt;
-			&lt;option value="AD"&gt;Andorra&lt;/option&gt;
-			&lt;option value="AT"&gt;Austria&lt;/option&gt;
-			&lt;option value="BY"&gt;Belarus&lt;/option&gt;
-			&lt;option value="BE"&gt;Belgium&lt;/option&gt;
-			&lt;option value="BA"&gt;Bosnia and Herzegovina&lt;/option&gt;
-			&lt;option value="BG"&gt;Bulgaria&lt;/option&gt;
-			&lt;option value="HR"&gt;Croatia (Hrvatska)&lt;/option&gt;
-			&lt;option value="CY"&gt;Cyprus&lt;/option&gt;
-			&lt;option value="CZ"&gt;Czech Republic&lt;/option&gt;
-			&lt;option value="FR"&gt;France&lt;/option&gt;
-			&lt;option value="GI"&gt;Gibraltar&lt;/option&gt;
-			&lt;option value="DE"&gt;Germany&lt;/option&gt;
-			&lt;option value="GR"&gt;Greece&lt;/option&gt;
-			&lt;option value="VA"&gt;Holy See (Vatican City State)&lt;/option&gt;
-			&lt;option value="HU"&gt;Hungary&lt;/option&gt;
-			&lt;option value="IT"&gt;Italy&lt;/option&gt;
-			&lt;option value="LI"&gt;Liechtenstein&lt;/option&gt;
-			&lt;option value="LU"&gt;Luxembourg&lt;/option&gt;
-			&lt;option value="MK"&gt;Macedonia&lt;/option&gt;
-			&lt;option value="MT"&gt;Malta&lt;/option&gt;
-			&lt;option value="MD"&gt;Moldova&lt;/option&gt;
-			&lt;option value="MC"&gt;Monaco&lt;/option&gt;
-			&lt;option value="ME"&gt;Montenegro&lt;/option&gt;
-			&lt;option value="NL"&gt;Netherlands&lt;/option&gt;
-			&lt;option value="PL"&gt;Poland&lt;/option&gt;
-			&lt;option value="PT"&gt;Portugal&lt;/option&gt;
-			&lt;option value="RO"&gt;Romania&lt;/option&gt;
-			&lt;option value="SM"&gt;San Marino&lt;/option&gt;
-			&lt;option value="RS"&gt;Serbia&lt;/option&gt;
-			&lt;option value="SK"&gt;Slovakia&lt;/option&gt;
-			&lt;option value="SI"&gt;Slovenia&lt;/option&gt;
-			&lt;option value="ES"&gt;Spain&lt;/option&gt;
-			&lt;option value="UA"&gt;Ukraine&lt;/option&gt;
-			&lt;option value="DK"&gt;Denmark&lt;/option&gt;
-			&lt;option value="EE"&gt;Estonia&lt;/option&gt;
-			&lt;option value="FO"&gt;Faroe Islands&lt;/option&gt;
-			&lt;option value="FI"&gt;Finland&lt;/option&gt;
-			&lt;option value="GL"&gt;Greenland&lt;/option&gt;
-			&lt;option value="IS"&gt;Iceland&lt;/option&gt;
-			&lt;option value="IE"&gt;Ireland&lt;/option&gt;
-			&lt;option value="LV"&gt;Latvia&lt;/option&gt;
-			&lt;option value="LT"&gt;Lithuania&lt;/option&gt;
-			&lt;option value="NO"&gt;Norway&lt;/option&gt;
-			&lt;option value="SJ"&gt;Svalbard and Jan Mayen Islands&lt;/option&gt;
-			&lt;option value="SE"&gt;Sweden&lt;/option&gt;
-			&lt;option value="CH"&gt;Switzerland&lt;/option&gt;
-			&lt;option value="TR"&gt;Turkey&lt;/option&gt;
-		&lt;/select&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="form-buttons">Form buttons</h2>
-
 	<div class="u-mb-16">
 		<div class="c-form__submit">
 			<button type="submit" class="u-button u-button--primary">Submit</button>
 		</div>
 	</div>
-
-<pre><code>&lt;div class=&quot;c-form__submit&quot;&gt;
-	&lt;button type=&quot;submit&quot; class=&quot;u-button u-button--primary&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-
 </div>
