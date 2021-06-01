@@ -9,11 +9,11 @@
 	border-radius: $forms--input-border-radius;
 }
 
-.c-form__section {
+.c-forms__section {
 	margin-bottom: $forms--section-margin-bottom;
 }
 
-.c-form__field {
+.c-forms__field {
 	width: 100%;
 
 	margin-bottom: $forms--field-margin-bottom;
@@ -29,54 +29,54 @@
 }
 
 @include from-wide-tablet {
-	.c-form__field {
+	.c-forms__field {
 		max-width: $forms--input-max-width;
 	}
 }
 
-.c-form__label-text {
+.c-forms__label-text {
 	display: block;
 	font-weight: $context--font-weight-bold;
 	margin-bottom: $forms--label-text-margin-bottom;
 }
 
-.c-form__hint {
+.c-forms__hint {
 	display: block;
 	margin-bottom: $forms--hint-margin-bottom;
 	color: $forms--hint-color;
 }
 
-.c-form__input {
+.c-forms__input {
 	@include forms--input;
 }
 
-.c-form__heading {
+.c-forms__heading {
 	margin-bottom: $forms--heading-margin-bottom;
 }
 
-.c-form__subheading {
+.c-forms__subheading {
 	margin-bottom: $forms--subheading-margin-bottom;
 }
 
-.c-form__radio {
+.c-forms__radio {
 	display: block;
 	padding: $forms--radio-padding;
 }
 
-.c-form__radio [type="radio"] {
+.c-forms__radio [type="radio"] {
 	margin-right: $forms--radio-margin-right;
 }
 
-.c-form__checkbox {
+.c-forms__checkbox {
 	display: block;
 	padding: $forms--checkbox-padding;
 }
 
-.c-form__checkbox [type="checkbox"] {
+.c-forms__checkbox [type="checkbox"] {
 	margin-right: $forms--checkbox-margin-right;
 }
 
-.c-form__select {
+.c-forms__select {
 	@include forms--input;
 	padding: 0;
 	position: relative;
@@ -107,18 +107,18 @@
 	}
 }
 
-.c-form__select
-.c-form__label-text--inline {
+.c-forms__select
+.c-forms__label-text--inline {
 	display: inline;
 }
 
-.c-form__indent {
+.c-forms__indent {
 	margin-left: $forms--indent-margin-left;
 	border-left: $forms--indent-border-left;
 	padding-left: $forms--indent-padding-left;
 }
 
-.c-form__field-error {
+.c-forms__field-error {
 	color: #c30016;
 	font-weight: $forms--field-error-font-weight;
 	display: flex;

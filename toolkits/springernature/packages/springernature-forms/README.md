@@ -48,11 +48,11 @@ For when you need users to enter no longer than a single line of text, for
 instance their name, phone number...
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="firstName">
-		<span class="c-form__label-text">First name</span>
+		<span class="c-forms__label-text">First name</span>
 	</label>
-	<input class="c-form__input" type="text" id="firstName" name="firstName" value="" />
+	<input class="c-forms__input" type="text" id="firstName" name="firstName" value="" />
 </div>
 ```
 
@@ -62,11 +62,11 @@ For when you need users to enter text longer than a single line, for instance
 their feedback...
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="feedback">
-		<span class="c-form__label-text">Feedback</span>
+		<span class="c-forms__label-text">Feedback</span>
 	</label>
-	<textarea class="c-form__input" name="feedback" id="feedback" rows="5"></textarea>
+	<textarea class="c-forms__input" name="feedback" id="feedback" rows="5"></textarea>
 </div>
 ```
 
@@ -78,12 +78,12 @@ The aim is that they have all the keys necessary to not fail the validation on
 the related input.
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="password">
-		<span class="c-form__label-text">Password</span>
-		<span class="c-form__hint">Hint: 8 characters or more</span>
+		<span class="c-forms__label-text">Password</span>
+		<span class="c-forms__hint">Hint: 8 characters or more</span>
 	</label>
-	<input class="c-form__input" type="password" name="password" id="password" value="" />
+	<input class="c-forms__input" type="password" name="password" id="password" value="" />
 </div>
 ```
 
@@ -93,15 +93,15 @@ Error hint is meant to signal users something is incorrect their input. For
 instance it can be empty or of an incorrect format.
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="lastName">
-		<span class="c-form__label-text">Last name</span>
-		<span class="c-form__field-error" data-component="error-hint">
+		<span class="c-forms__label-text">Last name</span>
+		<span class="c-forms__field-error" data-component="error-hint">
 		<svg class="u-icon" width="18" height="18" aria-hidden="true" focusable="false"><use xlink:href="#icon-warning"></use></svg>
 		<span>Enter the last name</span>
 	</span>
 	</label>
-	<input class="c-form__input" type="text" id="lastName" name="lastName" value="" />
+	<input class="c-forms__input" type="text" id="lastName" name="lastName" value="" />
 </div>
 ```
 
@@ -110,12 +110,12 @@ instance it can be empty or of an incorrect format.
 Let users select and upload a file.
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="profilePicture">
-		<span class="c-form__label-text">Profile picture (optional)</span>
-		<span class="c-form__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
+		<span class="c-forms__label-text">Profile picture (optional)</span>
+		<span class="c-forms__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
 	</label>
-	<input class="c-form__input c-form__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
+	<input class="c-forms__input c-forms__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
 </div>
 ```
 
@@ -124,16 +124,16 @@ Let users select and upload a file.
 Let users select **only one** option from a short list of options.
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<fieldset>
-		<legend class="c-form__label-text">
+		<legend class="c-forms__label-text">
 			<span>Do you already have an account?</span>
 		</legend>
-		<div class="c-form__radio">
+		<div class="c-forms__radio">
 			<input type="radio" name="have-account" value="mr" id="have-account-yes">
 			<label for="have-account-yes">Yes</label>
 		</div>
-		<div class="c-form__radio">
+		<div class="c-forms__radio">
 			<input type="radio" name="have-account" value="mrs" id="have-acount-no">
 			<label for="have-account-no">No</label>
 		</div>
@@ -146,8 +146,8 @@ Let users select **only one** option from a short list of options.
 Let users select **one or more** options from a short list of options.
 
 ```html
-<div class="c-form__field">
-	<div class="c-form__checkbox">
+<div class="c-forms__field">
+	<div class="c-forms__checkbox">
 		<input type="checkbox" name="termsAndConditions" value="" id="termsAndConditions">
 		<label for="termsAndConditions">I agree to <a href="#">the terms and conditions</a></label>
 	</div>
@@ -160,14 +160,14 @@ For when the form needs a bit of structure, you can user form headings and
 sub headings.
 
 ```html
-<h3 class="c-form__heading">Create your account</h3>
-	<div class="c-form__section">
-		<h4 class="c-form__subheading">Profile information</h4>
-		<div class="c-form__field">
+<h3 class="c-forms__heading">Create your account</h3>
+	<div class="c-forms__section">
+		<h4 class="c-forms__subheading">Profile information</h4>
+		<div class="c-forms__field">
 			<label for="fullName">
-				<span class="c-form__label-text">Full name</span>
+				<span class="c-forms__label-text">Full name</span>
 			</label>
-			<input class="c-form__input" type="text" id="fullName" name="fullName" value="" />
+			<input class="c-forms__input" type="text" id="fullName" name="fullName" value="" />
 		</div>
 	</div>
 </div>
@@ -201,11 +201,11 @@ of options.
 Watch a video about how some [users struggle with selects](https://www.youtube.com/watch?v=CUkMCQR4TpY).
 
 ```html
-<div class="c-form__field">
+<div class="c-forms__field">
 	<label for="domain">
-		<span class="c-form__label-text">Country</span>
+		<span class="c-forms__label-text">Country</span>
 	</label>
-	<div class="c-form__select">
+	<div class="c-forms__select">
 		<select id="country" name="country">
 			<option value="">--Please choose a country--</option>
             <option value="GB">United Kingdom</option>
@@ -267,7 +267,7 @@ Watch a video about how some [users struggle with selects](https://www.youtube.c
 Use this component to help users submit their information.
 
 ```html
-<div class="c-form__submit">
+<div class="c-forms__submit">
 	<button type="submit" class="u-button u-button--primary">Submit</button>
 </div>
 ```

@@ -4,7 +4,7 @@
 	</svg>
 </div>
 
-<h1 class="c-form__heading">Form elements</h1>
+<h1 class="c-forms__heading">Form elements</h1>
 
 <div class="u-mb-48">
 	<h2>Contents:</h2>
@@ -27,72 +27,72 @@
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="text-input">Text input</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="firstName">
-			<span class="c-form__label-text">First name</span>
+			<span class="c-forms__label-text">First name</span>
 		</label>
-		<input class="c-form__input" type="text" id="firstName" name="firstName" value="" />
+		<input class="c-forms__input" type="text" id="firstName" name="firstName" value="" />
 	</div>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="text-area">Text area</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="feedback">
-			<span class="c-form__label-text">Feedback</span>
+			<span class="c-forms__label-text">Feedback</span>
 		</label>
-		<textarea class="c-form__input" name="feedback" id="feedback" rows="5"></textarea>
+		<textarea class="c-forms__input" name="feedback" id="feedback" rows="5"></textarea>
 	</div>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="hint-text">Hint text</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="password">
-			<span class="c-form__label-text">Password</span>
-			<span class="c-form__hint">Hint: 8 characters or more</span>
+			<span class="c-forms__label-text">Password</span>
+			<span class="c-forms__hint">Hint: 8 characters or more</span>
 		</label>
-		<input class="c-form__input" type="password" name="password" id="password" value="" />
+		<input class="c-forms__input" type="password" name="password" id="password" value="" />
 	</div>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="error-hint">Error hint</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="lastName">
-			<span class="c-form__label-text">Last name</span>
-			<span class="c-form__field-error" data-component="error-hint">
+			<span class="c-forms__label-text">Last name</span>
+			<span class="c-forms__field-error" data-component="error-hint">
 			<svg class="u-icon" width="18" height="18" aria-hidden="true" focusable="false"><use xlink:href="#icon-warning"></use></svg>
 			<span>Enter the last name</span>
 		</span>
 		</label>
-		<input class="c-form__input" type="text" id="lastName" name="lastName" value="" />
+		<input class="c-forms__input" type="text" id="lastName" name="lastName" value="" />
 	</div>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="file-upload">File upload</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="profilePicture">
-			<span class="c-form__label-text">Profile picture (optional)</span>
-			<span class="c-form__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
+			<span class="c-forms__label-text">Profile picture (optional)</span>
+			<span class="c-forms__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
 		</label>
-		<input class="c-form__input c-form__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
+		<input class="c-forms__input c-forms__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
 	</div>
 </div>
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="radio-buttons">Radio buttons</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<fieldset>
-			<legend class="c-form__label-text">
+			<legend class="c-forms__label-text">
 				<span>Do you already have an account?</span>
 			</legend>
-			<div class="c-form__radio">
+			<div class="c-forms__radio">
 				<input type="radio" name="have-account" value="mr" id="have-account-yes">
 				<label for="have-account-yes">Yes</label>
 			</div>
-			<div class="c-form__radio">
+			<div class="c-forms__radio">
 				<input type="radio" name="have-account" value="mrs" id="have-acount-no">
 				<label for="have-account-no">No</label>
 			</div>
@@ -102,8 +102,8 @@
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="checkboxes">Checkboxes</h2>
-	<div class="c-form__field">
-		<div class="c-form__checkbox">
+	<div class="c-forms__field">
+		<div class="c-forms__checkbox">
 			<input type="checkbox" name="termsAndConditions" value="" id="termsAndConditions">
 			<label for="termsAndConditions">I agree to <a href="#">the terms and conditions</a></label>
 		</div>
@@ -112,14 +112,14 @@
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="form-headings">Form headings</h2>
-	<h3 class="c-form__heading">Create your account</h3>
-	<div class="c-form__section">
-		<h4 class="c-form__subheading">Profile information</h4>
-		<div class="c-form__field">
+	<h3 class="c-forms__heading">Create your account</h3>
+	<div class="c-forms__section">
+		<h4 class="c-forms__subheading">Profile information</h4>
+		<div class="c-forms__field">
 			<label for="fullName">
-				<span class="c-form__label-text">Full name</span>
+				<span class="c-forms__label-text">Full name</span>
 			</label>
-			<input class="c-form__input" type="text" id="fullName" name="fullName" value="" />
+			<input class="c-forms__input" type="text" id="fullName" name="fullName" value="" />
 		</div>
 	</div>
 </div>
@@ -137,11 +137,11 @@
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="select-field">Select field</h2>
-	<div class="c-form__field">
+	<div class="c-forms__field">
 		<label for="domain">
-			<span class="c-form__label-text">Domain</span>
+			<span class="c-forms__label-text">Domain</span>
 		</label>
-		<div class="c-form__select">
+		<div class="c-forms__select">
 			<select id="domain" name="domain" aria-invalid="true">
 				<option value="">--Please choose a country--</option>
 				<option value="GB">United Kingdom</option>
@@ -201,7 +201,7 @@
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="form-buttons">Form buttons</h2>
 	<div class="u-mb-16">
-		<div class="c-form__submit">
+		<div class="c-forms__submit">
 			<button type="submit" class="u-button u-button--primary">Submit</button>
 		</div>
 	</div>
