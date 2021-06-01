@@ -1,4 +1,4 @@
 # History
 
-## 1.0.0 (2021-05-28)
-    * Major release
+## 0.1.0 (2021-06-01)
+    * First release
