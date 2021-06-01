@@ -1,7 +1,7 @@
 # History
 
 ## 11.3.0 (2021-06-01)
-    * Add basic styling for Springer Nature forms
+    * Add base layer for Springer Nature forms
 
 ## 11.2.1 (2021-05-10)
     * Patch Springer Nature metric icons with the right contrast ones
