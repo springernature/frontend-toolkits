@@ -5,12 +5,12 @@
 	margin-bottom: $forms--errors-summary-margin-bottom;
 }
 
-.c-forms__error-summary__heading {
+.c-forms__error-summary-heading {
 	margin-bottom: $forms--errors-summary-heading-margin-bottom;
 }
 
-.c-forms__error-summary__general-list,
-.c-forms__error-summary__specific-list {
+.c-forms__error-summary-general-list,
+.c-forms__error-summary-specific-list {
 	list-style-type: none;
 	margin: 0;
 	padding-left: 0;
@@ -18,14 +18,14 @@
 	margin-bottom: $forms--errors-summary-general-list-margin-bottom;
 }
 
-.c-forms__error-summary__specific-list {
+.c-forms__error-summary-specific-list {
 	a {
 		font-weight: $forms--errors-summary-specific-list-font-weight;
 		color: inherit;
 	}
 }
 
-.c-forms__error-summary__general-list,
-.c-forms__error-summary__specific-list {
+.c-forms__error-summary-general-list,
+.c-forms__error-summary-specific-list {
 	line-height: 1.5;
 }

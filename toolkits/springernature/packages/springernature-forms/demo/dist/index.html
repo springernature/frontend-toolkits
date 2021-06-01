@@ -1231,6 +1231,7 @@ input[type="file"]:focus-within {
 	padding: 4px;
 	border: 1px solid #999;
 	border-radius: 3px;
+	display: inline;
 	padding: 0;
 	position: relative;
 }
@@ -1260,7 +1261,7 @@ input[type="file"]:focus-within {
 	display: none;
 }
 
-.c-forms__select .c-forms__label-text--inline {
+.c-forms__label-text--inline {
 	display: inline;
 }
 
@@ -1289,12 +1290,12 @@ input[type="file"]:focus-within {
 	margin-bottom: 24px;
 }
 
-.c-forms__error-summary__heading {
+.c-forms__error-summary-heading {
 	margin-bottom: 8px;
 }
 
-.c-forms__error-summary__general-list,
-.c-forms__error-summary__specific-list {
+.c-forms__error-summary-general-list,
+.c-forms__error-summary-specific-list {
 	list-style-type: none;
 	margin: 0;
 	padding-left: 0;
@@ -1302,13 +1303,13 @@ input[type="file"]:focus-within {
 	margin-bottom: 8px;
 }
 
-.c-forms__error-summary__specific-list a {
+.c-forms__error-summary-specific-list a {
 	font-weight: 600;
 	color: inherit;
 }
 
-.c-forms__error-summary__general-list,
-.c-forms__error-summary__specific-list {
+.c-forms__error-summary-general-list,
+.c-forms__error-summary-specific-list {
 	line-height: 1.5;
 }
 
@@ -1814,8 +1815,8 @@ input[type="file"]:focus-within {
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="error-summary">Error summary</h2>
 	<div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
-		<h3 class="c-forms__error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
-		<ul data-test="specific-errors-list" class="c-forms__error-summary__specific-list">
+		<h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+		<ul data-test="specific-errors-list" class="c-forms__error-summary-specific-list">
 			<li><a href="#lastName">Enter your last name</a></li>
 			<li><a href="#password">Enter your password</a></li>
 		</ul>

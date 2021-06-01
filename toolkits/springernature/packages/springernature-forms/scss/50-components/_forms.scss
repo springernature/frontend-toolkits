@@ -78,6 +78,7 @@
 
 .c-forms__select {
 	@include forms--input;
+	display: inline;
 	padding: 0;
 	position: relative;
 
@@ -107,7 +108,6 @@
 	}
 }
 
-.c-forms__select
 .c-forms__label-text--inline {
 	display: inline;
 }

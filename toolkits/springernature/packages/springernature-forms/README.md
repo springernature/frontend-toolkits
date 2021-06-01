@@ -182,10 +182,10 @@ error message next to each answer that contains an error.
 
 ```html
 <div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
-	<h3 class="c-forms__error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
-	<ul data-test="specific-errors-list" class="c-forms__error-summary__specific-list">
+	<h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+	<ul data-test="specific-errors-list" class="c-forms__error-summary-specific-list">
 		<li><a href="#lastName">Please enter your last name</a></li>
-		<li><a href="#passworde">Please enter your password</a></li>
+		<li><a href="#password">Please enter your password</a></li>
 	</ul>
 </div>
 ```
