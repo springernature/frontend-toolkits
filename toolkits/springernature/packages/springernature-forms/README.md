@@ -181,9 +181,9 @@ Use this component at the top of a page to summarise any errors a user has made.
 error message next to each answer that contains an error.
 
 ```html
-<div class="c-error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
-	<h3 class="c-error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
-	<ul data-test="specific-errors-list" class="c-error-summary__specific-list">
+<div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
+	<h3 class="c-forms__error-summary__heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+	<ul data-test="specific-errors-list" class="c-forms__error-summary__specific-list">
 		<li><a href="#lastName">Please enter your last name</a></li>
 		<li><a href="#passworde">Please enter your password</a></li>
 	</ul>
