@@ -20,18 +20,35 @@ To include `global-skip-link` in your application, you need to choose **ONE** br
 
 The skip-link is the first focusable element on the page.
 It is an <a> pointing to an id of the section it links to.
+For example if the main container is:
 
 ```html
-<a class="c-skip-link" href="#mainContainerId">
+<main id="main">
+...
+</main>
+```
+
+then the skip link should look like this:
+
+```html
+<a class="c-skip-link" href="#main">
     Skip to main content
 </a>
 ```
 
 ATTENTION: The target section must be focusable.
 You might need to add a negative tabindex in order to improve screen reader accessibility esspecially for browsers like IE11.
+It's adviced to do so via [js](https://codepen.io/200ok/pen/jvNBMP) and not directly in the html because:
+* Some apps will display the browser's default focus styles around the main element
+* When clicking anywhere in the page focus will return back to the top
 
-```html
-<main id="content" tabindex="-1">
-    ...
-</main>
-```
+Check [govuk design system](https://github.com/alphagov/govuk-design-system-backlog/issues/66) for more
+
+
+
+More resources:
+* https://webaim.org/techniques/skipnav/
+* https://css-tricks.com/how-to-create-a-skip-to-content-link/
+* https://axesslab.com/skip-links/
+
+
