@@ -78,9 +78,9 @@
 
 .c-forms__select {
 	@include forms--input;
-	display: inline;
 	padding: 0;
 	position: relative;
+	background-color: $forms--select-background-color;
 
 	&:after {
 		content: '';
