@@ -1,0 +1,37 @@
+# Skip Link
+
+Full width link on top of the page that enables keyboard users and users of assistive technology to jump to the main content of the page and bring it immediately into view, without having to tab over all navigational items.
+
+## Branding
+
+To include `global-skip-link` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+
+```scss
+// Pick ONE of the brands below to include
+@import '@springernature/global-skip-link/scss/10-settings/default';
+@import '@springernature/global-skip-link/scss/10-settings/springernature';
+@import '@springernature/global-skip-link/scss/10-settings/nature';
+
+// Include this with your other components
+@import '@springernature/global-skip-link/scss/50-components/skip-link';
+```
+
+## Usage
+
+The skip-link is the first focusable element on the page.
+It is an <a> pointing to an id of the section it links to.
+
+```html
+<a class="c-skip-link" href="#mainContainerId">
+    Skip to main content
+</a>
+```
+
+ATTENTION: The target section must be focusable.
+You might need to add a negative tabindex in order to improve screen reader accessibility esspecially for browsers like IE11.
+
+```html
+<main id="content" tabindex="-1">
+    ...
+</main>
+```
