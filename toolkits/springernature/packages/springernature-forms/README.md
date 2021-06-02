@@ -320,8 +320,10 @@ Watch a video about how some [users struggle with selects](https://www.youtube.c
 
 Use this component to help users submit their information.
 
+**Note**: This section exists to show you how a form submit button should be
+marked up. Buttons are not part of this package. They are inherited from the
+brand context utilities.
+
 ```html
-<div class="c-forms__submit">
-	<button type="submit" class="u-button u-button--primary">Submit</button>
-</div>
+<button type="submit" class="u-button u-button--primary">Submit</button>
 ```
