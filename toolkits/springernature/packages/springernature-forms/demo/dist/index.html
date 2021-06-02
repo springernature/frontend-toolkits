@@ -1692,7 +1692,12 @@ input[type="file"]:focus-within {
 		</style>
 	</head>
 	<body>
-		<div aria-hidden="true" class="u-display-none">
+		<style>
+/* demo page styles */
+body{background-color: white;padding:2%;}
+</style>
+
+<div aria-hidden="true" class="u-display-none">
 	<svg xmlns="http://www.w3.org/2000/svg">
 		<symbol id="icon-warning" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 11.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM9.413 4a1 1 0 011 1l-.003.083-.334 4A1 1 0 019.08 10h-.16a1 1 0 01-.996-.917l-.334-4a1 1 0 01.914-1.08l.041-.002zM9 18A9 9 0 119 0a9 9 0 010 18z"/></symbol>
 	</svg>
@@ -1934,11 +1939,7 @@ input[type="file"]:focus-within {
 
 <div class="u-mb-48">
 	<h2 class="u-mb-24" id="form-buttons">Form buttons</h2>
-	<div class="u-mb-16">
-		<div class="c-forms__submit">
-			<button type="submit" class="u-button u-button--primary">Submit</button>
-		</div>
-	</div>
+	<button type="submit" class="u-button u-button--primary">Submit</button>
 </div>
 
 	</body>
