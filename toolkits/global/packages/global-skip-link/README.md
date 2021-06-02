@@ -36,7 +36,8 @@ then the skip link should look like this:
 </a>
 ```
 
-ATTENTION: The target section must be focusable.
+ATTENTION:
+1. The target section must be focusable.
 You might need to add a negative tabindex in order to improve screen reader accessibility esspecially for browsers like IE11.
 It's adviced to do so via [js](https://codepen.io/200ok/pen/jvNBMP) and not directly in the html because:
 * Some apps will display the browser's default focus styles around the main element
@@ -44,7 +45,7 @@ It's adviced to do so via [js](https://codepen.io/200ok/pen/jvNBMP) and not dire
 
 Check [govuk design system](https://github.com/alphagov/govuk-design-system-backlog/issues/66) for more
 
-
+2. If there is an iframe in the page, it is highly recommended to add the skip link markup before it.
 
 More resources:
 * https://webaim.org/techniques/skipnav/
