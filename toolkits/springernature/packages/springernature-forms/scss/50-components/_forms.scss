@@ -9,6 +9,12 @@
 	border-radius: $forms--input-border-radius;
 }
 
+@mixin forms--label-text {
+	display: block;
+	font-weight: $context--font-weight-bold;
+	margin-bottom: $forms--label-text-margin-bottom;
+}
+
 .c-forms__section {
 	margin-bottom: $forms--section-margin-bottom;
 }
@@ -26,6 +32,10 @@
 		padding: 0;
 		border: 0;
 	}
+
+	legend {
+		@include forms--label-text;
+	}
 }
 
 @include from-wide-tablet {
@@ -35,9 +45,7 @@
 }
 
 .c-forms__label-text {
-	display: block;
-	font-weight: $context--font-weight-bold;
-	margin-bottom: $forms--label-text-margin-bottom;
+	@include forms--label-text;
 }
 
 .c-forms__hint {
@@ -61,20 +69,25 @@
 .c-forms__radio {
 	display: block;
 	padding: $forms--radio-padding;
-}
 
-.c-forms__radio [type="radio"] {
-	margin-right: $forms--radio-margin-right;
+	[type="radio"] {
+		margin-right: $forms--radio-margin-right;
+	}
+
+	.c-forms__label-text {
+		display: inline;
+	}
 }
 
 .c-forms__checkbox {
 	display: block;
 	padding: $forms--checkbox-padding;
+
+	[type="checkbox"] {
+		margin-right: $forms--checkbox-margin-right;
+	}
 }
 
-.c-forms__checkbox [type="checkbox"] {
-	margin-right: $forms--checkbox-margin-right;
-}
 
 .c-forms__select {
 	@include forms--input;

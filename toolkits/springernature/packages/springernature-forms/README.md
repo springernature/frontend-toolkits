@@ -125,19 +125,65 @@ Let users select **only one** option from a short list of options.
 
 ```html
 <div class="c-forms__field">
-	<fieldset>
-		<legend class="c-forms__label-text">
-			<span>Do you already have an account?</span>
-		</legend>
-		<div class="c-forms__radio">
-			<input type="radio" name="have-account" value="mr" id="have-account-yes">
-			<label for="have-account-yes">Yes</label>
-		</div>
-		<div class="c-forms__radio">
-			<input type="radio" name="have-account" value="mrs" id="have-acount-no">
-			<label for="have-account-no">No</label>
-		</div>
-	</fieldset>
+    <fieldset>
+        <legend>
+            <span>Do you already have an account?</span>
+        </legend>
+        <div class="c-forms__radio">
+            <input type="radio" name="have-account" value="mr" id="have-account-yes">
+            <label for="have-account-yes">Yes</label>
+        </div>
+        <div class="c-forms__radio">
+            <input type="radio" name="have-account" value="mrs" id="have-acount-no">
+            <label for="have-account-no">No</label>
+        </div>
+    </fieldset>
+</div>
+```
+#### Radio buttons with form indent
+
+Let users enter additional and related information to an option they picked from
+radio buttons.
+
+**Note**: So far this component is not yet enhanced by javascript. An enhanced
+experience would be to first hide the additional field. They would reveal only
+upon selection of their related option...
+
+```html
+<div class="c-forms__field">
+    <fieldset>
+        <legend>
+            <div class="u-margin-bottom-small">How should we contact you ?</div>
+        </legend>
+        <div class="c-forms__field c-forms__radio">
+            <input type="radio" name="contactViaToggle" id="contactViaToggleEmail" checked="">
+            <label for="contactViaToggleEmail">
+                <span class="c-forms__label-text">Via email</span>
+            </label>
+        </div>
+        <div class="c-forms__indent">
+            <div class="c-forms__field">
+                <label for="contactViaEmail">
+                    <span>Email address</span>
+                </label>
+                <input type="email" name="contactViaEmail" id="contactViaEmail" size="60" value="">
+            </div>
+        </div>
+        <div class="c-forms__field c-forms__radio">
+            <input type="radio" name="contactViaToggle" id="contactViaToggleText">
+            <label for="contactViaToggleText">
+                <span class="c-forms__label-text">Via text message</span>
+            </label>
+        </div>
+        <div class="c-forms__indent">
+            <div class="c-forms__field">
+                <label for="contactViaText">
+                    <span class="c-forms__label-text">Mobile phone number</span>
+                </label>
+                <input type="text" name="contactViaText" id="contactViaText" size="30" value="">
+            </div>
+        </div>
+    </fieldset>
 </div>
 ```
 

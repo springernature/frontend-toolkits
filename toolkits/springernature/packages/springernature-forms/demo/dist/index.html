@@ -1167,6 +1167,12 @@ input[type="file"]:focus-within {
 	border: 0;
 }
 
+.c-forms__field legend {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
 @media only screen and (min-width: 768px) {
 	.c-forms__field {
 		max-width: 480px;
@@ -1211,6 +1217,10 @@ input[type="file"]:focus-within {
 
 .c-forms__radio [type="radio"] {
 	margin-right: 8px;
+}
+
+.c-forms__radio .c-forms__label-text {
+	display: inline;
 }
 
 .c-forms__checkbox {
@@ -1773,7 +1783,7 @@ input[type="file"]:focus-within {
 	<h2 class="u-mb-24" id="radio-buttons">Radio buttons</h2>
 	<div class="c-forms__field">
 		<fieldset>
-			<legend class="c-forms__label-text">
+			<legend>
 				<span>Do you already have an account?</span>
 			</legend>
 			<div class="c-forms__radio">
@@ -1783,6 +1793,43 @@ input[type="file"]:focus-within {
 			<div class="c-forms__radio">
 				<input type="radio" name="have-account" value="mrs" id="have-acount-no">
 				<label for="have-account-no">No</label>
+			</div>
+		</fieldset>
+	</div>
+
+	<h3 class="u-mb-24" id="radio-buttons-with-form-indent">Radio buttons with Form indent</h3>
+	<div class="c-forms__field">
+		<fieldset>
+			<legend>
+				<div class="u-margin-bottom-small">How should we contact you ?</div>
+			</legend>
+			<div class="c-forms__field c-forms__radio">
+				<input type="radio" name="contactViaToggle" id="contactViaToggleEmail" checked="">
+				<label for="contactViaToggleEmail">
+					<span class="c-forms__label-text">Via email</span>
+				</label>
+			</div>
+			<div class="c-forms__indent">
+				<div class="c-forms__field">
+					<label for="contactViaEmail">
+						<span>Email address</span>
+					</label>
+					<input type="email" name="contactViaEmail" id="contactViaEmail" size="60" value="">
+				</div>
+			</div>
+			<div class="c-forms__field c-forms__radio">
+				<input type="radio" name="contactViaToggle" id="contactViaToggleText">
+				<label for="contactViaToggleText">
+					<span class="c-forms__label-text">Via text message</span>
+				</label>
+			</div>
+			<div class="c-forms__indent">
+				<div class="c-forms__field">
+					<label for="contactViaText">
+						<span class="c-forms__label-text">Mobile phone number</span>
+					</label>
+					<input type="text" name="contactViaText" id="contactViaText" size="30" value="">
+				</div>
 			</div>
 		</fieldset>
 	</div>
