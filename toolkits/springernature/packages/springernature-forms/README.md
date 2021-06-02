@@ -176,17 +176,25 @@ sub headings.
 ### Error summary
 
 Use this component at the top of a page to summarise any errors a user has made.
+There are two types of errors:
+- Specific errors which are related to a single form field. These are anchors
+  that links to the form field that needs fixing.
+- General errors which are not related to a single form field (e.g. We didn't
+  find any results for you search). These are plain text feedback for the user.
 
 **Note:** When a user makes an error, you must show both an error summary and an
 error message next to each answer that contains an error.
 
 ```html
 <div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
-	<h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
-	<ul data-test="specific-errors-list" class="c-forms__error-summary-specific-list">
-		<li><a href="#lastName">Please enter your last name</a></li>
-		<li><a href="#password">Please enter your password</a></li>
-	</ul>
+    <h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+    <ul class="c-forms__error-summary-general-list">
+        <li>We didn't find any results for your search</li>
+    </ul>
+    <ul class="c-forms__error-summary-specific-list">
+        <li><a href="#lastName">Enter your last name</a></li>
+        <li><a href="#password">Enter your password</a></li>
+    </ul>
 </div>
 ```
 

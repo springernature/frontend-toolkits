@@ -1816,7 +1816,10 @@ input[type="file"]:focus-within {
 	<h2 class="u-mb-24" id="error-summary">Error summary</h2>
 	<div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
 		<h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
-		<ul data-test="specific-errors-list" class="c-forms__error-summary-specific-list">
+		<ul class="c-forms__error-summary-general-list">
+			<li>We didn't find any results for your search</li>
+		</ul>
+		<ul class="c-forms__error-summary-specific-list">
 			<li><a href="#lastName">Enter your last name</a></li>
 			<li><a href="#password">Enter your password</a></li>
 		</ul>
