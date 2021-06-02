@@ -1,0 +1,42 @@
+$forms--field-margin-bottom: spacing(24);
+$forms--section-margin-bottom: spacing(48);
+$forms--input-max-width: 480px;
+$forms--input-margin-bottom: spacing(16);
+$forms--input-padding: spacing(4);
+$forms--input-border: 1px solid #999;
+$forms--input-border-radius: 3px;
+$forms--label-text-margin-bottom: spacing(4);
+$forms--hint-margin-bottom: spacing(8);
+$forms--hint-color: #666;
+$forms--font-size: 18px;
+$forms--heading-margin-bottom: spacing(32);
+$forms--subheading-margin-bottom: spacing(8);
+
+$forms--radio-margin-right: spacing(8);
+$forms--radio-padding: spacing(4) 0;
+$forms--checkbox-margin-right: spacing(8);
+$forms--checkbox-padding: spacing(4) 0;
+
+$forms--select-margin-bottom: spacing(8);
+$forms--select-padding: spacing(4) spacing(16) spacing(4) spacing(8);
+$forms--select-background-color: #fff;
+$forms--select-border: 1px solid #222;
+$forms--select-arrow-color: #555;
+$forms--select-border-radius: 3px;
+
+
+$forms--indent-margin-left: spacing(16);
+$forms--indent-border-left: spacing(4) solid #666 ;
+$forms--indent-padding-left: spacing(16);
+
+$forms--field-error-font-weight: 600;
+$forms--field-error-margin-bottom: spacing(4);
+
+
+$forms--errors-summary-border: solid 4px #c40606;
+$forms--errors-summary-padding: spacing(16);
+$forms--errors-summary-margin-bottom: spacing(24);
+$forms--errors-summary-heading-margin-bottom: spacing(8);
+$forms--errors-summary-general-list-margin-bottom: spacing(8);
+$forms--errors-summary-general-list-color: #c40606;
+$forms--errors-summary-specific-list-font-weight: 600;
