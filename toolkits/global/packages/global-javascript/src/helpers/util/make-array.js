@@ -6,7 +6,7 @@ const makeArray = iterable => {
 	}
 
 	Array.prototype.forEach.call(iterable, function (item) {
-		list.push(item)
+		list.push(item);
 	});
 
 	return list;
