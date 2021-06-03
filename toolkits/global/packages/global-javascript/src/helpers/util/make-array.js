@@ -5,11 +5,9 @@ const makeArray = iterable => {
 		return list;
 	}
 
-	for (const key in iterable) {
-		if (Object.prototype.hasOwnProperty.call(iterable, key)) {
-			list.push(iterable[key]);
-		}
-	}
+	Array.prototype.forEach.call(iterable, function (item) {
+		list.push(item)
+	});
 
 	return list;
 };
