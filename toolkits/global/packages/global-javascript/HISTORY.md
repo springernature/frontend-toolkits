@@ -1,5 +1,8 @@
 # History
 
+## 3.0.3 (2021-06-03)
+    * Replace for .. in loop in `makeArray` to iterate safely over a `NodeList` in old browsers
+
 ## 3.0.2 (2021-04-15)
     * Replace for .. of loop in `makeArray` to generate a smaller transpiled bundle
 
