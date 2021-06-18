@@ -1,5 +1,8 @@
 # History
 
+## 5.0.4 (2021-06-18)
+    * explorer fixes: event key for Escape, and use .removeChild() instead of .remove()
+
 ## 5.0.3 (2021-03-01)
     * Dont focus input when removing suggestion box
 
