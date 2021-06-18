@@ -31,7 +31,7 @@ const autoComplete = arguments_ => {
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Esc', 'Enter', 'Tab'];
 
 	let inputTimer = null;
 	let fetchTimer = null;
@@ -56,7 +56,7 @@ const autoComplete = arguments_ => {
 		}
 		input.removeEventListener('keyup', inputEvents);
 		if (container()) {
-			container().remove();
+			container().parentNode.removeChild(container());
 		}
 		document.removeEventListener('click', removeSuggestions);
 	};
@@ -67,7 +67,7 @@ const autoComplete = arguments_ => {
 		}
 
 		container().addEventListener('keydown', event => {
-			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
+			if (['Escape', 'Esc', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
 			}
@@ -100,7 +100,7 @@ const autoComplete = arguments_ => {
 						input.value = currentSearchTerm;
 					}
 				}
-			} else if (event.key === 'Escape') {
+			} else if (event.key === 'Escape' || event.key === 'Esc') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
 			}
@@ -196,7 +196,7 @@ const autoComplete = arguments_ => {
 			}
 		}
 
-		if (event.key === 'Escape') {
+		if (event.key === 'Escape' || event.key === 'Esc') {
 			removeSuggestions(event);
 		}
 		if (event.key === 'Enter') {
