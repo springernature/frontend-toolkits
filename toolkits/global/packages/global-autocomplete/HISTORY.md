@@ -1,5 +1,8 @@
 # History
 
+## 5.1.0 (2021-06-21)
+    * Ensures aria-expanded is set correctly when search results are generated and removed
+
 ## 5.0.4 (2021-06-18)
     * explorer fixes: event key for Escape, and use .removeChild() instead of .remove()
 
