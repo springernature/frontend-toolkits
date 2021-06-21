@@ -144,7 +144,6 @@ describe('Autocomplete', () => {
 				});
 
 				auto.enable();
-				input.setAttribute('aria-expanded', "false");
 
 				input.value = 'Wa';
 				input.dispatchEvent(new KeyboardEvent('keyup'));
