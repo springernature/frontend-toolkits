@@ -1,0 +1,249 @@
+<style>
+/* demo page styles */
+body{background-color: white;padding:2%;}
+</style>
+
+<div aria-hidden="true" class="u-display-none">
+	<svg xmlns="http://www.w3.org/2000/svg">
+		<symbol id="icon-warning" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M9 11.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM9.413 4a1 1 0 011 1l-.003.083-.334 4A1 1 0 019.08 10h-.16a1 1 0 01-.996-.917l-.334-4a1 1 0 01.914-1.08l.041-.002zM9 18A9 9 0 119 0a9 9 0 010 18z"/></symbol>
+	</svg>
+</div>
+
+<h1 class="c-forms__heading">Form elements</h1>
+
+<div class="u-mb-48">
+	<h2>Contents:</h2>
+	<nav>
+		<ul>
+			<li><a href="#text-input">Text input</a></li>
+			<li><a href="#text-area">Text area</a></li>
+			<li><a href="#hint-text">Hint text</a></li>
+			<li><a href="#error-hint">Error hint</a></li>
+			<li><a href="#file-upload">File upload</a></li>
+			<li><a href="#radio-buttons">Radio buttons</a></li>
+			<li><a href="#checkboxes">Checkboxes</a></li>
+			<li><a href="#form-headings">Form headings</a></li>
+			<li><a href="#error-summary">Error summary</a></li>
+			<li><a href="#select-field">Select field</a></li>
+			<li><a href="#form-buttons">Form buttons</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="text-input">Text input</h2>
+	<div class="c-forms__field">
+		<label for="firstName">
+			<span class="c-forms__label-text">First name</span>
+		</label>
+		<input class="c-forms__input" type="text" id="firstName" name="firstName" value="" />
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="text-area">Text area</h2>
+	<div class="c-forms__field">
+		<label for="feedback">
+			<span class="c-forms__label-text">Feedback</span>
+		</label>
+		<textarea class="c-forms__input" name="feedback" id="feedback" rows="5"></textarea>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="hint-text">Hint text</h2>
+	<div class="c-forms__field">
+		<label for="password">
+			<span class="c-forms__label-text">Password</span>
+			<span class="c-forms__hint">Hint: 8 characters or more</span>
+		</label>
+		<input class="c-forms__input" type="password" name="password" id="password" value="" />
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="error-hint">Error hint</h2>
+	<div class="c-forms__field">
+		<label for="lastName">
+			<span class="c-forms__label-text">Last name</span>
+			<span class="c-forms__field-error" data-component="error-hint">
+			<svg class="u-icon" width="18" height="18" aria-hidden="true" focusable="false"><use xlink:href="#icon-warning"></use></svg>
+			<span>Enter the last name</span>
+		</span>
+		</label>
+		<input class="c-forms__input" type="text" id="lastName" name="lastName" value="" />
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="file-upload">File upload</h2>
+	<div class="c-forms__field">
+		<label for="profilePicture">
+			<span class="c-forms__label-text">Profile picture (optional)</span>
+			<span class="c-forms__hint">Hint: Must be a GIF, JPG or PNG file and no larger than 1MB.</span>
+		</label>
+		<input class="c-forms__input c-forms__input--file" type="file" id="profilePicture" name="profilePicture" accept=".gif,.jpg,.jpeg,.png">
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="radio-buttons">Radio buttons</h2>
+	<div class="c-forms__field">
+		<fieldset>
+			<legend>
+				<span>Do you already have an account?</span>
+			</legend>
+			<div class="c-forms__radio">
+				<input type="radio" name="have-account" value="mr" id="have-account-yes">
+				<label for="have-account-yes">Yes</label>
+			</div>
+			<div class="c-forms__radio">
+				<input type="radio" name="have-account" value="mrs" id="have-acount-no">
+				<label for="have-account-no">No</label>
+			</div>
+		</fieldset>
+	</div>
+
+	<h3 class="u-mb-24" id="radio-buttons-with-form-indent">Radio buttons with Form indent</h3>
+	<div class="c-forms__field">
+		<fieldset>
+			<legend>
+				<div class="u-margin-bottom-small">How should we contact you ?</div>
+			</legend>
+			<div class="c-forms__field c-forms__radio">
+				<input type="radio" name="contactViaToggle" id="contactViaToggleEmail" checked="">
+				<label for="contactViaToggleEmail">
+					<span class="c-forms__label-text">Via email</span>
+				</label>
+			</div>
+			<div class="c-forms__indent">
+				<div class="c-forms__field">
+					<label for="contactViaEmail">
+						<span>Email address</span>
+					</label>
+					<input type="email" name="contactViaEmail" id="contactViaEmail" size="60" value="">
+				</div>
+			</div>
+			<div class="c-forms__field c-forms__radio">
+				<input type="radio" name="contactViaToggle" id="contactViaToggleText">
+				<label for="contactViaToggleText">
+					<span class="c-forms__label-text">Via text message</span>
+				</label>
+			</div>
+			<div class="c-forms__indent">
+				<div class="c-forms__field">
+					<label for="contactViaText">
+						<span class="c-forms__label-text">Mobile phone number</span>
+					</label>
+					<input type="text" name="contactViaText" id="contactViaText" size="30" value="">
+				</div>
+			</div>
+		</fieldset>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="checkboxes">Checkboxes</h2>
+	<div class="c-forms__field">
+		<div class="c-forms__checkbox">
+			<input type="checkbox" name="termsAndConditions" value="" id="termsAndConditions">
+			<label for="termsAndConditions">I agree to <a href="#">the terms and conditions</a></label>
+		</div>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="form-headings">Form headings</h2>
+	<h3 class="c-forms__heading">Create your account</h3>
+	<div class="c-forms__section">
+		<h4 class="c-forms__subheading">Profile information</h4>
+		<div class="c-forms__field">
+			<label for="fullName">
+				<span class="c-forms__label-text">Full name</span>
+			</label>
+			<input class="c-forms__input" type="text" id="fullName" name="fullName" value="" />
+		</div>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="error-summary">Error summary</h2>
+	<div class="c-forms__error-summary" role="group" id="errorSummary" aria-labelledby="errorSummaryHeading" tabindex="-1" data-component="error-summary">
+		<h3 class="c-forms__error-summary-heading" id="errorSummaryHeading">Sorry, we couldn't submit the form</h3>
+		<ul class="c-forms__error-summary-general-list">
+			<li>We didn't find any results for your search</li>
+		</ul>
+		<ul class="c-forms__error-summary-specific-list">
+			<li><a href="#lastName">Enter your last name</a></li>
+			<li><a href="#password">Enter your password</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="select-field">Select field</h2>
+	<div class="c-forms__field">
+		<label for="domain">
+			<span class="c-forms__label-text">Domain</span>
+		</label>
+		<div class="c-forms__select">
+			<select id="domain" name="domain" aria-invalid="true">
+				<option value="">--Please choose a country--</option>
+				<option value="GB">United Kingdom</option>
+				<option value="AL">Albania</option>
+				<option value="AD">Andorra</option>
+				<option value="AT">Austria</option>
+				<option value="BY">Belarus</option>
+				<option value="BE">Belgium</option>
+				<option value="BA">Bosnia and Herzegovina</option>
+				<option value="BG">Bulgaria</option>
+				<option value="HR">Croatia (Hrvatska)</option>
+				<option value="CY">Cyprus</option>
+				<option value="CZ">Czech Republic</option>
+				<option value="FR">France</option>
+				<option value="GI">Gibraltar</option>
+				<option value="DE">Germany</option>
+				<option value="GR">Greece</option>
+				<option value="VA">Holy See (Vatican City State)</option>
+				<option value="HU">Hungary</option>
+				<option value="IT">Italy</option>
+				<option value="LI">Liechtenstein</option>
+				<option value="LU">Luxembourg</option>
+				<option value="MK">Macedonia</option>
+				<option value="MT">Malta</option>
+				<option value="MD">Moldova</option>
+				<option value="MC">Monaco</option>
+				<option value="ME">Montenegro</option>
+				<option value="NL">Netherlands</option>
+				<option value="PL">Poland</option>
+				<option value="PT">Portugal</option>
+				<option value="RO">Romania</option>
+				<option value="SM">San Marino</option>
+				<option value="RS">Serbia</option>
+				<option value="SK">Slovakia</option>
+				<option value="SI">Slovenia</option>
+				<option value="ES">Spain</option>
+				<option value="UA">Ukraine</option>
+				<option value="DK">Denmark</option>
+				<option value="EE">Estonia</option>
+				<option value="FO">Faroe Islands</option>
+				<option value="FI">Finland</option>
+				<option value="GL">Greenland</option>
+				<option value="IS">Iceland</option>
+				<option value="IE">Ireland</option>
+				<option value="LV">Latvia</option>
+				<option value="LT">Lithuania</option>
+				<option value="NO">Norway</option>
+				<option value="SJ">Svalbard and Jan Mayen Islands</option>
+				<option value="SE">Sweden</option>
+				<option value="CH">Switzerland</option>
+				<option value="TR">Turkey</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class="u-mb-48">
+	<h2 class="u-mb-24" id="form-buttons">Form buttons</h2>
+	<button type="submit" class="u-button u-button--primary">Submit</button>
+</div>

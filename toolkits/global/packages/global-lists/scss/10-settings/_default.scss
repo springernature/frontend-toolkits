@@ -18,3 +18,8 @@ $global-list-group--padding-md: spacing(16) 0;
 $global-list-group--padding-lg: spacing(24) 0;
 $global-list-group--line-height: $context--line-height-tight;
 $global-list-group--is-interface: false;
+
+$global-list-header--keyline-gap: spacing(16);
+$global-list-header--keyline-color: $context--keyline-border-color;
+$global-list-header--font-size: 1.4rem;
+$global-list-header--font-family: $context--font-family-sans;

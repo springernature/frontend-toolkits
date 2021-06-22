@@ -1,2 +1,12 @@
+/**
+ * @springernature/global-pill
+ * Nature skin settings
+ */
+
+// Default setting
+@import 'default';
+
 $pill--background-color: color('light-blue');
 $pill--color: color('action-base');
+$pill--margin-right: spacing(4);
+$pill--margin-bottom: spacing(8);

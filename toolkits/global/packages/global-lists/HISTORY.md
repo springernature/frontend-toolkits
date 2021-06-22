@@ -1,3 +1,6 @@
+## 2.1.0 (2021-05-18)
+    * Adds list header component and settings
+
 ## 2.0.1 (2021-02-02)
     * BUG: add comparison on is-interface if condition
     * Include unconditionally `u-text-interface`
