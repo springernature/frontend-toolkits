@@ -59,6 +59,7 @@ const autoComplete = arguments_ => {
 			container().parentNode.removeChild(container());
 		}
 		document.removeEventListener('click', removeSuggestions);
+		input.setAttribute('aria-expanded', false);
 	};
 
 	const addSuggestionEventListeners = () => {
@@ -130,6 +131,7 @@ const autoComplete = arguments_ => {
 		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
 		addSuggestionEventListeners();
+		input.setAttribute('aria-expanded', true);
 	};
 
 	const handleData = term => {

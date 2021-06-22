@@ -150,6 +150,8 @@ describe('Autocomplete', () => {
 
 				await waitFor(2);
 
+				expect(input.getAttribute('aria-expanded')).toBe("true");
+
 				input.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown' }));
 				expect(input.value).toBe('Wallaby');
 
