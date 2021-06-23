@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2021-06-23)
+    * BREAKING: c-meta content now changed to be block layout at lg instead of xl screens
+
 ## 3.0.0 (2021-02-08)
     * BREAKING: switch to use new `brand-context` dependency
     * Add Springernature branding

@@ -17,8 +17,8 @@
 	}
 }
 
-.c-meta__item--block-at-xl {
-	@include media-query('xl') {
+.c-meta__item--block-at-lg {
+	@include media-query('lg') {
 		display: block;
 
 		&:not(:last-child) {
