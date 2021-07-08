@@ -1,5 +1,8 @@
 # History
 
+## 3.3.0 (2021-05-07)
+    * Fixes issue with long words breaking card layouts on mobile
+
 ## 3.2.0 (2021-04-19)
     * Update card title to use fluid typography
     * Bump brand context version
