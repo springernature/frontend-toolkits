@@ -1,5 +1,9 @@
 # History
 
+## 12.0.0 (2021-09-05)
+    * BREAKING:
+        * Add new SN color palette
+
 ## 11.3.0 (2021-06-01)
     * Add base layer for Springer Nature forms
 
