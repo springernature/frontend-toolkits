@@ -1,7 +1,8 @@
 # History
 
-## 11.4.0 (2021-07-05)
-    * Add new SN colors for header gradient
+## 12.0.0 (2021-09-05)
+    * BREAKING:
+        * Add new SN color palette
 
 ## 11.3.0 (2021-06-01)
     * Add base layer for Springer Nature forms

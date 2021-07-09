@@ -9,9 +9,11 @@ $context--colors: (
 	'black': #222, // Formely mineshaft
 	'white': #fff,
 	'red': #c40606,
+	'orange': #f58220,
 	'yellow': #fc0,
-	'blue': #004b83,
-	'blue-light': #0063ab,
+	'blue': #003f8d,
+	'medium-blue': #025e8d,
+	'green': #00a69d,
 	'purple': #a345c9,
 	'grey-dark1': #555,	// Formely emperor
 	'grey-dark2': #666,	// Formely dove
@@ -20,22 +22,20 @@ $context--colors: (
 	'grey-mid1': #dadada, // Formely alto
 
 	// SN Accent colours
-	'research-purple': #785ba7,
-	'emerald': #00b8b0,
-	'orange': #c75301,
-	'lime': #b6bd04,
 	'research-blue': #0070a8,
+	'research-purple': #785ba7,
+	'research-forest': #007373,
+	'research-red': #be1818,
+	'research-orange': #c75301,
 
 	// SN Corporate colours
 	'universal-blue': #01324b,
-	'electric-blue': #486a7e,
-	'pewter-blue': #8faec1,
-	'gainsboro-blue': #cedbe0,
-	'alice-blue': #ecf1f4,
+	'grey-blue-light1': #ebf1f5,
+	'grey-blue-light2': #cedbe0
 );
 
 $context--page-background-color: color('grey-light1');
 $context--border-color: color('grey-mid1');
 $context--focus-color: color('yellow');
 $context--error-color: color('red');
-$context--success-color: color('emerald');
+$context--success-color: color('green');
