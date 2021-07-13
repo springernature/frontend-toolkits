@@ -1,6 +1,6 @@
 # History
 
-## 12.1.0 (2021-07-13)
+## 12.0.1 (2021-07-13)
     * BUG: Replace deprecated sn colors
 
 ## 12.0.0 (2021-07-09)
