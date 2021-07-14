@@ -1,5 +1,8 @@
 # History
 
+## 12.0.2 (2021-07-14)
+    * Change sn link color
+
 ## 12.0.1 (2021-07-13)
     * BUG: Replace deprecated sn colors
 
