@@ -11,7 +11,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: color('blue');
+	color: $context--link-color;
 }
 
 a:hover,
