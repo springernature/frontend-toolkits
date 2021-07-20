@@ -6,6 +6,10 @@
 	line-height: $meta--line-height;
 }
 
+.c-meta--large {
+	font-size: $meta--font-size-large;
+}
+
 .c-meta__item {
 	display: inline-block;
 	margin-bottom: $meta--margin-bottom;
