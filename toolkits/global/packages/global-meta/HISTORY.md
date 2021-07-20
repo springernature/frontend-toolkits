@@ -1,7 +1,7 @@
 # History
 
 ## 4.1.1 (2021-07-20)
-    * use $context--font-size-sm to set font-size
+    * Use $context--font-size-sm to set font-size
 
 ## 4.1.0 (2021-07-19)
     * Add class for larger font size
