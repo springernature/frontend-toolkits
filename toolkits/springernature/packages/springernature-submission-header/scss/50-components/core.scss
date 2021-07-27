@@ -1,0 +1,24 @@
+.c-submission-details-header {
+	font-size: 12px;
+	font-size: 0.75em;
+	margin: 0 0 20px 0;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #173643;
+	border-left: 3px solid #173643;
+
+	&__row-item {
+		margin: 0 10px 0 0;
+	}
+
+	&__author-list {
+		list-style-type: none;
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	&__author {
+		list-style-type: none;
+		margin: 0 20px 0 0;
+	}
+}

@@ -1,0 +1,39 @@
+.js {
+    .c-submission-details-header {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+
+        &__row,
+        &__author-list {
+            display: flex;
+        }
+
+        &__row-item {
+            &:not(:last-child) {
+                &:after {
+                    content: ' |';
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .abstract-expander {
+        @include arrow(map-get($context--colors, deep-green), down, 4px);
+
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        min-width: 105px;
+        color: map-get($context--colors, deep-green);
+        text-decoration: none;
+        vertical-align: baseline;
+
+        &.is-open {
+            @include arrow(map-get($context--colors, deep-green), up, 4px);
+        }
+
+        *.position-right {
+            margin-left: 10px;
+        }
+    }
+}
