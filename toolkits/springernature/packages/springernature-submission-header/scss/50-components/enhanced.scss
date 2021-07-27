@@ -1,39 +1,57 @@
-.js {
-    .c-submission-details-header {
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+.c-submission-details-header {
+	font-size: 12px;
+	font-size: 0.75em;
+	margin: 0 0 20px 0;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #173643;
+	border-left: 3px solid #173643;
 
-        &__row,
-        &__author-list {
-            display: flex;
-        }
+	&__row,
+	&__author-list {
+		display: flex;
+	}
 
-        &__row-item {
-            &:not(:last-child) {
-                &:after {
-                    content: ' |';
-                    padding-left: 10px;
-                }
-            }
-        }
-    }
+	&__row-item {
+		margin: 0 10px 0 0;
+	
+		&:not(:last-child) {
+			&:after {
+				content: ' |';
+				padding-left: 10px;
+			}
+		}
+	}
 
-    .abstract-expander {
-        @include arrow(map-get($context--colors, deep-green), down, 4px);
+	&__author-list {
+		list-style-type: none;
+		padding-left: 0;
+		margin-left: 0;
+	}
 
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        min-width: 105px;
-        color: map-get($context--colors, deep-green);
-        text-decoration: none;
-        vertical-align: baseline;
+	&__author {
+		list-style-type: none;
+		margin: 0 20px 0 0;
+	}
+}
 
-        &.is-open {
-            @include arrow(map-get($context--colors, deep-green), up, 4px);
-        }
+.abstract-expander {
+	@include arrow(map-get($context--colors, deep-green), down, 4px);
 
-        *.position-right {
-            margin-left: 10px;
-        }
-    }
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	min-width: 105px;
+	color: map-get($context--colors, deep-green);
+	text-decoration: none;
+	vertical-align: baseline;
+
+	&.is-open {
+		@include arrow(map-get($context--colors, deep-green), up, 4px);
+	}
+
+	*.position-right {
+		margin-left: 10px;
+	}
 }

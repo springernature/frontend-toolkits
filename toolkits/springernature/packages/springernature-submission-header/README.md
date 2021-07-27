@@ -36,22 +36,29 @@ This component requires the global expander component. It also requires the arro
 
 Import the styles into your main stylesheet
 
-// core
+```scss
+// core.scss
+@import '@springernature/springernature-submission-header/scss/50-components/core';
+```
+
+
+```scss
+// enhanced.scss
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
 @import '@springernature/brand-context/default/scss/30-mixins/arrow.scss';
 @import '@springernature/springernature-submission-header/scss/50-components/core';
 
-// enhanced
+
 @import '@springernature/springernature-submission-header/scss/50-components/enhanced';
+```
 
 
 ### Javascript
-import the expander package
+import the expander package and initialise
 
+```javascript
 import {Expander} from '@springernature/global-expander/js/expander';
 
-Initialise expander
-```   
 const abstractExpanderTrigger = document.querySelector('[data-component-abstract-expander]');
 const abstractExpanderTarget = document.querySelector('[data-component-abstract-expander-target]');
 
