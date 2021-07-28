@@ -21,8 +21,16 @@
         </ul>
     </div>
 
-    <div>
-        <button data-component-abstract-expander data-expander data-expander-target="#abstract" class="position-right abstract-expander">View abstract</button>
-        <div data-component-abstract-expander-target id="abstract" data-test="submission-abstract">{{{submission.abstract.html}}}</div>
+    <div class="u-display-flex u-justify-content-space-between">
+        <div>
+            <button data-component-abstract-expander data-expander data-expander-target="#abstract" class="position-right abstract-expander js-only">View abstract</button>
+            <div data-component-abstract-expander-target id="abstract" data-test="submission-abstract">{{{submission.abstract.html}}}</div>
+        </div>
+        <div>
+            {{#each submission.files.all}}
+                <a href="{{downloadUrl}}" hidden data-download>{{name}}</a>
+            {{/each}}
+            <a href="">Download all submission files</a>
+        </div>
     </div>
 </article>

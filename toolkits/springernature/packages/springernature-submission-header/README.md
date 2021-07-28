@@ -24,12 +24,20 @@ submission: {
     title: {
         html,
         plainText
+    },
+    files: {
+        all: [
+                {
+                    downloadUrl,
+                    name
+                }
+        ]
     }
 }
 
 The template included is handlebars, but it is not required. It also assumes you have a `defaultDateFormat` helper available to format your date as `DD Mmm YYYY`, but this need not necessarily be handled in the template.
 
-This component requires the global expander component. It also requires the arrow mixin and the $context--colors var from the brand context (see below).
+This component requires the global expander component. It also requires the arrow mixin,  and some utilies and settings from the brand context (see below).
 
 
 ### CSS
@@ -47,7 +55,8 @@ Import the styles into your main stylesheet
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
 @import '@springernature/brand-context/default/scss/30-mixins/arrow.scss';
 @import '@springernature/springernature-submission-header/scss/50-components/core';
-
+@import '@springernature/brand-context/springernature/scss/60-utilities/display';
+@import '@springernature/brand-context/springernature/scss/60-utilities/fles';
 
 @import '@springernature/springernature-submission-header/scss/50-components/enhanced';
 ```
