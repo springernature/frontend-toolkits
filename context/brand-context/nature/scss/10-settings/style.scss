@@ -4,6 +4,9 @@
  *
  */
 
+// Keyline
+$context--keyline-border-color: greyscale(70); // same as default but needed because generates different colour because greyscale max value different for nature
+
 // Shadow
 $context--shadow-border-color: #eee;
 $context--shadow-color: rgba(0, 0, 0, 0.5);

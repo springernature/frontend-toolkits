@@ -1,5 +1,11 @@
 # History
 
+## 12.1.0 (2021-07-28)
+    * Adds keyline utility classnames to nature and springer
+    * Refactors keyline mixin; now includes thickness and references spacing from settings
+    * Sets keyline border colour in nature brand
+    * Sets keyline border colour in springer brand
+
 ## 12.0.2 (2021-07-14)
     * Change sn link color
 
