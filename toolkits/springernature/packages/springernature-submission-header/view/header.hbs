@@ -1,0 +1,28 @@
+<article class="c-submission-details-header">
+    <div class="c-submission-details-header__row u-color-dark-grey">
+        <span class="c-submission-details-header__row-item" data-test="article-type">{{submission.articleType}}</span>
+        <span class="c-submission-details-header__row-item">Submitted {{defaultDateFormat submission.submittedTimestamp}}</span>
+        <span class="c-submission-details-header__row-item" data-test="submission-id">{{submission.submissionId}}</span>
+        <span class="c-submission-details-header__row-item">Version {{submission.revisionVersion}}</span>
+    </div>
+    <h2 class="u-mt15 u-mb20" data-test="submission-title">{{{submission.title.html}}}</h2>
+    <div class="c-submission-details-header__row">
+        <span class="u-font-16" data-test="submission-journal-title">{{submission.journalTitle}}</span>
+    </div>
+    <div class="c-submission-details-header__row">
+        <ul class="c-submission-details-header__author-list">
+            {{#each submission.authors}}
+                <li class="c-submission-details-header__author">
+                    <a href="mailto:test@test.com">
+                        <span data-test="submission-author-name{{@index}}">{{givenName}} {{familyName}}</span>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div>
+        <button data-component-abstract-expander data-expander data-expander-target="#abstract" class="position-right abstract-expander">View abstract</button>
+        <div data-component-abstract-expander-target id="abstract" data-test="submission-abstract">{{{submission.abstract.html}}}</div>
+    </div>
+</article>
