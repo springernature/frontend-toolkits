@@ -1,5 +1,9 @@
 # History
 
+## 13.0.0 (2021-07-28)
+    * BREAKING:
+        * Removes u-separator styles
+
 ## 12.0.2 (2021-07-14)
     * Change sn link color
 
