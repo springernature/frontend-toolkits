@@ -37,21 +37,28 @@
 }
 
 .abstract-expander {
-	@include arrow(map-get($context--colors, deep-green), down, 4px);
+	@include arrow(map-get($context--colors, medium-blue), down, 4px);
+	@include link-like();
 
 	padding: 0;
 	margin: 0;
 	text-align: left;
 	min-width: 105px;
-	color: map-get($context--colors, deep-green);
+	color: map-get($context--colors, medium-blue);
 	text-decoration: none;
-	vertical-align: baseline;
 
 	&.is-open {
-		@include arrow(map-get($context--colors, deep-green), up, 4px);
+		@include arrow(map-get($context--colors, medium-blue), up, 4px);
 	}
 
 	*.position-right {
 		margin-left: 10px;
 	}
+}
+
+.c-download-all {
+	@include link-like();
+
+	color: map-get($context--colors, medium-blue);
+	text-decoration: none;
 }
