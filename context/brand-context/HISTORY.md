@@ -1,5 +1,8 @@
 # History
 
+## 13.1.1 (2021-07-29)
+    * Includes the style 10-settings in Springer abstracts partial
+
 ## 13.1.0 (2021-07-29)
     * Adds keyline utility classnames to nature and springer
     * Refactors keyline mixin; now includes thickness and references spacing from settings
