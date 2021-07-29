@@ -1,5 +1,8 @@
 # History
 
+## 2.0.3 (2021-07-29)
+    * Fix media queries
+
 ## 2.0.2 (2021-07-28)
     * Fix max-width for header
 
