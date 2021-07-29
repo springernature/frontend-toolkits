@@ -1,5 +1,11 @@
 # History
 
+## 13.1.0 (2021-07-29)
+    * Adds keyline utility classnames to nature and springer
+    * Refactors keyline mixin; now includes thickness and references spacing from settings
+    * Sets keyline border colour in nature brand
+    * Sets keyline border colour in springer brand
+
 ## 13.0.0 (2021-07-28)
     * BREAKING:
         * Removes u-separator styles
