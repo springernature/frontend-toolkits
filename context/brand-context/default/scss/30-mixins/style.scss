@@ -1,18 +1,15 @@
-@mixin keyline($direction: bottom, $size: 16) {
+@mixin u-keyline($direction: bottom, $spacing: $context--keyline-spacing, $thickness: 1px) {
 	$valid-directions: (top, right, bottom, left);
 
 	@if index($valid-directions, $direction) {
-		border-#{$direction}: 1px solid $context--keyline-border-color;
-		padding-#{$direction}: spacing($size);
-		margin-#{$direction}: spacing($size);
+		border-#{$direction}: $thickness solid $context--keyline-border-color;
+		padding-#{$direction}: spacing($spacing);
+		margin-#{$direction}: spacing($spacing);
 	}
 	@else {
 		@warn '$direction should be one of #{$valid-directions}, but was #{$direction}';
 	}
 }
-
-// Style Utilities
-// Have conrresponding utility classes
 
 // Box shadow
 @mixin u-shadow {
