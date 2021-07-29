@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 (2021-07-29)
+    * Fix media queries
+
 ## 2.0.1 (2021-05-13)
     * Use new SN branding URL (for logo)
 
