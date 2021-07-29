@@ -1,3 +1,6 @@
+## 3.0.0 (2021-07-29)
+    * Removes bottom margin from description list terms
+
 ## 2.1.0 (2021-05-18)
     * Adds list header component and settings
 
