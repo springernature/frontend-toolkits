@@ -1,5 +1,8 @@
 # History
 
+## 2.0.4 (2021-07-29)
+    * Revert header width (media query fix below resolved issue)
+
 ## 2.0.3 (2021-07-29)
     * Fix media queries
 
