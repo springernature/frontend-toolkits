@@ -8,11 +8,10 @@
 
 $meta--font-family: $context--font-family-sans;
 $meta--font-size: $context--font-size-xs;
-$meta--font-size-large: $context--font-size-sm;
-$meta--border: 1px solid #bbb;
+$meta--font-size-large: 1.6rem;
 $meta--color: inherit;
+$meta--keyline-spacing: spacing(4);
 $meta--line-height: 1.4;
 $meta--margin-bottom: spacing(4);
-$meta--margin-right: spacing(0);
-$meta--padding-right: spacing(4);
+$meta--margin-bottom-large: spacing(8);
 $meta--text-transform: none;
