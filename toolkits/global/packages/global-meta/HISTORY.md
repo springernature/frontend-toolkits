@@ -1,5 +1,8 @@
 # History
 
+## 5.0.1 (2021-08-03)
+    * Update version number correctly    
+
 ## 5.0.0 (2021-08-03)
     * BREAKING: Use u-keyline mixin to create keyline border
         - Requires brand-context 13.1.1 to get mixin
