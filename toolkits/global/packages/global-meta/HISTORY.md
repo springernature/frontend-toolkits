@@ -1,5 +1,17 @@
 # History
 
+## 5.0.1 (2021-08-03)
+    * Update version number correctly    
+
+## 5.0.0 (2021-08-03)
+    * BREAKING: Use u-keyline mixin to create keyline border
+        - Requires brand-context 13.1.1 to get mixin
+        - Modified variable names in default and brand settings
+    * Increase spacing on c-meta__item in c-meta--large
+    * Add new modifier to have block element list items at max sm
+    * Add margin-right reset to c-meta__item modifiers
+    * Bump brand-context
+
 ## 4.1.1 (2021-07-20)
     * Use $context--font-size-sm to set font-size
 
