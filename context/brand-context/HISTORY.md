@@ -1,5 +1,8 @@
 # History
 
+## 13.1.2 (2021-08-04)
+    * Ensures Nature link focus styles cause a reflow as outline not visible in Safari v13+ without a reflow on Nature pages
+
 ## 13.1.1 (2021-07-29)
     * Includes the style 10-settings in Springer abstracts partial
 
