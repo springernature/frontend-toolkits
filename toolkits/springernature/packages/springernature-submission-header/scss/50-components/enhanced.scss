@@ -39,7 +39,7 @@
 		margin-bottom: 20px;
 		overflow: hidden;
 	}
-	
+
 	&__author {
 		@include link-like();
 		list-style-type: none;
@@ -48,11 +48,11 @@
 		text-decoration: none;
 
 		&:not(:last-child) {
-	
+
 			&:after {
 				content: ', ';
 			}
-	
+
 			padding-right: 15px;
 		}
 		display: none;
@@ -118,7 +118,7 @@
 		.closed & {
 			display: none;
 		}
-	
+
 		.js & {
 			display: inline-block;
 		}
@@ -129,13 +129,13 @@
 		font-family: $context--font-family-serif;
 		font-size: 1.25rem;
 		letter-spacing: 0;
-	
+
 		@include media-query('md') {
 			font-size: 1.125rem;
 			margin: 20px 0;
 		}
 	}
-	
+
 	&__journal-title {
 		font-size: 16px;
 	}
@@ -144,7 +144,7 @@
 		padding-top: 20px;
 		max-width: 85ch;
 		display: none;
-		
+
 		.js & {
 			display: block;
 		}
@@ -152,7 +152,7 @@
 }
 
 input[type="checkbox"]:checked + .c-submission-details-header__abstract {
-	display: block;   
+	display: block;
 }
 
 .abstract-expander {
