@@ -55,11 +55,10 @@ Import the styles into your main stylesheet
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
 @import '@springernature/brand-context/default/scss/30-mixins/arrow.scss';
 @import '@springernature/brand-context/springer/scss/30-mixins/links';
-@import '@springernature/springernature-submission-header/scss/50-components/core';
-@import '@springernature/brand-context/springernature/scss/60-utilities/display';
-@import '@springernature/brand-context/springernature/scss/60-utilities/flex';
-
 @import '@springernature/springernature-submission-header/scss/50-components/enhanced';
+@import '@springernature/brand-context/default/scss/60-utilities/display';
+@import '@springernature/brand-context/default/scss/60-utilities/flex';
+@import '@springernature/brand-context/default/scss/60-utilities/hiding';
 ```
 
 

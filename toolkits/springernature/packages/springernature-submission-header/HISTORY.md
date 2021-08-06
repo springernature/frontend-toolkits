@@ -1,4 +1,7 @@
 # History
+## 0.3.0 (2021-08-06)
+	* add more styles
+
 ## 0.2.0 (2021-07-28)
 	* Change colours of expanders, use mixin from brand context.
 
