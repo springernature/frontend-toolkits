@@ -63,16 +63,23 @@ Import the styles into your main stylesheet
 
 
 ### Javascript
-import the expander package and initialise
+import the expander package, and the popup package, and initialise
 
 ```javascript
 import {Expander} from '@springernature/global-expander/js/expander';
+import {Popup} from '@springernature/global-popup/js/popup';
 
 const abstractExpanderTrigger = document.querySelector('[data-component-abstract-expander]');
 const abstractExpanderTarget = document.querySelector('[data-component-abstract-expander-target]');
+const triggers = Array.from(document.querySelectorAll('[data-component-author-popup-trigger]'));
 
 if (abstractExpanderTarget && abstractExpanderTrigger) {
     const abstractExpander = new Expander(abstractExpanderTrigger, abstractExpanderTarget, {});
     abstractExpander.init();
 }
+
+triggers.forEach(trigger => {
+    const target = trigger.getAttribute('data-popup-target');
+    new Popup(trigger, target, {});
+});
 ```

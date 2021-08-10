@@ -105,6 +105,61 @@
 		font-weight: bold;
 	}
 
+	&__author-modal {
+		background-color: #fff;
+		height: auto;
+		max-height: 95%;
+		box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		margin: -15px 30px 30px 0;
+		padding: 30px;
+		width: 90vw;
+		max-width: 380px;
+		position: absolute;
+		overflow: visible;
+		border-top: 3px solid #007e99;
+		border: 2px solid #00b8b0;
+
+		@include media-query('md') {
+			margin: -15px 30px 30px -15px;
+		}
+
+		.c-popup__close {
+			@extend .u-text-hidden;
+			background-color: #666;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
+			background-position: center;
+			background-size: 12px;
+			background-repeat: no-repeat;
+			border: 0;
+			border-radius: 50px;
+			color: #fff;
+			cursor: pointer;
+			font-family: inherit;
+			font-size: 24px;
+			font-weight: inherit;
+			height: 24px;
+			line-height: 24px;
+			padding: 0;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			width: 24px;
+
+			&:hover {
+				background-color: darken(#666, 20%);
+				text-decoration: none;
+			}
+		}
+
+		.c-popup__close,
+		.c-popup__close-text {
+			&:not(.author-modal-close) {
+				display: none;
+			}
+		}
+	}
+
 	&__download-all {
 		background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='12px' height='14px' viewBox='0 0 12 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Edownload icon%3C/title%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Submission-Header' transform='translate(-850.000000, -198.000000)' fill='%23007E99'%3E%3Cg id='download-all-files' transform='translate(850.000000, 197.000000)'%3E%3Cpath d='M10.9975267,12.9955775 C11.544239,12.9955775 12,13.4432927 12,13.9955775 C12,14.5517127 11.5511774,14.9955775 10.9975267,14.9955775 L1.00247329,14.9955775 C0.455760956,14.9955775 0,14.5478622 0,13.9955775 C0,13.4394423 0.448822582,12.9955775 1.00247329,12.9955775 L10.9975267,12.9955775 Z M6,1 C6.55228475,1 7,1.44483697 7,1.9955775 L7,1.9955775 L7,8.79557292 L9.48162731,6.31394562 C9.87444947,5.92112346 10.5036005,5.91338389 10.8846925,6.29447597 C11.2758227,6.68560609 11.2761731,7.31940284 10.8845521,7.71102388 L10.8845521,7.71102388 L6.70834418,11.8872318 C6.31713649,12.2784395 5.68326274,12.2788387 5.29162423,11.8872002 L5.29162423,11.8872002 L1.11523002,7.710806 C0.724004887,7.31958086 0.717559964,6.69172451 1.09865205,6.31063243 C1.48978217,5.91950231 2.1220231,5.91759603 2.51816554,6.31373846 L2.51816554,6.31373846 L5,8.79557292 L5,1.9955775 C5,1.44573523 5.44386482,1 6,1 Z' id='download-icon'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat;
 		background-size: 12px;

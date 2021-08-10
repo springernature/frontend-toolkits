@@ -11,20 +11,19 @@
     </div>
     <div class="c-submission-details-header__row">
         <ul class="c-submission-details-header__author-list">
-            
             {{#each submission.authors}}
-                <li id="author-modal{{@index}}" data-component-modal class="c-modal u-js-hide no-bg" tabindex="-1"
+                <li>
+                    <div id="author-modal{{@index}}" class="c-submission-details-header__author-modal" tabindex="-1"
                     role="dialog" aria-describedby="dialog-description{{@index}}" data-modal-background="false">
-                    <div class="c-modal--content author-modal" tabindex="0">
                         <p id="dialog-description{{@index}}" class="u-visually-hidden">Author information</p>
-                        <button data-test="close-author-modal{{@index}}" aria-label="Close" data-component="modal-close" class="btn btn--close u-hide u-js-show">&times;</button>
+                        <button data-test="close-author-modal{{@index}}" aria-label="Close" data-component="modal-close" class="c-popup__close author-modal-close u-hide u-js-show">&times;</button>
                         <h3 class="c-submission-details-header__author-name" data-test="submission-author-name">{{givenName}} {{familyName}}</h3>
                         {{#if corresponding}}<p class="c-submission-details-header__author-type" data-test="submission-author-is-corresponding">Corresponding Author</p>{{/if}}
                         {{#if affiliation}}<p class="u-font-14 u-font-daytona" data-test="submission-author-{{@index}}-affiliation">{{affiliation.institutionName}}, {{affiliation.countryName}}</p>{{/if}}
                         <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email {{#if corresponding}}corresponding{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
                     </div>
+                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-modal{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}</button>
                 </li>
-                <button data-test="submission-author-name{{@index}}" data-modal-for="author-modal{{@index}}" data-modal-pin-to-trigger class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}</button>
             {{/each}}
         </ul>
     </div>
