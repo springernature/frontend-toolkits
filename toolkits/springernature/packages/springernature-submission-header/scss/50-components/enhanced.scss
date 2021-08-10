@@ -105,7 +105,7 @@
 		font-weight: bold;
 	}
 
-	&__author-modal {
+	&__author-popup {
 		background-color: #fff;
 		height: auto;
 		max-height: 95%;
@@ -154,7 +154,7 @@
 
 		.c-popup__close,
 		.c-popup__close-text {
-			&:not(.author-modal-close) {
+			&:not(.author-popup-close) {
 				display: none;
 			}
 		}
