@@ -11,7 +11,7 @@
 
 	&__row,
 	&__author-list {
-		display: flex;
+		@extend .u-display-flex;
 	}
 
 	&__row-item {
@@ -43,7 +43,7 @@
 	&__author {
 		@include link-like();
 		list-style-type: none;
-		margin: 0 20px 0 0;
+		margin: $submission-margin;
 		color: map-get($context--colors, medium-blue);
 		text-decoration: none;
 
@@ -109,7 +109,7 @@
 		background-color: #fff;
 		height: auto;
 		max-height: 95%;
-		margin: 0 20px 0 0;
+		margin: $submission-margin;
 		padding: 0;
 		width: auto;
 		max-width: 380px;
