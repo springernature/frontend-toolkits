@@ -1,4 +1,7 @@
 # History
+## 0.4.0 (2021-08-10)
+	* incorporate global popup
+
 ## 0.3.0 (2021-08-06)
 	* add more styles
 

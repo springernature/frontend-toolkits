@@ -4,14 +4,14 @@
 	font-size: 0.75em;
 	margin: 0 0 20px 0;
 	background: #fff;
-	padding: 20px;
+	padding: $submission-header--padding;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 	border: 1px solid #173643;
 	border-left: 3px solid #173643;
 
 	&__row,
 	&__author-list {
-		display: flex;
+		@extend .u-display-flex;
 	}
 
 	&__row-item {
@@ -43,7 +43,7 @@
 	&__author {
 		@include link-like();
 		list-style-type: none;
-		margin: 0 20px 0 0;
+		margin: $submission-margin;
 		color: map-get($context--colors, medium-blue);
 		text-decoration: none;
 
@@ -103,6 +103,64 @@
 		font-size: 14px;
 		font-size: 0.875rem;
 		font-weight: bold;
+	}
+
+	&__author-modal {
+		background-color: #fff;
+		height: auto;
+		max-height: 95%;
+		margin: $submission-margin;
+		padding: 0;
+		width: auto;
+		max-width: 380px;
+		position: relative;
+		overflow: visible;
+
+		.js & {
+			position: absolute;
+			width: 90vw;
+			border-top: 3px solid #007e99;
+			border: 2px solid #00b8b0;
+			box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.2);
+			border-radius: 3px;
+			padding: $submission-header--padding;
+			margin: -15px 30px 30px 0;
+		}
+
+		.c-popup__close {
+			@extend .u-text-hidden;
+			background-color: #666;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
+			background-position: center;
+			background-size: 12px;
+			background-repeat: no-repeat;
+			border: 0;
+			border-radius: 50px;
+			color: #fff;
+			cursor: pointer;
+			font-family: inherit;
+			font-size: 24px;
+			font-weight: inherit;
+			height: 24px;
+			line-height: 24px;
+			padding: 0;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			width: 24px;
+
+			&:hover {
+				background-color: darken(#666, 20%);
+				text-decoration: none;
+			}
+		}
+
+		.c-popup__close,
+		.c-popup__close-text {
+			&:not(.author-modal-close) {
+				display: none;
+			}
+		}
 	}
 
 	&__download-all {
