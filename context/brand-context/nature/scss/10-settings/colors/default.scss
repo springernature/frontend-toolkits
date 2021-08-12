@@ -37,8 +37,7 @@ $context--colors: (
 	'nature-secondary': #a12a3f,
 	'nature-tertiary': #d7c8c8,
 	'action-base': #004b83,
-	'action-light': scale-color(#004b83, $lightness: 10%),
-	'action-focus': #fece3e
+	'action-light': scale-color(#004b83, $lightness: 10%)
 );
 
 // nature sub-brands
@@ -175,3 +174,5 @@ $subject-areas-colors: (
 	'scientific-community-society-primary': #7f3f5c,
 	'scientific-community-society-secondary': #fcf0f7
 );
+
+$context--focus-color: color(lemon);

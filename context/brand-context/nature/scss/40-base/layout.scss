@@ -58,7 +58,5 @@ abbr[title] {
 
 [contenteditable],
 [tabindex="0"] {
-	&:focus {
-		outline: 4px solid color('action-focus');
-	}
+	@include u-focus-outline();
 }
