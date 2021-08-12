@@ -1,4 +1,7 @@
 # History
+## 0.4.1 (2021-08-12)
+	* Fix typo in readme, remove unneeded styles
+
 ## 0.4.0 (2021-08-10)
 	* incorporate global popup
 
