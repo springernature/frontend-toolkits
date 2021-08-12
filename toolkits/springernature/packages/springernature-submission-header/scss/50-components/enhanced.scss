@@ -120,7 +120,7 @@
 			position: absolute;
 			width: 90vw;
 			border: 1px solid #00b8b0;
-			box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+			box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
 			padding: $submission-header--padding;
 			margin: -15px 30px 30px 0;
 		}
@@ -129,22 +129,18 @@
 			background-color: #666;
 			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
 			background-position: center;
-			background-size: 12px;
+			background-size: $popup-close-btn-background-size;
 			background-repeat: no-repeat;
 			border: 0;
 			border-radius: 50px;
 			color: #fff;
 			cursor: pointer;
-			font-family: inherit;
-			font-size: 24px;
-			font-weight: inherit;
-			height: 24px;
-			line-height: 24px;
+			height: $popup-close-btn-height;
+			width: $popup-close-btn-width;
 			padding: 0;
 			position: absolute;
 			right: 15px;
 			top: 15px;
-			width: 24px;
 
 			&:hover {
 				background-color: darken(#666, 20%);
@@ -154,7 +150,7 @@
 
 		.c-popup__close,
 		.c-popup__close-text {
-			&:not(.author-modal-close) {
+			&:not(.author-popup-close) {
 				display: none;
 			}
 		}
@@ -232,9 +228,4 @@ input[type="checkbox"]:checked + .c-submission-details-header__abstract {
 	*.position-right {
 		margin-left: 10px;
 	}
-}
-
-.abstract-expander-non-js {
-	color: map-get($context--colors, medium-blue);
-	text-decoration: underline;
 }
