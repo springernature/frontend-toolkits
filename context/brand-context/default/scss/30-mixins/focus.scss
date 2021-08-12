@@ -1,0 +1,5 @@
+@mixin u-focus-outline {
+	&:focus {
+		outline: 3px solid $context--focus-color;
+	}
+}
