@@ -16,8 +16,7 @@ a:hover {
 }
 
 a:focus {
-	outline: 3px solid color('lemon');
-	-webkit-transform: translateZ(0); // reflow needed to ensure outline styles visible in Safari v13+
+	@include u-focus-outline();
 }
 
 a:active {
