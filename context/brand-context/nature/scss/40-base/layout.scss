@@ -55,3 +55,10 @@ small {
 abbr[title] {
 	text-decoration: none;
 }
+
+[contenteditable],
+[tabindex="0"] {
+	&:focus {
+		outline: 4px solid color('action-focus');
+	}
+}
