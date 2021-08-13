@@ -7,10 +7,10 @@ fieldset {
 	border: 0;
 }
 
-input:focus,
-button:focus,
-select:focus {
-	outline: 3px solid color('lemon');
+input,
+button,
+select {
+	@include u-focus-outline();
 }
 
 button:active {

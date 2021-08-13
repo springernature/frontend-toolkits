@@ -1,5 +1,11 @@
 # History
 
+## 13.2.0 (2021-08-12)
+    * Add mixin for u-focus-outline and default $context--focus-color variable
+    * Replace the focus style for links in nature to use this new mixin
+    * Replace the focus style for input, button, select elements in forms for nature to use this new mixin
+    * Add pseudo class focus for [tabindex="0"] and [contenteditable] attributes for nature brand
+
 ## 13.1.2 (2021-08-04)
     * Ensures Nature link focus styles cause a reflow as outline not visible in Safari v13+ without a reflow on Nature pages
 
