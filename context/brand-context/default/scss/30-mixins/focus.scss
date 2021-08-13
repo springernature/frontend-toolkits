@@ -1,6 +1,8 @@
-@mixin u-focus-outline {
+@mixin u-focus-outline($reflow: false) {
 	&:focus {
 		outline: 3px solid $context--focus-color;
-		-webkit-font-smoothing: antialiased; // reflow needed to ensure outline styles visible in Safari v13+
+		@if $reflow == true {
+			-webkit-transform: translateZ(0); // reflow needed to ensure outline styles visible in Safari v13+
+		}
 	}
 }
