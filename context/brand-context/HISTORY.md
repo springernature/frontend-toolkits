@@ -1,8 +1,9 @@
 # History
 
-## 13.2.1 (2021-08-12)
-    * Use -webkit-font-smoothing: antialiased instead of -webkit-transform: translateZ(0) to avoid breaking z-index stack but still cause a reflow in Safari
-        - related to 13.1.2 
+## 13.2.1 (2021-08-13)
+    * Add parameter to optionally force reflow on focus for webkit browsers
+        - applied on links as this seems to be where outline appears incorrectly
+        - related to 13.1.2
 
 ## 13.2.0 (2021-08-12)
     * Add mixin for u-focus-outline and default $context--focus-color variable
