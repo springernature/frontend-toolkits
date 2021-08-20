@@ -35,7 +35,8 @@
     "validate:global": "sn-package-validate -t global",
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
-    "validate:springernature": "sn-package-validate -t springernature"
+    "validate:springernature": "sn-package-validate -t springernature",
+    "generate-tokens": "node ./design-tokens/build.js"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
@@ -60,7 +61,9 @@
     "eslint-plugin-unicorn": "^13.0.0",
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
-    "sass-lint": "^1.13.1"
+    "sass-lint": "^1.13.1",
+    "style-dictionary": "^3.0.1",
+    "theo": "^8.1.5"
   },
   "jest": {
     "testURL": "http://localhost/",

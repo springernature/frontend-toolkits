@@ -1,0 +1,10 @@
+{
+  "size": {
+    "small": {
+      "value": "1px"
+    },
+    "large": {
+      "value": "1000px"
+    }
+  }
+}
