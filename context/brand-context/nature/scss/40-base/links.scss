@@ -4,7 +4,7 @@
  */
 
 a {
-	@include u-focus-outline($reflow:true);
+	@include u-focus-outline();
 	text-decoration: none;
 	vertical-align: baseline;
 	color: color('blue');
