@@ -1,5 +1,10 @@
 # History
 
+## 13.2.1 (2021-08-23)
+    * Add will-change: tranform reflow on focus mixin
+        - reflow needed to ensure outline styles visible in Safari v13+
+        - related to 13.1.2
+
 ## 13.2.0 (2021-08-12)
     * Add mixin for u-focus-outline and default $context--focus-color variable
     * Replace the focus style for links in nature to use this new mixin
