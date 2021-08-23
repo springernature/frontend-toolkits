@@ -1,8 +1,8 @@
 # History
 
-## 13.2.1 (2021-08-13)
-    * Add parameter to optionally force reflow on focus for webkit browsers
-        - applied on links as this seems to be where outline appears incorrectly
+## 13.2.1 (2021-08-23)
+    * Add will-change: tranform reflow on focus mixin
+        - reflow needed to ensure outline styles visible in Safari v13+
         - related to 13.1.2
 
 ## 13.2.0 (2021-08-12)
