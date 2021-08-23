@@ -9,9 +9,10 @@
 	border: 1px solid #173643;
 	border-left: 3px solid #173643;
 
-	&__row,
 	&__author-list {
-		@extend .u-display-flex;
+		@include media-query('md') {
+			display: flex;
+		}
 	}
 
 	&__row-item {
