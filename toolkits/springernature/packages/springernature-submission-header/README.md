@@ -54,9 +54,15 @@ Import the styles into your main stylesheet
 // enhanced.scss
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
 @import '@springernature/springernature-submission-header/scss/10-settings/spacing';
-@import '@springernature/brand-context/default/scss/30-mixins/arrow.scss';
+@import '@springernature/brand-context/default/scss/10-settings/typography';
+@import '@springernature/brand-context/default/scss/10-settings/breakpoints';
+
+@import '@springernature/brand-context/default/scss/30-mixins/arrow';
 @import '@springernature/brand-context/springer/scss/30-mixins/links';
+@import '@springernature/brand-context/default/scss/30-mixins/media-query';
+
 @import '@springernature/springernature-submission-header/scss/50-components/enhanced';
+
 @import '@springernature/brand-context/default/scss/60-utilities/display';
 @import '@springernature/brand-context/default/scss/60-utilities/flex';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding';

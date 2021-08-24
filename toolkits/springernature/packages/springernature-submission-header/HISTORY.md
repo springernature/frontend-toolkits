@@ -1,5 +1,8 @@
 # History
 
+## 0.4.3 (2021-08-19)
+	* Adds CSS dependency to README, specifies a few font-sizes which were assumed
+
 ## 0.4.2 (2021-08-18)
 	* removes flex for sub details at smaller breakpoint
 

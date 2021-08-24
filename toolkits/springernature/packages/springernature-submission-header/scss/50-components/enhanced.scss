@@ -1,6 +1,5 @@
 .c-submission-details-header {
 	font-family: $context--font-family-sans;
-	font-size: 12px;
 	font-size: 0.75em;
 	margin: 0 0 20px 0;
 	background: #fff;
@@ -8,9 +7,12 @@
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 	border: 1px solid #173643;
 	border-left: 3px solid #173643;
+	line-height: 1.76;
 
 	&__author-list {
-		@include media-query('md') {
+		margin: 10px 0;
+
+		@include media-query('sm') {
 			display: flex;
 		}
 	}
@@ -43,6 +45,7 @@
 
 	&__author {
 		@include link-like();
+		font-size: 0.75rem;
 		list-style-type: none;
 		margin: $submission-margin;
 		color: map-get($context--colors, medium-blue);
@@ -78,6 +81,8 @@
 	}
 
 	&__authors-email {
+		font-size: 0.75rem;
+
 		&.corresponding {
 			&:after {
 				content: '';
@@ -94,14 +99,12 @@
 	}
 
 	&__author-type {
-		font-size: 12px;
 		font-style: italic;
 		color: map-get($context--colors, grey-dark2);
 	}
 
 	&__author-name {
 		font-family: $context--font-family-sans;
-		font-size: 14px;
 		font-size: 0.875rem;
 		font-weight: bold;
 	}
@@ -127,7 +130,9 @@
 		}
 
 		.c-popup__close {
-			@extend .u-text-hidden;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
 			background-color: #666;
 			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
 			background-position: center;
@@ -190,7 +195,7 @@
 	}
 
 	&__journal-title {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	&__abstract {
@@ -212,7 +217,7 @@ input[type="checkbox"]:checked + .c-submission-details-header__abstract {
 	@include arrow(map-get($context--colors, medium-blue), down, 4px);
 	@include link-like();
 
-	font-size: 12px;
+	font-size: 1em;
 	padding: 0 0 0 20px;
 	margin: 0;
 	text-align: left;
