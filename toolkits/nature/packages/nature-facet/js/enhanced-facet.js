@@ -41,10 +41,11 @@ const createClearButton = (element, container) => {
 	button.addEventListener('click', event => {
 		event.preventDefault();
 		const checkedInputs = element.querySelectorAll('input[type=checkbox]:checked, input[type=radio]:checked');
-		let i;
-		for (i = 0; i < checkedInputs.length; ++i) {
-			checkedInputs[i].checked = false;
-		}
+
+		checkedInputs.forEach(function (checkedInput) {
+			checkedInput.checked = false;
+		});
+
 		button.closest('form').submit();
 	});
 	container.appendChild(button);
