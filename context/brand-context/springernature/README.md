@@ -2,22 +2,22 @@
 
 We are using Merriweather as a variable font for both `serif` and `sans-serif`.
 
-Browsers who support variable fonts do support the `woff2` format. We therefore
+Browsers that support variable fonts also support the `woff2` format. We therefore
 do not need to serve other formats.
 
-Browsers who do not support variable fonts, will fallback to the system fonts
+Browsers that do not support variable fonts will fallback to the system fonts
 specified in the `$context--font-family-serif` and `$context--font-family-sans`
-SASS variables after respectively `'Merriweather'` and `'Merriweather Sans'`.
+SASS variable, respectively `'Merriweather'` and `'Merriweather Sans'`.
 
 So far our `Merriweather` font instance only includes the [Weight variation
 axis](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#weight).  
-At the time of writing `Merriweather` supports the additional [Width
+At the time of writing, `Merriweather` supports the additional [Width
 variation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#width) and [Optical Size variation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#optical_size) as well.  
 If at any point in the future there is a need for these variations, you will
 need to start over the font generation process as described below, leaving in
 the variations you need. **Beware** though, the font file weight will increase
 with the amount of variations you add.
-At the time of writeing `Merriweather` only supports the [Weight variation
+At the time of writing `Merriweather Sans` only supports the [Weight variation
 axis](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#weight).  
 It is worth noting that we also optimised the available `font-weight` range at
 the font generation step to only span from `300` to `700`.  
@@ -41,11 +41,11 @@ the range is.
 
 #### Generating Merriweather-Variable.woff2
 
-In the below commands, it is considered the CLI tools are in the `PATH`, if not
-you should use the absolute path to their binaries.
+In the following commands, it is assumed that CLI tools are included in your
+`PATH`, if not you should use the absolute path to their binaries.
 
 1. Download Merriweather font under the name of `Merriweather-Variable.ttf`
-2. In the Terminal navigates to the folder you have just downloaded the font to
+2. In the Terminal navigate to the folder you have just downloaded the font to
 3. Run `fonttools varLib.instancer ./Merriweather-Variable.ttf wdth=drop opsz=drop wght=300:700`
 4. Run `woff2_compress ./Merriweather-Variable-partial.ttf`
 5. Run `mv ./Merriweather-Variable-partial.woff2 ./Merriweather-Variable.woff2`
@@ -57,7 +57,7 @@ In the below commands, it is considered the CLI tools are in the `PATH`, if not
 you should use the absolute path to their binaries.
 
 1. Download Merriweather Sans font under the name of `MerriweatherSans-Variable.ttf`
-2. In the Terminal navigates to the folder you have just downloaded the font to
+2. In the Terminal navigate to the folder you have just downloaded the font to
 3. Run `fonttools varLib.instancer ./MerriweatherSans-Variable.ttf wght=300:700`
 4. Run `woff2_compress ./MerriweatherSans-Variable-partial.ttf`
 5. Run `mv ./MerriweatherSans-Variable-partial.woff2 ./MerriweatherSans-Variable.woff2`
