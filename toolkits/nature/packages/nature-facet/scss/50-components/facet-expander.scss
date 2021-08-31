@@ -25,16 +25,11 @@
 	}
 
 	.c-facet-expander__list {
-		color: #777;
 		font-size: 1.6rem;
 		white-space: nowrap;
 
 		@include media-query('md') {
 			width: max-content;
-		}
-
-		a {
-			color: white;
 		}
 	}
 
