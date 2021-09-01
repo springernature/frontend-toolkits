@@ -1,0 +1,13 @@
+{
+  "name": "@springernature/nature-facet",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^13.2.1",
+  "dependencies": {
+    "@springernature/global-javascript": "^3.0.3",
+    "@springernature/global-expander": "^4.0.2"
+  }
+}
