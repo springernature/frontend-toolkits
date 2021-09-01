@@ -129,6 +129,7 @@
 
 	.c-facet__button-container & {
 		@include u-hide;
+
 		.js & {
 			@include u-show;
 		}
