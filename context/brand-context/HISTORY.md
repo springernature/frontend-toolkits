@@ -1,5 +1,13 @@
 # History
 
+## 14.0.0 (2021-08-31)
+    * BREAKING:
+        * Switch springernature context fonts to Variable fonts
+        * Swap Daytona with Merriweather Sans
+        * Remove all springernature context fonts from the fonts folder
+    * Add the 2 new variable fonts into springernature context fonts folder
+    * Add documentation about fonts in springernature context README
+
 ## 13.2.1 (2021-08-23)
     * Add will-change: tranform reflow on focus mixin
         - reflow needed to ensure outline styles visible in Safari v13+
