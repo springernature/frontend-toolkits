@@ -20,7 +20,7 @@ const classNames = {
 	SUBMIT: 'c-facet__submit'
 };
 
-const buttonName = {
+const buttonText = {
 	ALL: 'All',
 	SELECTED: 'selected',
 	CLEAR_SELECTION: 'Clear selection',
@@ -36,7 +36,7 @@ const containsCheckableInput = element => {
 const createClearButton = (element, container) => {
 	const button = document.createElement('button');
 	button.classList.add(classNames.CLEAR);
-	button.textContent += buttonName.CLEAR_SELECTION;
+	button.textContent += buttonText.CLEAR_SELECTION;
 
 	button.addEventListener('click', event => {
 		event.preventDefault();
@@ -54,7 +54,7 @@ const createClearButton = (element, container) => {
 const createSubmitButton = container => {
 	const button = document.createElement('button');
 	button.classList.add(classNames.SUBMIT);
-	button.textContent += buttonName.SUBMIT;
+	button.textContent += buttonText.SUBMIT;
 	container.appendChild(button);
 };
 
@@ -66,7 +66,7 @@ const addFormControlsInExpander = element => {
 	createClearButton(element, buttonContainer);
 };
 
-const createFilterButtonName = (button, dropdown) => {
+const createFilterbuttonText = (button, dropdown) => {
 	const checkedInput = dropdown.querySelectorAll('input[type="checkbox"]:checked, input[type="radio"]:checked');
 	const checkedInputLength = checkedInput.length;
 	const buttonSpan = document.createElement('span');
@@ -76,10 +76,10 @@ const createFilterButtonName = (button, dropdown) => {
 		buttonSpan.textContent += dropdown.querySelector('input:checked + label').textContent.trim();
 		button.classList.add(classNames.SELECTED);
 	} else if (checkedInputLength > 1) {
-		buttonSpan.textContent += `${checkedInputLength} ${buttonName.SELECTED}`;
+		buttonSpan.textContent += `${checkedInputLength} ${buttonText.SELECTED}`;
 		buttonSpan.classList.add(classNames.SELECTED);
 	} else {
-		buttonSpan.textContent += buttonName.ALL;
+		buttonSpan.textContent += buttonText.ALL;
 	}
 	button.prepend(buttonSpan);
 };
@@ -101,7 +101,7 @@ const enhancedFacet = () => {
 		}
 
 		if (containsCheckableInput(targetElement)) {
-			createFilterButtonName(trigger, targetElement);
+			createFilterbuttonText(trigger, targetElement);
 			addFormControlsInExpander(targetElement);
 		}
 
