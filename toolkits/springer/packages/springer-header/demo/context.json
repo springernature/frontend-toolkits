@@ -1,0 +1,21 @@
+{
+	"logo": {
+		"srcUrl": "images/logo.svg",
+		"alt": "Springer home",
+		"linkUrl": "/"
+	},
+	"search": {
+		"url": "#",
+		"iconUrl": "images/search.svg"
+	},
+	"menu": [
+		{
+			"label": "Menu option 1",
+			"url": "/path/to/1"
+		},
+		{
+			"label": "Menu option 2",
+			"url": "/path/to/2"
+		}
+	]
+}
