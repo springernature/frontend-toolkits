@@ -93,10 +93,10 @@
 	overflow: hidden;
 	text-align: left;
 	position: absolute;
-	white-space: nowrap;
+	width: calc(100% - 24px); // 16px of icon + 8px away from edge
 	left: spacing(8);
-	right: 24px; // 16px of icon + 8px away from edge
 	top: 25%;
+	white-space: nowrap;
 }
 
 .c-facet__icon {
