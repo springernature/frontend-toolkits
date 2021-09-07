@@ -1,5 +1,10 @@
 # History
 
+## 15.0.0 (2021-09-07)
+    * BREAKING:
+        * Icon width and height attributes removed
+        * u-icon utility provided with `1em` width and height values
+
 ## 14.0.0 (2021-08-31)
     * BREAKING:
         * Switch springernature context fonts to Variable fonts
