@@ -1,5 +1,8 @@
 # History
 
+## 0.5.0 (2021-09-08)
+	* Adjust spacing of author list, only show comma separator for js version
+
 ## 0.4.3 (2021-08-19)
 	* Adds CSS dependency to README, specifies a few font-sizes which were assumed
 
