@@ -76,3 +76,7 @@ and [makeArray](https://github.com/springernature/frontend-toolkits/tree/master/
 Updates button text to indicate what is selected or how many items are selected after form submit.
 
 Adds additional form controls to apply and clear selections in the expander.
+
+## Polyfills
+
+This module uses `Element.closest()`
