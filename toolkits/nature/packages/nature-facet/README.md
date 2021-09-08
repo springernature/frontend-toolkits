@@ -17,51 +17,53 @@ Include the SCSS in your application
 ```html
 <div class="c-facet" data-facet>
     <!-- example of checkbox input -->
-    <fieldset class="c-facet__item">
-        <legend>
-            <span class="c-facet__label">Subject</span>
-            <span class="u-hide u-js-show">
+    <div class="c-facet__container">
+        <fieldset class="c-facet__item">
+            <legend>
+                <span class="c-facet__label">Subject</span>
+                <span class="u-hide u-js-show">
                 <button type="button" class="c-facet__button c-facet__button--border" data-facet-expander data-facet-target="#subject-target">
                     <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" height="16"
                          viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">...</svg>
                 </button>
             </span>
-        </legend>
-    
-        <div id="subject-target" data-test="subject-target" class="c-facet-expander u-js-hide">
-            <ul class="c-facet-expander__list">
-                <li class="c-facet-expander__list-item">
-                    <input type="checkbox" name="subject" id="subject-1" value="1"/>
-                    <label class="c-facet-expander__link" for="subject-1">
-                        <span>Subject 1</span>
-                    </label>
-                </li>
-            </ul>
-        </div>
-    </fieldset>
+            </legend>
 
-    <!-- example of radio input -->
-    <fieldset class="c-facet__item">
-        <legend>
-            <span class="c-facet__label">Date</span>
-            <span class="u-hide u-js-show">
+            <div id="subject-target" data-test="subject-target" class="c-facet-expander u-js-hide">
+                <ul class="c-facet-expander__list">
+                    <li class="c-facet-expander__list-item">
+                        <input type="checkbox" name="subject" id="subject-1" value="1"/>
+                        <label class="c-facet-expander__link" for="subject-1">
+                            <span>Subject 1</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <!-- example of radio input -->
+        <fieldset class="c-facet__item">
+            <legend>
+                <span class="c-facet__label">Date</span>
+                <span class="u-hide u-js-show">
                 <button type="button" class="c-facet__button c-facet__button--border" data-facet-expander data-facet-target="#date-target">
                     <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">...</svg>
                 </button>
             </span>
-        </legend>
-        
-        <div id="date-target" class="c-facet-expander u-js-hide">
-            <ul class="c-facet-expander__list">
-                <li class="c-facet-expander__list-item">
-                    <input name="date_range" id="date-range-1" value="1" type="radio"/>
-                    <label class="c-facet-expander__link" for="date-range-1">
-                        <span>Date 1</span>
-                    </label>
-                </li>
-            </ul>
-        </div>
-    </fieldset>
+            </legend>
+
+            <div id="date-target" class="c-facet-expander u-js-hide">
+                <ul class="c-facet-expander__list">
+                    <li class="c-facet-expander__list-item">
+                        <input name="date_range" id="date-range-1" value="1" type="radio"/>
+                        <label class="c-facet-expander__link" for="date-range-1">
+                            <span>Date 1</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
 </div>
 ```
 
