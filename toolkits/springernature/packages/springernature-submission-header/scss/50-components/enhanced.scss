@@ -42,7 +42,7 @@
 		margin-bottom: 20px;
 		overflow: hidden;
 	}
-	
+
 	&__author {
 		@include link-like();
 		text-decoration: none;
@@ -58,7 +58,7 @@
 	&__author-item:not(:last-child) {
 		font-size: 0.75rem;
 		list-style-type: none;
-		margin: 0;	
+		margin: 0;
 		padding-right: 7px;
 
 		.js & {
@@ -67,8 +67,7 @@
 				display: inline-block;
 				width: 3px;
 			}
-			
-		
+
 			&.corresponding {
 				&:after {
 					content: ' ,';
@@ -115,7 +114,7 @@
 
 	&__collection-title {
 		font-size: 1rem;
-	
+
 		&:before {
 			content: '|';
 			padding: 0 15px 0 10px;
