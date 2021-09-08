@@ -113,6 +113,15 @@
 		font-weight: bold;
 	}
 
+	&__collection-title {
+		font-size: 1rem;
+	
+		&:before {
+			content: '|';
+			padding: 0 15px 0 10px;
+		}
+	}
+
 	&__author-popup {
 		background-color: #fff;
 		height: auto;
