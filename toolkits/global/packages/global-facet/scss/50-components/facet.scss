@@ -1,0 +1,162 @@
+.c-facet {
+	background-color: greyscale(80);
+	padding: spacing(8);
+	position: relative;
+	font-size: 1.6rem;
+	color: black;
+
+	@include media-query('sm') {
+		padding: spacing(16);
+	}
+}
+
+.c-facet--small {
+	font-size: 1.4rem;
+}
+
+.c-facet__container {
+	display: flex;
+	flex-direction: column;
+
+	@include media-query('sm') {
+		flex-direction: row;
+	}
+}
+
+.c-facet__label {
+	display: block;
+	font-weight: $context--font-weight-bold;
+	white-space: nowrap;
+	margin-right: spacing(24);
+	margin-bottom: spacing(8);
+}
+
+.c-facet__item {
+	margin-bottom: spacing(8);
+	flex: 1 1 100%;
+
+	@include media-query('sm') {
+		margin-right: spacing(4);
+
+		&:last-of-type {
+			margin-right: spacing(8);
+		}
+	}
+
+	@include media-query('md') {
+		margin-right: spacing(16);
+		margin-bottom: 0;
+		position: relative;
+	}
+}
+
+.c-facet__item legend {
+	width: 100%;
+}
+
+.c-facet__button {
+	color: black;
+	background: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-weight: $context--font-weight-normal;
+	margin-bottom: 0;
+	width: 100%;
+	height: 34px;
+	position: relative;
+
+	> svg {
+		margin-left: auto;
+		transition-duration: 0.2s;
+	}
+
+	&.is-open {
+		text-decoration: none;
+
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.c-facet__button--disabled {
+	border-color: #c7c4bf;
+	color: #c7c4bf;
+}
+
+.c-facet__selected {
+	font-weight: $context--font-weight-bold;
+}
+
+.c-facet__ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: left;
+	position: absolute;
+	width: calc(100% - 24px); // 16px of icon + 8px away from edge
+	left: spacing(8);
+	top: 25%;
+	white-space: nowrap;
+}
+
+.c-facet__icon {
+	@include u-icon();
+	position: absolute;
+	top: 25%;
+	right: spacing(8);
+}
+
+.c-facet__submit {
+	background-color: color('blue');
+	border: 1px solid color('blue');
+	border-radius: 3px;
+	color: white;
+	padding: 0.6em 1em;
+
+	&:hover {
+		background: white;
+		color: color('blue');
+	}
+
+	.c-facet__button-container & {
+		@include u-hide;
+
+		.js & {
+			@include u-show;
+		}
+	}
+}
+
+.c-facet__button-container {
+	margin-bottom: spacing(16);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.c-facet__clear-selection {
+	@include u-link-underline;
+	background: none;
+	color: white;
+	border: none;
+	align-self: center;
+}
+
+.c-facet__clear-all {
+	@include u-link-underline;
+	flex: 1 1 100%;
+	font-size: 1.4rem;
+	margin-right: spacing(16);
+	margin-bottom: spacing(16);
+	margin-top: spacing(4);
+
+	.js & {
+		align-self: flex-end;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		@include media-query('lg') {
+			margin-bottom: spacing(8);
+		}
+	}
+}
