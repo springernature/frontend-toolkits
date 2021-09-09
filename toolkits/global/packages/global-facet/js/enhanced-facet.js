@@ -15,8 +15,8 @@ const selectors = {
 const classNames = {
 	SELECTED: 'c-facet__selected',
 	ELLIPSIS: 'c-facet__ellipsis',
-	CLEAR: 'c-facet__clear-selection',
-	BUTTON_CONTAINER: 'c-facet__button-container',
+	CLEAR: 'c-facet-expander__clear-selection',
+	BUTTON_CONTAINER: 'c-facet-expander__button-container',
 	SUBMIT: 'c-facet__submit'
 };
 

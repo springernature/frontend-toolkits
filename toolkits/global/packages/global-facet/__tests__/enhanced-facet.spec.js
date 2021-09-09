@@ -140,7 +140,7 @@ describe('enhancedFacet', () => {
 		// Given
 		enhancedFacet();
 		// Then
-		const clearButton = document.querySelector('button.c-facet__clear-selection');
+		const clearButton = document.querySelector('button.c-facet-expander__clear-selection');
 		const checkboxes = document.querySelectorAll('#Article-Type-target input[type="checkbox"]');
 		clearButton.click();
 		checkboxes.forEach(checkbox => {
