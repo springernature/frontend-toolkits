@@ -1,17 +1,17 @@
 .c-facet {
-	background-color: greyscale(80);
-	padding: spacing(8);
+	background-color: $facet--background-color;
+	padding: $facet--spacing-small;
 	position: relative;
-	font-size: 1.6rem;
-	color: black;
+	font-size: $facet--font-size;
+	color: $facet--color;
 
 	@include media-query('sm') {
-		padding: spacing(16);
+		padding: $facet--spacing-normal;
 	}
 }
 
 .c-facet--small {
-	font-size: 1.4rem;
+	font-size: $facet--font-size-small;
 }
 
 .c-facet__container {
@@ -25,26 +25,26 @@
 
 .c-facet__label {
 	display: block;
-	font-weight: $context--font-weight-bold;
+	font-weight: $facet--font-bold;
 	white-space: nowrap;
-	margin-right: spacing(24);
-	margin-bottom: spacing(8);
+	margin-right: $facet--spacing-large;
+	margin-bottom: $facet--spacing-small;
 }
 
 .c-facet__item {
-	margin-bottom: spacing(8);
+	margin-bottom: $facet--spacing-small;
 	flex: 1 1 100%;
 
 	@include media-query('sm') {
-		margin-right: spacing(4);
+		margin-right: $facet--spacing-x-small;
 
 		&:last-of-type {
-			margin-right: spacing(8);
+			margin-right: $facet--spacing-small;
 		}
 	}
 
 	@include media-query('md') {
-		margin-right: spacing(16);
+		margin-right: $facet--spacing-normal;
 		margin-bottom: 0;
 		position: relative;
 	}
@@ -55,18 +55,17 @@
 }
 
 .c-facet__button {
-	color: black;
-	background: white;
-	border: 1px solid black;
-	border-radius: 3px;
+	color: $facet--button-color;
+	background: $facet--button-background;
+	border: $facet--button-border;
+	border-radius: $facet--button-border-radius;
 	font-weight: $context--font-weight-normal;
 	margin-bottom: 0;
 	width: 100%;
-	height: 34px;
+	height: $facet--button-height;
 	position: relative;
 
 	> svg {
-		margin-left: auto;
 		transition-duration: 0.2s;
 	}
 
@@ -80,12 +79,13 @@
 }
 
 .c-facet__button--disabled {
-	border-color: #c7c4bf;
-	color: #c7c4bf;
+	border-color: $facet--button-color-disabled;
+	color: $facet--button-color-disabled;
+	cursor: default;
 }
 
 .c-facet__selected {
-	font-weight: $context--font-weight-bold;
+	font-weight: $facet--font-bold;
 }
 
 .c-facet__ellipsis {
@@ -93,62 +93,39 @@
 	overflow: hidden;
 	text-align: left;
 	position: absolute;
-	width: calc(100% - 24px); // 16px of icon + 8px away from edge
-	left: spacing(8);
+	left: $facet--spacing-small;
 	top: 25%;
 	white-space: nowrap;
+	width: calc(100% - 28px); // 16px of icon + 4px extra spacing to avoid overlap of icon + 8px away from edge
 }
 
 .c-facet__icon {
 	@include u-icon();
 	position: absolute;
 	top: 25%;
-	right: spacing(8);
+	right: $facet--spacing-small;
 }
 
 .c-facet__submit {
-	background-color: color('blue');
-	border: 1px solid color('blue');
-	border-radius: 3px;
-	color: white;
+	background-color: $facet--submit-background-color;
+	border: $facet--submit-border;
+	border-radius: $facet--submit-border-radius;
+	color: $facet--submit-color;
 	padding: 0.6em 1em;
 
 	&:hover {
-		background: white;
-		color: color('blue');
+		background: $facet--submit-background-color-hover;
+		color: $facet--submit-color-hover;
 	}
-
-	.c-facet__button-container & {
-		@include u-hide;
-
-		.js & {
-			@include u-show;
-		}
-	}
-}
-
-.c-facet__button-container {
-	margin-bottom: spacing(16);
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.c-facet__clear-selection {
-	@include u-link-underline;
-	background: none;
-	color: white;
-	border: none;
-	align-self: center;
 }
 
 .c-facet__clear-all {
 	@include u-link-underline;
 	flex: 1 1 100%;
-	font-size: 1.4rem;
-	margin-right: spacing(16);
-	margin-bottom: spacing(16);
-	margin-top: spacing(4);
+	font-size: $facet--clear-font-size;
+	margin-right: $facet--spacing-normal;
+	margin-bottom: $facet--spacing-normal;
+	margin-top: $facet--spacing-x-small;
 
 	.js & {
 		align-self: flex-end;
@@ -156,7 +133,7 @@
 		margin-bottom: 0;
 
 		@include media-query('lg') {
-			margin-bottom: spacing(8);
+			margin-bottom: $facet--spacing-small;
 		}
 	}
 }
