@@ -1,0 +1,7 @@
+.c-slice-heading {
+	@include u-slice-headings;
+}
+
+.c-slice-heading--no-bt {
+	border-top: 0;
+}
