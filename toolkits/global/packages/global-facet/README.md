@@ -50,7 +50,7 @@ Include the SCSS in your application
                 <span class="c-facet__label">Date</span>
                 <span class="u-hide u-js-show">
                 <button type="button" class="c-facet__button c-facet__button--border" data-facet-expander data-facet-target="#date-target">
-                    <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">...</svg>
+                    <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">...</svg>
                 </button>
             </span>
             </legend>
