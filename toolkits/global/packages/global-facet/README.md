@@ -7,9 +7,13 @@ Global branded facet buttons.
 Include the SCSS in your application
 
 ```scss
+// Pick ONE of the brands below to include
+@import '@springernature/global-facet/scss/10-settings/default';
+@import '@springernature/global-facet/scss/10-settings/nature';
+
 // Include this with your other components
-@import '@springernature/nature-facet/scss/50-components/facet';
-@import '@springernature/nature-facet/scss/50-components/facet-expander';
+@import '@springernature/global-facet/scss/50-components/facet';
+@import '@springernature/global-facet/scss/50-components/facet-expander';
 ```
 
 ## Example usage
@@ -22,11 +26,11 @@ Include the SCSS in your application
             <legend>
                 <span class="c-facet__label">Subject</span>
                 <span class="u-hide u-js-show">
-                <button type="button" class="c-facet__button c-facet__button--border" data-facet-expander data-facet-target="#subject-target">
-                    <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" height="16"
-                         viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">...</svg>
-                </button>
-            </span>
+                    <button type="button" class="c-facet__button c-facet__button--border" data-facet-expander data-facet-target="#subject-target">
+                        <svg class="c-facet__icon" role="img" aria-hidden="true" focusable="false" height="16"
+                             viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">...</svg>
+                    </button>
+                </span>
             </legend>
 
             <div id="subject-target" data-test="subject-target" class="c-facet-expander u-js-hide">
@@ -68,6 +72,7 @@ Include the SCSS in your application
 ```
 
 ### Enhanced facet
+
 Enhanced facet makes use of [global-expander](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander) 
 and [makeArray](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-javascript#makearray) in global-javascript.
 
