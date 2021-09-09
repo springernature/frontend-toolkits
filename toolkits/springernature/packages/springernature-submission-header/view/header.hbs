@@ -8,6 +8,7 @@
     <h2 class="c-submission-details-header__submission-title" data-test="submission-title" data-object="manuscript-title">{{{submission.title.html}}}</h2>
     <div class="c-submission-details-header__row">
         <span class="c-submission-details-header__journal-title" data-test="submission-journal-title">{{submission.journalTitle}}</span>
+        {{#if collectionTitle}}<span class="c-submission-details-header__collection-title">Collection: <span data-test="submission-collection-title">{{collectionTitle}}</span></span>{{/if}}
     </div>
     <div class="c-submission-details-header__row">
         <ul class="c-submission-details-header__author-list">
@@ -22,7 +23,7 @@
                         {{#if affiliation}}<p class="u-font-14 u-font-daytona" data-test="submission-author-{{@index}}-affiliation">{{affiliation.institutionName}}, {{affiliation.countryName}}</p>{{/if}}
                         <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email {{#if corresponding}}corresponding{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
                     </div>
-                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-popup{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}</button>
+                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-popup{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}{{#unless @last}},{{/unless}}</button>
                 </li>
             {{/each}}
         </ul>
