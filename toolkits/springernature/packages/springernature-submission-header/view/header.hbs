@@ -8,6 +8,7 @@
     <h2 class="c-submission-details-header__submission-title" data-test="submission-title" data-object="manuscript-title">{{{submission.title.html}}}</h2>
     <div class="c-submission-details-header__row">
         <span class="c-submission-details-header__journal-title" data-test="submission-journal-title">{{submission.journalTitle}}</span>
+        {{#if collectionTitle}}<span class="c-submission-details-header__collection-title">Collection: <span data-test="submission-collection-title">{{collectionTitle}}</span></span>{{/if}}
     </div>
     <div class="c-submission-details-header__row">
         <ul class="c-submission-details-header__author-list">
