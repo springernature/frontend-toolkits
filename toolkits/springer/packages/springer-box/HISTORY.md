@@ -1,5 +1,8 @@
 # History
 
+## 7.1.0 (2020-02-04)
+    * Demo
+
 ## 7.0.1 (2020-02-04)
     * Fix reference to old interface-link mixin
 

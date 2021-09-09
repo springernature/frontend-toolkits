@@ -1,6 +1,6 @@
-import {makeArray, getDataOptions} from '@springernature/global-javascript/src/helpers';
-import {constants} from './constants';
-import {Dropdown} from './dropdown';
+import { makeArray, getDataOptions } from '/node_modules/@springernature/global-javascript/src/helpers';
+import { constants } from './constants';
+import { Dropdown } from './dropdown';
 
 /**
  * Data Attribute API
@@ -25,4 +25,4 @@ const dropdown = (options = {}) => {
 	});
 };
 
-export {dropdown};
+export { dropdown };

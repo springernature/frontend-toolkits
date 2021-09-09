@@ -1,0 +1,20 @@
+<div class="c-user-metadata">
+	{{#if loginStatus}}
+	<p class="c-user-metadata__item">
+		<span>
+			{{#if loggedIn}}
+			Logged in
+			{{else}}
+			Not logged in
+			{{/if}}
+		</span>
+	</p>
+	{{/if}}
+	{{#each data}}
+	<p class="c-user-metadata__item" {{#if lang}}lang="{{lang}}" {{/if}}>
+		{{#if url}}<a href="{{url}}" class="u-link-inherit">{{/if}}
+			{{text}}
+			{{#if url}}</a>{{/if}}
+	</p>
+	{{/each}}
+</div>

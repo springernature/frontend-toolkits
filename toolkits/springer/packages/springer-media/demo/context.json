@@ -1,0 +1,10 @@
+{
+	"image": {
+		"src": "/path/to/image",
+		"alt": "Descriptive alternative txt for image"
+	},
+	"title": "Example title",
+	"url": "/path/from/teaser",
+	"level": "2",
+	"text": "Lorem ipsum dolor sit amet."
+}

@@ -1,6 +1,6 @@
 # Springer media component
 
-A media component catering for an image, clickable title and body text. Styles have also been included to add a play button for things like videos.
+A media component catering for an image, clickable title, and body text. Styles have also been included to add a play button for things like videos.
 
 ![Examples of media component on desktop and mobile](https://user-images.githubusercontent.com/5796370/62363173-a72a8380-b516-11e9-97cb-47289d1d16a0.png)
 
@@ -37,3 +37,8 @@ A media component catering for an image, clickable title and body text. Styles h
     </li>
 </ul>
 ```
+
+## Template
+
+The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. It represents one media item and needs to be enclosed alongside other media items in a list (`<ul>`) as shown above.
+

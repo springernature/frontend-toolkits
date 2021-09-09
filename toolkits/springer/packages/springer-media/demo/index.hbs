@@ -1,0 +1,13 @@
+<li class="c-media">
+	{{#with image}}
+	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+	{{/with}}
+	<div class="c-media__body">
+		<h4 class="c-media__title u-text-lg" aria-level="{{level}}">
+			<a href="{{url}}">{{title}}</a>
+		</h4>
+		{{#if text}}
+		<p>{{text}}</p>
+		{{/if}}
+	</div>
+</li>

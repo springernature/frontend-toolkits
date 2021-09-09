@@ -79,7 +79,7 @@ dropdown({
 </div>
 ```
 
-#### SASS
+#### Sass
 
 Add styling for the Dropdown by incorporating the settings and component into your application `scss` endpoint, for example:
 
@@ -113,4 +113,8 @@ document.body.appendChild(newDropdown);
 ## Polyfills
 
 This module uses `Element.closest()` and `Object.assign()`.
+
+## Template
+
+The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. 
 
