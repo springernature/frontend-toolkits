@@ -1,0 +1,68 @@
+.c-facet-expander__list {
+	@include u-list-reset();
+}
+
+.c-facet-expander__button-container {
+	@include u-hide;
+}
+
+.js {
+	.c-facet-expander {
+		background-color: $facet-expander--background-color;
+		box-sizing: border-box;
+		padding: $facet--spacing-large;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+
+		@include media-query('sm') {
+			transform: translateY(8px);
+		}
+
+		@include media-query('md') {
+			transform: translateY(16px);
+			min-width: $facet-expander--min-width;
+			width: auto;
+		}
+	}
+
+	.c-facet-expander__list {
+		color: $facet-expander--list-color;
+		font-size: $facet--font-size;
+		white-space: nowrap;
+	}
+
+	.c-facet-expander__list-item {
+		margin-bottom: $facet--spacing-x-small;
+	}
+
+	.c-facet-expander__link {
+		color: $facet-expander--color;
+
+		@include media-query('sm') {
+			white-space: nowrap;
+		}
+	}
+
+	.c-facet-expander__link--underline {
+		@include u-link-underline;
+	}
+
+	.c-facet-expander__button-container {
+		@include u-show;
+		margin-bottom: $facet--spacing-normal;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.c-facet-expander__clear-selection {
+		@include u-link-underline;
+		background: none;
+		color: $facet-expander--color;
+		border: none;
+		align-self: center;
+	}
+}
