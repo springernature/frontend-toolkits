@@ -1,3 +1,11 @@
+.u-keyline {
+	@include u-keyline;
+}
+
+.u-keyline--thick {
+	@include u-keyline($thickness: 2px);
+}
+
 .u-shadow {
 	@include u-shadow;
 }

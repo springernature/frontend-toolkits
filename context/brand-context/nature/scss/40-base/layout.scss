@@ -55,3 +55,8 @@ small {
 abbr[title] {
 	text-decoration: none;
 }
+
+[contenteditable],
+[tabindex="0"] {
+	@include u-focus-outline();
+}

@@ -17,9 +17,7 @@ const sortBy = () => {
 	}
 
 	radios.forEach(element => {
-		element.addEventListener('click', event => {
-			event.preventDefault();
-
+		element.addEventListener('click', () => {
 			const value = element.querySelector('input').value;
 			const parameters = generateParameters(value);
 			window.location.replace('/search?' + parameters);

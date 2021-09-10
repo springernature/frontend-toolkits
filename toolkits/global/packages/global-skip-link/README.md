@@ -11,6 +11,7 @@ To include `global-skip-link` in your application, you need to choose **ONE** br
 @import '@springernature/global-skip-link/scss/10-settings/default';
 @import '@springernature/global-skip-link/scss/10-settings/springernature';
 @import '@springernature/global-skip-link/scss/10-settings/nature';
+@import '@springernature/global-skip-link/scss/10-settings/springer';
 
 // Include this with your other components
 @import '@springernature/global-skip-link/scss/50-components/skip-link';

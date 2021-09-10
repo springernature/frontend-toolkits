@@ -1,5 +1,55 @@
 # History
 
+## 15.0.0 (2021-09-07)
+    * BREAKING:
+        * Icon width and height attributes removed
+        * u-icon utility provided with `1em` width and height values
+
+## 14.0.0 (2021-08-31)
+    * BREAKING:
+        * Switch springernature context fonts to Variable fonts
+        * Swap Daytona with Merriweather Sans
+        * Remove all springernature context fonts from the fonts folder
+    * Add the 2 new variable fonts into springernature context fonts folder
+    * Add documentation about fonts in springernature context README
+
+## 13.2.1 (2021-08-23)
+    * Add will-change: tranform reflow on focus mixin
+        - reflow needed to ensure outline styles visible in Safari v13+
+        - related to 13.1.2
+
+## 13.2.0 (2021-08-12)
+    * Add mixin for u-focus-outline and default $context--focus-color variable
+    * Replace the focus style for links in nature to use this new mixin
+    * Replace the focus style for input, button, select elements in forms for nature to use this new mixin
+    * Add pseudo class focus for [tabindex="0"] and [contenteditable] attributes for nature brand
+
+## 13.1.2 (2021-08-04)
+    * Ensures Nature link focus styles cause a reflow as outline not visible in Safari v13+ without a reflow on Nature pages
+
+## 13.1.1 (2021-07-29)
+    * Includes the style 10-settings in Springer abstracts partial
+
+## 13.1.0 (2021-07-29)
+    * Adds keyline utility classnames to nature and springer
+    * Refactors keyline mixin; now includes thickness and references spacing from settings
+    * Sets keyline border colour in nature brand
+    * Sets keyline border colour in springer brand
+
+## 13.0.0 (2021-07-28)
+    * BREAKING:
+        * Removes u-separator styles
+
+## 12.0.2 (2021-07-14)
+    * Change sn link color
+
+## 12.0.1 (2021-07-13)
+    * BUG: Replace deprecated sn colors
+
+## 12.0.0 (2021-07-09)
+    * BREAKING:
+        * Add new SN color palette
+
 ## 11.3.0 (2021-06-01)
     * Add base layer for Springer Nature forms
 

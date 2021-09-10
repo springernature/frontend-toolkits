@@ -1,0 +1,48 @@
+<article class="c-submission-details-header" data-test="submission-header">
+    <div class="c-submission-details-header__row">
+        <span class="c-submission-details-header__row-item" data-test="article-type">{{submission.articleType}}</span>
+        <span class="c-submission-details-header__row-item" data-test="submission-date">Submitted {{defaultDateFormat submission.submittedTimestamp}}</span>
+        <span class="c-submission-details-header__row-item" data-test="submission-id">{{submission.submissionId}}</span>
+        <span class="c-submission-details-header__row-item" data-test="submission-version">Version {{submission.revisionVersion}}</span>
+    </div>
+    <h2 class="c-submission-details-header__submission-title" data-test="submission-title" data-object="manuscript-title">{{{submission.title.html}}}</h2>
+    <div class="c-submission-details-header__row">
+        <span class="c-submission-details-header__journal-title" data-test="submission-journal-title">{{submission.journalTitle}}</span>
+        {{#if collectionTitle}}<span class="c-submission-details-header__collection-title">Collection: <span data-test="submission-collection-title">{{collectionTitle}}</span></span>{{/if}}
+    </div>
+    <div class="c-submission-details-header__row">
+        <ul class="c-submission-details-header__author-list">
+            {{#each submission.authors}}
+                <li>
+                    <div id="author-popup{{@index}}" class="c-submission-details-header__author-popup" tabindex="-1"
+                    role="dialog" aria-describedby="dialog-description{{@index}}" data-modal-background="false">
+                        <p id="dialog-description{{@index}}" class="u-visually-hidden">Author information</p>
+                        <button data-test="close-author-popup{{@index}}" aria-label="Close" data-component="modal-close" class="c-popup__close author-popup-close u-hide u-js-show">&times;</button>
+                        <h3 class="c-submission-details-header__author-name" data-test="submission-author-name">{{givenName}} {{familyName}}</h3>
+                        {{#if corresponding}}<p class="c-submission-details-header__author-type" data-test="submission-author-is-corresponding">Corresponding Author</p>{{/if}}
+                        {{#if affiliation}}<p class="u-font-14 u-font-daytona" data-test="submission-author-{{@index}}-affiliation">{{affiliation.institutionName}}, {{affiliation.countryName}}</p>{{/if}}
+                        <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email {{#if corresponding}}corresponding{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
+                    </div>
+                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-popup{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}{{#unless @last}},{{/unless}}</button>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="u-display-flex u-justify-content-space-between">
+        <div>
+            <button data-component-abstract-expander data-expander data-expander-target="#abstract" class="position-right abstract-expander u-hide u-js-show">View abstract</button>
+            <label for="showAbstract" class="u-js-hide abstract-expander">View abstract</label>
+            <input id="showAbstract" type="checkbox" hidden>
+            <div data-component-abstract-expander-target id="abstract" data-test="submission-abstract" class="c-submission-details-header__abstract u-js-hide">{{{submission.abstract.html}}}</div>
+        </div>
+        <div>
+            {{#each submission.files.all}}
+                <a href="{{downloadUrl}}" hidden data-download>{{name}}</a>
+            {{/each}}
+            {{#if (greaterThan submission.files.all.length 1)}}
+                <button data-component-download-all class="c-submission-details-header__download-all">Download all submission files</button>
+            {{/if}}
+        </div>
+    </div>
+</article>

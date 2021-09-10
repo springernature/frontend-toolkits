@@ -1,0 +1,14 @@
+/**
+ * @springernature/global-skip-link
+ * Springer skin settings
+ *
+ */
+
+// Default setting
+@import 'default';
+
+$skip-link--font-size: 1.4rem;
+$skip-link--color: color('action-base');
+$skip-link--hover-color: color('action-base');
+$skip-link--background-color: color('action-background-light');
+$skip-link--z-index: 9999;

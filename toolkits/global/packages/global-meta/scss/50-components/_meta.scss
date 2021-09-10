@@ -6,14 +6,32 @@
 	line-height: $meta--line-height;
 }
 
+.c-meta--large {
+	font-size: $meta--font-size-large;
+
+	.c-meta__item {
+		margin-bottom: $meta--margin-bottom-large;
+	}
+}
+
 .c-meta__item {
 	display: inline-block;
 	margin-bottom: $meta--margin-bottom;
 
 	&:not(:last-child) {
-		padding-right: $meta--padding-right;
-		margin-right: $meta--margin-right;
-		border-right: $meta--border;
+		@include u-keyline('right', $meta--keyline-spacing);
+	}
+}
+
+.c-meta__item--block-sm-max {
+	@include media-query('sm', 'max') {
+		display: block;
+
+		&:not(:last-child) {
+			border-right: none;
+			margin-right: 0;
+			padding-right: 0;
+		}
 	}
 }
 
@@ -22,8 +40,9 @@
 		display: block;
 
 		&:not(:last-child) {
-			padding-right: 0;
 			border-right: none;
+			margin-right: 0;
+			padding-right: 0;
 		}
 	}
 }

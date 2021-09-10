@@ -3,4 +3,6 @@
 	transform: translate(0, 0); // Hack to allow for subpixel rendering
 	display: inline-block;
 	vertical-align: text-top;
+	width: 1em; // Fit icons to surrounding text
+	height: 1em; // (continued)
 }
