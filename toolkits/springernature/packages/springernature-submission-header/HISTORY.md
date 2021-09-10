@@ -1,5 +1,8 @@
 # History
 
+## 0.6.0 (2021-09-09)
+	* Add commas in template rather than with complicated SCSS
+
 ## 0.5.0 (2021-09-08)
 	* Adjust spacing of author list, only show comma separator for js version
 
