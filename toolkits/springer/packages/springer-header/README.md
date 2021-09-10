@@ -74,7 +74,3 @@ const links = makeArray(items).map(item => item.querySelector('a'));
 const dropdownEl = createDropdown('Menu', links, {DROPDOWN_CLASS: 'u-hide-at-md'});
 headerMenu.parentNode.insertBefore(dropdownEl, headerMenu.nextSibling);
 ```
-
-## Template
-
-The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. 

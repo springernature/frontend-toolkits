@@ -2,15 +2,15 @@
 	"items": [
 		{
 			"label": "Item 1",
-			"url": "/path/to/1"
+			"href": "/path/to/1"
 		},
 		{
 			"label": "Item 2",
-			"url": "/path/to/2"
+			"href": "/path/to/2"
 		},
 		{
 			"label": "Item 3",
-			"url": "/path/to/3"
+			"href": "/path/to/3"
 		}
 	]
 }

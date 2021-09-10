@@ -75,7 +75,3 @@ Optional image shrinks besides the title and text as the viewport becomes smalle
     </li>
 </ul>
 ```
-
-## Template
-
-The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. It represents one listing and needs to be enclosed alongside other individual listings in a list (`<ul>`) as shown above.

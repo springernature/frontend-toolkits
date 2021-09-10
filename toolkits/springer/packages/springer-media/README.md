@@ -37,8 +37,3 @@ A media component catering for an image, clickable title, and body text. Styles 
     </li>
 </ul>
 ```
-
-## Template
-
-The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. It represents one media item and needs to be enclosed alongside other media items in a list (`<ul>`) as shown above.
-
