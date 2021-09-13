@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>@springernature/springer-user-metadata</title>
+		<title>@springernature/springer-dropdown</title>
 		<style>
 			@charset "UTF-8";
 /**
@@ -630,6 +630,150 @@ html {
 
 body {
 	font-size: 1.8em;
+}
+
+.u-display-none {
+	display: none;
+}
+
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+	display: none;
+	visibility: hidden;
+}
+
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+	display: block;
+	visibility: visible;
+}
+
+.u-show-inline,
+.js .u-js-show-inline {
+	display: inline;
+	visibility: visible;
+}
+
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -100%;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+}
+
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+	border: 0;
+	clip: initial;
+	height: auto;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+	position: relative;
+	width: auto;
+}
+
+/* make invisible but retain dimensions */
+.u-invisible {
+	visibility: hidden;
+}
+
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	direction: ltr;
+	vertical-align: bottom;
+}
+
+/* hiding overflow */
+.u-hide-overflow {
+	overflow: hidden;
+}
+
+@media print {
+	.u-hide-print {
+		display: none;
+	}
+}
+
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 320px) {
+	.u-hide-at-xs,
+	.js .u-js-hide-at-xs {
+		display: none;
+		visibility: hidden;
+	}
+	.u-show-at-xs,
+	.js .u-js-show-at-xs {
+		display: block;
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 540px) {
+	.u-hide-at-sm,
+	.js .u-js-hide-at-sm {
+		display: none;
+		visibility: hidden;
+	}
+	.u-show-at-sm,
+	.js .u-js-show-at-sm {
+		display: block;
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.u-hide-at-md,
+	.js .u-js-hide-at-md {
+		display: none;
+		visibility: hidden;
+	}
+	.u-show-at-md,
+	.js .u-js-show-at-md {
+		display: block;
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.u-hide-at-lg,
+	.js .u-js-hide-at-lg {
+		display: none;
+		visibility: hidden;
+	}
+	.u-show-at-lg,
+	.js .u-js-show-at-lg {
+		display: block;
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 1220px) {
+	.u-hide-at-xl,
+	.js .u-js-hide-at-xl {
+		display: none;
+		visibility: hidden;
+	}
+	.u-show-at-xl,
+	.js .u-js-show-at-xl {
+		display: block;
+		visibility: visible;
+	}
 }
 
 /**
@@ -1840,46 +1984,457 @@ cite {
 	font-style: normal;
 }
 
-.c-user-metadata {
+.c-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.c-dropdown__button {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.c-dropdown__button::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 4px 0 5px;
+	border-color: currentColor transparent transparent transparent;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.c-dropdown__menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 12px;
-	color: #666666;
+	font-size: 16px;
 	line-height: 1.4;
-	padding-top: 24px;
+	background-color: white;
+	border-radius: 3px;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	padding: 8px 0;
+	position: absolute;
+	top: 100%;
+	transform: translateY(8px);
+	width: 180px;
+	z-index: 100;
 }
 
-.c-user-metadata__item {
-	margin-top: 0;
-	margin-bottom: 4px;
+.c-dropdown__menu::before, .c-dropdown__menu::after {
+	position: absolute;
+	bottom: 100%;
 }
 
-.c-user-metadata__item:last-child {
-	margin-bottom: 0;
+.c-dropdown__menu::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 9px 9px 9px;
+	border-color: transparent transparent #d9d9d9 transparent;
+	left: 16px;
+	transform: translateX(-1px);
+}
+
+.c-dropdown__menu::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 8px 8px 8px;
+	border-color: transparent transparent white transparent;
+	left: 16px;
+}
+
+.c-dropdown__menu--right {
+	left: auto;
+	right: 0;
+}
+
+.c-dropdown__menu--right::before, .c-dropdown__menu--right::after {
+	left: auto;
+	right: 16px;
+}
+
+.c-dropdown__menu--right::before {
+	transform: translateX(1px);
+}
+
+.c-dropdown__link {
+	text-decoration: none;
+	display: block;
+	padding: 4px 16px;
+	background-color: transparent;
+	color: #004b83;
+}
+
+.c-dropdown__link.active, .c-dropdown__link:active, .c-dropdown__link.hover, .c-dropdown__link:hover {
+	text-decoration: underline;
+	text-decoration-skip-ink: auto;
+}
+
+.c-dropdown__link:visited {
+	color: #004b83;
+}
+
+.c-dropdown__link:hover {
+	background-color: #0061a9;
+	color: white;
 }
 
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="c-user-metadata">
-	<p class="c-user-metadata__item">
-		<span>
-			Not logged in
-		</span>
-	</p>
-	<p class="c-user-metadata__item" >
-		
-			Springer Affiliates (3000093925) - Consortium BusinessPartner (555555)
-			
-	</p>
-	<p class="c-user-metadata__item" lang="zh-Hans" >
-		<a href="http://www.miibeian.gov.cn" class="u-link-inherit">
-			沪ICP备15051854号-3
-			</a>
-	</p>
+		<div class="c-dropdown">
+	<button class="c-dropdown__button" aria-expanded="false" data-dropdown>Toggle the list of links</button>
+	<ul class="c-dropdown__menu">
+		<li class="c-dropdown__item">
+			<a class="c-dropdown__link" href="/path/to/1">Item 1</a>
+		</li>
+		<li class="c-dropdown__item">
+			<a class="c-dropdown__link" href="/path/to/2">Item 2</a>
+		</li>
+		<li class="c-dropdown__item">
+			<a class="c-dropdown__link" href="/path/to/3">Item 3</a>
+		</li>
+	</ul>
 </div>
 
 		<script>
-			// no JS found for package
+			(function () {
+	'use strict';
+
+	var makeArray = function makeArray(iterable) {
+	  var list = [];
+
+	  if (!iterable) {
+	    return list;
+	  }
+
+	  Array.prototype.forEach.call(iterable, function (item) {
+	    list.push(item);
+	  });
+	  return list;
+	};
+
+	/**
+	 * @param element
+	 * @param attributeMap - An Object of data attribute options
+	 * @returns Object
+	 */
+	var getDataOptions = function getDataOptions(element, attributeMap) {
+	  var dataOptions = {};
+
+	  for (var key in attributeMap) {
+	    // eslint-disable-next-line no-prototype-builtins
+	    if (attributeMap.hasOwnProperty(key)) {
+	      var value = attributeMap[key];
+	      var attributeValue = element.hasAttribute(value) && element.getAttribute(value);
+
+	      if (attributeValue) {
+	        // 'true' and 'false' attribute values need to be converted to a boolean
+	        // Checking equality against 'true' will return a boolean of true or false. e.g. 'false' === 'true' returns false
+	        dataOptions[key] = attributeValue === 'true' || attributeValue === 'false' ? attributeValue === 'true' : attributeValue;
+	      }
+	    }
+	  }
+
+	  return dataOptions;
+	};
+
+	var constants = Object.freeze({
+	  DATA_COMPONENT: 'data-dropdown',
+	  DROPDOWN: 'c-dropdown',
+	  DROPDOWN_OPEN_MODIFIER: 'c-dropdown--open',
+	  BUTTON: 'c-dropdown__button',
+	  MENU: 'c-dropdown__menu',
+	  ITEM: 'c-dropdown__item',
+	  LINK: 'c-dropdown__link'
+	});
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _defineProperties(target, props) {
+	  for (var i = 0; i < props.length; i++) {
+	    var descriptor = props[i];
+	    descriptor.enumerable = descriptor.enumerable || false;
+	    descriptor.configurable = true;
+	    if ("value" in descriptor) descriptor.writable = true;
+	    Object.defineProperty(target, descriptor.key, descriptor);
+	  }
+	}
+
+	function _createClass(Constructor, protoProps, staticProps) {
+	  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+	  if (staticProps) _defineProperties(Constructor, staticProps);
+	  return Constructor;
+	}
+
+	/**
+	 * Local Constants
+	 */
+
+	var selector = {
+	  DROPDOWN: ".".concat(constants.DROPDOWN),
+	  MENU: ".".concat(constants.MENU)
+	};
+	var defaultOptions = {
+	  BUTTON_CLASS: '',
+	  CLICK_OUTSIDE: true,
+	  DROPDOWN_CLASS: '',
+	  HIDE_CLASS: 'u-hide',
+	  HIDE_INITIALLY: true,
+	  MENU_POSITION: 'left'
+	};
+
+	var Dropdown = /*#__PURE__*/function () {
+	  function Dropdown(button) {
+	    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	    _classCallCheck(this, Dropdown);
+
+	    this._options = Object.assign({}, defaultOptions, options);
+	    this._buttonEl = button;
+	    this._dropdownEl = this._buttonEl.closest(selector.DROPDOWN);
+
+	    if (!this._dropdownEl) {
+	      throw new Error('Missing c-dropdown element');
+	    }
+
+	    this._menuEl = this._dropdownEl.querySelector(selector.MENU);
+
+	    if (!this._menuEl) {
+	      throw new Error('Missing c-menu element');
+	    }
+
+	    if (this._options.MENU_POSITION !== 'left' && this._options.MENU_POSITION !== 'right') {
+	      throw new Error("MENU_POSITION must be left or right but was ".concat(this._options.MENU_POSITION));
+	    }
+
+	    this._isOpen = false;
+	    this._handleButtonClick = this._handleButtonClick.bind(this);
+	    this._handleButtonEnter = this._handleButtonEnter.bind(this);
+	    this._handleClick = this._handleClick.bind(this);
+	    this._handleKeydown = this._handleKeydown.bind(this);
+	  }
+	  /**
+	   * Event Handlers
+	   */
+
+
+	  _createClass(Dropdown, [{
+	    key: "_handleButtonClick",
+	    value: function _handleButtonClick(event) {
+	      event.preventDefault();
+
+	      if (this._isOpen) {
+	        this._close();
+	      } else {
+	        this._open();
+	      }
+	    }
+	  }, {
+	    key: "_handleButtonEnter",
+	    value: function _handleButtonEnter(event) {
+	      if (event.key === 'Enter') {
+	        event.preventDefault();
+
+	        if (this._isOpen) {
+	          this._close();
+	        } else {
+	          this._open();
+	        }
+	      }
+	    }
+	    /**
+	     * Temporary Event Handlers
+	     */
+
+	  }, {
+	    key: "_handleTargetOutside",
+	    value: function _handleTargetOutside(element) {
+	      if (element === this._dropdownEl) {
+	        return;
+	      }
+
+	      do {
+	        if (element === document.body) {
+	          this._close();
+
+	          this._removeTemporaryEventHandlers();
+
+	          return;
+	        }
+
+	        element = element.parentNode;
+	      } while (element !== this._dropdownEl && element !== null && element.nodeType === 1);
+	    }
+	  }, {
+	    key: "_handleKeydown",
+	    value: function _handleKeydown(event) {
+	      var _this = this;
+
+	      if (event.key === 'Escape' && this._isOpen) {
+	        this._close();
+
+	        this._buttonEl.focus();
+	      }
+
+	      if (event.key === 'Tab' && this._isOpen) {
+	        window.requestAnimationFrame(function () {
+	          return _this._handleTargetOutside(document.activeElement);
+	        });
+	      }
+	    }
+	  }, {
+	    key: "_handleClick",
+	    value: function _handleClick(event) {
+	      var target = event.target;
+
+	      this._handleTargetOutside(target);
+	    }
+	  }, {
+	    key: "_setupTemporaryEventHandlers",
+	    value: function _setupTemporaryEventHandlers() {
+	      document.addEventListener('keydown', this._handleKeydown);
+
+	      if (this._options.CLICK_OUTSIDE) {
+	        document.addEventListener('click', this._handleClick);
+	      }
+	    }
+	  }, {
+	    key: "_removeTemporaryEventHandlers",
+	    value: function _removeTemporaryEventHandlers() {
+	      document.removeEventListener('keydown', this._handleKeydown);
+
+	      if (this._options.CLICK_OUTSIDE) {
+	        document.removeEventListener('click', this._handleClick);
+	      }
+	    }
+	    /**
+	     * Update Aria
+	     */
+
+	  }, {
+	    key: "_updateAriaAttributes",
+	    value: function _updateAriaAttributes() {
+	      if (this._isOpen) {
+	        this._buttonEl.setAttribute('aria-expanded', 'true');
+	      } else {
+	        this._buttonEl.setAttribute('aria-expanded', 'false');
+	      }
+	    }
+	  }, {
+	    key: "_open",
+	    value: function _open() {
+	      if (this._isOpen) {
+	        return;
+	      }
+
+	      this._isOpen = true;
+
+	      this._dropdownEl.classList.add(constants.DROPDOWN_OPEN_MODIFIER);
+
+	      this._menuEl.classList.remove(this._options.HIDE_CLASS);
+
+	      this._updateAriaAttributes();
+
+	      this._setupTemporaryEventHandlers();
+	    }
+	  }, {
+	    key: "_close",
+	    value: function _close() {
+	      if (!this._isOpen) {
+	        return;
+	      }
+
+	      this._isOpen = false;
+
+	      this._dropdownEl.classList.remove(constants.DROPDOWN_OPEN_MODIFIER);
+
+	      this._menuEl.classList.add(this._options.HIDE_CLASS);
+
+	      this._updateAriaAttributes();
+
+	      this._removeTemporaryEventHandlers();
+	    }
+	    /**
+	     * @public
+	     */
+
+	  }, {
+	    key: "init",
+	    value: function init() {
+	      if (this._options.HIDE_INITIALLY) {
+	        this._menuEl.classList.add(this._options.HIDE_CLASS);
+	      }
+
+	      if (this._options.DROPDOWN_CLASS.length > 0) {
+	        this._dropdownEl.className = this._options.DROPDOWN_CLASS;
+	      }
+
+	      if (this._options.MENU_POSITION === 'right') {
+	        this._menuEl.classList.add('c-dropdown__menu--right');
+	      }
+
+	      if (this._options.BUTTON_CLASS.length > 0) {
+	        this._buttonEl.classList.add(this._options.BUTTON_CLASS);
+	      }
+
+	      this._buttonEl.addEventListener('click', this._handleButtonClick);
+
+	      this._buttonEl.addEventListener('keydown', this._handleButtonEnter);
+	    }
+	  }]);
+
+	  return Dropdown;
+	}();
+
+	/**
+	 * Data Attribute API
+	 */
+
+	var attributes = {
+	  DROPDOWN_CLASS: constants.DATA_COMPONENT + '-dropdown-class',
+	  HIDE_CLASS: constants.DATA_COMPONENT + '-hide-class',
+	  HIDE_INITIALLY: constants.DATA_COMPONENT + '-hide-initially',
+	  CLICK_OUTSIDE: constants.DATA_COMPONENT + '-click-outside'
+	};
+
+	var dropdown = function dropdown() {
+	  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var buttons = document.querySelectorAll("[".concat(constants.DATA_COMPONENT, "]"));
+
+	  if (buttons.length === 0) {
+	    return;
+	  }
+
+	  makeArray(buttons).forEach(function (button) {
+	    var dataOptions = getDataOptions(button, attributes);
+	    var dropdown = new Dropdown(button, Object.assign({}, options, dataOptions));
+	    dropdown.init();
+	  });
+	};
+
+	dropdown();
+
+}());
+
 		</script>
 	</body>
 </html>
