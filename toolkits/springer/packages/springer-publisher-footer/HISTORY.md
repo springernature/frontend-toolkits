@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2021-09-10)
+    * Demo, including consumable .hbs template
+
 ## 4.0.1 (2021-02-04)
     * Bump patch `brand-context` version
     * Fix reference to old interface-link mixin

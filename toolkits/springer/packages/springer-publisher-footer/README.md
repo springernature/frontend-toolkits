@@ -10,7 +10,7 @@ Springer branded site footer
     <div class="c-publisher-footer" data-test="publisher-footer">
         <div class="c-publisher-footer__section c-publisher-footer__section--compact">
             <div class="c-publisher-footer__container">
-                <img alt="Springer" itemprop="logo" width="112" height="30" role="img" src="/static/images/springer/logo-springer-greyscale-6a91f160c1.svg">
+                <img alt="Springer" itemprop="logo" width="112" height="30" role="img" src="/path/to/logo.svg">
             </div>
         </div>
         <div class="c-publisher-footer__section">
@@ -94,7 +94,7 @@ Springer branded site footer
                         <dl class="c-publisher-footer__list">
                             <dt class="c-publisher-footer__heading">Legal</dt>
                             <dd class="c-publisher-footer__item">
-                                <a class="c-publisher-footer__link" href="https://www.springer.com/gp/standard-terms-and-conditions-of-business">General term &amp; conditions</a>
+                                <a class="c-publisher-footer__link" href="https://www.springer.com/gp/standard-terms-and-conditions-of-business">General terms &amp; conditions</a>
                             </dd>
                             <dd class="c-publisher-footer__item">
                                 <a class="c-publisher-footer__link" href="https://www.springer.com/gp/rights-permissions">Rights &amp; permissions</a>
@@ -106,9 +106,7 @@ Springer branded site footer
                                 <a class="c-publisher-footer__link" href="https://link.springer.com/cookiepolicy">How we use cookies</a>
                             </dd>
                             <dd class="c-publisher-footer__item">
-
                                 <a class="optanon-toggle-display c-publisher-footer__link" href="javascript:void(0);">Manage cookies</a>
-
                             </dd>
                             <dd class="c-publisher-footer__item">
                                 <a class="c-publisher-footer__link" href="https://link.springer.com/accessibility">Accessibility</a>
@@ -121,3 +119,7 @@ Springer branded site footer
     </div>
 </footer>
 ```
+
+## Template
+
+The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema.

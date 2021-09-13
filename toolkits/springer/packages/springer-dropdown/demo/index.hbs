@@ -1,0 +1,10 @@
+<div class="c-dropdown">
+	<button class="c-dropdown__button" aria-expanded="false" data-dropdown>Toggle the list of links</button>
+	<ul class="c-dropdown__menu">
+		{{#each items}}
+		<li class="c-dropdown__item">
+			<a class="c-dropdown__link" href="{{href}}">{{label}}</a>
+		</li>
+		{{/each}}
+	</ul>
+</div>

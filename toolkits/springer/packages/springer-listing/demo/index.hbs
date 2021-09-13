@@ -1,0 +1,17 @@
+<article class="c-listing c-listing--row">
+	<div class="c-listing__text-column">
+		{{#if heading}}
+		<h4 class="c-listing__title" {{#if level}}aria-level="{{level}}" {{/if}}>
+			{{heading}}
+		</h4>
+		{{/if}}
+		<div class="c-listing__text">
+			{{text}}
+		</div>
+	</div>
+	{{#with image}}
+	<div class="c-listing__image">
+		<img src="{{src}}" alt="{{alt}}">
+	</div>
+	{{/with}}
+</article>

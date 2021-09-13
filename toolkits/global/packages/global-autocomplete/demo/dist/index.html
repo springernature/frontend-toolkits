@@ -37,7 +37,7 @@
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Esc', 'Enter', 'Tab'];
 
 	let inputTimer = null;
 	let fetchTimer = null;
@@ -62,10 +62,10 @@
 		}
 		input.removeEventListener('keyup', inputEvents);
 		if (container()) {
-			container().remove();
+			container().parentNode.removeChild(container());
 		}
 		document.removeEventListener('click', removeSuggestions);
-		input.focus();
+		input.setAttribute('aria-expanded', false);
 	};
 
 	const addSuggestionEventListeners = () => {
@@ -74,7 +74,7 @@
 		}
 
 		container().addEventListener('keydown', event => {
-			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
+			if (['Escape', 'Esc', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
 			}
@@ -107,7 +107,7 @@
 						input.value = currentSearchTerm;
 					}
 				}
-			} else if (event.key === 'Escape') {
+			} else if (event.key === 'Escape' || event.key === 'Esc') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
 			}
@@ -137,6 +137,7 @@
 		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(undefined, data);
 		addSuggestionEventListeners();
+		input.setAttribute('aria-expanded', true);
 	};
 
 	const handleData = term => {
@@ -203,7 +204,7 @@
 			}
 		}
 
-		if (event.key === 'Escape') {
+		if (event.key === 'Escape' || event.key === 'Esc') {
 			removeSuggestions(event);
 		}
 		if (event.key === 'Enter') {
@@ -1237,9 +1238,9 @@ template {
  *
  */
 /**
- * Return a greyscale color based on $context--greyscale-base
+ * Return a greyscale color based on $greyscale-base
  *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
  * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
  *
  */
@@ -1278,9 +1279,9 @@ template {
  *
  */
 /**
- * Return a greyscale color based on $context--greyscale-base
+ * Return a greyscale color based on $greyscale-base
  *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
  * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
  *
  */
@@ -1313,9 +1314,9 @@ template {
  * Font settings
  */
 /**
- * Return a greyscale color based on $context--greyscale-base
+ * Return a greyscale color based on $greyscale-base
  *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Integer} $val - lightness value between $greyscale-min and $greyscale-max
  * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
  *
  */

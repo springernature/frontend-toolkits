@@ -1,5 +1,8 @@
 # History
 
+## 7.1.0 (2021-09-10)
+    * Demo, including consumable .hbs template
+
 ## 7.0.1 (2020-02-04)
     * Fix reference to old interface-link mixin
 

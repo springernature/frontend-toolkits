@@ -1,0 +1,9 @@
+{
+	"heading": "Example heading",
+	"level": "2",
+	"text": "Lorem ipsum dolor sit amet.",
+	"image": {
+		"src": "/path/to/image",
+		"alt": "Text alternative for the image"
+	}
+}
