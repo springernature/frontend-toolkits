@@ -13,7 +13,7 @@
  * @return {Event}
  */
 const customEvent = (eventName, _parameters) => {
-	_parameters = _parameters || {bubbles: false, cancelable: false, detail: null};
+	_parameters = _parameters || {bubbles: false, cancelable: false, detail: undefined};
 	var event = document.createEvent('CustomEvent');
 	event.initCustomEvent(eventName, _parameters.bubbles, _parameters.cancelable, _parameters.detail);
 	return event;
@@ -28,17 +28,13 @@ const customEvent = (eventName, _parameters) => {
  * @return {Event}
  */
 const createEvent = (eventName, namespace, _parameters) => {
-	let event;
-
 	if (namespace === undefined) {
 		throw new Error('Missing namespace in `createEvent` function');
 	}
 
-	if (typeof window.CustomEvent === 'function') {
-		event = new CustomEvent(`${namespace}:${eventName}`, _parameters);
-	} else {
-		event = customEvent(`${namespace}:${eventName}`, _parameters);
-	}
+	const event = typeof window.CustomEvent === 'function' ?
+		new CustomEvent(`${namespace}:${eventName}`, _parameters) :
+		customEvent(`${namespace}:${eventName}`, _parameters);
 
 	return event;
 };

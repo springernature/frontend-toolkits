@@ -26,22 +26,12 @@ function loadFonts(config) {
 		.then(() => {
 			const event = new CustomEvent('webfonts-loaded');
 			document.documentElement.dispatchEvent(event);
-			try {
-				sessionStorage.fontsLoaded = true;
-			} catch (error) {
-				// -- See note 1
-			}
+			sessionStorage.fontsLoaded = true;
 		});
 }
 
 function init(config) {
-	let fontsStored = null;
-
-	try {
-		fontsStored = sessionStorage.getItem('fontsLoaded');
-	} catch (error) {
-		// -- See note 1
-	}
+	let fontsStored = sessionStorage.getItem('fontsLoaded');
 
 	if (fontsStored) {
 		return;

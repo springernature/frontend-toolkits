@@ -18,25 +18,27 @@ const createDropdownElement = (buttonElement, links) => {
 	const menu = document.createElement('ul');
 	menu.className = constants.MENU;
 
-	links.forEach(link => {
-		if (link.tagName === 'A') {
-			const li = document.createElement('li');
-			li.className = constants.ITEM;
+	for (const link in links) {
+		if (Object.prototype.hasOwnProperty.call(links, link)) {
+			if (link.tagName === 'A') {
+				const li = document.createElement('li');
+				li.className = constants.ITEM;
 
-			const a = document.createElement('a');
-			a.className = constants.LINK;
-			a.href = link.href;
-			a.textContent = link.textContent;
+				const a = document.createElement('a');
+				a.className = constants.LINK;
+				a.href = link.href;
+				a.textContent = link.textContent;
 
-			li.appendChild(a);
-			menu.appendChild(li);
-		} else {
-			throw new Error(`Expected an array of links but received an array containing ${link.tagName}`);
+				li.append(a);
+				menu.append(li);
+			} else {
+				throw new Error(`Expected an array of links but received an array containing ${link.tagName}`);
+			}
 		}
-	});
+	}
 
-	dropdownElement.appendChild(buttonElement);
-	dropdownElement.appendChild(menu);
+	dropdownElement.append(buttonElement);
+	dropdownElement.append(menu);
 
 	return dropdownElement;
 };

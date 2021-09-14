@@ -18,20 +18,22 @@ const popup = () => {
 	if (triggers.length === 0) {
 		return;
 	}
-	triggers.forEach(trigger => {
-		if (!trigger.hasAttribute('data-popup-target')) {
-			return;
-		}
-		const targetElementSelector = trigger.getAttribute('data-popup-target');
-		if (!targetElementSelector && !document.querySelector(targetElementSelector)) {
-			return;
-		}
+	for (const trigger in triggers) {
+		if (Object.prototype.hasOwnProperty.call(triggers, trigger)) {
+			if (!trigger.hasAttribute('data-popup-target')) {
+				return;
+			}
+			const targetElementSelector = trigger.getAttribute('data-popup-target');
+			if (!targetElementSelector && !document.querySelector(targetElementSelector)) {
+				return;
+			}
 
-		const dataOptions = getDataOptions(trigger, optionSelectors);
-		/* eslint-disable no-new */
-		new Popup(trigger, targetElementSelector, Object.assign({}, dataOptions));
-		/* eslint-enable no-new */
-	});
+			const dataOptions = getDataOptions(trigger, optionSelectors);
+			/* eslint-disable no-new */
+			new Popup(trigger, targetElementSelector, Object.assign({}, dataOptions));
+			/* eslint-enable no-new */
+		}
+	}
 };
 
 export {popup};

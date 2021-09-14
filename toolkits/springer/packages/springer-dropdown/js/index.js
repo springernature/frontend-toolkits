@@ -18,11 +18,13 @@ const dropdown = (options = {}) => {
 		return;
 	}
 
-	makeArray(buttons).forEach(button => {
-		const dataOptions = getDataOptions(button, attributes);
-		const dropdown = new Dropdown(button, Object.assign({}, options, dataOptions));
-		dropdown.init();
-	});
+	for (const button in makeArray(buttons)) {
+		if (Object.prototype.hasOwnProperty.call(makeArray(buttons), button)) {
+			const dataOptions = getDataOptions(button, attributes);
+			const dropdown = new Dropdown(button, Object.assign({}, options, dataOptions));
+			dropdown.init();
+		}
+	}
 };
 
 export {dropdown};

@@ -31,10 +31,7 @@ const autoComplete = arguments_ => {
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Esc', 'Enter', 'Tab'];
-
-	let inputTimer = null;
-	let fetchTimer = null;
+	const eventKeys = new Set(['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Esc', 'Enter', 'Tab']);
 	let currentSearchTerm;
 
 	// Keyboard Event Listeners for text input
@@ -56,7 +53,7 @@ const autoComplete = arguments_ => {
 		}
 		input.removeEventListener('keyup', inputEvents);
 		if (container()) {
-			container().parentNode.removeChild(container());
+			container().remove();
 		}
 		document.removeEventListener('click', removeSuggestions);
 		input.setAttribute('aria-expanded', false);
@@ -107,22 +104,24 @@ const autoComplete = arguments_ => {
 			}
 		});
 
-		suggestions().forEach(element => {
-			element.addEventListener('click', () => {
-				if (onSelect) {
-					onSelect(element.textContent);
-				}
-				removeSuggestions();
-			});
-			element.addEventListener('keyup', event => {
-				if (event.key === 'Enter') {
+		for (const element in suggestions()) {
+			if (Object.prototype.hasOwnProperty.call(suggestions(), element)) {
+				element.addEventListener('click', () => {
 					if (onSelect) {
 						onSelect(element.textContent);
 					}
 					removeSuggestions();
-				}
-			});
-		});
+				});
+				element.addEventListener('keyup', event => {
+					if (event.key === 'Enter') {
+						if (onSelect) {
+							onSelect(element.textContent);
+						}
+						removeSuggestions();
+					}
+				});
+			}
+		}
 	};
 
 	const generateSuggestions = data => {
@@ -172,7 +171,7 @@ const autoComplete = arguments_ => {
 		});
 
 		let fetchTimeout = new Promise((resolve, reject) => {
-			fetchTimer = setTimeout(() => {
+			let fetchTimer = setTimeout(() => {
 				clearTimeout(fetchTimer);
 				reject(new Error('Timed out'));
 			}, requestTimeout);
@@ -187,15 +186,13 @@ const autoComplete = arguments_ => {
 	};
 
 	const listenForInput = event => {
+		let inputTimer;
 		currentSearchTerm = input.value;
-		if (!eventKeys.includes(event.key) && input.value.length >= minChars) {
-			if (!inputTimer) {
-				inputTimer = setTimeout(() => {
-					window.clearTimeout(inputTimer);
-					inputTimer = null;
-					handleData(input.value);
-				}, inputDelay);
-			}
+		if (!eventKeys.has(event.key) && input.value.length >= minChars && inputTimer) {
+			inputTimer = setTimeout(() => {
+				window.clearTimeout(window.inputTimer);
+				handleData(input.value);
+			}, inputDelay);
 		}
 
 		if (event.key === 'Escape' || event.key === 'Esc') {

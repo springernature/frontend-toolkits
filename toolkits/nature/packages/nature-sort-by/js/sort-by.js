@@ -16,17 +16,19 @@ const sortBy = () => {
 		return;
 	}
 
-	radios.forEach(element => {
-		element.addEventListener('click', () => {
-			const value = element.querySelector('input').value;
-			const parameters = generateParameters(value);
-			window.location.replace('/search?' + parameters);
-		});
-	});
+	for (const element in radios) {
+		if (Object.prototype.hasOwnProperty.call(radios, element)) {
+			element.addEventListener('click', () => {
+				const value = element.querySelector('input').value;
+				const parameters = generateParameters(value);
+				window.location.replace('/search?' + parameters);
+			});
+		}
+	}
 
 	trigger.setAttribute('role', 'button');
 
-	trigger.insertAdjacentElement('afterend', targetElement);
+	trigger.after(targetElement);
 	targetElement.classList.add('has-tethered');
 
 	const expander = new Expander(trigger, targetElement);

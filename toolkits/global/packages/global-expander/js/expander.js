@@ -9,7 +9,7 @@ const defaultOptions = {
 	TRIGGER_OPEN_CLASS: 'is-open',
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
-	AUTOFOCUS: null,
+	AUTOFOCUS: undefined,
 	OPEN_EVENT: false
 };
 
@@ -60,24 +60,30 @@ const Expander = class {
 		}
 
 		if (this._options.CLOSE_ON_FOCUS_OUT) {
-			if (event.key === 'Tab' && event.shiftKey === true) {
-				if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
-					event.preventDefault();
-					window.requestAnimationFrame(() => {
-						this.close();
-						this._triggerEl.focus();
-					});
-				}
+			let canCloseOnShiftTab =
+				event.key === 'Tab' &&
+				event.shiftKey === true &&
+				(event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl);
+
+			if (canCloseOnShiftTab) {
+				event.preventDefault();
+				window.requestAnimationFrame(() => {
+					this.close();
+					this._triggerEl.focus();
+				});
 			}
 
-			if (event.key === 'Tab' && event.shiftKey === false) {
-				if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
-					event.preventDefault();
-					window.requestAnimationFrame(() => {
-						this.close();
-						this._triggerEl.focus();
-					});
-				}
+			let canCloseOnTab =
+				event.key === 'Tab' &&
+				event.shiftKey === false &&
+				event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1];
+
+			if (canCloseOnTab) {
+				event.preventDefault();
+				window.requestAnimationFrame(() => {
+					this.close();
+					this._triggerEl.focus();
+				});
 			}
 		}
 	}

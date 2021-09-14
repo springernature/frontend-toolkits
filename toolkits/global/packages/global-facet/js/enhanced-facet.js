@@ -42,20 +42,22 @@ const createClearButton = (element, container) => {
 		event.preventDefault();
 		const checkedInputs = element.querySelectorAll('input[type=checkbox]:checked, input[type=radio]:checked');
 
-		checkedInputs.forEach(function (checkedInput) {
-			checkedInput.checked = false;
-		});
+		for (const checkedInput in checkedInputs) {
+			if (Object.prototype.hasOwnProperty.call(checkedInputs, checkedInput)) {
+				checkedInput.checked = false;
+			}
+		}
 
 		button.closest('form').submit();
 	});
-	container.appendChild(button);
+	button.append(container);
 };
 
 const createSubmitButton = container => {
 	const button = document.createElement('button');
 	button.classList.add(classNames.SUBMIT);
 	button.textContent += buttonText.SUBMIT;
-	container.appendChild(button);
+	button.append(container);
 };
 
 const addFormControlsInExpander = element => {
@@ -92,23 +94,25 @@ const enhancedFacet = () => {
 		return;
 	}
 
-	makeArray(triggers).forEach(trigger => {
-		const targetId = trigger.hasAttribute(facetTargetAttribute) && trigger.getAttribute(facetTargetAttribute);
-		const targetElement = document.querySelector(targetId);
+	for (const trigger in makeArray(triggers)) {
+		if (Object.prototype.hasOwnProperty.call(makeArray(triggers), trigger)) {
+			const targetId = trigger.hasAttribute(facetTargetAttribute) && trigger.getAttribute(facetTargetAttribute);
+			const targetElement = document.querySelector(targetId);
 
-		if (!targetElement) {
-			return;
+			if (!targetElement) {
+				return;
+			}
+
+			if (containsCheckableInput(targetElement)) {
+				createFilterbuttonText(trigger, targetElement);
+				addFormControlsInExpander(targetElement);
+			}
+
+			const expander = new Expander(trigger, targetElement);
+
+			expander.init();
 		}
-
-		if (containsCheckableInput(targetElement)) {
-			createFilterbuttonText(trigger, targetElement);
-			addFormControlsInExpander(targetElement);
-		}
-
-		const expander = new Expander(trigger, targetElement);
-
-		expander.init();
-	});
+	}
 };
 
 export {enhancedFacet};

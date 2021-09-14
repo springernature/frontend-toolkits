@@ -27,7 +27,7 @@ const Popup = class {
 
 	_build() {
 		this._content.insertAdjacentHTML('beforeend', this._closeButton + this._arrow);
-		document.body.appendChild(this._content);
+		document.body.append(this._content);
 	}
 
 	_getCloseButton() {

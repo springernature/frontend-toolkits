@@ -23,22 +23,24 @@ const expander = (options = {}) => {
 		return;
 	}
 
-	makeArray(triggers).forEach(trigger => {
-		const dataTarget = DATA_COMPONENT + '-target';
+	for (const trigger in makeArray(triggers)) {
+		if (Object.prototype.hasOwnProperty.call(makeArray(triggers), trigger)) {
+			const dataTarget = DATA_COMPONENT + '-target';
 
-		if (!trigger.hasAttribute(dataTarget)) {
-			return;
+			if (!trigger.hasAttribute(dataTarget)) {
+				return;
+			}
+
+			const targetElement = document.querySelector(trigger.getAttribute(dataTarget));
+			if (!targetElement) {
+				return;
+			}
+
+			const dataOptions = getDataOptions(trigger, attributes);
+			const expander = new Expander(trigger, targetElement, Object.assign({}, options, dataOptions));
+			expander.init();
 		}
-
-		const targetElement = document.querySelector(trigger.getAttribute(dataTarget));
-		if (!targetElement) {
-			return;
-		}
-
-		const dataOptions = getDataOptions(trigger, attributes);
-		const expander = new Expander(trigger, targetElement, Object.assign({}, options, dataOptions));
-		expander.init();
-	});
+	}
 };
 
 export {expander};

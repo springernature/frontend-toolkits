@@ -9,7 +9,6 @@ class Modal {
 		this.triggers = Array.from(document.querySelectorAll(`[data-modal-for='${this.modalId}']`));
 		this.closeButtons = document.querySelectorAll(`#${this.modalId} [data-component-modal-close]`);
 		this.isMouseMove = false;
-		this.preModalFocussedElement = null;
 		this.focusableEls = Array.from(this.modal.querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]'));
 		this.firstFocusableEl = this.focusableEls[0];
 		this.lastFocusableEl = this.focusableEls[this.focusableEls.length - 1];
@@ -18,17 +17,22 @@ class Modal {
 
 	_registerEvents() {
 		if (this.triggers.length > 0) {
-			this.triggers.forEach(trigger => {
-				trigger.addEventListener('click', event => {
-					event.preventDefault();
-					this.toggleModal();
-				});
-			});
+			for (const trigger in this.triggers) {
+				if (Object.prototype.hasOwnProperty.call(this.triggers, trigger)) {
+					trigger.addEventListener('click', event => {
+						event.preventDefault();
+						this.toggleModal();
+					});
+				}
+			}
 		}
 		if (this.closeButtons.length > 0) {
-			Array.from(this.closeButtons).forEach(button => {
-				button.addEventListener('click', this.toggleModal.bind(this));
-			});
+			const buttons = Array.from(this.closeButtons);
+			for (const button in buttons) {
+				if (Object.prototype.hasOwnProperty.call(buttons, button)) {
+					button.addEventListener('click', this.toggleModal.bind(this));
+				}
+			}
 			window.addEventListener('click', this._windowOnClick.bind(this));
 			window.addEventListener('mousemove', () => {
 				this.isMouseMove = true;
@@ -84,10 +88,8 @@ class Modal {
 	}
 
 	_windowOnClick(event) {
-		if (event.target === this.modal) {
-			if (!this.isMouseMove) {
-				this.toggleModal();
-			}
+		if (event.target === this.modal && !this.isMouseMove) {
+			this.toggleModal();
 		}
 	}
 

@@ -1,12 +1,12 @@
 /**
- * @param {function} func - function to execute
+ * @param {function} function_ - function to execute
  * @param {Object} options
  * @param {number | string} options.wait - Time in ms, defaults to 'raf'
  * @param {Boolean} options.immediate - Whether the func should be called immediately, defaults to false
  * @return {function} - debounced function
  */
 
-export const debounce = (func, {wait = 'raf', immediate = false} = {}) => {
+export const debounce = (function_, {wait = 'raf', immediate = false} = {}) => {
 	const raf = (wait === 'raf');
 
 	if (!raf && typeof wait !== 'number') {
@@ -16,13 +16,11 @@ export const debounce = (func, {wait = 'raf', immediate = false} = {}) => {
 	let timeout;
 
 	// Return a function to run debounced
-	return function () {
-		let context = this;
-		let args = arguments; // eslint-disable-line unicorn/prevent-abbreviations
+	return (...arguments_) => {
 		const later = () => {
-			timeout = null;
+			timeout = undefined;
 			if (!immediate) {
-				func.apply(context, args);
+				function_.apply(this, arguments_);
 			}
 		};
 		const callNow = immediate && !timeout;
@@ -36,10 +34,10 @@ export const debounce = (func, {wait = 'raf', immediate = false} = {}) => {
 			}
 		}
 
-		timeout = raf ? window.requestAnimationFrame(() => func.apply(context, args)) : setTimeout(later, wait);
+		timeout = raf ? window.requestAnimationFrame(() => function_.apply(this, arguments_)) : setTimeout(later, wait);
 
 		if (callNow) {
-			func.apply(context, args);
+			function_.apply(this, arguments_);
 		}
 	};
 };

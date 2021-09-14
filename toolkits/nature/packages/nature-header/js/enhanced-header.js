@@ -20,7 +20,6 @@ const findTarget = selector => {
 	if (selector) {
 		return document.querySelector(selector);
 	}
-	return null;
 };
 
 const enhancedHeader = () => {
@@ -34,18 +33,18 @@ const enhancedHeader = () => {
 		return;
 	}
 
-	makeArray(triggers).forEach(trigger => {
+	for (const trigger of makeArray(triggers)) {
 		const targetElement = findTarget(trigger.hash);
 
 		if (!targetElement) {
 			return;
 		}
 
-		triggerAttributes.forEach(function (attribute) {
+		for (const attribute of triggerAttributes) {
 			trigger.setAttribute(attribute.name, attribute.value);
-		});
+		}
 
-		trigger.insertAdjacentElement('afterend', targetElement);
+		trigger.after(targetElement);
 		targetElement.classList.add(classNames.TETHERED);
 
 		const expander = new Expander(trigger, targetElement, {AUTOFOCUS: 'firstTabbable'});
@@ -53,7 +52,7 @@ const enhancedHeader = () => {
 		expander.init();
 
 		return expander;
-	});
+	}
 };
 
 export {enhancedHeader};

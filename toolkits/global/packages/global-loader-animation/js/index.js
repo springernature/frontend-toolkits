@@ -14,11 +14,11 @@ class CssLoader {
 	}
 
 	add() {
-		document.body.appendChild(this.loader);
+		this.loader.append(document.body);
 	}
 
 	remove() {
-		document.body.removeChild(this.loader);
+		this.loader.remove();
 	}
 }
 
