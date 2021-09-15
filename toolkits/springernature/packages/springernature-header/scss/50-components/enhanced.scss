@@ -18,6 +18,10 @@
 		max-width: 209px;
 	}
 
+	.c-header__journal-logo {
+		max-width: 300px;
+	}
+
 	.c-header__site-logo.with-journal-logo {
 		@include media-query('md') {
 			border-right: 2px solid color('black');
