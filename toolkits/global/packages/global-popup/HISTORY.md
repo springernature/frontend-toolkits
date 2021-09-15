@@ -1,5 +1,8 @@
 # History
 
+## 4.5.0 (2021-09-20)
+    * Demo with consumable .hbs template
+
 ## 4.4.0 (2021-03-24)
     * Adds default variable $popup--font-family
     * Add override to default for nature

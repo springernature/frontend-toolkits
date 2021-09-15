@@ -18,13 +18,13 @@ To include `global-pill` in your application, you need to choose **ONE** brand f
 ```html
 <ul>
     <li>
-        <a class="c-pill">Link</a>
+        <a href="/path/to/1" class="c-pill">Link</a>
     </li>
     <li>
-        <p class="c-pill">Some text</p>
+        <p href="/path/to/2" class="c-pill">Some text</p>
     </li>
     <li>
-        <a class="c-pill">Another link</a>
+        <a href="/path/to/3" class="c-pill">Another link</a>
     </li>
 </ul>
 ```
