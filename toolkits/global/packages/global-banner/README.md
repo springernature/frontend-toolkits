@@ -41,6 +41,8 @@ To include `global-banner` in your application, you need to choose **ONE** brand
 </div>
 ```
 
+If `c-banner__container` is used with just one child item, this item will be placed in the center of the banner.
+
 ### Modifiers
 
 **Inverted**

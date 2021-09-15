@@ -1,0 +1,16 @@
+<ul class="c-breadcrumbs">
+	{{#each crumbs}}
+		<li class="c-breadcrumbs__item">
+			{{#if @last}}{{else}}
+				<a href="{{url}}">
+			{{/if}}
+			{{label}}
+			{{#if @last}}{{else}}
+				<svg class="c-breadcrumbs__chevron" width="12" height="12" aria-hidden="true" focusable="false">
+					<use xlink:href="#icon-chevron-right"></use>
+				</svg>
+			</a>
+			{{/if}}
+		</li>
+	{{/each}}
+</ul>

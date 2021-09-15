@@ -1,0 +1,8 @@
+{
+	"isInverted": false,
+	"isFlush": false,
+	"items": [
+		"<a href='#'><img class='c-banner__image' src='http://placehold.it/430x36' alt='Placeholder'/></a>",
+		"<a class='c-banner__link' href='#'>Link</a>"
+	]
+}

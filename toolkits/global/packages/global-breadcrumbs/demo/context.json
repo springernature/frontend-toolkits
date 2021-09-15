@@ -1,0 +1,16 @@
+{
+	"crumbs": [
+		{
+			"label": "Crumb 1",
+			"url": "/path/to/crumb/1"
+		},
+		{
+			"label": "Crumb 2",
+			"url": "/path/to/crumb/2"
+		},
+		{
+			"label": "Crumb 3",
+			"url": "/path/to/crumb/3"
+		}
+	]
+}
