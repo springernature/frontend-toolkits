@@ -20,7 +20,7 @@ To include `global-corporate-footer` in your application, you need to choose **O
 ```html
 <div class="c-corporate-footer">
     <div class="u-container">
-        <img src=images/logos/sn-logo-white.svg" alt="Springer Nature" loading="lazy" width="140" height="14"/>
+        <img src="images/logos/sn-logo-white.svg" alt="Springer Nature" loading="lazy" width="140" height="14"/>
         <p class="c-corporate-footer__legal" data-test="copyright">&copy; 2020 Springer Nature Limited</p>
     </div>
 </div>

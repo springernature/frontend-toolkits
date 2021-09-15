@@ -7,10 +7,10 @@
 		{
 			"label": "Crumb 2",
 			"url": "/path/to/crumb/2"
-		},
-		{
-			"label": "Crumb 3",
-			"url": "/path/to/crumb/3"
 		}
-	]
+	],
+	"current": {
+		"label": "Current page"
+	},
+	"chevronURL": "../images/chevron-right.svg#icon-chevron-right"
 }
