@@ -67,11 +67,12 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 			&:after {
 				content: ' ';
 				display: inline-block;
+				position: absolute;
 				background: $author-icon-background;
-				background-position: -11px 3px;
+				background-position: -11px 4px;
 				background-size: 30px;
 				padding-left: 20px;
-				height: 16px;
+				height: 17px;
 				margin-left: 3px;
 			}
 		}

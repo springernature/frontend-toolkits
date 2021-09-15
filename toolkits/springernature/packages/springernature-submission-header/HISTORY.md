@@ -1,5 +1,8 @@
 # History
 
+## 0.6.1 (2021-09-15)
+	* Adjustment of icon position to line up with text
+
 ## 0.6.0 (2021-09-09)
 	* Add commas in template rather than with complicated SCSS
 
