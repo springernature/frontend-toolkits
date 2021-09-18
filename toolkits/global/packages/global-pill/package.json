@@ -4,5 +4,6 @@
   "license": "MIT",
   "description": "A pill shape container with background",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "brandContext": "^15.0.0"
 }
