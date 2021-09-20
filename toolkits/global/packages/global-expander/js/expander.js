@@ -228,7 +228,7 @@ const Expander = class {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
 			// eslint-disable-next-line no-script-url
 			this._triggerEl.setAttribute('href', 'javascript:;');
-			this.setAttribute('role', 'button');
+			this._triggerEl.setAttribute('role', 'button');
 		}
 
 		// Warn screen reader users when you are stealing focus
