@@ -1,5 +1,8 @@
 # History
 
+## 2.1.0 (2021-09-15)
+    * Allow journal header to take a little more room
+
 ## 2.0.4 (2021-07-29)
     * Revert header width (media query fix below resolved issue)
 
