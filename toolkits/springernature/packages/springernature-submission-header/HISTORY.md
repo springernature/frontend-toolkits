@@ -1,5 +1,8 @@
 # History
 
+## 0.6.2 (2021-09-20)
+	* Wrap author list
+
 ## 0.6.1 (2021-09-15)
 	* Adjustment of icon position to line up with text
 
