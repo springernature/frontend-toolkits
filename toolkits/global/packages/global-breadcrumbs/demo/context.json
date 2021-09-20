@@ -12,5 +12,5 @@
 	"current": {
 		"label": "Current page"
 	},
-	"chevronURL": "../images/chevron-right.svg#icon-chevron-right"
+	"chevronURL": "../../img/chevron-right.svg#icon-chevron-right"
 }
