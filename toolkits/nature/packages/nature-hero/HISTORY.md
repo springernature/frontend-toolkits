@@ -1,6 +1,6 @@
 # History
 
-## 1.1.1 (2021-09-29)
+## 1.1.1 (2021-09-21)
     * Keep hero image above text if flexbox not supported
 
 ## 1.1.0 (2021-04-19)
