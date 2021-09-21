@@ -3,6 +3,7 @@
   "version": "4.0.2",
   "description": "Frontend package for expanding a target when clicking a toggle",
   "license": "MIT",
+  "brandContext": "^15.0.0",
   "dependencies": {
     "@springernature/global-javascript": "^3.0.2"
   }

@@ -4,6 +4,11 @@ Click a trigger element to build and display a popup. Popups are built from exis
 
 Popups are absolutely positioned either above or below the trigger, based on a calculation of space in the viewport. Defaults to above. By default the popups calculate their width based on their contents.
 
+The Popup is based on the Expander but differs in the following ways:
+
+1. It moves keyboard focus to the target element on opening (necessitating the `aria-haspopup="true"` attribution as a warning to screen reader users)
+2. It supplies a close button which sends focus back to trigger element on close
+
 ## Usage
 There are two approaches for using Global Popup:
 1. Data attribute API
@@ -18,12 +23,13 @@ popup();
 ```
 
 ```html
-<span data-popup data-popup-target="popupContent1">Popup trigger</span>
+<button type="button" data-popup data-popup-target="popupContent1">Popup trigger</button>
 <div id="popupContent1">
     <p>Some popup text</p>
 </div>
-
 ```
+
+(The trigger must be a `<button>` element with `type="button"` for keyboard and screen reader accessibility.)
 
 Two data attributes are required:
 
@@ -44,13 +50,13 @@ There are also options (add these to trigger element):
 ```javascript
 import {Popup} from 'global-popup/js/popup';
 
-const trigger = document.querySelector('span');
+const trigger = document.querySelector('button');
 new Popup(trigger, 'popupContent1', { MIN_WIDTH: "100px", MAX_WIDTH: "600px" });
 ```
 
 ```html
 <div>
-    <span>Popup trigger</span>
+    <button type="button">Popup trigger</button>
     <div id="popupContent1">
         <p>Some popup text</p>
     </div>
@@ -65,7 +71,7 @@ If you wish to lazily create a popup the first time the trigger is clicked - for
 ```javascript
 import {Popup} from 'global-popup/js/popup';
 
-const trigger = document.querySelector('span');
+const trigger = document.querySelector('button');
 trigger.addEventListener('click', function() {
     const popup = new Popup(trigger, 'popupContent1');
     popup.open();
@@ -74,7 +80,7 @@ trigger.addEventListener('click', function() {
 
 ```html
 <div>
-    <span>Popup trigger</span>
+    <button type="button">Popup trigger</button>
     <div id="popupContent1">
         <p>Some popup text</p>
     </div>

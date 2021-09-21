@@ -228,6 +228,12 @@ const Expander = class {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
 			// eslint-disable-next-line no-script-url
 			this._triggerEl.setAttribute('href', 'javascript:;');
+			this._triggerEl.setAttribute('role', 'button');
+		}
+
+		// Warn screen reader users when you are stealing focus
+		if (this._options.AUTOFOCUS) {
+			this._triggerEl.setAttribute('aria-haspopup', 'true');
 		}
 
 		this._updateTriggerLabel();
