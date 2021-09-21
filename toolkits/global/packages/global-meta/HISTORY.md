@@ -1,7 +1,7 @@
 # History
 
 ## 5.1.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 5.0.1 (2021-08-03)
     * Update version number correctly    

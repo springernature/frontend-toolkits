@@ -1,7 +1,7 @@
 # History
 
 ## 3.1.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 3.0.0 (2021-02-08)
     * BREAKING: switch to use new `brand-context` dependency

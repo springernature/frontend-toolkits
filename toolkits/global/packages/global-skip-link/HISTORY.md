@@ -1,7 +1,7 @@
 # History
 
 ## 0.4.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 0.3.0 (2021-08-24)
     * Add Springer brand to settings

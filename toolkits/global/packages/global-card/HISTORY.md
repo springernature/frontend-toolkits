@@ -1,7 +1,7 @@
 # History
 
 ## 3.3.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 3.2.0 (2021-04-19)
     * Update card title to use fluid typography
