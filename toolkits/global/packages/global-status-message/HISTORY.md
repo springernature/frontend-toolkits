@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2021-09-20)
+    * Demo with consumable .hbs template
+
 ## 3.0.0 (2021-03-01)
     * Update to brand-context@10.1.2 which fixes a bug for default branding in previous version
     * Allow colour inheritance for icons and no need for other components/utilities

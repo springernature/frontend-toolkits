@@ -1,0 +1,16 @@
+{
+	"crumbs": [
+		{
+			"label": "Crumb 1",
+			"url": "/path/to/crumb/1"
+		},
+		{
+			"label": "Crumb 2",
+			"url": "/path/to/crumb/2"
+		}
+	],
+	"current": {
+		"label": "Current page"
+	},
+	"chevronURL": "../../img/chevron-right.svg#icon-chevron-right"
+}

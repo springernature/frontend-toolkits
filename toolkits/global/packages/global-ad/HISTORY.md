@@ -1,5 +1,8 @@
 # History
 
+## 2.2.0 (2021-04-21)
+    * Demo with consumable .hbs template
+
 ## 2.1.0 (2021-04-21)
     * Unhide MPU at `xs` breakpoint
     * Move `display: none` to known ad sizes. New or unknown ad sizes will always show.
