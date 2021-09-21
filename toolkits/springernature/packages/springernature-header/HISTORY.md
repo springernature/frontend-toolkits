@@ -1,5 +1,8 @@
 # History
 
+## 2.2.0 (2021-09-21)
+    * Try to accommodate for different sized journal logos at different breakpoints
+
 ## 2.1.0 (2021-09-15)
     * Allow journal header to take a little more room
 

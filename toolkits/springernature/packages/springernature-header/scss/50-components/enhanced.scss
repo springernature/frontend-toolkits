@@ -1,8 +1,11 @@
 .js {
 	.c-header__content {
 		position: relative;
-		display: flex;
-		justify-content: space-between;
+
+		@include media-query('sm') {
+			display: flex;
+			justify-content: space-between;
+		}
 
 		@include media-query('lg') {
 			width: calc(100% - 64px);
@@ -19,7 +22,11 @@
 	}
 
 	.c-header__journal-logo {
-		max-width: 300px;
+		max-width: 100%;
+
+		@include media-query('md') {
+			max-width: 65%;
+		}
 	}
 
 	.c-header__site-logo.with-journal-logo {
@@ -35,11 +42,15 @@
 
 	.c-header__logo-link {
 		display: flex;
-		flex-basis: 60%;
+		flex-basis: 100%;
 		flex-wrap: wrap;
 
+		@include media-query('sm') {
+			flex-basis: 75%;
+		}
+
 		@include media-query('md') {
-			flex-basis: 70%;
+			flex-basis: 85%;
 		}
 	}
 }
