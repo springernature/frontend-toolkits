@@ -1,7 +1,7 @@
 # History
 
-## 2.3.0 (2021-09-20)
-    * Demo with consumable .hbs template
+## 4.1.0 (2021-09-20)
+    * Demo created with consumable handlebars template
 
 ## 4.0.2 (2021-04-15)
     * Bump `global-javascript` to 3.0.2

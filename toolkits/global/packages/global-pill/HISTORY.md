@@ -1,7 +1,7 @@
 # History
 
 ## 1.3.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 1.2.0 (2021-06-10)
     * Add default settings and to nature settings

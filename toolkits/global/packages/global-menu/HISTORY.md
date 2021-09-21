@@ -1,7 +1,7 @@
 # History
 
-## 2.1.0 (2021-02-03)
-    * Demo
+## 2.1.0 (2021-09-20)
+    * Demo created with consumable handlebars template
 
 ## 2.0.0 (2021-02-03)
     * Bump `brand-context` version

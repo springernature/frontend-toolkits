@@ -1,7 +1,7 @@
 # History
 
-## 2.2.0 (2021-04-21)
-    * Demo with consumable .hbs template
+## 2.2.0 (2021-09-20)
+    * Demo created with consumable handlebars template
 
 ## 2.1.0 (2021-04-21)
     * Unhide MPU at `xs` breakpoint
