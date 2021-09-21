@@ -1,7 +1,7 @@
 # History
 
 ## 4.1.0 (2021-09-10)
-    * Demo, including consumable .hbs template
+    * Demo, including consumable handlebars template
 
 ## 4.0.0 (2021-03-02)
     * Bump `brand-context` version to 10.1.3
