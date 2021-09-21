@@ -10,9 +10,10 @@
 	font-size: $skip-link--font-size;
 	font-family: $skip-link--font;
 	text-align: center;
-	width: 100%;
 	padding: $skip-link--padding-y;
 	position: absolute;
+	inset: 0;
+	bottom: auto;
 	z-index: $skip-link--z-index;
 	transform: translateY(-100%);
 

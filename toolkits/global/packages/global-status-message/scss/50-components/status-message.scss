@@ -5,6 +5,7 @@
 	font-size: $status-message--font-size;
 	position: relative;
 	width: 100%; // Caters for an ie bug with nested flex when child is a column
+	box-sizing: border-box; // Compensates for the above RE padding
 
 	*:last-child {
 		margin-bottom: spacing(0);

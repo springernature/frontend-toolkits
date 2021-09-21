@@ -61,6 +61,11 @@
 	justify-content: space-between;
 }
 
+.c-banner__container > :only-child {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .c-banner__container--center {
 	justify-content: center;
 }
