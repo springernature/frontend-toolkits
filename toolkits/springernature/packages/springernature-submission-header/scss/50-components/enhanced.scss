@@ -13,9 +13,13 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 
 	&__author-list {
 		margin: 10px 0;
+		list-style-type: none;
+		padding-left: 0;
+		margin-left: 0;
 
 		@include media-query('sm') {
 			display: flex;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -29,12 +33,6 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 				padding-left: 10px;
 			}
 		}
-	}
-
-	&__author-list {
-		list-style-type: none;
-		padding-left: 0;
-		margin-left: 0;
 	}
 
 	&__authors {
