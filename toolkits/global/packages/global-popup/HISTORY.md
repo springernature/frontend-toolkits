@@ -1,7 +1,7 @@
 # History
 
 ## 4.5.0 (2021-09-20)
-    * Demo with consumable .hbs template
+    * Demo created with consumable handlebars template
 
 ## 4.4.0 (2021-03-24)
     * Adds default variable $popup--font-family
