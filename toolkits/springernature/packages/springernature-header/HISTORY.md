@@ -1,5 +1,8 @@
 # History
 
+## 2.2.1 (2021-09-23)
+    * Improve logo sizing for no-js view
+
 ## 2.2.0 (2021-09-21)
     * Try to accommodate for different sized journal logos at different breakpoints
 
