@@ -1,0 +1,17 @@
+.c-with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--with-sidebar--gap, #{$with-sidebar--gap});
+}
+
+.c-with-sidebar__sidebar {
+	flex-grow: 1;
+	flex-basis: var(--with-sidebar--basis, #{$with-sidebar--basis});
+}
+
+.c-with-sidebar > :not(.c-with-sidebar__sidebar) {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: var(--with-sidebar--min, #{$with-sidebar--min});
+}
+

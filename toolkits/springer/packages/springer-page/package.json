@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/springer-page",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "A wrapper for the main components of the page body",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^13.2.1"
+}
