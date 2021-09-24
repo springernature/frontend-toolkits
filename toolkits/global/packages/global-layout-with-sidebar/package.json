@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-layout-with-sidebar",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "A two column layout with one column as a sidebar",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^13.2.1"
+}
