@@ -637,28 +637,45 @@ body {
  * Default skin settings
  *
  */
-.c-with-sidebar {
+.l-with-sidebar {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--with-sidebar--gap, 1em);
 }
 
-.c-with-sidebar__sidebar {
+.l-with-sidebar__sidebar {
 	flex-grow: 1;
+	flex-basis: 400px;
+	/* fallback static value for IE */
 	flex-basis: var(--with-sidebar--basis, 400px);
 }
 
-.c-with-sidebar > :not(.c-with-sidebar__sidebar) {
+.l-with-sidebar > :not(.l-with-sidebar__sidebar) {
 	flex-basis: 0;
 	flex-grow: 999;
+	min-width: 50%;
+	/* fallback static value for IE */
 	min-width: var(--with-sidebar--min, 50%);
+}
+
+.l-with-sidebar > :first-child {
+	padding-right: 1em;
+	/* gap for IE11 (so desktop) */
+}
+
+@supports (gap: 1em) {
+	.l-with-sidebar > :first-child {
+		padding-right: 0;
+	}
+	.l-with-sidebar {
+		gap: var(--with-sidebar--gap, 1em);
+	}
 }
 
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="c-with-sidebar">
-		<div class="c-with-sidebar__sidebar">
+		<div class="l-with-sidebar">
+		<div class="l-with-sidebar__sidebar">
 			<p>Ea maxime voluptas doloremque laudantium! Harum quibusdam ab itaque veritatis illum a quisquam cupiditate laboriosam, quidem temporibus corrupti iure deserunt delectus, qui nam nisi fuga nesciunt adipisci! Quis, at dolorum.</p>
 		</div>
 		<div>
