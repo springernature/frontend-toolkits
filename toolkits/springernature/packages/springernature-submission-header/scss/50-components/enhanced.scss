@@ -62,6 +62,8 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 		padding-right: 7px;
 
 		&.corresponding {
+			margin-right: 20px;
+
 			&:after {
 				content: ' ';
 				display: inline-block;
@@ -132,6 +134,20 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 			box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
 			padding: $submission-header--padding;
 			margin: -15px 30px 30px 0;
+
+			&:after {
+				content: ' ';
+				width: 30px;
+				height: 17px;
+				background: url("/images/box-tail.png") no-repeat;
+				background-repeat: repeat;
+				z-index: 999;
+				transform: rotate(-1deg);
+				background-size: 30px;
+				position: absolute;
+				top: 99.5%;
+				left: 15%;
+			}
 		}
 
 		.c-popup__close {
