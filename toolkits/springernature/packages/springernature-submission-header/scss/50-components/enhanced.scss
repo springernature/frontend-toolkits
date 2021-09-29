@@ -58,7 +58,7 @@
 					content: ' ';
 					display: inline-block;
 					position: absolute;
-					background: $author-icon-background;
+					background: $submission-header--author-icon-background;
 					background-position: -13px 1px;
 					background-size: $submission-header--author-background-size;
 					padding-left: 20px;
@@ -83,7 +83,7 @@
 			&:after {
 				content: '';
 				display: inline-block;
-				background: $author-icon-background;
+				background: $submission-header--author-icon-background;
 				background-position: 1px 1px;
 				background-size: cover;
 				padding-left: $submission-header--author-background-size;
@@ -155,14 +155,14 @@
 			background-color: #666;
 			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
 			background-position: center;
-			background-size: $popup-close-btn-background-size;
+			background-size: $submission-header--popup-close-btn-background-size;
 			background-repeat: no-repeat;
 			border: 0;
 			border-radius: 50px;
 			color: #fff;
 			cursor: pointer;
-			height: $popup-close-btn-height;
-			width: $popup-close-btn-width;
+			height: $submission-header--popup-close-btn-height;
+			width: $submission-header--popup-close-btn-width;
 			padding: 0;
 			position: absolute;
 			right: 15px;
