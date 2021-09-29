@@ -52,6 +52,22 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 
 		.js & {
 			display: inline-block;
+
+			&.corresponding {
+				margin-right: 20px;
+	
+				&:after {
+					content: ' ';
+					display: inline-block;
+					position: absolute;
+					background: $author-icon-background;
+					background-position: -13px 1px;
+					background-size: 30px;
+					padding-left: 20px;
+					height: 14px;
+					margin-left: 3px;
+				}
+			}
 		}
 	}
 
@@ -60,22 +76,6 @@ $author-icon-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
 		list-style-type: none;
 		margin: 0;
 		padding-right: 7px;
-
-		&.corresponding {
-			margin-right: 20px;
-
-			&:after {
-				content: ' ';
-				display: inline-block;
-				position: absolute;
-				background: $author-icon-background;
-				background-position: -11px 4px;
-				background-size: 30px;
-				padding-left: 20px;
-				height: 17px;
-				margin-left: 3px;
-			}
-		}
 	}
 
 	&__authors-email {
