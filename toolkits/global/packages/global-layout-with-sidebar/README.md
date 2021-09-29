@@ -21,14 +21,14 @@ The `global-layout-with-sidebar` component can be used in any brand context. You
 
 ### Default settings
 
-Using the default settings, the `c-with-sidebar` element will be `400px` in the 2-column configuration. Both columns grow to 100% width of their parent `c-with-sidebar` where they wrap into 1 column. By default, this happens when the non-sidebar (“Main content” below) becomes less than `50%` of the total width.
+Using the default settings, the `l-with-sidebar` element will be `400px` in the 2-column configuration. Both columns grow to 100% width of their parent `l-with-sidebar` where they wrap into 1 column. By default, this happens when the non-sidebar (“Main content” below) becomes less than `50%` of the total width.
 
 ```html
-<div class="c-with-sidebar">
+<div class="l-with-sidebar">
     <div>
         Main content
     </div>
-    <div class="c-with-sidebar__sidebar">
+    <div class="l-with-sidebar__sidebar">
         Sidebar content
     </div>
 </div>
@@ -39,8 +39,8 @@ Using the default settings, the `c-with-sidebar` element will be `400px` in the 
 Somewhat unconventional, but the component can take it!
 
 ```html
-<div class="c-with-sidebar">
-    <div class="c-with-sidebar__sidebar">
+<div class="l-with-sidebar">
+    <div class="l-with-sidebar__sidebar">
         Sidebar content
     </div>
     <div>
@@ -56,12 +56,14 @@ The `global-layout-with-sidebar` component’s settings are mapped to CSS custom
 In the following example, the `gap` between the columns is `2em`, the 1-column layout is triggered when the main content goes under `66.666%`, and the sidebar is `300px` wide in the 2-column layout.
 
 ```html
-<div class="c-with-sidebar" style="--with-sidebar--gap: 2em">
+<div class="l-with-sidebar" style="--with-sidebar--gap: 2em">
     <div style="--with-sidebar--min: 66.666%">
         Main content
     </div>
-    <div class="c-with-sidebar__sidebar" style="--with-sidebar--basis: 300px">
+    <div class="l-with-sidebar__sidebar" style="--with-sidebar--basis: 300px">
         Sidebar content
     </div>
 </div>
 ```
+
+Note that these custom values will not take effect in IE11, which retains the original values, with no impact on the accessibility of the content.
