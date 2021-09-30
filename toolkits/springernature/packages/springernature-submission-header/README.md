@@ -53,6 +53,7 @@ Import the styles into your main stylesheet
 ```scss
 // enhanced.scss
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
+@import '@springernature/springernature-submission-header/scss/10-settings/icons';
 @import '@springernature/springernature-submission-header/scss/10-settings/spacing';
 @import '@springernature/brand-context/default/scss/10-settings/typography';
 @import '@springernature/brand-context/default/scss/10-settings/breakpoints';
