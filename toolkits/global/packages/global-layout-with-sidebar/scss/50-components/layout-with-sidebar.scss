@@ -1,0 +1,32 @@
+.l-with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.l-with-sidebar__sidebar {
+	flex-grow: 1;
+	flex-basis: $with-sidebar--basis; /* fallback static value for IE */
+	flex-basis: var(--with-sidebar--basis, #{$with-sidebar--basis});
+}
+
+.l-with-sidebar > :not(.l-with-sidebar__sidebar) {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: $with-sidebar--min; /* fallback static value for IE */
+	min-width: var(--with-sidebar--min, #{$with-sidebar--min});
+}
+
+.l-with-sidebar > :first-child {
+	padding-right: $with-sidebar--gap; /* gap for IE11 (so desktop) */
+}
+
+@supports (gap: 1em) {
+	.l-with-sidebar > :first-child {
+		padding-right: 0;
+	}
+
+	.l-with-sidebar {
+		gap: var(--with-sidebar--gap, #{$with-sidebar--gap});
+	}
+}
+
