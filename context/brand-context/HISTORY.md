@@ -1,5 +1,8 @@
 # History
 ## 15.1.0 (2021-10-06)
+    * BREAKING:
+        * Update the plus icon
+    * Add a minus svg icon
     * Add default setting, mixin and utility class for xsmall & tertiary button
     * Add SN settings for xsmall & tertiary button
 
