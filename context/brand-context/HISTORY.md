@@ -1,5 +1,6 @@
 # History
-## 15.1.0 (2021-10-06)
+
+## 16.0.0 (2021-10-06)
     * BREAKING:
         * Update the plus icon
     * Add a minus svg icon
