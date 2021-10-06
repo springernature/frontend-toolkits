@@ -60,6 +60,7 @@ $context--button-secondary: (
 $context--button-tertiary: (
 	'color': color('grey-dark2'),
 	'border': $context--button-border-width-style transparent,
+	'boxShadow': none,
 	'visitedColor': color('grey-dark2'),
 	'backgroundColor': color('grey-blue-light1'),
 	'hoverColor': color('white'),
