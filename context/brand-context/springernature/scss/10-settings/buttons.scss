@@ -9,6 +9,7 @@ $context--button-border-radius: 32px;
 $context--button-border-width-style: 4px solid;
 $context--button-font-size-normal: 1.4rem;
 $context--button-padding: 16px 32px;
+$context--button-padding-xsmall: 2px 8px;
 $context--button-padding-small: 8px 16px;
 $context--button-padding-large: 10px 35px;
 $context--button-letter-spacing: 0.7px;
@@ -49,6 +50,19 @@ $context--button-secondary: (
 	'border': $context--button-border-width-style color('white'),
 	'visitedColor': $context--button-brand-color,
 	'backgroundColor': color('white'),
+	'hoverColor': color('white'),
+	'hoverBorder': $context--button-border-width-style $context--button-brand-color,
+	'hoverBoxShadow': none,
+	'hoverBackgroundColor': $context--button-brand-color,
+	'fontWeight': $context--font-weight-bold,
+);
+
+$context--button-tertiary: (
+	'color': color('grey-dark2'),
+	'border': $context--button-border-width-style transparent,
+	'boxShadow': none,
+	'visitedColor': color('grey-dark2'),
+	'backgroundColor': color('grey-blue-light1'),
 	'hoverColor': color('white'),
 	'hoverBorder': $context--button-border-width-style $context--button-brand-color,
 	'hoverBoxShadow': none,
