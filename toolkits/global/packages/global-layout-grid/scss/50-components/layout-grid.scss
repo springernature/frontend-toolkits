@@ -1,0 +1,22 @@
+.l-grid {
+	list-style: none;
+}
+
+.l-grid > * + * {
+	margin-top: $grid--gap;
+	margin-top: var(--grid--gap, #{$grid--gap});
+}
+
+
+@supports (display: grid) {
+	.l-grid > * + * {
+		margin-top: 0;
+	}
+
+	.l-grid {
+		display: grid;
+		gap: $grid--gap;
+		gap: var(--grid--gap, #{$grid--gap});
+		grid-template-columns: repeat(auto-fit, minmax(#{$grid--basis}, 1fr));
+	}
+}
