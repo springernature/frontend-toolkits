@@ -41,10 +41,10 @@
 		font-size: 2.7rem;
 	}
 
-	font-family: $context--font-family-serif;
+	font-family: serif; // Font-family updated to serif
 	line-height: 4.6rem;
-	font-size: 2rem;
 	font-size: 1.5rem;
+	white-space: nowrap; // Added no-wrap for logo title
 	color: color('black');
 }
 
