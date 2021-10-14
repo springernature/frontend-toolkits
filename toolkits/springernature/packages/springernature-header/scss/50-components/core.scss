@@ -41,7 +41,7 @@
 		font-size: 2.7rem;
 	}
 
-	font-family: serif; // Font-family updated to serif
+	font-family: $context--font-family-serif;
 	line-height: 4.6rem;
 	font-size: 1.5rem;
 	white-space: nowrap; // Added no-wrap for logo title
