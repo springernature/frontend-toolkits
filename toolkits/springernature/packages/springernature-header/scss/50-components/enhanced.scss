@@ -1,7 +1,5 @@
 .c-header__content {
 	position: relative;
-	display: flex;
-	justify-content: space-between;
 
 	@include media-query('sm') {
 		display: flex;
@@ -24,7 +22,6 @@
 
 .c-header__site-logo {
 	padding-right: 20px;
-	border-right: 2px solid #222; // For SNAPP logo border-right
 }
 
 .c-header__journal-logo {
@@ -63,4 +60,12 @@
 			flex-basis: 75%;
 		}
 	}
+}
+// If we have multiple links as part of header navigation
+.c-header__navigation {
+	display: flex;
+}
+.c-header__navigation__links {
+	display:inline-flex;
+	align-self: center;
 }
