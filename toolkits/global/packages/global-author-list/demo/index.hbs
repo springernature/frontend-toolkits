@@ -1,3 +1,15 @@
+
+<h1>Author List examples</h1>
+
+<h2>Display a styled list of authors with comma separation</h2>
 <ul class="c-author-list {{#if isTruncated}}c-author-list--truncated{{/if}} {{#if isCompact}}c-author-list--compact{{/if}}">
 	{{#each authors}}<li class="c-author-list__item">{{this}}</li>{{/each}}
 </ul>
+
+<h2>Enhance with a toggle button which expands/truncates the list</h2>
+<div data-author-list>
+	<h3>Authors</h3>
+	<ul class="c-author-list {{#if isTruncated}}c-author-list--truncated{{/if}} {{#if isCompact}}c-author-list--compact{{/if}}">
+		{{#each authors}}<li class="c-author-list__item">{{this}}</li>{{/each}}
+	</ul>
+</div>

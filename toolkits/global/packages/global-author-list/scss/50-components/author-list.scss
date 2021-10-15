@@ -14,3 +14,13 @@
 .c-author-list--truncated {
 	@include u-list-truncated;
 }
+
+.js {
+	.c-author-list {
+		display: inline;
+	}
+
+	.c-author-list__hide {
+		@include u-hide;
+	}
+}
