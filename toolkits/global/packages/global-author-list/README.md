@@ -3,6 +3,9 @@
 A styled list of comma separated authors with the final author being preceded by an " & ".
 The separation strings `, `, ` & ` and ` ... ` are set in the CSS using pseudo-elements.
 
+The component can be enhanced, using Javascript, with a toggle button which
+expands/truncates the list.
+
 ## Branding
 
 To include `global-author-list` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
@@ -20,6 +23,8 @@ To include `global-author-list` in your application, you need to choose **ONE** 
 
 ## Usage
 
+### Display a styled list of authors with comma separation
+
 ```html
 <ul class="c-author-list">
     <li class="c-author-list__item">Author 1</li>
@@ -33,7 +38,7 @@ To include `global-author-list` in your application, you need to choose **ONE** 
 **Example output**
 `Author 1, Author 2, Author 3, Author 4 & Author 5`
 
-### Modifiers
+#### Modifiers
 
 **Compact**
 
@@ -54,18 +59,73 @@ Overrides the default ` & ` with a `...` before the final item in the list.
 **Example output**
 `Author 1, Author 2 ... Author 5`
 
-### Heads Up!
+### Enhance with a toggle button which expands/truncates the list
 
-It is down to your application to render the correct authors for the `--truncated` option to make sense.
+#### Markup
 
-For example:
-
-```kotlin
-val isTruncated = fullContributorList.size > 3
-val contributors = if (isTruncated) { fullContributorList.take(2) +  fullContributorList.last() } else fullContributorList
+```html
+<div data-author-list>
+    <h3 data-author-list-heading>Authors</h3>
+    <ul class="c-author-list">
+        <li class="c-author-list__item">Author 1</li>
+        <li class="c-author-list__item">Author 2</li>
+        <li class="c-author-list__item">Author 3</li>
+        <li class="c-author-list__item">Author 4</li>
+        <li class="c-author-list__item">Author 5</li>
+    </ul>
+</div>
 ```
 
-```handlebars
-<ul class="c-author-list{{#if isTruncated}} c-author-list--truncated{{/if}}>...</ul> 
+##### Heads up!
+
+It is down to your application to decide whether or not to have the heading
+visibily hidden (it needs to be accessible to screen readers).
+
+#### Javascript
+
+The `authorLists()` function comes in handy to initialise all lists present in the
+document. 
+
+```javascript
+import {authorLists} from '@springernature/global-author-list/js';
+
+authorLists(/* options */);
 ```
+
+For more flexibility you can use the `authorList()` function directly:
+
+```javascript
+import {authorList} from '@springernature/global-author-list/js/author-list';
+
+const myAuthorListContainer = document.querySelector('.my-author-list-container');
+
+authorList(myAuthorListContainer/*, options*/).init();
+```
+
+#### Options
+
+| Option            | Type   | Default value                | Description                                                              |
+|-------------------|--------|------------------------------|--------------------------------------------------------------------------|
+| headingSelector   | String | '[data-author-list-heading]' | Selector to the author list's heading element                            |
+| listSelector      | String | 'ul'                         | Selector to the author list's list element                               |
+| authorHideClass   | String | 'c-author-list__hide'        | CSS class to hide items from the author list's list when it is truncated |
+| truncatedClass    | String | 'c-author-list--truncated'   | CSS class to toggle onto the list element when it is truncated           |
+| listModifierClass | String | null                         | CSS class to add to the list the component is initialised                |
+| buttonClassList   | String | null                         | List of CSS classes to style the toggle button                           |
+
+The data attribute options are the same, but are lowercase and hyphenated:
+
+- `data-author-list-heading-selector`
+- `data-author-list-list-selector`
+- `data-author-list-author-hide-class`
+- `data-author-list-truncated-class`
+- `data-author-list-list-modifier-class`
+- `data-author-list-button-class-list`
+
+Note: data attribute options will take precedence over any options set during initialisation.
+
+##### Heads up!
+
+It is down to your application to toggle the `.js` class onto the `<html>`
+element, if you use the default `authorHideClass` value.
 
