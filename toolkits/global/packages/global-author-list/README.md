@@ -104,7 +104,7 @@ authorList(myAuthorListContainer/*, options*/).init();
 
 | Option            | Type   | Default value                | Description                                                              |
 |-------------------|--------|------------------------------|--------------------------------------------------------------------------|
-| headingSelector   | String | '[data-author-list-heading]' | Selector to the author list's heading element                            |
+| headingSelector   | String | '[data-author-list-heading]' | Selector for the heading element                            |
 | listSelector      | String | 'ul'                         | Selector to the author list's list element                               |
 | authorHideClass   | String | 'c-author-list__hide'        | CSS class to hide items from the author list's list when it is truncated |
 | truncatedClass    | String | 'c-author-list--truncated'   | CSS class to toggle onto the list element when it is truncated           |
