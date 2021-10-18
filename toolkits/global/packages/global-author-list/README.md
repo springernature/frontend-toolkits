@@ -127,6 +127,6 @@ The data attribute options are the same, but are lowercase and hyphenated:
 - **NOTE**: It is down to your application to toggle the `.js` class onto the `<html>`
 element (check for more in the [frontend playbook](https://github.com/springernature/frontend-playbook/blob/main/practices/javascript-styling.md)), if you use the default `authorHideClass` value.
 
-- The JS component make use of an SVG image as icon in the toggle button that
+- **NOTE**: The JS component make use of an SVG image as icon in the toggle button that
   swaps from `+` to `-`. It is down to your application to include these `+` and
-  `-` icons in its SVG sprite.
+  `-` icons in its SVG sprite. You can find the svg files on the [brand-context](https://github.com/springernature/frontend-toolkits/tree/master/context/brand-context/default/img/icons) of the design system.
