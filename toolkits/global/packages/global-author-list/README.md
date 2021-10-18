@@ -76,9 +76,7 @@ Overrides the default ` & ` with a `...` before the final item in the list.
 </div>
 ```
 
-##### Heads up!
-
-It is down to your application to decide whether or not to have the heading
+> **NOTE**: It is down to your application to decide whether or not to have the heading
 visibily hidden (it needs to be accessible to screen readers).
 
 #### Javascript
