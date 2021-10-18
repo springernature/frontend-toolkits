@@ -90,7 +90,7 @@ import {authorLists} from '@springernature/global-author-list/js';
 authorLists(/* options */);
 ```
 
-For more flexibility you can use the `authorList()` function directly:
+For more flexibility you can target an individual author list by using the `authorList()` function directly:
 
 ```javascript
 import {authorList} from '@springernature/global-author-list/js/author-list';
