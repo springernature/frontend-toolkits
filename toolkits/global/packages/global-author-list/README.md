@@ -108,7 +108,7 @@ authorList(myAuthorListContainer/*, options*/).init();
 | listSelector      | String | 'ul'                         | Selector for the list element                               |
 | authorHideClass   | String | 'c-author-list__hide'        | CSS class to hide items from the list when it is truncated |
 | truncatedClass    | String | 'c-author-list--truncated'   | CSS class to indicate truncated state           |
-| listModifierClass | String | null                         | CSS class to add to the list the component is initialised                |
+| listModifierClass | String | null                         | CSS class to add on initialisation                |
 | buttonClassList   | String | null                         | List of CSS classes to style the toggle button                           |
 
 The data attribute options are the same, but are lowercase and hyphenated:
