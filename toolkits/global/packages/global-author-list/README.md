@@ -102,14 +102,16 @@ authorList(myAuthorListContainer/*, options*/).init();
 
 #### Options
 
-| Option            | Type   | Default value                | Description                                                              |
-|-------------------|--------|------------------------------|--------------------------------------------------------------------------|
-| headingSelector   | String | '[data-author-list-heading]' | Selector for the heading element                            |
-| listSelector      | String | 'ul'                         | Selector for the list element                               |
-| authorHideClass   | String | 'c-author-list__hide'        | CSS class to hide items from the list when it is truncated |
-| truncatedClass    | String | 'c-author-list--truncated'   | CSS class to indicate truncated state           |
-| listModifierClass | String | null                         | CSS class to add on initialisation                |
-| buttonClassList   | String | null                         | List of CSS classes to style the toggle button                           |
+| Option              | Type   | Default value                | Description                                                              |
+|---------------------|--------|------------------------------|--------------------------------------------------------------------------|
+| headingSelector     | String | '[data-author-list-heading]' | Selector for the heading element                            |
+| listSelector        | String | 'ul'                         | Selector for the list element                               |
+| authorHideClass     | String | 'c-author-list__hide'        | CSS class to hide items from the list when it is truncated |
+| truncatedClass      | String | 'c-author-list--truncated'   | CSS class to indicate truncated state           |
+| listModifierClass   | String | null                         | CSS class to add on initialisation                |
+| buttonClassList     | String | null                         | List of CSS classes to style the toggle button                           |
+| buttonCollapsedText | String | Show all authors             | The text the button has when the list is collapsed.                      |
+| buttonExpandedText  | String | Show less authors            | The text the button has when the list is expanded.                       |
 
 The data attribute options are the same, but are lowercase and hyphenated:
 
@@ -119,8 +121,10 @@ The data attribute options are the same, but are lowercase and hyphenated:
 - `data-author-list-truncated-class`
 - `data-author-list-list-modifier-class`
 - `data-author-list-button-class-list`
+- `data-author-list-button-collapsed-text`
+- `data-author-list-button-expanded-text`
 
-> **NOTE**: data attribute options will take precedence over any options set during initialisation.
+> **NOTE**: The data attribute options will take precedence over any options set during initialisation. Their names are not configurable and therefore should not be changed.
 
 ##### Heads up!
 
