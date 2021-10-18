@@ -83,7 +83,7 @@ visibily hidden (it needs to be accessible to screen readers).
 
 #### Javascript
 
-The `authorLists()` function comes in handy to initialise all lists present in the
+The `authorLists()` function is used to initialise **all** lists present in the
 document. 
 
 ```javascript
