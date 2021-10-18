@@ -120,7 +120,7 @@ The data attribute options are the same, but are lowercase and hyphenated:
 - `data-author-list-list-modifier-class`
 - `data-author-list-button-class-list`
 
-Note: data attribute options will take precedence over any options set during initialisation.
+> **NOTE**: data attribute options will take precedence over any options set during initialisation.
 
 ##### Heads up!
 
