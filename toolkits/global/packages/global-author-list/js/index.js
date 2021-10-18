@@ -10,7 +10,9 @@ const attributes = {
 	truncatedClass: DATA_COMPONENT + '-truncated-class',
 	listModifierClass: DATA_COMPONENT + '-list-modifier-class',
 	buttonClassList: DATA_COMPONENT + '-button-class-list',
-	truncateLimit: DATA_COMPONENT + '-truncate-limit'
+	truncateLimit: DATA_COMPONENT + '-truncate-limit',
+	buttonCollapsedText: DATA_COMPONENT + '-collapsed-text',
+	buttonExpandedText: DATA_COMPONENT + '-expanded-text'
 };
 
 const authorLists = (options = {}) => {

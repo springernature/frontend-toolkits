@@ -18,6 +18,8 @@ const fixture = `
 		 data-author-list-list-modifier-class="list-modifier-class"
 		 data-author-list-button-class-list="btn btn--primary"
 		 data-author-list-truncate-limit="3"
+		 data-author-list-collapsed-text="Show all text"
+		 data-author-list-expanded-text="Show less text"
 		 >
 		<h3>Authors</h3>
 		<ul id="author-list-id">
@@ -54,7 +56,9 @@ describe('Data Attribute API', () => {
 			truncatedClass: 'js-truncated',
 			listModifierClass: 'list-modifier-class',
 			buttonClassList: 'btn btn--primary',
-			truncateLimit: '3'
+			truncateLimit: '3',
+			buttonCollapsedText: 'Show all text',
+			buttonExpandedText: 'Show less text'
 		});
 	});
 
@@ -71,7 +75,9 @@ describe('Data Attribute API', () => {
 			truncatedClass: 'js-truncated',
 			listModifierClass: 'list-modifier-class',
 			buttonClassList: 'btn btn--primary',
-			truncateLimit: '3'
+			truncateLimit: '3',
+			buttonCollapsedText: 'Show all text',
+			buttonExpandedText: 'Show less text'
 		});
 	});
 
@@ -91,7 +97,9 @@ describe('Data Attribute API', () => {
 			truncatedClass: 'js-truncated',
 			listModifierClass: 'list-modifier-class',
 			buttonClassList: 'btn btn--primary',
-			truncateLimit: '3'
+			truncateLimit: '3',
+			buttonCollapsedText: 'Show all text',
+			buttonExpandedText: 'Show less text'
 		});
 	});
 });

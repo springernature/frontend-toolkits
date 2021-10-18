@@ -9,6 +9,8 @@
  * @param {string} [config.truncatedClass=c-author-list--truncated] CSS class to toggle onto the list element when it is truncated.
  * @param {string} [config.listModifierClass] CSS class to add to the list the component is initialised.
  * @param {string} [config.buttonClassList] List of CSS classes to style the toggle button.
+ * @param {string} [config.buttonCollapsedText] The text the button has when it is collapsed.
+ * @param {string} [config.buttonExpandedText] The text the button has when it is expanded.
  */
 function authorList(container, config = {}) {
 	let {
@@ -17,7 +19,9 @@ function authorList(container, config = {}) {
 		authorHideClass,
 		truncatedClass,
 		listModifierClass,
-		buttonClassList
+		buttonClassList,
+		buttonCollapsedText,
+		buttonExpandedText
 	} = config;
 	let button;
 	let list;
@@ -28,6 +32,8 @@ function authorList(container, config = {}) {
 	listSelector = listSelector || 'ul';
 	authorHideClass = authorHideClass || 'c-author-list__hide';
 	truncatedClass = truncatedClass || 'c-author-list--truncated';
+	buttonCollapsedText = buttonCollapsedText || 'Show all authors';
+	buttonExpandedText = buttonExpandedText || 'Show less authors';
 
 	return {
 		init
@@ -93,14 +99,12 @@ function authorList(container, config = {}) {
 
 	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function toggleButton() {
-		const collapsedText = 'Show all authors';
-		const expandedText = 'Show less authors';
 		const currentText = button.textContent;
 		const collapsedIcon = `<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>`;
 		const expandedIcon = `<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>`;
 		const expanded = button.getAttribute('aria-expanded') === 'true' || false;
 
-		button.innerHTML = (currentText === collapsedText) ? expandedIcon + expandedText : collapsedIcon + collapsedText;
+		button.innerHTML = (currentText === buttonCollapsedText) ? expandedIcon + buttonExpandedText : collapsedIcon + buttonCollapsedText;
 
 		button.setAttribute('aria-expanded', !expanded);
 	}
@@ -108,7 +112,6 @@ function authorList(container, config = {}) {
 	function addButton() {
 		button = document.createElement('button');
 		const buttonIcon = '<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>';
-		const buttonText = 'Show less authors';
 		const listId = list.id;
 
 		button.setAttribute('aria-expanded', true);
@@ -119,7 +122,7 @@ function authorList(container, config = {}) {
 		if (buttonClassList) {
 			button.className = buttonClassList;
 		}
-		button.innerHTML = buttonIcon + buttonText;
+		button.innerHTML = buttonIcon + buttonExpandedText;
 
 		list.insertAdjacentElement('afterend', button);
 	}
