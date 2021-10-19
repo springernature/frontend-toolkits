@@ -11,8 +11,8 @@ const attributes = {
 	listModifierClass: DATA_COMPONENT + '-list-modifier-class',
 	buttonClassList: DATA_COMPONENT + '-button-class-list',
 	truncateLimit: DATA_COMPONENT + '-truncate-limit',
-	buttonCollapsedText: DATA_COMPONENT + '-collapsed-text',
-	buttonExpandedText: DATA_COMPONENT + '-expanded-text'
+	buttonCollapsedText: DATA_COMPONENT + '-button-collapsed-text',
+	buttonExpandedText: DATA_COMPONENT + '-button-expanded-text'
 };
 
 const authorLists = (options = {}) => {
