@@ -1,0 +1,105 @@
+.c-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.c-dropdown__menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	position: absolute;
+	color: #666666;
+	background-color: white;
+	border: solid #C0C0C0 1px;
+	box-shadow: 0 0 5px rgb(200,200,200);
+	width: 100%;
+}
+
+.c-dropdown__button {
+	border: solid $global-dropdown--border-color 1px;
+	background-color: $global-dropdown--background-color;
+	color: $global-dropdown--color;
+	display: flex;
+	width: 192px;
+	max-width: 100%;
+	padding: 10px 10px;
+	text-align: left;
+}
+
+.c-dropdown__button:hover {
+	background-color: white;
+	color: $global-dropdown--hover-color;
+}
+
+.c-dropdown__menu-button {
+	border: 0;
+	color: black;
+	position: relative;
+	padding: 0;
+	background-color: transparent;
+	display: block;
+	margin-right: -1px;
+	margin-left: -1px;
+	text-align: left;
+}
+
+.c-dropdown__menu-button * {
+	color: inherit;
+	text-decoration: none;
+	fill: inherit;
+}
+
+.c-dropdown__menu-button > * {
+	margin: 0;
+	width: 100%;
+	display: block;
+	padding: 12px 5%;
+	box-sizing: border-box;
+}
+
+.c-dropdown__menu-button:first-child {
+	margin-top: -1px;
+}
+
+.c-dropdown__menu-button:last-child {
+	margin-bottom: -1px;
+}
+
+.c-dropdown__menu-button:hover {
+	color: white;
+	background-color: #666666;
+}
+
+.c-dropdown__menu-button a:focus {
+	outline-offset: -2px;
+}
+
+.c-dropdown__menu-button:not(:first-child):before {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 1px;
+	width: 90%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #C0C0C0;
+}
+
+.c-dropdown__menu-button:hover + .c-dropdown__menu-button:before, .c-dropdown__menu-button:hover:before {
+	display: none;
+}
+
+.c-dropdown__button svg {
+	margin-left: auto;
+	align-self: center;
+}
+
+.c-dropdown__button g {
+	fill: currentColor;
+}
+
+.c-dropdown__button:hover g {
+	fill: currentColor;
+}
