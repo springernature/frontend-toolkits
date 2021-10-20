@@ -1,3 +1,8 @@
+## 4.0.0 (2021-10-20)
+    * BREAKING: 
+        * Remove $global-list-description--is-interface in settings 
+        * Remove @include u-link-interface on <a> when $global-list-description--is-interface was true
+
 ## 3.0.0 (2021-07-29)
     * Removes bottom margin from description list terms
 
