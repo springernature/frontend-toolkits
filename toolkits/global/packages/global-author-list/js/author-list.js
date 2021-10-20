@@ -11,7 +11,7 @@
  * @param {string} [config.buttonClassList] List of CSS classes to style the toggle button.
  * @param {string} [config.buttonCollapsedText] The button text when the list is collapsed.
  * @param {string} [config.buttonExpandedText] The button text when the list is expanded.
- * @param {string} [config.hasButtonIcon] A boolean indicating if a button icon should be included.
+ * @param {boolean} [config.hasButtonIcon] A boolean indicating if a button icon should be included.
  */
 function authorList(container, config = {}) {
 	let {
