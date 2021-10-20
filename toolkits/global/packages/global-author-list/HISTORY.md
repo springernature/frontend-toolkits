@@ -1,5 +1,8 @@
 # History
 
+## 4.0.1 (2021-10-20)
+    * Update readme file with the hasButtonIcon config
+
 ## 4.0.0 (2021-10-15)
     * Add a Javascript layer to enhance the list with toggling functionality
 

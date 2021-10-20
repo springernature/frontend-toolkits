@@ -102,16 +102,17 @@ authorList(myAuthorListContainer/*, options*/).init();
 
 #### Options
 
-| Option              | Type   | Default value                | Description                                                              |
-|---------------------|--------|------------------------------|--------------------------------------------------------------------------|
-| headingSelector     | String | '[data-author-list-heading]' | Selector for the heading element                            |
-| listSelector        | String | 'ul'                         | Selector for the list element                               |
-| authorHideClass     | String | 'c-author-list__hide'        | CSS class to hide items from the list when it is truncated |
-| truncatedClass      | String | 'c-author-list--truncated'   | CSS class to indicate truncated state           |
-| listModifierClass   | String | null                         | CSS class to add on initialisation                |
-| buttonClassList     | String | null                         | List of CSS classes to style the toggle button                           |
-| buttonCollapsedText | String | Show all authors             | The text the button has when the list is collapsed.                      |
-| buttonExpandedText  | String | Show less authors            | The text the button has when the list is expanded.                       |
+| Option              | Type    | Default value                | Description                                                              |
+|---------------------|---------|------------------------------|--------------------------------------------------------------------------|
+| headingSelector     | String  | '[data-author-list-heading]' | Selector for the heading element                            |
+| listSelector        | String  | 'ul'                         | Selector for the list element                               |
+| authorHideClass     | String  | 'c-author-list__hide'        | CSS class to hide items from the list when it is truncated |
+| truncatedClass      | String  | 'c-author-list--truncated'   | CSS class to indicate truncated state           |
+| listModifierClass   | String  | null                         | CSS class to add on initialisation                |
+| buttonClassList     | String  | null                         | List of CSS classes to style the toggle button                           |
+| buttonCollapsedText | String  | Show all authors             | The text the button has when the list is collapsed.                      |
+| buttonExpandedText  | String  | Show less authors            | The text the button has when the list is expanded.                       |
+| hasButtonIcon       | Boolean | true                         | A boolean indicating if a button icon should be included                 |
 
 The data attribute options are the same, but are lowercase and hyphenated:
 
@@ -123,6 +124,7 @@ The data attribute options are the same, but are lowercase and hyphenated:
 - `data-author-list-button-class-list`
 - `data-author-list-button-collapsed-text`
 - `data-author-list-button-expanded-text`
+- `data-author-list-has-button-icon`
 
 > **NOTE**: The data attribute options will take precedence over any options set during initialisation. Their names are not configurable and therefore should not be changed.
 
@@ -131,6 +133,6 @@ The data attribute options are the same, but are lowercase and hyphenated:
 - **NOTE**: It is down to your application to toggle the `.js` class onto the `<html>`
 element (check for more in the [frontend playbook](https://github.com/springernature/frontend-playbook/blob/main/practices/javascript-styling.md)), if you use the default `authorHideClass` value.
 
-- **NOTE**: The JS component make use of an SVG image as icon in the toggle button that
+- **NOTE**: The JS component makes use of an SVG image as icon in the toggle button that
   swaps from `+` to `-`. It is down to your application to include these `+` and
   `-` icons in its SVG sprite. You can find the svg files on the [brand-context](https://github.com/springernature/frontend-toolkits/tree/master/context/brand-context/default/img/icons) of the design system.
