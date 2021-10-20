@@ -20,7 +20,7 @@ const fixture = `
 		 data-author-list-truncate-limit="3"
 		 data-author-list-button-collapsed-text="Show all text"
 		 data-author-list-button-expanded-text="Show less text"
-		 >
+		 data-author-list-has-button-icon="true">
 		<h3>Authors</h3>
 		<ul id="author-list-id">
 			<li>Author 1</li>
@@ -58,7 +58,8 @@ describe('Data Attribute API', () => {
 			buttonClassList: 'btn btn--primary',
 			truncateLimit: '3',
 			buttonCollapsedText: 'Show all text',
-			buttonExpandedText: 'Show less text'
+			buttonExpandedText: 'Show less text',
+			hasButtonIcon: true
 		});
 	});
 
@@ -77,7 +78,8 @@ describe('Data Attribute API', () => {
 			buttonClassList: 'btn btn--primary',
 			truncateLimit: '3',
 			buttonCollapsedText: 'Show all text',
-			buttonExpandedText: 'Show less text'
+			buttonExpandedText: 'Show less text',
+			hasButtonIcon: true
 		});
 	});
 
@@ -99,7 +101,8 @@ describe('Data Attribute API', () => {
 			buttonClassList: 'btn btn--primary',
 			truncateLimit: '3',
 			buttonCollapsedText: 'Show all text',
-			buttonExpandedText: 'Show less text'
+			buttonExpandedText: 'Show less text',
+			hasButtonIcon: true
 		});
 	});
 });

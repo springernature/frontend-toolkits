@@ -153,6 +153,17 @@ describe('Author List', () => {
 		expect(button.className).toEqual(buttonClassList);
 	});
 
+	it('does not apply any buttonIcon if the config hasButtonIcon is false', () => {
+		authorList(authorListContainer, {
+			hasButtonIcon: false
+		}).init();
+
+		const button = authorListContainer.querySelector('button');
+		const icon = button.querySelector('svg');
+
+		expect(icon).toBe(null);
+	});
+
 	it('adds an aria-controls attribute to the button if the list has an id', () => {
 		authorList(authorListContainer).init();
 

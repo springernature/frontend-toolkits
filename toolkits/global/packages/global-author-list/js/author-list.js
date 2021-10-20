@@ -9,8 +9,9 @@
  * @param {string} [config.truncatedClass=c-author-list--truncated] CSS class to toggle onto the list element when it is truncated.
  * @param {string} [config.listModifierClass] CSS class to add to the list the component is initialised.
  * @param {string} [config.buttonClassList] List of CSS classes to style the toggle button.
- * @param {string} [config.buttonCollapsedText] The text the button has when it is collapsed.
- * @param {string} [config.buttonExpandedText] The text the button has when it is expanded.
+ * @param {string} [config.buttonCollapsedText] The button text when the list is collapsed.
+ * @param {string} [config.buttonExpandedText] The button text when the list is expanded.
+ * @param {string} [config.hasButtonIcon] A boolean indicating if a button icon should be included.
  */
 function authorList(container, config = {}) {
 	let {
@@ -21,7 +22,9 @@ function authorList(container, config = {}) {
 		listModifierClass,
 		buttonClassList,
 		buttonCollapsedText,
-		buttonExpandedText
+		buttonExpandedText,
+		hasButtonIcon
+
 	} = config;
 	let button;
 	let list;
@@ -34,6 +37,9 @@ function authorList(container, config = {}) {
 	truncatedClass = truncatedClass || 'c-author-list--truncated';
 	buttonCollapsedText = buttonCollapsedText || 'Show all authors';
 	buttonExpandedText = buttonExpandedText || 'Show less authors';
+	if (hasButtonIcon !== false) {
+		hasButtonIcon = true;
+	}
 
 	return {
 		init
@@ -100,13 +106,18 @@ function authorList(container, config = {}) {
 	// eslint-disable-next-line unicorn/consistent-function-scoping
 	function toggleButton() {
 		const currentText = button.textContent;
+		let buttonIcon = '';
 		const collapsedIcon = `<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>`;
 		const expandedIcon = `<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>`;
-		const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+		const ariaExpanded = button.getAttribute('aria-expanded') === 'true' || false;
+		const buttonText = (currentText === buttonCollapsedText) ? buttonExpandedText : buttonCollapsedText;
 
-		button.innerHTML = (currentText === buttonCollapsedText) ? expandedIcon + buttonExpandedText : collapsedIcon + buttonCollapsedText;
+		if (hasButtonIcon) {
+			buttonIcon = (currentText === buttonCollapsedText) ? expandedIcon : collapsedIcon;
+		}
 
-		button.setAttribute('aria-expanded', !expanded);
+		button.innerHTML = buttonIcon + buttonText;
+		button.setAttribute('aria-expanded', !ariaExpanded);
 	}
 
 	function addButton() {
@@ -122,8 +133,8 @@ function authorList(container, config = {}) {
 		if (buttonClassList) {
 			button.className = buttonClassList;
 		}
-		button.innerHTML = buttonIcon + buttonExpandedText;
 
+		button.innerHTML = (hasButtonIcon) ? buttonIcon + buttonExpandedText : buttonExpandedText;
 		list.insertAdjacentElement('afterend', button);
 	}
 }

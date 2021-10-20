@@ -812,6 +812,9 @@ body {
    * @param {string} [config.truncatedClass=c-author-list--truncated] CSS class to toggle onto the list element when it is truncated.
    * @param {string} [config.listModifierClass] CSS class to add to the list the component is initialised.
    * @param {string} [config.buttonClassList] List of CSS classes to style the toggle button.
+   * @param {string} [config.buttonCollapsedText] The button text when the list is collapsed.
+   * @param {string} [config.buttonExpandedText] The button text when the list is expanded.
+   * @param {boolean} [config.hasButtonIcon] A boolean indicating if a button icon is included.
    */
   function authorList(container) {
     var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -820,7 +823,10 @@ body {
         authorHideClass = config.authorHideClass,
         truncatedClass = config.truncatedClass,
         listModifierClass = config.listModifierClass,
-        buttonClassList = config.buttonClassList;
+        buttonClassList = config.buttonClassList,
+        buttonCollapsedText = config.buttonCollapsedText,
+        buttonExpandedText = config.buttonExpandedText,
+        hasButtonIcon = config.hasButtonIcon;
     var button;
     var list;
     var heading;
@@ -829,6 +835,9 @@ body {
     listSelector = listSelector || 'ul';
     authorHideClass = authorHideClass || 'c-author-list__hide';
     truncatedClass = truncatedClass || 'c-author-list--truncated';
+    buttonCollapsedText = buttonCollapsedText || 'Show all authors';
+    buttonExpandedText = buttonExpandedText || 'Show less authors';
+    hasButtonIcon = hasButtonIcon || true;
     return {
       init: init
     };
@@ -893,20 +902,25 @@ body {
 
 
     function toggleButton() {
-      var collapsedText = 'Show all authors';
-      var expandedText = 'Show less authors';
       var currentText = button.textContent;
+      var buttonIcon = null;
       var collapsedIcon = "<svg width=\"14\" height=\"14\" aria-hidden=\"true\" focusable=\"false\"><use href=\"#icon-plus\"></use></svg>";
       var expandedIcon = "<svg width=\"14\" height=\"14\" aria-hidden=\"true\" focusable=\"false\"><use href=\"#icon-minus\"></use></svg>";
-      var expanded = button.getAttribute('aria-expanded') === 'true' || false;
-      button.innerHTML = currentText === collapsedText ? expandedIcon + expandedText : collapsedIcon + collapsedText;
-      button.setAttribute('aria-expanded', !expanded);
+      var ariaExpanded = button.getAttribute('aria-expanded') === 'true' || false;
+
+      if (hasButtonIcon) {
+        // console.log('hasButtonIcon', hasButtonIcon);
+        buttonIcon = currentText === buttonCollapsedText ? expandedIcon : collapsedIcon;
+      }
+
+      var buttonText = currentText === buttonCollapsedText ? buttonExpandedText : buttonCollapsedText;
+      button.innerHTML = buttonIcon + buttonText;
+      button.setAttribute('aria-expanded', !ariaExpanded);
     }
 
     function addButton() {
       button = document.createElement('button');
       var buttonIcon = '<svg width="14" height="14" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>';
-      var buttonText = 'Show less authors';
       var listId = list.id;
       button.setAttribute('aria-expanded', true);
 
@@ -918,7 +932,7 @@ body {
         button.className = buttonClassList;
       }
 
-      button.innerHTML = buttonIcon + buttonText;
+      button.innerHTML = hasButtonIcon ? buttonIcon + buttonExpandedText : buttonExpandedText;
       list.insertAdjacentElement('afterend', button);
     }
   }
@@ -931,7 +945,10 @@ body {
     truncatedClass: DATA_COMPONENT + '-truncated-class',
     listModifierClass: DATA_COMPONENT + '-list-modifier-class',
     buttonClassList: DATA_COMPONENT + '-button-class-list',
-    truncateLimit: DATA_COMPONENT + '-truncate-limit'
+    truncateLimit: DATA_COMPONENT + '-truncate-limit',
+    buttonCollapsedText: DATA_COMPONENT + '-button-collapsed-text',
+    buttonExpandedText: DATA_COMPONENT + '-button-expanded-text',
+    hasButtonIcon: DATA_COMPONENT + '-has-button-icon'
   };
 
   var authorLists = function authorLists() {
