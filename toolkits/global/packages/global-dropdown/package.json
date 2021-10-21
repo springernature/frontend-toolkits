@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/global-dropdown",
+  "version": "0.3.0",
+  "license": "MIT",
+  "description": "Display a contextual list of links controlled by a toggle",
+  "keywords": [],
+  "author": "Springer Nature"
+}
