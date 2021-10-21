@@ -1,3 +1,9 @@
+## 4.0.0 (2021-10-21)
+    * BREAKING:
+        * Remove specificity and text mixin for description list links
+        * Remove $global-list-description--is-interface in settings
+        * Bump brand-context to 13.2.1
+
 ## 3.0.0 (2021-07-29)
     * Removes bottom margin from description list terms
 
