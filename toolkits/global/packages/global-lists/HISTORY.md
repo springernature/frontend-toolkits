@@ -1,4 +1,4 @@
-## 4.0.0 (2021-10-20)
+## 4.0.0 (2021-10-21)
     * BREAKING:
         * Remove specificity and text mixin on description list links
         * Remove $global-list-description--is-interface in settings
