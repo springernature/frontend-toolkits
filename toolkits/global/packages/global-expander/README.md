@@ -5,7 +5,7 @@ Click a trigger element to toggle the display of a unique target element.
 ## Usage
 
 ```javascript
-import {expander} from 'global-expander/js/js/expander';
+import {expander} from 'global-expander/js';
 
 expander(options);
 ```
