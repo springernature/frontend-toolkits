@@ -9,7 +9,8 @@ const attributes = {
 	TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',
 	CLOSE_ON_CLICKOFF: DATA_COMPONENT + '-close-on-clickoff',
 	AUTOFOCUS: DATA_COMPONENT + '-autofocus',
-	OPEN_EVENT: DATA_COMPONENT + '-open-event'
+	OPEN_EVENT: DATA_COMPONENT + '-open-event',
+	DEFAULT_OPEN: DATA_COMPONENT + '-default-open'
 };
 
 /**
