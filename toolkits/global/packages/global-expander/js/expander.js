@@ -10,7 +10,8 @@ const defaultOptions = {
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
 	AUTOFOCUS: null,
-	OPEN_EVENT: false
+	OPEN_EVENT: false,
+	DEFAULT_OPEN: false
 };
 
 const Expander = class {
@@ -20,7 +21,7 @@ const Expander = class {
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
-		this._isOpen = false;
+		this._isOpen = this._options.DEFAULT_OPEN;
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 		this._handleDocumentClick = this._handleDocumentClick.bind(this);
