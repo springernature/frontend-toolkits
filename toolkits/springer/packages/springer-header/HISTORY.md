@@ -2,6 +2,7 @@
 
 ## 5.1.1 (2021-10-25)
     * Icon prefixing
+    * Safer prop name for url
 
 ## 5.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
