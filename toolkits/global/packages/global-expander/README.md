@@ -54,7 +54,7 @@ The data attribute options are the same, but are lowercase and hyphenated (and s
 - `data-expander-target-hide-class`
 - `data-expander-trigger-open-class`
 - `data-expander-trigger-open-label`
-- `data-expander-close-on-clickoff`
+- `data-expander-close-on-focus-out`
 - `data-expander-autofocus`
 - `data-expander-open-event`
 - `data-expander-default-open`

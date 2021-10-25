@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2021-10-23)
+    * Safer prop name for url
+
 ## 3.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 

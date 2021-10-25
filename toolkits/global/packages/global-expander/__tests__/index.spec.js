@@ -20,7 +20,7 @@ describe('Data Attribute API', () => {
 					data-expander-hide-class="data-target-hide-class"
 					data-expander-trigger-open-class="data-trigger-open-class"
 					data-expander-trigger-open-label="data-trigger-shown-label"
-					data-expander-close-on-clickoff="true"
+					data-expander-close-on-focus-out="true"
 					data-expander-autofocus="false"
 					data-expander-default-open="false">Expander 2</button>
 			<div id="target2">Target 2</div>
@@ -50,7 +50,7 @@ describe('Data Attribute API', () => {
 			TARGET_HIDE_CLASS: 'init-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
-			CLOSE_ON_CLICKOFF: false,
+			CLOSE_ON_FOCUS_OUT: true,
 			AUTOFOCUS: true,
 			OPEN_EVENT: false,
 			DEFAULT_OPEN: false
@@ -69,7 +69,7 @@ describe('Data Attribute API', () => {
 			TARGET_HIDE_CLASS: 'init-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'init-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'init-trigger-open-label',
-			CLOSE_ON_CLICKOFF: false,
+			CLOSE_ON_FOCUS_OUT: false,
 			AUTOFOCUS: true,
 			OPEN_EVENT: false,
 			DEFAULT_OPEN: true
@@ -83,7 +83,7 @@ describe('Data Attribute API', () => {
 			TARGET_HIDE_CLASS: 'data-target-hide-class',
 			TRIGGER_OPEN_CLASS: 'data-trigger-open-class',
 			TRIGGER_OPEN_LABEL: 'data-trigger-shown-label',
-			CLOSE_ON_CLICKOFF: true,
+			CLOSE_ON_FOCUS_OUT: true,
 			AUTOFOCUS: false,
 			OPEN_EVENT: false,
 			DEFAULT_OPEN: false
