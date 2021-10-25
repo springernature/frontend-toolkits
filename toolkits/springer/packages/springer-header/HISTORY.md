@@ -1,5 +1,8 @@
 # History
 
+## 5.1.1 (2021-10-25)
+    * Icon prefixing
+
 ## 5.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
 
