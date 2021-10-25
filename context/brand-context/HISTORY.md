@@ -1,7 +1,8 @@
 # History
 
-## 16.1.0 (2021-10-23)
-    * `id` attributes added to all SVG icons for referencing with `<use>`
+## 17.0.0 (2021-10-23)
+    * BREAKING:
+        * `id` attributes added to all SVG icons for referencing with `<use>`
 
 ## 16.0.0 (2021-10-06)
     * BREAKING:
