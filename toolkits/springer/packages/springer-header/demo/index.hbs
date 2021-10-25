@@ -9,7 +9,7 @@
 		{{/with}}
 		<div class="c-header__navigation">
 			{{#with search}}
-			<a href="{{url}}" class="c-header__link c-header__link--search">
+			<a href="{{searchUrl}}" class="c-header__link c-header__link--search">
 				<span class="u-flex u-align-items-center">
 					Search
 					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
@@ -24,7 +24,7 @@
 				<ul class="c-header__menu">
 					{{#each menu}}
 					<li class="c-header__item">
-						<a class="c-header__link" href="{{url}}">{{label}}</a>
+						<a class="c-header__link" href="{{optionUrl}}">{{label}}</a>
 					</li>
 					{{/each}}
 				</ul>
