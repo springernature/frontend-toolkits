@@ -1,5 +1,8 @@
 # History
 
+## 0.4.0 (2021-10-21)
+    * Demo created with consumable handlebars template
+
 ## 0.3.0 (2018-10-09)
     * Remove utility classes.
 
