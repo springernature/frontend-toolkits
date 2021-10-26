@@ -1,1 +1,5 @@
-{}
+{
+  "dynamicPartials": {
+    "dropdown": "./toolkits/global/packages/global-dropdown/view/dropdown.hbs"
+  }
+}
