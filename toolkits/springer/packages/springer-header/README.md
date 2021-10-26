@@ -19,7 +19,7 @@ Publisher level header for Springer products.
 				<span class="u-display-flex u-flex-align-center">
 					Search
 					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-						<use xlink:href="{{iconUrl}}#search"></use>
+						<use xlink:href="{{iconUrl}}"></use>
 					</svg>
 				</span>
             </a>
