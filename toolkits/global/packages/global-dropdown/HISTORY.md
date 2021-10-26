@@ -1,5 +1,8 @@
 # History
 
+## 0.5.0 (2021-10-26)
+    * Move consumable template to `view` and link to `demo` folder
+
 ## 0.4.0 (2021-10-21)
     * Demo created with consumable handlebars template
 
