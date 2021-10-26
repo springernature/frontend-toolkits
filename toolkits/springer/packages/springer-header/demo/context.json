@@ -6,7 +6,7 @@
 	},
 	"search": {
 		"searchUrl": "#",
-		"iconUrl": "../../images/search.svg"
+		"iconUrl": "../../images/search.svg#i-search"
 	},
 	"menu": [
 		{

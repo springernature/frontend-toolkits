@@ -1,6 +1,10 @@
 # History
 
-## 5.1.1 (2021-10-23)
+## 5.1.2 (2021-10-25)
+    * Update from `u-flex` to `u-display-flex`
+
+## 5.1.1 (2021-10-25)
+    * Icon prefixing
     * Safer prop name for url
 
 ## 5.1.0 (2021-09-10)
