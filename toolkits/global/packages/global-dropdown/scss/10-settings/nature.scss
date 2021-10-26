@@ -1,9 +1,5 @@
-/**
- * @springernature/global-dropdown
- * Default skin settings
- * Replace these in your application
- *
- */
+// Default setting
+@import 'default';
 
 $dropdown--background-color: lightgrey;
 $dropdown--color: black;
@@ -17,17 +13,17 @@ $dropdown--font-size-small: 1.4rem;
 $dropdown--font-size: 1.6rem;
 $dropdown--font-weight: 700;
 
-$dropdown--button-color: black;
 $dropdown--button-background-color: white;
 $dropdown--button-border: 1px solid $dropdown--button-color;
 $dropdown--button-border-radius: 3px;
+$dropdown--button-color: black;
 $dropdown--button-focus-color: #fece3e;
 
-$dropdown--menu-background-color: white;
+$dropdown--menu-background-color: #1A1919;
 $dropdown--menu-border-radius: 3px;
-$dropdown--menu-box-shadow: 0 0 5px 0 #ccc;
+$dropdown--menu-box-shadow: 0 0 5px 0 #1A1919;
 
-$dropdown__menu-link-color: black;
-$dropdown__menu-link-hover-background-color: #29303c;
+$dropdown__menu-link-color: white;
+$dropdown__menu-link-hover-background-color: #536179;
 $dropdown__menu-link-hover-color: white;
 

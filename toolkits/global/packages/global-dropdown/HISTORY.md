@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2021-10-26)
+    * Update styling to use a more complete set of default variables
+    * Add nature settings
+
 ## 0.5.0 (2021-10-26)
     * Move consumable template to `view` and link to `demo` folder
 
