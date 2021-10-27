@@ -3,6 +3,7 @@
 }
 
 .l-stack > * + * {
+	margin-top: $stack--gap; /* ← core browser fallback */
 	margin-top: var(--stack--gap, #{$stack--gap});
 }
 
