@@ -17,6 +17,7 @@
 	white-space: nowrap;
 	margin-bottom: $dropdown--spacing-small;
 	font-size: $dropdown--font-size-small;
+
 	.js & {
 		display: none;
 		visibility: hidden;
@@ -25,6 +26,7 @@
 
 .c-dropdown__menu {
 	@include u-list-reset();
+
 	.js & {
 		background-color: $dropdown--menu-background-color;
 		border-radius: $dropdown--menu-border-radius;
@@ -50,11 +52,13 @@
 		font-size: $dropdown--font-size;
 		display: block;
 		text-decoration: none;
+
 		&:hover {
 			outline: 0;
 			background-color: $dropdown__menu-link-hover-background-color;
 			color: $dropdown__menu-link-hover-color;
 		}
+
 		&:focus {
 			outline: 3px solid $dropdown--button-focus-color;
 		}
@@ -64,6 +68,7 @@
 .c-dropdown__button {
 	display: none;
 	visibility: hidden;
+
 	.js & {
 		align-items: center;
 		background: $dropdown--button-background-color;
