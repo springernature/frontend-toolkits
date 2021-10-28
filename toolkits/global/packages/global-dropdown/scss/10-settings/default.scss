@@ -5,8 +5,29 @@
  *
  */
 
-$global-dropdown--color: red;
-$global-dropdown--hover-color: blue;
-$global-dropdown--border-color: green;
-$global-dropdown--background-color: yellow;
-$global-dropdown--hover-background-color: black;
+$dropdown--background-color: lightgrey;
+$dropdown--color: black;
+$dropdown--line-height: 1.5;
+$dropdown--spacing-x-small: spacing(4);
+$dropdown--spacing-small: spacing(8);
+$dropdown--spacing-medium: spacing(16);
+$dropdown--spacing-large: spacing(24);
+
+$dropdown--font-size-small: 1.4rem;
+$dropdown--font-size: 1.6rem;
+$dropdown--font-weight: 700;
+
+$dropdown--button-color: black;
+$dropdown--button-background-color: white;
+$dropdown--button-border: 1px solid $dropdown--button-color;
+$dropdown--button-border-radius: 3px;
+$dropdown--button-focus-color: #fece3e;
+
+$dropdown--menu-background-color: white;
+$dropdown--menu-border-radius: 3px;
+$dropdown--menu-box-shadow: 0 0 5px 0 #ccc;
+
+$dropdown__menu-link-color: black;
+$dropdown__menu-link-hover-background-color: #29303c;
+$dropdown__menu-link-hover-color: white;
+
