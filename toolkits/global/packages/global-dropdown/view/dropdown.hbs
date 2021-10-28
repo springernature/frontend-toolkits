@@ -1,17 +1,20 @@
-<div class="js">
-	<div class="c-dropdown">
-		<span class="c-dropdown__label">dropdown</span>
-		<button aria-expanded="false" class="c-dropdown__button" data-dropdown>Dropdown
-			{{#with iconURL}}
-				<svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
-					<use xlink:href="{{{this}}}"></use>
-				</svg>
-			{{/with}}
-		</button>
-		<ul class="c-dropdown__menu">
-			<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 1</a></li>
-			<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 2</a></li>
-			<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 3</a></li>
-		</ul>
-	</div>
+<div class="c-dropdown">
+	<span class="c-dropdown__label">dropdown</span>
+	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>Dropdown
+		{{#with iconURL}}
+			<svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
+				<use xlink:href="{{{this}}}"></use>
+			</svg>
+		{{/with}}
+	</button>
+	<ul class="c-dropdown__menu">
+		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 1</a></li>
+		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 2</a></li>
+		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 3</a></li>
+	</ul>
 </div>
+
+<script>
+	// JS Detection Script
+	(function (e) { var t = e.documentElement, n = e.implementation; t.className = 'js'; })(document)
+</script>
