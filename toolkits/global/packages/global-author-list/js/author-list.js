@@ -36,7 +36,7 @@ function authorList(container, config = {}) {
 	authorHideClass = authorHideClass || 'c-author-list__hide';
 	truncatedClass = truncatedClass || 'c-author-list--truncated';
 	buttonCollapsedText = buttonCollapsedText || 'Show all authors';
-	buttonExpandedText = buttonExpandedText || 'Show less authors';
+	buttonExpandedText = buttonExpandedText || 'Show fewer authors';
 	if (hasButtonIcon !== false) {
 		hasButtonIcon = true;
 	}
