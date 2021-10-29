@@ -1,5 +1,8 @@
 # History
 
+## 4.0.2 (2021-10-29)
+    * Update default text for buttonExpandedText config
+
 ## 4.0.1 (2021-10-20)
     * Update readme file with the hasButtonIcon config
 
