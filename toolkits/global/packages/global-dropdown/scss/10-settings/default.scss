@@ -13,6 +13,7 @@ $dropdown--spacing-small: spacing(8);
 $dropdown--spacing-medium: spacing(16);
 $dropdown--spacing-large: spacing(24);
 
+$dropdown--font-size-x-small: 1.2rem;
 $dropdown--font-size-small: 1.4rem;
 $dropdown--font-size: 1.6rem;
 $dropdown--font-weight: 700;
@@ -31,3 +32,5 @@ $dropdown--menu-min-width: 290px;
 $dropdown__menu-link-color: black;
 $dropdown__menu-link-hover-background-color: #29303c;
 $dropdown__menu-link-hover-color: white;
+
+$dropdown__icon-size: $dropdown--font-size-x-small;
