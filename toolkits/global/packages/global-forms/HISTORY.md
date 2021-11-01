@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2021-11-01)
+    * BREAKING
+        * updates global-form SCSS to use Dart Sass.
+
 ## 3.0.3 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
@@ -8,7 +12,7 @@
 
 ## 3.0.1 (2020-10-19)
     * Refer to mixin name in component file correctly
-    
+
 ## 3.0.0 (2020-06-08)
     * BREAKING: Rename mixin and component files
     * Update README
