@@ -1,5 +1,9 @@
 # History
 
+## 1.1.0 (2021-11-01)
+    * Add ellipsis in the button text
+    * Add min-width for the menu
+
 ## 1.0.0 (2021-10-27)
     * Update styling to use a more complete set of default variables
     * Add nature settings
