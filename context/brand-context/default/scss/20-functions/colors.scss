@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * Return a greyscale color based on $context--greyscale-base
  *
@@ -7,10 +8,10 @@
  */
 
 @function greyscale($val: $context--greyscale-min, $opacity: 1) {
-	$opacity: round($opacity * 10) / 10;
+	$opacity: math.div(round($opacity * 10), 10);
 	$lightness: if($val < $context--greyscale-min, $context--greyscale-min, $val);
 	$lightness: if($lightness > $context--greyscale-max, $context--greyscale-max, $lightness);
-	$rounded: round($lightness / $context--greyscale-stops) * $context--greyscale-stops;
+	$rounded: round(math.div($lightness, $context--greyscale-stops)) * $context--greyscale-stops;
 	$color: lighten($context--greyscale-base, $rounded);
 
 	@return rgba($color, $opacity);
