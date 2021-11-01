@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * Card
  * Default branding for component
@@ -6,7 +7,7 @@
 $card--gutter: 16px;
 $card--font-family: inherit;
 $card--font-size: 1.4rem;
-$card--spacing: $card--gutter / 2;
+$card--spacing: math.div($card--gutter, 2);
 $card--padding: $card--gutter;
 $card--padding-x: 24px 0;
 $card--background: transparent;
