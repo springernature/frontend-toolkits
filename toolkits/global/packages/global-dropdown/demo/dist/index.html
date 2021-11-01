@@ -635,6 +635,7 @@ body {
 /**
  * @springernature/global-dropdown
  * Default skin settings
+ * Replace these in your application
  *
  */
 .c-dropdown {
@@ -683,6 +684,13 @@ body {
 	z-index: 1;
 }
 
+@media only screen and (min-width: 540px) {
+	.js .c-dropdown__menu {
+		transform: translateY(16px);
+		min-width: 290px;
+	}
+}
+
 .c-dropdown__link {
 	text-decoration: underline;
 	font-size: 1.4rem;
@@ -725,7 +733,7 @@ body {
 	font-size: 1.6rem;
 	height: 34px;
 	justify-content: space-between;
-	padding: 0 16px;
+	padding: 0 8px;
 	visibility: visible;
 	width: 100%;
 }
@@ -742,6 +750,12 @@ body {
 	transform: rotate(180deg);
 }
 
+.js .c-dropdown__button span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .js .c-dropdown__icon {
 	fill: currentColor;
 	transform: translate(0, 0);
@@ -749,7 +763,8 @@ body {
 	vertical-align: text-top;
 	width: 1em;
 	height: 1em;
-	vertical-align: middle;
+	margin-left: 24px;
+	transform: translateY(6%);
 	flex: 0 0 auto;
 }
 
@@ -759,8 +774,9 @@ body {
 		<h2>Example dropdown</h2>
 <div class="c-dropdown">
 	<span class="c-dropdown__label">dropdown</span>
-	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>Dropdown
-			<svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
+	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>
+		<span>Dropdown</span>
+			<svg class="c-dropdown__icon" role="img" aria-hidden="true" focusable="false" height="10" viewBox="0 0 10 10" width="10">
 				<use xlink:href="../../img/chevron-more.svg#i-chevron-more"></use>
 			</svg>
 	</button>

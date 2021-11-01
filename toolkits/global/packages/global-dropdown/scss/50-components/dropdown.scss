@@ -39,6 +39,11 @@
 		left: 0;
 		width: 100%;
 		z-index: 1;
+
+		@include media-query('sm') {
+			transform: translateY(16px);
+			min-width: $dropdown--menu-min-width;
+		}
 	}
 }
 
@@ -79,7 +84,7 @@
 		font-size: $dropdown--font-size;
 		height: 34px;
 		justify-content: space-between;
-		padding: 0 $dropdown--spacing-medium;
+		padding: 0 $dropdown--spacing-small;
 		visibility: visible;
 		width: 100%;
 
@@ -94,11 +99,18 @@
 				transform: rotate(180deg);
 			}
 		}
+		span {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 }
 
 .js .c-dropdown__icon {
 	@include u-icon();
 	vertical-align: middle;
+	margin-left: $dropdown--spacing-large;
+	transform: translateY(6%);
 	flex: 0 0 auto;
 }

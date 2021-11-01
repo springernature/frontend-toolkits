@@ -1,8 +1,9 @@
 <div class="c-dropdown">
 	<span class="c-dropdown__label">dropdown</span>
-	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>Dropdown
+	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>
+		<span>Dropdown</span>
 		{{#with iconURL}}
-			<svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
+			<svg class="c-dropdown__icon" role="img" aria-hidden="true" focusable="false" height="10" viewBox="0 0 10 10" width="10">
 				<use xlink:href="{{{this}}}"></use>
 			</svg>
 		{{/with}}
