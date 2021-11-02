@@ -16,10 +16,10 @@ Publisher level header for Springer products.
             <!-- #not mandatory -->
             <a href="#"
                class="c-header__link c-header__link--search">
-				<span class="u-flex u-flex-align-center">
+				<span class="u-display-flex u-flex-align-center">
 					Search
 					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-						<use xlink:href="{{iconUrl}}#search"></use>
+						<use xlink:href="{{iconUrl}}"></use>
 					</svg>
 				</span>
             </a>

@@ -9,10 +9,8 @@ Simple box component.
 ```html
 <div class="c-box">
     <h2 class="c-box__heading">
-        <!-- Content -->
+        <!-- Heading -->
     </h2>
-    <a class="c-box__item" href="/path-to-somewhere">
-        <!-- Content -->
-    </a>
+    <!-- Content -->
 </div>
 ```

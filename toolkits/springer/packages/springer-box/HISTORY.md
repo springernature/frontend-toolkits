@@ -1,5 +1,8 @@
 # History
 
+## 8.0.0 (2021-10-28)
+    * Now accepts any content, not just a link
+
 ## 7.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
 

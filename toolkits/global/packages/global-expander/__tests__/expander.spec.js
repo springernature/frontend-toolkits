@@ -499,6 +499,22 @@ describe('Expander', () => {
 			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
 		});
 
+		test('Should use DEFAULT_OPEN option if it is passed to constructor', () => {
+			// Given
+			const clickOffElement = document.createElement('div');
+			element.TARGET.parentNode.insertBefore(clickOffElement, element.TARGET.nextSibling);
+			const expander = new Expander(element.BUTTON, element.TARGET, {
+				DEFAULT_OPEN: true
+			});
+			
+			// When
+			expander.init();
+
+			// Then
+			expect(element.TARGET.classList.contains(className.HIDE)).toBe(false);
+			expect(element.TARGET.hasAttribute('hidden')).toBe(false);
+		});
+
 		test('Should focus on first tababble element inside target when AUTOFOCUS: firstTabbable and button is clicked on', () => {
 			// Given
 			element.TARGET.innerHTML = '<input type="text" value="value">';
