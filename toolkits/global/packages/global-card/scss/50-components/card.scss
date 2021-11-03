@@ -59,6 +59,7 @@
 	@if $card--title-font-weight != null {
 		font-weight: $card--title-font-weight;
 	}
+	margin-top: 0;
 	margin-bottom: $card--spacing;
 	letter-spacing: $card--title-letter-spacing;
 }
