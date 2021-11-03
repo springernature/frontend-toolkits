@@ -15,8 +15,6 @@
 	.l-stack {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
 		gap: var(--stack--gap, #{$stack--gap});
 	}
 }
