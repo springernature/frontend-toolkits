@@ -656,7 +656,7 @@ on the min() function */
 		display: grid;
 		gap: 1em;
 		gap: var(--grid--gap, 1em);
-		grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(var(--grid--basis, min(300px, 100%)), 1fr));
 	}
 }
 

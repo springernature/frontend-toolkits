@@ -17,6 +17,6 @@
 		display: grid;
 		gap: $grid--gap;
 		gap: var(--grid--gap, #{$grid--gap});
-		grid-template-columns: repeat(auto-fit, minmax(#{$grid--basis}, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(var(--grid--basis, #{$grid--basis}), 1fr));
 	}
 }
