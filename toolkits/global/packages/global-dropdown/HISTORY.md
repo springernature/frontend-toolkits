@@ -1,6 +1,6 @@
 # History
 
-## 1.1.0 (2021-11-01)
+## 1.1.0 (2021-11-04)
     * Add ellipsis in the button text
     * Add min-width for the dropdown menu
     * Allow custom icon size via variable
