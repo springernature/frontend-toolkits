@@ -34,14 +34,14 @@
 		box-sizing: border-box;
 		padding: $dropdown--spacing-small 0;
 		position: absolute;
-		transform: translateY(8px);
+		transform: translateY($dropdown--spacing-small);
 		top: 100%;
 		left: 0;
 		width: 100%;
 		z-index: 1;
 
 		@include media-query('sm') {
-			transform: translateY(16px);
+			transform: translateY($dropdown--spacing-medium);
 			min-width: $dropdown--menu-min-width;
 		}
 	}
