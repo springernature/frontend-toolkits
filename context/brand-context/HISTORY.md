@@ -1,5 +1,9 @@
 # History
 
+## 17.1.0 (2021-11-04)
+    * FEATURE:
+        * Add springernature favicons
+
 ## 17.0.0 (2021-10-23)
     * BREAKING:
         * `id` attributes added to all SVG icons for referencing with `<use>`
