@@ -1,5 +1,6 @@
 .l-grid {
 	list-style: none;
+	padding: 0;
 }
 
 .l-grid > * + * {
@@ -9,8 +10,8 @@
 
 
 @supports (display: grid) {
-	.l-grid > * + * {
-		margin-top: 0;
+	.l-grid > * {
+		margin: 0;
 	}
 
 	.l-grid {
