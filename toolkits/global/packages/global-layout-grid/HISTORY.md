@@ -1,5 +1,8 @@
 # History
 
+## 0.2.1 (2021-11-04)
+	* Remove padding from `<ul>`
+
 ## 0.2.0 (2021-11-04)
 	* Added custom property access to column widths (`--grid--basis`)
 
