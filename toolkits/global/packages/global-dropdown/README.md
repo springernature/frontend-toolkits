@@ -37,9 +37,15 @@ The core experience will show a label and a list of items underneath. JavaScript
 
 ### Enhanced dropdown
 
-```
-init(dropdownSelector = '[data-dropdown]', itemSelector = '[data-dropdown-item]') 
-```
-By default the component relies on a data-dropdown and data-dropdown-item HTML attributes. These can be overwritten in the init function.
+```javascript
+import {dropdown} from 'global-dropdown/js';
 
-The first argument is a CSS selector to target the dropdown button. The second argument is a CSS selector to target items inside the list.
+dropdown();
+```
+
+The component uses the Expander from the global toolkit to handle the events. 
+
+You can get a quick implementation by adding these two attributes `data-dropdown` and `data-dropdown-target` in your HTML as shown at the example above.
+
+If you need more flexibility, use the expander component directly following its [documentation](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander).
+

@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2021-11-08)
+    BREAKING
+    * Delete custom js implementation in favour of the expander component to handle interactions.
+
 ## 1.1.0 (2021-11-04)
     * Add ellipsis in the button text
     * Add min-width for the dropdown menu
