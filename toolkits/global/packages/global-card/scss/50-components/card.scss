@@ -11,6 +11,8 @@
 	min-width: 0;
 	padding: $card--padding-x;
 	position: relative;
+	border: $card--border;
+	box-shadow: $card--box-shadow;
 }
 
 .c-card__image {
@@ -103,8 +105,13 @@
 .c-card--dark {
 	background-color: $card--dark-background;
 	color: $card--dark-color;
+	border-width: 0;
 
 	.c-card__title {
 		color: $card--dark-title-color;
+	}
+
+	.c-card__link {
+		color: inherit;
 	}
 }

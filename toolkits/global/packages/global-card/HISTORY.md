@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0 (2021-11-08)
+    * Springer.com settings
+    * Border support
+
 ## 4.0.0 (2021-11-03)
     * BREAKING: 
         * Extraneous padding removed
