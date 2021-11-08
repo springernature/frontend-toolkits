@@ -22,12 +22,12 @@ The core experience will show a label and a list of items underneath. JavaScript
 ```html
 <div class="c-dropdown">
     <span class="c-dropdown__label">dropdown</span>
-    <button class="c-dropdown__button" aria-expanded="false" data-dropdown>Dropdown
+    <button class="c-dropdown__button" aria-expanded="false" data-dropdown data-dropdown-target="#dropdown">Dropdown
         <svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
             <use xlink:href="i-chevron-more"></use>
         </svg>
     </button>
-    <ul class="c-dropdown__menu">
+    <ul class="c-dropdown__menu" id="#dropdown">
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 1</a></li>
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 2</a></li>
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 3</a></li>
