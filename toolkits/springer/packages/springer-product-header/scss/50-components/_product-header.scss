@@ -1,0 +1,100 @@
+.c-product-header {
+	background-color: $product-header--background-color;
+	border-radius: $product-header--border-radius;
+	border: $product-header--border;
+	line-height: $product-header--line-height;
+	padding: $product-header--spacing;
+    box-shadow: $product-header--box-shadow;
+}
+
+.c-product-header__theme {
+	height: $product-header--theme-height;
+	margin: (-$product-header--spacing) (-$product-header--spacing) 0;
+	position: relative;
+	border-top-left-radius: $product-header--border-radius;
+	border-top-right-radius: $product-header--border-radius;
+	overflow: hidden;
+
+	@include media-query('lg') {
+		&::after {
+			content: '';
+			background-color: rgba(255, 255, 255, 0.15);
+			width: $product-header--side-width;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.c-product-header__content {
+	padding-top: $product-header--spacing;
+
+	@include media-query('lg') {
+		display: flex;
+	}
+}
+
+.c-product-header__main {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.c-product-header__side {
+	@include media-query('lg') {
+		flex: 1 0 $product-header--side-width - $product-header--spacing;
+		max-width:  $product-header--side-width - $product-header--spacing;
+		padding-left: $product-header--spacing;
+		margin-left: $product-header--spacing;
+	}
+}
+
+.c-product-header__side:not(:empty) {
+	border-top: $product-header--border;
+	margin-top: $product-header--spacing;
+	padding-top: $product-header--spacing;
+
+	@include media-query('lg') {
+		border-top: 0;
+		border-left: $product-header--border;
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+.c-product-header__cover {
+	margin-top: -$product-header--theme-height;
+	margin-right: $product-header--spacing;
+	position: relative;
+	z-index: 5;
+
+	img {
+		box-shadow: $product-header--cover-box-shadow;
+		border: $product-header--cover-border;
+		border-radius: $product-header--cover-border-radius;
+		max-width: $product-header--cover-width;
+		max-height: $product-header--cover-height;
+	}
+}
+
+.c-product-header__title {
+	@include u-h1;
+	line-height: $product-header--title-line-height;
+	font-size: $product-header--title-font-size;
+	margin-bottom: 0;
+
+	a {
+		@include u-link-inherit;
+	}
+}
+
+.c-product-header__subtitle {
+	font-size: $context--font-size-md;
+	font-family: $context--font-family-sans;
+	margin-bottom: 0;
+}
+
+.c-product-header__imprint {
+	max-height: $product-header--cover-height - $product-header--theme-height;
+}
