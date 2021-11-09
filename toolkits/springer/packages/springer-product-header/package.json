@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/springer-product-header",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Springer Product Header",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^17.1.1"
+}
