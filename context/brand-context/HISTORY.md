@@ -1,5 +1,8 @@
 # History
 
+## 17.1.1 (2021-11-08)
+    * Remove margin on `p:last-child`
+
 ## 17.1.0 (2021-11-04)
     * FEATURE:
         * Add springernature favicons

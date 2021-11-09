@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-layout-grid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "description": "A versatile responsive grid using CSS Grid (no media queries necessary)",
   "keywords": [],
