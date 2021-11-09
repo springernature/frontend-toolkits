@@ -4,6 +4,8 @@ The title, print cover, imprint logo and themed background colour. The title is 
 
 Use the Product header for all pages that feature a Journal, Book or aggregations of content, such as Book series. The cover image comes from DDS. Colour is taken from the cover image automatically. Both the cover and title should link to the homepage of the title.
 
+The dominant colour image is fetched from spindoctor it is not part of the component.
+
 ## Usage
 
 ```html
