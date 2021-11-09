@@ -1172,13 +1172,13 @@ body {
     return Expander;
   }();
 
-  var DATA_COMPONENT = '[data-dropdown]';
+  var DATA_COMPONENT = 'data-dropdown';
   var attributes = {
     targetSelector: "".concat(DATA_COMPONENT, "-target")
   };
 
   var dropdown = function dropdown() {
-    var trigger = document.querySelector(DATA_COMPONENT);
+    var trigger = document.querySelector("[".concat(DATA_COMPONENT, "]"));
     var target = trigger.getAttribute(attributes.targetSelector);
 
     if (trigger.length === 0 || !target) {

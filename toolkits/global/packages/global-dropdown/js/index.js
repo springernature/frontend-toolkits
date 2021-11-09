@@ -1,13 +1,13 @@
 import {Expander} from '../../global-expander/js/expander';
 
-const DATA_COMPONENT = '[data-dropdown]';
+const DATA_COMPONENT = 'data-dropdown';
 
 const attributes = {
 	targetSelector: `${DATA_COMPONENT}-target`
 };
 
 const dropdown = () => {
-	const trigger = document.querySelector(DATA_COMPONENT);
+	const trigger = document.querySelector(`[${DATA_COMPONENT}]`);
 	const target = trigger.getAttribute(attributes.targetSelector);
 
 	if (trigger.length === 0 || !target) {
@@ -15,7 +15,6 @@ const dropdown = () => {
 	}
 
 	const targetElement = document.querySelector(target);
-
 	if (!targetElement) {
 		return;
 	}
