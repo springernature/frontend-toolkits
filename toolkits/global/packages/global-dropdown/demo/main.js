@@ -1,3 +1,3 @@
-import init from '../js';
+import {dropdown} from '../js';
 
-init('[data-dropdown]', '[data-dropdown-item]');
+dropdown();

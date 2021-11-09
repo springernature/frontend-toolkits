@@ -1,6 +1,6 @@
 <div class="c-dropdown">
 	<span class="c-dropdown__label">dropdown</span>
-	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>
+	<button aria-expanded="false" class="c-dropdown__button" data-dropdown data-dropdown-target="#dropdown">
 		<span>Dropdown</span>
 		{{#with iconURL}}
 			<svg class="c-dropdown__icon" role="img" aria-hidden="true" focusable="false" height="10" width="10">
@@ -8,7 +8,7 @@
 			</svg>
 		{{/with}}
 	</button>
-	<ul class="c-dropdown__menu">
+	<ul class="c-dropdown__menu" id="dropdown">
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 1</a></li>
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 2</a></li>
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 3</a></li>
