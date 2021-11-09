@@ -2,34 +2,39 @@
 	<div class="c-header__container">
 		{{#with logo}}
 		<div class="c-header__brand">
-			<a href="{{linkUrl}}" itemprop="url">
+			<a href="{{href}}" itemprop="url">
 				<img alt="{{alt}}" itemprop="logo" width="112" height="30" role="img" src="{{srcUrl}}">
 			</a>
 		</div>
 		{{/with}}
-		<div class="c-header__navigation">
-			{{#with search}}
-			<a href="{{searchUrl}}" class="c-header__link c-header__link--search">
-				<span class="u-display-flex u-align-items-center">
-					Search
-					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-						<use xlink:href="{{iconUrl}}"></use>
-					</svg>
-				</span>
-			</a>
-			{{/with}}
-
-			{{#if menu}}
-			<nav>
-				<ul class="c-header__menu">
-					{{#each menu}}
-					<li class="c-header__item">
-						<a class="c-header__link" href="{{optionUrl}}">{{label}}</a>
-					</li>
-					{{/each}}
-				</ul>
-			</nav>
-			{{/if}}
-		</div>
+		{{#if promotedMenu}}
+		<ul class="c-header__menu">
+			{{#each promotedMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link">
+					<span class="u-display-flex u-align-items-center">
+						{{label}}
+						{{#if iconUrl}}
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="{{iconUrl}}"></use>
+						</svg>
+						{{/if}}
+					</span>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		{{/if}}
 	</div>
+	{{#if navMenu}}
+	<nav class="c-header__nav">
+		<ul class="c-header__nav-menu">
+			{{#each navMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link c-header__link--nav">{{label}}</a>
+			</li>
+			{{/each}}
+		</ul>
+	</nav>
+	{{/if}}
 </header>

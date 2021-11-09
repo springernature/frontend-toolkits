@@ -1,5 +1,9 @@
 # History
 
+## 6.0.0 (2021-11-09)
+    * BREAKING:
+        * Separated navigation into “promoted” (top right) and `<nav>`
+
 ## 5.1.2 (2021-10-25)
     * Update from `u-flex` to `u-display-flex`
 
