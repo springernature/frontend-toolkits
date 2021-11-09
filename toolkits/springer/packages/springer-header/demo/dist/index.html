@@ -2298,55 +2298,61 @@ cite {
 	border-bottom: 4px solid #00285a;
 }
 
-.c-header__container {
-	margin: 0 auto;
-	max-width: 1280px;
-	padding: 0 16px;
+.c-header__container,
+.c-header__menu,
+.c-header__nav-menu {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.c-header__brand {
-	margin-right: 32px;
-}
-
-.c-header__brand a,
-.c-header__brand a:visited,
-.c-header__brand a:hover,
-.c-header__brand a:active {
-	text-decoration: none;
-}
-
-.c-header__qualifier {
-	margin-left: 24px;
-}
-
-@media only screen and (max-width: 539px) {
-	.c-header__qualifier {
-		display: none;
+@supports (gap: 2em) {
+	.c-header__container,
+	.c-header__menu,
+	.c-header__nav-menu {
+		gap: 2em;
 	}
 }
 
-.c-header__navigation {
-	display: flex;
-	align-items: center;
-}
-
-.c-header__menu {
+.c-header__menu,
+.c-header__nav-menu {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	display: flex;
 }
 
 .c-header__item {
 	color: inherit;
-	margin-right: 24px;
 }
 
-.c-header__item:last-child {
-	margin-right: 0;
+@supports not (gap: 2em) {
+	.c-header__item {
+		margin-left: 24px;
+	}
+}
+
+@supports not (gap: 2em) {
+	.c-header__nav .c-header__item {
+		margin-left: 0;
+		margin-right: 24px;
+	}
+}
+
+.c-header__container {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 16px;
+	justify-content: space-between;
+}
+
+@supports not (gap: 2em) {
+	.c-header__brand {
+		margin-right: 32px;
+	}
+}
+
+.c-header__brand a {
+	text-decoration: none;
 }
 
 .c-header__link {
@@ -2367,20 +2373,20 @@ cite {
 	color: inherit;
 }
 
-.c-header__link--search {
-	display: block;
-	background: transparent;
-	border: none;
-	margin: 0 24px 0 0;
+.c-header__link--nav {
+	font-weight: bold;
 }
 
-/**
- * Added with JavaScript via header-menu.js
- */
-.c-header__menu-button {
-	background-color: transparent;
-	border: 0;
-	padding: 0;
+.c-header__nav {
+	border-top: 1px solid #cccccc;
+	margin-top: 16px;
+	padding-top: 16px;
+}
+
+.c-header__nav-menu {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 16px;
 }
 
 		</style>
@@ -2390,31 +2396,32 @@ cite {
 	<div class="c-header__container">
 		<div class="c-header__brand">
 			<a href="/" itemprop="url">
-				<img alt="Springer home" itemprop="logo" width="112" height="30" role="img" src="../../images/logo.svg">
+				<img alt="Springer home" itemprop="logo" width="112" height="30" role="img" src="../../img/logo.svg">
 			</a>
 		</div>
-		<div class="c-header__navigation">
-			<a href="#" class="c-header__link c-header__link--search">
-				<span class="u-display-flex u-align-items-center">
-					Search
-					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-						<use xlink:href="../../images/search.svg#search"></use>
-					</svg>
-				</span>
-			</a>
-
-			<nav>
-				<ul class="c-header__menu">
-					<li class="c-header__item">
-						<a class="c-header__link" href="/path/to/1">Menu option 1</a>
-					</li>
-					<li class="c-header__item">
-						<a class="c-header__link" href="/path/to/2">Menu option 2</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<ul class="c-header__menu">
+			<li class="c-header__item">
+				<a href="/path/to/1" class="c-header__link">
+					<span class="u-display-flex u-align-items-center">
+						SpringerLink shop
+					</span>
+				</a>
+			</li>
+		</ul>
 	</div>
+	<nav class="c-header__nav">
+		<ul class="c-header__nav-menu">
+			<li class="c-header__item">
+				<a href="/path/to/subjects" class="c-header__link c-header__link--nav">Subjects</a>
+			</li>
+			<li class="c-header__item">
+				<a href="/path/to/services" class="c-header__link c-header__link--nav">Services</a>
+			</li>
+			<li class="c-header__item">
+				<a href="/path/to/about" class="c-header__link c-header__link--nav">About</a>
+			</li>
+		</ul>
+	</nav>
 </header>
 
 		<script>

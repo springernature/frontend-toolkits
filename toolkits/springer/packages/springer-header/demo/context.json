@@ -2,20 +2,31 @@
 	"logo": {
 		"srcUrl": "../../img/logo.svg",
 		"alt": "Springer home",
-		"linkUrl": "/"
+		"href": "/"
 	},
 	"search": {
 		"searchUrl": "#",
 		"iconUrl": "../../images/search.svg#i-search"
 	},
-	"menu": [
+	"promotedMenu": [
 		{
-			"label": "Menu option 1",
-			"optionUrl": "/path/to/1"
+			"label": "SpringerLink shop",
+			"href": "/path/to/1",
+			"iconUrl": null
+		}
+	],
+	"navMenu": [
+		{
+			"label": "Subjects",
+			"href": "/path/to/subjects"
 		},
 		{
-			"label": "Menu option 2",
-			"optionUrl": "/path/to/2"
+			"label": "Services",
+			"href": "/path/to/services"
+		},
+		{
+			"label": "About",
+			"href": "/path/to/about"
 		}
 	]
 }
