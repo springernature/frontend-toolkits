@@ -46,16 +46,18 @@ expander.close();
 | AUTOFOCUS          | null          | String  | Moves focus to an element when hitting trigger:                                                                                    |
 |                    |               |         |`firstTabbable` will find the first tabbable element inside the target (will highlight text if appropriate, e.g. input with value). |
 |                    |               |         |`target` will set focus on target element                                                                                           |
-| OPEN_EVENT         | false         | Boolean | Dispatch custom event on trigger once Global Expander has completed it's Open method                                                           |
+| OPEN_EVENT         | false         | Boolean | Dispatch custom event on trigger once Global Expander has completed it's Open method                                               |
+| DEFAULT_OPEN       | false         | Boolean | Set the expander to be open by default                                                                                             |
 
 The data attribute options are the same, but are lowercase and hyphenated (and strings where the option is a boolean):
 
 - `data-expander-target-hide-class`
 - `data-expander-trigger-open-class`
 - `data-expander-trigger-open-label`
-- `data-expander-close-on-clickoff`
+- `data-expander-close-on-focus-out`
 - `data-expander-autofocus`
 - `data-expander-open-event`
+- `data-expander-default-open`
 
 Note: data attribute options will take precedence over any options set during initialisation.
 

@@ -11,18 +11,43 @@
 	min-width: 0;
 	padding: $card--padding-x;
 	position: relative;
+	border: $card--border;
+	box-shadow: $card--box-shadow;
 }
 
 .c-card__image {
-	display: block;
-	margin-bottom: $card--padding;
 	flex: 0 1 auto;
-	width: 100%;
+	position: relative;
+	display: flex;
+	// Center image horizontally
+	// (may cause overflow — not a problem)
+	justify-content: center;
+	overflow: hidden;
+	// 16:9 aspect ratio fallback
+	padding-bottom: 56.25%;
+	@supports (aspect-ratio: 1 / 1) {
+		padding-bottom: 0;
+		// Customizable aspect ratio
+		aspect-ratio: var(--card--image-aspect-ratio, #{$card--image-aspect-ratio});
+	}
 
 	// Not direct child due to picture element usage
 	img {
-		vertical-align: middle;
-		width: 100%;
+		position: absolute;
+		max-width: unset;
+		// Maintain aspect ratio but overflow container
+		// possibly in both dimensions
+		min-width: 100%;
+		min-height: 100%;
+		transform: translateY(-50%);
+		@supports (object-fit: cover) {
+			width: 100%;
+			height: 100%;
+			transform: unset;
+			// Maintain aspect ratio
+			// but only overflow in on dimension
+			object-fit: cover;
+		}
 	}
 }
 
@@ -36,6 +61,7 @@
 	@if $card--title-font-weight != null {
 		font-weight: $card--title-font-weight;
 	}
+	margin-top: 0;
 	margin-bottom: $card--spacing;
 	letter-spacing: $card--title-letter-spacing;
 }
@@ -79,8 +105,13 @@
 .c-card--dark {
 	background-color: $card--dark-background;
 	color: $card--dark-color;
+	border-width: 0;
 
 	.c-card__title {
 		color: $card--dark-title-color;
+	}
+
+	.c-card__link {
+		color: inherit;
 	}
 }

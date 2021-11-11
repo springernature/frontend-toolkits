@@ -253,7 +253,7 @@ function isExpanded(authorListContainer) {
 	const icon = button.querySelector('svg');
 
 	expect(heading.textContent).toBe('Authors');
-	expect(button.textContent).toContain('Show less authors');
+	expect(button.textContent).toContain('Show fewer authors');
 	expect(button.getAttribute('aria-expanded')).toBe('true');
 	expect(icon.innerHTML).toContain('#icon-minus');
 

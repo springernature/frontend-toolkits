@@ -111,7 +111,7 @@ authorList(myAuthorListContainer/*, options*/).init();
 | listModifierClass   | String  | null                         | CSS class to add on initialisation                |
 | buttonClassList     | String  | null                         | List of CSS classes to style the toggle button                           |
 | buttonCollapsedText | String  | Show all authors             | The text the button has when the list is collapsed.                      |
-| buttonExpandedText  | String  | Show less authors            | The text the button has when the list is expanded.                       |
+| buttonExpandedText  | String  | Show fewer authors           | The text the button has when the list is expanded.                       |
 | hasButtonIcon       | Boolean | true                         | A boolean indicating if a button icon should be included                 |
 
 The data attribute options are the same, but are lowercase and hyphenated:
