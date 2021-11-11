@@ -122,4 +122,4 @@ Springer branded site footer
 
 ## Template
 
-The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema.
+The `./demo/index.hbs` template is designed to be consumable by your renderer. See `./demo/context.json` for the expected model / data schema. Note that `./demo/index.hbs` does not include the `<footer>` wrapper. This allows you to combine this footer with the `global-corporate-footer` inside a common `<footer>` landmark/region.

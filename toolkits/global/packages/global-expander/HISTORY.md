@@ -1,5 +1,11 @@
 # History
 
+## 4.2.1 (2021-10-22)
+    * Fix for focus-out option
+
+## 4.2.0 (2021-10-22)
+    * Add DEFAULT_OPEN option
+
 ## 4.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 

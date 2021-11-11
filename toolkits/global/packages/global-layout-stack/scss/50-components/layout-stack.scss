@@ -1,0 +1,20 @@
+.l-stack > * {
+	margin: 0;
+}
+
+.l-stack > * + * {
+	margin-top: $stack--gap; /* ← core browser fallback */
+	margin-top: var(--stack--gap, #{$stack--gap});
+}
+
+@supports (gap: 1.5em) {
+	.l-stack > * {
+		margin: 0;
+	}
+
+	.l-stack {
+		display: flex;
+		flex-direction: column;
+		gap: var(--stack--gap, #{$stack--gap});
+	}
+}

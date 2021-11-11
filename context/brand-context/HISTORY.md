@@ -1,5 +1,16 @@
 # History
 
+## 17.1.1 (2021-11-08)
+    * Remove margin on `p:last-child`
+
+## 17.1.0 (2021-11-04)
+    * FEATURE:
+        * Add springernature favicons
+
+## 17.0.0 (2021-10-23)
+    * BREAKING:
+        * `id` attributes added to all SVG icons for referencing with `<use>`
+
 ## 16.0.0 (2021-10-06)
     * BREAKING:
         * Update the plus icon

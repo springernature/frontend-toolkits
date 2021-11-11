@@ -1,5 +1,14 @@
 # History
 
+## 5.0.0 (2021-11-08)
+    * Springer.com settings
+    * Border support
+
+## 4.0.0 (2021-11-03)
+    * BREAKING: 
+        * Extraneous padding removed
+        * Aspect ratio for images
+
 ## 3.3.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
