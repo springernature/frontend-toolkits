@@ -1,7 +1,7 @@
-$context--link-color: color('medium-blue');
-$context--link-hover-color: color('universal-blue');
-$context--link-visited-color: color('purple');
-$context--link-active-color: color('black');
+$context--link-color: map-get($context--colors, medium-blue);
+$context--link-hover-color: map-get($context--colors, universal-blue);
+$context--link-visited-color: map-get($context--colors, purple);
+$context--link-active-color: map-get($context--colors, black);
 
 $context--link-text-font-sizes: (
 	'medium': $context--font-size-md,
