@@ -30,6 +30,8 @@
 	@include u-icon;
 	flex: 0 0 auto;
 	margin-right: $status-message--gutter-icon;
+	height: $status-message--icon-height;
+	width: $status-message--icon-width;
 }
 
 .c-status-message__icon--top {
