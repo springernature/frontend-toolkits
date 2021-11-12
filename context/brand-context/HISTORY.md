@@ -1,5 +1,8 @@
 # History
 
+## 17.2.0 (2021-11-12)
+    * Add optional width and height to set for `u-icon` mixin 
+
 ## 17.1.1 (2021-11-08)
     * Remove margin on `p:last-child`
 
