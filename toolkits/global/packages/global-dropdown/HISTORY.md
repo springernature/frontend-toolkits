@@ -1,5 +1,8 @@
 # History
 
+## 2.0.1 (2021-11-15)
+    * Fix `Cannot read properties of null (reading 'getAttribute')` errors when there's no `[data-dropdown]` element on the page
+
 ## 2.0.0 (2021-11-08)
     BREAKING
     * Delete custom js implementation in favour of the expander component to handle interactions.
