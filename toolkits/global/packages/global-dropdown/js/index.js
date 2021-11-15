@@ -8,9 +8,12 @@ const attributes = {
 
 const dropdown = () => {
 	const trigger = document.querySelector(`[${DATA_COMPONENT}]`);
-	const target = trigger.getAttribute(attributes.targetSelector);
+	if (!trigger) {
+		return;
+	}
 
-	if (trigger.length === 0 || !target) {
+	const target = trigger.getAttribute(attributes.targetSelector);
+	if (!target) {
 		return;
 	}
 
