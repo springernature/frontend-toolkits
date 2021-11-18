@@ -57,7 +57,7 @@ const autoComplete = arguments_ => {
 		input.removeEventListener('keyup', inputEvents);
 		const resultsContainer = getContainer();
 		if (resultsContainer) {
-			resultsContainer.parentNode.removeChild(resultsContainer);
+			resultsContainer.remove();
 		}
 		document.removeEventListener('click', removeSuggestions);
 		input.setAttribute('aria-expanded', false);
