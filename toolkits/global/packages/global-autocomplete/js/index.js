@@ -131,6 +131,14 @@ const autoComplete = arguments_ => {
 		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
 		addSuggestionEventListeners();
+		if (container()) {
+			container().addEventListener('keydown', ev => {
+				if (ev.key === 'Tab') {
+					removeSuggestions();
+				}
+			});
+		}
+
 		input.setAttribute('aria-expanded', true);
 	};
 
@@ -205,6 +213,12 @@ const autoComplete = arguments_ => {
 			event.preventDefault();
 		}
 	};
+
+	input.addEventListener('keydown', ev => {
+		if (ev.key === 'Tab') {
+			removeSuggestions();
+		}
+	});
 
 	const enable = () => {
 		if (input) {
