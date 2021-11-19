@@ -52,6 +52,7 @@ Import the core styles into your main stylesheet
 @import '@springernature/brand-context/springernature/scss/core';
 
 @import '@springernature/springernature-header/scss/10-settings/layout';
+@import '@springernature/brand-context/springernature/scss/10-settings/typography';
 @import '@springernature/springernature-user-details/scss/10-settings/typography'; // if including user-details data
 @import '@springernature/springernature-user-details/scss/50-components/core'; // if including user-details data
 @import '@springernature/springernature-header/scss/50-components/core';
@@ -62,8 +63,11 @@ Import the enhanced settings and styles into your main stylesheet
 ```scss
 // enhanced.scss
 @import '@springernature/brand-context/springernature/scss/enhanced';
-
 @import '@springernature/springernature-user-details/scss/10-settings/colours'; // if including user-details data
+
+@import '@springernature/brand-context/default/scss/10-settings/breakpoints';
+
 @import '@springernature/springernature-user-details/scss/50-components/enhanced'; // if including user-details data
+@import '@springernature/brand-context/default/scss/30-mixins/media-query';
 @import '@springernature/springernature-header/scss/50-components/enhanced';
 ```

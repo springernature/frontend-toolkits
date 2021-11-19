@@ -61,3 +61,11 @@
 		}
 	}
 }
+// If we have multiple links as part of header navigation
+.c-header__navigation {
+	display: flex;
+}
+.c-header__navigation__links {
+	display:inline-flex;
+	align-self: center;
+}
