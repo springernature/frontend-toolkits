@@ -14,8 +14,17 @@
 		vertical-align: baseline;
 		background: none;
 		border: 0;
+		color: #004b83; // default button text color
 	}
-
+	&__first-name, 
+	&__last-name {
+		color: #004b83; // default text color
+		font-weight: 300; // font-weight adjusted
+	}
+	&__last-name {
+		padding-right: 10px;
+		padding-left: 5px; //added padding left to first name
+	}
 	&__link {
 		cursor: pointer;
 	}
@@ -32,17 +41,17 @@
 		margin-bottom: 10px;
 		color: #222;
 	}
-
-	&__last-name {
-		padding-right: 10px;
-	}
+	
 
 	&__logout {
 		&:hover {
 			color: #fff;
+			background-color: #183642; // background-color is not coming from enhanced on hover
 		}
 
 		display: block;
 		font-size: $small-font-size;
+		line-height: 1.76; // added Line-height
+		letter-spacing: 0.14px; // added letter-spacing
 	}
 }
