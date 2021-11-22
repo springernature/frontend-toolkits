@@ -1,0 +1,36 @@
+.l-cluster {
+	display: flex;
+	@supports (gap: 1em) {
+		gap: var(--cluster--gap, #{$cluster--gap});
+	}
+}
+
+.l-cluster > * {
+	/* ↓ Because margin doubles up */
+	margin: calc(#{$cluster--gap} / 2);
+	@supports (gap: 1em) {
+		margin: 0;
+		gap: var(--cluster--gap, #{$cluster--gap});
+	}
+}
+
+.l-cluster--right {
+	justify-content: flex-end;
+}
+
+.l-cluster--center {
+	justify-content: center;
+}
+
+.l-cluster--top {
+	align-items: flex-start;
+}
+
+.l-cluster--middle {
+	align-items: center;
+}
+
+.l-cluster--bottom {
+	align-items: flex-end;
+}
+
