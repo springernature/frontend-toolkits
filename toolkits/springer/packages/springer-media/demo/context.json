@@ -6,5 +6,8 @@
 	"title": "Example title",
 	"mediaUrl": "/path/from/teaser",
 	"level": "2",
-	"text": "Lorem ipsum dolor sit amet."
+	"text": "Lorem ipsum dolor sit amet.",
+	"dynamicPartials": {
+		"media": "./toolkits/springer/packages/springer-media/view/media.hbs"
+	}
 }
