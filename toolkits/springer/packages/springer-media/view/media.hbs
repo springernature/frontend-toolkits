@@ -1,5 +1,5 @@
 <li class="c-media">
-	{{#with image}}
+	{{#with image.left}}
 	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
 	{{/with}}
 	<div class="c-media__body">
@@ -10,4 +10,7 @@
 		<p>{{text}}</p>
 		{{/if}}
 	</div>
+	{{#with image.right}}
+	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+	{{/with}}
 </li>

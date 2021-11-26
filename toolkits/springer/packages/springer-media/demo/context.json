@@ -1,7 +1,9 @@
 {
 	"image": {
-		"src": "./img/sample.jpg",
-		"alt": "Descriptive alternative txt for image"
+    "left": {
+      "src": "./img/sample.jpg",
+      "alt": "Descriptive alternative txt for left image"
+    }
 	},
 	"title": "Example title",
 	"mediaUrl": "/path/from/teaser",
