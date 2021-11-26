@@ -1,6 +1,6 @@
 {
 	"image": {
-		"src": "/path/to/image",
+		"src": "./img/sample.jpg",
 		"alt": "Descriptive alternative txt for image"
 	},
 	"title": "Example title",
