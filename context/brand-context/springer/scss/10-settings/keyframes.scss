@@ -1,0 +1,16 @@
+$context--keyframes: (
+	transparent-to-yellow: (
+		0%: (
+			background: transparent
+		),
+		25%: (
+			background: color('yellow')
+		),
+		75%: (
+			background: color('yellow')
+		),
+		100%: (
+			background: transparent
+		)
+	)
+);
