@@ -2,7 +2,7 @@
 
 ## 5.0.0 (2021-11-26)
     * BREAKING: move consumable template to view folder
-    * FEATURE: Add option for the image on the right
+    * BREAKING: Image can now appear on the left or the right
     * BUG: No longer reliant on u-text-lg
     * Improve demo
         * Add sample images to the demo
