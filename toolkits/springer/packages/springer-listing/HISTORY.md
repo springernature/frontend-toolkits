@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2021-11-30)
+    * BUG: images not rendering in demo
+
 ## 3.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
 
