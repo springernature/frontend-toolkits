@@ -37,8 +37,8 @@ $context--line-height-h2-min: $context--line-height-h3;
 $context--line-height-h3-min: $context--line-height-h4;
 $context--line-height-h4-min: $context--line-height-h4;
 
-$context--letter-spacing-min: -0.01875rem; // TODO - What is this?
-$context--letter-spacing: -0.0625rem; // TODO - What is this?
+$context--letter-spacing-min: -0.011715625rem; // in Safari this is 0.18745000660419464px not 0.1875px
+$context--letter-spacing: -0.0390625rem;
 
 $context--font-weight-normal: 400;
 $context--font-weight-bold: 700;
