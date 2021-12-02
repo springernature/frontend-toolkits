@@ -1,5 +1,8 @@
 .l-cluster {
 	display: flex;
+	flex-wrap: wrap;
+	/* ↓ In case it is a list */
+	list-style: none;
 	@supports (gap: 1em) {
 		gap: var(--cluster--gap, #{$cluster--gap});
 	}

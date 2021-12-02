@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-	<head>
+<!DOCTYPE html><html lang="en"><head>
 		<meta charset="utf-8">
 		<title>@springernature/global-layout-cluster</title>
 		<style>
@@ -834,12 +832,15 @@ body {
 }
 
 /**
- * @springernature/global-layout-cluster
- * Default skin settings
- *
- */
+* @springernature/global-layout-cluster
+* Default skin settings
+*
+*/
 .l-cluster {
 	display: flex;
+	flex-wrap: wrap;
+	/* ↓ In case it is a list */
+	list-style: none;
 }
 
 @supports (gap: 1em) {
@@ -883,15 +884,35 @@ body {
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="l-cluster">
-	<button class="u-button">Edit</button>
-	<button class="u-button">Save</button>
-	<button class="u-button">Delete</button>
-	<button class="u-button">Share</button>
+		<h2>Default</h2>
+
+<div class="l-cluster">
+		<button class="u-button">First button</button>
+		<button class="u-button">Button 2</button>
+		<button class="u-button">A third button</button>
+		<button class="u-button">The final button</button>
+</div>
+
+<h2>Horizontal alignment "center"</h2>
+
+<div class="l-cluster l-cluster--center">
+		<button class="u-button">First button</button>
+		<button class="u-button">Button 2</button>
+		<button class="u-button">A third button</button>
+		<button class="u-button">The final button</button>
+</div>
+
+<h2>Horizontal alignment "right"</h2>
+
+<div class="l-cluster l-cluster--right">
+		<button class="u-button">First button</button>
+		<button class="u-button">Button 2</button>
+		<button class="u-button">A third button</button>
+		<button class="u-button">The final button</button>
 </div>
 
 		<script>
 			// no JS found for package
 		</script>
-	</body>
-</html>
+	
+</body></html>
