@@ -1,5 +1,11 @@
 # History
 
+## 17.3.1 (2021-12-01)
+    * BUG: Add yellow to the springer context-colours
+
+## 17.3.0 (2021-11-30)
+    * Add keyframes settings to springer brand
+
 ## 17.2.0 (2021-11-12)
     * Add optional width and height to set for `u-icon` mixin 
 

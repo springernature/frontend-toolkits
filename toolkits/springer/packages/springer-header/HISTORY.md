@@ -1,5 +1,8 @@
 # History
 
+## 6.0.1 (2021-11-30)
+    * BUG: images not rendering in demo
+
 ## 6.0.0 (2021-11-09)
     * BREAKING:
         * Separated navigation into “promoted” (top right) and `<nav>`
