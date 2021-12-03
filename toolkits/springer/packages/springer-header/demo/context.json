@@ -1,12 +1,12 @@
 {
 	"logo": {
-		"srcUrl": "../../img/logo.svg",
+		"srcUrl": "../img/logo.svg",
 		"alt": "Springer home",
 		"href": "/"
 	},
 	"search": {
 		"searchUrl": "#",
-		"iconUrl": "../../images/search.svg#i-search"
+		"iconUrl": "../images/search.svg#i-search"
 	},
 	"promotedMenu": [
 		{

@@ -28,7 +28,7 @@
 	&--open {
 		align-items: flex-start;
 		background-color: rgba(0, 0, 0, 0.4);
-		content: '';
+		content: "";
 		display: flex;
 		justify-content: center;
 		overflow-y: scroll;
@@ -37,6 +37,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
+		z-index: 99999;
 	}
 
 	&__trigger {
