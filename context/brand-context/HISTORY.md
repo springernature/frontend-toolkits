@@ -1,5 +1,8 @@
 # History
 
+## 17.4.0 (2021-12-03)
+    * Add cart icon
+
 ## 17.3.1 (2021-12-01)
     * BUG: Add yellow to the springer context-colours
 
