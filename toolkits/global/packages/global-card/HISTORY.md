@@ -1,7 +1,8 @@
 # History
 
 ## 6.0.0 (2021-12-03)
-    * Changes all typographic values to accomodate the root font size change.
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
 
 ## 5.0.0 (2021-11-08)
     * Springer.com settings

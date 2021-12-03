@@ -1,7 +1,8 @@
 # History
 
 ## 4.0.0 (2021-12-03)
-    * Changes all typographic values to accomodate the root font size change.
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
 ## 3.1.1 (2021-10-23)
     * Safer prop name for url
 

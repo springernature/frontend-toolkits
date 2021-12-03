@@ -1,10 +1,11 @@
 # History
 
 ## 18.0.0 (2021-12-03)
-    * Changes the root font size to 100%.
-    * Changes all typographic values to accomodate the root font size change.
-    * Changes any typographic values set in px values to rem.
-    
+    * BREAKING:
+        * Changes the root font size to 100%.
+        * Changes all typographic values to accomodate the root font size change.
+        * Changes any typographic values set in px values to rem.
+
 ## 17.4.0 (2021-12-03)
     * Add cart icon
 

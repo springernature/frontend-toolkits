@@ -1,7 +1,8 @@
 # History
 
 ## 5.0.0 (2021-12-03)
-    * Changes all typographic values to accomodate the root font size change.
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
 ## 4.0.2 (2021-10-29)
     * Update default text for buttonExpandedText config
 

@@ -1,7 +1,8 @@
 # History
 
 ## 5.0.0 (2021-12-03)
-    * Changes all typographic values to accomodate the root font size change.
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
 
 ## 4.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
