@@ -1,5 +1,11 @@
 # History
 
+## 18.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes the root font size to 100%.
+        * Changes all typographic values to accomodate the root font size change.
+        * Changes any typographic values set in px values to rem.
+
 ## 17.4.0 (2021-12-03)
     * Add cart icon
 
@@ -10,7 +16,7 @@
     * Add keyframes settings to springer brand
 
 ## 17.2.0 (2021-11-12)
-    * Add optional width and height to set for `u-icon` mixin 
+    * Add optional width and height to set for `u-icon` mixin
 
 ## 17.1.1 (2021-11-08)
     * Remove margin on `p:last-child`
@@ -98,10 +104,10 @@
 
 ## 11.1.0 (2021-04-14)
     * Add fluid typography for headings to nature brand
-        * Adjust font-size, line-height and letter-spacing 
+        * Adjust font-size, line-height and letter-spacing
 
 ## 11.0.1 (2021-03-12)
-    * Change h4 to serif in springer context 
+    * Change h4 to serif in springer context
 
 ## 11.0.0 (2021-03-12)
     * BREAKING:
@@ -113,7 +119,7 @@
 
 ## 10.1.2 (2021-03-01)
     * BUG: components reference missing default font-sizes
-    * Add default font sizes 
+    * Add default font sizes
 
 ## 10.1.1 (2021-02-24)
     * Change font family to serif for SN u-h4,u-h5
