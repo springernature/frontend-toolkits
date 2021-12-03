@@ -761,7 +761,8 @@ body {
 	  TRIGGER_OPEN_LABEL: undefined,
 	  CLOSE_ON_FOCUS_OUT: true,
 	  AUTOFOCUS: null,
-	  OPEN_EVENT: false
+	  OPEN_EVENT: false,
+	  DEFAULT_OPEN: false
 	};
 
 	var Expander = /*#__PURE__*/function () {
@@ -775,7 +776,7 @@ body {
 	    this._triggerEl = trigger;
 	    this._targetEl = target;
 	    this._originalTriggerText = trigger.textContent;
-	    this._isOpen = false;
+	    this._isOpen = this._options.DEFAULT_OPEN;
 	    this._handleButtonClick = this._handleButtonClick.bind(this);
 	    this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 	    this._handleDocumentClick = this._handleDocumentClick.bind(this);
@@ -1016,6 +1017,7 @@ body {
 	      if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
 	        // eslint-disable-next-line no-script-url
 	        this._triggerEl.setAttribute('href', 'javascript:;');
+
 	        this._triggerEl.setAttribute('role', 'button');
 	      } // Warn screen reader users when you are stealing focus
 
@@ -1044,9 +1046,10 @@ body {
 	  TARGET_HIDE_CLASS: DATA_COMPONENT + '-hide-class',
 	  TRIGGER_OPEN_CLASS: DATA_COMPONENT + '-trigger-open-class',
 	  TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',
-	  CLOSE_ON_CLICKOFF: DATA_COMPONENT + '-close-on-focus-out',
+	  CLOSE_ON_FOCUS_OUT: DATA_COMPONENT + '-close-on-focus-out',
 	  AUTOFOCUS: DATA_COMPONENT + '-autofocus',
-	  OPEN_EVENT: DATA_COMPONENT + '-open-event'
+	  OPEN_EVENT: DATA_COMPONENT + '-open-event',
+	  DEFAULT_OPEN: DATA_COMPONENT + '-default-open'
 	};
 	/**
 	 * Data Attribute API
@@ -1081,7 +1084,7 @@ body {
 
 	expander();
 
-}());
+})();
 
 		</script>
 	</body>
