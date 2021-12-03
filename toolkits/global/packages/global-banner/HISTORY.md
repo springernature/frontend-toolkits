@@ -1,5 +1,8 @@
 # History
 
+## 5.0.0 (2021-12-03)
+    * Changes all typographic values to accomodate the root font size change.
+
 ## 4.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
@@ -50,10 +53,10 @@
 
 ## 0.1.0 (2019-10-14)
     * Added underline modifier for link element
-    
+
 ## 0.0.2 (2019-09-27)
     * Removed unused `--logo-height` variable
     * Renamed link color variable
-    
+
 ## 0.0.1 (2019-09-24)
     * Added banner setting and styles

@@ -1,5 +1,8 @@
 # History
 
+## 1.0.0 (2021-12-03)
+    * Changes all typographic values to accomodate the root font size change.
+
 ## 0.1.1 (2021-06-02)
 
 - Add some default inline `body` tag style to uniformize demo rendering in

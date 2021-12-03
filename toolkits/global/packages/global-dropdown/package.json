@@ -1,11 +1,11 @@
 {
   "name": "@springernature/global-dropdown",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "Display a contextual list of links controlled by a toggle",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "16.0.0",
+  "brandContext": "18.0.0",
   "dependencies": {
     "@springernature/global-expander": "^4.0.2"
   }

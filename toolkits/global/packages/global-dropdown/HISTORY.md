@@ -1,5 +1,9 @@
 # History
 
+
+## 3.0.0 (2021-12-03)
+    * Changes all typographic values to accomodate the root font size change.
+
 ## 2.0.1 (2021-11-15)
     * Fix `Cannot read properties of null (reading 'getAttribute')` errors when there's no `[data-dropdown]` element on the page
 

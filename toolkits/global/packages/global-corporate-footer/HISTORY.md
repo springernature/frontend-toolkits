@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2021-12-03)
+    * Changes all typographic values to accomodate the root font size change.
+
 ## 2.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
@@ -23,6 +26,6 @@
 ## 0.1.1 (2020-09-02)
     * Use font-size mixin
     * Use pixel value for nature font-size to workaround clash of mixin
-    
+
 ## 0.1.0 (2020-09-02)
     * Initial commit

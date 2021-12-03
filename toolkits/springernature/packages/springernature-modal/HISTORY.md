@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2021-12-03)
+    * Changes all typographic values to accomodate the root font size change.
+
 ## 3.0.0 (2021-02-08)
     * BREAKING: switch to use new `brand-context` dependency
     * Update colours keys

@@ -1,6 +1,6 @@
 {
 	"name": "@springernature/global-forms",
-	"version": "3.0.3",
+	"version": "4.0.0",
 	"license": "MIT",
 	"description": "form component",
 	"keywords": [
@@ -8,5 +8,5 @@
 	  "component"
 	],
   "author": "Jack Watkins",
-  "brandContext": "^6.0.0"
+  "brandContext": "^18.0.0"
   }
