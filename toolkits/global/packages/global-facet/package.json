@@ -5,7 +5,7 @@
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^18.0.0",
+  "brandContext": "^17.0.0",
   "dependencies": {
     "@springernature/global-javascript": "^3.0.3",
     "@springernature/global-expander": "^4.0.2"
