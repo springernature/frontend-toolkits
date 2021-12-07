@@ -1,0 +1,42 @@
+.c-hero {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $hero--background-color;
+	color: #fff;
+}
+
+.c-hero__image {
+	position: relative;
+	min-height: 20rem;
+	flex-grow: 1;
+	flex-basis: 30rem;
+}
+
+.c-hero__image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.c-hero__content {
+	flex-basis: 0;
+	flex-grow: 666;
+	min-width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: spacing(32);
+}
+
+.c-hero__content ul {
+	padding-left: 1em;
+}
+
+.c-hero__content > * {
+	margin: 0;
+}
+
+.c-hero__content > * + * {
+	margin-top: spacing(16);
+}
