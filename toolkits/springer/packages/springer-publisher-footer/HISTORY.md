@@ -1,5 +1,11 @@
 # History
 
+## 5.0.1 (2021-11-30)
+    * BUG: images not rendering in demo
+
+## 5.0.0 (2021-11-05)
+    * Removed `<footer>` wrapper so it can be combined with global-corporate-footer
+
 ## 4.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
 

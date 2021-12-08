@@ -27,7 +27,7 @@
 }
 
 .c-status-message__icon {
-	@include u-icon;
+	@include u-icon($status-message--icon-size, $status-message--icon-size);
 	flex: 0 0 auto;
 	margin-right: $status-message--gutter-icon;
 }

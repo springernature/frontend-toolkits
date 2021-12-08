@@ -1,8 +1,19 @@
 # History
 
-## 4.0.0 (2021-11-01)
-    * BREAKING
+## 6.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
         * updates global-card to use Dart Sass.
+        
+## 5.0.0 (2021-11-08)
+    * Springer.com settings
+    * Border support
+
+## 4.0.0 (2021-11-03)
+    * BREAKING:
+        * Extraneous padding removed
+        * Aspect ratio for images
+
 ## 3.3.0 (2021-09-20)
     * Demo created with consumable handlebars template
 

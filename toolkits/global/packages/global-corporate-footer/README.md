@@ -25,3 +25,5 @@ To include `global-corporate-footer` in your application, you need to choose **O
     </div>
 </div>
 ```
+
+Note that a `<footer>` region/landmark is not included. This allows you to combine this component with—for example—`springer-publisher-footer` inside a common `<footer>`.

@@ -59,7 +59,12 @@
       "hbs",
       "scss",
       "css",
-      "md"
+      "md",
+      "jpg",
+      "jpeg",
+      "gif",
+      "svg",
+      "png"
     ]
   },
   "CSSDirectoryStructure": {

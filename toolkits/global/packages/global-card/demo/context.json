@@ -1,6 +1,6 @@
 {
 	"image": {
-		"src": "/path/to/image",
+		"src": "https://picsum.photos/500/500",
 		"alt": "descriptive alternative text"
 	},
 	"title": {

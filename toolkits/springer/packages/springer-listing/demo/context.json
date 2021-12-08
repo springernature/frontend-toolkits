@@ -3,7 +3,7 @@
 	"level": "2",
 	"text": "Lorem ipsum dolor sit amet.",
 	"image": {
-		"src": "/path/to/image",
+		"src": "./img/sample.jpg",
 		"alt": "Text alternative for the image"
 	}
 }
