@@ -1,5 +1,8 @@
 # History
 
+## 5.1.1 (2021-11-18)
+    * Tab keypress should trigger default behaviour, i.e. move to next action on page rather than nav through suggestions
+
 ## 5.1.0 (2021-06-21)
     * Ensures aria-expanded is set correctly when search results are generated and removed
 

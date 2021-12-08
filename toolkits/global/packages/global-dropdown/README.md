@@ -22,12 +22,12 @@ The core experience will show a label and a list of items underneath. JavaScript
 ```html
 <div class="c-dropdown">
     <span class="c-dropdown__label">dropdown</span>
-    <button class="c-dropdown__button" aria-expanded="false" data-dropdown>Dropdown
+    <button class="c-dropdown__button" aria-expanded="false" data-dropdown data-dropdown-target="#dropdown">Dropdown
         <svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
             <use xlink:href="i-chevron-more"></use>
         </svg>
     </button>
-    <ul class="c-dropdown__menu">
+    <ul class="c-dropdown__menu" id="#dropdown">
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 1</a></li>
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 2</a></li>
         <li><a href="#" class="c-dropdown__link" data-dropdown-item>Option 3</a></li>
@@ -37,9 +37,15 @@ The core experience will show a label and a list of items underneath. JavaScript
 
 ### Enhanced dropdown
 
-```
-init(dropdownSelector = '[data-dropdown]', itemSelector = '[data-dropdown-item]') 
-```
-By default the component relies on a data-dropdown and data-dropdown-item HTML attributes. These can be overwritten in the init function.
+```javascript
+import {dropdown} from 'global-dropdown/js';
 
-The first argument is a CSS selector to target the dropdown button. The second argument is a CSS selector to target items inside the list.
+dropdown();
+```
+
+The component uses the Expander from the global toolkit to handle the events. 
+
+You can get a quick implementation by adding these two attributes `data-dropdown` and `data-dropdown-target` in your HTML as shown at the example above.
+
+If you need more flexibility, use the expander component directly following its [documentation](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander).
+

@@ -1,5 +1,8 @@
 # History
 
+## 3.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
 ## 2.2.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
@@ -27,10 +30,10 @@
     * Bump `brand-context` version
 
 ## 0.0.3 (2020-06-11)
-    * Move font styles to `.c-ad__label` 
+    * Move font styles to `.c-ad__label`
     * Update readme examples
     * Bump `brand-context` version
-	
+
 ## 0.0.2 (2020-06-08)
 	* Bump `brand-context` version
 

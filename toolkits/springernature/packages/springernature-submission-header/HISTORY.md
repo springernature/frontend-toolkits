@@ -1,5 +1,9 @@
 # History
 
+## 1.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
 ## 0.7.0 (2021-09-29)
 	* Add some more styles for author list
 ## 0.6.2 (2021-09-20)

@@ -3,6 +3,11 @@
 	flex-wrap: wrap;
 }
 
+.l-with-sidebar > * {
+	// Sidebar children should not retain margin
+	margin: 0;
+}
+
 .l-with-sidebar__sidebar {
 	flex-grow: 1;
 	flex-basis: $with-sidebar--basis; /* fallback static value for IE */

@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-layout-with-sidebar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "A two column layout with one column as a sidebar",
   "keywords": [],

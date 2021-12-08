@@ -635,6 +635,7 @@ body {
 /**
  * @springernature/global-dropdown
  * Default skin settings
+ * Replace these in your application
  *
  */
 .c-dropdown {
@@ -683,6 +684,13 @@ body {
 	z-index: 1;
 }
 
+@media only screen and (min-width: 540px) {
+	.js .c-dropdown__menu {
+		transform: translateY(16px);
+		min-width: 290px;
+	}
+}
+
 .c-dropdown__link {
 	text-decoration: underline;
 	font-size: 1.4rem;
@@ -725,7 +733,7 @@ body {
 	font-size: 1.6rem;
 	height: 34px;
 	justify-content: space-between;
-	padding: 0 16px;
+	padding: 0 8px;
 	visibility: visible;
 	width: 100%;
 }
@@ -742,6 +750,12 @@ body {
 	transform: rotate(180deg);
 }
 
+.js .c-dropdown__button span {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .js .c-dropdown__icon {
 	fill: currentColor;
 	transform: translate(0, 0);
@@ -750,6 +764,9 @@ body {
 	width: 1em;
 	height: 1em;
 	vertical-align: middle;
+	margin-left: 24px;
+	transform: translateY(6%);
+	font-size: 1.2rem;
 	flex: 0 0 auto;
 }
 
@@ -759,12 +776,13 @@ body {
 		<h2>Example dropdown</h2>
 <div class="c-dropdown">
 	<span class="c-dropdown__label">dropdown</span>
-	<button aria-expanded="false" class="c-dropdown__button" data-dropdown>Dropdown
-			<svg aria-hidden="true" width="10" height="10" aria-hidden="true" focusable="false">
+	<button aria-expanded="false" class="c-dropdown__button" data-dropdown data-dropdown-target="#dropdown">
+		<span>Dropdown</span>
+			<svg class="c-dropdown__icon" role="img" aria-hidden="true" focusable="false" height="10" width="10">
 				<use xlink:href="../../img/chevron-more.svg#i-chevron-more"></use>
 			</svg>
 	</button>
-	<ul class="c-dropdown__menu">
+	<ul class="c-dropdown__menu" id="dropdown">
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 1</a></li>
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 2</a></li>
 		<li><a data-dropdown-item href="#" class="c-dropdown__link">Option 3</a></li>
@@ -780,141 +798,404 @@ body {
 			(function () {
   'use strict';
 
-  function _toConsumableArray(arr) {
-    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
-  }
-
-  function _arrayWithoutHoles(arr) {
-    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-  }
-
-  function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-  }
-
-  function _unsupportedIterableToArray(o, minLen) {
-    if (!o) return;
-    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-    var n = Object.prototype.toString.call(o).slice(8, -1);
-    if (n === "Object" && o.constructor) n = o.constructor.name;
-    if (n === "Map" || n === "Set") return Array.from(o);
-    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-  }
-
-  function _arrayLikeToArray(arr, len) {
-    if (len == null || len > arr.length) len = arr.length;
-
-    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-    return arr2;
-  }
-
-  function _nonIterableSpread() {
-    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-  }
-
-  /* eslint no-use-before-define: ["error", { "functions": false, "variables": false }] */
-  var actions = {
-    ESC: ['Escape', 'Esc', 27],
-    UP: ['ArrowUp', 38],
-    DOWN: ['ArrowDown', 40]
-  };
-  var dropdownButtons;
-  var dropdownItems;
-
-  var normaliseKeyEvent = function normaliseKeyEvent(event) {
-    return event.key || event.keyCode;
-  };
-
-  var keyEventIsInAction = function keyEventIsInAction(event, targetAction) {
-    return targetAction.includes(normaliseKeyEvent(event));
-  };
-
-  var escapekeyCloseDropdown = function escapekeyCloseDropdown(event) {
-    if (keyEventIsInAction(event, actions.ESC)) {
-      dropdownButtons.forEach(function (button) {
-        closeDropdown(button);
-        button.focus();
-      });
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
     }
-  };
+  }
 
-  var closeDropdown = function closeDropdown(button) {
-    button.setAttribute('aria-expanded', 'false');
-    button.nextElementSibling.style.display = 'none';
-    button.querySelector('svg').style.transform = null;
-    document.removeEventListener('keydown', escapekeyCloseDropdown);
-  };
-
-  var openDropdown = function openDropdown(button) {
-    button.setAttribute('aria-expanded', 'true');
-    button.nextElementSibling.style.display = null;
-    button.querySelector('svg').style.transform = 'rotate(180deg)';
-    button.nextElementSibling.querySelector('[data-dropdown-item]').focus();
-    document.addEventListener('keydown', escapekeyCloseDropdown);
-  };
-
-  var toggleDropdown = function toggleDropdown(button) {
-    if (button.getAttribute('aria-expanded') === 'false') {
-      openDropdown(button);
-    } else if (button.getAttribute('aria-expanded') === 'true') {
-      closeDropdown(button);
+  function _defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
     }
-  };
+  }
 
-  var handleUpArrow = function handleUpArrow(index, event) {
-    if (keyEventIsInAction(event, actions.UP)) {
-      event.preventDefault();
+  function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+  }
 
-      if (index === 0) {
-        dropdownItems[dropdownItems.length - 1].focus();
-      } else {
-        dropdownItems[index - 1].focus();
-      }
+  var makeArray = function makeArray(iterable) {
+    var list = [];
+
+    if (!iterable) {
+      return list;
     }
-  };
 
-  var handleDownArrow = function handleDownArrow(index, event) {
-    if (keyEventIsInAction(event, actions.DOWN)) {
-      event.preventDefault();
-
-      if (index === dropdownItems.length - 1) {
-        dropdownItems[0].focus();
-      } else {
-        dropdownItems[index + 1].focus();
-      }
-    }
-  };
-
-  var init = function init() {
-    var dropdownSelector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '[data-dropdown]';
-    var itemSelector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '[data-dropdown-item]';
-    dropdownButtons = _toConsumableArray(document.querySelectorAll(dropdownSelector));
-    dropdownItems = _toConsumableArray(document.querySelectorAll(itemSelector));
-
-    _toConsumableArray(document.querySelectorAll('.c-dropdown__menu')).forEach(function (dropdown) {
-      dropdown.style.display = 'none';
+    Array.prototype.forEach.call(iterable, function (item) {
+      list.push(item);
     });
+    return list;
+  };
 
-    dropdownButtons.forEach(function (button) {
-      button.addEventListener('click', toggleDropdown.bind(null, button));
-    });
-    document.addEventListener('keyup', function () {
-      if (!document.activeElement.matches('[data-dropdown-item]')) {
-        dropdownButtons.forEach(function (button) {
-          closeDropdown(button);
+  /**
+   * create-event.js
+   * Wrapper for customEvent
+   * Generate namespaced events
+   */
+  /**
+   * Polyfill customEvent
+   * @function customEvent
+   * @param {String} eventName namespaced name of the event
+   * @param {Object=} _parameters customEvent options
+   * @return {Event}
+   */
+
+  var customEvent = function customEvent(eventName, _parameters) {
+    _parameters = _parameters || {
+      bubbles: false,
+      cancelable: false,
+      detail: null
+    };
+    var event = document.createEvent('CustomEvent');
+    event.initCustomEvent(eventName, _parameters.bubbles, _parameters.cancelable, _parameters.detail);
+    return event;
+  };
+  /**
+   * Create a custom event
+   * @function createEvent
+   * @param {String} eventName name of the event
+   * @param {String} namespace namespace e.g. component name
+   * @param {Object=} _parameters customEvent options
+   * @return {Event}
+   */
+
+
+  var createEvent = function createEvent(eventName, namespace, _parameters) {
+    var event;
+
+    if (namespace === undefined) {
+      throw new Error('Missing namespace in `createEvent` function');
+    }
+
+    if (typeof window.CustomEvent === 'function') {
+      event = new CustomEvent("".concat(namespace, ":").concat(eventName), _parameters);
+    } else {
+      event = customEvent("".concat(namespace, ":").concat(eventName), _parameters);
+    }
+
+    return event;
+  };
+
+  /**
+   * Local Constants
+   */
+
+  var defaultOptions = {
+    TARGET_HIDE_CLASS: 'u-js-hide',
+    TRIGGER_OPEN_CLASS: 'is-open',
+    TRIGGER_OPEN_LABEL: undefined,
+    CLOSE_ON_FOCUS_OUT: true,
+    AUTOFOCUS: null,
+    OPEN_EVENT: false,
+    DEFAULT_OPEN: false
+  };
+
+  var Expander = /*#__PURE__*/function () {
+    function Expander(trigger, target) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+      _classCallCheck(this, Expander);
+
+      this._options = Object.assign({}, defaultOptions, options);
+      this._autoFocusElement = trigger;
+      this._triggerEl = trigger;
+      this._targetEl = target;
+      this._originalTriggerText = trigger.textContent;
+      this._isOpen = this._options.DEFAULT_OPEN;
+      this._handleButtonClick = this._handleButtonClick.bind(this);
+      this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
+      this._handleDocumentClick = this._handleDocumentClick.bind(this);
+      this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
+    }
+    /**
+     * Event Handlers
+     */
+
+
+    _createClass(Expander, [{
+      key: "_handleButtonClick",
+      value: function _handleButtonClick(event) {
+        event.preventDefault();
+
+        if (this._isOpen) {
+          this.close();
+        } else {
+          this.open();
+        }
+      }
+    }, {
+      key: "_handleButtonKeydown",
+      value: function _handleButtonKeydown(event) {
+        if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+
+          if (this._isOpen) {
+            this.close();
+          } else {
+            this.open();
+          }
+        }
+      }
+    }, {
+      key: "_handleDocumentKeydown",
+      value: function _handleDocumentKeydown(event) {
+        var _this = this;
+
+        if (event.key === 'Escape') {
+          this.close();
+
+          this._triggerEl.focus();
+        }
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          if (event.key === 'Tab' && event.shiftKey === true) {
+            if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
+              event.preventDefault();
+              window.requestAnimationFrame(function () {
+                _this.close();
+
+                _this._triggerEl.focus();
+              });
+            }
+          }
+
+          if (event.key === 'Tab' && event.shiftKey === false) {
+            if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
+              event.preventDefault();
+              window.requestAnimationFrame(function () {
+                _this.close();
+
+                _this._triggerEl.focus();
+              });
+            }
+          }
+        }
+      }
+    }, {
+      key: "_handleDocumentClick",
+      value: function _handleDocumentClick(event) {
+        var target = event.target;
+
+        if (target === this._targetEl || target === this._triggerEl || this._targetEl.contains(target) || this._triggerEl.contains(target)) {
+          return;
+        }
+
+        this.close();
+      }
+      /**
+       * Temporary Event Listeners
+       */
+
+    }, {
+      key: "_setupTemporaryEventListeners",
+      value: function _setupTemporaryEventListeners() {
+        document.addEventListener('keydown', this._handleDocumentKeydown);
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          document.addEventListener('click', this._handleDocumentClick);
+        }
+      }
+    }, {
+      key: "_removeTemporaryEventListeners",
+      value: function _removeTemporaryEventListeners() {
+        document.removeEventListener('keydown', this._handleDocumentKeydown);
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          document.removeEventListener('click', this._handleDocumentClick);
+        }
+      }
+      /**
+       * Attributes
+       */
+
+    }, {
+      key: "_updateAttributes",
+      value: function _updateAttributes() {
+        // eslint-disable-next-line unicorn/consistent-function-scoping
+        this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
+
+        if (this._isOpen) {
+          this._targetEl.removeAttribute('hidden');
+        } else {
+          this._targetEl.setAttribute('hidden', '');
+        }
+      }
+      /**
+       * Class attributes
+       */
+
+    }, {
+      key: "_updateClassAttributes",
+      value: function _updateClassAttributes() {
+        if (this._isOpen) {
+          this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
+
+          this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
+        } else {
+          this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+
+          this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+        }
+      }
+      /**
+       * Trigger Label
+       */
+
+    }, {
+      key: "_updateTriggerLabel",
+      value: function _updateTriggerLabel() {
+        if (this._options.TRIGGER_OPEN_LABEL) {
+          this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
+        }
+      }
+      /**
+       * Tabbable Items
+       */
+
+    }, {
+      key: "_updateTabbableItems",
+      value: function _updateTabbableItems() {
+        this._targetTabbableItems = makeArray(this._targetEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')).filter(function (element) {
+          return window.getComputedStyle(element).getPropertyValue('visibility') !== 'hidden';
         });
       }
-    });
-    dropdownItems.forEach(function (item, index) {
-      item.addEventListener('keydown', function (event) {
-        handleUpArrow(index, event);
-        handleDownArrow(index, event);
-      });
-    });
+      /**
+       * AutoFocus
+       */
+
+    }, {
+      key: "_handleAutoFocus",
+      value: function _handleAutoFocus() {
+        if (this._options.AUTOFOCUS === 'target') {
+          this._autoFocusElement = this._targetEl;
+
+          this._targetEl.setAttribute('tabindex', '-1');
+        }
+
+        if (this._options.AUTOFOCUS === 'firstTabbable') {
+          this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
+
+          if (this._autoFocusElement.setSelectionRange) {
+            this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
+          }
+        }
+
+        this._autoFocusElement.focus();
+      }
+      /**
+       * @public
+       */
+
+      /**
+       * Toggling
+       */
+
+    }, {
+      key: "open",
+      value: function open() {
+        if (this._isOpen) {
+          return;
+        }
+
+        this._isOpen = true;
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._updateTabbableItems();
+
+        this._setupTemporaryEventListeners();
+
+        this._handleAutoFocus();
+
+        if (this._options.OPEN_EVENT) {
+          var event = createEvent('open', 'globalExpander', {
+            bubbles: false
+          });
+
+          this._triggerEl.dispatchEvent(event);
+        }
+      }
+    }, {
+      key: "close",
+      value: function close() {
+        if (!this._isOpen) {
+          return;
+        }
+
+        this._isOpen = false;
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._removeTemporaryEventListeners();
+      }
+    }, {
+      key: "init",
+      value: function init() {
+        if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
+          // eslint-disable-next-line no-script-url
+          this._triggerEl.setAttribute('href', 'javascript:;');
+
+          this._triggerEl.setAttribute('role', 'button');
+        } // Warn screen reader users when you are stealing focus
+
+
+        if (this._options.AUTOFOCUS) {
+          this._triggerEl.setAttribute('aria-haspopup', 'true');
+        }
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._triggerEl.addEventListener('click', this._handleButtonClick);
+
+        this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
+      }
+    }]);
+
+    return Expander;
+  }();
+
+  var DATA_COMPONENT = 'data-dropdown';
+  var attributes = {
+    targetSelector: "".concat(DATA_COMPONENT, "-target")
   };
 
-  init('[data-dropdown]', '[data-dropdown-item]');
+  var dropdown = function dropdown() {
+    var trigger = document.querySelector("[".concat(DATA_COMPONENT, "]"));
+    var target = trigger.getAttribute(attributes.targetSelector);
+
+    if (trigger.length === 0 || !target) {
+      return;
+    }
+
+    var targetElement = document.querySelector(target);
+
+    if (!targetElement) {
+      return;
+    }
+
+    var expander = new Expander(trigger, targetElement);
+    expander.init();
+  };
+
+  dropdown();
 
 })();
 

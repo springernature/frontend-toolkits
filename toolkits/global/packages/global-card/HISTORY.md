@@ -1,5 +1,18 @@
 # History
 
+## 6.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
+## 5.0.0 (2021-11-08)
+    * Springer.com settings
+    * Border support
+
+## 4.0.0 (2021-11-03)
+    * BREAKING:
+        * Extraneous padding removed
+        * Aspect ratio for images
+
 ## 3.3.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
@@ -11,9 +24,9 @@
     * Add title overrides in nature settings
 
 ## 3.1.0 (2021-03-15)
-    * Change default card title settings 
+    * Change default card title settings
     * Bump brand context version
-    * Update available settings in readme 
+    * Update available settings in readme
 
 ## 3.0.2 (2021-02-23)
     * Fix letter spacing for SN brand

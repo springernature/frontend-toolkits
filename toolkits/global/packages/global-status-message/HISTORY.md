@@ -1,5 +1,9 @@
 # History
 
+## 3.2.0 (2021-11-12)
+    * Add settings for height and width on icon 
+    * Bump brand-context version to 17.2.0
+
 ## 3.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 

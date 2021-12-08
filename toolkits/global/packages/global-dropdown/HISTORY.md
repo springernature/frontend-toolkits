@@ -1,5 +1,22 @@
 # History
 
+
+## 3.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
+## 2.0.1 (2021-11-15)
+    * Fix `Cannot read properties of null (reading 'getAttribute')` errors when there's no `[data-dropdown]` element on the page
+
+## 2.0.0 (2021-11-08)
+    BREAKING
+    * Delete custom js implementation in favour of the expander component to handle interactions.
+
+## 1.1.0 (2021-11-04)
+    * Add ellipsis in the button text
+    * Add min-width for the dropdown menu
+    * Allow custom icon size via variable
+
 ## 1.0.0 (2021-10-27)
     * Update styling to use a more complete set of default variables
     * Add nature settings

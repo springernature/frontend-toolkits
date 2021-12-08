@@ -1,13 +1,14 @@
-<li class="c-media">
-	{{#with image}}
-	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+<ul>
+	{{! Set context for data to show image on left }}
+	{{#with lhs}}
+	{{> media }}
 	{{/with}}
-	<div class="c-media__body">
-		<h4 class="c-media__title u-text-lg" aria-level="{{level}}">
-			<a href="{{mediaUrl}}">{{title}}</a>
-		</h4>
-		{{#if text}}
-		<p>{{text}}</p>
-		{{/if}}
-	</div>
-</li>
+
+	{{! Set context for data to show image on right }}
+	{{#with rhs}}
+	{{> media }}
+	{{/with}}
+
+	{{! Set context for data to not show image }}
+	{{> media }}
+</ul>

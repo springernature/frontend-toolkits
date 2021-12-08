@@ -1,0 +1,33 @@
+<div class="u-container u-mt-48">
+    <div class="c-product-header">
+        <div class="c-product-header__theme" {{#if journalId}}style="background-image: url('https://media.springernature.com/dominant-colour/springer-static/cover/journal/{{journalId}}.jpg')"{{/if}}></div>
+        <div class="c-product-header__content">
+            <div class="c-product-header__main">
+                {{#if journalId}}
+                    <div class="c-product-header__cover">
+                        <img alt=""
+                                srcset="
+                                https://media.springernature.com/w92/springer-static/cover/journal/{{journalId}}.jpg 1x,
+                                https://media.springernature.com/w138/springer-static/cover/journal/{{journalId}}.jpg 1.5x,
+                                https://media.springernature.com/w184/springer-static/cover/journal/{{journalId}}.jpg 2x,
+                                https://media.springernature.com/w276/springer-static/cover/journal/{{journalId}}.jpg 3x"
+                                src="https://media.springernature.com/w92/springer-static/cover/journal/{{journalId}}.jpg"/>
+                    </div>
+                {{/if}}
+                <div class="u-flex-shrink">
+                    <h1 class="c-product-header__title">
+                        <a href="/">{{{journalTitle}}}</a>
+                    </h1>
+                    {{#if journalSubtitle}}
+                        <p class="c-product-header__subtitle">{{{journalSubtitle}}}</p>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="c-product-header__side">
+                <img class="c-product-header__imprint" data-test="journal-header-imprint"
+                    alt="Birkhäuser imprint" height="30" src="https://www.springer.com/oscar-static/images/birkhauser-logo.svg"
+                    role="img">
+            </div>
+        </div>
+    </div>
+</div>

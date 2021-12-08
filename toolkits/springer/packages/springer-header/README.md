@@ -4,73 +4,54 @@ Publisher level header for Springer products.
 
 ## Usage
 
+Import and compile the Sass:
+
+```scss
+@import '../node_modules/@springernature/springer-header/scss/10-settings/header';
+@import '../node_modules/@springernature/springer-header/scss/50-components/header';
+```
+
+Use `/demo/index.hbs` file as your template and `/demo/context.json` as the schema for the template data: 
+
 ```html
 <header class="c-header">
-    <div class="c-header__container">
-        <div class="c-header__brand">
-            <a href="#" itemprop="url">
-                <img alt="Springer" itemprop="logo" width="112" height="30" role="img" src="path/to/logo.svg">
-            </a>
-        </div>
-        <div class="c-header__navigation">
-            <!-- #not mandatory -->
-            <a href="#"
-               class="c-header__link c-header__link--search">
-				<span class="u-display-flex u-flex-align-center">
-					Search
-					<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-						<use xlink:href="{{iconUrl}}"></use>
-					</svg>
-				</span>
-            </a>
-            <!-- /not mandatory -->
-            <nav>
-                <ul class="c-header__menu">
-                    <li class="c-header__item">
-                        <a class="c-header__link" href="#">Menu item 1</a>
-                    </li>
-                    <li class="c-header__item">
-                        <a class="c-header__link" href="#" data-test="login-link">Menu item 2</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+	<div class="c-header__container">
+		{{#with logo}}
+		<div class="c-header__brand">
+			<a href="{{href}}" itemprop="url">
+				<img alt="{{alt}}" itemprop="logo" width="112" height="30" role="img" src="{{srcUrl}}">
+			</a>
+		</div>
+		{{/with}}
+		{{#if promotedMenu}}
+		<ul class="c-header__menu">
+			{{#each promotedMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link">
+					<span class="u-display-flex u-align-items-center">
+						{{label}}
+						{{#if iconUrl}}
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="{{iconUrl}}"></use>
+						</svg>
+						{{/if}}
+					</span>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+	</div>
+	{{#if navMenu}}
+	<nav class="c-header__nav">
+		<ul class="c-header__nav-menu">
+			{{#each navMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link c-header__link--nav">{{label}}</a>
+			</li>
+			{{/each}}
+		</ul>
+	</nav>
+	{{/if}}
 </header>
-```
-
-## Dropdown menu
-
-If you want functionality where the menu should be a dropdown on small screens, then you need to create the dropdown from your app.
-The [springer-dropdown](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springer/packages/springer-dropdown) has a helper called `createDropdown` that will create the dropdown HTML and instance.
-
-Example usage in an app in conjunction with the springer-dropdown:
-
-```html
-<!-- ... -->
-<nav>
-    <ul class="c-header__menu" data-header-menu>
-        <li class="c-header__item">
-            <a class="c-header__link" href="#">Menu item 1</a>
-        </li>
-        <li class="c-header__item">
-            <a class="c-header__link" href="#" data-test="login-link">Menu item 2</a>
-        </li>
-    </ul>
-</nav>
-<!-- ... -->
-```
-
-```javascript
-const headerMenu = document.querySelector('[data-header-menu]');
-
-if (!headerMenu) {
-    return;
-}
-
-const items = headerMenu.querySelectorAll('li');
-const links = makeArray(items).map(item => item.querySelector('a'));
-
-const dropdownEl = createDropdown('Menu', links, {DROPDOWN_CLASS: 'u-hide-at-md'});
-headerMenu.parentNode.insertBefore(dropdownEl, headerMenu.nextSibling);
 ```

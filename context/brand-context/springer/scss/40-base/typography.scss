@@ -39,6 +39,10 @@ p {
 	margin-bottom: 1.5em;
 }
 
+p:last-child {
+	margin-bottom: 0;
+}
+
 p:empty {
 	display: none;
 }

@@ -1,10 +1,14 @@
 # History
 
+## 6.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
 ## 5.1.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
 ## 5.0.1 (2021-08-03)
-    * Update version number correctly    
+    * Update version number correctly
 
 ## 5.0.0 (2021-08-03)
     * BREAKING: Use u-keyline mixin to create keyline border
@@ -48,8 +52,8 @@
     * Update Nature settings to match existing c-meta style from app
 
 ## 1.2.1 (2020-11-06)
-    * Adjust font size in Nature settings 
-    
+    * Adjust font size in Nature settings
+
 ## 1.2.0 (2020-11-04)
     * Remove use of rfs font-size mixin
 

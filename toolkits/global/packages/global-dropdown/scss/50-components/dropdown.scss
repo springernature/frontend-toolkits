@@ -34,11 +34,16 @@
 		box-sizing: border-box;
 		padding: $dropdown--spacing-small 0;
 		position: absolute;
-		transform: translateY(8px);
+		transform: translateY($dropdown--spacing-small);
 		top: 100%;
 		left: 0;
 		width: 100%;
 		z-index: 1;
+
+		@include media-query('sm') {
+			transform: translateY($dropdown--spacing-medium);
+			min-width: $dropdown--menu-min-width;
+		}
 	}
 }
 
@@ -79,7 +84,7 @@
 		font-size: $dropdown--font-size;
 		height: 34px;
 		justify-content: space-between;
-		padding: 0 $dropdown--spacing-medium;
+		padding: 0 $dropdown--spacing-small;
 		visibility: visible;
 		width: 100%;
 
@@ -94,11 +99,20 @@
 				transform: rotate(180deg);
 			}
 		}
+
+		span {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 }
 
 .js .c-dropdown__icon {
 	@include u-icon();
 	vertical-align: middle;
+	margin-left: $dropdown--spacing-large;
+	transform: translateY(6%);
+	font-size: $dropdown__icon-size;
 	flex: 0 0 auto;
 }
