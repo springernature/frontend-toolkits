@@ -1,5 +1,9 @@
 # History
 
+## 18.1.0
+    * FEATURE
+      * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
+
 ## 18.0.0 (2021-12-03)
     * BREAKING:
         * Changes the root font size to 100%.
