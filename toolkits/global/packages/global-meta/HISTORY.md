@@ -1,6 +1,8 @@
 # History
 
-## 6.0.02
+## 6.0.3 (2021-12-09)
+    * BUG: Updates the version of the brand context in the package.json file to latest.
+## 6.0.2 (2021-12-09)
     * BUG: Temporary fix for the issue with strip-unit.
 ## 6.0.1 (2021-12-07)
     * BUG: Fixes font sizes that were incorrectly calculated
