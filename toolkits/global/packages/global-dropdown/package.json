@@ -5,7 +5,7 @@
   "description": "Display a contextual list of links controlled by a toggle",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^17.0.0",
+  "brandContext": "^18.0.0",
   "dependencies": {
     "@springernature/global-expander": "^4.0.2"
   }
