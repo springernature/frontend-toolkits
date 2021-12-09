@@ -1,5 +1,9 @@
 # History
 
+## 18.1.1
+    * FEATURE
+        * copies the strip-unit function into the default brand context.
+        * removes the strip-unit function from the springer brand context.
 ## 18.1.0
     * FEATURE
       * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
