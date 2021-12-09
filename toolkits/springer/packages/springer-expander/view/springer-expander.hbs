@@ -1,6 +1,6 @@
 <{{#if listItem}}li{{else}}div{{/if}} class="c-expander">
-	<details {{#if open}}open{{/if}}>
-		<summary>
+	<details {{#if open}}open{{/if}} class="c-expander__details">
+		<summary class="c-expander__summary">
 			<div class="c-expander__header" {{#if headingLevel}}role="heading" aria-level="{{headingLevel}}"{{/if}}>
 				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 					<use xlink:href="{{iconURL}}"></use>

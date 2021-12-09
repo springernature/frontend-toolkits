@@ -1350,24 +1350,31 @@ cite {
 	border-top: 0;
 }
 
-/* remove marker in Firefox */
-.c-expander summary {
-	list-style-type: none;
+.c-expander__details {
+	/* For IE11 (unknown element) */
+	display: block;
+}
+
+.c-expander__summary {
 	cursor: pointer;
+	/* For IE11 (unknown element) */
+	display: block;
+	/* remove marker in Firefox */
+	list-style-type: none;
 }
 
 /* remove marker in other browsers */
-.c-expander summary::marker,
-.c-expander summary::-webkit-details-marker {
+.c-expander__summary::marker,
+.c-expander__summary::-webkit-details-marker {
 	display: none;
 }
 
 /* enhance focus styles */
 @supports (text-decoration-color: #000) {
-	.c-expander summary:focus {
+	.c-expander__summary:focus {
 		outline: none;
 	}
-	.c-expander summary:focus .c-expander__title {
+	.c-expander__summary:focus .c-expander__title {
 		text-decoration: underline;
 		text-decoration-color: #ffcc00;
 		text-decoration-thickness: 3px;
@@ -1402,8 +1409,8 @@ cite {
 	</head>
 	<body style="padding:2%">
 	<div class="c-expander">
-		<details>
-			<summary>
+		<details class="c-expander__details">
+			<summary class="c-expander__summary">
 				<div class="c-expander__header" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
@@ -1417,8 +1424,8 @@ cite {
 		</details>
 	</div>
 	<div class="c-expander">
-		<details open="">
-			<summary>
+		<details open="" class="c-expander__details">
+			<summary class="c-expander__summary">
 				<div class="c-expander__header" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
@@ -1432,8 +1439,8 @@ cite {
 		</details>
 	</div>
 	<div class="c-expander">
-		<details>
-			<summary>
+		<details class="c-expander__details">
+			<summary class="c-expander__summary">
 				<div class="c-expander__header" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
