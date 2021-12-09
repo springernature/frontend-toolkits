@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/springer-expander",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A JS-independent, accessible expander component",
+  "keywords": [],
+  "brandContext": "^17.0.0",
+  "author": "SpringerNature"
+}
