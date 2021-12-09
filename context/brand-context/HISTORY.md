@@ -5,9 +5,16 @@
         * Introduces updates to make use of Dart Sass as the compiler for the frontend.
         * Updates default color function to use Dart Sass.
         * Updates default typography to use Dart Sass.
+
+## 18.1.1
+    * FEATURE
+        * copies the strip-unit function into the default brand context.
+        * removes the strip-unit function from the springer brand context.
+        
 ## 18.1.0
     * FEATURE
         * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
+        
 ## 18.0.1 (2021-12-07)
     * BUG:
         * Fixes some font sizes that were incorrectly calculated
