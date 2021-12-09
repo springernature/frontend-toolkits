@@ -70,14 +70,14 @@
 }
 
 .c-header__menu--journal {
-	font-size: 1.4rem;
+	font-size: .875rem;
 
 	@include media-query('sm') {
 		flex-wrap: nowrap;
 	}
 
 	@include media-query('sm') {
-		font-size: 1.6rem;
+		font-size: 1rem;
 	}
 }
 

@@ -4,6 +4,6 @@
   "license": "MIT",
   "description": "Layout primitive for spacing sibling elements from a parent",
   "keywords": [],
-  "brandContext": "^17.0.0",
+  "brandContext": "^18.0.0",
   "author": "Springernature"
 }
