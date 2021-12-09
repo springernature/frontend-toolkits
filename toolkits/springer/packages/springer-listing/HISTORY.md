@@ -1,5 +1,7 @@
 # History
 
+## 4.0.0 (2021-12-07)
+    * BREAKING: Fixes some typographic values to accomodate the root font size change.
 ## 3.1.1 (2021-11-30)
     * BUG: images not rendering in demo
 
@@ -15,7 +17,7 @@
 
 ## 2.1.0 (2020-12-15)
     * Remove use of rfs font-size mixin
-    
+
 ## 2.0.2 (2020-11-19)
     * Bump `brand-context` version
 
@@ -28,14 +30,14 @@
 
 ## 1.0.0 (2020-02-10)
     * Update font family
-    * Add peer dependency for context  
+    * Add peer dependency for context
 
 ## 0.0.5 (2019-12-10)
     * Lower font size on title
 
 ## 0.0.4 (2019-11-25)
     * Use system font for sans serif
-    
+
 ## 0.0.3 (2019-11-05)
     * Increase font size of title
 

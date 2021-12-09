@@ -4,6 +4,11 @@
     * FEATURE
       * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
 
+## 18.0.1 (2021-12-07)
+    * BUG:
+    * Fixes some font sizes that were incorrectly calculated
+    * Changes the $base-font-size to match the root/html font size being 100$
+
 ## 18.0.0 (2021-12-03)
     * BREAKING:
         * Changes the root font size to 100%.

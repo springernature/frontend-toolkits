@@ -1,5 +1,7 @@
 # History
 
+## 2.0.0 (2021-12-07)
+    * BREAKING: Fixes some typographic values to accomodate the root font size change.
 ## 1.1.0 (2021-06-30)
     * Ensures radio is checked before page reloads
 
