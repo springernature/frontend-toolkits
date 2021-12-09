@@ -1,18 +1,20 @@
 # History
 
+## 19.0.0
+    * BREAKING
+        * Introduces updates to make use of Dart Sass as the compiler for the frontend.
+        * Updates default color function to use Dart Sass.
+        * Updates default typography to use Dart Sass.
 ## 18.1.0
     * FEATURE
-      * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
-
+        * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
 ## 18.0.1 (2021-12-07)
     * BUG:
-    * Fixes some font sizes that were incorrectly calculated
-    * Changes the $base-font-size to match the root/html font size being 100$
+        * Fixes some font sizes that were incorrectly calculated
+        * Changes the $base-font-size to match the root/html font size being 100$
 
 ## 18.0.0 (2021-12-03)
     * BREAKING:
-        * Updates default color function to use Dart Sass.
-        * Updates default typography to use Dart Sass.
         * Changes the root font size to 100%.
         * Changes all typographic values to accomodate the root font size change.
         * Changes any typographic values set in px values to rem.
