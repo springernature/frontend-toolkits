@@ -1,7 +1,12 @@
 # History
 
+## 3.0.1 (2021-12-10)
+    * BUG:
+      * Updates line-height rem value to be correct for root font-size changes in v18 of Brand Context
+
 ## 3.0.0 (2021-12-07)
     * BREAKING: Fixes some typographic values to accomodate the root font size change.
+
 ## 2.2.1 (2021-09-23)
     * Improve logo sizing for no-js view
 
