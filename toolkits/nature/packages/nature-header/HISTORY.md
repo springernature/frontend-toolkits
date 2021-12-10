@@ -1,5 +1,8 @@
 # History
 
+## 6.0.1 (2021-12-10)
+    * Fix font-size value to reflect updated root font-size
+
 ## 6.0.0 (2021-12-07)
     * BREAKING: Fixes some typographic values to accomodate the root font size change.
 
