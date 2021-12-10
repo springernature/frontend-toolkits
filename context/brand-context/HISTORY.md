@@ -1,5 +1,9 @@
 # History
 
+## 18.1.2 (2021-12-10)
+    * BUG
+        * fixes font size set in em, not rem and also thinking root size was 62.5%
+
 ## 18.1.1
     * FEATURE
         * copies the strip-unit function into the default brand context.
