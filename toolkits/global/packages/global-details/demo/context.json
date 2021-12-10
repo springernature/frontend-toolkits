@@ -1,0 +1,28 @@
+{
+	"instances": [
+		{
+			"title": "Here is a details instance",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nulla quis mauris efficitur vestibulum. Duis vel ultrices purus, sit amet efficitur lectus. Aliquam erat volutpat. Vivamus nec nulla quis mauris efficitur vestibulum. Duis vel ultrices purus, sit amet efficitur lectus. Aliquam erat volutpat.",
+			"headingLevel": "2",
+			"iconURL": "../img/chevron-right.svg#i-chevron-right",
+			"open": false
+		},
+		{
+			"title": "Here is a details instance that is open by default",
+			"content": "Maecenas pellentesque nisl eu dolor porttitor, vel pharetra sem tincidunt. Arcu risus tempor massa, rutrum gravida libero tortor in ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec nulla quis mauris efficitur vestibulum. Duis vel ultrices purus, sit amet efficitur lectus. Aliquam erat volutpat.",
+			"headingLevel": "2",
+			"iconURL": "../img/chevron-right.svg#i-chevron-right",
+			"open": true
+		},
+		{
+			"title": "Here is a details instance with a long title for testing purposes",
+			"content": "Mauris pellentesque, urna vitae mattis ullamcorper, arcu risus tempor massa, rutrum gravida libero tortor in ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl eu dolor porttitor, vel pharetra sem tincidunt. Mauris pellentesque.",
+			"headingLevel": "2",
+			"iconURL": "../img/chevron-right.svg#i-chevron-right",
+			"open": false
+		}
+	],
+	"dynamicPartials": {
+		"details": "./toolkits/global/packages/global-details/view/details.hbs"
+	}
+}
