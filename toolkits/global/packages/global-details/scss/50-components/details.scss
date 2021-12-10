@@ -1,22 +1,22 @@
-.c-expander {
-	padding: $expander--padding 0;
+.c-details {
+	padding: $details--padding 0;
 	border: 1px solid;
 	border-width: 1px 0;
 	/* In case it’s a list item */
 	list-style: none;
 }
 
-/* for successive expanders, don't double the border */
-.c-expander + .c-expander {
+/* for successive details instances, don't double the border */
+.c-details + .c-details {
 	border-top: 0;
 }
 
-.c-expander__details {
+.c-details__details {
 	/* For IE11 (unknown element) */
 	display: block;
 }
 
-.c-expander__summary {
+.c-details__summary {
 	cursor: pointer;
 	/* For IE11 (unknown element) */
 	display: block;
@@ -25,44 +25,44 @@
 }
 
 /* remove marker in other browsers */
-.c-expander__summary::marker,
-.c-expander__summary::-webkit-details-marker {
+.c-details__summary::marker,
+.c-details__summary::-webkit-details-marker {
 	display: none;
 }
 
 /* enhance focus styles */
 @supports (text-decoration-color: #000) {
-	.c-expander__summary:focus {
+	.c-details__summary:focus {
 		outline: none;
 	}
 
-	.c-expander__summary:focus .c-expander__title {
+	.c-details__summary:focus .c-details__title {
 		text-decoration: underline;
-		text-decoration-color: color('action-focus');
+		text-decoration-color: $details--focus-underline-color;
 		text-decoration-thickness: 3px;
 	}
 }
 
-.c-expander__header {
+.c-details__header {
 	display: flex;
 	align-items: center;
 }
 
-.c-expander__header .u-icon {
+.c-details__header .u-icon {
 	flex-shrink: 0;
 	width: 1em;
 	height: 1em;
 }
 
-.c-expander [open] .u-icon {
+.c-details [open] .u-icon {
 	transform: rotate(90deg);
 }
 
-.c-expander__title {
+.c-details__title {
 	font-weight: bold;
-	margin-left: $expander--icon-margin;
+	margin-left: $details--icon-margin;
 }
 
-.c-expander__content {
-	padding-top: $expander--padding;
+.c-details__content {
+	padding-top: $details--padding;
 }

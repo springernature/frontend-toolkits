@@ -1,8 +1,8 @@
 {
-  "name": "@springernature/springer-expander",
+  "name": "@springernature/global-details",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "A JS-independent, accessible expander component",
+  "description": "A JS-independent, accessible disclosure component",
   "keywords": [],
   "brandContext": "^17.0.0",
   "author": "SpringerNature"
