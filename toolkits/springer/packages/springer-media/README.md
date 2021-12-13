@@ -2,8 +2,6 @@
 
 A media component catering for an image, clickable title, and body text. Styles have also been included to add a play button for things like videos.
 
-![Examples of media component on desktop and mobile](https://user-images.githubusercontent.com/5796370/62363173-a72a8380-b516-11e9-97cb-47289d1d16a0.png)
-
 ## Example
 
 #### HTML

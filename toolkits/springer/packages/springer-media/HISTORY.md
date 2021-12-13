@@ -1,7 +1,10 @@
 # History
 
+## 6.0.0 (2021-12-01)
+    * BREAKING: Update to brand-context v17.3.1 from v10.1.3
+
 ## 5.0.0 (2021-11-26)
-    * BREAKING: move consumable template to view folder
+    * BREAKING: Move consumable template to view folder
     * BREAKING: Image can now appear on the left or the right
     * BUG: No longer reliant on u-text-lg
     * Improve demo
