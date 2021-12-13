@@ -6,7 +6,7 @@
 html {
 	height: 100%;
 	overflow-y: scroll;
-	font-size: 62.5%;
+	font-size: $context--font-size-default;
 }
 
 body {

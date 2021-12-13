@@ -9,12 +9,12 @@ $context--font-family-sans: 'Merriweather Sans', 'Helvetica Neue', Helvetica, Ar
 $context--primary-text-color: color('black');
 $context--secondary-text-color: color('grey-dark2');
 
-$context--font-size-sm: 1.4rem;
-$context--font-size-md: 1.6rem;
-$context--font-size-lg: 1.8rem;
-$context--font-size-xl: 2rem;
-$context--font-size-xxl: 2.4rem;
-$context--font-size-xxxl: 3.5rem;
+$context--font-size-sm: .875rem;
+$context--font-size-md: 1rem;
+$context--font-size-lg: 1.125rem;
+$context--font-size-xl: 1.25rem;
+$context--font-size-xxl: 1.5rem;
+$context--font-size-xxxl: 2.188rem;
 
 $context--font-size-h1: $context--font-size-xxxl;
 $context--font-size-h2: $context--font-size-xxl;
@@ -23,13 +23,13 @@ $context--font-size-h4: $context--font-size-lg;
 $context--font-size-h5: $context--font-size-md;
 // Define your base size in EMs
 // http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
-$context--font-size-base: 1.6em;
+$context--font-size-base: 1em;
 
-$context--line-height-h1: 4.2rem;
-$context--line-height-h2: 2.8rem;
-$context--line-height-h3: 2.4rem;
-$context--line-height-h4: 2.4rem;
-$context--line-height-h5: 1.9rem;
+$context--line-height-h1: 2.625rem;
+$context--line-height-h2: 1.75rem;
+$context--line-height-h3: 1.5rem;
+$context--line-height-h4: 1.5rem;
+$context--line-height-h5: 1.188rem;
 
 // Fluid typography
 $context--font-size-h1-min: $context--font-size-h2;

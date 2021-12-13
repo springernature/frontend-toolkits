@@ -1,5 +1,8 @@
 # History
 
+## 2.0.0 (2021-12-07)
+    * BREAKING: Fixes some typographic values to accomodate the root font size change.
+
 ## 1.0.0 (2021-02-03)
     * Bump `brand-context` version
     * Update context variable references to use `context--` prefix
