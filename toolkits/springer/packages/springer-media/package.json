@@ -5,5 +5,5 @@
   "description": "A media component catering for an image, title and body text. Styles have also been included to add a play button for things like videos.",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^17.3.1"
+  "brandContext": "^18.1.2"
 }

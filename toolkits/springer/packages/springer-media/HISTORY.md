@@ -1,7 +1,7 @@
 # History
 
 ## 6.0.0 (2021-12-01)
-    * BREAKING: Update to brand-context v17.3.1 from v10.1.3
+    * BREAKING: Update to brand-context v18.1.2 from v10.1.3
 
 ## 5.0.0 (2021-11-26)
     * BREAKING: Move consumable template to view folder
