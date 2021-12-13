@@ -5,7 +5,7 @@
  */
 
 // Base Settings
-$menu--font-size: 1.6rem;
+$menu--font-size: 1rem;
 $menu--font-family: $context--font-family-sans;
 $menu--link-color: inherit;
 $menu--link-color-hover: $menu--link-color;
@@ -13,7 +13,7 @@ $menu--spacing: 16px;
 $menu--line-height: 1.3;
 
 // Modifier Settings
-$menu--small-font-size: 1.4rem;
+$menu--small-font-size: .875rem;
 $menu--keyline-border: 1px solid greyscale(80);
 $menu--vertical-spacing: $menu--spacing;
 $menu--padded-spacing: $menu--spacing;

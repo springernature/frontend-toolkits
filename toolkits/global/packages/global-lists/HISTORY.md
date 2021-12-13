@@ -1,3 +1,8 @@
+# History
+## 5.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
 ## 4.0.0 (2021-10-21)
     * BREAKING:
         * Remove specificity and text mixin for description list links

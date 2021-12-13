@@ -1,11 +1,11 @@
 {
   "name": "@springernature/global-card",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "license": "MIT",
   "description": "card component",
   "keywords": [
     "card"
   ],
   "author": "Springer Nature",
-  "brandContext": "^11.1.1"
+  "brandContext": "^18.0.0"
 }

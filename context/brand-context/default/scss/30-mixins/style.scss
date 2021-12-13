@@ -1,6 +1,7 @@
 @mixin u-keyline($direction: bottom, $spacing: $context--keyline-spacing, $thickness: 1px) {
 	$valid-directions: (top, right, bottom, left);
-
+	// strips the units from the $spacing variable
+    $spacing: strip-unit($spacing);
 	@if index($valid-directions, $direction) {
 		border-#{$direction}: $thickness solid $context--keyline-border-color;
 		padding-#{$direction}: spacing($spacing);

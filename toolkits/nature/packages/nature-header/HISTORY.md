@@ -1,5 +1,11 @@
 # History
 
+## 6.0.1 (2021-12-10)
+    * Fix font-size value to reflect updated root font-size
+
+## 6.0.0 (2021-12-07)
+    * BREAKING: Fixes some typographic values to accomodate the root font size change.
+
 ## 5.2.3 (2021-04-19)
     * Attempted fix for error captured in sentry around `hasAttribute` check
 
@@ -23,7 +29,7 @@
 
 ## 5.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
-    * Bump global-javascript to 3.0.1 
+    * Bump global-javascript to 3.0.1
 
 ## 5.1.0 (2021-02-03)
     * Remove aria-pressed
@@ -35,15 +41,15 @@
     * Update context variable references to use `context--` prefix
 
 ## 4.1.1 (2021-01-26)
-    * Capilatize first letter in links 
+    * Capilatize first letter in links
 
 ## 4.1.0 (2021-01-21)
     * Expander full width at narrow viewports
     * Aligned last expander in list of dropdown to right of screen to prevent horizontal scroll
-    * Reduced font-size and space between chevrons on journal menu items to get all on one line for 320px/'xs' breakpoint and above    
+    * Reduced font-size and space between chevrons on journal menu items to get all on one line for 320px/'xs' breakpoint and above
 
 ## 4.0.1 (2021-01-20)
-    * Zeros the line-height on logo to cater for use with <h1> 
+    * Zeros the line-height on logo to cater for use with <h1>
 
 ## 4.0.0 (2021-01-13)
     * BREAKING: Refactored to update nature header in narrow viewport
@@ -51,7 +57,7 @@
     * Add back keyline for expander (used in search dropdown)
 
 ## 3.2.0 (2021-01-07)
-    * Add font weight to c-header__menu--secondary 
+    * Add font weight to c-header__menu--secondary
 
 ## 3.1.0 (2020-12-16)
     * Adds modifier to add keyline to first list element only
@@ -65,9 +71,9 @@
     * Improve spacing
 
 ## 3.0.0 (2020-12-11)
-    * BREAKING: 
+    * BREAKING:
         * Removes settings files as component is not configurable
-        * Renames classes to allow more shared styles 
+        * Renames classes to allow more shared styles
 
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script

@@ -1,5 +1,13 @@
 # History
 
+## 4.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
+## 3.0.1 (2021-12-02)
+    * Bump brand-context
+    * Fix bug where elements on the page that have a z-index bleed through the modal.
+
 ## 3.0.0 (2021-02-08)
     * BREAKING: switch to use new `brand-context` dependency
     * Update colours keys
