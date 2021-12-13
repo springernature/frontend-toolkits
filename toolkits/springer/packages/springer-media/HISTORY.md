@@ -1,6 +1,6 @@
 # History
 
-## 6.0.0 (2021-12-01)
+## 6.0.0 (2021-12-13)
     * BREAKING: Update to brand-context v18.1.2 from v10.1.3
 
 ## 5.0.0 (2021-11-26)
