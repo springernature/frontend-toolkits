@@ -3,7 +3,7 @@
  *
  */
 
-$context--colors: (
+ $context--colors: (
 	'accent': #ee7d11,
 	'action-base': #004b83,
 	'action-light': scale-color(#004b83, $lightness: 10%),
@@ -23,16 +23,10 @@ $context--colors: (
 	'info': #004b83,
 	'success': #71ab0b,
 	'visited': #a345c9,
-	'blueberry': #a6d8e7,
-	'grape': #bee188,
 	'lemon': #fece3e,
 	'orange': $context--open-access-color,
 	'steel': #bcd2dc,
 	'soft-steel': #dae5ea,
-	'strawberry': #f59094,
-	'honeydew': #e7f6e6,
-	'ivory': #f4f3e1,
-	'plum': #bfaad9,
 	'yellow': #ff9
 );
 
