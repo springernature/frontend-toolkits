@@ -1,11 +1,46 @@
 {
-	"image": {
-		"src": "https://picsum.photos/500/500",
-		"alt": "descriptive alternative text"
-	},
-	"title": {
-		"level": "3",
-		"label": "Title of card"
-	},
-	"summary": "Lorem ipsum dolor sit amet."
+	"cards": [
+		{
+			"border": true,
+			"listItem": true,
+			"image": {
+				"src": "https://picsum.photos/500/500",
+				"alt": "descriptive alternative text"
+			},
+			"title": {
+				"level": "3",
+				"label": "Lorem ipsum dolor"
+			},
+			"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
+		},
+		{
+			"border": true,
+			"listItem": true,
+			"image": {
+				"src": "https://picsum.photos/500/500",
+				"alt": "descriptive alternative text"
+			},
+			"title": {
+				"level": "3",
+				"label": "Consectetur adipiscing"
+			},
+			"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
+		},
+		{
+			"border": true,
+			"listItem": true,
+			"image": {
+				"src": "https://picsum.photos/500/500",
+				"alt": "descriptive alternative text"
+			},
+			"title": {
+				"level": "3",
+				"label": "Lectus et velit auctor pulvinar"
+			},
+			"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
+		}
+	],
+	"dynamicPartials": {
+		"card": "./toolkits/global/packages/global-card/view/global-card.hbs"
+	}
 }

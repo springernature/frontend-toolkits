@@ -15,6 +15,10 @@
 	box-shadow: $card--box-shadow;
 }
 
+.c-card--no-border {
+	border: none;
+}
+
 .c-card__image {
 	flex: 0 1 auto;
 	position: relative;
@@ -54,6 +58,11 @@
 .c-card__body {
 	padding: $card--padding;
 	flex: 1 1 auto;
+}
+
+.c-card--no-border .c-card__body {
+	padding: 0;
+	padding-top: $card--padding;
 }
 
 .c-card__title {

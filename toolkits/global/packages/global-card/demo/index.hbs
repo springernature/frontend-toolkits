@@ -1,17 +1,41 @@
-<div class="c-card">
-	{{#with image}}
-		<div class="c-card__image">
-			<img src="{{src}}" alt="{{alt}}">
-		</div>
-	{{/with}}
-    <div class="c-card__body">
-		{{#with title}}
-        <h3 class="c-card__title" aria-level="{{level}}">
-            <a class="c-card__link" href="#">{{label}}</a>
-        </h3>
-		{{/with}}
-		{{#if summary}}
-        	<div class="c-card__summary">{{summary}}</div>
-		{{/if}}
-    </div>
-</div>
+<style>
+	.demo-grid {
+		list-style: none;
+		padding: 0;
+	}
+
+	.demo-grid > * + * {
+		margin-top: 1em;
+		margin-top: var(--grid--gap, 1em);
+	}
+
+
+	@supports (display: grid) {
+		.demo-grid > * {
+			margin: 0;
+		}
+
+		.demo-grid {
+			display: grid;
+			gap: 1em;
+			gap: var(--grid--gap, 1em);
+			grid-template-columns: repeat(auto-fit, minmax(var(--grid--basis, 230px), 1fr));
+		}
+	}
+</style>
+
+<h2>With borders</h2>
+
+<ul class="demo-grid">
+{{#each cards}}
+	{{>card}}
+{{/each}}
+</ul>
+
+<h2>Without borders</h2>
+
+<ul class="demo-grid">
+{{#each cards}}
+	{{>card border=false}}
+{{/each}}
+</ul>
