@@ -15,8 +15,10 @@
 	box-shadow: $card--box-shadow;
 }
 
-.c-card--no-border {
+.c-card--no-shape {
 	border: none;
+	box-shadow: none;
+	background: none;
 }
 
 .c-card__image {
@@ -55,12 +57,19 @@
 	}
 }
 
+.c-card__image--portrait img {
+	@supports (object-fit: contain) {
+		object-fit: contain;
+		object-position: left bottom;
+	}
+}
+
 .c-card__body {
 	padding: $card--padding;
 	flex: 1 1 auto;
 }
 
-.c-card--no-border .c-card__body {
+.c-card--no-shape .c-card__body {
 	padding: 0;
 	padding-top: $card--padding;
 }

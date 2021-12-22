@@ -24,18 +24,22 @@
 	}
 </style>
 
-<h2>With borders</h2>
+<h2>Default (with border and content padding)</h2>
 
 <ul class="demo-grid">
-{{#each cards}}
-	{{>card}}
-{{/each}}
+{{#with cardsDefault}}
+	{{#each cards}}
+		{{>card parent=..}}
+	{{/each}}
+{{/with}}
 </ul>
 
-<h2>Without borders</h2>
+<h2>Portraits (border and content padding removed)</h2>
 
 <ul class="demo-grid">
-{{#each cards}}
-	{{>card border=false}}
-{{/each}}
+{{#with cardsPortrait}}
+	{{#each cards}}
+		{{>card parent =..}}
+	{{/each}}
+{{/with}}
 </ul>

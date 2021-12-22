@@ -1,45 +1,77 @@
 {
-	"cards": [
-		{
-			"border": true,
-			"listItem": true,
-			"image": {
-				"src": "https://picsum.photos/500/500",
-				"alt": "descriptive alternative text"
+	"cardsDefault": {
+		"cards": [
+			{
+				"image": {
+					"src": "https://picsum.photos/600/400",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Lorem ipsum dolor",
+				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
-			"title": {
-				"level": "3",
-				"label": "Lorem ipsum dolor"
+			{
+				"image": {
+					"src": "https://picsum.photos/500/500",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Consectetur adipiscing",
+				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
-			"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
-		},
-		{
-			"border": true,
-			"listItem": true,
-			"image": {
-				"src": "https://picsum.photos/500/500",
-				"alt": "descriptive alternative text"
+			{
+				"image": {
+					"src": "https://picsum.photos/800/600",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Lectus et velit auctor pulvinar",
+				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
-			"title": {
-				"level": "3",
-				"label": "Consectetur adipiscing"
+			{
+				"image": {
+					"src": "https://picsum.photos/400/300",
+					"alt": "descriptive alternative text"
+				},
+				"title": "At vestibulum purus",
+				"summary": "Curabitur ac nisl rhoncus orci facilisis vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+			}
+		]
+	},
+	"cardsPortrait": {
+		"portrait": true,
+		"cards": [
+			{
+				"image": {
+					"src": "./img/portrait1.jpeg",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Lorem ipsum dolor",
+				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
-			"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
-		},
-		{
-			"border": true,
-			"listItem": true,
-			"image": {
-				"src": "https://picsum.photos/500/500",
-				"alt": "descriptive alternative text"
+			{
+				"image": {
+					"src": "./img/portrait2.jpeg",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Consectetur adipiscing",
+				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
-			"title": {
-				"level": "3",
-				"label": "Lectus et velit auctor pulvinar"
+			{
+				"image": {
+					"src": "./img/portrait3.jpeg",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Lectus et velit auctor pulvinar",
+				"summary": "Proin facilisis viverra justo. Quisque pretium dui vitae feugiat imperdiet. Maecenas id mollis mauris. Morbi placerat neque eu ante mollis, id ornare neque sagittis."
 			},
-			"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
-		}
-	],
+			{
+				"image": {
+					"src": "./img/portrait4_double.jpeg",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Etiam vel augue laoreet",
+				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
+			}
+		]
+	},
 	"dynamicPartials": {
 		"card": "./toolkits/global/packages/global-card/view/global-card.hbs"
 	}
