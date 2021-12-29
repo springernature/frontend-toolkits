@@ -8,261 +8,6 @@
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- *
- */
-/**
- * Shared colors
- * Applicable to all brands and not to be overwritten
- *
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Default
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Map deep get
- * @author Hugo Giraudel
- * @private
- *
- * @param {Map} $map - Map
- * @param {Arglist} $keys - Key chain
- * @return {*} - Desired value
- *
- */
-/**
- * Map key get
- * Check if a key exists in a map, return it
- * @private
- *
- * @param {Map} $map - Map
- * @param {String} $value - Key name
- * @return {*} - Key name, if found
- *
- */
-/**
- * Style mixins
- *
- */
-/**
- * Breakpoints
- * Media query helper
- * @group 30-mixins
- */
-h1 {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-h2, .c-card--major .c-card__title {
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 1.25rem;
-	font-weight: 700;
-}
-
-h4, .c-card__title {
-	font-size: 1.125rem;
-	font-weight: 700;
-}
-
-h5 {
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  @springernature/global-button
- *  Button settings
- *
- */
-/**
- * Button Themes
- * Variables to set themes styles
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Link Text
- */
-h1 {
-	font-weight: 300;
-	font-size: 2.188rem;
-	font-size: min(max(1.5rem, 4vw), 2.188rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.75rem, 4vw), 2.625rem);
-}
-
-h2, .c-card--major .c-card__title {
-	font-weight: 400;
-	font-size: min(max(1.25rem, 4vw), 1.5rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.75rem);
-}
-
-h3 {
-	font-weight: 700;
-	font-size: min(max(1.125rem, 4vw), 1.25rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h4, .c-card__title {
-	font-weight: 700;
-	font-size: min(max(1.125rem, 4vw), 1.125rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h5 {
-	font-weight: 700;
-	font-size: min(max(1rem, 4vw), 1rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.188rem, 4vw), 1.188rem);
-}
-
 /* =========================================================================
    $NORMALIZE
    normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
@@ -715,36 +460,6 @@ template {
 }
 
 /**
- * Basic
- * Some default CSS styles
- */
-body {
-	line-height: 1.5;
-	font-family: "Merriweather", serif;
-}
-
-a {
-	text-decoration: none;
-	color: #025e8d;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
-}
-
-img {
-	border: 0;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
-
-/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -903,246 +618,28 @@ img {
  * Media query helper
  * @group 30-mixins
  */
-h1 {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-h2, .c-card--major .c-card__title {
+.c-card--major .c-card__title {
 	font-size: 1.5rem;
 	font-weight: 700;
 }
 
-h3 {
-	font-size: 1.25rem;
-	font-weight: 700;
-}
-
-h4, .c-card__title {
+.c-card__title {
 	font-size: 1.125rem;
 	font-weight: 700;
 }
 
-h5 {
-	font-size: 1rem;
-	font-weight: 700;
-}
-
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- */
 /**
  * Typography
- * Font settings
- */
-/**
- *  @springernature/global-button
- *  Button settings
- *
- */
-/**
- * Button Themes
- * Variables to set themes styles
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Link Text
- */
-h1 {
-	font-weight: 300;
-	font-size: 2.188rem;
-	font-size: min(max(1.5rem, 4vw), 2.188rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.75rem, 4vw), 2.625rem);
-}
-
-h2, .c-card--major .c-card__title {
-	font-weight: 400;
-	font-size: min(max(1.25rem, 4vw), 1.5rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.75rem);
-}
-
-h3 {
-	font-weight: 700;
-	font-size: min(max(1.125rem, 4vw), 1.25rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h4, .c-card__title {
-	font-weight: 700;
-	font-size: min(max(1.125rem, 4vw), 1.125rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h5 {
-	font-weight: 700;
-	font-size: min(max(1rem, 4vw), 1rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.188rem, 4vw), 1.188rem);
-}
-
-/*
- * Headings
- */
-/**
- * Layout
- * Universal layout styles
+ * Set base font size
  */
 html {
-	height: 100%;
-	overflow-y: scroll;
 	font-size: 100%;
 }
 
 body {
-	min-height: 100%;
-	font-family: "Merriweather", serif;
-	font-size: 1em;
-	line-height: 1.875;
-	color: #222222;
-	background: #f8f8f8;
-	letter-spacing: 0.01em;
+	font-size: 1.125rem;
 }
 
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-figure {
-	margin: 0;
-}
-
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-	margin: 0;
-	padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-	margin: 0;
-	padding: 0;
-}
-
-abbr[title] {
-	text-decoration: none;
-}
-
-a {
-	color: #025e8d;
-	text-decoration: underline;
-	text-decoration-skip-ink: auto;
-}
-
-a.visited, a:visited {
-	color: #a345c9;
-}
-
-a.hover, a:hover {
-	color: #01324b;
-	text-decoration: none;
-}
-
-a.active, a:active {
-	color: #222222;
-}
-
-a.focus, a:focus {
-	outline: 4px solid #ffcc00;
-}
-
-table {
-	font-size: 1rem;
-	line-height: 1.875;
-	border-collapse: collapse;
-	border: none;
-	width: 100%;
-	margin-bottom: 32px;
-}
-
-th,
-td {
-	padding: 8px;
-	vertical-align: top;
-}
-
-th {
-	text-align: left;
-	border-bottom: 3px solid #01324b;
-}
-
-td {
-	font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	border-bottom: 2px solid #dadada;
-}
-
-/**
- * Forms
- * Default form styles
- */
-input:not([disabled]):focus,
-select:not([disabled]):focus,
-textarea:not([disabled]):focus,
-[contenteditable]:focus {
-	outline: 3px solid #ffcc00;
-}
-
-input[type="file"]:focus-within {
-	outline: 3px solid #ffcc00;
-}
-
-/**
- * Card
- * Springer Nature branding for component
- */
 /**
  * Card
  * Default branding for component
@@ -1223,7 +720,7 @@ input[type="file"]:focus-within {
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 8px;
-	letter-spacing: 0.02em;
+	letter-spacing: normal;
 }
 
 .c-card__summary {
@@ -1301,7 +798,7 @@ input[type="file"]:focus-within {
 <h2>Default (with border and content padding)</h2>
 
 <ul class="demo-grid">
-		<li class="c-card">
+		<div class="c-card">
 			<div class="c-card__image">
 					<img src="https://picsum.photos/600/400" alt="descriptive alternative text">
 			</div>
@@ -1311,7 +808,7 @@ input[type="file"]:focus-within {
 		        </h3>
 		        	<div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
 		    </div>
-		</li>
+		</div>
 		<li class="c-card">
 			<div class="c-card__image">
 					<img src="https://picsum.photos/500/500" alt="descriptive alternative text">

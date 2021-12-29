@@ -50,9 +50,9 @@ When iterating over cards using a partial for the card itself, you need to expli
 
 ## Grouping
 
-Cards should always exist as list items for accessibility. It is highly recommended the parent list element (`<ul>`) takes the `l-grid` class from the `global-layout-grid` component (and accompanying custom property-based settings) to arrange the cards in a responsive grid formation using the CSS Grid module.
+Cards should almost always exist as list items for accessibility. It is highly recommended the parent list element (`<ul>`) takes the `l-grid` class from the `global-layout-grid` component (and accompanying custom property-based settings) to arrange the cards in a responsive grid formation using the CSS Grid module.
 
-In the following example, custom properties are used the adjust the gap (gutter) and target/idealized card width (here set to `230px`):
+In the following example, custom properties are used to adjust the gap (gutter) and target/idealized card width (here set to `230px`):
 
 ```html
 <!-- cards are always list items, organized in a `<ul>` -->
@@ -86,3 +86,7 @@ Landscape images in `portrait` mode are also contained such that their height is
 ### No shape
 
 By applying `noShape: true` (see **Usage**), the border, background, and `box-shadow` are removed (and padding is removed from the content area accordingly). Cards with `portrait: true` applied (see **Portrait mode**) have `noShape` applied automatically.
+
+### No list semantics
+
+In case you want to remove the list semantics, you can either put `noList: true` on the parent context or `noListItem: true` on an individual card object. Since this feature is intended mostly for single cards, you are more likely to use `noListItem: true`. Groups of cards should typically be presented as unordered lists for accessibility.

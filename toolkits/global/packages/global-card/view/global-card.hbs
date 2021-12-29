@@ -1,4 +1,4 @@
-<li class="c-card{{#if parent.noShape}} c-card--no-shape{{else}}{{#if parent.portrait}} c-card--no-shape{{else}}{{/if}}{{/if}}">
+<{{#if parent.noList}}div{{else}}{{#if noListItem}}div{{else}}li{{/if}}{{/if}} class="c-card{{#if parent.noShape}} c-card--no-shape{{else}}{{#if parent.portrait}} c-card--no-shape{{else}}{{/if}}{{/if}}">
 	<div class="c-card__image{{#if parent.portrait}} c-card__image--portrait{{/if}}"{{#if parent.aspectRatio}} style="--card--image-aspect-ratio: {{parent.aspectRatio}}"{{/if}}>
 		{{#with image}}
 			<img src="{{src}}" alt="{{alt}}">
@@ -14,4 +14,4 @@
         	<div class="c-card__summary">{{summary}}</div>
 		{{/if}}
     </div>
-</li>
+</{{#if parent.noList}}div{{else}}{{#if noListItem}}div{{else}}li{{/if}}{{/if}}>
