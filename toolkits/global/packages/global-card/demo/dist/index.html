@@ -735,7 +735,7 @@ body {
 	margin-bottom: 0;
 }
 
-.c-card__link::before {
+.c-card__link:not(.c-card__link--no-block-link)::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -798,7 +798,7 @@ body {
 <h2>Default (with border and content padding)</h2>
 
 <ul class="demo-grid">
-		<div class="c-card">
+		<li class="c-card">
 			<div class="c-card__image">
 					<img src="https://picsum.photos/600/400" alt="descriptive alternative text">
 			</div>
@@ -808,7 +808,7 @@ body {
 		        </h3>
 		        	<div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
 		    </div>
-		</div>
+		</li>
 		<li class="c-card">
 			<div class="c-card__image">
 					<img src="https://picsum.photos/500/500" alt="descriptive alternative text">
@@ -837,14 +837,14 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link" href="#">At vestibulum purus</a>
+		            <a class="c-card__link c-card__link--no-block-link" href="#">No Block Link</a>
 		        </h3>
 		        	<div class="c-card__summary">Curabitur ac nisl rhoncus orci facilisis vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
 		    </div>
 		</li>
 </ul>
 
-<h2>Portraits (border and content padding removed)</h2>
+<h2>Portraits (<code>noBlockLinks</code> applied)</h2>
 
 <ul class="demo-grid">
 		<li class="c-card c-card--no-shape">
@@ -853,7 +853,7 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link" href="#">Lorem ipsum dolor</a>
+		            <a class="c-card__link c-card__link--no-block-link" href="#">Lorem ipsum dolor</a>
 		        </h3>
 		        	<div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
 		    </div>
@@ -864,7 +864,7 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link" href="#">Consectetur adipiscing</a>
+		            <a class="c-card__link c-card__link--no-block-link" href="#">Consectetur adipiscing</a>
 		        </h3>
 		        	<div class="c-card__summary">Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis.</div>
 		    </div>
@@ -875,7 +875,7 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link" href="#">Lectus et velit auctor pulvinar</a>
+		            <a class="c-card__link c-card__link--no-block-link" href="#">Lectus et velit auctor pulvinar</a>
 		        </h3>
 		        	<div class="c-card__summary">Proin facilisis viverra justo. Quisque pretium dui vitae feugiat imperdiet. Maecenas id mollis mauris. Morbi placerat neque eu ante mollis, id ornare neque sagittis.</div>
 		    </div>
@@ -886,7 +886,7 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link" href="#">Etiam vel augue laoreet</a>
+		            <a class="c-card__link c-card__link--no-block-link" href="#">Etiam vel augue laoreet</a>
 		        </h3>
 		        	<div class="c-card__summary">Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim.</div>
 		    </div>

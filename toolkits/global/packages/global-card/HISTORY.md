@@ -1,5 +1,8 @@
 # History
 
+## 7.1.0 (2021-12-29)
+    * Option to remove faux block link style
+
 ## 7.0.0 (2021-12-22)
     * BREAKING:
         * Template moved to `/view`

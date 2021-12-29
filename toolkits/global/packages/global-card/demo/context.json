@@ -26,17 +26,19 @@
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
+				"noBlockLink": true,
 				"image": {
 					"src": "https://picsum.photos/400/300",
 					"alt": "descriptive alternative text"
 				},
-				"title": "At vestibulum purus",
+				"title": "No Block Link",
 				"summary": "Curabitur ac nisl rhoncus orci facilisis vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
 	},
 	"cardsPortrait": {
 		"portrait": true,
+		"noBlockLinks": true,
 		"cards": [
 			{
 				"image": {

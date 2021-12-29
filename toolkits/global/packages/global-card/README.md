@@ -87,6 +87,10 @@ Landscape images in `portrait` mode are also contained such that their height is
 
 By applying `noShape: true` (see **Usage**), the border, background, and `box-shadow` are removed (and padding is removed from the content area accordingly). Cards with `portrait: true` applied (see **Portrait mode**) have `noShape` applied automatically.
 
+### No faux block link
+
+If your card contains links in the body text, they will not be reachable when `u-link-faux-block()` is included and active. By applying `noBlockLink` to the card or `noBlockLinks` to the card’s parent context, you can remove this feature.
+
 ### No list semantics
 
 In case you want to remove the list semantics, you can either put `noList: true` on the parent context or `noListItem: true` on an individual card object. Since this feature is intended mostly for single cards, you are more likely to use `noListItem: true`. Groups of cards should typically be presented as unordered lists for accessibility.

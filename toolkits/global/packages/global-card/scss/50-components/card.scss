@@ -96,7 +96,7 @@
 	}
 }
 
-.c-card__link {
+.c-card__link:not(.c-card__link--no-block-link) {
 	@include u-link-faux-block();
 }
 
