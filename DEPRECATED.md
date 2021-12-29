@@ -97,4 +97,4 @@ A list of deprecated packages. These packages are no longer meant to be used, bu
    Now part of the [`global-pagination`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-pagination).
 
 * `nature-headings`  
-   Has been recreated as [`nature-section-heading`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-section-heading). For reasoning see here.
+   Has been recreated as [`nature-section-heading`](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-section-heading). For reasoning [see here](https://github.com/springernature/frontend-toolkits/pull/647).
