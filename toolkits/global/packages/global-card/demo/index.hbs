@@ -24,7 +24,9 @@
 	}
 </style>
 
-<h2>Default (with border and content padding)</h2>
+<h2>Default</h2>
+
+<p>The fourth card has <code>"noBlockLink": true</code> set because it contains a second link.</p>
 
 <ul class="demo-grid">
 {{#with cardsDefault}}
@@ -34,7 +36,21 @@
 {{/with}}
 </ul>
 
-<h2>Portraits (<code>noBlockLinks</code> applied)</h2>
+<h2>1/1 aspect ratio</h2>
+
+<p>With <code>"aspectRatio": "1 / 1"</code> set.</p>
+
+<ul class="demo-grid">
+{{#with cardsSquare}}
+	{{#each cards}}
+		{{>card parent=..}}
+	{{/each}}
+{{/with}}
+</ul>
+
+<h2>Portraits</h2>
+
+<p>With <code>"portrait": true</code> set.</p>
 
 <ul class="demo-grid">
 {{#with cardsPortrait}}
