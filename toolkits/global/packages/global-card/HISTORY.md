@@ -6,7 +6,7 @@
 ## 7.0.0 (2021-12-22)
     * BREAKING:
         * Template moved to `/view`
-        * Enforced list semantics
+        * List semantics by default
         * Shared `level` (`aria-level`) value
     * Support for portrait shaped images (avatars)
     * `noShape` option to remove border, background, and box-shadow
