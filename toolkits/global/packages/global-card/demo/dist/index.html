@@ -797,6 +797,8 @@ body {
 
 <h2>Default</h2>
 
+<p>The fourth card has <code>"noBlockLink": true</code> set because it contains a second link.</p>
+
 <ul class="demo-grid">
 		<li class="c-card">
 			<div class="c-card__image">
@@ -837,6 +839,57 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
+		            <a class="c-card__link c-card__link--no-block-link" href="#">No Block Link</a>
+		        </h3>
+		        	<div class="c-card__summary">Curabitur ac nisl <a href="#">rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+		    </div>
+		</li>
+</ul>
+
+<h3>Subsection with <code>"level": "4"</code></h3>
+
+The above heading is an <code>&lt;h3&gt;</code>, meaning <code>"level": "4"</code> should be set for the cards’ titles.
+
+<ul class="demo-grid">
+		<li class="c-card">
+			<div class="c-card__image">
+					<img src="https://picsum.photos/510/700" alt="descriptive alternative text">
+			</div>
+		    <div class="c-card__body">
+		        <h3 class="c-card__title" aria-level="4">
+		            <a class="c-card__link" href="#">Consectetur adipiscing</a>
+		        </h3>
+		        	<div class="c-card__summary">Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis.</div>
+		    </div>
+		</li>
+		<li class="c-card">
+			<div class="c-card__image">
+					<img src="https://picsum.photos/630/410" alt="descriptive alternative text">
+			</div>
+		    <div class="c-card__body">
+		        <h3 class="c-card__title" aria-level="4">
+		            <a class="c-card__link" href="#">Lorem ipsum dolor</a>
+		        </h3>
+		        	<div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
+		    </div>
+		</li>
+		<li class="c-card">
+			<div class="c-card__image">
+					<img src="https://picsum.photos/890/440" alt="descriptive alternative text">
+			</div>
+		    <div class="c-card__body">
+		        <h3 class="c-card__title" aria-level="4">
+		            <a class="c-card__link" href="#">Lectus et velit auctor pulvinar</a>
+		        </h3>
+		        	<div class="c-card__summary">Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim.</div>
+		    </div>
+		</li>
+		<li class="c-card">
+			<div class="c-card__image">
+					<img src="https://picsum.photos/600/605" alt="descriptive alternative text">
+			</div>
+		    <div class="c-card__body">
+		        <h3 class="c-card__title" aria-level="4">
 		            <a class="c-card__link c-card__link--no-block-link" href="#">No Block Link</a>
 		        </h3>
 		        	<div class="c-card__summary">Curabitur ac nisl <a href="#">rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
@@ -888,7 +941,7 @@ body {
 			</div>
 		    <div class="c-card__body">
 		        <h3 class="c-card__title">
-		            <a class="c-card__link c-card__link--no-block-link" href="#">No Block Link</a>
+		            <a class="c-card__link" href="#">No Block Link</a>
 		        </h3>
 		        	<div class="c-card__summary">Curabitur ac nisl rhoncus orci facilisis vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
 		    </div>

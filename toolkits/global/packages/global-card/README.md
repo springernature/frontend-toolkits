@@ -69,13 +69,37 @@ In the following example, custom properties are used to adjust the gap (gutter) 
 
 ### Aspect ratio
 
-By default, the aspect ratio for the _space_ into which the image is placed is `16 / 9`. This can be adjusted by placing a top-level `aspectRatio` property on the card data (see **Usage**). This is a string.
+By default, the aspect ratio for the space into which the image is placed is `16 / 9`. This can be adjusted by placing a top-level `aspectRatio` property on the card data (see **Usage**). This is a string.
 
 ```json
-"aspectRatio": "1 / 1"
+{
+    "data": {
+        "aspectRatio": "1 / 1",
+        "cards": [
+            ...
+        ]
+    }
+}
 ```
 
 Unless `portrait` is set to true, the image will cover the area defined by the aspect ratio. The `object-fit: cover` declaration ensures this is achieved without distortion by cropping the image around its center.
+
+### Heading level
+
+For cards that have a title/heading, you may need to adjust their heading levels to befit the context. For example, if a set of cards are introduced with an `<h3>` heading, the cards should each have a heading level of `4` to mark them as subsections under the `<h3>` (they belong the the `<h3>`’s section in the document outline). You can control the the heading level in the parent context with the `level` property. Note that `level` should be a string, not an integer.
+
+```json
+{
+    "data": {
+        "level": "4"
+        "cards": [
+            ...
+        ]
+    }
+}
+```
+
+Note that this is achieved using `aria-level`, so the appearance (font size) of the heading/title remains unaffected.
 
 ### Portrait mode
 
@@ -83,14 +107,58 @@ By placing `portrait: true` on the top-level of the card data (see **Usage** for
 
 Landscape images in `portrait` mode are also contained such that their height is diminished. They are aligned to the bottom of the image area so that the gap between the visible image and the title above it does not differ from the surrounding (portrait) cards.
 
+```json
+{
+    "data": {
+        "portrait": true,
+        "cards": [
+            ...
+        ]
+    }
+}
+```
+
 ### No shape
 
 By applying `noShape: true` (see **Usage**), the border, background, and `box-shadow` are removed (and padding is removed from the content area accordingly). Cards with `portrait: true` applied (see **Portrait mode**) have `noShape` applied automatically.
+
+```json
+{
+    "data": {
+        "noShape": true,
+        "cards": [
+            ...
+        ]
+    }
+}
+```
 
 ### No faux block link
 
 If your card contains links in the body text, they will not be reachable when `u-link-faux-block()` is included and active. By applying `noBlockLink` to the card or `noBlockLinks` to the card’s parent context, you can remove this feature.
 
+```json
+{
+    "data": {
+        "noBlockLinks": true,
+        "cards": [
+            ...
+        ]
+    }
+}
+```
+
 ### No list semantics
 
 In case you want to remove the list semantics, you can either put `noList: true` on the parent context or `noListItem: true` on an individual card object. Since this feature is intended mostly for single cards, you are more likely to use `noListItem: true`. Groups of cards should typically be presented as unordered lists for accessibility.
+
+```json
+{
+    "data": {
+        "noList": true,
+        "cards": [
+            ...
+        ]
+    }
+}
+```
