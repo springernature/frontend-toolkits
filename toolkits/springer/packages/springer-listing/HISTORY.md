@@ -1,7 +1,14 @@
 # History
 
+## 5.0.0 (2021-12-31)
+    * BREAKING:
+        * Now renders as a list, looping over individual listings
+    * New `/view` template 
+    * Separate demos for different settings
+
 ## 4.0.0 (2021-12-07)
     * BREAKING: Fixes some typographic values to accomodate the root font size change.
+
 ## 3.1.1 (2021-11-30)
     * BUG: images not rendering in demo
 
