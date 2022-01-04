@@ -71,4 +71,4 @@ Once you’ve installed the SCSS and JavaScript, build your Section Heading usin
 
 ## Help improve this page
 
-If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#design-systems](https://springernature.slack.com/archives/C75DHBTBP) Slack channel.
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
