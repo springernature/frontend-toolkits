@@ -35,7 +35,9 @@
     "validate:global": "sn-package-validate -t global",
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
-    "validate:springernature": "sn-package-validate -t springernature"
+    "validate:springernature": "sn-package-validate -t springernature",
+    "testone": "node first.js",
+    "testtwo": "node second.js"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
@@ -81,5 +83,9 @@
       "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
-  "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"
+  "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml",
+  "dependencies": {
+    "conf": "^10.1.1",
+    "env-paths": "^2.2.1"
+  }
 }
