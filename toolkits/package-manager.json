@@ -1,5 +1,6 @@
 {
   "scope": "springernature",
+  "blockNewPackages": true,
   "folders": {
     "scss": [
       "scss",
