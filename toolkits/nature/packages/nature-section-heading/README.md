@@ -22,7 +22,6 @@ When you need to break up content on article pages into chunks, use [default hea
 
 Write clear, descriptive headings using sentence case.
 
-[Always follow our guidance on writing headings](https://frontend-design-system.private.springernature.app/nature/styleguide/typography).
 
 ### Section headings as links
 
