@@ -27,7 +27,7 @@ Write clear, descriptive headings using sentence case.
 
 You may want a Section heading to link to another page.
 
-In these cases, include a chevron after the Section heading text to help users understand that they can click on it.
+In these cases, include a chevron after the heading text to help users understand that they can click on it.
 
 ![Example with chevron](https://i.ibb.co/V3KF5Dy/Screenshot-2021-12-29-at-10-49-24.png)
 
