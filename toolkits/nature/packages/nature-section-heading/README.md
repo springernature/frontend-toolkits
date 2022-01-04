@@ -2,7 +2,7 @@
 
 [GitHub](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-section-heading) | [NPM](https://www.npmjs.com/package/@springernature/nature-section-heading)
 
-The Nature Section heading is a type of heading used for titles of subsections of pages on Nature.com.
+The Nature Section heading is a type of heading used for titles of some subsections of pages on Nature.com.
 
 It uses borders above and below the heading text to make it stand out from other headings on the page.
 
