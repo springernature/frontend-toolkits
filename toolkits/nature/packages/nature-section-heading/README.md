@@ -39,7 +39,7 @@ To use the Section heading component, enter the following command in your Termin
 npm install @springernature/nature-section-heading
 ```
 
-Then import the installed component code in your SCSS file:
+Then import the installed component code in your `scss` file:
 
 ```scss
 // settings
