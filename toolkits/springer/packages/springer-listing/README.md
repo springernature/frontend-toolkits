@@ -1,4 +1,4 @@
-# Springer listing
+# Springer listings
 
 Display of scannable content typically within a non-curated list, for example, entries in a search results list.
 
@@ -11,8 +11,8 @@ Optional image shrinks besides the title and text as the viewport becomes smalle
 Import the Sass:
 
 ```scss
-@import '../node_modules/@springernature/springer-listing/scss/10-settings/listing';
-@import '../node_modules/@springernature/springer-listing/scss/50-components/listing';
+@import '../node_modules/@springernature/springer-listing/scss/10-settings/listings';
+@import '../node_modules/@springernature/springer-listing/scss/50-components/listings';
 ```
 
 Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see examples of the expected data. Note that the listings themselves are supplied as an array on the `listings` property. This allows for applying various options (like `level` in the below example) to every listing.
