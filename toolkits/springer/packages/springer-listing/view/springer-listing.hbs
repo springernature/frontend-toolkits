@@ -1,0 +1,40 @@
+<ul class="c-listing">
+	{{#each listings}}
+	<li class="c-listing__item">
+		<div class="c-listing__content">
+			<h3 class="c-listing__title" {{#if ../level}} aria-level="{{../level}}" {{/if}}>
+				<a href="{{permalink}}">{{title}} level:{{level}}</a>
+			</h3>
+			{{#if authors}}
+			<div class="c-listing__authors">
+				<span class="c-listing__authors-list"><span class="c-listing__authors-list">Authors:&nbsp;</span>{{#each authors}}<span>{{.}}</span>{{/each}}</span>
+			</div>
+			{{/if}}
+			{{#if meta}}
+			<div class="c-listing__metadata">
+				{{#each meta}}<span>{{.}}</span>{{/each}}
+			</div>
+			{{/if}}
+			{{#if options}}
+			<ul class="c-listing__view-options">
+				{{#each options}}
+				<li>
+					<a href="{{url}}">
+						<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
+							<use xlink:href="{{../../optionIcon}}"></use>
+						</svg>
+						<span>{{label}}</span>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{#with image}}
+		<div class="c-listing__image">
+			<img src="{{imageSrc}}" alt="{{imageAlt}}">
+		</div>
+		{{/with}}
+	</li>
+	{{/each}}
+</ul>
