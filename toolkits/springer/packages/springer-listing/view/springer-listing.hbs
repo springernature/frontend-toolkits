@@ -1,26 +1,26 @@
-<ul class="c-listings">
+<ul class="c-listing">
 	{{#each listings}}
-	<li class="c-listings__item">
-		<div class="c-listings__content">
-			<h3 class="c-listings__title" {{#if ../level}} aria-level="{{../level}}" {{/if}}>
+	<li class="c-listing__item">
+		<div class="c-listing__content">
+			<h3 class="c-listing__title" {{#if ../level}} aria-level="{{../level}}" {{/if}}>
 				<a href="{{permalink}}">{{title}} level:{{level}}</a>
 			</h3>
 			{{#if authors}}
-			<div class="c-listings__authors">
-				<span class="c-listings__authors-list"><span class="c-listings__authors-list">Authors:&nbsp;</span>{{#each authors}}<span>{{.}}</span>{{/each}}</span>
+			<div class="c-listing__authors">
+				<span class="c-listing__authors-list"><span class="c-listing__authors-list">Authors:&nbsp;</span>{{#each authors}}<span>{{.}}</span>{{/each}}</span>
 			</div>
 			{{/if}}
 			{{#if meta}}
-			<div class="c-listings__metadata">
+			<div class="c-listing__metadata">
 				{{#each meta}}<span>{{.}}</span>{{/each}}
 			</div>
 			{{/if}}
 			{{#if options}}
-			<ul class="c-listings__view-options">
+			<ul class="c-listing__view-options">
 				{{#each options}}
 				<li>
 					<a href="{{url}}">
-						<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+						<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 							<use xlink:href="{{../../optionIcon}}"></use>
 						</svg>
 						<span>{{label}}</span>
@@ -31,7 +31,7 @@
 			{{/if}}
 		</div>
 		{{#with image}}
-		<div class="c-listings__image">
+		<div class="c-listing__image">
 			<img src="{{imageSrc}}" alt="{{imageAlt}}">
 		</div>
 		{{/with}}

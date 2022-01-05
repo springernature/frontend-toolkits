@@ -1333,63 +1333,63 @@ cite {
 	font-style: normal;
 }
 
-.c-listings {
+.c-listing {
 	list-style: none;
 	padding: 0;
 }
 
-.c-listings__item {
+.c-listing__item {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
 }
 
-.c-listings__content {
+.c-listing__content {
 	min-width: 60%;
 	flex-basis: 0;
 	flex-grow: 666;
 }
 
-.c-listings__content > * + * {
+.c-listing__content > * + * {
 	margin-top: 0.75rem;
 }
 
-.c-listings__item +
-.c-listings__item {
+.c-listing__item +
+.c-listing__item {
 	margin-top: 16px;
 	padding-top: 16px;
 	border-top: 1px solid #cccccc;
 }
 
-.c-listings__title {
+.c-listing__title {
 	margin-bottom: 0;
 }
 
-.c-listings__title a {
+.c-listing__title a {
 	text-decoration: none;
 }
 
-.c-listings__authors {
+.c-listing__authors {
 	color: #666;
 }
 
-.c-listings__authors-list,
-.c-listings__metadata {
+.c-listing__authors-list,
+.c-listing__metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
 }
 
-.c-listings__authors-list span + span:not(:first-child):not(:last-child)::after {
+.c-listing__authors-list span + span:not(:first-child):not(:last-child)::after {
 	content: ',\00A0';
 }
 
-.c-listings__metadata span:not(:last-child)::after {
+.c-listing__metadata span:not(:last-child)::after {
 	content: '';
 	border-left: 2px solid #cccccc;
 	margin: 0 0.5em;
 }
 
-.c-listings__image {
+.c-listing__image {
 	flex-basis: 200px;
 	flex-grow: 1;
 	position: relative;
@@ -1397,7 +1397,7 @@ cite {
 	align-self: flex-start;
 }
 
-.c-listings__image img {
+.c-listing__image img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1405,7 +1405,7 @@ cite {
 	border: 1px solid #cccccc;
 }
 
-.c-listings__view-options {
+.c-listing__view-options {
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -1413,23 +1413,23 @@ cite {
 }
 
 @supports (gap: 1em) {
-	.c-listings__view-options {
+	.c-listing__view-options {
 		gap: 0.5em;
 	}
 }
 
 @supports not (gap: 1em) {
-	.c-listings__view-options li {
+	.c-listing__view-options li {
 		margin: 0.25em;
 	}
 }
 
-.c-listings__view-options a {
+.c-listing__view-options a {
 	display: flex;
 	align-items: center;
 }
 
-.c-listings__view-options-icon {
+.c-listing__view-options-icon {
 	margin-right: 0.25em;
 	fill: currentColor;
 }
@@ -1439,36 +1439,36 @@ cite {
 	<body style="padding:2%">
 		<h2>With authors listed</h2>
 
-	<ul class="c-listings">
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+	<ul class="c-listing">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries level:</a>
 				</h3>
-				<div class="c-listings__authors">
-					<span class="c-listings__authors-list"><span class="c-listings__authors-list">Authors:&nbsp;</span><span>Zhen Cao</span><span>Qizhen Xiao</span><span>Gangtie Lie</span><span>Zhaohui Li</span></span>
+				<div class="c-listing__authors">
+					<span class="c-listing__authors-list"><span class="c-listing__authors-list">Authors:&nbsp;</span><span>Zhen Cao</span><span>Qizhen Xiao</span><span>Gangtie Lie</span><span>Zhaohui Li</span></span>
 				</div>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Research Article</span><span>2 November 2019</span>
 				</div>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/910/650" alt="Descriptive alternative text">
 			</div>
 		</li>
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Machine vision based local fish recognition level:</a>
 				</h3>
-				<div class="c-listings__authors">
-					<span class="c-listings__authors-list"><span class="c-listings__authors-list">Authors:&nbsp;</span><span>Israt Sharmin</span><span>Nuzhat Farzana Islam</span><span>Israt Jahan</span><span>Tasnem Ahmed Joye</span><span>Md. Riazur Rahman</span><span>Md. Tarek Habib</span></span>
+				<div class="c-listing__authors">
+					<span class="c-listing__authors-list"><span class="c-listing__authors-list">Authors:&nbsp;</span><span>Israt Sharmin</span><span>Nuzhat Farzana Islam</span><span>Israt Jahan</span><span>Tasnem Ahmed Joye</span><span>Md. Riazur Rahman</span><span>Md. Tarek Habib</span></span>
 				</div>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Original Paper</span><span>4 October 2019</span>
 				</div>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/800/700" alt="Descriptive alternative text">
 			</div>
 		</li>
@@ -1476,30 +1476,30 @@ cite {
 
 <h2>Without authors</h2>
 
-	<ul class="c-listings">
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+	<ul class="c-listing">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Research Article</span><span>2 November 2019</span>
 				</div>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/825/740" alt="Descriptive alternative text">
 			</div>
 		</li>
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Machine vision based local fish recognition level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Original Paper</span><span>4 October 2019</span>
 				</div>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/730/700" alt="Descriptive alternative text">
 			</div>
 		</li>
@@ -1507,19 +1507,19 @@ cite {
 
 <h2>With options</h2>
 
-	<ul class="c-listings">
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+	<ul class="c-listing">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Research Article</span><span>2 November 2019</span>
 				</div>
-				<ul class="c-listings__view-options">
+				<ul class="c-listing__view-options">
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>Full text</span>
@@ -1527,7 +1527,7 @@ cite {
 					</li>
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>PDF</span>
@@ -1535,22 +1535,22 @@ cite {
 					</li>
 				</ul>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/820/750" alt="Descriptive alternative text">
 			</div>
 		</li>
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title">
 					<a href="#">Machine vision based local fish recognition level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Original Paper</span><span>4 October 2019</span>
 				</div>
-				<ul class="c-listings__view-options">
+				<ul class="c-listing__view-options">
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>Full text</span>
@@ -1558,7 +1558,7 @@ cite {
 					</li>
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>PDF</span>
@@ -1566,7 +1566,7 @@ cite {
 					</li>
 				</ul>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/700/700" alt="Descriptive alternative text">
 			</div>
 		</li>
@@ -1574,19 +1574,19 @@ cite {
 
 <h3>With options and a heading level of 4</h3>
 
-	<ul class="c-listings">
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title" aria-level="4">
+	<ul class="c-listing">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title" aria-level="4">
 					<a href="#">Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Research Article</span><span>2 November 2019</span>
 				</div>
-				<ul class="c-listings__view-options">
+				<ul class="c-listing__view-options">
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>Full text</span>
@@ -1594,7 +1594,7 @@ cite {
 					</li>
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>PDF</span>
@@ -1602,22 +1602,22 @@ cite {
 					</li>
 				</ul>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/815/740" alt="Descriptive alternative text">
 			</div>
 		</li>
-		<li class="c-listings__item">
-			<div class="c-listings__content">
-				<h3 class="c-listings__title" aria-level="4">
+		<li class="c-listing__item">
+			<div class="c-listing__content">
+				<h3 class="c-listing__title" aria-level="4">
 					<a href="#">Machine vision based local fish recognition level:</a>
 				</h3>
-				<div class="c-listings__metadata">
+				<div class="c-listing__metadata">
 					<span>Original Paper</span><span>4 October 2019</span>
 				</div>
-				<ul class="c-listings__view-options">
+				<ul class="c-listing__view-options">
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>Full text</span>
@@ -1625,7 +1625,7 @@ cite {
 					</li>
 					<li>
 						<a href="#">
-							<svg class="c-listings__view-options-icon" width="16" height="16" aria-hidden="true">
+							<svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
 								<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 							</svg>
 							<span>PDF</span>
@@ -1633,7 +1633,7 @@ cite {
 					</li>
 				</ul>
 			</div>
-			<div class="c-listings__image">
+			<div class="c-listing__image">
 				<img src="https://picsum.photos/620/605" alt="Descriptive alternative text">
 			</div>
 		</li>
