@@ -1,6 +1,6 @@
 .c-details {
 	padding: $details--padding 0;
-	border: 1px solid;
+	border: 1px solid $details--border-color;
 	border-width: 1px 0;
 	/* In case it’s a list item */
 	list-style: none;
@@ -52,6 +52,7 @@
 	flex-shrink: 0;
 	width: 1em;
 	height: 1em;
+	color: $details--icon-color;
 }
 
 .c-details [open] .u-icon {
@@ -59,8 +60,9 @@
 }
 
 .c-details__title {
-	font-weight: bold;
 	margin-left: $details--icon-margin;
+	font-family: $details--title-font-family;
+	font-size: $context--font-size-h3;
 }
 
 .c-details__content {

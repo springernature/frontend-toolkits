@@ -1,4 +1,8 @@
 // Default setting
 @import 'default';
 
+$details--border-color: greyscale(80);
 $details--focus-underline-color: color('action-focus');
+/* TODO: Move color to brand context */
+$details--icon-color: #0070a8;
+$details--title-font-family: $context--font-family-serif;
