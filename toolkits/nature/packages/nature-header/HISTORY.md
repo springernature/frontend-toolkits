@@ -1,5 +1,8 @@
 # History
 
+## 7.0.1 (2022-01-06)
+    * Renames test filename
+
 ## 7.0.0 (2022-01-06)
     BREAKING
       * Renames JavaScript simply 'header' as 'enhanced-header' can cause confusion for users.
