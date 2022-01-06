@@ -1,9 +1,174 @@
 {
-	"heading": "Example heading",
-	"level": "2",
-	"text": "Lorem ipsum dolor sit amet.",
-	"image": {
-		"src": "./img/sample.jpg",
-		"alt": "Text alternative for the image"
+	"listingsWithAuthors": {
+		"listings": [
+			{
+				"permalink": "#",
+				"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+				"authors": [
+					"Zhen Cao",
+					"Qizhen Xiao",
+					"Gangtie Lie",
+					"Zhaohui Li"
+				],
+				"meta": [
+					"Research Article",
+					"2 November 2019"
+				],
+				"image": {
+				"imageSrc": "https://picsum.photos/910/650",
+				"imageAlt": "Descriptive alternative text"
+				}
+			},
+			{
+				"permalink": "#",
+				"title": "Machine vision based local fish recognition",
+				"authors": [
+					"Israt Sharmin",
+					"Nuzhat Farzana Islam",
+					"Israt Jahan",
+					"Tasnem Ahmed Joye",
+					"Md. Riazur Rahman",
+					"Md. Tarek Habib"
+				],
+				"meta": [
+					"Original Paper",
+					"4 October 2019"
+				],
+				"image": {
+				"imageSrc": "https://picsum.photos/800/700",
+				"imageAlt": "Descriptive alternative text"
+				}
+			}
+		]
+	},
+	"listingsWithoutAuthors": {
+		"listings": [
+			{
+				"permalink": "#",
+				"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+				"meta": [
+					"Research Article",
+					"2 November 2019"
+				],
+				"image": {
+				"imageSrc": "https://picsum.photos/825/740",
+				"imageAlt": "Descriptive alternative text"
+				}
+			},
+			{
+				"permalink": "#",
+				"title": "Machine vision based local fish recognition",
+				"meta": [
+					"Original Paper",
+					"4 October 2019"
+				],
+				"image": {
+				"imageSrc": "https://picsum.photos/730/700",
+				"imageAlt": "Descriptive alternative text"
+				}
+			}
+		]
+	},
+	"listingsWithOptions": {
+		"optionIcon": "../img/chevron-right.svg#i-chevron-right",
+		"listings": [
+			{
+				"permalink": "#",
+				"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+				"meta": [
+					"Research Article",
+					"2 November 2019"
+				],
+				"image": {
+					"imageSrc": "https://picsum.photos/820/750",
+					"imageAlt": "Descriptive alternative text"
+				},
+				"options": [
+					{
+						"label": "Full text",
+						"url": "#"
+					},
+					{
+						"label": "PDF",
+						"url": "#"
+					}
+				]
+			},
+			{
+				"permalink": "#",
+				"title": "Machine vision based local fish recognition",
+				"meta": [
+					"Original Paper",
+					"4 October 2019"
+				],
+				"image": {
+					"imageSrc": "https://picsum.photos/700/700",
+					"imageAlt": "Descriptive alternative text"
+				},
+				"options": [
+					{
+						"label": "Full text",
+						"url": "#"
+					},
+					{
+						"label": "PDF",
+						"url": "#"
+					}
+				]
+			}
+		]
+	},
+	"listingsWithOptionsLevel4": {
+		"level": "4",
+		"optionIcon": "../img/chevron-right.svg#i-chevron-right",
+		"listings": [
+			{
+				"permalink": "#",
+				"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+				"meta": [
+					"Research Article",
+					"2 November 2019"
+				],
+				"image": {
+					"imageSrc": "https://picsum.photos/815/740",
+					"imageAlt": "Descriptive alternative text"
+				},
+				"options": [
+					{
+						"label": "Full text",
+						"url": "#"
+					},
+					{
+						"label": "PDF",
+						"url": "#"
+					}
+				]
+			},
+			{
+				"permalink": "#",
+				"title": "Machine vision based local fish recognition",
+				"meta": [
+					"Original Paper",
+					"4 October 2019"
+				],
+				"image": {
+					"imageSrc": "https://picsum.photos/620/605",
+					"imageAlt": "Descriptive alternative text"
+				},
+				"options": [
+					{
+						"label": "Full text",
+						"url": "#"
+					},
+					{
+						"label": "PDF",
+						"url": "#"
+					}
+				]
+			}
+		]
+	},
+	"dynamicPartials": {
+		"listings": "./toolkits/springer/packages/springer-listing/view/springer-listing.hbs"
 	}
 }
