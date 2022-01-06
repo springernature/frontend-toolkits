@@ -14,7 +14,6 @@ Use the Nature Section heading when you want to organise multiple pieces of cont
 
 ## When not to use this component
 
-Don’t use the Nature Section heading unless you’re organising multiple related items of content into a group.
 
 When you need to break up content on article pages into chunks, use [default heading styles](https://frontend-design-system.private.springernature.app/nature/styleguide/typography#headings-nature-journals).
 
