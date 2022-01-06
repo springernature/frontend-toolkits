@@ -48,7 +48,7 @@ Then import the installed component code in your `scss` file:
 @import '@springernature/nature-section-heading/scss/50-components/section-heading';
 ```
 
-Once you’ve installed the SCSS, build your Section Heading using the following HTML as a guide.
+Once you’ve installed the `scss`, build your Section Heading using the following HTML as a guide.
 
 ### Section heading
 
