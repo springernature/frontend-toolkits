@@ -12,13 +12,11 @@ Use the Nature Section heading when you want to organise multiple pieces of cont
 
 ## When not to use this component
 
-
 When you need to break up content on article pages into chunks, use [default heading styles](https://frontend-design-system.private.springernature.app/nature/styleguide/typography#headings-nature-journals).
 
 ## How it works
 
 Write clear, descriptive headings using sentence case.
-
 
 ### Section headings as links
 
