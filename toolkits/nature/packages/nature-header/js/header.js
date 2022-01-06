@@ -23,7 +23,7 @@ const findTarget = selector => {
 	return null;
 };
 
-const enhancedHeader = () => {
+const header = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
 	const header = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
@@ -56,4 +56,4 @@ const enhancedHeader = () => {
 	});
 };
 
-export {enhancedHeader};
+export {header};
