@@ -87,10 +87,10 @@ Publisher level header for Nature products.
 Color of border of header is set to black. In oscar-sites-nature the color of border on each journal is defined from Pubserv and set in the app to override default black border.
 
 ### Header expander
-Enhanced header makes use of [global-expander](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander)
+Nature Header's JavaScript makes use of [global-expander](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander)
 and [makeArray](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-javascript#makearray) in global-javascript.  
 
-`id` in expander container should match `href` in trigger for enhanced-header to find and append to button.   
+`id` in expander container should match `href` in trigger for the JavaScript to find and append to button.   
 
 ```html
 <!-- example of standard expander that inlines with width of content -->
