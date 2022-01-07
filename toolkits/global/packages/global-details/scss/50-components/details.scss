@@ -55,7 +55,9 @@
 	color: $details--icon-color;
 }
 
-.c-details [open] .u-icon {
+/* ↓ Complex selector necessary to ensure
+nested icons are not rotated */
+.c-details > [open] > summary > div > .u-icon {
 	transform: rotate(90deg);
 }
 
@@ -67,4 +69,14 @@
 
 .c-details__content {
 	padding-top: $details--padding;
+}
+
+/* Nested expanders */
+.c-details .c-details {
+	border: none;
+	padding-left: 1em;
+}
+
+.c-details .c-details .c-details__title {
+	font-size: $context--font-size-h4;
 }
