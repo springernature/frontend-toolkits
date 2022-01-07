@@ -25,7 +25,7 @@ You may want a Section heading to link to another page.
 In these cases, include a chevron after the heading text to help users understand that they can click on it.
 
 ![Example with chevron](img/example.png)
-[Find the source code for the chevron icon here](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/img/icons/chevron-right.svg
+[Get the source code for the chevron icon](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/img/icons/chevron-right.svg
 )
 
 ## Installation
