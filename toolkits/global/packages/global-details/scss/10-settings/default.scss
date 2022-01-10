@@ -1,6 +1,11 @@
 $details--padding: spacing(16);
+$details--content-padding: spacing(16) 0 0 0;
 $details--icon-margin: spacing(8);
 $details--border-color: currentColor;
+$details--border-width: 1px;
+$details--spacing: 0;
+$details--title-color: inherit;
+$details--icon-size: 0.75em;
 $details--icon-color: currentColor;
 $details--focus-underline-color: currentColor;
 $details--title-font-family: inherit;
