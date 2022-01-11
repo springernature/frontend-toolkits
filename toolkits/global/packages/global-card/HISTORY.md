@@ -1,5 +1,14 @@
 # History
 
+## 7.0.0 (2021-12-29)
+    * BREAKING:
+        * Template moved to `/view`
+        * List semantics by default
+        * Shared `level` (`aria-level`) value
+    * Support for portrait shaped images (avatars)
+    * `noShape` option to remove border, background, and box-shadow
+    * Option to remove faux block link style
+
 ## 6.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.

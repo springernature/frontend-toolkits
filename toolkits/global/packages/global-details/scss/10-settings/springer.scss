@@ -1,0 +1,13 @@
+// Default setting
+@import 'default';
+
+$details--border-color: greyscale(80);
+$details--border-width: 0;
+$details--padding: 0;
+$details--content-padding: spacing(16) 0 0 1.5em;
+$details--spacing: 1em;
+$details--focus-underline-color: color('action-focus');
+/* TODO: Move color to brand context */
+$details--title-color: #0070a8;
+$details--icon-color: #0070a8;
+$details--title-font-family: $context--font-family-serif;

@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	/* ↓ In case it is a list */
 	list-style: none;
+	padding: 0;
 	@supports (gap: 1em) {
 		gap: var(--cluster--gap, #{$cluster--gap});
 	}

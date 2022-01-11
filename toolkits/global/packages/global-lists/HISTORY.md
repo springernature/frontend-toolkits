@@ -1,4 +1,9 @@
 # History
+
+## 5.1.0 (2021-12-16)
+    * Add nature settings file
+        * Add override on margin-bottom for description list to match design
+
 ## 5.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.

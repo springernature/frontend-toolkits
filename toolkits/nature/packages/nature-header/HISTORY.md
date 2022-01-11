@@ -1,7 +1,15 @@
 # History
 
+## 7.0.0 (2022-01-06)
+    BREAKING
+      * Renames JavaScript simply 'header' as 'enhanced-header' can cause confusion for users.
+
+## 6.0.1 (2021-12-10)
+    * Fix font-size value to reflect updated root font-size
+
 ## 6.0.0 (2021-12-07)
-    * BREAKING: Fixes some typographic values to accomodate the root font size change.
+    BREAKING
+      * Fixes some typographic values to accomodate the root font size change.
 
 ## 5.2.3 (2021-04-19)
     * Attempted fix for error captured in sentry around `hasAttribute` check
@@ -49,7 +57,8 @@
     * Zeros the line-height on logo to cater for use with <h1>
 
 ## 4.0.0 (2021-01-13)
-    * BREAKING: Refactored to update nature header in narrow viewport
+    BREAKING
+      * Refactored to update nature header in narrow viewport
     * Updated README with updated example
     * Add back keyline for expander (used in search dropdown)
 
@@ -68,15 +77,16 @@
     * Improve spacing
 
 ## 3.0.0 (2020-12-11)
-    * BREAKING:
-        * Removes settings files as component is not configurable
-        * Renames classes to allow more shared styles
+    BREAKING
+      * Removes settings files as component is not configurable
+      * Renames classes to allow more shared styles
 
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
 ## 2.0.0 (2020-11-16)
-    * BREAKING: bump to latest brand context, global-javascript and global-expander
+    BREAKING
+      * Bump to latest brand context, global-javascript and global-expander
 
 ## 1.0.1 (2020-10-08)
     * Maintain logo alignment when scaling SVG

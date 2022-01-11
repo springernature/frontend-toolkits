@@ -1,13 +1,13 @@
 {
   "name": "@springernature/nature-header",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "license": "MIT",
   "description": "Publisher level header",
   "keywords": [],
   "author": "Springer Nature",
   "brandContext": "^18.0.0",
   "dependencies": {
-    "@springernature/global-javascript": "^3.0.2",
-    "@springernature/global-expander": "^4.0.2"
+    "@springernature/global-javascript": "^3.0.3",
+    "@springernature/global-expander": "^4.2.1"
   }
 }

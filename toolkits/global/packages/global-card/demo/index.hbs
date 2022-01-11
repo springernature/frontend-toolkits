@@ -1,17 +1,73 @@
-<div class="c-card">
-	{{#with image}}
-		<div class="c-card__image">
-			<img src="{{src}}" alt="{{alt}}">
-		</div>
-	{{/with}}
-    <div class="c-card__body">
-		{{#with title}}
-        <h3 class="c-card__title" aria-level="{{level}}">
-            <a class="c-card__link" href="#">{{label}}</a>
-        </h3>
-		{{/with}}
-		{{#if summary}}
-        	<div class="c-card__summary">{{summary}}</div>
-		{{/if}}
-    </div>
-</div>
+<style>
+	.demo-grid {
+		list-style: none;
+		padding: 0;
+	}
+
+	.demo-grid > * + * {
+		margin-top: 1em;
+		margin-top: var(--grid--gap, 1em);
+	}
+
+
+	@supports (display: grid) {
+		.demo-grid > * {
+			margin: 0;
+		}
+
+		.demo-grid {
+			display: grid;
+			gap: 1em;
+			gap: var(--grid--gap, 1em);
+			grid-template-columns: repeat(auto-fit, minmax(var(--grid--basis, 230px), 1fr));
+		}
+	}
+</style>
+
+<h2>Default</h2>
+
+<p>The fourth card has <code>"noBlockLink": true</code> set because it contains a second link.</p>
+
+<ul class="demo-grid">
+{{#with cardsDefault}}
+	{{#each cards}}
+		{{>card parent=..}}
+	{{/each}}
+{{/with}}
+</ul>
+
+<h3>Subsection with <code>"level": "4"</code></h3>
+
+The above heading is an <code>&lt;h3></code>, meaning <code>"level": "4"</code> should be set for the cards’ titles.
+
+<ul class="demo-grid">
+{{#with cardsLevel4}}
+	{{#each cards}}
+		{{>card parent=..}}
+	{{/each}}
+{{/with}}
+</ul>
+
+<h2>1/1 aspect ratio</h2>
+
+<p>With <code>"aspectRatio": "1 / 1"</code> set.</p>
+
+<ul class="demo-grid">
+{{#with cardsSquare}}
+	{{#each cards}}
+		{{>card parent=..}}
+	{{/each}}
+{{/with}}
+</ul>
+
+<h2>Portraits</h2>
+
+<p>With <code>"portrait": true</code> set.</p>
+
+<ul class="demo-grid">
+{{#with cardsPortrait}}
+	{{#each cards}}
+		{{>card parent =..}}
+	{{/each}}
+{{/with}}
+</ul>

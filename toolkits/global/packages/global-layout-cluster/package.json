@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-layout-cluster",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "description": "A layout primitive for grouping elements together in an inline fashion but using Flexbox and gap to eliminate unneeded whitespace",
   "keywords": [],

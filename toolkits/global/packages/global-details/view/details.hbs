@@ -1,0 +1,15 @@
+<{{#if listItem}}li{{else}}div{{/if}} class="c-details">
+	<details {{#if open}}open{{/if}} class="c-details__details">
+		<summary class="c-details__summary">
+			<div class="c-details__header u-h3" {{#if headingLevel}}role="heading" aria-level="{{headingLevel}}"{{/if}}>
+				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
+					<use xlink:href="{{iconURL}}"></use>
+				</svg>
+				<span class="c-details__title">{{title}}</span>
+			</div>
+		</summary>
+		<div class="c-details__content">
+			{{{content}}}
+		</div>
+	</details>
+</{{#if listItem}}li{{else}}div{{/if}}>

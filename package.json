@@ -46,7 +46,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
-    "@springernature/frontend-package-manager": "^7.4.2",
+    "@springernature/frontend-package-manager": "^7.5.1",
     "@springernature/sasslint-config": "^1.2.1",
     "@springernature/util-eslint-runner": "^0.0.3",
     "@springernature/util-sass-compiler": "^0.1.0",

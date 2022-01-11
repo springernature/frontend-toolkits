@@ -1,9 +1,0 @@
-{
-  "name": "@springernature/nature-headings",
-  "version": "0.1.0",
-  "license": "MIT",
-  "description": "Nature headings",
-  "keywords": [],
-  "author": "Springer Nature",
-  "brandContext": "^15.0.0"
-}
