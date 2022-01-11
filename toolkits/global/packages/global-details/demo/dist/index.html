@@ -8,261 +8,6 @@
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- *
- */
-/**
- * Shared colors
- * Applicable to all brands and not to be overwritten
- *
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Default
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Map deep get
- * @author Hugo Giraudel
- * @private
- *
- * @param {Map} $map - Map
- * @param {Arglist} $keys - Key chain
- * @return {*} - Desired value
- *
- */
-/**
- * Map key get
- * Check if a key exists in a map, return it
- * @private
- *
- * @param {Map} $map - Map
- * @param {String} $value - Key name
- * @return {*} - Key name, if found
- *
- */
-/**
- * Style mixins
- *
- */
-/**
- * Breakpoints
- * Media query helper
- * @group 30-mixins
- */
-h1 {
-	font-size: 3.2rem;
-	font-weight: 700;
-}
-
-h2 {
-	font-size: 2.4rem;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-h4 {
-	font-size: 1.8rem;
-	font-weight: 700;
-}
-
-h5 {
-	font-size: 1.6rem;
-	font-weight: 700;
-}
-
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  @springernature/global-button
- *  Button settings
- *
- */
-/**
- * Button Themes
- * Variables to set themes styles
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Link Text
- */
-h1 {
-	font-weight: 300;
-	font-size: 3.5rem;
-	font-size: min(max(2.4rem, 4vw), 3.5rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.8rem, 4vw), 4.2rem);
-}
-
-h2 {
-	font-weight: 400;
-	font-size: min(max(2rem, 4vw), 2.4rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.8rem);
-}
-
-h3 {
-	font-weight: 700;
-	font-size: min(max(1.8rem, 4vw), 2rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.4rem);
-}
-
-h4 {
-	font-weight: 700;
-	font-size: min(max(1.8rem, 4vw), 1.8rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.4rem);
-}
-
-h5 {
-	font-weight: 700;
-	font-size: min(max(1.6rem, 4vw), 1.6rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.9rem, 4vw), 1.9rem);
-}
-
 /* =========================================================================
    $NORMALIZE
    normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
@@ -715,37 +460,6 @@ template {
 }
 
 /**
- * Basic
- * Some default CSS styles
- */
-body {
-	font-size: 13px;
-	line-height: 1.5;
-	font-family: "Merriweather", serif;
-}
-
-a {
-	text-decoration: none;
-	color: #025e8d;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
-}
-
-img {
-	border: 0;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
-
-/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -904,253 +618,31 @@ img {
  * Media query helper
  * @group 30-mixins
  */
-h1 {
-	font-size: 3.2rem;
-	font-weight: 700;
-}
-
-h2 {
-	font-size: 2.4rem;
-	font-weight: 700;
-}
-
-h3 {
-	font-size: 2rem;
-	font-weight: 700;
-}
-
-h4 {
-	font-size: 1.8rem;
-	font-weight: 700;
-}
-
-h5 {
-	font-size: 1.6rem;
-	font-weight: 700;
-}
-
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- */
 /**
  * Typography
- * Font settings
- */
-/**
- *  @springernature/global-button
- *  Button settings
- *
- */
-/**
- * Button Themes
- * Variables to set themes styles
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Link Text
- */
-h1 {
-	font-weight: 300;
-	font-size: 3.5rem;
-	font-size: min(max(2.4rem, 4vw), 3.5rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.8rem, 4vw), 4.2rem);
-}
-
-h2 {
-	font-weight: 400;
-	font-size: min(max(2rem, 4vw), 2.4rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.8rem);
-}
-
-h3 {
-	font-weight: 700;
-	font-size: min(max(1.8rem, 4vw), 2rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.4rem);
-}
-
-h4 {
-	font-weight: 700;
-	font-size: min(max(1.8rem, 4vw), 1.8rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(2.4rem, 4vw), 2.4rem);
-}
-
-h5 {
-	font-weight: 700;
-	font-size: min(max(1.6rem, 4vw), 1.6rem);
-	margin-bottom: 16px;
-	font-family: "Merriweather", serif;
-	line-height: min(max(1.9rem, 4vw), 1.9rem);
-}
-
-/*
- * Headings
- */
-/**
- * Layout
- * Universal layout styles
+ * Set base font size
  */
 html {
-	height: 100%;
-	overflow-y: scroll;
 	font-size: 62.5%;
 }
 
 body {
-	min-height: 100%;
-	font-family: "Merriweather", serif;
-	font-size: 1.6em;
-	line-height: 1.875;
-	color: #222222;
-	background: #f8f8f8;
-	letter-spacing: 0.01em;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-figure {
-	margin: 0;
-}
-
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-	margin: 0;
-	padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-	margin: 0;
-	padding: 0;
-}
-
-abbr[title] {
-	text-decoration: none;
-}
-
-a {
-	color: #025e8d;
-	text-decoration: underline;
-	text-decoration-skip-ink: auto;
-}
-
-a.visited, a:visited {
-	color: #a345c9;
-}
-
-a.hover, a:hover {
-	color: #01324b;
-	text-decoration: none;
-}
-
-a.active, a:active {
-	color: #222222;
-}
-
-a.focus, a:focus {
-	outline: 4px solid #ffcc00;
-}
-
-table {
-	font-size: 1.6rem;
-	line-height: 1.875;
-	border-collapse: collapse;
-	border: none;
-	width: 100%;
-	margin-bottom: 32px;
-}
-
-th,
-td {
-	padding: 8px;
-	vertical-align: top;
-}
-
-th {
-	text-align: left;
-	border-bottom: 3px solid #01324b;
-}
-
-td {
-	font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	border-bottom: 2px solid #dadada;
-}
-
-/**
- * Forms
- * Default form styles
- */
-input:not([disabled]):focus,
-select:not([disabled]):focus,
-textarea:not([disabled]):focus,
-[contenteditable]:focus {
-	outline: 3px solid #ffcc00;
-}
-
-input[type="file"]:focus-within {
-	outline: 3px solid #ffcc00;
+	font-size: 1.8em;
 }
 
 .c-details {
 	padding: 16px 0;
-	border: 1px solid;
+	border-style: solid;
+	border-color: currentColor;
 	border-width: 1px 0;
 	/* In case it’s a list item */
 	list-style: none;
 }
 
-/* for successive details instances, don't double the border */
 .c-details + .c-details {
+	/* for successive details instances, don't double the border */
 	border-top: 0;
+	margin-top: 0;
 }
 
 .c-details__details {
@@ -1179,7 +671,7 @@ input[type="file"]:focus-within {
 	}
 	.c-details__summary:focus .c-details__title {
 		text-decoration: underline;
-		text-decoration-color: #ffcc00;
+		text-decoration-color: currentColor;
 		text-decoration-thickness: 3px;
 	}
 }
@@ -1191,21 +683,32 @@ input[type="file"]:focus-within {
 
 .c-details__header .u-icon {
 	flex-shrink: 0;
-	width: 1em;
-	height: 1em;
+	width: 0.75em;
+	height: 0.75em;
+	color: currentColor;
 }
 
-.c-details [open] .u-icon {
+/* ↓ Complex selector necessary to ensure
+nested icons are not rotated */
+.c-details > [open] > summary > div > .u-icon {
 	transform: rotate(90deg);
 }
 
 .c-details__title {
-	font-weight: bold;
 	margin-left: 8px;
+	font-family: inherit;
+	font-size: 2rem;
+	color: inherit;
+	line-height: 1.25;
 }
 
 .c-details__content {
-	padding-top: 16px;
+	padding: 16px 0 0 0;
+}
+
+/* Remove excess margin from (for example) paragraphs */
+.c-details__content > :last-child {
+	margin-bottom: 0;
 }
 
 		</style>
@@ -1214,7 +717,7 @@ input[type="file"]:focus-within {
 	<div class="c-details">
 		<details class="c-details__details">
 			<summary class="c-details__summary">
-				<div class="c-details__header" role="heading" aria-level="2">
+				<div class="c-details__header u-h3" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 					</svg>
@@ -1229,7 +732,7 @@ input[type="file"]:focus-within {
 	<div class="c-details">
 		<details open="" class="c-details__details">
 			<summary class="c-details__summary">
-				<div class="c-details__header" role="heading" aria-level="2">
+				<div class="c-details__header u-h3" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 					</svg>
@@ -1244,7 +747,7 @@ input[type="file"]:focus-within {
 	<div class="c-details">
 		<details class="c-details__details">
 			<summary class="c-details__summary">
-				<div class="c-details__header" role="heading" aria-level="2">
+				<div class="c-details__header u-h3" role="heading" aria-level="2">
 					<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
 						<use xlink:href="../img/chevron-right.svg#i-chevron-right"></use>
 					</svg>

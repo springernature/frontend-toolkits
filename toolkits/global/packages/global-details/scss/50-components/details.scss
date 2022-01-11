@@ -1,14 +1,16 @@
 .c-details {
 	padding: $details--padding 0;
-	border: 1px solid;
-	border-width: 1px 0;
+	border-style: solid;
+	border-color: $details--border-color;
+	border-width: $details--border-width 0;
 	/* In case it’s a list item */
 	list-style: none;
 }
 
-/* for successive details instances, don't double the border */
 .c-details + .c-details {
+	/* for successive details instances, don't double the border */
 	border-top: 0;
+	margin-top: $details--spacing;
 }
 
 .c-details__details {
@@ -50,19 +52,30 @@
 
 .c-details__header .u-icon {
 	flex-shrink: 0;
-	width: 1em;
-	height: 1em;
+	width: $details--icon-size;
+	height: $details--icon-size;
+	color: $details--icon-color;
 }
 
-.c-details [open] .u-icon {
+/* ↓ Complex selector necessary to ensure
+nested icons are not rotated */
+.c-details > [open] > summary > div > .u-icon {
 	transform: rotate(90deg);
 }
 
 .c-details__title {
-	font-weight: bold;
 	margin-left: $details--icon-margin;
+	font-family: $details--title-font-family;
+	font-size: $context--font-size-h3;
+	color: $details--title-color;
+	line-height: 1.25;
 }
 
 .c-details__content {
-	padding-top: $details--padding;
+	padding: $details--content-padding;
+}
+
+/* Remove excess margin from (for example) paragraphs */
+.c-details__content > :last-child {
+	margin-bottom: 0;
 }
