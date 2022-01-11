@@ -4,7 +4,7 @@ The Nature Section heading is a type of heading used for titles of some subsecti
 
 It uses borders above and below the heading text to make it stand out from other headings on the page.
 
-![Example](img/example-with-chevron.png)
+![An example Section heading that reads "Heading text" with a thick black border above the heading text and a thinner black border below](https://user-images.githubusercontent.com/27411864/148927871-9c8735d0-50df-4e12-8dde-43f36f3e7ad5.png)
 
 ## When to use this component
 
@@ -24,7 +24,8 @@ You may want a Section heading to link to another page.
 
 In these cases, include a chevron after the heading text to help users understand that they can click on it.
 
-![Example with chevron](img/example.png)
+![Section heading with a right-arrow chevron after the heading text](https://user-images.githubusercontent.com/27411864/148927772-b39ee02c-b8de-4348-9962-52e045acb39c.png)
+
 [Get the source code for the chevron icon](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/img/icons/chevron-right.svg
 )
 
