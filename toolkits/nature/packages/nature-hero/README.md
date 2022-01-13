@@ -1,7 +1,5 @@
 # Nature Hero
 
-[![NPM version][badge-npm]][info-npm]
-
 Hero for Nature products.
 
 ## CSS
