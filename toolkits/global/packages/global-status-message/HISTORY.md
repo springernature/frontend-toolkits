@@ -1,5 +1,8 @@
 # History
 
+## 3.2.1 (2021-01-11)
+    * Demo icons to `currentColor`
+
 ## 3.2.0 (2021-11-12)
     * Add settings for height and width on icon 
     * Bump brand-context version to 17.2.0

@@ -1,5 +1,9 @@
 # History
 
+## 19.0.0 (2021-01-13)
+    * BREAKING
+        * Icons all use `currentColor` in place of `#666` so they adopt `color` by default
+
 ## 18.2.0 (2021-12-14)
     * Updates the $context--colors map to include colours used across springeropen and springerlink
 
