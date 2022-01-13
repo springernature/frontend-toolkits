@@ -1,5 +1,7 @@
 # History
 
+## 3.0.1 (2021-01-11)
+    * Demo icon to `currentColor`
 
 ## 3.0.0 (2021-12-03)
     * BREAKING:
