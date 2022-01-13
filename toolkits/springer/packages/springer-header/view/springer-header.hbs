@@ -1,0 +1,66 @@
+<header class="c-header">
+	<div class="c-header__container">
+		{{#with logo}}
+		<div class="c-header__brand">
+			<a href="{{href}}" itemprop="url">
+				<img alt="{{alt}}" itemprop="logo" width="112" height="30" role="img" src="{{srcUrl}}">
+			</a>
+		</div>
+		{{/with}}
+		<ul class="c-header__menu">
+			{{#with search}}
+			<li class="c-header__item">
+				<a href="#search" class="c-header__link c-header__search-link">
+					<span class="u-display-flex u-align-items-center">
+						Search
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="{{iconUrl}}"></use>
+						</svg>
+					</span>
+				</a>
+			</li>
+			{{/with}}
+			{{#each promotedMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link">
+					<span class="u-display-flex u-align-items-center">
+						{{label}}
+						{{#if iconUrl}}
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="{{iconUrl}}"></use>
+						</svg>
+						{{/if}}
+					</span>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+	{{#if navMenu}}
+	<nav class="c-header__nav">
+		<ul class="c-header__nav-menu">
+			{{#each navMenu}}
+			<li class="c-header__item">
+				<a href="{{href}}" class="c-header__link c-header__link--nav">{{label}}</a>
+			</li>
+			{{/each}}
+		</ul>
+	</nav>
+	{{/if}}
+</header>
+{{#with search}}
+<form role="search" class="c-header__search-form c-header__search-form--no-js" action="{{action}}" id="search" tabindex="-1">
+	<div class="c-header__search-field">
+		<label for="search-input">{{inputLabel}}</label>
+		<div class="c-header__search-controls">
+			<input id="search-input" name="{{inputName}}">
+			<button class="u-button u-button--primary" type="submit" aria-label="search">
+				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
+					<use xlink:href="{{iconUrl}}"></use>
+				</svg>
+			</button>
+		</div>
+		<a class="c-header__springer-link" href="{{springerLinkURL}}">{{springerLinkText}}</a>
+	</div>
+</form>
+{{/with}}
