@@ -1,5 +1,8 @@
 # History
 
+## 7.0.2 (2022-01-13)
+    * Broken links in README fixed.
+
 ## 7.0.1 (2022-01-13)
     * Update documentation with usage guidance and research and testing information.
 
