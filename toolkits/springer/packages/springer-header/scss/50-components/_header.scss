@@ -50,6 +50,7 @@
 
 	a {
 		text-decoration: none;
+		display: block;
 	}
 }
 
@@ -78,4 +79,48 @@
 
 .c-header__nav-menu {
 	@include u-container;
+}
+
+.c-header__search-form {
+	padding: spacing(48);
+	display: none;
+	justify-content: center;
+	background-color: greyscale(90);
+}
+
+.c-header__search-form:target,
+.c-header__search-form--visible {
+	display: flex;
+}
+
+.c-header__search-field {
+	width: 40rem;
+	max-width: 100%;
+}
+
+.c-header__search-field label {
+	display: block;
+	margin-bottom: spacing(4);
+}
+
+.c-header__search-controls {
+	display: flex;
+	margin-bottom: spacing(8);
+}
+
+.c-header__search-controls input,
+.c-header__search-controls button {
+	padding: spacing(8);
+	border: 0;
+	border-radius: 0;
+}
+
+.c-header__search-controls input {
+	width: 100%;
+	border: 1px solid greyscale(80);
+	border-width: 1px 0 0 1px;
+}
+
+.c-header__springer-link {
+	font-size: 0.8em;
 }
