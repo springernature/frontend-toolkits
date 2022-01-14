@@ -1,5 +1,8 @@
 # History
 
+## 7.0.0 (2021-01-12)
+    * Optional search form and corresponding menu link
+
 ## 6.0.1 (2021-11-30)
     * BUG: images not rendering in demo
 
