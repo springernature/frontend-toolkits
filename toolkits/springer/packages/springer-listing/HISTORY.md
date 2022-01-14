@@ -1,5 +1,8 @@
 # History
 
+## 5.0.1 (2021-01-11)
+    * Demo icon to `currentColor`
+
 ## 5.0.0 (2021-12-31)
     * BREAKING:
         * Now renders as a list, looping over individual listings

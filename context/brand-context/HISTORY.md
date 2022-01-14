@@ -1,10 +1,14 @@
 # History
 
-## 19.0.0
+## 20.0.0 (2022-01-14)
     * BREAKING
         * Introduces updates to make use of Dart Sass as the compiler for the frontend.
         * Updates default color function to use Dart Sass.
         * Updates default typography to use Dart Sass.
+        
+## 19.0.0 (2022-01-13)
+    * BREAKING
+        * Icons all use `currentColor` in place of `#666` so they adopt `color` by default
 
 ## 18.2.0 (2021-12-14)
     * Updates the $context--colors map to include colours used across springeropen and springerlink
