@@ -2043,7 +2043,7 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						SpringerLink shop
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../img/shop.svg#i-shop"></use>
+							<use xlink:href="../../img/shop.svg#i-shop"></use>
 						</svg>
 					</span>
 				</a>
@@ -2080,7 +2080,7 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						Search
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../img/search.svg#i-search"></use>
+							<use xlink:href="../../img/search.svg#i-search"></use>
 						</svg>
 					</span>
 				</a>
@@ -2090,7 +2090,7 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						SpringerLink shop
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../img/shop.svg#i-shop"></use>
+							<use xlink:href="../../img/shop.svg#i-shop"></use>
 						</svg>
 					</span>
 				</a>
@@ -2111,14 +2111,14 @@ cite {
 		</ul>
 	</nav>
 </header>
-<form role="search" class="c-header__search-form c-header__search-form--no-js" action="/search" id="search" tabindex="-1">
+<form role="search" class="c-header__search-form" action="/search" id="search" tabindex="-1">
 	<div class="c-header__search-field">
 		<label for="search-input">Search this site</label>
 		<div class="c-header__search-controls">
 			<input id="search-input" name="search">
 			<button class="u-button u-button--primary" type="submit" aria-label="search">
 				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
-					<use xlink:href="../img/search.svg#i-search"></use>
+					<use xlink:href="../../img/search.svg#i-search"></use>
 				</svg>
 			</button>
 		</div>
@@ -2136,8 +2136,8 @@ cite {
 	  var searchInput = document.querySelector('.c-header__search-controls input');
 	  searchForm.classList.remove('c-header__search-form--no-js');
 	  searchForm.hidden = true;
-	  searchLink.addEventListener('click', function (e) {
-	    e.preventDefault();
+	  searchLink.addEventListener('click', function (event) {
+	    event.preventDefault();
 	    searchForm.classList.add('c-header__search-form--visible');
 	    searchInput.focus();
 	  });
