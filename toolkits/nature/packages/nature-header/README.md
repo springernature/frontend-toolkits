@@ -249,8 +249,8 @@ The loops and conditional statements show which parts of the component contain d
 
 The Header’s JavaScript file uses: 
 
-- [the Global expander component](/springernature/frontend-toolkits-tree/master/toolkits/global/packages/global-expander)
-- `makeArray` in [the Global JavaScript component](/springernature/frontend-toolkits-tree/master/toolkits/global/packages/global-javascript)
+- [the Global expander component](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander)
+- `makeArray` in [the Global JavaScript component](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-javascript)
 
 When a user selects the trigger, the Global expander component opens and closes the specified target. You’ll need to put matching values into the `href` of the trigger and the `id` attribute on the target element to make this work.
 
