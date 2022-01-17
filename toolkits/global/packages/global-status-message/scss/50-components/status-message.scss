@@ -5,6 +5,7 @@
 	font-size: $status-message--font-size;
 	position: relative;
 	width: 100%; // Caters for an ie bug with nested flex when child is a column
+	box-sizing: border-box; // Compensates for the above RE padding
 
 	*:last-child {
 		margin-bottom: spacing(0);
@@ -26,7 +27,7 @@
 }
 
 .c-status-message__icon {
-	@include u-icon;
+	@include u-icon($status-message--icon-size, $status-message--icon-size);
 	flex: 0 0 auto;
 	margin-right: $status-message--gutter-icon;
 }

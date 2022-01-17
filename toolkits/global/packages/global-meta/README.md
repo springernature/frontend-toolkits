@@ -37,4 +37,9 @@ To include `global-meta` in your application, you need to choose **ONE** brand f
         <span class="c-meta__type">Editorial</span>
     </span>
 </div>
+
+<!-- larger font size -->
+<div class="c-meta c-meta--large">
+    <span class="c-meta__item">Article</span>
+</div>
 ```

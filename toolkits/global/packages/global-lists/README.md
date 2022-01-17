@@ -42,3 +42,19 @@ Components for working with lists.
     </li>
 </ul>
 ```
+
+### List Header
+![image](https://i.imgur.com/wHNpnJt.png)
+
+#### HTML
+```html
+<div class="c-list-header">
+    <span><!-- Left aligned content --></span>
+    <button><!-- Right aligned content --></button>
+</div>
+```
+
+#### Example
+
+![image](https://i.imgur.com/g8jZ24b.png)
+

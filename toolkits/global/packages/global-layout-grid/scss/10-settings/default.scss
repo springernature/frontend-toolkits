@@ -1,0 +1,10 @@
+/**
+ * @springernature/global-layout-grid
+ * Default skin settings
+ *
+ */
+
+$grid--gap: 1em;
+/* ↓ Necessary since non-Dart Sass chokes
+on the min() function */
+$grid--basis: unquote('min(300px, 100%)');

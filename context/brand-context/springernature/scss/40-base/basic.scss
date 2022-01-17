@@ -4,14 +4,13 @@
  */
 
 body {
-	font-size: 13px;
 	line-height: 1.5;
 	font-family: $context--font-family-serif;
 }
 
 a {
 	text-decoration: none;
-	color: color('blue');
+	color: $context--link-color;
 }
 
 a:hover,

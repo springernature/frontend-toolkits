@@ -5,15 +5,16 @@
  */
 
 $ad--font-family: $context--font-family-sans;
-$ad--font-size: 1.4rem;
+$ad--font-size: .875rem;
 $ad--font-weight: normal;
 $ad--label-margin-bottom: spacing(4);
 $ad--label-color: #333;
 $ad--label-line-height: 1.5;
+$ad--padding: spacing(8);
 $ad--leaderboard-bg-color: #ccc;
-$ad--leaderboard-padding: spacing(8);
 $ad--leaderboard-height: 90px;
 $ad--leaderboard-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--label-margin-bottom} + #{$ad--leaderboard-height});
 $ad--mpu-background-color: #f2f2f2;
 $ad--mpu-height: 250px;
 $ad--mpu-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--label-margin-bottom} + #{$ad--mpu-height});
+$ad--mpu-padding: $ad--padding;

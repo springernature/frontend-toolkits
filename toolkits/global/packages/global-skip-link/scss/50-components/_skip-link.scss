@@ -1,0 +1,38 @@
+/**
+ * @springernature/global-skip-link
+ * A full width link which is hidden for mouse users
+ *
+ */
+
+.c-skip-link {
+	background: $skip-link--background-color;
+	color: $skip-link--color;
+	font-size: $skip-link--font-size;
+	font-family: $skip-link--font;
+	text-align: center;
+	padding: $skip-link--padding-y;
+	position: absolute;
+	inset: 0;
+	bottom: auto;
+	z-index: $skip-link--z-index;
+	transform: translateY(-100%);
+
+	@media (prefers-reduced-motion: reduce) {
+		transition: top .3s ease-in-out;
+	}
+
+	@media print {
+		display: none;
+	}
+
+	&:link,
+	&:active,
+	&:visited,
+	&:hover {
+		color: $skip-link--hover-color;
+	}
+
+	&:focus {
+		transform: translateY(0%);
+	}
+}

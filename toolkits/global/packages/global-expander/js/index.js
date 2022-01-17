@@ -7,9 +7,10 @@ const attributes = {
 	TARGET_HIDE_CLASS: DATA_COMPONENT + '-hide-class',
 	TRIGGER_OPEN_CLASS: DATA_COMPONENT + '-trigger-open-class',
 	TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',
-	CLOSE_ON_CLICKOFF: DATA_COMPONENT + '-close-on-clickoff',
+	CLOSE_ON_FOCUS_OUT: DATA_COMPONENT + '-close-on-focus-out',
 	AUTOFOCUS: DATA_COMPONENT + '-autofocus',
-	OPEN_EVENT: DATA_COMPONENT + '-open-event'
+	OPEN_EVENT: DATA_COMPONENT + '-open-event',
+	DEFAULT_OPEN: DATA_COMPONENT + '-default-open'
 };
 
 /**

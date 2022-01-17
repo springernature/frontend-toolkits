@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/springernature-submission-header",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Springer Nature branded submission details component",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^18.0.0"
+}

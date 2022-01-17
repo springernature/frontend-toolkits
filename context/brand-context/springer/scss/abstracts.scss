@@ -6,12 +6,12 @@
 
 // These settings must come first, as other settings can reference them
 @import '10-settings/colors/default';
+@import '10-settings/style';
 @import '10-settings/typography';
-
 @import '10-settings/buttons';
+@import '10-settings/keyframes';
 
 @import '20-functions/em';
-@import '20-functions/strip-unit';
 
 @import '30-mixins/class-stack';
 @import '30-mixins/triangle';

@@ -1,7 +1,16 @@
 # History
 
-## 5.0.4 (2021-03-29)
+## 5.1.2 (2021-01-17)
     * Return focus to input when removing suggestion box, conditionally
+
+## 5.1.1 (2021-11-18)
+    * Tab keypress should trigger default behaviour, i.e. move to next action on page rather than nav through suggestions
+
+## 5.1.0 (2021-06-21)
+    * Ensures aria-expanded is set correctly when search results are generated and removed
+
+## 5.0.4 (2021-06-18)
+    * explorer fixes: event key for Escape, and use .removeChild() instead of .remove()
 
 ## 5.0.3 (2021-03-01)
     * Dont focus input when removing suggestion box

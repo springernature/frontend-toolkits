@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-skip-link",
+  "version": "1.0.2",
+  "license": "MIT",
+  "description": "Full width link to skip to main content",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^18.0.0"
+}

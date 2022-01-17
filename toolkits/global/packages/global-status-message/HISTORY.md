@@ -1,5 +1,15 @@
 # History
 
+## 3.2.1 (2021-01-11)
+    * Demo icons to `currentColor`
+
+## 3.2.0 (2021-11-12)
+    * Add settings for height and width on icon 
+    * Bump brand-context version to 17.2.0
+
+## 3.1.0 (2021-09-20)
+    * Demo created with consumable handlebars template
+
 ## 3.0.0 (2021-03-01)
     * Update to brand-context@10.1.2 which fixes a bug for default branding in previous version
     * Allow colour inheritance for icons and no need for other components/utilities

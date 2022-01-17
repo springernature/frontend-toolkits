@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+	<linearGradient id="wu5k440a" x1="100%" x2="0%" y1="9.075%" y2="90.925%">
+		<stop offset="0" stop-color="#01324b" stop-opacity="0" />
+		<stop offset="1" stop-color="#01324b" stop-opacity=".499" />
+	</linearGradient>
+	<g fill="none" fill-rule="evenodd">
+		<circle cx="32" cy="32" r="32" fill="#cedbe0" />
+		<path fill="url(#wu5k440a)" fill-rule="nonzero" d="M32 4H4v20h9.998l4 5.332 4-5.332H32z"
+			transform="translate(14 14)" />
+		<g fill="#01324b" transform="translate(14 14)">
+			<path fill-rule="nonzero"
+				d="M32 0a4 4 0 014 4v20a4 4 0 01-4 4h-8.002L18 36l-6.002-8H4a4 4 0 01-4-4V4a4 4 0 014-4zm0 4H4v20h9.998l4 5.332 4-5.332H32z" />
+			<rect width="20" height="4" x="8" y="8" opacity=".801" rx="2" />
+			<rect width="12" height="4" x="8" y="16" opacity=".48" rx="2" />
+			<rect width="6" height="4" x="22" y="16" opacity=".48" rx="2" />
+		</g>
+	</g>
+</svg>

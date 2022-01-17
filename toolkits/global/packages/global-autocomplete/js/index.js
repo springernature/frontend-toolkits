@@ -24,14 +24,14 @@ const autoComplete = arguments_ => {
 	}
 
 	const input = document.querySelector(selector);
-	const container = () => {
+	const getContainer = () => {
 		return document.querySelector(`${resultsContainerSelector}`);
 	};
 	const suggestions = () => {
 		return Array.from(document.querySelectorAll(`${resultSelector}`));
 	};
 
-	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Enter', 'Tab'];
+	const eventKeys = ['ArrowDown', 'Down', 'ArrowUp', 'Up', 'Escape', 'Esc', 'Enter', 'Tab'];
 
 	let inputTimer = null;
 	let fetchTimer = null;
@@ -55,19 +55,22 @@ const autoComplete = arguments_ => {
 			return;
 		}
 		input.removeEventListener('keyup', inputEvents);
-		if (container()) {
-			container().remove();
+		const resultsContainer = getContainer();
+		if (resultsContainer) {
+			resultsContainer.remove();
 		}
 		document.removeEventListener('click', removeSuggestions);
+		input.setAttribute('aria-expanded', false);
 	};
 
 	const addSuggestionEventListeners = () => {
-		if (container() === null) {
+		const resultsContainer = getContainer();
+		if (resultsContainer === null) {
 			return;
 		}
 
-		container().addEventListener('keydown', event => {
-			if (['Escape', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
+		resultsContainer.addEventListener('keydown', event => {
+			if (['Escape', 'Esc', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
 			}
@@ -100,7 +103,7 @@ const autoComplete = arguments_ => {
 						input.value = currentSearchTerm;
 					}
 				}
-			} else if (event.key === 'Escape') {
+			} else if (event.key === 'Escape' || event.key === 'Esc') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
 				input.focus();
@@ -133,6 +136,16 @@ const autoComplete = arguments_ => {
 		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
 		addSuggestionEventListeners();
+		const container = getContainer();
+		if (container) {
+			container.addEventListener('keydown', ev => {
+				if (ev.key === 'Tab') {
+					removeSuggestions();
+				}
+			});
+		}
+
+		input.setAttribute('aria-expanded', true);
 	};
 
 	const handleData = term => {
@@ -199,13 +212,19 @@ const autoComplete = arguments_ => {
 			}
 		}
 
-		if (event.key === 'Escape') {
+		if (event.key === 'Escape' || event.key === 'Esc') {
 			removeSuggestions(event);
 		}
 		if (event.key === 'Enter') {
 			event.preventDefault();
 		}
 	};
+
+	input.addEventListener('keydown', ev => {
+		if (ev.key === 'Tab') {
+			removeSuggestions();
+		}
+	});
 
 	const enable = () => {
 		if (input) {

@@ -4,73 +4,54 @@ Publisher level header for Springer products.
 
 ## Usage
 
-```html
-<header class="c-header">
-    <div class="c-header__container">
-        <div class="c-header__brand">
-            <a href="#" itemprop="url">
-                <img alt="Springer" itemprop="logo" width="112" height="30" role="img" src="path/to/logo.svg">
-            </a>
-        </div>
-        <div class="c-header__navigation">
-            <!-- #not mandatory -->
-            <a href="#"
-               class="c-header__link c-header__link--search">
-                <span class="u-flex u-flex-align-center">
-                    Search
-                    <svg class="c-icon u-margin-left-xs" width="14" height="14" aria-hidden="true" focusable="false">
-                        <use xlink:href="#icon-search"></use>
-                    </svg>
-                </span>
-            </a>
-            <!-- /not mandatory -->
-            <nav>
-                <ul class="c-header__menu">
-                    <li class="c-header__item">
-                        <a class="c-header__link" href="#">Menu item 1</a>
-                    </li>
-                    <li class="c-header__item">
-                        <a class="c-header__link" href="#" data-test="login-link">Menu item 2</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+Import and compile the Sass. You need to ensure you are importing some utility stylesheets.
+
+```scss
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/icons.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/buttons.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/flex.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+@import '../node_modules/@springernature/springer-header/scss/10-settings/header';
+@import '../node_modules/@springernature/springer-header/scss/50-components/header';
 ```
 
-## Dropdown menu
+Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see an example of the expected data.
 
-If you want functionality where the menu should be a dropdown on small screens, then you need to create the dropdown from your app.
-The [springer-dropdown](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/springer/packages/springer-dropdown) has a helper called `createDropdown` that will create the dropdown HTML and instance.
+## Variants
 
-Example usage in an app in conjunction with the springer-dropdown:
+### Promoted menu
 
-```html
-<!-- ... -->
-<nav>
-    <ul class="c-header__menu" data-header-menu>
-        <li class="c-header__item">
-            <a class="c-header__link" href="#">Menu item 1</a>
-        </li>
-        <li class="c-header__item">
-            <a class="c-header__link" href="#" data-test="login-link">Menu item 2</a>
-        </li>
-    </ul>
-</nav>
-<!-- ... -->
+The promoted menu is the menu on the top left of the header. Each menu item can have an optional icon assigned.
+
+```json
+"promotedMenu": [
+    {
+        "label": "SpringerLink shop",
+        "href": "/path/to/1",
+        "iconUrl": null
+    }
+]
 ```
 
-```javascript
-const headerMenu = document.querySelector('[data-header-menu]');
+### Search
 
-if (!headerMenu) {
-    return;
+To activate search, include a `search` property on the data. 
+
+```json
+"search": {
+    "action": "/search",
+    "inputLabel": "Search this site",
+    "inputName": "search",
+    "iconUrl": "../../img/search.svg#i-search",
+    "springerLinkUrl": "#",
+    "springerLinkText": "Search our products and science on SpringerLink"
 }
-
-const items = headerMenu.querySelectorAll('li');
-const links = makeArray(items).map(item => item.querySelector('a'));
-
-const dropdownEl = createDropdown('Menu', links, {DROPDOWN_CLASS: 'u-hide-at-md'});
-headerMenu.parentNode.insertBefore(dropdownEl, headerMenu.nextSibling);
 ```
+
+The search box is revealed and focused when the search link in the promoted menu is pressed. This link is included automatically. 
+
+#### Enhancement
+
+By default, this click-to-reveal functionality works without JavaScript and using the `:target` CSS pseudo-class. However, it is recommended you enhance with JavaScript and focus the search input (rather than the search form) when the search box is revealed. 
+
+The `./demo/main.js` file consists of a basic script demonstrating how you might go about this enhancement. It makes use of the `c-header__search-form--visible` class to reveal the search form.

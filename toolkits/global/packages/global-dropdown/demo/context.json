@@ -1,0 +1,6 @@
+{
+	"iconURL": "../../img/chevron-more.svg#i-chevron-more",
+	"dynamicPartials": {
+		"dropdown": "./toolkits/global/packages/global-dropdown/view/dropdown.hbs"
+	}
+}

@@ -1,6 +1,7 @@
 .c-pill {
 	display: inline-block;
 	padding: $pill--padding;
+	border: 1px solid $pill--color;
 	border-radius: $pill--border-radius;
 	color: $pill--color;
 	background-color: $pill--background-color;

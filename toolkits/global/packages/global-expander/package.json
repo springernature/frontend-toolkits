@@ -1,9 +1,10 @@
 {
   "name": "@springernature/global-expander",
-  "version": "4.0.1",
+  "version": "4.2.1",
   "description": "Frontend package for expanding a target when clicking a toggle",
   "license": "MIT",
+  "brandContext": "^15.0.0",
   "dependencies": {
-    "@springernature/global-javascript": "^3.0.1"
+    "@springernature/global-javascript": "^3.0.2"
   }
 }

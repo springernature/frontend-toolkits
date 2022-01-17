@@ -2,9 +2,11 @@
 	position: relative;
 	color: $hero--color;
 
-	@include media-query('md') {
-		display: flex;
-		flex-direction: row-reverse;
+	@supports (display: flex) {
+		@include media-query('md') {
+			display: flex;
+			flex-direction: row-reverse;
+		}
 	}
 }
 
@@ -55,8 +57,10 @@
 	background-color: $hero--copy-background-color;
 	padding: $hero--copy-padding;
 
-	@include media-query('md') {
-		max-width: $hero--copy-max-width;
+	@supports (display: flex) {
+		@include media-query('md') {
+			max-width: $hero--copy-max-width;
+		}
 	}
 
 	@include media-query('lg') {
@@ -65,13 +69,12 @@
 }
 
 .c-hero__title {
-	font-size: $hero--title-font-size;
-	font-weight: $hero--title-font-weight;
-	line-height: $hero--title-line-height;
+	@include u-h1;
 	margin-bottom: $hero--title-margin;
 
-	@include media-query('xl') {
-		font-size: $hero--title-font-size-at-xl;
+	@include media-query('md') {
+		font-size: $hero--title-font-size-at-md;
+		line-height: $hero--title-line-height-at-md;
 	}
 }
 

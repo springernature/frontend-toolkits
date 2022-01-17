@@ -22,5 +22,5 @@ A full handlebars demo is also in the demo folder, but following is the only HTM
  component actually requires:
 
 ```html
-<input type="text" autocomplete="off" class="c-autocomplete" data-component-autocomplete>
+<input type="text" autocomplete="off" class="c-autocomplete" aria-expanded="false" data-component-autocomplete>
 ```

@@ -1,23 +1,23 @@
 $context--font-family-serif: Georgia, Palatino, serif;
 
-$context--font-size-xxs: 12px;
-$context--font-size-xs: 14px;
-$context--font-size-sm: 16px;
-$context--font-size-md: 18px;
-$context--font-size-lg: 24px;
-$context--font-size-xl: 28px;
-$context--font-size-xxl: 32px;
+$context--font-size-xxs: .75rem;
+$context--font-size-xs: .875rem;
+$context--font-size-sm: 1rem;
+$context--font-size-md: 1.125rem;
+$context--font-size-lg: 1.5rem;
+$context--font-size-xl: 1.75rem;
+$context--font-size-xxl: 2rem;
 
-$context--font-size-h1: 3.2rem;
-$context--font-size-h2: 2.8rem;
-$context--font-size-h3: 2.4rem;
-$context--font-size-h4: 2rem;
+$context--font-size-h1: 2rem;
+$context--font-size-h2: 1.75rem;
+$context--font-size-h3: 1.5rem;
+$context--font-size-h4: 1.25rem;
 
 // Fluid typography
 $context--font-size-h1-min: $context--font-size-h2;
 $context--font-size-h2-min: $context--font-size-h3;
 $context--font-size-h3-min: $context--font-size-h4;
-$context--font-size-h4-min: 1.8rem; // Body typography size
+$context--font-size-h4-min: 1.125rem; // Body typography size
 
 $context--font-size-furniture: $context--font-size-sm;
 $context--font-size-interface: $context--font-size-sm;

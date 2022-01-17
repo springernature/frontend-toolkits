@@ -1,5 +1,32 @@
 # History
 
+## 7.0.2 (2022-01-13)
+    * Broken links in README fixed.
+
+## 7.0.1 (2022-01-13)
+    * Update documentation with usage guidance and research and testing information.
+
+## 7.0.0 (2022-01-06)
+    BREAKING
+      * Renames JavaScript simply 'header' as 'enhanced-header' can cause confusion for users.
+
+## 6.0.1 (2021-12-10)
+    * Fix font-size value to reflect updated root font-size
+
+## 6.0.0 (2021-12-07)
+    BREAKING
+      * Fixes some typographic values to accomodate the root font size change.
+
+## 5.2.3 (2021-04-19)
+    * Attempted fix for error captured in sentry around `hasAttribute` check
+
+## 5.2.2 (2021-04-16)
+    * Bump `brand-context` version
+
+## 5.2.1 (2021-04-15)
+    * Bump `global-expander` to 4.0.2
+    * Bump `global-javascript` to 3.0.2
+
 ## 5.2.0 (2021-03-22)
     * Add autofocus option to first tabbable element
     * Bump `brand-context` version
@@ -13,7 +40,7 @@
 
 ## 5.1.1 (2021-02-15)
     * Bump global-expander to 4.0.1
-    * Bump global-javascript to 3.0.1 
+    * Bump global-javascript to 3.0.1
 
 ## 5.1.0 (2021-02-03)
     * Remove aria-pressed
@@ -25,23 +52,24 @@
     * Update context variable references to use `context--` prefix
 
 ## 4.1.1 (2021-01-26)
-    * Capilatize first letter in links 
+    * Capilatize first letter in links
 
 ## 4.1.0 (2021-01-21)
     * Expander full width at narrow viewports
     * Aligned last expander in list of dropdown to right of screen to prevent horizontal scroll
-    * Reduced font-size and space between chevrons on journal menu items to get all on one line for 320px/'xs' breakpoint and above    
+    * Reduced font-size and space between chevrons on journal menu items to get all on one line for 320px/'xs' breakpoint and above
 
 ## 4.0.1 (2021-01-20)
-    * Zeros the line-height on logo to cater for use with <h1> 
+    * Zeros the line-height on logo to cater for use with <h1>
 
 ## 4.0.0 (2021-01-13)
-    * BREAKING: Refactored to update nature header in narrow viewport
+    BREAKING
+      * Refactored to update nature header in narrow viewport
     * Updated README with updated example
     * Add back keyline for expander (used in search dropdown)
 
 ## 3.2.0 (2021-01-07)
-    * Add font weight to c-header__menu--secondary 
+    * Add font weight to c-header__menu--secondary
 
 ## 3.1.0 (2020-12-16)
     * Adds modifier to add keyline to first list element only
@@ -55,15 +83,16 @@
     * Improve spacing
 
 ## 3.0.0 (2020-12-11)
-    * BREAKING: 
-        * Removes settings files as component is not configurable
-        * Renames classes to allow more shared styles 
+    BREAKING
+      * Removes settings files as component is not configurable
+      * Renames classes to allow more shared styles
 
 ## 2.0.1 (2020-11-19)
     * Bump to get latest version package-manager with updated post install script
 
 ## 2.0.0 (2020-11-16)
-    * BREAKING: bump to latest brand context, global-javascript and global-expander
+    BREAKING
+      * Bump to latest brand context, global-javascript and global-expander
 
 ## 1.0.1 (2020-10-08)
     * Maintain logo alignment when scaling SVG
@@ -77,3 +106,4 @@
 
 ## 0.1.0 (2020-09-22)
 	* Add nature header
+

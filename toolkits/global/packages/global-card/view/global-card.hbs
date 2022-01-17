@@ -1,0 +1,17 @@
+<{{#if parent.noList}}div{{else}}{{#if noListItem}}div{{else}}li{{/if}}{{/if}} class="c-card{{#if parent.noShape}} c-card--no-shape{{else}}{{#if parent.portrait}} c-card--no-shape{{else}}{{/if}}{{/if}}">
+	<div class="c-card__image{{#if parent.portrait}} c-card__image--portrait{{/if}}"{{#if parent.aspectRatio}} style="--card--image-aspect-ratio: {{parent.aspectRatio}}"{{/if}}>
+		{{#with image}}
+			<img src="{{src}}" alt="{{alt}}">
+		{{/with}}
+	</div>
+    <div class="c-card__body">
+		{{#with title}}
+        <h3 class="c-card__title"{{#if ../parent.level}} aria-level="{{../parent.level}}"{{/if}}>
+            <a class="c-card__link{{#if ../parent.noBlockLinks}} c-card__link--no-block-link{{else}}{{#if ../noBlockLink}} c-card__link--no-block-link{{else}}{{/if}}{{/if}}" href="#">{{.}}</a>
+        </h3>
+		{{/with}}
+		{{#if summary}}
+        	<div class="c-card__summary">{{{summary}}}</div>
+		{{/if}}
+    </div>
+</{{#if parent.noList}}div{{else}}{{#if noListItem}}div{{else}}li{{/if}}{{/if}}>

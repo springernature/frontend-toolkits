@@ -1,18 +1,15 @@
 .c-ad {
-	display: none;
-	padding: $ad--leaderboard-padding;
 	text-align: center;
 
-	.js & {
-		@include media-query('md') {
-			display: block;
-		}
+	@include media-query('xs') {
+		padding: $ad--padding;
 	}
 }
 
 .c-ad--728x90,
 .c-ad--970x90 {
 	// Leaderboards
+	display: none;
 	background-color: $ad--leaderboard-bg-color;
 
 	.c-ad__inner {
@@ -39,6 +36,7 @@
 
 .c-ad--160x600 {
 	// Skyscraper
+	display: none;
 	padding: 0;
 	text-align: left;
 
@@ -48,9 +46,17 @@
 	}
 }
 
+.js .c-ad--160x600 {
+	@include media-query('md') {
+		display: block;
+	}
+}
+
 .c-ad--300x250 {
 	// MPU
+	display: none;
 	background-color: $ad--mpu-background-color;
+	padding: $ad--mpu-padding;
 
 	iframe {
 		width: 300px;
@@ -59,6 +65,12 @@
 
 	.c-ad__inner {
 		min-height: $ad--mpu-ad-inner-min-height;
+	}
+}
+
+.js .c-ad--300x250 {
+	@include media-query('xs') {
+		display: block;
 	}
 }
 

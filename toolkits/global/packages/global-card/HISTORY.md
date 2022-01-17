@@ -1,12 +1,41 @@
 # History
 
+## 7.0.0 (2021-12-29)
+    * BREAKING:
+        * Template moved to `/view`
+        * List semantics by default
+        * Shared `level` (`aria-level`) value
+    * Support for portrait shaped images (avatars)
+    * `noShape` option to remove border, background, and box-shadow
+    * Option to remove faux block link style
+
+## 6.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+
+## 5.0.0 (2021-11-08)
+    * Springer.com settings
+    * Border support
+
+## 4.0.0 (2021-11-03)
+    * BREAKING:
+        * Extraneous padding removed
+        * Aspect ratio for images
+
+## 3.3.0 (2021-09-20)
+    * Demo created with consumable handlebars template
+
+## 3.2.0 (2021-04-19)
+    * Update card title to use fluid typography
+    * Bump brand context version
+
 ## 3.1.1 (2021-03-15)
     * Add title overrides in nature settings
 
 ## 3.1.0 (2021-03-15)
-    * Change default card title settings 
+    * Change default card title settings
     * Bump brand context version
-    * Update available settings in readme 
+    * Update available settings in readme
 
 ## 3.0.2 (2021-02-23)
     * Fix letter spacing for SN brand

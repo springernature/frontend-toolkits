@@ -1,0 +1,9 @@
+.c-list-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: $global-list-header--keyline-gap;
+	border-bottom: 2px solid $global-list-header--keyline-color;
+	padding-bottom: spacing(4);
+	font-size: $global-list-header--font-size;
+	font-family: $global-list-header--font-family;
+}

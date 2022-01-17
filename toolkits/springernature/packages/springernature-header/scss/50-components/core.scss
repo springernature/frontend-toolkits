@@ -19,7 +19,7 @@
 
 .c-header__logo-link {
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 1.5625rem;
 }
 
 .c-header__site-logo {
@@ -33,18 +33,17 @@
 }
 
 .c-header__journal-title {
-	@include media-query('tablet-wide-width') {
-		font-size: 2.2rem;
+	@include media-query('md') {
+		font-size: 1.375rem;
 	}
 
-	@include media-query('desktop-width') {
-		font-size: 2.7rem;
+	@include media-query('lg') {
+		font-size: 1.6875rem;
 	}
 
 	font-family: $context--font-family-serif;
-	line-height: 4.6rem;
-	font-size: 2rem;
-	font-size: 1.5rem;
+	line-height: 2.875rem;
+	font-size: .9375rem;
 	color: color('black');
 }
 

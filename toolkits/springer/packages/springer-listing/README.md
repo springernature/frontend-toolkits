@@ -6,72 +6,100 @@ Optional image shrinks besides the title and text as the viewport becomes smalle
 
 ## Usage
 
-```html
-<!-- example of listing with text and image -->
-<ul>
-    <li>
-        <article class="c-listing c-listing--row">
-            <div class="c-listing__text-column">
-                <h4 class="c-listing__title">
-                    Title of an article
-                </h4>
-                <div class="c-listing__text">
-                    Some introduction text for article
-                </div>
-            </div>
-            <!-- optional image -->
-            <div class="c-listing__image">
-                <img src="article-image.png" alt="">
-            </div>
-        </article>
-    </li>
-</ul>
+# Usage
 
-<!-- example of listing in a search result -->
-<ul>
-    <li>
-        <article class="c-listing">
-            <div class="c-meta">
-                <p class="c-meta__item">Book Review</p>
-            </div>
-        
-            <div class="u-margin-bottom-sm">
-                <h3 class="c-listing__title">
-                    <a href="#">Title</a>    
-                </h3>
-                <p class="c-listing__authors">Author 1, Author 2, Author 3</p>
-            </div>
-        
-            <div class="u-margin-bottom-sm">
-                <div class="c-listing__text c-listing__text--light">
-                    <p>
-                        <em>Genomics, Society and Policy</em>
-                        2012
-                        <span>8</span>:38
-                    </p>
-                    <p>Published on: <span>15 September 2012</span></p>
-                </div>
-            </div>
-        
-            <ul class="c-listing__view-options">
-                <li>
-                    <a href="#">
-                        <svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
-                            <use xlink:href="#icon-chevron-right"></use>
-                        </svg>
-                        <span>Full Text</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg class="c-listing__view-options-icon" width="16" height="16" aria-hidden="true">
-                            <use xlink:href="#icon-chevron-right"></use>
-                        </svg>
-                        <span>PDF</span>
-                    </a>
-                </li>
-            </ul>                
-        </article>
-    </li>
-</ul>
+Import the Sass:
+
+```scss
+@import '../node_modules/@springernature/springer-listing/scss/10-settings/listing';
+@import '../node_modules/@springernature/springer-listing/scss/50-components/listing';
+```
+
+Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see examples of the expected data. Note that the listings themselves are supplied as an array on the `listings` property. This allows for applying various options (like `level` in the below example) to every listing.
+
+```json
+{
+    "level": "4",
+    "listings": [
+            ...
+        ]
+    }
+}
+```
+
+### Variants
+
+### Level
+
+Depending on the level of the heading that introduces the listings section, the heading level of each listing’s `title` might need to be changed. For example, if the introductory heading for the listings section is an `<h3>`, the `level` should be `"4"`:
+
+```json
+{
+    "level": "4",
+    "listings": [
+            ...
+        ]
+    }
+}
+```
+
+The heading level is changed for screen readers only, using `aria-level`. The title/heading’s style (font size) remains unaffected.
+
+### Authors
+
+Authors of the listed publication can be supplied as an array. Comma separation is handled automatically.
+
+```json
+{
+    "permalink": "/path/to/permalink",
+	"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+    "authors": [
+        "Zhen Cao",
+        "Qizhen Xiao",
+        "Gangtie Lie",
+        "Zhaohui Li"
+    ]
+    ...
+}
+```
+
+### Metadata
+
+Metadata is supplied via the `meta` property. This constitutes an array of simple strings.
+
+```json
+{
+    "permalink": "/path/to/permalink",
+	"title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+    "meta": [
+        "Original Paper",
+        "4 October 2019"
+    ]
+    ...
+}
+```
+
+### Options
+
+Options constitute different ways to consume the content. Each option is an object with `label` and `url` properties. The `optionIcon` property is the path for the (chevron) icon for each option. This is placed on the parent context.
+
+```json
+{
+    "optionIcon": "path/to/option/ion#icon-id",
+    "listings": {
+        "permalink": "/path/to/permalink",
+        "title": "Excellent cyclic performance of electrolytic MnO2 in Li/MnO2 rechargeable batteries",
+        "options": [
+            {
+                "label": "Full text",
+                "url": "/path/to/full/text"
+            },
+            {
+                "label": "PDF",
+                "url": "/path/to/pdf"
+            }
+            ...
+        ]
+    }
+}
 ```

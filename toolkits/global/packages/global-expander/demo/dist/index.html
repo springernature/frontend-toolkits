@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>@springernature/global-expander</title>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/* =========================================================================
+   $NORMALIZE
+   normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
+   ========================================================================= */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+	font-family: sans-serif;
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 3 */
+	-webkit-text-size-adjust: 100%;
+	/* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+	/* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+	border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+	/* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type='checkbox'],
+[type='radio'] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+	display: none;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8em;
+}
+
+		</style>
+	</head>
+	<body style="padding:2%">
+		<button id="testTrigger" data-expander data-expander-target="#testTarget">Expander 1</button>
+<div id="testTarget">Target 1</div>
+
+		<script>
+			(function () {
+	'use strict';
+
+	var makeArray = function makeArray(iterable) {
+	  var list = [];
+
+	  if (!iterable) {
+	    return list;
+	  }
+
+	  Array.prototype.forEach.call(iterable, function (item) {
+	    list.push(item);
+	  });
+	  return list;
+	};
+
+	/**
+	 * create-event.js
+	 * Wrapper for customEvent
+	 * Generate namespaced events
+	 */
+	/**
+	 * Polyfill customEvent
+	 * @function customEvent
+	 * @param {String} eventName namespaced name of the event
+	 * @param {Object=} _parameters customEvent options
+	 * @return {Event}
+	 */
+
+	var customEvent = function customEvent(eventName, _parameters) {
+	  _parameters = _parameters || {
+	    bubbles: false,
+	    cancelable: false,
+	    detail: null
+	  };
+	  var event = document.createEvent('CustomEvent');
+	  event.initCustomEvent(eventName, _parameters.bubbles, _parameters.cancelable, _parameters.detail);
+	  return event;
+	};
+	/**
+	 * Create a custom event
+	 * @function createEvent
+	 * @param {String} eventName name of the event
+	 * @param {String} namespace namespace e.g. component name
+	 * @param {Object=} _parameters customEvent options
+	 * @return {Event}
+	 */
+
+
+	var createEvent = function createEvent(eventName, namespace, _parameters) {
+	  var event;
+
+	  if (namespace === undefined) {
+	    throw new Error('Missing namespace in `createEvent` function');
+	  }
+
+	  if (typeof window.CustomEvent === 'function') {
+	    event = new CustomEvent("".concat(namespace, ":").concat(eventName), _parameters);
+	  } else {
+	    event = customEvent("".concat(namespace, ":").concat(eventName), _parameters);
+	  }
+
+	  return event;
+	};
+
+	/**
+	 * @param element
+	 * @param attributeMap - An Object of data attribute options
+	 * @returns Object
+	 */
+	var getDataOptions = function getDataOptions(element, attributeMap) {
+	  var dataOptions = {};
+
+	  for (var key in attributeMap) {
+	    // eslint-disable-next-line no-prototype-builtins
+	    if (attributeMap.hasOwnProperty(key)) {
+	      var value = attributeMap[key];
+	      var attributeValue = element.hasAttribute(value) && element.getAttribute(value);
+
+	      if (attributeValue) {
+	        // 'true' and 'false' attribute values need to be converted to a boolean
+	        // Checking equality against 'true' will return a boolean of true or false. e.g. 'false' === 'true' returns false
+	        dataOptions[key] = attributeValue === 'true' || attributeValue === 'false' ? attributeValue === 'true' : attributeValue;
+	      }
+	    }
+	  }
+
+	  return dataOptions;
+	};
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _defineProperties(target, props) {
+	  for (var i = 0; i < props.length; i++) {
+	    var descriptor = props[i];
+	    descriptor.enumerable = descriptor.enumerable || false;
+	    descriptor.configurable = true;
+	    if ("value" in descriptor) descriptor.writable = true;
+	    Object.defineProperty(target, descriptor.key, descriptor);
+	  }
+	}
+
+	function _createClass(Constructor, protoProps, staticProps) {
+	  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+	  if (staticProps) _defineProperties(Constructor, staticProps);
+	  return Constructor;
+	}
+
+	/**
+	 * Local Constants
+	 */
+
+	var defaultOptions = {
+	  TARGET_HIDE_CLASS: 'u-js-hide',
+	  TRIGGER_OPEN_CLASS: 'is-open',
+	  TRIGGER_OPEN_LABEL: undefined,
+	  CLOSE_ON_FOCUS_OUT: true,
+	  AUTOFOCUS: null,
+	  OPEN_EVENT: false,
+	  DEFAULT_OPEN: false
+	};
+
+	var Expander = /*#__PURE__*/function () {
+	  function Expander(trigger, target) {
+	    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+	    _classCallCheck(this, Expander);
+
+	    this._options = Object.assign({}, defaultOptions, options);
+	    this._autoFocusElement = trigger;
+	    this._triggerEl = trigger;
+	    this._targetEl = target;
+	    this._originalTriggerText = trigger.textContent;
+	    this._isOpen = this._options.DEFAULT_OPEN;
+	    this._handleButtonClick = this._handleButtonClick.bind(this);
+	    this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
+	    this._handleDocumentClick = this._handleDocumentClick.bind(this);
+	    this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
+	  }
+	  /**
+	   * Event Handlers
+	   */
+
+
+	  _createClass(Expander, [{
+	    key: "_handleButtonClick",
+	    value: function _handleButtonClick(event) {
+	      event.preventDefault();
+
+	      if (this._isOpen) {
+	        this.close();
+	      } else {
+	        this.open();
+	      }
+	    }
+	  }, {
+	    key: "_handleButtonKeydown",
+	    value: function _handleButtonKeydown(event) {
+	      if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+	        event.preventDefault();
+
+	        if (this._isOpen) {
+	          this.close();
+	        } else {
+	          this.open();
+	        }
+	      }
+	    }
+	  }, {
+	    key: "_handleDocumentKeydown",
+	    value: function _handleDocumentKeydown(event) {
+	      var _this = this;
+
+	      if (event.key === 'Escape') {
+	        this.close();
+
+	        this._triggerEl.focus();
+	      }
+
+	      if (this._options.CLOSE_ON_FOCUS_OUT) {
+	        if (event.key === 'Tab' && event.shiftKey === true) {
+	          if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
+	            event.preventDefault();
+	            window.requestAnimationFrame(function () {
+	              _this.close();
+
+	              _this._triggerEl.focus();
+	            });
+	          }
+	        }
+
+	        if (event.key === 'Tab' && event.shiftKey === false) {
+	          if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
+	            event.preventDefault();
+	            window.requestAnimationFrame(function () {
+	              _this.close();
+
+	              _this._triggerEl.focus();
+	            });
+	          }
+	        }
+	      }
+	    }
+	  }, {
+	    key: "_handleDocumentClick",
+	    value: function _handleDocumentClick(event) {
+	      var target = event.target;
+
+	      if (target === this._targetEl || target === this._triggerEl || this._targetEl.contains(target) || this._triggerEl.contains(target)) {
+	        return;
+	      }
+
+	      this.close();
+	    }
+	    /**
+	     * Temporary Event Listeners
+	     */
+
+	  }, {
+	    key: "_setupTemporaryEventListeners",
+	    value: function _setupTemporaryEventListeners() {
+	      document.addEventListener('keydown', this._handleDocumentKeydown);
+
+	      if (this._options.CLOSE_ON_FOCUS_OUT) {
+	        document.addEventListener('click', this._handleDocumentClick);
+	      }
+	    }
+	  }, {
+	    key: "_removeTemporaryEventListeners",
+	    value: function _removeTemporaryEventListeners() {
+	      document.removeEventListener('keydown', this._handleDocumentKeydown);
+
+	      if (this._options.CLOSE_ON_FOCUS_OUT) {
+	        document.removeEventListener('click', this._handleDocumentClick);
+	      }
+	    }
+	    /**
+	     * Attributes
+	     */
+
+	  }, {
+	    key: "_updateAttributes",
+	    value: function _updateAttributes() {
+	      // eslint-disable-next-line unicorn/consistent-function-scoping
+	      this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
+
+	      if (this._isOpen) {
+	        this._targetEl.removeAttribute('hidden');
+	      } else {
+	        this._targetEl.setAttribute('hidden', '');
+	      }
+	    }
+	    /**
+	     * Class attributes
+	     */
+
+	  }, {
+	    key: "_updateClassAttributes",
+	    value: function _updateClassAttributes() {
+	      if (this._isOpen) {
+	        this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
+
+	        this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
+	      } else {
+	        this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+
+	        this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+	      }
+	    }
+	    /**
+	     * Trigger Label
+	     */
+
+	  }, {
+	    key: "_updateTriggerLabel",
+	    value: function _updateTriggerLabel() {
+	      if (this._options.TRIGGER_OPEN_LABEL) {
+	        this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
+	      }
+	    }
+	    /**
+	     * Tabbable Items
+	     */
+
+	  }, {
+	    key: "_updateTabbableItems",
+	    value: function _updateTabbableItems() {
+	      this._targetTabbableItems = makeArray(this._targetEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')).filter(function (element) {
+	        return window.getComputedStyle(element).getPropertyValue('visibility') !== 'hidden';
+	      });
+	    }
+	    /**
+	     * AutoFocus
+	     */
+
+	  }, {
+	    key: "_handleAutoFocus",
+	    value: function _handleAutoFocus() {
+	      if (this._options.AUTOFOCUS === 'target') {
+	        this._autoFocusElement = this._targetEl;
+
+	        this._targetEl.setAttribute('tabindex', '-1');
+	      }
+
+	      if (this._options.AUTOFOCUS === 'firstTabbable') {
+	        this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
+
+	        if (this._autoFocusElement.setSelectionRange) {
+	          this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
+	        }
+	      }
+
+	      this._autoFocusElement.focus();
+	    }
+	    /**
+	     * @public
+	     */
+
+	    /**
+	     * Toggling
+	     */
+
+	  }, {
+	    key: "open",
+	    value: function open() {
+	      if (this._isOpen) {
+	        return;
+	      }
+
+	      this._isOpen = true;
+
+	      this._updateTriggerLabel();
+
+	      this._updateAttributes();
+
+	      this._updateClassAttributes();
+
+	      this._updateTabbableItems();
+
+	      this._setupTemporaryEventListeners();
+
+	      this._handleAutoFocus();
+
+	      if (this._options.OPEN_EVENT) {
+	        var event = createEvent('open', 'globalExpander', {
+	          bubbles: false
+	        });
+
+	        this._triggerEl.dispatchEvent(event);
+	      }
+	    }
+	  }, {
+	    key: "close",
+	    value: function close() {
+	      if (!this._isOpen) {
+	        return;
+	      }
+
+	      this._isOpen = false;
+
+	      this._updateTriggerLabel();
+
+	      this._updateAttributes();
+
+	      this._updateClassAttributes();
+
+	      this._removeTemporaryEventListeners();
+	    }
+	  }, {
+	    key: "init",
+	    value: function init() {
+	      if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
+	        // eslint-disable-next-line no-script-url
+	        this._triggerEl.setAttribute('href', 'javascript:;');
+
+	        this._triggerEl.setAttribute('role', 'button');
+	      } // Warn screen reader users when you are stealing focus
+
+
+	      if (this._options.AUTOFOCUS) {
+	        this._triggerEl.setAttribute('aria-haspopup', 'true');
+	      }
+
+	      this._updateTriggerLabel();
+
+	      this._updateAttributes();
+
+	      this._updateClassAttributes();
+
+	      this._triggerEl.addEventListener('click', this._handleButtonClick);
+
+	      this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
+	    }
+	  }]);
+
+	  return Expander;
+	}();
+
+	var DATA_COMPONENT = 'data-expander';
+	var attributes = {
+	  TARGET_HIDE_CLASS: DATA_COMPONENT + '-hide-class',
+	  TRIGGER_OPEN_CLASS: DATA_COMPONENT + '-trigger-open-class',
+	  TRIGGER_OPEN_LABEL: DATA_COMPONENT + '-trigger-open-label',
+	  CLOSE_ON_FOCUS_OUT: DATA_COMPONENT + '-close-on-focus-out',
+	  AUTOFOCUS: DATA_COMPONENT + '-autofocus',
+	  OPEN_EVENT: DATA_COMPONENT + '-open-event',
+	  DEFAULT_OPEN: DATA_COMPONENT + '-default-open'
+	};
+	/**
+	 * Data Attribute API
+	 */
+
+	var expander = function expander() {
+	  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var triggers = document.querySelectorAll("[".concat(DATA_COMPONENT, "]"));
+
+	  if (triggers.length === 0) {
+	    return;
+	  }
+
+	  makeArray(triggers).forEach(function (trigger) {
+	    var dataTarget = DATA_COMPONENT + '-target';
+
+	    if (!trigger.hasAttribute(dataTarget)) {
+	      return;
+	    }
+
+	    var targetElement = document.querySelector(trigger.getAttribute(dataTarget));
+
+	    if (!targetElement) {
+	      return;
+	    }
+
+	    var dataOptions = getDataOptions(trigger, attributes);
+	    var expander = new Expander(trigger, targetElement, Object.assign({}, options, dataOptions));
+	    expander.init();
+	  });
+	};
+
+	expander();
+
+})();
+
+		</script>
+	</body>
+</html>

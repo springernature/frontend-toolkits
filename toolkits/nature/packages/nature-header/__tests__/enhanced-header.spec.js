@@ -1,6 +1,6 @@
-import {enhancedHeader} from '../js/enhanced-header';
+import {header} from '../js/header';
 
-describe('enhancedHeader', () => {
+describe('Nature Header', () => {
 	const element = {};
 
 	beforeEach(() => {
@@ -36,7 +36,7 @@ describe('enhancedHeader', () => {
 
 	test('should set role for buttons', () => {
 		// Given
-		enhancedHeader();
+		header();
 		// Then
 		expect(element.button1.getAttribute('role')).toBe('button');
 		expect(element.button2.getAttribute('role')).toBe('button');
@@ -44,7 +44,7 @@ describe('enhancedHeader', () => {
 
 	test('should append target after respective triggers', () => {
 		// Given
-		enhancedHeader();
+		header();
 		// When
 		element.targetAfterButton1 = element.button1.nextSibling
 		element.targetAfterButton2 = element.button2.nextSibling

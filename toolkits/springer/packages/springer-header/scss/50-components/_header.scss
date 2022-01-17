@@ -8,48 +8,49 @@
 	border-bottom: 4px solid color('corporate');
 }
 
-.c-header__container {
-	@include u-container;
+.c-header__container,
+.c-header__menu,
+.c-header__nav-menu {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-}
-
-.c-header__brand {
-	margin-right: $header--brand-spacing;
-
-	a,
-	a:visited,
-	a:hover,
-	a:active {
-		text-decoration: none;
+	flex-wrap: wrap;
+	@supports (gap: 2em) {
+		gap: 2em;
 	}
 }
 
-.c-header__qualifier {
-	margin-left: spacing(24);
-
-	@include media-query(sm, max) {
-		display: none;
-	}
-}
-
-.c-header__navigation {
-	display: flex;
-	align-items: center;
-}
-
-.c-header__menu {
+.c-header__menu,
+.c-header__nav-menu {
 	@include u-list-reset;
-	display: flex;
 }
 
 .c-header__item {
 	color: $header--item-color;
-	margin-right: spacing(24);
+	@supports not (gap: 2em) {
+		margin-left: spacing(24);
+	}
+}
 
-	&:last-child {
-		margin-right: 0;
+.c-header__nav .c-header__item {
+	@supports not (gap: 2em) {
+		margin-left: 0;
+		margin-right: spacing(24);
+	}
+}
+
+.c-header__container {
+	@include u-container;
+	justify-content: space-between;
+}
+
+.c-header__brand {
+	@supports not (gap: 2em) {
+		margin-right: $header--brand-spacing;
+	}
+
+	a {
+		text-decoration: none;
+		display: block;
 	}
 }
 
@@ -66,16 +67,60 @@
 	}
 }
 
-.c-header__link--search {
-	display: block; // needed for ie10 otherwise the margin-right doesn't get applied correctly
-	background: transparent;
-	border: none;
-	margin: 0 spacing(24) 0 0;
+.c-header__link--nav {
+	font-weight: bold;
 }
 
-/**
- * Added with JavaScript via header-menu.js
- */
-.c-header__menu-button {
-	@include u-button-reset;
+.c-header__nav {
+	border-top: 1px solid greyscale(80);
+	margin-top: spacing(16);
+	padding-top: spacing(16);
+}
+
+.c-header__nav-menu {
+	@include u-container;
+}
+
+.c-header__search-form {
+	padding: spacing(48);
+	display: none;
+	justify-content: center;
+	background-color: greyscale(90);
+}
+
+.c-header__search-form:target,
+.c-header__search-form--visible {
+	display: flex;
+}
+
+.c-header__search-field {
+	width: 40rem;
+	max-width: 100%;
+}
+
+.c-header__search-field label {
+	display: block;
+	margin-bottom: spacing(4);
+}
+
+.c-header__search-controls {
+	display: flex;
+	margin-bottom: spacing(8);
+}
+
+.c-header__search-controls input,
+.c-header__search-controls button {
+	padding: spacing(8);
+	border: 0;
+	border-radius: 0;
+}
+
+.c-header__search-controls input {
+	width: 100%;
+	border: 1px solid greyscale(80);
+	border-width: 1px 0 0 1px;
+}
+
+.c-header__springer-link {
+	font-size: 0.8em;
 }

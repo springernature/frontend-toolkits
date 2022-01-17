@@ -3,13 +3,13 @@
  * Default branding for component
  */
 
-$meta--font-size: 14px;
+$meta--font-size: .813rem;
+$meta--font-size-large: 1rem;
 $meta--font-family: inherit;
 $meta--line-height: inherit;
-$meta--padding-right: 0.5em;
-$meta--margin-right: 0.5em;
-$meta--border: 1px solid #eee;
+$meta--keyline-spacing: spacing(8);
 $meta--color: #222;
 $meta--margin-bottom: 10px;
+$meta--margin-bottom-large: 20px;
 $meta--font-weight: 700;
 $meta--text-transform: uppercase;

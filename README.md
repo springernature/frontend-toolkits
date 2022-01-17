@@ -210,7 +210,7 @@ Tests for your package should be written in your `packages/<prefix>-name-of-pack
 * To run all the tests for a particular package use `npm test <name-of-package>`
 * To run an individual test use `npm test <name-of-test-file>`
 
-**NOTE**: Make sure that you bootstrap all package dependencies before running tests using `npm run bootstrap:local`.
+> **NOTE**: Make sure that you bootstrap all package dependencies before running tests using `npm run bootstrap:local`.
 
 ## Linting
 

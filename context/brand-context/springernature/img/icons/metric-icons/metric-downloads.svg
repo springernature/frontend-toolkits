@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+	<linearGradient id="wtn2rraa" x1="100%" x2="0%" y1="19.133%" y2="80.867%">
+		<stop offset="0" stop-color="#01324b" stop-opacity="0" />
+		<stop offset="1" stop-color="#01324b" stop-opacity=".499" />
+	</linearGradient>
+	<g fill="none" fill-rule="evenodd">
+		<circle cx="32" cy="32" r="32" fill="#cedbe0" />
+		<path fill="url(#wtn2rraa)" fill-rule="nonzero" d="M46 18H18v22h28z" />
+		<path fill="#01324b"
+			d="M40 46a2 2 0 110 4H24a2 2 0 110-4zM24 18v4h-6v18h28V22h-6v-4h6a4 4 0 014 4v18a4 4 0 01-4 4H18a4 4 0 01-4-4V22a4 4 0 014-4z" />
+		<path fill="#183642" fill-rule="nonzero"
+			d="M32 18a2 2 0 011.987 1.767L34 20v9.17l2.586-2.584a2 2 0 012.64-.167l.188.167a2 2 0 01.167 2.64l-.167.188-6 6c-.04.04-.08.078-.123.114l.123-.114c-.049.049-.1.095-.152.138l-.146.108-.13.081-.141.072-.176.072-.161.05-.11.025-.116.02-.095.011L32 36l-.127-.004-.18-.02-.16-.031-.156-.044-.197-.076-.127-.063-.167-.1-.13-.095-.08-.069-.09-.084-6-6a2 2 0 012.64-2.995l.188.167L30 29.17V20a2 2 0 012-2z"
+			opacity=".804" />
+	</g>
+</svg>
