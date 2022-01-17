@@ -84,7 +84,6 @@ describe('Autocomplete', () => {
 
 			await waitFor(2);
 			expect(fetchSpy).toHaveBeenCalledWith(url + 'burdmen', {"content-type": "application/json", "headers": headers, "method": 'GET'});
-
 		});
 
 		test('Should send a request using the configured HTTP method and bodyTemplate', async () => {
@@ -187,6 +186,58 @@ describe('Autocomplete', () => {
 
 			document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp' }));
 			expect(input.value).toBe('Wa');
+		});
+
+		test('Clicking escape key will remove suggestion list and return focus to the input', async () => {
+			let auto = autoComplete({
+				...args,
+				endpoint: null,
+				staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
+				resultsCallBack: showResults
+			});
+			auto.enable();
+
+			input.value = 'Wa';
+			input.dispatchEvent(new KeyboardEvent('keyup'));
+			await waitFor(2);
+
+			expect(document.querySelectorAll('.c-results-container').length).toBe(1);
+
+			input.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown' }));
+			await waitFor(2);
+			expect(document.activeElement).toBe(document.querySelector('.c-results-container__result'));
+			expect(input.value).toBe('Wallaby');
+
+			document.querySelector('.c-results-container').dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+			expect(document.querySelectorAll('.c-results-container').length).toBe(0);
+			expect(document.activeElement).toBe(input);
+		});
+
+		test('Selecting a suggestion will remove suggestion list and return focus to the input', async () => {
+			let auto = autoComplete({
+				...args,
+				endpoint: null,
+				staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
+				resultsCallBack: showResults
+			});
+			auto.enable();
+
+			input.value = 'Wa';
+			input.dispatchEvent(new KeyboardEvent('keyup'));
+			await waitFor(2);
+
+			expect(document.querySelectorAll('.c-results-container').length).toBe(1);
+
+			input.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown' }));
+			await waitFor(2);
+			expect(document.activeElement).toBe(document.querySelector('.c-results-container__result'));
+
+			document.querySelector('.c-results-container__result').dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter' }));
+			await waitFor(2);
+			expect(document.querySelectorAll('.c-results-container').length).toBe(0);
+			expect(document.activeElement).toBe(input);
+
+
 		});
 	});
 

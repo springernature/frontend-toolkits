@@ -1,5 +1,8 @@
 # History
 
+## 5.1.2 (2021-01-17)
+    * Return focus to input when removing suggestion box, conditionally
+
 ## 5.1.1 (2021-11-18)
     * Tab keypress should trigger default behaviour, i.e. move to next action on page rather than nav through suggestions
 
