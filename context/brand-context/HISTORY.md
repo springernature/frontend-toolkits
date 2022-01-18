@@ -1,6 +1,12 @@
 # History
 
-## 19.0.0 (2021-01-13)
+## 20.0.0 (2022-01-14)
+    * BREAKING
+        * Introduces updates to make use of Dart Sass as the compiler for the frontend.
+        * Updates default color function to use Dart Sass.
+        * Updates default typography to use Dart Sass.
+        
+## 19.0.0 (2022-01-13)
     * BREAKING
         * Icons all use `currentColor` in place of `#666` so they adopt `color` by default
 
@@ -11,18 +17,20 @@
     * BUG
         * fixes font size set in em, not rem and also thinking root size was 62.5%
 
+
 ## 18.1.1
     * FEATURE
         * copies the strip-unit function into the default brand context.
         * removes the strip-unit function from the springer brand context.
+        
 ## 18.1.0
     * FEATURE
-      * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
-
+        * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
+        
 ## 18.0.1 (2021-12-07)
     * BUG:
-    * Fixes some font sizes that were incorrectly calculated
-    * Changes the $base-font-size to match the root/html font size being 100$
+        * Fixes some font sizes that were incorrectly calculated
+        * Changes the $base-font-size to match the root/html font size being 100$
 
 ## 18.0.0 (2021-12-03)
     * BREAKING:

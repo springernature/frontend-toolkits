@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * Return a greyscale color based on $context--greyscale-base
  *
@@ -7,10 +8,10 @@
  */
 
 @function greyscale($val: $context--greyscale-min, $opacity: 1) {
-	$opacity: round($opacity * 10) / 10;
+	$opacity: math.div(round($opacity * 10), 10);
 	$lightness: if($val < $context--greyscale-min, $context--greyscale-min, $val);
 	$lightness: if($lightness > $context--greyscale-max, $context--greyscale-max, $lightness);
-	$rounded: round($lightness / $context--greyscale-stops) * $context--greyscale-stops;
+	$rounded: round(math.div($lightness, $context--greyscale-stops)) * $context--greyscale-stops;
 	$color: lighten($context--greyscale-base, $rounded);
 
 	@return rgba($color, $opacity);
@@ -29,7 +30,7 @@
 	$v2: if(length($keys) > 1, nth($keys, 2), null);
 	$map: if(type-of($v1) == 'map', $v1, $context--colors);
 	$opacity: if(type-of($v1) == 'number', $v1, $v2);
-	$opacity: if($opacity, round($opacity * 10) / 10, 1); // round to one decimal place
+	$opacity: if($opacity, math.div(round($opacity * 10), 10), 1); // round to one decimal place
 
 	@if length($keys) > 2 {
 		@warn 'the `color` function expects a maximum of 2 optional arguments, #{length($keys)} found.';

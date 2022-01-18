@@ -1,5 +1,7 @@
 # History
 
+## 7.0.1
+    * wraps the aspect ratio variable declarion with Sass interpolation to work with Dart Sass
 ## 7.0.0 (2021-12-29)
     * BREAKING:
         * Template moved to `/view`
@@ -12,6 +14,7 @@
 ## 6.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.
+        * updates global-card to use Dart Sass.
 
 ## 5.0.0 (2021-11-08)
     * Springer.com settings

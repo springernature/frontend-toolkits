@@ -1,7 +1,8 @@
 # History
 
 ## 4.0.0 (2021-12-03)
-    * BREAKING:
+    * BREAKING
+        * updates global-form SCSS to use Dart Sass.
         * Changes all typographic values to accomodate the root font size change.
 
 ## 3.0.3 (2020-11-19)
