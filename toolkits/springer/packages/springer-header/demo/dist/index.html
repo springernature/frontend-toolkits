@@ -1,1084 +1,8 @@
-<!doctype html>
-<html lang="en">
-	<head>
+<!DOCTYPE html><html lang="en"><head>
 		<meta charset="utf-8">
 		<title>@springernature/springer-header</title>
 		<style>
 			@charset "UTF-8";
-/**
- * Basic
- * Styles for all pages, included on pages that
- * both do and dont cut the mustard, keep to a minimum
- */
-/* =========================================================================
-   $NORMALIZE
-   normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
-   ========================================================================= */
-/* Document
-   ========================================================================== */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-html {
-	font-family: sans-serif;
-	/* 1 */
-	line-height: 1.15;
-	/* 2 */
-	-ms-text-size-adjust: 100%;
-	/* 3 */
-	-webkit-text-size-adjust: 100%;
-	/* 3 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
-body {
-	margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-	display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-figcaption,
-figure,
-main {
-	/* 1 */
-	display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-	margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-	box-sizing: content-box;
-	/* 1 */
-	height: 0;
-	/* 1 */
-	overflow: visible;
-	/* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-	font-family: monospace, monospace;
-	/* 1 */
-	font-size: 1em;
-	/* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-	background-color: transparent;
-	/* 1 */
-	-webkit-text-decoration-skip: objects;
-	/* 2 */
-}
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-a:active,
-a:hover {
-	outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-	border-bottom: none;
-	/* 1 */
-	text-decoration: underline;
-	/* 2 */
-	text-decoration: underline dotted;
-	/* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-	font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-	font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-	font-family: monospace, monospace;
-	/* 1 */
-	font-size: 1em;
-	/* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-	font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-	background-color: #ff0;
-	color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-	font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-sup {
-	top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-	display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-img {
-	border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-	overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-	font-family: sans-serif;
-	/* 1 */
-	font-size: 100%;
-	/* 1 */
-	line-height: 1.15;
-	/* 1 */
-	margin: 0;
-	/* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-	/* 1 */
-	overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-	/* 1 */
-	text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-html [type='button'],
-[type='reset'],
-[type='submit'] {
-	-webkit-appearance: button;
-	/* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-	box-sizing: border-box;
-	/* 1 */
-	color: inherit;
-	/* 2 */
-	display: table;
-	/* 1 */
-	max-width: 100%;
-	/* 1 */
-	padding: 0;
-	/* 3 */
-	white-space: normal;
-	/* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-	display: inline-block;
-	/* 1 */
-	vertical-align: baseline;
-	/* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-textarea {
-	overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-[type='checkbox'],
-[type='radio'] {
-	box-sizing: border-box;
-	/* 1 */
-	padding: 0;
-	/* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
-	height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type='search'] {
-	-webkit-appearance: textfield;
-	/* 1 */
-	outline-offset: -2px;
-	/* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-[type='search']::-webkit-search-cancel-button,
-[type='search']::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	/* 1 */
-	font: inherit;
-	/* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-details,
-menu {
-	display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-	display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-	display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-template {
-	display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-	display: none;
-}
-
-/**
- * Enhanced
- * Bootstrap the rest of the styles on cut the mustard
- */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- *
- */
-/**
- * Shared colors
- * Applicable to all brands and not to be overwritten
- *
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Default
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Map deep get
- * @author Hugo Giraudel
- * @private
- *
- * @param {Map} $map - Map
- * @param {Arglist} $keys - Key chain
- * @return {*} - Desired value
- *
- */
-/**
- * Map key get
- * Check if a key exists in a map, return it
- * @private
- *
- * @param {Map} $map - Map
- * @param {String} $value - Key name
- * @return {*} - Key name, if found
- *
- */
-/**
- * Style mixins
- *
- */
-/**
- * Breakpoints
- * Media query helper
- * @group 30-mixins
- */
-/**
- * Typography
- * Set base font size
- */
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-size: 1.8em;
-}
-
-.u-icon {
-	fill: currentColor;
-	transform: translate(0, 0);
-	display: inline-block;
-	vertical-align: text-top;
-}
-
-.u-flex-direction-row {
-	flex-direction: row;
-}
-
-.u-flex-direction-column {
-	flex-direction: column;
-}
-
-.u-flex-wrap {
-	flex-wrap: wrap;
-}
-
-.u-align-items-center {
-	align-items: center;
-}
-
-.u-align-items-baseline {
-	align-items: baseline;
-}
-
-.u-justify-content-space-between {
-	justify-content: space-between;
-}
-
-.u-justify-content-center {
-	justify-content: center;
-}
-
-.u-justify-content-left {
-	justify-content: left;
-}
-
-.u-flex-grow {
-	flex: 1 0 auto;
-}
-
-.u-flex-grow-shrink {
-	flex: 1 1 auto;
-}
-
-.u-flex-shrink {
-	flex: 0 1 auto;
-}
-
-.u-flex-static {
-	flex: 0 0 auto;
-}
-
-.u-align-self-center {
-	align-self: center;
-}
-
-.u-align-self-start {
-	align-self: flex-start;
-}
-
-.u-align-self-end {
-	align-self: flex-end;
-}
-
-.u-ma-0 {
-	margin: 0;
-}
-
-.u-ma-2 {
-	margin: 2px;
-}
-
-.u-ma-4 {
-	margin: 4px;
-}
-
-.u-ma-8 {
-	margin: 8px;
-}
-
-.u-ma-16 {
-	margin: 16px;
-}
-
-.u-ma-24 {
-	margin: 24px;
-}
-
-.u-ma-32 {
-	margin: 32px;
-}
-
-.u-ma-48 {
-	margin: 48px;
-}
-
-.u-ma-64 {
-	margin: 64px;
-}
-
-.u-ma-auto {
-	margin: auto;
-}
-
-.u-mt-0 {
-	margin-top: 0;
-}
-
-.u-mt-2 {
-	margin-top: 2px;
-}
-
-.u-mt-4 {
-	margin-top: 4px;
-}
-
-.u-mt-8 {
-	margin-top: 8px;
-}
-
-.u-mt-16 {
-	margin-top: 16px;
-}
-
-.u-mt-24 {
-	margin-top: 24px;
-}
-
-.u-mt-32 {
-	margin-top: 32px;
-}
-
-.u-mt-48 {
-	margin-top: 48px;
-}
-
-.u-mt-64 {
-	margin-top: 64px;
-}
-
-.u-mt-auto {
-	margin-top: auto;
-}
-
-.u-mr-0 {
-	margin-right: 0;
-}
-
-.u-mr-2 {
-	margin-right: 2px;
-}
-
-.u-mr-4 {
-	margin-right: 4px;
-}
-
-.u-mr-8 {
-	margin-right: 8px;
-}
-
-.u-mr-16 {
-	margin-right: 16px;
-}
-
-.u-mr-24 {
-	margin-right: 24px;
-}
-
-.u-mr-32 {
-	margin-right: 32px;
-}
-
-.u-mr-48 {
-	margin-right: 48px;
-}
-
-.u-mr-64 {
-	margin-right: 64px;
-}
-
-.u-mr-auto {
-	margin-right: auto;
-}
-
-.u-mb-0 {
-	margin-bottom: 0;
-}
-
-.u-mb-2 {
-	margin-bottom: 2px;
-}
-
-.u-mb-4 {
-	margin-bottom: 4px;
-}
-
-.u-mb-8 {
-	margin-bottom: 8px;
-}
-
-.u-mb-16 {
-	margin-bottom: 16px;
-}
-
-.u-mb-24 {
-	margin-bottom: 24px;
-}
-
-.u-mb-32 {
-	margin-bottom: 32px;
-}
-
-.u-mb-48 {
-	margin-bottom: 48px;
-}
-
-.u-mb-64 {
-	margin-bottom: 64px;
-}
-
-.u-mb-auto {
-	margin-bottom: auto;
-}
-
-.u-ml-0 {
-	margin-left: 0;
-}
-
-.u-ml-2 {
-	margin-left: 2px;
-}
-
-.u-ml-4 {
-	margin-left: 4px;
-}
-
-.u-ml-8 {
-	margin-left: 8px;
-}
-
-.u-ml-16 {
-	margin-left: 16px;
-}
-
-.u-ml-24 {
-	margin-left: 24px;
-}
-
-.u-ml-32 {
-	margin-left: 32px;
-}
-
-.u-ml-48 {
-	margin-left: 48px;
-}
-
-.u-ml-64 {
-	margin-left: 64px;
-}
-
-.u-ml-auto {
-	margin-left: auto;
-}
-
-.u-pa-0 {
-	padding: 0;
-}
-
-.u-pa-2 {
-	padding: 2px;
-}
-
-.u-pa-4 {
-	padding: 4px;
-}
-
-.u-pa-8 {
-	padding: 8px;
-}
-
-.u-pa-16 {
-	padding: 16px;
-}
-
-.u-pa-24 {
-	padding: 24px;
-}
-
-.u-pa-32 {
-	padding: 32px;
-}
-
-.u-pa-48 {
-	padding: 48px;
-}
-
-.u-pa-64 {
-	padding: 64px;
-}
-
-.u-pt-0 {
-	padding-top: 0;
-}
-
-.u-pt-2 {
-	padding-top: 2px;
-}
-
-.u-pt-4 {
-	padding-top: 4px;
-}
-
-.u-pt-8 {
-	padding-top: 8px;
-}
-
-.u-pt-16 {
-	padding-top: 16px;
-}
-
-.u-pt-24 {
-	padding-top: 24px;
-}
-
-.u-pt-32 {
-	padding-top: 32px;
-}
-
-.u-pt-48 {
-	padding-top: 48px;
-}
-
-.u-pt-64 {
-	padding-top: 64px;
-}
-
-.u-pr-0 {
-	padding-right: 0;
-}
-
-.u-pr-2 {
-	padding-right: 2px;
-}
-
-.u-pr-4 {
-	padding-right: 4px;
-}
-
-.u-pr-8 {
-	padding-right: 8px;
-}
-
-.u-pr-16 {
-	padding-right: 16px;
-}
-
-.u-pr-24 {
-	padding-right: 24px;
-}
-
-.u-pr-32 {
-	padding-right: 32px;
-}
-
-.u-pr-48 {
-	padding-right: 48px;
-}
-
-.u-pr-64 {
-	padding-right: 64px;
-}
-
-.u-pb-0 {
-	padding-bottom: 0;
-}
-
-.u-pb-2 {
-	padding-bottom: 2px;
-}
-
-.u-pb-4 {
-	padding-bottom: 4px;
-}
-
-.u-pb-8 {
-	padding-bottom: 8px;
-}
-
-.u-pb-16 {
-	padding-bottom: 16px;
-}
-
-.u-pb-24 {
-	padding-bottom: 24px;
-}
-
-.u-pb-32 {
-	padding-bottom: 32px;
-}
-
-.u-pb-48 {
-	padding-bottom: 48px;
-}
-
-.u-pb-64 {
-	padding-bottom: 64px;
-}
-
-.u-pl-0 {
-	padding-left: 0;
-}
-
-.u-pl-2 {
-	padding-left: 2px;
-}
-
-.u-pl-4 {
-	padding-left: 4px;
-}
-
-.u-pl-8 {
-	padding-left: 8px;
-}
-
-.u-pl-16 {
-	padding-left: 16px;
-}
-
-.u-pl-24 {
-	padding-left: 24px;
-}
-
-.u-pl-32 {
-	padding-left: 32px;
-}
-
-.u-pl-48 {
-	padding-left: 48px;
-}
-
-.u-pl-64 {
-	padding-left: 64px;
-}
-
 /**
  * Core
  * Styles for all pages, included on pages that
@@ -2287,6 +1211,673 @@ cite {
 	font-style: normal;
 }
 
+.u-icon {
+	fill: currentColor;
+	transform: translate(0, 0);
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+/**
+ * Button utilities
+ * These are for styled branded buttons
+ */
+.u-button {
+	align-items: center;
+	cursor: pointer;
+	display: inline-flex;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	width: auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+	justify-content: center;
+	padding: 8px;
+	transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+	border-radius: 2px;
+	color: #004b83;
+	background-color: #f2f2f2;
+	background-image: linear-gradient(to bottom, white, #f2f2f2);
+	border: 1px solid #cccccc;
+}
+
+.u-button:visited {
+	color: #004b83;
+}
+
+.u-button:hover {
+	border: 1px solid #666666;
+	text-decoration: none;
+}
+
+.u-button:focus {
+	border: 1px solid #666666;
+	text-decoration: none;
+}
+
+.u-button:hover, .u-button:focus {
+	color: white;
+	background-color: #666666;
+	background-image: none;
+}
+
+.u-button:hover svg path, .u-button:focus svg path {
+	fill: white;
+}
+
+.u-button--primary {
+	color: white;
+	background-color: #33629d;
+	background-image: linear-gradient(to bottom, #4d76a9, #33629d);
+	border: 1px solid rgba(0, 59, 132, 0.5);
+}
+
+.u-button--primary:visited {
+	color: white;
+}
+
+.u-button--primary:hover {
+	border: 1px solid #0061a9;
+}
+
+.u-button--primary:focus {
+	border: 1px solid #0061a9;
+}
+
+.u-button--primary:hover, .u-button--primary:focus {
+	color: white;
+	background-color: #0061a9;
+	background-image: none;
+}
+
+.u-button--primary:hover svg path, .u-button--primary:focus svg path {
+	fill: white;
+}
+
+.u-button--contrast {
+	color: white;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid white;
+	font-weight: normal;
+}
+
+.u-button--contrast:visited {
+	color: white;
+}
+
+.u-button--contrast:hover {
+	border: 1px solid white;
+}
+
+.u-button--contrast:focus {
+	border: 1px solid white;
+}
+
+.u-button--contrast:hover, .u-button--contrast:focus {
+	color: black;
+	background-color: white;
+	background-image: none;
+}
+
+.u-button--contrast:hover svg path, .u-button--contrast:focus svg path {
+	fill: black;
+}
+
+.u-button--ghost {
+	color: #333333;
+	background-color: transparent;
+	background-image: none;
+}
+
+.u-button--ghost:visited {
+	color: #333333;
+}
+
+.u-button--ghost:hover, .u-button--ghost:focus {
+	color: #333333;
+	background-color: rgba(242, 242, 242, 0.5);
+	background-image: none;
+}
+
+.u-button--ghost:hover svg path, .u-button--ghost:focus svg path {
+	fill: #333333;
+}
+
+.u-button--disabled,
+.u-button:disabled {
+	color: #333333;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid #cccccc;
+	opacity: 0.67;
+	cursor: default;
+}
+
+.u-button--disabled:visited,
+.u-button:disabled:visited {
+	color: #333333;
+}
+
+.u-button--disabled:hover,
+.u-button:disabled:hover {
+	border: 1px solid #cccccc;
+	text-decoration: none;
+}
+
+.u-button--disabled:focus,
+.u-button:disabled:focus {
+	border: 1px solid #cccccc;
+	text-decoration: none;
+}
+
+.u-button--disabled:hover, .u-button--disabled:focus,
+.u-button:disabled:hover,
+.u-button:disabled:focus {
+	color: #333333;
+	background-color: transparent;
+	background-image: none;
+}
+
+.u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
+.u-button:disabled:hover svg path,
+.u-button:disabled:focus svg path {
+	fill: #333333;
+}
+
+.u-button--small {
+	font-size: 14px;
+}
+
+.u-button--large {
+	font-size: 16px;
+	padding: 16px;
+}
+
+.u-button--full-width {
+	display: flex;
+	width: 100%;
+}
+
+.u-button--icon-left svg {
+	margin-right: 8px;
+}
+
+.u-button--icon-right svg {
+	margin-left: 8px;
+}
+
+.u-display-block {
+	display: block;
+}
+
+.u-display-inline {
+	display: inline;
+}
+
+.u-display-inline-block {
+	display: inline-block;
+}
+
+.u-display-flex {
+	display: flex;
+	width: 100%;
+}
+
+.u-display-inline-flex {
+	display: inline-flex;
+}
+
+.u-display-grid {
+	display: grid;
+}
+
+.u-display-table {
+	display: table;
+}
+
+.u-flex-direction-row {
+	flex-direction: row;
+}
+
+.u-flex-direction-column {
+	flex-direction: column;
+}
+
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-align-items-center {
+	align-items: center;
+}
+
+.u-align-items-baseline {
+	align-items: baseline;
+}
+
+.u-justify-content-space-between {
+	justify-content: space-between;
+}
+
+.u-justify-content-center {
+	justify-content: center;
+}
+
+.u-justify-content-left {
+	justify-content: left;
+}
+
+.u-flex-grow {
+	flex: 1 0 auto;
+}
+
+.u-flex-grow-shrink {
+	flex: 1 1 auto;
+}
+
+.u-flex-shrink {
+	flex: 0 1 auto;
+}
+
+.u-flex-static {
+	flex: 0 0 auto;
+}
+
+.u-align-self-center {
+	align-self: center;
+}
+
+.u-align-self-start {
+	align-self: flex-start;
+}
+
+.u-align-self-end {
+	align-self: flex-end;
+}
+
+.u-ma-0 {
+	margin: 0;
+}
+
+.u-ma-2 {
+	margin: 2px;
+}
+
+.u-ma-4 {
+	margin: 4px;
+}
+
+.u-ma-8 {
+	margin: 8px;
+}
+
+.u-ma-16 {
+	margin: 16px;
+}
+
+.u-ma-24 {
+	margin: 24px;
+}
+
+.u-ma-32 {
+	margin: 32px;
+}
+
+.u-ma-48 {
+	margin: 48px;
+}
+
+.u-ma-64 {
+	margin: 64px;
+}
+
+.u-ma-auto {
+	margin: auto;
+}
+
+.u-mt-0 {
+	margin-top: 0;
+}
+
+.u-mt-2 {
+	margin-top: 2px;
+}
+
+.u-mt-4 {
+	margin-top: 4px;
+}
+
+.u-mt-8 {
+	margin-top: 8px;
+}
+
+.u-mt-16 {
+	margin-top: 16px;
+}
+
+.u-mt-24 {
+	margin-top: 24px;
+}
+
+.u-mt-32 {
+	margin-top: 32px;
+}
+
+.u-mt-48 {
+	margin-top: 48px;
+}
+
+.u-mt-64 {
+	margin-top: 64px;
+}
+
+.u-mt-auto {
+	margin-top: auto;
+}
+
+.u-mr-0 {
+	margin-right: 0;
+}
+
+.u-mr-2 {
+	margin-right: 2px;
+}
+
+.u-mr-4 {
+	margin-right: 4px;
+}
+
+.u-mr-8 {
+	margin-right: 8px;
+}
+
+.u-mr-16 {
+	margin-right: 16px;
+}
+
+.u-mr-24 {
+	margin-right: 24px;
+}
+
+.u-mr-32 {
+	margin-right: 32px;
+}
+
+.u-mr-48 {
+	margin-right: 48px;
+}
+
+.u-mr-64 {
+	margin-right: 64px;
+}
+
+.u-mr-auto {
+	margin-right: auto;
+}
+
+.u-mb-0 {
+	margin-bottom: 0;
+}
+
+.u-mb-2 {
+	margin-bottom: 2px;
+}
+
+.u-mb-4 {
+	margin-bottom: 4px;
+}
+
+.u-mb-8 {
+	margin-bottom: 8px;
+}
+
+.u-mb-16 {
+	margin-bottom: 16px;
+}
+
+.u-mb-24 {
+	margin-bottom: 24px;
+}
+
+.u-mb-32 {
+	margin-bottom: 32px;
+}
+
+.u-mb-48 {
+	margin-bottom: 48px;
+}
+
+.u-mb-64 {
+	margin-bottom: 64px;
+}
+
+.u-mb-auto {
+	margin-bottom: auto;
+}
+
+.u-ml-0 {
+	margin-left: 0;
+}
+
+.u-ml-2 {
+	margin-left: 2px;
+}
+
+.u-ml-4 {
+	margin-left: 4px;
+}
+
+.u-ml-8 {
+	margin-left: 8px;
+}
+
+.u-ml-16 {
+	margin-left: 16px;
+}
+
+.u-ml-24 {
+	margin-left: 24px;
+}
+
+.u-ml-32 {
+	margin-left: 32px;
+}
+
+.u-ml-48 {
+	margin-left: 48px;
+}
+
+.u-ml-64 {
+	margin-left: 64px;
+}
+
+.u-ml-auto {
+	margin-left: auto;
+}
+
+.u-pa-0 {
+	padding: 0;
+}
+
+.u-pa-2 {
+	padding: 2px;
+}
+
+.u-pa-4 {
+	padding: 4px;
+}
+
+.u-pa-8 {
+	padding: 8px;
+}
+
+.u-pa-16 {
+	padding: 16px;
+}
+
+.u-pa-24 {
+	padding: 24px;
+}
+
+.u-pa-32 {
+	padding: 32px;
+}
+
+.u-pa-48 {
+	padding: 48px;
+}
+
+.u-pa-64 {
+	padding: 64px;
+}
+
+.u-pt-0 {
+	padding-top: 0;
+}
+
+.u-pt-2 {
+	padding-top: 2px;
+}
+
+.u-pt-4 {
+	padding-top: 4px;
+}
+
+.u-pt-8 {
+	padding-top: 8px;
+}
+
+.u-pt-16 {
+	padding-top: 16px;
+}
+
+.u-pt-24 {
+	padding-top: 24px;
+}
+
+.u-pt-32 {
+	padding-top: 32px;
+}
+
+.u-pt-48 {
+	padding-top: 48px;
+}
+
+.u-pt-64 {
+	padding-top: 64px;
+}
+
+.u-pr-0 {
+	padding-right: 0;
+}
+
+.u-pr-2 {
+	padding-right: 2px;
+}
+
+.u-pr-4 {
+	padding-right: 4px;
+}
+
+.u-pr-8 {
+	padding-right: 8px;
+}
+
+.u-pr-16 {
+	padding-right: 16px;
+}
+
+.u-pr-24 {
+	padding-right: 24px;
+}
+
+.u-pr-32 {
+	padding-right: 32px;
+}
+
+.u-pr-48 {
+	padding-right: 48px;
+}
+
+.u-pr-64 {
+	padding-right: 64px;
+}
+
+.u-pb-0 {
+	padding-bottom: 0;
+}
+
+.u-pb-2 {
+	padding-bottom: 2px;
+}
+
+.u-pb-4 {
+	padding-bottom: 4px;
+}
+
+.u-pb-8 {
+	padding-bottom: 8px;
+}
+
+.u-pb-16 {
+	padding-bottom: 16px;
+}
+
+.u-pb-24 {
+	padding-bottom: 24px;
+}
+
+.u-pb-32 {
+	padding-bottom: 32px;
+}
+
+.u-pb-48 {
+	padding-bottom: 48px;
+}
+
+.u-pb-64 {
+	padding-bottom: 64px;
+}
+
+.u-pl-0 {
+	padding-left: 0;
+}
+
+.u-pl-2 {
+	padding-left: 2px;
+}
+
+.u-pl-4 {
+	padding-left: 4px;
+}
+
+.u-pl-8 {
+	padding-left: 8px;
+}
+
+.u-pl-16 {
+	padding-left: 16px;
+}
+
+.u-pl-24 {
+	padding-left: 24px;
+}
+
+.u-pl-32 {
+	padding-left: 32px;
+}
+
+.u-pl-48 {
+	padding-left: 48px;
+}
+
+.u-pl-64 {
+	padding-left: 64px;
+}
+
 .c-header {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 16px;
@@ -2353,6 +1944,7 @@ cite {
 
 .c-header__brand a {
 	text-decoration: none;
+	display: block;
 }
 
 .c-header__link {
@@ -2389,14 +1981,60 @@ cite {
 	padding: 0 16px;
 }
 
+.c-header__search-form {
+	padding: 48px;
+	display: none;
+	justify-content: center;
+	background-color: #e6e6e6;
+}
+
+.c-header__search-form:target,
+.c-header__search-form--visible {
+	display: flex;
+}
+
+.c-header__search-field {
+	width: 40rem;
+	max-width: 100%;
+}
+
+.c-header__search-field label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.c-header__search-controls {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.c-header__search-controls input,
+.c-header__search-controls button {
+	padding: 8px;
+	border: 0;
+	border-radius: 0;
+}
+
+.c-header__search-controls input {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-width: 1px 0 0 1px;
+}
+
+.c-header__springer-link {
+	font-size: 0.8em;
+}
+
 		</style>
 	</head>
 	<body style="padding:2%">
-		<header class="c-header">
+		<h2>Header without search</h2>
+
+<header class="c-header">
 	<div class="c-header__container">
 		<div class="c-header__brand">
 			<a href="/" itemprop="url">
-				<img alt="Springer home" itemprop="logo" width="112" height="30" role="img" src="../../img/logo.svg">
+				<img alt="Springer home" itemprop="logo" width="112" height="30" role="img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEyIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTEyIDMwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTIzLjY1MSAyMy4wMkg0LjI3di0xLjE5MWgxLjY0M2MuMjg3LTMuODYgMy45ODItNS4yOTcgNi4wMzYtOC40MTdIOS41NjhjLTEuMTUuNDExLTIuODc1IDIuOTU2LTIuODc1IDQuNDM0SDMuNjk2bC4wNDEtMS4yMzItLjk4Ni44MjEtMi42MjgtMy4wMzhTMCAxNC4yMzMgMCAxNC4xMWMwLS4xMjMuMDQxLS4yMDYuMDQxLS4yMDZsNC4xNDctNS42MjUuNzM5LTIuMjE3IDEuMTA5LS40MSAxLjE1LTEuNjAxLS40MTEtMi43OTRjMS4xMDgtLjQxMSAyLjE3Ni0uMDQxIDIuNzEuNDkyQTE0LjMxNSAxNC4zMTUgMCAwMDkuNDQ0LjAyNWMxLjk3MS0uMjA1IDIuNjY4Ljg2MiAyLjk5NyAyLjA1M2ExMy45OCAxMy45OCAwIDAxMS40NzguMjA2LjY2OS42NjkgMCAwMS42MTYtLjQ1MmMuMzY5IDAgLjYxNi4yODcuNjE2LjYxNnYuMTY0Yy44NjMuMjg3IDEuNjg0LjY5OCAyLjQyMyAxLjE1YS41ODUuNTg1IDAgMDEuNDkyLS4yNDdjLjM3IDAgLjYxNi4yODcuNjE2LjYxNiAwIC4xNjQtLjA0MS4yODctLjEyMy4zNy42OTguNTc1IDEuMjczIDEuMjczIDEuODA3IDIuMDEyYS43Ni43NiAwIDAxLjI4Ny0uMDgyYy4zNjkgMCAuNjU3LjI4Ny42NTcuNjE2IDAgLjI0Ny0uMTIzLjQ1Mi0uMzI4LjUzNC40MTEuNzM5LjczOSAxLjU2Ljk4NSAyLjQyMi4wNDEtLjA0MS4xMjMtLjA0MS4xNjQtLjA0MS4zNjkgMCAuNjE2LjI4Ny42MTYuNjE2cy0uMjA1LjU3NS0uNDUxLjYxNmMuMTY0Ljg2Mi4yODcgMS43MjUuMzY5IDIuNjI4LjM2OSAwIC42NTcuMjg3LjY1Ny42MTYgMCAuMzY5LS4yODcuNjE1LS42MTYuNjU3IDAgLjg2Mi0uMDQxIDEuODA3LS4xMjMgMi43MWEuNjY0LjY2NCAwIDAxLjU3NS42NTdjMCAuMzI5LS4yODcuNjE2LS42NTcuNjE2aC0uMDQxYy0uMTY0LjkwMy0uMzI4IDEuODA2LS41MzQgMi43NTFoMS43MjV2MS4xOTF6bS0yLjk1Ny0xLjE1YzIuMzgyLTkuODE0LS40MTEtMTcuNjE1LTguMDA3LTE4LjUxOS4wNDEuNDExLjA0MS43MzkuMDQxIDEuMDY4IDAgLjQ5My0uMDQxLjkwMy0uMDQxLjkwM2wtMS4xOS0uMjA2Yy4wNDEtLjQxMS4xMjMtMy4yMDMtLjg2My0zLjgxOCAwIDAgMCAxLjQ3OC0uMzI4IDIuOTU2TDkuMTk4IDQuMDVjMC0xLjAyNy0uNDUyLTEuNDM3LTEuMDY3LTEuNzI1bC4yODcgMi4wMTItLjY5OSAxLjAyNy4zMjkuOTQ0LTIuMTc2LjczOS0uNjE2IDEuNzY2LTMuODE5IDUuMjU2IDEuNDM4IDEuNzI0IDEuNjAxLTEuMzU1LjM2OS4yNDZ2Mi4wMTJoLjg2MmMuMzctMS40MzcgMS41Ni0zLjEyMSAyLjY2OS0zLjk0MmwtLjYxNi0uNzM5LjkwMy0uNzguODYyIDEuMDY4czMuMDggMCAzLjA4LS4wNDFjLjQ1Mi0uOTg1LjczOS0yLjE3Ni43MzktMy41NzJoMS4xOTFjMCA0LjY4MS0yLjM0IDYuNTI5LTUuMjU2IDkuNDAzLTEuMDY4IDEuMDY3LTIuMDEyIDIuMjE3LTIuMTM1IDMuNzc3aDEzLjU1ek0zLjU3MyAxMi43OTZjLjA0MS41MzQtLjA0MSAxLjM1NS0uMzI5IDEuNzY2bC0uODYyLS4zMjljLjI4Ny0uNDEuNDUyLS45ODUuNDUyLTEuNDc4bC43MzkuMDQxem00LjcyMS00LjU1OGwtMS44NDcuOTg1LS4xMjQtMS41MTkgMS45My0uMjA2LjA0MS43NHoiIGZpbGw9IiMwMDI4NUEiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGZpbGw9IiNFRTdEMTEiIGQ9Ik0yMy42NTEgMjkuMDk3SDQuMjd2LTIuMzgyaDE5LjM4MXoiLz48cGF0aCBkPSJNMzYuMTc5IDIzLjM0OGMtMS41NiAwLTIuNzkyLS4zNy0zLjk4My0uOTAzLS4yNDYtMS4wNjgtLjMyOS0yLjUwNS0uNDExLTMuOTgzbC45NDUtLjE2NGMuNTM0IDIuMDEyIDEuMjczIDMuOTgzIDMuNzM2IDMuOTgzIDEuNzI1IDAgMi43NTEtMS4wNjggMi43NTEtMi42NjkgMC00LjIyOS03LjAyMS0zLjI4NC03LjAyMS04LjE3MSAwLTIuMjE3IDEuODA3LTQuMjI5IDUuMDEtNC4yMjkgMS4wNjggMCAyLjIxNy4yODcgMy4zNjcuNjk4LjA4Mi44NjIuMTY0IDEuODQ4LjIwNSAzLjU3M2wtLjg2Mi4wNDFjLS40MTEtMS40MzgtMS4wNjctMy4yMDMtMy4xNjItMy4yMDMtMS41NiAwLTIuMzQxIDEuMDY4LTIuMzQxIDIuMzQxIDAgMy45MDEgNy4xNDUgMy4wOCA3LjE0NSA4LjE3MSAwIDIuNDIxLTIuMTc3IDQuNTE1LTUuMzc5IDQuNTE1em0xMS43MDItLjE2NGMtLjY1Ny0uMDQxLTEuMTkxLS4xNjQtMS41MTktLjI4N3YzLjg1OWMwIDEuMzk2LjE2NCAxLjUyIDIuMDUzIDEuNjg0di43OGgtNS43ODl2LS43OGMxLjQ3OC0uMTY0IDEuNjAxLS4yODcgMS42MDEtMS42ODRWMTUuNzkzYzAtMS40MzctLjA0MS0xLjQ3OC0xLjQzNy0xLjYwMXYtLjY5OGMxLjIzMi0uMjQ2IDIuMzgxLS42MTYgMy41NzItMS4wMjd2MS41NmwyLjIxNy0xLjE1Yy4yODctLjE2NC41NzUtLjIwNS44NjItLjIwNSAyLjU0NiAwIDMuOTgzIDIuMjE3IDMuOTgzIDQuMzUyIDAgMy40NS0yLjQ2MyA1Ljc5LTUuNTQzIDYuMTZ6bS41MzQtOC45OTNjLS42NTcgMC0xLjUxOS40NTItMi4wNTMuNzh2Ni4wNzdjLjQ1Mi40OTMgMS4xOTEuODYyIDIuMDk0Ljg2MiAxLjE5MSAwIDIuNzUxLS45MDMgMi43NTEtMy45ODIgMC0yLjU4Ny0xLjIzMi0zLjczNy0yLjc5Mi0zLjczN3ptMTIuODEgMS4wMjdjLS4yNDYtLjMyOS0uNTc1LS40MTEtLjk4NS0uNDExLS41MzQgMC0xLjE5MS42MTYtMS42NDMgMS44ODl2My44MTljMCAxLjM5Ni4xNjQgMS41MiAxLjkzIDEuNjQzdi44MjFoLTUuNTg0di0uODIxYzEuMzk2LS4xMjMgMS41NjEtLjI0NyAxLjU2MS0xLjY0M3YtNC42NGMwLTEuMzk2LS4xMjMtMS4zOTYtMS4zOTYtMS42NDN2LS42OThjMS4yMzItLjI0NyAyLjQyMy0uNDkzIDMuNDktLjkwM3YyLjQ2NGguMDQxYy43MzktMS4zNTUgMS43NjYtMi40MjIgMi43MS0yLjQyMi44MjIgMCAxLjM5Ni42MTYgMS4zOTYgMS4yNzMgMCAuOTQzLS45ODUgMS43NjUtMS41MiAxLjI3MnptNy44NDQgNy43NjFoLTUuMjU2di0uODIxYzEuMzk2LS4xMjMgMS42MDEtLjI0NyAxLjYwMS0xLjcyNHYtNC40MzVjMC0xLjYwMS0uMTIzLTEuNjAxLTEuNDc4LTEuNzY2di0uNjk4YzEuMjczLS4yNDcgMi41NDUtLjUzNCAzLjU3Mi0uOTAzdjcuODAyYzAgMS40NzguMTIzIDEuNjAxIDEuNTYxIDEuNzI0di44MjF6bS0yLjcxMS0xMi41MjRjLS43OCAwLTEuMzk2LS42MTYtMS4zOTYtMS4zOTYgMC0uODIxLjYxNi0xLjQzNyAxLjM5Ni0xLjQzNy44MjIgMCAxLjQzNy42MTYgMS40MzcgMS40MzcgMCAuNzgtLjYxNSAxLjM5Ni0xLjQzNyAxLjM5NnptMTUuMjc1IDEyLjUyNGgtNC44NDV2LS44MjFjMS4xNS0uMTIzIDEuMzE0LS4yNDcgMS4zMTQtMS41NjF2LTQuMDI0YzAtMS40NzgtLjY1Ny0yLjM4Mi0xLjg4OS0yLjM4Mi0uNzggMC0xLjY4NC41NzUtMi4zIDEuMTV2NS4yNTZjMCAxLjMxNC4xMjQgMS40MzggMS4yNzMgMS41NjF2LjgyMWgtNS4wMXYtLjgyMWMxLjM5Ni0uMTIzIDEuNjAxLS4yNDcgMS42MDEtMS41NjF2LTQuNzIyYzAtMS4zOTYtLjA4Mi0xLjQ3OC0xLjMxNC0xLjY0M3YtLjY5OGMxLjIzMi0uMjQ3IDIuMzgyLS40OTMgMy40NDktLjkwM3YxLjY0M2MuNTM0LS40NTIgMi4wOTQtMS42MDEgMy4yODUtMS42MDEgMS44NDggMCAyLjk5NyAxLjI3MyAyLjk5NyAzLjE2MnY0Ljc2M2MwIDEuMzE0LjIwNiAxLjQzOCAxLjQzOCAxLjU2MXYuODJoLjAwMXptMTEuNzAyLTkuNzczYy0uMTY0LjM2OS0uNjE2IDEuMDY4LS45ODUgMS4yNzNsLTEuMTkxLS4xMjNjLjMyOS40NTIuNTc1IDEuMzU1LjU3NSAyLjA1MyAwIDIuNTA1LTIuMjU4IDMuODYtNC4zMTEgMy44Ni0uMTIzIDAtLjQ1Mi0uMDQxLS43MzktLjA0MS0uNDkzLjE2NC0uOTAzLjczOS0uOTAzIDEuMTA4IDAgLjM3LjM3LjgyMiAxLjM1NS44MjJIODkuNmMxLjQzNyAwIDMuMzY3LjY5OCAzLjM2NyAyLjk5NyAwIDIuNjI4LTIuNzUxIDQuODQ1LTUuOTU0IDQuODQ1LTIuNzkyIDAtNC4yNzEtMS43MjQtNC4yNzEtMy4xMjEgMC0uOTAzLjQ1Mi0xLjYwMSAyLjM4Mi0zLjA4LS42OTgtLjI0Ni0xLjkzLS45NDQtMS44NDgtMi4yNTguOTQ1LS40MSAxLjgwNy0xLjE1IDIuMTc2LTEuNjAxLTEuMTA4LS4zNy0yLjEzNS0xLjY4NC0yLjEzNS0zLjE2MSAwLTIuNjY5IDIuMzgyLTQuMTA2IDQuMzUyLTQuMTA2YTUuMSA1LjEgMCAwMTIuMzgyLjU3NWMxLjA2OC0uMDQxIDIuMTM1LS4xNjQgMy4xMjEtLjI4N2wuMTYzLjI0NXptLTMuMjQzIDExLjAwNWMtLjU3NS0uMjA2LTEuMzU1LS4yNDctMi42MjgtLjI0Ny0xLjc2NiAwLTIuNTQ2IDEuMzE0LTIuNTQ2IDIuMyAwIDEuMzk2IDEuMjMyIDIuNDY0IDMuMDggMi40NjQgMi4wNTMgMCAzLjIwMy0xLjM1NSAzLjIwMy0yLjcxLS4wMDEtLjg2My0uNDk0LTEuNTYxLTEuMTA5LTEuODA3em0tMi42MjgtMTAuNTUzYy0uODYyIDAtMS44NDguOTAzLTEuODQ4IDIuNjI4cy45MDMgMi45NTcgMi4xMzUgMi45NTdjLjkwMyAwIDEuNzY2LS43OCAxLjc2Ni0yLjY2OSAwLTEuNjAyLS43ODEtMi45MTYtMi4wNTMtMi45MTZ6bTE0LjQ5NCAzLjYxM2MtLjM2OS4wNDEtMy4yMDMuMjQ2LTUuNzg5LjMyOS4wODIgMi43MSAxLjY4MyAzLjg1OSAzLjI4NSAzLjg1OS45MDMgMCAxLjU2LS4yNDYgMi4zODEtMS4wNjdsLjUzNC43MzljLTEuMzU1IDEuNjgzLTIuOTU3IDIuMDk0LTMuNjk2IDIuMDk0LTIuOTE1IDAtNC41OTktMi4yMTctNC41OTktNC44NDUgMC0zLjIwMyAyLjQyMy01LjcwOCA0Ljg0NS01LjcwOCAyLjAxMiAwIDMuNjEzIDEuNzI1IDMuNjEzIDMuNjU1LjAwMS42MTUtLjEyMy44NjItLjU3NC45NDR6bS0zLjQ5LTMuNTcyYy0uOTQ0IDAtMS45MyAxLjAyNy0yLjE3NiAyLjc5MmwzLjUzMS0uMDgyYy40NTIgMCAuNTM0LS4xMjMuNTM0LS41MzQtLjAwMS0xLjEwOS0uNzgtMi4xNzYtMS44ODktMi4xNzZ6bTExLjgyNSAxLjUxOWExLjQwMiAxLjQwMiAwIDAwLS45ODUtLjQxMWMtLjUzNCAwLTEuMjMyLjYxNi0xLjY4MyAxLjg4OXYzLjgxOWMwIDEuMzk2LjE2NCAxLjUyIDEuOTI5IDEuNjQzdi44MjFoLTUuNjI1di0uODIxYzEuNDM3LS4xMjMgMS41Ni0uMjQ3IDEuNTYtMS42NDN2LTQuNjRjMC0xLjM5Ni0uMDgyLTEuMzk2LTEuMzk2LTEuNjQzdi0uNjk4YzEuMzE0LS4yNDcgMi40NjQtLjQ5MyAzLjUzMS0uOTAzdjIuNDY0aC4wNDFjLjY5OC0xLjM1NSAxLjcyNC0yLjQyMiAyLjcxLTIuNDIyLjc4IDAgMS4zOTYuNjE2IDEuMzk2IDEuMjczIDAgLjk0My0xLjAyNiAxLjc2NS0xLjQ3OCAxLjI3MnoiIGZpbGw9IiMwMDI4NUEiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvZz48L3N2Zz4=">
 			</a>
 		</div>
 		<ul class="c-header__menu">
@@ -2404,6 +2042,9 @@ cite {
 				<a href="/path/to/1" class="c-header__link">
 					<span class="u-display-flex u-align-items-center">
 						SpringerLink shop
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="../../img/shop.svg#i-shop"></use>
+						</svg>
 					</span>
 				</a>
 			</li>
@@ -2424,8 +2065,86 @@ cite {
 	</nav>
 </header>
 
+<h2 style="margin-top: 2em">Header with search</h2>
+
+<header class="c-header">
+	<div class="c-header__container">
+		<div class="c-header__brand">
+			<a href="/" itemprop="url">
+				<img alt="Springer home" itemprop="logo" width="112" height="30" role="img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEyIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTEyIDMwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTIzLjY1MSAyMy4wMkg0LjI3di0xLjE5MWgxLjY0M2MuMjg3LTMuODYgMy45ODItNS4yOTcgNi4wMzYtOC40MTdIOS41NjhjLTEuMTUuNDExLTIuODc1IDIuOTU2LTIuODc1IDQuNDM0SDMuNjk2bC4wNDEtMS4yMzItLjk4Ni44MjEtMi42MjgtMy4wMzhTMCAxNC4yMzMgMCAxNC4xMWMwLS4xMjMuMDQxLS4yMDYuMDQxLS4yMDZsNC4xNDctNS42MjUuNzM5LTIuMjE3IDEuMTA5LS40MSAxLjE1LTEuNjAxLS40MTEtMi43OTRjMS4xMDgtLjQxMSAyLjE3Ni0uMDQxIDIuNzEuNDkyQTE0LjMxNSAxNC4zMTUgMCAwMDkuNDQ0LjAyNWMxLjk3MS0uMjA1IDIuNjY4Ljg2MiAyLjk5NyAyLjA1M2ExMy45OCAxMy45OCAwIDAxMS40NzguMjA2LjY2OS42NjkgMCAwMS42MTYtLjQ1MmMuMzY5IDAgLjYxNi4yODcuNjE2LjYxNnYuMTY0Yy44NjMuMjg3IDEuNjg0LjY5OCAyLjQyMyAxLjE1YS41ODUuNTg1IDAgMDEuNDkyLS4yNDdjLjM3IDAgLjYxNi4yODcuNjE2LjYxNiAwIC4xNjQtLjA0MS4yODctLjEyMy4zNy42OTguNTc1IDEuMjczIDEuMjczIDEuODA3IDIuMDEyYS43Ni43NiAwIDAxLjI4Ny0uMDgyYy4zNjkgMCAuNjU3LjI4Ny42NTcuNjE2IDAgLjI0Ny0uMTIzLjQ1Mi0uMzI4LjUzNC40MTEuNzM5LjczOSAxLjU2Ljk4NSAyLjQyMi4wNDEtLjA0MS4xMjMtLjA0MS4xNjQtLjA0MS4zNjkgMCAuNjE2LjI4Ny42MTYuNjE2cy0uMjA1LjU3NS0uNDUxLjYxNmMuMTY0Ljg2Mi4yODcgMS43MjUuMzY5IDIuNjI4LjM2OSAwIC42NTcuMjg3LjY1Ny42MTYgMCAuMzY5LS4yODcuNjE1LS42MTYuNjU3IDAgLjg2Mi0uMDQxIDEuODA3LS4xMjMgMi43MWEuNjY0LjY2NCAwIDAxLjU3NS42NTdjMCAuMzI5LS4yODcuNjE2LS42NTcuNjE2aC0uMDQxYy0uMTY0LjkwMy0uMzI4IDEuODA2LS41MzQgMi43NTFoMS43MjV2MS4xOTF6bS0yLjk1Ny0xLjE1YzIuMzgyLTkuODE0LS40MTEtMTcuNjE1LTguMDA3LTE4LjUxOS4wNDEuNDExLjA0MS43MzkuMDQxIDEuMDY4IDAgLjQ5My0uMDQxLjkwMy0uMDQxLjkwM2wtMS4xOS0uMjA2Yy4wNDEtLjQxMS4xMjMtMy4yMDMtLjg2My0zLjgxOCAwIDAgMCAxLjQ3OC0uMzI4IDIuOTU2TDkuMTk4IDQuMDVjMC0xLjAyNy0uNDUyLTEuNDM3LTEuMDY3LTEuNzI1bC4yODcgMi4wMTItLjY5OSAxLjAyNy4zMjkuOTQ0LTIuMTc2LjczOS0uNjE2IDEuNzY2LTMuODE5IDUuMjU2IDEuNDM4IDEuNzI0IDEuNjAxLTEuMzU1LjM2OS4yNDZ2Mi4wMTJoLjg2MmMuMzctMS40MzcgMS41Ni0zLjEyMSAyLjY2OS0zLjk0MmwtLjYxNi0uNzM5LjkwMy0uNzguODYyIDEuMDY4czMuMDggMCAzLjA4LS4wNDFjLjQ1Mi0uOTg1LjczOS0yLjE3Ni43MzktMy41NzJoMS4xOTFjMCA0LjY4MS0yLjM0IDYuNTI5LTUuMjU2IDkuNDAzLTEuMDY4IDEuMDY3LTIuMDEyIDIuMjE3LTIuMTM1IDMuNzc3aDEzLjU1ek0zLjU3MyAxMi43OTZjLjA0MS41MzQtLjA0MSAxLjM1NS0uMzI5IDEuNzY2bC0uODYyLS4zMjljLjI4Ny0uNDEuNDUyLS45ODUuNDUyLTEuNDc4bC43MzkuMDQxem00LjcyMS00LjU1OGwtMS44NDcuOTg1LS4xMjQtMS41MTkgMS45My0uMjA2LjA0MS43NHoiIGZpbGw9IiMwMDI4NUEiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGZpbGw9IiNFRTdEMTEiIGQ9Ik0yMy42NTEgMjkuMDk3SDQuMjd2LTIuMzgyaDE5LjM4MXoiLz48cGF0aCBkPSJNMzYuMTc5IDIzLjM0OGMtMS41NiAwLTIuNzkyLS4zNy0zLjk4My0uOTAzLS4yNDYtMS4wNjgtLjMyOS0yLjUwNS0uNDExLTMuOTgzbC45NDUtLjE2NGMuNTM0IDIuMDEyIDEuMjczIDMuOTgzIDMuNzM2IDMuOTgzIDEuNzI1IDAgMi43NTEtMS4wNjggMi43NTEtMi42NjkgMC00LjIyOS03LjAyMS0zLjI4NC03LjAyMS04LjE3MSAwLTIuMjE3IDEuODA3LTQuMjI5IDUuMDEtNC4yMjkgMS4wNjggMCAyLjIxNy4yODcgMy4zNjcuNjk4LjA4Mi44NjIuMTY0IDEuODQ4LjIwNSAzLjU3M2wtLjg2Mi4wNDFjLS40MTEtMS40MzgtMS4wNjctMy4yMDMtMy4xNjItMy4yMDMtMS41NiAwLTIuMzQxIDEuMDY4LTIuMzQxIDIuMzQxIDAgMy45MDEgNy4xNDUgMy4wOCA3LjE0NSA4LjE3MSAwIDIuNDIxLTIuMTc3IDQuNTE1LTUuMzc5IDQuNTE1em0xMS43MDItLjE2NGMtLjY1Ny0uMDQxLTEuMTkxLS4xNjQtMS41MTktLjI4N3YzLjg1OWMwIDEuMzk2LjE2NCAxLjUyIDIuMDUzIDEuNjg0di43OGgtNS43ODl2LS43OGMxLjQ3OC0uMTY0IDEuNjAxLS4yODcgMS42MDEtMS42ODRWMTUuNzkzYzAtMS40MzctLjA0MS0xLjQ3OC0xLjQzNy0xLjYwMXYtLjY5OGMxLjIzMi0uMjQ2IDIuMzgxLS42MTYgMy41NzItMS4wMjd2MS41NmwyLjIxNy0xLjE1Yy4yODctLjE2NC41NzUtLjIwNS44NjItLjIwNSAyLjU0NiAwIDMuOTgzIDIuMjE3IDMuOTgzIDQuMzUyIDAgMy40NS0yLjQ2MyA1Ljc5LTUuNTQzIDYuMTZ6bS41MzQtOC45OTNjLS42NTcgMC0xLjUxOS40NTItMi4wNTMuNzh2Ni4wNzdjLjQ1Mi40OTMgMS4xOTEuODYyIDIuMDk0Ljg2MiAxLjE5MSAwIDIuNzUxLS45MDMgMi43NTEtMy45ODIgMC0yLjU4Ny0xLjIzMi0zLjczNy0yLjc5Mi0zLjczN3ptMTIuODEgMS4wMjdjLS4yNDYtLjMyOS0uNTc1LS40MTEtLjk4NS0uNDExLS41MzQgMC0xLjE5MS42MTYtMS42NDMgMS44ODl2My44MTljMCAxLjM5Ni4xNjQgMS41MiAxLjkzIDEuNjQzdi44MjFoLTUuNTg0di0uODIxYzEuMzk2LS4xMjMgMS41NjEtLjI0NyAxLjU2MS0xLjY0M3YtNC42NGMwLTEuMzk2LS4xMjMtMS4zOTYtMS4zOTYtMS42NDN2LS42OThjMS4yMzItLjI0NyAyLjQyMy0uNDkzIDMuNDktLjkwM3YyLjQ2NGguMDQxYy43MzktMS4zNTUgMS43NjYtMi40MjIgMi43MS0yLjQyMi44MjIgMCAxLjM5Ni42MTYgMS4zOTYgMS4yNzMgMCAuOTQzLS45ODUgMS43NjUtMS41MiAxLjI3MnptNy44NDQgNy43NjFoLTUuMjU2di0uODIxYzEuMzk2LS4xMjMgMS42MDEtLjI0NyAxLjYwMS0xLjcyNHYtNC40MzVjMC0xLjYwMS0uMTIzLTEuNjAxLTEuNDc4LTEuNzY2di0uNjk4YzEuMjczLS4yNDcgMi41NDUtLjUzNCAzLjU3Mi0uOTAzdjcuODAyYzAgMS40NzguMTIzIDEuNjAxIDEuNTYxIDEuNzI0di44MjF6bS0yLjcxMS0xMi41MjRjLS43OCAwLTEuMzk2LS42MTYtMS4zOTYtMS4zOTYgMC0uODIxLjYxNi0xLjQzNyAxLjM5Ni0xLjQzNy44MjIgMCAxLjQzNy42MTYgMS40MzcgMS40MzcgMCAuNzgtLjYxNSAxLjM5Ni0xLjQzNyAxLjM5NnptMTUuMjc1IDEyLjUyNGgtNC44NDV2LS44MjFjMS4xNS0uMTIzIDEuMzE0LS4yNDcgMS4zMTQtMS41NjF2LTQuMDI0YzAtMS40NzgtLjY1Ny0yLjM4Mi0xLjg4OS0yLjM4Mi0uNzggMC0xLjY4NC41NzUtMi4zIDEuMTV2NS4yNTZjMCAxLjMxNC4xMjQgMS40MzggMS4yNzMgMS41NjF2LjgyMWgtNS4wMXYtLjgyMWMxLjM5Ni0uMTIzIDEuNjAxLS4yNDcgMS42MDEtMS41NjF2LTQuNzIyYzAtMS4zOTYtLjA4Mi0xLjQ3OC0xLjMxNC0xLjY0M3YtLjY5OGMxLjIzMi0uMjQ3IDIuMzgyLS40OTMgMy40NDktLjkwM3YxLjY0M2MuNTM0LS40NTIgMi4wOTQtMS42MDEgMy4yODUtMS42MDEgMS44NDggMCAyLjk5NyAxLjI3MyAyLjk5NyAzLjE2MnY0Ljc2M2MwIDEuMzE0LjIwNiAxLjQzOCAxLjQzOCAxLjU2MXYuODJoLjAwMXptMTEuNzAyLTkuNzczYy0uMTY0LjM2OS0uNjE2IDEuMDY4LS45ODUgMS4yNzNsLTEuMTkxLS4xMjNjLjMyOS40NTIuNTc1IDEuMzU1LjU3NSAyLjA1MyAwIDIuNTA1LTIuMjU4IDMuODYtNC4zMTEgMy44Ni0uMTIzIDAtLjQ1Mi0uMDQxLS43MzktLjA0MS0uNDkzLjE2NC0uOTAzLjczOS0uOTAzIDEuMTA4IDAgLjM3LjM3LjgyMiAxLjM1NS44MjJIODkuNmMxLjQzNyAwIDMuMzY3LjY5OCAzLjM2NyAyLjk5NyAwIDIuNjI4LTIuNzUxIDQuODQ1LTUuOTU0IDQuODQ1LTIuNzkyIDAtNC4yNzEtMS43MjQtNC4yNzEtMy4xMjEgMC0uOTAzLjQ1Mi0xLjYwMSAyLjM4Mi0zLjA4LS42OTgtLjI0Ni0xLjkzLS45NDQtMS44NDgtMi4yNTguOTQ1LS40MSAxLjgwNy0xLjE1IDIuMTc2LTEuNjAxLTEuMTA4LS4zNy0yLjEzNS0xLjY4NC0yLjEzNS0zLjE2MSAwLTIuNjY5IDIuMzgyLTQuMTA2IDQuMzUyLTQuMTA2YTUuMSA1LjEgMCAwMTIuMzgyLjU3NWMxLjA2OC0uMDQxIDIuMTM1LS4xNjQgMy4xMjEtLjI4N2wuMTYzLjI0NXptLTMuMjQzIDExLjAwNWMtLjU3NS0uMjA2LTEuMzU1LS4yNDctMi42MjgtLjI0Ny0xLjc2NiAwLTIuNTQ2IDEuMzE0LTIuNTQ2IDIuMyAwIDEuMzk2IDEuMjMyIDIuNDY0IDMuMDggMi40NjQgMi4wNTMgMCAzLjIwMy0xLjM1NSAzLjIwMy0yLjcxLS4wMDEtLjg2My0uNDk0LTEuNTYxLTEuMTA5LTEuODA3em0tMi42MjgtMTAuNTUzYy0uODYyIDAtMS44NDguOTAzLTEuODQ4IDIuNjI4cy45MDMgMi45NTcgMi4xMzUgMi45NTdjLjkwMyAwIDEuNzY2LS43OCAxLjc2Ni0yLjY2OSAwLTEuNjAyLS43ODEtMi45MTYtMi4wNTMtMi45MTZ6bTE0LjQ5NCAzLjYxM2MtLjM2OS4wNDEtMy4yMDMuMjQ2LTUuNzg5LjMyOS4wODIgMi43MSAxLjY4MyAzLjg1OSAzLjI4NSAzLjg1OS45MDMgMCAxLjU2LS4yNDYgMi4zODEtMS4wNjdsLjUzNC43MzljLTEuMzU1IDEuNjgzLTIuOTU3IDIuMDk0LTMuNjk2IDIuMDk0LTIuOTE1IDAtNC41OTktMi4yMTctNC41OTktNC44NDUgMC0zLjIwMyAyLjQyMy01LjcwOCA0Ljg0NS01LjcwOCAyLjAxMiAwIDMuNjEzIDEuNzI1IDMuNjEzIDMuNjU1LjAwMS42MTUtLjEyMy44NjItLjU3NC45NDR6bS0zLjQ5LTMuNTcyYy0uOTQ0IDAtMS45MyAxLjAyNy0yLjE3NiAyLjc5MmwzLjUzMS0uMDgyYy40NTIgMCAuNTM0LS4xMjMuNTM0LS41MzQtLjAwMS0xLjEwOS0uNzgtMi4xNzYtMS44ODktMi4xNzZ6bTExLjgyNSAxLjUxOWExLjQwMiAxLjQwMiAwIDAwLS45ODUtLjQxMWMtLjUzNCAwLTEuMjMyLjYxNi0xLjY4MyAxLjg4OXYzLjgxOWMwIDEuMzk2LjE2NCAxLjUyIDEuOTI5IDEuNjQzdi44MjFoLTUuNjI1di0uODIxYzEuNDM3LS4xMjMgMS41Ni0uMjQ3IDEuNTYtMS42NDN2LTQuNjRjMC0xLjM5Ni0uMDgyLTEuMzk2LTEuMzk2LTEuNjQzdi0uNjk4YzEuMzE0LS4yNDcgMi40NjQtLjQ5MyAzLjUzMS0uOTAzdjIuNDY0aC4wNDFjLjY5OC0xLjM1NSAxLjcyNC0yLjQyMiAyLjcxLTIuNDIyLjc4IDAgMS4zOTYuNjE2IDEuMzk2IDEuMjczIDAgLjk0My0xLjAyNiAxLjc2NS0xLjQ3OCAxLjI3MnoiIGZpbGw9IiMwMDI4NUEiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvZz48L3N2Zz4=">
+			</a>
+		</div>
+		<ul class="c-header__menu">
+			<li class="c-header__item">
+				<a href="#search" class="c-header__link c-header__search-link">
+					<span class="u-display-flex u-align-items-center">
+						Search
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="../../img/search.svg#i-search"></use>
+						</svg>
+					</span>
+				</a>
+			</li>
+			<li class="c-header__item">
+				<a href="/path/to/1" class="c-header__link">
+					<span class="u-display-flex u-align-items-center">
+						SpringerLink shop
+						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="../../img/shop.svg#i-shop"></use>
+						</svg>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<nav class="c-header__nav">
+		<ul class="c-header__nav-menu">
+			<li class="c-header__item">
+				<a href="/path/to/subjects" class="c-header__link c-header__link--nav">Subjects</a>
+			</li>
+			<li class="c-header__item">
+				<a href="/path/to/services" class="c-header__link c-header__link--nav">Services</a>
+			</li>
+			<li class="c-header__item">
+				<a href="/path/to/about" class="c-header__link c-header__link--nav">About</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<form role="search" class="c-header__search-form" action="/search" id="search" tabindex="-1">
+	<div class="c-header__search-field">
+		<label for="search-input">Search this site</label>
+		<div class="c-header__search-controls">
+			<input id="search-input" name="search">
+			<button class="u-button u-button--primary" type="submit" aria-label="search">
+				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
+					<use xlink:href="../../img/search.svg#i-search"></use>
+				</svg>
+			</button>
+		</div>
+		<a class="c-header__springer-link" href="">Search our products and science on SpringerLink</a>
+	</div>
+</form>
+
 		<script>
-			// no JS found for package
+			(function () {
+	'use strict';
+
+	(function () {
+	  var searchLink = document.querySelector('.c-header__search-link');
+	  var searchForm = document.querySelector('.c-header__search-form');
+	  var searchInput = document.querySelector('.c-header__search-controls input');
+	  searchForm.classList.remove('c-header__search-form--no-js');
+	  searchForm.hidden = true;
+	  searchLink.addEventListener('click', function (event) {
+	    event.preventDefault();
+	    searchForm.classList.add('c-header__search-form--visible');
+	    searchInput.focus();
+	  });
+	})();
+
+})();
+
 		</script>
-	</body>
-</html>
+	
+</body></html>

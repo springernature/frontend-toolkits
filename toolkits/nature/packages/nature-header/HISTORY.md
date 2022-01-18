@@ -1,5 +1,11 @@
 # History
 
+## 7.0.2 (2022-01-13)
+    * Broken links in README fixed.
+
+## 7.0.1 (2022-01-13)
+    * Update documentation with usage guidance and research and testing information.
+
 ## 7.0.0 (2022-01-06)
     BREAKING
       * Renames JavaScript simply 'header' as 'enhanced-header' can cause confusion for users.
@@ -100,3 +106,4 @@
 
 ## 0.1.0 (2020-09-22)
 	* Add nature header
+

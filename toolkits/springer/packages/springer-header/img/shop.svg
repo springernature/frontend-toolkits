@@ -1,0 +1,11 @@
+<svg id="i-shop" version="1.1" viewBox="0 0 34.66 30.676" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-194.34 50.403)" fill="none" stroke="currentColor">
+  <path d="m225.32-37.026v13.203c0 1.4629-1.2182 2.6405-2.7313 2.6405h-21.85c-1.5131 0-2.7313-1.1777-2.7313-2.6405v-13.203" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3812"/>
+  <path d="m207.43-21.339v-8.472c0-1.5645 0.94463-2.824 2.118-2.824h4.236c1.1734 0 2.118 1.2595 2.118 2.824v8.472" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8521"/>
+  <g stroke-width="2.3812">
+   <path d="m195.79-37.571c5.3327 1.1584 7.3133-0.79812 10.218-2.3847 4.5474 3.8263 8.3804 1.9845 11.367-0.15668 4.2161 3.2192 7.0566 3.0818 10.166 2.5414l-2.6458-10.583c-8.8194-1.0583-17.639-1.0583-26.458 0z" stroke-linejoin="round"/>
+   <path d="m205.9-39.688 1.793-9.2604"/>
+   <path d="m217.32-39.688-1.6885-9.2604"/>
+  </g>
+ </g>
+</svg>
