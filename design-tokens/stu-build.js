@@ -67,10 +67,10 @@ function getStyleDictionaryConfig(brand, categories) {
 	}
 }
 
-['default'].map(function (brand) {
+['default', 'springer', 'nature', 'springer-nature'].map(function (brand) {
 	let dir = `${__dirname}/global/${brand}`
 	if (brand === 'default') {
-		dir = `${__dirname}/tokens/default/`;
+		dir = `${__dirname}/global/default/`;
 	}
 	const categories = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
@@ -79,11 +79,11 @@ function getStyleDictionaryConfig(brand, categories) {
 
 
 
-['default', 'springer'].map(function (brand) {
+['default', 'springer', 'nature', 'springer-nature'].map(function (brand) {
 	var fileNames = fs.readdirSync(testFolder);
 	let dest = `./context/brand-context/${brand}/scss`;
 
-	let dir = `${__dirname}/tokens/brands/${brand}`
+	let dir = `${__dirname}/global/${brand}`
 	if (brand === 'default') {
 		dir = `${__dirname}/tokens/default/`;
 	}
