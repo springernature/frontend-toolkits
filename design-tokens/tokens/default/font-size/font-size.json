@@ -2,27 +2,27 @@
 	"font-size": {
 		"350": {
 			"value": ".875rem",
-			"comment": "really small font size"
+			"comment": "14px"
 		},
 		"400": {
 			"value": "1rem",
-			"comment": "small font size"
+			"comment": "16px"
 		},
 		"450": {
 			"value": "1.125rem",
-			"comment": "medium font size"
+			"comment": "18px"
 		},
 		"500": {
 			"value": "1.25rem",
-			"comment": "h3 font size"
+			"comment": "20px"
 		},
 		"600": {
 			"value": "1.5rem",
-			"comment": "large font size"
+			"comment": "24px"
 		},
-		"750": {
-			"value": "35px",
-			"comment": "h1 font size"
+		"875": {
+			"value": "2.1875rem",
+			"comment": "35px"
 		}
 	}
 }
