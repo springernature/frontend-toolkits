@@ -14,10 +14,10 @@
 				"value": "#CEDBE0"
 			},
 			"black": {
-				"value": "{color.neutral.800.value}"
+				"value": "{color.neutral.800}"
 			},
 			"white": {
-				"value": "{color.neutral.100.value}"
+				"value": "{color.neutral.100}"
 			}
 		},
 		"neutral": {
@@ -98,7 +98,7 @@
 		},
 		"nature": {
 			"black": {
-				"value": "{color.neutral.800.value}"
+				"value": "{color.neutral.800}"
 			},
 			"gunmetal": {
 				"value": "#29303C"

@@ -6,15 +6,11 @@ const testFolder = './context/brand-context/default/scss/00-tokens/';
 
 
 function getStyleDictionaryConfig(brand, categories) {
-	let path = `${__dirname}/build/${brand}`;
 	let dest = `./context/brand-context/${brand}/scss`;
-	if (brand === 'default') {
-		path = `${__dirname}/build/default`
-	}
+
 	return {
 		source: [
-			`${__dirname}/global/${brand}/**/*.json`,
-			`${__dirname}/tokens/default/**/*.json`
+			`${__dirname}/global/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -67,11 +63,8 @@ function getStyleDictionaryConfig(brand, categories) {
 	}
 }
 
-['default', 'springer', 'nature', 'springer-nature'].map(function (brand) {
+['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	let dir = `${__dirname}/global/${brand}`
-	if (brand === 'default') {
-		dir = `${__dirname}/global/default/`;
-	}
 	const categories = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	brands.buildAllPlatforms();
@@ -79,14 +72,10 @@ function getStyleDictionaryConfig(brand, categories) {
 
 
 
-['default', 'springer', 'nature', 'springer-nature'].map(function (brand) {
+['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	var fileNames = fs.readdirSync(testFolder);
 	let dest = `./context/brand-context/${brand}/scss`;
-
 	let dir = `${__dirname}/global/${brand}`
-	if (brand === 'default') {
-		dir = `${__dirname}/tokens/default/`;
-	}
 
 	require('fs').writeFile(
 
