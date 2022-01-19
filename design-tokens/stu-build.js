@@ -8,6 +8,7 @@ function getStyleDictionaryConfig(brand, categories) {
 	return {
 		source: [
 			`${__dirname}/global/${brand}/**/*.json`
+			// './design-tokens/global/**/*.json'
 		],
 		platforms: {
 			scssVariables: {
@@ -60,11 +61,21 @@ function getStyleDictionaryConfig(brand, categories) {
 	}
 }
 
+console.log('Build started...');
+
 ['default', 'springernature', 'springer'].map(function (brand) {
 	let dir = `${__dirname}/global/${brand}`
 	const categories = readdirSync(dir);
+
+	console.log('\n==============================================');
+	console.log(`\nProcessing: [${brand}]`);
+
+	// const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	brands.buildAllPlatforms();
+
+	console.log('\nEnd processing');
+	// StyleDictionary.buildPlatform(brand);
 });
 
 ['default', 'springernature', 'springer'].map(function (brand) {
@@ -100,3 +111,6 @@ function getStyleDictionaryConfig(brand, categories) {
 
 
 // we need to make sure the existing tokens are the same as what Design are using
+
+console.log('\n==============================================');
+console.log('\nBuild completed!');
