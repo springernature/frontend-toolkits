@@ -1,5 +1,8 @@
 {
 	"font-size": {
+		"350": {
+			"value": ".875rem",
+		},
 		"400": {
 			"value": "1rem",
 			"comment": "small font size"
@@ -16,8 +19,8 @@
 			"value": "1.5rem",
 			"comment": "large font size"
 		},
-		"800": {
-			"value": "2rem",
+		"750": {
+			"value": "35px",
 			"comment": "h1 font size"
 		}
 	}

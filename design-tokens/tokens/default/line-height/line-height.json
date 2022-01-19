@@ -1,8 +1,11 @@
 {
 	"line-height": {
 		"base": {
-			"value": "1.61803398875",
-			"comment": "Golden ratio line-height"
+			"value": "1.875",
+			"comment": "For body text"
+		},
+		"md": {
+			"value": "1.5"
 		},
 		"tight": {
 			"value": "1.4",

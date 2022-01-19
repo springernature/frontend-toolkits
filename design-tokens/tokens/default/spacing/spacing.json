@@ -4,10 +4,6 @@
 			"value": "0rem",
 			"comment": "no spacing, zero."
 		},
-		"50" : {
-			"value": ".125rem",
-			"comment": ".125rem, 2px."
-		},
 		"100" : {
 			"value": ".25rem",
 			"comment": ".25rem, 4px."
