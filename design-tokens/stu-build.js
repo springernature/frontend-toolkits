@@ -1,7 +1,7 @@
 const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
-const testFolder = './context/brand-context/default/scss/00-tokens/';
+
 
 
 
@@ -63,17 +63,23 @@ function getStyleDictionaryConfig(brand, categories) {
 	}
 }
 
-['default', 'springernature', 'springer', 'nature'].map(function (brand) {
+['default', 'springernature', 'springer'].map(function (brand) {
 	let dir = `${__dirname}/global/${brand}`
 	const categories = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	brands.buildAllPlatforms();
 });
 
+const testFolder = './context/brand-context/default/scss/00-tokens/';
 
-
-['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	var fileNames = fs.readdirSync(testFolder);
+['default', 'springernature', 'springer'].map(function (brand) {
+	if (brand === 'default') {
+		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
+	} else if (brand === 'springernature') {
+		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
+	} else if (brand === 'springer') {
+		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
+	}
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/global/${brand}`
 
