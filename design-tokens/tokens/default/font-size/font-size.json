@@ -2,6 +2,7 @@
 	"font-size": {
 		"350": {
 			"value": ".875rem",
+			"comment": "really small font size"
 		},
 		"400": {
 			"value": "1rem",
