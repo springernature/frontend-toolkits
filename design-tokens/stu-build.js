@@ -7,6 +7,7 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
+			`${__dirname}/global/default/**/*.json`,
 			`${__dirname}/global/${brand}/**/*.json`
 			// './design-tokens/global/**/*.json'
 		],
