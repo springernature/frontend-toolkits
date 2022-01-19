@@ -2,9 +2,6 @@ const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
 
-
-
-
 function getStyleDictionaryConfig(brand, categories) {
 	let dest = `./context/brand-context/${brand}/scss`;
 
@@ -69,8 +66,6 @@ function getStyleDictionaryConfig(brand, categories) {
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	brands.buildAllPlatforms();
 });
-
-const testFolder = './context/brand-context/default/scss/00-tokens/';
 
 ['default', 'springernature', 'springer'].map(function (brand) {
 	if (brand === 'default') {
