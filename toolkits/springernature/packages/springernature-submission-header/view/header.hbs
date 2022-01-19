@@ -14,7 +14,7 @@
     <div class="c-submission-details-header__row">
         <ul class="c-submission-details-header__author-list">
             {{#each authors}}
-                <li class="c-submission-details-header__author-item {{#if corresponding}} corresponding{{/if}}">
+                <li class="c-submission-details-header__author-item{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} icon-error{{/if}}">
                     <div id="author-popup{{@index}}" class="c-submission-details-header__author-popup" tabindex="-1"
                     role="dialog" aria-describedby="dialog-description{{@index}}" data-modal-background="false">
                         <p id="dialog-description{{@index}}" class="u-visually-hidden">Author information</p>
@@ -22,9 +22,15 @@
                         <h3 class="c-submission-details-header__author-name" data-test="submission-author-name">{{givenName}} {{familyName}}</h3>
                         {{#if corresponding}}<p class="c-submission-details-header__author-type" data-test="submission-author-is-corresponding">Corresponding Author</p>{{/if}}
                         {{#if affiliation}}<p class="u-font-14 u-font-daytona" data-test="submission-author-{{@index}}-affiliation">{{affiliation.institutionName}}, {{affiliation.countryName}}</p>{{/if}}
-                        <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email {{#if corresponding}}corresponding{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
+                        <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} invalid{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
+                        {{#if (invalidEmailAddress emailAddress)}}
+                            <div class="u-flex u-mt20">
+                                <span class="u-inline-block icon-error u-height-24 u-mr10"></span>
+                                <p class="u-font-12">The corresponding author’s email address is invalid. Any communication to them has not been sent. Please contact support at <a href="mailto:stoa-support@springernature.com">stoa-support@springernature.com</a></p>
+                            </div>
+                        {{/if}}
                     </div>
-                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-popup{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}">{{givenName}} {{familyName}}</button><span class="js-only">{{#unless @last}},{{/unless}}</span></li>
+                    <button data-test="submission-author-name{{@index}}" data-component-author-popup-trigger data-popup data-popup-target="author-popup{{@index}}" class="c-submission-details-header__author{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} invalid{{/if}}">{{givenName}} {{familyName}}</button><span class="js-only">{{#unless @last}},{{/unless}}</span></li>
             {{/each}}
         </ul>
     </div>

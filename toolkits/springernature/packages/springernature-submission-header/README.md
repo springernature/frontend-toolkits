@@ -35,7 +35,7 @@ submission: {
     }
 }
 
-The template included is handlebars, but it is not required. It also assumes you have a `defaultDateFormat` helper available to format your date as `DD Mmm YYYY`, but this need not necessarily be handled in the template.
+The template included is handlebars, but it is not required. It also assumes you have a `defaultDateFormat` helper available to format your date as `DD Mmm YYYY`, and an `invalidEmailAddress` helper, but these need not necessarily be handled in the template.
 
 This component requires the global expander component. It also requires the arrow mixin,  and some utilies and settings from the brand context (see below).
 
