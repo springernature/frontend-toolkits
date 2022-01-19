@@ -36,7 +36,8 @@
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
     "validate:springernature": "sn-package-validate -t springernature",
-    "generate-tokens": "node ./design-tokens/stu-build.js"
+    "tokens:generate": "node ./design-tokens/stu-build.js",
+    "tokens:clean": "npx rimraf **/00-tokens/"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
