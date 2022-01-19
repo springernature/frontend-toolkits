@@ -1,0 +1,17 @@
+{
+	"color": {
+		"springer-nature": {
+			"research": {
+				"orange": {
+					"value": "#C75301"
+				},
+				"forest": {
+					"value": "#007373"
+				},
+				"purple": {
+					"value": "#785BA7"
+				}
+			}
+		}
+	}
+}
