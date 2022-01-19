@@ -1,0 +1,24 @@
+{
+	"font-size": {
+		"400": {
+			"value": "1rem",
+			"comment": "small font size"
+		},
+		"450": {
+			"value": "1.125rem",
+			"comment": "medium font size"
+		},
+		"500": {
+			"value": "1.25rem",
+			"comment": "h3 font size"
+		},
+		"600": {
+			"value": "1.5rem",
+			"comment": "large font size"
+		},
+		"800": {
+			"value": "2rem",
+			"comment": "h1 font size"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"elevation": {
+		"default": {
+			"value": "1"
+		},
+		"below": {
+			"value": "-1"
+		},
+		"bottomless-pit": {
+			"value": "-9000"
+		}
+	}
+}

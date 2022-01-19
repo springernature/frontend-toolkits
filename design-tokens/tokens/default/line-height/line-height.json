@@ -1,0 +1,12 @@
+{
+	"line-height": {
+		"base": {
+			"value": "1.61803398875",
+			"comment": "Golden ratio line-height"
+		},
+		"tight": {
+			"value": "1.4",
+			"comment": "Tighter line-height"
+		}
+	}
+}
