@@ -13,7 +13,7 @@ function getStyleDictionaryConfig(brand, categories) {
 	}
 	return {
 		source: [
-			`${__dirname}/tokens/brands/${brand}/**/*.json`,
+			`${__dirname}/global/${brand}/**/*.json`,
 			`${__dirname}/tokens/default/**/*.json`
 		],
 		platforms: {
@@ -68,7 +68,7 @@ function getStyleDictionaryConfig(brand, categories) {
 }
 
 ['default'].map(function (brand) {
-	let dir = `${__dirname}/tokens/brands/${brand}`
+	let dir = `${__dirname}/global/${brand}`
 	if (brand === 'default') {
 		dir = `${__dirname}/tokens/default/`;
 	}
