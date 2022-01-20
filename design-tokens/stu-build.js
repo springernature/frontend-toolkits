@@ -78,15 +78,16 @@ console.log('Build started...');
 });
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	if (brand === 'default') {
-		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
-	} else if (brand === 'springernature') {
-		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
-	} else if (brand === 'springer') {
-		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
-	} else if (brand === 'nature') {
-		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
-	}
+	// if (brand === 'default') {
+	// 	var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
+	// } else if (brand === 'springernature') {
+	// 	var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
+	// } else if (brand === 'springer') {
+	// 	var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
+	// } else if (brand === 'nature') {
+	// 	var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
+	// }
+	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/`);
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/global/${brand}`
 	console.log('\n==============================================');
@@ -100,7 +101,7 @@ console.log('Build started...');
 		// create a list of each file in the directory
 		fileNames.map(file => {
 			// return a string of the file name
-			return `@import '${file}';`
+			return `@forward '${file}';`
 		}).join('\n'),
 
 		// callback function to run if the write was successful
