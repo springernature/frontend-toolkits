@@ -2,12 +2,23 @@ const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
 
+// this will return a filtering function based on brand and category
+function tokenFilter(brand, category) {
+	return function (token) {
+		return (
+			// Added in 3.0: filePath to help with filtering
+			// So this will only include tokens of a given brand
+			token.filePath.includes(brand) && token.attributes.category === category
+		);
+	};
+}
+
 function getStyleDictionaryConfig(brand, categories) {
 	let dest = `./context/brand-context/${brand}/scss`;
 
 	return {
 		source: [
-			// `${__dirname}/global/default/**/*.json`,
+			`${__dirname}/global/default/**/*.json`,
 			`${__dirname}/global/${brand}/**/*.json`
 		],
 		platforms: {
@@ -21,7 +32,8 @@ function getStyleDictionaryConfig(brand, categories) {
 						filter: {
 							attributes: {
 								category
-							}
+							},
+							tokenFilter(brand, category)
 						}
 					}
 				})
@@ -37,7 +49,8 @@ function getStyleDictionaryConfig(brand, categories) {
 						filter: {
 							attributes: {
 								category
-							}
+							},
+							tokenFilter(brand, category)
 						}
 					}
 				})
@@ -52,7 +65,8 @@ function getStyleDictionaryConfig(brand, categories) {
 						filter: {
 							attributes: {
 								category
-							}
+							},
+							tokenFilter(brand, category)
 						}
 					}
 				})
