@@ -7,9 +7,8 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
-			`${__dirname}/global/default/**/*.json`,
+			// `${__dirname}/global/default/**/*.json`,
 			`${__dirname}/global/${brand}/**/*.json`
-			// './design-tokens/global/**/*.json'
 		],
 		platforms: {
 			scssVariables: {
@@ -89,6 +88,8 @@ console.log('Build started...');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/global/${brand}`
+	console.log('\n==============================================');
+	console.log(`\nProcessing Sass index file: [${brand}]`);
 
 	require('fs').writeFile(
 
@@ -108,6 +109,8 @@ console.log('Build started...');
 			}
 		}
 	);
+	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/_index.scss created`);
+	console.log('\nEnd processing');
 });
 
 
