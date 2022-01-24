@@ -7,6 +7,8 @@
 
 > Frontend Component Toolkits for the Elements Design System
 
+**Warning**: Publication of _new_ component packages is currently blocked. Updates to existing components are still permitted.
+
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
 	* [Using the correct `sass` version](#using-the-correct-sass-version)
