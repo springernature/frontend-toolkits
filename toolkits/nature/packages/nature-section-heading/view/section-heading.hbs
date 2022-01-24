@@ -1,5 +1,5 @@
-{{#if url}}
 <div class="c-section-heading">
+	{{#if url}}
 	<h2>
 		<a href="{{url}}" class="c-section-heading__link">
 			{{text}}
@@ -8,7 +8,7 @@
 			</svg>
 		</a>
 	</h2>
+	{{else}}
+	<h2>{{text}}</h2>
+	{{/if}}
 </div>
-{{else}}
-<h2 class="c-section-heading">{{text}}</h2>
-{{/if}}

@@ -51,7 +51,9 @@ Once you’ve installed the `scss`, build your Section heading using the followi
 ### Section heading
 
 ```html
-<h2 class="c-section-heading">Heading Text</h2>
+<div class="c-section-heading">
+    <h2>Heading Text</h2>
+</div>
 ```
 
 ### Section heading as link
