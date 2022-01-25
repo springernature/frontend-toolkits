@@ -67,6 +67,8 @@ Import the styles into your main stylesheet
 @import '@springernature/brand-context/default/scss/60-utilities/display';
 @import '@springernature/brand-context/default/scss/60-utilities/flex';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding';
+
+The component CSS specifies several icons, the email icon, and the warning icon, both of  which can be found in the brand context. The invalid email icon is the email icon with a red fill.
 ```
 
 

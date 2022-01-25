@@ -1,20 +1,20 @@
 {{#with submission}}
 <article class="c-submission-details-header" data-test="submission-header">
-    <div class="c-submission-details-header__row">
-        <span class="c-submission-details-header__row-item" data-test="article-type">{{articleType}}</span>
-        <span class="c-submission-details-header__row-item" data-test="submission-date">Submitted {{defaultDateFormat submittedTimestamp}}</span>
-        <span class="c-submission-details-header__row-item" data-test="submission-id">{{submissionId}}</span>
-        <span class="c-submission-details-header__row-item" data-test="submission-version">Version {{revisionVersion}}</span>
+    <div>
+        <span class="c-submission-details-header__meta-data" data-test="article-type">{{articleType}}</span>
+        <span class="c-submission-details-header__meta-data" data-test="submission-date">Submitted {{defaultDateFormat submittedTimestamp}}</span>
+        <span class="c-submission-details-header__meta-data" data-test="submission-id">{{submissionId}}</span>
+        <span class="c-submission-details-header__meta-data" data-test="submission-version">Version {{revisionVersion}}</span>
     </div>
     <h2 class="c-submission-details-header__submission-title" data-test="submission-title" data-object="manuscript-title">{{{title.html}}}</h2>
-    <div class="c-submission-details-header__row">
+    <div>
         <span class="c-submission-details-header__journal-title" data-test="submission-journal-title">{{journalTitle}}</span>
         {{#if collectionTitle}}<span class="c-submission-details-header__collection-title">Collection: <span data-test="submission-collection-title">{{collectionTitle}}</span></span>{{/if}}
     </div>
-    <div class="c-submission-details-header__row">
+    <div>
         <ul class="c-submission-details-header__author-list">
             {{#each authors}}
-                <li class="c-submission-details-header__author-item{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} icon-error{{/if}}">
+                <li class="c-submission-details-header__author-item{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} icon-warning{{/if}}">
                     <div id="author-popup{{@index}}" class="c-submission-details-header__author-popup" tabindex="-1"
                     role="dialog" aria-describedby="dialog-description{{@index}}" data-modal-background="false">
                         <p id="dialog-description{{@index}}" class="u-visually-hidden">Author information</p>
@@ -22,10 +22,10 @@
                         <h3 class="c-submission-details-header__author-name" data-test="submission-author-name">{{givenName}} {{familyName}}</h3>
                         {{#if corresponding}}<p class="c-submission-details-header__author-type" data-test="submission-author-is-corresponding">Corresponding Author</p>{{/if}}
                         {{#if affiliation}}<p class="u-font-14 u-font-daytona" data-test="submission-author-{{@index}}-affiliation">{{affiliation.institutionName}}, {{affiliation.countryName}}</p>{{/if}}
-                        <a href="mailto:{{emailAddress}}" class="c-submission-details-header__authors-email{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} invalid{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
+                        <a href="mailto:{{emailAddress}}" class="c-submission-details-header__author-email{{#if corresponding}} corresponding{{/if}}{{#if (invalidEmailAddress emailAddress)}} invalid{{/if}}" data-test="submission-author-email-address">{{emailAddress}}</a>
                         {{#if (invalidEmailAddress emailAddress)}}
                             <div class="u-flex u-mt20">
-                                <span class="u-inline-block icon-error u-height-24 u-mr10"></span>
+                                <span class="u-inline-block icon-warning u-height-24 u-mr10"></span>
                                 <p class="u-font-12">The corresponding author’s email address is invalid. Any communication to them has not been sent. Please contact support at <a href="mailto:stoa-support@springernature.com">stoa-support@springernature.com</a></p>
                             </div>
                         {{/if}}
