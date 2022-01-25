@@ -1,6 +1,6 @@
 {
   "text": "Heading Text",  
   "dynamicPartials": {
-    "section-heading": "./toolkits/nature/packages/nature-section-heading/view/section-heading.hbs"
+    "nature-section-heading": "./toolkits/nature/packages/nature-section-heading/view/section-heading.hbs"
   }
 }
