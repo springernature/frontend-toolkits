@@ -23,11 +23,11 @@ This will run the `tokens:clean` script and then take the `.json` files in the `
 To clean the generated design tokens `.scss` files that are created in the `00-tokens` folder you can run `npm run tokens:clean`. This will remove the `00-tokens` folder and its contents. This script is part of the `npm run tokens:generate` script.
 
 ---
-# Design Tokens Naming Conventions
-## Literal Design Tokens
+## Design Tokens Naming Conventions
+### Literal Design Tokens
 These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Relative Design Tokens that can be used in developing components.
 The Design values we have integrated into a Design Tokens workflow are:
-### Colour
+#### Colour
 The `color` Design Tokens will be used for any Relative Design Token defined.
 As the current colour palettes used are relatively small we will name most of the colours. For the neutral colours we will apply a numerical scale to go from white to black, `100` to `900`. This naming convention allows for additional neutral colours to be added over time if needed.
 There are four categories for the colour palettes used across Springer Nature:
@@ -35,7 +35,7 @@ There are four categories for the colour palettes used across Springer Nature:
 2. Neutrals - These are used for border colours, text colours, and backgrounds.
 3. Information - These are used for different states like the error state of a form input, or the focus state of a text link.
 4. Brand Specific Colours - These are specific to the various brands across Springer Nature and could be used for text, border, background colour etc.
-#### Example
+##### Example
 ```
 {
   "color": {
@@ -57,14 +57,14 @@ There are four categories for the colour palettes used across Springer Nature:
   }
 }
 ```
-### Typography
+#### Typography
 There are several Literal Design Tokens for typography. They include:
 - the `font-family` which defines the preferred typeface to be used, and for the web a group of fallbacks.
 - the `font-size`. These will be defined in using the `rem` unit and will also make use of a numerical scale where `400` is the same as `1rem` or `16px`. Again, this helps to add font sizes to the scale if needed in the future.
 - the `font-weight`. These will be defined using the existing numeric keyword values
 - the `line-height`. These will be defined with unitless values and will use descriptive names like ‘tight’ and ‘loose’.
 - the `letter-spacing`. These will be defined using the `rem` unit and will use a numerical scale. As `letter-spacing` is tiny in comparison to `font-size` we use a similar scale but with `10`s prefixed with a `0`.
-#### Example
+##### Example
 ```
 {
 	"font": {
@@ -95,10 +95,10 @@ There are several Literal Design Tokens for typography. They include:
   }
 }
 ```
-### Space
+#### Space
 The spacing design tokens are to be used to manage the `margin`, `padding`, and `gap` of a component or layout.
 They are defined using the `rem` unit and use a numerical scale like the `font-size` tokens where the number `400` would be equal to `1rem` (16px).
-#### Example
+##### Example
 ```
 {
   "spacing": {
@@ -122,12 +122,12 @@ They are defined using the `rem` unit and use a numerical scale like the `font-s
 - These are also used to generate the styling utility classes
 - These will be expanded upon with values for `z-index`, `box-shadow`, `border` properties (and more).
 - - -
-## Relative Design Tokens
+### Relative Design Tokens
 Relative Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
 #todo
 - This is part of 'phase 2' of the Design Tokens Epic
 
-## Component Design Tokens
+### Component Design Tokens
 Component Design Tokens are 'locked' tokens that hold a relative design token, and not a literal token or value.
 #todo
 - This is part of 'phase 3' of the Design Tokens Epic
