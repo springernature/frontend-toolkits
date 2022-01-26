@@ -33,7 +33,7 @@ In some cases, you may want to use a keyline to visually separate navigation men
 To use the Header component, enter the following command in your Terminal:
 
 ```
-npm install @springernature/nature-section-heading
+npm install @springernature/nature-header
 ```
 
 Import the installed component code in your `scss` file:

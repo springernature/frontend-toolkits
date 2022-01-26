@@ -1,0 +1,131 @@
+{
+  "logo": {
+    "name": "nature-portfolio",
+    "width": "200",
+    "height": "31"
+  },
+  "title": "brand sitemap",
+  "footerLinks": [
+    {
+      "uri": "https://www.nature.com/npg_/company_info/index.html",
+      "text": "About us",
+      "dataTrackAction": "about us"
+    },
+    {
+      "uri": "https://www.nature.com/npg_/press_room/press_releases.html",
+      "text": "Press releases",
+      "dataTrackAction": "press releases"
+    },
+    {
+      "uri": "https://press.nature.com/",
+      "text": "Press office",
+      "dataTrackAction": "press office"
+    },
+    {
+      "uri": "https://support.nature.com/support/home",
+      "text": "Contact us",
+      "dataTrackAction": "contact us"
+    }
+  ],
+  "footerGroups": [
+    {
+      "title": "Discover content",
+      "items": [
+        {
+          "uri": "https://www.nature.com/siteindex",
+          "text": "Journals A-Z",
+          "dataTrackAction": "journals a-z"
+        },
+        {
+          "uri": "https://www.nature.com/subjects/",
+          "text": "Articles by subject",
+          "dataTrackAction": "article by subject"
+        },
+        {
+          "uri": "https://nano.nature.com/",
+          "text": "Nano",
+          "dataTrackAction": "nano"
+        },
+        {
+          "uri": "https://www.nature.com/protocolexchange/",
+          "text": "Protocol Exchange",
+          "dataTrackAction": "protocol exchange"
+        },
+        {
+          "uri": "https://www.natureindex.com/",
+          "text": "Nature Index",
+          "dataTrackAction": "nature index"
+        }
+      ]
+    },
+    {
+      "title": "Publishing policies",
+      "items": [
+        {
+          "uri": "https://www.nature.com/authors/editorial_policies/",
+          "text": "Nature portfolio policies",
+          "dataTrackAction": "nature portfolio policies"
+        },
+        {
+          "uri": "https://www.nature.com/nature-research/open-access",
+          "text": "Open access",
+          "dataTrackAction": "open access"
+        }
+      ]
+    },
+    {
+      "title": "Author & Researcher services",
+      "items": [
+        {
+          "uri": "https://www.nature.com/reprints/",
+          "text": "Reprints & permissions",
+          "dataTrackAction": "reprints and permissions"
+        },
+        {
+          "uri": "https://www.springernature.com/gp/authors/research-data",
+          "text": "Research data",
+          "dataTrackAction": "research data"
+        },
+        {
+          "uri": "https://authorservices.springernature.com/go/nr",
+          "text": "Language editing",
+          "dataTrackAction": "language editing"
+        },
+        {
+          "uri": "https://authorservices.springernature.com/scientific-editing/",
+          "text": "Scientific editing",
+          "dataTrackAction": "scientific editing"
+        },
+        {
+          "uri": "https://masterclasses.nature.com/",
+          "text": "Nature Masterclasses",
+          "dataTrackAction": "nature Masterclasses"
+        },
+        {
+          "uri": "https://partnerships.nature.com/product/researcher-training/",
+          "text": "Nature Research Academies",
+          "dataTrackAction": "nature Research Academies"
+        }
+      ]
+    }
+  ],
+  "socialLinks": true,
+  "socialFacebook": {
+    "uri": "https://www.facebook.com/nature/",
+    "dataTrackAction": "facebook",
+    "ariaLabel": "Nature on Facebook"
+  },
+  "socialTwitter": {
+    "uri": "https://twitter.com/NaturePortfolio?lang=en",
+    "dataTrackAction": "twitter",
+    "ariaLabel": "Twitter"
+  },
+  "socialYoutube": {
+    "uri": "https://www.youtube.com/channel/UCvCLdSgYdSTpWcOgEJgi-ng",
+    "dataTrackAction": "youtube",
+    "ariaLabel": "YouTube"
+  },
+  "dynamicPartials": {
+    "nature-footer": "./toolkits/nature/packages/nature-footer/view/footer.hbs"
+  }
+}
