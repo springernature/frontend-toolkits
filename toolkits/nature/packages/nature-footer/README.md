@@ -1,5 +1,7 @@
 # Nature Footer
 
+[![NPM version][badge-npm]][info-npm]
+
 Nature branded site footer
 
 ## Installation
@@ -9,6 +11,8 @@ To use the footer component, enter the following command in your Terminal:
 ```
 npm install @springernature/nature-footer
 ```
+
+## Usage
 
 Import the installed component code in your `scss` file:
 
@@ -27,3 +31,6 @@ Import the installed component code in your `scss` file:
 ## Template
 
 A configurable template can found in the [`view` folder](./view/footer.hbs). Example usage can be found in the `demo` folder.
+
+[info-npm]: https://www.npmjs.com/package/@springernature/nature-footer
+[badge-npm]: https://img.shields.io/npm/v/@springernature/nature-footer.svg

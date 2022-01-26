@@ -1,5 +1,7 @@
 # Nature Header
 
+[![NPM version][badge-npm]][info-npm]
+
 The Nature Header component includes:
 
 - the journal’s logo - which appears in the top left
@@ -35,6 +37,8 @@ To use the Header component, enter the following command in your Terminal:
 ```
 npm install @springernature/nature-header
 ```
+
+## Usage
 
 Import the installed component code in your `scss` file:
 
@@ -116,3 +120,6 @@ A/B testing showed that exposing top-level navigation links in the menu increase
 ## Help improve this page
 
 If you’ve got a question, idea or suggestion about how to improve this component or guidance, post  in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
+
+[info-npm]: https://www.npmjs.com/package/@springernature/nature-header
+[badge-npm]: https://img.shields.io/npm/v/@springernature/nature-header.svg

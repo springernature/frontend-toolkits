@@ -1,6 +1,16 @@
 # Nature Sort By
 
+[![NPM version][badge-npm]][info-npm]
+
 A sort by dropdown for use on Nature product pages that contain a sortable list of content such as search results pages.
+
+## Installation
+
+To use the hero component, enter the following command in your Terminal:
+
+```
+npm install @springernature/nature-sort-by
+```
 
 ## Usage
 
@@ -13,14 +23,14 @@ sortBy();
 ```
 
 ```scss
-@import '../../node_modules/@springernature/nature-sort-by/scss/10-settings/sort-by';
-@import '../../node_modules/@springernature/nature-sort-by/scss/50-components/sort-by';
+@import '@springernature/nature-sort-by/scss/10-settings/sort-by';
+@import '@springernature/nature-sort-by/scss/50-components/sort-by';
 
 ```
 
 If you plan to use utility classnames such as `u-js-hide` as shown in the examples below, ensure you import the relevant toolkit scss. For example:
 ```scss
-@import '../../node_modules/@springernature/brand-context/default/scss/60-utilities/hiding';
+@import '@springernature/brand-context/default/scss/60-utilities/hiding';
 ```
 
 To configure the component the following html attributes will need to be set:
@@ -91,3 +101,6 @@ Example html
     </div>
 </div>
 ```
+
+[info-npm]: https://www.npmjs.com/package/@springernature/nature-sort-by
+[badge-npm]: https://img.shields.io/npm/v/@springernature/nature-sort-by.svg
