@@ -124,9 +124,13 @@ They are defined using the `rem` unit and use a numerical scale like the `font-s
 - - -
 ## Relative Design Tokens
 Relative Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
+#todo
+- This is part of 'phase 2' of the Design Tokens Epic
 
 ## Component Design Tokens
 Component Design Tokens are 'locked' tokens that hold a relative design token, and not a literal token or value.
+#todo
+- This is part of 'phase 3' of the Design Tokens Epic
 
 ---
 ## Sketch File
