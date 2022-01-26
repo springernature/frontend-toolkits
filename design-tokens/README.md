@@ -1,9 +1,13 @@
 # Design Tokens
 
-## Sketch File
+## What Are Design Tokens
 
-Global tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
 
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+>
+> Salesforce, Lightning Design System
+
+The Design Tokens are generated from several `.json` files which are (currently) compiled into various Sass files are needed.
 ## Running The Design Tokens Workflow
 
 To get this up and running you will need to be in the root of this repo and have ran `npm install`.
@@ -18,17 +22,7 @@ This will run the `tokens:clean` script and then take the `.json` files in the `
 
 To clean the generated design tokens `.scss` files that are created in the `00-tokens` folder you can run `npm run tokens:clean`. This will remove the `00-tokens` folder and its contents. This script is part of the `npm run tokens:generate` script.
 
-
-
-## What Are Design Tokens
-
-
-> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
->
-> Salesforce, Lightning Design System
-
-The Design Tokens are generated from several `.json` files which are (currently) compiled into various Sass files are needed.
-
+---
 # Design Tokens Naming Conventions
 ## Literal Design Tokens
 These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Relative Design Tokens that can be used in developing components.
@@ -132,3 +126,9 @@ They are defined using the `rem` unit and use a numerical scale like the `font-s
 Relative Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
 
 ## Component Design Tokens
+Component Design Tokens are 'locked' tokens that hold a relative design token, and not a literal token or value.
+
+---
+## Sketch File
+
+Global tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
