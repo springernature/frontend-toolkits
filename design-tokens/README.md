@@ -1,7 +1,24 @@
-global tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
-
-
 # Design Tokens
+
+## Sketch File
+
+Global tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
+
+## Running The Design Tokens Workflow
+
+To get this up and running you will need to be in the root of this repo and have ran `npm install`.
+
+### Generate Design Tokens
+
+To generate the tokens run `npm run tokens:generate`.
+
+This will run the `tokens:clean` script and then take the `.json` files in the `design-tokens` folder and generate the relevant `.scss` files in a folder called `00-tokens` in the `brand-context` folder. It will also generate an `index.scss` file based on the created files inside the `00-tokens` folders.
+
+### Clearning Generated Design Tokens
+
+To clean the generated design tokens `.scss` files that are created in the `00-tokens` folder you can run `npm run tokens:clean`. This will remove the `00-tokens` folder and its contents. This script is part of the `npm run tokens:generate` script.
+
+
 
 ## What Are Design Tokens
 
