@@ -1,0 +1,20 @@
+{
+  "sortOrderFilter": [
+    {
+      "value": "relevance",
+      "label": "Relevance",
+      "checked": true
+    },
+    {
+      "value": "desc",
+      "label": "Most recent"
+    },
+    {
+      "value": "asc",
+      "label": "Oldest first"
+    }
+  ],
+  "dynamicPartials": {
+    "nature-sort-by": "./toolkits/nature/packages/nature-sort-by/view/sort-by.hbs"
+  }
+}

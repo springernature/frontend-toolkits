@@ -3,7 +3,7 @@
     		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
 		</script>
 		<meta charset="utf-8">
-		<title>@springernature/nature-section-heading</title>
+		<title>@springernature/nature-sort-by</title>
 		<style>
 			@charset "UTF-8";
 /**
@@ -1254,67 +1254,1117 @@ p:empty {
   display: none;
 }
 
-.c-section-heading {
-  border-top: 5px solid black;
-  border-bottom: 1px solid black;
-  padding: 8px 0;
-  margin-bottom: 24px;
-  line-height: 1.4;
+.c-sort-by {
+  position: relative;
 }
-.c-section-heading h1,
-.c-section-heading h2,
-.c-section-heading h3,
-.c-section-heading h4,
-.c-section-heading h5,
-.c-section-heading h6 {
+.c-sort-by a {
+  color: inherit;
+}
+.c-sort-by a.visited, .c-sort-by a:visited {
+  color: inherit;
+}
+.c-sort-by a.hover, .c-sort-by a:hover {
+  color: inherit;
+}
+
+.c-sort-by__menu {
+  background-color: #000;
+  border-bottom: 1px solid #2f2f2f;
+  color: #eeeeee;
+  padding: 16px 0;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.c-sort-by__button {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-sort-by__button > svg {
+  margin-left: 16px;
+  transition-duration: 0.2s;
+}
+.c-sort-by__button.is-open > svg {
+  transform: rotate(180deg);
+}
+
+.c-sort-by__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.c-sort-by__list-item {
+  padding: 8px 16px;
+}
+.c-sort-by__list-item > label {
+  cursor: pointer;
+}
+
+/**
+ JavaScript Enhancements
+ */
+.c-sort-by__menu.has-tethered {
+  position: absolute;
+  top: 100%;
+  transform: translateY(4px);
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 0;
+}
+@media only screen and (min-width: 540px) {
+  .c-sort-by__menu.has-tethered {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .c-sort-by__menu.has-tethered {
+    min-width: 180px;
+  }
+}
+
+.u-flex-direction-row {
+  flex-direction: row;
+}
+
+.u-flex-direction-column {
+  flex-direction: column;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-align-items-center {
+  align-items: center;
+}
+
+.u-align-items-baseline {
+  align-items: baseline;
+}
+
+.u-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.u-justify-content-center {
+  justify-content: center;
+}
+
+.u-justify-content-left {
+  justify-content: left;
+}
+
+.u-flex-grow {
+  flex: 1 0 auto;
+}
+
+.u-flex-grow-shrink {
+  flex: 1 1 auto;
+}
+
+.u-flex-shrink {
+  flex: 0 1 auto;
+}
+
+.u-flex-static {
+  flex: 0 0 auto;
+}
+
+.u-align-self-center {
+  align-self: center;
+}
+
+.u-align-self-start {
+  align-self: flex-start;
+}
+
+.u-align-self-end {
+  align-self: flex-end;
+}
+
+.u-display-none {
+  display: none;
+}
+
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+  display: none;
+  visibility: hidden;
+}
+
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+  display: block;
+  visibility: visible;
+}
+
+.u-show-inline,
+.js .u-js-show-inline {
+  display: inline;
+  visibility: visible;
+}
+
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+  border: 0;
+  clip: initial;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+/* make invisible but retain dimensions */
+.u-invisible {
+  visibility: hidden;
+}
+
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: ltr;
+  vertical-align: bottom;
+}
+
+/* hiding overflow */
+.u-hide-overflow {
+  overflow: hidden;
+}
+
+@media print {
+  .u-hide-print {
+    display: none;
+  }
+}
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 320px) {
+  .u-hide-at-xs,
+.js .u-js-hide-at-xs {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xs,
+.js .u-js-show-at-xs {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .u-hide-at-sm,
+.js .u-js-hide-at-sm {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-sm,
+.js .u-js-show-at-sm {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-hide-at-md,
+.js .u-js-hide-at-md {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-md,
+.js .u-js-show-at-md {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .u-hide-at-lg,
+.js .u-js-hide-at-lg {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-lg,
+.js .u-js-show-at-lg {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .u-hide-at-xl,
+.js .u-js-hide-at-xl {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xl,
+.js .u-js-show-at-xl {
+    display: block;
+    visibility: visible;
+  }
+}
+.u-ma-0 {
+  margin: 0;
+}
+
+.u-ma-2 {
+  margin: 2px;
+}
+
+.u-ma-4 {
+  margin: 4px;
+}
+
+.u-ma-8 {
+  margin: 8px;
+}
+
+.u-ma-16 {
+  margin: 16px;
+}
+
+.u-ma-24 {
+  margin: 24px;
+}
+
+.u-ma-32 {
+  margin: 32px;
+}
+
+.u-ma-48 {
+  margin: 48px;
+}
+
+.u-ma-64 {
+  margin: 64px;
+}
+
+.u-ma-auto {
+  margin: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-2 {
+  margin-top: 2px;
+}
+
+.u-mt-4 {
+  margin-top: 4px;
+}
+
+.u-mt-8 {
+  margin-top: 8px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-48 {
+  margin-top: 48px;
+}
+
+.u-mt-64 {
+  margin-top: 64px;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0;
+}
+
+.u-mr-2 {
+  margin-right: 2px;
+}
+
+.u-mr-4 {
+  margin-right: 4px;
+}
+
+.u-mr-8 {
+  margin-right: 8px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-mr-48 {
+  margin-right: 48px;
+}
+
+.u-mr-64 {
+  margin-right: 64px;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mb-0 {
   margin-bottom: 0;
 }
 
-.c-section-heading--no-bt {
-  border-top: 0;
+.u-mb-2 {
+  margin-bottom: 2px;
 }
 
-.c-section-heading__link {
-  color: inherit;
-  display: flex;
-  align-items: center;
-}
-.c-section-heading__link.visited, .c-section-heading__link:visited {
-  color: inherit;
-}
-.c-section-heading__link.hover, .c-section-heading__link:hover {
-  color: inherit;
+.u-mb-4 {
+  margin-bottom: 4px;
 }
 
-.c-section-heading__icon {
-  fill: currentColor;
-  transform: translate(0, 0);
-  display: inline-block;
-  vertical-align: text-top;
-  width: 1.25rem;
-  height: 1.25rem;
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-32 {
+  margin-bottom: 32px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-mb-64 {
+  margin-bottom: 64px;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0;
+}
+
+.u-ml-2 {
+  margin-left: 2px;
+}
+
+.u-ml-4 {
+  margin-left: 4px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-16 {
+  margin-left: 16px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-ml-32 {
+  margin-left: 32px;
+}
+
+.u-ml-48 {
+  margin-left: 48px;
+}
+
+.u-ml-64 {
+  margin-left: 64px;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-pa-0 {
+  padding: 0;
+}
+
+.u-pa-2 {
+  padding: 2px;
+}
+
+.u-pa-4 {
+  padding: 4px;
+}
+
+.u-pa-8 {
+  padding: 8px;
+}
+
+.u-pa-16 {
+  padding: 16px;
+}
+
+.u-pa-24 {
+  padding: 24px;
+}
+
+.u-pa-32 {
+  padding: 32px;
+}
+
+.u-pa-48 {
+  padding: 48px;
+}
+
+.u-pa-64 {
+  padding: 64px;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pt-2 {
+  padding-top: 2px;
+}
+
+.u-pt-4 {
+  padding-top: 4px;
+}
+
+.u-pt-8 {
+  padding-top: 8px;
+}
+
+.u-pt-16 {
+  padding-top: 16px;
+}
+
+.u-pt-24 {
+  padding-top: 24px;
+}
+
+.u-pt-32 {
+  padding-top: 32px;
+}
+
+.u-pt-48 {
+  padding-top: 48px;
+}
+
+.u-pt-64 {
+  padding-top: 64px;
+}
+
+.u-pr-0 {
+  padding-right: 0;
+}
+
+.u-pr-2 {
+  padding-right: 2px;
+}
+
+.u-pr-4 {
+  padding-right: 4px;
+}
+
+.u-pr-8 {
+  padding-right: 8px;
+}
+
+.u-pr-16 {
+  padding-right: 16px;
+}
+
+.u-pr-24 {
+  padding-right: 24px;
+}
+
+.u-pr-32 {
+  padding-right: 32px;
+}
+
+.u-pr-48 {
+  padding-right: 48px;
+}
+
+.u-pr-64 {
+  padding-right: 64px;
+}
+
+.u-pb-0 {
+  padding-bottom: 0;
+}
+
+.u-pb-2 {
+  padding-bottom: 2px;
+}
+
+.u-pb-4 {
+  padding-bottom: 4px;
+}
+
+.u-pb-8 {
+  padding-bottom: 8px;
+}
+
+.u-pb-16 {
+  padding-bottom: 16px;
+}
+
+.u-pb-24 {
+  padding-bottom: 24px;
+}
+
+.u-pb-32 {
+  padding-bottom: 32px;
+}
+
+.u-pb-48 {
+  padding-bottom: 48px;
+}
+
+.u-pb-64 {
+  padding-bottom: 64px;
+}
+
+.u-pl-0 {
+  padding-left: 0;
+}
+
+.u-pl-2 {
+  padding-left: 2px;
+}
+
+.u-pl-4 {
+  padding-left: 4px;
+}
+
+.u-pl-8 {
+  padding-left: 8px;
+}
+
+.u-pl-16 {
+  padding-left: 16px;
+}
+
+.u-pl-24 {
+  padding-left: 24px;
+}
+
+.u-pl-32 {
+  padding-left: 32px;
+}
+
+.u-pl-48 {
+  padding-left: 48px;
+}
+
+.u-pl-64 {
+  padding-left: 64px;
 }
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div>
-	<div class="c-section-heading">
-		<h2>Heading Text</h2>
-	</div>	<p>The ambitious observatory has arrived at its home — near a gravitationally stable spot called L2 — for a premier view of the Universe.</p>
-
-	<div class="c-section-heading">
-		<h2>
-			<a href="http://www.example.com" class="c-section-heading__link">
-				Heading Text With Link
-				<svg class="c-section-heading__icon" aria-hidden="true" focusable="false" height="20" width="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-					<path d="m4.08573416 5.70052374 2.48162731-2.4816273c.39282216-.39282216 1.02197315-.40056173 1.40306523-.01946965.39113012.39113012.3914806 1.02492687-.00014045 1.41654791l-4.17620791 4.17620792c-.39120769.39120768-1.02508144.39160691-1.41671995-.0000316l-4.17639421-4.1763942c-.39122513-.39122514-.39767006-1.01908149-.01657797-1.40017357.39113012-.39113012 1.02337105-.3930364 1.41951348.00310603l2.48183447 2.48183446.99770587 1.01367533z" transform="matrix(0 -1 1 0 2.081146 11.085734)"></path>
+		<div class="c-sort-by">
+			<a href="#sort-by" class="c-sort-by__button" data-sort-by-trigger="" data-track="click" data-track-action="sort by filter" data-track-label="button" aria-expanded="false">
+				<span>Sort by Relevance</span>
+				<svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+					<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
 				</svg>
 			</a>
-		</h2>
-	</div>	<p>People abandoned thriving cities in Mesopotamia, the Indus Valley and farther afield at about the same time as a decades-long drought gripped parts of the planet.</p>
-</div>
-		<script>
-			// no JS found for package
+			<div id="sort-by" data-sort-by-target="" class="c-sort-by__menu u-js-hide">
+				<ul class="c-sort-by__list">
+					<li class="c-sort-by__list-item" data-sort-by-radio="">
+						<input name="order" data-test="order-relevance" id="order-relevance" value="relevance" type="radio" checked="checked">
+						<label for="order-relevance">
+							<span>Relevance</span>
+						</label>
+					</li>
+					<li class="c-sort-by__list-item" data-sort-by-radio="">
+						<input name="order" data-test="order-desc" id="order-desc" value="desc" type="radio">
+						<label for="order-desc">
+							<span>Most recent</span>
+						</label>
+					</li>
+					<li class="c-sort-by__list-item" data-sort-by-radio="">
+						<input name="order" data-test="order-asc" id="order-asc" value="asc" type="radio">
+						<label for="order-asc">
+							<span>Oldest first</span>
+						</label>
+					</li>
+				</ul>
+				<div class="u-pl-16 u-pr-16 u-pt-16 u-js-hide">
+					<button type="submit" class="c-search__button" data-action="clear-adv">
+						<span class="c-search__button-text">Search</span>
+						<svg class="u-flex-static" role="img" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>		<script>
+			(function () {
+  'use strict';
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    Object.defineProperty(Constructor, "prototype", {
+      writable: false
+    });
+    return Constructor;
+  }
+
+  var makeArray = function makeArray(iterable) {
+    var list = [];
+
+    if (!iterable) {
+      return list;
+    }
+
+    Array.prototype.forEach.call(iterable, function (item) {
+      list.push(item);
+    });
+    return list;
+  };
+
+  /**
+   * create-event.js
+   * Wrapper for customEvent
+   * Generate namespaced events
+   */
+  /**
+   * Polyfill customEvent
+   * @function customEvent
+   * @param {String} eventName namespaced name of the event
+   * @param {Object=} _parameters customEvent options
+   * @return {Event}
+   */
+
+  var customEvent = function customEvent(eventName, _parameters) {
+    _parameters = _parameters || {
+      bubbles: false,
+      cancelable: false,
+      detail: null
+    };
+    var event = document.createEvent('CustomEvent');
+    event.initCustomEvent(eventName, _parameters.bubbles, _parameters.cancelable, _parameters.detail);
+    return event;
+  };
+  /**
+   * Create a custom event
+   * @function createEvent
+   * @param {String} eventName name of the event
+   * @param {String} namespace namespace e.g. component name
+   * @param {Object=} _parameters customEvent options
+   * @return {Event}
+   */
+
+
+  var createEvent = function createEvent(eventName, namespace, _parameters) {
+    var event;
+
+    if (namespace === undefined) {
+      throw new Error('Missing namespace in `createEvent` function');
+    }
+
+    if (typeof window.CustomEvent === 'function') {
+      event = new CustomEvent("".concat(namespace, ":").concat(eventName), _parameters);
+    } else {
+      event = customEvent("".concat(namespace, ":").concat(eventName), _parameters);
+    }
+
+    return event;
+  };
+
+  /**
+   * Local Constants
+   */
+
+  var defaultOptions = {
+    TARGET_HIDE_CLASS: 'u-js-hide',
+    TRIGGER_OPEN_CLASS: 'is-open',
+    TRIGGER_OPEN_LABEL: undefined,
+    CLOSE_ON_FOCUS_OUT: true,
+    AUTOFOCUS: null,
+    OPEN_EVENT: false,
+    DEFAULT_OPEN: false
+  };
+
+  var Expander = /*#__PURE__*/function () {
+    function Expander(trigger, target) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+      _classCallCheck(this, Expander);
+
+      this._options = Object.assign({}, defaultOptions, options);
+      this._autoFocusElement = trigger;
+      this._triggerEl = trigger;
+      this._targetEl = target;
+      this._originalTriggerText = trigger.textContent;
+      this._isOpen = this._options.DEFAULT_OPEN;
+      this._handleButtonClick = this._handleButtonClick.bind(this);
+      this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
+      this._handleDocumentClick = this._handleDocumentClick.bind(this);
+      this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
+    }
+    /**
+     * Event Handlers
+     */
+
+
+    _createClass(Expander, [{
+      key: "_handleButtonClick",
+      value: function _handleButtonClick(event) {
+        event.preventDefault();
+
+        if (this._isOpen) {
+          this.close();
+        } else {
+          this.open();
+        }
+      }
+    }, {
+      key: "_handleButtonKeydown",
+      value: function _handleButtonKeydown(event) {
+        if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+          event.preventDefault();
+
+          if (this._isOpen) {
+            this.close();
+          } else {
+            this.open();
+          }
+        }
+      }
+    }, {
+      key: "_handleDocumentKeydown",
+      value: function _handleDocumentKeydown(event) {
+        var _this = this;
+
+        if (event.key === 'Escape') {
+          this.close();
+
+          this._triggerEl.focus();
+        }
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          if (event.key === 'Tab' && event.shiftKey === true) {
+            if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
+              event.preventDefault();
+              window.requestAnimationFrame(function () {
+                _this.close();
+
+                _this._triggerEl.focus();
+              });
+            }
+          }
+
+          if (event.key === 'Tab' && event.shiftKey === false) {
+            if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
+              event.preventDefault();
+              window.requestAnimationFrame(function () {
+                _this.close();
+
+                _this._triggerEl.focus();
+              });
+            }
+          }
+        }
+      }
+    }, {
+      key: "_handleDocumentClick",
+      value: function _handleDocumentClick(event) {
+        var target = event.target;
+
+        if (target === this._targetEl || target === this._triggerEl || this._targetEl.contains(target) || this._triggerEl.contains(target)) {
+          return;
+        }
+
+        this.close();
+      }
+      /**
+       * Temporary Event Listeners
+       */
+
+    }, {
+      key: "_setupTemporaryEventListeners",
+      value: function _setupTemporaryEventListeners() {
+        document.addEventListener('keydown', this._handleDocumentKeydown);
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          document.addEventListener('click', this._handleDocumentClick);
+        }
+      }
+    }, {
+      key: "_removeTemporaryEventListeners",
+      value: function _removeTemporaryEventListeners() {
+        document.removeEventListener('keydown', this._handleDocumentKeydown);
+
+        if (this._options.CLOSE_ON_FOCUS_OUT) {
+          document.removeEventListener('click', this._handleDocumentClick);
+        }
+      }
+      /**
+       * Attributes
+       */
+
+    }, {
+      key: "_updateAttributes",
+      value: function _updateAttributes() {
+        // eslint-disable-next-line unicorn/consistent-function-scoping
+        this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
+
+        if (this._isOpen) {
+          this._targetEl.removeAttribute('hidden');
+        } else {
+          this._targetEl.setAttribute('hidden', '');
+        }
+      }
+      /**
+       * Class attributes
+       */
+
+    }, {
+      key: "_updateClassAttributes",
+      value: function _updateClassAttributes() {
+        if (this._isOpen) {
+          this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
+
+          this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
+        } else {
+          this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
+
+          this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
+        }
+      }
+      /**
+       * Trigger Label
+       */
+
+    }, {
+      key: "_updateTriggerLabel",
+      value: function _updateTriggerLabel() {
+        if (this._options.TRIGGER_OPEN_LABEL) {
+          this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
+        }
+      }
+      /**
+       * Tabbable Items
+       */
+
+    }, {
+      key: "_updateTabbableItems",
+      value: function _updateTabbableItems() {
+        this._targetTabbableItems = makeArray(this._targetEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')).filter(function (element) {
+          return window.getComputedStyle(element).getPropertyValue('visibility') !== 'hidden';
+        });
+      }
+      /**
+       * AutoFocus
+       */
+
+    }, {
+      key: "_handleAutoFocus",
+      value: function _handleAutoFocus() {
+        if (this._options.AUTOFOCUS === 'target') {
+          this._autoFocusElement = this._targetEl;
+
+          this._targetEl.setAttribute('tabindex', '-1');
+        }
+
+        if (this._options.AUTOFOCUS === 'firstTabbable') {
+          this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
+
+          if (this._autoFocusElement.setSelectionRange) {
+            this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
+          }
+        }
+
+        this._autoFocusElement.focus();
+      }
+      /**
+       * @public
+       */
+
+      /**
+       * Toggling
+       */
+
+    }, {
+      key: "open",
+      value: function open() {
+        if (this._isOpen) {
+          return;
+        }
+
+        this._isOpen = true;
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._updateTabbableItems();
+
+        this._setupTemporaryEventListeners();
+
+        this._handleAutoFocus();
+
+        if (this._options.OPEN_EVENT) {
+          var event = createEvent('open', 'globalExpander', {
+            bubbles: false
+          });
+
+          this._triggerEl.dispatchEvent(event);
+        }
+      }
+    }, {
+      key: "close",
+      value: function close() {
+        if (!this._isOpen) {
+          return;
+        }
+
+        this._isOpen = false;
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._removeTemporaryEventListeners();
+      }
+    }, {
+      key: "init",
+      value: function init() {
+        if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
+          // eslint-disable-next-line no-script-url
+          this._triggerEl.setAttribute('href', 'javascript:;');
+
+          this._triggerEl.setAttribute('role', 'button');
+        } // Warn screen reader users when you are stealing focus
+
+
+        if (this._options.AUTOFOCUS) {
+          this._triggerEl.setAttribute('aria-haspopup', 'true');
+        }
+
+        this._updateTriggerLabel();
+
+        this._updateAttributes();
+
+        this._updateClassAttributes();
+
+        this._triggerEl.addEventListener('click', this._handleButtonClick);
+
+        this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
+      }
+    }]);
+
+    return Expander;
+  }();
+
+  var generateParameters = function generateParameters(value) {
+    var parameters = new URL(document.location).searchParams;
+    parameters.set('order', value);
+    return parameters;
+  };
+
+  var sortBy = function sortBy() {
+    var trigger = document.querySelector('[data-sort-by-trigger]');
+    var targetElement = document.querySelector('[data-sort-by-target]');
+    var radios = makeArray(document.querySelectorAll('[data-sort-by-radio]'));
+
+    if (!trigger || !targetElement || !radios) {
+      return;
+    }
+
+    radios.forEach(function (element) {
+      element.addEventListener('click', function () {
+        var value = element.querySelector('input').value;
+        var parameters = generateParameters(value);
+        window.location.replace('/search?' + parameters);
+      });
+    });
+    trigger.setAttribute('role', 'button');
+    trigger.insertAdjacentElement('afterend', targetElement);
+    targetElement.classList.add('has-tethered');
+    var expander = new Expander(trigger, targetElement);
+    expander.init();
+    return expander;
+  };
+
+  sortBy();
+
+})();
+
 		</script>
 	
 </body></html>
