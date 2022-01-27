@@ -18,8 +18,8 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
-			`${__dirname}/global/default/**/*.json`,
-			`${__dirname}/global/${brand}/**/*.json`
+			`${__dirname}/literal/default/**/*.json`,
+			`${__dirname}/literal/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -63,7 +63,7 @@ function getStyleDictionaryConfig(brand, categories) {
 console.log('Build started...');
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	let dir = `${__dirname}/global/${brand}`
+	let dir = `${__dirname}/literal/${brand}`
 	const categories = readdirSync(dir);
 
 	console.log('\n==============================================');
@@ -88,7 +88,7 @@ console.log('Build started...');
 		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
-	let dir = `${__dirname}/global/${brand}`
+	let dir = `${__dirname}/literal/${brand}`
 	console.log('\n==============================================');
 	console.log(`\nProcessing Sass index file: [${brand}]`);
 
