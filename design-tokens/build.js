@@ -62,7 +62,7 @@ function getStyleDictionaryConfig(brand, categories) {
 
 console.log('Build started...');
 
-['default', 'springernature', 'springer'].map(function (brand) {
+['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	let dir = `${__dirname}/global/${brand}`
 	const categories = readdirSync(dir);
 
@@ -77,13 +77,15 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-['default', 'springernature', 'springer'].map(function (brand) {
+['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	if (brand === 'default') {
 		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
 	} else if (brand === 'springernature') {
 		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
 	} else if (brand === 'springer') {
 		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
+	} else if (brand === 'nature') {
+		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/global/${brand}`

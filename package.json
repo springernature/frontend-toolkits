@@ -36,7 +36,7 @@
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
     "validate:springernature": "sn-package-validate -t springernature",
-    "tokens:generate": "node ./design-tokens/stu-build.js",
+    "tokens:generate": "node ./design-tokens/build.js",
     "tokens:clean": "npx rimraf **/00-tokens/",
     "clean": "npx rimraf node_modules/"
   },
