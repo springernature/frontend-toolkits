@@ -29,7 +29,7 @@ Import the installed component code in your `scss` file:
 
 ## Template
 
-A configurable template can found in the [`view` folder](./view/hero.hbs). Example usage can be found in the `demo` folder.
+Find a configurable template in the [`view` folder](./view/hero.hbs). You can see an example in the `demo` folder.
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-hero
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-hero.svg
