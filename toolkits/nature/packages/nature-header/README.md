@@ -72,7 +72,7 @@ In the oscar-sites-nature application, the color of the border on each journalâ€
 For ease of maintenance, the `scss` for this component is separated into 2 classnames and contained in 2 separate files:
 
 - `c-header-expander` - for all interactive Header parts that users can open and close, like dropdown menus and pop-out modals
-- `c-header` - for all  other parts of the Header
+- `c-header` - for all other parts of the Header
 
 You can find the HTML in the [included handlebars template](./view/header.hbs).
 
