@@ -119,7 +119,7 @@ A/B testing showed that exposing top-level navigation links in the menu increase
 
 ## Help improve this page
 
-If you’ve got a question, idea or suggestion about how to improve this component or guidance, post  in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-header
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-header.svg
