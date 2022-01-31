@@ -117,6 +117,27 @@ They are defined using the `rem` unit and use a numerical scale like the `font-s
   }
 }
 ```
+#### Breakpoints
+The breakpoint values are defined using the `em` CSS unit. They are used to manage changes in the design of the web page or component depending on the screen size. The naming convention used is based on t-shirt sizing.
+
+```
+{
+	"breakpoints": {
+		"xs": {
+			"value": "320px",
+			"comment": "mobile"
+		},
+		"md": {
+			"value": "768px",
+			"comment": "tablet"
+		},
+		"lg": {
+			"value": "1024px",
+			"comment": "small desktop"
+		}
+	}
+}
+```
 
 #todo
 - These are also used to generate the styling utility classes
