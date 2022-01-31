@@ -6,7 +6,7 @@ Hero for Nature products.
 
 ## Installation
 
-To use the hero component, enter the following command in your Terminal:
+To use the Hero component, enter the following command in your Terminal:
 
 ```
 npm install @springernature/nature-hero
