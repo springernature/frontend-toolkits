@@ -52,7 +52,7 @@ This component uses Global Expander. This means you should be aware of the follo
 
 ## Template
 
-A configurable template can found in the [`view` folder](./view/sort-by.hbs). Example usage can be found in the `demo` folder.
+Find a configurable template in the [`view` folder](./view/sort-by.hbs). You can see an example usage in the `demo` folder.
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-sort-by
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-sort-by.svg
