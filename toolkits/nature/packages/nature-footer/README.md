@@ -26,7 +26,7 @@ Import the installed component code in your `scss` file:
 @import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
-> **NOTE** The component require the use of the utility classes shown above
+> **NOTE** The component requires the use of the utility classes shown above
 
 ## Template
 
