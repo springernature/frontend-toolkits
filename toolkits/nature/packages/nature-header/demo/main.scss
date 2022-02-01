@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// we must not add `node_modules/` to the Sass includePaths config,
+//   so use relative paths here. Paths should be relative to this file.
+@import '../node_modules/@springernature/brand-context/nature/scss/core.scss';
+@import '../node_modules/@springernature/brand-context/nature/scss/enhanced.scss';
+
+// component SCSS
+@import '../scss/50-components/header';
+@import '../scss/50-components/header-expander';
+
+// Utilities
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/buttons.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/display.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/lists.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/spacing.scss';

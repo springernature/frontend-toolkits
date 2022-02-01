@@ -1,34 +1,35 @@
 # Nature Hero
 
+[![NPM version][badge-npm]][info-npm]
+
 Hero for Nature products.
 
-## CSS
+## Installation
 
-Include the SCSS in your application
+To use the Hero component, enter the following command in your Terminal:
 
-```scss
-// Include this with your settings
-@import '@springernature/nature-hero/scss/10-settings/hero';
-
-// Include this with your other components
-@import '@springernature/nature-hero/scss/50-components/hero';
+```
+npm install @springernature/nature-hero
 ```
 
 ## Usage
 
-```html
-<div class="c-hero">
-    <div class="c-hero__image">
-        <img src="hero-image.png" alt="">
-    </div>
-    <div class="c-hero__copy">
-        <h2 class="c-hero__title">
-            <a class="c-hero__link" href="#">Hero title</a>
-        </h2>
-        <p class="c-hero__summary">Hero text</p>
-    </div>
-</div>
+Import the installed component code in your `scss` file:
+
+```scss
+@import '@springernature/nature-hero/scss/10-settings/hero';
+@import '@springernature/nature-hero/scss/50-components/hero';
+
+@import '@springernature/brand-context/default/scss/60-utilities/links.scss';
+@import '@springernature/brand-context/default/scss/60-utilities/positioning.scss';
+@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
+
+> **NOTE** The component requires the use of the utility classes shown above
+
+## Template
+
+Find a configurable template in the [`view` folder](./view/hero.hbs). You can see an example in the `demo` folder.
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-hero
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-hero.svg
