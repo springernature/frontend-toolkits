@@ -1,0 +1,15 @@
+{
+	"color": {
+		"nature": {
+			"black": {
+				"value": "{color.neutral.800}"
+			},
+			"gunmetal": {
+				"value": "#29303C"
+			},
+			"dark-red": {
+				"value": "#940720"
+			}
+		}
+	}
+}

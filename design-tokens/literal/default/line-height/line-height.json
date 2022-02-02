@@ -1,0 +1,15 @@
+{
+	"line-height": {
+		"base": {
+			"value": "1.875",
+			"comment": "For body text"
+		},
+		"md": {
+			"value": "1.5"
+		},
+		"tight": {
+			"value": "1.4",
+			"comment": "Tighter line-height"
+		}
+	}
+}
