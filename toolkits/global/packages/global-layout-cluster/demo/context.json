@@ -1,0 +1,12 @@
+{
+	"element": "div",
+	"items": [
+		"<button class='u-button'>First button</button>",
+		"<button class='u-button'>Button 2</button>",
+		"<button class='u-button'>A third button</button>",
+		"<button class='u-button'>The final button</button>"
+	],
+	"dynamicPartials": {
+		"global-layout-cluster": "./toolkits/global/packages/global-layout-cluster/view/global-layout-cluster.hbs"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"loginStatus": {
+		"loggedIn": true
+	},
+	"data": [
+		{
+			"text": "Springer Affiliates (3000093925) - Consortium BusinessPartner (555555)"
+		},
+		{
+			"text": "沪ICP备15051854号-3",
+			"dataUrl": "http://www.miibeian.gov.cn",
+			"lang": "zh-Hans"
+		}
+	]
+}

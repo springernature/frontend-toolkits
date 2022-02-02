@@ -1,3 +1,11 @@
+# History
+
+## 1.3.1 (2021-10-23)
+    * Safer prop name for url
+
+## 1.3.0 (2021-09-20)
+    * Demo created with consumable handlebars template
+
 ## 1.2.0 (2021-06-10)
     * Add default settings and to nature settings
     * Add overrides for margin values to nature settings

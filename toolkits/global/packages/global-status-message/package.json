@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-status-message",
-  "version": "3.0.0",
+  "version": "3.2.1",
   "license": "MIT",
   "description": "Global Status Message component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^10.1.2"
+  "brandContext": "^17.2.0"
 }

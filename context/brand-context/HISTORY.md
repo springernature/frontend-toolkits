@@ -1,5 +1,101 @@
 # History
 
+## 20.0.0 (2022-01-14)
+    * BREAKING
+        * Introduces updates to make use of Dart Sass as the compiler for the frontend.
+        * Updates default color function to use Dart Sass.
+        * Updates default typography to use Dart Sass.
+        
+## 19.0.0 (2022-01-13)
+    * BREAKING
+        * Icons all use `currentColor` in place of `#666` so they adopt `color` by default
+
+## 18.2.0 (2021-12-14)
+    * Updates the $context--colors map to include colours used across springeropen and springerlink
+
+## 18.1.2 (2021-12-10)
+    * BUG
+        * fixes font size set in em, not rem and also thinking root size was 62.5%
+
+
+## 18.1.1
+    * FEATURE
+        * copies the strip-unit function into the default brand context.
+        * removes the strip-unit function from the springer brand context.
+        
+## 18.1.0
+    * FEATURE
+        * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
+        
+## 18.0.1 (2021-12-07)
+    * BUG:
+        * Fixes some font sizes that were incorrectly calculated
+        * Changes the $base-font-size to match the root/html font size being 100$
+
+## 18.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes the root font size to 100%.
+        * Changes all typographic values to accomodate the root font size change.
+        * Changes any typographic values set in px values to rem.
+
+## 17.4.0 (2021-12-03)
+    * Add cart icon
+
+## 17.3.1 (2021-12-01)
+    * BUG: Add yellow to the springer context-colours
+
+## 17.3.0 (2021-11-30)
+    * Add keyframes settings to springer brand
+
+## 17.2.0 (2021-11-12)
+    * Add optional width and height to set for `u-icon` mixin
+
+## 17.1.1 (2021-11-08)
+    * Remove margin on `p:last-child`
+
+## 17.1.0 (2021-11-04)
+    * FEATURE:
+        * Add springernature favicons
+
+## 17.0.0 (2021-10-23)
+    * BREAKING:
+        * `id` attributes added to all SVG icons for referencing with `<use>`
+
+## 16.0.0 (2021-10-06)
+    * BREAKING:
+        * Update the plus icon
+        * Rename minus svg icon
+    * FEATURE:
+        * Add default setting, mixin and utility class for xsmall & tertiary button
+        * Add SN settings for xsmall & tertiary button
+
+## 15.0.0 (2021-09-07)
+    * BREAKING:
+        * Icon width and height attributes removed
+        * u-icon utility provided with `1em` width and height values
+
+## 14.0.0 (2021-08-31)
+    * BREAKING:
+        * Switch springernature context fonts to Variable fonts
+        * Swap Daytona with Merriweather Sans
+        * Remove all springernature context fonts from the fonts folder
+    * Add the 2 new variable fonts into springernature context fonts folder
+    * Add documentation about fonts in springernature context README
+
+## 13.2.1 (2021-08-23)
+    * Add will-change: tranform reflow on focus mixin
+        - reflow needed to ensure outline styles visible in Safari v13+
+        - related to 13.1.2
+
+## 13.2.0 (2021-08-12)
+    * Add mixin for u-focus-outline and default $context--focus-color variable
+    * Replace the focus style for links in nature to use this new mixin
+    * Replace the focus style for input, button, select elements in forms for nature to use this new mixin
+    * Add pseudo class focus for [tabindex="0"] and [contenteditable] attributes for nature brand
+
+## 13.1.2 (2021-08-04)
+    * Ensures Nature link focus styles cause a reflow as outline not visible in Safari v13+ without a reflow on Nature pages
+
 ## 13.1.1 (2021-07-29)
     * Includes the style 10-settings in Springer abstracts partial
 
@@ -40,10 +136,10 @@
 
 ## 11.1.0 (2021-04-14)
     * Add fluid typography for headings to nature brand
-        * Adjust font-size, line-height and letter-spacing 
+        * Adjust font-size, line-height and letter-spacing
 
 ## 11.0.1 (2021-03-12)
-    * Change h4 to serif in springer context 
+    * Change h4 to serif in springer context
 
 ## 11.0.0 (2021-03-12)
     * BREAKING:
@@ -55,7 +151,7 @@
 
 ## 10.1.2 (2021-03-01)
     * BUG: components reference missing default font-sizes
-    * Add default font sizes 
+    * Add default font sizes
 
 ## 10.1.1 (2021-02-24)
     * Change font family to serif for SN u-h4,u-h5

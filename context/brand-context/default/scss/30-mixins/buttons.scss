@@ -18,6 +18,12 @@
 	}
 }
 
+@mixin button-tertiary {
+	@if variable-exists('context--button-tertiary') {
+		@include button-theme($context--button-tertiary);
+	}
+}
+
 @mixin button-contrast {
 	@if variable-exists('context--button-contrast') {
 		@include button-theme($context--button-contrast);
@@ -37,6 +43,11 @@
 }
 
 // Button variants
+
+@mixin button-xsmall {
+	font-size: $context--button-font-size-xsmall;
+	padding: $context--button-padding-xsmall;
+}
 
 @mixin button-small {
 	font-size: $context--button-font-size-small;

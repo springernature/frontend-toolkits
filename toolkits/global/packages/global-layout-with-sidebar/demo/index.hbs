@@ -1,0 +1,18 @@
+<div class="l-with-sidebar">
+	{{#if sidebar-on-left}}
+		<div class="l-with-sidebar__sidebar">
+			{{{sidebarContent}}}
+		</div>
+		<div>
+			{{{mainContent}}}
+		</div>
+	{{else}}
+		<div>
+			{{{mainContent}}}
+		</div>
+		<div class="l-with-sidebar__sidebar">
+			{{{sidebarContent}}}
+		</div>
+	{{/if}}
+</div>
+

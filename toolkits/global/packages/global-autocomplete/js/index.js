@@ -24,7 +24,7 @@ const autoComplete = arguments_ => {
 	}
 
 	const input = document.querySelector(selector);
-	const container = () => {
+	const getContainer = () => {
 		return document.querySelector(`${resultsContainerSelector}`);
 	};
 	const suggestions = () => {
@@ -55,19 +55,21 @@ const autoComplete = arguments_ => {
 			return;
 		}
 		input.removeEventListener('keyup', inputEvents);
-		if (container()) {
-			container().parentNode.removeChild(container());
+		const resultsContainer = getContainer();
+		if (resultsContainer) {
+			resultsContainer.remove();
 		}
 		document.removeEventListener('click', removeSuggestions);
 		input.setAttribute('aria-expanded', false);
 	};
 
 	const addSuggestionEventListeners = () => {
-		if (container() === null) {
+		const resultsContainer = getContainer();
+		if (resultsContainer === null) {
 			return;
 		}
 
-		container().addEventListener('keydown', event => {
+		resultsContainer.addEventListener('keydown', event => {
 			if (['Escape', 'Esc', 'ArrowUp', 'Up', 'ArrowDown', 'Down'].includes(event.key)) {
 				event.preventDefault();
 				event.stopPropagation();
@@ -104,6 +106,7 @@ const autoComplete = arguments_ => {
 			} else if (event.key === 'Escape' || event.key === 'Esc') {
 				removeSuggestions();
 				input.value = currentSearchTerm;
+				input.focus();
 			}
 		});
 
@@ -113,6 +116,7 @@ const autoComplete = arguments_ => {
 					onSelect(element.textContent);
 				}
 				removeSuggestions();
+				input.focus();
 			});
 			element.addEventListener('keyup', event => {
 				if (event.key === 'Enter') {
@@ -120,6 +124,7 @@ const autoComplete = arguments_ => {
 						onSelect(element.textContent);
 					}
 					removeSuggestions();
+					input.focus();
 				}
 			});
 		});
@@ -131,6 +136,15 @@ const autoComplete = arguments_ => {
 		input.addEventListener('keyup', inputEvents);
 		resultsCallBack.call(this, data);
 		addSuggestionEventListeners();
+		const container = getContainer();
+		if (container) {
+			container.addEventListener('keydown', ev => {
+				if (ev.key === 'Tab') {
+					removeSuggestions();
+				}
+			});
+		}
+
 		input.setAttribute('aria-expanded', true);
 	};
 
@@ -205,6 +219,12 @@ const autoComplete = arguments_ => {
 			event.preventDefault();
 		}
 	};
+
+	input.addEventListener('keydown', ev => {
+		if (ev.key === 'Tab') {
+			removeSuggestions();
+		}
+	});
 
 	const enable = () => {
 		if (input) {

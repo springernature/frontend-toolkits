@@ -12,5 +12,5 @@ $hero--title-font-size-at-md: unquote('min(max(#{$context--font-size-h1-min}, 3v
 $hero--title-line-height-at-md: unquote('min(max(#{$context--line-height-h1-min}, 3vw), #{$context--line-height-h1})');
 $hero--title-margin: spacing(16);
 $hero--summary-line-height: 1.4;
-$hero--summary-font-size: 1.4rem;
+$hero--summary-font-size: .875rem;
 $hero--summary-margin-bottom: spacing(0);

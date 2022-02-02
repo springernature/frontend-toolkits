@@ -1,9 +1,9 @@
 {
     "name": "@springernature/nature-hero",
-    "version": "1.1.0",
+    "version": "2.0.1",
     "license": "MIT",
     "description": "Nature branded hero",
     "keywords": [],
     "author": "Springer Nature",
-    "brandContext": "^11.1.1"
+    "brandContext": "^18.0.0"
 }

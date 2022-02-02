@@ -10,7 +10,8 @@ const defaultOptions = {
 	TRIGGER_OPEN_LABEL: undefined,
 	CLOSE_ON_FOCUS_OUT: true,
 	AUTOFOCUS: null,
-	OPEN_EVENT: false
+	OPEN_EVENT: false,
+	DEFAULT_OPEN: false
 };
 
 const Expander = class {
@@ -20,7 +21,7 @@ const Expander = class {
 		this._triggerEl = trigger;
 		this._targetEl = target;
 		this._originalTriggerText = trigger.textContent;
-		this._isOpen = false;
+		this._isOpen = this._options.DEFAULT_OPEN;
 		this._handleButtonClick = this._handleButtonClick.bind(this);
 		this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
 		this._handleDocumentClick = this._handleDocumentClick.bind(this);
@@ -228,6 +229,12 @@ const Expander = class {
 		if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
 			// eslint-disable-next-line no-script-url
 			this._triggerEl.setAttribute('href', 'javascript:;');
+			this._triggerEl.setAttribute('role', 'button');
+		}
+
+		// Warn screen reader users when you are stealing focus
+		if (this._options.AUTOFOCUS) {
+			this._triggerEl.setAttribute('aria-haspopup', 'true');
 		}
 
 		this._updateTriggerLabel();

@@ -1,0 +1,33 @@
+/**
+ * Facet
+ * Default branding for component
+ */
+
+$facet--background-color: lightgrey;
+$facet--color: black;
+$facet--font-bold: 700;
+$facet--font-size-small: .875rem;
+$facet--font-size: 1rem;
+$facet--spacing-x-small: spacing(4);
+$facet--spacing-small: spacing(8);
+$facet--spacing-normal: spacing(16);
+$facet--spacing-large: spacing(24);
+$facet--clear-font-size: $facet--font-size-small;
+$facet--button-color: black;
+$facet--button-background: white;
+$facet--button-border: 1px solid $facet--button-color;
+$facet--button-border-radius: 3px;
+$facet--button-height: 34px;
+$facet--button-color-disabled: gray;
+$facet--button-border-disabled: 1px solid $facet--button-color-disabled;
+$facet--submit-background-color: blue;
+$facet--submit-border: 1px solid blue;
+$facet--submit-border-radius: $facet--button-border-radius;
+$facet--submit-color: white;
+$facet--submit-color-hover: blue;
+$facet--submit-background-color-hover: white;
+$facet-expander--background-color: black;
+$facet-expander--color: white;
+$facet-expander--min-width: 290px;
+$facet-expander--list-color: gray;
+

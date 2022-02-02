@@ -1,0 +1,11 @@
+<ul class="c-breadcrumbs">
+	{{#each crumbs}}
+		<li class="c-breadcrumbs__item">
+			<a href="{{crumbUrl}}">{{label}}</a>
+			<svg class="c-breadcrumbs__chevron" width="12" height="12" aria-hidden="true" focusable="false">
+				<use xlink:href="{{../chevronURL}}"></use>
+			</svg>
+		</li>
+	{{/each}}
+	<li class="c-breadcrumbs__item">{{current.label}}</li>
+</ul>

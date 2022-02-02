@@ -1,0 +1,17 @@
+/**
+ * Card
+ * Springer branding for component
+ */
+
+// Default setting
+@import 'default';
+
+// Springer overrides
+$card--padding-x: 0;
+$card--dark-background: #00285a;
+$card--dark-color: #fff;
+$card--title-font-weight: normal;
+$card--title-heading: h3;
+$card--border-width: 1px;
+$card--border: 1px solid color('action-dull', 0.3);
+$card--box-shadow: none;

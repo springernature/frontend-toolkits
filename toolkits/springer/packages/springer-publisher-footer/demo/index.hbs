@@ -1,0 +1,28 @@
+<div class="c-publisher-footer">
+	{{#with logo}}
+	<div class="c-publisher-footer__section c-publisher-footer__section--compact">
+		<div class="c-publisher-footer__container">
+			<img src="{{src}}" alt="{{alt}}" itemprop="logo" width="112" height="30" role="img">
+		</div>
+	</div>
+	{{/with}}
+	<div class="c-publisher-footer__section">
+		<div class="c-publisher-footer__container">
+			<div class="c-publisher-footer__menu">
+				{{#each categories}}
+				<div class="c-publisher-footer__menu-group">
+					<dl class="c-publisher-footer__list">
+						<dt class="c-publisher-footer__heading">{{title}}</dt>
+						{{#each links}}
+						<dd class="c-publisher-footer__item">
+							<a class="c-publisher-footer__link {{#if class}}{{class}}{{/if}}"
+								href="{{href}}">{{label}}</a>
+						</dd>
+						{{/each}}
+					</dl>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

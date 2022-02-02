@@ -1,0 +1,69 @@
+{
+	"withoutSearch": {
+		"logo": {
+			"srcUrl": "../img/logo.svg",
+			"alt": "Springer home",
+			"href": "/"
+		},
+		"promotedMenu": [
+			{
+				"label": "SpringerLink shop",
+				"href": "/path/to/1",
+				"iconUrl": "../../img/shop.svg#i-shop"
+			}
+		],
+		"navMenu": [
+			{
+				"label": "Subjects",
+				"href": "/path/to/subjects"
+			},
+			{
+				"label": "Services",
+				"href": "/path/to/services"
+			},
+			{
+				"label": "About",
+				"href": "/path/to/about"
+			}
+		]
+	},
+	"withSearch": {
+		"logo": {
+			"srcUrl": "../img/logo.svg",
+			"alt": "Springer home",
+			"href": "/"
+		},
+		"promotedMenu": [
+			{
+				"label": "SpringerLink shop",
+				"href": "/path/to/1",
+				"iconUrl": "../../img/shop.svg#i-shop"
+			}
+		],
+		"search": {
+			"action": "/search",
+			"inputLabel": "Search this site",
+			"inputName": "search",
+			"iconUrl": "../../img/search.svg#i-search",
+			"springerLinkUrl": "#",
+			"springerLinkText": "Search our products and science on SpringerLink"
+		},
+		"navMenu": [
+			{
+				"label": "Subjects",
+				"href": "/path/to/subjects"
+			},
+			{
+				"label": "Services",
+				"href": "/path/to/services"
+			},
+			{
+				"label": "About",
+				"href": "/path/to/about"
+			}
+		]
+	},
+	"dynamicPartials": {
+		"header": "./toolkits/springer/packages/springer-header/view/springer-header.hbs"
+	}
+}

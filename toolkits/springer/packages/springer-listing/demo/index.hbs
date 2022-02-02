@@ -1,0 +1,23 @@
+<h2>With authors listed</h2>
+
+{{#with listingsWithAuthors}}
+	{{>listings}}
+{{/with}}
+
+<h2>Without authors</h2>
+
+{{#with listingsWithoutAuthors}}
+	{{>listings}}
+{{/with}}
+
+<h2>With options</h2>
+
+{{#with listingsWithOptions}}
+	{{>listings}}
+{{/with}}
+
+<h3>With options and a heading level of 4</h3>
+
+{{#with listingsWithOptionsLevel4}}
+	{{>listings}}
+{{/with}}

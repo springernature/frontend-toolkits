@@ -7,7 +7,7 @@ html {
 	font-family: $context--font-family-sans;
 	height: 100%;
 	overflow-y: scroll;
-	font-size: 62.5%;
+	font-size: $context--font-size-default;
 	box-sizing: border-box;
 	color: greyscale($context--greyscale-min);
 	line-height: $context--line-height-base;
@@ -25,7 +25,7 @@ body {
 	max-width: 100%;
 	min-height: 100%;
 	background: $context--page-background;
-	font-size: 1.8em; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+	font-size: 1.125rem; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
 figure {

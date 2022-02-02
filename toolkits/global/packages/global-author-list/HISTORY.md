@@ -1,5 +1,20 @@
 # History
 
+## 5.0.0 (2021-12-03)
+    * BREAKING:
+        * Changes all typographic values to accomodate the root font size change.
+## 4.0.2 (2021-10-29)
+    * Update default text for buttonExpandedText config
+
+## 4.0.1 (2021-10-20)
+    * Update readme file with the hasButtonIcon config
+
+## 4.0.0 (2021-10-15)
+    * Add a Javascript layer to enhance the list with toggling functionality
+
+## 3.1.0 (2021-09-20)
+    * Demo created with consumable handlebars template
+
 ## 3.0.0 (2021-02-08)
 
     * BREAKING: switch to use new `brand-context` dependency

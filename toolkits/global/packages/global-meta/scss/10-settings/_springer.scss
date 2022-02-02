@@ -6,8 +6,9 @@
 // Default setting
 @import 'default';
 
-$meta--font-size: 1.4rem;
+$meta--font-size: .875rem;
 $meta--font-family: $context--font-family-sans;
-$meta--border: 1px solid greyscale(80);
 $meta--color: greyscale(40);
-$meta--margin-bottom: 4px;
+$meta--keyline-spacing: spacing(8);
+$meta--margin-bottom: spacing(4);
+$meta--margin-bottom-large: spacing(8);

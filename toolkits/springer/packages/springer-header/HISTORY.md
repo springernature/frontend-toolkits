@@ -1,5 +1,28 @@
 # History
 
+## 7.0.0 (2021-01-12)
+    * Optional search form and corresponding menu link
+
+## 6.0.1 (2021-11-30)
+    * BUG: images not rendering in demo
+
+## 6.0.0 (2021-11-09)
+    * BREAKING:
+        * Separated navigation into “promoted” (top right) and `<nav>`
+
+## 5.1.2 (2021-10-25)
+    * Update from `u-flex` to `u-display-flex`
+
+## 5.1.1 (2021-10-25)
+    * Icon prefixing
+    * Safer prop name for url
+
+## 5.1.0 (2021-09-10)
+    * Demo, including consumable handlebars template
+
+## 5.0.0 (2021-02-04)
+    * Add consumable hbs template
+
 ## 4.0.0 (2021-02-04)
     * Bump `brand-context` version
     * Fix reference to old interface-link mixin

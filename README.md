@@ -3,11 +3,15 @@
 [![Build Status][badge-build]][info-build]
 [![MIT licensed][badge-license]][info-license]
 [![Node version][badge-node]][info-node]
+[![SASS version][badge-sass]][info-sass]
 
 > Frontend Component Toolkits for the Elements Design System
 
+**Warning**: Publication of _new_ component packages is currently blocked. Updates to existing components are still permitted.
+
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
+	* [Using the correct `sass` version](#using-the-correct-sass-version)
 	* [Installing dependencies](#installing-dependencies)
 * [What is a toolkit?](#what-is-a-toolkit)
 * [Writing a package](#writing-a-package)
@@ -33,6 +37,10 @@ To try and ensure that installs are consistent, we all use the same version of `
 ### Using the correct `node` & `npm` versions
 
 Ensure you have [`nvm` installed](https://github.com/creationix/nvm/blob/master/README.md), then in the root of the repo run `nvm use`. This will read the version of `node` (and therefore `npm`) to use from the `.nvmrc` and ensure you are using the correct versions.
+
+### Using the correct `sass` version
+
+The components found within the toolkits are validated using the [`sass` package on NPM](https://www.npmjs.com/package/sass). You should use the same version within your application (currently `1.47.0`) build process.
 
 ### Installing dependencies
 
@@ -236,3 +244,5 @@ Copyright &copy; 2020, Springer Nature
 [badge-build]: https://badgen.net/travis/springernature/frontend-toolkits?icon=travis
 [info-node]: .nvmrc
 [badge-node]: https://img.shields.io/badge/node-lts/carbon-brightgreen.svg
+[info-sass]: #using-the-correct-sass-version
+[badge-sass]: https://img.shields.io/badge/SASS-1.47.0-green.svg

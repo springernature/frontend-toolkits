@@ -53,27 +53,41 @@ Import the styles into your main stylesheet
 ```scss
 // enhanced.scss
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
-@import '@springernature/brand-context/default/scss/30-mixins/arrow.scss';
+@import '@springernature/springernature-submission-header/scss/10-settings/icons';
+@import '@springernature/springernature-submission-header/scss/10-settings/spacing';
+@import '@springernature/brand-context/default/scss/10-settings/typography';
+@import '@springernature/brand-context/default/scss/10-settings/breakpoints';
+
+@import '@springernature/brand-context/default/scss/30-mixins/arrow';
 @import '@springernature/brand-context/springer/scss/30-mixins/links';
-@import '@springernature/springernature-submission-header/scss/50-components/core';
-@import '@springernature/brand-context/springernature/scss/60-utilities/display';
-@import '@springernature/brand-context/springernature/scss/60-utilities/flex';
+@import '@springernature/brand-context/default/scss/30-mixins/media-query';
 
 @import '@springernature/springernature-submission-header/scss/50-components/enhanced';
+
+@import '@springernature/brand-context/default/scss/60-utilities/display';
+@import '@springernature/brand-context/default/scss/60-utilities/flex';
+@import '@springernature/brand-context/default/scss/60-utilities/hiding';
 ```
 
 
 ### Javascript
-import the expander package and initialise
+import the expander package, and the popup package, and initialise
 
 ```javascript
 import {Expander} from '@springernature/global-expander/js/expander';
+import {Popup} from '@springernature/global-popup/js/popup';
 
 const abstractExpanderTrigger = document.querySelector('[data-component-abstract-expander]');
 const abstractExpanderTarget = document.querySelector('[data-component-abstract-expander-target]');
+const triggers = Array.from(document.querySelectorAll('[data-component-author-popup-trigger]'));
 
 if (abstractExpanderTarget && abstractExpanderTrigger) {
     const abstractExpander = new Expander(abstractExpanderTrigger, abstractExpanderTarget, {});
     abstractExpander.init();
 }
+
+triggers.forEach(trigger => {
+    const target = trigger.getAttribute('data-popup-target');
+    new Popup(trigger, target, {});
+});
 ```

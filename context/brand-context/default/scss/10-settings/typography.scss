@@ -13,22 +13,22 @@ $context--font-weight-bold: 700;
 $context--line-height-base: 1.61803398875; // golden ratio
 $context--line-height-tight: 1.4;
 
-// Define your base size in EMs
-// http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
-$context--font-size-base: 1.8em;
+$context--font-size-default: 100%;
 
-$context--font-size-interface: 16px;
+$context--font-size-base: 1.125rem;
 
-$context--font-size-sm: 16px;
-$context--font-size-md: 18px;
-$context--font-size-lg: 24px;
+$context--font-size-interface: 1rem;
+
+$context--font-size-sm: 1rem;
+$context--font-size-md: 1.125rem;
+$context--font-size-lg: 1.5rem;
 
 // Headings
-$context--font-size-h1: 3.2rem;
-$context--font-size-h2: 2.4rem;
-$context--font-size-h3: 2rem;
-$context--font-size-h4: 1.8rem;
-$context--font-size-h5: 1.6rem;
+$context--font-size-h1: 2rem;
+$context--font-size-h2: 1.5rem;
+$context--font-size-h3: 1.25rem;
+$context--font-size-h4: 1.125rem;
+$context--font-size-h5: 1rem;
 
 $context--line-height-base: 1.61803398875; // golden ratio
 $context--line-height-tight: 1.4;

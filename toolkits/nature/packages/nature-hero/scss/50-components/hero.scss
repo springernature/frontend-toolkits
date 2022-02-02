@@ -2,9 +2,11 @@
 	position: relative;
 	color: $hero--color;
 
-	@include media-query('md') {
-		display: flex;
-		flex-direction: row-reverse;
+	@supports (display: flex) {
+		@include media-query('md') {
+			display: flex;
+			flex-direction: row-reverse;
+		}
 	}
 }
 
@@ -55,8 +57,10 @@
 	background-color: $hero--copy-background-color;
 	padding: $hero--copy-padding;
 
-	@include media-query('md') {
-		max-width: $hero--copy-max-width;
+	@supports (display: flex) {
+		@include media-query('md') {
+			max-width: $hero--copy-max-width;
+		}
 	}
 
 	@include media-query('lg') {

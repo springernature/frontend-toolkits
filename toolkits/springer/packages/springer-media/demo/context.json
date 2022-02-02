@@ -1,0 +1,33 @@
+{
+  "lhs": {
+    "image": {
+      "left": {
+        "src": "./img/sample.jpg",
+        "alt": "Descriptive alternative txt for left image"
+      }
+    },
+    "title": "Example title",
+    "mediaUrl": "/path/from/teaser",
+    "level": "2",
+    "text": "This example shows the image on the left."
+  },
+  "rhs": {
+    "image": {
+      "right": {
+        "src": "./img/sample.jpg",
+        "alt": "Descriptive alternative txt for right image"
+      }
+    },
+    "title": "Example title",
+    "mediaUrl": "/path/from/teaser",
+    "level": "2",
+    "text": "This example shows the image on the right."
+  },
+  "title": "Example title",
+  "mediaUrl": "/path/from/teaser",
+  "level": "2",
+  "text": "This example shows with no image present.",
+  "dynamicPartials": {
+    "media": "./toolkits/springer/packages/springer-media/view/media.hbs"
+  }
+}

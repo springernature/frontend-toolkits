@@ -1,5 +1,14 @@
 # History
 
+## 2.0.1 (2022-01-13)
+    * README updated.
+
+## 2.0.0 (2021-12-07)
+    * BREAKING: Fixes some typographic values to accomodate the root font size change.
+
+## 1.1.1 (2021-09-21)
+    * Keep hero image above text if flexbox not supported
+
 ## 1.1.0 (2021-04-19)
     * Bump brand context version
     * Adjust hero title to use fluid typography

@@ -79,7 +79,7 @@ dropdown({
 </div>
 ```
 
-#### SASS
+#### Sass
 
 Add styling for the Dropdown by incorporating the settings and component into your application `scss` endpoint, for example:
 

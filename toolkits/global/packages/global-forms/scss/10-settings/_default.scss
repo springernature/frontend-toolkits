@@ -1,3 +1,4 @@
+@use 'sass:math';
 /**
  * @springernature/global-forms
  * Default skin settings
@@ -11,7 +12,7 @@ $global-form--background-color: #fff;
 $global-form--background-color-disabled: #f3f2ef;
 $global-form--border-color-disabled:  #c7c4bf;
 $global-form--font-size: 18px;
-$global-form--label-font-size: $global-form--font-size / 1.3;
+$global-form--label-font-size: math.div($global-form--font-size, 1.3);
 $global-form--label-spacing: 10px;
 $global-form--color: #000;
 $global-form--color-required: #c64127;

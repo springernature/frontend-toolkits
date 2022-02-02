@@ -1,5 +1,6 @@
 {
   "scope": "springernature",
+  "blockNewPackages": true,
   "folders": {
     "scss": [
       "scss",
@@ -59,7 +60,12 @@
       "hbs",
       "scss",
       "css",
-      "md"
+      "md",
+      "jpg",
+      "jpeg",
+      "gif",
+      "svg",
+      "png"
     ]
   },
   "CSSDirectoryStructure": {
