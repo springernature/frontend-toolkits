@@ -38,7 +38,7 @@
     "validate:springernature": "sn-package-validate -t springernature",
     "tokens:generate": "node ./design-tokens/build.js",
     "tokens:clean": "npx rimraf **/00-tokens/",
-    "clean": "npx rimraf node_modules/"
+    "node_modules:clean": "npx rimraf node_modules/"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
@@ -49,7 +49,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
-    "@springernature/frontend-package-manager": "^7.0.0",
+    "@springernature/frontend-package-manager": "^8.1.0",
     "@springernature/sasslint-config": "^1.2.1",
     "@springernature/util-eslint-runner": "^0.0.3",
     "@springernature/util-sass-compiler": "^0.1.0",
