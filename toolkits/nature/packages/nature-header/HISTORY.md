@@ -1,5 +1,8 @@
 # History
 
+## 7.1.0 (2022-02-02)
+    * FEATURE: add view template and demo
+
 ## 7.0.2 (2022-01-13)
     * Broken links in README fixed.
 

@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2022-02-02)
+    * FEATURE: add view template and demo
+
 ## 1.0.2 (2022-01-07)
     * Fix broken images in README
 
