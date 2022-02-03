@@ -1,40 +1,47 @@
-.c-user-details {
-	.js & {
-		height: 30px;
+.js .c-user-details {
+	height: 30px;
 
-		&__open {
-			@include arrow(map-get($context--colors, medium-blue), down, 4px);
+	&__open {
+		@include arrow(map-get($context--colors, medium-blue), down, 4px);
 
-			margin-left: 10px;
-			right: 0;
-			color: map-get($context--colors, medium-blue);
+		margin-left: 10px;
+		right: 0;
+		color: map-get($context--colors, medium-blue);
 
-			&.open {
-				@include arrow(map-get($context--colors, medium-blue), up, 4px);
-			}
+		&.open {
+			@include arrow(map-get($context--colors, medium-blue), up, 4px);
 		}
+	}
 
-		&__content {
-			position: absolute;
-			z-index: $zindex-level-highest;
-			height: auto;
-			padding: 5px 0;
-			text-align: left;
-			box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.3);
+	&__content {
+		position: absolute;
+		z-index: $zindex-level-highest;
+		height: auto;
+		padding: 5px 0;
+		text-align: left;
+		box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	&__content-item {
+		padding: 0 12px;
+		font-size: .75rem;
+	}
+
+	&__link {
+		padding: 7px 12px;
+
+		&:hover {
+			background-color: map-get($context--colors, universal-blue);
+			color: map-get($context--colors, white);
 		}
+	}
 
-		&__content-item {
-			padding: 0 12px;
-			font-size: .75rem;
-		}
+	&__links {
+		border-top: 1px solid $separator-color;
+		padding: 5px 0 0 0;
+	}
 
-		&__link {
-			padding: 7px 12px;
-
-			&:hover {
-				background-color: map-get($context--colors, universal-blue);
-				color: map-get($context--colors, white);
-			}
-		}
+	&__last-name {
+		padding-right: 10px;
 	}
 }

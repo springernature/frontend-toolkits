@@ -1,5 +1,7 @@
 # History
 
+## 4.0.1 (2022-02-03)
+	* BUG fix - change non-js styling - remove hover color of logout link
 ## 4.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.
