@@ -1,5 +1,8 @@
 # History
 
+## 8.1.0 (2022-02-02)
+    * Darker border color
+
 ## 8.0.0 (2021-10-28)
     * Now accepts any content, not just a link
 
