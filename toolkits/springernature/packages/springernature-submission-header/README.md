@@ -35,7 +35,7 @@ submission: {
     }
 }
 
-The template included is handlebars, but it is not required. It also assumes you have a `defaultDateFormat` helper available to format your date as `DD Mmm YYYY`, but this need not necessarily be handled in the template.
+The template included is handlebars, but it is not required. It also assumes you have a `defaultDateFormat` helper available to format your date as `DD Mmm YYYY`, and an `invalidEmailAddress` helper, but these need not necessarily be handled in the template.
 
 This component requires the global expander component. It also requires the arrow mixin,  and some utilies and settings from the brand context (see below).
 
@@ -67,6 +67,8 @@ Import the styles into your main stylesheet
 @import '@springernature/brand-context/default/scss/60-utilities/display';
 @import '@springernature/brand-context/default/scss/60-utilities/flex';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding';
+
+The component CSS specifies several icons, the email icon, and the warning icon, both of  which can be found in the brand context. The invalid email icon is the email icon with a red fill.
 ```
 
 
