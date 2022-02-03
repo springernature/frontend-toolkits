@@ -1,0 +1,6 @@
+{
+  "text": "Heading Text",  
+  "dynamicPartials": {
+    "nature-section-heading": "./toolkits/nature/packages/nature-section-heading/view/section-heading.hbs"
+  }
+}
