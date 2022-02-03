@@ -1,4 +1,5 @@
 .c-submission-details-header {
+	background-color: #fff;
 	font-family: $context--font-family-sans;
 	font-size: 0.75em;
 	margin: 0 0 20px 0;
@@ -21,7 +22,7 @@
 		}
 	}
 
-	&__row-item {
+	&__meta-data {
 		margin: 0 10px 0 0;
 		color: map-get($context--colors, grey-dark2);
 
@@ -33,39 +34,34 @@
 		}
 	}
 
-	&__authors {
-		color: map-get($context--colors, black);
-		list-style-type: none;
-		padding: 0;
-		margin-bottom: 20px;
-		overflow: hidden;
-	}
-
 	&__author {
 		@include link-like();
 		text-decoration: none;
 		color: map-get($context--colors, medium-blue);
-
 		display: none;
 
 		.js & {
 			display: inline-block;
+			padding: 0;
+			position: relative;
 
 			&.corresponding {
-				margin-right: 20px;
+				padding: 0 22px 0 0;
 
 				&:after {
-					content: ' ';
-					display: inline-block;
-					position: absolute;
-					background: $submission-header--author-icon-background;
-					background-position: -13px 1px;
-					background-size: $submission-header--author-background-size;
-					padding-left: 20px;
-					height: 14px;
-					margin-left: 3px;
+					@extend .with-email-icon;
 				}
 			}
+
+			&.corresponding.invalid {
+				&:after {
+					@extend .with-invalid-email-icon;
+				}
+			}
+		}
+
+		&.invalid {
+			color: $red;
 		}
 	}
 
@@ -76,20 +72,13 @@
 		padding-right: 7px;
 	}
 
-	&__authors-email {
+	&__author-email {
 		font-size: 0.75rem;
+		position: relative;
 
 		&.corresponding {
 			&:after {
-				content: '';
-				display: inline-block;
-				background: $submission-header--author-icon-background;
-				background-position: 1px 1px;
-				background-size: cover;
-				padding-left: $submission-header--author-background-size;
-				height: 12px;
-				margin-left: 3px;
-				width: 0;
+				@extend .with-email-icon;
 			}
 		}
 	}
@@ -136,7 +125,7 @@
 			&:after {
 				content: ' ';
 				width: $submission-header--author-background-size;
-				height: 17px;
+				height: 9px;
 				background: url("/images/box-tail.png") no-repeat;
 				background-repeat: repeat;
 				z-index: 999;
@@ -153,10 +142,7 @@
 			text-indent: 100%;
 			white-space: nowrap;
 			background-color: #666;
-			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEuNjE4IDEwLjYzbDMuNjk3LTMuNjk3IDMuNjk3IDMuNjk3IDEuNjE4LTEuNjE4LTMuNjk3LTMuNjk3IDMuNjk3LTMuNjk3TDkuMDEyIDAgNS4zMTUgMy42OTcgMS42MTggMCAwIDEuNjE4bDMuNjk3IDMuNjk3TDAgOS4wMTJ6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+);
-			background-position: center;
-			background-size: $submission-header--popup-close-btn-background-size;
-			background-repeat: no-repeat;
+			background: $submission-header--close-icon;
 			border: 0;
 			border-radius: 50px;
 			color: #fff;
@@ -169,7 +155,6 @@
 			top: 15px;
 
 			&:hover {
-				background-color: darken(#666, 20%);
 				text-decoration: none;
 			}
 		}
@@ -254,4 +239,20 @@ input[type="checkbox"]:checked + .c-submission-details-header__abstract {
 	*.position-right {
 		margin-left: 10px;
 	}
+}
+
+.with-email-icon,
+.with-invalid-email-icon {
+	content: ' ';
+	display: inline-block;
+	background: $submission-header--corresponding-author-icon;
+	padding-left: 20px;
+	height: 14px;
+	margin-left: 4px;
+	position: absolute;
+	top: 0;
+}
+
+.with-invalid-email-icon {
+	background: $submission-header--corresponding-author-icon-invalid;
 }

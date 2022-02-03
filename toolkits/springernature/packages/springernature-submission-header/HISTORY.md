@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2022-19-01)
+	* Adds some styling for invalid email addresses
+
 ## 1.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.
