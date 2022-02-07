@@ -2,9 +2,9 @@
 
 ## 20.0.0 (2022-01-14)
     * BREAKING
-        * Introduces updates to make use of Dart Sass as the compiler for the frontend.
-        * Updates default color function to use Dart Sass.
-        * Updates default typography to use Dart Sass.
+        * Switch SASS compiler from Node Sass to Dart Sass
+        * Updates default color function to use Dart Sass
+        * Updates default typography to use Dart Sass
         
 ## 19.0.0 (2022-01-13)
     * BREAKING
