@@ -7,6 +7,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
+				"href": "#",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
@@ -15,6 +16,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Consectetur adipiscing",
+				"href": "#",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
@@ -23,6 +25,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
+				"href": "#",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
@@ -32,119 +35,98 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
+				"href": "#",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
 	},
-	"cardsLevel4": {
-		"level": "4",
+	"cardsNoShape": {
 		"cards": [
 			{
+				"noShape": true,
 				"image": {
-					"src": "https://picsum.photos/510/700",
-					"alt": "descriptive alternative text"
-				},
-				"title": "Consectetur adipiscing",
-				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
-			},
-			{
-				"image": {
-					"src": "https://picsum.photos/630/410",
+					"src": "https://picsum.photos/600/400",
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
+				"href": "#",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
+				"noShape": true,
 				"image": {
-					"src": "https://picsum.photos/890/440",
+					"src": "https://picsum.photos/500/500",
+					"alt": "descriptive alternative text"
+				},
+				"title": "Consectetur adipiscing",
+				"href": "#",
+				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
+			},
+			{
+				"noShape": true,
+				"image": {
+					"src": "https://picsum.photos/800/600",
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
+				"href": "#",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
+				"noShape": true,
 				"noBlockLink": true,
 				"image": {
-					"src": "https://picsum.photos/600/605",
+					"src": "https://picsum.photos/400/300",
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
+				"href": "#",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
 	},
-	"cardsSquare": {
-		"aspectRatio": "1 / 1",
+	"cardsDark": {
 		"cards": [
 			{
+				"dark": true,
 				"image": {
-					"src": "https://picsum.photos/620/450",
+					"src": "https://picsum.photos/600/400",
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
+				"href": "#",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
+				"dark": true,
 				"image": {
-					"src": "https://picsum.photos/400/500",
+					"src": "https://picsum.photos/500/500",
 					"alt": "descriptive alternative text"
 				},
 				"title": "Consectetur adipiscing",
+				"href": "#",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
+				"dark": true,
 				"image": {
-					"src": "https://picsum.photos/850/650",
+					"src": "https://picsum.photos/800/600",
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
+				"href": "#",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
+				"dark": true,
+				"noBlockLink": true,
 				"image": {
-					"src": "https://picsum.photos/420/320",
+					"src": "https://picsum.photos/400/300",
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
-				"summary": "Curabitur ac nisl rhoncus orci facilisis vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-			}
-		]
-	},
-	"cardsPortrait": {
-		"portrait": true,
-		"cards": [
-			{
-				"image": {
-					"src": "./img/portrait1.jpeg",
-					"alt": "descriptive alternative text"
-				},
-				"title": "Lorem ipsum dolor",
-				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
-			},
-			{
-				"image": {
-					"src": "./img/portrait2.jpeg",
-					"alt": "descriptive alternative text"
-				},
-				"title": "Consectetur adipiscing",
-				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
-			},
-			{
-				"image": {
-					"src": "./img/portrait3.jpeg",
-					"alt": "descriptive alternative text"
-				},
-				"title": "Lectus et velit auctor pulvinar",
-				"summary": "Proin facilisis viverra justo. Quisque pretium dui vitae feugiat imperdiet. Maecenas id mollis mauris. Morbi placerat neque eu ante mollis, id ornare neque sagittis."
-			},
-			{
-				"image": {
-					"src": "./img/portrait4_double.jpeg",
-					"alt": "descriptive alternative text"
-				},
-				"title": "Etiam vel augue laoreet",
-				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
+				"href": "#",
+				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
 	},
