@@ -42,6 +42,7 @@ Import the core styles into your main stylesheet
 ```scss
 // core.scss
 @import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
+@import '@springernature/brand-context/default/scss/30-mixins/focus';
 @import '@springernature/springernature-user-details/scss/10-settings/colours';
 @import '@springernature/springernature-user-details/scss/10-settings/typography';
 @import '@springernature/springernature-user-details/scss/50-components/core';
