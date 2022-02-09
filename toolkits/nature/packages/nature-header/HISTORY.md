@@ -1,5 +1,8 @@
 # History
 
+## 7.1.1 (2022-02-09)
+    * Update images in README
+
 ## 7.1.0 (2022-02-02)
     * FEATURE: add view template and demo
 
