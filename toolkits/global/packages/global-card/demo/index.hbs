@@ -31,43 +31,31 @@
 <ul class="demo-grid">
 {{#with cardsDefault}}
 	{{#each cards}}
-		{{>card parent=..}}
+		{{>card}}
 	{{/each}}
 {{/with}}
 </ul>
 
-<h3>Subsection with <code>"level": "4"</code></h3>
+<h2>No shape (border, background, box-shadow)</h2>
 
-The above heading is an <code>&lt;h3></code>, meaning <code>"level": "4"</code> should be set for the cards’ titles.
+<p>With the <code>noShape</code> Boolean applied to each card.</p>
 
 <ul class="demo-grid">
-{{#with cardsLevel4}}
+{{#with cardsNoShape}}
 	{{#each cards}}
-		{{>card parent=..}}
+		{{>card}}
 	{{/each}}
 {{/with}}
 </ul>
 
-<h2>1/1 aspect ratio</h2>
+<h2>Dark mode</h2>
 
-<p>With <code>"aspectRatio": "1 / 1"</code> set.</p>
-
-<ul class="demo-grid">
-{{#with cardsSquare}}
-	{{#each cards}}
-		{{>card parent=..}}
-	{{/each}}
-{{/with}}
-</ul>
-
-<h2>Portraits</h2>
-
-<p>With <code>"portrait": true</code> set.</p>
+<p>With the <code>dark</code> Boolean applied to each card.</p>
 
 <ul class="demo-grid">
-{{#with cardsPortrait}}
+{{#with cardsDark}}
 	{{#each cards}}
-		{{>card parent =..}}
+		{{>card}}
 	{{/each}}
 {{/with}}
 </ul>

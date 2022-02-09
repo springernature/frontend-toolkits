@@ -1,5 +1,12 @@
 # History
 
+## 8.0.0
+    * BREAKING:
+        * Some functionality has been removed since it only addressed a special case on springer.com
+        * Parent scope usage removed. Now all settings are added to individual cards. This makes it easier to consume the templates and increases flexibility
+        * `href` was not templated correctly (hard-coded)
+    * Dark mode now supported in the template/data, with adjustments to color for contrast
+
 ## 7.0.1
     * wraps the aspect ratio variable declarion with Sass interpolation to work with Dart Sass
 ## 7.0.0 (2021-12-29)

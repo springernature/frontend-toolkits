@@ -1,19 +1,16 @@
-@use 'sass:math';
 /**
  * Card
  * Default branding for component
  */
 
-$card--gutter: 16px;
 $card--border: none;
 $card--box-shadow: none;
 $card--font-family: inherit;
 $card--font-size: 14px;
-$card--spacing: math.div($card--gutter, 2);
-$card--padding: $card--gutter;
+$card--spacing: 8px;
+$card--padding: 16px;
 $card--padding-x: 0;
 $card--background: transparent;
-$card--title-spacing: $card--spacing;
 $card--title-font-weight: $context--font-weight-normal;
 $card--title-heading: h4;
 $card--title-letter-spacing: normal;
@@ -24,7 +21,6 @@ $card--major-font-size: 1rem;
 $card--major-title-heading: h2;
 
 // --dark
-$card--dark-background: slategrey;
-$card--dark-color: lightgrey;
+$card--dark-background: color('universal-blue');
+$card--dark-color: #fff;
 $card--dark-title-color: white;
-$card--dark-body-padding: $card--gutter;
