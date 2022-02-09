@@ -1,5 +1,6 @@
 .js .c-user-details {
 	height: 30px;
+	font-family: $context--font-family-sans;
 
 	&__open {
 		@include arrow(map-get($context--colors, medium-blue), down, 4px);

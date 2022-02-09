@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2022-02-08)
+    * Improve button focus state to match other elements that could be focused
+    * Add font family to the component
 ## 4.0.1 (2022-02-03)
 	* BUG fix - change non-js styling - remove hover color of logout link
 ## 4.0.0 (2021-12-03)

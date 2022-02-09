@@ -10,6 +10,7 @@
 	}
 
 	&__open {
+		@include u-focus-outline;
 		text-decoration: none;
 		vertical-align: baseline;
 		background: none;
