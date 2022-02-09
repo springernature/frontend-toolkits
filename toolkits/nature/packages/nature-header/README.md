@@ -8,7 +8,7 @@ The Nature Header component includes:
 - a list of common actions, like view all journals, search and login - which appear in the top right
 - a vertical list of dropdown menu  links - which appear underneath the logo
 
-![The Nature Header from the Nature.com homepage. It shows the Nature logo, dropdown links, and options to view all journals, search, and login.](https://user-images.githubusercontent.com/27411864/149321441-0042c5f5-9c1d-4b24-8998-41ae52574a23.png)
+![The Nature Header from the Nature.com homepage. It shows the Nature logo, dropdown links, and options to view all journals, search, and login.](https://user-images.githubusercontent.com/15365576/153220110-5c03529a-ddd0-430d-83f1-217ff38c3336.png)
 
 ## When to use this component
 
@@ -28,7 +28,7 @@ Use sentence case, not title case, for the text of each menu label.
 
 In some cases, you may want to use a keyline to visually separate navigation menu items. For example, to separate social media links from the other navigation links, like this:
 
-![A dropdown menu titled "Publish with us". The menu has 3 items. The last item has a keyline which visually separates it from the 2 items above it.](https://user-images.githubusercontent.com/27411864/149321067-6a0b513a-2ce0-4427-ac75-9229383310bd.png)
+![A dropdown menu titled "Publish with us". The menu has 3 items. The last item has a keyline which visually separates it from the 2 items above it.](https://user-images.githubusercontent.com/15365576/153220305-8f08f2dc-d040-4471-bb0b-bd2425ed4c29.png)
 
 ## Installation
 
@@ -52,8 +52,6 @@ Import the installed component code in your `scss` file:
 @import '@springernature/brand-context/default/scss/60-utilities/lists.scss';
 @import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
-
-> **NOTE** The component require the use of the utility classes shown above
 
 Then import the JavaScript as follows: 
 
