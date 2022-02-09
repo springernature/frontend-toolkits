@@ -1,6 +1,10 @@
 # History
 
-## 8.0.0
+## 8.1.0 (2022-02-09)
+    * Option not to have images
+    * Removed universal color from default since it is not available universally yet
+
+## 8.0.0 (2022-02-08)
     * BREAKING:
         * Some functionality has been removed since it only addressed a special case on springer.com
         * Parent scope usage removed. Now all settings are added to individual cards. This makes it easier to consume the templates and increases flexibility
