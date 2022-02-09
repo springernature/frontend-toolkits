@@ -1,9 +1,11 @@
 <div class="c-card{{#if noShape}} c-card--no-shape{{/if}}{{#if dark}} c-card--dark{{/if}}">
+	{{#if image}}
 	<div class="c-card__image"{{#if aspectRatio}} style="--card--image-aspect-ratio: {{aspectRatio}}"{{/if}}>
 		{{#with image}}
 		<img src="{{src}}" alt="{{alt}}">
 		{{/with}}
 	</div>
+	{{/if}}
     <div class="c-card__body">
 		<h3 class="c-card__title"{{#if level}} aria-level="{{level}}"{{/if}}>
 			{{#if href}}
