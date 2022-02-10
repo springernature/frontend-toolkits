@@ -7,7 +7,7 @@
 		<style>
 			@charset "UTF-8";
 /**
- * Basic
+ * Core
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
@@ -181,7 +181,9 @@ h1 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4,
+h5,
+h6 {
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -192,17 +194,11 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Colors
- * Maps for color values & greyscale settings
+ * Colour palette
  *
  */
 /**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Nature
+ * Color and gray scales
  *
  */
 /**
@@ -211,50 +207,119 @@ h6, h5, h4 {
  *
  */
 /**
- * Global
- * Main brand settings
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
   font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-size: min(max(1.75rem, 4vw), 2rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .c-card--major .c-card__title, h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card--major .c-card__title a, h2 a {
+  text-decoration: none;
+}
+.c-card--major .c-card__title a.active, h2 a.active, .c-card--major .c-card__title a:active, h2 a:active, .c-card--major .c-card__title a.hover, h2 a.hover, .c-card--major .c-card__title a:hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .c-card__title, h3 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card__title a, h3 a {
+  text-decoration: none;
+}
+.c-card__title a.active, h3 a.active, .c-card__title a:active, h3 a:active, .c-card__title a.hover, h3 a.hover, .c-card__title a:hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
-h6, h5, h4 {
+h4,
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: Georgia, Palatino, serif;
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+}
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h4 a.active,
+h5 a.active,
+h6 a.active, h4 a:active,
+h5 a:active,
+h6 a:active, h4 a.hover,
+h5 a.hover,
+h6 a.hover, h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 /* =========================================================================
@@ -713,12 +778,13 @@ template {
  * Some default CSS styles
  */
 body {
+  font-size: 0.813rem;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #006699;
+  color: #069;
 }
 
 a:hover,
@@ -739,7 +805,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.063rem;
+  font-size: 1.0625rem;
 }
 
 h4 {
@@ -962,7 +1028,9 @@ h1 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4,
+h5,
+h6 {
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -973,17 +1041,11 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Colors
- * Maps for color values & greyscale settings
+ * Colour palette
  *
  */
 /**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Nature
+ * Color and gray scales
  *
  */
 /**
@@ -992,73 +1054,145 @@ h6, h5, h4 {
  *
  */
 /**
- * Global
- * Main brand settings
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
   font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-size: min(max(1.75rem, 4vw), 2rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .c-card--major .c-card__title, h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card--major .c-card__title a, h2 a {
+  text-decoration: none;
+}
+.c-card--major .c-card__title a.active, h2 a.active, .c-card--major .c-card__title a:active, h2 a:active, .c-card--major .c-card__title a.hover, h2 a.hover, .c-card--major .c-card__title a:hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 .c-card__title, h3 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card__title a, h3 a {
+  text-decoration: none;
+}
+.c-card__title a.active, h3 a.active, .c-card__title a:active, h3 a:active, .c-card__title a.hover, h3 a.hover, .c-card__title a:hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4,
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
   font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
-}
-
-h6, h5, h4 {
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: Georgia, Palatino, serif;
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+}
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h4 a.active,
+h5 a.active,
+h6 a.active, h4 a:active,
+h5 a:active,
+h6 a:active, h4 a.hover,
+h5 a.hover,
+h6 a.hover, h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
-/**
- * Forms
- * Default form styles
- */
-fieldset {
-  border: 0;
+button {
+  line-height: inherit;
 }
 
-input:focus,
 button:focus,
-select:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 4px solid #ffcc00;
 }
 
-button:active {
-  outline: 0;
+input[type=file]:focus-within {
+  outline: 4px solid #ffcc00;
 }
 
-input + label {
-  padding-left: 0.5em;
+button:disabled:focus,
+input:disabled:focus,
+select:disabled:focus,
+textarea:disabled:focus {
+  outline: none;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 /*
@@ -1066,16 +1200,29 @@ input + label {
  * Universal layout styles
  */
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   height: 100%;
   overflow-y: scroll;
+  font-size: 100%;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.6180339888;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  max-width: 100%;
   min-height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.76;
-  color: #222222;
-  background: #eeeeee;
+  background: #fcfcfc;
+  font-size: 1.125rem;
+  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
 figure {
@@ -1096,20 +1243,8 @@ input,
 button,
 textarea,
 p,
-blockquote,
 th,
 td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
   margin: 0;
   padding: 0;
 }
@@ -1120,143 +1255,89 @@ abbr[title] {
 
 [contenteditable]:focus,
 [tabindex="0"]:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
+  outline: 4px solid #ffcc00;
 }
 
-/**
- * Links
- * Basic link styles
- */
 a {
-  text-decoration: none;
-  vertical-align: baseline;
-  color: #006699;
-}
-a:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-a:hover {
+  color: #004b83;
   text-decoration: underline;
-  -webkit-text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
 }
-
-a:active {
-  outline: 0;
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #0061a9;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #003b84;
+  text-decoration: none;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+a > img {
+  vertical-align: middle;
 }
 
-/**
- * Lists
- * Default list styles
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/**
- * Tables
- * Default table styles
- */
 table {
+  border: 1px solid #a6a6a6;
   width: 100%;
-  margin-bottom: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 32px;
 }
 
 th,
 td {
-  padding: 4px 7px;
-  border-right: 1px solid #d5d5d5;
+  font-size: 1rem;
+  border: 1px solid #a6a6a6;
+  padding: 0.3em 0.6em;
+  vertical-align: top;
+}
+
+th {
+  background: #e6e6e6;
   text-align: left;
-  line-height: 1.15;
 }
 
-th {
-  vertical-align: top;
-}
-
-td {
-  vertical-align: middle;
-}
-
-th[valign=top] {
-  vertical-align: top;
-}
-
-th[valign=middle] {
-  vertical-align: middle;
-}
-
-thead tr {
-  border-bottom: 1px solid #d5d5d5;
-}
-
-tbody tr {
-  border-top: 1px solid #d5d5d5;
-}
-
-tbody tr:first-child {
-  border-top: 0;
-}
-
-th {
-  background: #eeeeee;
-}
-
-tfoot tr {
-  border-top: 2px solid #d5d5d5;
-}
-
-tfoot td {
-  font-weight: bold;
-}
-
-/**
- * Typography
- * Set base font size
- */
-html {
-  font-size: 100%;
-}
-
-body {
-  font-size: 1.125rem;
-}
-
-/**
- * Typographic
- * Standard text and heading formatting
- */
-/*
- * Default spacing
- * default margin 28px to match line height
- * this is used for mainting vertical rhythm on the page
- */
-p,
-ul,
-ol {
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 28px;
 }
 
-/*
- * Headings
- */
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
 p:empty {
   display: none;
 }
 
+cite {
+  font-style: normal;
+}
+
 /**
  * Card
- * Nature branding for component
+ * Springer branding for component
  */
 /**
  * Card
@@ -1274,7 +1355,7 @@ p:empty {
   min-width: 0;
   padding: 0;
   position: relative;
-  border: none;
+  border: 1px solid #cccccc;
   box-shadow: none;
 }
 
@@ -1325,9 +1406,10 @@ p:empty {
 }
 
 .c-card__title {
+  font-weight: normal;
   margin-top: 0;
   margin-bottom: 8px;
-  letter-spacing: -0.01875rem;
+  letter-spacing: normal;
 }
 
 .c-card__summary {
@@ -1356,8 +1438,8 @@ p:empty {
   font-size: 1rem;
 }
 .c-card--dark {
-  background-color: #29303c;
-  color: #e3e4e5;
+  background-color: #173962;
+  color: #fff;
   border-width: 0;
 }
 .c-card--dark .c-card__title {
@@ -1505,6 +1587,96 @@ p:empty {
 			<div class="c-card__image">
 				<img src="https://picsum.photos/400/300" alt="descriptive alternative text">
 			</div>
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link c-card__link--no-block-link" href="#">
+					No Block Link
+					</a>
+				</h3>
+		        <div class="c-card__summary">Curabitur ac nisl <a href="#">rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+		    </div>
+		</div>
+</ul>
+
+<h2>No images</h2>
+
+<ul class="demo-grid">
+		<div class="c-card">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Lorem ipsum dolor
+					</a>
+				</h3>
+		        <div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
+		    </div>
+		</div>
+		<div class="c-card">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Consectetur adipiscing
+					</a>
+				</h3>
+		        <div class="c-card__summary">Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis.</div>
+		    </div>
+		</div>
+		<div class="c-card">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Lectus et velit auctor pulvinar
+					</a>
+				</h3>
+		        <div class="c-card__summary">Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim.</div>
+		    </div>
+		</div>
+		<div class="c-card">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link c-card__link--no-block-link" href="#">
+					No Block Link
+					</a>
+				</h3>
+		        <div class="c-card__summary">Curabitur ac nisl <a href="#">rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+		    </div>
+		</div>
+</ul>
+
+<h2>No images or shape</h2>
+
+<ul class="demo-grid">
+		<div class="c-card c-card--no-shape">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Lorem ipsum dolor
+					</a>
+				</h3>
+		        <div class="c-card__summary">Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci.</div>
+		    </div>
+		</div>
+		<div class="c-card c-card--no-shape">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Consectetur adipiscing
+					</a>
+				</h3>
+		        <div class="c-card__summary">Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis.</div>
+		    </div>
+		</div>
+		<div class="c-card c-card--no-shape">
+		    <div class="c-card__body">
+				<h3 class="c-card__title">
+					<a class="c-card__link" href="#">
+					Lectus et velit auctor pulvinar
+					</a>
+				</h3>
+		        <div class="c-card__summary">Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim.</div>
+		    </div>
+		</div>
+		<div class="c-card c-card--no-shape">
 		    <div class="c-card__body">
 				<h3 class="c-card__title">
 					<a class="c-card__link c-card__link--no-block-link" href="#">
