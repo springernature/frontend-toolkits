@@ -2,9 +2,9 @@
   "flushMdMax": true,
   "picture": {
     "type": "image/webp",
-    "srcset": "http://placehold.it/735x400?as=webp 450w, http://placehold.it/735x400?as=webp 735w",
+    "srcset": "../img/hero.webp 450w, ../img/hero.webp 735w",
     "sizes": "(max-width: 1024px) 450px, (max-width: 100vw) 735px 735px",
-    "src": "http://placehold.it/735x400",
+    "src": "./img/hero.webp",
     "alt": "placeholder image"
   },
   "title": {
