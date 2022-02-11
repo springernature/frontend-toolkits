@@ -1,28 +1,8 @@
-<div class="c-sort-by">
-	<a href="#sort-by" class="c-sort-by__button" data-sort-by-trigger data-track="click" data-track-action="sort by filter" data-track-label="button" aria-expanded="false">
-		<span>Sort by {{#each sortOrderFilter as |order|}}{{#if order.checked}}{{{order.label}}}{{/if}}{{/each}}</span>
-		<svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-			<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-		</svg>
-	</a>
-	<div id="sort-by" data-sort-by-target class="c-sort-by__menu u-js-hide">
-		<ul class="c-sort-by__list">
-			{{#each sortOrderFilter as |listElement|}}
-			<li class="c-sort-by__list-item" data-sort-by-radio>
-				<input name="order" data-test="order-{{listElement.value}}" id="order-{{listElement.value}}" value="{{listElement.value}}" type="radio" {{#if listElement.checked}}checked="checked" {{/if}} />
-				<label for="order-{{listElement.value}}">
-					<span>{{{listElement.label}}}</span>
-				</label>
-			</li>
-			{{/each}}
-		</ul>
-		<div class="u-pl-16 u-pr-16 u-pt-16 u-js-hide">
-			<button type="submit" class="c-search__button" data-action="clear-adv">
-				<span class="c-search__button-text">Search</span>
-				<svg class="u-flex-static" role="img" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"></path>
-				</svg>
-			</button>
-		</div>
-	</div>
+<div class="t-sort-by" data-sort-by>
+	<span class="t-sort-by__heading">Sort by:</span>
+	{{#each sortOrderFilter as |listElement|}}
+	<input class="t-sort-by__input" data-sort-by-input name="{{listElement.name}}" value="{{listElement.value}}" id="sort-by-{{listElement.value}}" type="radio" {{#if listElement.checked}}checked{{/if}}>
+	<label class="t-sort-by__label" for="sort-by-{{listElement.value}}">{{listElement.label}}</label>
+	{{/each}}
+	<button class="t-sort-by__button" data-sort-by-button type="submit">Submit</button>
 </div>

@@ -1,1 +1,26 @@
-{{> nature-sort-by }}
+<div data-js-div class="js">
+	<form action="/" method="post">
+		{{> nature-sort-by }}
+	</form>
+	<button data-js-button>Toggle JS on/off</button>
+</div>
+<script>
+	const form = document.querySelector('form');
+	form.addEventListener('submit', function (event) {
+		event.preventDefault();
+		const data = Object.fromEntries(new FormData(event.target).entries());
+		const existingP = document.querySelector('p');
+		const p = existingP || document.createElement('p');
+		p.style = 'font-size:1rem;margin-top:1rem';
+		p.textContent = `The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
+		if (!existingP) {
+			document.body.appendChild(p);
+		}
+	});
+	const button = document.querySelector('[data-js-button]');
+	button.style = 'font-size:1rem;margin-top:1rem';
+	button.addEventListener('click', function(event){
+		event.preventDefault();
+		document.querySelector('[data-js-div]').classList.toggle('js');
+	});
+</script>
