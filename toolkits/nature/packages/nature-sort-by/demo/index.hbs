@@ -1,9 +1,7 @@
-<div data-js-div class="js">
-	<form action="/" method="post">
-		{{> nature-sort-by }}
-	</form>
-	<span style="display:block;font-size:1rem;margin-top:1.25rem">For demo purposes only: <button data-js-button>Turn JS off</button></span>
-</div>
+<form action="/" method="post">
+	{{> nature-sort-by }}
+</form>
+<span style="display:block;font-size:1rem;margin-top:1.25rem">For demo purposes only: <button data-js-button>Turn JS off</button></span>
 <script>
 	const form = document.querySelector('form');
 	form.addEventListener('submit', function (event) {
@@ -21,7 +19,7 @@
 	button.style = 'font-size:1rem;margin-top:1rem';
 	button.addEventListener('click', function(event){
 		event.preventDefault();
-		document.querySelector('[data-js-div]').classList.toggle('js');
+		document.documentElement.classList.toggle('js');
 		button.textContent.indexOf('off') > -1 ? button.textContent = 'Turn JS on' : button.textContent = 'Turn JS off';
 	});
 </script>
