@@ -2,7 +2,7 @@
 	<form action="/" method="post">
 		{{> nature-sort-by }}
 	</form>
-	<button data-js-button>Toggle JS on/off</button>
+	<span style="display:block;font-size:1rem;margin-top:1.25rem">For demo purposes only: <button data-js-button>Turn JS off</button></span>
 </div>
 <script>
 	const form = document.querySelector('form');
@@ -12,7 +12,7 @@
 		const existingP = document.querySelector('p');
 		const p = existingP || document.createElement('p');
 		p.style = 'font-size:1rem;margin-top:1rem';
-		p.textContent = `The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
+		p.textContent = `Demo log: The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
 		if (!existingP) {
 			document.body.appendChild(p);
 		}
@@ -22,5 +22,6 @@
 	button.addEventListener('click', function(event){
 		event.preventDefault();
 		document.querySelector('[data-js-div]').classList.toggle('js');
+		button.textContent.indexOf('off') > -1 ? button.textContent = 'Turn JS on' : button.textContent = 'Turn JS off';
 	});
 </script>

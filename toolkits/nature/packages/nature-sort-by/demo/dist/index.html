@@ -1254,10 +1254,33 @@ p:empty {
 
 .t-sort-by {
 	font-size: 0.875rem;
+	line-height: 1.4;
 }
 
 .t-sort-by__heading {
 	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.t-sort-by__input-container {
+	margin-bottom: 8px;
+}
+
+[class~='t-sort-by__input-container']:last-of-type {
+	margin-bottom: 0;
+}
+
+.t-sort-by__input {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+.t-sort-by__button {
+	margin-top: 8px;
+}
+
+.js .t-sort-by__button {
+	display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1265,16 +1288,22 @@ p:empty {
 		display: flex;
 		align-items: center;
 	}
+	.t-sort-by__heading {
+		margin-bottom: 0;
+	}
+	.t-sort-by__input-container {
+		margin-bottom: 0;
+	}
 	.t-sort-by__input {
 		margin-left: 16px;
 	}
 	.t-sort-by__label {
 		padding-left: 4px;
 	}
-}
-
-.js .t-sort-by__button {
-	display: none;
+	.t-sort-by__button {
+		margin-left: 16px;
+		margin-top: 0;
+	}
 }
 
 .u-flex-direction-row {
@@ -1866,18 +1895,24 @@ p:empty {
 	<body style="padding:2%">
 		<div data-js-div="" class="js">
 	<form action="/" method="post">
-		<div class="t-sort-by" data-sort-by="">
-			<span class="t-sort-by__heading">Sort by:</span>
-			<input class="t-sort-by__input" data-sort-by-input="" name="order" value="relevance" id="sort-by-relevance" type="radio">
-			<label class="t-sort-by__label" for="sort-by-relevance">Relevance</label>
-			<input class="t-sort-by__input" data-sort-by-input="" name="order" value="desc" id="sort-by-desc" type="radio" checked="">
-			<label class="t-sort-by__label" for="sort-by-desc">Most recent</label>
-			<input class="t-sort-by__input" data-sort-by-input="" name="order" value="asc" id="sort-by-asc" type="radio">
-			<label class="t-sort-by__label" for="sort-by-asc">Oldest first</label>
+		<fieldset class="t-sort-by" data-sort-by="">
+			<div class="t-sort-by__heading">Sort by:</div>
+			<div class="t-sort-by__input-container">
+				<input class="t-sort-by__input" data-sort-by-input="" name="order" value="relevance" id="sort-by-relevance" type="radio">
+				<label class="t-sort-by__label" for="sort-by-relevance">Relevance</label>
+			</div>
+			<div class="t-sort-by__input-container">
+				<input class="t-sort-by__input" data-sort-by-input="" name="order" value="desc" id="sort-by-desc" type="radio" checked="">
+				<label class="t-sort-by__label" for="sort-by-desc">Date published (new to old)</label>
+			</div>
+			<div class="t-sort-by__input-container">
+				<input class="t-sort-by__input" data-sort-by-input="" name="order" value="asc" id="sort-by-asc" type="radio">
+				<label class="t-sort-by__label" for="sort-by-asc">Date published (old to new)</label>
+			</div>
 			<button class="t-sort-by__button" data-sort-by-button="" type="submit">Submit</button>
-		</div>
+		</fieldset>
 	</form>
-	<button data-js-button="">Toggle JS on/off</button>
+	<span style="display:block;font-size:1rem;margin-top:1.25rem">For demo purposes only: <button data-js-button="">Turn JS off</button></span>
 </div>
 <script>
 	const form = document.querySelector('form');
@@ -1887,7 +1922,7 @@ p:empty {
 		const existingP = document.querySelector('p');
 		const p = existingP || document.createElement('p');
 		p.style = 'font-size:1rem;margin-top:1rem';
-		p.textContent = `The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
+		p.textContent = `Demo log: The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
 		if (!existingP) {
 			document.body.appendChild(p);
 		}
@@ -1897,6 +1932,7 @@ p:empty {
 	button.addEventListener('click', function(event){
 		event.preventDefault();
 		document.querySelector('[data-js-div]').classList.toggle('js');
+		button.textContent.indexOf('off') > -1 ? button.textContent = 'Turn JS on' : button.textContent = 'Turn JS off';
 	});
 </script>
 

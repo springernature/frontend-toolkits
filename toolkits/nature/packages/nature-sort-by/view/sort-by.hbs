@@ -1,8 +1,10 @@
-<div class="t-sort-by" data-sort-by>
-	<span class="t-sort-by__heading">Sort by:</span>
+<fieldset class="t-sort-by" data-sort-by>
+	<div class="t-sort-by__heading">Sort by:</div>
 	{{#each sortOrderFilter as |listElement|}}
-	<input class="t-sort-by__input" data-sort-by-input name="{{listElement.name}}" value="{{listElement.value}}" id="sort-by-{{listElement.value}}" type="radio" {{#if listElement.checked}}checked{{/if}}>
-	<label class="t-sort-by__label" for="sort-by-{{listElement.value}}">{{listElement.label}}</label>
+	<div class="t-sort-by__input-container">
+		<input class="t-sort-by__input" data-sort-by-input name="{{listElement.name}}" value="{{listElement.value}}" id="sort-by-{{listElement.value}}" type="radio" {{#if listElement.checked}}checked{{/if}}>
+		<label class="t-sort-by__label" for="sort-by-{{listElement.value}}">{{listElement.label}}</label>
+	</div>
 	{{/each}}
 	<button class="t-sort-by__button" data-sort-by-button type="submit">Submit</button>
-</div>
+</fieldset>
