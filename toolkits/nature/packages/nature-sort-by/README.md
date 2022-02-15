@@ -2,7 +2,7 @@
 
 [![NPM version][badge-npm]][info-npm]
 
-A component for use on Nature product pages that allows a user to sort a list of content.
+The Nature Sort by component lets users change the order of a list of content items. For example, to sort search results by date or relevance.
 
 ## Installation
 
