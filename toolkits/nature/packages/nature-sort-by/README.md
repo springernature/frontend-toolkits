@@ -35,7 +35,7 @@ The Sort By component passes data to a backend to tell it how a list of content 
 
 ## Template
 
-Find a configurable template in the [`view` folder](./view/sort-by.hbs). You can see an example usage in the [`demo` folder](./demo/dist/index.html). 
+Find a configurable template in the [`view` folder](https://github.com/springernature/frontend-toolkits/blob/master/toolkits/nature/packages/nature-sort-by/view/sort-by.hbs). You can see an example usage in the [`demo` folder](https://github.com/springernature/frontend-toolkits/blob/master/toolkits/nature/packages/nature-sort-by/demo/dist/index.html). 
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-sort-by
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-sort-by.svg
