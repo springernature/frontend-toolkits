@@ -3,15 +3,20 @@
     {
       "value": "relevance",
       "label": "Relevance",
-      "checked": true
+	  "name": "order",
+	  "checked": false
     },
     {
       "value": "desc",
-      "label": "Most recent"
-    },
+      "label": "Date published (new to old)",
+	  "name": "order",
+      "checked": true
+	},
     {
       "value": "asc",
-      "label": "Oldest first"
+      "label": "Date published (old to new)",
+	  "name": "order",
+	  "checked": false
     }
   ],
   "dynamicPartials": {
