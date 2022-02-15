@@ -27,15 +27,15 @@ sortBy();
 @import '@springernature/nature-sort-by/scss/50-components/sort-by';
 ```
 
-The component's HTML should be inserted inside of an HTML form in your application. See below Template section for an example.
+The component's HTML should be inserted inside of an HTML form in your application. See below [Template section](#template) for an example.
 
 ## Configuration
 
-The Sort By component passes data to a backend to tell it how a list of content should be sorted using a conventional form submission. Edit the values of the `name` and `value` html attributes on the radio inputs to define data appropriate for your backend logic.
+The Sort By component passes data to a backend to tell it how a list of content should be sorted. This is done using a standard form submission and requires you to have a backend to receive and that process the form data. Edit the values of the `name` and `value` html attributes on the radio inputs to define data appropriate for your backend logic.
 
 ## Template
 
-Find a configurable template in the [`view` folder](./view/sort-by.hbs). You can see an example usage in the `demo` folder. 
+Find a configurable template in the [`view` folder](./view/sort-by.hbs). You can see an example usage in the [`demo` folder](./demo/dist/index.html). 
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-sort-by
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-sort-by.svg
