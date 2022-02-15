@@ -2,7 +2,7 @@ import {makeArray} from '@springernature/global-javascript/src/helpers';
 
 function addInputListeners(inputs, submitButton) {
 	inputs.forEach(input => {
-		input.addEventListener('change', event => {
+		input.addEventListener('change', () => {
 			submitButton.click();
 		});
 	});
