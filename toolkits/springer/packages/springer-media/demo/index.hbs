@@ -16,3 +16,24 @@
 	{{! Set context for data to not show image }}
 	{{> media }}
 </ul>
+<br>
+<ul>
+	{{! Set context for data to show image on left with "Play" icon }}
+	{{#with playLeft}}
+	{{> media }}
+	{{/with}}
+</ul>
+<br>
+<ul>
+	{{! Set context for data to show image on right with "Play" icon }}
+	{{#with playRight}}
+	{{> media }}
+	{{/with}}
+</ul>
+<br>
+<ul>
+	{{! Set context for data to show image stacked on text }}
+	{{#with stacked}}
+	{{> media }}
+	{{/with}}
+</ul>

@@ -3,10 +3,10 @@
     "image": {
       "left": {
         "src": "./img/sample.jpg",
-        "alt": "Descriptive alternative txt for left image"
+        "alt": "Descriptive alternative text for left image"
       }
     },
-    "title": "Example title",
+    "title": "Left image",
     "mediaUrl": "/path/from/teaser",
     "level": "2",
     "text": "This example shows the image on the left."
@@ -15,15 +15,54 @@
     "image": {
       "right": {
         "src": "./img/sample.jpg",
-        "alt": "Descriptive alternative txt for right image"
+        "alt": "Descriptive alternative text for right image"
       }
     },
-    "title": "Example title",
+    "title": "Right image",
     "mediaUrl": "/path/from/teaser",
     "level": "2",
     "text": "This example shows the image on the right."
   },
-  "title": "Example title",
+  "stacked": {
+	"modifier": "c-media--stacked",
+    "image": {
+      "left": {
+        "src": "./img/sample.jpg",
+        "alt": "Descriptive alternative text for stacked image and text"
+      }
+    },
+    "title": "Stacked",
+    "mediaUrl": "/path/from/teaser",
+    "level": "2",
+    "text": "This example shows the image stacked over the text."
+  },
+  "playLeft": {
+    "image": {
+      "left": {
+		"play": true,
+        "src": "./img/sample.jpg",
+        "alt": "Descriptive alternative text for left image with \"Play\" icon"
+      }
+    },
+    "title": "Left image \"Play\" icon",
+    "mediaUrl": "/path/from/teaser",
+    "level": "2",
+    "text": "This example shows the image on the left with a \"Play\" icon, suitable for linking to video material."
+  },
+  "playRight": {
+    "image": {
+      "right": {
+		"play": true,
+        "src": "./img/sample.jpg",
+        "alt": "Descriptive alternative text for right image with \"Play\" icon"
+      }
+    },
+    "title": "Right image \"Play\" icon",
+    "mediaUrl": "/path/from/teaser",
+    "level": "2",
+    "text": "This example shows the image on the right with a \"Play\" icon, suitable for linking to video material."
+  },
+  "title": "No image present",
   "mediaUrl": "/path/from/teaser",
   "level": "2",
   "text": "This example shows with no image present.",
