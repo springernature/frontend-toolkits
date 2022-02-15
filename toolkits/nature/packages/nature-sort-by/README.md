@@ -27,7 +27,7 @@ sortBy();
 @import '@springernature/nature-sort-by/scss/50-components/sort-by';
 ```
 
-The component's HTML should be inserted inside of an HTML form in your application. See below [Template section](#template) for an example.
+Insert the component's HTML inside an HTML form in your application. See an example [template](#template) below.
 
 ## Configuration
 
