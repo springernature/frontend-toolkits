@@ -1,5 +1,8 @@
 # History
 
+## 20.0.1 (2022-02-09)
+    * BUG
+        * Add missing functions and mixins to default branding abstracts  
 ## 20.0.0 (2022-01-14)
     * BREAKING
         * Switch SASS compiler from Node Sass to Dart Sass

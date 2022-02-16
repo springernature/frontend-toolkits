@@ -1,10 +1,3 @@
-$sort-by--menu-background-colour: #000;
-$sort-by--menu-border-colour: greyscale(5);
-$sort-by--menu-text-colour: greyscale(90);
-$sort-by--menu-padding: spacing(16) 0;
-$sort-by--menu-font-size: .875rem;
-$sort-by--menu-line-height: 1.2;
-$sort-by--button-font-weight: 700;
-$sort-by--button-svg-margin: spacing(16);
-$sort-by--button-list-item-spacing: spacing(8) spacing(16);
-$sort-by--menu-min-width: 180px;
+$sort-by--font-size: $context--font-size-xs;
+$sort-by--line-height: $context--line-height-tight;
+$sort-by--heading-font-weight: $context--font-weight-bold;
