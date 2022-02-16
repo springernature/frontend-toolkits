@@ -1293,6 +1293,7 @@ p:empty {
   }
 
   .c-sort-by__heading {
+    float: left;
     margin-bottom: 0;
   }
 
@@ -1899,7 +1900,7 @@ p:empty {
 	<body style="padding:2%">
 		<form action="/" method="post">
 	<fieldset class="c-sort-by" data-sort-by="">
-		<div class="c-sort-by__heading">Sort by:</div>
+		<legend class="c-sort-by__heading">Sort by:</legend>
 		<div class="c-sort-by__input-container">
 			<input class="c-sort-by__input" data-sort-by-input="" name="order" value="relevance" id="sort-by-relevance" type="radio">
 			<label class="c-sort-by__label" for="sort-by-relevance">Relevance</label>
@@ -1957,7 +1958,7 @@ p:empty {
 
 	function addInputListeners(inputs, submitButton) {
 	  inputs.forEach(function (input) {
-	    input.addEventListener('change', function (event) {
+	    input.addEventListener('change', function () {
 	      submitButton.click();
 	    });
 	  });

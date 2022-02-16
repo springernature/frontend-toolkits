@@ -1,5 +1,5 @@
 <fieldset class="c-sort-by" data-sort-by>
-	<div class="c-sort-by__heading">Sort by:</div>
+	<legend class="c-sort-by__heading">Sort by:</legend>
 	{{#each sortOrderFilter as |listElement|}}
 	<div class="c-sort-by__input-container">
 		<input class="c-sort-by__input" data-sort-by-input name="{{listElement.name}}" value="{{listElement.value}}" id="sort-by-{{listElement.value}}" type="radio" {{#if listElement.checked}}checked{{/if}}>

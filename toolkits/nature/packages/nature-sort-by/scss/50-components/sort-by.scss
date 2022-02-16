@@ -36,6 +36,7 @@
 	}
 
 	.c-sort-by__heading {
+		float: left; // needed because browsers have special rendering rules for legend elements: https://stackoverflow.com/questions/5818960/why-wont-my-legend-element-display-inline
 		margin-bottom: 0;
 	}
 
