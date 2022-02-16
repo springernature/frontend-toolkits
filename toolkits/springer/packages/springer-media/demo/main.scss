@@ -9,3 +9,7 @@
 // component SCSS
 @import '../scss/10-settings/media';
 @import '../scss/50-components/media';
+
+// utilities
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/container.scss';

@@ -1,5 +1,9 @@
 # History
 
+## 6.0.1 (2022-02-16)
+    * Revisit README.md to meet latest guideline    
+    * Enhance demo with more examples
+        
 ## 6.0.0 (2021-12-13)
     * BREAKING: Update to brand-context v18.1.2 from v10.1.3
 
