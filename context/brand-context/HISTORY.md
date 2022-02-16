@@ -1,5 +1,8 @@
 # History
 
+## 20.0.2 (2022-02-16)
+    * Updates strip unit function and triangle mixin in brand context to use Dart Sass syntax for math
+
 ## 20.0.1 (2022-02-09)
     * BUG
         * Add missing functions and mixins to default branding abstracts  
