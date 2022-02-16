@@ -1,0 +1,15 @@
+{
+	"border": {
+		"color": {
+			"primary": {
+				"value": "{color.neutral.900}"
+			},
+			"input": {
+				"value": "{color.neutral.700}"
+			},
+			"button": {
+				"value": "{color.primary.medium-blue}"
+			}
+		}
+	}
+}

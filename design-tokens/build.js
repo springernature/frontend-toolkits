@@ -24,7 +24,7 @@ function getStyleDictionaryConfig(brand, categories) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
+				buildPath: `${dest}/00-tokens/literal/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
@@ -35,7 +35,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			},
 			scssMaps: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
+				buildPath: `${dest}/00-tokens/literal/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.map.scss`,
@@ -47,7 +47,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			},
 			cssCustomProperties: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
+				buildPath: `${dest}/00-tokens/literal/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.custom-properties.scss`,
@@ -79,13 +79,13 @@ console.log('Build started...');
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	if (brand === 'default') {
-		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
+		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/literal/');
 	} else if (brand === 'springernature') {
-		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
+		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/literal/');
 	} else if (brand === 'springer') {
-		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
+		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/literal/');
 	} else if (brand === 'nature') {
-		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
+		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/literal/');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/literal/${brand}`
@@ -95,7 +95,7 @@ console.log('Build started...');
 	require('fs').writeFile(
 
 		// create an index.scss based off of the dest letiable
-		`${dest}/00-tokens/_index.scss`,
+		`${dest}/00-tokens/literal/_index.scss`,
 
 		// create a list of each file in the directory
 		fileNames.map(file => {
@@ -110,7 +110,7 @@ console.log('Build started...');
 			}
 		}
 	);
-	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/_index.scss created`);
+	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/literal/_index.scss created`);
 	console.log('\nEnd processing');
 });
 
