@@ -1,5 +1,5 @@
 @mixin triangle($direction, $size-y, $size-x, $color) {
-	$size-x: $size-x / 2;
+	$size-x: $size-x * 0.5;
 	content: '';
 	display: block;
 	width: 0;
