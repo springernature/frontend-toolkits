@@ -2,8 +2,8 @@
 
 [![NPM version][badge-npm]][info-npm]
 
-The Springer Media component is derived on the media object pattern we see all over the web. [Named by Nicole Sullivan](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) 
-it refers to a two-column box with an image on one side and descriptive text on the other.
+The Springer Media component is derived from the media object pattern we see all over the web. [Named by Nicole Sullivan](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/). 
+It describes refers to a two-column box with an image on one side and descriptive content on the other.
 
 It consists of:
 - a **figure**(optional) that is or contains the media element
@@ -23,7 +23,7 @@ To use the Media component, enter the following command in your Terminal:
 npm install @springernature/springer-media
 ```
 
-Import the installed component code in your `scss` file:
+Import the installed Sass:
 
 ```scss
 @import '@springernature/springer-media/scss/10-settings/media';
@@ -54,7 +54,7 @@ To display the **text only**, omit the element carrying the `c-media__figure` cl
 ### Play icon
 
 The component provides an option to show a play icon (triangle) on the figure, which can be used to link to video material.
-In order to do that markup the figure as shown in the code snippet below:
+In order to do that, mark up the figure as shown in the code snippet below:
 
 ```
 <div class="c-media__figure">
