@@ -31,11 +31,13 @@ Import the installed Sass:
 
 @import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
 ```
+
 ## How it works
+
 ### Stacked
 
 It is possible to have the figure and text shown as one column. In order to do that add 
-`c-media--stagged` to the element carrying the `c-media` class.
+`c-media--stacked` to the element carrying the `c-media` class.
 
 ### Figure placement
 
