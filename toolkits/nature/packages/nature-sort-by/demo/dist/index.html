@@ -3,6 +3,7 @@
     		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
 		</script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/nature-sort-by</title>
 		<style>
 			@charset "UTF-8";
@@ -1255,80 +1256,64 @@ p:empty {
 }
 
 .c-sort-by {
-  position: relative;
-}
-.c-sort-by a {
-  color: inherit;
-}
-.c-sort-by a.visited, .c-sort-by a:visited {
-  color: inherit;
-}
-.c-sort-by a.hover, .c-sort-by a:hover {
-  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.4;
 }
 
-.c-sort-by__menu {
-  background-color: #000;
-  border-bottom: 1px solid #2f2f2f;
-  color: #eeeeee;
-  padding: 16px 0;
-  font-size: 0.875rem;
-  line-height: 1.2;
+.c-sort-by__heading {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.c-sort-by__input-container {
+  margin-bottom: 8px;
+}
+
+[class~=c-sort-by__input-container]:last-of-type {
+  margin-bottom: 0;
+}
+
+.c-sort-by__input {
+  vertical-align: middle;
+  margin-top: -1px;
 }
 
 .c-sort-by__button {
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.c-sort-by__button > svg {
-  margin-left: 16px;
-  transition-duration: 0.2s;
-}
-.c-sort-by__button.is-open > svg {
-  transform: rotate(180deg);
+  margin-top: 8px;
 }
 
-.c-sort-by__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding: 0;
-  margin: 0;
+.js .c-sort-by__button {
+  display: none;
 }
 
-.c-sort-by__list-item {
-  padding: 8px 16px;
-}
-.c-sort-by__list-item > label {
-  cursor: pointer;
-}
-
-/**
- JavaScript Enhancements
- */
-.c-sort-by__menu.has-tethered {
-  position: absolute;
-  top: 100%;
-  transform: translateY(4px);
-  z-index: 1;
-  left: 0;
-  width: 100%;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 0;
-}
-@media only screen and (min-width: 540px) {
-  .c-sort-by__menu.has-tethered {
-    width: auto;
-  }
-}
 @media only screen and (min-width: 768px) {
-  .c-sort-by__menu.has-tethered {
-    min-width: 180px;
+  .c-sort-by {
+    display: flex;
+    align-items: center;
+  }
+
+  .c-sort-by__heading {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .c-sort-by__input-container {
+    margin-bottom: 0;
+  }
+
+  .c-sort-by__input {
+    margin-left: 16px;
+  }
+
+  .c-sort-by__label {
+    padding-left: 4px;
+  }
+
+  .c-sort-by__button {
+    margin-left: 16px;
+    margin-top: 0;
   }
 }
-
 .u-flex-direction-row {
   flex-direction: row;
 }
@@ -1913,455 +1898,82 @@ p:empty {
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="c-sort-by">
-			<a href="#sort-by" class="c-sort-by__button" data-sort-by-trigger="" data-track="click" data-track-action="sort by filter" data-track-label="button" aria-expanded="false">
-				<span>Sort by Relevance</span>
-				<svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-					<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-				</svg>
-			</a>
-			<div id="sort-by" data-sort-by-target="" class="c-sort-by__menu u-js-hide">
-				<ul class="c-sort-by__list">
-					<li class="c-sort-by__list-item" data-sort-by-radio="">
-						<input name="order" data-test="order-relevance" id="order-relevance" value="relevance" type="radio" checked="checked">
-						<label for="order-relevance">
-							<span>Relevance</span>
-						</label>
-					</li>
-					<li class="c-sort-by__list-item" data-sort-by-radio="">
-						<input name="order" data-test="order-desc" id="order-desc" value="desc" type="radio">
-						<label for="order-desc">
-							<span>Most recent</span>
-						</label>
-					</li>
-					<li class="c-sort-by__list-item" data-sort-by-radio="">
-						<input name="order" data-test="order-asc" id="order-asc" value="asc" type="radio">
-						<label for="order-asc">
-							<span>Oldest first</span>
-						</label>
-					</li>
-				</ul>
-				<div class="u-pl-16 u-pr-16 u-pt-16 u-js-hide">
-					<button type="submit" class="c-search__button" data-action="clear-adv">
-						<span class="c-search__button-text">Search</span>
-						<svg class="u-flex-static" role="img" aria-hidden="true" focusable="false" height="16" width="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-							<path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"></path>
-						</svg>
-					</button>
-				</div>
-			</div>
-		</div>		<script>
+		<form action="/" method="post">
+	<fieldset class="c-sort-by" data-sort-by="">
+		<legend class="c-sort-by__heading">Sort by:</legend>
+		<div class="c-sort-by__input-container">
+			<input class="c-sort-by__input" data-sort-by-input="" name="order" value="relevance" id="sort-by-relevance" type="radio">
+			<label class="c-sort-by__label" for="sort-by-relevance">Relevance</label>
+		</div>
+		<div class="c-sort-by__input-container">
+			<input class="c-sort-by__input" data-sort-by-input="" name="order" value="desc" id="sort-by-desc" type="radio" checked="">
+			<label class="c-sort-by__label" for="sort-by-desc">Date published (new to old)</label>
+		</div>
+		<div class="c-sort-by__input-container">
+			<input class="c-sort-by__input" data-sort-by-input="" name="order" value="asc" id="sort-by-asc" type="radio">
+			<label class="c-sort-by__label" for="sort-by-asc">Date published (old to new)</label>
+		</div>
+		<button class="c-sort-by__button" data-sort-by-button="" type="submit">Submit</button>
+	</fieldset>
+</form>
+<span style="display:block;font-size:1rem;margin-top:1.25rem">For demo purposes only: <button data-js-button="">Turn JS off</button></span>
+<script>
+	const form = document.querySelector('form');
+	form.addEventListener('submit', function (event) {
+		event.preventDefault();
+		const data = Object.fromEntries(new FormData(event.target).entries());
+		const existingP = document.querySelector('p');
+		const p = existingP || document.createElement('p');
+		p.style = 'font-size:1rem;margin-top:1rem';
+		p.textContent = `Demo log: The sort-by form was submitted with the following parameters: ${Object.entries(data)[0][0]} = ${Object.entries(data)[0][1]}`;
+		if (!existingP) {
+			document.body.appendChild(p);
+		}
+	});
+	const button = document.querySelector('[data-js-button]');
+	button.style = 'font-size:1rem;margin-top:1rem';
+	button.addEventListener('click', function(event){
+		event.preventDefault();
+		document.documentElement.classList.toggle('js');
+		button.textContent.indexOf('off') > -1 ? button.textContent = 'Turn JS on' : button.textContent = 'Turn JS off';
+	});
+</script>
+
+		<script>
 			(function () {
-  'use strict';
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  function _defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    Object.defineProperty(Constructor, "prototype", {
-      writable: false
-    });
-    return Constructor;
-  }
-
-  var makeArray = function makeArray(iterable) {
-    var list = [];
-
-    if (!iterable) {
-      return list;
-    }
-
-    Array.prototype.forEach.call(iterable, function (item) {
-      list.push(item);
-    });
-    return list;
-  };
-
-  /**
-   * create-event.js
-   * Wrapper for customEvent
-   * Generate namespaced events
-   */
-  /**
-   * Polyfill customEvent
-   * @function customEvent
-   * @param {String} eventName namespaced name of the event
-   * @param {Object=} _parameters customEvent options
-   * @return {Event}
-   */
-
-  var customEvent = function customEvent(eventName, _parameters) {
-    _parameters = _parameters || {
-      bubbles: false,
-      cancelable: false,
-      detail: null
-    };
-    var event = document.createEvent('CustomEvent');
-    event.initCustomEvent(eventName, _parameters.bubbles, _parameters.cancelable, _parameters.detail);
-    return event;
-  };
-  /**
-   * Create a custom event
-   * @function createEvent
-   * @param {String} eventName name of the event
-   * @param {String} namespace namespace e.g. component name
-   * @param {Object=} _parameters customEvent options
-   * @return {Event}
-   */
-
-
-  var createEvent = function createEvent(eventName, namespace, _parameters) {
-    var event;
-
-    if (namespace === undefined) {
-      throw new Error('Missing namespace in `createEvent` function');
-    }
-
-    if (typeof window.CustomEvent === 'function') {
-      event = new CustomEvent("".concat(namespace, ":").concat(eventName), _parameters);
-    } else {
-      event = customEvent("".concat(namespace, ":").concat(eventName), _parameters);
-    }
-
-    return event;
-  };
-
-  /**
-   * Local Constants
-   */
-
-  var defaultOptions = {
-    TARGET_HIDE_CLASS: 'u-js-hide',
-    TRIGGER_OPEN_CLASS: 'is-open',
-    TRIGGER_OPEN_LABEL: undefined,
-    CLOSE_ON_FOCUS_OUT: true,
-    AUTOFOCUS: null,
-    OPEN_EVENT: false,
-    DEFAULT_OPEN: false
-  };
-
-  var Expander = /*#__PURE__*/function () {
-    function Expander(trigger, target) {
-      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-      _classCallCheck(this, Expander);
-
-      this._options = Object.assign({}, defaultOptions, options);
-      this._autoFocusElement = trigger;
-      this._triggerEl = trigger;
-      this._targetEl = target;
-      this._originalTriggerText = trigger.textContent;
-      this._isOpen = this._options.DEFAULT_OPEN;
-      this._handleButtonClick = this._handleButtonClick.bind(this);
-      this._handleButtonKeydown = this._handleButtonKeydown.bind(this);
-      this._handleDocumentClick = this._handleDocumentClick.bind(this);
-      this._handleDocumentKeydown = this._handleDocumentKeydown.bind(this);
-    }
-    /**
-     * Event Handlers
-     */
-
-
-    _createClass(Expander, [{
-      key: "_handleButtonClick",
-      value: function _handleButtonClick(event) {
-        event.preventDefault();
-
-        if (this._isOpen) {
-          this.close();
-        } else {
-          this.open();
-        }
-      }
-    }, {
-      key: "_handleButtonKeydown",
-      value: function _handleButtonKeydown(event) {
-        if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
-          event.preventDefault();
-
-          if (this._isOpen) {
-            this.close();
-          } else {
-            this.open();
-          }
-        }
-      }
-    }, {
-      key: "_handleDocumentKeydown",
-      value: function _handleDocumentKeydown(event) {
-        var _this = this;
-
-        if (event.key === 'Escape') {
-          this.close();
-
-          this._triggerEl.focus();
-        }
-
-        if (this._options.CLOSE_ON_FOCUS_OUT) {
-          if (event.key === 'Tab' && event.shiftKey === true) {
-            if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
-              event.preventDefault();
-              window.requestAnimationFrame(function () {
-                _this.close();
-
-                _this._triggerEl.focus();
-              });
-            }
-          }
-
-          if (event.key === 'Tab' && event.shiftKey === false) {
-            if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
-              event.preventDefault();
-              window.requestAnimationFrame(function () {
-                _this.close();
-
-                _this._triggerEl.focus();
-              });
-            }
-          }
-        }
-      }
-    }, {
-      key: "_handleDocumentClick",
-      value: function _handleDocumentClick(event) {
-        var target = event.target;
-
-        if (target === this._targetEl || target === this._triggerEl || this._targetEl.contains(target) || this._triggerEl.contains(target)) {
-          return;
-        }
-
-        this.close();
-      }
-      /**
-       * Temporary Event Listeners
-       */
-
-    }, {
-      key: "_setupTemporaryEventListeners",
-      value: function _setupTemporaryEventListeners() {
-        document.addEventListener('keydown', this._handleDocumentKeydown);
-
-        if (this._options.CLOSE_ON_FOCUS_OUT) {
-          document.addEventListener('click', this._handleDocumentClick);
-        }
-      }
-    }, {
-      key: "_removeTemporaryEventListeners",
-      value: function _removeTemporaryEventListeners() {
-        document.removeEventListener('keydown', this._handleDocumentKeydown);
-
-        if (this._options.CLOSE_ON_FOCUS_OUT) {
-          document.removeEventListener('click', this._handleDocumentClick);
-        }
-      }
-      /**
-       * Attributes
-       */
-
-    }, {
-      key: "_updateAttributes",
-      value: function _updateAttributes() {
-        // eslint-disable-next-line unicorn/consistent-function-scoping
-        this._triggerEl.setAttribute('aria-expanded', this._isOpen.toString());
-
-        if (this._isOpen) {
-          this._targetEl.removeAttribute('hidden');
-        } else {
-          this._targetEl.setAttribute('hidden', '');
-        }
-      }
-      /**
-       * Class attributes
-       */
-
-    }, {
-      key: "_updateClassAttributes",
-      value: function _updateClassAttributes() {
-        if (this._isOpen) {
-          this._triggerEl.classList.add(this._options.TRIGGER_OPEN_CLASS);
-
-          this._targetEl.classList.remove(this._options.TARGET_HIDE_CLASS);
-        } else {
-          this._triggerEl.classList.remove(this._options.TRIGGER_OPEN_CLASS);
-
-          this._targetEl.classList.add(this._options.TARGET_HIDE_CLASS);
-        }
-      }
-      /**
-       * Trigger Label
-       */
-
-    }, {
-      key: "_updateTriggerLabel",
-      value: function _updateTriggerLabel() {
-        if (this._options.TRIGGER_OPEN_LABEL) {
-          this._triggerEl.textContent = this._isOpen ? this._options.TRIGGER_OPEN_LABEL : this._originalTriggerText;
-        }
-      }
-      /**
-       * Tabbable Items
-       */
-
-    }, {
-      key: "_updateTabbableItems",
-      value: function _updateTabbableItems() {
-        this._targetTabbableItems = makeArray(this._targetEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')).filter(function (element) {
-          return window.getComputedStyle(element).getPropertyValue('visibility') !== 'hidden';
-        });
-      }
-      /**
-       * AutoFocus
-       */
-
-    }, {
-      key: "_handleAutoFocus",
-      value: function _handleAutoFocus() {
-        if (this._options.AUTOFOCUS === 'target') {
-          this._autoFocusElement = this._targetEl;
-
-          this._targetEl.setAttribute('tabindex', '-1');
-        }
-
-        if (this._options.AUTOFOCUS === 'firstTabbable') {
-          this._autoFocusElement = this._targetTabbableItems.length > 0 && this._targetTabbableItems[0];
-
-          if (this._autoFocusElement.setSelectionRange) {
-            this._autoFocusElement.setSelectionRange(0, this._autoFocusElement.value.length);
-          }
-        }
-
-        this._autoFocusElement.focus();
-      }
-      /**
-       * @public
-       */
-
-      /**
-       * Toggling
-       */
-
-    }, {
-      key: "open",
-      value: function open() {
-        if (this._isOpen) {
-          return;
-        }
-
-        this._isOpen = true;
-
-        this._updateTriggerLabel();
-
-        this._updateAttributes();
-
-        this._updateClassAttributes();
-
-        this._updateTabbableItems();
-
-        this._setupTemporaryEventListeners();
-
-        this._handleAutoFocus();
-
-        if (this._options.OPEN_EVENT) {
-          var event = createEvent('open', 'globalExpander', {
-            bubbles: false
-          });
-
-          this._triggerEl.dispatchEvent(event);
-        }
-      }
-    }, {
-      key: "close",
-      value: function close() {
-        if (!this._isOpen) {
-          return;
-        }
-
-        this._isOpen = false;
-
-        this._updateTriggerLabel();
-
-        this._updateAttributes();
-
-        this._updateClassAttributes();
-
-        this._removeTemporaryEventListeners();
-      }
-    }, {
-      key: "init",
-      value: function init() {
-        if (this._triggerEl.tagName === 'A' && this._triggerEl.getAttribute('href').charAt(0) === '#') {
-          // eslint-disable-next-line no-script-url
-          this._triggerEl.setAttribute('href', 'javascript:;');
-
-          this._triggerEl.setAttribute('role', 'button');
-        } // Warn screen reader users when you are stealing focus
-
-
-        if (this._options.AUTOFOCUS) {
-          this._triggerEl.setAttribute('aria-haspopup', 'true');
-        }
-
-        this._updateTriggerLabel();
-
-        this._updateAttributes();
-
-        this._updateClassAttributes();
-
-        this._triggerEl.addEventListener('click', this._handleButtonClick);
-
-        this._triggerEl.addEventListener('keydown', this._handleButtonKeydown);
-      }
-    }]);
-
-    return Expander;
-  }();
-
-  var generateParameters = function generateParameters(value) {
-    var parameters = new URL(document.location).searchParams;
-    parameters.set('order', value);
-    return parameters;
-  };
-
-  var sortBy = function sortBy() {
-    var trigger = document.querySelector('[data-sort-by-trigger]');
-    var targetElement = document.querySelector('[data-sort-by-target]');
-    var radios = makeArray(document.querySelectorAll('[data-sort-by-radio]'));
-
-    if (!trigger || !targetElement || !radios) {
-      return;
-    }
-
-    radios.forEach(function (element) {
-      element.addEventListener('click', function () {
-        var value = element.querySelector('input').value;
-        var parameters = generateParameters(value);
-        window.location.replace('/search?' + parameters);
-      });
-    });
-    trigger.setAttribute('role', 'button');
-    trigger.insertAdjacentElement('afterend', targetElement);
-    targetElement.classList.add('has-tethered');
-    var expander = new Expander(trigger, targetElement);
-    expander.init();
-    return expander;
-  };
-
-  sortBy();
+	'use strict';
+
+	var makeArray = function makeArray(iterable) {
+	  var list = [];
+
+	  if (!iterable) {
+	    return list;
+	  }
+
+	  Array.prototype.forEach.call(iterable, function (item) {
+	    list.push(item);
+	  });
+	  return list;
+	};
+
+	function addInputListeners(inputs, submitButton) {
+	  inputs.forEach(function (input) {
+	    input.addEventListener('change', function () {
+	      submitButton.click();
+	    });
+	  });
+	}
+
+	function sortBy() {
+	  var forms = makeArray(document.querySelectorAll('[data-sort-by]'));
+	  forms.forEach(function (form) {
+	    var radioInputs = makeArray(form.querySelectorAll('[data-sort-by-input]'));
+	    var submitButton = form.querySelector('[data-sort-by-button]');
+	    addInputListeners(radioInputs, submitButton);
+	  });
+	}
+
+	sortBy();
 
 })();
 

@@ -1,69 +1,59 @@
 .c-sort-by {
-	position: relative;
-
-	a {
-		@include u-link-inherit();
-	}
+	font-size: $sort-by--font-size;
+	line-height: $sort-by--line-height;
 }
 
-.c-sort-by__menu {
-	background-color: $sort-by--menu-background-colour;
-	border-bottom: 1px solid $sort-by--menu-border-colour; // non-js
-	color: $sort-by--menu-text-colour;
-	padding: $sort-by--menu-padding;
-	font-size: $sort-by--menu-font-size;
-	line-height: $sort-by--menu-line-height;
+.c-sort-by__heading {
+	font-weight: $sort-by--heading-font-weight;
+	margin-bottom: spacing(8);
+}
+
+.c-sort-by__input-container {
+	margin-bottom: spacing(8);
+}
+
+[class~='c-sort-by__input-container']:last-of-type  {
+	margin-bottom: 0;
+}
+
+.c-sort-by__input {
+	vertical-align: middle;
+	margin-top: -1px;
 }
 
 .c-sort-by__button {
-	font-weight: $sort-by--button-font-weight;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	> svg {
-		margin-left: $sort-by--button-svg-margin;
-		transition-duration: .2s;
-	}
-
-	&.is-open > svg {
-		transform: rotate(180deg);
-	}
+	margin-top: spacing(8);
 }
 
-.c-sort-by__list {
-	@include u-list-reset;
-	padding: 0;
-	margin: 0;
+.js .c-sort-by__button {
+	display: none;
 }
 
-.c-sort-by__list-item {
-	padding: $sort-by--button-list-item-spacing;
-
-	& > label {
-		cursor: pointer;
-	}
-}
-
-/**
- JavaScript Enhancements
- */
-
-.c-sort-by__menu.has-tethered {
-	position: absolute;
-	top: 100%; // bottom of the tether element
-	transform: translateY(4px);
-	z-index: 1;
-	left: 0;
-	width: 100%;
-	border-radius: 0 0 2px 2px;
-	border-bottom: 0;
-
-	@include media-query('sm') {
-		width: auto;
+@include media-query('md') {
+	.c-sort-by {
+		display: flex;
+		align-items: center;
 	}
 
-	@include media-query('md') {
-		min-width: $sort-by--menu-min-width;
+	.c-sort-by__heading {
+		float: left; // needed because browsers have special rendering rules for legend elements: https://stackoverflow.com/questions/5818960/why-wont-my-legend-element-display-inline
+		margin-bottom: 0;
+	}
+
+	.c-sort-by__input-container {
+		margin-bottom: 0;
+	}
+
+	.c-sort-by__input {
+		margin-left: spacing(16);
+	}
+
+	.c-sort-by__label {
+		padding-left: spacing(4);
+	}
+
+	.c-sort-by__button {
+		margin-left: spacing(16);
+		margin-top: 0;
 	}
 }
