@@ -1,5 +1,6 @@
 # History
-
+## 2.0.0 (2022-02-17)
+    * Update bourbon-neat peerDependency version from min v2 to v4
 ## 1.0.0 (2019-02-05)
 	* Make bourbon-neat a peerDependency
 	* Use relative sass imports
