@@ -1,5 +1,8 @@
 # History
 
+## 6.1.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 6.1.0 (2021-09-10)
     * Demo, including consumable handlebars template
 
