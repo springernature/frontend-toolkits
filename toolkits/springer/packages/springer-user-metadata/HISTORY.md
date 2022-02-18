@@ -1,5 +1,8 @@
 # History
 
+## 5.1.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 5.1.1 (2021-10-23)
     * Safer prop name for url
 
