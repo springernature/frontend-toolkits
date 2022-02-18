@@ -25,7 +25,8 @@
       "png",
       "svg",
       "md",
-      "ico"
+      "ico",
+      "webp"
     ],
     "fonts": [
       "woff",
@@ -65,7 +66,8 @@
       "jpeg",
       "gif",
       "svg",
-      "png"
+      "png",
+      "webp"
     ]
   },
   "CSSDirectoryStructure": {

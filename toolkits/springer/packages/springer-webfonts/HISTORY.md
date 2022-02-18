@@ -1,3 +1,8 @@
+# History
+
+## 1.0.3 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 1.0.2 (2020-03-04)
 	* Changes where we catch font face observer load rejected promises as needs to be caught on obersver.load() calls
 

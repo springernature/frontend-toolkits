@@ -1,5 +1,11 @@
 # History
 
+## 2.1.2 (2022-02-10)
+    * BUG: Image not displaying on demo
+
+## 2.1.1 (2022-02-10)
+    * Improve README and add design guidelines
+
 ## 2.1.0 (2022-02-02)
     * FEATURE: add view template and demo
 

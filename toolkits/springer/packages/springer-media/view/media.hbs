@@ -1,16 +1,38 @@
-<li class="c-media">
-	{{#with image.left}}
-	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+<li class="c-media {{#if modifier}}{{modifier}}{{/if}}">
+	{{#with image}}
+		{{#with left}}
+			{{#if play}}
+				<div class="c-media__figure">
+					<img src="{{src}}" alt="{{alt}}">
+					<div class="c-media__play">
+						<span class="u-visually-hidden">Video</span>
+					</div>
+				</div>
+			{{else}}
+				<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+			{{/if}}
+		{{/with}}
 	{{/with}}
 	<div class="c-media__body">
-		<h4 class="c-media__title" aria-level="{{level}}">
+		<h{{level}} class="c-media__title">
 			<a href="{{mediaUrl}}">{{title}}</a>
-		</h4>
+		</h{{level}}>
 		{{#if text}}
 		<p>{{text}}</p>
 		{{/if}}
 	</div>
-	{{#with image.right}}
-	<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+	{{#with image}}
+		{{#with right}}
+			{{#if play}}
+				<div class="c-media__figure">
+					<img src="{{src}}" alt="{{alt}}">
+					<div class="c-media__play">
+						<span class="u-visually-hidden">Video</span>
+					</div>
+				</div>
+			{{else}}
+				<img src="{{src}}" class="c-media__figure" alt="{{alt}}">
+			{{/if}}
+		{{/with}}
 	{{/with}}
 </li>

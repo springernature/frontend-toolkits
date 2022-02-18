@@ -1,3 +1,3 @@
-import {sortBy} from '../js/sort-by';
+import {sortBy} from '../js/sort-by.js';
 
 sortBy();

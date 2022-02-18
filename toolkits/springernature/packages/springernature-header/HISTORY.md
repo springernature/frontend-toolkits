@@ -1,5 +1,8 @@
 # History
 
+## 3.0.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 3.0.1 (2021-12-10)
     * BUG:
       * Updates line-height rem value to be correct for root font-size changes in v18 of Brand Context
