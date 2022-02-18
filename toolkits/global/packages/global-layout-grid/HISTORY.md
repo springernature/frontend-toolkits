@@ -1,5 +1,8 @@
 # History
 
+## 0.2.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 0.2.1 (2021-11-04)
 	* Remove padding from `<ul>`
 

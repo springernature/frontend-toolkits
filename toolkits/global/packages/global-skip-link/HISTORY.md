@@ -1,5 +1,8 @@
 # History
 
+## 1.0.3 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 1.0.2 (2021-12-10)
     * BUG
         * Updates springernature rem values to be correct for Brand Context v18 font-size changes
