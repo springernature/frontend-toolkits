@@ -1,5 +1,8 @@
 # History
 
+## 6.0.4 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 6.0.3 (2021-12-09)
     * BUG: Updates the version of the brand context in the package.json file to latest.
 ## 6.0.2 (2021-12-09)

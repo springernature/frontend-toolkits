@@ -1,8 +1,12 @@
 # History
 
+## 3.0.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 3.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.
+
 ## 2.2.0 (2021-09-20)
     * Demo created with consumable handlebars template
 
