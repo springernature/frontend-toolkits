@@ -1,5 +1,8 @@
 # History
 
+## 1.0.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 1.0.0 (2021-12-03)
     * BREAKING:
         * Changes all typographic values to accomodate the root font size change.
