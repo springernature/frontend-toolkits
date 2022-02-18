@@ -1,5 +1,8 @@
 # History
 
+## 8.0.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 8.0.0
     * BREAKING:
         * Some functionality has been removed since it only addressed a special case on springer.com
