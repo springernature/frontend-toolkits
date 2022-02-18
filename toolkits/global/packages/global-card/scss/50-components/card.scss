@@ -101,6 +101,12 @@
 // modifiers
 // ---------
 
+.c-card--flush {
+	.c-card__body {
+		padding: 0;
+	}
+}
+
 // --major
 .c-card--major {
 	font-size: $card--major-font-size;
