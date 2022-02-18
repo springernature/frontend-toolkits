@@ -1,5 +1,8 @@
 # History
 
+## 8.1.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 8.1.0 (2022-02-02)
     * Darker border color
 
