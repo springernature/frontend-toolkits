@@ -1,16 +1,8 @@
 {
 	"pills": [
 		{
-			"label": "Pill 1",
+			"label": "Pill",
 			"pillUrl": "/path/to/1"
-		},
-		{
-			"label": "Pill 2",
-			"pillUrl": "/path/to/2"
-		},
-		{
-			"label": "Pill 3",
-			"pillUrl": "/path/to/3"
 		}
 	]
 }
