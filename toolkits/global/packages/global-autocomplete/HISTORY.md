@@ -1,5 +1,8 @@
 # History
 
+## 5.1.3 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 5.1.2 (2021-01-17)
     * Return focus to input when removing suggestion box, conditionally
 

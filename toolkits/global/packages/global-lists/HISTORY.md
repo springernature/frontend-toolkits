@@ -1,5 +1,8 @@
 # History
 
+## 5.1.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 5.1.0 (2021-12-16)
     * Add nature settings file
         * Add override on margin-bottom for description list to match design

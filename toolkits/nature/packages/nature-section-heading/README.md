@@ -6,9 +6,6 @@ The Nature Section heading is a type of heading used for titles of some subsecti
 
 It uses borders above and below the heading text to make it stand out from other headings on the page.
 
-![An example Section heading that reads "Heading text" with a thick black border above the heading text and a thinner black border below](https://user-images.githubusercontent.com/15365576/152790980-8ae409b1-96aa-4542-aa1b-405bd3747707.png)
-
-
 ## When to use this component
 
 Use the Nature Section heading when you want to organise multiple pieces of content into a section on a landing page. For example, a group of cards linking to articles on a similar subject.

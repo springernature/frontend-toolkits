@@ -1,5 +1,8 @@
 # History
 
+## 3.0.4 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 3.0.3 (2021-06-03)
     * Replace for .. in loop in `makeArray` to iterate safely over a `NodeList` in old browsers
 

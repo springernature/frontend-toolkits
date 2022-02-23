@@ -1,5 +1,11 @@
 # History
 
+## 8.1.2 (2022-02-18)
+    * Add back modifier .c-card--flush to reset padding
+
+## 8.1.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 8.1.0 (2022-02-09)
     * Option not to have images
     * Removed universal color from default since it is not available universally yet
@@ -13,6 +19,7 @@
 
 ## 7.0.1
     * wraps the aspect ratio variable declarion with Sass interpolation to work with Dart Sass
+
 ## 7.0.0 (2021-12-29)
     * BREAKING:
         * Template moved to `/view`

@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-grid",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "description": "css layout pattern",
   "keywords": [
@@ -10,6 +10,6 @@
   ],
   "author": "Charlie Owen",
   "peerDependencies": {
-    "bourbon-neat": "^2.0.0"
+    "bourbon-neat": "^4.0.0"
   }
 }

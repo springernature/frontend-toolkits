@@ -1,5 +1,8 @@
 # History
 
+## 7.0.1 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 7.0.0 (2021-01-12)
     * Optional search form and corresponding menu link
 
