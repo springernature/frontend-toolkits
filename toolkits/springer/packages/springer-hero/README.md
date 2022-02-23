@@ -15,4 +15,10 @@ Then compile the template located in the `./view` folder whenever the component 
 
 ## Variants
 
+### `imageLeft`
+
 You can display the image on the right (default; bottom on smaller screens) or left (top on smaller screens) by changing the data’s `imageLeft` property to `true`.
+
+### `color`
+
+You can override the default background color by including a `color` property.
