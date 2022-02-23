@@ -1,5 +1,17 @@
 # History
 
+## 4.0.0 (2022-02-23)
+    * BREAKING:
+        * Delete brand settings in favour to only use the default (intentional)
+        * Restructure the context.json to include `default` and `extended`
+            variants
+        * Rework the README file entirely
+        * Change default color and spacing
+        * Replace `--legal-padding-top` variable with `--legal-margin-top`
+    * Add a set of links, inside a navigation, that lives above the logo
+    * Add a `corporate-level` template in the `view`
+    * Use `corporate-level` partial into demo's `index` template
+
 ## 3.0.1 (2021-12-07)
     * BUG: Fixes font sizes that were incorrectly calculated
 ## 3.0.0 (2021-12-03)

@@ -4,12 +4,20 @@
  *
  */
 
-$corporate-footer--font-family: $context--font-family-sans;
-$corporate-footer--background-color: white;
-$corporate-footer--border: 1px solid lightgrey;
-$corporate-footer--legal-padding-top: spacing(4);
-$corporate-footer--font-size: 1rem;
-$corporate-footer--text-color: black;
+$corporate-footer--vertical-rhythm: spacing(32);
+
 $corporate-footer--margin-bottom: spacing(0);
-$corporate-footer--padding-top: spacing(16);
-$corporate-footer--padding-bottom: spacing(24);
+$corporate-footer--border: 2px solid #dadada;
+$corporate-footer--padding-top: $corporate-footer--vertical-rhythm;
+$corporate-footer--padding-bottom: $corporate-footer--vertical-rhythm;
+$corporate-footer--font-family: $context--font-family-sans;
+$corporate-footer--background-color: #01324B;
+$corporate-footer--font-size: 1rem;
+$corporate-footer--text-color: white;
+
+$corporate-footer--links-margin-bottom: $corporate-footer--vertical-rhythm;
+
+$corporate-footer--legal-margin-top: spacing(4);
+
+$corporate-footer--item-margin-right: spacing(24);
+$corporate-footer--item-line-height: 2;

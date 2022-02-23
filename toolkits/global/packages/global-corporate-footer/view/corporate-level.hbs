@@ -1,0 +1,26 @@
+<div class="c-corporate-footer">
+    <div class="u-container">
+		{{#with navigation}}
+			<nav>
+				<ul class="c-corporate-footer__links">
+					{{#each links}}
+					<li>
+						{{#if url}}
+							<a class="c-corporate-footer__link" href="{{url}}">{{text}}</a>
+						{{/if}}
+						{{#if buttonProperties}}
+							<button class="c-corporate-footer__link" {{buttonProps}}>{{text}}</button>
+						{{/if}}
+					</li>
+					{{/each}}
+				</ul>
+			</nav>
+		{{/with}}
+		{{#with image}}
+			<a href="{{link}}">
+				<img src="{{src}}" alt="{{alt}}" loading="lazy" width="200" height="20"/>
+			</a>
+		{{/with}}
+		<p class="c-corporate-footer__legal" data-test="copyright">&copy; {{currentYear}} Springer Nature</p>
+    </div>
+</div>
