@@ -9,3 +9,9 @@
 	margin-right: $pill--margin-right;
 	margin-bottom: $pill--margin-bottom;
 }
+
+.c-pill--secondary {
+	color: $pill--secondary-color;
+	border-color: $pill--secondary-color;
+	background-color: $pill--secondary-background-color;
+}

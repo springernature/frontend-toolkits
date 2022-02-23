@@ -10,3 +10,5 @@ $pill--background-color: color('light-blue');
 $pill--color: color('action-base');
 $pill--margin-right: spacing(4);
 $pill--margin-bottom: spacing(8);
+$pill--secondary-color: greyscale();
+$pill--secondary-background-color: $context--foreground-light;
