@@ -8,8 +8,6 @@ The Nature Header component includes:
 - a list of common actions, like view all journals, search and login - which appear in the top right
 - a vertical list of dropdown menu  links - which appear underneath the logo
 
-![The Nature Header from the Nature.com homepage. It shows the Nature logo, dropdown links, and options to view all journals, search, and login.](https://user-images.githubusercontent.com/15365576/153220110-5c03529a-ddd0-430d-83f1-217ff38c3336.png)
-
 ## When to use this component
 
 Use the Nature Header for any product or service in the Nature Portfolio.
