@@ -1,5 +1,11 @@
 # History
 
+## 1.4.0 (2022-02-23)
+    * Adds secondary colour scheme for pill
+
+## 1.3.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 1.3.1 (2021-10-23)
     * Safer prop name for url
 

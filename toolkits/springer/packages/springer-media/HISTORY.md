@@ -1,5 +1,8 @@
 # History
 
+## 6.0.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 6.0.1 (2022-02-16)
     * Revisit README.md to meet latest guideline    
     * Enhance demo with more examples

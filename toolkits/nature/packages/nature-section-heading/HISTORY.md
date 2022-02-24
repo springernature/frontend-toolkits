@@ -1,4 +1,8 @@
 # History
+
+## 1.1.2 (2022-02-23)
+Remove screenshots from README
+
 ## 1.1.1 (2022-02-07)
     * Update images in section heading README
 ## 1.1.0 (2022-02-02)

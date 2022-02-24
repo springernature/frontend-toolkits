@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-pill",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "license": "MIT",
   "description": "A pill shape container with background",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^15.0.0"
+  "brandContext": "^20.0.0"
 }

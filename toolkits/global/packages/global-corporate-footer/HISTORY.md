@@ -14,6 +14,9 @@
     * Add a `corporate-footer` template in the `view`
     * Use `corporate-footer` partial into demo's `index` template
 
+## 3.0.2 (2022-02-18)
+    * Remove post install step that was causing issues with CI
+
 ## 3.0.1 (2021-12-07)
     * BUG: Fixes font sizes that were incorrectly calculated
 ## 3.0.0 (2021-12-03)
