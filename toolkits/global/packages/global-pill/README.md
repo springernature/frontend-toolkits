@@ -13,6 +13,22 @@ To include `global-pill` in your application, you need to choose **ONE** brand f
 @import '@springernature/global-pill/scss/50-components/pill';
 ```
 
+## Modifiers
+
+### Secondary
+Allows for an alternative colour scheme to be used. This includes text colour, border colour, and background colour.
+
+```scss
+<div class="c-pill c-pill--secondary">Pill</div>
+```
+
+### Borderless
+Allows for a borderless component.
+
+```scss
+<div class="c-pill c-pill--borderless">Pill</div>
+```
+
 #### HTML
 
 ```html
