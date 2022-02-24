@@ -1,5 +1,8 @@
 # History
 
+## 1.5.0 (2022-02-24)
+    * Adds a modifier to display pills without a border
+
 ## 1.4.0 (2022-02-23)
     * Adds secondary colour scheme for pill
 
