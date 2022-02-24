@@ -648,6 +648,12 @@ body {
   color: white;
 }
 
+.c-corporate-footer__container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 16px;
+}
+
 .c-corporate-footer__links {
   list-style: none;
   margin: 0;
@@ -685,25 +691,19 @@ button.c-corporate-footer__link {
   border: none;
   text-decoration: underline;
 }
-
-.u-container {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 16px;
-}
 		</style>
 	</head>
 	<body style="padding:2%">
 		<strong>Default footer</strong>
 	<div class="c-corporate-footer">
-	    <div class="u-container">
+	    <div class="c-corporate-footer__container">
 				<nav>
 					<ul class="c-corporate-footer__links">
 						<li>
 								<a class="c-corporate-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
 						</li>
 						<li>
-								<a class="c-corporate-footer__link" href="/url/to/your/cookie/management/policy">Manage cookies / Do not sell my data</a>
+								<button class="c-corporate-footer__link">Manage cookies / Do not sell my data</button>
 						</li>
 						<li>
 								<a class="c-corporate-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
@@ -719,7 +719,7 @@ button.c-corporate-footer__link {
 <br>
 <strong>Footer with extended links</strong>
 	<div class="c-corporate-footer">
-	    <div class="u-container">
+	    <div class="c-corporate-footer__container">
 				<nav>
 					<ul class="c-corporate-footer__links">
 						<li>

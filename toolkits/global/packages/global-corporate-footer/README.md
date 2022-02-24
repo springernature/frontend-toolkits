@@ -33,14 +33,8 @@ consistent across brands.
 ```scss
 @import '@springernature/global-corporate-footer/scss/10-settings/default';
 
-// Include this with your other mixins
-@import '@springernature/brand-context/default/scss/30-mixins/lists';
-
 // Include this with your other components
 @import '@springernature/global-corporate-footer/scss/50-components/corporate-footer';
-
-// Include this with your other utilities
-@import '@springernature/brand-context/default/scss/60-utilities/container';
 ```
 
 ## Default footer
@@ -69,10 +63,10 @@ cookies require Javascript.
 application, the third party script of your Cookie consent banner of choice.
 
 There are **two main cookie consent banner providers** at Springer Nature:
-1. Springer Nature's custom [Consent Management Plateform
-  (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/)
+1. Springer Nature's custom [Consent Management Platform (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/)
   (Recommended)
-2. Third party One Trust cookie consent
+2. Third party One Trust cookie consent (currently being phased out in favour of
+   the above)
 
 For **the first one**, please refer to the [Preference Dialog Trigger section of the
 Cookie consent
@@ -110,6 +104,40 @@ a per project basis.
 Find a configurable template in the [`view` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/view). 
 
 You can see an example in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo).
+
+### Template configuration
+
+The configuration (a.k.a context) of the `corporate-footer` template should have
+the following structure:
+
+```json
+{
+  "navigation": {
+  "links": [
+    {
+      "text": "Example link",
+      "url": "/url/to/example/link"
+    },
+    {
+      "text": "Example button",
+      "buttonProperties": "onlick=\"doSomething()\""
+    }
+  ]
+  },
+  "image": {
+    "src": "path/to/springer/nature/logo",
+    "alt": "Springer Nature",
+    "link": "https://www.springernature.com/"
+  },
+  "currentYear": 2022
+}
+```
+
+**Note**: In the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo)
+you can find a `context.json` file that wraps the above structure into `default`
+and `extended` properties. This is only relevant for the Demo page in which we
+sandbox, thanks to theses wrappers, our `default` and `extended` version
+examples.
 
 ## Help improve this page
 

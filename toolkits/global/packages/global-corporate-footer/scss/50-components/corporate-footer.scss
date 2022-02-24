@@ -7,6 +7,10 @@
 	color: $corporate-footer--text-color;
 }
 
+.c-corporate-footer__container {
+	@include u-container();
+}
+
 .c-corporate-footer__links {
 	@include u-list-inline;
 	margin-bottom: $corporate-footer--links-margin-bottom;
