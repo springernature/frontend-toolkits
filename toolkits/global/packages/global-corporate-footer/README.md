@@ -2,33 +2,103 @@
 
 [![NPM version][badge-npm]][info-npm]
 
-The Global corporate footer component aims to deliver a consistent footer
-experience across our services and therefore aid navigation for our users.
-
-It consists of:
-- a set of standard links
-- our corporate logo (Springer Nature)
-- a copyright line which includes the current year followed by "Springer Nature".
+The Corporate footer gives copyright, licensing and other information about your service and department.
 
 ## When to use this component
 
-Use the Global corporate footer component as soon as your product or service
-needs a footer with a set of standardized links.
+Use this footer on all Springer, Nature Portfolio and Springer Nature products and services.
+
+## How it works
+
+There are 2 ways to configure the Corporate footer component.
+
+The default footer option includes footer items that must be used everywhere
+
+Or you can use the extended footer option. This includes the same footer items, as well as some extra links that only some services need.
+
+### Default footer
+
+#### Default footer items
+
+Always include these items in your footer:
+
+- Manage cookies / Do not sell my data
+- Accessibility statement
+- Privacy policy
+
+You must use this exact wording for the footer links so that they're the same across our products.
+
+#### Manage cookies / Do not sell my data
+
+This item uses `JavaScript` to open a diaglog window when a user clicks it. The window shows the user how to manage their cookie preferences.
+
+For that reason, the component uses a `<button>` element rather than an `<a>` element for the manage cookies action.
+
+You'll need to integrate the third party script of a cookie consent banner into your application.
+
+We use 2 main cookie consent banner providers at Springer Nature:
+
+1. Springer Nature's custom [Consent Management Platform (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/) (Recommended)
+2. Third party One Trust cookie consent (this is being phased out in favour of the above)
+
+For CMP, read how to implement the button in the [Preference Dialog Trigger section of the cookie consent
+documentation](https://cookie-consent.public.springernature.app/docs/getting-started/installation/#preference-dialog-trigger).  
+
+See an example implementation in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo).
+
+For One Trust, the generated HTML of the Manage cookies / Do not sell data interactive element looks like this:
+
+```html
+<button onclick="Optanon.ToggleInfoDisplay()" class="c-corporate-footer__link">Manage cookies / Do not sell my data</button>
+```
+
+### Accessibility statement and privacy policy
+
+The accessibility statement link must match the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
+
+The privacy policy you need to use to depends on the legal entity for the product you're working on. Talk to your Product Owner or Manager to find out which privacy policy to link to.
+
+### Extended footer
+
+The extended footer contains the same links as the default footer, with the option to include:
+
+- California privacy statement
+- Terms and conditions
+- Help and support
+
+#### California privacy statement and Help and support links
+
+Some products need to include one or both of the following:
+
+- California privacy statement
+- Help and support
+
+If you need to include a California Privacy Statement link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
+
+Help and support should link to the relevant contact options your service offers.
+
+#### Terms and conditions
+
+The text you should use for this link depends on what it covers for your product or service. 
+
+The most common options are:
+
+- Terms and conditions
+- Terms of use
+- Impressum
+- Imprint
 
 ## Installation
 
-To use the Global corporate footer component, enter the following command in
+To use the Corporate footer component, enter the following command in
 your Terminal:
 
 ```
 npm install @springernature/global-corporate-footer
 ```
+The Corporate footer component is designed to be the same across all brands. Because of this, it doesn't include any brand settings like some of the other components.
 
-Import the Sass:
-
-**Note**: The Global footer does not include settings overrides per brand as
-other components usually do. This is intentional and in order to have it
-consistent across brands.
+Import the installed component code in your `scss` file:
 
 ```scss
 @import '@springernature/global-corporate-footer/scss/10-settings/default';
@@ -36,68 +106,6 @@ consistent across brands.
 // Include this with your other components
 @import '@springernature/global-corporate-footer/scss/50-components/corporate-footer';
 ```
-
-## Default footer
-
-Links that should **always** be present:
-- Privacy policy
-- Manage cookies / Do not sell my data
-- Accessibility statement
-
-**Important**: These are standard labels and should be used as is.  
-However the destination of the link may differ on a product basis for _Privacy
-policy_ and _Manage cookies / Do not sell my data_ whereas the link for
-_Accessibility statement_ should be fixed to the one to be found in the [data
-source of the Demo](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
-
-### Manage cookies interaction
-
-_Manage cookies / Do not sell my data_ is a purely Javascript driven interaction
-as it is entended, upon click, to launch a dialog window presenting the user
-with an interface to manage their cookies preferences.  
-For that reason you **should not use an anchor (`<a>`) element**, but rather
-a button element. That is an acceptable behaviour as long as non-essential
-cookies require Javascript.
-
-**Note**: This interaction requires that you have integrated, into you
-application, the third party script of your Cookie consent banner of choice.
-
-There are **two main cookie consent banner providers** at Springer Nature:
-1. Springer Nature's custom [Consent Management Platform (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/)
-  (Recommended)
-2. Third party One Trust cookie consent (currently being phased out in favour of
-   the above)
-
-For **the first one**, please refer to the [Preference Dialog Trigger section of the
-Cookie consent
-documentation](https://cookie-consent.public.springernature.app/docs/getting-started/installation/#preference-dialog-trigger)
-to get the implementation details for the button.  
-An example implementation is to be found in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo).
-
-For **the second one**, the generated HTML of the _Manage cookies / Do not sell data_
-interactive element should be:
-
-```html
-<button onclick="Optanon.ToggleInfoDisplay()" class="c-corporate-footer__link">Manage cookies / Do not sell my data</button>
-```
-
-## Footer with extended links
-
-Links that **can be present** depending on the product needs:
-- Terms
-- California Privacy Statement
-- Help & Support
-
-**Important**: The label for the _Terms_ link is not yet standardized, as
-opposed to the two other ones. Hence _Terms_ may consist of more than 1 item.  
-The destination of the link may differ on a product basis for _Terms_ and _Help
-& Support_.  
-However the destination of the link for _California Privacy Statement_ should be
-fixed to the one to be found in the  [data source of the
-Demo](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
-
-**Note**: _California Privacy Statement_ and _Help & Support_ may be omitted on
-a per project basis.
 
 ## Template
 
@@ -107,8 +115,17 @@ You can see an example in the [`demo` folder](https://github.com/springernature/
 
 ### Template configuration
 
-The configuration (a.k.a context) of the `corporate-footer` template should have
-the following structure:
+#### Using the Corporate footer with an existing footer
+
+The Corporate footer component doesn't include a `<footer>` region/landmark. This means you can use it together with - for example - `springer-nature-publisher` inside a common `<footer>`.
+
+#### Configuring the default or extended footer option
+
+The `demo`'s `context.json` file shows both the `default` and `extended` versions of the footer. 
+
+We use wrappers around each version to sandbox them in the demo - but you won't need these wrappers when you're using the component in your application.
+
+The actual configuration of the `corporate-footer` should look something like this example:
 
 ```json
 {
@@ -133,16 +150,6 @@ the following structure:
 }
 ```
 
-**Note**: In the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo)
-you can find a `context.json` file that wraps the above structure into `default`
-and `extended` properties. This is only relevant for the Demo page in which we
-sandbox, thanks to theses wrappers, our `default` and `extended` version
-examples.
-
 ## Help improve this page
 
-If you’ve got a question, idea or suggestion about how to improve this component
-or guidance, post in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
-
-[info-npm]: https://www.npmjs.com/package/@springernature/global-corporate-footer
-[badge-npm]: https://img.shields.io/npm/v/@springernature/global-corporate-footer.svg
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).

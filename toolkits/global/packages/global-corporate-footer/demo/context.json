@@ -3,16 +3,16 @@
 		"navigation": {
 			"links": [
 				{
-					"text": "Privacy policy",
-					"url": "/url/to/your/privacy/policy"
-				},
-				{
 					"text": "Manage cookies / Do not sell my data",
 					"buttonProperties": "data-cc-action=\"preferences\""
 				},
 				{
 					"text": "Accessibility statement",
 					"url": "https://www.springernature.com/gp/info/accessibility"
+				},
+				{
+					"text": "Privacy policy",
+					"url": "/url/to/your/privacy/policy"
 				}
 			]
 		},
@@ -27,8 +27,12 @@
 		"navigation": {
 			"links": [
 				{
-					"text": "[Terms]",
-					"url": "/url/to/your/terms"
+					"text": "Manage cookies / Do not sell my data",
+					"buttonProperties": "data-cc-action=\"preferences\""
+				},
+				{
+					"text": "Accessibility statement",
+					"url": "https://www.springernature.com/gp/info/accessibility"
 				},
 				{
 					"text": "Privacy policy",
@@ -39,18 +43,15 @@
 					"url": "https://www.springernature.com/gp/legal/ccpa"
 				},
 				{
-					"text": "Manage cookies / Do not sell my data",
-					"buttonProperties": "data-cc-action=\"preferences\""
+					"text": "Terms and conditions",
+					"url": "/url/to/your/terms"
 				},
 				{
-					"text": "Accessibility statement",
-					"url": "https://www.springernature.com/gp/info/accessibility"
-				},
-				{
-					"text": "Help & Support (Optional)",
+					"text": "Help and support",
 					"url": "/url/to/your/help/and/support"
 				}
 			]
+
 		},
 		"image": {
 			"src": "../img/logo-springernature_white.svg",
