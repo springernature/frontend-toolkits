@@ -8,6 +8,7 @@ const showResults = results => {
 
 	const resultsContainer = document.createElement('div');
 	resultsContainer.className = 'c-results-container';
+	resultsContainer.setAttribute('role', 'listbox');
 
 	// Assuming results is an array
 	if(results.length === 0) {
@@ -16,8 +17,9 @@ const showResults = results => {
 	results.forEach(datum => {
 		const result = document.createElement('div');
 		result.textContent = datum;
-		result.tabIndex = '0'; // So you can focus/tab through the results
+		result.tabIndex = 0; // So you can focus/tab through the results
 		result.className = 'c-results-container__result';
+		result.setAttribute('role', 'option');
 		resultsContainer.appendChild(result);
 	});
 	document.querySelector('[data-component-autocomplete]').insertAdjacentElement('afterend', resultsContainer);
