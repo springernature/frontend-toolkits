@@ -17,8 +17,8 @@ StyleDictionaryPackage.registerFormat({
 	name: 'css/variables',
 	formatter: function (dictionary) {
 	return `@if global-variable-exists(use_custom_properties) {
-	${dictionary.allProperties.map(prop => `--${prop.name}: ${prop.value};
-`).join('\n    ') }}`
+	${dictionary.allProperties.map(prop => `--${prop.name}: ${prop.value};`).join('\n	')}
+}`
 	}});
 
 function getStyleDictionaryConfig(brand, categories) {
