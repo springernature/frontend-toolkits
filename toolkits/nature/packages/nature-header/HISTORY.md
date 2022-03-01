@@ -1,7 +1,7 @@
 # History
 
 ## 7.1.3 (2022-03-01)
- * PATCH: fix broken links to view and demo folders in docs
+ *  BUG: fix broken links to view and demo folders in docs
 
 ## 7.1.2 (2022-02-23)
     * Remove screenshots from README
