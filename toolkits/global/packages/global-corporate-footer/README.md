@@ -153,3 +153,6 @@ The actual configuration of the `corporate-footer` should look something like th
 ## Help improve this page
 
 If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#design-systems Slack channel](https://springernature.slack.com/archives/C75DHBTBP).
+
+[info-npm]: https://www.npmjs.com/package/@springernature/global-corporate-footer
+[badge-npm]: https://img.shields.io/npm/v/@springernature/global-corporate-footer.svg
