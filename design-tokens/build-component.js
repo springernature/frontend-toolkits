@@ -14,17 +14,20 @@ function tokenFilter(brand, category) {
 }
 
 function getStyleDictionaryConfig(brand, categories) {
-	let dest = `./context/brand-context/${brand}/scss`;
+	let dest = `./toolkits/${brand}/packages/${categories}/scss`;
 
 	return {
-		include: [`${__dirname}/literal/**/*.json`],
+		include: [
+			`${__dirname}/literal/**/*.json`,
+			`${__dirname}/relative/**/*.json`
+		],
 		source: [
-			`${__dirname}/relative/${brand}/**/*.json`
+			`${__dirname}/component/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
+				buildPath: `${dest}/00-tokens/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
@@ -35,7 +38,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			},
 			scssMaps: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
+				buildPath: `${dest}/00-tokens/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.map.scss`,
@@ -47,7 +50,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			},
 			cssCustomProperties: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
+				buildPath: `${dest}/00-tokens/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.custom-properties.scss`,
@@ -62,37 +65,12 @@ function getStyleDictionaryConfig(brand, categories) {
 
 console.log('Build started...');
 
-['default'].map(function (brand) {
-	let dir = `${__dirname}/relative/${brand}`
+['global'].map(function (brand) {
+	let dir = `${__dirname}/component/${brand}`
 	const categories = readdirSync(dir);
-
-	console.log('\n==============================================');
-	console.log(`\nProcessing: [${brand}]`);
-
-	// const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
+
 	brands.buildAllPlatforms();
 
 	console.log('\nEnd processing');
-	// StyleDictionary.buildPlatform(brand);
-});
-
-['default'].map(function (brand) {
-	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/relative/`);
-	let dest = `./context/brand-context/${brand}/scss/00-tokens/relative`;
-
-	console.log('\n==============================================');
-	console.log(`\nProcessing Sass index file: [${brand}]`);
-
-	require('fs').writeFileSync(
-
-		// create an index.scss based off of the dest letiable
-		`${dest}/_index.scss`,
-
-		// create a list of each file in the directory
-		fileNames.map(file => {
-			// return a string of the file name
-			return `@import '${file}';`
-		}).join('\n')
-	);
 });

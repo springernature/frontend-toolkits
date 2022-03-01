@@ -57,6 +57,7 @@
 .c-header__link {
 	@include u-link-interface;
 	color: $header--item-color;
+	color: orange;
 
 	&:visited {
 		color: $header--item-color;
@@ -123,4 +124,9 @@
 
 .c-header__springer-link {
 	font-size: 0.8em;
+}
+
+
+.c-header__link--nav {
+	color: red !important;`
 }

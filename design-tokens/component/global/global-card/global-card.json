@@ -1,0 +1,11 @@
+{
+	"global-card": {
+		"color": {
+			"value": "{color.neutral.200}",
+			"comment": "mobile"
+		},
+		"border": {
+			"value": "{border.color.primary}"
+		}
+	}
+}

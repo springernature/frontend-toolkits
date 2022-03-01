@@ -1,25 +1,5 @@
 {
 	"color": {
-		"primary": {
-			"universal-dark-blue": {
-				"value": "#01324B"
-			},
-			"medium-blue": {
-				"value": "#025E8D"
-			},
-			"grey-blue-light-1": {
-				"value": "#EBF1F5"
-			},
-			"grey-blue-light-2": {
-				"value": "#CEDBE0"
-			},
-			"black": {
-				"value": "{color.neutral.800}"
-			},
-			"white": {
-				"value": "{color.neutral.100}"
-			}
-		},
 		"neutral": {
 			"100": {
 				"name": "neutral-100",
@@ -58,6 +38,26 @@
 				"value": "#000000"
 			}
 		},
+		"primary": {
+			"universal-dark-blue": {
+				"value": "#01324B"
+			},
+			"medium-blue": {
+				"value": "#025E8D"
+			},
+			"grey-blue-light-1": {
+				"value": "#EBF1F5"
+			},
+			"grey-blue-light-2": {
+				"value": "#CEDBE0"
+			},
+			"black": {
+				"value": "{color.neutral.800}"
+			},
+			"white": {
+				"value": "{color.neutral.100}"
+			}
+		},
 		"information": {
 			"red": {
 				"value": "#C40606"
@@ -81,41 +81,6 @@
 			},
 			"focus": {
 				"value": "#FFCC00"
-			}
-		},
-		"springer-nature": {
-			"research": {
-				"orange": {
-					"value": "#C75301"
-				},
-				"forest": {
-					"value": "#007373"
-				},
-				"purple": {
-					"value": "#785BA7"
-				}
-			}
-		},
-		"nature": {
-			"black": {
-				"value": "{color.neutral.800}"
-			},
-			"gunmetal": {
-				"value": "#29303C"
-			},
-			"dark-red": {
-				"value": "#940720"
-			}
-		},
-		"springer": {
-			"oxford-blue": {
-				"value": "#00285A"
-			},
-			"french-blue": {
-				"value": "#0176C3"
-			},
-			"alice-blue": {
-				"value": "#EBF6FF"
 			}
 		}
 	}
