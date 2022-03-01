@@ -1,7 +1,7 @@
 # History
 
 ## 1.1.3 (2022-03-01)
-    PATCH: Fix broken view and demo links in README
+    * BUG: Fix broken view and demo links in README
 
 ## 1.1.2 (2022-02-23)
     Remove screenshots from README
