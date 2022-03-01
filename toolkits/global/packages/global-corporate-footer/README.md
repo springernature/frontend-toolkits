@@ -30,7 +30,7 @@ You must use this exact wording for the footer links so that they're the same ac
 
 #### Manage cookies / Do not sell my data
 
-This item uses `JavaScript` to open a diaglog window when a user clicks it. The window shows the user how to manage their cookie preferences.
+This item uses `JavaScript` to open a dialog window when a user clicks it. The window shows the user how to manage their cookie preferences.
 
 For that reason, the component uses a `<button>` element rather than an `<a>` element for the manage cookies action.
 
