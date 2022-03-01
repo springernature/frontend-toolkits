@@ -1,0 +1,16 @@
+{
+	"state": {
+		"error": {
+			"value": "{color.information.red}"
+		},
+		"warning": {
+			"value": "{color.information.orange}"
+		},
+		"success": {
+			"value": "{color.information.green}"
+		},
+		"information": {
+			"value": "{color.information.blue}"
+		}
+	}
+}
