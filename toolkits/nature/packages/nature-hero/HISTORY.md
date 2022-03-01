@@ -1,7 +1,7 @@
 # History
 
 ## 2.1.2 (2022-03-01)
-    * PATCH: Improve wording of template / demo links on README
+    * BUG: Improve wording of template / demo links on README
 
 ## 2.1.2 (2022-02-10)
     * BUG: Image not displaying on demo
