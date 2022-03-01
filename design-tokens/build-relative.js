@@ -15,8 +15,8 @@ function tokenFilter(brand, category) {
 
 StyleDictionaryPackage.registerFormat({
 	name: 'css/variables',
-	formatter: function (dictionary, file) {
-	return `@if global-variable-exists(use_custom_properties) or @if global-variable-exists(use_custom_properties_file) {
+	formatter: function (dictionary) {
+		return `@if global-variable-exists(use_custom_properties) {
 	${dictionary.allProperties.map(prop => `--${prop.name}: ${prop.value};`).join('\n	')}
 }`
 	}});
