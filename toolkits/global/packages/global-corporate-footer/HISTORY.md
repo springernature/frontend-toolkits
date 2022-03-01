@@ -1,5 +1,9 @@
 # History
 
+## 4.0.1 (2022-03-01)
+    * Explicitly set padding to 0 for footer items that are buttons to avoid
+        any inherited(from `button`) padding
+
 ## 4.0.0 (2022-02-23)
     * BREAKING:
         * Delete brand settings in favour to only use the default (intentional)
