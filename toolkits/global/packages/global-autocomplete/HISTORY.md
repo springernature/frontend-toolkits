@@ -1,5 +1,11 @@
 # History
 
+## 5.1.4 (2022-02-25)
+    * BUG: unable to move focus to select autocomplete items when using NVDA with Firefox (Windows) 
+        * add role="listbox" to parent container of autocomplete items
+        * add role="option" to each autocomplete item  
+    * Change tabIndex value from string to integer
+
 ## 5.1.3 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
