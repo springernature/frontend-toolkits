@@ -1,5 +1,9 @@
 # History
 
+## 3.0.1 (2022-03-01)
+    * PATCH: Improve text for links to component view and demo folders. 
+    * Move template section underneath installation.
+
 ## 3.0.0 (2022-02-14)
     * BREAKING: Performs a complete rewrite of the component. Component no longer is a dropdown, now simpler implementation with radio buttons in a form.
 

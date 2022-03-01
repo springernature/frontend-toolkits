@@ -59,7 +59,15 @@ import {header} from '@springernature/nature-header/js/header';
 header();
 ```
 
-Once you’ve installed the `scss` and JavaScript, build your Header using the Handlebars template below as a guide.
+Once you’ve installed the `scss` and JavaScript, build your Header using the `Handlebars` template below as a guide.
+
+### Template
+
+You can find a configurable template in the [Header's `view` folder](https://github.com/springernature/frontend-toolkits/blob/master/toolkits/nature/packages/nature-header/view/header.hbs).
+
+See an example in the [Header's `demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-header/demo)
+
+The loops and conditional statements show which parts of the component contain dynamic content.
 
 ### Header
 
@@ -69,10 +77,6 @@ For ease of maintenance, the `scss` for this component is separated into 2 class
 
 - `c-header-expander` - for all interactive Header parts that users can open and close, like dropdown menus and pop-out modals
 - `c-header` - for all other parts of the Header
-
-You can find the HTML in the [included handlebars template](./view/header.hbs).
-
-The loops and conditional statements show which parts of the component contain dynamic content.
 
 ### Header expander
 
@@ -100,8 +104,6 @@ If the items in your menu are dynamic, you can use the `c-header-expander__item�
 For example, you may want to keep social media links grouped together, visually separated from the other menu items.
 
 In these instances, you can apply `c-header-expander__item–keyline-first-item-only` to a group of list items, so the first item in that group always has a keyline above it.
-
-You can see an example of this in the `view` template.
 
 ## Research on this component
 

@@ -1,5 +1,8 @@
 # History
 
+## 2.1.1 (2022-03-01)
+    * PATCH: fix broken links to view and demo folders in docs
+
 ## 2.1.0 (2022-02-02)
     * FEATURE: add view template and demo
 

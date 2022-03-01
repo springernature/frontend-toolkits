@@ -53,7 +53,9 @@ Once you’ve installed the `scss`, build your Section heading using the followi
 
 ## Template
 
-A configurable template can found in the [`view` folder](./view/section-heading.hbs). Example usage can be found in the `demo` folder.
+Find a configurable template in the [Section heading's `view` folder](https://github.com/springernature/frontend-toolkits/blob/master/toolkits/nature/packages/nature-section-heading/view/section-heading.hbs). 
+
+See an example in the [Section heading's `demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-section-heading/demo).
 
 ## Help improve this page
 
