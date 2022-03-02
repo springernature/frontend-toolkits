@@ -31,11 +31,20 @@
 .c-corporate-footer__link {
 	@include u-link-inherit;
 	white-space: nowrap;
+
+	&:focus {
+		outline: spacing(4) solid #ffcc00;
+	}
+
+	> img {
+		vertical-align: middle;
+	}
 }
 
 button.c-corporate-footer__link {
-	background: none;
+	@include u-link-underline;
 	border: none;
-	text-decoration: underline;
 	padding: 0;
+	background: none;
+	font-family: $corporate-footer--font-family;
 }
