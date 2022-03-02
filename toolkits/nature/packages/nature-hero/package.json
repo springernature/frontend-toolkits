@@ -1,6 +1,6 @@
 {
     "name": "@springernature/nature-hero",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "license": "MIT",
     "description": "The Nature Hero component appears at the top of the page on all Nature journal sites.",
     "keywords": [],
