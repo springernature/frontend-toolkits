@@ -1,5 +1,15 @@
 # History
 
+## 4.0.1 (2022-03-02)
+    * Explicitly set extra styling for footer items that are buttons to avoid
+        any inherited styling(from `button`)
+        * Set padding to 0
+        * Set same font family, hover style and focus style as the other footer
+            items
+    * Explicitly set yellow focus color for footer interactive elements
+    * Assign `.c-corporate-footer__link` class to logo link in the template
+    * Explicitly set vertical alignment for the logo
+
 ## 4.0.0 (2022-02-23)
     * BREAKING:
         * Delete brand settings in favour to only use the default (intentional)
