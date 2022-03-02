@@ -1,6 +1,6 @@
 # History
 
-## 2.1.2 (2022-03-01)
+## 2.1.3 (2022-03-01)
     * BUG: Improve wording of template / demo links on README
 
 ## 2.1.2 (2022-02-10)
