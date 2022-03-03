@@ -1,7 +1,66 @@
 {
-	"image": {
-		"src": "../img/logo-springernature_white.svg",
-		"alt": "Springer Nature"
+	"default": {
+		"navigation": {
+			"links": [
+				{
+					"text": "Manage cookies / Do not sell my data",
+					"buttonProperties": "data-cc-action=\"preferences\""
+				},
+				{
+					"text": "Accessibility statement",
+					"url": "https://www.springernature.com/gp/info/accessibility"
+				},
+				{
+					"text": "Privacy policy",
+					"url": "/url/to/your/privacy/policy"
+				}
+			]
+		},
+		"image": {
+			"src": "../img/logo-springernature_white.svg",
+			"alt": "Springer Nature",
+			"link": "https://www.springernature.com/"
+		},
+		"currentYear": 2022
 	},
-	"copyright": "&copy; 2020 Springer Nature Limited"
+	"extended": {
+		"navigation": {
+			"links": [
+				{
+					"text": "Manage cookies / Do not sell my data",
+					"buttonProperties": "data-cc-action=\"preferences\""
+				},
+				{
+					"text": "Accessibility statement",
+					"url": "https://www.springernature.com/gp/info/accessibility"
+				},
+				{
+					"text": "Privacy policy",
+					"url": "/url/to/your/privacy/policy"
+				},
+				{
+					"text": "California privacy statement (Optional)",
+					"url": "https://www.springernature.com/gp/legal/ccpa"
+				},
+				{
+					"text": "Terms and conditions",
+					"url": "/url/to/your/terms"
+				},
+				{
+					"text": "Help and support",
+					"url": "/url/to/your/help/and/support"
+				}
+			]
+
+		},
+		"image": {
+			"src": "../img/logo-springernature_white.svg",
+			"alt": "Springer Nature",
+			"link": "https://www.springernature.com/"
+		},
+		"currentYear": 2022
+	},
+	"dynamicPartials": {
+		"corporate-footer": "./toolkits/global/packages/global-corporate-footer/view/corporate-footer.hbs"
+	}
 }

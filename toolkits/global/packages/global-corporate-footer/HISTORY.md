@@ -1,5 +1,29 @@
 # History
 
+## 4.0.1 (2022-03-02)
+    * Explicitly set extra styling for footer items that are buttons to avoid
+        any inherited styling(from `button`)
+        * Set padding to 0
+        * Set same font family, hover style and focus style as the other footer
+            items
+    * Explicitly set yellow focus color for footer interactive elements
+    * Assign `.c-corporate-footer__link` class to logo link in the template
+    * Explicitly set vertical alignment for the logo
+
+## 4.0.0 (2022-02-23)
+    * BREAKING:
+        * Delete brand settings in favour to only use the default (intentional)
+        * Restructure the context.json to include `default` and `extended`
+            variants
+        * Rework the README file entirely
+        * Change default color and spacing
+        * Replace `--legal-padding-top` variable with `--legal-margin-top`
+        * Replace `u-container` div in favour to `c-corporate-footer__container`
+            to avoid point of failure
+    * Add a set of links, inside a navigation, that lives above the logo
+    * Add a `corporate-footer` template in the `view`
+    * Use `corporate-footer` partial into demo's `index` template
+
 ## 3.0.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
