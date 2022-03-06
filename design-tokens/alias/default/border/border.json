@@ -2,10 +2,10 @@
 	"border": {
 		"color": {
 			"primary": {
-				"value": "{color.neutral.900}"
+				"value": "{color.grayscale.900}"
 			},
 			"input": {
-				"value": "{color.neutral.700}"
+				"value": "{color.grayscale.700}"
 			},
 			"button": {
 				"value": "{color.primary.medium-blue}"

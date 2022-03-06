@@ -25,45 +25,48 @@ function getStyleDictionaryConfig(brand, categories) {
 	let dest = `./context/brand-context/${brand}/scss`;
 
 	return {
-		include: [`${__dirname}/literal/**/*.json`],
+		include: [`${__dirname}/global/**/*.json`],
 		source: [
-			`${__dirname}/relative/${brand}/**/*.json`
+			`${__dirname}/alias/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
+				buildPath: `${dest}/00-tokens/alias/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, category),
+						"options": {
+							"outputReferences": true
+						}
 					}
 				})
 			},
-			scssMaps: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.map.scss`,
-						format: 'scss/map-flat',
-						mapName: `context--${category}`,
-						filter: tokenFilter(brand, category),
-					}
-				})
-			},
-			cssCustomProperties: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/relative/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.custom-properties.scss`,
-						format: 'css/variables',
-						filter: tokenFilter(brand, category),
-					}
-				})
-			}
+			// scssMaps: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/alias/`,
+			// 	files: categories.map(category => {
+			// 		return {
+			// 			destination: `_${category}.map.scss`,
+			// 			format: 'scss/map-flat',
+			// 			mapName: `context--${category}`,
+			// 			filter: tokenFilter(brand, category),
+			// 		}
+			// 	})
+			// },
+			// cssCustomProperties: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/alias/`,
+			// 	files: categories.map(category => {
+			// 		return {
+			// 			destination: `_${category}.custom-properties.scss`,
+			// 			format: 'css/variables',
+			// 			filter: tokenFilter(brand, category),
+			// 		}
+			// 	})
+			// }
 		}
 	}
 }
@@ -71,7 +74,7 @@ function getStyleDictionaryConfig(brand, categories) {
 console.log('Build started...');
 
 ['default'].map(function (brand) {
-	let dir = `${__dirname}/relative/${brand}`
+	let dir = `${__dirname}/alias/${brand}`
 	const categories = readdirSync(dir);
 
 	console.log('\n==============================================');
@@ -86,8 +89,8 @@ console.log('Build started...');
 });
 
 ['default'].map(function (brand) {
-	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/relative/`);
-	let dest = `./context/brand-context/${brand}/scss/00-tokens/relative`;
+	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/alias/`);
+	let dest = `./context/brand-context/${brand}/scss/00-tokens/alias`;
 
 	console.log('\n==============================================');
 	console.log(`\nProcessing Sass index file: [${brand}]`);

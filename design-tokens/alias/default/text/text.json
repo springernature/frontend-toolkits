@@ -1,0 +1,13 @@
+{
+	"text": {
+		"primary": {
+			"value": "{color.grayscale.900}"
+		},
+		"secondary": {
+			"value": "{color.grayscale.600}"
+		},
+		"reversed": {
+			"value": "{color.grayscale.100}"
+		}
+	}
+}

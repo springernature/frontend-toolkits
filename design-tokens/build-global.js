@@ -18,13 +18,13 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
-			`${__dirname}/literal/default/**/*.json`,
-			`${__dirname}/literal/${brand}/**/*.json`
+			`${__dirname}/global/default/**/*.json`,
+			`${__dirname}/global/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/literal/`,
+				buildPath: `${dest}/00-tokens/global/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
@@ -33,29 +33,29 @@ function getStyleDictionaryConfig(brand, categories) {
 					}
 				})
 			},
-			scssMaps: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/literal/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.map.scss`,
-						format: 'scss/map-flat',
-						mapName: `context--${category}`,
-						filter: tokenFilter(brand, category),
-					}
-				})
-			},
-			cssCustomProperties: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/literal/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.custom-properties.scss`,
-						format: 'css/variables',
-						filter: tokenFilter(brand, category),
-					}
-				})
-			}
+			// scssMaps: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/global/`,
+			// 	files: categories.map(category => {
+			// 		return {
+			// 			destination: `_${category}.map.scss`,
+			// 			format: 'scss/map-flat',
+			// 			mapName: `context--${category}`,
+			// 			filter: tokenFilter(brand, category),
+			// 		}
+			// 	})
+			// },
+			// cssCustomProperties: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/global/`,
+			// 	files: categories.map(category => {
+			// 		return {
+			// 			destination: `_${category}.custom-properties.scss`,
+			// 			format: 'css/variables',
+			// 			filter: tokenFilter(brand, category),
+			// 		}
+			// 	})
+			// }
 		}
 	}
 }
@@ -63,7 +63,7 @@ function getStyleDictionaryConfig(brand, categories) {
 console.log('Build started...');
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	let dir = `${__dirname}/literal/${brand}`
+	let dir = `${__dirname}/global/${brand}`
 	const categories = readdirSync(dir);
 
 	console.log('\n==============================================');
@@ -79,23 +79,23 @@ console.log('Build started...');
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	if (brand === 'default') {
-		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/literal/');
+		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/global/');
 	} else if (brand === 'springernature') {
-		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/literal/');
+		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/global/');
 	} else if (brand === 'springer') {
-		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/literal/');
+		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/global/');
 	} else if (brand === 'nature') {
-		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/literal/');
+		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/global/');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
-	let dir = `${__dirname}/literal/${brand}`
+	let dir = `${__dirname}/global/${brand}`
 	console.log('\n==============================================');
 	console.log(`\nProcessing Sass index file: [${brand}]`);
 
 	require('fs').writeFile(
 
 		// create an index.scss based off of the dest letiable
-		`${dest}/00-tokens/literal/_index.scss`,
+		`${dest}/00-tokens/global/_index.scss`,
 
 		// create a list of each file in the directory
 		fileNames.map(file => {
@@ -110,7 +110,7 @@ console.log('Build started...');
 			}
 		}
 	);
-	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/literal/_index.scss created`);
+	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/global/_index.scss created`);
 	console.log('\nEnd processing');
 });
 

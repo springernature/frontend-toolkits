@@ -1,7 +1,8 @@
 {
 	"global-card": {
 		"color": {
-			"value": "{color.neutral.200}",
+			"name": "white",
+			"value": "{color.grayscale.200}",
 			"comment": "mobile"
 		},
 		"border": {

@@ -1,40 +1,40 @@
 {
 	"color": {
-		"neutral": {
-			"100": {
-				"name": "neutral-100",
+		"grayscale": {
+			"white": {
+				"name": "grayscale-white",
 				"value": "#ffffff"
 			},
 			"200": {
-				"name": "neutral-200",
+				"name": "grayscale-200",
 				"value": "#f8f8f8"
 			},
 			"300": {
-				"name": "neutral-300",
+				"name": "grayscale-300",
 				"value": "#f3f3f3"
 			},
 			"400": {
-				"name": "neutral-400",
+				"name": "grayscale-400",
 				"value": "#dadada"
 			},
 			"500": {
-				"name": "neutral-500",
+				"name": "grayscale-500",
 				"value": "#999999"
 			},
 			"600": {
-				"name": "neutral-600",
+				"name": "grayscale-600",
 				"value": "#666666"
 			},
 			"700": {
-				"name": "neutral-700",
+				"name": "grayscale-700",
 				"value": "#555555"
 			},
 			"800": {
-				"name": "neutral-800",
+				"name": "grayscale-800",
 				"value": "#222222"
 			},
-			"900": {
-				"name": "neutral-900",
+			"black": {
+				"name": "grayscale-black",
 				"value": "#000000"
 			}
 		},
@@ -52,10 +52,10 @@
 				"value": "#CEDBE0"
 			},
 			"black": {
-				"value": "{color.neutral.800}"
+				"value": "{color.grayscale.800}"
 			},
 			"white": {
-				"value": "{color.neutral.100}"
+				"value": "{color.grayscale.100}"
 			}
 		},
 		"information": {

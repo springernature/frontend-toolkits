@@ -29,10 +29,10 @@ These are the ‘locked’ tokens, that hold a value that should not change. The
 The Design values we have integrated into a Design Tokens workflow are:
 #### Colour
 The `color` Design Tokens will be used for any Relative Design Token defined.
-As the current colour palettes used are relatively small we will name most of the colours. For the neutral colours we will apply a numerical scale to go from white to black, `100` to `900`. This naming convention allows for additional neutral colours to be added over time if needed.
+As the current colour palettes used are relatively small we will name most of the colours. For the grayscale colours we will apply a numerical scale to go from white to black, `100` to `900`. This naming convention allows for additional grayscale colours to be added over time if needed.
 There are four categories for the colour palettes used across Springer Nature:
 1. UI - These are used for the foreground and background colours of the web page. The page background, the header background, the footer background. As well as interactive states of text links and buttons.
-2. Neutrals - These are used for border colours, text colours, and backgrounds.
+2. grayscales - These are used for border colours, text colours, and backgrounds.
 3. Information - These are used for different states like the error state of a form input, or the focus state of a text link.
 4. Brand Specific Colours - These are specific to the various brands across Springer Nature and could be used for text, border, background colour etc.
 ##### Example
@@ -44,13 +44,13 @@ There are four categories for the colour palettes used across Springer Nature:
 				"value": "#01324b"
 			}
 		},
-		"neutral": {
+		"grayscale": {
 			"100": {
-				"name": "neutral-100",
+				"name": "grayscale-100",
 				"value": "#ffffff"
   		},
 			"200": {
-				"name": "neutral-200",
+				"name": "grayscale-200",
 				"value": "#f8f8f8"
 			}
 		}

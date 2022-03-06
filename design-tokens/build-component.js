@@ -18,8 +18,8 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		include: [
-			`${__dirname}/literal/**/*.json`,
-			`${__dirname}/relative/**/*.json`
+			`${__dirname}/global/**/*.json`,
+			`${__dirname}/alias/**/*.json`
 		],
 		source: [
 			`${__dirname}/component/**/*.json`
@@ -33,32 +33,24 @@ function getStyleDictionaryConfig(brand, categories) {
 						destination: `_${category}.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, category),
+						"options": {
+							"outputReferences": true
+						}
 					}
 				})
 			},
-			scssMaps: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.map.scss`,
-						format: 'scss/map-flat',
-						mapName: `context--${category}`,
-						filter: tokenFilter(brand, category),
-					}
-				})
-			},
-			cssCustomProperties: {
-				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
-				files: categories.map(category => {
-					return {
-						destination: `_${category}.custom-properties.scss`,
-						format: 'css/variables',
-						filter: tokenFilter(brand, category),
-					}
-				})
-			}
+			// scssMaps: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/`,
+			// 	files: categories.map(category => {
+			// 		return {
+			// 			destination: `_${category}.map.scss`,
+			// 			format: 'scss/map-flat',
+			// 			mapName: `context--${category}`,
+			// 			filter: tokenFilter(brand, category),
+			// 		}
+			// 	})
+			// },
 		}
 	}
 }
