@@ -36,8 +36,8 @@
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
     "validate:springernature": "sn-package-validate -t springernature",
-    "tokens:literal": "node ./design-tokens/build-literal.js",
-    "tokens:relative": "node ./design-tokens/build-relative.js",
+    "tokens:global": "node ./design-tokens/build-global.js",
+    "tokens:alias": "node ./design-tokens/build-alias.js",
     "tokens:component": "node ./design-tokens/build-component.js",
     "tokens:clean": "npx rimraf **/00-tokens/",
     "node_modules:clean": "npx rimraf node_modules/"
