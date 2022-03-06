@@ -48,12 +48,16 @@ function getStyleDictionaryConfig(brand, categories) {
 			// 			format: 'scss/map-flat',
 			// 			mapName: `context--${category}`,
 			// 			filter: tokenFilter(brand, category),
+			// 			"options": {
+			// 				"outputReferences": true
+			// 			}
 			// 		}
 			// 	})
 			// },
 		}
 	}
 }
+// TODO: see if I can combine this with an existing Sass file
 
 console.log('Build started...');
 
