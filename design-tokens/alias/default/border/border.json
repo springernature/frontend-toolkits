@@ -2,7 +2,7 @@
 	"border": {
 		"color": {
 			"primary": {
-				"value": "{color.grayscale.900}"
+				"value": "{color.black}"
 			},
 			"input": {
 				"value": "{color.grayscale.700}"

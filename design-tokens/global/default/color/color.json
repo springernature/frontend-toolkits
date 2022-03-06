@@ -1,10 +1,14 @@
 {
 	"color": {
+		"white": {
+			"name": "white",
+			"value": "#ffffff"
+		},
+		"black": {
+			"name": "black",
+			"value": "#000000"
+		},
 		"grayscale": {
-			"white": {
-				"name": "grayscale-white",
-				"value": "#ffffff"
-			},
 			"200": {
 				"name": "grayscale-200",
 				"value": "#f8f8f8"
@@ -32,10 +36,6 @@
 			"800": {
 				"name": "grayscale-800",
 				"value": "#222222"
-			},
-			"black": {
-				"name": "grayscale-black",
-				"value": "#000000"
 			}
 		},
 		"primary": {
@@ -52,10 +52,10 @@
 				"value": "#CEDBE0"
 			},
 			"black": {
-				"value": "{color.grayscale.800}"
+				"value": "{color.black}"
 			},
 			"white": {
-				"value": "{color.grayscale.100}"
+				"value": "{color.white}"
 			}
 		},
 		"information": {
