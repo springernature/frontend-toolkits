@@ -1,5 +1,9 @@
 # History
 
+## 5.1.0 (2022-03-04)
+    * Action property for buttons (cookie management)
+    * Moved template to view folder
+
 ## 5.0.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
