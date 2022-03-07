@@ -59,10 +59,10 @@
 }
 
 .c-publisher-footer__link {
-	border: 0;
-	padding: 0;
-	background: none;
 	@include u-text-furniture;
 	@include u-link-interface;
 	@include gray-link;
+	border: 0;
+	padding: 0;
+	background: none;
 }
