@@ -1,5 +1,8 @@
 # History
 
+## 2.1.3 (2022-03-10)
+    * Remove post install step that was causing issues with CI
+
 ## 2.1.2 (2022-02-10)
     * BUG: Image not displaying on demo
 
