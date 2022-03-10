@@ -1,5 +1,10 @@
 # History
 
+## 4.0.2 (2022-03-03)
+    * BUG: Fix mistakes in template around `buttonProperties`
+        * Patch buttonProps to buttonProperties
+        * Add extra wrapping curlies to avoid conversion to HTML entities
+
 ## 4.0.1 (2022-03-02)
     * Explicitly set extra styling for footer items that are buttons to avoid
         any inherited styling(from `button`)

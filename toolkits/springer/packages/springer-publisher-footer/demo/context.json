@@ -1,130 +1,134 @@
 {
-	"logo": {
-		"src": "../img/logo-springer-greyscale.svg",
-		"alt": "Springer logo"
+	"footer": {
+		"logo": {
+			"src": "../img/logo-springer-greyscale.svg",
+			"alt": "Springer logo"
+		},
+		"categories": [
+			{
+				"title": "Publish with us",
+				"links": [
+					{
+						"label": "Authors",
+						"href": "https://www.springer.com/gp/authors-editors"
+					},
+					{
+						"label": "Journal authors",
+						"href": "https://www.springer.com/gp/authors-editors/journal-author"
+					},
+					{
+						"label": "Publishing ethics",
+						"href": "https://www.springer.com/gp/authors-editors/journal-author/journal-author-helpdesk/publishing-ethics/14214"
+					},
+					{
+						"label": "Open access & Springer",
+						"href": "https://www.springer.com/gp/authors-editors/journal-author/journal-author-helpdesk/publishing-ethics/14214"
+					}
+				]
+			},
+			{
+				"title": "Discover content",
+				"links": [
+					{
+						"label": "SpringerLink",
+						"href": "https://link.springer.com/"
+					},
+					{
+						"label": "Books A-Z",
+						"href": "https://link.springer.com/books/a/1"
+					},
+					{
+						"label": "Journals A-Z",
+						"href": "https://link.springer.com/journals/a/1"
+					},
+					{
+						"label": "Video",
+						"href": "https://link.springer.com/video"
+					}
+				]
+			},
+			{
+				"title": "Other services",
+				"links": [
+					{
+						"label": "Instructors",
+						"href": "https://www.springer.com/gp/instructors"
+					},
+					{
+						"label": "Librarians",
+						"href": "https://www.springernature.com/gp/librarians"
+					},
+					{
+						"label": "Societies and Publishing Partners",
+						"href": "https://www.springer.com/gp/partners"
+					},
+					{
+						"label": "Advertisers",
+						"href": "https://www.springer.com/gp/advertisers"
+					},
+					{
+						"label": "Shop on Springer.com",
+						"href": "https://www.springer.com/gp/shop"
+					}
+				]
+			},
+			{
+				"title": "About Springer",
+				"links": [
+					{
+						"label": "About us",
+						"href": "https://www.springer.com/gp/about-springer"
+					},
+					{
+						"label": "Help & Support",
+						"href": "https://www.springer.com/gp/help"
+					},
+					{
+						"label": "Contact us",
+						"href": "https://www.springer.com/gp/help/contact"
+					},
+					{
+						"label": "Press releases",
+						"href": "https://www.springer.com/gp/about-springer/media/press-releases"
+					},
+					{
+						"label": "Impressum",
+						"href": "https://www.springer.com/gp/imprint/610056"
+					}
+				]
+			},
+			{
+				"title": "Legal",
+				"links": [
+					{
+						"label": "General terms & conditions",
+						"href": "https://www.springer.com/gp/standard-terms-and-conditions-of-business"
+					},
+					{
+						"label": "Rights & permissions",
+						"href": "https://www.springer.com/gp/rights-permissions"
+					},
+					{
+						"label": "Privacy",
+						"href": "https://www.springer.com/gp/privacy-policy"
+					},
+					{
+						"label": "How we use cookies",
+						"href": "https://link.springer.com/cookiepolicy"
+					},
+					{
+						"label": "Manage cookies",
+						"action": "preferences"
+					},
+					{
+						"label": "Accessibility",
+						"href": "https://link.springer.com/accessibility"
+					}
+				]
+			}
+		]
 	},
-	"categories": [
-		{
-			"title": "Publish with us",
-			"links": [
-				{
-					"label": "Authors",
-					"href": "https://www.springer.com/gp/authors-editors"
-				},
-				{
-					"label": "Journal authors",
-					"href": "https://www.springer.com/gp/authors-editors/journal-author"
-				},
-				{
-					"label": "Publishing ethics",
-					"href": "https://www.springer.com/gp/authors-editors/journal-author/journal-author-helpdesk/publishing-ethics/14214"
-				},
-				{
-					"label": "Open access & Springer",
-					"href": "https://www.springer.com/gp/authors-editors/journal-author/journal-author-helpdesk/publishing-ethics/14214"
-				}
-			]
-		},
-		{
-			"title": "Discover content",
-			"links": [
-				{
-					"label": "SpringerLink",
-					"href": "https://link.springer.com/"
-				},
-				{
-					"label": "Books A-Z",
-					"href": "https://link.springer.com/books/a/1"
-				},
-				{
-					"label": "Journals A-Z",
-					"href": "https://link.springer.com/journals/a/1"
-				},
-				{
-					"label": "Video",
-					"href": "https://link.springer.com/video"
-				}
-			]
-		},
-		{
-			"title": "Other services",
-			"links": [
-				{
-					"label": "Instructors",
-					"href": "https://www.springer.com/gp/instructors"
-				},
-				{
-					"label": "Librarians",
-					"href": "https://www.springernature.com/gp/librarians"
-				},
-				{
-					"label": "Societies and Publishing Partners",
-					"href": "https://www.springer.com/gp/partners"
-				},
-				{
-					"label": "Advertisers",
-					"href": "https://www.springer.com/gp/advertisers"
-				},
-				{
-					"label": "Shop on Springer.com",
-					"href": "https://www.springer.com/gp/shop"
-				}
-			]
-		},
-		{
-			"title": "About Springer",
-			"links": [
-				{
-					"label": "About us",
-					"href": "https://www.springer.com/gp/about-springer"
-				},
-				{
-					"label": "Help & Support",
-					"href": "https://www.springer.com/gp/help"
-				},
-				{
-					"label": "Contact us",
-					"href": "https://www.springer.com/gp/help/contact"
-				},
-				{
-					"label": "Press releases",
-					"href": "https://www.springer.com/gp/about-springer/media/press-releases"
-				},
-				{
-					"label": "Impressum",
-					"href": "https://www.springer.com/gp/imprint/610056"
-				}
-			]
-		},
-		{
-			"title": "Legal",
-			"links": [
-				{
-					"label": "General terms & conditions",
-					"href": "https://www.springer.com/gp/standard-terms-and-conditions-of-business"
-				},
-				{
-					"label": "Rights & permissions",
-					"href": "https://www.springer.com/gp/rights-permissions"
-				},
-				{
-					"label": "Privacy",
-					"href": "https://www.springer.com/gp/privacy-policy"
-				},
-				{
-					"label": "How we use cookies",
-					"href": "https://link.springer.com/cookiepolicy"
-				},
-				{
-					"label": "Manage cookies",
-					"href": "javascript:void(0);",
-					"class": "optanon-toggle-display"
-				},
-				{
-					"label": "Accessibility",
-					"href": "https://link.springer.com/accessibility"
-				}
-			]
-		}
-	]
+	"dynamicPartials": {
+		"publisherFooter": "./toolkits/springer/packages/springer-publisher-footer/view/springer-publisher-footer.hbs"
+	}
 }
