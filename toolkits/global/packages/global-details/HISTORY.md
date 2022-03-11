@@ -1,6 +1,6 @@
 # History
 
-## 0.1.3 (2022-03-11)
+## 0.1.4 (2022-03-11)
     * Align left side of details content with left side of heading
     * Increase spacing between details components
 
