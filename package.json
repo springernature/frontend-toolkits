@@ -26,7 +26,7 @@
     "create": "sn-package-create",
     "demo": "sn-package-demo",
     "lint": "util-eslint-runner --name 'lint:js' --pattern 'toolkits/**/packages/**/*.js' && npm run lint:sass",
-    "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
+    "lint:sass": "stylelint 'toolkits/**/packages/**/scss/**/*.scss' --custom-syntax postcss-scss",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
     "publish": "sn-package-publish",
     "test": "jest --colors --coverage --passWithNoTests",
@@ -47,7 +47,7 @@
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
     "@springernature/frontend-package-manager": "^8.3.0",
-    "@springernature/sasslint-config": "^1.2.1",
+    "@springernature/stylelint-config": "^0.0.3",
     "@springernature/util-eslint-runner": "^0.0.3",
     "@springernature/util-sass-compiler": "^0.1.0",
     "acorn": "^7.1.0",
@@ -60,7 +60,7 @@
     "eslint-plugin-unicorn": "^13.0.0",
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
-    "sass-lint": "^1.13.1"
+    "stylelint": "^14.5.3"
   },
   "jest": {
     "testURL": "http://localhost/",
@@ -81,5 +81,7 @@
       "/node_modules/(?!(@springernature/global-context))/"
     ]
   },
-  "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml"
+  "stylelint": {
+    "extends": "./node_modules/@springernature/stylelint-config/config/.stylelintrc.json"
+  }
 }
