@@ -1,5 +1,8 @@
 # History
 
+## 0.1.3 (2022-03-11)
+    * Spacing tweaks to springer global-details
+
 ## 0.1.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
