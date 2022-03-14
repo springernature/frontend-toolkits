@@ -1,5 +1,8 @@
 # History
 
+## 8.1.3 (2022-03-11)
+    * Increase font-size of card content to normal paragraph size
+
 ## 8.1.2 (2022-02-18)
     * Add back modifier .c-card--flush to reset padding
 
