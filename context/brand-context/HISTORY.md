@@ -1,5 +1,8 @@
 # History
 
+## 20.0.3 (2022-03-11)
+    * PATCH: share SN corporate colours via the default context. Non-destructive.
+
 ## 20.0.2 (2022-02-16)
     * Updates strip unit function and triangle mixin in brand context to use Dart Sass syntax for math
 
