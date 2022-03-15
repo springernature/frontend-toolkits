@@ -23,7 +23,6 @@
 .c-listing__item {
 	margin-top: spacing(16);
 	padding-top: spacing(16);
-	border-top: 1px solid $listing--text-color-light;
 }
 
 .c-listing__title {
@@ -94,4 +93,13 @@
 .c-listing__view-options-icon {
 	margin-right: $listing--view-options-icon-margin-right;
 	fill: currentColor;
+}
+
+@supports (-webkit-line-clamp: 3) {
+	.c-listing__intro {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: var(--listing-lines, 2);
+		-webkit-box-orient: vertical;
+	}
 }
