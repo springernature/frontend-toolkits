@@ -95,9 +95,11 @@
 	fill: currentColor;
 }
 
-.c-listing__intro {
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: var(--listing-lines, 2);
-	-webkit-box-orient: vertical;
+@supports (-webkit-line-clamp: 3) {
+	.c-listing__intro {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: var(--listing-lines, 2);
+		-webkit-box-orient: vertical;
+	}
 }
