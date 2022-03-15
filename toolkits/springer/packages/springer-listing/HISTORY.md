@@ -1,7 +1,7 @@
 # History
 
 ## 5.0.3 (2022-03-15)
-    * Remove post install step that was causing issues with CI
+    * Support teaser text with `line-clamp` for truncation
 
 ## 5.0.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
