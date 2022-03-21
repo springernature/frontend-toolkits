@@ -1,4 +1,7 @@
 # History
+## 22.0.0 (2022-05-24)
+    * BREAKING
+      * Updates SpringerNature brand-context breakpoints keys to match default brand-context 
 ## 21.1.1 (2022-05-23)
     * Left aligns basic lists in the springer context
 ## 21.1.0 (2022-05-10)
@@ -46,7 +49,6 @@
     * FEATURE: adds javascript helpers for use in components
         * Includes helpers that used to live in `global-javascript`
         * Includes code that used to live in `global-expander`
-
 ## 20.0.3 (2022-03-11)
     * PATCH: share SN corporate colours via the default context. Non-destructive.
 
