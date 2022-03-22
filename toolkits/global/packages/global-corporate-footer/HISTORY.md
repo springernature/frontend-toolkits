@@ -1,5 +1,8 @@
 # History
 
+## 4.0.2 (2022-03-22)
+    * Update footer guidance with information about standard footer links and information about who to contact with questions
+
 ## 4.0.1 (2022-03-02)
     * Explicitly set extra styling for footer items that are buttons to avoid
         any inherited styling(from `button`)
