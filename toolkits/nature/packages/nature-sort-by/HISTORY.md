@@ -1,5 +1,8 @@
 # History
 
+## 3.0.1 (2022-03-10)
+    * Remove post install step that was causing issues with CI
+
 ## 3.0.0 (2022-02-14)
     * BREAKING: Performs a complete rewrite of the component. Component no longer is a dropdown, now simpler implementation with radio buttons in a form.
 

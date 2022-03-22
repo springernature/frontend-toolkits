@@ -103,3 +103,13 @@ Options constitute different ways to consume the content. Each option is an obje
     }
 }
 ```
+
+### Intro text
+
+The component supports teaser text using the `content` property, truncated with the `-webkit-line-clamp` property. This is set to two lines by default but can be adjusted with the `lines` property (_String_).
+
+```json
+"lines": "3"
+```
+
+The value `"none"` turns line-clamping off.

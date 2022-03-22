@@ -29,9 +29,9 @@ $context--colors: (
 	'research-orange': #c75301,
 
 	// SN Corporate colours
-	'universal-blue': #01324b,
-	'grey-blue-light1': #ebf1f5,
-	'grey-blue-light2': #cedbe0
+	'universal-blue': $context--universal-blue,
+	'grey-blue-light1': $context--grey-blue-light1,
+	'grey-blue-light2': $context--grey-blue-light2
 );
 
 $context--page-background-color: color('grey-light1');
