@@ -2,6 +2,7 @@
 
 ## 4.0.3 (2022-03-22)
     * Update footer guidance with information about standard footer links and information about who to contact with questions
+    
 ## 4.0.2 (2022-03-03)
     * BUG: Fix mistakes in template around `buttonProperties`
         * Patch buttonProps to buttonProperties
