@@ -30,7 +30,9 @@ Import the installed component code in your `scss` file:
 
 ## Template
 
-Find a configurable template in the [`view` folder](./view/footer.hbs). You can see an example in the `demo` folder.
+Find a [configurable template in the Footer's `view` folder](https://github.com/springernature/frontend-toolkits/blob/master/toolkits/nature/packages/nature-footer/view/footer.hbs). 
+
+You can see an example in the [Footer's demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-footer/demo).
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-footer
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-footer.svg

@@ -1,5 +1,9 @@
 # History
 
+## 3.0.2 (2022-03-23)
+    * BUG: Improve text for links to component view and demo folders. 
+    * Move template section underneath installation.
+
 ## 3.0.1 (2022-03-10)
     * Remove post install step that was causing issues with CI
 

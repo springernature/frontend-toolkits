@@ -36,9 +36,9 @@ Import the installed component code in your `scss` file:
 
 ## Template
 
-Find a configurable template in the [`view` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-hero/view). 
+Find a configurable template in the [Hero's `view` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-hero/view). 
 
-You can see an example in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-hero/demo).
+You can see an example in the [Hero's `demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/nature/packages/nature-hero/demo).
 
 ## Help improve this page
 
