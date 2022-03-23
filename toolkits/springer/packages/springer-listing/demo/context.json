@@ -14,9 +14,10 @@
 					"Research Article",
 					"2 November 2019"
 				],
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec massa nunc. In tincidunt dolor ex, ac egestas dui blandit vitae. Quisque volutpat nisi sit amet ullamcorper blandit. Cras feugiat, libero eu venenatis luctus, nibh enim posuere odio, ac hendrerit dolor erat vitae erat. Proin nec lobortis velit. Praesent pretium sapien nisi, finibus rutrum orci pretium id. Suspendisse fringilla sem ut viverra facilisis. Maecenas eu neque mattis, fermentum mi vitae, pretium sem. Cras semper neque id cursus finibus. Donec sed malesuada est. Pellentesque id elit quam. Nullam convallis risus tellus, vitae posuere elit commodo sit amet.",
 				"image": {
-				"imageSrc": "https://picsum.photos/910/650",
-				"imageAlt": "Descriptive alternative text"
+					"imageSrc": "https://picsum.photos/910/650",
+					"imageAlt": "Descriptive alternative text"
 				}
 			},
 			{
@@ -34,14 +35,16 @@
 					"Original Paper",
 					"4 October 2019"
 				],
+				"content": "Morbi luctus eleifend velit ut sodales. Donec semper mauris nec tristique semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi mi diam, commodo pharetra pharetra quis, tempus ac felis. Suspendisse at felis ut lorem mollis tristique feugiat eu turpis. Phasellus fringilla lacus ac libero tempus fringilla. Suspendisse sit amet risus dignissim, varius nunc vitae, pellentesque risus. Phasellus tempor dui metus, in mollis sem mollis feugiat. Cras feugiat facilisis quam eu vulputate. Integer ullamcorper arcu in tortor dictum sagittis. Mauris quis leo at nulla bibendum porta non quis ante.",
 				"image": {
-				"imageSrc": "https://picsum.photos/800/700",
-				"imageAlt": "Descriptive alternative text"
+					"imageSrc": "https://picsum.photos/800/700",
+					"imageAlt": "Descriptive alternative text"
 				}
 			}
 		]
 	},
 	"listingsWithoutAuthors": {
+		"lines": "3",
 		"listings": [
 			{
 				"permalink": "#",
@@ -50,6 +53,7 @@
 					"Research Article",
 					"2 November 2019"
 				],
+				"content": "Aenean mauris ipsum, tempus ac suscipit vel, efficitur vitae nulla. Duis rhoncus dui in turpis ultricies imperdiet. Aliquam vel odio vitae tellus vestibulum consectetur. Donec eu diam maximus, tempus eros sodales, congue erat. Proin sagittis auctor dignissim. Pellentesque at diam non ante consequat aliquet eget non magna. Donec congue tortor ac efficitur ullamcorper. Donec congue metus velit, fringilla tempus nisl tincidunt sit amet. Donec sagittis ex vitae sollicitudin rutrum. Phasellus eget nulla ipsum. Integer ante nunc, suscipit vitae facilisis eu, venenatis at diam. Integer nec enim sed massa pellentesque tincidunt eu sed orci. Nam vitae consequat arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus iaculis dapibus vulputate. Vivamus congue vehicula tristique.",
 				"image": {
 				"imageSrc": "https://picsum.photos/825/740",
 				"imageAlt": "Descriptive alternative text"
@@ -62,9 +66,10 @@
 					"Original Paper",
 					"4 October 2019"
 				],
+				"content": "Donec condimentum euismod justo. Vestibulum justo ligula, posuere eu urna at, ornare rhoncus elit. Aenean sit amet nisi facilisis, hendrerit erat id, posuere tortor. Aenean at rhoncus massa. Aliquam rhoncus ipsum nec elit congue vehicula. Praesent faucibus lacus eu tempor tincidunt. Etiam volutpat massa at ex dictum tristique. Donec volutpat cursus quam eu ultrices. In vitae orci eget risus porttitor hendrerit vel quis purus. Aliquam tempor vehicula nunc non viverra. Aliquam sem elit, tempor et purus sed, dignissim feugiat tellus. ",
 				"image": {
-				"imageSrc": "https://picsum.photos/730/700",
-				"imageAlt": "Descriptive alternative text"
+					"imageSrc": "https://picsum.photos/730/700",
+					"imageAlt": "Descriptive alternative text"
 				}
 			}
 		]
@@ -79,6 +84,7 @@
 					"Research Article",
 					"2 November 2019"
 				],
+				"content": "Proin semper sit amet urna ac finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec erat nibh, hendrerit ut quam sit amet, maximus sagittis lacus. Nunc luctus, mauris et faucibus tempus, eros ipsum euismod lectus, sit amet tincidunt diam orci in velit. Nam ut facilisis risus, vel fermentum lacus. Donec pretium dui sit amet volutpat dictum. Morbi laoreet nisl eu tellus elementum, vel sollicitudin lacus commodo. Sed pharetra tellus quis justo sagittis, vel luctus quam egestas. Sed suscipit, mi et imperdiet suscipit, magna turpis cursus felis, id molestie lectus ipsum ac mauris.",
 				"image": {
 					"imageSrc": "https://picsum.photos/820/750",
 					"imageAlt": "Descriptive alternative text"
@@ -101,6 +107,7 @@
 					"Original Paper",
 					"4 October 2019"
 				],
+				"content": "Fusce ultricies orci elit, rutrum vehicula est tincidunt a. Aliquam vel pellentesque lectus. Ut vitae arcu egestas, condimentum orci vel, commodo augue. Aliquam euismod interdum dui pellentesque lobortis. Donec feugiat quis odio molestie sodales. Sed luctus dui turpis, at dignissim mi hendrerit in. Etiam ultricies massa odio, nec egestas eros porttitor vitae. Pellentesque felis mauris, tempus quis congue quis, condimentum et neque. Fusce vitae auctor risus. Nullam finibus sem vel ante imperdiet, et efficitur nisi laoreet.",
 				"image": {
 					"imageSrc": "https://picsum.photos/700/700",
 					"imageAlt": "Descriptive alternative text"
@@ -129,6 +136,7 @@
 					"Research Article",
 					"2 November 2019"
 				],
+				"content": "Phasellus sagittis tortor ac orci condimentum, nec lobortis est mollis. Sed dapibus, orci quis suscipit consectetur, sapien felis eleifend enim, sit amet eleifend lorem nunc vel magna. In erat nisl, pharetra non augue vel, semper egestas metus. Cras condimentum lectus eget nunc consequat molestie. Phasellus porta est vitae purus posuere, eget semper urna pretium. Praesent fringilla, lectus vitae laoreet rutrum, libero felis ultrices ex, non imperdiet augue diam et turpis.",
 				"image": {
 					"imageSrc": "https://picsum.photos/815/740",
 					"imageAlt": "Descriptive alternative text"
@@ -151,6 +159,7 @@
 					"Original Paper",
 					"4 October 2019"
 				],
+				"content": "Fusce ultricies orci elit, rutrum vehicula est tincidunt a. Aliquam vel pellentesque lectus. Ut vitae arcu egestas, condimentum orci vel, commodo augue. Aliquam euismod interdum dui pellentesque lobortis. Donec feugiat quis odio molestie sodales. Sed luctus dui turpis, at dignissim mi hendrerit in. Etiam ultricies massa odio, nec egestas eros porttitor vitae. Pellentesque felis mauris, tempus quis congue quis, condimentum et neque. Fusce vitae auctor risus. Nullam finibus sem vel ante imperdiet, et efficitur nisi laoreet.",
 				"image": {
 					"imageSrc": "https://picsum.photos/620/605",
 					"imageAlt": "Descriptive alternative text"

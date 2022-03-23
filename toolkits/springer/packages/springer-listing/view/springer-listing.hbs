@@ -29,6 +29,11 @@
 				{{/each}}
 			</ul>
 			{{/if}}
+			{{#if content}}
+			<div class="c-listing__intro"{{#if ../lines}} style="--listing-lines: {{../lines}}"{{/if}}>
+			{{{content}}}
+			</div>
+			{{/if}}
 		</div>
 		{{#with image}}
 		<div class="c-listing__image">

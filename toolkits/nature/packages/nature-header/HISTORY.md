@@ -1,7 +1,10 @@
 # History
 
-## 7.1.3 (2022-03-01)
- *  BUG: fix broken links to view and demo folders in docs
+## 7.1.4 (2022-03-23)
+    * BUG: fix broken links to view and demo folders in docs
+
+## 7.1.3 (2022-03-10)
+    * Remove post install step that was causing issues with CI
 
 ## 7.1.2 (2022-02-23)
     * Remove screenshots from README
