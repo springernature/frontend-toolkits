@@ -1,5 +1,8 @@
 # History
 
+## 4.0.4 (2022-03-22)
+    * Small update to footer guidance following subject matter expert review
+
 ## 4.0.3 (2022-03-22)
     * Update footer guidance with information about standard footer links and information about who to contact with questions
     
