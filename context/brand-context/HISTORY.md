@@ -1,7 +1,7 @@
 # History
 
 ## 20.1.0 (2022-03-25)
-    * FEATURE: new javascript helpers for use in components
+    * FEATURE: adds javascript helpers for use in components
         * Includes helpers that used to live in `global-javascript`
         * Includes code that used to live in `global-expander`
 
