@@ -4,5 +4,6 @@
   "license": "MIT",
   "description": "Bootstrapping for all components and products",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "main": "./default/js/helpers/index.js"
 }
