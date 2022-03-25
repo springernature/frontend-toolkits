@@ -57,9 +57,9 @@ If you've got any questions about your cookie policy, email the Data Protection 
 
 ### Accessibility statement
 
-The accessibility statement link must match the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
+The accessibility statement link in your footer must take users to the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
 
-For questions about which accessibility statement to link to, email Accessibility Specialist Hollie Kay at [hollie.kay@springernature.com](mailto:hollie.kay@springernature.com) or Jude Robinson at [jude.robinson@springernature.com](mailto:jude.robinson@springernature.com).
+If you're concerned that the accessibility statement isn't relevant for the product you're working on, contact Accessibility Specialist Hollie Kay or Jude Robinson on Slack.
 
 ### Privacy policy
 
@@ -89,7 +89,7 @@ If you need to include a California Privacy Statement link, you must use the url
 
 #### Terms and conditions
 
-The text you should use for this link depends on what it covers for your product or service. 
+The text you should use for this link depends on what it covers for your product or service. You might need to include more than one link.
 
 The most common options are:
 
