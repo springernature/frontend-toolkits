@@ -10,6 +10,7 @@ Use this context configuration in your product to skin components with the `defa
 - [Buttons](#buttons)
 - [Layers](#layers)
 - [Icons](#icons)
+- [Javascript](#javascript)
 
 ## Breakpoints
 
@@ -319,3 +320,6 @@ There is a recommendation that [SVG sprites](https://css-tricks.com/svg-sprites-
 For further information on the various implementation methods, please read this article https://css-tricks.com/pretty-good-svg-icon-system/
 
 The Icons have been optimised, you should not need to optimise them further.
+
+## Javascript
+The `brand-context` comes with a number of [Javascript helpers](https://github.com/springernature/frontend-toolkits/tree/master/context/brand-context/default/js/README.md) that can be used within your product.

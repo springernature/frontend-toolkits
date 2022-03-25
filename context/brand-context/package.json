@@ -1,8 +1,9 @@
 {
   "name": "@springernature/brand-context",
-  "version": "20.0.3",
+  "version": "20.1.0",
   "license": "MIT",
   "description": "Bootstrapping for all components and products",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "main": "./default/js/helpers/index.js"
 }
