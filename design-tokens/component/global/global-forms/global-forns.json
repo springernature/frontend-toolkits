@@ -1,0 +1,74 @@
+{
+	"global-forms": {
+		"default": {
+			"font-family": {
+				"value": "Merriweather Sans, sans-serif"
+			},
+			"label": {
+				"font": {
+					"size": {
+						"value": "1rem"
+					},
+					"weight": {
+						"value": "700"
+					}
+				},
+				"color": {
+					"value": "{ui.color.text.primary}"
+				}
+			},
+			"helper-text": {
+				"font": {
+					"size": {
+						"value": "0.75rem"
+					}
+				},
+				"color": {
+					"value": "#000"
+				}
+			},
+			"error-text": {
+				"font": {
+					"size": {
+						"value": "0.75rem"
+					}
+				},
+				"color": {
+					"value": "#000"
+				}
+			},
+			"input": {
+				"padding": {
+					"value": ".25rem .5rem"
+				},
+				"border": {
+					"color": {
+						"value": "#000000"
+					},
+					"color-hover": {
+						"value": "#BADA55"
+					},
+					"color-error": {
+						"value": "#BADA55"
+					},
+					"width": {
+						"value": "1px"
+					}
+				},
+				"outline": {
+					"focus": {
+						"value": "#BADA55"
+					}
+				},
+				"text": {
+					"color": {
+						"value": "#000000"
+					},
+					"size": {
+						"value": "14px"
+					}
+				}
+			}
+		}
+	}
+}
