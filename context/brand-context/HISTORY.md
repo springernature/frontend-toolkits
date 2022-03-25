@@ -1,5 +1,10 @@
 # History
 
+## 20.1.0 (2022-03-25)
+    * FEATURE: new javascript helpers for use in components
+        * Includes helpers that used to live in `global-javascript`
+        * Includes code that used to live in `global-expander`
+
 ## 20.0.3 (2022-03-11)
     * PATCH: share SN corporate colours via the default context. Non-destructive.
 
