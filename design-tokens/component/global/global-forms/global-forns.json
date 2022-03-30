@@ -14,7 +14,7 @@
 					}
 				},
 				"color": {
-					"value": "{ui.color.text.primary}"
+					"value": "red"
 				}
 			},
 			"helper-text": {

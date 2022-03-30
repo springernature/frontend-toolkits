@@ -14,7 +14,7 @@ function tokenFilter(brand, category) {
 }
 
 function getStyleDictionaryConfig(brand, categories) {
-	let dest = `./toolkits/${brand}/packages/${categories}/scss`;
+	let dest = `./toolkits/${brand}/packages/`;
 
 	return {
 		include: [
@@ -27,10 +27,10 @@ function getStyleDictionaryConfig(brand, categories) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/`,
+				buildPath: `${dest}/`,
 				files: categories.map(category => {
 					return {
-						destination: `_${category}.variables.scss`,
+						destination: `${category}/scss/10-settings/_${brand}.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, category),
 						"options": {
