@@ -11,5 +11,6 @@ import {checkConsent, isConsentBannerClosed} from './util/onetrust';
 // Dom
 import {getDataOptions} from './dom/get-data-options';
 import {expander} from './dom/expander';
+import {Expander} from './dom/expander/_expander';
 
-export {makeArray, createEvent, debounce, throttle, getCookie, setCookie, deleteCookie, getDataOptions, checkConsent, isConsentBannerClosed, expander};
+export {makeArray, createEvent, debounce, throttle, getCookie, setCookie, deleteCookie, getDataOptions, checkConsent, isConsentBannerClosed, expander, Expander};
