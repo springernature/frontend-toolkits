@@ -221,6 +221,8 @@ expander(options);
 For more flexibility you can use the Expander class directly:
 
 ```javascript
+import {Expander} from '@springernature/brand-context';
+
 const trigger = document.querySelector('.my-trigger');
 const target = document.querySelector('.my-target');
 
