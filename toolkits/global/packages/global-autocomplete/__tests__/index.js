@@ -30,7 +30,7 @@ describe('Autocomplete', () => {
 	const resultsContainerSelector = '.c-results-container';
 	let fetchSpy;
 	let input;
-	
+
 	const resultsContainer = () => {
 		return document.querySelector(`${resultsContainerSelector}`);
 	};
@@ -236,8 +236,30 @@ describe('Autocomplete', () => {
 			await waitFor(2);
 			expect(document.querySelectorAll('.c-results-container').length).toBe(0);
 			expect(document.activeElement).toBe(input);
+		});
 
+		//
+		test('Select a list item when tabbing out if selectOnTab is true', async () => {
+			let auto = autoComplete({
+				...args,
+				endpoint: null,
+				staticResultsData: ['Wallaby', 'Walrus', 'Warbler'],
+				resultsCallBack: showResults,
+				selectOnTab: true
+			});
+			auto.enable();
 
+			input.value = 'Wa';
+			input.dispatchEvent(new KeyboardEvent('keyup'));
+			await waitFor(2);
+
+			expect(document.querySelectorAll('.c-results-container').length).toBe(1);
+
+			document.querySelector('.c-results-container__result').dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab' }));
+
+			expect(input.getAttribute('aria-expanded')).not.toBe("true");
+			expect(document.querySelector('.c-results-container')).toBe(null);
+			expect(mockSelectCallback.mock.calls.length).toBe(1);
 		});
 	});
 
@@ -257,7 +279,7 @@ describe('Autocomplete', () => {
 			expect(input.getAttribute('aria-expanded')).toBe("true");
 			expect(document.querySelector('.c-results-container').children).toHaveLength(3);
 		});
-		
+
 		test('Tabbing from the input removes the results dropdown', async () => {
 			// Removing the results enables the expected tab behaviour which is to move to the next focussable element, rather than nav through the results
 			input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Tab' }));
