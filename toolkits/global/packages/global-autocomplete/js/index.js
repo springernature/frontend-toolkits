@@ -241,12 +241,14 @@ const autoComplete = arguments_ => {
 	const enable = () => {
 		if (input) {
 			input.addEventListener('keyup', listenForInput);
+			input.setAttribute('aria-expanded', 'false');
 		}
 	};
 
 	const disable = () => {
 		removeSuggestions();
 		input.removeEventListener('keyup', listenForInput);
+		input.removeAttribute('aria-expanded');
 	};
 
 	return {
