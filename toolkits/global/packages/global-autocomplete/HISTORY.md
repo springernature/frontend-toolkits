@@ -6,7 +6,7 @@
     * Add aria-expanded on initialisation
     * Updated demo
         * Regenerated to demo latest changes
-        * Add selected item to text input when selectOnSuggestionBrowsing is false otherwise looks like it nothing selected
+        * Add the selected item to text input when selectOnSuggestionBrowsing is false to show something is selected
 
 ## 5.1.4 (2022-02-25)
     * BUG: unable to move focus to select autocomplete items when using NVDA with Firefox (Windows) 
