@@ -15,7 +15,8 @@ const autoComplete = arguments_ => {
 		bodyTemplate,
 		searchError,
 		resultsCallBack,
-		selectOnSuggestionBrowsing = true
+		selectOnSuggestionBrowsing = true,
+		tabOutSelect = false
 	} = arguments_;
 
 	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
@@ -127,6 +128,17 @@ const autoComplete = arguments_ => {
 					input.focus();
 				}
 			});
+			if (tabOutSelect) {
+				element.addEventListener('keydown', event => {
+					if (event.key === 'Tab') {
+						if (onSelect) {
+							onSelect(element.textContent);
+						}
+						removeSuggestions();
+						input.focus();
+					}
+				});
+			}
 		});
 	};
 
