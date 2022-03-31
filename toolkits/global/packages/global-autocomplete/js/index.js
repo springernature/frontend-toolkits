@@ -16,7 +16,7 @@ const autoComplete = arguments_ => {
 		searchError,
 		resultsCallBack,
 		selectOnSuggestionBrowsing = true,
-		tabOutSelect = false
+		selectOnTab = false
 	} = arguments_;
 
 	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
@@ -128,7 +128,7 @@ const autoComplete = arguments_ => {
 					input.focus();
 				}
 			});
-			if (tabOutSelect) {
+			if (selectOnTab) {
 				element.addEventListener('keydown', event => {
 					if (event.key === 'Tab') {
 						if (onSelect) {

@@ -50,7 +50,7 @@ const args = {
 	resultSelector: '.c-results-container__result',
 	resultsCallBack: showResults,
 	selectOnSuggestionBrowsing: true,
-	tabOutSelect: false
+	selectOnTab: false
 };
 
 const myAutoComplete = autoComplete(args);
