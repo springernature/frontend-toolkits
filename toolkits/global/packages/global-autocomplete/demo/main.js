@@ -27,6 +27,7 @@ const showResults = results => {
 
 const onSelect = result => {
 	// Update UI with selected result
+	document.querySelector('[data-component-autocomplete]').value = result;
 }
 
 const onError = error => {
