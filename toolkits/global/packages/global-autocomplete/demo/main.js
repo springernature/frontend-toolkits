@@ -48,7 +48,9 @@ const args = {
 	},
 	resultsContainerSelector: '.c-results-container',
 	resultSelector: '.c-results-container__result',
-	resultsCallBack: showResults
+	resultsCallBack: showResults,
+	selectOnSuggestionBrowsing: true,
+	tabOutSelect: false
 };
 
 const myAutoComplete = autoComplete(args);
