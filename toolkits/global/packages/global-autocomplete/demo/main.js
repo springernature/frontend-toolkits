@@ -11,7 +11,7 @@ const showResults = results => {
 	resultsContainer.setAttribute('role', 'listbox');
 
 	// Assuming results is an array
-	if(results.length === 0) {
+	if (results.length === 0) {
 		results.push('No results');
 	}
 	results.forEach(datum => {
@@ -27,12 +27,13 @@ const showResults = results => {
 
 const onSelect = result => {
 	// Update UI with selected result
-}
+	document.querySelector('[data-component-autocomplete]').value = result;
+};
 
 const onError = error => {
 	// Update UI with error state
 	// Optionally call myAutoComplete.disable();
-}
+};
 
 const args = {
 	selector: '[data-component-autocomplete]',
@@ -47,7 +48,9 @@ const args = {
 	},
 	resultsContainerSelector: '.c-results-container',
 	resultSelector: '.c-results-container__result',
-	resultsCallBack: showResults
+	resultsCallBack: showResults,
+	selectOnSuggestionBrowsing: true,
+	selectOnTab: false
 };
 
 const myAutoComplete = autoComplete(args);
@@ -62,15 +65,16 @@ const response = {
 		const term = window.lastQuery.replace(args.endpoint, '').toLowerCase();
 		return animalsList.filter(animal => animal.toLowerCase().includes(term));
 	}
-}
+};
+
 window.fetch = (endpointAndTerm) => {
 	window.lastQuery = endpointAndTerm;
 	return Promise.resolve(response);
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('#searchForm button').style.display = 'none';
-})
+});
 
 myAutoComplete.enable();
 
@@ -517,5 +521,5 @@ const animalsList = [
 	'Yak',
 	'Yellow perch',
 	'Zebra finch',
-	'Zebra',
-]
+	'Zebra'
+];
