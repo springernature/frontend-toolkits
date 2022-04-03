@@ -19,7 +19,8 @@ function getStyleDictionaryConfig(brand, categories) {
 	return {
 		source: [
 			`${__dirname}/global/default/**/*.json`,
-			`${__dirname}/global/${brand}/**/*.json`
+			`${__dirname}/global/${brand}/**/*.json`,
+			`!${__dirname}/global/default/icons/*.json`,
 		],
 		platforms: {
 			scssVariables: {
