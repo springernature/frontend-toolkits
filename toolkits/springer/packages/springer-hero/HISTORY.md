@@ -1,5 +1,5 @@
 # History
-## 0.1.3 (2022-02-18)
+## 0.1.3 (2022-04-04)
     * Image sized to content (and automatically is removed from narrow view)
 ## 0.1.2 (2022-02-18)
     * Ability to apply different color background
