@@ -7,6 +7,7 @@
 	</div>
 	{{/if}}
     <div class="c-card__body">
+		{{#if title}}
 		<h3 class="c-card__title"{{#if level}} aria-level="{{level}}"{{/if}}>
 			{{#if href}}
 			<a class="c-card__link{{#if noBlockLinks}} c-card__link--no-block-link{{else}}{{#if noBlockLink}} c-card__link--no-block-link{{else}}{{/if}}{{/if}}" href="{{href}}">
@@ -16,6 +17,7 @@
 			</a>
 			{{/if}}
 		</h3>
+		{{/if}}
 		{{#if summary}}
         <div class="c-card__summary">{{{summary}}}</div>
 		{{/if}}
