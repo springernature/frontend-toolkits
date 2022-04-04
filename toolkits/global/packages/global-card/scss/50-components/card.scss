@@ -67,6 +67,10 @@
 	padding-top: $card--padding;
 }
 
+.c-card__body:first-child {
+	padding-top: 0;
+  }
+
 .c-card__title {
 	@include u-heading($card--title-heading);
 	@if $card--title-font-weight != null {

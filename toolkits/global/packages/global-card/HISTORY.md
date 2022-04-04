@@ -1,5 +1,8 @@
 # History
-
+## 8.2.0 (2022-04-04)
+    * Title optional
+    * White background-color for springer
+    * Body padding removed where no image
 ## 8.1.3 (2022-03-11)
     * Increase font-size of card content to normal paragraph size
 
