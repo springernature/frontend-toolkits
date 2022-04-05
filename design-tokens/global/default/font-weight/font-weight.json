@@ -1,10 +1,14 @@
 {
 	"font-weight": {
 		"light": {
-			"font-weight": "300",
-			"font-style": "normal"
+			"value": "300",
+			"comment": "normal"
 		},
 		"normal": {
+			"value": "400",
+			"comment": "The normal, or ‘regular’, font weight."
+		},
+		"regular": {
 			"value": "400",
 			"comment": "The normal, or ‘regular’, font weight."
 		},

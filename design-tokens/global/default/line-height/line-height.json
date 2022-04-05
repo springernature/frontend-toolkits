@@ -9,6 +9,10 @@
 		},
 		"tight": {
 			"value": "1.4",
+			"comment": "Tight line-height"
+		},
+		"tighter": {
+			"value": "1.2",
 			"comment": "Tighter line-height"
 		}
 	}
