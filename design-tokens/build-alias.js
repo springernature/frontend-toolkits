@@ -32,14 +32,26 @@ function getStyleDictionaryConfig(brand, aliases) {
 						filter: tokenFilter(brand, alias)
 					}
 				})
-			}
+			},
+			// scssMaps: {
+			// 	transformGroup: 'web',
+			// 	buildPath: `${dest}/00-tokens/alias/`,
+			// 	files: aliases.map(alias => {
+			// 		return {
+			// 			destination: `_${alias}.map.scss`,
+			// 			format: 'scss/map-flat',
+			// 			mapName: `context--${alias}`,
+			// 			filter: tokenFilter(brand, alias),
+			// 		}
+			// 	})
+			// },
 		}
 	}
 }
 
 console.log('Build started...');
 
-['default'].map(function (brand) {
+['default', 'springernature'].map(function (brand) {
 	let dir = `${__dirname}/alias/${brand}`
 	const aliases = readdirSync(dir);
 
@@ -54,7 +66,7 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-['default'].map(function (brand) {
+['default', 'springernature'].map(function (brand) {
 	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/alias/`);
 	let dest = `./context/brand-context/${brand}/scss/00-tokens/alias`;
 
