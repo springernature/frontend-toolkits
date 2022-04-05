@@ -2,18 +2,18 @@ const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
 
-// this will return a filtering function based on brand and category
-function tokenFilter(brand, category) {
+// this will return a filtering function based on brand and component
+function tokenFilter(brand, component) {
 	return function (token) {
 		return (
 			// Added in 3.0: filePath to help with filtering
 			// So this will only include tokens of a given brand
-			token.filePath.includes(brand) && token.attributes.category === category
+			token.filePath.includes(brand) && token.attributes.component === component
 		);
 	};
 }
 
-function getStyleDictionaryConfig(brand, categories) {
+function getStyleDictionaryConfig(brand, components) {
 	let dest = `./toolkits/${brand}/packages/`;
 
 	return {
@@ -28,11 +28,11 @@ function getStyleDictionaryConfig(brand, categories) {
 			scssVariables: {
 				transformGroup: 'web',
 				buildPath: `${dest}/`,
-				files: categories.map(category => {
+				files: components.map(component => {
 					return {
-						destination: `${category}/scss/10-settings/_${category}.variables.scss`,
+						destination: `${component}/scss/10-settings/_${component}.variables.scss`,
 						format: 'scss/variables',
-						filter: tokenFilter(brand, category),
+						filter: tokenFilter(brand, component),
 						"options": {
 							"outputReferences": true
 						}
@@ -42,12 +42,12 @@ function getStyleDictionaryConfig(brand, categories) {
 			// scssMaps: {
 			// 	transformGroup: 'web',
 			// 	buildPath: `${dest}/00-tokens/`,
-			// 	files: categories.map(category => {
+			// 	files: components.map(component => {
 			// 		return {
-			// 			destination: `_${category}.map.scss`,
+			// 			destination: `_${component}.map.scss`,
 			// 			format: 'scss/map-flat',
-			// 			mapName: `context--${category}`,
-			// 			filter: tokenFilter(brand, category),
+			// 			mapName: `context--${component}`,
+			// 			filter: tokenFilter(brand, component),
 			// 			"options": {
 			// 				"outputReferences": true
 			// 			}
@@ -63,8 +63,8 @@ console.log('Build started...');
 
 ['global'].map(function (brand) {
 	let dir = `${__dirname}/component/${brand}`
-	const categories = readdirSync(dir);
-	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, categories));
+	const components = readdirSync(dir);
+	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
 
 	brands.buildAllPlatforms();
 
