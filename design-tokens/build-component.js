@@ -8,7 +8,7 @@ function tokenFilter(brand, component) {
 		return (
 			// Added in 3.0: filePath to help with filtering
 			// So this will only include tokens of a given brand
-			token.filePath.includes(brand) && token.attributes.component === component
+			token.filePath.includes(brand) && token.attributes.category === component
 		);
 	};
 }
