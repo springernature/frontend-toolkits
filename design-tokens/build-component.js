@@ -30,7 +30,7 @@ function getStyleDictionaryConfig(brand, categories) {
 				buildPath: `${dest}/`,
 				files: categories.map(category => {
 					return {
-						destination: `${category}/scss/10-settings/_${brand}.variables.scss`,
+						destination: `${category}/scss/10-settings/_${category}.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, category),
 						"options": {
