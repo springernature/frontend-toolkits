@@ -10,6 +10,17 @@
 			"button": {
 				"value": "{color.primary.medium-blue}"
 			}
+		},
+		"width": {
+			"small": {
+				"value": "{sizing.1}"
+			},
+			"medium": {
+				"value": "{sizing.2}"
+			},
+			"large": {
+				"value": "{sizing.4}"
+			}
 		}
 	}
 }

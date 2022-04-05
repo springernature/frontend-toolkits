@@ -52,7 +52,7 @@
 						"value": "#BADA55"
 					},
 					"width": {
-						"value": "1px"
+						"value": "{border.width.small}"
 					}
 				},
 				"outline": {
