@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2022-03-30)
+    * UPDATE: brand-context v20.1.1
+        * global-javascript and global-expander now come from brand-context
+
 ## 3.0.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
