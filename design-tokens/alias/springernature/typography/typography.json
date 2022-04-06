@@ -1,5 +1,6 @@
 {
 	"typography": {
+		"name": "dave",
 		"heading": {
 			"font-family": {
 				"value": "{font-family.serif}"
@@ -11,47 +12,58 @@
 				"value": "{line-height.tighter}"
 			},
 			"level-1": {
-				"fluid": {
-					"font-size-min": {
-						"value": "{font-size.600}"
+				"default": {
+					"font-size": {
+						"value": "{font-size.875}",
+						"new-thing": {
+							"value": "{font-size.400}"
+						}
 					},
-					"font-size-max": {
-						"value": "{font-size.875}"
-					},
-					"font-weight-min": {
-						"value": "{font-weight.regular}"
-					},
-					"font-weight-max": {
+					"font-weight": {
 						"value": "{font-weight.light}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.600}, 4vw, {font-size.875})"
+					},
+					"font-weight": {
+						"value": "{font-weight.regular}",
+						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
 					}
 				}
 			},
 			"level-2": {
-				"fluid": {
-					"font-size-min": {
-						"value": "{font-size.500}"
-					},
-					"font-size-max": {
+				"default": {
+					"font-size": {
 						"value": "{font-size.600}"
 					},
-					"font-weight-min": {
-						"value": "{font-weight.bold.value}"
-					},
-					"font-weight-max": {
+					"font-weight": {
 						"value": "{font-weight.regular.value}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.500}, 4vw, {font-size.600})"
+					},
+					"font-weight": {
+						"value": "{font-weight.bold.value}",
+						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
 					}
 				}
 			},
 			"level-3": {
-				"fluid": {
-					"font-size-min": {
-						"value": "{font-size.450.value}"
-					},
-					"font-size-max": {
+				"default": {
+					"font-size": {
 						"value": "{font-size.500.value}"
 					},
 					"font-weight": {
 						"value": "{font-weight.bold.value}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})"
 					}
 				}
 			},

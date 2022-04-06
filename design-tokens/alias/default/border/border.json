@@ -12,13 +12,13 @@
 			}
 		},
 		"width": {
-			"small": {
+			"25": {
 				"value": "{sizing.1}"
 			},
-			"medium": {
+			"50": {
 				"value": "{sizing.2}"
 			},
-			"large": {
+			"100": {
 				"value": "{sizing.4}"
 			}
 		}

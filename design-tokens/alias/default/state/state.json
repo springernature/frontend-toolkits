@@ -1,5 +1,8 @@
 {
 	"state": {
+		"focus": {
+			"value": "{color.interaction.focus}"
+		},
 		"error": {
 			"value": "{color.information.red}"
 		},
