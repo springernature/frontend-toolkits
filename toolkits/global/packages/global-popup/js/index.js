@@ -1,4 +1,4 @@
-import {makeArray, getDataOptions} from '../../global-javascript/src/helpers';
+import {makeArray, getDataOptions} from '@springernature/brand-context';
 import {Popup} from './popup';
 
 const DATA_COMPONENT = 'data-popup';
