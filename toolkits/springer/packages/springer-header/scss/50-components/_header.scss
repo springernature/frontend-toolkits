@@ -8,6 +8,20 @@
 	border-bottom: 4px solid color('corporate');
 }
 
+.c-header__container > * + *,
+.c-header__menu > * + *,
+.c-header__nav-menu > * + * {
+	margin-left: 2em;
+}
+
+@supports (gap: 2em) {
+	.c-header__container > * + *,
+	.c-header__menu > * + *,
+	.c-header__nav-menu > * + * {
+		margin-left: 0;
+	}
+}
+
 .c-header__container,
 .c-header__menu,
 .c-header__nav-menu {
@@ -26,16 +40,6 @@
 
 .c-header__item {
 	color: $header--item-color;
-	@supports not (gap: 2em) {
-		margin-left: spacing(24);
-	}
-}
-
-.c-header__nav .c-header__item {
-	@supports not (gap: 2em) {
-		margin-left: 0;
-		margin-right: spacing(24);
-	}
 }
 
 .c-header__container {
@@ -44,10 +48,6 @@
 }
 
 .c-header__brand {
-	@supports not (gap: 2em) {
-		margin-right: $header--brand-spacing;
-	}
-
 	a {
 		text-decoration: none;
 		display: block;
