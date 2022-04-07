@@ -4,6 +4,9 @@
  * These files don’t output any CSS when compiled
  */
 
+// 00-tokens
+@import '00-tokens/';
+
 // These settings must come first, as other settings can reference them
 @import '10-settings/colors/default';
 @import '10-settings/style';
