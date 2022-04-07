@@ -13,26 +13,22 @@
 			"level-1": {
 				"default": {
 					"font-size": {
-						"value": "{font-size.875}"
+						"value": "{font-size.900}"
 					},
 					"font-weight": {
-						"value": "{font-weight.light}"
+						"value": "{font-weight.regular}"
 					}
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.600}, 4vw, {font-size.875})"
-					},
-					"font-weight": {
-						"value": "{font-weight.regular}",
-						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
+						"value": "clamp({font-size.650}, 4vw, {font-size.900})"
 					}
 				}
 			},
 			"level-2": {
 				"default": {
 					"font-size": {
-						"value": "{font-size.600}"
+						"value": "{font-size.650}"
 					},
 					"font-weight": {
 						"value": "{font-weight.regular.value}"
@@ -40,40 +36,46 @@
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.500}, 4vw, {font-size.600})"
-					},
-					"font-weight": {
-						"value": "{font-weight.bold.value}",
-						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
+						"value": "clamp({font-size.600}, 4vw, {font-size.650})"
 					}
 				}
 			},
 			"level-3": {
 				"default": {
 					"font-size": {
+						"value": "{font-size.600.value}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.500.value}, 4vw, {font-size.600.value})"
+					}
+				}
+			},
+			"level-4": {
+				"font-family": {
+					"value": "{font-family.sans}"
+				},
+				"default": {
+					"font-size": {
 						"value": "{font-size.500.value}"
-					},
-					"font-weight": {
-						"value": "{font-weight.bold.value}"
 					}
 				},
 				"fluid": {
 					"font-size": {
 						"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})"
 					}
-				}
-			},
-			"level-4": {
-				"font-size": {
-					"value": "{font-size.450.value}"
 				},
 				"font-weight": {
 					"value": "{font-weight.bold.value}"
 				}
 			},
 			"level-5": {
+				"font-family": {
+					"value": "{font-family.sans}"
+				},
 				"font-size": {
-					"value": "{font-size.400.value}"
+					"value": "{font-size.450.value}"
 				},
 				"font-weight": {
 					"value": "{font-weight.bold.value}"

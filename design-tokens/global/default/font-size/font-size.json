@@ -20,9 +20,17 @@
 			"value": "1.5rem",
 			"comment": "24px"
 		},
+		"650": {
+			"value": "1.875rem",
+			"comment": "28px"
+		},
 		"875": {
 			"value": "2.1875rem",
 			"comment": "35px"
+		},
+		"900": {
+			"value": "2.5rem",
+			"comment": "36px"
 		}
 	}
 }
