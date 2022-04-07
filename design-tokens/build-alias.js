@@ -51,7 +51,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 
 console.log('Build started...');
 
-['default', 'springernature'].map(function (brand) {
+['default', 'springer', 'springernature'].map(function (brand) {
 	let dir = `${__dirname}/alias/${brand}`
 	const aliases = readdirSync(dir);
 
@@ -66,7 +66,7 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-['default', 'springernature'].map(function (brand) {
+['default', 'springer', 'springernature'].map(function (brand) {
 	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/alias/`);
 	let dest = `./context/brand-context/${brand}/scss/00-tokens/alias`;
 
