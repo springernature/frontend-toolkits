@@ -247,6 +247,6 @@ Copyright &copy; 2020, Springer Nature
 [info-build]: https://travis-ci.com/springernature/frontend-toolkits
 [badge-build]: https://badgen.net/travis/springernature/frontend-toolkits?icon=travis
 [info-node]: .nvmrc
-[badge-node]: https://img.shields.io/badge/node-lts/carbon-brightgreen.svg
+[badge-node]: https://img.shields.io/badge/node--lts-%3E%3D%2014.19.1-brightgreen
 [info-sass]: #using-the-correct-sass-version
 [badge-sass]: https://img.shields.io/badge/SASS-1.47.0-green.svg

@@ -68,6 +68,16 @@
 {{/with}}
 </ul>
 
+<h2>No titles or shape</h2>
+
+<ul class="demo-grid">
+{{#with cardsNoTitles}}
+	{{#each cards}}
+		{{>card}}
+	{{/each}}
+{{/with}}
+</ul>
+
 <h2>Dark mode</h2>
 
 <p>With the <code>dark</code> Boolean applied to each card.</p>
