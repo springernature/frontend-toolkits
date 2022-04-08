@@ -1,4 +1,4 @@
-# Springer Nature User Details
+# Springer Nature Submission Header
 
 Springer nature branded 'submission details' component.
 

@@ -1,5 +1,8 @@
 # History
 
+## 1.1.2 (2022-04-08)
+    * BUG: wrong component name in readme
+
 ## 1.1.1 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
