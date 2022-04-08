@@ -8,6 +8,7 @@
 	border-bottom: 4px solid color('corporate');
 }
 
+/* Fallback margins for IE11 */
 .c-header__container > * + *,
 .c-header__menu > * + *,
 .c-header__nav-menu > * + * {
