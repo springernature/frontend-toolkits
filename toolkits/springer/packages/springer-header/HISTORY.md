@@ -1,5 +1,6 @@
 # History
-
+## 7.0.2 (2022-04-07)
+    * Rewrite `@supports` use so IE recognises the rules
 ## 7.0.1 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
