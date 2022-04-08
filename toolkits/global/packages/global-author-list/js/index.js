@@ -1,4 +1,4 @@
-import {makeArray, getDataOptions} from '@springernature/global-javascript/src/helpers';
+import {makeArray, getDataOptions} from '@springernature/brand-context';
 import {authorList} from './author-list';
 
 const DATA_COMPONENT = 'data-author-list';
