@@ -1,4 +1,4 @@
-import {Expander} from '@springernature/global-expander/js/expander';
+import {Expander} from '@springernature/brand-context';
 
 const userDetails = () => {
 	const trigger = document.querySelector('[data-component-user-details-open]');
