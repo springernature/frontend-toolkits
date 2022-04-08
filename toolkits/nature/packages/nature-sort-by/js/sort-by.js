@@ -1,4 +1,4 @@
-import {makeArray} from '@springernature/global-javascript/src/helpers';
+import {makeArray} from '@springernature/brand-context';
 
 function addInputListeners(inputs, submitButton) {
 	inputs.forEach(input => {
