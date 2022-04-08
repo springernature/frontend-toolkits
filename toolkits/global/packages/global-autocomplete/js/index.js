@@ -15,7 +15,8 @@ const autoComplete = arguments_ => {
 		bodyTemplate,
 		searchError,
 		resultsCallBack,
-		selectOnSuggestionBrowsing = true
+		selectOnSuggestionBrowsing = true,
+		selectOnTab = false
 	} = arguments_;
 
 	if (!selector || !resultsCallBack || !resultSelector || !resultsContainerSelector || (!endpoint && !staticResultsData)) {
@@ -127,6 +128,17 @@ const autoComplete = arguments_ => {
 					input.focus();
 				}
 			});
+			if (selectOnTab) {
+				element.addEventListener('keydown', event => {
+					if (event.key === 'Tab') {
+						if (onSelect) {
+							onSelect(element.textContent);
+						}
+						removeSuggestions();
+						input.focus();
+					}
+				});
+			}
 		});
 	};
 
@@ -229,12 +241,14 @@ const autoComplete = arguments_ => {
 	const enable = () => {
 		if (input) {
 			input.addEventListener('keyup', listenForInput);
+			input.setAttribute('aria-expanded', 'false');
 		}
 	};
 
 	const disable = () => {
 		removeSuggestions();
 		input.removeEventListener('keyup', listenForInput);
+		input.removeAttribute('aria-expanded');
 	};
 
 	return {

@@ -1,5 +1,13 @@
 # History
 
+## 6.0.0 (2022-03-31)
+    * BREAKING: Bump brand-context from version 4.2.2 to 20.1.1 (Moved from node sass to dart sass)
+    * Option to select list item with tab
+    * Add aria-expanded on initialisation
+    * Updated demo
+        * Regenerated to demo latest changes
+        * Add the selected item to text input when selectOnSuggestionBrowsing is false to show something is selected
+
 ## 5.1.4 (2022-02-25)
     * BUG: unable to move focus to select autocomplete items when using NVDA with Firefox (Windows) 
         * add role="listbox" to parent container of autocomplete items
