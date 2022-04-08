@@ -158,6 +158,10 @@ The following script commands are available:
 
    As above, but run on CI. Do not use locally.
 
+* `npm run context`
+
+   This is run as part of the boostrap commands and installs the correct version of `brand-context` in each package's dependencies, for testing and validation. You can also run this with the `-n` flag to specify a package name. This will install the `brand-context` for that package only e.g. `npm run context -- -n name-of-package`
+
 * `npm run create`
 
    Run the `create` script from the [frontend package manager](https://github.com/springernature/frontend-package-manager#package-creation).
