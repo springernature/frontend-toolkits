@@ -1,5 +1,5 @@
 /* eslint-disable unicorn/prefer-text-content */
-const {authorList} = require('../author-list');
+const {authorList} = require('../js/author-list');
 
 const fixture = `
 	<div data-author-list data-author-list-truncate-limit="3">

@@ -1,7 +1,7 @@
-import {authorLists} from '../index';
-import {authorList} from '../author-list';
+import {authorLists} from '../js/index';
+import {authorList} from '../js/author-list';
 
-jest.mock('../author-list', () => ({
+jest.mock('../js/author-list', () => ({
 	authorList: jest.fn(() => {
 		return {
 			init: jest.fn()

@@ -1,12 +1,9 @@
 {
   "name": "@springernature/global-author-list",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "license": "MIT",
   "description": "Display a styled list of authors with comma separation. The list can be truncated and then accompanied with a toggle to be expanded/truncated",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^18.0.0",
-  "dependencies": {
-    "@springernature/global-javascript": "^3.0.2"
-  }
+  "brandContext": "^20.1.1"
 }
