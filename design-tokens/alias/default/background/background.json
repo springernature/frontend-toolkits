@@ -16,11 +16,13 @@
 			"heading": {
 				"value": "{color.grayscale.600}"
 			},
-			"heading-2": {
-				"value": "{color.primary.grey-blue-light-2}"
-			},
-			"heading-3": {
-				"value": "{color.primary.grey-blue-light-1}"
+			"row": {
+				"odd": {
+					"value": "{color.primary.grey-blue-light-2}"
+				},
+				"even": {
+					"value": "{color.primary.grey-blue-light-1}"
+				}
 			}
 		}
 	}

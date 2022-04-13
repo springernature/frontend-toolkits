@@ -21,7 +21,7 @@
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.650}, 4vw, {font-size.900})"
+						"value": "clamp({font-size.650}, 4vw, {typography.heading.level-1.default.font-size.value})"
 					}
 				}
 			},
@@ -36,7 +36,7 @@
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.600}, 4vw, {font-size.650})"
+						"value": "clamp({font-size.600}, 4vw, {typography.heading.level-2.default.font-size.value})"
 					}
 				}
 			},
@@ -48,7 +48,7 @@
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.500.value}, 4vw, {font-size.600.value})"
+						"value": "clamp({font-size.500.value}, 4vw, {typography.heading.level-3.default.font-size.value})"
 					}
 				}
 			},
@@ -63,7 +63,7 @@
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})"
+						"value": "clamp({font-size.450.value}, 4vw, {typography.heading.level-4.default.font-size.value})"
 					}
 				},
 				"font-weight": {
