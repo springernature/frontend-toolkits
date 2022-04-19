@@ -1,14 +1,28 @@
 {
 	"color": {
-		"nature": {
-			"black": {
-				"value": "{color.grayscale.800}"
-			},
-			"gunmetal": {
+		"black": {
+			"value": "{color.grayscale.800}"
+		},
+		"gunmetal": {
+			"800": {
 				"value": "#29303C"
 			},
-			"dark-red": {
+			"500": {
+				"value": "#536179"
+			},
+			"300": {
+				"value": "#c2c9d6"
+			}
+		},
+		"red": {
+			"800": {
 				"value": "#940720"
+			},
+			"500": {
+				"value": "#ed1C24"
+			},
+			"300": {
+				"value": "#f15a40"
 			}
 		}
 	}

@@ -51,7 +51,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 
 console.log('Build started...');
 
-['default', 'springer', 'springernature'].map(function (brand) {
+['default', 'springer', 'springernature', 'nature'].map(function (brand) {
 	let dir = `${__dirname}/alias/${brand}`
 	const aliases = readdirSync(dir);
 

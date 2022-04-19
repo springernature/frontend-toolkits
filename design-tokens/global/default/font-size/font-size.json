@@ -24,6 +24,10 @@
 			"value": "1.875rem",
 			"comment": "28px"
 		},
+		"800": {
+			"value": "2rem",
+			"comment": "32px"
+		},
 		"875": {
 			"value": "2.1875rem",
 			"comment": "35px"

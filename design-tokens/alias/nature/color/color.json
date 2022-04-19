@@ -1,0 +1,16 @@
+{
+	"color": {
+		"illustration": {
+			"background": {
+				"001": {
+					"value": "{color.gunmetal.500}",
+					"description": "background color for illustrations"
+				},
+				"002": {
+					"value": "{color.gunmetal.300",
+					"description": "background color for illustrations"
+				}
+			}
+		}
+	}
+}

@@ -13,13 +13,13 @@
 		},
 		"width": {
 			"25": {
-				"value": "{sizing.1}"
+				"value": "{sizing.25}"
 			},
 			"50": {
-				"value": "{sizing.2}"
+				"value": "{sizing.50}"
 			},
 			"100": {
-				"value": "{sizing.4}"
+				"value": "{sizing.100}"
 			}
 		}
 	}
