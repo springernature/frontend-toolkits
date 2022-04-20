@@ -32,19 +32,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 						filter: tokenFilter(brand, alias)
 					}
 				})
-			},
-			// scssMaps: {
-			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/`,
-			// 	files: aliases.map(alias => {
-			// 		return {
-			// 			destination: `_${alias}.map.scss`,
-			// 			format: 'scss/map-flat',
-			// 			mapName: `context--${alias}`,
-			// 			filter: tokenFilter(brand, alias),
-			// 		}
-			// 	})
-			// },
+			}
 		}
 	}
 }

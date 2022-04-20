@@ -36,30 +36,7 @@ function getStyleDictionaryConfig(brand, categories) {
 						filter: tokenFilter(brand, category),
 					}
 				})
-			},
-			// scssMaps: {
-			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/`,
-			// 	files: categories.map(category => {
-			// 		return {
-			// 			destination: `_${category}.map.scss`,
-			// 			format: 'scss/map-flat',
-			// 			mapName: `context--${category}`,
-			// 			filter: tokenFilter(brand, category),
-			// 		}
-			// 	})
-			// },
-			// cssCustomProperties: {
-			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/`,
-			// 	files: categories.map(category => {
-			// 		return {
-			// 			destination: `_${category}.custom-properties.scss`,
-			// 			format: 'css/variables',
-			// 			filter: tokenFilter(brand, category),
-			// 		}
-			// 	})
-			// }
+			}
 		}
 	}
 }

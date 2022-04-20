@@ -38,22 +38,7 @@ function getStyleDictionaryConfig(brand, components) {
 						}
 					}
 				})
-			},
-			// scssMaps: {
-			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/`,
-			// 	files: components.map(component => {
-			// 		return {
-			// 			destination: `_${component}.map.scss`,
-			// 			format: 'scss/map-flat',
-			// 			mapName: `context--${component}`,
-			// 			filter: tokenFilter(brand, component),
-			// 			"options": {
-			// 				"outputReferences": true
-			// 			}
-			// 		}
-			// 	})
-			// },
+			}
 		}
 	}
 }
