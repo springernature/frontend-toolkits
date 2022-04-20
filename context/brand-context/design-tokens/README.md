@@ -25,10 +25,10 @@ To clean the generated design tokens `.scss` files that are created in the `00-t
 ---
 ## Design Tokens Naming Conventions
 ### Literal Design Tokens
-These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Relative Design Tokens that can be used in developing components.
+These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Alias Design Tokens that can be used in developing components.
 The Design values we have integrated into a Design Tokens workflow are:
 #### Colour
-The `color` Design Tokens will be used for any Relative Design Token defined.
+The `color` Design Tokens will be used for any Alias Design Token defined.
 As the current colour palettes used are relatively small we will name most of the colours. For the grayscale colours we will apply a numerical scale to go from white to black, `100` to `900`. This naming convention allows for additional grayscale colours to be added over time if needed.
 There are four categories for the colour palettes used across Springer Nature:
 1. UI - These are used for the foreground and background colours of the web page. The page background, the header background, the footer background. As well as interactive states of text links and buttons.
@@ -143,17 +143,17 @@ The breakpoint values are defined using the `em` CSS unit. They are used to mana
 - These are also used to generate the styling utility classes
 - These will be expanded upon with values for `z-index`, `box-shadow`, `border` properties (and more).
 - - -
-### Relative Design Tokens
-Relative Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
+### Alias Design Tokens
+Alias Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
 #todo
 - This is part of 'phase 2' of the Design Tokens Epic
 
 ### Component Design Tokens
-Component Design Tokens are 'locked' tokens that hold a relative design token, and not a literal token or value.
+Component Design Tokens are 'locked' tokens that hold a Alias design token, and not a literal token or value.
 #todo
 - This is part of 'phase 3' of the Design Tokens Epic
 
 ---
 ## Sketch File
 
-Global tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
+Literal and Alias Design Tokens taken from here - https://www.sketch.com/s/fa9c2fc9-a179-43f0-b21e-9562c9c17c0c/a/g0ZP71z
