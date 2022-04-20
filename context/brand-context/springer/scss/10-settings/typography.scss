@@ -3,21 +3,23 @@ $context--font-family-serif: Georgia, Palatino, serif;
 $context--font-size-xxs: .75rem;
 $context--font-size-xs: .875rem;
 $context--font-size-sm: 1rem;
-$context--font-size-md: 1.125rem;
+$context--font-size-md: 1.25rem;
 $context--font-size-lg: 1.5rem;
 $context--font-size-xl: 1.75rem;
-$context--font-size-xxl: 2rem;
+$context--font-size-xxl: 2.25rem;
 
-$context--font-size-h1: 2rem;
+$context--font-size-h1: 2.25rem;
 $context--font-size-h2: 1.75rem;
 $context--font-size-h3: 1.5rem;
 $context--font-size-h4: 1.25rem;
+$context--font-size-h5: 1.125rem;
 
 // Fluid typography
 $context--font-size-h1-min: $context--font-size-h2;
 $context--font-size-h2-min: $context--font-size-h3;
 $context--font-size-h3-min: $context--font-size-h4;
-$context--font-size-h4-min: 1.125rem; // Body typography size
+$context--font-size-h4-min: $context--font-size-h5;
+$context--font-size-h5-min: 1rem;
 
 $context--font-size-furniture: $context--font-size-sm;
 $context--font-size-interface: $context--font-size-sm;

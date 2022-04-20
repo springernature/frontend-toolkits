@@ -60,3 +60,11 @@
 	font-weight: $context--font-weight-bold;
 }
 
+%u-h5 {
+	@include heading-base;
+	font-size: $context--font-size-h5;
+	font-size: unquote('min(max(#{$context--font-size-h5-min}, 2.5vw), #{$context--font-size-h5})');
+	font-family: $context--font-family-sans;
+	font-weight: $context--font-weight-bold;
+}
+
