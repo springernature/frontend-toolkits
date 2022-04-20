@@ -1,5 +1,9 @@
 # History
 
+## 8.0.0 (2022-04-08)
+    * UPDATE: brand-context v20.1.1
+        * global-javascript and global-expander now come from brand-context
+
 ## 7.1.4 (2022-03-23)
     * BUG: fix broken links to view and demo folders in docs
 

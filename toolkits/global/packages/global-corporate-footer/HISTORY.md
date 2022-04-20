@@ -1,5 +1,8 @@
 # History
 
+## 5.0.0 (2022-04-13)
+    * Update to latest brand-context v20.1.1
+
 ## 4.0.4 (2022-03-22)
     * Small update to footer guidance following subject matter expert review
 

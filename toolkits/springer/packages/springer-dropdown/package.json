@@ -1,12 +1,9 @@
 {
   "name": "@springernature/springer-dropdown",
-  "version": "6.1.1",
+  "version": "7.0.0",
   "license": "MIT",
   "description": "Display a contextual list of links controlled by a toggle",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^9.0.2",
-  "dependencies": {
-    "@springernature/global-javascript": "^3.0.1"
-  }
+  "brandContext": "v20.1.1"
 }

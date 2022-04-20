@@ -43,9 +43,9 @@ import {dropdown} from 'global-dropdown/js';
 dropdown();
 ```
 
-The component uses the Expander from the global toolkit to handle the events. 
+The component uses the Expander from the `brand-context` package to handle the events. 
 
 You can get a quick implementation by adding these two attributes `data-dropdown` and `data-dropdown-target` in your HTML as shown at the example above.
 
-If you need more flexibility, use the expander component directly following its [documentation](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander).
+If you need more flexibility, use the expander component directly following its [documentation](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/js/README.md#expander).
 
