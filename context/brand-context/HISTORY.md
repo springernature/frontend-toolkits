@@ -1,5 +1,7 @@
 # History
-
+## 20.1.2 (2022-03-30)
+    * Adjusted heading sizes and styles for Springer
+    
 ## 20.1.1 (2022-03-30)
     * BUG: expander needs to export the Class directly
 
