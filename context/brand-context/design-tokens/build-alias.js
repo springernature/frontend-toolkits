@@ -19,7 +19,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 	return {
 		include: [`${__dirname}/global/**/*.json`],
 		source: [
-			`${__dirname}/alias/${brand}/**/*.json`
+			`${__dirname}/alias/${brand}/**/*.json`,
 		],
 		platforms: {
 			scssVariables: {
@@ -39,7 +39,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 
 console.log('Build started...');
 
-['default', 'springer', 'springernature', 'nature'].map(function (brand) {
+['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	let dir = `${__dirname}/alias/${brand}`
 	const aliases = readdirSync(dir);
 

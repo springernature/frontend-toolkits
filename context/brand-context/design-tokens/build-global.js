@@ -18,11 +18,8 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
-			`${__dirname}/global/default/spacing/spacing.json`,
 			`${__dirname}/global/${brand}/spacing/spacing.json`,
-			`${__dirname}/global/default/breakpoints/breakpoints.json`,
 			`${__dirname}/global/${brand}/breakpoints/breakpoints.json`,
-			`${__dirname}/global/default/sizing/sizing.json`,
 			`${__dirname}/global/${brand}/sizing/sizing.json`
 		],
 		platforms: {

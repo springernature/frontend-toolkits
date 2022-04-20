@@ -1,5 +1,5 @@
 {
-	"color": {
+	"nature-color": {
 		"black": {
 			"value": "{color.grayscale.800}"
 		},
@@ -17,6 +17,9 @@
 		"red": {
 			"800": {
 				"value": "#940720"
+			},
+			"600": {
+				"value": "#C92727"
 			},
 			"500": {
 				"value": "#ed1C24"
