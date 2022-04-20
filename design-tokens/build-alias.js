@@ -24,7 +24,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/alias/`,
+				buildPath: `${dest}/00-tokens/`,
 				files: aliases.map(alias => {
 					return {
 						destination: `_${alias}.variables.scss`,
@@ -35,7 +35,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 			},
 			// scssMaps: {
 			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/alias/`,
+			// 	buildPath: `${dest}/00-tokens/`,
 			// 	files: aliases.map(alias => {
 			// 		return {
 			// 			destination: `_${alias}.map.scss`,
@@ -66,9 +66,9 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-['default', 'springer', 'springernature'].map(function (brand) {
-	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/alias/`);
-	let dest = `./context/brand-context/${brand}/scss/00-tokens/alias`;
+['default', 'springer', 'springernature', 'nature'].map(function (brand) {
+	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/`);
+	let dest = `./context/brand-context/${brand}/scss/00-tokens/`;
 
 	console.log('\n==============================================');
 	console.log(`\nProcessing Sass index file: [${brand}]`);

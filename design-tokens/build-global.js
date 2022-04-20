@@ -18,13 +18,17 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
-			`${__dirname}/global/default/**/*.json`,
-			`${__dirname}/global/${brand}/**/*.json`
+			`${__dirname}/global/default/spacing/spacing.json`,
+			`${__dirname}/global/${brand}/spacing/spacing.json`,
+			`${__dirname}/global/default/breakpoints/breakpoints.json`,
+			`${__dirname}/global/${brand}/breakpoints/breakpoints.json`,
+			`${__dirname}/global/default/sizing/sizing.json`,
+			`${__dirname}/global/${brand}/sizing/sizing.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				buildPath: `${dest}/00-tokens/global/`,
+				buildPath: `${dest}/00-tokens/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
@@ -35,7 +39,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			},
 			// scssMaps: {
 			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/global/`,
+			// 	buildPath: `${dest}/00-tokens/`,
 			// 	files: categories.map(category => {
 			// 		return {
 			// 			destination: `_${category}.map.scss`,
@@ -47,7 +51,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			// },
 			// cssCustomProperties: {
 			// 	transformGroup: 'web',
-			// 	buildPath: `${dest}/00-tokens/global/`,
+			// 	buildPath: `${dest}/00-tokens/`,
 			// 	files: categories.map(category => {
 			// 		return {
 			// 			destination: `_${category}.custom-properties.scss`,
@@ -79,13 +83,13 @@ console.log('Build started...');
 
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
 	if (brand === 'default') {
-		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/global/');
+		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
 	} else if (brand === 'springernature') {
-		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/global/');
+		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
 	} else if (brand === 'springer') {
-		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/global/');
+		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
 	} else if (brand === 'nature') {
-		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/global/');
+		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
 	}
 	let dest = `./context/brand-context/${brand}/scss`;
 	let dir = `${__dirname}/global/${brand}`
@@ -95,7 +99,7 @@ console.log('Build started...');
 	require('fs').writeFile(
 
 		// create an index.scss based off of the dest letiable
-		`${dest}/00-tokens/global/_index.scss`,
+		`${dest}/00-tokens/_index.scss`,
 
 		// create a list of each file in the directory
 		fileNames.map(file => {
@@ -110,7 +114,7 @@ console.log('Build started...');
 			}
 		}
 	);
-	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/global/_index.scss created`);
+	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/_index.scss created`);
 	console.log('\nEnd processing');
 });
 
