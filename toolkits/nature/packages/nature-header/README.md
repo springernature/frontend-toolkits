@@ -80,10 +80,10 @@ For ease of maintenance, the `scss` for this component is separated into 2 class
 
 ### Header expander
 
-The Header’s JavaScript file uses: 
+The Header’s JavaScript file uses the following from `brand-context`: 
 
-- [the Global expander component](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander)
-- `makeArray` in [the Global JavaScript component](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-javascript)
+- [`Expander`](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/js/README.md#expander)
+- [`makeArray`](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/js/README.md##makearray)
 
 When a user selects the trigger, the Global expander component opens and closes the specified target. You’ll need to put matching values into the `href` of the trigger and the `id` attribute on the target element to make this work.
 

@@ -1,5 +1,9 @@
 # History
 
+## 4.0.0 (2022-04-08)
+    * UPDATE: brand-context v20.1.1
+        * global-javascript and global-expander now come from brand-context
+
 ## 3.0.2 (2022-03-23)
     * BUG: Improve text for links to component view and demo folders. 
     * Move template section underneath installation.

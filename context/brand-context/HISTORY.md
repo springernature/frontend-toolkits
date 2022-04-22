@@ -1,4 +1,7 @@
 # History
+## 20.1.3 (2022-04-20)
+    * Adjusted h2 line height for Springer Nature
+
 ## 20.1.2 (2022-03-30)
     * Adjusted heading sizes and styles for Springer
     
