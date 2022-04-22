@@ -18,10 +18,13 @@ h3 {
 	@include u-h3;
 }
 
-h4,
+h4 {
+	@include u-h4;
+}
+
 h5,
 h6 {
-	@include u-h4;
+	@include u-h5;
 }
 
 p,
