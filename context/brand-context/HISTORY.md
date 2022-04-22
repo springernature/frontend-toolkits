@@ -1,6 +1,11 @@
 # History
+
+## 20.1.5 (2022-04-22)
+    * Adjusted h3 and h5 line height for Springer Nature
+    
 ## 20.1.4 (2022-04-22)
     * Applied new `h5` style for Springer
+    
 ## 20.1.3 (2022-04-20)
     * Adjusted h2 line height for Springer Nature
 
