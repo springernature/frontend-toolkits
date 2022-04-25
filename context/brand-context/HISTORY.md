@@ -1,4 +1,6 @@
 # History
+## 20.1.6 (2022-04-25)
+    * Amended h3 and h5 line height to correct rem units for Springer Nature
 
 ## 20.1.5 (2022-04-22)
     * Adjusted h3 and h5 line height for Springer Nature
