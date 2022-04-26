@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-footer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Global footer component",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^20.0.0"
+}
