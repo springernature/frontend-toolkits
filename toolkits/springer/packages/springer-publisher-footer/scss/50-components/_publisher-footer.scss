@@ -1,4 +1,5 @@
 .c-publisher-footer {
+	color: #fff;
 	@include u-text-furniture;
 	background-color: $publisher-footer--background-color;
 }
@@ -45,7 +46,6 @@
 
 .c-publisher-footer__heading {
 	@include u-text-furniture;
-	color: $publisher-footer--heading-color;
 	font-weight: $publisher-footer--heading-weight;
 	margin-bottom: $publisher-footer--heading-margin-bottom;
 }
@@ -58,11 +58,15 @@
 	padding: $publisher-footer--item-padding;
 }
 
-.c-publisher-footer__link {
+.c-publisher-footer__link,
+.c-publisher-footer__link:visited {
 	@include u-text-furniture;
-	@include u-link-interface;
-	@include gray-link;
+	color: inherit;
 	border: 0;
 	padding: 0;
 	background: none;
+}
+
+button.c-publisher-footer__link {
+	text-decoration: underline;
 }

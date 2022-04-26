@@ -1,5 +1,5 @@
-$publisher-footer--background-color: greyscale(95);
-$publisher-footer--border: 1px solid greyscale(80);
+$publisher-footer--background-color: $context--universal-blue;
+$publisher-footer--border: 2px solid #fff;
 $publisher-footer--columns-at-narrow: 2;
 $publisher-footer--columns-at-wide: 5;
 $publisher-footer--column-gap: spacing(24);
