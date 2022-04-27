@@ -17,7 +17,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 	let dest = `./context/brand-context/${brand}/scss`;
 
 	return {
-		include: [`${__dirname}/global/**/*.json`],
+		include: [`${__dirname}/literal/**/*.json`],
 		source: [
 			`${__dirname}/alias/${brand}/**/*.json`,
 		],

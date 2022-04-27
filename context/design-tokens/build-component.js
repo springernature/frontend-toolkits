@@ -18,7 +18,7 @@ function getStyleDictionaryConfig(brand, components) {
 
 	return {
 		include: [
-			`${__dirname}/global/**/*.json`,
+			`${__dirname}/literal/**/*.json`,
 			`${__dirname}/alias/**/*.json`
 		],
 		source: [
