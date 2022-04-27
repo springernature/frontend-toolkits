@@ -19,28 +19,29 @@
   ],
   "author": "Springer Nature",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
-    "bootstrap:local": "lerna bootstrap --nohoist=** --no-ci",
+    "bootstrap": "npm run context && lerna bootstrap --hoist",
+    "bootstrap:local": "npm run context && lerna bootstrap --nohoist=** --no-ci",
     "build": "npm run lint && npm run test && npm run validate",
     "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
+    "context": "sn-context-installer -p ./toolkits/",
     "create": "sn-package-create",
     "demo": "sn-package-demo",
     "lint": "util-eslint-runner --name 'lint:js' --pattern 'toolkits/**/packages/**/*.js' && npm run lint:sass",
     "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
+    "node_modules:clean": "npx rimraf node_modules/",
     "publish": "sn-package-publish",
     "test": "jest --colors --coverage --passWithNoTests",
     "test:ci": "jest --passWithNoTests --runInBand",
+    "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/brand-context/design-tokens/build-alias.js",
+    "tokens:clean": "npx rimraf **/00-tokens/",
+    "tokens:component": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias node ./context/brand-context/design-tokens/build-component.js",
+    "tokens:literal": "node ./context/brand-context/design-tokens/build-literal.js",
     "validate": "sn-package-validate",
     "validate:global": "sn-package-validate -t global",
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
-    "validate:springernature": "sn-package-validate -t springernature",
-    "tokens:literal": "node ./context/brand-context/design-tokens/build-literal.js",
-    "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/brand-context/design-tokens/build-alias.js",
-    "tokens:component": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias node ./context/brand-context/design-tokens/build-component.js",
-    "tokens:clean": "npx rimraf **/00-tokens/",
-    "node_modules:clean": "npx rimraf node_modules/"
+    "validate:springernature": "sn-package-validate -t springernature"
   },
   "bugs": {
     "url": "https://github.com/springernature/frontend-toolkits/issues"
@@ -51,8 +52,9 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
-    "@springernature/frontend-package-manager": "^8.1.0",
+    "@springernature/frontend-package-manager": "^8.3.0",
     "@springernature/sasslint-config": "^1.2.1",
+    "@springernature/util-context-installer": "^0.3.0",
     "@springernature/util-eslint-runner": "^0.0.3",
     "@springernature/util-sass-compiler": "^0.1.0",
     "acorn": "^7.1.0",
@@ -66,7 +68,7 @@
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
     "sass-lint": "^1.13.1",
-    "style-dictionary": "^3.1.1"
+    "style-dictionary": "^3.7.0"
   },
   "jest": {
     "testURL": "http://localhost/",
