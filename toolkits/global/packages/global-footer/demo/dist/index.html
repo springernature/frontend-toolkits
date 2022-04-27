@@ -641,11 +641,11 @@ body {
  */
 .c-footer {
   background-color: #01324b;
-  border-top: 2px solid #dadada;
+  border-top: 2px solid #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: white;
+  color: #fff;
 }
 
 .c-footer__container {
@@ -669,7 +669,7 @@ body {
 }
 
 .c-footer__legal {
-  color: white;
+  color: #fff;
   font-size: 1rem;
   margin-top: 4px;
   margin-bottom: 0px;
@@ -743,13 +743,13 @@ button.c-footer__link.hover, button.c-footer__link:hover {
 }
 
 .c-footer__group--separator {
-  border-bottom: 2px solid #dadada;
+  border-bottom: 2px solid #fff;
   margin-bottom: 32px;
   padding-bottom: 32px;
 }
 
 .c-footer__heading {
-  color: white;
+  color: #fff;
   margin-bottom: 16px;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -763,126 +763,128 @@ button.c-footer__link.hover, button.c-footer__link:hover {
 	<body style="padding:2%">
 		<strong>Default footer</strong>
 	<footer>
-		    <div class="c-footer">
-		        <div class="c-footer__container">
-		        		<nav>
-		        			<ul class="c-footer__links">
-		        				<li>
-		        						<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
-		        				</li>
-		        			</ul>
-		        		</nav>
-		        		<a href="https://www.springernature.com/" class="c-footer__link">
-		        			<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
-		        		</a>
-		        	<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
-		        </div>
-		    </div>
+		<div class="c-footer">
+			<div class="c-footer__container">
+					<nav>
+						<ul class="c-footer__links">
+							<li>
+									<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
+							</li>
+							<li>
+									<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="https://www.springernature.com/" class="c-footer__link">
+						<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
+					</a>
+				<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
+			</div>
+		</div>
 	</footer>
 <br>
 <strong>Footer with extended links</strong>
 	<footer>
-		    <div class="c-footer">
-		        <div class="c-footer__container">
-		        		<nav>
-		        			<ul class="c-footer__links">
-		        				<li>
-		        						<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="https://www.springernature.com/gp/legal/ccpa">California privacy statement (Optional)</a>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="/url/to/your/terms">Terms and conditions</a>
-		        				</li>
-		        				<li>
-		        						<a class="c-footer__link" href="/url/to/your/help/and/support">Help and support</a>
-		        				</li>
-		        			</ul>
-		        		</nav>
-		        		<a href="https://www.springernature.com/" class="c-footer__link">
-		        			<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
-		        		</a>
-		        	<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
-		        </div>
-		    </div>
+		<div class="c-footer">
+			<div class="c-footer__container">
+					<nav>
+						<ul class="c-footer__links">
+							<li>
+									<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
+							</li>
+							<li>
+									<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="https://www.springernature.com/gp/legal/ccpa">California privacy statement (Optional)</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/terms">Terms and conditions</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/help/and/support">Help and support</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="https://www.springernature.com/" class="c-footer__link">
+						<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
+					</a>
+				<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
+			</div>
+		</div>
 	</footer>
 <br>
 <strong>Footer with product and extended links</strong>
-	    <footer class="c-footer">
-	            <div class="c-footer__container">
-	                <div class="c-footer__grid c-footer__group--separator">
-	                    <div class="c-footer__group">
-	                        <h3 class="c-footer__heading">Discover content</h3>
-	                        <ul class="c-footer__list">
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/siteindex" data-track="click" data-track-action="journals a-z" data-track-label="link">Journals A-Z</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/subjects/" data-track="click" data-track-action="article by subject" data-track-label="link">Articles by subject</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://nano.nature.com/" data-track="click" data-track-action="nano" data-track-label="link">Nano</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/protocolexchange/" data-track="click" data-track-action="protocol exchange" data-track-label="link">Protocol exchange</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.natureindex.com/" data-track="click" data-track-action="nature index" data-track-label="link">Nature Index</a></li>
-	                        </ul>
-	                    </div>
-	                    <div class="c-footer__group">
-	                        <h3 class="c-footer__heading">Publishing policies</h3>
-	                        <ul class="c-footer__list">
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/authors/editorial_policies/" data-track="click" data-track-action="nature portfolio policies" data-track-label="link">Nature portfolio policies</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/nature-research/open-access" data-track="click" data-track-action="open access" data-track-label="link">Open access</a></li>
-	                        </ul>
-	                    </div>
-	                    <div class="c-footer__group">
-	                        <h3 class="c-footer__heading">Author &amp; researcher services</h3>
-	                        <ul class="c-footer__list">
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/reprints/" data-track="click" data-track-action="reprints and permissions" data-track-label="link">Reprints &amp; permissions</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://www.springernature.com/gp/authors/research-data" data-track="click" data-track-action="research data" data-track-label="link">Research data</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://authorservices.springernature.com/go/nr" data-track="click" data-track-action="language editing" data-track-label="link">Language editing</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://authorservices.springernature.com/scientific-editing/" data-track="click" data-track-action="scientific editing" data-track-label="link">Scientific editing</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://masterclasses.nature.com/" data-track="click" data-track-action="nature Masterclasses" data-track-label="link">Nature Masterclasses</a></li>
-	                            <li class="c-footer__item"><a class="c-footer__link" href="https://partnerships.nature.com/product/researcher-training/" data-track="click" data-track-action="nature Research Academies" data-track-label="link">Nature Research Academies</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        <div class="c-footer__container">
-	        		<nav>
-	        			<ul class="c-footer__links">
-	        				<li>
-	        						<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
-	        				</li>
-	        				<li>
-	        						<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
-	        				</li>
-	        				<li>
-	        						<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
-	        				</li>
-	        				<li>
-	        						<a class="c-footer__link" href="https://www.springernature.com/gp/legal/ccpa">California privacy statement (Optional)</a>
-	        				</li>
-	        				<li>
-	        						<a class="c-footer__link" href="/url/to/your/terms">Terms and conditions</a>
-	        				</li>
-	        				<li>
-	        						<a class="c-footer__link" href="/url/to/your/help/and/support">Help and support</a>
-	        				</li>
-	        			</ul>
-	        		</nav>
-	        		<a href="https://www.springernature.com/" class="c-footer__link">
-	        			<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
-	        		</a>
-	        	<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
-	        </div>
-	    </footer>
+	<footer>
+		<div class="c-footer">
+				    <div class="c-footer__container">
+				        <div class="c-footer__grid c-footer__group--separator">
+				            <div class="c-footer__group">
+				                <h3 class="c-footer__heading">Discover content</h3>
+				                <ul class="c-footer__list">
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/siteindex" data-track="click" data-track-action="journals a-z" data-track-label="link">Journals A-Z</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/subjects/" data-track="click" data-track-action="article by subject" data-track-label="link">Articles by subject</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://nano.nature.com/" data-track="click" data-track-action="nano" data-track-label="link">Nano</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/protocolexchange/" data-track="click" data-track-action="protocol exchange" data-track-label="link">Protocol exchange</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.natureindex.com/" data-track="click" data-track-action="nature index" data-track-label="link">Nature Index</a></li>
+				                </ul>
+				            </div>
+				            <div class="c-footer__group">
+				                <h3 class="c-footer__heading">Publishing policies</h3>
+				                <ul class="c-footer__list">
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/authors/editorial_policies/" data-track="click" data-track-action="nature portfolio policies" data-track-label="link">Nature portfolio policies</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/nature-research/open-access" data-track="click" data-track-action="open access" data-track-label="link">Open access</a></li>
+				                </ul>
+				            </div>
+				            <div class="c-footer__group">
+				                <h3 class="c-footer__heading">Author &amp; researcher services</h3>
+				                <ul class="c-footer__list">
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.nature.com/reprints/" data-track="click" data-track-action="reprints and permissions" data-track-label="link">Reprints &amp; permissions</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.springernature.com/gp/authors/research-data" data-track="click" data-track-action="research data" data-track-label="link">Research data</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://authorservices.springernature.com/go/nr" data-track="click" data-track-action="language editing" data-track-label="link">Language editing</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://authorservices.springernature.com/scientific-editing/" data-track="click" data-track-action="scientific editing" data-track-label="link">Scientific editing</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://masterclasses.nature.com/" data-track="click" data-track-action="nature Masterclasses" data-track-label="link">Nature Masterclasses</a></li>
+				                    <li class="c-footer__item"><a class="c-footer__link" href="https://partnerships.nature.com/product/researcher-training/" data-track="click" data-track-action="nature Research Academies" data-track-label="link">Nature Research Academies</a></li>
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+			<div class="c-footer__container">
+					<nav>
+						<ul class="c-footer__links">
+							<li>
+									<button class="c-footer__link" data-cc-action="preferences">Manage cookies / Do not sell my data</button>
+							</li>
+							<li>
+									<a class="c-footer__link" href="https://www.springernature.com/gp/info/accessibility">Accessibility statement</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/privacy/policy">Privacy policy</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="https://www.springernature.com/gp/legal/ccpa">California privacy statement (Optional)</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/terms">Terms and conditions</a>
+							</li>
+							<li>
+									<a class="c-footer__link" href="/url/to/your/help/and/support">Help and support</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="https://www.springernature.com/" class="c-footer__link">
+						<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNzVweCIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTc1IDE3IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNzUgMTciIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNi41NDQsNi44MzRDNS4yNzQsNi4yMzUsNC4xNzcsNS43MTksNC4xNzcsNC43MmMwLTAuODE5LDAuNTI5LTEuNjQ2LDEuNzA4LTEuNjQ2CgkJCQljMC44NTYsMCwxLjg3MSwwLjI4NSwzLjE5MywwLjg5N2wxLjMxNy0yLjY0QzguODY2LDAuNDM1LDcuMjk5LDAsNS42MDUsMEMyLjMxOCwwLDAuMzU2LDEuNzczLDAuMzU2LDQuNzQxCgkJCQlzMi4yOTUsNC4xMTMsNC4xMzksNS4wMzVjMS4zMzgsMC42NjgsMi40OTMsMS4yNDYsMi40OTMsMi4zMzRjMCwwLjkzOC0wLjgzMiwxLjU2OC0yLjA2OSwxLjU2OAoJCQkJYy0wLjk5MiwwLTIuMjAzLTAuMzY1LTMuNjAxLTEuMDg4TDAsMTUuNDE4YzEuNzY3LDEuMDA3LDMuMzgxLDEuNDU2LDUuMjI2LDEuNDU2YzMuNDE0LDAsNS40NTMtMS45LDUuNDUzLTUuMDgzCgkJCQlDMTAuNjc5LDguNzgxLDguMzg2LDcuNzAxLDYuNTQ0LDYuODM0eiBNMTcuNTU4LDEuODk5Yy0xLjQyOSwwLTMuNTc5LDAtNC44MTksMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzEuNjUsMCw1LjQ4OS0wLjUzNCw1LjQ4OS01LjQ4NkMyMi45NTYsMy41NzIsMjEuMDM5LDEuODk5LDE3LjU1OCwxLjg5OXogTTE3LjQ0NCw5LjM1NGMtMC40NTYsMC0wLjc1NywwLTEuMDMzLTAuMDIzCgkJCQlsLTAuMDQ3LTAuMDA0VjQuNjY1bDAuMDQ3LTAuMDAzYzAuMzIxLTAuMDIyLDAuNzQxLTAuMDIyLDEuMDc3LTAuMDIyYzEuNjc4LDAsMi4wMTUsMC45NjksMi4wMTUsMi41MzIKCQkJCUMxOS41MDUsOC42ODIsMTguODY5LDkuMzU0LDE3LjQ0NCw5LjM1NHogTTMzLjQ3OCwxMC44OTlsMC4wMzYtMC4wMjdjMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDkKCQkJCWMwLTMuNTEzLTIuOTkyLTQuNzY0LTUuNzkzLTQuNzY0Yy0xLjQyOSwwLTMuNTgsMC00LjgxOCwwLjA0MnYxNC42MTRoMy42MjZ2LTQuNDU4aDEuMTAyYzAuMjIsMCwwLjQyOC0wLjAxMiwwLjYxOS0wLjAyNAoJCQkJbDAuMDMtMC4wMDNsMC4wMTYsMC4wMjVjMC42MDIsMC45NjUsMS4zNjksMi41MTksMS42MTYsNC40NmMwLjc5NSwwLDMuOTY3LDAsMy45NjcsMGMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTkKCQkJCUwzMy40NzgsMTAuODk5eiBNMjkuNDgyLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzItMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3bDAuMDQ3LTAuMDAzCgkJCQljMC4zMjEtMC4wMjMsMC43NDEtMC4wMjMsMS4wNzctMC4wMjNjMS42NzgsMCwyLjAxNSwwLjk3LDIuMDE1LDIuNTM0QzMxLjU0Miw4LjY4MiwzMC45MDcsOS4zNTQsMjkuNDgyLDkuMzU0eiBNMzguMDQ3LDE2LjU1NQoJCQkJbDMuNjIyLDAuMDAyVjEuOTIyaC0zLjYyMlYxNi41NTV6IE01My4xNjIsMTEuNDk3TDQ4LjgyLDEuOTIxaC0zLjk2NHYxNC42MzNoMy4xOTFWNy4zMjNsNC41MDMsOS4yMzFoMy44MjFWMS45MjFoLTMuMjA5CgkJCQlDNTMuMTYyLDEuOTIxLDUzLjE2MiwxMS40OTcsNTMuMTYyLDExLjQ5N3ogTTY1LjEsMTEuMDQ5aDEuNTA5djIuOTlsLTAuMDM0LDAuMDEyYy0wLjM2NCwwLjEzMS0xLjIzMywwLjItMS41OTUsMC4yCgkJCQljLTEuOTE1LDAtMi42NjItMS40MTktMi42NjItNS4wNjJjMC0zLjIsMS4xMDItNC43NTYsMy4zNjktNC43NTZjMC43NTcsMCwxLjg2MiwwLjMzOSwzLjAzOSwwLjkzMmwwLjk4Mi0yLjQ0CgkJCQlDNjguMzkyLDIuMDk1LDY2LjY3OSwxLjYsNjUuMTE2LDEuNmMtMi4xOTgsMC0zLjc4MiwwLjYxOS00Ljg0NCwxLjg5M2MtMS4wNTMsMS4yNjUtMS41NjYsMy4xNDItMS41NjYsNS43MzkKCQkJCWMwLDUuNjcxLDEuNjQ1LDcuNzc5LDYuMDY2LDcuNzc5YzEuNDA4LDAsMy41MjgtMC4zNjYsNS4xMDctMS4xODNWOC41NTRINjUuMVYxMS4wNDl6IE03NS44MjIsMTAuNDg3aDQuNzAxVjcuNjU4aC00LjcwMVY0Ljc3MwoJCQkJaDUuMTM0VjEuOTIxaC04LjYwM3YxMi4wNDVjMCwwLjAxMy0wLjAyMSwxLjE1OCwwLjczNSwxLjk0MmMwLjQ3MiwwLjQ5MSwxLjE0NiwwLjc0MSwyLjAwMiwwLjc0NgoJCQkJYzIuNjM4LDAuMDE1LDUuNTI3LTAuMDgyLDUuOTM0LTAuMDk3di0yLjg1OGgtNS4yMDN2LTMuMjEySDc1LjgyMnogTTkyLjQxNiwxMC45MzdsLTAuMDI0LTAuMDM4bDAuMDM2LTAuMDI3CgkJCQljMS4yMDktMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5Mi00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE2LDQuNDZjMC43OTUsMCwzLjk2NywwLDMuOTY3LDAKCQkJCUM5NC4zMzEsMTQuMzIyLDkzLjExNSwxMi4wNzksOTIuNDE2LDEwLjkzN3ogTTg4LjM5Niw5LjM1NGMtMC40NTYsMC0wLjc1NiwwLTEuMDMyLTAuMDIxbC0wLjA0Ny0wLjAwNFY0LjY2N2wwLjA0Ny0wLjAwMwoJCQkJYzAuMzIxLTAuMDIzLDAuNzQxLTAuMDIzLDEuMDc3LTAuMDIzYzEuNjc4LDAsMi4wMTYsMC45NywyLjAxNiwyLjUzNEM5MC40NTcsOC42ODIsODkuODIyLDkuMzU0LDg4LjM5Niw5LjM1NHoiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwOS4xNTMsMTEuNTk1TDEwMy44MiwwLjE1aC00LjIzdjE2LjQwNWgzLjMyOGwwLjAwMS0xMS4zMjFsNS4yOTIsMTEuMzIxaDQuMjg4VjAuMTVoLTMuMzQ2VjExLjU5NXoKCQkJCSBNMTI3LjQxNCw0LjkwNGgzLjI2N3YxMS42NTFoMy43NzhWNC45MDRoMi43ODRWMS45MmgtOS44MjlWNC45MDR6IE0xNDYuOCwxMS42NjZjMCwxLjQ5OC0wLjA4NSwyLjQxNS0xLjc1MywyLjQxNQoJCQkJYy0xLjU5OSwwLTEuODY5LTAuNzUyLTEuODY5LTIuNDM3VjEuOTIxaC0zLjc1NHY5LjkyYzAsMy40OTEsMS42ODUsNS4wNDgsNS40NjMsNS4wNDhjMy44NjcsMCw1LjY2OC0xLjc3MSw1LjY2OC01LjU3NFYxLjkyMQoJCQkJSDE0Ni44QzE0Ni44LDEuOTIxLDE0Ni44LDExLjY2NiwxNDYuOCwxMS42NjZ6IE0xNjkuNzk3LDEzLjY5OXYtMy4yMTNoNC43VjcuNjU3aC00LjdWNC43NzJoNS4xMzRWMS45MjFoLTguNjAydjEyLjA0NQoJCQkJYzAsMC4wMTMtMC4wMjEsMS4xNTgsMC43MzUsMS45NDJjMC40NzIsMC40OTEsMS4xNDYsMC43NDEsMi4wMDIsMC43NDZjMi42MzcsMC4wMTUsNS41MjctMC4wODIsNS45MzQtMC4wOTd2LTIuODU4SDE2OS43OTd6CgkJCQkgTTExOC4xMjcsMS45MjFsLTMuNTQ0LDE0LjYzNGgzLjY5OWwwLjUyMS0yLjMyNGg0LjA1NWwwLjUyMSwyLjMyNGgzLjkwMWwtMy40OTgtMTQuNjM0CgkJCQlDMTIzLjc4MiwxLjkyMSwxMTguMTI3LDEuOTIxLDExOC4xMjcsMS45MjF6IE0xMTkuMjMsMTEuNDY2bDEuNTA3LTYuMzY0aDAuMTUxbDEuNTQyLDYuMzY0SDExOS4yM3ogTTE2MS45MzYsMTAuODk5bDAuMDM1LTAuMDI3CgkJCQljMS4yMDgtMC45NjYsMS44NzUtMi40NjEsMS44NzUtNC4yMDljMC0zLjUxMy0yLjk5Mi00Ljc2NC01Ljc5My00Ljc2NGMtMS40MjksMC0zLjU4LDAtNC44MTgsMC4wNDJ2MTQuNjE0aDMuNjI2di00LjQ1OGgxLjEwMgoJCQkJYzAuMjIsMCwwLjQyNy0wLjAxMiwwLjYxOS0wLjAyNGwwLjAzLTAuMDAzbDAuMDE2LDAuMDI1YzAuNjAyLDAuOTY1LDEuMzY5LDIuNTE5LDEuNjE3LDQuNDZjMC43OTQsMCwzLjk2NywwLDMuOTY3LDAKCQkJCWMtMC4zMzYtMi4yMzQtMS41NTItNC40NzctMi4yNTEtNS42MTlMMTYxLjkzNiwxMC44OTl6IE0xNTcuOTQxLDkuMzU0Yy0wLjQ1NiwwLTAuNzU2LDAtMS4wMzMtMC4wMjFsLTAuMDQ3LTAuMDA0VjQuNjY3CgkJCQlsMC4wNDctMC4wMDNjMC4zMjEtMC4wMjMsMC43NC0wLjAyMywxLjA3Ny0wLjAyM2MxLjY3OCwwLDIuMDE1LDAuOTcsMi4wMTUsMi41MzRDMTYwLjAwMSw4LjY4MiwxNTkuMzY2LDkuMzU0LDE1Ny45NDEsOS4zNTR6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" alt="Springer Nature" loading="lazy" width="200" height="20">
+					</a>
+				<p class="c-footer__legal" data-test="copyright">© 2022 Springer Nature</p>
+			</div>
+		</div>
+	</footer>
 		<script>
 			// no JS found for package
 		</script>

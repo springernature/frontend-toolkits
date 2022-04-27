@@ -88,7 +88,7 @@
 				}
 			]
 		},
-		"footerGroups": [
+		"productGroups": [
 			{
 			  "title": "Discover content",
 			  "items": [
@@ -178,8 +178,8 @@
 		"currentYear": 2022
 	},
 	"dynamicPartials": {
-		"corporate-footer": "./toolkits/global/packages/global-footer/view/corporate-footer.hbs",
-		"product-footer": "./toolkits/global/packages/global-footer/view/product-footer.hbs",
+		"corporate-footer": "./toolkits/global/packages/global-footer/view/partials/corporate.hbs",
+		"product-footer": "./toolkits/global/packages/global-footer/view/partials/product.hbs",
 		"footer": "./toolkits/global/packages/global-footer/view/index.hbs"
 	}
 }

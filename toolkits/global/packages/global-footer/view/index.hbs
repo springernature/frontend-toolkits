@@ -1,10 +1,6 @@
-{{#if footerGroups}}
-    <footer class="c-footer">
-        {{> product-footer}}
-        {{> corporate-footer}}
-    </footer>
-{{else}}
-    <div class="c-footer">
-        {{> corporate-footer}}
-    </div>
-{{/if}}
+<div class="c-footer">
+	{{#if productGroups}}
+		{{> product-footer}}
+	{{/if}}
+	{{> corporate-footer}}
+</div>
