@@ -36,9 +36,9 @@
     "validate:nature": "sn-package-validate -t nature",
     "validate:springer": "sn-package-validate -t springer",
     "validate:springernature": "sn-package-validate -t springernature",
-    "tokens:global": "node ./context/brand-context/design-tokens/build-global.js",
-    "tokens:alias": "npm run tokens:clean && npm run tokens:global && node ./context/brand-context/design-tokens/build-alias.js",
-    "tokens:component": "npm run tokens:clean && npm run tokens:global && npm run tokens:alias node ./context/brand-context/design-tokens/build-component.js",
+    "tokens:literal": "node ./context/brand-context/design-tokens/build-literal.js",
+    "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/brand-context/design-tokens/build-alias.js",
+    "tokens:component": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias node ./context/brand-context/design-tokens/build-component.js",
     "tokens:clean": "npx rimraf **/00-tokens/",
     "node_modules:clean": "npx rimraf node_modules/"
   },
