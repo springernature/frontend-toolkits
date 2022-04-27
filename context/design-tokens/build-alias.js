@@ -24,6 +24,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
+				prefix: "token",
 				buildPath: `${dest}/00-tokens/`,
 				files: aliases.map(alias => {
 					return {
