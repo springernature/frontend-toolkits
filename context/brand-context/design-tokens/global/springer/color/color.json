@@ -1,0 +1,15 @@
+{
+	"color": {
+		"springer": {
+			"oxford-blue": {
+				"value": "#00285A"
+			},
+			"french-blue": {
+				"value": "#0176C3"
+			},
+			"alice-blue": {
+				"value": "#EBF6FF"
+			}
+		}
+	}
+}
