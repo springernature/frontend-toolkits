@@ -1,5 +1,6 @@
 const fs = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
+const _ = require('../../node_modules/style-dictionary/lib/utils/es6_');
 const { readdirSync } = require('fs');
 
 // this will return a filtering function based on brand and category
@@ -13,6 +14,14 @@ function tokenFilter(brand, category) {
 	};
 }
 
+StyleDictionaryPackage.registerTransform({
+	name: 'name/cti/kebab',
+	type: 'name',
+	transformer: function (token, options) {
+		return `${options.prefix}--${_.kebabCase(token.path.join(' '))}`;
+	}
+});
+
 function getStyleDictionaryConfig(brand, categories) {
 	let dest = `./context/brand-context/${brand}/scss`;
 
@@ -25,6 +34,8 @@ function getStyleDictionaryConfig(brand, categories) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
+				transform: 'name/cti/kebab',
+				prefix: "tokens",
 				buildPath: `${dest}/00-tokens/`,
 				files: categories.map(category => {
 					return {
