@@ -1,0 +1,26 @@
+{
+	"border": {
+		"color": {
+			"primary": {
+				"value": "{color.black}"
+			},
+			"input": {
+				"value": "{color.grayscale.700}"
+			},
+			"button": {
+				"value": "{color.primary.medium-blue}"
+			}
+		},
+		"width": {
+			"25": {
+				"value": "{sizing.25}"
+			},
+			"50": {
+				"value": "{sizing.50}"
+			},
+			"100": {
+				"value": "{sizing.100}"
+			}
+		}
+	}
+}

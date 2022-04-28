@@ -29,9 +29,14 @@
     "lint": "util-eslint-runner --name 'lint:js' --pattern 'toolkits/**/packages/**/*.js' && npm run lint:sass",
     "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
+    "node_modules:clean": "npx rimraf node_modules/",
     "publish": "sn-package-publish",
     "test": "jest --colors --coverage --passWithNoTests",
     "test:ci": "jest --passWithNoTests --runInBand",
+    "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/design-tokens/build-alias.js",
+    "tokens:clean": "npx rimraf **/00-tokens/",
+    "tokens:component": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias node ./context/design-tokens/build-component.js",
+    "tokens:literal": "node ./context/design-tokens/build-literal.js",
     "validate": "sn-package-validate",
     "validate:global": "sn-package-validate -t global",
     "validate:nature": "sn-package-validate -t nature",
@@ -62,7 +67,8 @@
     "eslint-plugin-unicorn": "^13.0.0",
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
-    "sass-lint": "^1.13.1"
+    "sass-lint": "^1.13.1",
+    "style-dictionary": "^3.7.0"
   },
   "jest": {
     "testURL": "http://localhost/",

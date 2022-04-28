@@ -1,0 +1,24 @@
+{
+	"breakpoints": {
+		"xs": {
+			"value": "320px",
+			"comment": "mobile"
+		},
+		"sm": {
+			"value": "580px",
+			"comment": "small tablet"
+		},
+		"md": {
+			"value": "768px",
+			"comment": "tablet"
+		},
+		"lg": {
+			"value": "1024px",
+			"comment": "small desktop"
+		},
+		"xl": {
+			"value": "1220px",
+			"comment": "desktop"
+		}
+	}
+}

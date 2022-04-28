@@ -4,6 +4,9 @@
  * These files don’t output any CSS when compiled
  */
 
+// Design Tokens need to be imported first
+@import '00-tokens/';
+
 // 10-settings
 // These settings must come first, as other settings can reference them
 @import '10-settings/breakpoints';
