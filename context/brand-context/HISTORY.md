@@ -1,5 +1,8 @@
 # History
 
+## 21.0.3 (2022-04-29)
+    * BUG
+      * removes de-duplication of creating an `_index.scss` file.
 ## 21.0.2 (2022-04-29)
     * BUG
       * manually removes `_index.scss` file from the `_index.scss` file for each brands generated tokens.
