@@ -66,42 +66,6 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	if (brand === 'default') {
-		var fileNames = fs.readdirSync('./context/brand-context/default/scss/00-tokens/');
-	} else if (brand === 'springernature') {
-		var fileNames = fs.readdirSync('./context/brand-context/springernature/scss/00-tokens/');
-	} else if (brand === 'springer') {
-		var fileNames = fs.readdirSync('./context/brand-context/springer/scss/00-tokens/');
-	} else if (brand === 'nature') {
-		var fileNames = fs.readdirSync('./context/brand-context/nature/scss/00-tokens/');
-	}
-	let dest = `./context/brand-context/${brand}/scss`;
-	let dir = `${__dirname}/literal/${brand}`
-	console.log('\n==============================================');
-	console.log(`\nProcessing Sass index file: [${brand}]`);
-
-	require('fs').writeFile(
-
-		// create an index.scss based off of the dest letiable
-		`${dest}/00-tokens/_index.scss`,
-
-		// create a list of each file in the directory
-		fileNames.map(file => {
-			// return a string of the file name
-			return `@import '${file}';`
-		}).join('\n'),
-
-		// callback function to run if the write was successful
-		function (err) {
-			if (err) {
-				console.error('Crap happens');
-			}
-		}
-	);
-	console.log(`\n./context/brand-context/${brand}/scss/00-tokens/_index.scss created`);
-	console.log('\nEnd processing');
-});
 
 
 // we need to make sure the existing tokens are the same as what Design are using
