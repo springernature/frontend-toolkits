@@ -50,6 +50,21 @@ var utilities = [
 		"name": "margin-bottom",
 		"tokenType": "spacing",
 		"CSSprop": "margin-bottom"
+	},
+	{
+		"name": "text-color",
+		"tokenType": "color",
+		"CSSprop": "color"
+	},
+	{
+		"name": "border-color",
+		"tokenType": "color",
+		"CSSprop": "border-color"
+	},
+	{
+		"name": "background-color",
+		"tokenType": "color",
+		"CSSprop": "background-color"
 	}
 ];
 
@@ -64,9 +79,7 @@ StyleDictionary.registerFormat({
 			utilities.forEach(function (utility) {
 				if (tokenType === utility.tokenType) {
 					var utilityClass = "u-" + utility.name + "-" + prop.path[1];
-					output += `.${utilityClass} {
-  ${utility.CSSprop}: ${prop.value};
-}\n\n`
+					output += `.${utilityClass} {${utility.CSSprop}: ${prop.value};}\n`
 				}
 			});
 		});
@@ -75,8 +88,6 @@ StyleDictionary.registerFormat({
 });
 
 StyleDictionary.extend({
-	// source: ['files'],
-	// include: ['files'],
 	include: [`${__dirname}/literal/**/*.json`],
 	platforms: {
 		css: {
