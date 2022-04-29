@@ -1,5 +1,9 @@
 # History
 
+## 21.0.1 (2022-04-29)
+    * BUG
+      * fixes issue with compiled Design Tokens having an missing opening curly brace
+
 ## 21.0.0 (2022-04-27)
     * FEATURE:
       * Introduces Design Tokens as a way to manage and create Sass variables from Design decisions.
