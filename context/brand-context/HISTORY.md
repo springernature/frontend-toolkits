@@ -1,5 +1,8 @@
 # History
 
+## 21.0.2 (2022-04-29)
+    * BUG
+      * manually removes `_index.scss` file from the `_index.scss` file for each brands generated tokens.
 ## 21.0.1 (2022-04-29)
     * BUG
       * fixes issue with compiled Design Tokens having an missing opening curly brace
