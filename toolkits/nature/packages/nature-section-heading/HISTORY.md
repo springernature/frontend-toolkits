@@ -1,5 +1,8 @@
 # History
 
+## 1.1.5 (2022-05-03)
+    * Reset padding-top when not showing border above heading
+
 ## 1.1.4 (2022-03-23)
     * BUG: Fix broken view and demo links in README
 
