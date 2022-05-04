@@ -1,0 +1,12 @@
+<input type="text"
+	   {{> inputCommonAttributes}}
+/>
+{{#if datalist.options}}
+	{{#if datalist.id}}
+		<datalist id="{{datalist.id}}">
+			{{#each datalist.options}}
+				<option value="{{.}}"></option>
+			{{/each}}
+		</datalist>
+	{{/if}}
+{{/if}}

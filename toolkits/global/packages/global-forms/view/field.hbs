@@ -1,0 +1,14 @@
+<div class="c-form-field">
+	<label class="c-form-field-label">
+		{{label}}
+		{{#if hint}}
+			<small class="c-form-field-hint">{{hint}}</small>
+		{{/if}}
+	</label>
+	{{> (lookup . 'type')}}
+	{{#if error}}
+		<small class="c-form-field-error" id="error-{{id}}">
+			{{error}}
+		</small>
+	{{/if}}
+</div>

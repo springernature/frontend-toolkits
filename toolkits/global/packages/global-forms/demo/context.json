@@ -1,0 +1,52 @@
+{
+	"form1": {
+		"fields": [
+			{
+				"type": "inputText",
+				"label": "Your name",
+				"id": "k1yf23k1fy23ky132",
+				"name": "k1yf23k1fy23ky132",
+				"datalist": {
+					"id": "id-example",
+					"options": [
+						"Heydon",
+						"Alex",
+						"Stu",
+						"Clive",
+						"Jack",
+						"Sabastian",
+						"Tobias",
+						"Amy",
+						"James"
+					]
+				}
+			},
+			{
+				"type": "inputSelect",
+				"label": "Grindcore band",
+				"id": "m273r237rti237rt",
+				"name": "m273r237rti237rt",
+				"options": [
+					{
+						"label": "Napalm Death",
+						"value": "Napalm death"
+					},
+					{
+						"label": "Extreme Noise Terror",
+						"value": "Extreme Noise Terror"
+					}
+				]
+			}
+		]
+	},
+	"dynamicPartials": {
+		"field": "./toolkits/global/packages/global-forms/view/field.hbs",
+		"inputCommonAttributes": "./toolkits/global/packages/global-forms/view/inputCommonAttributes.hbs",
+		"inputText": "./toolkits/global/packages/global-forms/view/fields/inputText.hbs",
+		"inputEmail": "./toolkits/global/packages/global-forms/view/fields/inputEmail.hbs",
+		"inputSelect": "./toolkits/global/packages/global-forms/view/fields/inputSelect.hbs",
+		"inputTextarea": "./toolkits/global/packages/global-forms/view/fields/inputTextarea.hbs",
+		"inputCheckbox": "./toolkits/global/packages/global-forms/view/fields/inputCheckbox.hbs",
+		"inputRadios": "./toolkits/global/packages/global-forms/view/fields/inputRadios.hbs"
+	}
+}
