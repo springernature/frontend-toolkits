@@ -1,5 +1,6 @@
 # History
-
+## 21.0.4 (2022-05-04)
+    * uses base font size for springer text furniture
 ## 21.0.3 (2022-04-29)
     * BUG
       * removes de-duplication of creating an `_index.scss` file.
