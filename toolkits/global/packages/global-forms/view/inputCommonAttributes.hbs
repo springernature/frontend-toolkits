@@ -1,7 +1,11 @@
+{{#if id}} id="{{id}}"{{/if}}
+{{#if name}} name="{{name}}"{{/if}}
 {{#if error}} invalid aria-invalid="true"{{/if}}
-{{#if required}} required aria-required="true"{{/if}}
 {{#if error}} aria-describedby="error-{{id}}"{{/if}}
+{{#if required}} required aria-required="true"{{/if}}
 {{#if disabled}} disabled{{/if}}
 {{#if readonly}} readonly{{/if}}
 {{#if maxlength}} maxlength="{{maxlength}}"{{/if}}
+{{#unless autocomplete}} autocomplete="off"{{/if}}
+{{#if autocomplete}} autocomplete="{{autocomplete}}"{{/if}}
 {{#if datalist.id}} list="{{datalist.id}}"{{/if}}

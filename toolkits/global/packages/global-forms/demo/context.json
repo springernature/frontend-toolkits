@@ -31,7 +31,8 @@
 				"options": [
 					{
 						"label": "Napalm Death",
-						"value": "Napalm Death"
+						"value": "Napalm Death",
+						"selected": true
 					},
 					{
 						"label": "Extreme Noise Terror",
