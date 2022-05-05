@@ -1,13 +1,15 @@
-<select
-	class="c-forms-input c-forms-input--select"
-	{{> inputCommonAttributes}}
->
-	{{#each options}}
-		<option
-			value="{{value}}"
-			{{#if selected}} selected{{/if}}
-		>
-			{{label}}
-		</option>
-	{{/each}}
-</select>
+<div class="c-forms-input-container c-forms-input-container--select">
+	<select
+		class="c-forms-input c-forms-input--select"
+		{{> inputCommonAttributes}}
+	>
+		{{#each options}}
+			<option
+				value="{{value}}"
+				{{#if selected}} selected{{/if}}
+			>
+				{{label}}
+			</option>
+		{{/each}}
+	</select>
+</div>
