@@ -741,7 +741,15 @@ $global-form--grid-gutter-width: 10px;
 			<label class="c-form-field-label">
 				Your name
 			</label>
-			<input type="text" list="id-example">
+				<small class="c-form-field-error" id="error-k1yf23k1fy23ky132">
+					<span class="u-display-flex u-align-items-center">
+						<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<use xlink:href="../img/error.svg#i-error"></use>
+						</svg>
+					</span>
+					Write your name, innit
+				</small>
+			<input type="text" invalid="" aria-invalid="true" aria-describedby="error-k1yf23k1fy23ky132" list="id-example">
 					<datalist id="id-example">
 							<option value="Heydon"></option>
 							<option value="Alex"></option>

@@ -1,9 +1,11 @@
 {
 	"form1": {
+		"errorIconURL": "../img/error.svg#i-error",
 		"fields": [
 			{
 				"type": "inputText",
 				"label": "Your name",
+				"error": "Write your name, innit",
 				"id": "k1yf23k1fy23ky132",
 				"name": "k1yf23k1fy23ky132",
 				"datalist": {
@@ -29,7 +31,7 @@
 				"options": [
 					{
 						"label": "Napalm Death",
-						"value": "Napalm death"
+						"value": "Napalm Death"
 					},
 					{
 						"label": "Extreme Noise Terror",
