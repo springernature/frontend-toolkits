@@ -1,9 +1,10 @@
-<fieldset class="c-forms-fieldset"{{#unless legend}} role="presentation"{{/unless}}>
-	{{form.errorIconURL}}
+<fieldset class="c-forms__fieldset"{{#unless legend}} role="presentation"{{/unless}}>
 	{{#if legend}}
-		<legend class="c-forms-fieldset__legend">{{legend}}</legend>
+		<legend class="c-forms__legend">{{legend}}</legend>
 	{{/if}}
 	{{#each fields}}
-		{{> field form=../form}}
+		<div class="c-forms__field">
+			{{> (lookup . 'type') form=../form}}
+		</div>
 	{{/each}}
 </fieldset>

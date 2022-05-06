@@ -1,6 +1,10 @@
+{{> label}}
+{{#if error}}
+	{{> error}}
+{{/if}}
 <input type="text" class="c-forms-input c-forms-input--text"
 	   {{> inputCommonAttributes}}
-/>
+>
 {{#if datalist.options}}
 	{{#if datalist.id}}
 		<datalist id="{{datalist.id}}">

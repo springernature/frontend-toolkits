@@ -6,7 +6,7 @@
 				"legend": "Test legend",
 				"fields": [
 					{
-						"type": "inputText",
+						"type": "text",
 						"label": "Your name",
 						"error": "Write your name, innit",
 						"id": "k1yf23k1fy23ky132",
@@ -27,36 +27,20 @@
 						}
 					},
 					{
-						"type": "inputRadios",
-						"legend": "Grindcore bands",
-						"name": "grindcore",
+						"type": "radios",
+						"label": "Grindcore bands",
 						"inputs": [
 							{
 								"id": "r823742438",
 								"label": "Napalm Death",
-								"value": "Napalm Death"
+								"value": "Napalm Death",
+								"name": "grindcore"
 							},
 							{
 								"id": "r823742438",
 								"label": "Extreme Noise Terror",
-								"value": "Extreme Noise Terror"
-							}
-						]
-					},
-					{
-						"type": "inputSelect",
-						"label": "Grindcore band",
-						"id": "m273r237rti237rt",
-						"name": "m273r237rti237rt",
-						"options": [
-							{
-								"label": "Napalm Death",
-								"value": "Napalm Death",
-								"selected": true
-							},
-							{
-								"label": "Extreme Noise Terror",
-								"value": "Extreme Noise Terror"
+								"value": "Extreme Noise Terror",
+								"name": "grindcore"
 							}
 						]
 					}
@@ -66,13 +50,15 @@
 	},
 	"dynamicPartials": {
 		"fieldset": "./toolkits/global/packages/global-forms/view/fieldset.hbs",
-		"field": "./toolkits/global/packages/global-forms/view/field.hbs",
+		"label": "./toolkits/global/packages/global-forms/view/label.hbs",
+		"error": "./toolkits/global/packages/global-forms/view/error.hbs",
 		"inputCommonAttributes": "./toolkits/global/packages/global-forms/view/inputCommonAttributes.hbs",
-		"inputText": "./toolkits/global/packages/global-forms/view/fields/inputText.hbs",
-		"inputEmail": "./toolkits/global/packages/global-forms/view/fields/inputEmail.hbs",
-		"inputSelect": "./toolkits/global/packages/global-forms/view/fields/inputSelect.hbs",
-		"inputTextarea": "./toolkits/global/packages/global-forms/view/fields/inputTextarea.hbs",
-		"inputCheckbox": "./toolkits/global/packages/global-forms/view/fields/inputCheckbox.hbs",
-		"inputRadios": "./toolkits/global/packages/global-forms/view/fields/inputRadios.hbs"
+		"text": "./toolkits/global/packages/global-forms/view/fields/text.hbs",
+		"email": "./toolkits/global/packages/global-forms/view/fields/email.hbs",
+		"select": "./toolkits/global/packages/global-forms/view/fields/select.hbs",
+		"textarea": "./toolkits/global/packages/global-forms/view/fields/textarea.hbs",
+		"checkbox": "./toolkits/global/packages/global-forms/view/fields/checkbox.hbs",
+		"radios": "./toolkits/global/packages/global-forms/view/fields/radios.hbs",
+		"radio": "./toolkits/global/packages/global-forms/view/fields/radio.hbs"
 	}
 }

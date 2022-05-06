@@ -1,0 +1,11 @@
+<fieldset class="c-forms__field" {{#unless legend}} role="presentation"{{/unless}} id="{{id}}">
+	{{#if legend}}
+		<legend class="c-forms__label">{{legend}}</legend>
+	{{/if}}
+	{{#if error}}
+		{{> error}}
+	{{/if}}
+	{{#each inputs}}
+		{{> radio name=name}}
+	{{/each}}
+</fieldset>
