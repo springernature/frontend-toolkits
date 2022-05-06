@@ -737,44 +737,57 @@ $global-form--grid-gutter-width: 10px;
 	<body style="padding:2%">
 		<h1>Basic form</h1>
 
-		<div class="c-form-field">
-			<label class="c-form-field-label">
-				Your name
-			</label>
-				<small class="c-form-field-error" id="error-k1yf23k1fy23ky132">
-					<span class="u-display-flex u-align-items-center">
-						<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../img/error.svg#i-error"></use>
-						</svg>
-					</span>
-					Write your name, innit
-				</small>
-			<input type="text" id="k1yf23k1fy23ky132" name="k1yf23k1fy23ky132" invalid="" aria-invalid="true" aria-describedby="error-k1yf23k1fy23ky132" list="id-example">
-					<datalist id="id-example">
-							<option value="Heydon"></option>
-							<option value="Alex"></option>
-							<option value="Stu"></option>
-							<option value="Clive"></option>
-							<option value="Jack"></option>
-							<option value="Sabastian"></option>
-							<option value="Tobias"></option>
-							<option value="Amy"></option>
-							<option value="James"></option>
-					</datalist>
-		</div>
-		<div class="c-form-field">
-			<label class="c-form-field-label">
-				Grindcore band
-			</label>
-			<select id="m273r237rti237rt" name="m273r237rti237rt">
-					<option value="Napalm Death" selected="">
-						Napalm Death
-					</option>
-					<option value="Extreme Noise Terror">
-						Extreme Noise Terror
-					</option>
-			</select>
-		</div>
+		<fieldset class="c-forms__fieldset">
+			../img/error.svg#i-error
+				<legend>Test legend</legend>
+					<div class="c-form-field">
+						<label class="c-form-field-label">
+							Your name
+						</label>
+							<small class="c-form-field-error" id="error-k1yf23k1fy23ky132">
+								<span class="u-display-flex u-align-items-center">
+									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+										<use xlink:href="../img/error.svg#i-error"></use>
+									</svg>
+								</span>
+								Write your name, innit
+							</small>
+						<input type="text" class="c-forms-input c-forms-input--text" id="k1yf23k1fy23ky132" name="k1yf23k1fy23ky132" invalid="" aria-invalid="true" aria-describedby="error-k1yf23k1fy23ky132" autocomplete="off" list="id-example">
+								<datalist id="id-example">
+										<option value="Heydon"></option>
+										<option value="Alex"></option>
+										<option value="Stu"></option>
+										<option value="Clive"></option>
+										<option value="Jack"></option>
+										<option value="Sabastian"></option>
+										<option value="Tobias"></option>
+										<option value="Amy"></option>
+										<option value="James"></option>
+								</datalist>
+					</div>
+						<fieldset>
+							<legend></legend>
+								
+								radios
+								
+								radios
+						</fieldset>
+					<div class="c-form-field">
+						<label class="c-form-field-label">
+							Grindcore band
+						</label>
+						<div class="c-forms-input-container c-forms-input-container--select">
+							<select class="c-forms-input c-forms-input--select" id="m273r237rti237rt" name="m273r237rti237rt" autocomplete="off">
+									<option value="Napalm Death" selected="">
+										Napalm Death
+									</option>
+									<option value="Extreme Noise Terror">
+										Extreme Noise Terror
+									</option>
+							</select>
+						</div>
+					</div>
+		</fieldset>
 
 		<script>
 			// no JS found for package

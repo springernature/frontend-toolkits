@@ -1,21 +1,32 @@
-<div class="c-form-field">
-	<label class="c-form-field-label">
-		{{label}}
-		{{#unless error}}
-			{{#if hint}}
-				<small class="c-form-field-hint">{{hint}}</small>
-			{{/if}}
-		{{/unless}}
-	</label>
-	{{#if error}}
-		<small class="c-form-field-error" id="error-{{id}}">
-			<span class="u-display-flex u-align-items-center">
-				<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-					<use xlink:href="{{parent.errorIconURL}}"></use>
-				</svg>
-			</span>
-			{{error}}
-		</small>
+{{#if legend}}
+	{{#if inputs}}
+		<fieldset class="c-form-field">
+			<legend class="c-form-field__label">{{legend}}</legend>
+			{{#each inputs}}
+				{{> (lookup .. 'type')}}
+			{{/each}}
+		</fieldset>
 	{{/if}}
-	{{> (lookup . 'type')}}
-</div>
+{{else}}
+	<div class="c-form-field">
+		<label class="c-form-field__label">
+			{{label}}
+			{{#unless error}}
+				{{#if hint}}
+					<small class="c-form-field__hint">{{hint}}</small>
+				{{/if}}
+			{{/unless}}
+		</label>
+		{{#if error}}
+			<small class="c-form-field__error" id="error-{{id}}">
+				<span class="u-display-flex u-align-items-center">
+					<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+						<use xlink:href="{{form.errorIconURL}}"></use>
+					</svg>
+				</span>
+				{{error}}
+			</small>
+		{{/if}}
+		{{> (lookup . 'type')}}
+	</div>
+{{/if}}

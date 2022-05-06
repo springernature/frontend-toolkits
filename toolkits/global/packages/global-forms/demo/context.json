@@ -1,48 +1,71 @@
 {
 	"form1": {
 		"errorIconURL": "../img/error.svg#i-error",
-		"fields": [
+		"fieldsets": [
 			{
-				"type": "inputText",
-				"label": "Your name",
-				"error": "Write your name, innit",
-				"id": "k1yf23k1fy23ky132",
-				"name": "k1yf23k1fy23ky132",
-				"datalist": {
-					"id": "id-example",
-					"options": [
-						"Heydon",
-						"Alex",
-						"Stu",
-						"Clive",
-						"Jack",
-						"Sabastian",
-						"Tobias",
-						"Amy",
-						"James"
-					]
-				}
-			},
-			{
-				"type": "inputSelect",
-				"label": "Grindcore band",
-				"id": "m273r237rti237rt",
-				"name": "m273r237rti237rt",
-				"options": [
+				"legend": "Test legend",
+				"fields": [
 					{
-						"label": "Napalm Death",
-						"value": "Napalm Death",
-						"selected": true
+						"type": "inputText",
+						"label": "Your name",
+						"error": "Write your name, innit",
+						"id": "k1yf23k1fy23ky132",
+						"name": "k1yf23k1fy23ky132",
+						"datalist": {
+							"id": "id-example",
+							"options": [
+								"Heydon",
+								"Alex",
+								"Stu",
+								"Clive",
+								"Jack",
+								"Sabastian",
+								"Tobias",
+								"Amy",
+								"James"
+							]
+						}
 					},
 					{
-						"label": "Extreme Noise Terror",
-						"value": "Extreme Noise Terror"
+						"type": "inputRadios",
+						"legend": "Grindcore bands",
+						"name": "grindcore",
+						"inputs": [
+							{
+								"id": "r823742438",
+								"label": "Napalm Death",
+								"value": "Napalm Death"
+							},
+							{
+								"id": "r823742438",
+								"label": "Extreme Noise Terror",
+								"value": "Extreme Noise Terror"
+							}
+						]
+					},
+					{
+						"type": "inputSelect",
+						"label": "Grindcore band",
+						"id": "m273r237rti237rt",
+						"name": "m273r237rti237rt",
+						"options": [
+							{
+								"label": "Napalm Death",
+								"value": "Napalm Death",
+								"selected": true
+							},
+							{
+								"label": "Extreme Noise Terror",
+								"value": "Extreme Noise Terror"
+							}
+						]
 					}
 				]
 			}
 		]
 	},
 	"dynamicPartials": {
+		"fieldset": "./toolkits/global/packages/global-forms/view/fieldset.hbs",
 		"field": "./toolkits/global/packages/global-forms/view/field.hbs",
 		"inputCommonAttributes": "./toolkits/global/packages/global-forms/view/inputCommonAttributes.hbs",
 		"inputText": "./toolkits/global/packages/global-forms/view/fields/inputText.hbs",

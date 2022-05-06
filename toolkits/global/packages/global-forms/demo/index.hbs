@@ -1,7 +1,7 @@
 <h1>Basic form</h1>
 
 {{#with form1}}
-	{{#each fields}}
-		{{> field parent=../.}}
+	{{#each fieldsets}}
+		{{> fieldset form=../.}}
 	{{/each}}
 {{/with}}
