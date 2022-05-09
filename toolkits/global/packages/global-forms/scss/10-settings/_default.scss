@@ -1,38 +1,12 @@
 @use 'sass:math';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @springernature/global-forms
- * Default skin settings
- * Replace these in your application
- *
- */
- /*
-$global-form--padding: 12px;
-$global-form--border-color: #999;
-$global-form--border-radius: 3px;
+$global-form--padding: $tokens--sizing-200 $tokens--sizing-400;
+$global-form--border-color: $tokens--border-color-input;
 $global-form--background-color: #fff;
-$global-form--background-color-disabled: #f3f2ef;
-$global-form--border-color-disabled:  #c7c4bf;
-$global-form--font-size: 18px;
-$global-form--label-font-size: math.div($global-form--font-size, 1.3);
-$global-form--label-spacing: 10px;
-$global-form--color: #000;
-$global-form--color-required: #c64127;
-$global-form--color-disabled: #aca9a3;
-$global-form--grid-gutter-width: 10px;
-*/
+$global-form--font-size: $context--font-size-base;
+$global-form--label-font-size: $context--font-size-base;
+$global-form--label-spacing: $tokens--sizing-200;
+$global-form--color: $context--greyscale-base;
+$global-form--color-focus: #028ace; // TODO: create token for this
+$global-form--color-error: $tokens--state-error;
+$global-form--color-warning: $tokens--state-warning;
