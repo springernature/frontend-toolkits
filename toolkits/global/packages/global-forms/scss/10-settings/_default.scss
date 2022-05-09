@@ -1,11 +1,12 @@
 @use 'sass:math';
 
-$global-form--padding: $tokens--sizing-200 $tokens--sizing-400;
+$global-form--input-padding: $tokens--sizing-200 $tokens--sizing-400;
 $global-form--border-color: $tokens--border-color-input;
 $global-form--background-color: #fff;
+$global-form--hint-color: #666;
 $global-form--font-size: $context--font-size-base;
 $global-form--label-font-size: $context--font-size-base;
-$global-form--label-spacing: $tokens--sizing-200;
+$global-form--label-spacing: $tokens--sizing-100;
 $global-form--field-spacing: $tokens--sizing-400;
 $global-form--color-focus: #028ace; // TODO: create token for this
 $global-form--color-error: $tokens--state-error;

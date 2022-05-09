@@ -1,5 +1,67 @@
 @use 'sass:math';
 
+.c-forms__label,
+.c-forms__hint,
+.c-forms__error,
+.c-forms__legend
+ {
+	display: block;
+}
+
+.c-forms__fieldset,
+.c-forms__legend {
+	padding: 0;
+	border: 0;
+}
+
+.c-forms__field + .c-forms__field {
+	margin-top: $global-form--field-spacing;
+}
+
+.c-forms__input {
+	border: 2px solid;
+	width: 100%;
+	padding: $global-form--input-padding;
+
+}
+
+.c-forms__input:focus {
+	outline: 3px solid $global-form--color-focus;
+}
+
+.c-forms__input:invalid {
+	border-color: $global-form--color-error;
+}
+
+.c-forms__label {
+	font-weight: bold;
+}
+
+.c-forms__label + .c-forms__input {
+	margin-top: $global-form--label-spacing;
+}
+
+.c-forms__hint {
+	font-weight: normal;
+	color: $global-form--hint-color;
+	margin-top: $global-form--label-spacing;
+}
+
+.c-forms__error {
+	margin: $global-form--label-spacing 0;
+	color: $global-form--color-error;
+}
+
+.c-forms__icon {
+	color: $global-form--color-warning;
+}
+
+.c-forms__icon svg {
+	height: 1em;
+	width: 1em;
+	vertical-align: -0.125em;
+	overflow: visible;
+}
 
 
 

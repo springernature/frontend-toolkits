@@ -634,27 +634,67 @@ body {
   font-size: 1.125rem;
 }
 
-/**
- * @springernature/global-forms
- * Default skin settings
- * Replace these in your application
- *
- */
-/*
-$global-form--padding: 12px;
-$global-form--border-color: #999;
-$global-form--border-radius: 3px;
-$global-form--background-color: #fff;
-$global-form--background-color-disabled: #f3f2ef;
-$global-form--border-color-disabled:  #c7c4bf;
-$global-form--font-size: 18px;
-$global-form--label-font-size: math.div($global-form--font-size, 1.3);
-$global-form--label-spacing: 10px;
-$global-form--color: #000;
-$global-form--color-required: #c64127;
-$global-form--color-disabled: #aca9a3;
-$global-form--grid-gutter-width: 10px;
-*/
+.c-forms__label,
+.c-forms__hint,
+.c-forms__error,
+.c-forms__legend {
+  display: block;
+}
+
+.c-forms__fieldset,
+.c-forms__legend {
+  padding: 0;
+  border: 0;
+}
+
+.c-forms__field + .c-forms__field {
+  margin-top: 1rem;
+}
+
+.c-forms__input {
+  border: 2px solid;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.c-forms__input:focus {
+  outline: 3px solid #028ace;
+}
+
+.c-forms__input:invalid {
+  border-color: #c40606;
+}
+
+.c-forms__label {
+  font-weight: bold;
+}
+
+.c-forms__label + .c-forms__input {
+  margin-top: 0.25rem;
+}
+
+.c-forms__hint {
+  font-weight: normal;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.c-forms__error {
+  margin: 0.25rem 0;
+  color: #c40606;
+}
+
+.c-forms__icon {
+  color: #f58220;
+}
+
+.c-forms__icon svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+  overflow: visible;
+}
+
 /* Input row component */
 /*
 .c-input-row {
@@ -738,57 +778,34 @@ $global-form--grid-gutter-width: 10px;
 		<h1>Basic form</h1>
 
 		<fieldset class="c-forms__fieldset">
-				<legend class="c-forms__legend">Test legend</legend>
+				<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
 				<div class="c-forms__field">
 					<label class="c-forms__label">
-						Your name
+						Your name (simple)
 					</label>
-						<small class="c-forms__error" id="error-k1yf23k1fy23ky132">
-							<span class="u-display-flex u-align-items-center">
+					<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off">
+				</div>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Your name (with hint)
+							<small class="c-forms__hint">Your name is on your passport</small>
+					</label>
+					<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
+				</div>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Your name (with error)
+							<small class="c-forms__hint">Your name is on your passport</small>
+					</label>
+						<small class="c-forms__error" id="error-your-name-error">
+							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 									<use xlink:href="../img/error.svg#i-error"></use>
 								</svg>
 							</span>
-							Write your name, innit
+							That is not a name, it’s a number
 						</small>
-					<input type="text" class="c-forms-input c-forms-input--text" id="k1yf23k1fy23ky132" name="k1yf23k1fy23ky132" invalid="" aria-invalid="true" aria-describedby="error-k1yf23k1fy23ky132" autocomplete="off" list="id-example">
-							<datalist id="id-example">
-									<option value="Heydon"></option>
-									<option value="Alex"></option>
-									<option value="Stu"></option>
-									<option value="Clive"></option>
-									<option value="Jack"></option>
-									<option value="Sabastian"></option>
-									<option value="Tobias"></option>
-									<option value="Amy"></option>
-									<option value="James"></option>
-							</datalist>
-				</div>
-				<div class="c-forms__field">
-					<label class="c-forms__label c-forms__label--wrapper">
-						<input type="checkbox" name="check" autocomplete="off">
-						<span class="c-forms__label c-forms__label--inline">Check it out</span>
-					</label>
-				</div>
-				<div class="c-forms__field">
-					<fieldset class="c-forms__field" role="presentation" id="radiosss" invalid="" aria-invalid="true" aria-describedby="error-radiosss" autocomplete="off">
-							<small class="c-forms__error" id="error-radiosss">
-								<span class="u-display-flex u-align-items-center">
-									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-										<use xlink:href="../img/error.svg#i-error"></use>
-									</svg>
-								</span>
-								This is wrong
-							</small>
-							<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-								<input type="radio" id="r823742438" name="grindcore" value="Napalm Death" autocomplete="off">
-								<span class="c-forms__label c-forms__label--inline">Napalm Death</span>
-							</label>
-							<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-								<input type="radio" id="r823742438" name="grindcore" value="Extreme Noise Terror" autocomplete="off">
-								<span class="c-forms__label c-forms__label--inline">Extreme Noise Terror</span>
-							</label>
-					</fieldset>
+					<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" autocomplete="off">
 				</div>
 		</fieldset>
 

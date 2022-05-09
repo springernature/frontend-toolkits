@@ -3,54 +3,29 @@
 		"errorIconURL": "../img/error.svg#i-error",
 		"fieldsets": [
 			{
-				"legend": "Test legend",
+				"legend": "<h2>Text inputs</h2>",
 				"fields": [
 					{
 						"type": "text",
-						"label": "Your name",
-						"error": "Write your name, innit",
-						"id": "k1yf23k1fy23ky132",
-						"name": "k1yf23k1fy23ky132",
-						"datalist": {
-							"id": "id-example",
-							"options": [
-								"Heydon",
-								"Alex",
-								"Stu",
-								"Clive",
-								"Jack",
-								"Sabastian",
-								"Tobias",
-								"Amy",
-								"James"
-							]
-						}
+						"label": "Your name (simple)",
+						"id": "your-name",
+						"name": "your-name"
 					},
 					{
-						"type": "checkbox",
-						"hint": "It’s a checkbox",
-						"label": "Check it out",
-						"name": "check"
+						"type": "text",
+						"label": "Your name (with hint)",
+						"hint": "Your name is on your passport",
+						"id": "your-name-hint",
+						"name": "your-name-hint"
 					},
 					{
-						"type": "radios",
-						"label": "Grindcore bands",
-						"error": "This is wrong",
-						"id": "radiosss",
-						"inputs": [
-							{
-								"id": "r823742438",
-								"label": "Napalm Death",
-								"value": "Napalm Death",
-								"name": "grindcore"
-							},
-							{
-								"id": "r823742438",
-								"label": "Extreme Noise Terror",
-								"value": "Extreme Noise Terror",
-								"name": "grindcore"
-							}
-						]
+						"type": "text",
+						"label": "Your name (with error)",
+						"hint": "Your name is on your passport",
+						"error": "That is not a name, it’s a number",
+						"value": "987364",
+						"id": "your-name-error",
+						"name": "your-name-error"
 					}
 				]
 			}
