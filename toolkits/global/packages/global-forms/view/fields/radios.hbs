@@ -1,4 +1,4 @@
-<fieldset class="c-forms__field" {{#unless legend}} role="presentation"{{/unless}} id="{{id}}">
+<fieldset class="c-forms__field" {{#unless legend}} role="presentation"{{/unless}} {{> inputCommonAttributes}}>
 	{{#if legend}}
 		<legend class="c-forms__label">{{legend}}</legend>
 	{{/if}}
@@ -6,6 +6,6 @@
 		{{> error}}
 	{{/if}}
 	{{#each inputs}}
-		{{> radio name=name}}
+		{{> radio }}
 	{{/each}}
 </fieldset>

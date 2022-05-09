@@ -765,12 +765,26 @@ $global-form--grid-gutter-width: 10px;
 							</datalist>
 				</div>
 				<div class="c-forms__field">
-					<fieldset class="c-forms__field" role="presentation" id="">
-							<label class="c-forms__field c-forms__field--label">
+					<label class="c-forms__label c-forms__label--wrapper">
+						<input type="checkbox" name="check" autocomplete="off">
+						<span class="c-forms__label c-forms__label--inline">Check it out</span>
+					</label>
+				</div>
+				<div class="c-forms__field">
+					<fieldset class="c-forms__field" role="presentation" id="radiosss" invalid="" aria-invalid="true" aria-describedby="error-radiosss" autocomplete="off">
+							<small class="c-forms__error" id="error-radiosss">
+								<span class="u-display-flex u-align-items-center">
+									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+										<use xlink:href="../img/error.svg#i-error"></use>
+									</svg>
+								</span>
+								This is wrong
+							</small>
+							<label class="c-forms__field c-forms__label c-forms__label--wrapper">
 								<input type="radio" id="r823742438" name="grindcore" value="Napalm Death" autocomplete="off">
 								<span class="c-forms__label c-forms__label--inline">Napalm Death</span>
 							</label>
-							<label class="c-forms__field c-forms__field--label">
+							<label class="c-forms__field c-forms__label c-forms__label--wrapper">
 								<input type="radio" id="r823742438" name="grindcore" value="Extreme Noise Terror" autocomplete="off">
 								<span class="c-forms__label c-forms__label--inline">Extreme Noise Terror</span>
 							</label>

@@ -27,8 +27,16 @@
 						}
 					},
 					{
+						"type": "checkbox",
+						"hint": "It’s a checkbox",
+						"label": "Check it out",
+						"name": "check"
+					},
+					{
 						"type": "radios",
 						"label": "Grindcore bands",
+						"error": "This is wrong",
+						"id": "radiosss",
 						"inputs": [
 							{
 								"id": "r823742438",

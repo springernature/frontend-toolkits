@@ -1,1 +1,7 @@
-checkbox
+{{#if error}}
+	{{> error}}
+{{/if}}
+<label class="c-forms__label c-forms__label--wrapper">
+	<input type="checkbox" {{> inputCommonAttributes}}>
+	<span class="c-forms__label c-forms__label--inline">{{label}}</span>
+</label>
