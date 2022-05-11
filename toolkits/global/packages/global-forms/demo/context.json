@@ -1,6 +1,7 @@
 {
 	"form1": {
 		"errorIconURL": "../img/error.svg#i-error",
+		"selectIconURL": "../img/chevron-more.svg#i-chevron-more",
 		"fieldsets": [
 			{
 				"legend": "<h2>Text inputs</h2>",
@@ -26,6 +27,112 @@
 						"value": "987364",
 						"id": "your-name-error",
 						"name": "your-name-error"
+					},
+					{
+						"type": "text",
+						"label": "Your name (disabled)",
+						"id": "your-name-disabled",
+						"name": "your-name-disabled",
+						"disabled": true
+					}
+				]
+			},
+			{
+				"legend": "<h2>Selects</h2>",
+				"fields": [
+					{
+						"type": "select",
+						"label": "Animal (simple)",
+						"id": "select-animals",
+						"name": "select-animals",
+						"options": [
+							{
+								"label": "Horse",
+								"value": "Horse"
+							},
+							{
+								"label": "Monkey",
+								"value": "Monkey"
+							},
+							{
+								"label": "Platypus",
+								"value": "Platypus",
+								"selected": true
+							}
+						]
+					},
+					{
+						"type": "select",
+						"label": "Animal (with hint)",
+						"id": "select-animals-hint",
+						"name": "select-animals-hint",
+						"hint": "Which is your favorite?",
+						"options": [
+							{
+								"label": "Horse",
+								"value": "Horse"
+							},
+							{
+								"label": "Monkey",
+								"value": "Monkey"
+							},
+							{
+								"label": "Platypus",
+								"value": "Platypus",
+								"selected": true
+							}
+						]
+					}
+				]
+			},
+			{
+				"legend": "<h2>Radios</h2>",
+				"fields": [
+					{
+						"type": "radios",
+						"label": "Animal (simple)",
+						"id": "radios-animals",
+						"name": "radios-animals",
+						"inputs": [
+							{
+								"label": "Horse",
+								"value": "Horse",
+								"name": "animal"
+							},
+							{
+								"label": "Monkey",
+								"value": "Monkey",
+								"name": "animal"
+							},
+							{
+								"label": "Platypus",
+								"value": "Platypus",
+								"name": "animal",
+								"checked": true
+							}
+						]
+					},
+					{
+						"type": "select",
+						"label": "Animal (with hint)",
+						"id": "select-animals-hint",
+						"name": "select-animals-hint",
+						"hint": "Which is your favorite?",
+						"options": [
+							{
+								"label": "Horse",
+								"value": "Horse"
+							},
+							{
+								"label": "Monkey",
+								"value": "Monkey"
+							},
+							{
+								"label": "Platypus",
+								"value": "Platypus",
+								"selected": true
+							}
+						]
 					}
 				]
 			}

@@ -641,36 +641,53 @@ body {
   display: block;
 }
 
+.c-forms__input-container {
+  position: relative;
+}
+
+.c-forms__field small {
+  font-size: inherit;
+}
+
 .c-forms__fieldset,
 .c-forms__legend {
   padding: 0;
   border: 0;
+  max-width: 90ch;
 }
 
 .c-forms__field + .c-forms__field {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .c-forms__input {
-  border: 2px solid;
+  border: 1px solid;
   width: 100%;
   padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+* + .c-forms__input,
+* + .c-forms__input-container {
+  margin-top: 0.5rem;
 }
 
 .c-forms__input:focus {
   outline: 3px solid #028ace;
 }
 
-.c-forms__input:invalid {
+.c-forms__input[invalid] {
   border-color: #c40606;
+  border-width: 2px;
+}
+
+.c-forms__input[disabled] {
+  cursor: not-allowed;
 }
 
 .c-forms__label {
   font-weight: bold;
-}
-
-.c-forms__label + .c-forms__input {
-  margin-top: 0.25rem;
 }
 
 .c-forms__hint {
@@ -680,11 +697,11 @@ body {
 }
 
 .c-forms__error {
-  margin: 0.25rem 0;
+  margin-top: 0.25rem;
   color: #c40606;
 }
 
-.c-forms__icon {
+.c-forms__error .c-forms__icon {
   color: #f58220;
 }
 
@@ -693,85 +710,68 @@ body {
   width: 1em;
   vertical-align: -0.125em;
   overflow: visible;
+  pointer-events: none;
 }
 
-/* Input row component */
-/*
-.c-input-row {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	margin-right:  math.div(-$global-form--grid-gutter-width, 2);
-	margin-left:  math.div(-$global-form--grid-gutter-width, 2);
+.c-forms__input--select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 3rem;
 }
 
-.c-input-row__item {
-	align-self: stretch;
-	flex: 1 1 auto;
-	padding-right:  math.div($global-form--grid-gutter-width, 2);
-	padding-left:   math.div($global-form--grid-gutter-width, 2);
-}*/
-/* Input group component */
-/*
-.c-input-group {
-	display: block;
-	margin-bottom: 1rem;
+.c-forms__input-container--select .c-forms__icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.c-input-group__label {
-	display: inline-block;
-	line-height: 2;
-	font-size: $global-form--label-font-size;
-	margin-bottom: $global-form--label-spacing;
-
-	&--check {
-		padding-right: 0.5rem;
-	}
+.c-forms__input--radio,
+.c-forms__input--checkbox {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-.c-input-group__required {
-	color: $global-form--color-required;
+.c-forms__label--inline {
+  display: inline;
+  font-weight: normal;
 }
 
-.c-input-group__control {
-	@include form-input;
-
-	&--check {
-		width: auto;
-		height: auto;
-	}
-
-	&--radio {
-		width: auto;
-		height: auto;
-		margin: 0 0.5rem;
-		display: inline-block;
-	}
-
-	&--textarea {
-		height: auto;
-		overflow: auto;
-		resize: vertical;
-	}
-
-	// Unstyle the caret on `<select>`s in IE10+.
-
-	&::-ms-expand {
-		background-color: transparent;
-		border: 0;
-	}
+.c-forms__field.c-forms__label + .c-forms__field.c-forms__label,
+legend + .c-forms__field.c-forms__label {
+  margin-top: 0.75rem;
 }
 
-.c-input-group input[disabled],
-.c-input-group textarea[disabled],
-.c-input-group input[disabled]:hover,
-.c-input-group textarea[disabled]:hover {
-	background: $global-form--background-color-disabled;
-	border-color: $global-form--border-color-disabled;
-	color: $global-form--color-disabled;
-	cursor: not-allowed;
+.c-forms__label--inline {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-*/
+
+.c-forms__label--inline::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 2px solid #666;
+  margin-right: 0.5rem;
+}
+
+:checked + .c-forms__label--inline::before {
+  border-color: #01324b;
+  background: radial-gradient(#01324b 0%, #01324b 40%, #fff 40%);
+}
+
+:focus + .c-forms__label--inline::before {
+  box-shadow: 0 0 0 3px #028ace;
+}
+
+.c-forms__label--radio::before {
+  border-radius: 1em;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -806,6 +806,107 @@ body {
 							That is not a name, it’s a number
 						</small>
 					<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" autocomplete="off">
+				</div>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Your name (disabled)
+					</label>
+					<input type="text" class="c-forms__input c-forms__input--text" id="your-name-disabled" name="your-name-disabled" disabled="" autocomplete="off">
+				</div>
+		</fieldset>
+		<fieldset class="c-forms__fieldset">
+				<legend class="c-forms__legend"><h2>Selects</h2></legend>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Animal (simple)
+					</label>
+					<div class="c-forms__input-container c-forms__input-container--select">
+						<select class="c-forms__input c-forms__input--select" id="select-animals" name="select-animals" autocomplete="off">
+								<option value="Horse">
+									Horse
+								</option>
+								<option value="Monkey">
+									Monkey
+								</option>
+								<option value="Platypus" selected="">
+									Platypus
+								</option>
+						</select>
+						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Animal (with hint)
+							<small class="c-forms__hint">Which is your favorite?</small>
+					</label>
+					<div class="c-forms__input-container c-forms__input-container--select">
+						<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" autocomplete="off">
+								<option value="Horse">
+									Horse
+								</option>
+								<option value="Monkey">
+									Monkey
+								</option>
+								<option value="Platypus" selected="">
+									Platypus
+								</option>
+						</select>
+						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+							</svg>
+						</span>
+					</div>
+				</div>
+		</fieldset>
+		<fieldset class="c-forms__fieldset">
+				<legend class="c-forms__legend"><h2>Radios</h2></legend>
+				<div class="c-forms__field">
+						<fieldset class="c-forms__fieldset c-forms__field" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
+									<legend class="c-forms__label">Animal (simple)</legend>
+					
+								<label class="c-forms__field c-forms__label c-forms__label--wrapper">
+									<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Horse" autocomplete="off">
+									<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
+								</label>
+								<label class="c-forms__field c-forms__label c-forms__label--wrapper">
+									<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Monkey" autocomplete="off">
+									<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
+								</label>
+								<label class="c-forms__field c-forms__label c-forms__label--wrapper">
+									<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Platypus" checked="" autocomplete="off">
+									<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
+								</label>
+						</fieldset>
+				</div>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Animal (with hint)
+							<small class="c-forms__hint">Which is your favorite?</small>
+					</label>
+					<div class="c-forms__input-container c-forms__input-container--select">
+						<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" autocomplete="off">
+								<option value="Horse">
+									Horse
+								</option>
+								<option value="Monkey">
+									Monkey
+								</option>
+								<option value="Platypus" selected="">
+									Platypus
+								</option>
+						</select>
+						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+							</svg>
+						</span>
+					</div>
 				</div>
 		</fieldset>
 

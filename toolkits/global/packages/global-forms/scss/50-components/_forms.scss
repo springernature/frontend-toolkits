@@ -3,15 +3,23 @@
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
-.c-forms__legend
- {
+.c-forms__legend {
 	display: block;
+}
+
+.c-forms__input-container {
+	position: relative;
+}
+
+.c-forms__field small {
+	font-size: inherit;
 }
 
 .c-forms__fieldset,
 .c-forms__legend {
 	padding: 0;
 	border: 0;
+	max-width: $global-form--measure;
 }
 
 .c-forms__field + .c-forms__field {
@@ -19,40 +27,47 @@
 }
 
 .c-forms__input {
-	border: 2px solid;
+	border: 1px solid;
 	width: 100%;
 	padding: $global-form--input-padding;
+	box-sizing: border-box;
+	background-color: $global-form--background-color;
+}
 
+* + .c-forms__input,
+* + .c-forms__input-container {
+	margin-top: $global-form--label-spacing;
 }
 
 .c-forms__input:focus {
 	outline: 3px solid $global-form--color-focus;
 }
 
-.c-forms__input:invalid {
+.c-forms__input[invalid] {
 	border-color: $global-form--color-error;
+	border-width: 2px;
+}
+
+.c-forms__input[disabled] {
+	cursor: not-allowed;
 }
 
 .c-forms__label {
 	font-weight: bold;
 }
 
-.c-forms__label + .c-forms__input {
-	margin-top: $global-form--label-spacing;
-}
-
 .c-forms__hint {
 	font-weight: normal;
 	color: $global-form--hint-color;
-	margin-top: $global-form--label-spacing;
+	margin-top: #{$global-form--label-spacing / 2};
 }
 
 .c-forms__error {
-	margin: $global-form--label-spacing 0;
+	margin-top: #{$global-form--label-spacing / 2};
 	color: $global-form--color-error;
 }
 
-.c-forms__icon {
+.c-forms__error .c-forms__icon {
 	color: $global-form--color-warning;
 }
 
@@ -61,109 +76,72 @@
 	width: 1em;
 	vertical-align: -0.125em;
 	overflow: visible;
+	pointer-events: none;
 }
 
+.c-forms__input--select {
+	cursor: pointer;
+	appearance: none;
+	padding-right: #{$global-form--input-padding-h * 3};
+}
 
+.c-forms__input-container--select .c-forms__icon {
+	position: absolute;
+	right: $tokens--sizing-400;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
+.c-forms__input--radio,
+.c-forms__input--checkbox {
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 
+.c-forms__label--inline {
+	display: inline;
+	font-weight: normal;
+}
 
+.c-forms__field.c-forms__label +
+.c-forms__field.c-forms__label,
+legend + .c-forms__field.c-forms__label {
+	margin-top: #{$global-form--field-spacing / 2};
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Input row component */
-
-/*
-.c-input-row {
+.c-forms__label--inline {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	margin-right:  math.div(-$global-form--grid-gutter-width, 2);
-	margin-left:  math.div(-$global-form--grid-gutter-width, 2);
+	align-items: center;
+	cursor: pointer;
 }
 
-.c-input-row__item {
-	align-self: stretch;
-	flex: 1 1 auto;
-	padding-right:  math.div($global-form--grid-gutter-width, 2);
-	padding-left:   math.div($global-form--grid-gutter-width, 2);
-}*/
-
-/* Input group component */
-
-/*
-.c-input-group {
-	display: block;
-	margin-bottom: 1rem;
+.c-forms__label--inline::before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	border: 2px solid $global-form--hint-color;
+	margin-right: $global-form--label-spacing;
 }
 
-.c-input-group__label {
-	display: inline-block;
-	line-height: 2;
-	font-size: $global-form--label-font-size;
-	margin-bottom: $global-form--label-spacing;
-
-	&--check {
-		padding-right: 0.5rem;
-	}
+:checked + .c-forms__label--inline::before {
+	border-color: $global-form--color-checked;
+	background: radial-gradient(#{$global-form--color-checked} 0%, #{$global-form--color-checked} 40%, #fff 40%);
 }
 
-.c-input-group__required {
-	color: $global-form--color-required;
+:focus + .c-forms__label--inline::before {
+	box-shadow: 0 0 0 3px $global-form--color-focus;
 }
 
-.c-input-group__control {
-	@include form-input;
-
-	&--check {
-		width: auto;
-		height: auto;
-	}
-
-	&--radio {
-		width: auto;
-		height: auto;
-		margin: 0 0.5rem;
-		display: inline-block;
-	}
-
-	&--textarea {
-		height: auto;
-		overflow: auto;
-		resize: vertical;
-	}
-
-	// Unstyle the caret on `<select>`s in IE10+.
-
-	&::-ms-expand {
-		background-color: transparent;
-		border: 0;
-	}
+.c-forms__label--radio::before {
+	border-radius: 1em;
 }
 
-.c-input-group input[disabled],
-.c-input-group textarea[disabled],
-.c-input-group input[disabled]:hover,
-.c-input-group textarea[disabled]:hover {
-	background: $global-form--background-color-disabled;
-	border-color: $global-form--border-color-disabled;
-	color: $global-form--color-disabled;
-	cursor: not-allowed;
-}
-*/
+
+
+
+
+

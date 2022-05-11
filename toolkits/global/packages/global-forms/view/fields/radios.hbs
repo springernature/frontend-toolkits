@@ -1,11 +1,18 @@
-<fieldset class="c-forms__field" {{#unless legend}} role="presentation"{{/unless}} {{> inputCommonAttributes}}>
-	{{#if legend}}
-		<legend class="c-forms__label">{{legend}}</legend>
-	{{/if}}
-	{{#if error}}
-		{{> error}}
-	{{/if}}
-	{{#each inputs}}
-		{{> radio }}
-	{{/each}}
-</fieldset>
+{{#if inputs}}
+	<fieldset class="c-forms__fieldset c-forms__field" {{#unless legend}} role="presentation"{{/unless}} {{> inputCommonAttributes}}>
+		{{#if legend}}
+			<legend class="c-forms__label">{{legend}}</legend>
+		{{else}}
+			{{#if label}}
+				<legend class="c-forms__label">{{label}}</legend>
+			{{/if}}
+		{{/if}}
+		{{#if error}}
+			{{> error}}
+		{{/if}}
+
+		{{#each inputs}}
+			{{> radio }}
+		{{/each}}
+	</fieldset>
+{{/if}}
