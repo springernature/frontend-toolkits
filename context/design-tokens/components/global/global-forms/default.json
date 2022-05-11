@@ -140,6 +140,19 @@
 				}
 			}
 		},
+		"indent": {
+			"border": {
+				"color": {
+					"value": "{border.color.indent}"
+				},
+				"width": {
+					"value": "{border.width.200}"
+				},
+				"radius": {
+					"value": "{border.radius.100}"
+				}
+			}
+		},
 		"checkbox": {
 			"size": {
 				"value": "{sizing.600}",

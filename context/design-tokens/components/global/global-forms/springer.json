@@ -1,0 +1,11 @@
+{
+	"global-forms": {
+		"field": {
+			"stack": {
+				"spacing": {
+					"value": "{spacing.100}"
+				}
+			}
+		}
+	}
+}
