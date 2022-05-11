@@ -1,0 +1,177 @@
+{
+	"global-forms": {
+		"field": {
+			"stack": {
+				"spacing": {
+					"value": "{spacing.100}"
+				}
+			}
+		},
+		"heading": {
+			"font": {
+				"family": {
+					"value": "{typography.heading.level-1.default.font-size}"
+				},
+				"size": {
+					"value": "{font-size.900}"
+				},
+				"weight": {
+					"value": "{font-weight.light}"
+				}
+			}
+		},
+		"legend": {
+			"font": {
+				"family": {
+					"value": "{font-family.serif}"
+				},
+				"size": {
+					"value": "{font-size.800}"
+				},
+				"weight": {
+					"value": "{font-weight.regular}"
+				}
+			}
+		},
+		"label": {
+			"font": {
+				"size": {
+					"value": "{ui.font-size}"
+				},
+				"weight": {
+					"value": "{font-weight.bold}"
+				}
+			},
+			"color": {
+				"value": "{text.primary}"
+			}
+		},
+		"message": {
+			"font": {
+				"size": {
+					"value": "{ui.font-size}"
+				},
+				"weight": {
+					"value": "{font-weight.regular}"
+				}
+			},
+			"color": {
+				"resting": {
+					"value": "{text.primary}"
+				},
+				"error": {
+					"value": "{state.error}"
+				}
+			},
+			"icon": {
+				"color": {
+					"resting": {
+						"value": "{text.primary}"
+					},
+					"error": {
+						"value": "{state.error}"
+					}
+				}
+			}
+		},
+		"input": {
+			"padding": {
+				"value":  "{spacing.200.value} {spacing.400.value}"
+			},
+			"stack": {
+				"spacing": {
+					"value": "{spacing.100}"
+				}
+			},
+			"border": {
+				"color": {
+					"resting": {
+						"value": "{border.color.primary}"
+					},
+					"error": {
+						"value": "{state.error}"
+					}
+				},
+				"width": {
+					"value": "{border.width.25}"
+				}
+			},
+			"focus": {
+				"outline": {
+					"color": {
+						"value": "{ui.focus.outline.color}",
+						"description": "TODO: needs to be coming from an alias or literal token"
+					}
+				}
+			},
+			"font": {
+				"size": {
+					"value": "{ui.font-size}"
+				},
+				"weight": {
+					"value": "{font-weight.regular}"
+				},
+				"color": {
+					"value": "{text.primary}"
+				}
+			},
+			"background": {
+				"color": {
+					"value": "{background.container}"
+				}
+			},
+			"width": {
+				"maximum": {
+					"value": "{ui.content-width}",
+					"description": "TODO: needs to be coming from an alias or literal token"
+				}
+			}
+		},
+		"radio": {
+			"carat": {
+				"size": {
+					"value": "{sizing.200}"
+				},
+				"spacing": {
+					"value": "{spacing.200}"
+				},
+				"color": {
+					"value": "{text.primary}"
+				}
+			}
+		},
+		"checkbox": {
+			"size": {
+				"value": "{sizing.600}",
+				"type": "sizing"
+			},
+			"checked": {
+				"background": {
+					"color": {
+						"value": "{background.container-inverted}",
+						"type": "color"
+					}
+				},
+				"icon": {
+					"stroke": {
+						"value": "{icon.checkbox.checked.stroke}"
+					},
+					"fill": {
+						"value": "{icon.checkbox.checked.fill}"
+					},
+					"path": {
+						"value": "\"path/to/icon.svg\"",
+						"description": "TODO: needs to be coming from an alias or literal token"
+					}
+				}
+			}
+		},
+		"select": {
+			"icon": {
+				"stroke": {
+					"value": "{icon.select.stroke}"
+				}
+			}
+		}
+	}
+}
