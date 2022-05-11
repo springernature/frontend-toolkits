@@ -1,4 +1,13 @@
 <label class="c-forms__field c-forms__label c-forms__label--wrapper">
 	<input class="c-forms__input c-forms__input--radio" type="radio" {{> inputCommonAttributes}}>
 	<span class="c-forms__label c-forms__label--inline c-forms__label--radio">{{label}}</span>
+	{{#if fields}}
+		<fieldset class="c-forms__fieldset c-forms__radio-fields">
+			{{#each fields}}
+				<div class="c-forms__field">
+					{{> (lookup . 'type')}}
+				</div>
+			{{/each}}
+		</fieldset>
+	{{/if}}
 </label>

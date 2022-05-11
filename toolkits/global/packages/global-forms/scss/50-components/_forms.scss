@@ -7,6 +7,11 @@
 	display: block;
 }
 
+.c-forms__hint,
+.c-forms__error {
+	font-weight: normal;
+}
+
 .c-forms__input-container {
 	position: relative;
 }
@@ -72,9 +77,9 @@
 }
 
 .c-forms__icon svg {
-	height: 1em;
-	width: 1em;
-	vertical-align: -0.125em;
+	height: $global-form--radio-size;
+	width: $global-form--radio-size;
+	vertical-align: calc((#{$global-form--radio-size} / 8) * -1);
 	overflow: visible;
 	pointer-events: none;
 }
@@ -138,6 +143,19 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__label--radio::before {
 	border-radius: 1em;
+}
+
+.c-forms__radio-fields {
+	margin-top: $global-form--label-spacing;
+	margin-left: calc((#{$global-form--radio-size} / 4) + #{$global-form--radio-border-width});
+	border-left: calc(#{$global-form--radio-size} / 2) solid $global-form--indent-border-color;
+	padding-top: $global-form--field-spacing;
+	padding-left: $global-form--label-spacing;
+	display: none;
+}
+
+:checked ~ .c-forms__radio-fields {
+	display: block;
 }
 
 

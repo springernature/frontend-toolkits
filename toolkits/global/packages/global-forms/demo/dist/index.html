@@ -641,6 +641,11 @@ body {
   display: block;
 }
 
+.c-forms__hint,
+.c-forms__error {
+  font-weight: normal;
+}
+
 .c-forms__input-container {
   position: relative;
 }
@@ -706,9 +711,9 @@ body {
 }
 
 .c-forms__icon svg {
-  height: 1em;
-  width: 1em;
-  vertical-align: -0.125em;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: calc((1rem / 8) * -1);
   overflow: visible;
   pointer-events: none;
 }
@@ -772,6 +777,19 @@ legend + .c-forms__field.c-forms__label {
 .c-forms__label--radio::before {
   border-radius: 1em;
 }
+
+.c-forms__radio-fields {
+  margin-top: 0.5rem;
+  margin-left: calc((1rem / 4) + 2px);
+  border-left: calc(1rem / 2) solid #dadada;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  display: none;
+}
+
+:checked ~ .c-forms__radio-fields {
+  display: block;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -800,7 +818,7 @@ legend + .c-forms__field.c-forms__label {
 						<small class="c-forms__error" id="error-your-name-error">
 							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-									<use xlink:href="../img/error.svg#i-error"></use>
+									<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
 								</svg>
 							</span>
 							That is not a name, it’s a number
@@ -834,7 +852,7 @@ legend + .c-forms__field.c-forms__label {
 						</select>
 						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+								<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
 							</svg>
 						</span>
 					</div>
@@ -858,7 +876,7 @@ legend + .c-forms__field.c-forms__label {
 						</select>
 						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+								<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
 							</svg>
 						</span>
 					</div>
@@ -877,6 +895,23 @@ legend + .c-forms__field.c-forms__label {
 								<label class="c-forms__field c-forms__label c-forms__label--wrapper">
 									<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Monkey" autocomplete="off">
 									<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
+										<fieldset class="c-forms__fieldset c-forms__radio-fields">
+												<div class="c-forms__field">
+													<label class="c-forms__label">
+														What type of monkey?
+															<small class="c-forms__hint">Chimps are not monkeys</small>
+													</label>
+														<small class="c-forms__error" id="error-monkey-type">
+															<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+																<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																	<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																</svg>
+															</span>
+															Choose a monkey already!
+														</small>
+													<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" autocomplete="off">
+												</div>
+										</fieldset>
 								</label>
 								<label class="c-forms__field c-forms__label c-forms__label--wrapper">
 									<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Platypus" checked="" autocomplete="off">
@@ -903,7 +938,7 @@ legend + .c-forms__field.c-forms__label {
 						</select>
 						<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 							<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-								<use xlink:href="../img/chevron-more.svg#i-chevron-more"></use>
+								<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
 							</svg>
 						</span>
 					</div>
