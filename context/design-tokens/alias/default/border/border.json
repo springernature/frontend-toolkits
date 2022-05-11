@@ -9,6 +9,17 @@
 			},
 			"button": {
 				"value": "{color.primary.medium-blue}"
+			},
+			"indent": {
+				"value": "{color.grayscale.400}"
+			}
+		},
+		"radius": {
+			"50": {
+				"value": "{sizing.50}"
+			},
+			"100": {
+				"value": "{sizing.100}"
 			}
 		},
 		"width": {
@@ -20,6 +31,9 @@
 			},
 			"100": {
 				"value": "{sizing.100}"
+			},
+			"200": {
+				"value": "{sizing.200}"
 			}
 		}
 	}
