@@ -1,0 +1,17 @@
+{
+	"ui": {
+		"font-size": {
+			"value": "{font-size.400}"
+		},
+		"focus": {
+			"outline": {
+				"color": {
+					"value": "{color.primary.medium-blue}"
+				}
+			}
+		},
+		"content-width": {
+			"value": "70ch"
+		}
+	}
+}
