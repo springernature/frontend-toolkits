@@ -121,7 +121,12 @@
 								"checked": true
 							}
 						]
-					},
+					}
+				]
+			},
+			{
+				"legend": "<h2>Selects</h2>",
+				"fields": [
 					{
 						"type": "select",
 						"label": "Animal (with hint)",
@@ -143,6 +148,32 @@
 								"selected": true
 							}
 						]
+					}
+				]
+			},
+			{
+				"legend": "<h2>Checkboxes</h2>",
+				"fields": [
+					{
+						"type": "checkbox",
+						"label": "Agree to our terms (basic)",
+						"id": "checkbox-terms",
+						"name": "checkbox-terms"
+					},
+					{
+						"type": "checkbox",
+						"label": "Agree to our terms (with hint)",
+						"hint": "You should have read these. Read them, then agree to them.",
+						"id": "checkbox-terms-hint",
+						"name": "checkbox-terms-hint"
+					},
+					{
+						"type": "checkbox",
+						"label": "Agree to our terms (with error)",
+						"error": "You must agree with us!",
+						"hint": "You should have read these. Read them, then agree to them.",
+						"id": "checkbox-terms-hint",
+						"name": "checkbox-terms-hint"
 					}
 				]
 			}

@@ -68,8 +68,15 @@
 }
 
 .c-forms__error {
-	margin-top: #{$global-form--label-spacing / 2};
 	color: $global-form--color-error;
+}
+
+label + .c-forms__error {
+	margin-top: #{$global-form--label-spacing / 2};
+}
+
+.c-forms__error + label {
+	margin-top: #{$global-form--label-spacing / 2};
 }
 
 .c-forms__error .c-forms__icon {
@@ -134,7 +141,6 @@ legend + .c-forms__field.c-forms__label {
 
 :checked + .c-forms__label--inline::before {
 	border-color: $global-form--color-checked;
-	background: radial-gradient(#{$global-form--color-checked} 0%, #{$global-form--color-checked} 40%, #fff 40%);
 }
 
 :focus + .c-forms__label--inline::before {
@@ -143,6 +149,29 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__label--radio::before {
 	border-radius: 1em;
+}
+
+.c-forms__label--checkbox::before {
+	border-radius: 0.125em;
+}
+
+:checked + .c-forms__label--radio::before {
+	background: radial-gradient(#{$global-form--color-checked} 0%, #{$global-form--color-checked} 40%, #fff 40%);
+}
+
+:checked + .c-forms__label--checkbox::before {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+	background-size: 100%;
+	background-repeat: none;
+	background-position: center;
+}
+
+:checked + .c-forms__label--checkbox::before {
+	background-color: $global-form--color-checked;
+}
+
+[invalid] + .c-forms__label--checkbox::before {
+	border-color: $global-form--color-error;
 }
 
 .c-forms__radio-fields {

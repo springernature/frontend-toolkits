@@ -5,17 +5,17 @@ $global-form--input-padding-v: $tokens--sizing-200;
 $global-form--input-padding: $global-form--input-padding-v $global-form--input-padding-h;
 $global-form--border-color: $tokens--border-color-input;
 $global-form--background-color: #fff;
-$global-form--indent-border-color: #dadada;
-$global-form--hint-color: #666;
+$global-form--indent-border-color: #dadada; // TODO: tokenize
+$global-form--hint-color: #666; // TODO: tokenize
 $global-form--font-size: $context--font-size-base;
 $global-form--label-font-size: $context--font-size-base;
 $global-form--label-spacing: $tokens--sizing-200;
 $global-form--field-spacing: $tokens--sizing-600;
-$global-form--color-focus: #028ace; // TODO: create token for this
+$global-form--color-focus: #028ace; // TODO: tokenize
 $global-form--color-checked: $context--universal-blue;
 $global-form--color-error: $tokens--state-error;
 $global-form--color-warning: $tokens--state-warning;
-$global-form--measure: 90ch;
+$global-form--measure: 90ch; // TODO: tokenize
 $global-form--icon-size: $tokens--sizing-400;
 $global-form--radio-size: $tokens--sizing-400;
-$global-form--radio-border-width: 2px;
+$global-form--radio-border-width: 2px; // TODO: tokenize
