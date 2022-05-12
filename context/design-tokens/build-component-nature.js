@@ -53,9 +53,10 @@ console.log('Build started...');
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
 
 	brands.buildAllPlatforms();
+	components.map(component => {
+		let dir = `./toolkits/global/packages/${component}/scss/10-settings`
 
-	if (fs.existsSync(`${__dirname}/components/global/springer-nature/scss/10-settings/_springer-nature.variables.scss`)) {
-		components.map(component => {
+		if (fs.existsSync(`${dir}/_nature.variables.scss`)) {
 
 			// let brand2 equal brand
 			let brand2 = brand;
@@ -65,18 +66,16 @@ console.log('Build started...');
 			}
 
 			// add date and time to top of index.scss file
-			let dir = `./toolkits/global/packages/${component}/scss/10-settings`
 			let filePath = `${dir}/_nature.variables.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 
 			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/nature.json\n// DO NOT edit directly\n\n${sortedContent}`;
 			fs.writeFileSync(filePath, GeneratedContent);
-
-		});
-	} else {
-		console.log(`no nature brand tokens generated`);
-	}
+		} else {
+			console.log(`no nature brand tokens generated`);
+		}
+	});
 
 	console.log('\nEnd processing');
 });

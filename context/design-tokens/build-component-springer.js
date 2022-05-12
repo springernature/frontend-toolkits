@@ -55,24 +55,29 @@ console.log('Build started...');
 	brands.buildAllPlatforms();
 
 	components.map(component => {
-
-		// let brand2 equal brand
-		let brand2 = brand;
-		// if brand2 equal global let brand2 equal default
-		if (brand2 === 'global') {
-			brand2 = 'default';
-		}
-
-		// add date and time to top of index.scss file
 		let dir = `./toolkits/global/packages/${component}/scss/10-settings`
-		let filePath = `${dir}/_springer.variables.scss`
-		let content = fs.readFileSync(filePath, 'utf8');
-		let sortedContent = content.split('\n').sort().join('\n');
 
-		let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/springer.json\n// DO NOT edit directly\n\n${sortedContent}`;
-		fs.writeFileSync(filePath, GeneratedContent);
+		if (fs.existsSync(`${dir}/_default.variables.scss`)) {
 
+			// let brand2 equal brand
+			let brand2 = brand;
+			// if brand2 equal global let brand2 equal default
+			if (brand2 === 'global') {
+				brand2 = 'default';
+			}
+
+			// add date and time to top of index.scss file
+			let filePath = `${dir}/_springer.variables.scss`
+			let content = fs.readFileSync(filePath, 'utf8');
+			let sortedContent = content.split('\n').sort().join('\n');
+
+			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/springer.json\n// DO NOT edit directly\n\n${sortedContent}`;
+			fs.writeFileSync(filePath, GeneratedContent);
+		} else {
+			console.log(`no springer brand tokens generated`);
+		}
 	});
+
 
 	console.log('\nEnd processing');
 });
