@@ -12,6 +12,11 @@ function tokenFilter(brand, component) {
 }
 
 
+function scssVariable(name, value, comment) {
+	return `$${name}: ${value} !default;${comment ? ` // ${comment}` : ``}`;
+}
+
+
 
 function getStyleDictionaryConfig(brand, components) {
 	let dest = `./toolkits/global/packages/`;
@@ -19,7 +24,7 @@ function getStyleDictionaryConfig(brand, components) {
 	return {
 		include: [
 			`${__dirname}/literal/**/*.json`,
-			`${__dirname}/alias/**/*.json`
+			`${__dirname}/alias/default/**/*.json`
 		],
 		source: [
 			`${__dirname}/components/**/default.json`
@@ -30,7 +35,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/10-settings/_default.variables.scss`,
+						destination: `${component}/scss/00-tokens/_default.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -44,9 +49,10 @@ function getStyleDictionaryConfig(brand, components) {
 	}
 }
 
-console.log('Build started...');
+
 
 ['global'].map(function (brand) {
+	console.log('Build started...');
 	let dir = `${__dirname}/components/global`
 	const components = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
@@ -54,7 +60,7 @@ console.log('Build started...');
 	brands.buildAllPlatforms();
 
 	components.map(component => {
-		let dir = `./toolkits/global/packages/${component}/scss/10-settings`
+		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
 
 		if (fs.existsSync(`${dir}/_default.variables.scss`)) {
 
@@ -72,7 +78,10 @@ console.log('Build started...');
 			let sortedContent = content.split('\n').sort().join('\n');
 
 			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/default.json\n// DO NOT edit directly\n\n${sortedContent}`;
-			fs.writeFileSync(filePath, GeneratedContent);
+
+			let replacedContent = GeneratedContent.replace(/: /g, ': $tokens--');
+
+			fs.writeFileSync(filePath, replacedContent);
 
 		} else {
 			console.log(`no default tokens generated`);
@@ -82,3 +91,4 @@ console.log('Build started...');
 
 	console.log('\nEnd processing');
 });
+

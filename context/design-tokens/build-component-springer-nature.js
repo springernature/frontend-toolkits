@@ -23,7 +23,7 @@ function getStyleDictionaryConfig(brand, components) {
 			`${__dirname}/alias/springer-nature/*.json`
 		],
 		source: [
-			`${__dirname}/components/**/springer-nature.json`
+			`${__dirname}/components/global/**/springer-nature.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -31,7 +31,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/10-settings/_springer-nature.variables.scss`,
+						destination: `${component}/scss/00-tokens/_springer-nature.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -45,9 +45,8 @@ function getStyleDictionaryConfig(brand, components) {
 	}
 }
 
-console.log('Build started...');
 
-['global'].map(function (brand) {
+['springer-nature'].map(function (brand) {
 	let dir = `${__dirname}/components/global`
 	const components = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
@@ -55,30 +54,21 @@ console.log('Build started...');
 	brands.buildAllPlatforms();
 
 	components.map(component => {
-		let dir = `./toolkits/global/packages/${component}/scss/10-settings`
-
+		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
 		if (fs.existsSync(`${dir}/_springer-nature.variables.scss`)) {
-
-			// let brand2 equal brand
-			let brand2 = brand;
-			// if brand2 equal global let brand2 equal default
-			if (brand2 === 'global') {
-				brand2 = 'default';
-			}
-
-			// add date and time to top of index.scss file
 			let filePath = `${dir}/_springer-nature.variables.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 
 			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/springer-nature.json\n// DO NOT edit directly\n\n${sortedContent}`;
-			fs.writeFileSync(filePath, GeneratedContent);
+
+			let replacedContent = GeneratedContent.replace(/: /g, ': $tokens--');
+
+			fs.writeFileSync(filePath, replacedContent);
+
 		} else {
-			console.log(`no springer nature brand tokens generated`);
+			console.log(`no springer-nature tokens generated`);
 		}
 
 	});
-
-
-	console.log('\nEnd processing');
 });
