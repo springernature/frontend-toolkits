@@ -2,38 +2,47 @@
 	"font-size": {
 		"350": {
 			"value": ".875rem",
+			"type": "fontSizes",
 			"comment": "14px"
 		},
 		"400": {
 			"value": "1rem",
+			"type": "fontSizes",
 			"comment": "16px"
 		},
 		"450": {
 			"value": "1.125rem",
+			"type": "fontSizes",
 			"comment": "18px"
 		},
 		"500": {
 			"value": "1.25rem",
+			"type": "fontSizes",
 			"comment": "20px"
 		},
 		"600": {
 			"value": "1.5rem",
+			"type": "fontSizes",
 			"comment": "24px"
 		},
 		"650": {
 			"value": "1.875rem",
+			"type": "fontSizes",
 			"comment": "28px"
 		},
 		"800": {
 			"value": "2rem",
+			"type": "fontSizes",
 			"comment": "32px"
 		},
 		"875": {
 			"value": "2.1875rem",
+			"type": "fontSizes",
 			"comment": "35px"
 		},
 		"900": {
 			"value": "2.5rem",
+			"type": "fontSizes",
 			"comment": "36px"
 		}
 	}

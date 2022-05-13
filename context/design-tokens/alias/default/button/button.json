@@ -3,21 +3,24 @@
 		"background": {
 			"primary": {
 				"resting": {
-					"value": "{color.primary.medium-blue}"
+					"value": "{color.primary.medium-blue}",
+					"type": "color"
 				},
 				"hover": {
-					"value": "{color.white}"
+					"value": "{color.white}",
+					"type": "color"
 				}
 			},
 			"secondary": {
 				"resting": {
-					"value": "{color.white}"
+					"value": "{color.white}",
+					"type": "color"
 				},
 				"hover": {
-					"value": "{color.primary.medium-blue}"
+					"value": "{color.primary.medium-blue}",
+					"type": "color"
 				}
 			}
-
 		}
 	}
 }

@@ -1,19 +1,23 @@
 {
 	"font-weight": {
 		"light": {
-			"value": "300",
+			"value": "light",
+			"type": "fontWeights",
 			"comment": "normal"
 		},
 		"normal": {
-			"value": "400",
+			"value": "regular",
+			"type": "fontWeights",
 			"comment": "The normal, or ‘regular’, font weight."
 		},
 		"regular": {
-			"value": "400",
+			"value": "medium",
+			"type": "fontWeights",
 			"comment": "The normal, or ‘regular’, font weight."
 		},
 		"bold": {
-			"value": "700",
+			"value": "bold",
+			"type": "fontWeights",
 			"comment": "The bold font weight."
 		}
 	}

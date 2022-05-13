@@ -2,24 +2,44 @@
 	"border": {
 		"color": {
 			"primary": {
-				"value": "{color.black}"
+				"value": "{color.black}",
+				"type": "color"
 			},
 			"input": {
-				"value": "{color.grayscale.700}"
+				"value": "{color.grayscale.700}",
+				"type": "color"
 			},
 			"button": {
-				"value": "{color.primary.medium-blue}"
+				"value": "{color.primary.medium-blue}",
+				"type": "color"
 			}
 		},
 		"width": {
 			"25": {
-				"value": "{sizing.25}"
+				"value": "{sizing.25}",
+				"type": "borderWidth"
 			},
 			"50": {
-				"value": "{sizing.50}"
+				"value": "{sizing.50}",
+				"type": "borderWidth"
 			},
 			"100": {
-				"value": "{sizing.100}"
+				"value": "{sizing.100}",
+				"type": "borderWidth"
+			}
+		},
+		"radius": {
+			"small": {
+				"value": "{sizing.25}",
+				"type": "borderRadius"
+			},
+			"medium": {
+				"value": "{sizing.50}",
+				"type": "borderRadius"
+			},
+			"large": {
+				"value": "{sizing.100}",
+				"type": "borderRadius"
 			}
 		}
 	}
