@@ -52,6 +52,7 @@
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
+    "@divriots/style-dictionary-to-figma": "^0.2.0",
     "@springernature/eslint-config": "^4.0.1",
     "@springernature/frontend-package-manager": "^8.3.0",
     "@springernature/sasslint-config": "^1.2.1",
@@ -91,7 +92,5 @@
     ]
   },
   "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml",
-  "dependencies": {
-    "@divriots/style-dictionary-to-figma": "^0.2.0"
-  }
+  "dependencies": {}
 }
