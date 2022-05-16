@@ -3,7 +3,7 @@
 		"field": {
 			"stack": {
 				"spacing": {
-					"value": "{spacing.100}"
+					"value": "{spacing.relative.100}"
 				}
 			}
 		},
@@ -76,11 +76,11 @@
 		},
 		"input": {
 			"padding": {
-				"value":  "{spacing.200.value} {spacing.400.value}"
+				"value": "{spacing.relative.200.value} {spacing.relative.400.value}"
 			},
 			"stack": {
 				"spacing": {
-					"value": "{spacing.100}"
+					"value": "{spacing.relative.100}"
 				}
 			},
 			"border": {
@@ -133,7 +133,7 @@
 					"value": "{sizing.200}"
 				},
 				"spacing": {
-					"value": "{spacing.200}"
+					"value": "{spacing.relative.200}"
 				},
 				"color": {
 					"value": "{text.primary}"

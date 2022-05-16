@@ -3,7 +3,7 @@
 		"field": {
 			"stack": {
 				"spacing": {
-					"value": "{spacing.100}"
+					"value": "{spacing.relative.100}"
 				}
 			}
 		}
