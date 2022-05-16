@@ -20,6 +20,10 @@
 						"name": "your-name-hint"
 					},
 					{
+						"type": "html",
+						"content": "<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>"
+					},
+					{
 						"type": "text",
 						"label": "Your name (with error)",
 						"hint": "Your name is on your passport",
@@ -191,6 +195,7 @@
 		"checkbox": "./toolkits/global/packages/global-forms/view/fields/checkbox.hbs",
 		"radios": "./toolkits/global/packages/global-forms/view/fields/radios.hbs",
 		"radio": "./toolkits/global/packages/global-forms/view/fields/radio.hbs",
+		"html": "./toolkits/global/packages/global-forms/view/fields/html.hbs",
 		"iconError": "./toolkits/global/packages/global-forms/view/iconError.hbs",
 		"iconSelect": "./toolkits/global/packages/global-forms/view/iconSelect.hbs"
 	}
