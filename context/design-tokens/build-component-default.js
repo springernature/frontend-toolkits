@@ -62,7 +62,7 @@ function getStyleDictionaryConfig(brand, components) {
 	components.map(component => {
 		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
 
-		if (fs.existsSync(`${dir}/_default.variables.scss`)) {
+		if (fs.existsSync(`${dir}/_default.tokens.scss`)) {
 
 			// let brand2 equal brand
 			let brand2 = brand;
@@ -73,7 +73,7 @@ function getStyleDictionaryConfig(brand, components) {
 
 			// add date and time to top of index.scss file
 
-			let filePath = `${dir}/_default.variables.scss`
+			let filePath = `${dir}/_default.tokens.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 

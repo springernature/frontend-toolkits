@@ -31,7 +31,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/00-tokens/_springer-nature.variables.scss`,
+						destination: `${component}/scss/00-tokens/_springer-nature.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -55,8 +55,8 @@ function getStyleDictionaryConfig(brand, components) {
 
 	components.map(component => {
 		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
-		if (fs.existsSync(`${dir}/_springer-nature.variables.scss`)) {
-			let filePath = `${dir}/_springer-nature.variables.scss`
+		if (fs.existsSync(`${dir}/_springer-nature.tokens.scss`)) {
+			let filePath = `${dir}/_springer-nature.tokens.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 

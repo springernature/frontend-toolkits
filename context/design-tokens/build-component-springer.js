@@ -57,9 +57,9 @@ console.log('Build started...');
 	components.map(component => {
 		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
 
-		if (fs.existsSync(`${dir}/_springer.variables.scss`)) {
+		if (fs.existsSync(`${dir}/_springer.tokens.scss`)) {
 
-			let filePath = `${dir}/_springer.variables.scss`
+			let filePath = `${dir}/_springer.tokens.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 

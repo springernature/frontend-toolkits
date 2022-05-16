@@ -57,8 +57,8 @@ console.log('Build started...');
 	components.map(component => {
 		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`
 
-		if (fs.existsSync(`${dir}/_nature.variables.scss`)) {
-			let filePath = `${dir}/_nature.variables.scss`
+		if (fs.existsSync(`${dir}/_nature.tokens.scss`)) {
+			let filePath = `${dir}/_nature.tokens.scss`
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 			let AddComments = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenet/${brand}/${component}/nature.json\n// DO NOT edit directly\n\n${sortedContent}`;
