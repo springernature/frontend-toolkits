@@ -48,7 +48,9 @@ function getStyleDictionaryConfig(brand, components) {
 
 console.log('Build started...');
 
+// the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of
 ['springer'].map(function (brand) {
+
 	let dir = `${__dirname}/components/${brand}`
 	const components = readdirSync(dir);
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
