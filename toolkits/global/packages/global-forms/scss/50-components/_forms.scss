@@ -24,6 +24,11 @@
 .c-forms__legend {
 	padding: 0;
 	border: 0;
+}
+
+.c-forms__fieldset,
+.c-forms__legend,
+.c-forms__error-summary {
 	max-width: $global-form--measure;
 }
 
@@ -80,7 +85,7 @@ label + .c-forms__error {
 }
 
 .c-forms__error .c-forms__icon {
-	color: $global-form--color-warning;
+	color: $global-form--color-error;
 }
 
 .c-forms__icon svg {
@@ -187,8 +192,37 @@ legend + .c-forms__field.c-forms__label {
 	display: block;
 }
 
+.c-forms__error-summary {
+	display: flex;
+	gap: $global-form--input-padding-v;
+	padding: $global-form--input-padding-h;
+	color: $global-form--color-error;
+	border: 1px solid $global-form--indent-border-color;
+	border-bottom: 4px solid $global-form--color-error;
+	border-radius: 0.125em;
+	box-sizing: border-box;
+}
 
+.c-forms__error-summary .c-forms__icon svg {
+	width: 2em;
+	height: 2em;
+}
 
+.c-forms__error-summary-errors {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: $global-form--input-padding-v;
+	list-style: none;
+}
+
+.c-forms__error-summary-errors a {
+	color: inherit;
+}
+
+.c-forms__error-summary-title {
+	color: initial;
+	font-weight: bold;
+}
 
 
 

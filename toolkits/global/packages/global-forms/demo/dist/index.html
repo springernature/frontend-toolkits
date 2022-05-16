@@ -658,6 +658,11 @@ body {
 .c-forms__legend {
   padding: 0;
   border: 0;
+}
+
+.c-forms__fieldset,
+.c-forms__legend,
+.c-forms__error-summary {
   max-width: 90ch;
 }
 
@@ -714,7 +719,7 @@ label + .c-forms__error {
 }
 
 .c-forms__error .c-forms__icon {
-  color: #f58220;
+  color: #c40606;
 }
 
 .c-forms__icon svg {
@@ -819,11 +824,63 @@ legend + .c-forms__field.c-forms__label {
 :checked ~ .c-forms__radio-fields {
   display: block;
 }
+
+.c-forms__error-summary {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  color: #c40606;
+  border: 1px solid #dadada;
+  border-bottom: 3px solid #c40606;
+  border-radius: 0.125em;
+  box-sizing: border-box;
+}
+
+.c-forms__error-summary .c-forms__icon svg {
+  width: 2em;
+  height: 2em;
+}
+
+.c-forms__error-summary-errors {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.c-forms__error-summary-errors a {
+  color: inherit;
+}
+
+.c-forms__error-summary-title {
+  color: initial;
+  font-weight: bold;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
 		<h1>Basic form</h1>
 
+	<aside class="c-forms__error-summary" aria-labelledby="summary">
+		<div class="c-forms__error-summary-icon">
+			<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+				<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+					<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+				</svg>
+			</span>
+		</div>
+		<div class="c-forms__error-summary-text">
+			<div class="c-forms__error-summary-title" id="summary">Here’s what’s wrong</div>
+			<ul class="c-forms__error-summary-errors">
+					<li>
+						<a href="#your-name-error">That is not a name, it’s a number</a>
+					</li>
+					<li>
+						<a href="#checkbox-terms-error">You must agree with us!</a>
+					</li>
+			</ul>
+		</div>
+	</aside>
 		<fieldset class="c-forms__fieldset">
 				<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
 				<div class="c-forms__field">
@@ -1005,7 +1062,7 @@ legend + .c-forms__field.c-forms__label {
 					</label>
 				</div>
 				<div class="c-forms__field">
-						<small class="c-forms__error" id="error-checkbox-terms-hint">
+						<small class="c-forms__error" id="error-checkbox-terms-error">
 							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 									<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
@@ -1014,7 +1071,7 @@ legend + .c-forms__field.c-forms__label {
 							You must agree with us!
 						</small>
 					<label class="c-forms__label c-forms__label--wrapper">
-						<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-hint" autocomplete="off">
+						<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" autocomplete="off">
 						<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</span>
 							<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 					</label>

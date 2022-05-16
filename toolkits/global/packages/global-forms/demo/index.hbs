@@ -1,7 +1,8 @@
 <h1>Basic form</h1>
 
 {{#with form1}}
+	{{> errorSummary errorSummary}}
 	{{#each fieldsets}}
-		{{> fieldset form=../.}}
+		{{> fieldset }}
 	{{/each}}
 {{/with}}

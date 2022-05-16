@@ -2,6 +2,20 @@
 	"form1": {
 		"errorIconURL": "../img/error.svg#i-error",
 		"selectIconURL": "../img/chevron-more.svg#i-chevron-more",
+		"errorSummary": {
+			"id": "summary",
+			"title": "Here’s what’s wrong",
+			"errors": [
+				{
+					"id": "your-name-error",
+					"error": "That is not a name, it’s a number"
+				},
+				{
+					"id": "checkbox-terms-error",
+					"error": "You must agree with us!"
+				}
+			]
+		},
 		"fieldsets": [
 			{
 				"legend": "<h2>Text inputs</h2>",
@@ -189,8 +203,8 @@
 						"label": "Agree to our terms (with error)",
 						"error": "You must agree with us!",
 						"hint": "You should have read these. Read them, then agree to them.",
-						"id": "checkbox-terms-hint",
-						"name": "checkbox-terms-hint"
+						"id": "checkbox-terms-error",
+						"name": "checkbox-terms-error"
 					}
 				]
 			}
@@ -200,6 +214,7 @@
 		"fieldset": "./toolkits/global/packages/global-forms/view/fieldset.hbs",
 		"label": "./toolkits/global/packages/global-forms/view/label.hbs",
 		"error": "./toolkits/global/packages/global-forms/view/error.hbs",
+		"errorSummary": "./toolkits/global/packages/global-forms/view/errorSummary.hbs",
 		"inputCommonAttributes": "./toolkits/global/packages/global-forms/view/inputCommonAttributes.hbs",
 		"text": "./toolkits/global/packages/global-forms/view/fields/text.hbs",
 		"email": "./toolkits/global/packages/global-forms/view/fields/email.hbs",
