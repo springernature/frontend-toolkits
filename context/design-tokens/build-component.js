@@ -18,7 +18,8 @@ function getStyleDictionaryConfig(brand, components) {
 
 	return {
 		include: [
-			`${__dirname}/literal/**/*.json`,
+			`${__dirname}/literal/default/**/*.json`,
+			`${__dirname}/literal/${brand}/**/*.json`,
 			`${__dirname}/alias/default/**/*.json`,
 			`${__dirname}/alias/${brand}/**/*.json`
 		],
@@ -31,7 +32,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/00-tokens/_${brand}.tokens.scss`,
+						destination: `${component}/scss/00-tokens/_${component}.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -54,17 +55,6 @@ console.log('Build started...');
 
 	brands.buildAllPlatforms();
 
-	// components.map(component => {
-	// 	let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
-	// 	const files = readdirSync(dir);
-	// 	files.map(file => {
-	// 		let filePath = `${dir}/${file}`
-	// 		let content = fs.readFileSync(filePath, 'utf8');
-	// 		let sortedContent = content.split('\n').sort().join('\n');
-	// 		fs.writeFileSync(filePath, sortedContent);
-	// 	})
-	// });
-
 	components.map(component => {
 		let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
 		const files = readdirSync(dir);
@@ -76,7 +66,7 @@ console.log('Build started...');
 			fs.writeFileSync(filePath, sortedContent);
 			let date = new Date();
 			let dateString = date.toLocaleString();
-			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenet/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
+			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenets/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
 			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
 			fs.writeFileSync(filePath, addedContent);
 		})
