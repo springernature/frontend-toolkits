@@ -130,7 +130,7 @@
 		"radio": {
 			"carat": {
 				"size": {
-					"value": "{sizing.200}"
+					"value": "{sizing.relative.200}"
 				},
 				"spacing": {
 					"value": "{spacing.relative.200}"
@@ -155,7 +155,7 @@
 		},
 		"checkbox": {
 			"size": {
-				"value": "{sizing.600}",
+				"value": "{sizing.relative.600}",
 				"type": "sizing"
 			},
 			"checked": {

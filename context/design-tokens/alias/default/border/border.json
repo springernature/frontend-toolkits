@@ -16,24 +16,24 @@
 		},
 		"radius": {
 			"50": {
-				"value": "{sizing.50}"
+				"value": "{sizing.absolute.50}"
 			},
 			"100": {
-				"value": "{sizing.100}"
+				"value": "{sizing.absolute.100}"
 			}
 		},
 		"width": {
 			"25": {
-				"value": "{sizing.25}"
+				"value": "{sizing.absolute.25}"
 			},
 			"50": {
-				"value": "{sizing.50}"
+				"value": "{sizing.absolute.50}"
 			},
 			"100": {
-				"value": "{sizing.100}"
+				"value": "{sizing.absolute.100}"
 			},
 			"200": {
-				"value": "{sizing.200}"
+				"value": "{sizing.absolute.200}"
 			}
 		}
 	}
