@@ -1,12 +1,20 @@
 
 // Do not edit directly
-// Generated on Mon, 16 May 2022 14:53:32 GMT
+// Generated on Mon, 16 May 2022 15:40:55 GMT
 
-$tokens--spacing-0: 0; // no spacing, zero.
-$tokens--spacing-100: .25rem; // .25rem, 4px.
-$tokens--spacing-200: .5rem; // .5rem, 8px.
-$tokens--spacing-400: 1rem; // 1rem, 16px.
-$tokens--spacing-600: 1.5rem; // 1.5rem, 24px.
-$tokens--spacing-800: 2rem; // 2rem, 32px.
-$tokens--spacing-1200: 3rem; // 3rem, 48px.
-$tokens--spacing-1600: 4rem; // 4rem, 64px.
+$tokens--spacing-relative-0: 0; // no spacing, zero.
+$tokens--spacing-relative-100: .25rem; // .25rem, 4px.
+$tokens--spacing-relative-200: .5rem; // .5rem, 8px.
+$tokens--spacing-relative-400: 1rem; // 1rem, 16px.
+$tokens--spacing-relative-600: 1.5rem; // 1.5rem, 24px.
+$tokens--spacing-relative-800: 2rem; // 2rem, 32px.
+$tokens--spacing-relative-1200: 3rem; // 3rem, 48px.
+$tokens--spacing-relative-1600: 4rem; // 4rem, 64px.
+$tokens--spacing-absolute-0: 0; // no spacing, zero.
+$tokens--spacing-absolute-100: 4px; // .25rem, 4px.
+$tokens--spacing-absolute-200: 8px; // .5rem, 8px.
+$tokens--spacing-absolute-400: 16px; // 1rem, 16px.
+$tokens--spacing-absolute-600: 24px; // 1.5rem, 24px.
+$tokens--spacing-absolute-800: 32px; // 2rem, 32px.
+$tokens--spacing-absolute-1200: 48px; // 3rem, 48px.
+$tokens--spacing-absolute-1600: 64px; // 4rem, 64px.
