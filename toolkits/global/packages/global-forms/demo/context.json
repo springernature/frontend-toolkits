@@ -156,6 +156,19 @@
 				]
 			},
 			{
+				"legend": "<h2>Textareas</h2>",
+				"fields": [
+					{
+						"type": "textarea",
+						"label": "Enter some text",
+						"id": "textarea-example",
+						"name": "textarea-example",
+						"value": "This has been entered already",
+						"rows": "5"
+					}
+				]
+			},
+			{
 				"legend": "<h2>Checkboxes</h2>",
 				"fields": [
 					{

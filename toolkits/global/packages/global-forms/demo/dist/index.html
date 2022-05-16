@@ -665,10 +665,6 @@ body {
   margin-top: 1.5rem;
 }
 
-.c-forms__html {
-  margin: 1.5rem 0;
-}
-
 .c-forms__input {
   border: 1px solid;
   width: 100%;
@@ -844,9 +840,7 @@ legend + .c-forms__field.c-forms__label {
 					<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
 				</div>
 				<div class="c-forms__field">
-					<div class="c-forms__html">
-						<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
-					</div>
+					<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 				</div>
 				<div class="c-forms__field">
 					<label class="c-forms__label">
@@ -983,6 +977,16 @@ legend + .c-forms__field.c-forms__label {
 							</svg>
 						</span>
 					</div>
+				</div>
+		</fieldset>
+		<fieldset class="c-forms__fieldset">
+				<legend class="c-forms__legend"><h2>Textareas</h2></legend>
+				<div class="c-forms__field">
+					<label class="c-forms__label">
+						Enter some text
+					</label>
+					<textarea class="c-forms__input c-forms__input--textarea" id="textarea-example" name="textarea-example" value="This has been entered already" autocomplete="off" rows="5">						This has been entered already
+					</textarea>
 				</div>
 		</fieldset>
 		<fieldset class="c-forms__fieldset">
