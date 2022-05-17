@@ -15,6 +15,8 @@ Then compile the template located in the `./view` folder whenever the component 
 
 ## Variants
 
+Both the image (`imageSrc`) and content (`content`) are optional. The component reconfigures automatically where these properties are omitted.
+
 ### `imageLeft`
 
 You can display the image on the right (default; bottom on smaller screens) or left (top on smaller screens) by changing the data’s `imageLeft` property to `true`.

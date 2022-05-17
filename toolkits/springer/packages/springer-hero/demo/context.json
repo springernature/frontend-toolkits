@@ -5,11 +5,22 @@
 		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
 		"imageLeft": false
 	},
+	"defaultNoImage": {
+		"title": "What a hero",
+		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
+		"imageLeft": false
+	},
 	"customColor": {
 		"title": "Custom color hero",
 		"color": "#000",
 		"imageSrc": "https://picsum.photos/700/700",
 		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
+		"imageLeft": false
+	},
+	"customColorNoContent": {
+		"title": "Custom color hero",
+		"color": "#000",
+		"imageSrc": "https://picsum.photos/700/700",
 		"imageLeft": false
 	},
 	"dynamicPartials": {
