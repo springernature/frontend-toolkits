@@ -3,14 +3,341 @@
     		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
 		</script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/global-card</title>
 		<style>
 			@charset "UTF-8";
 /**
- * Basic
+ * Core
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-card--major .c-card__title, h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.c-card__title, h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colour palette
+ *
+ */
+/**
+ * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
+ */
+h1 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.c-card--major .c-card__title, h2 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card--major .c-card__title a, h2 a {
+  text-decoration: none;
+}
+.c-card--major .c-card__title a.active, h2 a.active, .c-card--major .c-card__title a:active, h2 a:active, .c-card--major .c-card__title a.hover, h2 a.hover, .c-card--major .c-card__title a:hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.c-card__title, h3 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card__title a, h3 a {
+  text-decoration: none;
+}
+.c-card__title a.active, h3 a.active, .c-card__title a:active, h3 a:active, .c-card__title a.hover, h3 a.hover, .c-card__title a:hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
 /* =========================================================================
    $NORMALIZE
    normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
@@ -463,6 +790,87 @@ template {
 }
 
 /**
+ * Basic
+ * Some default CSS styles
+ */
+body {
+  font-size: 0.813rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #069;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.0625rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  border-radius: 0;
+}
+
+/* accessible focus styles */
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+p:focus,
+div:focus,
+ul:focus,
+ol:focus,
+li:focus,
+dl:focus,
+dt:focus,
+dd:focus,
+span:focus,
+i:focus,
+b:focus,
+em:focus,
+strong:focus {
+  outline: none;
+}
+
+/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -621,28 +1029,347 @@ template {
  * Media query helper
  * @group 30-mixins
  */
-.c-card--major .c-card__title {
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-card--major .c-card__title, h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.c-card__title {
+.c-card__title, h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
   font-size: 1.125rem;
   font-weight: 700;
 }
 
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
- * Typography
- * Set base font size
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colour palette
+ *
+ */
+/**
+ * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
+ */
+h1 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.c-card--major .c-card__title, h2 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card--major .c-card__title a, h2 a {
+  text-decoration: none;
+}
+.c-card--major .c-card__title a.active, h2 a.active, .c-card--major .c-card__title a:active, h2 a:active, .c-card--major .c-card__title a.hover, h2 a.hover, .c-card--major .c-card__title a:hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.c-card__title, h3 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+.c-card__title a, h3 a {
+  text-decoration: none;
+}
+.c-card__title a.active, h3 a.active, .c-card__title a:active, h3 a:active, .c-card__title a.hover, h3 a.hover, .c-card__title a:hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+button {
+  line-height: inherit;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 4px solid #ffcc00;
+}
+
+input[type=file]:focus-within {
+  outline: 4px solid #ffcc00;
+}
+
+button:disabled:focus,
+input:disabled:focus,
+select:disabled:focus,
+textarea:disabled:focus {
+  outline: none;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/*
+ * Layout
+ * Universal layout styles
  */
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  height: 100%;
+  overflow-y: scroll;
   font-size: 100%;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.6180339888;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  max-width: 100%;
+  min-height: 100%;
+  background: #fcfcfc;
   font-size: 1.125rem;
+  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
+figure {
+  margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+[contenteditable]:focus,
+[tabindex="0"]:focus {
+  outline: 4px solid #ffcc00;
+}
+
+a {
+  color: #004b83;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #0061a9;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #003b84;
+  text-decoration: none;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+a > img {
+  vertical-align: middle;
+}
+
+table {
+  border: 1px solid #a6a6a6;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+th,
+td {
+  font-size: 1rem;
+  border: 1px solid #a6a6a6;
+  padding: 0.3em 0.6em;
+  vertical-align: top;
+}
+
+th {
+  background: #e6e6e6;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p:empty {
+  display: none;
+}
+
+cite {
+  font-style: normal;
+}
+
+/**
+ * Card
+ * Springer branding for component
+ */
 /**
  * Card
  * Default branding for component
@@ -653,13 +1380,13 @@ body {
  */
 .c-card {
   display: flex;
-  background-color: transparent;
+  background-color: #fff;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 1rem;
   min-width: 0;
   padding: 0;
   position: relative;
-  border: none;
+  border: 1px solid #cccccc;
   box-shadow: none;
 }
 
@@ -706,11 +1433,14 @@ body {
 
 .c-card--no-shape .c-card__body {
   padding: 0;
+}
+
+.c-card--no-shape .c-card__body:not(:first-child) {
   padding-top: 16px;
 }
 
 .c-card__title {
-  font-weight: 400;
+  font-weight: normal;
   margin-top: 0;
   margin-bottom: 8px;
   letter-spacing: normal;
@@ -746,7 +1476,7 @@ body {
   font-size: 1rem;
 }
 .c-card--dark {
-  background-color: #000;
+  background-color: #173962;
   color: #fff;
   border-width: 0;
 }

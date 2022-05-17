@@ -64,12 +64,11 @@
 
 .c-card--no-shape .c-card__body {
 	padding: 0;
-	padding-top: $card--padding;
 }
 
-.c-card__body:first-child {
-	padding-top: 0;
-  }
+.c-card--no-shape .c-card__body:not(:first-child) {
+	padding-top: $card--padding;
+}
 
 .c-card__title {
 	@include u-heading($card--title-heading);
