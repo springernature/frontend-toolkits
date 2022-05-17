@@ -16,5 +16,9 @@ $global-form--color-checked: $context--universal-blue;
 $global-form--color-error: $tokens--state-error;
 $global-form--measure: 90ch; // TODO: tokenize
 $global-form--icon-size: $tokens--sizing-400;
+$global-form--icon-size-large: $tokens--spacing-800;
 $global-form--radio-size: $tokens--sizing-400;
-$global-form--radio-border-width: 2px; // TODO: tokenize
+$global-form--border-width-thin: 1px; // TODO: tokenize
+$global-form--border-width-thick: 2px; // TODO: tokenize
+$global-form--error-spacing: $tokens--spacing-100;
+

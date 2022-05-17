@@ -710,10 +710,7 @@ body {
   color: #c40606;
 }
 
-label + .c-forms__error {
-  margin-top: 0.25rem;
-}
-
+label + .c-forms__error,
 .c-forms__error + label {
   margin-top: 0.25rem;
 }
@@ -771,8 +768,8 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__label--inline::before {
   content: "";
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   border: 2px solid #666;
   margin-right: 0.5rem;
 }
@@ -786,7 +783,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__label--radio::before {
-  border-radius: 1em;
+  border-radius: 50%;
 }
 
 .c-forms__label--checkbox::before {
@@ -827,18 +824,17 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__error-summary {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 1rem;
   color: #c40606;
   border: 1px solid #dadada;
-  border-bottom: 3px solid #c40606;
-  border-radius: 0.125em;
+  border-bottom: 4px solid #c40606;
   box-sizing: border-box;
 }
 
 .c-forms__error-summary .c-forms__icon svg {
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
 }
 
 .c-forms__error-summary-errors {
@@ -855,6 +851,10 @@ legend + .c-forms__field.c-forms__label {
 .c-forms__error-summary-title {
   color: initial;
   font-weight: bold;
+}
+
+.c-forms__error-summary-errors li + li {
+  margin-top: 0.25rem;
 }
 		</style>
 	</head>

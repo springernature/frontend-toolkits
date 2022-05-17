@@ -37,7 +37,7 @@
 }
 
 .c-forms__input {
-	border: 1px solid;
+	border: $global-form--border-width-thin solid;
 	width: 100%;
 	padding: $global-form--input-padding;
 	box-sizing: border-box;
@@ -55,7 +55,7 @@
 
 .c-forms__input[invalid] {
 	border-color: $global-form--color-error;
-	border-width: 2px;
+	border-width: $global-form--border-width-thick;
 }
 
 .c-forms__input[disabled] {
@@ -76,10 +76,7 @@
 	color: $global-form--color-error;
 }
 
-label + .c-forms__error {
-	margin-top: #{$global-form--label-spacing / 2};
-}
-
+label + .c-forms__error,
 .c-forms__error + label {
 	margin-top: #{$global-form--label-spacing / 2};
 }
@@ -104,7 +101,7 @@ label + .c-forms__error {
 
 .c-forms__input-container--select .c-forms__icon {
 	position: absolute;
-	right: $tokens--sizing-400;
+	right: $global-form--input-padding-h;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -138,9 +135,9 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__label--inline::before {
 	content: '';
-	width: 1em;
-	height: 1em;
-	border: 2px solid $global-form--hint-color;
+	width: $global-form--icon-size;
+	height: $global-form--icon-size;
+	border: $global-form--border-width-thick solid $global-form--hint-color;
 	margin-right: $global-form--label-spacing;
 }
 
@@ -153,7 +150,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__label--radio::before {
-	border-radius: 1em;
+	border-radius: 50%;
 }
 
 .c-forms__label--checkbox::before {
@@ -181,7 +178,7 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__radio-fields {
 	margin-top: $global-form--label-spacing;
-	margin-left: calc((#{$global-form--radio-size} / 4) + #{$global-form--radio-border-width});
+	margin-left: calc((#{$global-form--radio-size} / 4) + #{$global-form--border-width-thick});
 	border-left: calc(#{$global-form--radio-size} / 2) solid $global-form--indent-border-color;
 	padding-top: $global-form--field-spacing;
 	padding-left: $global-form--label-spacing;
@@ -194,18 +191,17 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__error-summary {
 	display: flex;
-	gap: $global-form--input-padding-v;
+	gap: $global-form--input-padding-h;
 	padding: $global-form--input-padding-h;
 	color: $global-form--color-error;
-	border: 1px solid $global-form--indent-border-color;
+	border: $global-form--border-width-thin solid $global-form--indent-border-color;
 	border-bottom: 4px solid $global-form--color-error;
-	border-radius: 0.125em;
 	box-sizing: border-box;
 }
 
 .c-forms__error-summary .c-forms__icon svg {
-	width: 2em;
-	height: 2em;
+	width: $global-form--icon-size-large;
+	height: $global-form--icon-size-large;
 }
 
 .c-forms__error-summary-errors {
@@ -222,6 +218,10 @@ legend + .c-forms__field.c-forms__label {
 .c-forms__error-summary-title {
 	color: initial;
 	font-weight: bold;
+}
+
+.c-forms__error-summary-errors li + li {
+	margin-top: $global-form--error-spacing;
 }
 
 
