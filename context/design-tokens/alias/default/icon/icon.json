@@ -1,0 +1,19 @@
+{
+	"icon": {
+		"checkbox": {
+			"checked": {
+				"stroke": {
+					"value": "{color.white}"
+				},
+				"fill": {
+					"value": "{color.black}"
+				}
+			}
+		},
+		"select": {
+			"stroke": {
+				"value": "{color.black}"
+			}
+		}
+	}
+}

@@ -6,6 +6,9 @@
 		"container": {
 			"value": "{color.white}"
 		},
+		"container-inverted": {
+			"value": "{color.black}"
+		},
 		"facet": {
 			"value": "{color.grayscale.300}"
 		},
