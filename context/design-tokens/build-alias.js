@@ -83,3 +83,5 @@ console.log('Build started...');
 		}).join('\n')
 	);
 });
+
+console.log('\nalias tokens build completed');

@@ -66,9 +66,7 @@ console.log('Build started...');
 	// StyleDictionary.buildPlatform(brand);
 });
 
-
-
 // we need to make sure the existing tokens are the same as what Design are using
 
 console.log('\n==============================================');
-console.log('\nBuild completed!');
+console.log('\nliteral tokens build completed');
