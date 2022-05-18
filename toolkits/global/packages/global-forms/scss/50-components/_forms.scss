@@ -16,6 +16,10 @@
 	position: relative;
 }
 
+.c-forms__field {
+	font-size: $global-forms-input-font-size;
+}
+
 .c-forms__field small {
 	font-size: inherit;
 }
@@ -26,36 +30,36 @@
 	border: 0;
 }
 
-.c-forms__fieldset,
-.c-forms__legend,
+.c-forms__input,
 .c-forms__error-summary {
-	max-width: $global-form--measure;
+	max-width: $global-forms-input-width-maximum;
 }
 
 .c-forms__field + .c-forms__field {
-	margin-top: $global-form--field-spacing;
+	margin-top: $global-forms-field-stack-spacing;
 }
 
 .c-forms__input {
-	border: $global-form--border-width-thin solid;
-	width: 100%;
-	padding: $global-form--input-padding;
 	box-sizing: border-box;
-	background-color: $global-form--background-color;
+	border: $global-forms-input-border-width solid;
+	width: 100%;
+	padding-inline: $global-forms-input-padding-inline;
+	padding-block: $global-forms-input-padding-block;
+	background-color: $global-forms-input-background-color;
 }
 
 * + .c-forms__input,
 * + .c-forms__input-container {
-	margin-top: $global-form--label-spacing;
+	margin-top: $global-forms-input-stack-spacing;
 }
 
 .c-forms__input:focus {
-	outline: 3px solid $global-form--color-focus;
+	outline: 3px solid $global-forms-input-focus-outline-color;
 }
 
 .c-forms__input[invalid] {
-	border-color: $global-form--color-error;
-	border-width: $global-form--border-width-thick;
+	border-color: $global-forms-message-color-error;
+	border-width: #{calc($global-forms-input-border-width * 2)};
 }
 
 .c-forms__input[disabled] {
@@ -63,13 +67,13 @@
 }
 
 .c-forms__label {
-	font-weight: bold;
+	font-weight: $global-forms-label-font-weight;
+	color: $global-forms-label-color;
 }
 
 .c-forms__hint {
-	font-weight: normal;
-	color: $global-form--hint-color;
-	margin-top: #{$global-form--label-spacing / 2};
+	font-weight: $global-forms-input-font-weight;
+	margin-top: #{$global-forms-input-stack-spacing / 2};
 }
 
 .c-forms__error {
@@ -78,17 +82,17 @@
 
 label + .c-forms__error,
 .c-forms__error + label {
-	margin-top: #{$global-form--label-spacing / 2};
+	margin-top: #{$global-forms-input-stack-spacing / 2};
 }
 
 .c-forms__error .c-forms__icon {
-	color: $global-form--color-error;
+	color: $global-forms-message-color-error;
 }
 
 .c-forms__icon svg {
-	height: $global-form--radio-size;
-	width: $global-form--radio-size;
-	vertical-align: calc((#{$global-form--radio-size} / 8) * -1);
+	height: $global-forms-input-font-size;
+	width: $global-forms-input-font-size;
+	vertical-align: calc((#{$global-forms-input-padding-inline} / 8) * -1);
 	overflow: visible;
 	pointer-events: none;
 }
@@ -96,18 +100,19 @@ label + .c-forms__error,
 .c-forms__input--select {
 	cursor: pointer;
 	appearance: none;
-	padding-right: #{$global-form--input-padding-h * 3};
+	padding-right: #{$global-forms-input-padding-inline * 3};
 }
 
 .c-forms__input-container--select .c-forms__icon {
 	position: absolute;
-	right: $global-form--input-padding-h;
+	right: $global-forms-input-padding-inline;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
 .c-forms__input--radio,
 .c-forms__input--checkbox {
+	/* hide visually, not to assistive tech */
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
@@ -124,7 +129,7 @@ label + .c-forms__error,
 .c-forms__field.c-forms__label +
 .c-forms__field.c-forms__label,
 legend + .c-forms__field.c-forms__label {
-	margin-top: #{$global-form--field-spacing / 2};
+	margin-top: #{$global-forms-field-stack-spacing / 2};
 }
 
 .c-forms__label--inline {
@@ -135,10 +140,10 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__label--inline::before {
 	content: '';
-	width: $global-form--icon-size;
-	height: $global-form--icon-size;
-	border: $global-form--border-width-thick solid $global-form--hint-color;
-	margin-right: $global-form--label-spacing;
+	width: $global-forms-input-font-size;
+	height: $global-forms-input-font-size;
+	border: #{calc($global-forms-input-border-width)} solid;
+	margin-right: $global-forms-input-stack-spacing;
 }
 
 :checked + .c-forms__label--inline::before {
@@ -146,7 +151,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 :focus + .c-forms__label--inline::before {
-	box-shadow: 0 0 0 3px $global-form--color-focus;
+	box-shadow: 0 0 0 3px $global-forms-input-focus-outline-color;
 }
 
 .c-forms__label--radio::before {
@@ -158,7 +163,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 :checked + .c-forms__label--radio::before {
-	background: radial-gradient(#{$global-form--color-checked} 0%, #{$global-form--color-checked} 40%, #fff 40%);
+	background: radial-gradient(#{$global-forms-checkbox-checked-background-color} 0%, #{$global-forms-checkbox-checked-background-color} 40%, #fff 40%);
 }
 
 :checked + .c-forms__label--checkbox::before {
@@ -169,19 +174,19 @@ legend + .c-forms__field.c-forms__label {
 }
 
 :checked + .c-forms__label--checkbox::before {
-	background-color: $global-form--color-checked;
+	background-color: $global-forms-message-color-error;
 }
 
 [invalid] + .c-forms__label--checkbox::before {
-	border-color: $global-form--color-error;
+	border-color: $global-forms-message-color-error;
 }
 
 .c-forms__radio-fields {
-	margin-top: $global-form--label-spacing;
-	margin-left: calc((#{$global-form--radio-size} / 4) + #{$global-form--border-width-thick});
-	border-left: calc(#{$global-form--radio-size} / 2) solid $global-form--indent-border-color;
-	padding-top: $global-form--field-spacing;
-	padding-left: $global-form--label-spacing;
+	margin-top: $global-forms-input-stack-spacing;
+	margin-left: calc((#{$global-forms-input-font-size} / 4) + #{$global-form--border-width-thick});
+	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-form--indent-border-color;
+	padding-top: $global-forms-field-stack-spacing;
+	padding-left: $global-forms-field-stack-spacing;
 	display: none;
 }
 
@@ -190,24 +195,24 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__error-summary {
-	display: flex;
-	gap: $global-form--input-padding-h;
-	padding: $global-form--input-padding-h;
-	color: $global-form--color-error;
-	border: $global-form--border-width-thin solid $global-form--indent-border-color;
-	border-bottom: 4px solid $global-form--color-error;
 	box-sizing: border-box;
+	display: flex;
+	gap: $global-forms-input-padding-inline;
+	padding: $global-forms-input-padding-inline;
+	color: $global-forms-message-color-error;
+	border: $global-forms-input-border-width solid $global-forms-indent-border-color;
+	border-bottom: 4px solid $global-forms-message-color-error;
 }
 
 .c-forms__error-summary .c-forms__icon svg {
-	width: $global-form--icon-size-large;
-	height: $global-form--icon-size-large;
+	width: #{$global-forms-input-font-size * 2};
+	height: #{$global-forms-input-font-size * 2};
 }
 
 .c-forms__error-summary-errors {
 	padding: 0;
 	margin-bottom: 0;
-	margin-top: $global-form--input-padding-v;
+	margin-top: $global-forms-input-padding-block;
 	list-style: none;
 }
 
@@ -221,7 +226,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__error-summary-errors li + li {
-	margin-top: $global-form--error-spacing;
+	margin-top: $global-forms-input-stack-spacing;
 }
 
 

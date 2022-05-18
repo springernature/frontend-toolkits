@@ -3,7 +3,7 @@
 		"field": {
 			"stack": {
 				"spacing": {
-					"value": "{spacing.relative.100}"
+					"value": "{spacing.relative.600}"
 				}
 			}
 		},
@@ -76,7 +76,12 @@
 		},
 		"input": {
 			"padding": {
-				"value": "{spacing.relative.200.value} {spacing.relative.400.value}"
+				"inline": {
+					"value": "{spacing.relative.400.value}"
+				},
+				"block": {
+					"value" : "{spacing.relative.200.value}"
+				}
 			},
 			"stack": {
 				"spacing": {
@@ -161,7 +166,7 @@
 			"checked": {
 				"background": {
 					"color": {
-						"value": "{background.container-inverted}",
+						"value": "{color.primary.universal-dark-blue}",
 						"type": "color"
 					}
 				},

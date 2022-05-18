@@ -1,13 +1,13 @@
-// Generated on 16/05/2022, 16:40:55
+// Generated on 18/05/2022, 15:40:31
 // Source: design-tokens/componenets/global/global-forms/default.json
 // DO NOT edit directly
 
-$global-forms-checkbox-checked-background-color: $tokens--$background-container-inverted;
+$global-forms-checkbox-checked-background-color: $tokens--$color-primary-universal-dark-blue;
 $global-forms-checkbox-checked-icon-fill: $tokens--$icon-checkbox-checked-fill;
 $global-forms-checkbox-checked-icon-path: $tokens--"path/to/icon.svg";
 $global-forms-checkbox-checked-icon-stroke: $tokens--$icon-checkbox-checked-stroke;
 $global-forms-checkbox-size: $tokens--$sizing-relative-600;
-$global-forms-field-stack-spacing: $tokens--$spacing-relative-100;
+$global-forms-field-stack-spacing: $tokens--$spacing-relative-600;
 $global-forms-heading-font-family: $tokens--$typography-heading-level-1-default-font-size;
 $global-forms-heading-font-size: $tokens--$font-size-900;
 $global-forms-heading-font-weight: $tokens--$font-weight-light;
@@ -22,7 +22,8 @@ $global-forms-input-focus-outline-color: $tokens--$ui-focus-outline-color;
 $global-forms-input-font-color: $tokens--$text-primary;
 $global-forms-input-font-size: $tokens--$ui-font-size;
 $global-forms-input-font-weight: $tokens--$font-weight-regular;
-$global-forms-input-padding: $tokens--$spacing-relative-200 $spacing-relative-400;
+$global-forms-input-padding-block: $tokens--$spacing-relative-200;
+$global-forms-input-padding-inline: $tokens--$spacing-relative-400;
 $global-forms-input-stack-spacing: $tokens--$spacing-relative-100;
 $global-forms-input-width-maximum: $tokens--$ui-content-width;
 $global-forms-label-color: $tokens--$text-primary;
