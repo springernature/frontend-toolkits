@@ -7,7 +7,7 @@
 			"value": "{color.white}"
 		},
 		"container-inverted": {
-			"value": "{color.black}"
+			"value": "{color.primary.universal-dark-blue}"
 		},
 		"facet": {
 			"value": "{color.grayscale.300}"
