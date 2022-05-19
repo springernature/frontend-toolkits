@@ -1,6 +1,11 @@
 # History
+
+## 5.1.0 (2022-05-19)
+    * FEATURE: provided compiled component CSS in the `dist/css` folder
+
 ## 5.0.1 (2022-04-26)
     * White border to go with new colour scheme
+
 ## 5.0.0 (2022-04-13)
     * Update to latest brand-context v20.1.1
 
