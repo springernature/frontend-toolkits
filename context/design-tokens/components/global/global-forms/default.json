@@ -80,7 +80,7 @@
 					"value": "{spacing.relative.400.value}"
 				},
 				"block": {
-					"value" : "{spacing.relative.200.value}"
+					"value": "{spacing.relative.200.value}"
 				}
 			},
 			"stack": {
