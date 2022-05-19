@@ -1,19 +1,42 @@
 # History
+## 21.1.0 (2022-05-10)
+    * Adds a new icon for the use of expanding images
+    
+## 21.0.4 (2022-05-04)
+    * uses base font size for springer text furniture
+    
+## 21.0.3 (2022-04-29)
+    * BUG
+      * removes de-duplication of creating an `_index.scss` file.
+      
+## 21.0.2 (2022-04-29)
+    * BUG
+      * manually removes `_index.scss` file from the `_index.scss` file for each brands generated tokens.
+      
+## 21.0.1 (2022-04-29)
+    * BUG
+      * fixes issue with compiled Design Tokens having an missing opening curly brace
+
+## 21.0.0 (2022-04-27)
+    * FEATURE:
+      * Introduces Design Tokens as a way to manage and create Sass variables from Design decisions.
+    * BREAKING CHANGE:
+      * Adds the relevant `@import` statements to each brands `abstracts.scss` file.
 ## 20.1.6 (2022-04-25)
     * Amended h3 and h5 line height to correct rem units for Springer Nature
 
 ## 20.1.5 (2022-04-22)
     * Adjusted h3 and h5 line height for Springer Nature
-    
+
 ## 20.1.4 (2022-04-22)
     * Applied new `h5` style for Springer
-    
+
 ## 20.1.3 (2022-04-20)
     * Adjusted h2 line height for Springer Nature
 
 ## 20.1.2 (2022-03-30)
     * Adjusted heading sizes and styles for Springer
-    
+
 ## 20.1.1 (2022-03-30)
     * BUG: expander needs to export the Class directly
 
@@ -30,13 +53,13 @@
 
 ## 20.0.1 (2022-02-09)
     * BUG
-        * Add missing functions and mixins to default branding abstracts  
+        * Add missing functions and mixins to default branding abstracts
 ## 20.0.0 (2022-01-14)
     * BREAKING
         * Switch SASS compiler from Node Sass to Dart Sass
         * Updates default color function to use Dart Sass
         * Updates default typography to use Dart Sass
-        
+
 ## 19.0.0 (2022-01-13)
     * BREAKING
         * Icons all use `currentColor` in place of `#666` so they adopt `color` by default
@@ -53,11 +76,11 @@
     * FEATURE
         * copies the strip-unit function into the default brand context.
         * removes the strip-unit function from the springer brand context.
-        
+
 ## 18.1.0
     * FEATURE
         * adds the strip-unit function to the u-keyline mixin to work with Dart Sass.
-        
+
 ## 18.0.1 (2021-12-07)
     * BUG:
         * Fixes some font sizes that were incorrectly calculated
