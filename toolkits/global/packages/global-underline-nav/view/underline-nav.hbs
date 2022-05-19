@@ -1,0 +1,9 @@
+{{#if items}}
+	<nav>
+		<ul class="c-underline-nav">
+			{{#each items}}
+				<li class="c-underline-nav__item"><a href="{{url}}" class="c-underline-nav__link"{{#if current}} aria-current="true"{{/if}}>{{name}}</a></li>
+			{{/each}}
+		</ul>
+	</nav>
+{{/if}}

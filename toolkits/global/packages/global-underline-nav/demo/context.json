@@ -1,0 +1,17 @@
+{
+	"items": [
+		{
+			"name": "Item 1",
+			"url": "link1",
+			"current": true
+		},
+		{
+			"name": "Item 2",
+			"url": "link2",
+			"current": false
+		}
+	],
+	"dynamicPartials": {
+		"underline-nav": "./toolkits/global/packages/global-underline-nav/view/underline-nav.hbs"
+	}
+}

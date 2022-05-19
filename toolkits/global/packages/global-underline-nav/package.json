@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/global-underline-nav",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A navigation with underlined selected state. It looks and feels like tabs.",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^21.1.0"
+}
