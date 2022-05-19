@@ -49,6 +49,7 @@
       "md"
     ],
     "dist": [
+      "css",
       "js",
       "json",
       "md"
