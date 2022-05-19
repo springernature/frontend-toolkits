@@ -1,4 +1,4 @@
-// Generated on 19/05/2022, 11:49:44
+// Generated on 19/05/2022, 12:46:42
 // Source: design-tokens/componenets/global/global-forms/default.json
 // DO NOT edit directly
 
@@ -9,7 +9,7 @@ $global-forms-checkbox-checked-icon-stroke: $tokens--icon-checkbox-checked-strok
 $global-forms-checkbox-size: $tokens--sizing-relative-600;
 $global-forms-field-stack-spacing: $tokens--spacing-relative-600;
 $global-forms-heading-font-family: $tokens--typography-heading-level-1-default-font-size;
-$global-forms-heading-font-size: $tokens--font-size-900;
+// $global-forms-heading-font-size: $tokens--font-size-900; -- NOT BEING USED
 $global-forms-heading-font-weight: $tokens--font-weight-light;
 $global-forms-indent-border-color: $tokens--border-color-indent;
 $global-forms-indent-border-radius: $tokens--border-radius-100;
@@ -29,8 +29,8 @@ $global-forms-input-width-maximum: $tokens--ui-content-width;
 $global-forms-label-color: $tokens--text-primary;
 $global-forms-label-font-size: $tokens--ui-font-size;
 $global-forms-label-font-weight: $tokens--font-weight-bold;
-$global-forms-legend-font-family: $tokens--font-family-serif;
-$global-forms-legend-font-size: $tokens--font-size-800;
+// $global-forms-legend-font-family: $tokens--font-family-serif; -- NOT BEING USED
+// $global-forms-legend-font-size: $tokens--font-size-800; -- NOT BEING USED
 $global-forms-legend-font-weight: $tokens--font-weight-regular;
 $global-forms-message-color-error: $tokens--state-error;
 $global-forms-message-color-resting: $tokens--text-primary;
