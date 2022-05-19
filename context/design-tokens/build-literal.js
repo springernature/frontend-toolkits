@@ -27,6 +27,7 @@ function getStyleDictionaryConfig(brand, categories) {
 
 	return {
 		source: [
+			`${__dirname}/literal/${brand}/font-weight/font-weight.json`,
 			`${__dirname}/literal/${brand}/spacing/spacing.json`,
 			`${__dirname}/literal/${brand}/breakpoints/breakpoints.json`,
 			`${__dirname}/literal/${brand}/sizing/sizing.json`
