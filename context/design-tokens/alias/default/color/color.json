@@ -1,0 +1,49 @@
+{
+	"color": {
+		"primary": {
+			"universal-dark-blue": {
+				"value": "{color.blue.900}"
+			},
+			"medium-blue": {
+				"value": "{color.blue.400}"
+			},
+			"grey-blue-light-1": {
+				"value": "{color.blue.100}"
+			},
+			"grey-blue-light-2": {
+				"value": "{color.blue.200}"
+			},
+			"black": {
+				"value": "{color.black}"
+			},
+			"white": {
+				"value": "{color.white}"
+			}
+		},
+		"information": {
+			"red": {
+				"value": "#C40606"
+			},
+			"orange": {
+				"value": "#F58220"
+			},
+			"blue": {
+				"value": "{color.blue.700"
+			},
+			"green": {
+				"value": "#00A69D"
+			}
+		},
+		"interaction": {
+			"hover": {
+				"value": "{color.blue.400}"
+			},
+			"visited": {
+				"value": "#A345C9"
+			},
+			"focus": {
+				"value": "#FFCC00"
+			}
+		}
+	}
+}

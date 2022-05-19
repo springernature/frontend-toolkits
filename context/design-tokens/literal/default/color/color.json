@@ -38,49 +38,26 @@
 				"value": "#222222"
 			}
 		},
-		"primary": {
-			"universal-dark-blue": {
-				"value": "#01324B"
-			},
-			"medium-blue": {
-				"value": "#025E8D"
-			},
-			"grey-blue-light-1": {
+		"blue": {
+			"100": {
+				"name": "blue-100",
 				"value": "#EBF1F5"
 			},
-			"grey-blue-light-2": {
+			"200": {
+				"name": "blue-200",
 				"value": "#CEDBE0"
 			},
-			"black": {
-				"value": "{color.black}"
-			},
-			"white": {
-				"value": "{color.white}"
-			}
-		},
-		"information": {
-			"red": {
-				"value": "#C40606"
-			},
-			"orange": {
-				"value": "#F58220"
-			},
-			"blue": {
-				"value": "#003F8D"
-			},
-			"green": {
-				"value": "#00A69D"
-			}
-		},
-		"interaction": {
-			"hover": {
+			"400": {
+				"name": "blue-600",
 				"value": "#025E8D"
 			},
-			"visited": {
-				"value": "#A345C9"
+			"700": {
+				"name": "blue-700",
+				"value": "#003F8D"
 			},
-			"focus": {
-				"value": "#FFCC00"
+			"900": {
+				"name": "blue-900",
+				"value": "#01324B"
 			}
 		}
 	}
