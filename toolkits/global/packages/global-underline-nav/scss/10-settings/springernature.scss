@@ -8,4 +8,8 @@
 // Default setting
 @import 'default';
 
+$underline-nav--border-bottom: 1px solid color('grey-mid1');
 
+$underline-nav--link-color: color('medium-blue');
+$underline-nav--current-link-color: color('grey-dark1');
+$underline-nav--hover-link-color: color('medium-blue');
