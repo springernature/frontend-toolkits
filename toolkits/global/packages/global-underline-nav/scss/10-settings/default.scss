@@ -5,8 +5,18 @@
  *
  */
 
-$c-underline-nav--border-bottom: 1px solid greyscale(80);
+$underline-nav--border-bottom: 1px solid greyscale(80);
 
-$c-underline-nav--nav-link-padding: spacing(8) spacing(16);
+$underline-nav--link-padding: spacing(8) spacing(16);
+$underline-nav--link-border-width: 3px;
+$underline-nav--link-color: mediumblue;
+$underline-nav--link-line-height: 1.33;
+$underline-nav--link-font-size: $context--font-size-md;
+$underline-nav--link-font-weight: $context--font-weight-normal;
+$underline-nav--link-font-family: $context--font-family-sans;
 
-$c-underline-nav--nav-link-color: #003f8d;
+$underline-nav--current-link-color: greyscale(40);
+$underline-nav--current-border-color: currentColor;
+
+$underline-nav--hover-link-color: mediumblue;
+$underline-nav--hover-border-color: currentColor;

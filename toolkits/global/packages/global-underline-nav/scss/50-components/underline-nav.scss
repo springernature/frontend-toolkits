@@ -1,32 +1,37 @@
 .c-underline-nav {
 	@include u-list-reset;
 	display: flex;
-	border-bottom: $c-underline-nav--border-bottom
+	border-bottom: $underline-nav--border-bottom;
 }
-.c-underline-nav__item { }
 
 .c-underline-nav__link {
 	display: block;
-	padding: $c-underline-nav--nav-link-padding;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight:400;
-	color: $c-underline-nav--nav-link-color; /* medium-blue */
+	padding: $underline-nav--link-padding;
+	border-bottom: $underline-nav--link-border-width solid transparent;
+	color: $underline-nav--link-color;
+	line-height: $underline-nav--link-line-height;
+	font-size: $underline-nav--link-font-size;
+	font-weight: $underline-nav--link-font-weight;
+	font-family: $underline-nav--link-font-family;
 	text-decoration: none;
-	font-family: sans-serif;
-	border-bottom: 3px solid transparent;
+
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: $underline-nav--link-color;
+	}
+
+	&:hover,
+	&[aria-current="true"]:hover {
+		color: $underline-nav--hover-link-color;
+		border-bottom-color: $underline-nav--hover-border-color;
+	}
 }
-.c-underline-nav__link:focus {
-	text-decoration: none;
-}
-.c-underline-nav__link:visited {
-	color: #025E8D; /* medium-blue */
-}
-.c-underline-nav__link[aria-current="true"] {
-	color: #555555; /* grey-dark1 */
-	border-bottom-color: #555555; /* grey-dark1 */
-}
-.c-underline-nav__link:hover {
-	color: #025E8D; /* medium-blue */
-	border-bottom-color: #025E8D; /* medium-blue */
+
+.c-underline-nav__link[aria-current="true"],
+.c-underline-nav__link[aria-current="true"]:visited {
+	color: $underline-nav--current-link-color;
+	border-bottom-color: $underline-nav--current-border-color;
 }
