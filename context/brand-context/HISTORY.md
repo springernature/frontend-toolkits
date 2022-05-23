@@ -1,4 +1,6 @@
 # History
+## 21.1.1 (2022-05-23)
+    * Left aligns basic lists in the springer context
 ## 21.1.0 (2022-05-10)
     * Adds a new icon for the use of expanding images
     
