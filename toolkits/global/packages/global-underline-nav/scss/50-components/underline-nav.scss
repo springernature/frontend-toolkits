@@ -30,6 +30,10 @@
 	}
 }
 
+.c-underline-nav__link[aria-current="true"] {
+	font-weight: $underline-nav--current-link-font-weight;
+}
+
 .c-underline-nav__link[aria-current="true"],
 .c-underline-nav__link[aria-current="true"]:visited {
 	color: $underline-nav--current-link-color;

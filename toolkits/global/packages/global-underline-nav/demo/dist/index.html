@@ -669,6 +669,10 @@ body {
   border-bottom-color: currentColor;
 }
 
+.c-underline-nav__link[aria-current=true] {
+  font-weight: 700;
+}
+
 .c-underline-nav__link[aria-current=true],
 .c-underline-nav__link[aria-current=true]:visited {
   color: #666666;
@@ -684,12 +688,10 @@ body {
 	</head>
 	<body style="padding:2%">
 		<main class="u-container">
-  	<nav>
-  		<ul class="c-underline-nav">
-  				<li class="c-underline-nav__item"><a href="link1" class="c-underline-nav__link" aria-current="true">Item 1</a></li>
-  				<li class="c-underline-nav__item"><a href="link2" class="c-underline-nav__link">Item 2</a></li>
-  		</ul>
-  	</nav>
+  	<ul class="c-underline-nav">
+  			<li class="c-underline-nav__item"><a href="link1" class="c-underline-nav__link" aria-current="true">Item 1</a></li>
+  			<li class="c-underline-nav__item"><a href="link2" class="c-underline-nav__link">Item 2</a></li>
+  	</ul>
 </main>
 
 		<script>
