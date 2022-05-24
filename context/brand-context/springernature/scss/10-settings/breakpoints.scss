@@ -4,8 +4,9 @@
  */
 
 $context--breakpoints: (
-	'tablet-width': 480px,
-	'tablet-wide-width': 768px,
-	'wide-layout': 876px,
-	'desktop-width': 1024px
+	'xs': 480px, // formly  'tablet-width'
+	'sm': 768px, // formly 'tablet-wide-width'
+	'md': 876px, // formly 'wide-layout'
+	'lg': 1024px, // formly 'desktop-width'
+	'xl': 1220px
 );
