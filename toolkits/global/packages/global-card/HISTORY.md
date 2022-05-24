@@ -1,4 +1,6 @@
 # History
+## 8.2.1 (2022-05-17)
+    * Corrected padding for shaped cards with no images
 ## 8.2.0 (2022-04-04)
     * Title optional
     * White background-color for springer

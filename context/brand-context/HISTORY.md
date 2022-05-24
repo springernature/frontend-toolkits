@@ -1,4 +1,23 @@
 # History
+## 21.1.1 (2022-05-23)
+    * Left aligns basic lists in the springer context
+## 21.1.0 (2022-05-10)
+    * Adds a new icon for the use of expanding images
+    
+## 21.0.4 (2022-05-04)
+    * uses base font size for springer text furniture
+    
+## 21.0.3 (2022-04-29)
+    * BUG
+      * removes de-duplication of creating an `_index.scss` file.
+      
+## 21.0.2 (2022-04-29)
+    * BUG
+      * manually removes `_index.scss` file from the `_index.scss` file for each brands generated tokens.
+      
+## 21.0.1 (2022-04-29)
+    * BUG
+      * fixes issue with compiled Design Tokens having an missing opening curly brace
 
 ## 21.0.0 (2022-04-27)
     * FEATURE:
