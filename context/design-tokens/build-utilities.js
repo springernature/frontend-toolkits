@@ -1,9 +1,5 @@
 const StyleDictionary = require('style-dictionary');
-
-
-// impot the module.exports array from the utilities.js file
 var utilities = require('./config/utilities.js');
-
 
 StyleDictionary.registerFormat({
 	name: 'utilityClass',

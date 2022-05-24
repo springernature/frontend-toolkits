@@ -1,7 +1,3 @@
-// create a module.export with an array of objects
-// each object has a name and value
-//
-
 module.exports = [
 	{
 		"name": "padding",
