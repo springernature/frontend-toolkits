@@ -193,8 +193,7 @@ legend+.c-forms__field.c-forms__label {
 	// is it this one?
 	margin-left: calc((#{$global-forms-input-font-size} / 4) + #{$global-forms-indent-border-width});
 	// this doesn't work
-	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-form--indent-border-color;
-	// is it this one?
+	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-color; // is it this one?
 	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-width;
 	padding-top: $global-forms-field-stack-spacing;
 	padding-left: $global-forms-field-stack-spacing;
