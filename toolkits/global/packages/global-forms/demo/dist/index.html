@@ -650,6 +650,10 @@ body {
   position: relative;
 }
 
+.c-forms__field {
+  font-size: 1rem;
+}
+
 .c-forms__field small {
   font-size: inherit;
 }
@@ -660,10 +664,9 @@ body {
   border: 0;
 }
 
-.c-forms__fieldset,
-.c-forms__legend,
+.c-forms__input,
 .c-forms__error-summary {
-  max-width: 90ch;
+  max-width: 70ch;
 }
 
 .c-forms__field + .c-forms__field {
@@ -671,20 +674,21 @@ body {
 }
 
 .c-forms__input {
+  box-sizing: border-box;
   border: 1px solid;
   width: 100%;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
-  background-color: #fff;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  background-color: #ffffff;
 }
 
 * + .c-forms__input,
 * + .c-forms__input-container {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .c-forms__input:focus {
-  outline: 3px solid #028ace;
+  outline: 3px solid #025e8d;
 }
 
 .c-forms__input[invalid] {
@@ -697,13 +701,13 @@ body {
 }
 
 .c-forms__label {
-  font-weight: bold;
+  font-weight: 700;
+  color: #000000;
 }
 
 .c-forms__hint {
-  font-weight: normal;
-  color: #666;
-  margin-top: 0.25rem;
+  font-weight: 400;
+  margin-top: 0.125rem;
 }
 
 .c-forms__error {
@@ -712,7 +716,7 @@ body {
 
 label + .c-forms__error,
 .c-forms__error + label {
-  margin-top: 0.25rem;
+  margin-top: 0.125rem;
 }
 
 .c-forms__error .c-forms__icon {
@@ -742,6 +746,7 @@ label + .c-forms__error,
 
 .c-forms__input--radio,
 .c-forms__input--checkbox {
+  /* hide visually, not to assistive tech */
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -770,16 +775,16 @@ legend + .c-forms__field.c-forms__label {
   content: "";
   width: 1rem;
   height: 1rem;
-  border: 2px solid #666;
-  margin-right: 0.5rem;
+  border: 1px solid;
+  margin-right: 0.25rem;
 }
 
 :checked + .c-forms__label--inline::before {
-  border-color: #01324b;
+  border-color: #000000;
 }
 
 :focus + .c-forms__label--inline::before {
-  box-shadow: 0 0 0 3px #028ace;
+  box-shadow: 0 0 0 3px #025e8d;
 }
 
 .c-forms__label--radio::before {
@@ -802,7 +807,7 @@ legend + .c-forms__field.c-forms__label {
 }
 
 :checked + .c-forms__label--checkbox::before {
-  background-color: #01324b;
+  background-color: #c40606;
 }
 
 [invalid] + .c-forms__label--checkbox::before {
@@ -810,11 +815,12 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__radio-fields {
-  margin-top: 0.5rem;
-  margin-left: calc((1rem / 4) + 2px);
+  margin-top: 0.25rem;
+  margin-left: calc((1rem / 4) + 8px);
   border-left: calc(1rem / 2) solid #dadada;
+  border-left: calc(1rem / 2) solid 8px;
   padding-top: 1.5rem;
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
   display: none;
 }
 
@@ -823,13 +829,13 @@ legend + .c-forms__field.c-forms__label {
 }
 
 .c-forms__error-summary {
+  box-sizing: border-box;
   display: flex;
   gap: 1rem;
   padding: 1rem;
   color: #c40606;
   border: 1px solid #dadada;
   border-bottom: 4px solid #c40606;
-  box-sizing: border-box;
 }
 
 .c-forms__error-summary .c-forms__icon svg {
