@@ -16,7 +16,8 @@
 	position: relative;
 }
 
-.c-forms__field {
+.c-forms__field,
+.c-forms__error-summary {
 	font-size: $global-forms-input-font-size;
 }
 
@@ -31,7 +32,8 @@
 }
 
 .c-forms__input,
-.c-forms__error-summary {
+.c-forms__error-summary,
+.c-forms__input-container {
 	max-width: $global-forms-input-width-maximum;
 }
 
@@ -73,19 +75,16 @@
 
 .c-forms__hint {
 	font-weight: $global-forms-input-font-weight;
-	margin-top: #{$global-forms-input-stack-spacing / 2};
+	margin-top: $global-forms-input-stack-spacing;
 }
 
 .c-forms__error {
-	// this one doesn't work
-	// color: $global-form--color-error;
-	// this one does - is the name correct?
 	color: $global-forms-message-color-error
 }
 
 label+.c-forms__error,
 .c-forms__error+label {
-	margin-top: #{$global-forms-input-stack-spacing / 2};
+	margin-top: $global-forms-input-stack-spacing;
 }
 
 .c-forms__error .c-forms__icon {
@@ -131,7 +130,7 @@ label+.c-forms__error,
 
 .c-forms__field.c-forms__label+.c-forms__field.c-forms__label,
 legend+.c-forms__field.c-forms__label {
-	margin-top: #{$global-forms-field-stack-spacing / 2};
+	margin-top: $global-forms-field-stack-spacing;
 }
 
 .c-forms__label--inline {
@@ -149,9 +148,6 @@ legend+.c-forms__field.c-forms__label {
 }
 
 :checked+.c-forms__label--inline::before {
-	// this one doesn't work
-	// border-color: $global-form--color-checked;
-	// is this what you're after?
 	border-color: $global-forms-input-border-color-resting;
 }
 
@@ -172,14 +168,11 @@ legend+.c-forms__field.c-forms__label {
 }
 
 :checked+.c-forms__label--checkbox::before {
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+	background-color: $global-forms-checkbox-checked-background-color;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" fill="none" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
 	background-size: 100%;
 	background-repeat: none;
 	background-position: center;
-}
-
-:checked+.c-forms__label--checkbox::before {
-	background-color: $global-forms-message-color-error;
 }
 
 [invalid]+.c-forms__label--checkbox::before {
@@ -188,13 +181,8 @@ legend+.c-forms__field.c-forms__label {
 
 .c-forms__radio-fields {
 	margin-top: $global-forms-input-stack-spacing;
-	// this doesn't work
-	// margin-left: calc((#{$global-forms-input-font-size} / 4) + #{$global-form--border-width-thick});
-	// is it this one?
-	margin-left: calc((#{$global-forms-input-font-size} / 4) + #{$global-forms-indent-border-width});
-	// this doesn't work
-	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-color; // is it this one?
-	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-width;
+	margin-left: calc(#{$global-forms-input-font-size} / 4);
+	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-color;
 	padding-top: $global-forms-field-stack-spacing;
 	padding-left: $global-forms-field-stack-spacing;
 	display: none;

@@ -650,7 +650,8 @@ body {
   position: relative;
 }
 
-.c-forms__field {
+.c-forms__field,
+.c-forms__error-summary {
   font-size: 1rem;
 }
 
@@ -665,7 +666,8 @@ body {
 }
 
 .c-forms__input,
-.c-forms__error-summary {
+.c-forms__error-summary,
+.c-forms__input-container {
   max-width: 70ch;
 }
 
@@ -707,7 +709,7 @@ body {
 
 .c-forms__hint {
   font-weight: 400;
-  margin-top: 0.125rem;
+  margin-top: 0.25rem;
 }
 
 .c-forms__error {
@@ -716,7 +718,7 @@ body {
 
 label + .c-forms__error,
 .c-forms__error + label {
-  margin-top: 0.125rem;
+  margin-top: 0.25rem;
 }
 
 .c-forms__error .c-forms__icon {
@@ -762,7 +764,7 @@ label + .c-forms__error,
 
 .c-forms__field.c-forms__label + .c-forms__field.c-forms__label,
 legend + .c-forms__field.c-forms__label {
-  margin-top: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .c-forms__label--inline {
@@ -800,14 +802,11 @@ legend + .c-forms__field.c-forms__label {
 }
 
 :checked + .c-forms__label--checkbox::before {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+  background-color: #01324b;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" fill="none" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
   background-size: 100%;
   background-repeat: none;
   background-position: center;
-}
-
-:checked + .c-forms__label--checkbox::before {
-  background-color: #c40606;
 }
 
 [invalid] + .c-forms__label--checkbox::before {
@@ -816,9 +815,8 @@ legend + .c-forms__field.c-forms__label {
 
 .c-forms__radio-fields {
   margin-top: 0.25rem;
-  margin-left: calc((1rem / 4) + 8px);
+  margin-left: calc(1rem / 4);
   border-left: calc(1rem / 2) solid #dadada;
-  border-left: calc(1rem / 2) solid 8px;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   display: none;
