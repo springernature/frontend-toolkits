@@ -31,7 +31,7 @@
 			{
 				"noBlockLink": true,
 				"image": {
-					"src": "https://picsum.photos/400/300",
+					"src": "https://picsum.photos/200/200",
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
