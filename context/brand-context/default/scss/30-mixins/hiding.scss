@@ -42,3 +42,9 @@
 	direction: ltr;
 	vertical-align: bottom;
 }
+
+@mixin u-hide-print {
+	@media print {
+		display: none;
+	}
+}
