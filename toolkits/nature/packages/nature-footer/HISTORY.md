@@ -1,5 +1,11 @@
 # History
 
+## 3.0.0 (2022-06-06)
+    BREAKING:
+    * Removes dependency on utility classnames
+    * Removes dependency on Media component
+    * Bumps Brand Context dependency to version 22.0.0
+
 ## 2.1.2 (2022-03-23)
     * BUG: fix broken links to view and demo folders in docs
 
