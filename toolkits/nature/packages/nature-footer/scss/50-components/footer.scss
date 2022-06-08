@@ -8,6 +8,7 @@
 
 .c-footer__container {
 	@include u-container;
+	@include u-hide-print;
 }
 
 .c-footer a {
