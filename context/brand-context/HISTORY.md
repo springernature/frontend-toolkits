@@ -1,4 +1,6 @@
 # History
+## 22.1.0 (2022-06-08)
+      * Adds u-hide-print mixin 
 ## 22.0.0 (2022-05-24)
     * BREAKING
       * Updates SpringerNature brand-context breakpoints keys to match default brand-context 
