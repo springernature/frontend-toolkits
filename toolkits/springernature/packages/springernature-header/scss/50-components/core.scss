@@ -5,7 +5,7 @@
 	color: #7d7d7d;
 	min-height: $header--header-height;
 	border-bottom: 5px solid #3c9cd7;
-	padding: 20px 0;
+	padding: spacing(24) 0;
 	width: 100%;
 	top: 0;
 }
@@ -13,8 +13,8 @@
 .c-header__inner {
 	max-width: $header--content-width;
 	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: spacing(24);
+	padding-right: spacing(24);
 }
 
 .c-header__logo-link {
@@ -24,12 +24,16 @@
 
 .c-header__site-logo {
 	max-height: 50px;
-	margin: 0 30px 10px 0;
+	margin: 0 spacing(32) 0 0;
+	@include media-query('sm', 'max') {
+		margin-bottom: spacing(16);
+	}
 }
 
 .c-header__journal-logo {
-	margin-bottom: 10px;
 	max-width: 323px;
+	@include media-query('sm', 'max') {
+		margin-bottom: spacing(16);
 }
 
 .c-header__journal-title {
