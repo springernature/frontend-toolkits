@@ -1,6 +1,8 @@
 # History
+## 22.2.0 (2022-06-10)
+    * BUG: Springer Nature brand-context media queires were using old breakpoint keys instead of news ones introduced in v22.0.0 
 ## 22.1.0 (2022-06-08)
-      * Adds u-hide-print mixin 
+    * Adds u-hide-print mixin 
 ## 22.0.0 (2022-05-24)
     * BREAKING
       * Updates SpringerNature brand-context breakpoints keys to match default brand-context 
