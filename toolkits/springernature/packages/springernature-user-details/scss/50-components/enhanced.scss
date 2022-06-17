@@ -32,7 +32,7 @@
 
 		&:hover {
 			background-color: map-get($context--colors, universal-blue);
-			color: map-get($context--colors, 'white');
+			color: color('white');
 		}
 	}
 
