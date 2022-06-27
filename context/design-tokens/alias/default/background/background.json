@@ -6,24 +6,28 @@
 		"container": {
 			"value": "{color.white}"
 		},
+		"container-inverted": {
+			"value": "{color.grayscale.800}"
+		},
+	}
 		"facet": {
-			"value": "{color.grayscale.300}"
+		"value": "{color.grayscale.300}"
+	},
+	"footer": {
+		"value": "{color.primary.universal-dark-blue}"
+	},
+	"table": {
+		"heading": {
+			"value": "{color.grayscale.600}"
 		},
-		"footer": {
-			"value": "{color.primary.universal-dark-blue}"
-		},
-		"table": {
-			"heading": {
-				"value": "{color.grayscale.600}"
+		"row": {
+			"odd": {
+				"value": "{color.primary.grey-blue-light-2}"
 			},
-			"row": {
-				"odd": {
-					"value": "{color.primary.grey-blue-light-2}"
-				},
-				"even": {
-					"value": "{color.primary.grey-blue-light-1}"
-				}
+			"even": {
+				"value": "{color.primary.grey-blue-light-1}"
 			}
 		}
 	}
+}
 }

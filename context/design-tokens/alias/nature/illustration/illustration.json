@@ -12,14 +12,6 @@
 			"003": {
 				"value": "{nature-color.gunmetal.300}",
 				"description": "background color for illustrations"
-			},
-			"004": {
-				"value": "{color.grayscale.500}",
-				"description": "background color for illustrations"
-			},
-			"005": {
-				"value": "{color.grayscale.400}",
-				"description": "background color for illustrations"
 			}
 		}
 	}
