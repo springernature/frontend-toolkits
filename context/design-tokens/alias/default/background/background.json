@@ -8,9 +8,9 @@
 		},
 		"container-inverted": {
 			"value": "{color.grayscale.800}"
-		},
-	}
-		"facet": {
+		}
+	},
+	"facet": {
 		"value": "{color.grayscale.300}"
 	},
 	"footer": {
@@ -29,5 +29,4 @@
 			}
 		}
 	}
-}
 }
