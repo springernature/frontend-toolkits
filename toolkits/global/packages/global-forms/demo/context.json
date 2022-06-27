@@ -12,7 +12,7 @@
 				},
 				{
 					"id": "checkbox-terms-error",
-					"error": "You must agree with us!"
+					"error": "You must agree to the terms!"
 				}
 			]
 		},
@@ -201,7 +201,7 @@
 					{
 						"type": "checkbox",
 						"label": "Agree to our terms (with error)",
-						"error": "You must agree with us!",
+						"error": "You must agree to the terms before continuing.",
 						"hint": "You should have read these. Read them, then agree to them.",
 						"id": "checkbox-terms-error",
 						"name": "checkbox-terms-error"

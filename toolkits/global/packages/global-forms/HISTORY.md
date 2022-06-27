@@ -1,5 +1,11 @@
 # History
 
+## 5.0.0 (2022-06-27)
+    * BREAKING:
+        * Form fields now available as a suite of templates/partials
+        * Major changes to styling and styling API
+        * Design tokens support
+
 ## 4.0.1 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
