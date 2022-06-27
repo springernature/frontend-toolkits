@@ -3,6 +3,7 @@
     		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
 		</script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/nature-section-heading</title>
 		<style>
 			@charset "UTF-8";
@@ -1257,7 +1258,8 @@ p:empty {
 .c-section-heading {
   border-top: 5px solid black;
   border-bottom: 1px solid black;
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-bottom: 24px;
   line-height: 1.4;
 }
@@ -1272,6 +1274,7 @@ p:empty {
 
 .c-section-heading--no-bt {
   border-top: 0;
+  padding-top: 0;
 }
 
 .c-section-heading__link {
@@ -1287,32 +1290,47 @@ p:empty {
 }
 
 .c-section-heading__icon {
-  fill: currentColor;
-  transform: translate(0, 0);
-  display: inline-block;
-  vertical-align: text-top;
-  width: 1.25rem;
-  height: 1.25rem;
+  margin-left: 4px;
 }
 		</style>
 	</head>
 	<body style="padding:2%">
 		<div>
-	<div class="c-section-heading">
+	<div class="c-section-heading ">
 		<h2>Heading Text</h2>
-	</div>	<p>The ambitious observatory has arrived at its home — near a gravitationally stable spot called L2 — for a premier view of the Universe.</p>
+	</div>
+	<p>The ambitious observatory has arrived at its home — near a gravitationally stable spot called L2 — for a premier view of the Universe.</p>
 
-	<div class="c-section-heading">
+	<div class="c-section-heading ">
 		<h2>
-			<a href="http://www.example.com" class="c-section-heading__link">
-				Heading Text With Link
-				<svg class="c-section-heading__icon" aria-hidden="true" focusable="false" height="20" width="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-					<path d="m4.08573416 5.70052374 2.48162731-2.4816273c.39282216-.39282216 1.02197315-.40056173 1.40306523-.01946965.39113012.39113012.3914806 1.02492687-.00014045 1.41654791l-4.17620791 4.17620792c-.39120769.39120768-1.02508144.39160691-1.41671995-.0000316l-4.17639421-4.1763942c-.39122513-.39122514-.39767006-1.01908149-.01657797-1.40017357.39113012-.39113012 1.02337105-.3930364 1.41951348.00310603l2.48183447 2.48183446.99770587 1.01367533z" transform="matrix(0 -1 1 0 2.081146 11.085734)"></path>
+			<a href="https://www.example.com" class="c-section-heading__link">
+				Heading text with link
+				<svg class="c-section-heading__icon" aria-hidden="true" focusable="false" height="16" width="16">
+					<use xlink:href="../../img/chevron-right.svg#i-icon-chevron-right"></use>
 				</svg>
 			</a>
 		</h2>
-	</div>	<p>People abandoned thriving cities in Mesopotamia, the Indus Valley and farther afield at about the same time as a decades-long drought gripped parts of the planet.</p>
+	</div>
+	<p>People abandoned thriving cities in Mesopotamia, the Indus Valley and farther afield at about the same time as a decades-long drought gripped parts of the planet.</p>
+
+	<div class="c-section-heading c-section-heading--no-bt">
+		<h2>Heading text with no border</h2>
+	</div>
+	<p>People abandoned thriving cities in Mesopotamia, the Indus Valley and farther afield at about the same time as a decades-long drought gripped parts of the planet.</p>
+
+	<div class="c-section-heading c-section-heading--no-bt">
+		<h2>
+			<a href="https://www.example.com" class="c-section-heading__link">
+				Heading text with link and no border
+				<svg class="c-section-heading__icon" aria-hidden="true" focusable="false" height="16" width="16">
+					<use xlink:href="../../img/chevron-right.svg#i-icon-chevron-right"></use>
+				</svg>
+			</a>
+		</h2>
+	</div>
+	<p>People abandoned thriving cities in Mesopotamia, the Indus Valley and farther afield at about the same time as a decades-long drought gripped parts of the planet.</p>
 </div>
+
 		<script>
 			// no JS found for package
 		</script>
