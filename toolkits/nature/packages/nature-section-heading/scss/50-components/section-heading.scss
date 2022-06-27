@@ -28,5 +28,5 @@
 }
 
 .c-section-heading__icon {
-	@include u-icon($section-heading--icon-size, $section-heading--icon-size);
+	margin-left: $section-heading--icon-spacing;
 }
