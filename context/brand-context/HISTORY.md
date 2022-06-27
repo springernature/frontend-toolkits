@@ -1,27 +1,32 @@
 # History
+## 23.0.0 (2022-06-10)
+    * UPDATES:
+      * updates alias color tokens to match recent updates in Sketch.
+    * BREAKING:
+      * removes options 4 and 5 of nature illustration colours available.
 ## 22.2.0 (2022-06-10)
-    * BUG: Springer Nature brand-context media queires were using old breakpoint keys instead of news ones introduced in v22.0.0 
+    * BUG: Springer Nature brand-context media queires were using old breakpoint keys instead of news ones introduced in v22.0.0
 ## 22.1.0 (2022-06-08)
-    * Adds u-hide-print mixin 
+    * Adds u-hide-print mixin
 ## 22.0.0 (2022-05-24)
     * BREAKING
-      * Updates SpringerNature brand-context breakpoints keys to match default brand-context 
+      * Updates SpringerNature brand-context breakpoints keys to match default brand-context
 ## 21.1.1 (2022-05-23)
     * Left aligns basic lists in the springer context
 ## 21.1.0 (2022-05-10)
     * Adds a new icon for the use of expanding images
-    
+
 ## 21.0.4 (2022-05-04)
     * uses base font size for springer text furniture
-    
+
 ## 21.0.3 (2022-04-29)
     * BUG
       * removes de-duplication of creating an `_index.scss` file.
-      
+
 ## 21.0.2 (2022-04-29)
     * BUG
       * manually removes `_index.scss` file from the `_index.scss` file for each brands generated tokens.
-      
+
 ## 21.0.1 (2022-04-29)
     * BUG
       * fixes issue with compiled Design Tokens having an missing opening curly brace
