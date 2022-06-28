@@ -20,13 +20,14 @@
 		"heading": {
 			"value": "{color.grayscale.600}"
 		},
-		"row": {
-			"odd": {
-				"value": "{color.primary.grey-blue-light-2}"
-			},
-			"even": {
-				"value": "{color.primary.grey-blue-light-1}"
-			}
+		"table-heading": {
+			"value": "{color.grayscale.600}"
+		},
+		"table-row-odd": {
+			"value": "{color.primary.grey-blue-light-2}"
+		},
+		"table-row-even": {
+			"value": "{color.primary.grey-blue-light-1}"
 		}
 	}
 }
