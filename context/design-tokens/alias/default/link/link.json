@@ -7,10 +7,10 @@
 			"value": "{color.primary.universal-dark-blue}"
 		},
 		"visited": {
-			"value": "{color.interaction.visited}"
+			"value": "{color.primary.universal-dark-blue}"
 		},
 		"focus": {
-			"value": "{color.interaction.focus}"
+			"value": "{color.primary.bright-blue}"
 		}
 	}
 }

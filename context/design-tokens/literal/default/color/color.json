@@ -45,6 +45,9 @@
 			"medium-blue": {
 				"value": "#025E8D"
 			},
+			"bright-blue": {
+				"value": "#0088CC"
+			},
 			"grey-blue-light-1": {
 				"value": "#EBF1F5"
 			},
@@ -80,7 +83,7 @@
 				"value": "#A345C9"
 			},
 			"focus": {
-				"value": "#FFCC00"
+				"value": "{color.primary.bright-blue}"
 			}
 		}
 	}
