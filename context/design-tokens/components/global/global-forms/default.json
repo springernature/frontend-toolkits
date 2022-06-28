@@ -10,7 +10,7 @@
 		"heading": {
 			"font": {
 				"family": {
-					"value": "{typography.heading.level-1.default.font-size}"
+					"value": "{font-family.serif}"
 				},
 				"size": {
 					"value": "{font-size.900}"

@@ -42,7 +42,7 @@ function getStyleDictionaryConfig(brand, components) {
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
-							"outputReferences": true,
+							"outputReferences": false,
 							"showFileHeader": false
 						}
 					}
