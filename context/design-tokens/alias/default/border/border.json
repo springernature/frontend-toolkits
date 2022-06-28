@@ -2,13 +2,13 @@
 	"border": {
 		"color": {
 			"primary": {
-				"value": "{color.black}"
+				"value": "{color.grayscale.800}"
 			},
 			"input": {
 				"value": "{color.grayscale.700}"
 			},
 			"button": {
-				"value": "{color.primary.medium-blue}"
+				"value": "{color.primary.universal-dark-blue}"
 			},
 			"indent": {
 				"value": "{color.grayscale.400}"
