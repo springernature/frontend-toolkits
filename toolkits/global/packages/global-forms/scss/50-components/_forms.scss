@@ -37,7 +37,7 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
-.c-forms__field+.c-forms__field {
+:is(.c-forms__field, .c-forms__fieldset) + :is(.c-forms__field, .c-forms__fieldset) {
 	margin-top: $global-forms-field-stack-spacing;
 }
 
@@ -225,4 +225,10 @@ legend+.c-forms__field.c-forms__label {
 
 .c-forms__error-summary-errors li+li {
 	margin-top: $global-forms-input-stack-spacing;
+}
+
+.c-forms__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 }
