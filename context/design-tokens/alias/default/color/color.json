@@ -7,6 +7,9 @@
 			"medium-blue": {
 				"value": "{color.blue.400}"
 			},
+			"bright-blue": {
+				"value": "{color.blue.300}"
+			},
 			"grey-blue-light-1": {
 				"value": "{color.blue.100}"
 			},

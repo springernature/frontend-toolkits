@@ -38,22 +38,18 @@
 				"value": "#222222"
 			}
 		},
-		"primary": {
-			"universal-dark-blue": {
-				"value": "#01324B"
-			},
-			"medium-blue": {
-				"value": "#025E8D"
-			},
-			"bright-blue": {
-				"value": "#0088CC"
-			},
-			"grey-blue-light-1": {
+		"blue": {
+			"100": {
+				"name": "blue-100",
 				"value": "#EBF1F5"
 			},
 			"200": {
 				"name": "blue-200",
 				"value": "#CEDBE0"
+			},
+			"300": {
+				"name": "blue-300",
+				"value": "#0088CC"
 			},
 			"400": {
 				"name": "blue-600",
@@ -63,8 +59,9 @@
 				"name": "blue-700",
 				"value": "#003F8D"
 			},
-			"focus": {
-				"value": "{color.primary.bright-blue}"
+			"900": {
+				"name": "blue-900",
+				"value": "#01324B"
 			}
 		}
 	}
