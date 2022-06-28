@@ -1,4 +1,11 @@
 # History
+
+## 24.0.0 (2022-06-28)
+    * UPDATES:
+      * adds border width design tokens
+    * BREAKING:
+      * removes exisiting relative spacing and sizing tokens
+      * creates new namespaced 'relative' and 'absolute' spacing and sizing tokens
 ## 23.0.0 (2022-06-10)
     * UPDATES:
       * updates alias color tokens to match recent updates in Sketch.
