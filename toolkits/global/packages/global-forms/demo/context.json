@@ -12,7 +12,7 @@
 				},
 				{
 					"id": "checkbox-terms-error",
-					"error": "You must agree to the terms!"
+					"error": "You must agree to the terms before continuing"
 				}
 			]
 		},
