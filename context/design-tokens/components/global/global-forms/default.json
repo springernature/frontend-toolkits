@@ -46,6 +46,11 @@
 				"value": "{text.primary}"
 			}
 		},
+		"hint": {
+			"color": {
+				"value": "{color.grayscale.600}"
+			}
+		},
 		"message": {
 			"font": {
 				"size": {
