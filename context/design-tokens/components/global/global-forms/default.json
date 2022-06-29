@@ -77,7 +77,7 @@
 		"input": {
 			"padding": {
 				"inline": {
-					"value": "{spacing.relative.400.value}"
+					"value": "{spacing.relative.200.value}"
 				},
 				"block": {
 					"value": "{spacing.relative.200.value}"

@@ -856,7 +856,7 @@ body {
   box-sizing: border-box;
   border: 1px solid;
   width: 100%;
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
   padding-block: 0.5rem;
   background-color: #ffffff;
 }
@@ -906,7 +906,7 @@ label + .c-forms__error,
 .c-forms__icon svg {
   height: 1rem;
   width: 1rem;
-  vertical-align: calc((1rem / 8) * -1);
+  vertical-align: calc((0.5rem / 8) * -1);
   overflow: visible;
   pointer-events: none;
 }
@@ -914,12 +914,12 @@ label + .c-forms__error,
 .c-forms__input--select {
   cursor: pointer;
   appearance: none;
-  padding-right: 3rem;
+  padding-right: 1.5rem;
 }
 
 .c-forms__input-container--select .c-forms__icon {
   position: absolute;
-  right: 1rem;
+  right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1007,8 +1007,8 @@ legend + .c-forms__field.c-forms__label {
 .c-forms__error-summary {
   box-sizing: border-box;
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
   color: #c40606;
   border: 1px solid #dadada;
   border-bottom: 4px solid #c40606;
@@ -1199,33 +1199,6 @@ legend + .c-forms__field.c-forms__label {
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
-					<legend class="c-forms__legend"><h2>Selects</h2></legend>
-					<div class="c-forms__field" id="select-animals-hint">
-						<label for="select-animals-hint" class="c-forms__label">
-							Animal (with hint)
-								<small class="c-forms__hint">Which is your favorite?</small>
-						</label>
-						<div class="c-forms__input-container c-forms__input-container--select">
-							<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" autocomplete="off">
-									<option value="Horse">
-										Horse
-									</option>
-									<option value="Monkey">
-										Monkey
-									</option>
-									<option value="Platypus" selected="">
-										Platypus
-									</option>
-							</select>
-							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
-								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-									<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
-								</svg>
-							</span>
-						</div>
-					</div>
-			</fieldset>
-			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Textareas</h2></legend>
 					<div class="c-forms__field" id="textarea-example">
 						<label for="textarea-example" class="c-forms__label">
@@ -1263,6 +1236,15 @@ legend + .c-forms__field.c-forms__label {
 							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</span>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</label>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>File upload</h2></legend>
+					<div class="c-forms__field" id="file-upload">
+						<label for="file-upload" class="c-forms__label">
+							Journal upload
+						</label>
+						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" autocomplete="off">
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset" role="presentation">
