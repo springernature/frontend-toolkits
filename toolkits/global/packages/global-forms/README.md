@@ -71,7 +71,9 @@ Where you do wish to include a legend, HTML is permissable, meaning you can incl
 
 (**Note:** it is valid and conforming to use heading elements inside `<legend>`s.)
 
-### Common attributes
+### Fields
+
+Fields take the `type` property to determine which of the `view/fields` they represent. This property along with `label`, `id`, and `name` should be mandatory in terms of your model.
 
 A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property of the same name on the data:
 
@@ -90,6 +92,8 @@ The `hint` property includes supplementary text under the main `<label>` text bu
 ```
 "hint": "This will be the email you signed up using"
 ```
+
+The `optional` property affects the field’s label, appending _“(optional)”_ to the label text.
 
 ### Errors
 
@@ -163,7 +167,7 @@ Radios provide _their_ choices via an `inputs` array:
 }
 ```
 
-(**Note:** the `name` property for each input must match.)
+(**Note:** the `name` property must be the same value across inputs.)
 
 Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” here) does not render as a `<label>` but as a `<legend>`.
 
