@@ -1,5 +1,7 @@
 # History
-
+## 25.0.0 (2022-06-29)
+    * UDPATES:
+      * updates generated Sass from Design Tokens
 ## 24.0.0 (2022-06-28)
     * UPDATES:
       * adds border width design tokens
