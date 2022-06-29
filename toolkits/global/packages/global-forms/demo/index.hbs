@@ -2,7 +2,9 @@
 
 <form>
 	{{#with form1}}
-		{{> errorSummary errorSummary}}
+		{{#with errorSummary}}
+			{{> errorSummary }}
+		{{/with}}
 		{{#each fieldsets}}
 			{{> fieldset }}
 		{{/each}}

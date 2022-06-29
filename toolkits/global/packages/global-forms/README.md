@@ -2,7 +2,7 @@
 
 This component comprises a number of form fields and related templates. It is designed to make constructing any variety of HTML form a relatively straightforward process. 
 
-The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. Implementations using client-side processing/validation may benefit from compiling handlebars templates in the browser.
+The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. Implementations using client-side processing/validation may benefit from compiling the form’s (handlebars) template in the browser.
 
 ## Usage
 
@@ -16,20 +16,29 @@ First, include the necessary Sass files in your project.
 @import '@springernature/global-forms/scss/50-components/forms';
 ```
 
-Then you will need to register the Handlebars partials in the `/view` folder. Compile the templates based on a data structure exemplified in the `/demo/context.json` file. Note that you will have to iterate over the data’s fieldsets, like so:
+Then you will need to register the Handlebars partials in the `/view` folder. 
+
+There are two options for rendering form fields: 
+
+1. Compile each field independently, using its respective template from the `view/fields` folder.
+2. Organize your fields into fieldsets using the data structure exemplified in `demo/context.json`. In this case, you will have to iterate over a `fieldsets` property something like this:
 
 ```
-<form>
-    {{> errorSummary errorSummary}}
-    {{#each fieldsets}}
-        {{> fieldset }}
-    {{/each}}
+<form action="some/url">
+    {{#with myFormData}}
+		{{#with errorSummary}}
+			{{> errorSummary }}
+		{{/with}}
+		{{#each fieldsets}}
+			{{> fieldset }}
+		{{/each}}
+    {{/with}}
 </form>
 ```
 
 ### Fieldsets
 
-Fieldsets are used to group fields. If you do not want to include a (visible; screen reader identifiable) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
+Fieldsets are used to group fields itemized under their `fields` property. If you do not want to include a (visible; screen reader identifiable) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
 
 ```
 "fieldsets": {
@@ -94,6 +103,10 @@ The `hint` property includes supplementary text under the main `<label>` text bu
 ```
 
 The `optional` property affects the field’s label, appending _“(optional)”_ to the label text.
+
+```
+"optional": true
+```
 
 ### Errors
 
