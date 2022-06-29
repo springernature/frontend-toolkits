@@ -1,5 +1,5 @@
-<label class="c-forms__label">
-	{{label}}
+<label for="{{id}}" class="c-forms__label">
+	{{label}}{{#if optional}} (optional){{/if}}
 	{{#if hint}}
 		<small class="c-forms__hint">{{hint}}</small>
 	{{/if}}

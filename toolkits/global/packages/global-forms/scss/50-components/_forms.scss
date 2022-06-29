@@ -66,6 +66,7 @@
 
 .c-forms__input[disabled] {
 	cursor: not-allowed;
+	border-color: $global-forms-input-border-color-disabled;
 }
 
 .c-forms__label {

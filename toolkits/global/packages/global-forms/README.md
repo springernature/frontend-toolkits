@@ -1,6 +1,8 @@
 # Global Forms
 
-This component comprises a number of form fields and related templates. It is designed to make constructing any variety of HTML form a relatively straightforward process. The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. 
+This component comprises a number of form fields and related templates. It is designed to make constructing any variety of HTML form a relatively straightforward process. 
+
+The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. Implementations using client-side processing/validation may benefit from compiling handlebars templates in the browser.
 
 ## Usage
 
@@ -14,7 +16,7 @@ First, include the necessary Sass files in your project.
 @import '@springernature/global-forms/scss/50-components/forms';
 ```
 
-Then you will need to register the Handlebars partials in the `/view` folder. Compile the forms templates based on a data structure exemplified by the `/demo/context.json` file. Note that you will have to iterate over the data’s fieldsets, like so:
+Then you will need to register the Handlebars partials in the `/view` folder. Compile the templates based on a data structure exemplified in the `/demo/context.json` file. Note that you will have to iterate over the data’s fieldsets, like so:
 
 ```
 <form>
@@ -27,7 +29,7 @@ Then you will need to register the Handlebars partials in the `/view` folder. Co
 
 ### Fieldsets
 
-Fieldsets are used to group fields. If you do not want to include a (visible) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
+Fieldsets are used to group fields. If you do not want to include a (visible; screen reader identifiable) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
 
 ```
 "fieldsets": {
@@ -52,9 +54,26 @@ Fieldsets are used to group fields. If you do not want to include a (visible) fi
 }
 ```
 
+Where you do wish to include a legend, HTML is permissable, meaning you can include a heading to reinforce the form and page structure:
+
+```
+"fieldsets": {
+    [
+        {
+            "legend": "<h2>My level 2 legend</h2>",
+            "fields": [
+                ...
+            ]
+        }
+    ]
+}
+```
+
+(**Note:** it is valid and conforming to use heading elements inside `<legend>`s.)
+
 ### Common attributes
 
-A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property on the data of the same name:
+A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property of the same name on the data:
 
 ```
 {
@@ -86,7 +105,7 @@ Each field can have an `error` property. The presence of the property indicates 
 }
 ```
 
-Errors can be summarized using a top level `errorSummary` property. Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
+Errors can be summarized using a top level `errorSummary` property (adjacent to the `fieldset` property). Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
 
 ```
 "errorSummary": {
@@ -144,7 +163,9 @@ Radios provide _their_ choices via an `inputs` array:
 }
 ```
 
-Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” here) does not render as a `<label>` but a `<legend>`.
+(**Note:** the `name` property for each input must match.)
+
+Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” here) does not render as a `<label>` but as a `<legend>`.
 
 Note that checked radios can be used to disclose additional fields. These are supplied via the `fields` property (an array). These fields can have any properties of a standard field.
 
@@ -187,5 +208,55 @@ Unlike radios, you can have a single checkbox field. If you want to supply a _se
 }
 ```
 
+### Buttons
 
+A field of `type` `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
+The `type` property for each _individual_ button corresponds to the standard `type` property. For example, here is how you would include a submit button:
 
+```
+"fields": [
+    ...
+    {
+        "type": "buttons",
+        "buttons": [
+            {
+                "type": "submit",
+                "label": "Submit",
+                "modifiers": ["primary"]
+            }
+        ]
+    }
+]
+```
+
+The `modifiers` property is an array. Each value should match one of these modifiers form the brand context:
+
+* primary
+* secondary
+* tertiary
+* contrast
+* ghost
+* xsmall
+* small
+* large
+* full-width
+
+### Datalist
+
+The text field/partial can have a `datalist` property, allowing you to implement type ahead. This takes two properties: `id` and `options` (an array):
+
+```
+"datalist": {
+    "id": "my-datalist",
+    "options": [
+        "monkey",
+        "horse",
+        "emu",
+        "platypus",
+        "cockroach",
+        "whale"
+    ]
+}
+```
+
+This builds a standard `<datalist>` element—with `<option>`s—and associates it with the input. If a `<datalist>` already exists in the markup, provide just the `id` and forego the `options` property. If you wish to implement a bespoke type ahead solution, using JavaScript, omit the `datalist` property from the field altogether.

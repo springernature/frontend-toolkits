@@ -95,6 +95,9 @@
 					},
 					"error": {
 						"value": "{state.error}"
+					},
+					"disabled": {
+						"value": "{color.grayscale.400}"
 					}
 				},
 				"width": {
