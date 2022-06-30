@@ -1073,13 +1073,13 @@ legend + .c-forms__field.c-forms__label {
 			</aside>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
-					<div class="c-forms__field" id="your-name">
+					<div class="c-forms__field">
 						<label for="your-name" class="c-forms__label">
 							Your name (simple)
 						</label>
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off">
 					</div>
-					<div class="c-forms__field" id="your-name-hint">
+					<div class="c-forms__field">
 						<label for="your-name-hint" class="c-forms__label">
 							Your name (with hint)
 								<small class="c-forms__hint">Your name is on your passport</small>
@@ -1089,7 +1089,7 @@ legend + .c-forms__field.c-forms__label {
 					<div class="c-forms__field">
 						<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 					</div>
-					<div class="c-forms__field" id="your-name-error">
+					<div class="c-forms__field">
 						<label for="your-name-error" class="c-forms__label">
 							Your name (with error)
 								<small class="c-forms__hint">Your name is on your passport</small>
@@ -1104,7 +1104,7 @@ legend + .c-forms__field.c-forms__label {
 							</small>
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" autocomplete="off">
 					</div>
-					<div class="c-forms__field" id="your-name-disabled">
+					<div class="c-forms__field">
 						<label for="your-name-disabled" class="c-forms__label">
 							Your name (disabled)
 						</label>
@@ -1113,7 +1113,7 @@ legend + .c-forms__field.c-forms__label {
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Selects</h2></legend>
-					<div class="c-forms__field" id="select-animals">
+					<div class="c-forms__field">
 						<label for="select-animals" class="c-forms__label">
 							Animal (simple)
 						</label>
@@ -1136,7 +1136,7 @@ legend + .c-forms__field.c-forms__label {
 							</span>
 						</div>
 					</div>
-					<div class="c-forms__field" id="select-animals-hint">
+					<div class="c-forms__field">
 						<label for="select-animals-hint" class="c-forms__label">
 							Animal (with hint)
 								<small class="c-forms__hint">Which is your favorite?</small>
@@ -1163,16 +1163,16 @@ legend + .c-forms__field.c-forms__label {
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
-					<div class="c-forms__field" id="radios-animals">
+					<div class="c-forms__field">
 							<fieldset class="c-forms__fieldset c-forms__field" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
 										<legend class="c-forms__label">Animal (simple)</legend>
 						
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Horse" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="animal" value="Horse" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
 									</label>
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Monkey" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="animal" value="Monkey" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
 											<fieldset class="c-forms__fieldset c-forms__radio-fields">
 													<div class="c-forms__field">
@@ -1193,7 +1193,7 @@ legend + .c-forms__field.c-forms__label {
 											</fieldset>
 									</label>
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" name="animal" value="Platypus" checked="" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="animal" value="Platypus" checked="" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
 									</label>
 							</fieldset>
@@ -1201,7 +1201,7 @@ legend + .c-forms__field.c-forms__label {
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Textareas</h2></legend>
-					<div class="c-forms__field" id="textarea-example">
+					<div class="c-forms__field">
 						<label for="textarea-example" class="c-forms__label">
 							Enter some text
 						</label>
@@ -1210,20 +1210,20 @@ legend + .c-forms__field.c-forms__label {
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
-					<div class="c-forms__field" id="checkbox-terms">
+					<div class="c-forms__field">
 						<label class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms" name="checkbox-terms" autocomplete="off">
 							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (basic)</span>
 						</label>
 					</div>
-					<div class="c-forms__field" id="checkbox-terms-hint">
+					<div class="c-forms__field">
 						<label class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" autocomplete="off">
 							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</span>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</label>
 					</div>
-					<div class="c-forms__field" id="checkbox-terms-error">
+					<div class="c-forms__field">
 							<small class="c-forms__error" id="error-checkbox-terms-error">
 								<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
 									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
@@ -1241,7 +1241,7 @@ legend + .c-forms__field.c-forms__label {
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>File upload</h2></legend>
-					<div class="c-forms__field" id="file-upload">
+					<div class="c-forms__field">
 						<label for="file-upload" class="c-forms__label">
 							Journal upload
 						</label>

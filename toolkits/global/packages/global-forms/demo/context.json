@@ -115,12 +115,14 @@
 							{
 								"label": "Horse",
 								"value": "Horse",
-								"name": "animal"
+								"name": "animal",
+								"id": "radio-horse"
 							},
 							{
 								"label": "Monkey",
 								"value": "Monkey",
 								"name": "animal",
+								"id": "radio-monkey",
 								"fields": [
 									{
 										"type": "text",
@@ -136,6 +138,7 @@
 								"label": "Platypus",
 								"value": "Platypus",
 								"name": "animal",
+								"id": "radio-platypus",
 								"checked": true
 							}
 						]
