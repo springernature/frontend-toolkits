@@ -20,7 +20,6 @@
 
 .c-hero__link {
 	@include u-link-faux-block;
-	display: block;
 	color: inherit;
 
 	&:hover,
