@@ -37,7 +37,10 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
-:is(.c-forms__field, .c-forms__fieldset) + :is(.c-forms__field, .c-forms__fieldset) {
+.c-forms__field + .c-forms__field,
+.c-forms__fieldset + .c-forms__field,
+.c-forms__field + .c-forms__fieldset,
+.c-forms__fieldset + .c-forms__fieldset {
 	margin-top: $global-forms-field-stack-spacing;
 }
 
