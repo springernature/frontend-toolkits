@@ -180,7 +180,7 @@ Radios provide _their_ choices via an `inputs` array:
 }
 ```
 
-(**Note:** the `name` property must be the same value across inputs.)
+(**Note:** the `name` property is placed at the top level and inherited by each input.)
 
 Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” here) does not render as a `<label>` but as a `<legend>`.
 

@@ -848,7 +848,10 @@ body {
   max-width: 70ch;
 }
 
-:is(.c-forms__field, .c-forms__fieldset) + :is(.c-forms__field, .c-forms__fieldset) {
+.c-forms__field + .c-forms__field,
+.c-forms__fieldset + .c-forms__field,
+.c-forms__field + .c-forms__fieldset,
+.c-forms__fieldset + .c-forms__fieldset {
   margin-top: 1.5rem;
 }
 
@@ -856,8 +859,7 @@ body {
   box-sizing: border-box;
   border: 1px solid;
   width: 100%;
-  padding-inline: 0.5rem;
-  padding-block: 0.5rem;
+  padding: 0.5rem 0.5rem;
   background-color: #ffffff;
 }
 
@@ -1165,14 +1167,14 @@ legend + .c-forms__field.c-forms__label {
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
 					<div class="c-forms__field">
 							<fieldset class="c-forms__fieldset c-forms__field" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
-										<legend class="c-forms__label">Animal (simple)</legend>
+										<legend class="c-forms__label">Animal</legend>
 						
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="animal" value="Horse" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
 									</label>
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="animal" value="Monkey" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
 											<fieldset class="c-forms__fieldset c-forms__radio-fields">
 													<div class="c-forms__field">
@@ -1193,7 +1195,7 @@ legend + .c-forms__field.c-forms__label {
 											</fieldset>
 									</label>
 									<label class="c-forms__field c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="animal" value="Platypus" checked="" autocomplete="off">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" checked="" autocomplete="off">
 										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
 									</label>
 							</fieldset>
