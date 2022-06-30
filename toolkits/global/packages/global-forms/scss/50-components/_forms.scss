@@ -48,8 +48,7 @@
 	box-sizing: border-box;
 	border: $global-forms-input-border-width solid;
 	width: 100%;
-	padding-inline: $global-forms-input-padding-inline;
-	padding-block: $global-forms-input-padding-block;
+	padding: $global-forms-input-padding-block $global-forms-input-padding-inline;
 	background-color: $global-forms-input-background-color;
 }
 

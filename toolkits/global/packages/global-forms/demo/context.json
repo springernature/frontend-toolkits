@@ -108,20 +108,18 @@
 				"fields": [
 					{
 						"type": "radios",
-						"label": "Animal (simple)",
+						"label": "Animal",
 						"id": "radios-animals",
 						"name": "radios-animals",
 						"inputs": [
 							{
 								"label": "Horse",
 								"value": "Horse",
-								"name": "animal",
 								"id": "radio-horse"
 							},
 							{
 								"label": "Monkey",
 								"value": "Monkey",
-								"name": "animal",
 								"id": "radio-monkey",
 								"fields": [
 									{
@@ -137,7 +135,6 @@
 							{
 								"label": "Platypus",
 								"value": "Platypus",
-								"name": "animal",
 								"id": "radio-platypus",
 								"checked": true
 							}
