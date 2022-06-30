@@ -6,7 +6,7 @@
 					"value": "{color.white}"
 				},
 				"fill": {
-					"value": "{color.black}"
+					"value": "{color.primary.universal-dark-blue}"
 				}
 			}
 		},

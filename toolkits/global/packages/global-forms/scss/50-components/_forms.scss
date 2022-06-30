@@ -47,9 +47,11 @@
 .c-forms__input {
 	box-sizing: border-box;
 	border: $global-forms-input-border-width solid;
+	color: $global-forms-input-font-color;
 	width: 100%;
 	padding: $global-forms-input-padding-block $global-forms-input-padding-inline;
 	background-color: $global-forms-input-background-color;
+	font-weight: $global-forms-input-font-weight;
 }
 
 *+.c-forms__input,
@@ -72,12 +74,13 @@
 }
 
 .c-forms__label {
+	font-size: $global-forms-label-font-size;
 	font-weight: $global-forms-label-font-weight;
 	color: $global-forms-label-color;
 }
 
 .c-forms__hint {
-	font-weight: $global-forms-input-font-weight;
+	font-weight: $global-forms-hint-font-weight;
 	margin-top: $global-forms-input-stack-spacing;
 	color: $global-forms-hint-color;
 }
@@ -96,8 +99,8 @@ label+.c-forms__error,
 }
 
 .c-forms__icon svg {
-	height: $global-forms-input-font-size;
-	width: $global-forms-input-font-size;
+	height: $global-forms-message-icon-size;
+	width: $global-forms-message-icon-size;
 	vertical-align: calc((#{$global-forms-input-padding-inline} / 8) * -1);
 	overflow: visible;
 	pointer-events: none;
@@ -145,10 +148,10 @@ legend+.c-forms__field.c-forms__label {
 
 .c-forms__label--inline::before {
 	content: '';
-	width: $global-forms-input-font-size;
-	height: $global-forms-input-font-size;
+	width: $global-forms-checkbox-size;
+	height: $global-forms-checkbox-size;
 	border: #{calc($global-forms-input-border-width)} solid;
-	margin-right: $global-forms-input-stack-spacing;
+	margin-right: $global-forms-checkbox-spacing;
 }
 
 :checked+.c-forms__label--inline::before {
@@ -167,29 +170,41 @@ legend+.c-forms__field.c-forms__label {
 	border-radius: 0.125em;
 }
 
+[invalid]+.c-forms__label--checkbox::before {
+	border-color: $global-forms-message-color-error;
+}
+
 :checked+.c-forms__label--radio::before {
-	background: radial-gradient(#{$global-forms-checkbox-checked-background-color} 0%, #{$global-forms-checkbox-checked-background-color} 40%, #fff 40%);
+	background: radial-gradient(#{$global-forms-checkbox-checked-icon-fill} 0%, #{$global-forms-checkbox-checked-icon-fill} 40%, #fff 40%);
 }
 
 :checked+.c-forms__label--checkbox::before {
-	background-color: $global-forms-checkbox-checked-background-color;
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" fill="none" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+	background-color: $global-forms-checkbox-checked-icon-fill;
+	background-image: url('#{$global-forms-checkbox-checked-icon-data-uri}');
+	border-color: $global-forms-checkbox-checked-icon-stroke;
 	background-size: 100%;
 	background-repeat: none;
 	background-position: center;
 }
 
-[invalid]+.c-forms__label--checkbox::before {
-	border-color: $global-forms-message-color-error;
-}
-
 .c-forms__radio-fields {
 	margin-top: $global-forms-input-stack-spacing;
-	margin-left: calc(#{$global-forms-input-font-size} / 4);
-	border-left: calc(#{$global-forms-input-font-size} / 2) solid $global-forms-indent-border-color;
+	margin-left: calc(#{$global-forms-checkbox-size} / 4);
 	padding-top: $global-forms-field-stack-spacing;
 	padding-left: $global-forms-field-stack-spacing;
+	position: relative;
 	display: none;
+}
+
+.c-forms__radio-fields::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: calc(#{$global-forms-checkbox-size} / 2);
+	background-color: $global-forms-indent-border-color;
+	border-radius: $global-forms-indent-border-radius;
 }
 
 :checked~.c-forms__radio-fields {

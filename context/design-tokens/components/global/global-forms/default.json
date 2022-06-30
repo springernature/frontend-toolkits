@@ -7,32 +7,6 @@
 				}
 			}
 		},
-		"heading": {
-			"font": {
-				"family": {
-					"value": "{font-family.serif}"
-				},
-				"size": {
-					"value": "{font-size.900}"
-				},
-				"weight": {
-					"value": "{font-weight.light}"
-				}
-			}
-		},
-		"legend": {
-			"font": {
-				"family": {
-					"value": "{font-family.serif}"
-				},
-				"size": {
-					"value": "{font-size.800}"
-				},
-				"weight": {
-					"value": "{font-weight.regular}"
-				}
-			}
-		},
 		"label": {
 			"font": {
 				"size": {
@@ -49,21 +23,15 @@
 		"hint": {
 			"color": {
 				"value": "{color.grayscale.600}"
-			}
-		},
-		"message": {
+			},
 			"font": {
-				"size": {
-					"value": "{ui.font-size}"
-				},
 				"weight": {
 					"value": "{font-weight.regular}"
 				}
-			},
+			}
+		},
+		"message": {
 			"color": {
-				"resting": {
-					"value": "{text.primary}"
-				},
 				"error": {
 					"value": "{state.error}"
 				}
@@ -76,6 +44,9 @@
 					"error": {
 						"value": "{state.error}"
 					}
+				},
+				"size": {
+					"value": "{sizing.relative.400}"
 				}
 			}
 		},
@@ -140,26 +111,10 @@
 				}
 			}
 		},
-		"radio": {
-			"carat": {
-				"size": {
-					"value": "{sizing.relative.200}"
-				},
-				"spacing": {
-					"value": "{spacing.relative.200}"
-				},
-				"color": {
-					"value": "{text.primary}"
-				}
-			}
-		},
 		"indent": {
 			"border": {
 				"color": {
 					"value": "{border.color.indent}"
-				},
-				"width": {
-					"value": "{border.width.200}"
 				},
 				"radius": {
 					"value": "{border.radius.100}"
@@ -168,34 +123,23 @@
 		},
 		"checkbox": {
 			"size": {
-				"value": "{sizing.relative.600}",
+				"value": "{sizing.relative.400}",
 				"type": "sizing"
 			},
+			"spacing": {
+				"value": "{sizing.relative.200}"
+			},
 			"checked": {
-				"background": {
-					"color": {
-						"value": "{color.primary.universal-dark-blue}",
-						"type": "color"
-					}
-				},
 				"icon": {
 					"stroke": {
-						"value": "{icon.checkbox.checked.stroke}"
+						"value": "{color.primary.universal-dark-blue}"
 					},
 					"fill": {
-						"value": "{icon.checkbox.checked.fill}"
+						"value": "{color.primary.universal-dark-blue}"
 					},
-					"path": {
-						"value": "\"path/to/icon.svg\"",
-						"description": "TODO: needs to be coming from an alias or literal token"
+					"data uri": {
+						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
 					}
-				}
-			}
-		},
-		"select": {
-			"icon": {
-				"stroke": {
-					"value": "{icon.select.stroke}"
 				}
 			}
 		}
