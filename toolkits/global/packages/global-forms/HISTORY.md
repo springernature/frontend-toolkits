@@ -1,6 +1,6 @@
 # History
 
-## 5.0.0 (2022-06-27)
+## 5.0.0-rc.1 (2022-07-01)
     * BREAKING:
         * Form fields now available as a suite of templates/partials
         * Major changes to styling and styling API
