@@ -108,12 +108,6 @@ The `optional` property affects the field’s label, appending _“(optional)”
 "optional": true
 ```
 
-The `class` property is supported, which is especially useful for adding a string of utility classes to adjust layout.
-
-```
-"class": "u-mt-32 u-mb-48"
-```
-
 ### Errors
 
 Each field can have an `error` property. The presence of the property indicates the field is in an error state and the property value (a string) defines the error message.
