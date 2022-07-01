@@ -46,13 +46,13 @@ Fieldsets are used to group fields itemized under their `fields` property. If yo
         {
             "fields": [
                 {
-                    "type": "text",
+                    "template": "text",
                     "label": "Your name",
                     "id": "your-name",
                     "name": "your-name"
                 },
                 {
-                    "type": "text",
+                    "template": "text",
                     "label": "Your email",
                     "id": "your-email",
                     "name": "your-email"
@@ -82,13 +82,13 @@ Where you do wish to include a legend, HTML is permissable, meaning you can incl
 
 ### Fields
 
-Fields take the `type` property to determine which of the `view/fields` they represent. This property along with `label`, `id`, and `name` should be mandatory in terms of your model.
+Fields take the `template` property to determine which of the `view/fields` they represent. This property along with `label`, `id`, and `name` should probably be mandatory in terms of your model.
 
 A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property of the same name on the data:
 
 ```
 {
-    "type": "text",
+    "template": "text",
     "label": "Your email",
     "id": "your-email",
     "name": "your-email",
@@ -114,7 +114,7 @@ Each field can have an `error` property. The presence of the property indicates 
 
 ```
 {
-    "type": "text",
+    "template": "text",
     "label": "Your name",
     "id": "your-name",
     "name": "your-name",
@@ -163,7 +163,7 @@ Radios provide _their_ choices via an `inputs` array:
 
 ```
 {
-    "type": "radios",
+    "template": "radios",
     "label": "Animal",
     "inputs": [
         {
@@ -193,7 +193,7 @@ Note that checked radios can be used to disclose additional fields. These are su
     "name": "animal",
     "fields": [
         {
-            "type": "text",
+            "template": "text",
             "label": "What type of monkey?",
             "id": "monkey-type",
             "name": "monkey-type",
@@ -210,13 +210,13 @@ Unlike radios, you can have a single checkbox field. If you want to supply a _se
     "legend": "<h2>Which animals do you like?</h2>",
     "fields": [
         {
-            "type": "checkbox",
+            "template": "checkbox",
             "label": "Monkeys",
             "id": "checkbox-monkeys",
             "name": "checkbox-monkeys"
         },
         {
-            "type": "checkbox",
+            "template": "checkbox",
             "label": "Horses",
             "id": "checkbox-horses",
             "name": "checkbox-horses"
@@ -227,14 +227,14 @@ Unlike radios, you can have a single checkbox field. If you want to supply a _se
 
 ### Buttons
 
-A field of `type` `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
-The `type` property for each _individual_ button corresponds to the standard `type` property. For example, here is how you would include a submit button:
+A `template` of `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
+The `type` property for each individual button corresponds to the standard `type` property/attribute. For example, here is how you would include a submit button:
 
 ```
 "fields": [
     ...
     {
-        "type": "buttons",
+        "template": "buttons",
         "buttons": [
             {
                 "type": "submit",
