@@ -2,11 +2,11 @@
 	"color": {
 		"white": {
 			"name": "white",
-			"value": "#ffffff"
+			"value": "#fff"
 		},
 		"black": {
 			"name": "black",
-			"value": "#000000"
+			"value": "#000"
 		},
 		"grayscale": {
 			"200": {
@@ -23,19 +23,19 @@
 			},
 			"500": {
 				"name": "grayscale-500",
-				"value": "#999999"
+				"value": "#999"
 			},
 			"600": {
 				"name": "grayscale-600",
-				"value": "#666666"
+				"value": "#666"
 			},
 			"700": {
 				"name": "grayscale-700",
-				"value": "#555555"
+				"value": "#555"
 			},
 			"800": {
 				"name": "grayscale-800",
-				"value": "#222222"
+				"value": "#222"
 			}
 		},
 		"blue": {
@@ -49,7 +49,7 @@
 			},
 			"300": {
 				"name": "blue-300",
-				"value": "#0088CC"
+				"value": "#08C"
 			},
 			"400": {
 				"name": "blue-600",
