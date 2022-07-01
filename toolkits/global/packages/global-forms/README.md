@@ -141,7 +141,7 @@ Errors can be summarized using a top level `errorSummary` property (adjacent to 
 }
 ```
 
-### Multiple choices
+### Making choices
 
 Select elements supply their choices via an `options` property, which must be an array. The `selected` property is a Boolean:
 
