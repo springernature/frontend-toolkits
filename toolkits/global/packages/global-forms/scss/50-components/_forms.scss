@@ -42,6 +42,10 @@
 	margin-top: $global-forms-field-stack-spacing;
 }
 
+.c-forms__legend * {
+	margin: 0;
+}
+
 .c-forms__input {
 	box-sizing: border-box;
 	border: $global-forms-input-border-width solid;
@@ -135,11 +139,6 @@ label+.c-forms__error,
 .c-forms__label--inline {
 	display: inline;
 	font-weight: normal;
-}
-
-.c-forms__field.c-forms__label+.c-forms__field.c-forms__label,
-legend+.c-forms__field.c-forms__label {
-	margin-top: $global-forms-field-stack-spacing;
 }
 
 .c-forms__label--inline {
