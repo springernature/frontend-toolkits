@@ -78,7 +78,7 @@ Where you do wish to include a legend, HTML is permissable, meaning you can incl
 }
 ```
 
-(**Note:** it is valid and conforming to use heading elements inside `<legend>`s.)
+(**Note:** it is valid and conforming to use heading elements inside `<legend>`s. For visual and accessible hierarchy it is strongly recommended.)
 
 ### Fields
 
