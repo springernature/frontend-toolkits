@@ -1,5 +1,7 @@
 # Global Forms
 
+**IMPORTANT:** _This is a **release candidate** representing an ambitious reworking of the global-forms component, including design tokens integration, at a component level, for the first time. It is expected to need some additional work before a full release can be made. Tokens are generated to the `scss/00-tokens` folder and cannot be edited directly. If you need to temporarily add or override variables, please do this in a `10-settings` folder, one level down. These will be assessed for "hoisting" to the tokens layer later._
+
 This component comprises a number of form fields and related templates. It is designed to make constructing any variety of HTML form a relatively straightforward process. 
 
 The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. Implementations using client-side processing/validation may benefit from compiling the form’s (handlebars) template in the browser.
