@@ -77,6 +77,10 @@
 	color: $global-forms-label-color;
 }
 
+.c-forms__label + .c-forms__label {
+	margin-top: $global-forms-input-stack-spacing;
+}
+
 .c-forms__hint {
 	font-weight: $global-forms-hint-font-weight;
 	margin-top: $global-forms-input-stack-spacing;
@@ -148,6 +152,7 @@ legend+.c-forms__field.c-forms__label {
 	content: '';
 	width: $global-forms-checkbox-size;
 	height: $global-forms-checkbox-size;
+	background-color: $global-forms-input-background-color;
 	border: #{calc($global-forms-input-border-width)} solid;
 	margin-right: $global-forms-checkbox-spacing;
 }
