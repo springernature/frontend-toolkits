@@ -1,6 +1,7 @@
 .c-hero {
 	position: relative;
 	color: $hero--color;
+	margin-bottom: spacing(16);
 
 	@supports (display: flex) {
 		@include media-query('md') {
@@ -18,7 +19,7 @@
 }
 
 .c-hero__link {
-	display: block;
+	@include u-link-faux-block;
 	color: inherit;
 
 	&:hover,

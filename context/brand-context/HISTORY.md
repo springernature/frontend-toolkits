@@ -3,6 +3,9 @@
     * UDPATES:
       * updates generated Sass from Design Tokens
 	  * Long form hex codes for Design Tokens - allows design tool integration
+## 24.1.0 (2022-06-29)
+    * UPDATES:
+      * Normalizer from v5 to v8 inline with our own IE support matrix.  
 ## 24.0.0 (2022-06-28)
     * UPDATES:
       * adds border width design tokens

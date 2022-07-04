@@ -1,5 +1,10 @@
 # History
 
+## 3.0.0 (2022-06-29)
+    * BREAKING: 
+        * Update brand-context (Node Sass to Dart Sass)
+        * Removes dependency on utility classnames
+
 ## 2.1.4 (2022-03-23)
     * BUG: Improve wording of template / demo links on README
 
