@@ -124,7 +124,7 @@ Each field can have an `error` property. The presence of the property indicates 
 }
 ```
 
-Errors can be summarized using a top level `errorSummary` property (adjacent to the `fieldset` property). Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
+Errors can be summarized using a top level `errorSummary` property (adjacent to the `fieldsets` property). Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
 
 ```
 "errorSummary": {
