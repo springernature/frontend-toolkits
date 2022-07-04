@@ -1,10 +1,10 @@
 # Global Forms
 
-**IMPORTANT:** _This is a **release candidate** representing an ambitious reworking of the global-forms component, including design tokens integration, at a component level, for the first time. It is expected to need some additional work before a full release can be made. Tokens are generated to the `scss/00-tokens` folder and cannot be edited directly. If you need to temporarily add or override variables, please do this in a `10-settings` folder, one level down. These will be assessed for "hoisting" to the tokens layer later._
+**IMPORTANT:** _This is a **release candidate** representing an ambitious reworking of the global-forms component, including design tokens integration, at a component level, for the first time. It is expected to need some additional work before a full release can be made. Tokens are generated to the `scss/00-tokens` folder and cannot be edited directly. If you need to temporarily add or override variables, please do this in a `10-settings` folder, one level down. The Elements Design System team will assess these changes for making these variables tokens later._
 
-This component comprises a number of form fields and related templates. It is designed to make constructing any variety of HTML form a relatively straightforward process. 
+This component includes a number of form fields and related templates. It is designed to make it as simple as possible to create an HTML form.
 
-The component does not ship with any JavaScript. States (such as an invalid/error state) are defined at a data level. Implementations using client-side processing/validation may benefit from compiling the form’s (handlebars) template in the browser.
+The component does not include any JavaScript. States (such as an invalid/error state) are defined at a data level. If you're using client-side processing, you might benefit from compiling the form’s handlebars template in the browser.
 
 ## Usage
 
@@ -18,12 +18,12 @@ First, include the necessary Sass files in your project.
 @import '@springernature/global-forms/scss/50-components/forms';
 ```
 
-Then you will need to register the Handlebars partials in the `/view` folder. 
+Then you will need to register the handlebars partials in the `/view` folder. 
 
 There are two options for rendering form fields: 
 
-1. Compile each field independently, using its respective template from the `view/fields` folder.
-2. Organize your fields into fieldsets using the data structure exemplified in `demo/context.json`. In this case, you will have to iterate over a `fieldsets` property something like this:
+1. Compile fields independently, using their respective templates from the `view/fields` folder.
+2. Organise multiple related fields into fieldsets using the data structure like that shown in `demo/context.json`. For example, a group of fields used to let someone enter their address. In this case, you’ll have to iterate over a `fieldsets` array something like this:
 
 ```html
 <form action="some/url">
@@ -40,7 +40,7 @@ There are two options for rendering form fields:
 
 ### Fieldsets
 
-Fieldsets are used to group fields itemized under their `fields` property. If you do not want to include a (visible; screen reader identifiable) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
+Fieldsets are used to group fields itemised under their `fields` property. If you do not want to include a (visible; screen reader identifiable) fieldset element or legend, simply omit the `legend` property. The following example shows a simple form body with a single, unlabelled fieldset containing two text inputs:
 
 ```json
 "fieldsets": {
@@ -65,7 +65,7 @@ Fieldsets are used to group fields itemized under their `fields` property. If yo
 }
 ```
 
-Where you do wish to include a legend, HTML is permissable, meaning you can include a heading to reinforce the form and page structure:
+If you do wish to include a legend, you can use HTML to style it and add semantic meaning. It is recommended to use a heading of the correct level as the legend content.
 
 ```json
 "fieldsets": {
@@ -80,31 +80,29 @@ Where you do wish to include a legend, HTML is permissable, meaning you can incl
 }
 ```
 
-(**Note:** it is valid and conforming to use heading elements inside `<legend>`s. For visual and accessible hierarchy it is strongly recommended.)
-
 ### Fields
 
-Fields take the `template` property to determine which of the `view/fields` they represent. This property along with `label`, `id`, and `name` should probably be mandatory in terms of your model.
+Fields take the `template` property to determine which of the `view/fields` template files they represent. This property along with `label`, `id`, and The `template` property sets the type of field - for example, `"template": "text"` renders a text input field. Aim to make the `template`, `label`, `id`, and `name` properties mandatory parts of your data schema.
 
-A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property of the same name on the data:
+This component supports a wide range of standard form field attributes. So, for example, to include a `readonly` attribute on your text input, you  can include a property of the same name on the data:
 
 ```json
 {
     "template": "text",
-    "label": "Your email",
+    "label": "Your email address",
     "id": "your-email",
     "name": "your-email",
     "readonly": true
 }
 ```
 
-The `hint` property includes supplementary text under the main `<label>` text but _inside_ the `<label>`, meaning it is automatically available to screen reader software.
+The `hint` property adds hint text under the main label text but _inside_ the `<label>`. This means it is automatically available to screen reader software.
 
 ```json
-"hint": "This will be the email you signed up using"
+"hint": "This will be the email address you used when registering"
 ```
 
-The `optional` property affects the field’s label, appending _“(optional)”_ to the label text.
+The `optional` property adds _“(optional)”_ to the label text.
 
 ```json
 "optional": true
@@ -112,7 +110,7 @@ The `optional` property affects the field’s label, appending _“(optional)”
 
 ### Errors
 
-Each field can have an `error` property. The presence of the property indicates the field is in an error state and the property value (a string) defines the error message.
+Each field can have an `error` property. The inclusion of the property means the field is in an error state. The property value (a string) defines the error message the user sees.
 
 ```json
 {
@@ -120,24 +118,24 @@ Each field can have an `error` property. The presence of the property indicates 
     "label": "Your name",
     "id": "your-name",
     "name": "your-name",
-    "error": "That is not a name, it’s a number"
+    "error": "Enter your name"
 }
 ```
 
-Errors can be summarized using a top level `errorSummary` property (adjacent to the `fieldsets` property). Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
+You can summarise errors using a top level `errorSummary` property (adjacent to the `fieldsets` property). Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
 
 ```json
 "errorSummary": {
     "id": "summary",
-    "title": "Here’s what’s wrong",
+    "title": "There are problems",
     "errors": [
         {
             "id": "your-name-error",
-            "error": "That is not a name, it’s a number"
+            "error": "Enter your name"
         },
         {
             "id": "checkbox-terms-error",
-            "error": "You must agree to the terms!"
+            "error": "Agree to the terms to continue"
         }
     ]
 }
@@ -145,7 +143,7 @@ Errors can be summarized using a top level `errorSummary` property (adjacent to 
 
 ### Making choices
 
-Select elements supply their choices via an `options` property, which must be an array. The `selected` property is a Boolean:
+`Select` fields (using the `<select>` element) define their choices via an `options` property, which must be an array. The `selected` property is a Boolean:
 
 ```json
 "options": [
@@ -161,7 +159,7 @@ Select elements supply their choices via an `options` property, which must be an
 ]
 ```
 
-Radios provide _their_ choices via an `inputs` array:
+Radios define choices with an `inputs` array:
 
 ```json
 {
@@ -182,11 +180,13 @@ Radios provide _their_ choices via an `inputs` array:
 }
 ```
 
-(**Note:** the `name` property is placed at the top level and inherited by each input.)
+The `name` property is placed at the top level and inherited by each input.
 
-Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” here) does not render as a `<label>` but as a `<legend>`.
+Radios are always grouped together in a `fieldset`, so the group label (“Animal”, here) renders as a `legend` not a `label`.
 
-Note that checked radios can be used to disclose additional fields. These are supplied via the `fields` property (an array). These fields can have any properties of a standard field.
+You might want to show users an additional field when they select a radio. For example, revealing a text input field for them to give more specific information about the option they’ve selected. 
+
+These fields can have any properties of a standard form field. Set these properties using the `fields` property (an array), like this:
 
 ```json
 {
@@ -205,7 +205,7 @@ Note that checked radios can be used to disclose additional fields. These are su
 }
 ```
 
-Unlike radios, you can have a single checkbox field. If you want to supply a _set_ of checkbox choices, organize individual checkboxes into a fieldset:
+Unlike radios, which are always used in sets of two or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
 ```json
 {
@@ -230,7 +230,7 @@ Unlike radios, you can have a single checkbox field. If you want to supply a _se
 ### Buttons
 
 A `template` of `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
-The `type` property for each individual button corresponds to the standard `type` property/attribute. For example, here is how you would include a submit button:
+The `type` property for each individual button corresponds to the `type` property/attribute. For example, here is how you would include a submit button:
 
 ```json
 "fields": [
@@ -248,7 +248,7 @@ The `type` property for each individual button corresponds to the standard `type
 ]
 ```
 
-The `modifiers` property is an array. Each value should match one of these modifiers form the brand context:
+The `modifiers` property is an array. Each value should match one of these modifiers form the brand context’s button utility styles:
 
 * primary
 * secondary
@@ -262,7 +262,7 @@ The `modifiers` property is an array. Each value should match one of these modif
 
 ### Datalist
 
-The text field/partial can have a `datalist` property, allowing you to implement type ahead. This takes two properties: `id` and `options` (an array):
+Text input fields can have a `datalist` property, which lets you implement autocomplete. This takes two properties: `id` and `options` (an array):
 
 ```json
 "datalist": {
@@ -278,4 +278,4 @@ The text field/partial can have a `datalist` property, allowing you to implement
 }
 ```
 
-This builds a standard `<datalist>` element—with `<option>`s—and associates it with the input. If a `<datalist>` already exists in the markup, provide just the `id` and forego the `options` property. If you wish to implement a bespoke type ahead solution, using JavaScript, omit the `datalist` property from the field altogether.
+This builds a standard `datalist` field, with `option`s, and associates it with the input. If a `datalist` already exists in the markup, provide just the `id` and forego the `option` property. If you want to use a custom-built autocomplete solution using JavaScript, omit the `datalist` property from the field altogether.

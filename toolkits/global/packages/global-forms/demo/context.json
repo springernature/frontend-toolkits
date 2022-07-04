@@ -4,15 +4,15 @@
 		"selectIconURL": "../img/chevron-more.svg#i-chevron-more",
 		"errorSummary": {
 			"id": "summary",
-			"title": "Here’s what’s wrong",
+			"title": "There are problems",
 			"errors": [
 				{
 					"id": "your-name-error",
-					"error": "That is not a name, it’s a number"
+					"error": "Enter your name"
 				},
 				{
 					"id": "checkbox-terms-error",
-					"error": "You must agree to the terms before continuing"
+					"error": "Agree to the terms to continue"
 				}
 			]
 		},
@@ -41,7 +41,7 @@
 						"template": "text",
 						"label": "Your name (with error)",
 						"hint": "Your name is on your passport",
-						"error": "That is not a name, it’s a number",
+						"error": "Enter your name",
 						"value": "987364",
 						"id": "your-name-error",
 						"name": "your-name-error"
@@ -174,7 +174,7 @@
 					{
 						"template": "checkbox",
 						"label": "Agree to our terms (with error)",
-						"error": "You must agree to the terms before continuing.",
+						"error": "Agree to the terms to continue",
 						"hint": "You should have read these. Read them, then agree to them.",
 						"id": "checkbox-terms-error",
 						"name": "checkbox-terms-error"
