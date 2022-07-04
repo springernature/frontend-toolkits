@@ -25,7 +25,7 @@ There are two options for rendering form fields:
 1. Compile each field independently, using its respective template from the `view/fields` folder.
 2. Organize your fields into fieldsets using the data structure exemplified in `demo/context.json`. In this case, you will have to iterate over a `fieldsets` property something like this:
 
-```
+```html
 <form action="some/url">
     {{#with myFormData}}
 		{{#with errorSummary}}
@@ -42,7 +42,7 @@ There are two options for rendering form fields:
 
 Fieldsets are used to group fields itemized under their `fields` property. If you do not want to include a (visible; screen reader identifiable) fieldset element or `<legend>`, simply omit the `legend` property. The following example represents a simple form body with a single, unlabeled fieldset containing two text inputs:
 
-```
+```json
 "fieldsets": {
     [
         {
@@ -67,7 +67,7 @@ Fieldsets are used to group fields itemized under their `fields` property. If yo
 
 Where you do wish to include a legend, HTML is permissable, meaning you can include a heading to reinforce the form and page structure:
 
-```
+```json
 "fieldsets": {
     [
         {
@@ -88,7 +88,7 @@ Fields take the `template` property to determine which of the `view/fields` they
 
 A wide range of standard input/field attributes are supported. So, for example, if you wanted to include a `readonly` attribute on your text input, you would just include a property of the same name on the data:
 
-```
+```json
 {
     "template": "text",
     "label": "Your email",
@@ -100,13 +100,13 @@ A wide range of standard input/field attributes are supported. So, for example, 
 
 The `hint` property includes supplementary text under the main `<label>` text but _inside_ the `<label>`, meaning it is automatically available to screen reader software.
 
-```
+```json
 "hint": "This will be the email you signed up using"
 ```
 
 The `optional` property affects the field’s label, appending _“(optional)”_ to the label text.
 
-```
+```json
 "optional": true
 ```
 
@@ -114,7 +114,7 @@ The `optional` property affects the field’s label, appending _“(optional)”
 
 Each field can have an `error` property. The presence of the property indicates the field is in an error state and the property value (a string) defines the error message.
 
-```
+```json
 {
     "template": "text",
     "label": "Your name",
@@ -126,7 +126,7 @@ Each field can have an `error` property. The presence of the property indicates 
 
 Errors can be summarized using a top level `errorSummary` property (adjacent to the `fieldsets` property). Each error in the errors array must point to the `id` of the respective input and repeat its `error` message:
 
-```
+```json
 "errorSummary": {
     "id": "summary",
     "title": "Here’s what’s wrong",
@@ -147,7 +147,7 @@ Errors can be summarized using a top level `errorSummary` property (adjacent to 
 
 Select elements supply their choices via an `options` property, which must be an array. The `selected` property is a Boolean:
 
-```
+```json
 "options": [
     {
         "label": "Horse",
@@ -163,7 +163,7 @@ Select elements supply their choices via an `options` property, which must be an
 
 Radios provide _their_ choices via an `inputs` array:
 
-```
+```json
 {
     "template": "radios",
     "label": "Animal",
@@ -188,7 +188,7 @@ Sets of radios are implicitly fieldsets, where the _group_ label (“Animal” h
 
 Note that checked radios can be used to disclose additional fields. These are supplied via the `fields` property (an array). These fields can have any properties of a standard field.
 
-```
+```json
 {
     "label": "Monkey",
     "value": "Monkey",
@@ -207,7 +207,7 @@ Note that checked radios can be used to disclose additional fields. These are su
 
 Unlike radios, you can have a single checkbox field. If you want to supply a _set_ of checkbox choices, organize individual checkboxes into a fieldset:
 
-```
+```json
 {
     "legend": "<h2>Which animals do you like?</h2>",
     "fields": [
@@ -232,7 +232,7 @@ Unlike radios, you can have a single checkbox field. If you want to supply a _se
 A `template` of `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
 The `type` property for each individual button corresponds to the standard `type` property/attribute. For example, here is how you would include a submit button:
 
-```
+```json
 "fields": [
     ...
     {
@@ -264,7 +264,7 @@ The `modifiers` property is an array. Each value should match one of these modif
 
 The text field/partial can have a `datalist` property, allowing you to implement type ahead. This takes two properties: `id` and `options` (an array):
 
-```
+```json
 "datalist": {
     "id": "my-datalist",
     "options": [
