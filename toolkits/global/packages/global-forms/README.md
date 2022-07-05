@@ -65,7 +65,7 @@ Fieldsets are used to group fields itemised under their `fields` property. If yo
 }
 ```
 
-If you do wish to include a legend, you can use HTML to style it and add semantic meaning. It is recommended to use a heading of the correct level as the legend content.
+If you do wish to include a legend, you can use HTML to style it and add semantic meaning. In most cases, legends should be headings, with the heading level determined by the page structure.
 
 ```json
 "fieldsets": {
@@ -82,9 +82,9 @@ If you do wish to include a legend, you can use HTML to style it and add semanti
 
 ### Fields
 
-Fields take the `template` property to determine which of the `view/fields` template files they represent. This property along with `label`, `id`, and The `template` property sets the type of field - for example, `"template": "text"` renders a text input field. Aim to make the `template`, `label`, `id`, and `name` properties mandatory parts of your data schema.
+The `template` property sets the type of field - for example, `"template": "text"` renders a text input field. Aim to make the `template`, `label`, `id`, and `name` properties mandatory parts of your data schema.
 
-This component supports a wide range of standard form field attributes. So, for example, to include a `readonly` attribute on your text input, you  can include a property of the same name on the data:
+This component supports a wide range of standard form field attributes. For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
 ```json
 {
@@ -122,7 +122,7 @@ Each field can have an `error` property. The inclusion of the property means the
 }
 ```
 
-You can summarise errors using a top level `errorSummary` property (adjacent to the `fieldsets` property). Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
+You can summarise errors using a top level `errorSummary` property adjacent to the `fieldsets` property. Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
 
 ```json
 "errorSummary": {
@@ -143,7 +143,7 @@ You can summarise errors using a top level `errorSummary` property (adjacent to 
 
 ### Making choices
 
-`Select` fields (using the `<select>` element) define their choices via an `options` property, which must be an array. The `selected` property is a Boolean:
+`Select` fields (using the `<select>` element) define the user’s options with an `options` property, which must be an array. The `selected` property is a Boolean:
 
 ```json
 "options": [
@@ -184,7 +184,7 @@ The `name` property is placed at the top level and inherited by each input.
 
 Radios are always grouped together in a `fieldset`, so the group label (“Animal”, here) renders as a `legend` not a `label`.
 
-You might want to show users an additional field when they select a radio. For example, revealing a text input field for them to give more specific information about the option they’ve selected. 
+You might want to show users an additional field when they select a particular radio. For example, revealing a text input field for them to give more specific information about the option they’ve selected.
 
 These fields can have any properties of a standard form field. Set these properties using the `fields` property (an array), like this:
 
@@ -230,7 +230,7 @@ Unlike radios, which are always used in sets of two or more, you can have a sing
 ### Buttons
 
 A `template` of `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). 
-The `type` property for each individual button corresponds to the `type` property/attribute. For example, here is how you would include a submit button:
+The `type` property for each individual button corresponds to the `type` HTML attribute. For example, here is how you would include a submit button:
 
 ```json
 "fields": [
