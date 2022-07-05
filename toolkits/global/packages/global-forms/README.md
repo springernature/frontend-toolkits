@@ -108,6 +108,20 @@ The `optional` property adds _“(optional)”_ to the label text.
 "optional": true
 ```
 
+In addition to these top-level properties, you can add any arbitrary attributes using the `attributes` field property. For example, you can add a `data-test` attribute for your text input’s unit testing:
+
+```json
+{
+    "template": "text",
+    "label": "Your email address",
+    "id": "your-email",
+    "name": "your-email",
+    "attributes": {
+        "data-test": "someValue"
+    }
+}
+```
+
 ### Errors
 
 Each field can have an `error` property. The inclusion of the property means the field is in an error state. The property value (a string) defines the error message the user sees.
