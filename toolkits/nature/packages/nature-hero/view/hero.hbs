@@ -1,4 +1,4 @@
-<div class="c-hero{{#if flushMdMax}} c-hero--flush-md-max{{/if}} u-mb-16 u-position-relative">
+<div class="c-hero{{#if flushMdMax}} c-hero--flush-md-max{{/if}}">
 	<div class="c-hero__image">
 		<picture>
 			<source type="{{picture.type}}" srcset="{{picture.srcset}}" sizes="{{picture.sizes}}">
@@ -7,7 +7,7 @@
 	</div>
 	<div class="c-hero__copy">
 		<h2 class="c-hero__title">
-			<a class="c-hero__link u-link-faux-block" href="{{title.uri}}" data-track="click" data-track-action="{{title.dataTrackAction}}" data-track-label="link">{{title.text}}</a>
+			<a class="c-hero__link" href="{{title.uri}}" data-track="click" data-track-action="{{title.dataTrackAction}}" data-track-label="link">{{title.text}}</a>
 		</h2>
 		<p class="c-hero__summary">{{summary}}</p>
 	</div>
