@@ -1,0 +1,24 @@
+{{> label}}
+{{#if error}}
+	{{> error}}
+{{/if}}
+<div class="c-forms__input-container c-forms__input-container--select">
+	<select
+		class="c-forms__input c-forms__input--select"
+		{{> inputCommonAttributes}}
+	>
+		{{#each options}}
+			<option
+				value="{{value}}"
+				{{#if selected}} selected{{/if}}
+			>
+				{{label}}
+			</option>
+		{{/each}}
+	</select>
+	<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+		<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+			{{> iconSelect }}
+		</svg>
+	</span>
+</div>

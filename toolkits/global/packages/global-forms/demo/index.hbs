@@ -1,0 +1,12 @@
+<h1>Basic form</h1>
+
+<form>
+	{{#with form1}}
+		{{#with errorSummary}}
+			{{> errorSummary }}
+		{{/with}}
+		{{#each fieldsets}}
+			{{> fieldset }}
+		{{/each}}
+	{{/with}}
+</form>

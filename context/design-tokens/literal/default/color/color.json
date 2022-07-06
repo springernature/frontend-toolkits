@@ -2,11 +2,11 @@
 	"color": {
 		"white": {
 			"name": "white",
-			"value": "#ffffff"
+			"value": "#fff"
 		},
 		"black": {
 			"name": "black",
-			"value": "#000000"
+			"value": "#000"
 		},
 		"grayscale": {
 			"200": {
@@ -23,67 +23,45 @@
 			},
 			"500": {
 				"name": "grayscale-500",
-				"value": "#999999"
+				"value": "#999"
 			},
 			"600": {
 				"name": "grayscale-600",
-				"value": "#666666"
+				"value": "#666"
 			},
 			"700": {
 				"name": "grayscale-700",
-				"value": "#555555"
+				"value": "#555"
 			},
 			"800": {
 				"name": "grayscale-800",
-				"value": "#222222"
+				"value": "#222"
 			}
 		},
-		"primary": {
-			"universal-dark-blue": {
-				"value": "#01324B"
-			},
-			"medium-blue": {
-				"value": "#025E8D"
-			},
-			"bright-blue": {
-				"value": "#0088CC"
-			},
-			"grey-blue-light-1": {
+		"blue": {
+			"100": {
+				"name": "blue-100",
 				"value": "#EBF1F5"
 			},
-			"grey-blue-light-2": {
+			"200": {
+				"name": "blue-200",
 				"value": "#CEDBE0"
 			},
-			"black": {
-				"value": "{color.black}"
+			"300": {
+				"name": "blue-300",
+				"value": "#08C"
 			},
-			"white": {
-				"value": "{color.white}"
-			}
-		},
-		"information": {
-			"red": {
-				"value": "#C40606"
-			},
-			"orange": {
-				"value": "#F58220"
-			},
-			"blue": {
-				"value": "#003F8D"
-			},
-			"green": {
-				"value": "#00A69D"
-			}
-		},
-		"interaction": {
-			"hover": {
+			"400": {
+				"name": "blue-600",
 				"value": "#025E8D"
 			},
-			"visited": {
-				"value": "#A345C9"
+			"700": {
+				"name": "blue-700",
+				"value": "#003F8D"
 			},
-			"focus": {
-				"value": "{color.primary.bright-blue}"
+			"900": {
+				"name": "blue-900",
+				"value": "#01324B"
 			}
 		}
 	}

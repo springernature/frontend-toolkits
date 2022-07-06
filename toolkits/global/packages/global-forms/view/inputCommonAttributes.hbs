@@ -1,0 +1,22 @@
+{{#if id}} id="{{id}}"{{/if}}
+{{#if name}} name="{{name}}"{{/if}}
+{{#if value}} value="{{value}}"{{/if}}
+{{#if error}} invalid aria-invalid="true"{{/if}}
+{{#if error}} aria-describedby="error-{{id}}"{{/if}}
+{{#if required}} required aria-required="true"{{/if}}
+{{#if disabled}} disabled{{/if}}
+{{#if readonly}} readonly{{/if}}
+{{#if checked}} checked{{/if}}
+{{#if maxlength}} maxlength="{{maxlength}}"{{/if}}
+{{#unless autocomplete}} autocomplete="off"{{/unless}}
+{{#if autocomplete}} autocomplete="{{autocomplete}}"{{/if}}
+{{#if novalidate}} novalidate{{/if}}
+{{#if datalist.id}} list="{{datalist.id}}"{{/if}}
+{{#if accept}} accept="{{accept}}"{{/if}}
+{{#if multiple}} multiple{{/if}}
+{{#if capture}} capture="{{capture}}"{{/if}}
+{{#if rows}} rows="{{rows}}"{{/if}}
+{{#if cols}} cols="{{cols}}"{{/if}}
+{{#if attributes}}
+	{{#each attributes}} {{@key}}="{{this}}"{{/each}}
+{{/if}}

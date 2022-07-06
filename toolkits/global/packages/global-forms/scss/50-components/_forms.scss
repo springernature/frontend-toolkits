@@ -1,78 +1,257 @@
 @use 'sass:math';
-/* Input row component */
 
-.c-input-row {
+.c-forms__label,
+.c-forms__hint,
+.c-forms__error,
+.c-forms__legend {
+	display: block;
+}
+
+.c-forms__hint,
+.c-forms__error {
+	font-weight: normal;
+}
+
+.c-forms__input-container {
+	position: relative;
+}
+
+.c-forms__fieldset,
+.c-forms__error-summary {
+	font-size: $global-forms-input-font-size;
+}
+
+.c-forms__field small {
+	font-size: inherit;
+}
+
+.c-forms__fieldset,
+.c-forms__legend {
+	padding: 0;
+	border: 0;
+}
+
+.c-forms__error-summary,
+.c-forms__fieldset,
+.c-forms__input-container {
+	max-width: $global-forms-input-width-maximum;
+}
+
+* + .c-forms__fieldset,
+* + .c-forms__field {
+	margin-top: $global-forms-field-stack-spacing;
+}
+
+.c-forms__legend * {
+	margin: 0;
+}
+
+.c-forms__input {
+	box-sizing: border-box;
+	border: $global-forms-input-border-width solid;
+	color: $global-forms-input-font-color;
+	width: 100%;
+	padding: $global-forms-input-padding-block $global-forms-input-padding-inline;
+	background-color: $global-forms-input-background-color;
+	font-weight: $global-forms-input-font-weight;
+}
+
+*+.c-forms__input,
+*+.c-forms__input-container {
+	margin-top: $global-forms-input-stack-spacing;
+}
+
+.c-forms__input:focus {
+	outline: 3px solid $global-forms-input-focus-outline-color;
+}
+
+.c-forms__input[invalid] {
+	border-color: $global-forms-message-color-error;
+	border-width: #{calc($global-forms-input-border-width * 2)};
+}
+
+.c-forms__input[disabled] {
+	cursor: not-allowed;
+	border-color: $global-forms-input-border-color-disabled;
+}
+
+.c-forms__label {
+	font-size: $global-forms-label-font-size;
+	font-weight: $global-forms-label-font-weight;
+	color: $global-forms-label-color;
+}
+
+.c-forms__label + .c-forms__label {
+	margin-top: $global-forms-input-stack-spacing;
+}
+
+.c-forms__hint {
+	font-weight: $global-forms-hint-font-weight;
+	margin-top: $global-forms-input-stack-spacing;
+	color: $global-forms-hint-color;
+}
+
+.c-forms__error {
+	color: $global-forms-message-color-error;
+}
+
+label+.c-forms__error,
+.c-forms__error+label {
+	margin-top: $global-forms-input-stack-spacing;
+}
+
+.c-forms__error .c-forms__icon {
+	color: $global-forms-message-color-error;
+}
+
+.c-forms__icon svg {
+	height: $global-forms-message-icon-size;
+	width: $global-forms-message-icon-size;
+	vertical-align: calc((#{$global-forms-input-padding-inline} / 8) * -1);
+	overflow: visible;
+	pointer-events: none;
+}
+
+.c-forms__input--select {
+	cursor: pointer;
+	appearance: none;
+	padding-right: #{$global-forms-input-padding-inline * 3};
+}
+
+.c-forms__input-container--select .c-forms__icon {
+	position: absolute;
+	right: $global-forms-input-padding-inline;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.c-forms__input--radio,
+.c-forms__input--checkbox {
+	/* hide visually, not to assistive tech */
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.c-forms__label--inline {
+	display: inline;
+	font-weight: normal;
+}
+
+.c-forms__label--inline {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.c-forms__label--inline::before {
+	content: '';
+	width: $global-forms-checkbox-size;
+	height: $global-forms-checkbox-size;
+	background-color: $global-forms-input-background-color;
+	border: #{calc($global-forms-input-border-width)} solid;
+	margin-right: $global-forms-checkbox-spacing;
+}
+
+:checked+.c-forms__label--inline::before {
+	border-color: $global-forms-input-border-color-resting;
+}
+
+:focus+.c-forms__label--inline::before {
+	box-shadow: 0 0 0 3px $global-forms-input-focus-outline-color;
+}
+
+.c-forms__label--radio::before {
+	border-radius: 50%;
+}
+
+.c-forms__label--checkbox::before {
+	border-radius: 0.125em;
+}
+
+[invalid]+.c-forms__label--checkbox::before {
+	border-color: $global-forms-message-color-error;
+}
+
+:checked+.c-forms__label--radio::before {
+	background: radial-gradient(#{$global-forms-checkbox-checked-icon-fill} 0%, #{$global-forms-checkbox-checked-icon-fill} 40%, #fff 40%);
+}
+
+:checked+.c-forms__label--checkbox::before {
+	background-color: $global-forms-checkbox-checked-icon-fill;
+	background-image: url('#{$global-forms-checkbox-checked-icon-data-uri}');
+	border-color: $global-forms-checkbox-checked-icon-stroke;
+	background-size: 100%;
+	background-repeat: none;
+	background-position: center;
+}
+
+.c-forms__radio-fields {
+	margin-top: $global-forms-input-stack-spacing;
+	margin-left: calc(#{$global-forms-checkbox-size} / 4);
+	padding-top: $global-forms-field-stack-spacing;
+	padding-left: $global-forms-field-stack-spacing;
+	position: relative;
+	display: none;
+}
+
+.c-forms__radio-fields::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: calc(#{$global-forms-checkbox-size} / 2);
+	background-color: $global-forms-indent-border-color;
+	border-radius: $global-forms-indent-border-radius;
+}
+
+:checked~.c-forms__radio-fields {
+	display: block;
+}
+
+.c-forms__error-summary {
+	background-color: $global-forms-input-background-color;
+	box-sizing: border-box;
+	display: flex;
+	gap: $global-forms-input-padding-inline;
+	padding: $global-forms-input-padding-inline;
+	color: $global-forms-message-color-error;
+	border: $global-forms-input-border-width solid $global-forms-indent-border-color;
+	border-bottom: 4px solid $global-forms-message-color-error;
+}
+
+.c-forms__error-summary .c-forms__icon svg {
+	width: #{$global-forms-input-font-size * 2};
+	height: #{$global-forms-input-font-size * 2};
+}
+
+.c-forms__error-summary-errors {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: $global-forms-input-padding-block;
+	list-style: none;
+}
+
+.c-forms__error-summary-errors a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.c-forms__error-summary-title {
+	color: initial;
+	font-weight: bold;
+}
+
+.c-forms__error-summary-errors li+li {
+	margin-top: $global-forms-input-stack-spacing;
+}
+
+.c-forms__buttons {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	margin-right:  math.div(-$global-form--grid-gutter-width, 2);
-	margin-left:  math.div(-$global-form--grid-gutter-width, 2);
-}
-
-.c-input-row__item {
-	align-self: stretch;
-	flex: 1 1 auto;
-	padding-right:  math.div($global-form--grid-gutter-width, 2);
-	padding-left:   math.div($global-form--grid-gutter-width, 2);
-}
-
-/* Input group component */
-
-.c-input-group {
-	display: block;
-	margin-bottom: 1rem;
-}
-
-.c-input-group__label {
-	display: inline-block;
-	line-height: 2;
-	font-size: $global-form--label-font-size;
-	margin-bottom: $global-form--label-spacing;
-
-	&--check {
-		padding-right: 0.5rem;
-	}
-}
-
-.c-input-group__required {
-	color: $global-form--color-required;
-}
-
-.c-input-group__control {
-	@include form-input;
-
-	&--check {
-		width: auto;
-		height: auto;
-	}
-
-	&--radio {
-		width: auto;
-		height: auto;
-		margin: 0 0.5rem;
-		display: inline-block;
-	}
-
-	&--textarea {
-		height: auto;
-		overflow: auto;
-		resize: vertical;
-	}
-
-	// Unstyle the caret on `<select>`s in IE10+.
-
-	&::-ms-expand {
-		background-color: transparent;
-		border: 0;
-	}
-}
-
-.c-input-group input[disabled],
-.c-input-group textarea[disabled],
-.c-input-group input[disabled]:hover,
-.c-input-group textarea[disabled]:hover {
-	background: $global-form--background-color-disabled;
-	border-color: $global-form--border-color-disabled;
-	color: $global-form--color-disabled;
-	cursor: not-allowed;
+	gap: 0.5rem;
 }

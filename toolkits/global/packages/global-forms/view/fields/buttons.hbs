@@ -1,0 +1,11 @@
+<div class="c-forms__field c-forms__buttons">
+	{{#each buttons}}
+		<button
+			{{#if type}}type="{{type}}"{{else}}type="button"{{/if}}
+			class="u-button{{#each modifiers}} u-button--{{.}}{{/each}}"
+			{{> inputCommonAttributes}}
+		>
+			{{label}}
+		</button>
+	{{/each}}
+</div>

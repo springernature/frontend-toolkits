@@ -1,0 +1,1178 @@
+<!DOCTYPE html><html lang="en"><head>
+		<script>
+    		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>@springernature/global-forms</title>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+/**
+ * Button utilities
+ * These are for styled branded buttons
+ */
+.u-button {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  justify-content: center;
+  padding: 8px;
+  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border-radius: 2px;
+  color: darkblue;
+  background-color: #f2f2f2;
+  background-image: none;
+  border: 1px solid #cccccc;
+  box-shadow: inherit;
+  font-weight: normal;
+}
+.u-button svg {
+  fill: currentColor;
+}
+.u-button:visited {
+  color: darkblue;
+}
+.u-button:hover {
+  border: 1px solid #666666;
+  box-shadow: inherit;
+  text-decoration: none;
+}
+.u-button:focus {
+  border: 1px solid #666666;
+  box-shadow: inherit;
+  outline: inherit;
+  text-decoration: none;
+}
+.u-button:hover, .u-button:focus {
+  color: white;
+  background-color: #666666;
+  background-image: none;
+}
+.u-button:hover svg path, .u-button:focus svg path {
+  fill: white;
+}
+
+.u-button--primary {
+  color: white;
+  background-color: darkblue;
+  background-image: none;
+  border: 1px solid blue;
+  font-weight: normal;
+}
+.u-button--primary svg {
+  fill: currentColor;
+}
+.u-button--primary:visited {
+  color: white;
+}
+.u-button--primary:hover {
+  border: 1px solid blue;
+}
+.u-button--primary:focus {
+  border: 1px solid blue;
+}
+.u-button--primary:hover, .u-button--primary:focus {
+  color: white;
+  background-color: blue;
+  background-image: none;
+}
+.u-button--primary:hover svg path, .u-button--primary:focus svg path {
+  fill: white;
+}
+
+.u-button--contrast {
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid white;
+  font-weight: normal;
+}
+.u-button--contrast svg {
+  fill: currentColor;
+}
+.u-button--contrast:visited {
+  color: white;
+}
+.u-button--contrast:hover {
+  border: 1px solid white;
+}
+.u-button--contrast:focus {
+  border: 1px solid white;
+}
+.u-button--contrast:hover, .u-button--contrast:focus {
+  color: black;
+  background-color: white;
+  background-image: none;
+}
+.u-button--contrast:hover svg path, .u-button--contrast:focus svg path {
+  fill: black;
+}
+
+.u-button--disabled,
+.u-button:disabled {
+  color: black;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #cccccc;
+  font-weight: normal;
+  opacity: 0.7;
+  cursor: default;
+}
+.u-button--disabled svg,
+.u-button:disabled svg {
+  fill: currentColor;
+}
+.u-button--disabled:visited,
+.u-button:disabled:visited {
+  color: black;
+}
+.u-button--disabled:hover,
+.u-button:disabled:hover {
+  border: 1px solid #cccccc;
+  text-decoration: none;
+}
+.u-button--disabled:focus,
+.u-button:disabled:focus {
+  border: 1px solid #cccccc;
+  text-decoration: none;
+}
+.u-button--disabled:hover, .u-button--disabled:focus,
+.u-button:disabled:hover,
+.u-button:disabled:focus {
+  color: black;
+  background-color: transparent;
+  background-image: none;
+}
+.u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
+.u-button:disabled:hover svg path,
+.u-button:disabled:focus svg path {
+  fill: black;
+}
+
+.u-button--xsmall {
+  font-size: 0.875rem;
+  padding: 2px;
+}
+
+.u-button--small {
+  font-size: 0.875rem;
+  padding: inherit;
+}
+
+.u-button--large {
+  font-size: 1.125rem;
+  padding: 16px;
+}
+
+.u-button--full-width {
+  display: flex;
+  width: 100%;
+}
+
+.u-button--icon-left svg {
+  margin-right: 8px;
+}
+
+.u-button--icon-right svg {
+  margin-left: 8px;
+}
+
+.c-forms__label,
+.c-forms__hint,
+.c-forms__error,
+.c-forms__legend {
+  display: block;
+}
+
+.c-forms__hint,
+.c-forms__error {
+  font-weight: normal;
+}
+
+.c-forms__input-container {
+  position: relative;
+}
+
+.c-forms__fieldset,
+.c-forms__error-summary {
+  font-size: 1rem;
+}
+
+.c-forms__field small {
+  font-size: inherit;
+}
+
+.c-forms__fieldset,
+.c-forms__legend {
+  padding: 0;
+  border: 0;
+}
+
+.c-forms__error-summary,
+.c-forms__fieldset,
+.c-forms__input-container {
+  max-width: 70ch;
+}
+
+* + .c-forms__fieldset,
+* + .c-forms__field {
+  margin-top: 1.5rem;
+}
+
+.c-forms__legend * {
+  margin: 0;
+}
+
+.c-forms__input {
+  box-sizing: border-box;
+  border: 1px solid;
+  color: #000000;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+* + .c-forms__input,
+* + .c-forms__input-container {
+  margin-top: 0.25rem;
+}
+
+.c-forms__input:focus {
+  outline: 3px solid #025e8d;
+}
+
+.c-forms__input[invalid] {
+  border-color: #c40606;
+  border-width: 2px;
+}
+
+.c-forms__input[disabled] {
+  cursor: not-allowed;
+  border-color: #dadada;
+}
+
+.c-forms__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.c-forms__label + .c-forms__label {
+  margin-top: 0.25rem;
+}
+
+.c-forms__hint {
+  font-weight: 400;
+  margin-top: 0.25rem;
+  color: #666666;
+}
+
+.c-forms__error {
+  color: #c40606;
+}
+
+label + .c-forms__error,
+.c-forms__error + label {
+  margin-top: 0.25rem;
+}
+
+.c-forms__error .c-forms__icon {
+  color: #c40606;
+}
+
+.c-forms__icon svg {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: calc((0.5rem / 8) * -1);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.c-forms__input--select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 1.5rem;
+}
+
+.c-forms__input-container--select .c-forms__icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-forms__input--radio,
+.c-forms__input--checkbox {
+  /* hide visually, not to assistive tech */
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c-forms__label--inline {
+  display: inline;
+  font-weight: normal;
+}
+
+.c-forms__label--inline {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c-forms__label--inline::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border: 1px solid;
+  margin-right: 0.5rem;
+}
+
+:checked + .c-forms__label--inline::before {
+  border-color: #222222;
+}
+
+:focus + .c-forms__label--inline::before {
+  box-shadow: 0 0 0 3px #025e8d;
+}
+
+.c-forms__label--radio::before {
+  border-radius: 50%;
+}
+
+.c-forms__label--checkbox::before {
+  border-radius: 0.125em;
+}
+
+[invalid] + .c-forms__label--checkbox::before {
+  border-color: #c40606;
+}
+
+:checked + .c-forms__label--radio::before {
+  background: radial-gradient(#01324b 0%, #01324b 40%, #fff 40%);
+}
+
+:checked + .c-forms__label--checkbox::before {
+  background-color: #01324b;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" fill="none" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+  border-color: #01324b;
+  background-size: 100%;
+  background-repeat: none;
+  background-position: center;
+}
+
+.c-forms__radio-fields {
+  margin-top: 0.25rem;
+  margin-left: calc(1rem / 4);
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  display: none;
+}
+
+.c-forms__radio-fields::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(1rem / 2);
+  background-color: #dadada;
+  border-radius: 4px;
+}
+
+:checked ~ .c-forms__radio-fields {
+  display: block;
+}
+
+.c-forms__error-summary {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #c40606;
+  border: 1px solid #dadada;
+  border-bottom: 4px solid #c40606;
+}
+
+.c-forms__error-summary .c-forms__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c-forms__error-summary-errors {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.c-forms__error-summary-errors a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.c-forms__error-summary-title {
+  color: initial;
+  font-weight: bold;
+}
+
+.c-forms__error-summary-errors li + li {
+  margin-top: 0.25rem;
+}
+
+.c-forms__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+		</style>
+	</head>
+	<body style="padding:2%">
+		<h1>Basic form</h1>
+
+<form>
+			<aside class="c-forms__error-summary" aria-labelledby="summary">
+				<div class="c-forms__error-summary-icon">
+					<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+						<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+							<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+						</svg>
+					</span>
+				</div>
+				<div class="c-forms__error-summary-text">
+					<div class="c-forms__error-summary-title" id="summary">There are problems</div>
+					<ul class="c-forms__error-summary-errors">
+							<li>
+								<a href="#your-name-error">Enter your name</a>
+							</li>
+							<li>
+								<a href="#checkbox-terms-error">Agree to the terms to continue</a>
+							</li>
+					</ul>
+				</div>
+			</aside>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
+					<div class="c-forms__field">
+						<label for="your-name" class="c-forms__label">
+							Your name (simple)
+						</label>
+						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" something="yes" nothing="no">
+					</div>
+					<div class="c-forms__field">
+						<label for="your-name-hint" class="c-forms__label">
+							Your name (with hint)
+								<small class="c-forms__hint">Your name is on your passport</small>
+						</label>
+						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
+					</div>
+					<div class="c-forms__field">
+						<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
+					</div>
+					<div class="c-forms__field">
+						<label for="your-name-error" class="c-forms__label">
+							Your name (with error)
+								<small class="c-forms__hint">Your name is on your passport</small>
+						</label>
+							<small class="c-forms__error" id="error-your-name-error">
+								<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+										<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+									</svg>
+								</span>
+								Enter your name
+							</small>
+						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" autocomplete="off">
+					</div>
+					<div class="c-forms__field">
+						<label for="your-name-disabled" class="c-forms__label">
+							Your name (disabled)
+						</label>
+						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-disabled" name="your-name-disabled" disabled="" autocomplete="off">
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Selects</h2></legend>
+					<div class="c-forms__field">
+						<label for="select-animals" class="c-forms__label">
+							Animal (simple)
+						</label>
+						<div class="c-forms__input-container c-forms__input-container--select">
+							<select class="c-forms__input c-forms__input--select" id="select-animals" name="select-animals" autocomplete="off">
+									<option value="Horse">
+										Horse
+									</option>
+									<option value="Monkey">
+										Monkey
+									</option>
+									<option value="Platypus" selected="">
+										Platypus
+									</option>
+							</select>
+							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+									<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="c-forms__field">
+						<label for="select-animals-hint" class="c-forms__label">
+							Animal (with hint)
+								<small class="c-forms__hint">Which is your favorite?</small>
+						</label>
+						<div class="c-forms__input-container c-forms__input-container--select">
+							<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" autocomplete="off">
+									<option value="Horse">
+										Horse
+									</option>
+									<option value="Monkey">
+										Monkey
+									</option>
+									<option value="Platypus" selected="">
+										Platypus
+									</option>
+							</select>
+							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+									<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
+								</svg>
+							</span>
+						</div>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Radios</h2></legend>
+					<div class="c-forms__field">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
+										<legend class="c-forms__label">Animal</legend>
+						
+									<label class="c-forms__label c-forms__label--wrapper">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" autocomplete="off">
+										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
+									</label>
+									<label class="c-forms__label c-forms__label--wrapper">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" autocomplete="off">
+										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
+											<fieldset class="c-forms__fieldset c-forms__radio-fields">
+													<div class="c-forms__field">
+														<label for="monkey-type" class="c-forms__label">
+															What type of monkey?
+																<small class="c-forms__hint">Chimps are not monkeys</small>
+														</label>
+															<small class="c-forms__error" id="error-monkey-type">
+																<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+																	<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																		<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																	</svg>
+																</span>
+																Choose a monkey already!
+															</small>
+														<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" autocomplete="off">
+													</div>
+											</fieldset>
+									</label>
+									<label class="c-forms__label c-forms__label--wrapper">
+										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" checked="" autocomplete="off">
+										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
+									</label>
+							</fieldset>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Textareas</h2></legend>
+					<div class="c-forms__field">
+						<label for="textarea-example" class="c-forms__label">
+							Enter some text
+						</label>
+						<textarea class="c-forms__input c-forms__input--textarea" id="textarea-example" name="textarea-example" value="This has been entered already" autocomplete="off" rows="5">This has been entered already</textarea>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
+					<div class="c-forms__field">
+						<label class="c-forms__label c-forms__label--wrapper">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms" name="checkbox-terms" autocomplete="off">
+							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (basic)</span>
+						</label>
+					</div>
+					<div class="c-forms__field">
+						<label class="c-forms__label c-forms__label--wrapper">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" autocomplete="off">
+							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</span>
+								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
+						</label>
+					</div>
+					<div class="c-forms__field">
+							<small class="c-forms__error" id="error-checkbox-terms-error">
+								<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+										<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+									</svg>
+								</span>
+								Agree to the terms to continue
+							</small>
+						<label class="c-forms__label c-forms__label--wrapper">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" autocomplete="off">
+							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</span>
+								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
+						</label>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>File upload</h2></legend>
+					<div class="c-forms__field">
+						<label for="file-upload" class="c-forms__label">
+							Journal upload
+						</label>
+						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" autocomplete="off">
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset" role="presentation">
+					<div class="c-forms__field">
+						<div class="c-forms__field c-forms__buttons">
+								<button type="submit" class="u-button u-button--primary" autocomplete="off">
+									Submit
+								</button>
+								<button type="cancel" class="u-button" autocomplete="off">
+									Clear
+								</button>
+						</div>
+					</div>
+			</fieldset>
+</form>
+
+		<script>
+			// no JS found for package
+		</script>
+	
+</body></html>
