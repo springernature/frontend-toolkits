@@ -1,5 +1,8 @@
 # History
 
+## 5.0.1 (2022-06-17)
+    * BUG fix - fix font size and colour issue
+
 ## 5.0.0 (2022-04-08)
     * UPDATE: brand-context v20.1.1
         * global-javascript and global-expander now come from brand-context

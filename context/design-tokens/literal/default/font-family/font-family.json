@@ -1,0 +1,12 @@
+{
+	"font-family": {
+		"serif": {
+			"value": "serif",
+			"comment": "The serif font family"
+		},
+		"sans": {
+			"value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+			"comment": "The sans-serif font family"
+		}
+	}
+}

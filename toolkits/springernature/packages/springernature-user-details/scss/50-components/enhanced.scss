@@ -25,7 +25,6 @@
 
 	&__content-item {
 		padding: 0 12px;
-		font-size: .75rem;
 	}
 
 	&__link {
@@ -33,7 +32,7 @@
 
 		&:hover {
 			background-color: map-get($context--colors, universal-blue);
-			color: map-get($context--colors, white);
+			color: color('white');
 		}
 	}
 

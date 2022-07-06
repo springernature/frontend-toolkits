@@ -1,0 +1,8 @@
+{{> label}}
+{{#if error}}
+	{{> error}}
+{{/if}}
+<textarea
+	class="c-forms__input c-forms__input--textarea"
+	{{> inputCommonAttributes}}
+>{{value}}</textarea>

@@ -34,6 +34,13 @@ dl {
 	margin-top: 0;
 }
 
+/* Basic lists should be aligned to the left */
+ul:not([class]),
+ol:not([class]) {
+	/* Allow for bullet itself */
+	padding-left: 0.9em;
+}
+
 dd {
 	margin: 0;
 }

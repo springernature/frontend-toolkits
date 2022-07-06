@@ -1,0 +1,16 @@
+{
+	"link": {
+		"color": {
+			"value": "{color.primary.medium-blue}"
+		},
+		"hover": {
+			"value": "{color.primary.universal-dark-blue}"
+		},
+		"visited": {
+			"value": "{color.primary.universal-dark-blue}"
+		},
+		"focus": {
+			"value": "{color.primary.bright-blue}"
+		}
+	}
+}

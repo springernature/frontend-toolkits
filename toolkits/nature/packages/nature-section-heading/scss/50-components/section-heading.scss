@@ -1,7 +1,8 @@
 .c-section-heading {
 	border-top: $section-heading--border-top;
 	border-bottom: $section-heading--border-bottom;
-	padding: $section-heading--padding;
+	padding-top: $section-heading--padding--top;
+	padding-bottom: $section-heading--padding--bottom;
 	margin-bottom: $section-heading--margin-bottom;
 	line-height: $section-heading--line-height;
 
@@ -17,6 +18,7 @@
 
 .c-section-heading--no-bt {
 	border-top: 0;
+	padding-top: 0;
 }
 
 .c-section-heading__link {
@@ -26,5 +28,5 @@
 }
 
 .c-section-heading__icon {
-	@include u-icon($section-heading--icon-size, $section-heading--icon-size);
+	margin-left: $section-heading--icon-spacing;
 }

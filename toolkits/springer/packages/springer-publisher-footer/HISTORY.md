@@ -1,5 +1,6 @@
 # History
-
+## 5.2.0 (2022-04-26)
+    * New color scheme to match corporate footer
 ## 5.1.0 (2022-03-04)
     * Action property for buttons (cookie management)
     * Moved template to view folder

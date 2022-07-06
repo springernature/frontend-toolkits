@@ -3,6 +3,7 @@
     		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
 		</script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/springer-publisher-footer</title>
 		<style>
 			@charset "UTF-8";
@@ -621,16 +622,42 @@ template {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
  * Typography
  * Set base font size
  */
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
-  font-size: 1.8em;
+  font-size: 1.125rem;
 }
 
 /**
@@ -793,6 +820,32 @@ body {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
  * Abstracts
  * Sass tools, helper files, variables, functions, mixins and other config files
@@ -804,6 +857,11 @@ body {
  */
 /**
  * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
  *
  */
 /**
@@ -842,6 +900,97 @@ body {
  * Remember to add aria
  *
  */
+h1 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h2 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h3 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
 /* =========================================================================
    $NORMALIZE
    normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
@@ -1298,7 +1447,7 @@ template {
  * Some default CSS styles
  */
 body {
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 1.5;
 }
 
@@ -1317,23 +1466,19 @@ button {
 }
 
 h1 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 1.875rem;
 }
 
 h2 {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 1.0625rem;
 }
 
 h4 {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
 cite {
@@ -1537,6 +1682,32 @@ strong:focus {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
  * Abstracts
  * Sass tools, helper files, variables, functions, mixins and other config files
@@ -1548,6 +1719,11 @@ strong:focus {
  */
 /**
  * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
  *
  */
 /**
@@ -1586,6 +1762,97 @@ strong:focus {
  * Remember to add aria
  *
  */
+h1 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h2 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h3 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
 button {
   line-height: inherit;
 }
@@ -1620,7 +1887,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   height: 100%;
   overflow-y: scroll;
-  font-size: 62.5%;
+  font-size: 100%;
   box-sizing: border-box;
   color: #333333;
   line-height: 1.6180339888;
@@ -1638,7 +1905,7 @@ body {
   max-width: 100%;
   min-height: 100%;
   background: #fcfcfc;
-  font-size: 1.8em;
+  font-size: 1.125rem;
   /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
@@ -1706,7 +1973,7 @@ table {
 
 th,
 td {
-  font-size: 16px;
+  font-size: 1rem;
   border: 1px solid #a6a6a6;
   padding: 0.3em 0.6em;
   vertical-align: top;
@@ -1725,86 +1992,6 @@ h4 {
   margin-top: 0;
 }
 
-h1 {
-  font-style: normal;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  font-size: 3.2rem;
-  font-size: min(max(2.8rem, 4vw), 3.2rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h1 a {
-  text-decoration: none;
-}
-h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h2 {
-  font-style: normal;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  font-size: 2.8rem;
-  font-size: min(max(2.4rem, 3.5vw), 2.8rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h2 a {
-  text-decoration: none;
-}
-h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h3 {
-  font-style: normal;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  font-size: 2.4rem;
-  font-size: min(max(2rem, 3vw), 2.4rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h3 a {
-  text-decoration: none;
-}
-h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h4,
-h5,
-h6 {
-  font-style: normal;
-  margin-bottom: 1em;
-  line-height: 1.4;
-  font-size: 2rem;
-  font-size: min(max(1.8rem, 2.5vw), 2rem);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-}
-h4 a,
-h5 a,
-h6 a {
-  text-decoration: none;
-}
-h4 a.active, h4 a:active, h4 a.hover, h4 a:hover,
-h5 a.active,
-h5 a:active,
-h5 a.hover,
-h5 a:hover,
-h6 a.active,
-h6 a:active,
-h6 a.hover,
-h6 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
 p,
 ol,
 ul,
@@ -1820,6 +2007,10 @@ p {
   margin-bottom: 1.5em;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 p:empty {
   display: none;
 }
@@ -1829,9 +2020,10 @@ cite {
 }
 
 .c-publisher-footer {
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  background-color: #f2f2f2;
+  font-size: 1rem;
+  background-color: #01324b;
 }
 
 .c-publisher-footer__container {
@@ -1841,7 +2033,7 @@ cite {
 }
 
 .c-publisher-footer__section {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #fff;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -1881,8 +2073,7 @@ cite {
 
 .c-publisher-footer__heading {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  color: #333333;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.25em;
 }
@@ -1897,21 +2088,18 @@ cite {
   padding: 0.25em 0;
 }
 
-.c-publisher-footer__link {
+.c-publisher-footer__link,
+.c-publisher-footer__link:visited {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  color: inherit;
   border: 0;
   padding: 0;
   background: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  color: #666666;
 }
-.c-publisher-footer__link.active, .c-publisher-footer__link:active, .c-publisher-footer__link.hover, .c-publisher-footer__link:hover {
+
+button.c-publisher-footer__link {
   text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-.c-publisher-footer__link.visited, .c-publisher-footer__link:visited, .c-publisher-footer__link.hover, .c-publisher-footer__link:hover {
-  color: #666666;
 }
 		</style>
 	</head>
@@ -1919,7 +2107,7 @@ cite {
 		<div class="c-publisher-footer">
 			<div class="c-publisher-footer__section c-publisher-footer__section--compact">
 				<div class="c-publisher-footer__container">
-					<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTEycHgiIGhlaWdodD0iMzBweCIgdmlld0JveD0iMCAwIDExMiAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5sb2dvLXNwcmluZ2VyLWdyZXlzY2FsZTwvdGl0bGU+CiAgICA8ZyBpZD0ibG9nby1zcHJpbmdlci1ncmV5c2NhbGUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJYTUxJRF8yNF8iIGZpbGw9IiM1NTU1NTUiPgogICAgICAgICAgICA8cGF0aCBkPSJNODcuNjY5LDEyLjY3MyBDODguNTMxLDEyLjY3MyA4OS4zNTMsMTIuODc4IDkwLjA1MSwxMy4yNDggQzkxLjExOSwxMy4yMDcgOTIuMTg2LDEzLjA4NCA5My4xNzIsMTIuOTYxIEw5My4zMzUsMTMuMjA2IEM5My4xNzEsMTMuNTc1IDkyLjcxOSwxNC4yNzQgOTIuMzUsMTQuNDc5IEw5MS4xNTksMTQuMzU2IEM5MS40ODgsMTQuODA4IDkxLjczNCwxNS43MTEgOTEuNzM0LDE2LjQwOSBDOTEuNzM0LDE4LjkxNCA4OS40NzYsMjAuMjY5IDg3LjQyMywyMC4yNjkgQzg3LjMsMjAuMjY5IDg2Ljk3MSwyMC4yMjggODYuNjg0LDIwLjIyOCBDODYuMTkxLDIwLjM5MiA4NS43ODEsMjAuOTY3IDg1Ljc4MSwyMS4zMzYgQzg1Ljc4MSwyMS43MDYgODYuMTUxLDIyLjE1OCA4Ny4xMzYsMjIuMTU4IEw4OS42LDIyLjE1OCBDOTEuMDM3LDIyLjE1OCA5Mi45NjcsMjIuODU2IDkyLjk2NywyNS4xNTUgQzkyLjk2NywyNy43ODMgOTAuMjE2LDMwIDg3LjAxMywzMCBDODQuMjIxLDMwIDgyLjc0MiwyOC4yNzYgODIuNzQyLDI2Ljg3OSBDODIuNzQyLDI1Ljk3NiA4My4xOTQsMjUuMjc4IDg1LjEyNCwyMy43OTkgQzg0LjQyNiwyMy41NTMgODMuMTk0LDIyLjg1NSA4My4yNzYsMjEuNTQxIEM4NC4yMjEsMjEuMTMxIDg1LjA4MywyMC4zOTEgODUuNDUyLDE5Ljk0IEM4NC4zNDQsMTkuNTcgODMuMzE3LDE4LjI1NiA4My4zMTcsMTYuNzc5IEM4My4zMTcsMTQuMTEgODUuNjk5LDEyLjY3MyA4Ny42NjksMTIuNjczIFogTTQ2LjM2MiwxMi40NjcgTDQ2LjM2MiwxNC4wMjcgTDQ4LjU3OSwxMi44NzcgQzQ4Ljg2NiwxMi43MTMgNDkuMTU0LDEyLjY3MiA0OS40NDEsMTIuNjcyIEM1MS45ODcsMTIuNjcyIDUzLjQyNCwxNC44ODkgNTMuNDI0LDE3LjAyNCBDNTMuNDI0LDIwLjQ3NCA1MC45NjEsMjIuODE0IDQ3Ljg4MSwyMy4xODQgQzQ3LjIyNCwyMy4xNDMgNDYuNjksMjMuMDIgNDYuMzYyLDIyLjg5NyBMNDYuMzYyLDI2Ljc1NiBDNDYuMzYyLDI4LjE1MiA0Ni41MjYsMjguMjc2IDQ4LjQxNSwyOC40NCBMNDguNDE1LDI5LjIyIEw0Mi42MjYsMjkuMjIgTDQyLjYyNiwyOC40NCBDNDQuMTA0LDI4LjI3NiA0NC4yMjcsMjguMTUzIDQ0LjIyNywyNi43NTYgTDQ0LjIyNywxNS43OTMgQzQ0LjIyNywxNC4zNTYgNDQuMTg2LDE0LjMxNSA0Mi43OSwxNC4xOTIgTDQyLjc5LDEzLjQ5NCBDNDQuMDIyLDEzLjI0OCA0NS4xNzEsMTIuODc4IDQ2LjM2MiwxMi40NjcgWiBNMjMuNjUxLDI2LjcxNSBMMjMuNjUxLDI5LjA5NyBMNC4yNywyOS4wOTcgTDQuMjcsMjYuNzE1IEwyMy42NTEsMjYuNzE1IFogTTg3LjQ2NCwyMy45NjQgQzg1LjY5OCwyMy45NjQgODQuOTE4LDI1LjI3OCA4NC45MTgsMjYuMjY0IEM4NC45MTgsMjcuNjYgODYuMTUsMjguNzI4IDg3Ljk5OCwyOC43MjggQzkwLjA1MSwyOC43MjggOTEuMjAxLDI3LjM3MyA5MS4yMDEsMjYuMDE4IEM5MS4yLDI1LjE1NSA5MC43MDcsMjQuNDU3IDkwLjA5MiwyNC4yMTEgQzg5LjUxNywyNC4wMDUgODguNzM3LDIzLjk2NCA4Ny40NjQsMjMuOTY0IFogTTM3LjIwNiw3LjIxMiBDMzguMjc0LDcuMjEyIDM5LjQyMyw3LjQ5OSA0MC41NzMsNy45MSBDNDAuNjU1LDguNzcyIDQwLjczNyw5Ljc1OCA0MC43NzgsMTEuNDgzIEwzOS45MTYsMTEuNTI0IEMzOS41MDUsMTAuMDg2IDM4Ljg0OSw4LjMyMSAzNi43NTQsOC4zMjEgQzM1LjE5NCw4LjMyMSAzNC40MTMsOS4zODkgMzQuNDEzLDEwLjY2MiBDMzQuNDEzLDE0LjU2MyA0MS41NTgsMTMuNzQyIDQxLjU1OCwxOC44MzMgQzQxLjU1OCwyMS4yNTQgMzkuMzgxLDIzLjM0OCAzNi4xNzksMjMuMzQ4IEMzNC42MTksMjMuMzQ4IDMzLjM4NywyMi45NzggMzIuMTk2LDIyLjQ0NSBDMzEuOTUsMjEuMzc3IDMxLjg2NywxOS45NCAzMS43ODUsMTguNDYyIEwzMi43MywxOC4yOTggQzMzLjI2NCwyMC4zMSAzNC4wMDMsMjIuMjgxIDM2LjQ2NiwyMi4yODEgQzM4LjE5MSwyMi4yODEgMzkuMjE3LDIxLjIxMyAzOS4yMTcsMTkuNjEyIEMzOS4yMTcsMTcuNTQyNDg5NCAzNy41MzU2NDY5LDE2LjcxMjAyMTcgMzUuODE4NTIwMywxNS44MzA4MDU4IEwzNS4zNzA4NDQ4LDE1LjU5ODkyNDEgQzMzLjczNDMyNjgsMTQuNzM4MjUxMiAzMi4xOTYsMTMuNzI4NTMxOSAzMi4xOTYsMTEuNDQxIEMzMi4xOTYsOS4yMjQgMzQuMDAzLDcuMjEyIDM3LjIwNiw3LjIxMiBaIE05OC45MTksMTIuNjcyIEMxMDAuOTMxLDEyLjY3MiAxMDIuNTMyLDE0LjM5NyAxMDIuNTMyLDE2LjMyNyBDMTAyLjUzMywxNi45NDIgMTAyLjQwOSwxNy4xODkgMTAxLjk1OCwxNy4yNzEgQzEwMS41ODksMTcuMzEyIDk4Ljc1NSwxNy41MTcgOTYuMTY5LDE3LjYgQzk2LjI1MSwyMC4zMSA5Ny44NTIsMjEuNDU5IDk5LjQ1NCwyMS40NTkgQzEwMC4zNTcsMjEuNDU5IDEwMS4wMTQsMjEuMjEzIDEwMS44MzUsMjAuMzkyIEwxMDIuMzY5LDIxLjEzMSBDMTAxLjAxNCwyMi44MTQgOTkuNDEyLDIzLjIyNSA5OC42NzMsMjMuMjI1IEM5NS43NTgsMjMuMjI1IDk0LjA3NCwyMS4wMDggOTQuMDc0LDE4LjM4IEM5NC4wNzQsMTUuMTc3IDk2LjQ5NywxMi42NzIgOTguOTE5LDEyLjY3MiBaIE0xMi40NDEsMi4wNzggQzEyLjk3NSwyLjExOSAxMy40NjgsMi4yMDEgMTMuOTE5LDIuMjg0IEMxNC4wMDEsMi4wMzggMTQuMjQ4LDEuODMyIDE0LjUzNSwxLjgzMiBDMTQuOTA0LDEuODMyIDE1LjE1MSwyLjExOSAxNS4xNTEsMi40NDggTDE1LjE1MSwyLjYxMiBDMTYuMDE0LDIuODk5IDE2LjgzNSwzLjMxIDE3LjU3NCwzLjc2MiBDMTcuNjk3LDMuNTk4IDE3Ljg2MSwzLjUxNSAxOC4wNjYsMy41MTUgQzE4LjQzNiwzLjUxNSAxOC42ODIsMy44MDIgMTguNjgyLDQuMTMxIEMxOC42ODIsNC4yOTUgMTguNjQxLDQuNDE4IDE4LjU1OSw0LjUwMSBDMTkuMjU3LDUuMDc2IDE5LjgzMiw1Ljc3NCAyMC4zNjYsNi41MTMgQzIwLjQ0OCw2LjQ3MiAyMC41NzEsNi40MzEgMjAuNjUzLDYuNDMxIEMyMS4wMjIsNi40MzEgMjEuMzEsNi43MTggMjEuMzEsNy4wNDcgQzIxLjMxLDcuMjk0IDIxLjE4Nyw3LjQ5OSAyMC45ODIsNy41ODEgQzIxLjM5Myw4LjMyIDIxLjcyMSw5LjE0MSAyMS45NjcsMTAuMDAzIEMyMi4wMDgsOS45NjIgMjIuMDksOS45NjIgMjIuMTMxLDkuOTYyIEMyMi41LDkuOTYyIDIyLjc0NywxMC4yNDkgMjIuNzQ3LDEwLjU3OCBDMjIuNzQ3LDEwLjkwNyAyMi41NDIsMTEuMTUzIDIyLjI5NiwxMS4xOTQgQzIyLjQ2LDEyLjA1NiAyMi41ODMsMTIuOTE5IDIyLjY2NSwxMy44MjIgQzIzLjAzNCwxMy44MjIgMjMuMzIyLDE0LjEwOSAyMy4zMjIsMTQuNDM4IEMyMy4zMjIsMTQuODA3IDIzLjAzNSwxNS4wNTMgMjIuNzA2LDE1LjA5NSBDMjIuNzA2LDE1Ljk1NyAyMi42NjUsMTYuOTAyIDIyLjU4MywxNy44MDUgQzIyLjkxMSwxNy44NDYgMjMuMTU4LDE4LjEzMyAyMy4xNTgsMTguNDYyIEMyMy4xNTgsMTguNzkxIDIyLjg3MSwxOS4wNzggMjIuNTAxLDE5LjA3OCBMMjIuNDYsMTkuMDc4IEMyMi4yOTYsMTkuOTgxIDIyLjEzMiwyMC44ODQgMjEuOTI2LDIxLjgyOSBMMjMuNjUxLDIxLjgyOSBMMjMuNjUxLDIzLjAyIEw0LjI3LDIzLjAyIEw0LjI3LDIxLjgyOSBMNS45MTMsMjEuODI5IEM2LjIsMTcuOTY5IDkuODk1LDE2LjUzMiAxMS45NDksMTMuNDEyIEw5LjU2OCwxMy40MTIgQzguNDE4LDEzLjgyMyA2LjY5MywxNi4zNjggNi42OTMsMTcuODQ2IEwzLjY5NiwxNy44NDYgTDMuNzM3LDE2LjYxNCBMMi43NTEsMTcuNDM1IEwwLjEyMywxNC4zOTcgQzAuMTIzLDE0LjM5NyAtNy45OTM2MDU3OGUtMTQsMTQuMjMzIC03Ljk5MzYwNTc4ZS0xNCwxNC4xMSBDLTcuOTkzNjA1NzhlLTE0LDEzLjk4NyAwLjA0MSwxMy45MDQgMC4wNDEsMTMuOTA0IEw0LjE4OCw4LjI3OSBMNC45MjcsNi4wNjIgTDYuMDM2LDUuNjUyIEw3LjE4Niw0LjA1MSBMNi43NzUsMS4yNTcgQzcuODgzLDAuODQ2IDguOTUxLDEuMjE2IDkuNDg1LDEuNzQ5IEM5LjUyMDg3NSwxLjAzMDYyNSA5LjQ2MjU3ODEyLDAuMjQ5NDY4NzUgOS40NDc0NDMzNiwwLjA2NTQwNDI5NjkgTDkuNDQ0LDAuMDI1IEw5LjQ0NCwwLjAyNSBDMTEuNDE1LC0wLjE4IDEyLjExMiwwLjg4NyAxMi40NDEsMi4wNzggWiBNMTA3LjYyNCwxMi42MzEgTDEwNy42MjQsMTUuMDk1IEwxMDcuNjY1LDE1LjA5NSBDMTA4LjM2MywxMy43NCAxMDkuMzg5LDEyLjY3MyAxMTAuMzc1LDEyLjY3MyBDMTExLjE1NSwxMi42NzMgMTExLjc3MSwxMy4yODkgMTExLjc3MSwxMy45NDYgQzExMS43NzEsMTQuODg5IDExMC43NDUsMTUuNzExIDExMC4yOTMsMTUuMjE4IEMxMTAuMDA2LDE0LjkzMSAxMDkuNjM2LDE0LjgwNyAxMDkuMzA4LDE0LjgwNyBDMTA4Ljc3NCwxNC44MDcgMTA4LjA3NiwxNS40MjMgMTA3LjYyNSwxNi42OTYgTDEwNy42MjUsMjAuNTE1IEMxMDcuNjI1LDIxLjkxMSAxMDcuNzg5LDIyLjAzNSAxMDkuNTU0LDIyLjE1OCBMMTA5LjU1NCwyMi45NzkgTDEwMy45MjksMjIuOTc5IEwxMDMuOTI5LDIyLjE1OCBDMTA1LjM2NiwyMi4wMzUgMTA1LjQ4OSwyMS45MTEgMTA1LjQ4OSwyMC41MTUgTDEwNS40ODksMTUuODc1IEMxMDUuNDg5LDE0LjQ3OSAxMDUuNDA3LDE0LjQ3OSAxMDQuMDkzLDE0LjIzMiBMMTA0LjA5MywxMy41MzQgQzEwNS40MDcsMTMuMjg3IDEwNi41NTcsMTMuMDQxIDEwNy42MjQsMTIuNjMxIFogTTczLjkxMiwxMi42MzEgTDczLjkxMiwxNC4yNzQgQzc0LjQ0NiwxMy44MjIgNzYuMDA2LDEyLjY3MyA3Ny4xOTcsMTIuNjczIEM3OS4wNDUsMTIuNjczIDgwLjE5NCwxMy45NDYgODAuMTk0LDE1LjgzNSBMODAuMTk0LDIwLjU5OCBDODAuMTk0LDIxLjkxMiA4MC40LDIyLjAzNiA4MS42MzIsMjIuMTU5IEw4MS42MzIsMjIuOTc5IEw3Ni43ODgsMjIuOTc5IEw3Ni43ODgsMjIuMTU4IEM3Ny45MzgsMjIuMDM1IDc4LjEwMiwyMS45MTEgNzguMTAyLDIwLjU5NyBMNzguMTAyLDE2LjU3MyBDNzguMTAyLDE1LjA5NSA3Ny40NDUsMTQuMTkxIDc2LjIxMywxNC4xOTEgQzc1LjQzMywxNC4xOTEgNzQuNTI5LDE0Ljc2NiA3My45MTMsMTUuMzQxIEw3My45MTMsMjAuNTk3IEM3My45MTMsMjEuOTExIDc0LjAzNywyMi4wMzUgNzUuMTg2LDIyLjE1OCBMNzUuMTg2LDIyLjk3OSBMNzAuMTc2LDIyLjk3OSBMNzAuMTc2LDIyLjE1OCBDNzEuNTcyLDIyLjAzNSA3MS43NzcsMjEuOTExIDcxLjc3NywyMC41OTcgTDcxLjc3NywxNS44NzUgQzcxLjc3NywxNC40NzkgNzEuNjk1LDE0LjM5NyA3MC40NjMsMTQuMjMyIEw3MC40NjMsMTMuNTM0IEM3MS42OTUsMTMuMjg3IDcyLjg0NSwxMy4wNDEgNzMuOTEyLDEyLjYzMSBaIE01OC41OTgsMTIuNjMxIEw1OC41OTgsMTUuMDk1IEw1OC42MzksMTUuMDk1IEM1OS4zNzgsMTMuNzQgNjAuNDA1LDEyLjY3MyA2MS4zNDksMTIuNjczIEM2Mi4xNzEsMTIuNjczIDYyLjc0NSwxMy4yODkgNjIuNzQ1LDEzLjk0NiBDNjIuNzQ1LDE0Ljg4OSA2MS43NiwxNS43MTEgNjEuMjI1LDE1LjIxOCBDNjAuOTc5LDE0Ljg4OSA2MC42NSwxNC44MDcgNjAuMjQsMTQuODA3IEM1OS43MDYsMTQuODA3IDU5LjA0OSwxNS40MjMgNTguNTk3LDE2LjY5NiBMNTguNTk3LDIwLjUxNSBDNTguNTk3LDIxLjkxMSA1OC43NjEsMjIuMDM1IDYwLjUyNywyMi4xNTggTDYwLjUyNywyMi45NzkgTDU0Ljk0MywyMi45NzkgTDU0Ljk0MywyMi4xNTggQzU2LjMzOSwyMi4wMzUgNTYuNTA0LDIxLjkxMSA1Ni41MDQsMjAuNTE1IEw1Ni41MDQsMTUuODc1IEM1Ni41MDQsMTQuNDc5IDU2LjM4MSwxNC40NzkgNTUuMTA4LDE0LjIzMiBMNTUuMTA4LDEzLjUzNCBDNTYuMzQsMTMuMjg3IDU3LjUzMSwxMy4wNDEgNTguNTk4LDEyLjYzMSBaIE02Ny41MDgsMTIuNjMyIEw2Ny41MDgsMjAuNDM0IEM2Ny41MDgsMjEuOTEyIDY3LjYzMSwyMi4wMzUgNjkuMDY5LDIyLjE1OCBMNjkuMDY5LDIyLjk3OSBMNjMuODEzLDIyLjk3OSBMNjMuODEzLDIyLjE1OCBDNjUuMjA5LDIyLjAzNSA2NS40MTQsMjEuOTExIDY1LjQxNCwyMC40MzQgTDY1LjQxNCwxNS45OTkgQzY1LjQxNCwxNC4zOTggNjUuMjkxLDE0LjM5OCA2My45MzYsMTQuMjMzIEw2My45MzYsMTMuNTM1IEM2NS4yMDksMTMuMjg4IDY2LjQ4MSwxMy4wMDEgNjcuNTA4LDEyLjYzMiBaIE00OC40MTUsMTQuMTkxIEM0Ny43NTgsMTQuMTkxIDQ2Ljg5NiwxNC42NDMgNDYuMzYyLDE0Ljk3MSBMNDYuMzYyLDIxLjA0OCBDNDYuODE0LDIxLjU0MSA0Ny41NTMsMjEuOTEgNDguNDU2LDIxLjkxIEM0OS42NDcsMjEuOTEgNTEuMjA3LDIxLjAwNyA1MS4yMDcsMTcuOTI4IEM1MS4yMDcsMTUuMzQxIDQ5Ljk3NSwxNC4xOTEgNDguNDE1LDE0LjE5MSBaIE0xMC42MzQsMS4yOTggTDEwLjYzMzI3MjEsMS4zNzAxNTY4MiBDMTAuNjI4NDE5NywxLjY4MzU2NTIyIDEwLjU5MTIxNzQsMi45Njg3ODI2MSAxMC4zMDYsNC4yNTQgTDkuMTk4LDQuMDUgQzkuMTk4LDMuMDIzIDguNzQ2LDIuNjEzIDguMTMxLDIuMzI1IEw4LjQxOCw0LjMzNyBMNy43MTksNS4zNjQgTDguMDQ4LDYuMzA4IEw1Ljg3Miw3LjA0NyBMNS4yNTYsOC44MTMgTDEuNDM3LDE0LjA2OSBMMi44NzUsMTUuNzkzIEw0LjQ3NiwxNC40MzggTDQuODQ1LDE0LjY4NCBMNC44NDUsMTYuNjk2IEw1LjcwNywxNi42OTYgQzYuMDc3LDE1LjI1OSA3LjI2NywxMy41NzUgOC4zNzYsMTIuNzU0IEw3Ljc2LDEyLjAxNSBMOC42NjMsMTEuMjM1IEw5LjUyNSwxMi4zMDMgTDkuNzcyMDY4MywxMi4zMDI3ODQzIEM5LjgxMDU0NjE1LDEyLjMwMjczMDQgOS44NTI4MjExNiwxMi4zMDI2NjMgOS44OTgzODcwMywxMi4zMDI1Nzg4IEwxMC4yMDcyMjI0LDEyLjMwMTg0NDIgQzExLjExNDQ4OTYsMTIuMjk5MjAyMyAxMi42MDUsMTIuMjkwNTIxNyAxMi42MDUsMTIuMjYyIEMxMy4wNTcsMTEuMjc3IDEzLjM0NCwxMC4wODYgMTMuMzQ0LDguNjkgTDE0LjUzNSw4LjY5IEMxNC41MzUsMTMuMzcxIDEyLjE5NSwxNS4yMTkgOS4yNzksMTguMDkzIEM4LjIxMSwxOS4xNiA3LjI2NywyMC4zMSA3LjE0NCwyMS44NyBMMjAuNjk0LDIxLjg3IEMyMy4wNzYsMTIuMDU2IDIwLjI4Myw0LjI1NSAxMi42ODcsMy4zNTEgQzEyLjcxOTgsMy42Nzk4IDEyLjcyNjM2LDMuOTU1NDggMTIuNzI3NjcyLDQuMjIxMDQ4IEwxMi43MjgsNC40MTkgQzEyLjcyOCw0LjkxMiAxMi42ODcsNS4zMjIgMTIuNjg3LDUuMzIyIEwxMS40OTcsNS4xMTYgQzExLjUzOCw0LjcwNSAxMS42MiwxLjkxMyAxMC42MzQsMS4yOTggWiBNODcuNDY0LDEzLjY1OCBDODYuNjAyLDEzLjY1OCA4NS42MTYsMTQuNTYxIDg1LjYxNiwxNi4yODYgQzg1LjYxNiwxOC4wMTEgODYuNTE5LDE5LjI0MyA4Ny43NTEsMTkuMjQzIEM4OC42NTQsMTkuMjQzIDg5LjUxNywxOC40NjMgODkuNTE3LDE2LjU3NCBDODkuNTE3LDE0Ljk3MiA4OC43MzYsMTMuNjU4IDg3LjQ2NCwxMy42NTggWiBNOTguNDY4LDEzLjY5OSBDOTcuNTI0LDEzLjY5OSA5Ni41MzgsMTQuNzI2IDk2LjI5MiwxNi40OTEgTDk5LjgyMywxNi40MDkgQzEwMC4yNzUsMTYuNDA5IDEwMC4zNTcsMTYuMjg2IDEwMC4zNTcsMTUuODc1IEMxMDAuMzU2LDE0Ljc2NiA5OS41NzcsMTMuNjk5IDk4LjQ2OCwxMy42OTkgWiBNMi44MzQsMTIuNzU1IEwzLjU3MywxMi43OTYgQzMuNjE0LDEzLjMzIDMuNTMyLDE0LjE1MSAzLjI0NCwxNC41NjIgTDIuMzgyLDE0LjIzMyBDMi42NjksMTMuODIzIDIuODM0LDEzLjI0OCAyLjgzNCwxMi43NTUgWiBNNjYuMzU4LDcuNjIyIEM2Ny4xOCw3LjYyMiA2Ny43OTUsOC4yMzggNjcuNzk1LDkuMDU5IEM2Ny43OTUsOS44MzkgNjcuMTgsMTAuNDU1IDY2LjM1OCwxMC40NTUgQzY1LjU3OCwxMC40NTUgNjQuOTYyLDkuODM5IDY0Ljk2Miw5LjA1OSBDNjQuOTYyLDguMjM4IDY1LjU3OCw3LjYyMiA2Ni4zNTgsNy42MjIgWiBNOC4yNTMsNy40OTggTDguMjk0LDguMjM4IEw2LjQ0Nyw5LjIyMyBMNi4zMjMsNy43MDQgTDguMjUzLDcuNDk4IFoiIGlkPSJDb21iaW5lZC1TaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Springer logo" itemprop="logo" width="112" height="30" role="img">
+					<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTEycHgiIGhlaWdodD0iMzBweCIgdmlld0JveD0iMCAwIDExMiAzMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5sb2dvLXNwcmluZ2VyLWdyZXlzY2FsZTwvdGl0bGU+CiAgICA8ZyBpZD0ibG9nby1zcHJpbmdlci1ncmV5c2NhbGUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJYTUxJRF8yNF8iIGZpbGw9IiNmZmYiPgogICAgICAgICAgICA8cGF0aCBkPSJNODcuNjY5LDEyLjY3MyBDODguNTMxLDEyLjY3MyA4OS4zNTMsMTIuODc4IDkwLjA1MSwxMy4yNDggQzkxLjExOSwxMy4yMDcgOTIuMTg2LDEzLjA4NCA5My4xNzIsMTIuOTYxIEw5My4zMzUsMTMuMjA2IEM5My4xNzEsMTMuNTc1IDkyLjcxOSwxNC4yNzQgOTIuMzUsMTQuNDc5IEw5MS4xNTksMTQuMzU2IEM5MS40ODgsMTQuODA4IDkxLjczNCwxNS43MTEgOTEuNzM0LDE2LjQwOSBDOTEuNzM0LDE4LjkxNCA4OS40NzYsMjAuMjY5IDg3LjQyMywyMC4yNjkgQzg3LjMsMjAuMjY5IDg2Ljk3MSwyMC4yMjggODYuNjg0LDIwLjIyOCBDODYuMTkxLDIwLjM5MiA4NS43ODEsMjAuOTY3IDg1Ljc4MSwyMS4zMzYgQzg1Ljc4MSwyMS43MDYgODYuMTUxLDIyLjE1OCA4Ny4xMzYsMjIuMTU4IEw4OS42LDIyLjE1OCBDOTEuMDM3LDIyLjE1OCA5Mi45NjcsMjIuODU2IDkyLjk2NywyNS4xNTUgQzkyLjk2NywyNy43ODMgOTAuMjE2LDMwIDg3LjAxMywzMCBDODQuMjIxLDMwIDgyLjc0MiwyOC4yNzYgODIuNzQyLDI2Ljg3OSBDODIuNzQyLDI1Ljk3NiA4My4xOTQsMjUuMjc4IDg1LjEyNCwyMy43OTkgQzg0LjQyNiwyMy41NTMgODMuMTk0LDIyLjg1NSA4My4yNzYsMjEuNTQxIEM4NC4yMjEsMjEuMTMxIDg1LjA4MywyMC4zOTEgODUuNDUyLDE5Ljk0IEM4NC4zNDQsMTkuNTcgODMuMzE3LDE4LjI1NiA4My4zMTcsMTYuNzc5IEM4My4zMTcsMTQuMTEgODUuNjk5LDEyLjY3MyA4Ny42NjksMTIuNjczIFogTTQ2LjM2MiwxMi40NjcgTDQ2LjM2MiwxNC4wMjcgTDQ4LjU3OSwxMi44NzcgQzQ4Ljg2NiwxMi43MTMgNDkuMTU0LDEyLjY3MiA0OS40NDEsMTIuNjcyIEM1MS45ODcsMTIuNjcyIDUzLjQyNCwxNC44ODkgNTMuNDI0LDE3LjAyNCBDNTMuNDI0LDIwLjQ3NCA1MC45NjEsMjIuODE0IDQ3Ljg4MSwyMy4xODQgQzQ3LjIyNCwyMy4xNDMgNDYuNjksMjMuMDIgNDYuMzYyLDIyLjg5NyBMNDYuMzYyLDI2Ljc1NiBDNDYuMzYyLDI4LjE1MiA0Ni41MjYsMjguMjc2IDQ4LjQxNSwyOC40NCBMNDguNDE1LDI5LjIyIEw0Mi42MjYsMjkuMjIgTDQyLjYyNiwyOC40NCBDNDQuMTA0LDI4LjI3NiA0NC4yMjcsMjguMTUzIDQ0LjIyNywyNi43NTYgTDQ0LjIyNywxNS43OTMgQzQ0LjIyNywxNC4zNTYgNDQuMTg2LDE0LjMxNSA0Mi43OSwxNC4xOTIgTDQyLjc5LDEzLjQ5NCBDNDQuMDIyLDEzLjI0OCA0NS4xNzEsMTIuODc4IDQ2LjM2MiwxMi40NjcgWiBNMjMuNjUxLDI2LjcxNSBMMjMuNjUxLDI5LjA5NyBMNC4yNywyOS4wOTcgTDQuMjcsMjYuNzE1IEwyMy42NTEsMjYuNzE1IFogTTg3LjQ2NCwyMy45NjQgQzg1LjY5OCwyMy45NjQgODQuOTE4LDI1LjI3OCA4NC45MTgsMjYuMjY0IEM4NC45MTgsMjcuNjYgODYuMTUsMjguNzI4IDg3Ljk5OCwyOC43MjggQzkwLjA1MSwyOC43MjggOTEuMjAxLDI3LjM3MyA5MS4yMDEsMjYuMDE4IEM5MS4yLDI1LjE1NSA5MC43MDcsMjQuNDU3IDkwLjA5MiwyNC4yMTEgQzg5LjUxNywyNC4wMDUgODguNzM3LDIzLjk2NCA4Ny40NjQsMjMuOTY0IFogTTM3LjIwNiw3LjIxMiBDMzguMjc0LDcuMjEyIDM5LjQyMyw3LjQ5OSA0MC41NzMsNy45MSBDNDAuNjU1LDguNzcyIDQwLjczNyw5Ljc1OCA0MC43NzgsMTEuNDgzIEwzOS45MTYsMTEuNTI0IEMzOS41MDUsMTAuMDg2IDM4Ljg0OSw4LjMyMSAzNi43NTQsOC4zMjEgQzM1LjE5NCw4LjMyMSAzNC40MTMsOS4zODkgMzQuNDEzLDEwLjY2MiBDMzQuNDEzLDE0LjU2MyA0MS41NTgsMTMuNzQyIDQxLjU1OCwxOC44MzMgQzQxLjU1OCwyMS4yNTQgMzkuMzgxLDIzLjM0OCAzNi4xNzksMjMuMzQ4IEMzNC42MTksMjMuMzQ4IDMzLjM4NywyMi45NzggMzIuMTk2LDIyLjQ0NSBDMzEuOTUsMjEuMzc3IDMxLjg2NywxOS45NCAzMS43ODUsMTguNDYyIEwzMi43MywxOC4yOTggQzMzLjI2NCwyMC4zMSAzNC4wMDMsMjIuMjgxIDM2LjQ2NiwyMi4yODEgQzM4LjE5MSwyMi4yODEgMzkuMjE3LDIxLjIxMyAzOS4yMTcsMTkuNjEyIEMzOS4yMTcsMTcuNTQyNDg5NCAzNy41MzU2NDY5LDE2LjcxMjAyMTcgMzUuODE4NTIwMywxNS44MzA4MDU4IEwzNS4zNzA4NDQ4LDE1LjU5ODkyNDEgQzMzLjczNDMyNjgsMTQuNzM4MjUxMiAzMi4xOTYsMTMuNzI4NTMxOSAzMi4xOTYsMTEuNDQxIEMzMi4xOTYsOS4yMjQgMzQuMDAzLDcuMjEyIDM3LjIwNiw3LjIxMiBaIE05OC45MTksMTIuNjcyIEMxMDAuOTMxLDEyLjY3MiAxMDIuNTMyLDE0LjM5NyAxMDIuNTMyLDE2LjMyNyBDMTAyLjUzMywxNi45NDIgMTAyLjQwOSwxNy4xODkgMTAxLjk1OCwxNy4yNzEgQzEwMS41ODksMTcuMzEyIDk4Ljc1NSwxNy41MTcgOTYuMTY5LDE3LjYgQzk2LjI1MSwyMC4zMSA5Ny44NTIsMjEuNDU5IDk5LjQ1NCwyMS40NTkgQzEwMC4zNTcsMjEuNDU5IDEwMS4wMTQsMjEuMjEzIDEwMS44MzUsMjAuMzkyIEwxMDIuMzY5LDIxLjEzMSBDMTAxLjAxNCwyMi44MTQgOTkuNDEyLDIzLjIyNSA5OC42NzMsMjMuMjI1IEM5NS43NTgsMjMuMjI1IDk0LjA3NCwyMS4wMDggOTQuMDc0LDE4LjM4IEM5NC4wNzQsMTUuMTc3IDk2LjQ5NywxMi42NzIgOTguOTE5LDEyLjY3MiBaIE0xMi40NDEsMi4wNzggQzEyLjk3NSwyLjExOSAxMy40NjgsMi4yMDEgMTMuOTE5LDIuMjg0IEMxNC4wMDEsMi4wMzggMTQuMjQ4LDEuODMyIDE0LjUzNSwxLjgzMiBDMTQuOTA0LDEuODMyIDE1LjE1MSwyLjExOSAxNS4xNTEsMi40NDggTDE1LjE1MSwyLjYxMiBDMTYuMDE0LDIuODk5IDE2LjgzNSwzLjMxIDE3LjU3NCwzLjc2MiBDMTcuNjk3LDMuNTk4IDE3Ljg2MSwzLjUxNSAxOC4wNjYsMy41MTUgQzE4LjQzNiwzLjUxNSAxOC42ODIsMy44MDIgMTguNjgyLDQuMTMxIEMxOC42ODIsNC4yOTUgMTguNjQxLDQuNDE4IDE4LjU1OSw0LjUwMSBDMTkuMjU3LDUuMDc2IDE5LjgzMiw1Ljc3NCAyMC4zNjYsNi41MTMgQzIwLjQ0OCw2LjQ3MiAyMC41NzEsNi40MzEgMjAuNjUzLDYuNDMxIEMyMS4wMjIsNi40MzEgMjEuMzEsNi43MTggMjEuMzEsNy4wNDcgQzIxLjMxLDcuMjk0IDIxLjE4Nyw3LjQ5OSAyMC45ODIsNy41ODEgQzIxLjM5Myw4LjMyIDIxLjcyMSw5LjE0MSAyMS45NjcsMTAuMDAzIEMyMi4wMDgsOS45NjIgMjIuMDksOS45NjIgMjIuMTMxLDkuOTYyIEMyMi41LDkuOTYyIDIyLjc0NywxMC4yNDkgMjIuNzQ3LDEwLjU3OCBDMjIuNzQ3LDEwLjkwNyAyMi41NDIsMTEuMTUzIDIyLjI5NiwxMS4xOTQgQzIyLjQ2LDEyLjA1NiAyMi41ODMsMTIuOTE5IDIyLjY2NSwxMy44MjIgQzIzLjAzNCwxMy44MjIgMjMuMzIyLDE0LjEwOSAyMy4zMjIsMTQuNDM4IEMyMy4zMjIsMTQuODA3IDIzLjAzNSwxNS4wNTMgMjIuNzA2LDE1LjA5NSBDMjIuNzA2LDE1Ljk1NyAyMi42NjUsMTYuOTAyIDIyLjU4MywxNy44MDUgQzIyLjkxMSwxNy44NDYgMjMuMTU4LDE4LjEzMyAyMy4xNTgsMTguNDYyIEMyMy4xNTgsMTguNzkxIDIyLjg3MSwxOS4wNzggMjIuNTAxLDE5LjA3OCBMMjIuNDYsMTkuMDc4IEMyMi4yOTYsMTkuOTgxIDIyLjEzMiwyMC44ODQgMjEuOTI2LDIxLjgyOSBMMjMuNjUxLDIxLjgyOSBMMjMuNjUxLDIzLjAyIEw0LjI3LDIzLjAyIEw0LjI3LDIxLjgyOSBMNS45MTMsMjEuODI5IEM2LjIsMTcuOTY5IDkuODk1LDE2LjUzMiAxMS45NDksMTMuNDEyIEw5LjU2OCwxMy40MTIgQzguNDE4LDEzLjgyMyA2LjY5MywxNi4zNjggNi42OTMsMTcuODQ2IEwzLjY5NiwxNy44NDYgTDMuNzM3LDE2LjYxNCBMMi43NTEsMTcuNDM1IEwwLjEyMywxNC4zOTcgQzAuMTIzLDE0LjM5NyAtNy45OTM2MDU3OGUtMTQsMTQuMjMzIC03Ljk5MzYwNTc4ZS0xNCwxNC4xMSBDLTcuOTkzNjA1NzhlLTE0LDEzLjk4NyAwLjA0MSwxMy45MDQgMC4wNDEsMTMuOTA0IEw0LjE4OCw4LjI3OSBMNC45MjcsNi4wNjIgTDYuMDM2LDUuNjUyIEw3LjE4Niw0LjA1MSBMNi43NzUsMS4yNTcgQzcuODgzLDAuODQ2IDguOTUxLDEuMjE2IDkuNDg1LDEuNzQ5IEM5LjUyMDg3NSwxLjAzMDYyNSA5LjQ2MjU3ODEyLDAuMjQ5NDY4NzUgOS40NDc0NDMzNiwwLjA2NTQwNDI5NjkgTDkuNDQ0LDAuMDI1IEw5LjQ0NCwwLjAyNSBDMTEuNDE1LC0wLjE4IDEyLjExMiwwLjg4NyAxMi40NDEsMi4wNzggWiBNMTA3LjYyNCwxMi42MzEgTDEwNy42MjQsMTUuMDk1IEwxMDcuNjY1LDE1LjA5NSBDMTA4LjM2MywxMy43NCAxMDkuMzg5LDEyLjY3MyAxMTAuMzc1LDEyLjY3MyBDMTExLjE1NSwxMi42NzMgMTExLjc3MSwxMy4yODkgMTExLjc3MSwxMy45NDYgQzExMS43NzEsMTQuODg5IDExMC43NDUsMTUuNzExIDExMC4yOTMsMTUuMjE4IEMxMTAuMDA2LDE0LjkzMSAxMDkuNjM2LDE0LjgwNyAxMDkuMzA4LDE0LjgwNyBDMTA4Ljc3NCwxNC44MDcgMTA4LjA3NiwxNS40MjMgMTA3LjYyNSwxNi42OTYgTDEwNy42MjUsMjAuNTE1IEMxMDcuNjI1LDIxLjkxMSAxMDcuNzg5LDIyLjAzNSAxMDkuNTU0LDIyLjE1OCBMMTA5LjU1NCwyMi45NzkgTDEwMy45MjksMjIuOTc5IEwxMDMuOTI5LDIyLjE1OCBDMTA1LjM2NiwyMi4wMzUgMTA1LjQ4OSwyMS45MTEgMTA1LjQ4OSwyMC41MTUgTDEwNS40ODksMTUuODc1IEMxMDUuNDg5LDE0LjQ3OSAxMDUuNDA3LDE0LjQ3OSAxMDQuMDkzLDE0LjIzMiBMMTA0LjA5MywxMy41MzQgQzEwNS40MDcsMTMuMjg3IDEwNi41NTcsMTMuMDQxIDEwNy42MjQsMTIuNjMxIFogTTczLjkxMiwxMi42MzEgTDczLjkxMiwxNC4yNzQgQzc0LjQ0NiwxMy44MjIgNzYuMDA2LDEyLjY3MyA3Ny4xOTcsMTIuNjczIEM3OS4wNDUsMTIuNjczIDgwLjE5NCwxMy45NDYgODAuMTk0LDE1LjgzNSBMODAuMTk0LDIwLjU5OCBDODAuMTk0LDIxLjkxMiA4MC40LDIyLjAzNiA4MS42MzIsMjIuMTU5IEw4MS42MzIsMjIuOTc5IEw3Ni43ODgsMjIuOTc5IEw3Ni43ODgsMjIuMTU4IEM3Ny45MzgsMjIuMDM1IDc4LjEwMiwyMS45MTEgNzguMTAyLDIwLjU5NyBMNzguMTAyLDE2LjU3MyBDNzguMTAyLDE1LjA5NSA3Ny40NDUsMTQuMTkxIDc2LjIxMywxNC4xOTEgQzc1LjQzMywxNC4xOTEgNzQuNTI5LDE0Ljc2NiA3My45MTMsMTUuMzQxIEw3My45MTMsMjAuNTk3IEM3My45MTMsMjEuOTExIDc0LjAzNywyMi4wMzUgNzUuMTg2LDIyLjE1OCBMNzUuMTg2LDIyLjk3OSBMNzAuMTc2LDIyLjk3OSBMNzAuMTc2LDIyLjE1OCBDNzEuNTcyLDIyLjAzNSA3MS43NzcsMjEuOTExIDcxLjc3NywyMC41OTcgTDcxLjc3NywxNS44NzUgQzcxLjc3NywxNC40NzkgNzEuNjk1LDE0LjM5NyA3MC40NjMsMTQuMjMyIEw3MC40NjMsMTMuNTM0IEM3MS42OTUsMTMuMjg3IDcyLjg0NSwxMy4wNDEgNzMuOTEyLDEyLjYzMSBaIE01OC41OTgsMTIuNjMxIEw1OC41OTgsMTUuMDk1IEw1OC42MzksMTUuMDk1IEM1OS4zNzgsMTMuNzQgNjAuNDA1LDEyLjY3MyA2MS4zNDksMTIuNjczIEM2Mi4xNzEsMTIuNjczIDYyLjc0NSwxMy4yODkgNjIuNzQ1LDEzLjk0NiBDNjIuNzQ1LDE0Ljg4OSA2MS43NiwxNS43MTEgNjEuMjI1LDE1LjIxOCBDNjAuOTc5LDE0Ljg4OSA2MC42NSwxNC44MDcgNjAuMjQsMTQuODA3IEM1OS43MDYsMTQuODA3IDU5LjA0OSwxNS40MjMgNTguNTk3LDE2LjY5NiBMNTguNTk3LDIwLjUxNSBDNTguNTk3LDIxLjkxMSA1OC43NjEsMjIuMDM1IDYwLjUyNywyMi4xNTggTDYwLjUyNywyMi45NzkgTDU0Ljk0MywyMi45NzkgTDU0Ljk0MywyMi4xNTggQzU2LjMzOSwyMi4wMzUgNTYuNTA0LDIxLjkxMSA1Ni41MDQsMjAuNTE1IEw1Ni41MDQsMTUuODc1IEM1Ni41MDQsMTQuNDc5IDU2LjM4MSwxNC40NzkgNTUuMTA4LDE0LjIzMiBMNTUuMTA4LDEzLjUzNCBDNTYuMzQsMTMuMjg3IDU3LjUzMSwxMy4wNDEgNTguNTk4LDEyLjYzMSBaIE02Ny41MDgsMTIuNjMyIEw2Ny41MDgsMjAuNDM0IEM2Ny41MDgsMjEuOTEyIDY3LjYzMSwyMi4wMzUgNjkuMDY5LDIyLjE1OCBMNjkuMDY5LDIyLjk3OSBMNjMuODEzLDIyLjk3OSBMNjMuODEzLDIyLjE1OCBDNjUuMjA5LDIyLjAzNSA2NS40MTQsMjEuOTExIDY1LjQxNCwyMC40MzQgTDY1LjQxNCwxNS45OTkgQzY1LjQxNCwxNC4zOTggNjUuMjkxLDE0LjM5OCA2My45MzYsMTQuMjMzIEw2My45MzYsMTMuNTM1IEM2NS4yMDksMTMuMjg4IDY2LjQ4MSwxMy4wMDEgNjcuNTA4LDEyLjYzMiBaIE00OC40MTUsMTQuMTkxIEM0Ny43NTgsMTQuMTkxIDQ2Ljg5NiwxNC42NDMgNDYuMzYyLDE0Ljk3MSBMNDYuMzYyLDIxLjA0OCBDNDYuODE0LDIxLjU0MSA0Ny41NTMsMjEuOTEgNDguNDU2LDIxLjkxIEM0OS42NDcsMjEuOTEgNTEuMjA3LDIxLjAwNyA1MS4yMDcsMTcuOTI4IEM1MS4yMDcsMTUuMzQxIDQ5Ljk3NSwxNC4xOTEgNDguNDE1LDE0LjE5MSBaIE0xMC42MzQsMS4yOTggTDEwLjYzMzI3MjEsMS4zNzAxNTY4MiBDMTAuNjI4NDE5NywxLjY4MzU2NTIyIDEwLjU5MTIxNzQsMi45Njg3ODI2MSAxMC4zMDYsNC4yNTQgTDkuMTk4LDQuMDUgQzkuMTk4LDMuMDIzIDguNzQ2LDIuNjEzIDguMTMxLDIuMzI1IEw4LjQxOCw0LjMzNyBMNy43MTksNS4zNjQgTDguMDQ4LDYuMzA4IEw1Ljg3Miw3LjA0NyBMNS4yNTYsOC44MTMgTDEuNDM3LDE0LjA2OSBMMi44NzUsMTUuNzkzIEw0LjQ3NiwxNC40MzggTDQuODQ1LDE0LjY4NCBMNC44NDUsMTYuNjk2IEw1LjcwNywxNi42OTYgQzYuMDc3LDE1LjI1OSA3LjI2NywxMy41NzUgOC4zNzYsMTIuNzU0IEw3Ljc2LDEyLjAxNSBMOC42NjMsMTEuMjM1IEw5LjUyNSwxMi4zMDMgTDkuNzcyMDY4MywxMi4zMDI3ODQzIEM5LjgxMDU0NjE1LDEyLjMwMjczMDQgOS44NTI4MjExNiwxMi4zMDI2NjMgOS44OTgzODcwMywxMi4zMDI1Nzg4IEwxMC4yMDcyMjI0LDEyLjMwMTg0NDIgQzExLjExNDQ4OTYsMTIuMjk5MjAyMyAxMi42MDUsMTIuMjkwNTIxNyAxMi42MDUsMTIuMjYyIEMxMy4wNTcsMTEuMjc3IDEzLjM0NCwxMC4wODYgMTMuMzQ0LDguNjkgTDE0LjUzNSw4LjY5IEMxNC41MzUsMTMuMzcxIDEyLjE5NSwxNS4yMTkgOS4yNzksMTguMDkzIEM4LjIxMSwxOS4xNiA3LjI2NywyMC4zMSA3LjE0NCwyMS44NyBMMjAuNjk0LDIxLjg3IEMyMy4wNzYsMTIuMDU2IDIwLjI4Myw0LjI1NSAxMi42ODcsMy4zNTEgQzEyLjcxOTgsMy42Nzk4IDEyLjcyNjM2LDMuOTU1NDggMTIuNzI3NjcyLDQuMjIxMDQ4IEwxMi43MjgsNC40MTkgQzEyLjcyOCw0LjkxMiAxMi42ODcsNS4zMjIgMTIuNjg3LDUuMzIyIEwxMS40OTcsNS4xMTYgQzExLjUzOCw0LjcwNSAxMS42MiwxLjkxMyAxMC42MzQsMS4yOTggWiBNODcuNDY0LDEzLjY1OCBDODYuNjAyLDEzLjY1OCA4NS42MTYsMTQuNTYxIDg1LjYxNiwxNi4yODYgQzg1LjYxNiwxOC4wMTEgODYuNTE5LDE5LjI0MyA4Ny43NTEsMTkuMjQzIEM4OC42NTQsMTkuMjQzIDg5LjUxNywxOC40NjMgODkuNTE3LDE2LjU3NCBDODkuNTE3LDE0Ljk3MiA4OC43MzYsMTMuNjU4IDg3LjQ2NCwxMy42NTggWiBNOTguNDY4LDEzLjY5OSBDOTcuNTI0LDEzLjY5OSA5Ni41MzgsMTQuNzI2IDk2LjI5MiwxNi40OTEgTDk5LjgyMywxNi40MDkgQzEwMC4yNzUsMTYuNDA5IDEwMC4zNTcsMTYuMjg2IDEwMC4zNTcsMTUuODc1IEMxMDAuMzU2LDE0Ljc2NiA5OS41NzcsMTMuNjk5IDk4LjQ2OCwxMy42OTkgWiBNMi44MzQsMTIuNzU1IEwzLjU3MywxMi43OTYgQzMuNjE0LDEzLjMzIDMuNTMyLDE0LjE1MSAzLjI0NCwxNC41NjIgTDIuMzgyLDE0LjIzMyBDMi42NjksMTMuODIzIDIuODM0LDEzLjI0OCAyLjgzNCwxMi43NTUgWiBNNjYuMzU4LDcuNjIyIEM2Ny4xOCw3LjYyMiA2Ny43OTUsOC4yMzggNjcuNzk1LDkuMDU5IEM2Ny43OTUsOS44MzkgNjcuMTgsMTAuNDU1IDY2LjM1OCwxMC40NTUgQzY1LjU3OCwxMC40NTUgNjQuOTYyLDkuODM5IDY0Ljk2Miw5LjA1OSBDNjQuOTYyLDguMjM4IDY1LjU3OCw3LjYyMiA2Ni4zNTgsNy42MjIgWiBNOC4yNTMsNy40OTggTDguMjk0LDguMjM4IEw2LjQ0Nyw5LjIyMyBMNi4zMjMsNy43MDQgTDguMjUzLDcuNDk4IFoiIGlkPSJDb21iaW5lZC1TaGFwZSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="Springer logo" itemprop="logo" width="112" height="30" role="img">
 				</div>
 			</div>
 			<div class="c-publisher-footer__section">

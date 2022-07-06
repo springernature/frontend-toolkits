@@ -9,6 +9,10 @@
 		right: 0;
 	}
 
+	&__content-item {
+		font-size: .75rem;
+	}
+
 	&__open {
 		@include u-focus-outline;
 		text-decoration: none;

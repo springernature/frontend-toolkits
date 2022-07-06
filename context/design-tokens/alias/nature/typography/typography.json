@@ -1,0 +1,63 @@
+{
+	"typography": {
+		"heading": {
+			"font-family": {
+				"value": "{font-family.serif}"
+			},
+			"letter-spacing": {
+				"value": "{letter-spacing.080}"
+			},
+			"line-height": {
+				"value": "{line-height.tighter}"
+			},
+			"font-weight": {
+				"value": "{font-weight.bold.value}"
+			},
+			"level-1": {
+				"default": {
+					"font-size": {
+						"value": "{font-size.800}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.600}, 4vw, {typography.heading.level-1.default.font-size.value})"
+					}
+				}
+			},
+			"level-2": {
+				"default": {
+					"font-size": {
+						"value": "{font-size.600}"
+					}
+				},
+				"fluid": {
+					"font-size": {
+						"value": "clamp({font-size.500}, 4vw, {typography.heading.level-2.default.font-size.value})"
+					}
+				}
+			},
+			"level-3": {
+				"default": {
+					"font-size": {
+						"value": "{font-size.500.value}"
+					}
+				}
+			},
+			"level-4": {
+				"default": {
+					"font-size": {
+						"value": "{font-size.500}"
+					}
+				}
+			},
+			"level-5": {
+				"default": {
+					"font-size": {
+						"value": "{font-size.450}"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,147 @@
+{
+	"global-forms": {
+		"field": {
+			"stack": {
+				"spacing": {
+					"value": "{spacing.relative.600}"
+				}
+			}
+		},
+		"label": {
+			"font": {
+				"size": {
+					"value": "{ui.font-size}"
+				},
+				"weight": {
+					"value": "{font-weight.bold}"
+				}
+			},
+			"color": {
+				"value": "{text.primary}"
+			}
+		},
+		"hint": {
+			"color": {
+				"value": "{color.grayscale.600}"
+			},
+			"font": {
+				"weight": {
+					"value": "{font-weight.regular}"
+				}
+			}
+		},
+		"message": {
+			"color": {
+				"error": {
+					"value": "{state.error}"
+				}
+			},
+			"icon": {
+				"color": {
+					"resting": {
+						"value": "{text.primary}"
+					},
+					"error": {
+						"value": "{state.error}"
+					}
+				},
+				"size": {
+					"value": "{sizing.relative.400}"
+				}
+			}
+		},
+		"input": {
+			"padding": {
+				"inline": {
+					"value": "{spacing.relative.200.value}"
+				},
+				"block": {
+					"value": "{spacing.relative.200.value}"
+				}
+			},
+			"stack": {
+				"spacing": {
+					"value": "{spacing.relative.100}"
+				}
+			},
+			"border": {
+				"color": {
+					"resting": {
+						"value": "{border.color.primary}"
+					},
+					"error": {
+						"value": "{state.error}"
+					},
+					"disabled": {
+						"value": "{color.grayscale.400}"
+					}
+				},
+				"width": {
+					"value": "{border.width.25}"
+				}
+			},
+			"focus": {
+				"outline": {
+					"color": {
+						"value": "{ui.focus.outline.color}",
+						"description": "TODO: needs to be coming from an alias or literal token"
+					}
+				}
+			},
+			"font": {
+				"size": {
+					"value": "{ui.font-size}"
+				},
+				"weight": {
+					"value": "{font-weight.regular}"
+				},
+				"color": {
+					"value": "{text.primary}"
+				}
+			},
+			"background": {
+				"color": {
+					"value": "{background.container}"
+				}
+			},
+			"width": {
+				"maximum": {
+					"value": "{ui.content-width}",
+					"description": "TODO: needs to be coming from an alias or literal token"
+				}
+			}
+		},
+		"indent": {
+			"border": {
+				"color": {
+					"value": "{border.color.indent}"
+				},
+				"radius": {
+					"value": "{border.radius.100}"
+				}
+			}
+		},
+		"checkbox": {
+			"size": {
+				"value": "{sizing.relative.400}",
+				"type": "sizing"
+			},
+			"spacing": {
+				"value": "{sizing.relative.200}"
+			},
+			"checked": {
+				"icon": {
+					"stroke": {
+						"value": "{color.primary.universal-dark-blue}"
+					},
+					"fill": {
+						"value": "{color.primary.universal-dark-blue}"
+					},
+					"data uri": {
+						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,67 +1,65 @@
 <div class="c-footer">
-	<div class="u-container">
-		<div class="u-hide-print" data-track-component="footer">
-			<h2 aria-level="2" class="u-visually-hidden">{{title}}</h2>
-			<div class="c-footer__header">
-				<div class="c-footer__logo">
-					<img alt="Nature Research" src="{{logo.slug}}" loading="lazy" width="{{logo.width}}" height="{{logo.height}}">
-				</div>
-
-				{{#if footerLinks}}
-				<ul class="c-menu c-menu--inherit u-mr-32">
-					{{#each footerLinks as |siteNavItem|}}
-					<li class="c-menu__item"><a class="c-menu__link" href="{{siteNavItem.uri}}" data-track="click" data-track-action="{{siteNavItem.dataTrackAction}}" data-track-label="link">{{siteNavItem.text}}</a></li>
-					{{/each}}
-				</ul>
-				{{/if}}
-
-				{{#if socialLinks}}
-				<ul class="c-menu c-menu--inherit">
-					{{#if socialFacebook}}
-					<li class="c-menu__item">
-						<a class="c-menu__link" href="{{socialFacebook.uri}}" aria-label="{{socialFacebook.ariaLabel}}" data-track="click" data-track-action="{{socialFacebook.dataTrackAction}}" data-track-label="link">
-							<svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20">
-								<path d="M2.5 20C1.1 20 0 18.9 0 17.5v-15C0 1.1 1.1 0 2.5 0h15C18.9 0 20 1.1 20 2.5v15c0 1.4-1.1 2.5-2.5 2.5h-3.7v-7.7h2.6l.4-3h-3v-2c0-.9.2-1.5 1.5-1.5h1.6V3.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.1v3h2.6V20H2.5z"></path>
-							</svg>
-						</a>
-					</li>
-					{{/if}}
-					{{#if socialTwitter}}
-					<li class="c-menu__item">
-						<a class="c-menu__link" href="{{socialTwitter.uri}}" aria-label="{{socialTwitter.ariaLabel}}" data-track="click" data-track-action="{{socialTwitter.dataTrackAction}}" data-track-label="link">
-							<svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-								<path d="M17.6 4.1c.8-.5 1.5-1.4 1.8-2.4-.8.5-1.7.9-2.6 1-.7-.8-1.8-1.4-3-1.4-2.3 0-4.1 1.9-4.1 4.3 0 .3 0 .7.1 1-3.4 0-6.4-1.8-8.4-4.4C1 2.9.8 3.6.8 4.4c0 1.5.7 2.8 1.8 3.6C2 8 1.4 7.8.8 7.5v.1c0 2.1 1.4 3.8 3.3 4.2-.3.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.7 2 3 3.8 3-1.3 1.1-3.1 1.8-5 1.8-.3 0-.7 0-1-.1 1.8 1.2 4 1.9 6.3 1.9C13.8 18.6 18 12 18 6.3v-.6c.8-.6 1.5-1.4 2-2.2-.7.3-1.5.5-2.4.6z"></path>
-							</svg>
-						</a>
-					</li>
-					{{/if}}
-					{{#if socialYoutube}}
-					<li class="c-menu__item">
-						<a class="c-menu__link" href="{{socialYoutube.uri}}" aria-label="{{socialYoutube.ariaLabel}}" data-track="click" data-track-action="{{socialYoutube.dataTrackAction}}" data-track-label="link">
-							<svg class="u-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-								<path d="M7.9 12.6V6.9l5.4 2.8c0 .1-5.4 2.9-5.4 2.9zM19.8 6s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9-2.8-.2-7-.2-7-.2s-4.2 0-7 .2c-.4 0-1.2 0-2 .9-.6.6-.8 2-.8 2S0 7.6 0 9.2v1.5c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.8.2 6.8.2s4.2 0 7-.2c.4 0 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3V9.2c0-1.6-.2-3.2-.2-3.2z"></path>
-							</svg>
-						</a>
-					</li>
-					{{/if}}
-				</ul>
-				{{/if}}
+	<div class="c-footer__container" data-track-component="footer">
+		<h2 class="c-footer__heading c-footer__heading--visually-hidden">{{title}}</h2>
+		<div class="c-footer__header">
+			<div class="c-footer__logo">
+				<img alt="Nature Research" src="{{logo.slug}}" loading="lazy" width="{{logo.width}}" height="{{logo.height}}">
 			</div>
-
-			{{#if footerGroups}}
-			<div class="c-footer__grid">
-				{{#each footerGroups as |siteNavItem|}}
-				<div class="c-footer__group">
-					<h3 class="c-footer__heading">{{siteNavItem.title}}</h3>
-					<ul class="c-footer__list">
-						{{#each siteNavItem.items}}
-						<li class="c-footer__item"><a href="{{this.uri}}" data-track="click" data-track-action="{{this.dataTrackAction}}" data-track-label="link">{{this.text}}</a></li>
-						{{/each}}
-					</ul>
-				</div>
+			{{#if footerLinks}}
+			<ul class="c-footer__menu">
+				{{#each footerLinks as |siteNavItem|}}
+				<li class="c-footer__menu-item">
+					<a class="c-footer__menu-link" href="{{siteNavItem.uri}}" data-track="click" data-track-action="{{siteNavItem.dataTrackAction}}" data-track-label="link">{{siteNavItem.text}}</a>
+				</li>
 				{{/each}}
-			</div>
+			</ul>
+			{{/if}}
+			{{#if socialLinks}}
+			<ul class="c-footer__menu">
+				{{#if socialFacebook}}
+				<li class="c-footer__menu-item">
+					<a class="c-footer__menu-link" href="{{socialFacebook.uri}}" aria-label="{{socialFacebook.ariaLabel}}" data-track="click" data-track-action="{{socialFacebook.dataTrackAction}}" data-track-label="link">
+						<svg class="c-footer__menu-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<path d="M2.5 20C1.1 20 0 18.9 0 17.5v-15C0 1.1 1.1 0 2.5 0h15C18.9 0 20 1.1 20 2.5v15c0 1.4-1.1 2.5-2.5 2.5h-3.7v-7.7h2.6l.4-3h-3v-2c0-.9.2-1.5 1.5-1.5h1.6V3.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.1v3h2.6V20H2.5z"></path>
+						</svg>
+					</a>
+				</li>
+				{{/if}}
+				{{#if socialTwitter}}
+				<li class="c-footer__menu-item">
+					<a class="c-footer__menu-link" href="{{socialTwitter.uri}}" aria-label="{{socialTwitter.ariaLabel}}" data-track="click" data-track-action="{{socialTwitter.dataTrackAction}}" data-track-label="link">
+						<svg class="c-footer__menu-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<path d="M17.6 4.1c.8-.5 1.5-1.4 1.8-2.4-.8.5-1.7.9-2.6 1-.7-.8-1.8-1.4-3-1.4-2.3 0-4.1 1.9-4.1 4.3 0 .3 0 .7.1 1-3.4 0-6.4-1.8-8.4-4.4C1 2.9.8 3.6.8 4.4c0 1.5.7 2.8 1.8 3.6C2 8 1.4 7.8.8 7.5v.1c0 2.1 1.4 3.8 3.3 4.2-.3.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.7 2 3 3.8 3-1.3 1.1-3.1 1.8-5 1.8-.3 0-.7 0-1-.1 1.8 1.2 4 1.9 6.3 1.9C13.8 18.6 18 12 18 6.3v-.6c.8-.6 1.5-1.4 2-2.2-.7.3-1.5.5-2.4.6z"></path>
+						</svg>
+					</a>
+				</li>
+				{{/if}}
+				{{#if socialYoutube}}
+				<li class="c-footer__menu-item">
+					<a class="c-footer__menu-link" href="{{socialYoutube.uri}}" aria-label="{{socialYoutube.ariaLabel}}" data-track="click" data-track-action="{{socialYoutube.dataTrackAction}}" data-track-label="link">
+						<svg class="c-footer__menu-icon" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<path d="M7.9 12.6V6.9l5.4 2.8c0 .1-5.4 2.9-5.4 2.9zM19.8 6s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9-2.8-.2-7-.2-7-.2s-4.2 0-7 .2c-.4 0-1.2 0-2 .9-.6.6-.8 2-.8 2S0 7.6 0 9.2v1.5c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.8.2 6.8.2s4.2 0 7-.2c.4 0 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3V9.2c0-1.6-.2-3.2-.2-3.2z"></path>
+						</svg>
+					</a>
+				</li>
+				{{/if}}
+			</ul>
 			{{/if}}
 		</div>
+		{{#if footerGroups}}
+		<div class="c-footer__grid">
+			{{#each footerGroups as |siteNavItem|}}
+			<div class="c-footer__group"><h3 class="c-footer__heading">{{siteNavItem.title}}</h3>
+				<ul class="c-footer__list">
+					{{#each siteNavItem.items}}
+					<li class="c-footer__item">
+						<a href="{{this.uri}}" data-track="click" data-track-action="{{this.dataTrackAction}}" data-track-label="link">{{this.text}}</a>
+					</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/each}}
+		</div>
+		{{/if}}
 	</div>
 </div>

@@ -1,0 +1,21 @@
+{
+	"color": {
+		"research": {
+			"orange": {
+				"value": "#C75301"
+			},
+			"forest": {
+				"value": "#007373"
+			},
+			"purple": {
+				"value": "#785BA7"
+			},
+			"blue": {
+				"value": "#0070a8"
+			},
+			"red": {
+				"value": "#be1818"
+			}
+		}
+	}
+}

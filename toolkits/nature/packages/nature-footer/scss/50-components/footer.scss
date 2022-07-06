@@ -6,6 +6,11 @@
 	font-size: $footer--font-size;
 }
 
+.c-footer__container {
+	@include u-container;
+	@include u-hide-print;
+}
+
 .c-footer a {
 	@include u-link-inherit();
 	vertical-align: middle;
@@ -87,8 +92,38 @@
 	font-family: $footer--heading-font-family;
 }
 
+.c-footer__heading--visually-hidden {
+	@include u-visually-hidden;
+}
+
 .c-footer__item {
 	&:not(:last-child) {
 		margin-bottom: 4px;
 	}
+}
+
+.c-footer__menu {
+	@include u-list-reset;
+	display: flex;
+	font-size: $footer--menu-font-size;
+	font-family: $footer--menu-font-family;
+	line-height: $footer--menu-line-height;
+}
+
+.c-footer__menu:not(:last-child) {
+	margin-right: spacing(32);
+}
+
+.c-footer__menu-item:not(:last-child) {
+	margin-right: spacing(16);
+}
+
+.c-footer__menu-link {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.c-footer__menu-icon {
+	@include u-icon();
 }

@@ -1,0 +1,19 @@
+<aside class="c-forms__error-summary" aria-labelledby="{{id}}">
+	<div class="c-forms__error-summary-icon">
+		<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+			<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+				{{> iconError }}
+			</svg>
+		</span>
+	</div>
+	<div class="c-forms__error-summary-text">
+		<div class="c-forms__error-summary-title" id="{{id}}">{{title}}</div>
+		<ul class="c-forms__error-summary-errors">
+			{{#each errors}}
+				<li>
+					<a href="#{{id}}">{{error}}</a>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</aside>

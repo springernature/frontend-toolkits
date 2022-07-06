@@ -1,0 +1,9 @@
+options:
+    config-file: ./node_modules/@springernature/sasslint-config/config/.sass-lint.yml
+rules:
+    # Design tokens need to be in long form for design tool integration
+    # Allow both styles to fit with existing formatting
+    hex-length:
+        - 2
+        -
+            style: off

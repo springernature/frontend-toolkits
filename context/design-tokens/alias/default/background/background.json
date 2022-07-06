@@ -1,0 +1,33 @@
+{
+	"background": {
+		"page": {
+			"value": "{color.grayscale.200}"
+		},
+		"container": {
+			"value": "{color.white}"
+		},
+		"container-inverted": {
+			"value": "{color.grayscale.800}"
+		}
+	},
+	"facet": {
+		"value": "{color.grayscale.300}"
+	},
+	"footer": {
+		"value": "{color.primary.universal-dark-blue}"
+	},
+	"table": {
+		"heading": {
+			"value": "{color.grayscale.600}"
+		},
+		"table-heading": {
+			"value": "{color.grayscale.600}"
+		},
+		"table-row-odd": {
+			"value": "{color.primary.grey-blue-light-2}"
+		},
+		"table-row-even": {
+			"value": "{color.primary.grey-blue-light-1}"
+		}
+	}
+}

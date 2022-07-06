@@ -1,0 +1,68 @@
+{
+	"color": {
+		"white": {
+			"name": "white",
+			"value": "#fff"
+		},
+		"black": {
+			"name": "black",
+			"value": "#000"
+		},
+		"grayscale": {
+			"200": {
+				"name": "grayscale-200",
+				"value": "#f8f8f8"
+			},
+			"300": {
+				"name": "grayscale-300",
+				"value": "#f3f3f3"
+			},
+			"400": {
+				"name": "grayscale-400",
+				"value": "#dadada"
+			},
+			"500": {
+				"name": "grayscale-500",
+				"value": "#999"
+			},
+			"600": {
+				"name": "grayscale-600",
+				"value": "#666"
+			},
+			"700": {
+				"name": "grayscale-700",
+				"value": "#555"
+			},
+			"800": {
+				"name": "grayscale-800",
+				"value": "#222"
+			}
+		},
+		"blue": {
+			"100": {
+				"name": "blue-100",
+				"value": "#EBF1F5"
+			},
+			"200": {
+				"name": "blue-200",
+				"value": "#CEDBE0"
+			},
+			"300": {
+				"name": "blue-300",
+				"value": "#08C"
+			},
+			"400": {
+				"name": "blue-600",
+				"value": "#025E8D"
+			},
+			"700": {
+				"name": "blue-700",
+				"value": "#003F8D"
+			},
+			"900": {
+				"name": "blue-900",
+				"value": "#01324B"
+			}
+		}
+	}
+}

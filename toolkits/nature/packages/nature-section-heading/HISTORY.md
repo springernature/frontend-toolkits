@@ -1,5 +1,15 @@
 # History
 
+## 2.0.0 (2022-06-23)
+    * BREAKING: Update brand-context 
+        * Node Sass to Dart Sass
+    * Add examples with no border top on headings
+    * Reference SVG icon with xlink:href and simplify dimensions
+    * Update demo
+
+## 1.1.5 (2022-05-03)
+    * Reset padding-top when not showing border above heading
+
 ## 1.1.4 (2022-03-23)
     * BUG: Fix broken view and demo links in README
 
