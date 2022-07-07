@@ -165,7 +165,7 @@ The actual configuration of the `footer` should look something like this example
         "links": [
             {
                 "text": "Example link",
-                "url": "/url/to/example/link"
+                "uri": "/url/to/example/link"
             },
             {
                 "text": "Example button",
