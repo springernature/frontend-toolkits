@@ -147,7 +147,7 @@ The footer component doesn't include a `<footer>` region/landmark. This must be 
 
 #### Template partials
 
-The main template (`index.hbs`) wraps partials includes for the product and corporate footer. These partials are dynamic and their locations are stored in variables passed with the data - `productFooter` and `corporateFooter`. An example of this can be seen below and in the `demo`'s `context.json` file.
+The main template (`index.hbs`) wraps partials includes for the product and corporate footer sections. These partials are dynamic and their locations are stored in variables passed with the data - `productFooter` and `corporateFooter`. An example of this can be seen below and in the `demo`'s `context.json` file.
 
 #### Configuring the footer options
 
@@ -180,7 +180,7 @@ The actual configuration of the `footer` should look something like this example
 				{
 					"uri": "/url/to/example/link",
 					"text": "Example link",
-					"dataTrackAction": "optional tracking name"
+					"dataTrackAction": "optional-tracking-name"
 				}
 			]
 		}
