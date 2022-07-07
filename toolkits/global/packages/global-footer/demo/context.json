@@ -21,7 +21,9 @@
 			"alt": "Springer Nature",
 			"link": "https://www.springernature.com/"
 		},
-		"currentYear": 2022
+		"currentYear": 2022,
+    "productFooter": "product-footer",
+    "corporateFooter": "corporate-footer"
 	},
 	"extended": {
 		"navigation": {
@@ -57,7 +59,9 @@
 			"alt": "Springer Nature",
 			"link": "https://www.springernature.com/"
 		},
-		"currentYear": 2022
+		"currentYear": 2022,
+    "productFooter": "product-footer",
+    "corporateFooter": "corporate-footer"
 	},
 	"product": {
 		"navigation": {
@@ -250,7 +254,9 @@
 			"alt": "Springer Nature",
 			"link": "https://www.springernature.com/"
 		},
-		"currentYear": 2022
+		"currentYear": 2022,
+    "productFooter": "product-footer",
+    "corporateFooter": "corporate-footer"
 	},
 	"dynamicPartials": {
 		"corporate-footer": "./toolkits/global/packages/global-footer/view/partials/corporate.hbs",
