@@ -10,13 +10,15 @@ Use this footer on all Springer, Nature Portfolio and Springer Nature products a
 
 ## How it works
 
-There are 2 ways to configure the footer component.
+The footer is made up of the **Corporate footer** (required) and the **Product footer** (optional).
 
-The default footer option includes footer items that must be used everywhere
+The corporate footer section can be confifured in two ways.
+
+The default option includes footer items that must be used everywhere.
 
 Or you can use the extended footer option. This includes the same footer items, as well as some extra links that only some services need.
 
-### Default footer
+### Corporate Default footer
 
 #### Default footer items
 
@@ -70,7 +72,7 @@ The privacy policy you need to use to depends on the legal entity for the produc
 
 If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
 
-### Extended footer
+### Corporate Extended footer
 
 The extended footer contains the same links as the default footer, with the option to include:
 
@@ -100,6 +102,12 @@ The most common options are:
 -   Terms of use
 -   Impressum
 -   Imprint
+
+### Product footer
+
+The optional product footer allows you to add groups of links specific to your product, with an accompanying title.
+
+This sits above the corporate footer.
 
 ### Help and support links
 
@@ -133,13 +141,19 @@ You can see an example in the [`demo` folder](https://github.com/springernature/
 
 ### Template configuration
 
-#### Using the Corporate footer with an existing footer
+#### Using the Corporate footer
 
-The footer component doesn't include a `<footer>` region/landmark. This means you can use it together with - for example - `springer-nature-publisher` inside a common `<footer>`.
+The footer component doesn't include a `<footer>` region/landmark. This must be added by your product to allow the use of custom items inside a common `<footer>`.
 
-#### Configuring the default or extended footer option
+#### Template partials
 
-The `demo`'s `context.json` file shows both the `default` and `extended` versions of the footer.
+The main template (`index.hbs`) wraps partials includes for the product and corporate footer. These partials are dynamic and their locations are stored in variables passed with the data - `productFooter` and `corporateFooter`. An example of this can be seen below and in the `demo`'s `context.json` file.
+
+#### Configuring the footer options
+
+Within the template data you have the option to configure either the `default` or `extended` version of the corporate footer section, as well as the optional `product` footer section.
+
+The `demo`'s `context.json` file shows both the `default` and `extended` versions of the footer, as well as one that includes a `product` section.
 
 We use wrappers around each version to sandbox them in the demo - but you won't need these wrappers when you're using the component in your application.
 
@@ -159,12 +173,26 @@ The actual configuration of the `footer` should look something like this example
             }
         ]
     },
+	"productGroups": [
+		{
+			"title": "Example group  title",
+			"items": [
+				{
+					"uri": "/url/to/example/link",
+					"text": "Example link",
+					"dataTrackAction": "optional tracking name"
+				}
+			]
+		}
+	],
     "image": {
         "src": "path/to/springer/nature/logo",
         "alt": "Springer Nature",
         "link": "https://www.springernature.com/"
     },
-    "currentYear": 2022
+    "currentYear": 2022,
+	"productFooter": "path/to/the/product/footer",
+    "corporateFooter": "path/to/the/corporate/footer"
 }
 ```
 
