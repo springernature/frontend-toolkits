@@ -3,10 +3,10 @@
 <form>
 	{{#with form1}}
 		{{#with errorSummary}}
-			{{> errorSummary }}
+			{{> globalFormErrorSummary }}
 		{{/with}}
 		{{#each fieldsets}}
-			{{> fieldset }}
+			{{> globalFormFieldset }}
 		{{/each}}
 	{{/with}}
 </form>
