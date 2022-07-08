@@ -1,5 +1,5 @@
 {{#if inputs}}
-	<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" {{#unless legend}} role="presentation"{{/unless}} {{> inputCommonAttributes}}>
+	<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" {{#unless legend}} role="presentation"{{/unless}} {{> globalFormAttributes}}>
 		{{#if legend}}
 			<legend class="c-forms__label">{{legend}}</legend>
 		{{else}}
@@ -8,11 +8,11 @@
 			{{/if}}
 		{{/if}}
 		{{#if error}}
-			{{> error}}
+			{{> globalFormError}}
 		{{/if}}
 
 		{{#each inputs}}
-			{{> radio name=../name }}
+			{{> globalFormRadio name=../name }}
 		{{/each}}
 	</fieldset>
 {{/if}}

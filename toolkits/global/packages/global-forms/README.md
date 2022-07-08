@@ -48,13 +48,13 @@ Fieldsets are used to group fields itemised under their `fields` property. If yo
         {
             "fields": [
                 {
-                    "template": "text",
+                    "template": "globalFormText",
                     "label": "Your name",
                     "id": "your-name",
                     "name": "your-name"
                 },
                 {
-                    "template": "text",
+                    "template": "globalFormText",
                     "label": "Your email",
                     "id": "your-email",
                     "name": "your-email"
@@ -82,13 +82,13 @@ If you do wish to include a legend, you can use HTML to style it and add semanti
 
 ### Fields
 
-The `template` property sets the type of field - for example, `"template": "text"` renders a text input field. Aim to make the `template`, `label`, `id`, and `name` properties mandatory parts of your data schema.
+The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the **view/fields/globalFormText.hbs** template as. Aim to make the `template`, `label`, `id`, and `name` properties mandatory parts of your data schema.
 
 This component supports a wide range of standard form field attributes. For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
 ```json
 {
-    "template": "text",
+    "template": "globalFormText",
     "label": "Your email address",
     "id": "your-email",
     "name": "your-email",
@@ -112,7 +112,7 @@ In addition to these top-level properties, you can add any arbitrary attributes 
 
 ```json
 {
-    "template": "text",
+    "template": "globalFormText",
     "label": "Your email address",
     "id": "your-email",
     "name": "your-email",
@@ -128,7 +128,7 @@ Each field can have an `error` property. The inclusion of the property means the
 
 ```json
 {
-    "template": "text",
+    "template": "globalFormText",
     "label": "Your name",
     "id": "your-name",
     "name": "your-name",
@@ -177,7 +177,7 @@ Radios define choices with an `inputs` array:
 
 ```json
 {
-    "template": "radios",
+    "template": "globalFormRadios",
     "label": "Animal",
     "inputs": [
         {
@@ -209,7 +209,7 @@ These fields can have any properties of a standard form field. Set these propert
     "name": "animal",
     "fields": [
         {
-            "template": "text",
+            "template": "globalFormText",
             "label": "What type of monkey?",
             "id": "monkey-type",
             "name": "monkey-type",
@@ -226,13 +226,13 @@ Unlike radios, which are always used in sets of two or more, you can have a sing
     "legend": "<h2>Which animals do you like?</h2>",
     "fields": [
         {
-            "template": "checkbox",
+            "template": "globalFormCheckbox",
             "label": "Monkeys",
             "id": "checkbox-monkeys",
             "name": "checkbox-monkeys"
         },
         {
-            "template": "checkbox",
+            "template": "globalFormCheckbox",
             "label": "Horses",
             "id": "checkbox-horses",
             "name": "checkbox-horses"
@@ -250,7 +250,7 @@ The `type` property for each individual button corresponds to the `type` HTML at
 "fields": [
     ...
     {
-        "template": "buttons",
+        "template": "globalFormButtons",
         "buttons": [
             {
                 "type": "submit",

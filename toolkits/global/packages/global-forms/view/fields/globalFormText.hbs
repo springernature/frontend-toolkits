@@ -1,9 +1,9 @@
-{{> label }}
+{{> globalFormLabel}}
 {{#if error}}
-	{{> error}}
+	{{> globalFormError}}
 {{/if}}
 <input type="text" class="c-forms__input c-forms__input--text"
-	   {{> inputCommonAttributes}}
+	   {{> globalFormAttributes}}
 >
 {{#if datalist.options}}
 	{{#if datalist.id}}
