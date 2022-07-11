@@ -5,6 +5,7 @@
         * Arbitrary attributes now restricted to data attributes
         * All templates now namespaced so partials can be more safely registered
     * Documenting the need for importing button utilities
+    * Now aligned with brand-context `25.0.0`
 
 ## 5.0.0-rc.1 (2022-07-01)
     * BREAKING:
