@@ -1,8 +1,8 @@
 {{#if error}}
-	{{> error}}
+	{{> globalFormError}}
 {{/if}}
 <label class="c-forms__label c-forms__label--wrapper">
-	<input class="c-forms__input c-forms__input--checkbox" type="checkbox" {{> inputCommonAttributes}}>
+	<input class="c-forms__input c-forms__input--checkbox" type="checkbox" {{> globalFormAttributes}}>
 	<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">{{label}}</span>
 	{{#if hint}}
 		<small class="c-forms__hint c-forms__hint--inline">{{hint}}</small>
