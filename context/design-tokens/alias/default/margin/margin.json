@@ -1,0 +1,482 @@
+{
+	"margin-inline-0": {
+		"name": "margin-inline-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to zero width."
+			"sassVariableName": "$margin-inline-0"
+		}
+	},
+	"margin-inline-100": {
+		"name": "margin-inline-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-inline-100"
+		}
+	},
+	"margin-inline-200": {
+		"name": "margin-inline-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-inline-200"
+		}
+	},
+	"margin-inline-400": {
+		"name": "margin-inline-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-inline-400"
+		}
+	},
+	"margin-inline-600": {
+		"name": "margin-inline-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-inline-600"
+		}
+	},
+	"margin-inline-800": {
+		"name": "margin-inline-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-inline-800"
+		}
+	},
+	"margin-inline-1200": {
+		"name": "margin-inline-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-inline-1200"
+		}
+	},
+	"margin-inline-1600": {
+		"name": "margin-inline-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-inline-1600"
+		}
+	},
+	"margin-inline-start-0": {
+		"name": "margin-inline-start-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to zero width."
+			"sassVariableName": "$margin-inline-start-0"
+		}
+	},
+	"margin-inline-start-100": {
+		"name": "margin-inline-start-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-inline-start-100"
+		}
+	},
+	"margin-inline-start-200": {
+		"name": "margin-inline-start-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-inline-start-200"
+		}
+	},
+	"margin-inline-start-400": {
+		"name": "margin-inline-start-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-inline-start-400"
+		}
+	},
+	"margin-inline-start-600": {
+		"name": "margin-inline-start-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-inline-start-600"
+		}
+	},
+	"margin-inline-start-800": {
+		"name": "margin-inline-start-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-inline-start-800"
+		}
+	},
+	"margin-inline-start-1200": {
+		"name": "margin-inline-start-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-inline-start-1200"
+		}
+	},
+	"margin-inline-start-1600": {
+		"name": "margin-inline-start-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline start margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-inline-start-1600"
+		}
+	},
+	"margin-inline-end-0": {
+		"name": "margin-inline-end-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to zero width."
+			"sassVariableName": "$margin-inline-end-0"
+		}
+	},
+	"margin-inline-end-100": {
+		"name": "margin-inline-end-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-inline-end-100"
+		}
+	},
+	"margin-inline-end-200": {
+		"name": "margin-inline-end-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-inline-end-200"
+		}
+	},
+	"margin-inline-end-400": {
+		"name": "margin-inline-end-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-inline-end-400"
+		}
+	},
+	"margin-inline-end-600": {
+		"name": "margin-inline-end-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-inline-end-600"
+		}
+	},
+	"margin-inline-end-800": {
+		"name": "margin-inline-end-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-inline-end-800"
+		}
+	},
+	"margin-inline-end-1200": {
+		"name": "margin-inline-end-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-inline-end-1200"
+		}
+	},
+	"margin-inline-end-1600": {
+		"name": "margin-inline-end-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical inline end margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-inline-end-1600"
+		}
+	},
+	"margin-block-0": {
+		"name": "margin-block-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to zero width."
+			"sassVariableName": "$margin-block-0"
+		}
+	},
+	"margin-block-100": {
+		"name": "margin-block-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-block-100"
+		}
+	},
+	"margin-block-200": {
+		"name": "margin-block-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-block-200"
+		}
+	},
+	"margin-block-400": {
+		"name": "margin-block-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-block-400"
+		}
+	},
+	"margin-block-600": {
+		"name": "margin-block-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-block-600"
+		}
+	},
+	"margin-block-800": {
+		"name": "margin-block-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-block-800"
+		}
+	},
+	"margin-block-1200": {
+		"name": "margin-block-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-block-1200"
+		}
+	},
+	"margin-block-1600": {
+		"name": "margin-block-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-block-1600"
+		}
+	},
+	"margin-block-start-0": {
+		"name": "margin-block-start-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to zero width."
+			"sassVariableName": "$margin-start-block-0"
+		}
+	},
+	"margin-block-start-100": {
+		"name": "margin-block-start-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-start-block-100"
+		}
+	},
+	"margin-block-start-200": {
+		"name": "margin-block-start-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-start-block-200"
+		}
+	},
+	"margin-block-start-400": {
+		"name": "margin-block-start-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-start-block-400"
+		}
+	},
+	"margin-block-start-600": {
+		"name": "margin-block-start-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-start-block-600"
+		}
+	},
+	"margin-block-start-800": {
+		"name": "margin-block-start-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-start-block-800"
+		}
+	},
+	"margin-block-start-1200": {
+		"name": "margin-block-start-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-start-block-1200"
+		}
+	},
+	"margin-block-start-1600": {
+		"name": "margin-block-start-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block start margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-start-block-1600"
+		}
+	},
+	"margin-block-end-0": {
+		"name": "margin-block-end-0",
+		"value": "{spacing.relative.0}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to zero width."
+			"sassVariableName": "$margin-end-block-0"
+		}
+	},
+	"margin-block-end-100": {
+		"name": "margin-block-end-100",
+		"value": "{spacing.relative.100}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to .25rem (4px) width."
+			"sassVariableName": "$margin-end-block-100"
+		}
+	},
+	"margin-block-end-200": {
+		"name": "margin-block-end-200",
+		"value": "{spacing.relative.200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to .5rem (8px) width."
+			"sassVariableName": "$margin-end-block-200"
+		}
+	},
+	"margin-block-end-400": {
+		"name": "margin-block-end-400",
+		"value": "{spacing.relative.400}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to 1rem (16px) width."
+			"sassVariableName": "$margin-end-block-400"
+		}
+	},
+	"margin-block-end-600": {
+		"name": "margin-block-end-600",
+		"value": "{spacing.relative.600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to 1.5rem (24px) width."
+			"sassVariableName": "$margin-end-block-600"
+		}
+	},
+	"margin-block-end-800": {
+		"name": "margin-block-end-800",
+		"value": "{spacing.relative.800}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to 2rem (32px) width."
+			"sassVariableName": "$margin-end-block-800"
+		}
+	},
+	"margin-block-end-1200": {
+		"name": "margin-block-end-1200",
+		"value": "{spacing.relative.1200}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to 3rem (48px) width."
+			"sassVariableName": "$margin-end-block-1200"
+		}
+	},
+	"margin-block-end-1600": {
+		"name": "margin-block-end-1600",
+		"value": "{spacing.relative.1600}",
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"description": "sets the logical block end margin of an element to 4rem (64px) width."
+			"sassVariableName": "$margin-end-block-1600"
+		}
+	}
+}
