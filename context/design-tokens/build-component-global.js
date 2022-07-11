@@ -77,7 +77,7 @@ function getStyleDictionaryConfig(brand, components) {
 
 			let replacedContent = sortedContent.replace(/: \$/g, ': $tokens--');
 
-			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenets/${brand}/${component}/${brand2}.json\n// DO NOT edit directly\n\n${replacedContent}`;
+			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brand}/${component}/${brand2}.json\n// DO NOT edit directly\n\n${replacedContent}`;
 
 			fs.writeFileSync(filePath, GeneratedContent);
 

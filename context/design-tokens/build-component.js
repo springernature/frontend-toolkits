@@ -68,7 +68,7 @@ console.log('Build started...');
 			fs.writeFileSync(filePath, sortedContent);
 			let date = new Date();
 			let dateString = date.toLocaleString();
-			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenets/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
+			let newContent = `// Created: ${dateString}\n// Source: design-tokens/components/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
 			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
 			fs.writeFileSync(filePath, addedContent);
 		})
