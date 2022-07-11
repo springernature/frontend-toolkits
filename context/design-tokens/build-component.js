@@ -69,7 +69,7 @@ console.log('Build started...');
 			let date = new Date();
 			let dateString = date.toLocaleString();
 			let newContent = `// Created: ${dateString}\n// Source: design-tokens/components/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
-			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
+			let addedContent = newContent.replace(/: \$/g, ': $t-');
 			fs.writeFileSync(filePath, addedContent);
 		})
 	});
