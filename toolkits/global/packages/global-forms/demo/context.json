@@ -25,9 +25,8 @@
 						"label": "Your name (simple)",
 						"id": "your-name",
 						"name": "your-name",
-						"attributes": {
-							"something": "yes",
-							"nothing": "no"
+						"dataAttrs": {
+							"test": "someValue"
 						}
 					},
 					{

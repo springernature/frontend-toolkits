@@ -111,7 +111,7 @@ The `optional` property adds _“(optional)”_ to the label text.
 "optional": true
 ```
 
-In addition to these top-level properties, you can add any arbitrary attributes using the `attributes` field property. For example, you can add a `data-test` attribute for your text input’s unit testing:
+In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
 
 ```json
 {
@@ -119,11 +119,13 @@ In addition to these top-level properties, you can add any arbitrary attributes 
     "label": "Your email address",
     "id": "your-email",
     "name": "your-email",
-    "attributes": {
-        "data-test": "someValue"
+    "dataAttrs": {
+        "test": "someValue"
     }
 }
 ```
+
+This would create the following attribution: `data-test: someValue`.
 
 ### Errors
 
