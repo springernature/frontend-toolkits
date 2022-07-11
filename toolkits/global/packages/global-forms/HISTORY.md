@@ -1,5 +1,11 @@
 # History
 
+## 5.0.0-rc.2 (2022-07-11)
+    * BREAKING:
+        * Arbitrary attributes now restricted to data attributes
+        * All templates now namespaced so partials can be more safely registered
+    * Documenting the need for importing button utilities
+
 ## 5.0.0-rc.1 (2022-07-01)
     * BREAKING:
         * Form fields now available as a suite of templates/partials
