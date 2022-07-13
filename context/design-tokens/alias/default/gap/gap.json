@@ -1,242 +1,264 @@
 {
-	"gap-0": {
-		"name": "gap-0",
-		"value": "{spacing.relative.0}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to zero width."
-			"sassVariableName": "$gap-0"
-		}
-	},
-	"gap-100": {
-		"name": "gap-100",
-		"value": "{spacing.relative.100}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to .25rem (4px) width."
-			"sassVariableName": "$gap-100"
-		}
-	},
-	"gap-200": {
-		"name": "gap-200",
-		"value": "{spacing.relative.200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to .5rem (8px) width."
-			"sassVariableName": "$gap-200"
-		}
-	},
-	"gap-400": {
-		"name": "gap-400",
-		"value": "{spacing.relative.400}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to 1rem (16px) width."
-			"sassVariableName": "$gap-400"
-		}
-	},
-	"gap-600": {
-		"name": "gap-600",
-		"value": "{spacing.relative.600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to 1.5rem (24px) width."
-			"sassVariableName": "$gap-600"
-		}
-	},
-	"gap-800": {
-		"name": "gap-800",
-		"value": "{spacing.relative.800}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to 2rem (32px) width."
-			"sassVariableName": "$gap-800"
-		}
-	},
-	"gap-1200": {
-		"name": "gap-1200",
-		"value": "{spacing.relative.1200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to 3rem (48px) width."
-			"sassVariableName": "$gap-1200"
-		}
-	},
-	"gap-1600": {
-		"name": "gap-1600",
-		"value": "{spacing.relative.1600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutters) between rows and columns to 4rem (64px) width."
-			"sassVariableName": "$gap-1600"
-		}
-	},
-	"row-gap-0": {
-		"name": "row-gap-0",
-		"value": "{spacing.relative.0}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to zero width."
-			"sassVariableName": "$row-gap-0"
-		}
-	},
-	"row-gap-100": {
-		"name": "row-gap-100",
-		"value": "{spacing.relative.100}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to .25rem (4px) width."
-			"sassVariableName": "$row-gap-100"
-		}
-	},
-	"row-gap-200": {
-		"name": "row-gap-200",
-		"value": "{spacing.relative.200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to .5rem (8px) width."
-			"sassVariableName": "$row-gap-200"
-		}
-	},
-	"row-gap-400": {
-		"name": "row-gap-400",
-		"value": "{spacing.relative.400}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to 1rem (16px) width."
-			"sassVariableName": "$row-gap-400"
-		}
-	},
-	"row-gap-600": {
-		"name": "row-gap-600",
-		"value": "{spacing.relative.600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to 1.5rem (24px) width."
-			"sassVariableName": "$row-gap-600"
-		}
-	},
-	"row-gap-800": {
-		"name": "row-gap-800",
-		"value": "{spacing.relative.800}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to 2rem (32px) width."
-			"sassVariableName": "$row-gap-800"
-		}
-	},
-	"row-gap-1200": {
-		"name": "row-gap-1200",
-		"value": "{spacing.relative.1200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to 3rem (48px) width."
-			"sassVariableName": "$row-gap-1200"
-		}
-	},
-	"row-gap-1600": {
-		"name": "row-gap-1600",
-		"value": "{spacing.relative.1600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between rows to 4rem (64px) width."
-			"sassVariableName": "$row-gap-1600"
-		}
-	},
-	"column-gap-0": {
-		"name": "column-gap-0",
-		"value": "{spacing.relative.0}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to zero width."
-			"sassVariableName": "$column-gap-0"
-		}
-	},
-	"column-gap-100": {
-		"name": "column-gap-100",
-		"value": "{spacing.relative.100}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to .25rem (4px) width."
-			"sassVariableName": "$column-gap-100"
-		}
-	},
-	"column-gap-200": {
-		"name": "column-gap-200",
-		"value": "{spacing.relative.200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to .5rem (8px) width."
-			"sassVariableName": "$column-gap-200"
-		}
-	},
-	"column-gap-400": {
-		"name": "column-gap-400",
-		"value": "{spacing.relative.400}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to 1rem (16px) width."
-			"sassVariableName": "$column-gap-400"
-		}
-	},
-	"column-gap-600": {
-		"name": "column-gap-600",
-		"value": "{spacing.relative.600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to 1.5rem (24px) width."
-			"sassVariableName": "$column-gap-600"
-		}
-	},
-	"column-gap-800": {
-		"name": "column-gap-800",
-		"value": "{spacing.relative.800}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to 2rem (32px) width."
-			"sassVariableName": "$column-gap-800"
-		}
-	},
-	"column-gap-1200": {
-		"name": "column-gap-1200",
-		"value": "{spacing.relative.1200}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to 3rem (48px) width."
-			"sassVariableName": "$column-gap-1200"
-		}
-	},
-	"column-gap-1600": {
-		"name": "column-gap-1600",
-		"value": "{spacing.relative.1600}",
-		"meta": {
-			"public": true,
-			"depracted": false,
-			"description": "sets the gap (gutter) between columns to 4rem (64px) width."
-			"sassVariableName": "$column-gap-1600"
+	"gap": {
+		"0": {
+			"name": "gap-0",
+			"value": "{spacing.relative.0}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to zero width.",
+				"sassVariableName": "$gap-0"
+			}
+		},
+		"100": {
+			"name": "gap-100",
+			"value": "{spacing.relative.100}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to .25rem (4px) width.",
+				"sassVariableName": "$gap-100"
+			}
+		},
+		"200": {
+			"name": "gap-200",
+			"value": "{spacing.relative.200}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to .5rem (8px) width.",
+				"sassVariableName": "$gap-200"
+			}
+		},
+		"400": {
+			"name": "gap-400",
+			"value": "{spacing.relative.400}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to 1rem (16px) width.",
+				"sassVariableName": "$gap-400"
+			}
+		},
+		"600": {
+			"name": "gap-600",
+			"value": "{spacing.relative.600}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to 1.5rem (24px) width.",
+				"sassVariableName": "$gap-600"
+			}
+		},
+		"800": {
+			"name": "gap-800",
+			"value": "{spacing.relative.800}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to 2rem (32px) width.",
+				"sassVariableName": "$gap-800"
+			}
+		},
+		"1200": {
+			"name": "gap-1200",
+			"value": "{spacing.relative.1200}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to 3rem (48px) width.",
+				"sassVariableName": "$gap-1200"
+			}
+		},
+		"1600": {
+			"name": "gap-1600",
+			"value": "{spacing.relative.1600}",
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"description": "sets the gap (gutters) between rows and columns to 4rem (64px) width.",
+				"sassVariableName": "$gap-1600"
+			}
+		},
+		"row": {
+			"0": {
+				"name": "row-gap-0",
+				"value": "{spacing.relative.0}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to zero width.",
+					"sassVariableName": "$row-gap-0"
+				}
+			},
+			"100": {
+				"name": "row-gap-100",
+				"value": "{spacing.relative.100}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to .25rem (4px) width.",
+					"sassVariableName": "$row-gap-100"
+				}
+			},
+			"200": {
+				"name": "row-gap-200",
+				"value": "{spacing.relative.200}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to .5rem (8px) width.",
+					"sassVariableName": "$row-gap-200"
+				}
+			},
+			"400": {
+				"name": "row-gap-400",
+				"value": "{spacing.relative.400}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to 1rem (16px) width.",
+					"sassVariableName": "$row-gap-400"
+				}
+			},
+			"600": {
+				"name": "row-gap-600",
+				"value": "{spacing.relative.600}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to 1.5rem (24px) width.",
+					"sassVariableName": "$row-gap-600"
+				}
+			},
+			"800": {
+				"name": "row-gap-800",
+				"value": "{spacing.relative.800}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to 2rem (32px) width.",
+					"sassVariableName": "$row-gap-800"
+				}
+			},
+			"1200": {
+				"name": "row-gap-1200",
+				"value": "{spacing.relative.1200}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to 3rem (48px) width.",
+					"sassVariableName": "$row-gap-1200"
+				}
+			},
+			"1600": {
+				"name": "row-gap-1600",
+				"value": "{spacing.relative.1600}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between rows to 4rem (64px) width.",
+					"sassVariableName": "$row-gap-1600"
+				}
+			}
+		},
+		"column": {
+			"0": {
+				"name": "column-gap-0",
+				"value": "{spacing.relative.0}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to zero width.",
+					"sassVariableName": "$column-gap-0"
+				}
+			},
+			"100": {
+				"name": "column-gap-100",
+				"value": "{spacing.relative.100}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to .25rem (4px) width.",
+					"sassVariableName": "$column-gap-100"
+				}
+			},
+			"200": {
+				"name": "column-gap-200",
+				"value": "{spacing.relative.200}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to .5rem (8px) width.",
+					"sassVariableName": "$column-gap-200"
+				}
+			},
+			"400": {
+				"name": "column-gap-400",
+				"value": "{spacing.relative.400}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to 1rem (16px) width.",
+					"sassVariableName": "$column-gap-400"
+				}
+			},
+			"600": {
+				"name": "column-gap-600",
+				"value": "{spacing.relative.600}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to 1.5rem (24px) width.",
+					"sassVariableName": "$column-gap-600"
+				}
+			},
+			"800": {
+				"name": "column-gap-800",
+				"value": "{spacing.relative.800}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to 2rem (32px) width.",
+					"sassVariableName": "$column-gap-800"
+				}
+			},
+			"1200": {
+				"name": "column-gap-1200",
+				"value": "{spacing.relative.1200}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to 3rem (48px) width.",
+					"sassVariableName": "$column-gap-1200"
+				}
+			},
+			"1600": {
+				"name": "column-gap-1600",
+				"value": "{spacing.relative.1600}",
+				"type": "dimension",
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"description": "sets the gap (gutter) between columns to 4rem (64px) width.",
+					"sassVariableName": "$column-gap-1600"
+				}
+			}
 		}
 	}
 }
