@@ -14,13 +14,7 @@ function tokenFilter(brand, alias) {
 	};
 }
 
-StyleDictionaryPackage.registerTransform({
-	name: 'name/cti/kebab',
-	type: 'name',
-	transformer: function (token, options) {
-		return `${options.prefix}--${_.kebabCase(token.path.join(' '))}`;
-	}
-});
+
 
 function getStyleDictionaryConfig(brand, aliases) {
 	let dest = `./context/brand-context/${brand}/scss`;
@@ -33,7 +27,7 @@ function getStyleDictionaryConfig(brand, aliases) {
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				prefix: "tokens",
+				prefix: "t",
 				buildPath: `${dest}/00-tokens/`,
 				files: aliases.map(alias => {
 					return {

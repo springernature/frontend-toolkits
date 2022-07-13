@@ -62,7 +62,7 @@ console.log('Build started...');
 		const files = readdirSync(dir);
 
 		files.map(file => {
-			let filePath = `${dir}/${file}`
+			let filePath = `${dir}/${file}`;
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 			fs.writeFileSync(filePath, sortedContent);
@@ -71,7 +71,7 @@ console.log('Build started...');
 			let newContent = `// Created: ${dateString}\n// Source: design-tokens/components/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
 			let addedContent = newContent.replace(/: \$/g, ': $t-');
 			fs.writeFileSync(filePath, addedContent);
-		})
+		});
 	});
 
 	console.log('\nEnd processing');
