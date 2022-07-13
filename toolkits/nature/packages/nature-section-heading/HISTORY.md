@@ -1,7 +1,9 @@
 # History
-
+## 2.0.1 (2022-07-13)
+    * FIXES:
+      * corrects SVG ID by changing `i-icon-` to `i-`
 ## 2.0.0 (2022-06-23)
-    * BREAKING: Update brand-context 
+    * BREAKING: Update brand-context
         * Node Sass to Dart Sass
     * Add examples with no border top on headings
     * Reference SVG icon with xlink:href and simplify dimensions
