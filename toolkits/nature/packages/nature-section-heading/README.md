@@ -20,11 +20,12 @@ Write clear, descriptive headings using sentence case.
 
 ### Section headings with and without a top border
 
-There are two styles of Section heading. One with a top border and one without.
+There are 2 styles of Section heading:
 
-Use the heading with a top border for `<h2>` level headings.
+- one with a top and botton border - this is set as an `<h2>` heading level
+- one with a bottom border and no top border - this is designed for sub-headings and is set at heading level `<h3>`
 
-Use the heading without a top border for sub-headings, which are usually `<h3>` level or below.
+If you need to change the default heading level of a Section heading, you can do this using the heading level with the `aria-level` property. The level should be a string, not an integer.
 
 To make our sites accessible, you must always [use heading levels correctly to communicate page structure](https://elements.public.springernature.app/nature/styleguide/typography#use-heading-levels-to-communicate-page-structure).
 
