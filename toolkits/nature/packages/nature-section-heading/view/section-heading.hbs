@@ -1,14 +1,24 @@
-<div class="c-section-heading {{no-bt}}">
-	{{#if url}}
-	<h2>
-		<a href="{{url}}" class="c-section-heading__link">
+<div class="c-section-heading {{#if no-bt}}{{no-bt}}{{/if}}">
+	{{#if no-bt}}
+	<h3{{#if level}} aria-level="{{level}}" {{/if}}>
+		{{else}}
+		<h2{{#if level}} aria-level="{{level}}" {{/if}}>
+			{{/if}}
+			{{#if url}}
+			<a href="{{url}}" class="c-section-heading__link">
+				{{text}}
+				<svg class="c-section-heading__icon" aria-hidden="true" focusable="false"
+					height="16" width="16">
+					<use xlink:href="{{chevronURL}}"></use>
+				</svg>
+			</a>
+			{{else}}
 			{{text}}
-			<svg class="c-section-heading__icon" aria-hidden="true" focusable="false" height="16" width="16">
-				<use xlink:href="{{chevronURL}}"></use>
-			</svg>
-		</a>
-	</h2>
-	{{else}}
-	<h2>{{text}}</h2>
-	{{/if}}
+			{{/if}}
+			{{#if no-bt}}
+			</h3>
+			{{else}}
+
+			</h2>
+			{{/if}}
 </div>
