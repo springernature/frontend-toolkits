@@ -1729,8 +1729,9 @@ cite {
 
 .c-hero__image {
   position: relative;
-  flex-grow: 1;
-  flex-basis: 30rem;
+  flex-basis: 0;
+  flex-grow: 666;
+  min-width: var(--hero--image-min, 50%);
 }
 
 .c-hero__image img {
@@ -1741,9 +1742,8 @@ cite {
 }
 
 .c-hero__content {
-  flex-basis: 0;
-  flex-grow: 666;
-  min-width: 50%;
+  flex-grow: 1;
+  flex-basis: var(--hero--content-basis, 35rem);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1768,7 +1768,7 @@ cite {
 <div class="c-hero">
 		<div class="c-hero__content">
 			<h1>What a hero</h1>
-				<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 		</div>
 			<div class="c-hero__image">
 				<img src="https://picsum.photos/800/600" alt="">
@@ -1778,14 +1778,24 @@ cite {
 <div class="c-hero">
 		<div class="c-hero__content">
 			<h1>What a hero</h1>
-				<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 		</div>
+</div>
+<h2 class="u-mt-32">Default with wider content area (<code>contentWidth</code>)</h2>
+<div class="c-hero">
+		<div class="c-hero__content" style="--hero--content-basis: 50rem">
+			<h1>What a hero</h1>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+		</div>
+			<div class="c-hero__image" style="--hero--image-min: 33.333%">
+				<img src="https://picsum.photos/800/600" alt="">
+			</div>
 </div>
 <h2 class="u-mt-32">Custom background color</h2>
 <div class="c-hero" style="background-color: #000">
 		<div class="c-hero__content">
 			<h1>Custom color hero</h1>
-				<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 		</div>
 			<div class="c-hero__image">
 				<img src="https://picsum.photos/700/700" alt="">

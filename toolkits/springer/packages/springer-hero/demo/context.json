@@ -2,19 +2,27 @@
 	"default": {
 		"title": "What a hero",
 		"imageSrc": "https://picsum.photos/800/600",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
+		"imageLeft": false
+	},
+	"widerContent": {
+		"title": "What a hero",
+		"contentBasis": "50rem",
+		"imageMin": "33.333%",
+		"imageSrc": "https://picsum.photos/800/600",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},
 	"defaultNoImage": {
 		"title": "What a hero",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},
 	"customColor": {
 		"title": "Custom color hero",
 		"color": "#000",
 		"imageSrc": "https://picsum.photos/700/700",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},
 	"customColorNoContent": {

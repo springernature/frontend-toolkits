@@ -1,25 +1,25 @@
 <div class="c-hero"{{#if color}} style="background-color: {{color}}"{{/if}}>
 	{{#if imageLeft}}
 		{{#if imageSrc}}
-			<div class="c-hero__image">
+			<div class="c-hero__image"{{#if imageMin}} style="--hero--image-min: {{imageMin}}"{{/if}}>
 				<img src="{{imageSrc}}" alt=""/>
 			</div>
 		{{/if}}
-		<div class="c-hero__content">
+		<div class="c-hero__content"{{#if contentBasis}} style="--hero--content-basis: {{contentBasis}}"{{/if}}>
 			<h1>{{title}}</h1>
 			{{#if content}}
 				{{{content}}}
 			{{/if}}
 		</div>
 	{{else}}
-		<div class="c-hero__content">
+		<div class="c-hero__content"{{#if contentBasis}} style="--hero--content-basis: {{contentBasis}}"{{/if}}>
 			<h1>{{title}}</h1>
 			{{#if content}}
 				{{{content}}}
 			{{/if}}
 		</div>
 		{{#if imageSrc}}
-			<div class="c-hero__image">
+			<div class="c-hero__image"{{#if imageMin}} style="--hero--image-min: {{imageMin}}"{{/if}}>
 				<img src="{{imageSrc}}" alt=""/>
 			</div>
 		{{/if}}

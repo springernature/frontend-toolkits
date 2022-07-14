@@ -7,8 +7,11 @@
 
 .c-hero__image {
 	position: relative;
-	flex-grow: 1;
-	flex-basis: 30rem;
+	flex-basis: 0;
+	flex-grow: 666;
+	/* ↓ fallback for IE11 */
+	min-width: $hero--image-min;
+	min-width: var(--hero--image-min, #{$hero--image-min});
 }
 
 .c-hero__image img {
@@ -19,9 +22,10 @@
 }
 
 .c-hero__content {
-	flex-basis: 0;
-	flex-grow: 666;
-	min-width: 50%;
+	flex-grow: 1;
+	/* ↓ fallback for IE11 */
+	flex-basis: $hero--content-basis;
+	flex-basis: var(--hero--content-basis, #{$hero--content-basis});
 	display: flex;
 	justify-content: center;
 	flex-direction: column;

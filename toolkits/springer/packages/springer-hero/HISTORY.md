@@ -1,4 +1,8 @@
 # History
+## 1.0.0 (2022-07-14)
+    * BREAKING:
+        * Image and content proportions now controlled through props
+        * Wider image area by default
 ## 0.2.0 (2022-05-06)
     * Image and content now optional
 ## 0.1.3 (2022-04-04)
