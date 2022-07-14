@@ -5,6 +5,11 @@
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},
+	"defaultNoImage": {
+		"title": "What a hero",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
+		"imageLeft": false
+	},
 	"widerContent": {
 		"title": "What a hero",
 		"contentBasis": "50rem",
@@ -13,8 +18,11 @@
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},
-	"defaultNoImage": {
+	"adjustedPadding": {
 		"title": "What a hero",
+		"paddingInline": "1.5rem",
+		"paddingBlock": "6rem",
+		"imageSrc": "https://picsum.photos/800/600",
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
 		"imageLeft": false
 	},

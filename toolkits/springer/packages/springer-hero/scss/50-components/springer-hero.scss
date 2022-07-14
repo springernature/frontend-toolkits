@@ -29,7 +29,8 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: $hero--padding;
+	padding-inline: var(--hero--content-padding-inline, #{$hero--content-padding-inline});
+	padding-block: var(--hero--content-padding-block, #{$hero--content-padding-block});
 }
 
 .c-hero__content ul {
