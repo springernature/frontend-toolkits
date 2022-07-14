@@ -31,14 +31,14 @@ To make our sites accessible, you must always [use heading levels correctly to c
 
 ### Section headings as links
 
-You may want a Section heading to link to another page.
+You can use a Section heading to link to another page.
 
-In these cases, include a chevron after the heading text to help users understand that they can click on it.
+If you're using the handlebars template and you add a link, the heading will render a chevron after the heading text to show users that they can click on it.
 
 ![Section heading with a right-arrow chevron after the heading text](https://user-images.githubusercontent.com/15365576/152791603-d876746c-ab7a-4a03-84c2-dc871df0d6b2.png)
 
-[Get the source code for the chevron icon](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/img/icons/chevron-right.svg
-)
+If you're not using the handlebars template, you'll need to style it yourself using [the source code for the chevron svg icon](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/img/icons/chevron-right.svg
+).
 
 ## Installation
 
