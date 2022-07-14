@@ -4,7 +4,7 @@
 
 The Nature Section heading is a type of heading used for titles of some subsections of pages on Nature.com.
 
-It uses borders above and below the heading text to make it stand out from other headings on the page.
+It uses borders to the heading text to make it stand out from other headings on the page.
 
 ## When to use this component
 
@@ -14,10 +14,19 @@ Use the Nature Section heading when you want to organise multiple pieces of cont
 
 When you need to break up content on article pages into chunks, use [default heading styles](https://frontend-design-system.private.springernature.app/nature/styleguide/typography#headings-nature-journals).
 
-
 ## How it works
 
 Write clear, descriptive headings using sentence case.
+
+### Section headings with and without a top border
+
+There are two styles of Section heading. One with a top border and one without.
+
+Use the heading with a top border for `<h2>` level headings.
+
+Use the heading without a top border for sub-headings, which are usually `<h3>` level or below.
+
+To make our sites accessible, you must always [use heading levels correctly to communicate page structure](https://elements.public.springernature.app/nature/styleguide/typography#use-heading-levels-to-communicate-page-structure).
 
 ### Section headings as links
 
