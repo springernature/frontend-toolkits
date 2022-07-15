@@ -4,7 +4,7 @@
 
 The Nature Section heading is a type of heading used for titles of some subsections of pages on Nature.com.
 
-It uses borders to the heading text to make it stand out from other headings on the page.
+It uses borders to make it stand out from other headings on the page.
 
 ## When to use this component
 
