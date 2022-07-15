@@ -1,4 +1,13 @@
 # History
+
+## 3.0.0 (22-07-14)
+    * BREAKING:
+        * Assigns sensible default heading levels to Section heading variants with option to override
+    * UPDATES:
+        * guidance on when to use variants with and without top border
+        * guidance on overriding default heading levels
+        * guidance on adding chevron icon to section headings as link
+
 ## 2.0.1 (2022-07-13)
     * FIXES:
       * corrects SVG ID by changing `i-icon-` to `i-`
