@@ -1,0 +1,13 @@
+{
+	"brand-gradient": {
+		"direction": {
+			"value": "to right"
+		},
+		"start-value": {
+			"value": "{color.research.blue}"
+		},
+		"end-value": {
+			"value": "{color.blue.900}"
+		}
+	}
+}
