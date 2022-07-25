@@ -17,8 +17,9 @@ First, include the necessary Sass files in your project.
 // Include this with your other components
 @import '@springernature/global-forms/scss/50-components/forms';
 
-// Include this with your utilities (if it isn’t already there)
+// Include these with your utilities (if not already there)
 @import '@springernature/brand-context/default/scss/60-utilities/buttons.scss';
+@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 Then you will need to register the handlebars partials in the `/view` folder. 
