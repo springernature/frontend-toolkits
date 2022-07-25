@@ -37,6 +37,7 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
+* + .c-forms__error-summary,
 * + .c-forms__fieldset,
 * + .c-forms__field {
 	margin-top: $global-forms-field-stack-spacing;
@@ -93,6 +94,8 @@
 
 .c-forms__error {
 	color: $global-forms-message-color-error;
+	display: flex;
+	align-items: center;
 }
 
 label+.c-forms__error,

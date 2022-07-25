@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0-rc.3 (2022-07-25)
+    * BREAKING
+        * Removed and replaced utility classes
+        * Include spacing utilities
 ## 5.0.0-rc.2 (2022-07-11)
     * BREAKING:
         * Arbitrary attributes now restricted to data attributes
