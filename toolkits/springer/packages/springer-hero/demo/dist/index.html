@@ -1731,13 +1731,10 @@ cite {
   position: relative;
   flex-basis: 0;
   flex-grow: 666;
-  /* ↓ fallback for IE11 */
-  min-width: 50%;
   min-width: var(--hero--image-min, 50%);
 }
 
 .c-hero__image img {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1746,13 +1743,11 @@ cite {
 .c-hero__content {
   flex-grow: 1;
   /* ↓ fallback for IE11 */
-  flex-basis: 35rem;
-  flex-basis: var(--hero--content-basis, 35rem);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-inline: var(--hero--content-padding-inline, 3rem);
-  padding-block: var(--hero--content-padding-block, 3rem);
+  flex-basis: 33.333%;
+  min-width: min(var(--hero--content-min, 35rem), 100%);
+  flex-basis: 33.333%;
+  padding-inline: 3rem;
+  padding-block: 3rem;
 }
 
 .c-hero__content ul {
@@ -1766,64 +1761,71 @@ cite {
 .c-hero__content > * + * {
   margin-top: 16px;
 }
+
+.c-hero__content a {
+  color: inherit;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
 		<h2>Default</h2>
 <div class="c-hero">
-		<div class="c-hero__content" style="">
-			<h1>What a hero</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	<div class="c-hero__content">
+		<h1>What a hero</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
+		<div class="c-hero__image">
+			<img src="https://picsum.photos/800/400" alt="">
 		</div>
-			<div class="c-hero__image">
-				<img src="https://picsum.photos/800/600" alt="">
-			</div>
+</div>
+<h2 class="u-mt-32">Wider image minimum width</h2>
+<p>The layout will wrap at a wider container width.</p>
+<div class="c-hero">
+	<div class="c-hero__content">
+		<h1>What a hero</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
+		<div class="c-hero__image" style="--hero--image-min: 60%;">
+			<img src="https://picsum.photos/800/400" alt="">
+		</div>
+</div>
+<h2 class="u-mt-32">Narrower content minimum width</h2>
+<p>The layout will wrap at a narrower container width.</p>
+<div class="c-hero">
+	<div class="c-hero__content" style="--hero--content-min: 25rem;">
+		<h1>What a hero</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
+		<div class="c-hero__image">
+			<img src="https://picsum.photos/800/400" alt="">
+		</div>
+</div>
+<h2 class="u-mt-32">Default with taller image</h2>
+<div class="c-hero">
+	<div class="c-hero__content">
+		<h1>Taller image</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
+		<div class="c-hero__image">
+			<img src="https://picsum.photos/700/600" alt="">
+		</div>
 </div>
 <h2 class="u-mt-32">Default without <code>imgSrc</code></h2>
 <div class="c-hero">
-		<div class="c-hero__content" style="">
-			<h1>What a hero</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
-		</div>
-</div>
-<h2 class="u-mt-32">Default with wider content area (<code>contentWidth</code>)</h2>
-<div class="c-hero">
-		<div class="c-hero__content" style="--hero--content-basis: 50rem;">
-			<h1>What a hero</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
-		</div>
-			<div class="c-hero__image" style="--hero--image-min: 33.333%">
-				<img src="https://picsum.photos/800/600" alt="">
-			</div>
-</div>
-<h2 class="u-mt-32">Adjusted padding</h2>
-<div class="c-hero">
-		<div class="c-hero__content" style="--hero--content-padding-inline:1.5rem;--hero--content-padding-block:6rem;">
-			<h1>What a hero</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
-		</div>
-			<div class="c-hero__image">
-				<img src="https://picsum.photos/800/600" alt="">
-			</div>
+	<div class="c-hero__content">
+		<h1>No image</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
 </div>
 <h2 class="u-mt-32">Custom background color</h2>
 <div class="c-hero" style="background-color: #000">
-		<div class="c-hero__content" style="">
-			<h1>Custom color hero</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	<div class="c-hero__content">
+		<h1>Custom color hero</h1>
+			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
+	</div>
+		<div class="c-hero__image">
+			<img src="https://picsum.photos/700/400" alt="">
 		</div>
-			<div class="c-hero__image">
-				<img src="https://picsum.photos/700/700" alt="">
-			</div>
-</div>
-<h2 class="u-mt-32">Custom background color with no <code>content</code></h2>
-<div class="c-hero" style="background-color: #000">
-		<div class="c-hero__content" style="">
-			<h1>Custom color hero</h1>
-		</div>
-			<div class="c-hero__image">
-				<img src="https://picsum.photos/700/700" alt="">
-			</div>
 </div>
 
 		<script>

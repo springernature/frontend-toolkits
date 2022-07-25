@@ -17,22 +17,14 @@ Then compile the template located in the `./view` folder whenever the component 
 
 Both the image (`imageSrc`) and content (`content`) are optional. The component reconfigures automatically where these properties are omitted.
 
-### `imageLeft`
-
-You can display the image on the right (default; bottom on smaller screens) or left (top on smaller screens) by changing the data’s `imageLeft` property to `true`.
-
 ### `color`
 
 You can override the default background color by including a `color` property.
 
-### `contentBasis` and `imageMin`
+### `imageMin` and `contentMin`
 
-Used together, these two properties let you control how much of the hero is given to content, how much to the image, and at which point the image disappears. 
+Use these properties to adjust the layout and wrapping behaviour of the component.
 
-The `contentBasis` property sets the width of the content area when there is enough space to display the image and content side-by-side.
+* `imageMin` sets how narrow the image portion of the component can become before wrapping occurs. More likely to invoke cropping of the image (`object-fit` prevents squashing/distortion).
+* `contentMin` sets how narrow the content area of the component can become before wrapping occurs. Be mindful of readability; lines of text should not become too short.
 
-The `imageMin` property needs a percentage value, defaulting to `50%`. It represents the minimum width of the image area at which the image itself will appear. For example, if the value is set to `30%`, the image will be visible where the image area takes up at least `30%` of the component’s total width. The narrower the component, the less likely the image will appear.
-
-### `paddingInline` and `paddingBlock`
-
-Use these properties to adjust the padding around the content.

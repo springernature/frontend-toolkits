@@ -9,13 +9,10 @@
 	position: relative;
 	flex-basis: 0;
 	flex-grow: 666;
-	/* ↓ fallback for IE11 */
-	min-width: $hero--image-min;
 	min-width: var(--hero--image-min, #{$hero--image-min});
 }
 
 .c-hero__image img {
-	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -25,12 +22,10 @@
 	flex-grow: 1;
 	/* ↓ fallback for IE11 */
 	flex-basis: $hero--content-basis;
-	flex-basis: var(--hero--content-basis, #{$hero--content-basis});
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-inline: var(--hero--content-padding-inline, #{$hero--content-padding-inline});
-	padding-block: var(--hero--content-padding-block, #{$hero--content-padding-block});
+	min-width: min(var(--hero--content-min, #{$hero--content-min}), 100%);
+	flex-basis: $hero--content-basis;
+	padding-inline: $hero--content-padding-inline;
+	padding-block: $hero--content-padding-block;
 }
 
 .c-hero__content ul {
@@ -43,4 +38,8 @@
 
 .c-hero__content > * + * {
 	margin-top: spacing(16);
+}
+
+.c-hero__content a {
+	color: inherit;
 }
