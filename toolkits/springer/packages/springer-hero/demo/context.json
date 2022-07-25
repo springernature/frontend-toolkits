@@ -1,43 +1,35 @@
 {
 	"default": {
 		"title": "What a hero",
-		"imageSrc": "https://picsum.photos/800/600",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
-		"imageLeft": false
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+	},
+	"imageMinWider": {
+		"title": "What a hero",
+		"imageMin": "60%",
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+	},
+	"contentMinNarrower": {
+		"title": "What a hero",
+		"contentMin": "25rem",
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+	},
+	"defaultTallerImage": {
+		"title": "Taller image",
+		"imageSrc": "https://picsum.photos/700/600",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"defaultNoImage": {
-		"title": "What a hero",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
-		"imageLeft": false
-	},
-	"widerContent": {
-		"title": "What a hero",
-		"contentBasis": "50rem",
-		"imageMin": "33.333%",
-		"imageSrc": "https://picsum.photos/800/600",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
-		"imageLeft": false
-	},
-	"adjustedPadding": {
-		"title": "What a hero",
-		"paddingInline": "1.5rem",
-		"paddingBlock": "6rem",
-		"imageSrc": "https://picsum.photos/800/600",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
-		"imageLeft": false
+		"title": "No image",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"customColor": {
 		"title": "Custom color hero",
 		"color": "#000",
-		"imageSrc": "https://picsum.photos/700/700",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>",
-		"imageLeft": false
-	},
-	"customColorNoContent": {
-		"title": "Custom color hero",
-		"color": "#000",
-		"imageSrc": "https://picsum.photos/700/700",
-		"imageLeft": false
+		"imageSrc": "https://picsum.photos/700/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"dynamicPartials": {
 		"hero": "./toolkits/springer/packages/springer-hero/view/springer-hero.hbs"
