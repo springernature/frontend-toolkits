@@ -33,13 +33,6 @@
     "publish": "sn-package-publish",
     "test": "jest --colors --coverage --passWithNoTests",
     "test:ci": "jest --passWithNoTests --runInBand",
-    "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/design-tokens/build-alias.js",
-    "tokens:clean": "npx rimraf **/00-tokens/",
-    "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
-    "tokens:literal": "node ./context/design-tokens/build-literal.js",
-    "tokens:global-components": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias && node ./context/design-tokens/build-component-global.js",
-    "tokens:brand-components": "node ./context/design-tokens/build-components.js",
-    "tokens:component:<component>": "node ./context/design-tokens/build-component.js --component <component>",
     "validate": "sn-package-validate",
     "validate:global": "sn-package-validate -t global",
     "validate:nature": "sn-package-validate -t nature",
@@ -70,8 +63,7 @@
     "eslint-plugin-unicorn": "^13.0.0",
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
-    "sass-lint": "^1.13.1",
-    "style-dictionary": "^3.7.0"
+    "sass-lint": "^1.13.1"
   },
   "jest": {
     "testURL": "http://localhost/",
