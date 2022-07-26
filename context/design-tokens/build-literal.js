@@ -23,7 +23,7 @@ StyleDictionaryPackage.registerTransform({
 });
 
 function getStyleDictionaryConfig(brand, categories) {
-	let dest = `./context/brand-context/${brand}/scss`;
+	let dest = `../../context/brand-context/${brand}/scss`;
 
 	return {
 		source: [

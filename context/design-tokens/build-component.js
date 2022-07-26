@@ -46,6 +46,21 @@ function getStyleDictionaryConfig(brand, components) {
 	}
 }
 
+//  if file on disk is newer than the one in the package, don't build it else build it
+function buildIfNewer(brand, component) {
+	let dest = `./toolkits/${brand}/packages/`;
+	let file = `${dest}/${component}/scss/00-tokens/_${component}.tokens.scss`;
+	let packageFile = `${__dirname}/components/${brand}/${component}/scss/00-tokens/_${component}.tokens.scss`;
+	let packageFileStats = fs.statSync(packageFile);
+	let fileStats = fs.statSync(file);
+	if (packageFileStats.mtime > fileStats.mtime) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+
 console.log('Build started...');
 
 // the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of

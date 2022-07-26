@@ -17,7 +17,7 @@ function tokenFilter(brand, alias) {
 
 
 function getStyleDictionaryConfig(brand, aliases) {
-	let dest = `./context/brand-context/${brand}/scss`;
+	let dest = `../../context/brand-context/${brand}/scss`;
 
 	return {
 		include: [`${__dirname}/literal/**/*.json`],
@@ -50,30 +50,8 @@ console.log('Build started...');
 	console.log('\n==============================================');
 	console.log(`\nProcessing: [${brand}]`);
 
-	// const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, aliases));
 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, aliases));
 	brands.buildAllPlatforms();
 
 	console.log('\nEnd processing');
-	// StyleDictionary.buildPlatform(brand);
-});
-
-['default', 'springer', 'springernature', 'nature'].map(function (brand) {
-	var fileNames = fs.readdirSync(`./context/brand-context/${brand}/scss/00-tokens/`);
-	let dest = `./context/brand-context/${brand}/scss/00-tokens/`;
-
-	console.log('\n==============================================');
-	console.log(`\nProcessing Sass index file: [${brand}]`);
-
-	require('fs').writeFileSync(
-
-		// create an index.scss based off of the dest letiable
-		`${dest}/_index.scss`,
-
-		// create a list of each file in the directory
-		fileNames.map(file => {
-			// return a string of the file name
-			return `@import '${file}';`
-		}).join('\n')
-	);
 });
