@@ -1,5 +1,9 @@
 # History
 
+## 2.0.1 (2022-07-27)
+    * Upgrade brand context dependency
+    * Adjust `content-min` value
+
 ## 2.0.0 (2022-07-25)
     * BREAKING:
         * Simplified API (fewer options)
