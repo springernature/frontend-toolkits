@@ -7,7 +7,7 @@
 ## 2.0.0 (2022-07-25)
     * BREAKING:
         * Simplified API (fewer options)
-        * More Nature-like behaviour
+        * More Nature-like behavior
 ## 1.0.0 (2022-07-14)
     * BREAKING:
         * Wider image area by default
