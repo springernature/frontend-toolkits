@@ -1,7 +1,7 @@
 # History
 
 ## 5.0.0-rc.4 (2022-07-27)
-    * `hidden` input type
+    * `hidden` input type added
     * `pointer-events: none` to make select clickable through chevron
 
 ## 5.0.0-rc.3 (2022-07-25)
