@@ -1,12 +1,12 @@
 {
 	"name": "@springernature/global-forms",
-	"version": "5.0.0-rc.3",
+	"version": "5.0.0-rc.4",
 	"license": "MIT",
 	"description": "form component",
 	"keywords": [
 	  "css",
 	  "component"
 	],
-  "author": "Jack Watkins",
+  "author": "Heydon Pickering",
   "brandContext": "^25.0.0"
 }

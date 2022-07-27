@@ -1,9 +1,14 @@
 # History
 
+## 5.0.0-rc.4 (2022-07-27)
+    * `hidden` input type added
+    * `pointer-events: none` to make select clickable through chevron
+
 ## 5.0.0-rc.3 (2022-07-25)
     * BREAKING
         * Removed and replaced utility classes
         * Include spacing utilities
+
 ## 5.0.0-rc.2 (2022-07-11)
     * BREAKING:
         * Arbitrary attributes now restricted to data attributes
