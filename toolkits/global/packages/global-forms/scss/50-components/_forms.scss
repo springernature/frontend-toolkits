@@ -126,6 +126,7 @@ label+.c-forms__error,
 	right: $global-forms-input-padding-inline;
 	top: 50%;
 	transform: translateY(-50%);
+	pointer-events: none;
 }
 
 .c-forms__input--radio,

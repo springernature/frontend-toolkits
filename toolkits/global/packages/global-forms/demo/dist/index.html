@@ -1205,6 +1205,7 @@ label + .c-forms__error,
   right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .c-forms__input--radio,
@@ -1370,6 +1371,9 @@ label + .c-forms__error,
 							Your name (simple)
 						</label>
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
+					</div>
+					<div class="c-forms__field">
+						<input type="hidden" class="c-forms__input c-forms__input--hidden" id="hidden" name="hidden" value="someSecretValue" autocomplete="off">
 					</div>
 					<div class="c-forms__field">
 						<label for="your-name-hint" class="c-forms__label">
