@@ -1,5 +1,9 @@
 <!DOCTYPE html><html lang="en"><head>
+		<script>
+    		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
+		</script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/global-layout-cluster</title>
 		<style>
 			@charset "UTF-8";
@@ -8,48 +12,34 @@
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
-/* =========================================================================
-   $NORMALIZE
-   normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css
-   ========================================================================= */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-	font-family: sans-serif;
-	/* 1 */
-	line-height: 1.15;
-	/* 2 */
-	-ms-text-size-adjust: 100%;
-	/* 3 */
-	-webkit-text-size-adjust: 100%;
-	/* 3 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
    ========================================================================== */
 /**
- * Remove the margin in all browsers (opinionated).
+ * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+  margin: 0;
 }
 
 /**
- * Add the correct display in IE 9-.
+ * Render the `main` element consistently in IE.
  */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-	display: block;
+main {
+  display: block;
 }
 
 /**
@@ -57,41 +47,23 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
    ========================================================================== */
 /**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-figcaption,
-figure,
-main {
-	/* 1 */
-	display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-	margin: 1em 40px;
-}
-
-/**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-	box-sizing: content-box;
-	/* 1 */
-	height: 0;
-	/* 1 */
-	overflow: visible;
-	/* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -99,53 +71,32 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-	font-family: monospace, monospace;
-	/* 1 */
-	font-size: 1em;
-	/* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
    ========================================================================== */
 /**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * Remove the gray background on active links in IE 10.
  */
 a {
-	background-color: transparent;
-	/* 1 */
-	-webkit-text-decoration-skip: objects;
-	/* 2 */
+  background-color: transparent;
 }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-a:active,
-a:hover {
-	outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-	border-bottom: none;
-	/* 1 */
-	text-decoration: underline;
-	/* 2 */
-	text-decoration: underline dotted;
-	/* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-	font-weight: inherit;
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -153,7 +104,7 @@ strong {
  */
 b,
 strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 /**
@@ -163,32 +114,17 @@ strong {
 code,
 kbd,
 samp {
-	font-family: monospace, monospace;
-	/* 1 */
-	font-size: 1em;
-	/* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-	font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-	background-color: #ff0;
-	color: #000;
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-	font-size: 80%;
+  font-size: 80%;
 }
 
 /**
@@ -197,56 +133,33 @@ small {
  */
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 
 /* Embedded content
    ========================================================================== */
 /**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-	display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-	display: none;
-	height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
+ * Remove the border on images inside links in IE 10.
  */
 img {
-	border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-	overflow: hidden;
+  border-style: none;
 }
 
 /* Forms
    ========================================================================== */
 /**
- * 1. Change the font styles in all browsers (opinionated).
+ * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 button,
@@ -254,14 +167,14 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
-	/* 1 */
-	font-size: 100%;
-	/* 1 */
-	line-height: 1.15;
-	/* 1 */
-	margin: 0;
-	/* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -270,8 +183,8 @@ textarea {
  */
 button,
 input {
-	/* 1 */
-	overflow: visible;
+  /* 1 */
+  overflow: visible;
 }
 
 /**
@@ -280,51 +193,46 @@ input {
  */
 button,
 select {
-	/* 1 */
-	text-transform: none;
+  /* 1 */
+  text-transform: none;
 }
 
 /**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
+ * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type='button'],
-[type='reset'],
-[type='submit'] {
-	-webkit-appearance: button;
-	/* 2 */
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
 }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-	outline: 1px dotted ButtonText;
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -334,75 +242,70 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-	box-sizing: border-box;
-	/* 1 */
-	color: inherit;
-	/* 2 */
-	display: table;
-	/* 1 */
-	max-width: 100%;
-	/* 1 */
-	padding: 0;
-	/* 3 */
-	white-space: normal;
-	/* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-	display: inline-block;
-	/* 1 */
-	vertical-align: baseline;
-	/* 2 */
+  vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE.
+ * Remove the default vertical scrollbar in IE 10+.
  */
 textarea {
-	overflow: auto;
+  overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
-	box-sizing: border-box;
-	/* 1 */
-	padding: 0;
-	/* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
-	height: auto;
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
 }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
-	-webkit-appearance: textfield;
-	/* 1 */
-	outline-offset: -2px;
-	/* 2 */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-cancel-button,
-[type='search']::-webkit-search-decoration {
-	-webkit-appearance: none;
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
 /**
@@ -410,53 +313,42 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-	-webkit-appearance: button;
-	/* 1 */
-	font: inherit;
-	/* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
    ========================================================================== */
 /*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
+ * Add the correct display in Edge, IE 10+, and Firefox.
  */
-details,
-menu {
-	display: block;
+details {
+  display: block;
 }
 
 /*
  * Add the correct display in all browsers.
  */
 summary {
-	display: list-item;
+  display: list-item;
 }
 
-/* Scripting
+/* Misc
    ========================================================================== */
 /**
- * Add the correct display in IE 9-.
- */
-canvas {
-	display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
+ * Add the correct display in IE 10+.
  */
 template {
-	display: none;
+  display: none;
 }
 
-/* Hidden
-   ========================================================================== */
 /**
- * Add the correct display in IE 10-.
+ * Add the correct display in IE 10.
  */
 [hidden] {
-	display: none;
+  display: none;
 }
 
 /**
@@ -623,11 +515,11 @@ template {
  * Set base font size
  */
 html {
-	font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
-	font-size: 1.8em;
+  font-size: 1.125rem;
 }
 
 /**
@@ -635,200 +527,176 @@ body {
  * These are for styled branded buttons
  */
 .u-button {
-	align-items: center;
-	cursor: pointer;
-	display: inline-flex;
-	margin: 0;
-	position: relative;
-	text-decoration: none;
-	width: auto;
-	font-family: sans-serif;
-	font-size: 1.6rem;
-	line-height: 1.3;
-	justify-content: center;
-	padding: 8px;
-	transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-	border-radius: 2px;
-	color: darkblue;
-	background-color: #f2f2f2;
-	background-image: none;
-	border: 1px solid #cccccc;
-	box-shadow: inherit;
-	font-weight: normal;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  justify-content: center;
+  padding: 8px;
+  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border-radius: 2px;
+  color: darkblue;
+  background-color: #f2f2f2;
+  background-image: none;
+  border: 1px solid #cccccc;
+  box-shadow: inherit;
+  font-weight: normal;
 }
-
 .u-button svg {
-	fill: currentColor;
+  fill: currentColor;
 }
-
 .u-button:visited {
-	color: darkblue;
+  color: darkblue;
 }
-
 .u-button:hover {
-	border: 1px solid #666666;
-	box-shadow: inherit;
-	text-decoration: none;
+  border: 1px solid #666666;
+  box-shadow: inherit;
+  text-decoration: none;
 }
-
 .u-button:focus {
-	border: 1px solid #666666;
-	box-shadow: inherit;
-	outline: inherit;
-	text-decoration: none;
+  border: 1px solid #666666;
+  box-shadow: inherit;
+  outline: inherit;
+  text-decoration: none;
 }
-
 .u-button:hover, .u-button:focus {
-	color: white;
-	background-color: #666666;
-	background-image: none;
+  color: white;
+  background-color: #666666;
+  background-image: none;
 }
-
 .u-button:hover svg path, .u-button:focus svg path {
-	fill: white;
+  fill: white;
 }
 
 .u-button--primary {
-	color: white;
-	background-color: darkblue;
-	background-image: none;
-	border: 1px solid blue;
-	font-weight: normal;
+  color: white;
+  background-color: darkblue;
+  background-image: none;
+  border: 1px solid blue;
+  font-weight: normal;
 }
-
 .u-button--primary svg {
-	fill: currentColor;
+  fill: currentColor;
 }
-
 .u-button--primary:visited {
-	color: white;
+  color: white;
 }
-
 .u-button--primary:hover {
-	border: 1px solid blue;
+  border: 1px solid blue;
 }
-
 .u-button--primary:focus {
-	border: 1px solid blue;
+  border: 1px solid blue;
 }
-
 .u-button--primary:hover, .u-button--primary:focus {
-	color: white;
-	background-color: blue;
-	background-image: none;
+  color: white;
+  background-color: blue;
+  background-image: none;
 }
-
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
-	fill: white;
+  fill: white;
 }
 
 .u-button--contrast {
-	color: white;
-	background-color: transparent;
-	background-image: none;
-	border: 1px solid white;
-	font-weight: normal;
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid white;
+  font-weight: normal;
 }
-
 .u-button--contrast svg {
-	fill: currentColor;
+  fill: currentColor;
 }
-
 .u-button--contrast:visited {
-	color: white;
+  color: white;
 }
-
 .u-button--contrast:hover {
-	border: 1px solid white;
+  border: 1px solid white;
 }
-
 .u-button--contrast:focus {
-	border: 1px solid white;
+  border: 1px solid white;
 }
-
 .u-button--contrast:hover, .u-button--contrast:focus {
-	color: black;
-	background-color: white;
-	background-image: none;
+  color: black;
+  background-color: white;
+  background-image: none;
 }
-
 .u-button--contrast:hover svg path, .u-button--contrast:focus svg path {
-	fill: black;
+  fill: black;
 }
 
 .u-button--disabled,
 .u-button:disabled {
-	color: black;
-	background-color: transparent;
-	background-image: none;
-	border: 1px solid #cccccc;
-	font-weight: normal;
-	opacity: 0.7;
-	cursor: default;
+  color: black;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #cccccc;
+  font-weight: normal;
+  opacity: 0.7;
+  cursor: default;
 }
-
 .u-button--disabled svg,
 .u-button:disabled svg {
-	fill: currentColor;
+  fill: currentColor;
 }
-
 .u-button--disabled:visited,
 .u-button:disabled:visited {
-	color: black;
+  color: black;
 }
-
 .u-button--disabled:hover,
 .u-button:disabled:hover {
-	border: 1px solid #cccccc;
-	text-decoration: none;
+  border: 1px solid #cccccc;
+  text-decoration: none;
 }
-
 .u-button--disabled:focus,
 .u-button:disabled:focus {
-	border: 1px solid #cccccc;
-	text-decoration: none;
+  border: 1px solid #cccccc;
+  text-decoration: none;
 }
-
 .u-button--disabled:hover, .u-button--disabled:focus,
 .u-button:disabled:hover,
 .u-button:disabled:focus {
-	color: black;
-	background-color: transparent;
-	background-image: none;
+  color: black;
+  background-color: transparent;
+  background-image: none;
 }
-
 .u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
 .u-button:disabled:hover svg path,
 .u-button:disabled:focus svg path {
-	fill: black;
+  fill: black;
 }
 
 .u-button--xsmall {
-	font-size: 1.4rem;
-	padding: 2px;
+  font-size: 0.875rem;
+  padding: 2px;
 }
 
 .u-button--small {
-	font-size: 1.4rem;
-	padding: inherit;
+  font-size: 0.875rem;
+  padding: inherit;
 }
 
 .u-button--large {
-	font-size: 1.8rem;
-	padding: 16px;
+  font-size: 1.125rem;
+  padding: 16px;
 }
 
 .u-button--full-width {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .u-button--icon-left svg {
-	margin-right: 8px;
+  margin-right: 8px;
 }
 
 .u-button--icon-right svg {
-	margin-left: 8px;
+  margin-left: 8px;
 }
 
 /**
@@ -837,50 +705,48 @@ body {
 *
 */
 .l-cluster {
-	display: flex;
-	flex-wrap: wrap;
-	/* ↓ In case it is a list */
-	list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* ↓ In case it is a list */
+  list-style: none;
+  padding: 0;
 }
-
 @supports (gap: 1em) {
-	.l-cluster {
-		gap: var(--cluster--gap, 1em);
-	}
+  .l-cluster {
+    gap: var(--cluster--gap, 1em);
+  }
 }
 
 .l-cluster > * {
-	/* ↓ Because margin doubles up */
-	margin: calc(1em / 2);
+  /* ↓ Because margin doubles up */
+  margin: calc(1em / 2);
 }
-
 @supports (gap: 1em) {
-	.l-cluster > * {
-		margin: 0;
-		gap: var(--cluster--gap, 1em);
-	}
+  .l-cluster > * {
+    margin: 0;
+    gap: var(--cluster--gap, 1em);
+  }
 }
 
 .l-cluster--right {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .l-cluster--center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .l-cluster--top {
-	align-items: flex-start;
+  align-items: flex-start;
 }
 
 .l-cluster--middle {
-	align-items: center;
+  align-items: center;
 }
 
 .l-cluster--bottom {
-	align-items: flex-end;
+  align-items: flex-end;
 }
-
 		</style>
 	</head>
 	<body style="padding:2%">

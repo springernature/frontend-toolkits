@@ -2,5 +2,5 @@
 	"message": "This is a the status message",
 	"type": "warning",
 	"boxed": true,
-	"iconURL": "../../img/warning.svg#warning"
+	"iconURL": "../../img/warning.svg#i-warning"
 }

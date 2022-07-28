@@ -20,10 +20,8 @@
 
 .c-hero__content {
 	flex-grow: 1;
-	/* ↓ fallback for IE11 */
 	flex-basis: $hero--content-basis;
 	min-width: min(var(--hero--content-min, #{$hero--content-min}), 100%);
-	flex-basis: $hero--content-basis;
 	padding-inline: $hero--content-padding-inline;
 	padding-block: $hero--content-padding-block;
 }
