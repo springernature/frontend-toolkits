@@ -28,10 +28,11 @@
 						}
 					},
 					{
-						"template": "globalFormHidden",
-						"name": "hidden",
-						"id": "hidden",
-						"value": "someSecretValue"
+						"template": "globalFormPassword",
+						"name": "password",
+						"label": "Your password",
+						"id": "password",
+						"value": "123456"
 					},
 					{
 						"template": "globalFormText",
@@ -226,6 +227,7 @@
 		"globalFormErrorSummary": "./toolkits/global/packages/global-forms/view/globalFormErrorSummary.hbs",
 		"globalFormAttributes": "./toolkits/global/packages/global-forms/view/globalFormAttributes.hbs",
 		"globalFormText": "./toolkits/global/packages/global-forms/view/fields/globalFormText.hbs",
+		"globalFormPassword": "./toolkits/global/packages/global-forms/view/fields/globalFormPassword.hbs",
 		"globalFormEmail": "./toolkits/global/packages/global-forms/view/fields/globalFormEmail.hbs",
 		"globalFormSelect": "./toolkits/global/packages/global-forms/view/fields/globalFormSelect.hbs",
 		"globalFormTextarea": "./toolkits/global/packages/global-forms/view/fields/globalFormTextarea.hbs",
