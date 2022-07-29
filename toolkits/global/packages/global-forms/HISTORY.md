@@ -1,5 +1,11 @@
 # History
 
+## 5.0.0-rc.5 (2022-07-27)
+    * `password` input type added
+    * fixed long labels squishing checkboxes and radios
+    * removed `role="presentation"`
+    * supplementary fields for checkboxes
+
 ## 5.0.0-rc.4 (2022-07-27)
     * `hidden` input type added
     * `pointer-events: none` to make select clickable through chevron
