@@ -1273,16 +1273,16 @@ label + .c-forms__error,
   background-position: center;
 }
 
-.c-forms__radio-fields {
+.c-forms__sub-fields {
   margin-top: 0.25rem;
-  margin-left: calc(1rem / 4);
+  margin-left: calc(1rem / 3);
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   position: relative;
   display: none;
 }
 
-.c-forms__radio-fields::before {
+.c-forms__sub-fields::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1293,7 +1293,7 @@ label + .c-forms__error,
   border-radius: 4px;
 }
 
-:checked ~ .c-forms__radio-fields {
+:checked ~ .c-forms__sub-fields {
   display: block;
 }
 
@@ -1374,7 +1374,10 @@ label + .c-forms__error,
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
 					</div>
 					<div class="c-forms__field">
-						<input type="hidden" class="c-forms__input c-forms__input--hidden" id="hidden" name="hidden" value="someSecretValue" autocomplete="off">
+						<label for="password" class="c-forms__label">
+							Your password
+						</label>
+						<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" autocomplete="off">
 					</div>
 					<div class="c-forms__field">
 						<label for="your-name-hint" class="c-forms__label">
@@ -1464,14 +1467,14 @@ label + .c-forms__error,
 							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
 										<legend class="c-forms__label">Animal</legend>
 						
-									<label class="c-forms__label c-forms__label--wrapper">
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
-									</label>
-									<label class="c-forms__label c-forms__label--wrapper">
+										<label for="radio-horse" class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</label>
+									</div>
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
-											<fieldset class="c-forms__fieldset c-forms__radio-fields">
+										<label for="radio-monkey" class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</label>
+											<fieldset class="c-forms__fieldset c-forms__sub-fields">
 													<div class="c-forms__field">
 														<label for="monkey-type" class="c-forms__label">
 															What type of monkey?
@@ -1488,11 +1491,11 @@ label + .c-forms__error,
 														<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" autocomplete="off">
 													</div>
 											</fieldset>
-									</label>
-									<label class="c-forms__label c-forms__label--wrapper">
+									</div>
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" checked="" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
-									</label>
+										<label for="radio-platypus" class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</label>
+									</div>
 							</fieldset>
 					</div>
 			</fieldset>
@@ -1508,17 +1511,11 @@ label + .c-forms__error,
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
 					<div class="c-forms__field">
-						<label class="c-forms__label c-forms__label--wrapper">
-							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms" name="checkbox-terms" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (basic)</span>
-						</label>
-					</div>
-					<div class="c-forms__field">
-						<label class="c-forms__label c-forms__label--wrapper">
+						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</span>
+							<label for="checkbox-terms-hint" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
-						</label>
+						</div>
 					</div>
 					<div class="c-forms__field">
 							<small class="c-forms__error" id="error-checkbox-terms-error">
@@ -1529,11 +1526,25 @@ label + .c-forms__error,
 								</span>
 								Agree to the terms to continue
 							</small>
-						<label class="c-forms__label c-forms__label--wrapper">
+						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</span>
+							<label for="checkbox-terms-error" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
-						</label>
+						</div>
+					</div>
+					<div class="c-forms__field">
+						<div class="c-forms__label c-forms__label--wrapper">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-sup" name="checkbox-sup" autocomplete="off">
+							<label for="checkbox-sup" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Checkbox with supplementary field</label>
+								<fieldset class="c-forms__fieldset c-forms__sub-fields">
+										<div class="c-forms__field">
+											<label for="checkbox-membership" class="c-forms__label">
+												What is your membership number?
+											</label>
+											<input type="text" class="c-forms__input c-forms__input--text" id="checkbox-membership" name="checkbox-membership" autocomplete="off">
+										</div>
+								</fieldset>
+						</div>
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
@@ -1545,7 +1556,7 @@ label + .c-forms__error,
 						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" autocomplete="off">
 					</div>
 			</fieldset>
-			<fieldset class="c-forms__fieldset" role="presentation">
+			<fieldset class="c-forms__fieldset">
 					<div class="c-forms__field">
 						<div class="c-forms__field c-forms__buttons">
 								<button type="submit" class="u-button u-button--primary" autocomplete="off">

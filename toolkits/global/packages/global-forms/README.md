@@ -204,27 +204,6 @@ The `name` property is placed at the top level and inherited by each input.
 
 Radios are always grouped together in a `fieldset`, so the group label (“Animal”, here) renders as a `legend` not a `label`.
 
-You might want to show users an additional field when they select a particular radio. For example, revealing a text input field for them to give more specific information about the option they’ve selected.
-
-These fields can have any properties of a standard form field. Set these properties using the `fields` property (an array), like this:
-
-```json
-{
-    "label": "Monkey",
-    "value": "Monkey",
-    "name": "animal",
-    "fields": [
-        {
-            "template": "globalFormText",
-            "label": "What type of monkey?",
-            "id": "monkey-type",
-            "name": "monkey-type",
-            "hint": "Chimps are not monkeys"
-        }
-    ]
-}
-```
-
 Unlike radios, which are always used in sets of two or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
 ```json
@@ -242,6 +221,30 @@ Unlike radios, which are always used in sets of two or more, you can have a sing
             "label": "Horses",
             "id": "checkbox-horses",
             "name": "checkbox-horses"
+        }
+    ]
+}
+```
+
+
+#### Supplementary fields
+
+You might want to show users an additional field when they select a particular radio or checkbox. For example, revealing a text input field for them to give more specific information about the option they’ve selected.
+
+These fields can have any properties of a standard form field. Set these properties using the `fields` property (an array), like this:
+
+```json
+{
+    "label": "Monkey",
+    "value": "Monkey",
+    "name": "animal",
+    "fields": [
+        {
+            "template": "globalFormText",
+            "label": "What type of monkey?",
+            "id": "monkey-type",
+            "name": "monkey-type",
+            "hint": "Chimps are not monkeys"
         }
     ]
 }
@@ -268,7 +271,7 @@ The `type` property for each individual button corresponds to the `type` HTML at
 ]
 ```
 
-The `modifiers` property is an array. Each value should match one of these modifiers form the brand context’s button utility styles:
+The `modifiers` property is an array. Each value should match one of these modifiers from the brand context’s button utility styles:
 
 * primary
 * secondary

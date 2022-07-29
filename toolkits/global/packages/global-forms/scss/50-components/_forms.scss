@@ -194,16 +194,16 @@ label+.c-forms__error,
 	background-position: center;
 }
 
-.c-forms__radio-fields {
+.c-forms__sub-fields {
 	margin-top: $global-forms-input-stack-spacing;
-	margin-left: calc(#{$global-forms-checkbox-size} / 4);
+	margin-left: calc(#{$global-forms-checkbox-size} / 3);
 	padding-top: $global-forms-field-stack-spacing;
 	padding-left: $global-forms-field-stack-spacing;
 	position: relative;
 	display: none;
 }
 
-.c-forms__radio-fields::before {
+.c-forms__sub-fields::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -214,7 +214,7 @@ label+.c-forms__error,
 	border-radius: $global-forms-indent-border-radius;
 }
 
-:checked~.c-forms__radio-fields {
+:checked~.c-forms__sub-fields {
 	display: block;
 }
 
