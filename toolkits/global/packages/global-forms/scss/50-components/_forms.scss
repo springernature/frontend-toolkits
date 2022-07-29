@@ -95,7 +95,7 @@
 .c-forms__error {
 	color: $global-forms-message-color-error;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 }
 
 label+.c-forms__error,
@@ -147,12 +147,13 @@ label+.c-forms__error,
 
 .c-forms__label--inline {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	cursor: pointer;
 }
 
 .c-forms__label--inline::before {
 	content: '';
+	flex-shrink: 0;
 	width: $global-forms-checkbox-size;
 	height: $global-forms-checkbox-size;
 	background-color: $global-forms-input-background-color;
