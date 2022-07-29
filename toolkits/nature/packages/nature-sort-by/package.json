@@ -1,9 +1,9 @@
 {
   "name": "@springernature/nature-sort-by",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "license": "MIT",
   "description": "Nature sort by ui dropdown",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^20.1.1"
+  "brandContext": "^25.0.0"
 }

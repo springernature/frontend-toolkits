@@ -1,5 +1,8 @@
 # History
 
+## 0.2.0 (2022-07-28)
+    * Upgrade the brand-context v25.0.0
+    
 ## 0.1.4 (2022-03-11)
     * Align left side of details content with left side of heading
     * Increase spacing between details components

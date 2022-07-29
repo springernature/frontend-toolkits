@@ -1,5 +1,8 @@
 # History
 
+## 5.2.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 5.1.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
