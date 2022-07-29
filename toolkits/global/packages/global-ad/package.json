@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-ad",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "license": "MIT",
   "description": "adverts",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^18.0.0"
+  "brandContext": "^25.0.0"
 }

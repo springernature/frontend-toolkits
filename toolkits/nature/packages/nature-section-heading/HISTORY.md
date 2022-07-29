@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 3.0.0 (22-07-14)
     * BREAKING:
         * Assigns sensible default heading levels to Section heading variants with option to override

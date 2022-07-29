@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-media",
-  "version": "6.0.2",
+  "version": "6.1.0",
   "license": "MIT",
   "description": "A media component catering for an image, title and body text. Styles have also been included to add a play button for things like videos.",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^18.1.2"
+  "brandContext": "^25.0.0"
 }
