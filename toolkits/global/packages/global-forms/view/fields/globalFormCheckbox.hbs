@@ -1,10 +1,19 @@
 {{#if error}}
 	{{> globalFormError}}
 {{/if}}
-<label class="c-forms__label c-forms__label--wrapper">
+<div class="c-forms__label c-forms__label--wrapper">
 	<input class="c-forms__input c-forms__input--checkbox" type="checkbox" {{> globalFormAttributes}}>
-	<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">{{label}}</span>
+	<label for="{{id}}" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">{{label}}</label>
 	{{#if hint}}
 		<small class="c-forms__hint c-forms__hint--inline">{{hint}}</small>
 	{{/if}}
-</label>
+	{{#if fields}}
+		<fieldset class="c-forms__fieldset c-forms__sub-fields">
+			{{#each fields}}
+				<div class="c-forms__field">
+					{{> (lookup . 'template')}}
+				</div>
+			{{/each}}
+		</fieldset>
+	{{/if}}
+</div>
