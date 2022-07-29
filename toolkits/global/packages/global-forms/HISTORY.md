@@ -1,6 +1,6 @@
 # History
 
-## 5.0.0-rc.5 (2022-07-27)
+## 5.0.0-rc.5 (2022-07-29)
     * `password` input type added
     * fixed long labels squishing checkboxes and radios
     * removed `role="presentation"`
