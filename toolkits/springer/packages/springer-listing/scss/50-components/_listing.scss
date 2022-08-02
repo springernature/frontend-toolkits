@@ -96,10 +96,10 @@
 }
 
 @supports (-webkit-line-clamp: 3) {
-	.c-listing__intro {
+	.c-listing__intro--truncated {
 		overflow: hidden;
 		display: -webkit-box;
-		-webkit-line-clamp: var(--listing-lines, 2);
+		-webkit-line-clamp: var(--listing-lines);
 		-webkit-box-orient: vertical;
 	}
 }

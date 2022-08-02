@@ -3,7 +3,7 @@
 	<li class="c-listing__item">
 		<div class="c-listing__content">
 			<h3 class="c-listing__title" {{#if ../level}} aria-level="{{../level}}" {{/if}}>
-				<a href="{{permalink}}">{{title}} level:{{level}}</a>
+				<a href="{{permalink}}">{{title}}</a>
 			</h3>
 			{{#if authors}}
 			<div class="c-listing__authors">
@@ -30,7 +30,7 @@
 			</ul>
 			{{/if}}
 			{{#if content}}
-			<div class="c-listing__intro"{{#if ../lines}} style="--listing-lines: {{../lines}}"{{/if}}>
+			<div class="c-listing__intro{{#if ../lines}} c-listing__intro--truncated{{/if}}"{{#if ../lines}} style="--listing-lines: {{../lines}}"{{/if}}>
 			{{{content}}}
 			</div>
 			{{/if}}
