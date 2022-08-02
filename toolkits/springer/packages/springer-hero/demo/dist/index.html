@@ -1648,31 +1648,21 @@ cite {
   color: #fff;
 }
 
-.c-hero__image {
-  position: relative;
-  flex-basis: 0;
-  flex-grow: 666;
-  min-width: var(--hero--image-min, 50%);
+.c-hero > * {
+  flex-grow: 1;
 }
 
-.c-hero__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.c-hero__wide {
+  flex-basis: 66%;
+}
+
+.c-hero__narrow {
+  flex-basis: 33%;
 }
 
 .c-hero__content {
-  flex-grow: 1;
-  /* ↓ fallback for IE11 */
-  flex-basis: 33.333%;
-  min-width: min(var(--hero--content-min, 25rem), 100%);
-  flex-basis: 33.333%;
-  padding-inline: 3rem;
-  padding-block: 3rem;
-}
-
-.c-hero__content ul {
-  padding-left: 1em;
+  padding-inline: 2rem;
+  padding-block: 2rem;
 }
 
 .c-hero__content > * {
@@ -1680,74 +1670,67 @@ cite {
 }
 
 .c-hero__content > * + * {
-  margin-top: 16px;
+  margin-top: 1.5rem;
 }
 
 .c-hero__content a {
   color: inherit;
+}
+
+.c-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-hero__content.c-hero__wide {
+  min-width: min(30rem, 100%);
+}
+
+.c-hero__content.c-hero__narrow {
+  min-width: min(20rem, 100%);
 }
 		</style>
 	</head>
 	<body style="padding:2%">
 		<h2>Default</h2>
 <div class="c-hero">
-	<div class="c-hero__content">
+	<div class="c-hero__content c-hero__narrow">
 		<h1>What a hero</h1>
 			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 	</div>
-		<div class="c-hero__image">
+		<div class="c-hero__image c-hero__wide">
 			<img src="https://picsum.photos/800/400" alt="">
 		</div>
 </div>
-<h2 class="u-mt-32">Wider image minimum width</h2>
-<p>The layout will wrap at a wider container width.</p>
+<h2 class="u-mt-32">Using <code>smallerImage</code></h2>
 <div class="c-hero">
-	<div class="c-hero__content">
-		<h1>What a hero</h1>
+	<div class="c-hero__content c-hero__wide">
+		<h1>Smaller image, wider text</h1>
 			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 	</div>
-		<div class="c-hero__image" style="--hero--image-min: 60%;">
+		<div class="c-hero__image c-hero__narrow">
 			<img src="https://picsum.photos/800/400" alt="">
 		</div>
 </div>
-<h2 class="u-mt-32">Narrower content minimum width</h2>
-<p>The layout will wrap at a narrower container width.</p>
+<h2 class="u-mt-32">No <code>imageSrc</code></h2>
 <div class="c-hero">
-	<div class="c-hero__content" style="--hero--content-min: 25rem;">
-		<h1>What a hero</h1>
-			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
-	</div>
-		<div class="c-hero__image">
-			<img src="https://picsum.photos/800/400" alt="">
-		</div>
-</div>
-<h2 class="u-mt-32">Default with taller image</h2>
-<div class="c-hero">
-	<div class="c-hero__content">
-		<h1>Taller image</h1>
-			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
-	</div>
-		<div class="c-hero__image">
-			<img src="https://picsum.photos/700/600" alt="">
-		</div>
-</div>
-<h2 class="u-mt-32">Default without <code>imgSrc</code></h2>
-<div class="c-hero">
-	<div class="c-hero__content">
+	<div class="c-hero__content c-hero__narrow">
 		<h1>No image</h1>
 			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 	</div>
 </div>
-<h2 class="u-mt-32">Custom background color</h2>
+<h2 class="u-mt-32">Custom color</h2>
 <div class="c-hero" style="background-color: #000">
-	<div class="c-hero__content">
-		<h1>Custom color hero</h1>
+	<div class="c-hero__content c-hero__wide">
+		<h1>Custom color (black)</h1>
 			<p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>
 	</div>
-		<div class="c-hero__image">
-			<img src="https://picsum.photos/700/400" alt="">
+		<div class="c-hero__image c-hero__narrow">
+			<img src="https://picsum.photos/800/400" alt="">
 		</div>
 </div>
+
 
 		<script>
 			// no JS found for package

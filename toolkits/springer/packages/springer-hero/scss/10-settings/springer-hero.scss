@@ -1,8 +1,4 @@
-$hero--padding: spacing(32);
-$hero--content-basis: 33.333%;
-$hero--content-min: 25rem;
-$hero--image-min: 50%;
-$hero--content-padding-inline: 3rem;
-$hero--content-padding-block: 3rem;
-// TODO: Move color to brand-context
 $hero--background-color: color('corporate');
+$hero--content-padding-inline: 2.25rem;
+$hero--content-padding-block: 2.25rem;
+$hero--content-stack-spacing: 1.5rem
