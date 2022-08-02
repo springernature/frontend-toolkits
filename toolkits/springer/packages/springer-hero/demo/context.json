@@ -4,31 +4,21 @@
 		"imageSrc": "https://picsum.photos/800/400",
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
-	"imageMinWider": {
-		"title": "What a hero",
-		"imageMin": "60%",
+	"smallerImage": {
+		"title": "Smaller image, wider text",
+		"smallerImage": true,
 		"imageSrc": "https://picsum.photos/800/400",
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
-	"contentMinNarrower": {
-		"title": "What a hero",
-		"contentMin": "25rem",
-		"imageSrc": "https://picsum.photos/800/400",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
-	},
-	"defaultTallerImage": {
-		"title": "Taller image",
-		"imageSrc": "https://picsum.photos/700/600",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
-	},
-	"defaultNoImage": {
+	"noImage": {
 		"title": "No image",
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"customColor": {
-		"title": "Custom color hero",
+		"title": "Custom color (black)",
 		"color": "#000",
-		"imageSrc": "https://picsum.photos/700/400",
+		"smallerImage": true,
+		"imageSrc": "https://picsum.photos/800/400",
 		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"dynamicPartials": {

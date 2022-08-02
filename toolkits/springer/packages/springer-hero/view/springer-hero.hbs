@@ -1,13 +1,13 @@
 <div class="c-hero"{{#if color}} style="background-color: {{color}}"{{/if}}>
-	<div class="c-hero__content"{{#if contentMin}} style="--hero--content-min: {{contentMin}};"{{/if}}>
+	<div class="c-hero__content {{#if smallerImage}}c-hero__wide{{else}}c-hero__narrow{{/if}}">
 		<h1>{{title}}</h1>
 		{{#if content}}
 			{{{content}}}
 		{{/if}}
 	</div>
 	{{#if imageSrc}}
-		<div class="c-hero__image" {{#if imageMin}} style="--hero--image-min: {{imageMin}};"{{/if}}>
-			<img src="{{imageSrc}}" alt=""/>
+		<div class="c-hero__image {{#if smallerImage}}c-hero__narrow{{else}}c-hero__wide{{/if}}">
+			<img src="{{imageSrc}}" alt="" />
 		</div>
 	{{/if}}
 </div>
