@@ -1,5 +1,8 @@
 # History
 
+## 0.2.1 (2022-08-03)
+    * Alignment of chevron icon to baseline
+
 ## 0.2.0 (2022-07-28)
     * Upgrade the brand-context v25.0.0
     

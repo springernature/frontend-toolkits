@@ -8,7 +8,7 @@
 		<style>
 			@charset "UTF-8";
 /**
- * Basic
+ * Core
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
@@ -182,8 +182,14 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -193,17 +199,11 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Colors
- * Maps for color values & greyscale settings
+ * Colour palette
  *
  */
 /**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Nature
+ * Color and gray scales
  *
  */
 /**
@@ -212,50 +212,130 @@ h6, h5, h4 {
  *
  */
 /**
- * Global
- * Main brand settings
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 h3 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
-h6, h5, h4 {
-  font-weight: 700;
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
   font-size: 1.125rem;
   font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -602,12 +682,13 @@ template {
  * Some default CSS styles
  */
 body {
+  font-size: 0.813rem;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #006699;
+  color: #069;
 }
 
 a:hover,
@@ -628,7 +709,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.063rem;
+  font-size: 1.0625rem;
 }
 
 h4 {
@@ -851,8 +932,14 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -862,17 +949,11 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Colors
- * Maps for color values & greyscale settings
+ * Colour palette
  *
  */
 /**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Nature
+ * Color and gray scales
  *
  */
 /**
@@ -881,73 +962,156 @@ h6, h5, h4 {
  *
  */
 /**
- * Global
- * Main brand settings
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 h3 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
-h6, h5, h4 {
-  font-weight: 700;
+h4 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
   font-size: 1.125rem;
   font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active,
+h6 a.active, h5 a:active,
+h6 a:active, h5 a.hover,
+h6 a.hover, h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
-/**
- * Forms
- * Default form styles
- */
-fieldset {
-  border: 0;
+button {
+  line-height: inherit;
 }
 
-input:focus,
 button:focus,
-select:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 4px solid #ffcc00;
 }
 
-button:active {
-  outline: 0;
+input[type=file]:focus-within {
+  outline: 4px solid #ffcc00;
 }
 
-input + label {
-  padding-left: 0.5em;
+button:disabled:focus,
+input:disabled:focus,
+select:disabled:focus,
+textarea:disabled:focus {
+  outline: none;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 /*
@@ -955,16 +1119,29 @@ input + label {
  * Universal layout styles
  */
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   height: 100%;
   overflow-y: scroll;
+  font-size: 100%;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.6180339888;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  max-width: 100%;
   min-height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.76;
-  color: #222222;
-  background: #eeeeee;
+  background: #fcfcfc;
+  font-size: 1.125rem;
+  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
 figure {
@@ -985,20 +1162,8 @@ input,
 button,
 textarea,
 p,
-blockquote,
 th,
 td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
   margin: 0;
   padding: 0;
 }
@@ -1009,145 +1174,99 @@ abbr[title] {
 
 [contenteditable]:focus,
 [tabindex="0"]:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
+  outline: 4px solid #ffcc00;
 }
 
-/**
- * Links
- * Basic link styles
- */
 a {
-  text-decoration: none;
-  vertical-align: baseline;
-  color: #006699;
-}
-a:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-a:hover {
+  color: #004b83;
   text-decoration: underline;
-  -webkit-text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
 }
-
-a:active {
-  outline: 0;
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #0061a9;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #003b84;
+  text-decoration: none;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+a > img {
+  vertical-align: middle;
 }
 
-/**
- * Lists
- * Default list styles
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/**
- * Tables
- * Default table styles
- */
 table {
+  border: 1px solid #a6a6a6;
   width: 100%;
-  margin-bottom: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 32px;
 }
 
 th,
 td {
-  padding: 4px 7px;
-  border-right: 1px solid #d5d5d5;
+  font-size: 1rem;
+  border: 1px solid #a6a6a6;
+  padding: 0.3em 0.6em;
+  vertical-align: top;
+}
+
+th {
+  background: #e6e6e6;
   text-align: left;
-  line-height: 1.15;
 }
 
-th {
-  vertical-align: top;
-}
-
-td {
-  vertical-align: middle;
-}
-
-th[valign=top] {
-  vertical-align: top;
-}
-
-th[valign=middle] {
-  vertical-align: middle;
-}
-
-thead tr {
-  border-bottom: 1px solid #d5d5d5;
-}
-
-tbody tr {
-  border-top: 1px solid #d5d5d5;
-}
-
-tbody tr:first-child {
-  border-top: 0;
-}
-
-th {
-  background: #eeeeee;
-}
-
-tfoot tr {
-  border-top: 2px solid #d5d5d5;
-}
-
-tfoot td {
-  font-weight: bold;
-}
-
-/**
- * Typography
- * Set base font size
- */
-html {
-  font-size: 100%;
-}
-
-body {
-  font-size: 1.125rem;
-}
-
-/**
- * Typographic
- * Standard text and heading formatting
- */
-/*
- * Default spacing
- * default margin 28px to match line height
- * this is used for mainting vertical rhythm on the page
- */
-p,
-ul,
-ol {
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 28px;
 }
 
-/*
- * Headings
- */
+p,
+ol,
+ul,
+dl {
+  margin-top: 0;
+}
+
+/* Basic lists should be aligned to the left */
+ul:not([class]),
+ol:not([class]) {
+  /* Allow for bullet itself */
+  padding-left: 0.9em;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
 p:empty {
   display: none;
 }
 
+cite {
+  font-style: normal;
+}
+
+/* TODO: Move color to brand context */
 .c-details {
-  padding: 16px 0;
+  padding: 0 0;
   border-style: solid;
-  border-color: currentColor;
-  border-width: 1px 0;
+  border-color: #cccccc;
+  border-width: 0 0;
   /* In case it’s a list item */
   list-style: none;
 }
@@ -1155,7 +1274,7 @@ p:empty {
 .c-details + .c-details {
   /* for successive details instances, don't double the border */
   border-top: 0;
-  margin-top: 0;
+  margin-top: 1.5em;
 }
 
 .c-details__details {
@@ -1185,7 +1304,7 @@ p:empty {
 
   .c-details__summary:focus .c-details__title {
     text-decoration: underline;
-    text-decoration-color: #fece3e;
+    text-decoration-color: #ffcc00;
     text-decoration-thickness: 3px;
   }
 }
@@ -1196,9 +1315,9 @@ p:empty {
 
 .c-details__header .u-icon {
   flex-shrink: 0;
-  width: 0.75em;
-  height: 0.75em;
-  color: currentColor;
+  width: 1em;
+  height: 1em;
+  color: #0070a8;
 }
 
 /* ↓ Complex selector necessary to ensure
@@ -1209,14 +1328,14 @@ nested icons are not rotated */
 
 .c-details__title {
   margin-left: 8px;
-  font-family: inherit;
-  font-size: 1.25rem;
-  color: inherit;
+  font-family: Georgia, Palatino, serif;
+  font-size: 1.5rem;
+  color: #0070a8;
   line-height: 1.25;
 }
 
 .c-details__content {
-  padding: 16px 0 0 0;
+  padding: 16px 0 0 1.333em;
 }
 
 /* Remove excess margin from (for example) paragraphs */
