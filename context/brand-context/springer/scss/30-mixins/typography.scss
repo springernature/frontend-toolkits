@@ -20,7 +20,8 @@
 
 @mixin heading-base {
 	font-style: normal;
-	margin-bottom: 1em;
+	margin-block-start: spacing(32);
+	margin-block-end: spacing(16);
 	line-height: $context--line-height-tight;
 
 	a {
@@ -30,6 +31,7 @@
 
 %u-h1 {
 	@include heading-base;
+	margin-block-end: spacing(32);
 	font-size: $context--font-size-h1;
 	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
 	font-family: $context--font-family-serif;
