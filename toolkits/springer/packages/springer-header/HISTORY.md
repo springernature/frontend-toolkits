@@ -1,5 +1,8 @@
 # History
 
+## 7.2.0 (2022-08-05)
+    * Support different imprint logos and their dimensions
+
 ## 7.1.0 (2022-07-28)
     * UPDATE: brand-context v25.0.0
 
