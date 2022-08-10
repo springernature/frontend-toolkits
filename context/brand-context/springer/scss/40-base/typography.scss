@@ -27,11 +27,16 @@ h6 {
 	@include u-h5;
 }
 
-p,
 ol,
 ul,
-dl {
-	margin-top: 0;
+dl,
+figure,
+blockquote {
+	margin-block: spacing(16);
+}
+
+:is(ol, ul, dl, figure, blockquote):last-child {
+	margin-block-end: 0;
 }
 
 /* Basic lists should be aligned to the left */
@@ -46,7 +51,7 @@ dd {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-block: spacing(8);
 }
 
 p:last-child {
