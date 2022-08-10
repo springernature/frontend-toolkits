@@ -20,22 +20,15 @@
 
 @mixin heading-base {
 	font-style: normal;
-	margin-block-start: spacing(32);
-	margin-block-end: spacing(8);
 	line-height: $context--line-height-tight;
 
 	a {
 		@include u-link-interface;
 	}
-
-	&:first-child {
-		margin-block-start: 0;
-	}
 }
 
 @mixin u-h1 {
 	@include heading-base;
-	margin-block-end: spacing(48);
 	font-size: $context--font-size-h1;
 	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
 	font-family: $context--font-family-serif;
@@ -44,7 +37,6 @@
 
 @mixin u-h2 {
 	@include heading-base;
-	margin-block-end: spacing(16);
 	font-size: $context--font-size-h2;
 	font-size: unquote('min(max(#{$context--font-size-h2-min}, 3.5vw), #{$context--font-size-h2})');
 	font-family: $context--font-family-serif;
@@ -74,4 +66,6 @@
 	font-family: $context--font-family-sans;
 	font-weight: $context--font-weight-bold;
 }
+
+
 
