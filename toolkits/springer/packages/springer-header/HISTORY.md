@@ -1,5 +1,8 @@
 # History
 
+## 7.2.1 (2022-08-10)
+    * Match different logo heights
+
 ## 7.2.0 (2022-08-05)
     * Support different imprint logos and their dimensions
 

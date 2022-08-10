@@ -1,4 +1,11 @@
 # History
+
+## 26.0.0 (2022-08-10)
+    * BREAKING:
+      * Springer: erroneous use of placeholders removed to fix cascade
+	  * Springer: new spacing algorithm for flow elements
+    * Removal of `outline: none` for non-interactive elements (redundant)
+
 ## 25.0.0 (2022-06-29)
     * UDPATES:
       * updates generated Sass from Design Tokens

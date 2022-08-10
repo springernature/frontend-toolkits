@@ -1,11 +1,3 @@
-h1,
-h2,
-h3,
-h4{
-	line-height: 1.4;
-	margin-top: 0;
-}
-
 h1 {
 	@include u-h1;
 }
@@ -27,12 +19,36 @@ h6 {
 	@include u-h5;
 }
 
-p,
-ol,
-ul,
-dl {
-	margin-top: 0;
+/* Spacing algorithm: */
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+	margin-block-start: spacing(16);
 }
+
+* + :is(h2, h3, h4, h5) {
+	margin-block-start: spacing(32);
+}
+
+:is(h3, h4, h5) + * {
+	margin-block-start: spacing(8);
+}
+
+h2 + * {
+	margin-block-start: spacing(16);
+}
+
+h1 + * {
+	margin-block-start: spacing(48);
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+	margin-block-start: 0;
+}
+
+/* end spacing algorithm */
 
 /* Basic lists should be aligned to the left */
 ul:not([class]),
@@ -43,18 +59,6 @@ ol:not([class]) {
 
 dd {
 	margin: 0;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-p:last-child {
-	margin-bottom: 0;
-}
-
-p:empty {
-	display: none;
 }
 
 cite {
