@@ -21,32 +21,37 @@
 @mixin heading-base {
 	font-style: normal;
 	margin-block-start: spacing(32);
-	margin-block-end: spacing(16);
+	margin-block-end: spacing(8);
 	line-height: $context--line-height-tight;
 
 	a {
 		@include u-link-interface;
 	}
+
+	&:first-child {
+		margin-block-start: 0;
+	}
 }
 
-%u-h1 {
+@mixin u-h1 {
 	@include heading-base;
-	margin-block-end: spacing(32);
+	margin-block-end: spacing(48);
 	font-size: $context--font-size-h1;
 	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
 	font-family: $context--font-family-serif;
 	font-weight: $context--font-weight-normal;
 }
 
-%u-h2 {
+@mixin u-h2 {
 	@include heading-base;
+	margin-block-end: spacing(16);
 	font-size: $context--font-size-h2;
 	font-size: unquote('min(max(#{$context--font-size-h2-min}, 3.5vw), #{$context--font-size-h2})');
 	font-family: $context--font-family-serif;
 	font-weight: $context--font-weight-normal;
 }
 
-%u-h3 {
+@mixin u-h3 {
 	@include heading-base;
 	font-size: $context--font-size-h3;
 	font-size: unquote('min(max(#{$context--font-size-h3-min}, 3vw), #{$context--font-size-h3})');
@@ -54,7 +59,7 @@
 	font-weight: $context--font-weight-normal;
 }
 
-%u-h4 {
+@mixin u-h4 {
 	@include heading-base;
 	font-size: $context--font-size-h4;
 	font-size: unquote('min(max(#{$context--font-size-h4-min}, 2.5vw), #{$context--font-size-h4})');
@@ -62,7 +67,7 @@
 	font-weight: $context--font-weight-bold;
 }
 
-%u-h5 {
+@mixin u-h5 {
 	@include heading-base;
 	font-size: $context--font-size-h5;
 	font-size: unquote('min(max(#{$context--font-size-h5-min}, 2.5vw), #{$context--font-size-h5})');
