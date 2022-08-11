@@ -1,5 +1,8 @@
 # History
 
+## 8.3.1 (2022-08-11)
+    * Activate hyphenation for German content
+
 ## 8.3.0 (2022-07-28)
     * Upgrade to brand-context v25.0.0
 
