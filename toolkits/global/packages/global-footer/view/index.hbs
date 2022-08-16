@@ -1,8 +1,10 @@
-<div class="c-footer">
-	{{#if productGroups}}
+<footer>
+	<div class="c-footer">
+		{{#if productGroups}}
+			{{! Partials locations are set dynamically in the data }}
+			{{> (lookup . 'productFooter')}}
+		{{/if}}
 		{{! Partials locations are set dynamically in the data }}
-		{{> (lookup . 'productFooter')}}
-	{{/if}}
-	{{! Partials locations are set dynamically in the data }}
-	{{> (lookup . 'corporateFooter')}}
-</div>
+		{{> (lookup . 'corporateFooter')}}
+	</div>
+</footer>

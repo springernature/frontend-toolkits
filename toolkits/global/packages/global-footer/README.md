@@ -143,8 +143,6 @@ You can see an example in the [`demo` folder](https://github.com/springernature/
 
 #### Using the Corporate footer
 
-The footer component doesn't include a `<footer>` region/landmark. This must be added by your product to allow the use of custom items inside a common `<footer>`.
-
 #### Template partials
 
 The main template (`index.hbs`) wraps partials includes for the product and corporate footer sections. These partials are dynamic and their locations are stored in variables passed with the data - `productFooter` and `corporateFooter`. An example of this can be seen below and in the `demo`'s `context.json` file.
