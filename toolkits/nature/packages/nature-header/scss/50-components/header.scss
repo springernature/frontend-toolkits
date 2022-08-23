@@ -89,12 +89,6 @@
 
 .c-header__item {
 	display: flex;
-
-	@include media-query('sm') {
-		&:not(:first-child) {
-			margin-left: spacing(8);
-		}
-	}
 }
 
 .c-header__item--pipe {
@@ -103,6 +97,8 @@
 }
 
 .c-header__item--nature-research {
+	margin-right: spacing(8);
+
 	@include media-query('md', 'max') {
 		display: none;
 	}
@@ -124,21 +120,57 @@
 		text-transform: capitalize;
 	}
 
-	> svg {
-		margin-left: spacing(2);
+	svg {
+		margin-left: spacing(8);
 		transition-duration: 0.2s;
-
-		@include media-query('sm') {
-			margin-left: spacing(4);
-		}
 	}
 }
 
 .c-header__show-text {
 	display: none;
+
 	@include media-query('sm') {
 		display: inline;
 	}
+}
+
+.c-header__dropdown {
+	background-color: black;
+	border-bottom: 1px solid greyscale(5); // non-js
+	color: greyscale(90);
+	padding: spacing(16) 0;
+	font-size: .875rem;
+	line-height: 1.2;
+
+	a {
+		@include u-link-inherit();
+	}
+
+	button {
+		border: 1px solid white;
+		color: white;
+		background-color: transparent;
+
+		&:hover {
+			background-color: white;
+			color: black;
+		}
+	}
+}
+
+.c-header__heading {
+	display: inline-block;
+	line-height: 1.4;
+	font-size: 1.25rem;
+	font-family: $context--font-family-sans;
+	font-weight: $context--font-weight-normal;
+	margin-bottom: spacing(8);
+}
+
+.c-header__list {
+	@include u-list-reset;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /**
@@ -153,12 +185,17 @@
 
 	svg {
 		fill: currentColor;
+		transform: rotate(180deg);
 	}
 }
 
 .c-header__item--dropdown-menu {
 	@include media-query('sm') {
 		position: relative;
+
+		&:not(:first-child) {
+			margin-left: spacing(8);
+		}
 	}
 
 	.c-header__link.is-open {
@@ -180,4 +217,54 @@
 			right: auto;
 		}
 	}
+}
+
+/**
+ JavaScript Enhancements
+ */
+
+.c-header__dropdown.has-tethered {
+	position: absolute;
+	top: 100%; // bottom of the tether element
+	transform: translateY(5px);
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	border-radius: 0 0 2px 2px;
+	border-bottom: 0;
+
+	@include media-query('sm') {
+		transform: translateY(8px);
+		width: auto;
+	}
+
+	@include media-query('md') {
+		min-width: 225px;
+	}
+
+	.c-header__list {
+		flex-direction: column;
+	}
+
+	.c-header__link {
+		margin: 0;
+		padding: spacing(8) 0;
+	}
+
+	.c-header__item--keyline {
+		border-top: 1px solid white;
+		padding-top: spacing(8);
+		margin-top: spacing(8);
+	}
+
+	.c-header__item--keyline-first-item-only ~ .c-header__item--keyline-first-item-only {
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.c-header-expander--tray.has-tethered {
+	width: 100%;
+	padding: spacing(32) 0 spacing(24);
+	transform: none;
 }
