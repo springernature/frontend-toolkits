@@ -94,11 +94,10 @@
 .c-header__item--pipe {
 	border-left: 2px solid greyscale(80);
 	padding-left: spacing(8);
+	margin-left: spacing(8);
 }
 
-.c-header__item--nature-research {
-	margin-right: spacing(8);
-
+.c-header__item--hide-md-max {
 	@include media-query('md', 'max') {
 		display: none;
 	}
