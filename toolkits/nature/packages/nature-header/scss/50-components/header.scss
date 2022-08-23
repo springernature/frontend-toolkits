@@ -152,10 +152,6 @@
 	font-size: .875rem;
 	line-height: 1.2;
 
-	a {
-		@include u-link-inherit();
-	}
-
 	button {
 		border: 1px solid white;
 		color: white;
