@@ -206,7 +206,7 @@
 }
 
 .c-header__menu--journal .c-header__item--dropdown-menu:last-child {
-	.c-header-expander.has-tethered {
+	.c-header__dropdown.has-tethered {
 		@include media-query('sm') {
 			left: auto;
 			right: 0;
@@ -263,7 +263,7 @@
 	}
 }
 
-.c-header-expander--tray.has-tethered {
+.c-header__tray.has-tethered {
 	width: 100%;
 	padding: spacing(32) 0 spacing(24);
 	transform: none;
