@@ -8,20 +8,11 @@
 
 .c-header__row {
 	position: relative;
-	padding: spacing(8) 0;
+	padding: 0;
 
 	&:not(:last-child) {
 		border-bottom: 1px solid greyscale(80);
 	}
-}
-
-.c-header__row--flush {
-	padding: 0;
-}
-
-.c-header__row--flush .c-header__item {
-	padding-top: spacing(8);
-	padding-bottom: spacing(8);
 }
 
 .c-header__split {
@@ -62,6 +53,7 @@
 .c-header__menu--global {
 	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
+	margin: 0 (0 - spacing(8)) 0 0;
 }
 
 .c-header__menu--global .c-header__item {
@@ -76,6 +68,7 @@
 
 .c-header__menu--journal {
 	font-size: .875rem;
+	margin: spacing(8) (0 - spacing(8)); // Make flush with edge
 
 	@include media-query('sm') {
 		flex-wrap: nowrap;
@@ -106,6 +99,11 @@
 	@include media-query('md', 'max') {
 		display: none;
 	}
+}
+
+.c-header__item--padding {
+	padding-top: spacing(8);
+	padding-bottom: spacing(8);
 }
 
 .c-header__item--dropdown-menu {
