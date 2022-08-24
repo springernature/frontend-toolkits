@@ -1,5 +1,5 @@
 <header class="c-header" id="header" data-header=nature-150-split-header" style="border-color:#000">
-	<div class="c-header__row c-header__row--flush">
+	<div class="c-header__row">
 		<div class="c-header__container">
 			<div class="c-header__split">
 				<h1 class="c-header__logo-container u-mb-0">
@@ -11,10 +11,10 @@
 					</a>
 				</h1>
 				<ul class="c-header__menu c-header__menu--global">
-					<li class="c-header__item c-header__item--hide-md-max">
+					<li class="c-header__item c-header__item--padding c-header__item--hide-md-max">
 						<a class="c-header__link" href="https://www.nature.com/siteindex"><span>View all journals</span></a>
 					</li>
-					<li class="c-header__item c-header__item--pipe">
+					<li class="c-header__item c-header__item--padding c-header__item--pipe">
 						<a class="c-header__link" href="#search-menu" data-header-expander="" role="button" aria-haspopup="true" aria-expanded="false"><span>Search</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"></path>
 							</svg></a>
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="c-header__item">
+					<li class="c-header__item c-header__item--padding">
 						<a href="/nams/svc/myaccount" id="my-account" class="c-header__link placeholder" style="display: none;">
 							<span>My Account</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 								<path d="M10.238 16.905a7.96 7.96 0 003.53-1.48c-.874-2.514-2.065-3.936-3.768-4.319V9.83a3.001 3.001 0 10-2 0v1.277c-1.703.383-2.894 1.805-3.767 4.319A7.96 7.96 0 009 17c.419 0 .832-.032 1.238-.095zm4.342-2.172a8 8 0 10-11.16 0c.757-2.017 1.84-3.608 3.49-4.322a4 4 0 114.182 0c1.649.714 2.731 2.305 3.488 4.322zM9 18A9 9 0 119 0a9 9 0 010 18z" fill="#333" fill-rule="evenodd"></path>
@@ -104,7 +104,7 @@
 										{{/if}}
 										{{#if showSubscribeButton}}
 										<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} u-hide-at-lg">
-											<a class=c-header__link" href="https://www.nature.com/{{pcode}}/subscribe"><span>Subscribe</span></a>
+											<a class="c-header__link" href="https://www.nature.com/{{pcode}}/subscribe"><span>Subscribe</span></a>
 										</li>
 										{{/if}}
 										{{#if alertsLink}}
@@ -116,7 +116,7 @@
 										{{/if}}
 										{{#if rssLink}}
 										<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} u-hide-at-lg">
-											<a class="c-header-expander__link" href="{{rssLink}}"><span>RSS feed</span></a>
+											<a class="c-header__link" href="{{rssLink}}"><span>RSS feed</span></a>
 										</li>
 										{{/if}}
 									</ul>
