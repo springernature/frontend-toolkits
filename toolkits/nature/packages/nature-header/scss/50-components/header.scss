@@ -23,8 +23,7 @@
 
 .c-header__logo-container {
 	flex: 1 1 0;
-	margin-right: spacing(24);
-	margin-bottom: 0;
+	margin: spacing(8) spacing(24) spacing(8) 0;
 	line-height: 0; // Can be an h1 or a div
 }
 
@@ -41,6 +40,7 @@
 }
 
 .c-header__menu {
+	@include u-hide-print;
 	@include u-list-reset();
 	display: flex;
 	align-items: center;
@@ -143,6 +143,7 @@
 }
 
 .c-header__dropdown {
+	@include u-hide-print;
 	background-color: black;
 	border-bottom: 1px solid greyscale(5); // non-js
 	color: greyscale(90);
