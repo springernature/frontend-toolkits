@@ -80,12 +80,6 @@
 	}
 }
 
-.c-header__menu--tools {
-	@include media-query('lg', 'max') {
-		display: none;
-	}
-}
-
 .c-header__item {
 	display: flex;
 }
@@ -94,6 +88,12 @@
 	border-left: 2px solid greyscale(80);
 	padding-left: spacing(8);
 	margin-left: spacing(8);
+}
+
+.c-header__item--hide-lg-max {
+	@include media-query('lg', 'max') {
+		display: none;
+	}
 }
 
 .c-header__item--hide-md-max {
