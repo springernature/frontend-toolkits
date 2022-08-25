@@ -68,7 +68,7 @@
 						</li>
 					</ul>
 				</div>
-				<ul class="c-header__menu c-header__item--hide-lg-max">
+				<ul class="c-header__menu c-header__menu--hide-lg-max">
 					<li class="c-header__item">
 						<a class="c-header__link" href="https://www.nature.com/my-account/alerts/subscribe-journal?list-id=1" rel="nofollow">
 							<span>Sign up for alerts</span><svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -147,19 +147,19 @@
 				</li>
 			{{/if}}
 			{{#if showSubscribeButton}}
-				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} u-hide-at-lg">
+				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} c-header__item--hide-lg">
 					<a class="c-header__link" href="https://www.nature.com/{{pcode}}/subscribe"><span>Subscribe</span></a>
 				</li>
 			{{/if}}
 			{{#if alertsLink}}
-				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} u-hide-at-lg">
+				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} c-header__item--hide-lg">
 					<a class="c-header__link" href="{{alertsLink}}" rel="nofollow">Sign up for alerts<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
 						<path d="m4 10h2.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-3.08578644l-1.12132034 1.1213203c-.18753638.1875364-.29289322.4418903-.29289322.7071068v.1715729h14v-.1715729c0-.2652165-.1053568-.5195704-.2928932-.7071068l-1.7071068-1.7071067v-3.4142136c0-2.76142375-2.2385763-5-5-5-2.76142375 0-5 2.23857625-5 5zm3 4c0 1.1045695.8954305 2 2 2s2-.8954305 2-2zm-5 0c-.55228475 0-1-.4477153-1-1v-.1715729c0-.530433.21071368-1.0391408.58578644-1.4142135l1.41421356-1.4142136v-3c0-3.3137085 2.6862915-6 6-6s6 2.6862915 6 6v3l1.4142136 1.4142136c.3750727.3750727.5857864.8837805.5857864 1.4142135v.1715729c0 .5522847-.4477153 1-1 1h-4c0 1.6568542-1.3431458 3-3 3-1.65685425 0-3-1.3431458-3-3z" fill="#fff" />
 					</svg></a>
 				</li>
 			{{/if}}
 			{{#if rssLink}}
-				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} u-hide-at-lg">
+				<li class="c-header__item{{#if exploreContent}} c-header__item--keyline c-header__item--keyline-first-item-only{{/if}} c-header__item--hide-lg">
 					<a class="c-header__link" href="{{rssLink}}"><span>RSS feed</span></a>
 				</li>
 			{{/if}}

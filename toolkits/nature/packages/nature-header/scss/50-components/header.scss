@@ -51,6 +51,12 @@
 	margin: 0 (0 - spacing(8)); // Make flush with edge
 }
 
+.c-header__menu--hide-lg-max {
+	@include media-query('lg', 'max') {
+		display: none;
+	}
+}
+
 .c-header__menu--global {
 	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
@@ -88,6 +94,12 @@
 	border-left: 2px solid greyscale(80);
 	padding-left: spacing(8);
 	margin-left: spacing(8);
+}
+
+.c-header__item--hide-lg {
+	@include media-query('lg') {
+		display: none;
+	}
 }
 
 .c-header__item--hide-lg-max {
