@@ -24,12 +24,12 @@ const findTarget = selector => {
 
 const header = () => {
 	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
-	const header = document.querySelector(selectors.HEADER);
+	const headerSelector = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
 		{name: 'role', value: 'button'}
 	];
 
-	if (triggers.length === 0 || !header) {
+	if (triggers.length === 0 || !headerSelector) {
 		return;
 	}
 
