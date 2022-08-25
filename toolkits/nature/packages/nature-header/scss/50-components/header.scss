@@ -241,6 +241,10 @@
 		min-width: 225px;
 	}
 
+	.c-header__heading--hide {
+		@include u-hide;
+	}
+
 	.c-header__list {
 		flex-direction: column;
 	}
