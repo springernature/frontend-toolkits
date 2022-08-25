@@ -1,0 +1,8 @@
+{
+  "name": "@springernature/global-ratings-survey",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "The frontend code for a ratings survey solution that we would like to use across our portfolio of websites",
+  "keywords": [],
+  "author": "Springer Nature"
+}
