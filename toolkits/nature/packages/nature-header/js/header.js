@@ -23,17 +23,17 @@ const findTarget = selector => {
 };
 
 const header = () => {
-	const triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
-	const headerSelector = document.querySelector(selectors.HEADER);
+	const triggerElements = document.querySelectorAll(selectors.DATA_COMPONENT);
+	const headerElement = document.querySelector(selectors.HEADER);
 	const triggerAttributes = [
 		{name: 'role', value: 'button'}
 	];
 
-	if (triggers.length === 0 || !headerSelector) {
+	if (triggerElements.length === 0 || !headerElement) {
 		return;
 	}
 
-	makeArray(triggers).forEach(trigger => {
+	makeArray(triggerElements).forEach(trigger => {
 		const targetElement = findTarget(trigger.hash);
 
 		if (!targetElement) {
