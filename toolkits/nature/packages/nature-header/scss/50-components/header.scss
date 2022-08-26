@@ -279,6 +279,10 @@
 	transform: none;
 }
 
+/**
+	Search dropdown
+*/
+
 .c-header__search-form {
 	margin-bottom: spacing(16);
 }
@@ -287,6 +291,10 @@
 	display: flex;
 	gap: spacing(16);
 	flex-wrap: wrap;
+
+	> *:first-child {
+		flex: 999 1 auto;
+	}
 
 	> * {
 		flex: 1 1 auto;
