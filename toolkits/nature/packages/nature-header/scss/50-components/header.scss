@@ -184,6 +184,10 @@
 	flex-wrap: wrap;
 }
 
+.c-header__visually-hidden {
+	@include u-visually-hidden;
+}
+
 /**
  Javascript Enhancements
  */
@@ -268,6 +272,15 @@
 	width: 100%;
 	padding: spacing(32) 0 spacing(24);
 	transform: none;
+
+	.c-header__list {
+		flex-direction: row;
+		gap: 0 spacing(16);
+	}
+}
+
+.c-header__search-form {
+	margin-bottom: spacing(16);
 }
 
 .c-header__search-layout {

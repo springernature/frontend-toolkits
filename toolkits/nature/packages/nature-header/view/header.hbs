@@ -91,38 +91,37 @@
 
 <div id="search-menu" class="c-header__dropdown c-header__dropdown--full-width">
 	<div class="c-header__container">
-		<h2 class="u-visually-hidden">Search</h2>
-		<div>
-			<form action="/search" method="get" role="search" autocomplete="off">
-				<label class="c-header__heading" for="keywords">Search articles by subject, keyword or author</label>
-				<div class="c-header__search-layout c-header__search-layout--max-width">
+		<h2 class="c-header__visually-hidden">Search</h2>
+
+		<form class="c-header__search-form" action="/search" method="get" role="search" autocomplete="off">
+			<label class="c-header__heading" for="keywords">Search articles by subject, keyword or author</label>
+			<div class="c-header__search-layout c-header__search-layout--max-width">
+				<div>
+					<input type="text" required="" class="c-header__input" id="keywords" name="q" value="">
+				</div>
+				<div class="c-header__search-layout">
 					<div>
-						<input type="text" required="" class="c-header__input" id="keywords" name="q" value="">
+						<label for="results-from" class="c-header__visually-hidden">Show results from</label>
+						<select id="results-from" name="journal" class="c-header__select">
+							<option value="" selected="">All journals</option>
+							<option value="nature">This journal</option>
+						</select>
 					</div>
-					<div class="c-header__search-layout">
-						<div>
-							<label for="results-from" class="u-visually-hidden">Show results from</label>
-							<select id="results-from" name="journal" class="c-header__select">
-								<option value="" selected="">All journals</option>
-								<option value="nature">This journal</option>
-							</select>
-						</div>
-						<div>
-							<button type="submit" class="c-header__search-button">Search</button>
-						</div>
+					<div>
+						<button type="submit" class="c-header__search-button">Search</button>
 					</div>
 				</div>
-			</form>
-		</div>
+			</div>
+		</form>
 
-		<p class="u-ma-0"><a class="c-header__link" href="/search/advanced">Advanced search</a></p>
+		<a class="c-header__link" href="/search/advanced">Advanced search</a>
 
 		<h3 class="c-header__heading c-header__heading--keyline">Quick links</h3>
-		<ul class="u-list-reset">
-			<li class="u-display-inline-block u-mr-24"><a class="c-header__link" href="/subjects">Explore articles by subject</a></li>
-			<li class="u-display-inline-block u-mr-24"><a class="c-header__link" href="/naturecareers">Find a job</a></li>
-			<li class="u-display-inline-block u-mr-24"><a class="c-header__link" href="/authors/index.html">Guide to authors</a></li>
-			<li class="u-display-inline-block u-mr-24"><a class="c-header__link" href="/authors/editorial_policies/">Editorial policies</a></li>
+		<ul class="c-header__list c-header__list--inline">
+			<li><a class="c-header__link" href="/subjects">Explore articles by subject</a></li>
+			<li><a class="c-header__link" href="/naturecareers">Find a job</a></li>
+			<li><a class="c-header__link" href="/authors/index.html">Guide to authors</a></li>
+			<li><a class="c-header__link" href="/authors/editorial_policies/">Editorial policies</a></li>
 		</ul>
 	</div>
 </div>
