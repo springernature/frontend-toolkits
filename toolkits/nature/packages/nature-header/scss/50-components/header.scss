@@ -282,3 +282,48 @@
 	padding: spacing(32) 0 spacing(24);
 	transform: none;
 }
+
+.c-header__search-layout {
+	display: flex;
+	gap: spacing(16);
+	flex-wrap: wrap;
+
+	> * {
+		flex: 1 1 auto;
+	}
+}
+
+.c-header__search-layout--max-width {
+	max-width: 720px;
+}
+
+.c-header__input,
+.c-header__select {
+	padding: spacing(8) spacing(16);
+	border: 1px solid;
+	border-radius: 3px;
+	font-size: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.c-header__select {
+	display: block;
+	width: 100%;
+	min-width: 150px; // prevent arrow icon overlapping text
+	max-width: 100%; /* useful when width is set to anything other than 100% */
+	margin: 0;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z' fill='%23333' fill-rule='evenodd' transform='matrix(0 1 -1 0 11 3)'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	/* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+	background-position: right .7em top 50%;
+	/* icon size, then gradient */
+	background-size: 1em auto;
+
+	/* Hide arrow icon in IE browsers */
+	&::-ms-expand {
+		display: none;
+	}
+}

@@ -93,26 +93,26 @@
 	<div class="c-header__container">
 		<h2 class="u-visually-hidden">Search</h2>
 		<div>
-			<div class="c-search c-search--max-width u-mb-16">
-				<form action="/search" method="get" role="search" autocomplete="off">
-					<label class="c-header__heading u-mb-8" for="keywords">Search articles by subject, keyword or author</label>
-					<div class="c-search__field">
-						<div class="c-search__input-container c-search__input-container--md">
-							<input type="text" required="" class="c-search__input" id="keywords" name="q" value="">
-						</div>
-						<div class="c-search__select-container">
+			<form action="/search" method="get" role="search" autocomplete="off">
+				<label class="c-header__heading" for="keywords">Search articles by subject, keyword or author</label>
+				<div class="c-header__search-layout c-header__search-layout--max-width">
+					<div>
+						<input type="text" required="" class="c-header__input" id="keywords" name="q" value="">
+					</div>
+					<div class="c-header__search-layout">
+						<div>
 							<label for="results-from" class="u-visually-hidden">Show results from</label>
-							<select id="results-from" name="journal" class="c-search__select">
+							<select id="results-from" name="journal" class="c-header__select">
 								<option value="" selected="">All journals</option>
 								<option value="nature">This journal</option>
 							</select>
 						</div>
-						<div class="c-search__button-container">
+						<div>
 							<button type="submit" class="c-header__search-button">Search</button>
 						</div>
 					</div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 
 		<p class="u-ma-0"><a class="c-header__link" href="/search/advanced">Advanced search</a></p>
