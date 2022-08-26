@@ -258,18 +258,12 @@
 		flex-direction: column;
 	}
 
-	.c-header__list--inline {
-		flex-direction: row;
-	}
-
-	.c-header__item--keyline {
+	.c-header__list + .c-header__list .c-header__item:first-child {
 		@include u-keyline($direction: top, $spacing: spacing(8));
 	}
 
-	.c-header__item--keyline-first-item-only ~ .c-header__item--keyline-first-item-only {
-		border-top: none;
-		padding-top: 0;
-		margin-top: 0;
+	.c-header__list--inline {
+		flex-direction: row;
 	}
 }
 
