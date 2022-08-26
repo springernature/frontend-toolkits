@@ -164,20 +164,6 @@
 	line-height: 1.2;
 }
 
-.c-header__search-button {
-	@include button-default;
-	@include button-full-width;
-	border: 1px solid white;
-	color: white;
-	background-color: transparent;
-
-	&:focus,
-	&:hover {
-		background-color: white;
-		color: black;
-	}
-}
-
 .c-header__heading {
 	display: inline-block;
 	line-height: 1.4;
@@ -296,6 +282,22 @@
 
 .c-header__search-layout--max-width {
 	max-width: 720px;
+}
+
+.c-header__search-button {
+	@include button-default;
+	@include button-full-width;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	line-height: 1.15;
+	padding: spacing(8) spacing(16);
+
+	&:focus,
+	&:hover {
+		background-color: white;
+		color: black;
+	}
 }
 
 .c-header__input,
