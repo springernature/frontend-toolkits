@@ -171,6 +171,7 @@
 	color: white;
 	background-color: transparent;
 
+	&:focus,
 	&:hover {
 		background-color: white;
 		color: black;
