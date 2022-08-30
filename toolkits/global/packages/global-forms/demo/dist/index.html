@@ -8,9 +8,218 @@
 		<style>
 			@charset "UTF-8";
 /**
- * Basic
+ * Core
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colour palette
+ *
+ */
+/**
+ * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -352,6 +561,69 @@ template {
 }
 
 /**
+ * Basic
+ * Some default CSS styles
+ */
+body {
+  font-size: 0.813rem;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #069;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.0625rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  border-radius: 0;
+}
+
+/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -511,15 +783,318 @@ template {
  * @group 30-mixins
  */
 /**
- * Typography
- * Set base font size
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colour palette
+ *
+ */
+/**
+ * Color and gray scales
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ *  Button settings
+ *  Springer
+ *
+ */
+/**
+ * Generates utility classnames for base and each breakpoint
+ *
+ * Example:
+ * @include class-stack('u-text-right') would output
+ * u-text-right { @content }
+ * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Alternative link color
+ *
+ */
+/**
+ * Deemphasised link color
+ *
+ */
+/**
+ * Unvisited
+ *
+ */
+/**
+ * Link like
+ * Style non-links to look like links
+ * Remember to add aria
+ *
+ */
+button {
+  line-height: inherit;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 4px solid #ffcc00;
+}
+
+input[type=file]:focus-within {
+  outline: 4px solid #ffcc00;
+}
+
+button:disabled:focus,
+input:disabled:focus,
+select:disabled:focus,
+textarea:disabled:focus {
+  outline: none;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/*
+ * Layout
+ * Universal layout styles
  */
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  height: 100%;
+  overflow-y: scroll;
   font-size: 100%;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.6180339888;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  max-width: 100%;
+  min-height: 100%;
+  background: #fcfcfc;
   font-size: 1.125rem;
+  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+}
+
+figure {
+  margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+[contenteditable]:focus,
+[tabindex="0"]:focus {
+  outline: 4px solid #ffcc00;
+}
+
+a {
+  color: #004b83;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #0061a9;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #003b84;
+  text-decoration: none;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+a > img {
+  vertical-align: middle;
+}
+
+table {
+  border: 1px solid #a6a6a6;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+th,
+td {
+  font-size: 1rem;
+  border: 1px solid #a6a6a6;
+  padding: 0.3em 0.6em;
+  vertical-align: top;
+}
+
+th {
+  background: #e6e6e6;
+  text-align: left;
+}
+
+h1 {
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 2.25rem;
+  font-size: min(max(1.75rem, 4vw), 2.25rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h2 {
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 1.75rem;
+  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h3 {
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3vw), 1.5rem);
+  font-family: Georgia, Palatino, serif;
+  font-weight: 400;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h4 {
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h4 a {
+  text-decoration: none;
+}
+h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+h5,
+h6 {
+  font-style: normal;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+h5 a.active, h5 a:active, h5 a.hover, h5 a:hover,
+h6 a.active,
+h6 a:active,
+h6 a.hover,
+h6 a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+
+/* Spacing algorithm: */
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+  margin-block-start: 16px;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 32px;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 8px;
+}
+
+h2 + * {
+  margin-block-start: 16px;
+}
+
+h1 + * {
+  margin-block-start: 48px;
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+  margin-block-start: 0;
+}
+
+/* end spacing algorithm */
+/* Basic lists should be aligned to the left */
+ul:not([class]),
+ol:not([class]) {
+  /* Allow for bullet itself */
+  padding-left: 0.9em;
+}
+
+dd {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
 }
 
 .u-ma-0 {
@@ -914,35 +1489,30 @@ body {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.3;
   justify-content: center;
   padding: 8px;
   transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   border-radius: 2px;
-  color: darkblue;
+  color: #004b83;
   background-color: #f2f2f2;
-  background-image: none;
+  background-image: linear-gradient(to bottom, white, #f2f2f2);
   border: 1px solid #cccccc;
-  box-shadow: inherit;
-  font-weight: normal;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: darkblue;
+  color: #004b83;
 }
 .u-button:hover {
   border: 1px solid #666666;
-  box-shadow: inherit;
   text-decoration: none;
 }
 .u-button:focus {
   border: 1px solid #666666;
-  box-shadow: inherit;
-  outline: inherit;
   text-decoration: none;
 }
 .u-button:hover, .u-button:focus {
@@ -956,10 +1526,9 @@ body {
 
 .u-button--primary {
   color: white;
-  background-color: darkblue;
-  background-image: none;
-  border: 1px solid blue;
-  font-weight: normal;
+  background-color: #33629d;
+  background-image: linear-gradient(to bottom, #4d76a9, #33629d);
+  border: 1px solid rgba(0, 59, 132, 0.5);
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -968,14 +1537,14 @@ body {
   color: white;
 }
 .u-button--primary:hover {
-  border: 1px solid blue;
+  border: 1px solid #0061a9;
 }
 .u-button--primary:focus {
-  border: 1px solid blue;
+  border: 1px solid #0061a9;
 }
 .u-button--primary:hover, .u-button--primary:focus {
   color: white;
-  background-color: blue;
+  background-color: #0061a9;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
@@ -1010,14 +1579,33 @@ body {
   fill: black;
 }
 
+.u-button--ghost {
+  color: #333333;
+  background-color: transparent;
+  background-image: none;
+}
+.u-button--ghost svg {
+  fill: currentColor;
+}
+.u-button--ghost:visited {
+  color: #333333;
+}
+.u-button--ghost:hover, .u-button--ghost:focus {
+  color: #333333;
+  background-color: rgba(242, 242, 242, 0.5);
+  background-image: none;
+}
+.u-button--ghost:hover svg path, .u-button--ghost:focus svg path {
+  fill: #333333;
+}
+
 .u-button--disabled,
 .u-button:disabled {
-  color: black;
+  color: #333333;
   background-color: transparent;
   background-image: none;
   border: 1px solid #cccccc;
-  font-weight: normal;
-  opacity: 0.7;
+  opacity: 0.67;
   cursor: default;
 }
 .u-button--disabled svg,
@@ -1026,7 +1614,7 @@ body {
 }
 .u-button--disabled:visited,
 .u-button:disabled:visited {
-  color: black;
+  color: #333333;
 }
 .u-button--disabled:hover,
 .u-button:disabled:hover {
@@ -1041,14 +1629,14 @@ body {
 .u-button--disabled:hover, .u-button--disabled:focus,
 .u-button:disabled:hover,
 .u-button:disabled:focus {
-  color: black;
+  color: #333333;
   background-color: transparent;
   background-image: none;
 }
 .u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
 .u-button:disabled:hover svg path,
 .u-button:disabled:focus svg path {
-  fill: black;
+  fill: #333333;
 }
 
 .u-button--xsmall {
@@ -1062,7 +1650,7 @@ body {
 }
 
 .u-button--large {
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 16px;
 }
 
@@ -1142,7 +1730,7 @@ body {
 }
 
 .c-forms__input:focus {
-  outline: 3px solid #025e8d;
+  outline: 3px solid #0088cc;
 }
 
 .c-forms__input[invalid] {
@@ -1228,24 +1816,27 @@ label + .c-forms__error,
   display: flex;
   align-items: start;
   cursor: pointer;
+  padding: 0;
 }
 
 .c-forms__label--inline::before {
   content: "";
   flex-shrink: 0;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #ffffff;
-  border: 1px solid;
+  border: 2px solid #999999;
   margin-right: 0.5rem;
+  position: relative;
+  top: calc(1.5rem / 16);
 }
 
 :checked + .c-forms__label--inline::before {
-  border-color: #222222;
+  border-color: #01324b;
 }
 
 :focus + .c-forms__label--inline::before {
-  box-shadow: 0 0 0 3px #025e8d;
+  box-shadow: 0 0 0 3px #0088cc;
 }
 
 .c-forms__label--radio::before {
@@ -1275,7 +1866,7 @@ label + .c-forms__error,
 
 .c-forms__sub-fields {
   margin-top: 0.25rem;
-  margin-left: calc(1rem / 3);
+  margin-left: calc(1.5rem / 4);
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -1288,7 +1879,7 @@ label + .c-forms__error,
   top: 0;
   bottom: 0;
   left: 0;
-  width: calc(1rem / 2);
+  width: calc(1.5rem / 2);
   background-color: #dadada;
   border-radius: 4px;
 }
