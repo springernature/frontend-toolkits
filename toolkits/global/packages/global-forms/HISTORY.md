@@ -1,6 +1,6 @@
 # History
 
-## 5.0.0-rc.6 (2022-08-25)
+## 5.0.0-rc.6 (2022-08-31)
     * `display: none` for inputs without labels (hidden inputs)
     * Larger checkboxes and radios
     * Correct grey for checkbox and radio borders
