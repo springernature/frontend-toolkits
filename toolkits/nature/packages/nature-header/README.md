@@ -68,11 +68,6 @@ The loops and conditional statements show which parts of the component contain d
 
 In the oscar-sites-nature application, the color of the border on each journal’s header is defined from Pubserv. It will override the Header’s default black border.
 
-For ease of maintenance, the `scss` for this component is separated into 2 classnames and contained in 2 separate files:
-
-- `c-header-expander` - for all interactive Header parts that users can open and close, like dropdown menus and pop-out modals
-- `c-header` - for all other parts of the Header
-
 ### Header expander
 
 The Header’s JavaScript file uses the following from `brand-context`: 
