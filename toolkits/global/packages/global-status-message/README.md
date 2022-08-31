@@ -119,7 +119,7 @@ To trigger announcement of a new status message, the live region must be added t
 </div>
 ```
 
-If you are compiling the handlebars template in the client, this is possible by omitting the `message` and `iconURL` properties in the initial data. 
+You can achieve the initial state (without the contents) by omitting the `iconURL` and `message` properties in the data. 
 
 ### Focus
 
