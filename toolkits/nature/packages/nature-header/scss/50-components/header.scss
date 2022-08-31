@@ -61,9 +61,7 @@
 	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
 	margin: 0 (0 - spacing(8)) 0 0;
-}
 
-.c-header__menu--global .c-header__item {
 	svg {
 		@include u-hide;
 
