@@ -42,13 +42,8 @@ Import the installed component code in your `scss` file:
 
 ```scss
 @import '@springernature/nature-header/scss/50-components/header';
-@import '@springernature/nature-header/scss/50-components/header-expander';
 
-@import '@springernature/brand-context/default/scss/60-utilities/buttons.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/display.scss';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/lists.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 Then import the JavaScript as follows: 
