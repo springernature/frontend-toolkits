@@ -322,11 +322,11 @@
 		min-width: 225px;
 	}
 
-	.c-header__heading--hide {
+	.c-header__heading--js-hide {
 		@include u-hide;
 	}
 
-	.c-header__list {
+	.c-header__list--js-stack {
 		flex-direction: column;
 	}
 
@@ -334,7 +334,7 @@
 		@include u-keyline($direction: top, $spacing: spacing(8));
 	}
 
-	.c-header__list--inline {
+	.c-header__list--js-inline {
 		flex-direction: row;
 	}
 }
