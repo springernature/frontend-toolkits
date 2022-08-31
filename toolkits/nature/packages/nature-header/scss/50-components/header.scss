@@ -94,6 +94,10 @@
 	margin-left: spacing(8);
 }
 
+.c-header__item--keyline {
+	@include u-keyline($direction: top, $spacing: spacing(8));
+}
+
 .c-header__item--hide-lg {
 	@include media-query('lg') {
 		@include u-hide;
@@ -330,7 +334,7 @@
 		flex-direction: column;
 	}
 
-	.c-header__list + .c-header__list .c-header__item:first-child {
+	.c-header__list ~ .c-header__list .c-header__item:first-child {
 		@include u-keyline($direction: top, $spacing: spacing(8));
 	}
 
