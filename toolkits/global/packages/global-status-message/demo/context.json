@@ -1,6 +1,12 @@
 {
-	"message": "This is a the status message",
-	"type": "warning",
-	"boxed": true,
-	"iconURL": "../../img/warning.svg#i-warning"
+	"warning": {
+		"id": "default",
+		"message": "This is the status message",
+		"type": "warning",
+		"boxed": true,
+		"iconURL": "../../img/warning.svg#i-warning"
+	},
+	"dynamicPartials": {
+		"globalStatusMessage": "./toolkits/global/packages/global-status-message/view/globalStatusMessage.hbs"
+	}
 }

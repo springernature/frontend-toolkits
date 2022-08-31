@@ -1,8 +1,3 @@
-<div class="c-status-message{{#if boxed}} c-status-message--boxed{{/if}}{{#if type}} c-status-message--{{type}}{{/if}}">
-	{{#with iconURL}}
-    <svg class="c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
-        <use xlink:href="{{this}}"></use>
-    </svg>
-	{{/with}}
-	{{message}}
-</div>
+{{#with warning}}
+	{{> globalStatusMessage}}
+{{/with}}

@@ -564,6 +564,14 @@ body {
   margin-right: 8px;
 }
 
+.c-status-message__message :first-child {
+  margin-top: 0;
+}
+
+.c-status-message__message :last-child {
+  margin-top: 0;
+}
+
 .c-status-message__icon--top {
   align-self: flex-start;
 }
@@ -602,12 +610,14 @@ body {
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="c-status-message c-status-message--boxed c-status-message--warning">
-    <svg class="c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
-        <use xlink:href="../../img/warning.svg#i-warning"></use>
-    </svg>
-	This is a the status message
-</div>
+	<div class="c-status-message c-status-message--boxed c-status-message--warning">
+			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="warning:" focusable="false">
+				<use xlink:href="../../img/warning.svg#i-warning"></use>
+			</svg>
+			<div class="c-status-message__message" tabindex="-1" id="default-message">
+				This is the status message
+			</div>
+	</div>
 
 		<script>
 			// no JS found for package
