@@ -1,4 +1,4 @@
-<div class="c-status-message{{#if boxed}} c-status-message--boxed{{/if}}{{#if type}} c-status-message--{{type}}{{/if}}"{{#if liveRegion}} role="status" aria-live="polite"{{/if}}>
+<aside class="c-status-message{{#if boxed}} c-status-message--boxed{{/if}}{{#if type}} c-status-message--{{type}}{{/if}}"{{#if liveRegion}} role="status" aria-live="polite"{{/if}}>
 	{{#with iconURL}}
 		<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="{{../type}}:" focusable="false">
 			<use xlink:href="{{this}}"></use>
@@ -9,4 +9,4 @@
 			{{{../message}}}
 		</div>
 	{{/with}}
-</div>
+</aside>
