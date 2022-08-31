@@ -1,5 +1,13 @@
 # History
 
+## 5.0.0-rc.6 (2022-08-31)
+    * `display: none` for inputs without labels (hidden inputs)
+    * Larger checkboxes and radios
+    * Correct grey for checkbox and radio borders
+    * Bright blue focus style
+    * `tabindex="-1"` for programmatic focus compatibility on error summary
+    * Optionally exclude discrete errors in error summary
+
 ## 5.0.0-rc.5 (2022-07-29)
     * `password` input type added
     * fixed long labels squishing checkboxes and radios

@@ -3,7 +3,7 @@
 		<legend class="c-forms__legend">{{{legend}}}</legend>
 	{{/if}}
 	{{#each fields}}
-		<div class="c-forms__field">
+		<div class="c-forms__field{{#unless label}} c-forms__field--no-label{{/unless}}">
 			{{> (lookup . 'template')}}
 		</div>
 	{{/each}}
