@@ -53,7 +53,7 @@
 
 .c-header__menu--hide-lg-max {
 	@include media-query('lg', 'max') {
-		display: none;
+		@include u-hide;
 	}
 }
 
@@ -65,10 +65,10 @@
 
 .c-header__menu--global .c-header__item {
 	svg {
-		display: none;
+		@include u-hide;
 
 		@include media-query('sm') {
-			display: block;
+			@include u-show;
 		}
 	}
 }
@@ -98,19 +98,19 @@
 
 .c-header__item--hide-lg {
 	@include media-query('lg') {
-		display: none;
+		@include u-hide;
 	}
 }
 
 .c-header__item--hide-lg-max {
 	@include media-query('lg', 'max') {
-		display: none;
+		@include u-hide;
 	}
 }
 
 .c-header__item--hide-md-max {
 	@include media-query('md', 'max') {
-		display: none;
+		@include u-hide;
 	}
 }
 
@@ -147,10 +147,11 @@
 }
 
 .c-header__show-text {
-	display: none;
+	@include u-hide;
 
 	@include media-query('sm') {
 		display: inline;
+		visibility: visible;
 	}
 }
 
@@ -342,6 +343,6 @@
 
 	/* Hide arrow icon in IE browsers */
 	&::-ms-expand {
-		display: none;
+		@include u-hide;
 	}
 }
