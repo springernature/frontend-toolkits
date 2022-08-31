@@ -8,7 +8,7 @@
 		<style>
 			@charset "UTF-8";
 /**
- * Core
+ * Basic
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
@@ -167,17 +167,43 @@
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h6, h5, h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 /**
  * Abstracts
  * Sass tools, helper files, variables, functions, mixins and other config files
  * These files don’t output any CSS when compiled
  */
 /**
- * Colour palette
+ * Colors
+ * Maps for color values & greyscale settings
  *
  */
 /**
- * Color and gray scales
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Nature
  *
  */
 /**
@@ -186,41 +212,52 @@
  *
  */
 /**
- *  Button settings
- *  Springer
- *
+ * Global
+ * Main brand settings
  */
-/**
- * Generates utility classnames for base and each breakpoint
- *
- * Example:
- * @include class-stack('u-text-right') would output
- * u-text-right { @content }
- * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Alternative link color
- *
- */
-/**
- * Deemphasised link color
- *
- */
-/**
- * Unvisited
- *
- */
-/**
- * Link like
- * Style non-links to look like links
- * Remember to add aria
- *
- */
+h1 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+h6, h5, h4 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -565,17 +602,12 @@ template {
  * Some default CSS styles
  */
 body {
-  font-size: 0.813rem;
   line-height: 1.5;
-}
-
-* {
-  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #069;
+  color: #006699;
 }
 
 a:hover,
@@ -596,7 +628,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.0625rem;
+  font-size: 1.063rem;
 }
 
 h4 {
@@ -621,6 +653,28 @@ img {
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   border-radius: 0;
+}
+
+/* accessible focus styles */
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+p:focus,
+div:focus,
+ul:focus,
+ol:focus,
+li:focus,
+dl:focus,
+dt:focus,
+dd:focus,
+span:focus,
+i:focus,
+b:focus,
+em:focus,
+strong:focus {
+  outline: none;
 }
 
 /**
@@ -782,17 +836,43 @@ button {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h6, h5, h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 /**
  * Abstracts
  * Sass tools, helper files, variables, functions, mixins and other config files
  * These files don’t output any CSS when compiled
  */
 /**
- * Colour palette
+ * Colors
+ * Maps for color values & greyscale settings
  *
  */
 /**
- * Color and gray scales
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Nature
  *
  */
 /**
@@ -801,65 +881,73 @@ button {
  *
  */
 /**
- *  Button settings
- *  Springer
- *
+ * Global
+ * Main brand settings
  */
-/**
- * Generates utility classnames for base and each breakpoint
- *
- * Example:
- * @include class-stack('u-text-right') would output
- * u-text-right { @content }
- * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Alternative link color
- *
- */
-/**
- * Deemphasised link color
- *
- */
-/**
- * Unvisited
- *
- */
-/**
- * Link like
- * Style non-links to look like links
- * Remember to add aria
- *
- */
-button {
-  line-height: inherit;
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 4px solid #ffcc00;
-}
-
-input[type=file]:focus-within {
-  outline: 4px solid #ffcc00;
-}
-
-button:disabled:focus,
-input:disabled:focus,
-select:disabled:focus,
-textarea:disabled:focus {
-  outline: none;
-}
-
-label {
+h1 {
+  font-weight: 700;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+h6, h5, h4 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/**
+ * Forms
+ * Default form styles
+ */
+fieldset {
+  border: 0;
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+button:active {
+  outline: 0;
+}
+
+input + label {
+  padding-left: 0.5em;
 }
 
 /*
@@ -867,29 +955,16 @@ label {
  * Universal layout styles
  */
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   height: 100%;
   overflow-y: scroll;
-  font-size: 100%;
-  box-sizing: border-box;
-  color: #333333;
-  line-height: 1.6180339888;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body {
-  max-width: 100%;
   min-height: 100%;
-  background: #fcfcfc;
-  font-size: 1.125rem;
-  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.76;
+  color: #222222;
+  background: #eeeeee;
 }
 
 figure {
@@ -910,8 +985,20 @@ input,
 button,
 textarea,
 p,
+blockquote,
 th,
 td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
   margin: 0;
   padding: 0;
 }
@@ -922,179 +1009,138 @@ abbr[title] {
 
 [contenteditable]:focus,
 [tabindex="0"]:focus {
-  outline: 4px solid #ffcc00;
+  outline: 3px solid #fece3e;
+  will-change: transform;
 }
 
+/**
+ * Links
+ * Basic link styles
+ */
 a {
-  color: #004b83;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #006699;
+}
+a:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+a:hover {
   text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
 }
-a.visited, a:visited {
-  color: #a345c9;
-}
-a.hover, a:hover {
-  color: #0061a9;
-  text-decoration: none;
-}
-a.active, a:active {
-  color: #003b84;
-  text-decoration: none;
-}
-a.focus, a:focus {
-  outline: 4px solid #ffcc00;
-}
-a > img {
-  vertical-align: middle;
+
+a:active {
+  outline: 0;
 }
 
+/**
+ * Lists
+ * Default list styles
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/**
+ * Tables
+ * Default table styles
+ */
 table {
-  border: 1px solid #a6a6a6;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 th,
 td {
-  font-size: 1rem;
-  border: 1px solid #a6a6a6;
-  padding: 0.3em 0.6em;
-  vertical-align: top;
+  padding: 4px 7px;
+  border-right: 1px solid #d5d5d5;
+  text-align: left;
+  line-height: 1.15;
 }
 
 th {
-  background: #e6e6e6;
-  text-align: left;
+  vertical-align: top;
 }
 
-h1 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 2.25rem;
-  font-size: min(max(1.75rem, 4vw), 2.25rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h1 a {
-  text-decoration: none;
-}
-h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
+td {
+  vertical-align: middle;
 }
 
-h2 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.75rem;
-  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h2 a {
-  text-decoration: none;
-}
-h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
+th[valign=top] {
+  vertical-align: top;
 }
 
-h3 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3vw), 1.5rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h3 a {
-  text-decoration: none;
-}
-h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
+th[valign=middle] {
+  vertical-align: middle;
 }
 
-h4 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-}
-h4 a {
-  text-decoration: none;
-}
-h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
+thead tr {
+  border-bottom: 1px solid #d5d5d5;
 }
 
-h5,
-h6 {
-  font-style: normal;
-  line-height: 1.4;
+tbody tr {
+  border-top: 1px solid #d5d5d5;
+}
+
+tbody tr:first-child {
+  border-top: 0;
+}
+
+th {
+  background: #eeeeee;
+}
+
+tfoot tr {
+  border-top: 2px solid #d5d5d5;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+  font-size: 100%;
+}
+
+body {
   font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-}
-h5 a,
-h6 a {
-  text-decoration: none;
-}
-h5 a.active, h5 a:active, h5 a.hover, h5 a:hover,
-h6 a.active,
-h6 a:active,
-h6 a.hover,
-h6 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
 }
 
-/* Spacing algorithm: */
-:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
-  margin-block-start: 16px;
+/**
+ * Typographic
+ * Standard text and heading formatting
+ */
+/*
+ * Default spacing
+ * default margin 28px to match line height
+ * this is used for mainting vertical rhythm on the page
+ */
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
-* + :is(h2, h3, h4, h5) {
-  margin-block-start: 32px;
-}
-
-:is(h3, h4, h5) + * {
-  margin-block-start: 8px;
-}
-
-h2 + * {
-  margin-block-start: 16px;
-}
-
-h1 + * {
-  margin-block-start: 48px;
-}
-
-/* Not applicable after hidden elements */
-[hidden] + *,
-[style*="display:none"] + *,
-[style*="display: none"] + * {
-  margin-block-start: 0;
-}
-
-/* end spacing algorithm */
-/* Basic lists should be aligned to the left */
-ul:not([class]),
-ol:not([class]) {
-  /* Allow for bullet itself */
-  padding-left: 0.9em;
-}
-
-dd {
-  margin: 0;
-}
-
-cite {
-  font-style: normal;
+/*
+ * Headings
+ */
+p:empty {
+  display: none;
 }
 
 .u-ma-0 {
@@ -1489,35 +1535,33 @@ cite {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.3;
   justify-content: center;
   padding: 8px;
   transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   border-radius: 2px;
-  color: #004b83;
-  background-color: #f2f2f2;
-  background-image: linear-gradient(to bottom, white, #f2f2f2);
-  border: 1px solid #cccccc;
+  color: #006699;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #006699;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: #004b83;
+  color: #006699;
 }
 .u-button:hover {
-  border: 1px solid #666666;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button:focus {
-  border: 1px solid #666666;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button:hover, .u-button:focus {
   color: white;
-  background-color: #666666;
+  background-color: #006699;
   background-image: none;
 }
 .u-button:hover svg path, .u-button:focus svg path {
@@ -1526,9 +1570,9 @@ cite {
 
 .u-button--primary {
   color: white;
-  background-color: #33629d;
-  background-image: linear-gradient(to bottom, #4d76a9, #33629d);
-  border: 1px solid rgba(0, 59, 132, 0.5);
+  background-color: #006699;
+  background-image: none;
+  border: 1px solid #006699;
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -1537,18 +1581,18 @@ cite {
   color: white;
 }
 .u-button--primary:hover {
-  border: 1px solid #0061a9;
+  border: 1px solid #006699;
 }
 .u-button--primary:focus {
-  border: 1px solid #0061a9;
+  border: 1px solid #006699;
 }
 .u-button--primary:hover, .u-button--primary:focus {
-  color: white;
-  background-color: #0061a9;
+  color: #006699;
+  background-color: white;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
-  fill: white;
+  fill: #006699;
 }
 
 .u-button--contrast {
@@ -1579,33 +1623,13 @@ cite {
   fill: black;
 }
 
-.u-button--ghost {
-  color: #333333;
-  background-color: transparent;
-  background-image: none;
-}
-.u-button--ghost svg {
-  fill: currentColor;
-}
-.u-button--ghost:visited {
-  color: #333333;
-}
-.u-button--ghost:hover, .u-button--ghost:focus {
-  color: #333333;
-  background-color: rgba(242, 242, 242, 0.5);
-  background-image: none;
-}
-.u-button--ghost:hover svg path, .u-button--ghost:focus svg path {
-  fill: #333333;
-}
-
 .u-button--disabled,
 .u-button:disabled {
-  color: #333333;
+  color: #222222;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #cccccc;
-  opacity: 0.67;
+  border: 1px solid #eeeeee;
+  opacity: 0.7;
   cursor: default;
 }
 .u-button--disabled svg,
@@ -1614,29 +1638,29 @@ cite {
 }
 .u-button--disabled:visited,
 .u-button:disabled:visited {
-  color: #333333;
+  color: #222222;
 }
 .u-button--disabled:hover,
 .u-button:disabled:hover {
-  border: 1px solid #cccccc;
+  border: 1px solid #eeeeee;
   text-decoration: none;
 }
 .u-button--disabled:focus,
 .u-button:disabled:focus {
-  border: 1px solid #cccccc;
+  border: 1px solid #eeeeee;
   text-decoration: none;
 }
 .u-button--disabled:hover, .u-button--disabled:focus,
 .u-button:disabled:hover,
 .u-button:disabled:focus {
-  color: #333333;
+  color: #222222;
   background-color: transparent;
   background-image: none;
 }
 .u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
 .u-button:disabled:hover svg path,
 .u-button:disabled:focus svg path {
-  fill: #333333;
+  fill: #222222;
 }
 
 .u-button--xsmall {
@@ -1650,7 +1674,7 @@ cite {
 }
 
 .u-button--large {
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding: 16px;
 }
 
@@ -1930,6 +1954,12 @@ label + .c-forms__error,
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+/* Hides type="hidden" and discourages lack of
+labels elsewhere */
+.c-forms__field--no-label {
+  display: none;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -1945,15 +1975,15 @@ label + .c-forms__error,
 					</span>
 				</div>
 				<div class="c-forms__error-summary-text">
-					<div class="c-forms__error-summary-title" id="summary">There are problems</div>
-					<ul class="c-forms__error-summary-errors">
-							<li>
-								<a href="#your-name-error">Enter your name</a>
-							</li>
-							<li>
-								<a href="#checkbox-terms-error">Agree to the terms to continue</a>
-							</li>
-					</ul>
+					<div class="c-forms__error-summary-title" id="summary" tabindex="-1">There are problems</div>
+						<ul class="c-forms__error-summary-errors">
+								<li>
+									<a href="#your-name-error">Enter your name</a>
+								</li>
+								<li>
+									<a href="#checkbox-terms-error">Agree to the terms to continue</a>
+								</li>
+						</ul>
 				</div>
 			</aside>
 			<fieldset class="c-forms__fieldset">
@@ -1977,7 +2007,7 @@ label + .c-forms__error,
 						</label>
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--no-label">
 						<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 					</div>
 					<div class="c-forms__field">
@@ -2148,7 +2178,7 @@ label + .c-forms__error,
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--no-label">
 						<div class="c-forms__field c-forms__buttons">
 								<button type="submit" class="u-button u-button--primary" autocomplete="off">
 									Submit
