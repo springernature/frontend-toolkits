@@ -123,19 +123,11 @@
 		},
 		"checkbox": {
 			"size": {
-				"value": "{sizing.relative.600}",
+				"value": "{sizing.relative.400}",
 				"type": "sizing"
 			},
 			"spacing": {
 				"value": "{sizing.relative.200}"
-			},
-			"border": {
-				"size": {
-					"value": "{border.width.50}"
-				},
-				"color": {
-					"value": "{color.grayscale.500}"
-				}
 			},
 			"checked": {
 				"icon": {

@@ -7,15 +7,13 @@
 		</span>
 	</div>
 	<div class="c-forms__error-summary-text">
-		<div class="c-forms__error-summary-title" id="{{id}}" tabindex="-1">{{title}}</div>
-		{{#if errors}}
-			<ul class="c-forms__error-summary-errors">
-				{{#each errors}}
-					<li>
-						<a href="#{{id}}">{{error}}</a>
-					</li>
-				{{/each}}
-			</ul>
-		{{/if}}
+		<div class="c-forms__error-summary-title" id="{{id}}">{{title}}</div>
+		<ul class="c-forms__error-summary-errors">
+			{{#each errors}}
+				<li>
+					<a href="#{{id}}">{{error}}</a>
+				</li>
+			{{/each}}
+		</ul>
 	</div>
 </aside>

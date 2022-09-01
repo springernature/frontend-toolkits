@@ -6,7 +6,7 @@
 		"focus": {
 			"outline": {
 				"color": {
-					"value": "{color.primary.bright-blue}"
+					"value": "{color.primary.medium-blue}"
 				}
 			}
 		},
