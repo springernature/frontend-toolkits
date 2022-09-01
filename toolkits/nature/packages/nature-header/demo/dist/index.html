@@ -1189,6 +1189,7 @@ p:empty {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 8px;
   align-items: center;
   flex-wrap: wrap;
   flex: 0 1 auto;
@@ -1212,7 +1213,6 @@ p:empty {
 .c-header__menu--global {
   font-weight: 400;
   justify-content: flex-end;
-  margin: 0 -8px 0 0;
 }
 .c-header__menu--global svg {
   display: none;
@@ -1247,7 +1247,6 @@ p:empty {
 .c-header__item--pipe {
   border-left: 2px solid #eeeeee;
   padding-left: 8px;
-  margin-left: 8px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1280,9 +1279,6 @@ p:empty {
   .c-header__item--dropdown-menu {
     position: relative;
   }
-  .c-header__item--dropdown-menu:not(:first-child) {
-    margin-left: 8px;
-  }
 }
 
 .c-header__link {
@@ -1290,6 +1286,7 @@ p:empty {
   padding: 8px;
   display: inline-flex;
   align-items: center;
+  gap: 4px;
   white-space: nowrap;
 }
 .c-header__link.visited, .c-header__link:visited {
@@ -1302,7 +1299,6 @@ p:empty {
   text-transform: capitalize;
 }
 .c-header__link svg {
-  margin-left: 4px;
   transition-duration: 0.2s;
 }
 

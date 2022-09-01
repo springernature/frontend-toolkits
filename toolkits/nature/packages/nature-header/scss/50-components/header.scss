@@ -43,6 +43,7 @@
 	@include u-hide-print;
 	@include u-list-reset();
 	display: flex;
+	gap: spacing(8);
 	align-items: center;
 	flex-wrap: wrap;
 	flex: 0 1 auto;
@@ -60,7 +61,6 @@
 .c-header__menu--global {
 	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
-	margin: 0 (0 - spacing(8)) 0 0;
 
 	svg {
 		@include u-hide;
@@ -91,7 +91,6 @@
 .c-header__item--pipe {
 	border-left: 2px solid greyscale(80);
 	padding-left: spacing(8);
-	margin-left: spacing(8);
 }
 
 .c-header__item--hide-lg {
@@ -120,10 +119,6 @@
 .c-header__item--dropdown-menu {
 	@include media-query('sm') {
 		position: relative;
-
-		&:not(:first-child) {
-			margin-left: spacing(8);
-		}
 	}
 }
 
@@ -132,6 +127,7 @@
 	padding: spacing(8);
 	display: inline-flex;
 	align-items: center;
+	gap: spacing(4);
 	white-space: nowrap;
 
 	::first-letter {
@@ -139,7 +135,6 @@
 	}
 
 	svg {
-		margin-left: spacing(4);
 		transition-duration: 0.2s;
 	}
 }
