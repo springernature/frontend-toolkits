@@ -1214,13 +1214,12 @@ p:empty {
   justify-content: flex-end;
   margin: 0 -8px 0 0;
 }
-
-.c-header__menu--global .c-header__item svg {
+.c-header__menu--global svg {
   display: none;
   visibility: hidden;
 }
 @media only screen and (min-width: 540px) {
-  .c-header__menu--global .c-header__item svg {
+  .c-header__menu--global svg {
     display: block;
     visibility: visible;
   }
@@ -1249,6 +1248,12 @@ p:empty {
   border-left: 2px solid #eeeeee;
   padding-left: 8px;
   margin-left: 8px;
+}
+
+.c-header__item--keyline {
+  border-top: 1px solid #d5d5d5;
+  padding-top: 8px;
+  margin-top: 8px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1374,81 +1379,8 @@ p:empty {
 }
 
 /**
- Javascript Enhancements
+ Search form
  */
-.c-header__link.is-open {
-  color: #006699;
-  background-color: #eeeeee;
-  border-radius: 2px;
-  text-decoration: none;
-}
-.c-header__link.is-open svg {
-  fill: currentColor;
-}
-
-.c-header__item--dropdown-menu .c-header__link.is-open svg {
-  transform: rotate(180deg);
-}
-
-@media only screen and (min-width: 540px) {
-  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
-    left: auto;
-    right: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
-    left: 0;
-    right: auto;
-  }
-}
-
-.c-header__dropdown.has-tethered {
-  position: absolute;
-  top: 100%;
-  transform: translateY(5px);
-  z-index: 1;
-  left: 0;
-  width: 100%;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 0;
-}
-@media only screen and (min-width: 540px) {
-  .c-header__dropdown.has-tethered {
-    transform: translateY(8px);
-    width: auto;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .c-header__dropdown.has-tethered {
-    min-width: 225px;
-  }
-}
-.c-header__dropdown.has-tethered .c-header__heading--hide {
-  display: none;
-  visibility: hidden;
-}
-.c-header__dropdown.has-tethered .c-header__list {
-  flex-direction: column;
-}
-.c-header__dropdown.has-tethered .c-header__list + .c-header__list .c-header__item:first-child {
-  border-top: 1px solid #d5d5d5;
-  padding-top: 8px;
-  margin-top: 8px;
-}
-.c-header__dropdown.has-tethered .c-header__list--inline {
-  flex-direction: row;
-}
-
-.c-header__dropdown--full-width.has-tethered {
-  width: 100%;
-  padding: 32px 0 24px;
-  transform: none;
-}
-
-/**
-	Search dropdown
-*/
 .c-header__search-form {
   margin-bottom: 8px;
 }
@@ -1551,6 +1483,79 @@ p:empty {
 .c-header__select::-ms-expand {
   display: none;
   visibility: hidden;
+}
+
+/**
+ Javascript Enhancements
+ */
+.c-header__link.is-open {
+  color: #006699;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.c-header__link.is-open svg {
+  fill: currentColor;
+}
+
+.c-header__item--dropdown-menu .c-header__link.is-open svg {
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 540px) {
+  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
+    left: auto;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
+    left: 0;
+    right: auto;
+  }
+}
+
+.c-header__dropdown.has-tethered {
+  position: absolute;
+  top: 100%;
+  transform: translateY(5px);
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 0;
+}
+@media only screen and (min-width: 540px) {
+  .c-header__dropdown.has-tethered {
+    transform: translateY(8px);
+    width: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .c-header__dropdown.has-tethered {
+    min-width: 225px;
+  }
+}
+.c-header__dropdown.has-tethered .c-header__heading--js-hide {
+  display: none;
+  visibility: hidden;
+}
+.c-header__dropdown.has-tethered .c-header__list--js-stack {
+  flex-direction: column;
+}
+.c-header__dropdown.has-tethered .c-header__list ~ .c-header__list .c-header__item:first-child {
+  border-top: 1px solid #d5d5d5;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+.c-header__dropdown.has-tethered .c-header__list--js-inline {
+  flex-direction: row;
+}
+
+.c-header__dropdown--full-width.has-tethered {
+  width: 100%;
+  padding: 32px 0 24px;
+  transform: none;
 }
 
 /**
@@ -2448,7 +2453,7 @@ p:empty {
 				</div>
 		
 				<h3 class="c-header__heading c-header__heading--keyline">Quick links</h3>
-				<ul class="c-header__list c-header__list--inline">
+				<ul class="c-header__list c-header__list--js-inline">
 					<li><a class="c-header__link" href="/subjects">Explore articles by subject</a></li>
 					<li><a class="c-header__link" href="/naturecareers">Find a job</a></li>
 					<li><a class="c-header__link" href="/authors/index.html">Guide to authors</a></li>
@@ -2459,8 +2464,8 @@ p:empty {
 		
 		<nav class="c-header__dropdown" aria-labelledby="Explore-content" id="explore">
 			<div class="c-header__container">
-				<h2 id="Explore-content" class="c-header__heading c-header__heading--hide">Explore content</h2>
-				<ul class="c-header__list">
+				<h2 id="Explore-content" class="c-header__heading c-header__heading--js-hide">Explore content</h2>
+				<ul class="c-header__list c-header__list--js-stack">
 						<li class="c-header__item">
 							<a class="c-header__link" href="/some-url/">link one</a>
 						</li>
@@ -2468,7 +2473,7 @@ p:empty {
 							<a class="c-header__link" href="/some-url/">link two</a>
 						</li>
 				</ul>
-				<ul class="c-header__list">
+				<ul class="c-header__list c-header__list--js-stack">
 						<li class="c-header__item">
 							<a class="c-header__link" href="/some-url/">Follow us on Facebook</a>
 						</li>
@@ -2492,8 +2497,8 @@ p:empty {
 		
 		<nav class="c-header__dropdown" aria-labelledby="About-the-journal" id="about-the-journal">
 			<div class="c-header__container">
-				<h2 id="About-the-journal" class="c-header__heading c-header__heading--hide">About the journal</h2>
-				<ul class="c-header__list">
+				<h2 id="About-the-journal" class="c-header__heading c-header__heading--js-hide">About the journal</h2>
+				<ul class="c-header__list c-header__list--js-stack">
 						<li class="c-header__item">
 							<a class="c-header__link" href="/some-url/">link one</a>
 						</li>
@@ -2506,17 +2511,15 @@ p:empty {
 		
 		<nav class="c-header__dropdown" aria-labelledby="Publish-with-us-label" id="publish-with-us">
 			<div class="c-header__container">
-				<h2 id="Publish-with-us-label" class="c-header__heading c-header__heading--hide">Publish with us</h2>
-				<ul class="c-header__list">
+				<h2 id="Publish-with-us-label" class="c-header__heading c-header__heading--js-hide">Publish with us</h2>
+				<ul class="c-header__list c-header__list--js-stack">
 						<li class="c-header__item">
 							<a class="c-header__link" href="/some-url/">link one</a>
 						</li>
 						<li class="c-header__item">
 							<a class="c-header__link" href="/some-url/">link two</a>
 						</li>
-				</ul>
-				<ul class="c-header__list">
-						<li class="c-header__item">
+						<li class="c-header__item c-header__item--keyline">
 							<a class="c-header__link" href="/some-url/">Submit manuscript<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
 								<path d="m15 0c1.1045695 0 2 .8954305 2 2v5.5c0 .27614237-.2238576.5-.5.5s-.5-.22385763-.5-.5v-5.5c0-.51283584-.3860402-.93550716-.8833789-.99327227l-.1166211-.00672773h-9v3c0 1.1045695-.8954305 2-2 2h-3v10c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h7.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-7.5c-1.1045695 0-2-.8954305-2-2v-10.17157288c0-.53043297.21071368-1.0391408.58578644-1.41421356l3.82842712-3.82842712c.37507276-.37507276.88378059-.58578644 1.41421356-.58578644zm-.5442863 8.18867991 3.3545404 3.35454039c.2508994.2508994.2538696.6596433.0035959.909917-.2429543.2429542-.6561449.2462671-.9065387-.0089489l-2.2609825-2.3045251.0010427 7.2231989c0 .3569916-.2898381.6371378-.6473715.6371378-.3470771 0-.6473715-.2852563-.6473715-.6371378l-.0010428-7.2231995-2.2611222 2.3046654c-.2531661.2580415-.6562868.2592444-.9065605.0089707-.24295423-.2429542-.24865597-.6576651.0036132-.9099343l3.3546673-3.35466731c.2509089-.25090888.6612706-.25227691.9135302-.00001728zm-.9557137-3.18867991c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5zm-8.5-3.587-3.587 3.587h2.587c.55228475 0 1-.44771525 1-1zm8.5 1.587c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5z" fill="#fff"></path>
 							</svg>
@@ -2687,8 +2690,6 @@ p:empty {
 	        this._triggerEl.focus();
 	      }
 
-	      console.log(this._targetTabbableItems);
-
 	      if (this._options.CLOSE_ON_FOCUS_OUT) {
 	        if (event.key === 'Tab' && event.shiftKey === true) {
 	          if (event.target === this._targetTabbableItems[0] || event.target === this._triggerEl || event.target === this._targetEl) {
@@ -2705,8 +2706,6 @@ p:empty {
 	          if (event.target === this._targetTabbableItems[this._targetTabbableItems.length - 1]) {
 	            event.preventDefault();
 	            window.requestAnimationFrame(function () {
-	              console.log('close on tabbing');
-
 	              _this.close();
 
 	              _this._triggerEl.focus();
