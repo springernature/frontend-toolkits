@@ -81,19 +81,25 @@ When a user selects the trigger, the Global expander component opens and closes 
 
 There are 2 ways to apply keylines to menu items.
 
-If your menu is static - meaning it can’t be changed from another source, like a CMS - use the `c-header-expander__item–keyline`  classname to apply a keyline above a menu item. For example:
+If your menu is static - meaning it can’t be changed from another source, like a CMS - use the `c-header__item--keyline`  classname to apply a keyline above a menu item. For example:
 
 ```html
-<li class="c-header-expander__item c-header-expander__item--keyline">
+<li class="c-header__item c-header__item--keyline">
     <a href="some url">Some text</a>
 </li>
 ```
 
-If the items in your menu are dynamic, you can use the `c-header-expander__item–keyline-first-item-only` classname to apply a keyline above the first menu item in a group.
+If there is more than one group in a menu, a keyline is applied above the first menu item for all groups after the first group. For example, you may want to keep social media links grouped together, and visually separated from the other menu items:
 
-For example, you may want to keep social media links grouped together, visually separated from the other menu items.
-
-In these instances, you can apply `c-header-expander__item–keyline-first-item-only` to a group of list items, so the first item in that group always has a keyline above it.
+```html
+<ul class="c-header__list">
+    <li class="c-header__item"><a href="#">Site link</a></li>
+</ul>
+<ul class="c-header__list">
+    <li class="c-header__item"><a href="#">Social network 1</a></li>
+    <li class="c-header__item"><a href="#">Social network 2</a></li>
+</ul>
+```
 
 ## Research on this component
 
