@@ -1,5 +1,17 @@
 # History
 
+## 9.0.0 (2022-09-01)
+    * BREAKING:
+        * Removes header-expander.scss and move styles as part of header.scss
+        * Removes c-search from Oscar and add replacement within header.scss
+        * Refactors keyline style in menu groups
+        * Removes utility classes, except for hiding.scss/u-js-hide which is used included from expander
+
+    * UPDATE:
+      * Updates template to move dropdown content out of header. These get tethered to the button with js
+      * Updates brand-context v26.0.0
+      * Updates readme
+
 ## 8.1.0 (2022-07-28)
     * UPDATE: brand-context v25.0.0
 
