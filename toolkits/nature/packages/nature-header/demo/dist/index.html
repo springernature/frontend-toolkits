@@ -1227,7 +1227,7 @@ p:empty {
 
 .c-header__menu--journal {
   font-size: 0.875rem;
-  margin: 8px -8px;
+  margin: 8px 8px 8px -8px;
 }
 @media only screen and (min-width: 540px) {
   .c-header__menu--journal {
@@ -1241,12 +1241,25 @@ p:empty {
 }
 
 .c-header__item {
-  display: flex;
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c-header__item--pipe {
   border-left: 2px solid #eeeeee;
   padding-left: 8px;
+}
+
+.c-header__item--padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 540px) {
+  .c-header__item--dropdown-menu {
+    position: relative;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1267,17 +1280,6 @@ p:empty {
   .c-header__item--hide-md-max {
     display: none;
     visibility: hidden;
-  }
-}
-
-.c-header__item--padding {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-@media only screen and (min-width: 540px) {
-  .c-header__item--dropdown-menu {
-    position: relative;
   }
 }
 
@@ -1540,9 +1542,6 @@ p:empty {
 }
 .has-tethered .c-header__list--js-stack {
   flex-direction: column;
-}
-.has-tethered .c-header__list--js-inline {
-  flex-direction: row;
 }
 .has-tethered .c-header__item--keyline,
 .has-tethered .c-header__list ~ .c-header__list .c-header__item:first-child {
@@ -2369,32 +2368,32 @@ p:empty {
 						<div class="c-header__split">
 							<ul class="c-header__menu c-header__menu--journal">
 								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander="">
+									<a href="#explore" class="c-header__link" data-header-expander="">
 										<span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
 										</svg>
 									</a>
 								</li>
 								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#about-the-journal" class="c-header__link c-header__link--chevron" data-header-expander="">
+									<a href="#about-the-journal" class="c-header__link" data-header-expander="">
 										<span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
 										</svg>
 									</a>
 								</li>
 								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#publish-with-us" class="c-header__link c-header__link--chevron c-header__link--dropdown-menu" data-header-expander="">
+									<a href="#publish-with-us" class="c-header__link c-header__link--dropdown-menu" data-header-expander="">
 										<span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
 										</svg>
 									</a>
 								</li>
-								<li class="c-header__item c-header__item--pipe c-header__item--hide-lg-max">
-									<a class="c-header__link" href="https://www.nature.com/nature/subscribe">
-										<span>Subscribe</span>
-									</a>
-								</li>
 							</ul>
+							<div class="c-header__item c-header__item--pipe c-header__item--hide-lg-max">
+								<a class="c-header__link" href="https://www.nature.com/nature/subscribe">
+									<span>Subscribe</span>
+								</a>
+							</div>
 						</div>
 						<ul class="c-header__menu c-header__menu--hide-lg-max">
 							<li class="c-header__item">
@@ -2446,7 +2445,7 @@ p:empty {
 				</div>
 		
 				<h3 class="c-header__heading c-header__heading--keyline">Quick links</h3>
-				<ul class="c-header__list c-header__list--js-inline">
+				<ul class="c-header__list">
 					<li><a class="c-header__link" href="/subjects">Explore articles by subject</a></li>
 					<li><a class="c-header__link" href="/naturecareers">Find a job</a></li>
 					<li><a class="c-header__link" href="/authors/index.html">Guide to authors</a></li>
