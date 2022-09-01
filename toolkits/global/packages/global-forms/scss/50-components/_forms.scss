@@ -149,7 +149,6 @@ label+.c-forms__error,
 	display: flex;
 	align-items: start;
 	cursor: pointer;
-	padding: 0;
 }
 
 .c-forms__label--inline::before {
@@ -158,14 +157,12 @@ label+.c-forms__error,
 	width: $global-forms-checkbox-size;
 	height: $global-forms-checkbox-size;
 	background-color: $global-forms-input-background-color;
-	border: #{calc($global-forms-checkbox-border-size)} solid $global-forms-checkbox-border-color;
+	border: #{calc($global-forms-input-border-width)} solid;
 	margin-right: $global-forms-checkbox-spacing;
-	position: relative;
-	top: calc(#{$global-forms-checkbox-size} / 16);
 }
 
 :checked+.c-forms__label--inline::before {
-	border-color: $global-forms-checkbox-checked-icon-stroke;
+	border-color: $global-forms-input-border-color-resting;
 }
 
 :focus+.c-forms__label--inline::before {
@@ -199,7 +196,7 @@ label+.c-forms__error,
 
 .c-forms__sub-fields {
 	margin-top: $global-forms-input-stack-spacing;
-	margin-left: calc(#{$global-forms-checkbox-size} / 4);
+	margin-left: calc(#{$global-forms-checkbox-size} / 3);
 	padding-top: $global-forms-field-stack-spacing;
 	padding-left: $global-forms-field-stack-spacing;
 	position: relative;
@@ -262,10 +259,4 @@ label+.c-forms__error,
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
-}
-
-/* Hides type="hidden" and discourages lack of
-labels elsewhere */
-.c-forms__field--no-label {
-	display: none;
 }

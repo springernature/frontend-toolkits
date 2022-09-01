@@ -32,14 +32,6 @@
 	margin-right: $status-message--gutter-icon;
 }
 
-.c-status-message__message :first-child {
-	margin-top: 0;
-}
-
-.c-status-message__message :last-child {
-	margin-top: 0;
-}
-
 .c-status-message__icon--top {
 	align-self: flex-start;
 }
