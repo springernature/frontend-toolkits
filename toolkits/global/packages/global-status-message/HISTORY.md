@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2022-09-02)
+    * `<aside>` by default
+
 ## 4.0.0 (2022-08-31)
     * Message section now permits more than plain text
     * Message now focusable programmatically
