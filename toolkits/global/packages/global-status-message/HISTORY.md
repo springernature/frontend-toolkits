@@ -1,5 +1,10 @@
 # History
 
+## 4.0.0 (2022-08-31)
+    * Message section now permits more than plain text
+    * Message now focusable programmatically
+    * Support for live regions
+
 ## 3.3.0 (2022-07-28)
     * UPDATE: brand-context v25.0.0
 
