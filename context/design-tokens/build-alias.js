@@ -1,7 +1,5 @@
-const fs = require('fs');
-const StyleDictionaryPackage = require('style-dictionary');
-const _ = require('../../node_modules/style-dictionary/lib/utils/es6_');
 const { readdirSync } = require('fs');
+const StyleDictionaryPackage = require('style-dictionary');
 
 // this will return a filtering function based on brand and alias
 function tokenFilter(brand, alias) {
@@ -14,38 +12,37 @@ function tokenFilter(brand, alias) {
 	};
 }
 
-
-
 function getStyleDictionaryConfig(brand, aliases) {
-	let dest = `../../context/brand-context/${brand}/scss`;
+	let destination = `../../context/brand-context/${brand}/scss`;
 
 	return {
 		include: [`${__dirname}/literal/**/*.json`],
 		source: [
-			`${__dirname}/alias/${brand}/**/*.json`,
+			`${__dirname}/alias/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
-				prefix: "t",
-				buildPath: `${dest}/00-tokens/`,
+				prefix: 't',
+				buildPath: `${destination}/00-tokens/`,
 				files: aliases.map(alias => {
 					return {
 						destination: `_${alias}.variables.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, alias)
-					}
+					};
 				})
 			}
 		}
-	}
+	};
 }
 
 console.log('Build started...');
 
+// eslint-disable-next-line array-callback-return
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	let dir = `${__dirname}/alias/${brand}`
-	const aliases = readdirSync(dir);
+	let directory = `${__dirname}/alias/${brand}`;
+	const aliases = readdirSync(directory);
 
 	console.log('\n==============================================');
 	console.log(`\nProcessing: [${brand}]`);

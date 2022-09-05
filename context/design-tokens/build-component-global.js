@@ -12,7 +12,7 @@ function tokenFilter(brand, component) {
 }
 
 function getStyleDictionaryConfig(brand, components) {
-	let dest = `./toolkits/global/packages/`;
+	let dest = `../../toolkits/global/packages/`;
 
 	let brand2 = brand;
 	// if brand2 equal global let brand2 equal default
@@ -63,7 +63,7 @@ function getStyleDictionaryConfig(brand, components) {
 	brands.buildAllPlatforms();
 
 	components.map(component => {
-		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`;
+		let dir = `../../toolkits/global/packages/${component}/scss/00-tokens`;
 		let brand2 = brand;
 		// if brand2 equal global let brand2 equal default
 		if (brand2 === 'global') {
@@ -86,4 +86,3 @@ function getStyleDictionaryConfig(brand, components) {
 
 	console.log('\nEnd processing');
 });
-

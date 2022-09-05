@@ -4,20 +4,20 @@
   "description": "Design Tokens for Springer Nature Dgitial Brands",
   "main": "build.js",
   "scripts": {
-    "tokens:clean-all": "npx rimraf **/00-tokens/",
+    "tokens:clean-all": "npx rimraf ../../**/00-tokens/",
+    "tokens:clean-context": "npx rimraf ../../context/brand-context/**/00-tokens/",
     "tokens:clean-default": "npx rimraf ../../context/brand-context/default/scss/00-tokens/",
-    "tokens:clean-nature": "npx rimraf **/nature/**/00-tokens/",
-    "tokens:clean-springer": "npx rimraf **/springer/**/00-tokens/",
-    "tokens:clean-springer-nature": "npx rimraf **/springer-nature/**/00-tokens/",
-    "tokens:clean-components": "npx rimraf **/toolkits/**/00-tokens/",
+    "tokens:clean-nature": "npx rimraf ../../context/brand-context/nature/scss/00-tokens/",
+    "tokens:clean-springer": "npx rimraf ../../context/brand-context/springer/scss/00-tokens/",
+    "tokens:clean-springer-nature": "npx rimraf ../../context/brand-context/springernature/scss/00-tokens/",
+    "tokens:clean-components": "npx rimraf ../../**/toolkits/**/00-tokens/",
     "tokens:literal": "node build-literal.js",
     "tokens:alias": "node build-alias.js",
     "tokens:delete-index": "npx rimraf ../../context/brand-context/**/00-tokens/_index.scss",
     "tokens:build-index": "npm run tokens:delete-index && node build-index.js",
     "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
-    "tokens:global-components": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias && node build-component-global.js",
-    "tokens:brand-components": "node build-components.js",
-    "tokens:component:<component>": "node build-component.js --component <component>"
+    "tokens:global-components": "node build-component-global.js",
+    "tokens:brand-components": "node build-components.js"
   },
   "keywords": [
     "design",
