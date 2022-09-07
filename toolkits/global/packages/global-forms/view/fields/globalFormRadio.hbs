@@ -1,9 +1,10 @@
 <div class="c-forms__label c-forms__label--wrapper">
 	<input class="c-forms__input c-forms__input--radio" type="radio" {{> globalFormAttributes}}>
 	{{#if pictographic}}
-		<label for="{{id}}" class="c-forms__label c-forms__label--pictographic-radio{{#unless showLabel}} c-form__label--visually-hidden-text{{/unless}}">
+		<label for="{{id}}" class="c-forms__label c-forms__label--pictographic-radio">
 			{{{svg}}}
-			<span>{{label}}</span>
+			<span class="c-form__label--visually-hidden">{{imageDescription}}</span>
+			<span {{#unless showLabel}}class="c-form__label--visually-hidden"{{/unless}}><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>{{label}}</span>
 		</label>
 	{{else}}
 		<label for="{{id}}" class="c-forms__label c-forms__label--inline c-forms__label--radio">{{label}}</label>

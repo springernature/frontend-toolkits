@@ -137,7 +137,7 @@ label+.c-forms__error,
 
 .c-forms__input--radio,
 .c-forms__input--checkbox,
-.c-form__label--visually-hidden-text span {
+.c-form__label--visually-hidden {
 	/* hide visually, not to assistive tech */
 	clip-path: inset(50%);
 	height: 1px;
