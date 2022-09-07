@@ -1,4 +1,4 @@
 {
 	"dimensions": "720x90",
-	"adHTML": "<a href='path/to/sponsor'>BUY STUFF</a>"
+	"adHTML": "<a href='JavaScript:Void(0);'>BUY STUFF</a>"
 }

@@ -7,7 +7,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
@@ -16,7 +16,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Consectetur adipiscing",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
@@ -25,7 +25,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
@@ -35,7 +35,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
@@ -49,7 +49,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
@@ -59,7 +59,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Consectetur adipiscing",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
@@ -69,7 +69,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
@@ -80,7 +80,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
@@ -89,23 +89,23 @@
 		"cards": [
 			{
 				"title": "Lorem ipsum dolor",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
 				"title": "Consectetur adipiscing",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
 				"title": "Lectus et velit auctor pulvinar",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
 				"noBlockLink": true,
 				"title": "No Block Link",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
@@ -118,7 +118,7 @@
 					"src": "https://picsum.photos/600/400",
 					"alt": "descriptive alternative text"
 				},
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
@@ -127,7 +127,7 @@
 					"src": "https://picsum.photos/500/500",
 					"alt": "descriptive alternative text"
 				},
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
@@ -136,7 +136,7 @@
 					"src": "https://picsum.photos/800/600",
 					"alt": "descriptive alternative text"
 				},
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
@@ -146,7 +146,7 @@
 					"src": "https://picsum.photos/400/300",
 					"alt": "descriptive alternative text"
 				},
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
@@ -156,26 +156,26 @@
 			{
 				"noShape": true,
 				"title": "Lorem ipsum dolor",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
 				"noShape": true,
 				"title": "Consectetur adipiscing",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
 				"noShape": true,
 				"title": "Lectus et velit auctor pulvinar",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
 				"noShape": true,
 				"noBlockLink": true,
 				"title": "No Block Link",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]
@@ -189,7 +189,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lorem ipsum dolor",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Fusce ornare ante et massa venenatis tincidunt. Proin gravida, quam nec ullamcorper lacinia, nisl odio vestibulum mi, et egestas mauris nibh ac orci."
 			},
 			{
@@ -199,7 +199,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Consectetur adipiscing",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Vivamus eget pulvinar purus. Pellentesque tempor facilisis ligula, ut efficitur nisl imperdiet in. Phasellus pulvinar id dolor eget lobortis. Morbi interdum faucibus felis."
 			},
 			{
@@ -209,7 +209,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "Lectus et velit auctor pulvinar",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Aliquam interdum nisi venenatis sapien fringilla, at vestibulum purus auctor. Etiam vel augue laoreet, malesuada lectus eu, sollicitudin enim."
 			},
 			{
@@ -220,7 +220,7 @@
 					"alt": "descriptive alternative text"
 				},
 				"title": "No Block Link",
-				"href": "#",
+				"href": "JavaScript:Void(0);",
 				"summary": "Curabitur ac nisl <a href='#'>rhoncus orci facilisis</a> vehicula sit amet sit amet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 			}
 		]

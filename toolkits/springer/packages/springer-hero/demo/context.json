@@ -2,24 +2,24 @@
 	"default": {
 		"title": "What a hero",
 		"imageSrc": "https://picsum.photos/800/400",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='JavaScript:Void(0);'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"smallerImage": {
 		"title": "Smaller image, wider text",
 		"smallerImage": true,
 		"imageSrc": "https://picsum.photos/800/400",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='JavaScript:Void(0);'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"noImage": {
 		"title": "No image",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='JavaScript:Void(0);'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"customColor": {
 		"title": "Custom color (black)",
 		"color": "#000",
 		"smallerImage": true,
 		"imageSrc": "https://picsum.photos/800/400",
-		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='JavaScript:Void(0);'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"dynamicPartials": {
 		"hero": "./toolkits/springer/packages/springer-hero/view/springer-hero.hbs"

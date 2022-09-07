@@ -2,15 +2,15 @@
 	"items": [
 		{
 			"label": "Item 1",
-			"href": "/path/to/1"
+			"href": "JavaScript:Void(0);"
 		},
 		{
 			"label": "Item 2",
-			"href": "/path/to/2"
+			"href": "JavaScript:Void(0);"
 		},
 		{
 			"label": "Item 3",
-			"href": "/path/to/3"
+			"href": "JavaScript:Void(0);"
 		}
 	]
 }

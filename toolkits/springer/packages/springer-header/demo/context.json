@@ -3,27 +3,27 @@
 		"logo": {
 			"srcUrl": "../img/logo.svg",
 			"alt": "Springer home",
-			"href": "/"
+			"href": "/JavaScript:Void(0);"
 		},
 		"promotedMenu": [
 			{
 				"label": "SpringerLink shop",
-				"href": "/path/to/1",
+				"href": "JavaScript:Void(0);",
 				"iconUrl": "../../img/shop.svg#i-shop"
 			}
 		],
 		"navMenu": [
 			{
 				"label": "Subjects",
-				"href": "/path/to/subjects"
+				"href": "JavaScript:Void(0);"
 			},
 			{
 				"label": "Services",
-				"href": "/path/to/services"
+				"href": "JavaScript:Void(0);"
 			},
 			{
 				"label": "About",
-				"href": "/path/to/about"
+				"href": "JavaScript:Void(0);"
 			}
 		]
 	},
@@ -31,12 +31,12 @@
 		"logo": {
 			"srcUrl": "../img/logo.svg",
 			"alt": "Springer home",
-			"href": "/"
+			"href": "/JavaScript:Void(0);"
 		},
 		"promotedMenu": [
 			{
 				"label": "SpringerLink shop",
-				"href": "/path/to/1",
+				"href": "JavaScript:Void(0);",
 				"iconUrl": "../../img/shop.svg#i-shop"
 			}
 		],
@@ -51,15 +51,15 @@
 		"navMenu": [
 			{
 				"label": "Subjects",
-				"href": "/path/to/subjects"
+				"href": "JavaScript:Void(0);"
 			},
 			{
 				"label": "Services",
-				"href": "/path/to/services"
+				"href": "JavaScript:Void(0);"
 			},
 			{
 				"label": "About",
-				"href": "/path/to/about"
+				"href": "JavaScript:Void(0);"
 			}
 		]
 	},
