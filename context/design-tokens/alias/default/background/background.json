@@ -1,27 +1,27 @@
 {
 	"background": {
 		"page": {
-			"value": "{color.grayscale.200}"
+			"value": "{color.greyscale.200}"
 		},
 		"container": {
 			"value": "{color.white}"
 		},
 		"container-inverted": {
-			"value": "{color.grayscale.800}"
+			"value": "{color.greyscale.800}"
 		}
 	},
 	"facet": {
-		"value": "{color.grayscale.300}"
+		"value": "{color.greyscale.300}"
 	},
 	"footer": {
 		"value": "{color.primary.universal-dark-blue}"
 	},
 	"table": {
 		"heading": {
-			"value": "{color.grayscale.600}"
+			"value": "{color.greyscale.600}"
 		},
 		"table-heading": {
-			"value": "{color.grayscale.600}"
+			"value": "{color.greyscale.600}"
 		},
 		"table-row-odd": {
 			"value": "{color.primary.grey-blue-light-2}"

@@ -1,7 +1,7 @@
 {
 	"nature-color": {
 		"black": {
-			"value": "{color.grayscale.800}"
+			"value": "{color.greyscale.800}"
 		},
 		"gunmetal": {
 			"800": {

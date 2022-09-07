@@ -4,7 +4,7 @@
 			"value": "{color.black}"
 		},
 		"secondary": {
-			"value": "{color.grayscale.600}"
+			"value": "{color.greyscale.600}"
 		},
 		"reversed": {
 			"value": "{color.white}"

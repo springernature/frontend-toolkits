@@ -22,7 +22,7 @@
 		},
 		"hint": {
 			"color": {
-				"value": "{color.grayscale.600}"
+				"value": "{color.greyscale.600}"
 			},
 			"font": {
 				"weight": {
@@ -73,7 +73,7 @@
 						"value": "{state.error}"
 					},
 					"disabled": {
-						"value": "{color.grayscale.400}"
+						"value": "{color.greyscale.400}"
 					}
 				},
 				"width": {
