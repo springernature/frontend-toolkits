@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0-rc.7 (2022-09-07)
+    * Adds support for pattern attribute
+    * Adds support for minlength attribute
+
 ## 5.0.0-rc.6 (2022-08-31)
     * `display: none` for inputs without labels (hidden inputs)
     * Larger checkboxes and radios
