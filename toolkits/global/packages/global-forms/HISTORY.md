@@ -1,5 +1,9 @@
 # History
 
+## 5.0.0-rc.7 (2022-09-08)
+    * Fixes issue where <legend> elements were not being announced by assistive tech because role="presentation" was being rendered incorrectly
+    * Bumps Brand Context to v26.0.0
+
 ## 5.0.0-rc.6 (2022-08-31)
     * `display: none` for inputs without labels (hidden inputs)
     * Larger checkboxes and radios
