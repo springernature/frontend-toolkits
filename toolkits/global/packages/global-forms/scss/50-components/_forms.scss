@@ -17,6 +17,12 @@
 }
 
 .c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+	line-height: $global-forms-line-height;
+}
+
+.c-forms__fieldset,
 .c-forms__error-summary {
 	font-size: $global-forms-input-font-size;
 }
