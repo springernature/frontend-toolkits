@@ -17,6 +17,12 @@
 }
 
 .c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+	line-height: $global-forms-line-height;
+}
+
+.c-forms__fieldset,
 .c-forms__error-summary {
 	font-size: $global-forms-input-font-size;
 }
@@ -147,7 +153,7 @@ label+.c-forms__error,
 
 .c-forms__label--inline {
 	display: flex;
-	align-items: start;
+	align-items: center;
 	cursor: pointer;
 	padding: 0;
 }
@@ -160,8 +166,6 @@ label+.c-forms__error,
 	background-color: $global-forms-input-background-color;
 	border: #{calc($global-forms-checkbox-border-size)} solid $global-forms-checkbox-border-color;
 	margin-right: $global-forms-checkbox-spacing;
-	position: relative;
-	top: calc(#{$global-forms-checkbox-size} / 16);
 }
 
 :checked+.c-forms__label--inline::before {
