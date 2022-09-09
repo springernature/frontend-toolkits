@@ -40,7 +40,7 @@
 .c-forms__fieldset--pictographic-radios {
 	display: flex;
 	flex-direction: row;
-	gap: 16px;
+	gap: $global-forms-pictographic-radio-spacing;
 }
 
 * + .c-forms__error-summary,
@@ -149,7 +149,7 @@ label+.c-forms__error,
 
 .c-forms__label--inline {
 	display: inline;
-	font-weight: normal;
+	font-weight: $global-forms-label-inline-font-weight;
 }
 
 .c-forms__label--inline {
@@ -176,28 +176,26 @@ label+.c-forms__error,
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	gap: spacing(8);
-	font-weight: 400;
+	gap: $global-forms-input-padding-inline;
+	font-weight: $global-forms-label-inline-font-weight;
 	cursor: pointer;
 }
 
 .c-forms__label--pictographic-radio svg {
 	box-sizing: content-box;
 	flex: 0 0 auto;
-	width: 60px;
-	height: 60px;
-	padding: 8px;
-	fill: #000;
-	border: 1px solid #000;
+	padding: $global-forms-input-padding-inline;
+	width: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
+	height: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
+	fill: var(--forms--pictographic-radio-icon-color-fill-unchecked, $global-forms-pictographic-radio-icon-color-fill-unchecked);
+	border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, $global-forms-pictographic-radio-icon-color-border-unchecked);
+	background-color: var(--forms--pictographic-radio-icon-color-background-unchecked, transparent);
 }
 
 :checked+.c-forms__label--pictographic-radio svg {
-	background-color: #000;
-	border-color: #000;
-}
-
-:checked+.c-forms__label--pictographic-radio svg {
-	fill: #fff;
+	fill: var(--forms--pictographic-radio-icon-color-fill-checked, $global-forms-pictographic-radio-icon-color-fill-checked);
+	border-color: var(--forms--pictographic-radio-icon-color-border-checked, $global-forms-pictographic-radio-icon-color-border-checked);
+	background-color: var(--forms--pictographic-radio-icon-color-background-checked, $global-forms-pictographic-radio-icon-color-background-checked);
 }
 
 :focus+.c-forms__label--pictographic-radio svg,

@@ -1119,7 +1119,7 @@ body {
 .c-forms__fieldset--pictographic-radios {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 1rem;
 }
 
 * + .c-forms__error-summary,
@@ -1228,7 +1228,7 @@ label + .c-forms__error,
 
 .c-forms__label--inline {
   display: inline;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .c-forms__label--inline {
@@ -1255,7 +1255,7 @@ label + .c-forms__error,
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -1263,20 +1263,18 @@ label + .c-forms__error,
 .c-forms__label--pictographic-radio svg {
   box-sizing: content-box;
   flex: 0 0 auto;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  fill: #000;
-  border: 1px solid #000;
+  padding: 0.5rem;
+  width: var(--forms--pictographic-radio-icon-size, 4rem);
+  height: var(--forms--pictographic-radio-icon-size, 4rem);
+  fill: var(--forms--pictographic-radio-icon-color-fill-unchecked, #000000);
+  border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, #000000);
+  background-color: var(--forms--pictographic-radio-icon-color-background-unchecked, transparent);
 }
 
 :checked + .c-forms__label--pictographic-radio svg {
-  background-color: #000;
-  border-color: #000;
-}
-
-:checked + .c-forms__label--pictographic-radio svg {
-  fill: #fff;
+  fill: var(--forms--pictographic-radio-icon-color-fill-checked, #ffffff);
+  border-color: var(--forms--pictographic-radio-icon-color-border-checked, #ffffff);
+  background-color: var(--forms--pictographic-radio-icon-color-background-checked, #ffffff);
 }
 
 :focus + .c-forms__label--pictographic-radio svg,

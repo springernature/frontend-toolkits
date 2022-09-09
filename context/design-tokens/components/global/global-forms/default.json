@@ -18,6 +18,13 @@
 			},
 			"color": {
 				"value": "{text.primary}"
+			},
+			"inline": {
+				"font": {
+					"weight": {
+						"value": "{font-weight.regular}"
+					}
+				}
 			}
 		},
 		"hint": {
@@ -147,6 +154,42 @@
 					},
 					"data uri": {
 						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
+					}
+				}
+			}
+		},
+		"pictographic-radio": {
+			"spacing": {
+				"value": "{spacing.relative.400}"
+			},
+			"icon": {
+				"size": {
+					"value": "{sizing.relative.1600}"
+				},
+				"color": {
+					"fill": {
+						"checked": {
+							"value": "{color.primary.white}"
+						},
+						"unchecked": {
+							"value": "{color.primary.black}"
+						}
+					},
+					"border": {
+						"checked": {
+							"value": "{color.primary.white}"
+						},
+						"unchecked": {
+							"value": "{color.primary.black}"
+						}
+					},
+					"background": {
+						"checked": {
+							"value": "{color.primary.white}"
+						},
+						"unchecked": {
+							"value": "{color.primary.black}"
+						}
 					}
 				}
 			}
