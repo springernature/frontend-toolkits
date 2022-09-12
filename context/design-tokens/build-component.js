@@ -48,31 +48,31 @@ function getStyleDictionaryConfig(brand, components) {
 
 console.log('Build started...');
 
-// the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of
-[''].map(function (brand) {
+// // the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of
+// [''].map(function (brand) {
 
-	let dir = `${__dirname}/components/${brand}`
-	const components = readdirSync(dir);
-	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
+// 	let dir = `${__dirname}/components/${brand}`
+// 	const components = readdirSync(dir);
+// 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
 
-	brands.buildAllPlatforms();
+// 	brands.buildAllPlatforms();
 
-	components.map(component => {
-		let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
-		const files = readdirSync(dir);
+// 	components.map(component => {
+// 		let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
+// 		const files = readdirSync(dir);
 
-		files.map(file => {
-			let filePath = `${dir}/${file}`
-			let content = fs.readFileSync(filePath, 'utf8');
-			let sortedContent = content.split('\n').sort().join('\n');
-			fs.writeFileSync(filePath, sortedContent);
-			let date = new Date();
-			let dateString = date.toLocaleString();
-			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenets/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
-			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
-			fs.writeFileSync(filePath, addedContent);
-		})
-	});
+// 		files.map(file => {
+// 			let filePath = `${dir}/${file}`
+// 			let content = fs.readFileSync(filePath, 'utf8');
+// 			let sortedContent = content.split('\n').sort().join('\n');
+// 			fs.writeFileSync(filePath, sortedContent);
+// 			let date = new Date();
+// 			let dateString = date.toLocaleString();
+// 			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenets/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
+// 			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
+// 			fs.writeFileSync(filePath, addedContent);
+// 		})
+// 	});
 
-	console.log('\nEnd processing');
-});
+// 	console.log('\nEnd processing');
+// });
