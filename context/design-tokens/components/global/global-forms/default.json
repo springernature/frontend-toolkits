@@ -1,5 +1,8 @@
 {
 	"global-forms": {
+		"line-height": {
+			"value": "{line-height.tight}"
+		},
 		"field": {
 			"stack": {
 				"spacing": {

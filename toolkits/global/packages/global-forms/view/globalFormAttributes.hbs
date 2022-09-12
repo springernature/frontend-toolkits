@@ -8,6 +8,7 @@
 {{#if readonly}} readonly{{/if}}
 {{#if checked}} checked{{/if}}
 {{#if maxlength}} maxlength="{{maxlength}}"{{/if}}
+{{#if minlength}} minlength="{{minlength}}"{{/if}}
 {{#unless autocomplete}} autocomplete="off"{{/unless}}
 {{#if autocomplete}} autocomplete="{{autocomplete}}"{{/if}}
 {{#if novalidate}} novalidate{{/if}}
@@ -17,6 +18,7 @@
 {{#if capture}} capture="{{capture}}"{{/if}}
 {{#if rows}} rows="{{rows}}"{{/if}}
 {{#if cols}} cols="{{cols}}"{{/if}}
+{{#if pattern}} pattern="{{pattern}}"{{/if}}
 {{#if dataAttrs}}
 	{{#each dataAttrs}} data-{{@key}}="{{this}}"{{/each}}
 {{/if}}
