@@ -160,6 +160,7 @@
 						"id": "radios-rating",
 						"name": "radios-rating",
 						"pictographic": true,
+						"boxed": true,
 						"inputs": [
 							{
 								"label": "Terrible",

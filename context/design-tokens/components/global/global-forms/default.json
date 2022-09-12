@@ -185,10 +185,10 @@
 					},
 					"background": {
 						"checked": {
-							"value": "{color.primary.white}"
+							"value": "{color.primary.black}"
 						},
 						"unchecked": {
-							"value": "{color.primary.black}"
+							"value": "{color.primary.white}"
 						}
 					}
 				}

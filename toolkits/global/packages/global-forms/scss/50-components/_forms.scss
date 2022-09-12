@@ -184,18 +184,24 @@ label+.c-forms__error,
 .c-forms__label--pictographic-radio svg {
 	box-sizing: content-box;
 	flex: 0 0 auto;
-	padding: $global-forms-input-padding-inline;
 	width: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
 	height: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
 	fill: var(--forms--pictographic-radio-icon-color-fill-unchecked, $global-forms-pictographic-radio-icon-color-fill-unchecked);
-	border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, $global-forms-pictographic-radio-icon-color-border-unchecked);
 	background-color: var(--forms--pictographic-radio-icon-color-background-unchecked, transparent);
+}
+
+.c-forms__label--boxed-icon svg {
+	padding: $global-forms-input-padding-inline;
+	border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, $global-forms-pictographic-radio-icon-color-border-unchecked);
 }
 
 :checked+.c-forms__label--pictographic-radio svg {
 	fill: var(--forms--pictographic-radio-icon-color-fill-checked, $global-forms-pictographic-radio-icon-color-fill-checked);
-	border-color: var(--forms--pictographic-radio-icon-color-border-checked, $global-forms-pictographic-radio-icon-color-border-checked);
 	background-color: var(--forms--pictographic-radio-icon-color-background-checked, $global-forms-pictographic-radio-icon-color-background-checked);
+}
+
+:checked+.c-forms__label--boxed-icon svg {
+	border-color: var(--forms--pictographic-radio-icon-color-border-checked, $global-forms-pictographic-radio-icon-color-border-checked);
 }
 
 :focus+.c-forms__label--pictographic-radio svg,
