@@ -229,7 +229,7 @@ It is strongly recommended that the `groupDescription` property is set when defi
 
 The `boxed` property allows for `border` and `padding` to be applied to the pictographic radio's SVG elements. When this setting is enabled the CSS classname `c-forms__label--boxed-icon` is applied to the components HTML to facilitate this.
 
-As with ordinary radio elements, data for each pictographic radio elements is defined in the `inputs` array:
+As with ordinary radio elements, data for each pictographic radio element is defined in the `inputs` array:
 
 ```json
 "inputs": [
