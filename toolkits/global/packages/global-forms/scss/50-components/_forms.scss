@@ -45,8 +45,15 @@
 
 .c-forms__fieldset--pictographic-radios {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: $global-forms-pictographic-radio-spacing;
+	flex-wrap: wrap;
+}
+
+@include media-query('xs') {
+	.c-forms__fieldset--pictographic-radios {
+		flex-direction: row;
+	}
 }
 
 * + .c-forms__error-summary,
@@ -177,12 +184,18 @@ label+.c-forms__error,
 
 .c-forms__label--pictographic-radio {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
 	gap: $global-forms-input-padding-inline;
 	font-weight: $global-forms-label-inline-font-weight;
 	cursor: pointer;
+}
+
+@include media-query('xs') {
+	.c-forms__label--pictographic-radio {
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 .c-forms__label--pictographic-radio svg {
