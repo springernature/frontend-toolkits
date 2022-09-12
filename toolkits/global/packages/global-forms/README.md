@@ -204,6 +204,62 @@ The `name` property is placed at the top level and inherited by each input.
 
 Radios are always grouped together in a `fieldset`, so the group label (“Animal”, here) renders as a `legend` not a `label`.
 
+Pictographic radios are also supported and can be enabled by including the property `pictographic: true`:
+
+```json
+{
+    "legend": "Pictographic Radios",
+    "fields": [
+        {
+            "template": "globalFormRadios",
+            "label": "Rating",
+            "description": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.",
+            "id": "radios-rating",
+            "name": "radios-rating",
+            "pictographic": true,
+            "boxed": true,
+            "inputs": [...]
+        }
+    ]
+}
+```
+There are two other properties in the above example that are used to configure pictographic radios: `groupDescription` and `boxed`.
+
+It is strongly recommended that the `groupDescription` property is set when defining a group of pictographic radios to ensure users of assistive technologies are provided with sufficient information to understand the group of radio elements.
+
+The `boxed` property allows for `border` and `padding` to be applied to the pictographic radio's SVG elements. When this setting is enabled the CSS classname `c-forms__label--boxed-icon` is applied to the components HTML to facilitate this.
+
+As with ordinary radio elements, data for each pictographic radio elements is defined in the `inputs` array:
+
+```json
+"inputs": [
+  {
+    "label": "Bad",
+    "value": "Bad",
+    "id": "radio-bad",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"abad\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"bbad\"><path d=\"M28.2335497 12.4737512c-2.462845.7430998-4.1188959.8917197-5.3503184-2.3779194-1.3163482-3.48195324-4.670913-5.1380042-8.5138005-5.22292989-3.9278131-.10615711-7.15498934 1.29511677-9.23566875 4.73460722-.59447983.95541397-.91295117 2.03821657-1.35881104 3.09978767H.08068349C-.72611056 6.42279575 4.6029765.9875516 12.2462886.11706327c8.343949-.97664544 15.2016985 4.2462845 15.9872611 12.35668793Z\"/></clipPath><clipPath id=\"cbad\"><path d=\"M6.47737208 0c3.50318471 0 6.70912952 3.33333333 6.60297242 6.87898089-.0849257 3.39702761-3.22717624 6.47558391-6.60297242 6.47558391-3.60934182 0-6.56050955-3.1210192-6.47558386-6.85774951C.06548248 2.92993631 2.99541879 0 6.47737208 0Z\"/></clipPath><clipPath id=\"dbad\"><path d=\"M13.0851396 6.3500091c.1698514 3.7367304-2.717622 6.9002123-6.3481953 6.985138-3.35456475.0849257-6.58174097-2.9511677-6.73036093-6.3269639C-.16326801 3.48376706 2.97898252.08673946 6.48216723.00181377c3.43949045-.08492569 6.47558387 2.8237792 6.60297237 6.34819533Z\"/></clipPath><clipPath id=\"ebad\"><path d=\"M50 0c27.6220807 0 50 22.3991507 50 50s-22.3779193 50-50 50S0 77.6008493 0 50 22.3779193 0 50 0Zm0 4.01273885C24.6072187 4.01273885 4.01273885 24.6072187 4.01273885 50 4.01273885 75.3927813 24.6072187 95.9872611 50 95.9872611c25.3927813 0 45.9872611-20.5944798 45.9872611-45.9872611S75.3927813 4.01273885 50 4.01273885Z\"/></clipPath></defs><g clip-path=\"url(#abad)\"><g clip-path=\"url(#bbad)\" transform=\"translate(35.35456067 60.26510234)\"><path d=\"M0 0h28.2335497v12.9146358H0V0z\"/></g><g clip-path=\"url(#cbad)\" transform=\"translate(15.8580844 37.2611465)\"><path d=\"M0 0h13.0829089v13.3545648H0V0z\"/></g><g clip-path=\"url(#dbad)\" transform=\"translate(69.90849094 37.25933272)\"><path d=\"M0 0h13.0922672v13.3368874H0V0z\"/></g><g clip-path=\"url(#ebad)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+    "showLabel": false,
+    "imageDescription": "An image of a cartoon face with a sad expression."
+  },
+  {
+    "label": "OK",
+    "value": "OK",
+    "id": "radio-ok",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"aneutral\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"bneutral\"><path d=\"M25.626327 0v4.52229299H0V0h25.626327Z\"/></clipPath><clipPath id=\"cneutral\"><path d=\"M14.8407643 0v4.16135881H0V0h14.8407643Z\"/></clipPath><clipPath id=\"dneutral\"><path d=\"M14.7983015 0c.0849257 1.48619958.1486199 2.80254777.2547771 4.64968153H0V0h14.7983015Z\"/></clipPath><clipPath id=\"eneutral\"><path d=\"M50 0c27.6220807 0 50 22.3991507 50 50s-22.3779193 50-50 50S0 77.6008493 0 50 22.3779193 0 50 0Zm0 4.01273885C24.6072187 4.01273885 4.01273885 24.6072187 4.01273885 50 4.01273885 75.3927813 24.6072187 95.9872611 50 95.9872611c25.3927813 0 45.9872611-20.5944798 45.9872611-45.9872611S75.3927813 4.01273885 50 4.01273885Z\"/></clipPath></defs><g clip-path=\"url(#aneutral)\"><g clip-path=\"url(#bneutral)\" transform=\"translate(37.32484076 67.40976645)\"><path d=\"M0 0h25.626327v4.52229299H0V0z\"/></g><g clip-path=\"url(#cneutral)\" transform=\"translate(69.70276008 42.88747346)\"><path d=\"M0 0h14.8407643v4.16135881H0V0z\"/></g><g clip-path=\"url(#dneutral)\" transform=\"translate(15.45647558 42.6326964)\"><path d=\"M0 0h15.0530786v4.64968153H0V0z\"/></g><g clip-path=\"url(#eneutral)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+    "showLabel": false,
+    "imageDescription": "An image of a cartoon face with a neutral expression."
+  }
+]
+```
+
+However, there are properties in the above example that are unique to pictographic radios: `svg`, `showLabel`, and `imageDescription`.
+
+The images used for pictographic radios must be defined as inline SVG elements using the `svg` property. This property is mandatory and must contain a string defining the inline SVG code. Please note that special characters within the string such as double quotes must be escaped.
+
+The `showLabel` property allows for the `<label>` text to be visually hidden. If you choose to enable this setting for a radio input label please ensure it does not negatively impact the user experience, particularly accessibility.
+
+It is strongly recommended that the `imageDescription` property is set when defining a pictographic radio to ensure users of assistive technologies are provided with sufficient information to understand the meaning of the image that has been used.
+
 Unlike radios, which are always used in sets of two or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
 ```json

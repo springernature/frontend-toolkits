@@ -156,7 +156,7 @@
 					{
 						"template": "globalFormRadios",
 						"label": "Rating",
-						"description": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.",
+						"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.",
 						"id": "radios-rating",
 						"name": "radios-rating",
 						"pictographic": true,

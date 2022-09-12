@@ -12,6 +12,261 @@
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,6 +607,36 @@ template {
 }
 
 /**
+ * Basic
+ * Some default CSS styles
+ */
+body {
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #025e8d;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -510,16 +795,236 @@ template {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
 /**
  * Typography
- * Set base font size
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
+}
+
+/*
+ * Headings
+ */
+/**
+ * Layout
+ * Universal layout styles
  */
 html {
+  height: 100%;
+  overflow-y: scroll;
   font-size: 100%;
 }
 
 body {
-  font-size: 1.125rem;
+  min-height: 100%;
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  line-height: 1.875;
+  color: #222222;
+  background: #f8f8f8;
+  letter-spacing: 0.01em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  color: #025e8d;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #01324b;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #222222;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 1.875;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+  border-bottom: 3px solid #01324b;
+}
+
+td {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 2px solid #dadada;
+}
+
+/**
+ * Forms
+ * Default form styles
+ */
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+[contenteditable]:focus {
+  outline: 3px solid #ffcc00;
+}
+
+input[type=file]:focus-within {
+  outline: 3px solid #ffcc00;
 }
 
 .u-ma-0 {
@@ -914,52 +1419,54 @@ body {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: sans-serif;
-  font-size: 1rem;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.3;
   justify-content: center;
-  padding: 8px;
-  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  border-radius: 2px;
-  color: darkblue;
-  background-color: #f2f2f2;
+  padding: 16px 32px;
+  transition: all 0.2s;
+  border-radius: 32px;
+  letter-spacing: 0.7px;
+  color: white;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid #cccccc;
-  box-shadow: inherit;
-  font-weight: normal;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: darkblue;
+  color: white;
 }
 .u-button:hover {
-  border: 1px solid #666666;
-  box-shadow: inherit;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
   text-decoration: none;
 }
 .u-button:focus {
-  border: 1px solid #666666;
-  box-shadow: inherit;
-  outline: inherit;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
   text-decoration: none;
 }
 .u-button:hover, .u-button:focus {
-  color: white;
-  background-color: #666666;
+  color: #01324b;
+  background-color: white;
   background-image: none;
 }
 .u-button:hover svg path, .u-button:focus svg path {
-  fill: white;
+  fill: #01324b;
 }
 
 .u-button--primary {
   color: white;
-  background-color: darkblue;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid blue;
-  font-weight: normal;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -968,17 +1475,71 @@ body {
   color: white;
 }
 .u-button--primary:hover {
-  border: 1px solid blue;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
+  text-decoration: none;
 }
 .u-button--primary:focus {
-  border: 1px solid blue;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
 }
 .u-button--primary:hover, .u-button--primary:focus {
-  color: white;
-  background-color: blue;
+  color: #01324b;
+  background-color: white;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
+  fill: #01324b;
+}
+
+.u-button--secondary {
+  color: #01324b;
+  background-color: white;
+  border: 4px solid white;
+  font-weight: 700;
+}
+.u-button--secondary svg {
+  fill: currentColor;
+}
+.u-button--secondary:visited {
+  color: #01324b;
+}
+.u-button--secondary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--secondary:hover, .u-button--secondary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--secondary:hover svg path, .u-button--secondary:focus svg path {
+  fill: white;
+}
+
+.u-button--tertiary {
+  color: #666666;
+  background-color: #ebf1f5;
+  border: 4px solid transparent;
+  box-shadow: none;
+  font-weight: 700;
+}
+.u-button--tertiary svg {
+  fill: currentColor;
+}
+.u-button--tertiary:visited {
+  color: #666666;
+}
+.u-button--tertiary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--tertiary:hover, .u-button--tertiary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--tertiary:hover svg path, .u-button--tertiary:focus svg path {
   fill: white;
 }
 
@@ -1053,17 +1614,17 @@ body {
 
 .u-button--xsmall {
   font-size: 0.875rem;
-  padding: 2px;
+  padding: 2px 8px;
 }
 
 .u-button--small {
   font-size: 0.875rem;
-  padding: inherit;
+  padding: 8px 16px;
 }
 
 .u-button--large {
   font-size: 1.125rem;
-  padding: 16px;
+  padding: 10px 35px;
 }
 
 .u-button--full-width {
@@ -1093,6 +1654,12 @@ body {
 
 .c-forms__input-container {
   position: relative;
+}
+
+.c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+  line-height: 1.4;
 }
 
 .c-forms__fieldset,
@@ -1233,7 +1800,7 @@ label + .c-forms__error,
 
 .c-forms__label--inline {
   display: flex;
-  align-items: start;
+  align-items: center;
   cursor: pointer;
   padding: 0;
 }
@@ -1246,8 +1813,6 @@ label + .c-forms__error,
   background-color: #ffffff;
   border: 2px solid #999999;
   margin-right: 0.5rem;
-  position: relative;
-  top: calc(1.5rem / 16);
 }
 
 .c-forms__label--pictographic-radio {
@@ -1398,6 +1963,8 @@ labels elsewhere */
 	<body style="padding:2%">
 		<h1>Basic form</h1>
 
+<p>Here is a paragraph.</p>
+
 <form>
 			<aside class="c-forms__error-summary" aria-labelledby="summary">
 				<div class="c-forms__error-summary-icon">
@@ -1518,7 +2085,7 @@ labels elsewhere */
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
 					<div class="c-forms__field">
-							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios " role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios " id="radios-animals" name="radios-animals" autocomplete="off">
 										<legend class="c-forms__label">Animal<span class="c-form__label--visually-hidden"></span></legend>
 						
 									<div class="c-forms__label c-forms__label--wrapper">
@@ -1556,7 +2123,7 @@ labels elsewhere */
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Pictographic Radios</h2></legend>
 					<div class="c-forms__field">
-							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" role="presentation" id="radios-rating" name="radios-rating" autocomplete="off">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="radios-rating" name="radios-rating" autocomplete="off">
 										<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.</span></legend>
 						
 									<div class="c-forms__label c-forms__label--wrapper">
