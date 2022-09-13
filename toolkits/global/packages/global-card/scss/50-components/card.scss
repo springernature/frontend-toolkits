@@ -13,6 +13,7 @@
 	position: relative;
 	border: $card--border;
 	box-shadow: $card--box-shadow;
+	overflow: hidden;
 }
 
 .c-card--no-shape {
