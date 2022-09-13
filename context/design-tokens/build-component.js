@@ -14,6 +14,10 @@ function tokenFilter(brand, component) {
 const componentX = process.env.npm_config_component;
 const brandX = process.env.npm_config_brand;
 
+// create a new variable called dave that is componenX before the -
+let dave = componentX.split('-')[0];
+console.log(dave);
+
 function getStyleDictionaryConfig(brand, components) {
 
 	let dest = `../../toolkits/${brandX}/packages/`;
