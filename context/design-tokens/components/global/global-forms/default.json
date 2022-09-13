@@ -175,7 +175,7 @@
 							"value": "{color.primary.white}"
 						},
 						"unchecked": {
-							"value": "{color.primary.black}"
+							"value": "{color.primary.universal-dark-blue}"
 						}
 					},
 					"border": {
@@ -183,12 +183,12 @@
 							"value": "{color.primary.white}"
 						},
 						"unchecked": {
-							"value": "{color.primary.black}"
+							"value": "{color.primary.universal-dark-blue}"
 						}
 					},
 					"background": {
 						"checked": {
-							"value": "{color.primary.black}"
+							"value": "{color.primary.universal-dark-blue}"
 						},
 						"unchecked": {
 							"value": "{color.primary.white}"
