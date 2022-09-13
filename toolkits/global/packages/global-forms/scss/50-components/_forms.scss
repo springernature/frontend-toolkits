@@ -203,22 +203,22 @@ label+.c-forms__error,
 	flex: 0 0 auto;
 	width: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
 	height: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
-	fill: var(--forms--pictographic-radio-icon-color-fill-unchecked, $global-forms-pictographic-radio-icon-color-fill-unchecked);
+	fill: var(--forms--pictographic-radio-icon-color-fill-unchecked, $global-forms-pictographic-radio-unchecked-icon-fill);
 	background-color: var(--forms--pictographic-radio-icon-color-background-unchecked, transparent);
 }
 
 .c-forms__label--boxed-icon svg {
 	padding: $global-forms-input-padding-inline;
-	border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, $global-forms-pictographic-radio-icon-color-border-unchecked);
+	border: 1px solid var(--forms--pictographic-radio-icon-color-border-unchecked, $global-forms-pictographic-radio-unchecked-icon-border);
 }
 
 :checked+.c-forms__label--pictographic-radio svg {
-	fill: var(--forms--pictographic-radio-icon-color-fill-checked, $global-forms-pictographic-radio-icon-color-fill-checked);
-	background-color: var(--forms--pictographic-radio-icon-color-background-checked, $global-forms-pictographic-radio-icon-color-background-checked);
+	fill: var(--forms--pictographic-radio-icon-color-fill-checked, $global-forms-pictographic-radio-checked-icon-fill);
+	background-color: var(--forms--pictographic-radio-icon-color-background-checked, $global-forms-pictographic-radio-checked-icon-background);
 }
 
 :checked+.c-forms__label--boxed-icon svg {
-	border-color: var(--forms--pictographic-radio-icon-color-border-checked, $global-forms-pictographic-radio-icon-color-border-checked);
+	border-color: var(--forms--pictographic-radio-icon-color-border-checked, $global-forms-pictographic-radio-checked-icon-border);
 }
 
 :focus+.c-forms__label--pictographic-radio svg,
