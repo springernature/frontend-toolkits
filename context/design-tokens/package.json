@@ -18,7 +18,7 @@
     "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
     "tokens:global-components": "node build-component-global.js",
     "tokens:brand-components": "node build-components.js",
-    "tokens:component": "node build-component.js -- component"
+    "tokens:component": "node build-component.js -- component context"
   },
   "keywords": [
     "design",
