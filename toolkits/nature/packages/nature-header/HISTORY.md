@@ -1,5 +1,8 @@
 # History
 
+## 8.1.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 8.0.0 (2022-04-08)
     * UPDATE: brand-context v20.1.1
         * global-javascript and global-expander now come from brand-context

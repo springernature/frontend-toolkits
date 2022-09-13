@@ -17,6 +17,12 @@
 }
 
 .c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+	line-height: $global-forms-line-height;
+}
+
+.c-forms__fieldset,
 .c-forms__error-summary {
 	font-size: $global-forms-input-font-size;
 }
@@ -37,6 +43,7 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
+* + .c-forms__error-summary,
 * + .c-forms__fieldset,
 * + .c-forms__field {
 	margin-top: $global-forms-field-stack-spacing;
@@ -93,6 +100,8 @@
 
 .c-forms__error {
 	color: $global-forms-message-color-error;
+	display: flex;
+	align-items: flex-start;
 }
 
 label+.c-forms__error,
@@ -123,6 +132,7 @@ label+.c-forms__error,
 	right: $global-forms-input-padding-inline;
 	top: 50%;
 	transform: translateY(-50%);
+	pointer-events: none;
 }
 
 .c-forms__input--radio,
@@ -145,19 +155,21 @@ label+.c-forms__error,
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	padding: 0;
 }
 
 .c-forms__label--inline::before {
 	content: '';
+	flex-shrink: 0;
 	width: $global-forms-checkbox-size;
 	height: $global-forms-checkbox-size;
 	background-color: $global-forms-input-background-color;
-	border: #{calc($global-forms-input-border-width)} solid;
+	border: #{calc($global-forms-checkbox-border-size)} solid $global-forms-checkbox-border-color;
 	margin-right: $global-forms-checkbox-spacing;
 }
 
 :checked+.c-forms__label--inline::before {
-	border-color: $global-forms-input-border-color-resting;
+	border-color: $global-forms-checkbox-checked-icon-stroke;
 }
 
 :focus+.c-forms__label--inline::before {
@@ -189,7 +201,7 @@ label+.c-forms__error,
 	background-position: center;
 }
 
-.c-forms__radio-fields {
+.c-forms__sub-fields {
 	margin-top: $global-forms-input-stack-spacing;
 	margin-left: calc(#{$global-forms-checkbox-size} / 4);
 	padding-top: $global-forms-field-stack-spacing;
@@ -198,7 +210,7 @@ label+.c-forms__error,
 	display: none;
 }
 
-.c-forms__radio-fields::before {
+.c-forms__sub-fields::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -209,7 +221,7 @@ label+.c-forms__error,
 	border-radius: $global-forms-indent-border-radius;
 }
 
-:checked~.c-forms__radio-fields {
+:checked~.c-forms__sub-fields {
 	display: block;
 }
 
@@ -254,4 +266,10 @@ label+.c-forms__error,
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+}
+
+/* Hides type="hidden" and discourages lack of
+labels elsewhere */
+.c-forms__field--no-label {
+	display: none;
 }

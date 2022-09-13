@@ -1,5 +1,8 @@
 {
 	"global-forms": {
+		"line-height": {
+			"value": "{line-height.tight}"
+		},
 		"field": {
 			"stack": {
 				"spacing": {
@@ -123,11 +126,19 @@
 		},
 		"checkbox": {
 			"size": {
-				"value": "{sizing.relative.400}",
+				"value": "{sizing.relative.600}",
 				"type": "sizing"
 			},
 			"spacing": {
 				"value": "{sizing.relative.200}"
+			},
+			"border": {
+				"size": {
+					"value": "{border.width.50}"
+				},
+				"color": {
+					"value": "{color.grayscale.500}"
+				}
 			},
 			"checked": {
 				"icon": {

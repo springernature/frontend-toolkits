@@ -1,5 +1,42 @@
 # History
 
+## 5.0.0-rc.7 (2022-09-09)
+    * Adds support for pattern attribute
+    * Adds support for minlength attribute
+    * Fixes issue where `<legend>` elements were not being announced by assistive tech because `role="presentation"` was being rendered incorrectly
+    * Bumps Brand Context to v26.0.0
+    * `line-height` tightened
+
+## 5.0.0-rc.6 (2022-08-31)
+    * `display: none` for inputs without labels (hidden inputs)
+    * Larger checkboxes and radios
+    * Correct grey for checkbox and radio borders
+    * Bright blue focus style
+    * `tabindex="-1"` for programmatic focus compatibility on error summary
+    * Optionally exclude discrete errors in error summary
+
+## 5.0.0-rc.5 (2022-07-29)
+    * `password` input type added
+    * fixed long labels squishing checkboxes and radios
+    * removed `role="presentation"`
+    * supplementary fields for checkboxes
+
+## 5.0.0-rc.4 (2022-07-27)
+    * `hidden` input type added
+    * `pointer-events: none` to make select clickable through chevron
+
+## 5.0.0-rc.3 (2022-07-25)
+    * BREAKING
+        * Removed and replaced utility classes
+        * Include spacing utilities
+
+## 5.0.0-rc.2 (2022-07-11)
+    * BREAKING:
+        * Arbitrary attributes now restricted to data attributes
+        * All templates now namespaced so partials can be more safely registered
+    * Documenting the need for importing button utilities
+    * Now aligned with brand-context `25.0.0`
+
 ## 5.0.0-rc.1 (2022-07-01)
     * BREAKING:
         * Form fields now available as a suite of templates/partials

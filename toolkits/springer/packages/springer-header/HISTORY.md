@@ -1,6 +1,17 @@
 # History
+
+## 7.2.1 (2022-08-10)
+    * Match different logo heights
+
+## 7.2.0 (2022-08-05)
+    * Support different imprint logos and their dimensions
+
+## 7.1.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 7.0.2 (2022-04-07)
     * Rewrite `@supports` use so IE recognises the rules
+
 ## 7.0.1 (2022-02-18)
     * Remove post install step that was causing issues with CI
 

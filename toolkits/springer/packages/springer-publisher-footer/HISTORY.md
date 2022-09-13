@@ -1,6 +1,14 @@
 # History
+
+## 5.4.0 (2022-08-05)
+    * Columns for wide space from 5 to 4
+
+## 5.3.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 5.2.0 (2022-04-26)
     * New color scheme to match corporate footer
+
 ## 5.1.0 (2022-03-04)
     * Action property for buttons (cookie management)
     * Moved template to view folder

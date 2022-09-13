@@ -1,6 +1,6 @@
 {
 	"text": "Heading Text",
-	"chevronURL": "../../img/chevron-right.svg#i-icon-chevron-right",
+	"chevronURL": "../../img/chevron-right.svg#i-chevron-right",
 	"dynamicPartials": {
 		"nature-section-heading": "./toolkits/nature/packages/nature-section-heading/view/section-heading.hbs"
 	}

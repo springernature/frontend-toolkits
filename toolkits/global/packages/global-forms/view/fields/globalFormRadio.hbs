@@ -1,0 +1,13 @@
+<div class="c-forms__label c-forms__label--wrapper">
+	<input class="c-forms__input c-forms__input--radio" type="radio" {{> globalFormAttributes}}>
+	<label for="{{id}}" class="c-forms__label c-forms__label--inline c-forms__label--radio">{{label}}</label>
+	{{#if fields}}
+		<fieldset class="c-forms__fieldset c-forms__sub-fields">
+			{{#each fields}}
+				<div class="c-forms__field">
+					{{> (lookup . 'template')}}
+				</div>
+			{{/each}}
+		</fieldset>
+	{{/if}}
+</div>

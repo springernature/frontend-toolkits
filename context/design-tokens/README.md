@@ -33,7 +33,7 @@ To generate the tokens run `npm run tokens:generate`.
 
 This will run the `tokens:clean` script and then take the `.json` files in the `design-tokens` folder and generate the relevant `.scss` files in a folder called `00-tokens` in the `brand-context` folder. It will also generate an `index.scss` file based on the created files inside the `00-tokens` folders.
 
-### Clearning Generated Design Tokens
+### Cleaning Generated Design Tokens
 
 To clean the generated design tokens `.scss` files that are created in the `00-tokens` folder you can run `npm run tokens:clean`. This will remove the `00-tokens` folder and its contents. This script is part of the `npm run tokens:generate` script.
 

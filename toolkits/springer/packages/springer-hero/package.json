@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-hero",
-  "version": "0.2.0",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "A hero component, principally for subject/discipline pages",
   "keywords": [],
-  "brandContext": "^17.0.0",
+  "brandContext": "^25.0.0",
   "author": "Springernature"
 }

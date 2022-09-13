@@ -1,5 +1,8 @@
 # History
 
+## 1.6.0 (2022-07-28)
+    * Upgrade to brand-context v25.0.0
+
 ## 1.5.0 (2022-02-24)
     * Adds a modifier to display pills without a border
 

@@ -1,11 +1,22 @@
 # History
+## 27.0.0 (2022-09-09)
+    * BREAKING:
+      * Springer Nature: Updates body font family to Merriweather Sans.
+    * UPDATES:
+      * regenerated Design Tokens.
+## 26.0.0 (2022-08-10)
+    * BREAKING:
+      * Springer: erroneous use of placeholders removed to fix cascade
+	  * Springer: new spacing algorithm for flow elements
+    * Removal of `outline: none` for non-interactive elements (redundant)
+
 ## 25.0.0 (2022-06-29)
     * UDPATES:
       * updates generated Sass from Design Tokens
 	  * Long form hex codes for Design Tokens - allows design tool integration
 ## 24.1.0 (2022-06-29)
     * UPDATES:
-      * Normalizer from v5 to v8 inline with our own IE support matrix.  
+      * Normalizer from v5 to v8 inline with our own IE support matrix.
 ## 24.0.0 (2022-06-28)
     * UPDATES:
       * adds border width design tokens

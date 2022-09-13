@@ -1,27 +1,25 @@
 {
 	"default": {
 		"title": "What a hero",
-		"imageSrc": "https://picsum.photos/800/600",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
-		"imageLeft": false
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
-	"defaultNoImage": {
-		"title": "What a hero",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
-		"imageLeft": false
+	"smallerImage": {
+		"title": "Smaller image, wider text",
+		"smallerImage": true,
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
+	},
+	"noImage": {
+		"title": "No image",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"customColor": {
-		"title": "Custom color hero",
+		"title": "Custom color (black)",
 		"color": "#000",
-		"imageSrc": "https://picsum.photos/700/700",
-		"content": "<ul><li>First item of list</li><li>Another list item</li><li>The final item in the list</li></ul>",
-		"imageLeft": false
-	},
-	"customColorNoContent": {
-		"title": "Custom color hero",
-		"color": "#000",
-		"imageSrc": "https://picsum.photos/700/700",
-		"imageLeft": false
+		"smallerImage": true,
+		"imageSrc": "https://picsum.photos/800/400",
+		"content": "<p>Lorem ipsum dolor sit amet consectetur, <a href='#'>adipisicing elit</a>. Fuga odio quis molestiae facere? Maiores quam id eaque numquam omnis modi totam pariatur, fuga earum aperiam sed consequatur quasi iste laboriosam!</p>"
 	},
 	"dynamicPartials": {
 		"hero": "./toolkits/springer/packages/springer-hero/view/springer-hero.hbs"

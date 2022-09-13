@@ -12,6 +12,261 @@
  * Styles for all pages, included on pages that
  * both do and dont cut the mustard, keep to a minimum
  */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,6 +607,36 @@ template {
 }
 
 /**
+ * Basic
+ * Some default CSS styles
+ */
+body {
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #025e8d;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
  */
@@ -510,16 +795,616 @@ template {
  * Media query helper
  * @group 30-mixins
  */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
 /**
  * Typography
- * Set base font size
+ * Font settings
+ */
+/**
+ *  @springernature/global-button
+ *  Button settings
+ *
+ */
+/**
+ * Button Themes
+ * Variables to set themes styles
+ *
+ */
+/**
+ * Default link style
+ *
+ */
+/**
+ * Link Text
+ */
+h1 {
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
+}
+
+/*
+ * Headings
+ */
+/**
+ * Layout
+ * Universal layout styles
  */
 html {
+  height: 100%;
+  overflow-y: scroll;
   font-size: 100%;
 }
 
 body {
-  font-size: 1.125rem;
+  min-height: 100%;
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  line-height: 1.875;
+  color: #222222;
+  background: #f8f8f8;
+  letter-spacing: 0.01em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  color: #025e8d;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+}
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #01324b;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #222222;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
+}
+
+table {
+  font-size: 1rem;
+  line-height: 1.875;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+  border-bottom: 3px solid #01324b;
+}
+
+td {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 2px solid #dadada;
+}
+
+/**
+ * Forms
+ * Default form styles
+ */
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+[contenteditable]:focus {
+  outline: 3px solid #ffcc00;
+}
+
+input[type=file]:focus-within {
+  outline: 3px solid #ffcc00;
+}
+
+.u-ma-0 {
+  margin: 0;
+}
+
+.u-ma-2 {
+  margin: 2px;
+}
+
+.u-ma-4 {
+  margin: 4px;
+}
+
+.u-ma-8 {
+  margin: 8px;
+}
+
+.u-ma-16 {
+  margin: 16px;
+}
+
+.u-ma-24 {
+  margin: 24px;
+}
+
+.u-ma-32 {
+  margin: 32px;
+}
+
+.u-ma-48 {
+  margin: 48px;
+}
+
+.u-ma-64 {
+  margin: 64px;
+}
+
+.u-ma-auto {
+  margin: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-2 {
+  margin-top: 2px;
+}
+
+.u-mt-4 {
+  margin-top: 4px;
+}
+
+.u-mt-8 {
+  margin-top: 8px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-48 {
+  margin-top: 48px;
+}
+
+.u-mt-64 {
+  margin-top: 64px;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0;
+}
+
+.u-mr-2 {
+  margin-right: 2px;
+}
+
+.u-mr-4 {
+  margin-right: 4px;
+}
+
+.u-mr-8 {
+  margin-right: 8px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-mr-48 {
+  margin-right: 48px;
+}
+
+.u-mr-64 {
+  margin-right: 64px;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
+.u-mb-2 {
+  margin-bottom: 2px;
+}
+
+.u-mb-4 {
+  margin-bottom: 4px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-32 {
+  margin-bottom: 32px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-mb-64 {
+  margin-bottom: 64px;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0;
+}
+
+.u-ml-2 {
+  margin-left: 2px;
+}
+
+.u-ml-4 {
+  margin-left: 4px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-16 {
+  margin-left: 16px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-ml-32 {
+  margin-left: 32px;
+}
+
+.u-ml-48 {
+  margin-left: 48px;
+}
+
+.u-ml-64 {
+  margin-left: 64px;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-pa-0 {
+  padding: 0;
+}
+
+.u-pa-2 {
+  padding: 2px;
+}
+
+.u-pa-4 {
+  padding: 4px;
+}
+
+.u-pa-8 {
+  padding: 8px;
+}
+
+.u-pa-16 {
+  padding: 16px;
+}
+
+.u-pa-24 {
+  padding: 24px;
+}
+
+.u-pa-32 {
+  padding: 32px;
+}
+
+.u-pa-48 {
+  padding: 48px;
+}
+
+.u-pa-64 {
+  padding: 64px;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pt-2 {
+  padding-top: 2px;
+}
+
+.u-pt-4 {
+  padding-top: 4px;
+}
+
+.u-pt-8 {
+  padding-top: 8px;
+}
+
+.u-pt-16 {
+  padding-top: 16px;
+}
+
+.u-pt-24 {
+  padding-top: 24px;
+}
+
+.u-pt-32 {
+  padding-top: 32px;
+}
+
+.u-pt-48 {
+  padding-top: 48px;
+}
+
+.u-pt-64 {
+  padding-top: 64px;
+}
+
+.u-pr-0 {
+  padding-right: 0;
+}
+
+.u-pr-2 {
+  padding-right: 2px;
+}
+
+.u-pr-4 {
+  padding-right: 4px;
+}
+
+.u-pr-8 {
+  padding-right: 8px;
+}
+
+.u-pr-16 {
+  padding-right: 16px;
+}
+
+.u-pr-24 {
+  padding-right: 24px;
+}
+
+.u-pr-32 {
+  padding-right: 32px;
+}
+
+.u-pr-48 {
+  padding-right: 48px;
+}
+
+.u-pr-64 {
+  padding-right: 64px;
+}
+
+.u-pb-0 {
+  padding-bottom: 0;
+}
+
+.u-pb-2 {
+  padding-bottom: 2px;
+}
+
+.u-pb-4 {
+  padding-bottom: 4px;
+}
+
+.u-pb-8 {
+  padding-bottom: 8px;
+}
+
+.u-pb-16 {
+  padding-bottom: 16px;
+}
+
+.u-pb-24 {
+  padding-bottom: 24px;
+}
+
+.u-pb-32 {
+  padding-bottom: 32px;
+}
+
+.u-pb-48 {
+  padding-bottom: 48px;
+}
+
+.u-pb-64 {
+  padding-bottom: 64px;
+}
+
+.u-pl-0 {
+  padding-left: 0;
+}
+
+.u-pl-2 {
+  padding-left: 2px;
+}
+
+.u-pl-4 {
+  padding-left: 4px;
+}
+
+.u-pl-8 {
+  padding-left: 8px;
+}
+
+.u-pl-16 {
+  padding-left: 16px;
+}
+
+.u-pl-24 {
+  padding-left: 24px;
+}
+
+.u-pl-32 {
+  padding-left: 32px;
+}
+
+.u-pl-48 {
+  padding-left: 48px;
+}
+
+.u-pl-64 {
+  padding-left: 64px;
 }
 
 /**
@@ -534,52 +1419,54 @@ body {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: sans-serif;
-  font-size: 1rem;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.3;
   justify-content: center;
-  padding: 8px;
-  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  border-radius: 2px;
-  color: darkblue;
-  background-color: #f2f2f2;
+  padding: 16px 32px;
+  transition: all 0.2s;
+  border-radius: 32px;
+  letter-spacing: 0.7px;
+  color: white;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid #cccccc;
-  box-shadow: inherit;
-  font-weight: normal;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: darkblue;
+  color: white;
 }
 .u-button:hover {
-  border: 1px solid #666666;
-  box-shadow: inherit;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
   text-decoration: none;
 }
 .u-button:focus {
-  border: 1px solid #666666;
-  box-shadow: inherit;
-  outline: inherit;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
   text-decoration: none;
 }
 .u-button:hover, .u-button:focus {
-  color: white;
-  background-color: #666666;
+  color: #01324b;
+  background-color: white;
   background-image: none;
 }
 .u-button:hover svg path, .u-button:focus svg path {
-  fill: white;
+  fill: #01324b;
 }
 
 .u-button--primary {
   color: white;
-  background-color: darkblue;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid blue;
-  font-weight: normal;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -588,17 +1475,71 @@ body {
   color: white;
 }
 .u-button--primary:hover {
-  border: 1px solid blue;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
+  text-decoration: none;
 }
 .u-button--primary:focus {
-  border: 1px solid blue;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
 }
 .u-button--primary:hover, .u-button--primary:focus {
-  color: white;
-  background-color: blue;
+  color: #01324b;
+  background-color: white;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
+  fill: #01324b;
+}
+
+.u-button--secondary {
+  color: #01324b;
+  background-color: white;
+  border: 4px solid white;
+  font-weight: 700;
+}
+.u-button--secondary svg {
+  fill: currentColor;
+}
+.u-button--secondary:visited {
+  color: #01324b;
+}
+.u-button--secondary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--secondary:hover, .u-button--secondary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--secondary:hover svg path, .u-button--secondary:focus svg path {
+  fill: white;
+}
+
+.u-button--tertiary {
+  color: #666666;
+  background-color: #ebf1f5;
+  border: 4px solid transparent;
+  box-shadow: none;
+  font-weight: 700;
+}
+.u-button--tertiary svg {
+  fill: currentColor;
+}
+.u-button--tertiary:visited {
+  color: #666666;
+}
+.u-button--tertiary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--tertiary:hover, .u-button--tertiary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--tertiary:hover svg path, .u-button--tertiary:focus svg path {
   fill: white;
 }
 
@@ -673,17 +1614,17 @@ body {
 
 .u-button--xsmall {
   font-size: 0.875rem;
-  padding: 2px;
+  padding: 2px 8px;
 }
 
 .u-button--small {
   font-size: 0.875rem;
-  padding: inherit;
+  padding: 8px 16px;
 }
 
 .u-button--large {
   font-size: 1.125rem;
-  padding: 16px;
+  padding: 10px 35px;
 }
 
 .u-button--full-width {
@@ -716,6 +1657,12 @@ body {
 }
 
 .c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+  line-height: 1.4;
+}
+
+.c-forms__fieldset,
 .c-forms__error-summary {
   font-size: 1rem;
 }
@@ -736,6 +1683,7 @@ body {
   max-width: 70ch;
 }
 
+* + .c-forms__error-summary,
 * + .c-forms__fieldset,
 * + .c-forms__field {
   margin-top: 1.5rem;
@@ -761,7 +1709,7 @@ body {
 }
 
 .c-forms__input:focus {
-  outline: 3px solid #025e8d;
+  outline: 3px solid #0088cc;
 }
 
 .c-forms__input[invalid] {
@@ -792,6 +1740,8 @@ body {
 
 .c-forms__error {
   color: #c40606;
+  display: flex;
+  align-items: flex-start;
 }
 
 label + .c-forms__error,
@@ -822,6 +1772,7 @@ label + .c-forms__error,
   right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .c-forms__input--radio,
@@ -844,23 +1795,25 @@ label + .c-forms__error,
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 0;
 }
 
 .c-forms__label--inline::before {
   content: "";
-  width: 1rem;
-  height: 1rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #ffffff;
-  border: 1px solid;
+  border: 2px solid #999999;
   margin-right: 0.5rem;
 }
 
 :checked + .c-forms__label--inline::before {
-  border-color: #222222;
+  border-color: #01324b;
 }
 
 :focus + .c-forms__label--inline::before {
-  box-shadow: 0 0 0 3px #025e8d;
+  box-shadow: 0 0 0 3px #0088cc;
 }
 
 .c-forms__label--radio::before {
@@ -888,27 +1841,27 @@ label + .c-forms__error,
   background-position: center;
 }
 
-.c-forms__radio-fields {
+.c-forms__sub-fields {
   margin-top: 0.25rem;
-  margin-left: calc(1rem / 4);
+  margin-left: calc(1.5rem / 4);
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   position: relative;
   display: none;
 }
 
-.c-forms__radio-fields::before {
+.c-forms__sub-fields::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: calc(1rem / 2);
+  width: calc(1.5rem / 2);
   background-color: #dadada;
   border-radius: 4px;
 }
 
-:checked ~ .c-forms__radio-fields {
+:checked ~ .c-forms__sub-fields {
   display: block;
 }
 
@@ -954,10 +1907,18 @@ label + .c-forms__error,
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+/* Hides type="hidden" and discourages lack of
+labels elsewhere */
+.c-forms__field--no-label {
+  display: none;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
 		<h1>Basic form</h1>
+
+<p>Here is a paragraph.</p>
 
 <form>
 			<aside class="c-forms__error-summary" aria-labelledby="summary">
@@ -969,15 +1930,15 @@ label + .c-forms__error,
 					</span>
 				</div>
 				<div class="c-forms__error-summary-text">
-					<div class="c-forms__error-summary-title" id="summary">There are problems</div>
-					<ul class="c-forms__error-summary-errors">
-							<li>
-								<a href="#your-name-error">Enter your name</a>
-							</li>
-							<li>
-								<a href="#checkbox-terms-error">Agree to the terms to continue</a>
-							</li>
-					</ul>
+					<div class="c-forms__error-summary-title" id="summary" tabindex="-1">There are problems</div>
+						<ul class="c-forms__error-summary-errors">
+								<li>
+									<a href="#your-name-error">Enter your name</a>
+								</li>
+								<li>
+									<a href="#checkbox-terms-error">Agree to the terms to continue</a>
+								</li>
+						</ul>
 				</div>
 			</aside>
 			<fieldset class="c-forms__fieldset">
@@ -986,7 +1947,13 @@ label + .c-forms__error,
 						<label for="your-name" class="c-forms__label">
 							Your name (simple)
 						</label>
-						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" something="yes" nothing="no">
+						<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
+					</div>
+					<div class="c-forms__field">
+						<label for="password" class="c-forms__label">
+							Your password
+						</label>
+						<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" autocomplete="off">
 					</div>
 					<div class="c-forms__field">
 						<label for="your-name-hint" class="c-forms__label">
@@ -995,7 +1962,7 @@ label + .c-forms__error,
 						</label>
 						<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--no-label">
 						<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 					</div>
 					<div class="c-forms__field">
@@ -1004,7 +1971,7 @@ label + .c-forms__error,
 								<small class="c-forms__hint">Your name is on your passport</small>
 						</label>
 							<small class="c-forms__error" id="error-your-name-error">
-								<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+								<span class="c-forms__icon c-forms__icon--error">
 									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 										<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
 									</svg>
@@ -1038,7 +2005,7 @@ label + .c-forms__error,
 										Platypus
 									</option>
 							</select>
-							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+							<span class="c-forms__icon c-forms__icon--error">
 								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 									<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
 								</svg>
@@ -1062,7 +2029,7 @@ label + .c-forms__error,
 										Platypus
 									</option>
 							</select>
-							<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+							<span class="c-forms__icon c-forms__icon--error">
 								<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 									<svg id="i-chevron-more" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="m5.58578644 6-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4.00000002c-.39052429.3905243-1.02368927.3905243-1.41421356 0s-.39052429-1.02368929 0-1.41421358z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"></path></svg>
 								</svg>
@@ -1073,24 +2040,24 @@ label + .c-forms__error,
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
 					<div class="c-forms__field">
-							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" role="presentation" id="radios-animals" name="radios-animals" autocomplete="off">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-animals" name="radios-animals" autocomplete="off">
 										<legend class="c-forms__label">Animal</legend>
 						
-									<label class="c-forms__label c-forms__label--wrapper">
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</span>
-									</label>
-									<label class="c-forms__label c-forms__label--wrapper">
+										<label for="radio-horse" class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</label>
+									</div>
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</span>
-											<fieldset class="c-forms__fieldset c-forms__radio-fields">
+										<label for="radio-monkey" class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</label>
+											<fieldset class="c-forms__fieldset c-forms__sub-fields">
 													<div class="c-forms__field">
 														<label for="monkey-type" class="c-forms__label">
 															What type of monkey?
 																<small class="c-forms__hint">Chimps are not monkeys</small>
 														</label>
 															<small class="c-forms__error" id="error-monkey-type">
-																<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+																<span class="c-forms__icon c-forms__icon--error">
 																	<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 																		<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
 																	</svg>
@@ -1100,11 +2067,11 @@ label + .c-forms__error,
 														<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" autocomplete="off">
 													</div>
 											</fieldset>
-									</label>
-									<label class="c-forms__label c-forms__label--wrapper">
+									</div>
+									<div class="c-forms__label c-forms__label--wrapper">
 										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" checked="" autocomplete="off">
-										<span class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</span>
-									</label>
+										<label for="radio-platypus" class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</label>
+									</div>
 							</fieldset>
 					</div>
 			</fieldset>
@@ -1120,32 +2087,40 @@ label + .c-forms__error,
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
 					<div class="c-forms__field">
-						<label class="c-forms__label c-forms__label--wrapper">
-							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms" name="checkbox-terms" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (basic)</span>
-						</label>
-					</div>
-					<div class="c-forms__field">
-						<label class="c-forms__label c-forms__label--wrapper">
+						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</span>
+							<label for="checkbox-terms-hint" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
-						</label>
+						</div>
 					</div>
 					<div class="c-forms__field">
 							<small class="c-forms__error" id="error-checkbox-terms-error">
-								<span class="c-forms__icon c-forms__icon--error u-display-flex u-align-items-center">
+								<span class="c-forms__icon c-forms__icon--error">
 									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
 										<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
 									</svg>
 								</span>
 								Agree to the terms to continue
 							</small>
-						<label class="c-forms__label c-forms__label--wrapper">
+						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" autocomplete="off">
-							<span class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</span>
+							<label for="checkbox-terms-error" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
-						</label>
+						</div>
+					</div>
+					<div class="c-forms__field">
+						<div class="c-forms__label c-forms__label--wrapper">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-sup" name="checkbox-sup" autocomplete="off">
+							<label for="checkbox-sup" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Checkbox with supplementary field</label>
+								<fieldset class="c-forms__fieldset c-forms__sub-fields">
+										<div class="c-forms__field">
+											<label for="checkbox-membership" class="c-forms__label">
+												What is your membership number?
+											</label>
+											<input type="text" class="c-forms__input c-forms__input--text" id="checkbox-membership" name="checkbox-membership" autocomplete="off">
+										</div>
+								</fieldset>
+						</div>
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
@@ -1157,8 +2132,8 @@ label + .c-forms__error,
 						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" autocomplete="off">
 					</div>
 			</fieldset>
-			<fieldset class="c-forms__fieldset" role="presentation">
-					<div class="c-forms__field">
+			<fieldset class="c-forms__fieldset">
+					<div class="c-forms__field c-forms__field--no-label">
 						<div class="c-forms__field c-forms__buttons">
 								<button type="submit" class="u-button u-button--primary" autocomplete="off">
 									Submit

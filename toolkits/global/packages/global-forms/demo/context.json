@@ -1,7 +1,5 @@
 {
 	"form1": {
-		"errorIconURL": "../img/error.svg#i-error",
-		"selectIconURL": "../img/chevron-more.svg#i-chevron-more",
 		"errorSummary": {
 			"id": "summary",
 			"title": "There are problems",
@@ -21,28 +19,34 @@
 				"legend": "<h2>Text inputs</h2>",
 				"fields": [
 					{
-						"template": "text",
+						"template": "globalFormText",
 						"label": "Your name (simple)",
 						"id": "your-name",
 						"name": "your-name",
-						"attributes": {
-							"something": "yes",
-							"nothing": "no"
+						"dataAttrs": {
+							"test": "someValue"
 						}
 					},
 					{
-						"template": "text",
+						"template": "globalFormPassword",
+						"name": "password",
+						"label": "Your password",
+						"id": "password",
+						"value": "123456"
+					},
+					{
+						"template": "globalFormText",
 						"label": "Your name (with hint)",
 						"hint": "Your name is on your passport",
 						"id": "your-name-hint",
 						"name": "your-name-hint"
 					},
 					{
-						"template": "html",
+						"template": "globalFormHTML",
 						"content": "<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>"
 					},
 					{
-						"template": "text",
+						"template": "globalFormText",
 						"label": "Your name (with error)",
 						"hint": "Your name is on your passport",
 						"error": "Enter your name",
@@ -51,7 +55,7 @@
 						"name": "your-name-error"
 					},
 					{
-						"template": "text",
+						"template": "globalFormText",
 						"label": "Your name (disabled)",
 						"id": "your-name-disabled",
 						"name": "your-name-disabled",
@@ -63,7 +67,7 @@
 				"legend": "<h2>Selects</h2>",
 				"fields": [
 					{
-						"template": "select",
+						"template": "globalFormSelect",
 						"label": "Animal (simple)",
 						"id": "select-animals",
 						"name": "select-animals",
@@ -84,7 +88,7 @@
 						]
 					},
 					{
-						"template": "select",
+						"template": "globalFormSelect",
 						"label": "Animal (with hint)",
 						"id": "select-animals-hint",
 						"name": "select-animals-hint",
@@ -111,7 +115,7 @@
 				"legend": "<h2>Radios</h2>",
 				"fields": [
 					{
-						"template": "radios",
+						"template": "globalFormRadios",
 						"label": "Animal",
 						"id": "radios-animals",
 						"name": "radios-animals",
@@ -127,7 +131,7 @@
 								"id": "radio-monkey",
 								"fields": [
 									{
-										"template": "text",
+										"template": "globalFormText",
 										"label": "What type of monkey?",
 										"id": "monkey-type",
 										"name": "monkey-type",
@@ -150,7 +154,7 @@
 				"legend": "<h2>Textareas</h2>",
 				"fields": [
 					{
-						"template": "textarea",
+						"template": "globalFormTextarea",
 						"label": "Enter some text",
 						"id": "textarea-example",
 						"name": "textarea-example",
@@ -163,25 +167,33 @@
 				"legend": "<h2>Checkboxes</h2>",
 				"fields": [
 					{
-						"template": "checkbox",
-						"label": "Agree to our terms (basic)",
-						"id": "checkbox-terms",
-						"name": "checkbox-terms"
-					},
-					{
-						"template": "checkbox",
+						"template": "globalFormCheckbox",
 						"label": "Agree to our terms (with hint)",
 						"hint": "You should have read these. Read them, then agree to them.",
 						"id": "checkbox-terms-hint",
 						"name": "checkbox-terms-hint"
 					},
 					{
-						"template": "checkbox",
+						"template": "globalFormCheckbox",
 						"label": "Agree to our terms (with error)",
 						"error": "Agree to the terms to continue",
 						"hint": "You should have read these. Read them, then agree to them.",
 						"id": "checkbox-terms-error",
 						"name": "checkbox-terms-error"
+					},
+					{
+						"template": "globalFormCheckbox",
+						"label": "Checkbox with supplementary field",
+						"id": "checkbox-sup",
+						"name": "checkbox-sup",
+						"fields": [
+							{
+								"template": "globalFormText",
+								"label": "What is your membership number?",
+								"id": "checkbox-membership",
+								"name": "checkbox-membership"
+							}
+						]
 					}
 				]
 			},
@@ -189,7 +201,7 @@
 				"legend": "<h2>File upload</h2>",
 				"fields": [
 					{
-						"template": "file",
+						"template": "globalFormFile",
 						"label": "Journal upload",
 						"id": "file-upload",
 						"name": "file-upload"
@@ -199,7 +211,7 @@
 			{
 				"fields": [
 					{
-						"template": "buttons",
+						"template": "globalFormButtons",
 						"buttons": [
 							{
 								"type": "submit",
@@ -217,22 +229,24 @@
 		]
 	},
 	"dynamicPartials": {
-		"fieldset": "./toolkits/global/packages/global-forms/view/fieldset.hbs",
-		"label": "./toolkits/global/packages/global-forms/view/label.hbs",
-		"error": "./toolkits/global/packages/global-forms/view/error.hbs",
-		"errorSummary": "./toolkits/global/packages/global-forms/view/errorSummary.hbs",
-		"inputCommonAttributes": "./toolkits/global/packages/global-forms/view/inputCommonAttributes.hbs",
-		"text": "./toolkits/global/packages/global-forms/view/fields/text.hbs",
-		"email": "./toolkits/global/packages/global-forms/view/fields/email.hbs",
-		"select": "./toolkits/global/packages/global-forms/view/fields/select.hbs",
-		"textarea": "./toolkits/global/packages/global-forms/view/fields/textarea.hbs",
-		"checkbox": "./toolkits/global/packages/global-forms/view/fields/checkbox.hbs",
-		"file": "./toolkits/global/packages/global-forms/view/fields/file.hbs",
-		"radios": "./toolkits/global/packages/global-forms/view/fields/radios.hbs",
-		"radio": "./toolkits/global/packages/global-forms/view/fields/radio.hbs",
-		"html": "./toolkits/global/packages/global-forms/view/fields/html.hbs",
-		"buttons": "./toolkits/global/packages/global-forms/view/fields/buttons.hbs",
-		"iconError": "./toolkits/global/packages/global-forms/view/iconError.hbs",
-		"iconSelect": "./toolkits/global/packages/global-forms/view/iconSelect.hbs"
+		"globalFormFieldset": "./toolkits/global/packages/global-forms/view/globalFormFieldset.hbs",
+		"globalFormLabel": "./toolkits/global/packages/global-forms/view/globalFormLabel.hbs",
+		"globalFormError": "./toolkits/global/packages/global-forms/view/globalFormError.hbs",
+		"globalFormErrorSummary": "./toolkits/global/packages/global-forms/view/globalFormErrorSummary.hbs",
+		"globalFormAttributes": "./toolkits/global/packages/global-forms/view/globalFormAttributes.hbs",
+		"globalFormText": "./toolkits/global/packages/global-forms/view/fields/globalFormText.hbs",
+		"globalFormPassword": "./toolkits/global/packages/global-forms/view/fields/globalFormPassword.hbs",
+		"globalFormEmail": "./toolkits/global/packages/global-forms/view/fields/globalFormEmail.hbs",
+		"globalFormSelect": "./toolkits/global/packages/global-forms/view/fields/globalFormSelect.hbs",
+		"globalFormTextarea": "./toolkits/global/packages/global-forms/view/fields/globalFormTextarea.hbs",
+		"globalFormHidden": "./toolkits/global/packages/global-forms/view/fields/globalFormHidden.hbs",
+		"globalFormCheckbox": "./toolkits/global/packages/global-forms/view/fields/globalFormCheckbox.hbs",
+		"globalFormFile": "./toolkits/global/packages/global-forms/view/fields/globalFormFile.hbs",
+		"globalFormRadios": "./toolkits/global/packages/global-forms/view/fields/globalFormRadios.hbs",
+		"globalFormRadio": "./toolkits/global/packages/global-forms/view/fields/globalFormRadio.hbs",
+		"globalFormHTML": "./toolkits/global/packages/global-forms/view/fields/globalFormHTML.hbs",
+		"globalFormButtons": "./toolkits/global/packages/global-forms/view/fields/globalFormButtons.hbs",
+		"globalFormIconError": "./toolkits/global/packages/global-forms/view/globalFormIconError.hbs",
+		"globalFormIconSelect": "./toolkits/global/packages/global-forms/view/globalFormIconSelect.hbs"
 	}
 }

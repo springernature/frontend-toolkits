@@ -53,6 +53,12 @@
 		text-decoration: none;
 		display: block;
 	}
+
+	img {
+		/* based on springer.com logo's intrinsic height */
+		height: 30px;
+		width: auto;
+	}
 }
 
 .c-header__link {
