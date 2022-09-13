@@ -17,7 +17,8 @@
     "tokens:build-index": "npm run tokens:delete-index && node build-index.js",
     "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
     "tokens:global-components": "node build-component-global.js",
-    "tokens:brand-components": "node build-components.js"
+    "tokens:brand-components": "node build-components.js",
+    "tokens:component": "node build-component.js -- component"
   },
   "keywords": [
     "design",
@@ -31,5 +32,8 @@
   "license": "MIT",
   "devDependencies": {
     "style-dictionary": "^3.7.1"
+  },
+  "dependencies": {
+    "yargs": "^17.5.1"
   }
 }

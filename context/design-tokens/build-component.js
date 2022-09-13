@@ -1,30 +1,45 @@
 const fs = require('fs');
-const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
+const StyleDictionaryPackage = require('style-dictionary');
 
 // this will return a filtering function based on brand and component
 function tokenFilter(brand, component) {
 	return function (token) {
 		return (
-			// Added in 3.0: filePath to help with filtering
-			// So this will only include tokens of a given brand
 			token.filePath.includes(brand) && token.attributes.category === component
 		);
 	};
 }
 
+const componentX = process.env.npm_config_component;
+const brandX = process.env.npm_config_brand;
+
 function getStyleDictionaryConfig(brand, components) {
-	let dest = `./toolkits/${brand}/packages/`;
+
+	let dest = `../../toolkits/${brandX}/packages/`;
+	console.log(dest);
+
+	let brand2 = brandX;
+	// if brand2 equal global let brand2 equal default
+	if (brand2 === 'global') {
+		brand2 = 'default';
+	}
+
+	// let source equal ${__dirname}/components/${brand2}/${componentX}/${brand2}.json
+	let sourceX = `${__dirname}/components/${brand2}/${componentX}/${brand2}.json`;
+	console.log(sourceX);
 
 	return {
+		// we want to include the default tokens first and override them with brand tokens if available
 		include: [
 			`${__dirname}/literal/default/**/*.json`,
-			`${__dirname}/literal/${brand}/**/*.json`,
+			`${__dirname}/literal/${brand2}/${componentX}/*.json`,
 			`${__dirname}/alias/default/**/*.json`,
-			`${__dirname}/alias/${brand}/**/*.json`
+			`${__dirname}/alias/${brand2}/${componentX}/*.json`
 		],
+		// for each brand want to generate the Sass variables from this components tokens file
 		source: [
-			`${__dirname}/components/${brand}/**/*.json`
+			`${__dirname}/components/${brandX}/${componentX}/${brand2}.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -32,7 +47,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/00-tokens/_${component}.tokens.scss`,
+						destination: `${componentX}/scss/00-tokens/_${brand2}.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -46,48 +61,26 @@ function getStyleDictionaryConfig(brand, components) {
 	}
 }
 
-//  if file on disk is newer than the one in the package, don't build it else build it
-function buildIfNewer(brand, component) {
-	let dest = `./toolkits/${brand}/packages/`;
-	let file = `${dest}/${component}/scss/00-tokens/_${component}.tokens.scss`;
-	let packageFile = `${__dirname}/components/${brand}/${component}/scss/00-tokens/_${component}.tokens.scss`;
-	let packageFileStats = fs.statSync(packageFile);
-	let fileStats = fs.statSync(file);
-	if (packageFileStats.mtime > fileStats.mtime) {
-		return false;
-	} else {
-		return true;
-	}
+// run getStyleDictionaryConfig
+const styleDictionary = StyleDictionaryPackage.extend(
+	getStyleDictionaryConfig([brandX], [componentX])
+);
+
+styleDictionary.buildAllPlatforms();
+
+let brand2 = brandX;
+// if brand2 equal global let brand2 equal default
+if (brand2 === 'global') {
+	brand2 = 'default';
 }
 
+// get the outputted file and add the date and time to the top
+const filePath = `../../toolkits/${brandX}/packages/${componentX}/scss/00-tokens/_${brand2}.tokens.scss`;
+const content = fs.readFileSync(filePath, 'utf8');
+const sortedContent = content.split('\n').sort().join('\n');
 
-console.log('Build started...');
+const replacedContent = sortedContent.replace(/: \$/g, ': $t-');
 
-// the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of
-['springer'].map(function (brand) {
+const GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brandX}/${componentX}/${brand2}.json\n// DO NOT edit directly\n\n${replacedContent}`;
 
-	let dir = `${__dirname}/components/${brand}`
-	const components = readdirSync(dir);
-	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
-
-	brands.buildAllPlatforms();
-
-	components.map(component => {
-		let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
-		const files = readdirSync(dir);
-
-		files.map(file => {
-			let filePath = `${dir}/${file}`;
-			let content = fs.readFileSync(filePath, 'utf8');
-			let sortedContent = content.split('\n').sort().join('\n');
-			fs.writeFileSync(filePath, sortedContent);
-			let date = new Date();
-			let dateString = date.toLocaleString();
-			let newContent = `// Created: ${dateString}\n// Source: design-tokens/components/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
-			let addedContent = newContent.replace(/: \$/g, ': $t-');
-			fs.writeFileSync(filePath, addedContent);
-		});
-	});
-
-	console.log('\nEnd processing');
-});
+fs.writeFileSync(filePath, GeneratedContent, 'utf8');
