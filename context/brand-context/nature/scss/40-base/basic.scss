@@ -52,6 +52,11 @@ img {
 	vertical-align: middle;
 }
 
+svg[aria-hidden] {
+	width: 1rem;
+	height: 1rem;
+}
+
 button {
 	font-family: $context--font-family-sans;
 	border-radius: 0;
