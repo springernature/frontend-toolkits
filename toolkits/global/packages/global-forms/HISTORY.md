@@ -1,5 +1,8 @@
 # History
 
+## 5.0.0-rc.8 (2022-09-14)
+    * Adds support for pictographic radio elements
+
 ## 5.0.0-rc.7 (2022-09-09)
     * Adds support for pattern attribute
     * Adds support for minlength attribute
