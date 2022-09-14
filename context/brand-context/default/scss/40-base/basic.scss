@@ -1,0 +1,28 @@
+body {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+svg[aria-hidden] {
+	width: 1rem;
+	height: 1rem;
+}
