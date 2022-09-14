@@ -1,5 +1,8 @@
 # History
 
+## 4.1.1 (2022-09-13)
+    * even icon spacing for longform content
+
 ## 4.1.0 (2022-09-02)
     * `<aside>` by default
 
