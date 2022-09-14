@@ -5,7 +5,6 @@
 
 body {
 	font-size: .813rem;
-	line-height: 1.5;
 }
 
 * {
@@ -13,17 +12,7 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: #069;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
 }
 
 h1 {
@@ -48,18 +37,6 @@ cite {
 
 ins {
 	text-decoration: none;
-}
-
-img {
-	border: 0;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
-
-svg[aria-hidden] {
-	width: 1rem;
-	height: 1rem;
 }
 
 button {
