@@ -1,5 +1,8 @@
 # History
 
+## 8.3.2 (2022-09-13)
+    * `overflow: hidden`
+
 ## 8.3.1 (2022-08-11)
     * Activate hyphenation for German content
 
