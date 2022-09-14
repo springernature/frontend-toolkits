@@ -5,7 +5,6 @@
 
 body {
 	font-size: .813rem;
-	line-height: 1.5;
 }
 
 * {
@@ -13,17 +12,7 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: #069;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
 }
 
 h1 {
@@ -50,14 +39,8 @@ ins {
 	text-decoration: none;
 }
 
-img {
-	border: 0;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-}
-
 button {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 	border-radius: 0;
 }
+

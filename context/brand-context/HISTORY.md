@@ -7,6 +7,10 @@
     * spacing applied to heading utility classes
     * “accessible focus styles” removed (redundant `outline: none` on non-interactive elements)
 
+## 27.1.0 (2022-09-14)
+    * Abstracts shared styles from brand basic.css files into a default basic.scss file  
+    * Sets a sensible default width and height for aria-hidden inline SVGs in the core styles to reduce the core experience looking broken
+
 ## 27.0.0 (2022-09-09)
     * BREAKING:
       * Springer Nature: Updates body font family to Merriweather Sans.
