@@ -1,9 +1,18 @@
 # History
+
+## 28.0.0 (2022-09-14)
+    * BREAKING:
+        * New universal block spacing (inter-element margin) for flow content
+    * block-spacing alias design tokens
+    * spacing applied to heading utility classes
+    * “accessible focus styles” removed (redundant `outline: none` on non-interactive elements)
+
 ## 27.0.0 (2022-09-09)
     * BREAKING:
       * Springer Nature: Updates body font family to Merriweather Sans.
     * UPDATES:
       * regenerated Design Tokens.
+
 ## 26.0.0 (2022-08-10)
     * BREAKING:
       * Springer: erroneous use of placeholders removed to fix cascade

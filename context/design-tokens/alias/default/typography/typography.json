@@ -81,6 +81,20 @@
 					"value": "{font-weight.bold.value}"
 				}
 			}
+		},
+		"block-spacing": {
+			"small": {
+				"value": "{spacing.relative.200}"
+			},
+			"medium": {
+				"value": "{spacing.relative.400}"
+			},
+			"large": {
+				"value": "{spacing.relative.800}"
+			},
+			"x-large": {
+				"value": "{spacing.relative.1200}"
+			}
 		}
 	}
 }
