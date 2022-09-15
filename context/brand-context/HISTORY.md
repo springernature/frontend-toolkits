@@ -1,6 +1,12 @@
 # History
+## 28.0.0 (2022-09-14)
+    * BREAKING:
+        * New universal block spacing (inter-element margin) for flow content
+    * block-spacing alias design tokens
+    * spacing applied to heading utility classes
+    * “accessible focus styles” removed (redundant `outline: none` on non-interactive elements)
 ## 27.1.0 (2022-09-14)
-    * Abstracts shared styles from brand basic.css files into a default basic.scss file  
+    * Abstracts shared styles from brand basic.css files into a default basic.scss file
     * Sets a sensible default width and height for aria-hidden inline SVGs in the core styles to reduce the core experience looking broken
 ## 27.0.0 (2022-09-09)
     * BREAKING:
