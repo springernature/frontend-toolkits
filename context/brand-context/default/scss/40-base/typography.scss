@@ -34,6 +34,7 @@ h1 + * {
 }
 
 /* Not applicable after hidden elements */
+
 [hidden] + *,
 [style*="display:none"] + *,
 [style*="display: none"] + * {

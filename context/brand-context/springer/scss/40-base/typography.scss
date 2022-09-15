@@ -19,8 +19,6 @@ h6 {
 	@include u-h5;
 }
 
-/* end spacing algorithm */
-
 /* Basic lists should be aligned to the left */
 ul:not([class]),
 ol:not([class]) {
