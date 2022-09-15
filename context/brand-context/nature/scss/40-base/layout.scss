@@ -1,4 +1,4 @@
-/**
+/*
  * Layout
  * Universal layout styles
  */
@@ -6,29 +6,25 @@
 html {
 	height: 100%;
 	overflow-y: scroll;
-	font-size: $context--font-size-default;
 }
 
 body {
 	min-height: 100%;
-	font-family: $context--font-family-serif;
-	font-size: $context--font-size-base;
-	line-height: $context--line-height-base;
-	color: $context--primary-text-color;
-	background: $context--page-background-color;
-	letter-spacing: 0.01em;
+	font-family: $context--font-family-sans;
+	line-height: 1.76;
+	color: greyscale();
+	background: greyscale(80);
 }
 
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
+figure {
+	margin: 0;
 }
 
 abbr[title] {
 	text-decoration: none;
+}
+
+[contenteditable],
+[tabindex="0"] {
+	@include u-focus-outline();
 }
