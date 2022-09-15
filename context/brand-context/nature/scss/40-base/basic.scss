@@ -35,26 +35,3 @@ button {
 	font-family: $context--font-family-sans;
 	border-radius: 0;
 }
-
-/* accessible focus styles */
-
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-p:focus,
-div:focus,
-ul:focus,
-ol:focus,
-li:focus,
-dl:focus,
-dt:focus,
-dd:focus,
-span:focus,
-i:focus,
-b:focus,
-em:focus,
-strong:focus {
-	outline: none;
-}
