@@ -1,0 +1,68 @@
+{
+	"ratingsFormsData": {
+		"legend": "<h2>Pictographic Radios</h2>",
+		"fields": [
+			{
+				"template": "globalFormRadios",
+				"label": "Rating",
+				"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.",
+				"id": "radios-rating",
+				"name": "radios-rating",
+				"pictographic": true,
+				"boxed": true,
+				"inputs": [
+					{
+						"label": "Terrible",
+						"value": "Terrible",
+						"id": "radio-terrible",
+						"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"0a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"1b\"><path d=\"m20.8 0 8.8 9.4-3 2.6-5.7-5.3-6 5.5-6-5.5-6.2 5.8C1.7 11.3 1 10 0 8.8L9 0l5.8 5.5 6-5.6Z\"/></clipPath><clipPath id=\"2c\"><path d=\"m2.3 0 17 9.3-16.9 9.4-2.4-4 1.2-.8 1.2-.7 6.9-3.9L0 4.1 2.3 0Z\"/></clipPath><clipPath id=\"3d\"><path d=\"M16.6 0 19 4l-.8.4-1.4.9-7 4 9.1 5.2-2.2 4.1-14.8-8L0 9 16.6 0Z\"/></clipPath><clipPath id=\"4e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#0a)\"><g clip-path=\"url(#1b)\" transform=\"translate(34.8 59.8)\"><path d=\"M0 0h29.6v12.5H0V0z\"/></g><g clip-path=\"url(#2c)\" transform=\"translate(16.2 38)\"><path d=\"M0 0h19.2v18.7H0V0z\"/></g><g clip-path=\"url(#3d)\" transform=\"translate(64.1 38)\"><path d=\"M0 0h19v18.6H0V0z\"/></g><g clip-path=\"url(#4e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+						"showLabel": true,
+						"imageDescription": "An image of a cartoon face with a scrunched-up mouth and a despairing expression."
+					},
+					{
+						"label": "Bad",
+						"value": "Bad",
+						"id": "radio-bad",
+						"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"5a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"6b\"><path d=\"M28.2 12.5c-2.4.7-4 .9-5.3-2.4-1.3-3.5-4.7-5.1-8.5-5.2-4-.1-7.2 1.3-9.3 4.7-.6 1-.9 2-1.3 3.1H0C-.7 6.4 4.6 1 12.2.1c8.4-1 15.2 4.3 16 12.4Z\"/></clipPath><clipPath id=\"7c\"><path d=\"M6.5 0A7 7 0 0 1 13 6.9a7 7 0 0 1-6.6 6.5A6.6 6.6 0 0 1 0 6.5C0 2.9 3 0 6.5 0Z\"/></clipPath><clipPath id=\"8d\"><path d=\"M13 6.4a6.6 6.6 0 0 1-6.3 7A7 7 0 0 1 0 7a7 7 0 0 1 6.5-7C9.9 0 13 2.8 13 6.4Z\"/></clipPath><clipPath id=\"9e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#5a)\"><g clip-path=\"url(#6b)\" transform=\"translate(35.4 60.3)\"><path d=\"M0 0h28.2v13H0V0z\"/></g><g clip-path=\"url(#7c)\" transform=\"translate(15.9 37.3)\"><path d=\"M0 0h13v13.4H0V0z\"/></g><g clip-path=\"url(#8d)\" transform=\"translate(70 37.3)\"><path d=\"M0 0h13v13.3H0V0z\"/></g><g clip-path=\"url(#9e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+						"showLabel":  false,
+						"imageDescription": "An image of a cartoon face with a sad expression."
+
+					},
+					{
+						"label": "OK",
+						"value": "OK",
+						"id": "radio-ok",
+						"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"10a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"11b\"><path d=\"M25.6 0v4.5H0V0h25.6Z\"/></clipPath><clipPath id=\"12c\"><path d=\"M14.8 0v4.2H0V0h14.8Z\"/></clipPath><clipPath id=\"13d\"><path d=\"m14.8 0 .3 4.6H0V0h14.8Z\"/></clipPath><clipPath id=\"14e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#10a)\"><g clip-path=\"url(#11b)\" transform=\"translate(37.3 67.4)\"><path d=\"M0 0h25.6v4.5H0V0z\"/></g><g clip-path=\"url(#12c)\" transform=\"translate(69.7 42.9)\"><path d=\"M0 0h14.8v4.2H0V0z\"/></g><g clip-path=\"url(#13d)\" transform=\"translate(15.5 42.6)\"><path d=\"M0 0h15v4.6H0V0z\"/></g><g clip-path=\"url(#14e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+						"showLabel":  false,
+						"imageDescription": "An image of a cartoon face with a neutral expression."
+
+					},
+					{
+						"label": "Good",
+						"value": "Good",
+						"id": "radio-good",
+						"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"15a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"16b\"><path d=\"M27 0c-1 7.9-7 13-14 12.7C5.7 12.4.4 7.3 0 .1h4C5.2 5 8.3 7.7 13.4 7.7c4.9 0 7.9-2.8 9.3-7.7H27Z\"/></clipPath><clipPath id=\"17c\"><path d=\"M12.4 6.4c.2 3.5-2.8 6.9-6.1 7C3 13.4.2 10.4 0 7-.2 3.3 2.6.1 6 0c3.1-.1 6.2 3 6.4 6.4Z\"/></clipPath><clipPath id=\"18d\"><path d=\"M6.2 0c3.2 0 6 3 6.2 6.5 0 3.6-2.7 6.8-6.1 6.9-3.2 0-6.1-3-6.3-6.5C0 3.4 3 0 6.2 0Z\"/></clipPath><clipPath id=\"19e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#15a)\"><g clip-path=\"url(#16b)\" transform=\"translate(36.2 67)\"><path d=\"M0 0h27v12.7H0V0z\"/></g><g clip-path=\"url(#17c)\" transform=\"translate(18 41.4)\"><path d=\"M0 0h12.4v13.4H0V0z\"/></g><g clip-path=\"url(#18d)\" transform=\"translate(69 41.4)\"><path d=\"M0 0h12.4v13.4H0V0z\"/></g><g clip-path=\"url(#19e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+						"showLabel":  false,
+						"imageDescription": "An image of a cartoon face with a happy expression."
+
+					},
+					{
+						"label": "Great",
+						"value": "Great",
+						"id": "radio-great",
+						"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"20a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"21b\"><path d=\"M29.4 0c-.3 7.7-6.5 12.8-14.9 13C8.2 13-.5 8 0 0h29.4Z\"/></clipPath><clipPath id=\"22c\"><path d=\"M22 12.4h-4.5C16.8 8.5 15.4 5 11 5c-4.4 0-6 3.5-6.7 7.5H.1C-.8 6.5 3.9.6 9.9.1c6.5-.7 11.7 4.6 12 12.3Z\"/></clipPath><clipPath id=\"23d\"><path d=\"M11.1 0c6 0 12 7 10.7 12.6h-4l-.2-.5c-1-3.7-2.4-7.3-7.3-7.1-3 .1-4.9 2.5-6 7.4H0A11.4 11.4 0 0 1 11.1 0Z\"/></clipPath><clipPath id=\"24e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#20a)\"><g clip-path=\"url(#21b)\" transform=\"translate(35.1 63.2)\"><path d=\"M0 0h29.4v13H0V0z\"/></g><g clip-path=\"url(#22c)\" transform=\"translate(16.3 37.4)\"><path d=\"M0 0h22v12.5H0V0z\"/></g><g clip-path=\"url(#23d)\" transform=\"translate(62 37.4)\"><path d=\"M0 0h22v12.6H0V0z\"/></g><g clip-path=\"url(#24e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
+						"showLabel":  true,
+						"imageDescription": "An image of a cartoon face with an open mouth grin and a delighted expression."
+					}
+				]
+			}
+		]
+	},
+	"dynamicPartials": {
+		"globalFormFieldset": "./toolkits/global/packages/global-forms/node_modules/@springernature/toolkits/packages/global-forms/view/globalFormFieldset.hbs",
+		"globalFormLabel": "./toolkits/global/packages/global-forms/node_modules/@springernature/toolkits/packages/global-forms/view/globalFormLabel.hbs",
+		"globalFormAttributes": "./toolkits/global/packages/global-forms/node_modules/@springernature/toolkits/packages/global-forms/view/globalFormAttributes.hbs",
+		"globalFormRadios": "./toolkits/global/packages/global-forms/node_modules/@springernature/toolkits/packages/global-forms/view/fields/globalFormRadios.hbs",
+		"globalFormRadio": "./toolkits/global/packages/global-forms/node_modules/@springernature/toolkits/packages/global-forms/view/fields/globalFormRadio.hbs"
+	}
+}
