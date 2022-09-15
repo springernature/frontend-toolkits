@@ -32,8 +32,5 @@
   "license": "MIT",
   "devDependencies": {
     "style-dictionary": "^3.7.1"
-  },
-  "dependencies": {
-    "yargs": "^17.5.1"
   }
 }
