@@ -10,3 +10,32 @@ html {
 body {
 	font-size: $context--font-size-base;
 }
+
+/* spacing algorithm */
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img)+* {
+	margin-block-start: spacing(16);
+}
+
+*+ :is(h2, h3, h4, h5) {
+	margin-block-start: spacing(32);
+}
+
+:is(h3, h4, h5)+* {
+	margin-block-start: spacing(8);
+}
+
+h2+* {
+	margin-block-start: spacing(16);
+}
+
+h1+* {
+	margin-block-start: spacing(48);
+}
+
+/* Not applicable after hidden elements */
+[hidden]+*,
+[style*="display:none"]+*,
+[style*="display: none"]+* {
+	margin-block-start: 0;
+}
