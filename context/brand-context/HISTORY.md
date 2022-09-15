@@ -1,4 +1,6 @@
 # History
+## 28.0.1 (2022-09-15)
+    * BUG: Fixes previous overwritten nature basic.scss file
 ## 28.0.0 (2022-09-14)
     * BREAKING:
         * New universal block spacing (inter-element margin) for flow content
