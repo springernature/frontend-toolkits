@@ -205,29 +205,27 @@ There are two other properties in the above example that are used to configure p
 
 It is strongly recommended that the `groupDescription` property is set when defining a group of pictographic radios to ensure users of assistive technologies are provided with sufficient information to understand the group of radio elements.
 
-The `boxed` property allows for `border` and `padding` to be applied to the pictographic radio's SVG elements. When this setting is enabled the CSS classname `c-forms__label--boxed-icon` is applied to the components HTML to facilitate this.
+The `boxed` property allows for `border` and `padding` to be applied to the pictographic radio's SVG elements. When this setting is enabled the CSS classname `c-forms__label--boxed-icon` is applied to the component's HTML to facilitate this.
 
 As with ordinary radio elements, data for each pictographic radio element is defined in the `inputs` array. In this example, the path data is removed for brevity.
 
 ```json
 "inputs": [
     {
-    "label": "Bad",
-    "value": "Bad",
-    "id": "radio-bad",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
-    "showLabel":  false,
-    "imageDescription": "An image of a cartoon face with a frown."
-    
+        "label": "Bad",
+        "value": "Bad",
+        "id": "radio-bad",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
+        "showLabel":  false,
+        "imageDescription": "An image of a cartoon face with a frown."
     },
     {
-    "label": "OK",
-    "value": "OK",
-    "id": "radio-ok",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
-    "showLabel":  false,
-    "imageDescription": "An image of a cartoon face with a neutral expression."
-    
+        "label": "OK",
+        "value": "OK",
+        "id": "radio-ok",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
+        "showLabel":  false,
+        "imageDescription": "An image of a cartoon face with a neutral expression."
     }
 ]
 ```
