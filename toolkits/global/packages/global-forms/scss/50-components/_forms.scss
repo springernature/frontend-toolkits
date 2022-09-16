@@ -204,7 +204,8 @@ label+.c-forms__error,
 	width: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
 	height: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
 	fill: $global-forms-pictographic-radio-unchecked-icon-fill;
-	background-color: transparent;
+	stroke: $global-forms-pictographic-radio-unchecked-icon-stroke;
+	background-color: $global-forms-pictographic-radio-unchecked-icon-background;
 }
 
 .c-forms__label--boxed-icon svg {
@@ -215,6 +216,7 @@ label+.c-forms__error,
 :checked+.c-forms__label--pictographic-radio svg {
 	fill: $global-forms-pictographic-radio-checked-icon-fill;
 	background-color: $global-forms-pictographic-radio-checked-icon-background;
+	stroke: $global-forms-pictographic-radio-checked-icon-stroke;
 }
 
 :checked+.c-forms__label--boxed-icon svg {

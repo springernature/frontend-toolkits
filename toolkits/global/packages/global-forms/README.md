@@ -233,22 +233,24 @@ As with ordinary radio elements, data for each pictographic radio element is def
 
 ```json
 "inputs": [
-  {
+    {
     "label": "Bad",
     "value": "Bad",
     "id": "radio-bad",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"5a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"6b\"><path d=\"M28.2 12.5c-2.4.7-4 .9-5.3-2.4-1.3-3.5-4.7-5.1-8.5-5.2-4-.1-7.2 1.3-9.3 4.7-.6 1-.9 2-1.3 3.1H0C-.7 6.4 4.6 1 12.2.1c8.4-1 15.2 4.3 16 12.4Z\"/></clipPath><clipPath id=\"7c\"><path d=\"M6.5 0A7 7 0 0 1 13 6.9a7 7 0 0 1-6.6 6.5A6.6 6.6 0 0 1 0 6.5C0 2.9 3 0 6.5 0Z\"/></clipPath><clipPath id=\"8d\"><path d=\"M13 6.4a6.6 6.6 0 0 1-6.3 7A7 7 0 0 1 0 7a7 7 0 0 1 6.5-7C9.9 0 13 2.8 13 6.4Z\"/></clipPath><clipPath id=\"9e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#5a)\"><g clip-path=\"url(#6b)\" transform=\"translate(35.4 60.3)\"><path d=\"M0 0h28.2v13H0V0z\"/></g><g clip-path=\"url(#7c)\" transform=\"translate(15.9 37.3)\"><path d=\"M0 0h13v13.4H0V0z\"/></g><g clip-path=\"url(#8d)\" transform=\"translate(70 37.3)\"><path d=\"M0 0h13v13.3H0V0z\"/></g><g clip-path=\"url(#9e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
-    "showLabel": false,
-    "imageDescription": "An image of a cartoon face with a sad expression."
-  },
-  {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"frowna\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> <clipPath id=\"frownb\"> <path d=\"M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z\"/> </clipPath> </defs> <g clip-path=\"url(#frowna)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <g clip-path=\"url(#frownb)\" transform=\"translate(8 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <g clip-path=\"url(#frownb)\" transform=\"translate(14 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> </g> </svg>",
+    "showLabel":  false,
+    "imageDescription": "An image of a cartoon face with a frown."
+    
+    },
+    {
     "label": "OK",
     "value": "OK",
     "id": "radio-ok",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\"><defs><clipPath id=\"10a\"><path d=\"M100 0v100H0V0h100Z\"/></clipPath><clipPath id=\"11b\"><path d=\"M25.6 0v4.5H0V0h25.6Z\"/></clipPath><clipPath id=\"12c\"><path d=\"M14.8 0v4.2H0V0h14.8Z\"/></clipPath><clipPath id=\"13d\"><path d=\"m14.8 0 .3 4.6H0V0h14.8Z\"/></clipPath><clipPath id=\"14e\"><path d=\"M50 0a50 50 0 1 1 0 100A50 50 0 0 1 50 0Zm0 4a46 46 0 1 0 0 92 46 46 0 0 0 0-92Z\"/></clipPath></defs><g clip-path=\"url(#10a)\"><g clip-path=\"url(#11b)\" transform=\"translate(37.3 67.4)\"><path d=\"M0 0h25.6v4.5H0V0z\"/></g><g clip-path=\"url(#12c)\" transform=\"translate(69.7 42.9)\"><path d=\"M0 0h14.8v4.2H0V0z\"/></g><g clip-path=\"url(#13d)\" transform=\"translate(15.5 42.6)\"><path d=\"M0 0h15v4.6H0V0z\"/></g><g clip-path=\"url(#14e)\"><path d=\"M0 0h100v100H0V0z\"/></g></g></svg>",
-    "showLabel": false,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"neutrala\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> <clipPath id=\"neutralb\"> <path d=\"M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z\"/> </clipPath> </defs> <g clip-path=\"url(#neutrala)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z\"/> <g clip-path=\"url(#neutralb)\" transform=\"translate(8 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <g clip-path=\"url(#neutralb)\" transform=\"translate(14 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 16h6\"/> </g> </svg>",
+    "showLabel":  false,
     "imageDescription": "An image of a cartoon face with a neutral expression."
-  }
+    
+    }
 ]
 ```
 
@@ -263,7 +265,7 @@ It is strongly recommended that the `imageDescription` property is set when defi
 The width and height of each SVG can be overridden using the CSS variable `--forms--pictographic-radio-icon-size`. This can be applied to the SVG html in the `style` attribute as follows:
 
 ```json
-"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"--forms--pictographic-radio-icon-size: 2rem\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 100 100\">...</svg>"
+"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"--forms--pictographic-radio-icon-size: 2rem\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\">...</svg>"
 ```
 Unlike radios, which are always used in sets of two or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
