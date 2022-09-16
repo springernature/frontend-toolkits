@@ -14,8 +14,9 @@
 				}
 			]
 		},
-		"fieldsets": [
+		"fields": [
 			{
+				"template": "globalFormFieldset",
 				"legend": "<h2>Text inputs</h2>",
 				"fields": [
 					{
@@ -62,7 +63,9 @@
 						"disabled": true
 					}
 				]
-			},
+			}
+		],
+		"fieldsets": [
 			{
 				"legend": "<h2>Selects</h2>",
 				"fields": [
@@ -288,6 +291,7 @@
 		]
 	},
 	"dynamicPartials": {
+		"globalFormField": "./toolkits/global/packages/global-forms/view/globalFormField.hbs",
 		"globalFormFieldset": "./toolkits/global/packages/global-forms/view/globalFormFieldset.hbs",
 		"globalFormLabel": "./toolkits/global/packages/global-forms/view/globalFormLabel.hbs",
 		"globalFormError": "./toolkits/global/packages/global-forms/view/globalFormError.hbs",
