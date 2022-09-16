@@ -2,7 +2,7 @@
 
 ## 5.0.0-rc.8 (2022-09-16)
     * Adds support for pictographic radio elements
-    * BUmps Brand Context to v28.0.1
+    * Bumps Brand Context to v28.0.1
 
 ## 5.0.0-rc.7 (2022-09-09)
     * Adds support for pattern attribute
