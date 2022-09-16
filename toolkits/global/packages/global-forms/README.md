@@ -116,7 +116,7 @@ Each field can have an `error` property. The inclusion of the property means the
 }
 ```
 
-You can summarise errors using a top level `errorSummary` property adjacent to the `fieldsets` property. Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
+You can summarise errors using a top level `errorSummary` property. Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
 
 ```json
 "errorSummary": {
@@ -424,3 +424,5 @@ You can use HTML to style the legend and add semantic meaning. In most cases, le
     ]
 }
 ```
+
+For accessibility, do not use a fieldset without an accompanying legend. If a legend is not appropriate, neither is a fieldset; just use fields without a fieldset parent.
