@@ -1,12 +1,11 @@
-<h1>Basic form</h1>
-
-<p>Here is a paragraph.</p>
-
 <form>
 	{{#with form1}}
 		{{#with errorSummary}}
 			{{> globalFormErrorSummary }}
 		{{/with}}
+		{{#each fields}}
+			{{> globalFormField }}
+		{{/each}}
 		{{#each fieldsets}}
 			{{> globalFormFieldset }}
 		{{/each}}
