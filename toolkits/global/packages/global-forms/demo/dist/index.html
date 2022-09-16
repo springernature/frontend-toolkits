@@ -182,13 +182,8 @@ h3 {
   font-weight: 700;
 }
 
-h4 {
+h6, h5, h4 {
   font-size: 1.125rem;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -198,73 +193,69 @@ h5 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Breakpoints
- * Shared media query values
- */
-/**
  * Colors
  * Maps for color values & greyscale settings
+ *
  */
 /**
  * Typography
  * Font settings
  */
 /**
- *  @springernature/global-button
  *  Button settings
+ *  Nature
  *
  */
 /**
- * Button Themes
- * Variables to set themes styles
+ * Style
+ * Cosmetic styling settings
  *
  */
 /**
- * Default link style
- *
- */
-/**
- * Link Text
+ * Global
+ * Main brand settings
  */
 h1 {
-  font-weight: 300;
-  font-size: 2.188rem;
-  font-size: min(max(1.5rem, 4vw), 2.188rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(2rem, 4vw), 2.625rem);
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: min(max(1.25rem, 4vw), 1.5rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.75rem, 4vw), 2rem);
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
 }
 
 h3 {
   font-weight: 700;
-  font-size: min(max(1.125rem, 4vw), 1.25rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.5rem, 4vw), 1.75rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
 }
 
-h4 {
+h6, h5, h4 {
   font-weight: 700;
-  font-size: min(max(1.125rem, 4vw), 1.125rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h5 {
-  font-weight: 700;
-  font-size: min(max(1rem, 4vw), 1rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.375rem, 4vw), 1.375rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -639,12 +630,37 @@ svg[aria-hidden] {
  * Basic
  * Some default CSS styles
  */
-body {
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+a {
+  color: #006699;
 }
 
-a {
-  color: #025e8d;
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.063rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  border-radius: 0;
 }
 
 /**
@@ -821,13 +837,8 @@ h3 {
   font-weight: 700;
 }
 
-h4 {
+h6, h5, h4 {
   font-size: 1.125rem;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -837,205 +848,298 @@ h5 {
  * These files don’t output any CSS when compiled
  */
 /**
- * Breakpoints
- * Shared media query values
- */
-/**
  * Colors
  * Maps for color values & greyscale settings
+ *
  */
 /**
  * Typography
  * Font settings
  */
 /**
- *  @springernature/global-button
  *  Button settings
+ *  Nature
  *
  */
 /**
- * Button Themes
- * Variables to set themes styles
+ * Style
+ * Cosmetic styling settings
  *
  */
 /**
- * Default link style
- *
- */
-/**
- * Link Text
+ * Global
+ * Main brand settings
  */
 h1 {
-  font-weight: 300;
-  font-size: 2.188rem;
-  font-size: min(max(1.5rem, 4vw), 2.188rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(2rem, 4vw), 2.625rem);
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: min(max(1.25rem, 4vw), 1.5rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.75rem, 4vw), 2rem);
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
 }
 
 h3 {
   font-weight: 700;
-  font-size: min(max(1.125rem, 4vw), 1.25rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.5rem, 4vw), 1.75rem);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
 }
 
-h4 {
+h6, h5, h4 {
   font-weight: 700;
-  font-size: min(max(1.125rem, 4vw), 1.125rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.5rem, 4vw), 1.5rem);
-}
-
-h5 {
-  font-weight: 700;
-  font-size: min(max(1rem, 4vw), 1rem);
-  margin-bottom: 16px;
-  font-family: "Merriweather", serif;
-  line-height: min(max(1.375rem, 4vw), 1.375rem);
-}
-
-/*
- * Headings
- */
-/**
- * Layout
- * Universal layout styles
- */
-html {
-  height: 100%;
-  overflow-y: scroll;
-  font-size: 100%;
-}
-
-body {
-  min-height: 100%;
-  font-family: "Merriweather", serif;
-  font-size: 1em;
-  line-height: 1.875;
-  color: #222222;
-  background: #f8f8f8;
-  letter-spacing: 0.01em;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-figure {
-  margin: 0;
-}
-
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  margin: 0;
-  padding: 0;
-}
-
-abbr[title] {
-  text-decoration: none;
-}
-
-a {
-  color: #025e8d;
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-a.visited, a:visited {
-  color: #a345c9;
-}
-a.hover, a:hover {
-  color: #01324b;
-  text-decoration: none;
-}
-a.active, a:active {
-  color: #222222;
-}
-a.focus, a:focus {
-  outline: 4px solid #ffcc00;
-}
-
-table {
-  font-size: 1rem;
-  line-height: 1.875;
-  border-collapse: collapse;
-  border: none;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-th,
-td {
-  padding: 8px;
-  vertical-align: top;
-}
-
-th {
-  text-align: left;
-  border-bottom: 3px solid #01324b;
-}
-
-td {
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 2px solid #dadada;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
 }
 
 /**
  * Forms
  * Default form styles
  */
-input:not([disabled]):focus,
-select:not([disabled]):focus,
-textarea:not([disabled]):focus,
-[contenteditable]:focus {
-  outline: 3px solid #ffcc00;
+fieldset {
+  border: 0;
 }
 
-input[type=file]:focus-within {
-  outline: 3px solid #ffcc00;
+input:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+button:active {
+  outline: 0;
+}
+
+input + label {
+  padding-left: 0.5em;
+}
+
+/*
+ * Layout
+ * Universal layout styles
+ */
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.76;
+  color: #222222;
+  background: #eeeeee;
+}
+
+figure {
+  margin: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+[contenteditable]:focus,
+[tabindex="0"]:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+/**
+ * Links
+ * Basic link styles
+ */
+a {
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #006699;
+}
+a:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip-ink: auto;
+}
+
+a:active {
+  outline: 0;
+}
+
+/**
+ * Lists
+ * Default list styles
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/**
+ * Tables
+ * Default table styles
+ */
+table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+th,
+td {
+  padding: 4px 7px;
+  border-right: 1px solid #d5d5d5;
+  text-align: left;
+  line-height: 1.15;
+}
+
+th {
+  vertical-align: top;
+}
+
+td {
+  vertical-align: middle;
+}
+
+th[valign=top] {
+  vertical-align: top;
+}
+
+th[valign=middle] {
+  vertical-align: middle;
+}
+
+thead tr {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+tbody tr {
+  border-top: 1px solid #d5d5d5;
+}
+
+tbody tr:first-child {
+  border-top: 0;
+}
+
+th {
+  background: #eeeeee;
+}
+
+tfoot tr {
+  border-top: 2px solid #d5d5d5;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+/* spacing algorithm */
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+  margin-block-start: 16px;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 32px;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 8px;
+}
+
+h2 + * {
+  margin-block-start: 16px;
+}
+
+h1 + * {
+  margin-block-start: 48px;
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+  margin-block-start: 0;
+}
+
+/**
+ * Typographic
+ * Standard text and heading formatting
+ */
+/*
+ * Default spacing
+ * default margin 28px to match line height
+ * this is used for mainting vertical rhythm on the page
+ */
+/*
+ * Headings
+ */
+p:empty {
+  display: none;
+}
+
+* {
+  margin-block: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + * {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
 }
 
 .u-ma-0 {
@@ -1430,54 +1534,44 @@ input[type=file]:focus-within {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-family: sans-serif;
+  font-size: 1rem;
   line-height: 1.3;
   justify-content: center;
-  padding: 16px 32px;
-  transition: all 0.2s;
-  border-radius: 32px;
-  letter-spacing: 0.7px;
-  color: white;
-  background-color: #01324b;
+  padding: 8px;
+  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border-radius: 2px;
+  color: #006699;
+  background-color: transparent;
   background-image: none;
-  border: 4px solid transparent;
-  box-shadow: 0 0 0 1px #01324b;
-  font-weight: 700;
+  border: 1px solid #006699;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: white;
+  color: #006699;
 }
 .u-button:hover {
-  border: 4px solid white;
-  box-shadow: 0 0 0 1px #01324b;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button:focus {
-  border: 4px solid #ffcc00;
-  box-shadow: none;
-  outline: none;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button:hover, .u-button:focus {
-  color: #01324b;
-  background-color: white;
+  color: white;
+  background-color: #006699;
   background-image: none;
 }
 .u-button:hover svg path, .u-button:focus svg path {
-  fill: #01324b;
+  fill: white;
 }
 
 .u-button--primary {
   color: white;
-  background-color: #01324b;
+  background-color: #006699;
   background-image: none;
-  border: 4px solid transparent;
-  box-shadow: 0 0 0 1px #01324b;
-  font-weight: 700;
+  border: 1px solid #006699;
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -1486,72 +1580,18 @@ input[type=file]:focus-within {
   color: white;
 }
 .u-button--primary:hover {
-  border: 4px solid white;
-  box-shadow: 0 0 0 1px #01324b;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button--primary:focus {
-  border: 4px solid #ffcc00;
-  box-shadow: none;
-  outline: none;
-  text-decoration: none;
+  border: 1px solid #006699;
 }
 .u-button--primary:hover, .u-button--primary:focus {
-  color: #01324b;
+  color: #006699;
   background-color: white;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
-  fill: #01324b;
-}
-
-.u-button--secondary {
-  color: #01324b;
-  background-color: white;
-  border: 4px solid white;
-  font-weight: 700;
-}
-.u-button--secondary svg {
-  fill: currentColor;
-}
-.u-button--secondary:visited {
-  color: #01324b;
-}
-.u-button--secondary:hover {
-  border: 4px solid #01324b;
-  box-shadow: none;
-}
-.u-button--secondary:hover, .u-button--secondary:focus {
-  color: white;
-  background-color: #01324b;
-}
-.u-button--secondary:hover svg path, .u-button--secondary:focus svg path {
-  fill: white;
-}
-
-.u-button--tertiary {
-  color: #666666;
-  background-color: #ebf1f5;
-  border: 4px solid transparent;
-  box-shadow: none;
-  font-weight: 700;
-}
-.u-button--tertiary svg {
-  fill: currentColor;
-}
-.u-button--tertiary:visited {
-  color: #666666;
-}
-.u-button--tertiary:hover {
-  border: 4px solid #01324b;
-  box-shadow: none;
-}
-.u-button--tertiary:hover, .u-button--tertiary:focus {
-  color: white;
-  background-color: #01324b;
-}
-.u-button--tertiary:hover svg path, .u-button--tertiary:focus svg path {
-  fill: white;
+  fill: #006699;
 }
 
 .u-button--contrast {
@@ -1584,11 +1624,10 @@ input[type=file]:focus-within {
 
 .u-button--disabled,
 .u-button:disabled {
-  color: black;
+  color: #222222;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #cccccc;
-  font-weight: normal;
+  border: 1px solid #eeeeee;
   opacity: 0.7;
   cursor: default;
 }
@@ -1598,44 +1637,44 @@ input[type=file]:focus-within {
 }
 .u-button--disabled:visited,
 .u-button:disabled:visited {
-  color: black;
+  color: #222222;
 }
 .u-button--disabled:hover,
 .u-button:disabled:hover {
-  border: 1px solid #cccccc;
+  border: 1px solid #eeeeee;
   text-decoration: none;
 }
 .u-button--disabled:focus,
 .u-button:disabled:focus {
-  border: 1px solid #cccccc;
+  border: 1px solid #eeeeee;
   text-decoration: none;
 }
 .u-button--disabled:hover, .u-button--disabled:focus,
 .u-button:disabled:hover,
 .u-button:disabled:focus {
-  color: black;
+  color: #222222;
   background-color: transparent;
   background-image: none;
 }
 .u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
 .u-button:disabled:hover svg path,
 .u-button:disabled:focus svg path {
-  fill: black;
+  fill: #222222;
 }
 
 .u-button--xsmall {
   font-size: 0.875rem;
-  padding: 2px 8px;
+  padding: 2px;
 }
 
 .u-button--small {
   font-size: 0.875rem;
-  padding: 8px 16px;
+  padding: inherit;
 }
 
 .u-button--large {
   font-size: 1.125rem;
-  padding: 10px 35px;
+  padding: 16px;
 }
 
 .u-button--full-width {
@@ -1701,7 +1740,7 @@ input[type=file]:focus-within {
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .c-forms__fieldset--pictographic-radios {
     flex-direction: row;
   }
@@ -1749,6 +1788,7 @@ input[type=file]:focus-within {
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
+  padding: 0;
 }
 
 .c-forms__label + .c-forms__label {
@@ -1841,7 +1881,7 @@ label + .c-forms__error,
   cursor: pointer;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .c-forms__label--pictographic-radio {
     flex-direction: column;
     justify-content: space-between;
