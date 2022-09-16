@@ -207,7 +207,7 @@ It is strongly recommended that the `groupDescription` property is set when defi
 
 The `boxed` property allows for `border` and `padding` to be applied to the pictographic radio's SVG elements. When this setting is enabled the CSS classname `c-forms__label--boxed-icon` is applied to the components HTML to facilitate this.
 
-As with ordinary radio elements, data for each pictographic radio element is defined in the `inputs` array:
+As with ordinary radio elements, data for each pictographic radio element is defined in the `inputs` array. In this example, the path data is removed for brevity.
 
 ```json
 "inputs": [
@@ -215,7 +215,7 @@ As with ordinary radio elements, data for each pictographic radio element is def
     "label": "Bad",
     "value": "Bad",
     "id": "radio-bad",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"frowna\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> <clipPath id=\"frownb\"> <path d=\"M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z\"/> </clipPath> </defs> <g clip-path=\"url(#frowna)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <g clip-path=\"url(#frownb)\" transform=\"translate(8 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <g clip-path=\"url(#frownb)\" transform=\"translate(14 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> </g> </svg>",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
     "showLabel":  false,
     "imageDescription": "An image of a cartoon face with a frown."
     
@@ -224,7 +224,7 @@ As with ordinary radio elements, data for each pictographic radio element is def
     "label": "OK",
     "value": "OK",
     "id": "radio-ok",
-    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"neutrala\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> <clipPath id=\"neutralb\"> <path d=\"M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z\"/> </clipPath> </defs> <g clip-path=\"url(#neutrala)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z\"/> <g clip-path=\"url(#neutralb)\" transform=\"translate(8 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <g clip-path=\"url(#neutralb)\" transform=\"translate(14 8)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\" stroke-linejoin=\"round\" d=\"M0 0h2v4H0V0z\"/> </g> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 16h6\"/> </g> </svg>",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\">...</svg>",
     "showLabel":  false,
     "imageDescription": "An image of a cartoon face with a neutral expression."
     
