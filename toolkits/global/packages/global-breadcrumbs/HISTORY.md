@@ -1,5 +1,8 @@
 # History
 
+## 4.0.4 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 4.0.3 (2022-07-13)
     * FIXES:
       * corrects SVG ID by changing `i-icon-` to `i-`
