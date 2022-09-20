@@ -4,5 +4,9 @@
   "license": "MIT",
   "description": "html form based component for gathering user rating data",
   "keywords": [],
-  "author": "Springer Nature"
+  "author": "Springer Nature",
+  "brandContext": "^28.0.1",
+  "dependencies": {
+    "@springernature/global-forms": "^5.0.0-rc.8"
+  }
 }

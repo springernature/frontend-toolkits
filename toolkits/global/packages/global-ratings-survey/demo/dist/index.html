@@ -1,0 +1,2083 @@
+<!DOCTYPE html><html lang="en"><head>
+		<script>
+    		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>@springernature/global-ratings-survey</title>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h6, h5, h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Nature
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Global
+ * Main brand settings
+ */
+h1 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+h6, h5, h4 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg[aria-hidden] {
+  width: 1rem;
+  height: 1rem;
+}
+
+/**
+ * Basic
+ * Some default CSS styles
+ */
+a {
+  color: #006699;
+}
+
+h1 {
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.063rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+cite {
+  font-style: normal;
+}
+
+ins {
+  text-decoration: none;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  border-radius: 0;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h6, h5, h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Nature
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Global
+ * Main brand settings
+ */
+h1 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-size: min(max(1.5rem, 4vw), 2rem);
+  letter-spacing: -0.0390625rem;
+  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
+  line-height: 2.25rem;
+  line-height: min(max(1.6rem, 4vw), 2.25rem);
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.6rem;
+  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+h6, h5, h4 {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  font-size: min(max(1rem, 2.5vw), 1.125rem);
+  letter-spacing: -0.011715625rem;
+  line-height: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/**
+ * Forms
+ * Default form styles
+ */
+fieldset {
+  border: 0;
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+button:active {
+  outline: 0;
+}
+
+input + label {
+  padding-left: 0.5em;
+}
+
+/*
+ * Layout
+ * Universal layout styles
+ */
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.76;
+  color: #222222;
+  background: #eeeeee;
+}
+
+figure {
+  margin: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+[contenteditable]:focus,
+[tabindex="0"]:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+/**
+ * Links
+ * Basic link styles
+ */
+a {
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #006699;
+}
+a:focus {
+  outline: 3px solid #fece3e;
+  will-change: transform;
+}
+
+a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip-ink: auto;
+}
+
+a:active {
+  outline: 0;
+}
+
+/**
+ * Lists
+ * Default list styles
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/**
+ * Tables
+ * Default table styles
+ */
+table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+th,
+td {
+  padding: 4px 7px;
+  border-right: 1px solid #d5d5d5;
+  text-align: left;
+  line-height: 1.15;
+}
+
+th {
+  vertical-align: top;
+}
+
+td {
+  vertical-align: middle;
+}
+
+th[valign=top] {
+  vertical-align: top;
+}
+
+th[valign=middle] {
+  vertical-align: middle;
+}
+
+thead tr {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+tbody tr {
+  border-top: 1px solid #d5d5d5;
+}
+
+tbody tr:first-child {
+  border-top: 0;
+}
+
+th {
+  background: #eeeeee;
+}
+
+tfoot tr {
+  border-top: 2px solid #d5d5d5;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+/* spacing algorithm */
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+  margin-block-start: 16px;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 32px;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 8px;
+}
+
+h2 + * {
+  margin-block-start: 16px;
+}
+
+h1 + * {
+  margin-block-start: 48px;
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+  margin-block-start: 0;
+}
+
+/**
+ * Typographic
+ * Standard text and heading formatting
+ */
+/*
+ * Default spacing
+ * default margin 28px to match line height
+ * this is used for mainting vertical rhythm on the page
+ */
+/*
+ * Headings
+ */
+p:empty {
+  display: none;
+}
+
+* {
+  margin-block: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + * {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
+}
+
+.u-ma-0 {
+  margin: 0;
+}
+
+.u-ma-2 {
+  margin: 2px;
+}
+
+.u-ma-4 {
+  margin: 4px;
+}
+
+.u-ma-8 {
+  margin: 8px;
+}
+
+.u-ma-16 {
+  margin: 16px;
+}
+
+.u-ma-24 {
+  margin: 24px;
+}
+
+.u-ma-32 {
+  margin: 32px;
+}
+
+.u-ma-48 {
+  margin: 48px;
+}
+
+.u-ma-64 {
+  margin: 64px;
+}
+
+.u-ma-auto {
+  margin: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-2 {
+  margin-top: 2px;
+}
+
+.u-mt-4 {
+  margin-top: 4px;
+}
+
+.u-mt-8 {
+  margin-top: 8px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-48 {
+  margin-top: 48px;
+}
+
+.u-mt-64 {
+  margin-top: 64px;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0;
+}
+
+.u-mr-2 {
+  margin-right: 2px;
+}
+
+.u-mr-4 {
+  margin-right: 4px;
+}
+
+.u-mr-8 {
+  margin-right: 8px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-mr-48 {
+  margin-right: 48px;
+}
+
+.u-mr-64 {
+  margin-right: 64px;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
+.u-mb-2 {
+  margin-bottom: 2px;
+}
+
+.u-mb-4 {
+  margin-bottom: 4px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-32 {
+  margin-bottom: 32px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-mb-64 {
+  margin-bottom: 64px;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0;
+}
+
+.u-ml-2 {
+  margin-left: 2px;
+}
+
+.u-ml-4 {
+  margin-left: 4px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-16 {
+  margin-left: 16px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-ml-32 {
+  margin-left: 32px;
+}
+
+.u-ml-48 {
+  margin-left: 48px;
+}
+
+.u-ml-64 {
+  margin-left: 64px;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-pa-0 {
+  padding: 0;
+}
+
+.u-pa-2 {
+  padding: 2px;
+}
+
+.u-pa-4 {
+  padding: 4px;
+}
+
+.u-pa-8 {
+  padding: 8px;
+}
+
+.u-pa-16 {
+  padding: 16px;
+}
+
+.u-pa-24 {
+  padding: 24px;
+}
+
+.u-pa-32 {
+  padding: 32px;
+}
+
+.u-pa-48 {
+  padding: 48px;
+}
+
+.u-pa-64 {
+  padding: 64px;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pt-2 {
+  padding-top: 2px;
+}
+
+.u-pt-4 {
+  padding-top: 4px;
+}
+
+.u-pt-8 {
+  padding-top: 8px;
+}
+
+.u-pt-16 {
+  padding-top: 16px;
+}
+
+.u-pt-24 {
+  padding-top: 24px;
+}
+
+.u-pt-32 {
+  padding-top: 32px;
+}
+
+.u-pt-48 {
+  padding-top: 48px;
+}
+
+.u-pt-64 {
+  padding-top: 64px;
+}
+
+.u-pr-0 {
+  padding-right: 0;
+}
+
+.u-pr-2 {
+  padding-right: 2px;
+}
+
+.u-pr-4 {
+  padding-right: 4px;
+}
+
+.u-pr-8 {
+  padding-right: 8px;
+}
+
+.u-pr-16 {
+  padding-right: 16px;
+}
+
+.u-pr-24 {
+  padding-right: 24px;
+}
+
+.u-pr-32 {
+  padding-right: 32px;
+}
+
+.u-pr-48 {
+  padding-right: 48px;
+}
+
+.u-pr-64 {
+  padding-right: 64px;
+}
+
+.u-pb-0 {
+  padding-bottom: 0;
+}
+
+.u-pb-2 {
+  padding-bottom: 2px;
+}
+
+.u-pb-4 {
+  padding-bottom: 4px;
+}
+
+.u-pb-8 {
+  padding-bottom: 8px;
+}
+
+.u-pb-16 {
+  padding-bottom: 16px;
+}
+
+.u-pb-24 {
+  padding-bottom: 24px;
+}
+
+.u-pb-32 {
+  padding-bottom: 32px;
+}
+
+.u-pb-48 {
+  padding-bottom: 48px;
+}
+
+.u-pb-64 {
+  padding-bottom: 64px;
+}
+
+.u-pl-0 {
+  padding-left: 0;
+}
+
+.u-pl-2 {
+  padding-left: 2px;
+}
+
+.u-pl-4 {
+  padding-left: 4px;
+}
+
+.u-pl-8 {
+  padding-left: 8px;
+}
+
+.u-pl-16 {
+  padding-left: 16px;
+}
+
+.u-pl-24 {
+  padding-left: 24px;
+}
+
+.u-pl-32 {
+  padding-left: 32px;
+}
+
+.u-pl-48 {
+  padding-left: 48px;
+}
+
+.u-pl-64 {
+  padding-left: 64px;
+}
+
+/**
+ * Button utilities
+ * These are for styled branded buttons
+ */
+.u-button {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  justify-content: center;
+  padding: 8px;
+  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border-radius: 2px;
+  color: #006699;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #006699;
+}
+.u-button svg {
+  fill: currentColor;
+}
+.u-button:visited {
+  color: #006699;
+}
+.u-button:hover {
+  border: 1px solid #006699;
+}
+.u-button:focus {
+  border: 1px solid #006699;
+}
+.u-button:hover, .u-button:focus {
+  color: white;
+  background-color: #006699;
+  background-image: none;
+}
+.u-button:hover svg path, .u-button:focus svg path {
+  fill: white;
+}
+
+.u-button--primary {
+  color: white;
+  background-color: #006699;
+  background-image: none;
+  border: 1px solid #006699;
+}
+.u-button--primary svg {
+  fill: currentColor;
+}
+.u-button--primary:visited {
+  color: white;
+}
+.u-button--primary:hover {
+  border: 1px solid #006699;
+}
+.u-button--primary:focus {
+  border: 1px solid #006699;
+}
+.u-button--primary:hover, .u-button--primary:focus {
+  color: #006699;
+  background-color: white;
+  background-image: none;
+}
+.u-button--primary:hover svg path, .u-button--primary:focus svg path {
+  fill: #006699;
+}
+
+.u-button--contrast {
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid white;
+  font-weight: normal;
+}
+.u-button--contrast svg {
+  fill: currentColor;
+}
+.u-button--contrast:visited {
+  color: white;
+}
+.u-button--contrast:hover {
+  border: 1px solid white;
+}
+.u-button--contrast:focus {
+  border: 1px solid white;
+}
+.u-button--contrast:hover, .u-button--contrast:focus {
+  color: black;
+  background-color: white;
+  background-image: none;
+}
+.u-button--contrast:hover svg path, .u-button--contrast:focus svg path {
+  fill: black;
+}
+
+.u-button--disabled,
+.u-button:disabled {
+  color: #222222;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #eeeeee;
+  opacity: 0.7;
+  cursor: default;
+}
+.u-button--disabled svg,
+.u-button:disabled svg {
+  fill: currentColor;
+}
+.u-button--disabled:visited,
+.u-button:disabled:visited {
+  color: #222222;
+}
+.u-button--disabled:hover,
+.u-button:disabled:hover {
+  border: 1px solid #eeeeee;
+  text-decoration: none;
+}
+.u-button--disabled:focus,
+.u-button:disabled:focus {
+  border: 1px solid #eeeeee;
+  text-decoration: none;
+}
+.u-button--disabled:hover, .u-button--disabled:focus,
+.u-button:disabled:hover,
+.u-button:disabled:focus {
+  color: #222222;
+  background-color: transparent;
+  background-image: none;
+}
+.u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
+.u-button:disabled:hover svg path,
+.u-button:disabled:focus svg path {
+  fill: #222222;
+}
+
+.u-button--xsmall {
+  font-size: 0.875rem;
+  padding: 2px;
+}
+
+.u-button--small {
+  font-size: 0.875rem;
+  padding: inherit;
+}
+
+.u-button--large {
+  font-size: 1.125rem;
+  padding: 16px;
+}
+
+.u-button--full-width {
+  display: flex;
+  width: 100%;
+}
+
+.u-button--icon-left svg {
+  margin-right: 8px;
+}
+
+.u-button--icon-right svg {
+  margin-left: 8px;
+}
+
+.c-forms__label,
+.c-forms__hint,
+.c-forms__error,
+.c-forms__legend {
+  display: block;
+}
+
+.c-forms__hint,
+.c-forms__error {
+  font-weight: normal;
+}
+
+.c-forms__input-container {
+  position: relative;
+}
+
+.c-forms__fieldset,
+.c-forms__error-summary,
+.c-forms__field {
+  line-height: 1.4;
+}
+
+.c-forms__field,
+.c-forms__error-summary {
+  font-size: 1rem;
+}
+
+.c-forms__field small {
+  font-size: inherit;
+}
+
+.c-forms__fieldset,
+.c-forms__legend {
+  padding: 0;
+  border: 0;
+}
+
+.c-forms__error-summary,
+.c-forms__input-container,
+.c-forms__field {
+  max-width: 70ch;
+}
+
+.c-forms__fieldset--pictographic-radios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 320px) {
+  .c-forms__fieldset--pictographic-radios {
+    flex-direction: row;
+  }
+}
+* + .c-forms__error-summary,
+* + .c-forms__fieldset,
+* + .c-forms__field {
+  margin-top: 1.5rem;
+}
+
+.c-forms__legend * {
+  margin: 0;
+}
+
+.c-forms__input {
+  box-sizing: border-box;
+  border: 1px solid;
+  color: #000000;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+* + .c-forms__input,
+* + .c-forms__input-container {
+  margin-top: 0.25rem;
+}
+
+.c-forms__input:focus {
+  outline: 3px solid #0088cc;
+}
+
+.c-forms__input[invalid] {
+  border-color: #c40606;
+  border-width: 2px;
+}
+
+.c-forms__input[disabled] {
+  cursor: not-allowed;
+  border-color: #dadada;
+}
+
+.c-forms__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  padding: 0;
+}
+
+.c-forms__label + .c-forms__label {
+  margin-top: 0.25rem;
+}
+
+.c-forms__hint {
+  font-weight: 400;
+  margin-top: 0.25rem;
+  color: #666666;
+}
+
+.c-forms__error {
+  color: #c40606;
+  display: flex;
+  align-items: flex-start;
+}
+
+label + .c-forms__error,
+.c-forms__error + label {
+  margin-top: 0.25rem;
+}
+
+.c-forms__error .c-forms__icon {
+  color: #c40606;
+}
+
+.c-forms__icon svg {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: calc((0.5rem / 8) * -1);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.c-forms__input--select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 1.5rem;
+}
+
+.c-forms__input-container--select .c-forms__icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.c-forms__input--radio,
+.c-forms__input--checkbox,
+.c-form__label--visually-hidden {
+  /* hide visually, not to assistive tech */
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c-forms__label--inline {
+  display: inline;
+  font-weight: 400;
+}
+
+.c-forms__label--inline {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.c-forms__label--inline::before {
+  content: "";
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  margin-right: 0.5rem;
+}
+
+.c-forms__label--pictographic-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+  .c-forms__label--pictographic-radio {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.c-forms__label--pictographic-radio svg {
+  box-sizing: content-box;
+  flex: 0 0 auto;
+  width: var(--forms--pictographic-radio-icon-size, 4rem);
+  height: var(--forms--pictographic-radio-icon-size, 4rem);
+  fill: #ffffff;
+  stroke: #01324b;
+  background-color: #ffffff;
+}
+
+.c-forms__label--boxed-icon svg {
+  padding: 0.5rem;
+  border: 1px solid #01324b;
+}
+
+:checked + .c-forms__label--pictographic-radio svg {
+  fill: #01324b;
+  background-color: #01324b;
+  stroke: #ffffff;
+}
+
+:checked + .c-forms__label--boxed-icon svg {
+  border-color: #ffffff;
+}
+
+:focus + .c-forms__label--pictographic-radio svg,
+.c-forms__label--pictographic-radio:hover svg {
+  box-shadow: 0 0 0 3px #0088cc;
+}
+
+:checked + .c-forms__label--inline::before {
+  border-color: #01324b;
+}
+
+:focus + .c-forms__label--inline::before {
+  box-shadow: 0 0 0 3px #0088cc;
+}
+
+.c-forms__label--radio::before {
+  border-radius: 50%;
+}
+
+.c-forms__label--checkbox::before {
+  border-radius: 0.125em;
+}
+
+[invalid] + .c-forms__label--checkbox::before {
+  border-color: #c40606;
+}
+
+:checked + .c-forms__label--radio::before {
+  background: radial-gradient(#01324b 0%, #01324b 40%, #fff 40%);
+}
+
+:checked + .c-forms__label--checkbox::before {
+  background-color: #01324b;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="white" stroke-linejoin="round" fill="none" stroke-linecap="round" viewBox="0 0 20 20"><path d="M4.5,11 10,15 16,5"></path></svg>');
+  border-color: #01324b;
+  background-size: 100%;
+  background-repeat: none;
+  background-position: center;
+}
+
+.c-forms__sub-fields {
+  margin-top: 0.25rem;
+  margin-left: calc(1.5rem / 4);
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  display: none;
+}
+
+.c-forms__sub-fields::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(1.5rem / 2);
+  background-color: #dadada;
+  border-radius: 4px;
+}
+
+:checked ~ .c-forms__sub-fields {
+  display: block;
+}
+
+.c-forms__error-summary {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #c40606;
+  border: 1px solid #dadada;
+  border-bottom: 4px solid #c40606;
+}
+
+.c-forms__error-summary .c-forms__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c-forms__error-summary-errors {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.c-forms__error-summary-errors a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.c-forms__error-summary-title {
+  color: initial;
+  font-weight: bold;
+}
+
+.c-forms__error-summary-errors li + li {
+  margin-top: 0.25rem;
+}
+
+.c-forms__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.c-ratings-survey {
+  padding: 16px;
+  border: 1px solid black;
+}
+		</style>
+	</head>
+	<body style="padding:2%">
+		<form action="" method="POST" class="c-ratings-survey">
+	<fieldset class="c-forms__fieldset">
+			<legend class="c-forms__legend"><h2>How was your experience today?</h2></legend>
+			<div class="c-forms__field">
+					<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="radios-rating" name="radios-rating" autocomplete="off">
+								<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
+				
+							<div class="c-forms__label c-forms__label--wrapper">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible" name="radios-rating" value="Terrible" autocomplete="off">
+									<label for="radio-terrible" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
+										<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
+										<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
+									</label>
+							</div>
+							<div class="c-forms__label c-forms__label--wrapper">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad" name="radios-rating" value="Bad" autocomplete="off">
+									<label for="radio-bad" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+										<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
+										<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+									</label>
+							</div>
+							<div class="c-forms__label c-forms__label--wrapper">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok" name="radios-rating" value="OK" autocomplete="off">
+									<label for="radio-ok" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
+										<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
+										<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+									</label>
+							</div>
+							<div class="c-forms__label c-forms__label--wrapper">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good" name="radios-rating" value="Good" autocomplete="off">
+									<label for="radio-good" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+										<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
+										<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+									</label>
+							</div>
+							<div class="c-forms__label c-forms__label--wrapper">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great" name="radios-rating" value="Great" autocomplete="off">
+									<label for="radio-great" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
+										<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+										<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+									</label>
+							</div>
+					</fieldset>
+			</div>
+	</fieldset>
+</form>
+
+		<script>
+			// no JS found for package
+		</script>
+	
+</body></html>
