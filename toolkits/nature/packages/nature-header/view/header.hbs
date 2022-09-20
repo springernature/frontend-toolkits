@@ -1,15 +1,14 @@
-<header class="c-header" id="header" data-header style="border-color:#000">
+<header class="c-header" id="header" data-header>
 	<div class="c-header__row">
 		<div class="c-header__container">
 			<div class="c-header__split">
-				<h1 class="c-header__logo-container">
-					<a href="/">
+				<div class="c-header__logo-container">
+					<a href="{{logo.link}}">
 						<picture class="c-header__logo">
-							<source srcset="https://media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" media="(min-width: 875px)">
-							<img src="https://media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" alt="Nature">
+							<img src="{{logo.src}}" alt="{{logo.alt}}" height="32">
 						</picture>
 					</a>
-				</h1>
+				</div>
 				<ul class="c-header__menu c-header__menu--global">
 					<li class="c-header__item c-header__item--padding c-header__item--hide-md-max">
 						<a class="c-header__link" href="https://www.nature.com/siteindex"><span>View all journals</span></a>
