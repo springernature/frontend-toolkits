@@ -1,5 +1,27 @@
 # History
 
+## 5.0.0-rc.8 (2022-09-16)
+    * BREAKING:
+        * Creation of field partial (`globalFormField.hbs)` to allow for iterating over fields without fieldsets
+        * Fields with no labels no longer hidden; `hidden: true` supported instead, for any field
+    * Adds support for pictographic radio elements
+    * Bumps Brand Context to v28.0.1
+
+## 5.0.0-rc.7 (2022-09-09)
+    * Adds support for pattern attribute
+    * Adds support for minlength attribute
+    * Fixes issue where `<legend>` elements were not being announced by assistive tech because `role="presentation"` was being rendered incorrectly
+    * Bumps Brand Context to v26.0.0
+    * `line-height` tightened
+
+## 5.0.0-rc.6 (2022-08-31)
+    * `display: none` for inputs without labels (hidden inputs)
+    * Larger checkboxes and radios
+    * Correct grey for checkbox and radio borders
+    * Bright blue focus style
+    * `tabindex="-1"` for programmatic focus compatibility on error summary
+    * Optionally exclude discrete errors in error summary
+
 ## 5.0.0-rc.5 (2022-07-29)
     * `password` input type added
     * fixed long labels squishing checkboxes and radios

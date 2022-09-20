@@ -1,6 +1,6 @@
 {
 	"name": "@springernature/global-forms",
-	"version": "5.0.0-rc.5",
+	"version": "5.0.0-rc.8",
 	"license": "MIT",
 	"description": "form component",
 	"keywords": [
@@ -8,5 +8,5 @@
 	  "component"
 	],
   "author": "Heydon Pickering",
-  "brandContext": "^25.0.0"
+  "brandContext": "^28.0.1"
 }

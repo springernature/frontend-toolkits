@@ -1,5 +1,8 @@
 {
 	"global-forms": {
+		"line-height": {
+			"value": "{line-height.tight}"
+		},
 		"field": {
 			"stack": {
 				"spacing": {
@@ -18,6 +21,13 @@
 			},
 			"color": {
 				"value": "{text.primary}"
+			},
+			"inline": {
+				"font": {
+					"weight": {
+						"value": "{font-weight.regular}"
+					}
+				}
 			}
 		},
 		"hint": {
@@ -123,11 +133,19 @@
 		},
 		"checkbox": {
 			"size": {
-				"value": "{sizing.relative.400}",
+				"value": "{sizing.relative.600}",
 				"type": "sizing"
 			},
 			"spacing": {
 				"value": "{sizing.relative.200}"
+			},
+			"border": {
+				"size": {
+					"value": "{border.width.50}"
+				},
+				"color": {
+					"value": "{color.grayscale.500}"
+				}
 			},
 			"checked": {
 				"icon": {
@@ -140,6 +158,48 @@
 					"data uri": {
 						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
 					}
+				}
+			}
+		},
+		"pictographic-radio": {
+			"spacing": {
+				"value": "{spacing.relative.400}"
+			},
+			"checked": {
+				"icon": {
+					"background": {
+						"value": "{color.primary.universal-dark-blue}"
+					},
+					"border": {
+						"value": "{color.primary.white}"
+					},
+					"fill": {
+						"value": "{color.primary.universal-dark-blue}"
+					},
+					"stroke": {
+						"value": "{color.primary.white}"
+					}
+				}
+			},
+			"unchecked": {
+				"icon": {
+					"background": {
+						"value": "{color.primary.white}"
+					},
+					"border": {
+						"value": "{color.primary.universal-dark-blue}"
+					},
+					"fill": {
+						"value": "{color.primary.white}"
+					},
+					"stroke": {
+						"value": "{color.primary.universal-dark-blue}"
+					}
+				}
+			},
+			"icon": {
+				"size": {
+					"value": "{sizing.relative.1600}"
 				}
 			}
 		}

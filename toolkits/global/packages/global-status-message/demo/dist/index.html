@@ -564,6 +564,14 @@ body {
   margin-right: 8px;
 }
 
+.c-status-message__message :first-child {
+  margin-top: 0;
+}
+
+.c-status-message__message :last-child {
+  margin-top: 0;
+}
+
 .c-status-message__icon--top {
   align-self: flex-start;
 }
@@ -602,12 +610,41 @@ body {
 		</style>
 	</head>
 	<body style="padding:2%">
-		<div class="c-status-message c-status-message--boxed c-status-message--warning">
-    <svg class="c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
-        <use xlink:href="../../img/warning.svg#i-warning"></use>
-    </svg>
-	This is a the status message
-</div>
+	<aside class="c-status-message c-status-message--boxed c-status-message--warning">
+			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="warning:" focusable="false">
+				<use xlink:href="../../img/warning.svg#i-warning"></use>
+			</svg>
+			<div class="c-status-message__message" tabindex="-1" id="warning-message">
+				This is a warning message
+			</div>
+	</aside>
+<br>
+	<aside class="c-status-message c-status-message--boxed c-status-message--error">
+			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="error:" focusable="false">
+				<use xlink:href="../../img/error.svg#i-error"></use>
+			</svg>
+			<div class="c-status-message__message" tabindex="-1" id="error-message">
+				This is an error message
+			</div>
+	</aside>
+<br>
+	<aside class="c-status-message c-status-message--boxed c-status-message--success">
+			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="success:" focusable="false">
+				<use xlink:href="../../img/success.svg#i-success"></use>
+			</svg>
+			<div class="c-status-message__message" tabindex="-1" id="success-message">
+				This is a success message
+			</div>
+	</aside>
+<br>
+	<aside class="c-status-message c-status-message--boxed c-status-message--info">
+			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="info:" focusable="false">
+				<use xlink:href="../../img/info.svg#i-info"></use>
+			</svg>
+			<div class="c-status-message__message" tabindex="-1" id="info-message">
+				This is an info message
+			</div>
+	</aside>
 
 		<script>
 			// no JS found for package

@@ -35,7 +35,7 @@
     "test:ci": "jest --passWithNoTests --runInBand",
     "tokens:alias": "npm run tokens:clean && npm run tokens:literal && node ./context/design-tokens/build-alias.js",
     "tokens:clean": "npx rimraf **/00-tokens/",
-    "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
+    "tokens:components": "npm run tokens:global-components",
     "tokens:literal": "node ./context/design-tokens/build-literal.js",
     "tokens:global-components": "npm run tokens:clean && npm run tokens:literal && npm run tokens:alias && node ./context/design-tokens/build-component-global.js",
     "tokens:brand-components": "node ./context/design-tokens/build-component.js",

@@ -1,0 +1,23 @@
+* {
+	margin-block: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article)+* {
+	margin-block-start: $tokens--typography-block-spacing-medium;
+}
+
+*+ :is(h2, h3, h4, h5) {
+	margin-block-start: $tokens--typography-block-spacing-large;
+}
+
+:is(h3, h4, h5)+* {
+	margin-block-start: $tokens--typography-block-spacing-small;
+}
+
+h2+* {
+	margin-block-start: $tokens--typography-block-spacing-medium;
+}
+
+h1+* {
+	margin-block-start: $tokens--typography-block-spacing-x-large;
+}

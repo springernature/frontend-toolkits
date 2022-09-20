@@ -1,5 +1,16 @@
 # History
 
+## 4.1.1 (2022-09-13)
+    * even icon spacing for longform content
+
+## 4.1.0 (2022-09-02)
+    * `<aside>` by default
+
+## 4.0.0 (2022-08-31)
+    * Message section now permits more than plain text
+    * Message now focusable programmatically
+    * Support for live regions
+
 ## 3.3.0 (2022-07-28)
     * UPDATE: brand-context v25.0.0
 

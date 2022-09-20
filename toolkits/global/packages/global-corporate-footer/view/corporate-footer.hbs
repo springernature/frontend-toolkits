@@ -5,8 +5,8 @@
 				<ul class="c-corporate-footer__links">
 					{{#each links}}
 					<li>
-						{{#if url}}
-							<a class="c-corporate-footer__link" href="{{url}}">{{text}}</a>
+						{{#if this.url}}
+							<a class="c-corporate-footer__link" href="{{this.url}}">{{text}}</a>
 						{{/if}}
 						{{#if buttonProperties}}
 							<button class="c-corporate-footer__link" {{{buttonProperties}}}>{{text}}</button>
