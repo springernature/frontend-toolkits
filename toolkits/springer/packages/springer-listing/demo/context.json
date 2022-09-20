@@ -76,7 +76,7 @@
 		]
 	},
 	"listingsWithOptions": {
-		"optionIcon": "../img/chevron-right.svg#i-chevron-right",
+		"optionIcon": "../../../../../context/brand-context/default/img/icons/chevron-right.svg#i-chevron-right",
 		"listings": [
 			{
 				"permalink": "#",
@@ -128,7 +128,7 @@
 	},
 	"listingsWithOptionsLevel4": {
 		"level": "4",
-		"optionIcon": "../img/chevron-right.svg#i-chevron-right",
+		"optionIcon": "../../../../../context/brand-context/default/img/icons/chevron-right.svg#i-chevron-right",
 		"listings": [
 			{
 				"permalink": "#",
