@@ -1,4 +1,26 @@
 .c-ratings-survey {
 	padding: 16px;
 	border: 1px solid black;
+	overflow: hidden;
+}
+
+.c-ratings-survey__submit-message {
+	padding: 16px;
+}
+
+.c-ratings-survey__submit-message div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.c-ratings-survey__submit-message svg {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 16px;
+}
+
+.c-ratings-survey__submit-message p {
+	margin: 0;
 }

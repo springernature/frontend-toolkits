@@ -1142,554 +1142,148 @@ h1 + * {
   margin-block-start: 3rem;
 }
 
-.u-ma-0 {
-  margin: 0;
+.u-display-none {
+  display: none;
 }
 
-.u-ma-2 {
-  margin: 2px;
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+  display: none;
+  visibility: hidden;
 }
 
-.u-ma-4 {
-  margin: 4px;
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+  display: block;
+  visibility: visible;
 }
 
-.u-ma-8 {
-  margin: 8px;
+.u-show-inline,
+.js .u-js-show-inline {
+  display: inline;
+  visibility: visible;
 }
 
-.u-ma-16 {
-  margin: 16px;
-}
-
-.u-ma-24 {
-  margin: 24px;
-}
-
-.u-ma-32 {
-  margin: 32px;
-}
-
-.u-ma-48 {
-  margin: 48px;
-}
-
-.u-ma-64 {
-  margin: 64px;
-}
-
-.u-ma-auto {
-  margin: auto;
-}
-
-.u-mt-0 {
-  margin-top: 0;
-}
-
-.u-mt-2 {
-  margin-top: 2px;
-}
-
-.u-mt-4 {
-  margin-top: 4px;
-}
-
-.u-mt-8 {
-  margin-top: 8px;
-}
-
-.u-mt-16 {
-  margin-top: 16px;
-}
-
-.u-mt-24 {
-  margin-top: 24px;
-}
-
-.u-mt-32 {
-  margin-top: 32px;
-}
-
-.u-mt-48 {
-  margin-top: 48px;
-}
-
-.u-mt-64 {
-  margin-top: 64px;
-}
-
-.u-mt-auto {
-  margin-top: auto;
-}
-
-.u-mr-0 {
-  margin-right: 0;
-}
-
-.u-mr-2 {
-  margin-right: 2px;
-}
-
-.u-mr-4 {
-  margin-right: 4px;
-}
-
-.u-mr-8 {
-  margin-right: 8px;
-}
-
-.u-mr-16 {
-  margin-right: 16px;
-}
-
-.u-mr-24 {
-  margin-right: 24px;
-}
-
-.u-mr-32 {
-  margin-right: 32px;
-}
-
-.u-mr-48 {
-  margin-right: 48px;
-}
-
-.u-mr-64 {
-  margin-right: 64px;
-}
-
-.u-mr-auto {
-  margin-right: auto;
-}
-
-.u-mb-0 {
-  margin-bottom: 0;
-}
-
-.u-mb-2 {
-  margin-bottom: 2px;
-}
-
-.u-mb-4 {
-  margin-bottom: 4px;
-}
-
-.u-mb-8 {
-  margin-bottom: 8px;
-}
-
-.u-mb-16 {
-  margin-bottom: 16px;
-}
-
-.u-mb-24 {
-  margin-bottom: 24px;
-}
-
-.u-mb-32 {
-  margin-bottom: 32px;
-}
-
-.u-mb-48 {
-  margin-bottom: 48px;
-}
-
-.u-mb-64 {
-  margin-bottom: 64px;
-}
-
-.u-mb-auto {
-  margin-bottom: auto;
-}
-
-.u-ml-0 {
-  margin-left: 0;
-}
-
-.u-ml-2 {
-  margin-left: 2px;
-}
-
-.u-ml-4 {
-  margin-left: 4px;
-}
-
-.u-ml-8 {
-  margin-left: 8px;
-}
-
-.u-ml-16 {
-  margin-left: 16px;
-}
-
-.u-ml-24 {
-  margin-left: 24px;
-}
-
-.u-ml-32 {
-  margin-left: 32px;
-}
-
-.u-ml-48 {
-  margin-left: 48px;
-}
-
-.u-ml-64 {
-  margin-left: 64px;
-}
-
-.u-ml-auto {
-  margin-left: auto;
-}
-
-.u-pa-0 {
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
   padding: 0;
+  position: absolute !important;
+  width: 1px;
 }
-
-.u-pa-2 {
-  padding: 2px;
-}
-
-.u-pa-4 {
-  padding: 4px;
-}
-
-.u-pa-8 {
-  padding: 8px;
-}
-
-.u-pa-16 {
-  padding: 16px;
-}
-
-.u-pa-24 {
-  padding: 24px;
-}
-
-.u-pa-32 {
-  padding: 32px;
-}
-
-.u-pa-48 {
-  padding: 48px;
-}
-
-.u-pa-64 {
-  padding: 64px;
-}
-
-.u-pt-0 {
-  padding-top: 0;
-}
-
-.u-pt-2 {
-  padding-top: 2px;
-}
-
-.u-pt-4 {
-  padding-top: 4px;
-}
-
-.u-pt-8 {
-  padding-top: 8px;
-}
-
-.u-pt-16 {
-  padding-top: 16px;
-}
-
-.u-pt-24 {
-  padding-top: 24px;
-}
-
-.u-pt-32 {
-  padding-top: 32px;
-}
-
-.u-pt-48 {
-  padding-top: 48px;
-}
-
-.u-pt-64 {
-  padding-top: 64px;
-}
-
-.u-pr-0 {
-  padding-right: 0;
-}
-
-.u-pr-2 {
-  padding-right: 2px;
-}
-
-.u-pr-4 {
-  padding-right: 4px;
-}
-
-.u-pr-8 {
-  padding-right: 8px;
-}
-
-.u-pr-16 {
-  padding-right: 16px;
-}
-
-.u-pr-24 {
-  padding-right: 24px;
-}
-
-.u-pr-32 {
-  padding-right: 32px;
-}
-
-.u-pr-48 {
-  padding-right: 48px;
-}
-
-.u-pr-64 {
-  padding-right: 64px;
-}
-
-.u-pb-0 {
-  padding-bottom: 0;
-}
-
-.u-pb-2 {
-  padding-bottom: 2px;
-}
-
-.u-pb-4 {
-  padding-bottom: 4px;
-}
-
-.u-pb-8 {
-  padding-bottom: 8px;
-}
-
-.u-pb-16 {
-  padding-bottom: 16px;
-}
-
-.u-pb-24 {
-  padding-bottom: 24px;
-}
-
-.u-pb-32 {
-  padding-bottom: 32px;
-}
-
-.u-pb-48 {
-  padding-bottom: 48px;
-}
-
-.u-pb-64 {
-  padding-bottom: 64px;
-}
-
-.u-pl-0 {
-  padding-left: 0;
-}
-
-.u-pl-2 {
-  padding-left: 2px;
-}
-
-.u-pl-4 {
-  padding-left: 4px;
-}
-
-.u-pl-8 {
-  padding-left: 8px;
-}
-
-.u-pl-16 {
-  padding-left: 16px;
-}
-
-.u-pl-24 {
-  padding-left: 24px;
-}
-
-.u-pl-32 {
-  padding-left: 32px;
-}
-
-.u-pl-48 {
-  padding-left: 48px;
-}
-
-.u-pl-64 {
-  padding-left: 64px;
-}
-
-/**
- * Button utilities
- * These are for styled branded buttons
- */
-.u-button {
-  align-items: center;
-  cursor: pointer;
-  display: inline-flex;
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+  border: 0;
+  clip: initial;
+  height: auto;
   margin: 0;
+  overflow: auto;
+  padding: 0;
   position: relative;
-  text-decoration: none;
   width: auto;
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.3;
-  justify-content: center;
-  padding: 8px;
-  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  border-radius: 2px;
-  color: #006699;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #006699;
-}
-.u-button svg {
-  fill: currentColor;
-}
-.u-button:visited {
-  color: #006699;
-}
-.u-button:hover {
-  border: 1px solid #006699;
-}
-.u-button:focus {
-  border: 1px solid #006699;
-}
-.u-button:hover, .u-button:focus {
-  color: white;
-  background-color: #006699;
-  background-image: none;
-}
-.u-button:hover svg path, .u-button:focus svg path {
-  fill: white;
 }
 
-.u-button--primary {
-  color: white;
-  background-color: #006699;
-  background-image: none;
-  border: 1px solid #006699;
-}
-.u-button--primary svg {
-  fill: currentColor;
-}
-.u-button--primary:visited {
-  color: white;
-}
-.u-button--primary:hover {
-  border: 1px solid #006699;
-}
-.u-button--primary:focus {
-  border: 1px solid #006699;
-}
-.u-button--primary:hover, .u-button--primary:focus {
-  color: #006699;
-  background-color: white;
-  background-image: none;
-}
-.u-button--primary:hover svg path, .u-button--primary:focus svg path {
-  fill: #006699;
+/* make invisible but retain dimensions */
+.u-invisible {
+  visibility: hidden;
 }
 
-.u-button--contrast {
-  color: white;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid white;
-  font-weight: normal;
-}
-.u-button--contrast svg {
-  fill: currentColor;
-}
-.u-button--contrast:visited {
-  color: white;
-}
-.u-button--contrast:hover {
-  border: 1px solid white;
-}
-.u-button--contrast:focus {
-  border: 1px solid white;
-}
-.u-button--contrast:hover, .u-button--contrast:focus {
-  color: black;
-  background-color: white;
-  background-image: none;
-}
-.u-button--contrast:hover svg path, .u-button--contrast:focus svg path {
-  fill: black;
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: ltr;
+  vertical-align: bottom;
 }
 
-.u-button--disabled,
-.u-button:disabled {
-  color: #222222;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #eeeeee;
-  opacity: 0.7;
-  cursor: default;
-}
-.u-button--disabled svg,
-.u-button:disabled svg {
-  fill: currentColor;
-}
-.u-button--disabled:visited,
-.u-button:disabled:visited {
-  color: #222222;
-}
-.u-button--disabled:hover,
-.u-button:disabled:hover {
-  border: 1px solid #eeeeee;
-  text-decoration: none;
-}
-.u-button--disabled:focus,
-.u-button:disabled:focus {
-  border: 1px solid #eeeeee;
-  text-decoration: none;
-}
-.u-button--disabled:hover, .u-button--disabled:focus,
-.u-button:disabled:hover,
-.u-button:disabled:focus {
-  color: #222222;
-  background-color: transparent;
-  background-image: none;
-}
-.u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
-.u-button:disabled:hover svg path,
-.u-button:disabled:focus svg path {
-  fill: #222222;
+/* hiding overflow */
+.u-hide-overflow {
+  overflow: hidden;
 }
 
-.u-button--xsmall {
-  font-size: 0.875rem;
-  padding: 2px;
+@media print {
+  .u-hide-print {
+    display: none;
+  }
 }
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 320px) {
+  .u-hide-at-xs,
+.js .u-js-hide-at-xs {
+    display: none;
+    visibility: hidden;
+  }
 
-.u-button--small {
-  font-size: 0.875rem;
-  padding: inherit;
+  .u-show-at-xs,
+.js .u-js-show-at-xs {
+    display: block;
+    visibility: visible;
+  }
 }
+@media only screen and (min-width: 540px) {
+  .u-hide-at-sm,
+.js .u-js-hide-at-sm {
+    display: none;
+    visibility: hidden;
+  }
 
-.u-button--large {
-  font-size: 1.125rem;
-  padding: 16px;
+  .u-show-at-sm,
+.js .u-js-show-at-sm {
+    display: block;
+    visibility: visible;
+  }
 }
+@media only screen and (min-width: 768px) {
+  .u-hide-at-md,
+.js .u-js-hide-at-md {
+    display: none;
+    visibility: hidden;
+  }
 
-.u-button--full-width {
-  display: flex;
-  width: 100%;
+  .u-show-at-md,
+.js .u-js-show-at-md {
+    display: block;
+    visibility: visible;
+  }
 }
+@media only screen and (min-width: 1024px) {
+  .u-hide-at-lg,
+.js .u-js-hide-at-lg {
+    display: none;
+    visibility: hidden;
+  }
 
-.u-button--icon-left svg {
-  margin-right: 8px;
+  .u-show-at-lg,
+.js .u-js-show-at-lg {
+    display: block;
+    visibility: visible;
+  }
 }
+@media only screen and (min-width: 1220px) {
+  .u-hide-at-xl,
+.js .u-js-hide-at-xl {
+    display: none;
+    visibility: hidden;
+  }
 
-.u-button--icon-right svg {
-  margin-left: 8px;
+  .u-show-at-xl,
+.js .u-js-show-at-xl {
+    display: block;
+    visibility: visible;
+  }
 }
-
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
@@ -2020,11 +1614,33 @@ label + .c-forms__error,
 .c-ratings-survey {
   padding: 16px;
   border: 1px solid black;
+  overflow: hidden;
+}
+
+.c-ratings-survey__submit-message {
+  padding: 16px;
+}
+
+.c-ratings-survey__submit-message div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.c-ratings-survey__submit-message svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 16px;
+}
+
+.c-ratings-survey__submit-message p {
+  margin: 0;
 }
 		</style>
 	</head>
 	<body style="padding:2%">
-		<form action="" method="POST" class="c-ratings-survey">
+<form action="" method="POST" class="u-hide u-js-show c-ratings-survey" data-rating-survey="srep-submission-guidelines-page">
 	<fieldset class="c-forms__fieldset">
 			<legend class="c-forms__legend"><h2>How was your experience today?</h2></legend>
 			<div class="c-forms__field">
@@ -2032,7 +1648,7 @@ label + .c-forms__error,
 								<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 				
 							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible" name="radios-rating" value="Terrible" autocomplete="off">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible" name="radios-rating" value="Terrible" autocomplete="off" data-rating-survey="radio">
 									<label for="radio-terrible" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 										<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -2040,7 +1656,7 @@ label + .c-forms__error,
 									</label>
 							</div>
 							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad" name="radios-rating" value="Bad" autocomplete="off">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad" name="radios-rating" value="Bad" autocomplete="off" data-rating-survey="radio">
 									<label for="radio-bad" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 										<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -2048,7 +1664,7 @@ label + .c-forms__error,
 									</label>
 							</div>
 							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok" name="radios-rating" value="OK" autocomplete="off">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok" name="radios-rating" value="OK" autocomplete="off" data-rating-survey="radio">
 									<label for="radio-ok" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 										<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -2056,7 +1672,7 @@ label + .c-forms__error,
 									</label>
 							</div>
 							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good" name="radios-rating" value="Good" autocomplete="off">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good" name="radios-rating" value="Good" autocomplete="off" data-rating-survey="radio">
 									<label for="radio-good" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 										<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -2064,7 +1680,7 @@ label + .c-forms__error,
 									</label>
 							</div>
 							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great" name="radios-rating" value="Great" autocomplete="off">
+								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great" name="radios-rating" value="Great" autocomplete="off" data-rating-survey="radio">
 									<label for="radio-great" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 										<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 										<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -2074,6 +1690,13 @@ label + .c-forms__error,
 					</fieldset>
 			</div>
 	</fieldset>
+<section class="u-hide c-ratings-survey__submit-message" data-rating-survey="submit-message">
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path></svg>
+		<p>Thank for your feedback.</p>
+	</div>
+	<a href="https://www.surveymonkey.com/r/LRSSVGR" target="_blank">Tell us why</a>
+</section>
 </form>
 
 		<script>
