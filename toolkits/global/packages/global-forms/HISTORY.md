@@ -1,5 +1,12 @@
 # History
 
+## 5.0.0-rc.8 (2022-09-16)
+    * BREAKING:
+        * Creation of field partial (`globalFormField.hbs)` to allow for iterating over fields without fieldsets
+        * Fields with no labels no longer hidden; `hidden: true` supported instead, for any field
+    * Adds support for pictographic radio elements
+    * Bumps Brand Context to v28.0.1
+
 ## 5.0.0-rc.7 (2022-09-09)
     * Adds support for pattern attribute
     * Adds support for minlength attribute

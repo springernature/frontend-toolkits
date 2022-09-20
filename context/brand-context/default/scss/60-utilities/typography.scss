@@ -84,3 +84,19 @@
 .u-h4 {
 	@include u-h4();
 }
+
+*+ :is(.u-h2, .u-h3, .u-h4) {
+	margin-block-start: $tokens--typography-block-spacing-large;
+}
+
+:is(.u-h3, .u-h4)+* {
+	margin-block-start: $tokens--typography-block-spacing-small;
+}
+
+.u-h2+* {
+	margin-block-start: $tokens--typography-block-spacing-medium;
+}
+
+.u-h1+* {
+	margin-block-start: $tokens--typography-block-spacing-x-large;
+}

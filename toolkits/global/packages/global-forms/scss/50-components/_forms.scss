@@ -22,7 +22,7 @@
 	line-height: $global-forms-line-height;
 }
 
-.c-forms__fieldset,
+.c-forms__field,
 .c-forms__error-summary {
 	font-size: $global-forms-input-font-size;
 }
@@ -38,9 +38,22 @@
 }
 
 .c-forms__error-summary,
-.c-forms__fieldset,
-.c-forms__input-container {
+.c-forms__input-container,
+.c-forms__field {
 	max-width: $global-forms-input-width-maximum;
+}
+
+.c-forms__fieldset--pictographic-radios {
+	display: flex;
+	flex-direction: column;
+	gap: $global-forms-pictographic-radio-spacing;
+	flex-wrap: wrap;
+}
+
+@include media-query('xs') {
+	.c-forms__fieldset--pictographic-radios {
+		flex-direction: row;
+	}
 }
 
 * + .c-forms__error-summary,
@@ -86,6 +99,7 @@
 	font-size: $global-forms-label-font-size;
 	font-weight: $global-forms-label-font-weight;
 	color: $global-forms-label-color;
+	padding: 0;
 }
 
 .c-forms__label + .c-forms__label {
@@ -136,7 +150,8 @@ label+.c-forms__error,
 }
 
 .c-forms__input--radio,
-.c-forms__input--checkbox {
+.c-forms__input--checkbox,
+.c-form__label--visually-hidden {
 	/* hide visually, not to assistive tech */
 	clip-path: inset(50%);
 	height: 1px;
@@ -148,7 +163,7 @@ label+.c-forms__error,
 
 .c-forms__label--inline {
 	display: inline;
-	font-weight: normal;
+	font-weight: $global-forms-label-inline-font-weight;
 }
 
 .c-forms__label--inline {
@@ -166,6 +181,52 @@ label+.c-forms__error,
 	background-color: $global-forms-input-background-color;
 	border: #{calc($global-forms-checkbox-border-size)} solid $global-forms-checkbox-border-color;
 	margin-right: $global-forms-checkbox-spacing;
+}
+
+.c-forms__label--pictographic-radio {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: $global-forms-input-padding-inline;
+	font-weight: $global-forms-label-inline-font-weight;
+	cursor: pointer;
+}
+
+@include media-query('xs') {
+	.c-forms__label--pictographic-radio {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.c-forms__label--pictographic-radio svg {
+	box-sizing: content-box;
+	flex: 0 0 auto;
+	width: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
+	height: var(--forms--pictographic-radio-icon-size, $global-forms-pictographic-radio-icon-size);
+	fill: $global-forms-pictographic-radio-unchecked-icon-fill;
+	stroke: $global-forms-pictographic-radio-unchecked-icon-stroke;
+	background-color: $global-forms-pictographic-radio-unchecked-icon-background;
+}
+
+.c-forms__label--boxed-icon svg {
+	padding: $global-forms-input-padding-inline;
+	border: 1px solid $global-forms-pictographic-radio-unchecked-icon-border;
+}
+
+:checked+.c-forms__label--pictographic-radio svg {
+	fill: $global-forms-pictographic-radio-checked-icon-fill;
+	background-color: $global-forms-pictographic-radio-checked-icon-background;
+	stroke: $global-forms-pictographic-radio-checked-icon-stroke;
+}
+
+:checked+.c-forms__label--boxed-icon svg {
+	border-color: $global-forms-pictographic-radio-checked-icon-border;
+}
+
+:focus+.c-forms__label--pictographic-radio svg,
+.c-forms__label--pictographic-radio:hover svg {
+	box-shadow: 0 0 0 3px $global-forms-input-focus-outline-color;
 }
 
 :checked+.c-forms__label--inline::before {
@@ -266,10 +327,4 @@ label+.c-forms__error,
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
-}
-
-/* Hides type="hidden" and discourages lack of
-labels elsewhere */
-.c-forms__field--no-label {
-	display: none;
 }
