@@ -346,10 +346,8 @@ h6 a:hover {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -384,12 +382,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -397,10 +392,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -417,12 +410,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -440,10 +430,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -493,14 +481,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -508,8 +492,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -518,8 +501,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -568,18 +550,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -602,10 +578,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -621,10 +595,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -639,10 +611,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -1140,8 +1110,7 @@ body {
   max-width: 100%;
   min-height: 100%;
   background: #fcfcfc;
-  font-size: 1.125rem;
-  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
+  font-size: 1.125rem; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
 figure {
@@ -1992,6 +1961,8 @@ cite {
   display: block;
 }
 .c-header__brand img {
+  /* based on springer.com logo's intrinsic height */
+  height: 30px;
   width: auto;
 }
 
@@ -2087,7 +2058,17 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						SpringerLink shop
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../../img/shop.svg#i-shop"></use>
+							<svg id="i-shop" version="1.1" viewBox="0 0 34.66 30.676" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-194.34 50.403)" fill="none" stroke="currentColor">
+  <path d="m225.32-37.026v13.203c0 1.4629-1.2182 2.6405-2.7313 2.6405h-21.85c-1.5131 0-2.7313-1.1777-2.7313-2.6405v-13.203" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3812"></path>
+  <path d="m207.43-21.339v-8.472c0-1.5645 0.94463-2.824 2.118-2.824h4.236c1.1734 0 2.118 1.2595 2.118 2.824v8.472" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8521"></path>
+  <g stroke-width="2.3812">
+   <path d="m195.79-37.571c5.3327 1.1584 7.3133-0.79812 10.218-2.3847 4.5474 3.8263 8.3804 1.9845 11.367-0.15668 4.2161 3.2192 7.0566 3.0818 10.166 2.5414l-2.6458-10.583c-8.8194-1.0583-17.639-1.0583-26.458 0z" stroke-linejoin="round"></path>
+   <path d="m205.9-39.688 1.793-9.2604"></path>
+   <path d="m217.32-39.688-1.6885-9.2604"></path>
+  </g>
+ </g>
+</svg>
 						</svg>
 					</span>
 				</a>
@@ -2124,7 +2105,7 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						Search
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../../img/search.svg#i-search"></use>
+							<svg id="i-search" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M21.697 20.261a1.028 1.028 0 01.01 1.448 1.034 1.034 0 01-1.448-.01l-4.267-4.267A9.812 9.811 0 010 9.812a9.812 9.811 0 1117.43 6.182zM9.812 18.222A8.41 8.41 0 109.81 1.403a8.41 8.41 0 000 16.82z" fill-rule="evenodd"></path></svg>
 						</svg>
 					</span>
 				</a>
@@ -2134,7 +2115,17 @@ cite {
 					<span class="u-display-flex u-align-items-center">
 						SpringerLink shop
 						<svg class="u-icon u-ml-4" width="22" height="22" aria-hidden="true" focusable="false">
-							<use xlink:href="../../img/shop.svg#i-shop"></use>
+							<svg id="i-shop" version="1.1" viewBox="0 0 34.66 30.676" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-194.34 50.403)" fill="none" stroke="currentColor">
+  <path d="m225.32-37.026v13.203c0 1.4629-1.2182 2.6405-2.7313 2.6405h-21.85c-1.5131 0-2.7313-1.1777-2.7313-2.6405v-13.203" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3812"></path>
+  <path d="m207.43-21.339v-8.472c0-1.5645 0.94463-2.824 2.118-2.824h4.236c1.1734 0 2.118 1.2595 2.118 2.824v8.472" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8521"></path>
+  <g stroke-width="2.3812">
+   <path d="m195.79-37.571c5.3327 1.1584 7.3133-0.79812 10.218-2.3847 4.5474 3.8263 8.3804 1.9845 11.367-0.15668 4.2161 3.2192 7.0566 3.0818 10.166 2.5414l-2.6458-10.583c-8.8194-1.0583-17.639-1.0583-26.458 0z" stroke-linejoin="round"></path>
+   <path d="m205.9-39.688 1.793-9.2604"></path>
+   <path d="m217.32-39.688-1.6885-9.2604"></path>
+  </g>
+ </g>
+</svg>
 						</svg>
 					</span>
 				</a>
@@ -2162,7 +2153,7 @@ cite {
 			<input id="search-input" name="search">
 			<button class="u-button u-button--primary" type="submit" aria-label="search">
 				<svg class="u-icon" width="22" height="22" aria-hidden="true" focusable="false">
-					<use xlink:href="../../img/search.svg#i-search"></use>
+					<svg id="i-search" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M21.697 20.261a1.028 1.028 0 01.01 1.448 1.034 1.034 0 01-1.448-.01l-4.267-4.267A9.812 9.811 0 010 9.812a9.812 9.811 0 1117.43 6.182zM9.812 18.222A8.41 8.41 0 109.81 1.403a8.41 8.41 0 000 16.82z" fill-rule="evenodd"></path></svg>
 				</svg>
 			</button>
 		</div>

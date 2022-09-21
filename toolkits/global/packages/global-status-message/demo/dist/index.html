@@ -20,10 +20,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -58,12 +56,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -71,10 +66,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -91,12 +84,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -114,10 +104,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -167,14 +155,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -182,8 +166,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -192,8 +175,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -242,18 +224,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -276,10 +252,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -295,10 +269,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -313,10 +285,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -561,7 +531,7 @@ body {
   width: 1.5em;
   height: 1.5em;
   flex: 0 0 auto;
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 .c-status-message__message :first-child {
@@ -612,7 +582,7 @@ body {
 	<body style="padding:2%">
 	<aside class="c-status-message c-status-message--boxed c-status-message--warning">
 			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="warning:" focusable="false">
-				<use xlink:href="../../img/warning.svg#i-warning"></use>
+				<svg id="i-warning" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 11.75c.69035594 0 1.25.5596441 1.25 1.25s-.55964406 1.25-1.25 1.25-1.25-.5596441-1.25-1.25.55964406-1.25 1.25-1.25zm.41320045-7.75c.55228475 0 1.00000005.44771525 1.00000005 1l-.0034543.08304548-.3333333 4c-.043191.51829212-.47645714.91695452-.99654578.91695452h-.15973424c-.52008864 0-.95335475-.3986624-.99654576-.91695452l-.33333333-4c-.04586475-.55037702.36312325-1.03372649.91350028-1.07959124l.04148683-.00259031zm-.41320045 14c-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9 4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9z" fill="currentColor" fill-rule="evenodd"></path></svg>
 			</svg>
 			<div class="c-status-message__message" tabindex="-1" id="warning-message">
 				This is a warning message
@@ -621,7 +591,7 @@ body {
 <br>
 	<aside class="c-status-message c-status-message--boxed c-status-message--error">
 			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="error:" focusable="false">
-				<use xlink:href="../../img/error.svg#i-error"></use>
+				<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
 			</svg>
 			<div class="c-status-message__message" tabindex="-1" id="error-message">
 				This is an error message
@@ -630,7 +600,7 @@ body {
 <br>
 	<aside class="c-status-message c-status-message--boxed c-status-message--success">
 			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="success:" focusable="false">
-				<use xlink:href="../../img/success.svg#i-success"></use>
+				<svg id="i-success" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm3.4860198 4.98163161-4.71802968 5.50657859-2.62834168-2.02300024c-.42862421-.36730544-1.06564993-.30775346-1.42283677.13301307-.35718685.44076653-.29927542 1.0958383.12934879 1.46314377l3.40735508 2.7323063c.42215801.3385221 1.03700951.2798252 1.38749189-.1324571l5.38450527-6.33394549c.3613513-.43716226.3096573-1.09278382-.115462-1.46437175-.4251192-.37158792-1.0626796-.31842941-1.4240309.11873285z" fill="currentColor" fill-rule="evenodd"></path></svg>
 			</svg>
 			<div class="c-status-message__message" tabindex="-1" id="success-message">
 				This is a success message
@@ -639,7 +609,7 @@ body {
 <br>
 	<aside class="c-status-message c-status-message--boxed c-status-message--info">
 			<svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="info:" focusable="false">
-				<use xlink:href="../../img/info.svg#i-info"></use>
+				<svg id="i-info" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm0 7h-1.5l-.11662113.00672773c-.49733868.05776511-.88337887.48043643-.88337887.99327227 0 .47338693.32893365.86994729.77070917.97358929l.1126697.01968298.11662113.00672773h.5v3h-.5l-.11662113.0067277c-.42082504.0488782-.76196299.3590206-.85696816.7639815l-.01968298.1126697-.00672773.1166211.00672773.1166211c.04887817.4208251.35902055.761963.76398144.8569682l.1126697.019683.11662113.0067277h3l.1166211-.0067277c.4973387-.0577651.8833789-.4804365.8833789-.9932723 0-.4733869-.3289337-.8699473-.7707092-.9735893l-.1126697-.019683-.1166211-.0067277h-.5v-4l-.00672773-.11662113c-.04887817-.42082504-.35902055-.76196299-.76398144-.85696816l-.1126697-.01968298zm0-3.25c-.69035594 0-1.25.55964406-1.25 1.25s.55964406 1.25 1.25 1.25 1.25-.55964406 1.25-1.25-.55964406-1.25-1.25-1.25z" fill="currentColor" fill-rule="evenodd"></path></svg>
 			</svg>
 			<div class="c-status-message__message" tabindex="-1" id="info-message">
 				This is an info message

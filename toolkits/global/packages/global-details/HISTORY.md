@@ -1,5 +1,8 @@
 # History
 
+## 0.2.3 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 0.2.2 (2022-08-04)
     * Remove redundant utility class
 
