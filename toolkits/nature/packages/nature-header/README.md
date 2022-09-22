@@ -68,6 +68,10 @@ The loops and conditional statements show which parts of the component contain d
 
 In the oscar-sites-nature application, the color of the border on each journal’s header is defined from Pubserv. It will override the Header’s default black border.
 
+### Header logo
+
+In the oscar-sites-nature application, some journals will have a compact variant of their logo shown at narrower viewports and swapped with another variant at wider viewports. An example of this is observable in [Nature Cardiovascular Research](https://www.nature.com/natcardiovascres/) journal's header.
+
 ### Header expander
 
 The Header’s JavaScript file uses the following from `brand-context`: 
