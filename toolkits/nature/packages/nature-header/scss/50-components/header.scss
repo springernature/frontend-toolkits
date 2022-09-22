@@ -8,15 +8,11 @@
 
 .c-header__row {
 	position: relative;
-	padding: spacing(8) 0;
+	padding: 0;
 
 	&:not(:last-child) {
 		border-bottom: 1px solid greyscale(80);
 	}
-}
-
-.c-header__row--flush {
-	padding: 0;
 }
 
 .c-header__split {
@@ -27,7 +23,7 @@
 
 .c-header__logo-container {
 	flex: 1 1 0;
-	margin-right: spacing(24);
+	margin: spacing(8) spacing(24) spacing(8) 0;
 	line-height: 0; // Can be an h1 or a div
 }
 
@@ -44,8 +40,10 @@
 }
 
 .c-header__menu {
+	@include u-hide-print;
 	@include u-list-reset();
 	display: flex;
+	gap: spacing(8);
 	align-items: center;
 	flex-wrap: wrap;
 	flex: 0 1 auto;
@@ -54,23 +52,28 @@
 	margin: 0 (0 - spacing(8)); // Make flush with edge
 }
 
+.c-header__menu--hide-lg-max {
+	@include media-query('lg', 'max') {
+		@include u-hide;
+	}
+}
+
 .c-header__menu--global {
 	font-weight: $context--font-weight-normal;
 	justify-content: flex-end;
-}
 
-.c-header__menu--global .c-header__item {
 	svg {
-		display: none;
+		@include u-hide;
 
 		@include media-query('sm') {
-			display: block;
+			@include u-show;
 		}
 	}
 }
 
 .c-header__menu--journal {
 	font-size: .875rem;
+	margin: spacing(8) spacing(8) spacing(8) (0 - spacing(8));
 
 	@include media-query('sm') {
 		flex-wrap: nowrap;
@@ -81,20 +84,10 @@
 	}
 }
 
-.c-header__menu--tools {
-	@include media-query('lg', 'max') {
-		display: none;
-	}
-}
-
 .c-header__item {
-	display: flex;
-
-	@include media-query('sm') {
-		&:not(:first-child) {
-			margin-left: spacing(8);
-		}
-	}
+	position: static;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .c-header__item--pipe {
@@ -102,42 +95,172 @@
 	padding-left: spacing(8);
 }
 
-.c-header__item--nature-research {
-	@include media-query('md', 'max') {
-		display: none;
+.c-header__item--padding {
+	padding-top: spacing(8);
+	padding-bottom: spacing(8);
+}
+
+.c-header__item--dropdown-menu {
+	@include media-query('sm') {
+		position: relative;
 	}
 }
 
-.c-header__row--flush .c-header__item {
-	padding-top: spacing(8);
-	padding-bottom: spacing(8);
+.c-header__item--hide-lg {
+	@include media-query('lg') {
+		@include u-hide;
+	}
+}
+
+.c-header__item--hide-lg-max {
+	@include media-query('lg', 'max') {
+		@include u-hide;
+	}
+}
+
+.c-header__item--hide-md-max {
+	@include media-query('md', 'max') {
+		@include u-hide;
+	}
 }
 
 .c-header__link {
 	@include u-link-inherit();
 	padding: spacing(8);
-	display: flex;
+	display: inline-flex;
 	align-items: center;
+	gap: spacing(4);
 	white-space: nowrap;
 
 	::first-letter {
 		text-transform: capitalize;
 	}
 
-	> svg {
-		margin-left: spacing(2);
+	svg {
 		transition-duration: 0.2s;
-
-		@include media-query('sm') {
-			margin-left: spacing(4);
-		}
 	}
 }
 
 .c-header__show-text {
-	display: none;
+	@include u-hide;
+
 	@include media-query('sm') {
 		display: inline;
+		visibility: visible;
+	}
+}
+
+.c-header__dropdown {
+	@include u-hide-print;
+	background-color: black;
+	border-bottom: 1px solid greyscale(5); // non-js
+	color: greyscale(90);
+	padding: spacing(16) 0;
+	font-size: .875rem;
+	line-height: 1.2;
+}
+
+.c-header__heading {
+	display: inline-block;
+	line-height: 1.4;
+	font-size: 1.25rem;
+	font-family: $context--font-family-sans;
+	font-weight: $context--font-weight-normal;
+	margin-bottom: spacing(8);
+}
+
+.c-header__heading--keyline {
+	@include u-keyline($direction: top);
+	border-color: greyscale(5);
+	width: 100%;
+}
+
+.c-header__list {
+	@include u-list-reset;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 spacing(16);
+	margin: 0 (0 - spacing(8)); // Make flush with edge
+}
+
+.c-header__flush {
+	margin: 0 (0 - spacing(8)); // Make flush with edge
+}
+
+.c-header__visually-hidden {
+	@include u-visually-hidden;
+}
+
+/**
+ Search form
+ */
+
+.c-header__search-form {
+	margin-bottom: spacing(8);
+}
+
+.c-header__search-layout {
+	display: flex;
+	gap: spacing(16);
+	flex-wrap: wrap;
+
+	> *:first-child {
+		flex: 999 1 auto;
+	}
+
+	> * {
+		flex: 1 1 auto;
+	}
+}
+
+.c-header__search-layout--max-width {
+	max-width: 720px;
+}
+
+.c-header__search-button {
+	@include button-default;
+	@include button-full-width;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+	line-height: 1.15;
+	padding: spacing(8) spacing(16);
+
+	&:focus,
+	&:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
+.c-header__input,
+.c-header__select {
+	padding: spacing(8) spacing(16);
+	border: 1px solid;
+	border-radius: 3px;
+	font-size: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.c-header__select {
+	display: block;
+	width: 100%;
+	min-width: 150px; // prevent arrow icon overlapping text
+	max-width: 100%; /* useful when width is set to anything other than 100% */
+	margin: 0;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z' fill='%23333' fill-rule='evenodd' transform='matrix(0 1 -1 0 11 3)'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	/* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+	background-position: right .7em top 50%;
+	/* icon size, then gradient */
+	background-size: 1em auto;
+
+	/* Hide arrow icon in IE browsers */
+	&::-ms-expand {
+		@include u-hide;
 	}
 }
 
@@ -157,10 +280,6 @@
 }
 
 .c-header__item--dropdown-menu {
-	@include media-query('sm') {
-		position: relative;
-	}
-
 	.c-header__link.is-open {
 		svg {
 			transform: rotate(180deg);
@@ -169,7 +288,7 @@
 }
 
 .c-header__menu--journal .c-header__item--dropdown-menu:last-child {
-	.c-header-expander.has-tethered {
+	.c-header__dropdown.has-tethered {
 		@include media-query('sm') {
 			left: auto;
 			right: 0;
@@ -179,5 +298,46 @@
 			left: 0;
 			right: auto;
 		}
+	}
+}
+
+.c-header__dropdown.has-tethered {
+	position: absolute;
+	top: 100%; // bottom of the tether element
+	transform: translateY(5px);
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	border-radius: 0 0 2px 2px;
+	border-bottom: 0;
+
+	@include media-query('sm') {
+		transform: translateY(8px);
+		width: auto;
+	}
+
+	@include media-query('md') {
+		min-width: 225px;
+	}
+}
+
+.c-header__dropdown--full-width.has-tethered {
+	width: 100%;
+	padding: spacing(32) 0 spacing(24);
+	transform: none;
+}
+
+.has-tethered {
+	.c-header__heading--js-hide {
+		@include u-hide;
+	}
+
+	.c-header__list--js-stack {
+		flex-direction: column;
+	}
+
+	.c-header__item--keyline,
+	.c-header__list ~ .c-header__list .c-header__item:first-child {
+		@include u-keyline($direction: top, $spacing: spacing(8));
 	}
 }
