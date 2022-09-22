@@ -1,26 +1,42 @@
 .c-ratings-survey {
-	padding: 16px;
-	border: 1px solid black;
+	padding: spacing(16);
 	overflow: hidden;
+	line-height: $context--line-height-base;
 }
 
-.c-ratings-survey__submit-message {
-	padding: 16px;
+.c-ratings-survey__heading {
+	margin-bottom: spacing(16);
 }
 
 .c-ratings-survey__submit-message div {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: 16px;
 }
 
 .c-ratings-survey__submit-message svg {
-	width: 2rem;
-	height: 2rem;
-	margin-right: 16px;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: spacing(8);
 }
 
 .c-ratings-survey__submit-message p {
 	margin: 0;
+}
+
+.c-ratings-survey a {
+	display: inline-block;
+	margin-top: spacing(8);
+	// TODO: Remove this once we apply underline from default brand context
+	text-decoration: underline;
+}
+
+.c-ratings-survey__visually-hidden {
+	/* hide visually, not to assistive tech */
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }

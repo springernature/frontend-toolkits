@@ -1,0 +1,18 @@
+<form action="" method="POST" class="u-hide u-js-show c-ratings-survey" data-ratings-survey="{{#if id}}{{id}}{{/if}}">
+	<h{{headingLevel}} class="c-ratings-survey__heading">{{heading}}</h{{headingLevel}}>
+	{{#with globalFormData}}
+		{{> globalFormFieldset }}
+	{{/with}}
+	<section class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
+		<div>
+			<svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+				<use xlink:href="{{iconUrl}}"></use>
+			</svg>
+			<p>{{submitMessageText}}</p>
+		</div>
+		{{#if questionUrl}}
+			<a href="{{questionUrl}}" target="_blank">{{questionText}}<span class="c-ratings-survey__visually-hidden"> (this opens a new browser window)</span></a>
+		{{/if}}
+	</section>
+</form>
+<script>window.dataLayer=[{"foo":"bar"}]</script>

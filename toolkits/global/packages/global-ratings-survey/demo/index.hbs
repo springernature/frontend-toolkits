@@ -1,14 +1,3 @@
 {{#with ratingsSurveyData}}
-<form action="" method="POST" class="u-hide u-js-show c-ratings-survey" data-rating-survey="{{#if id}}{{id}}{{/if}}">
+	{{> ratingsSurvey }}
 {{/with}}
-{{#with ratingsFormsData}}
-	{{> globalFormFieldset }}
-{{/with}}
-<section class="u-hide c-ratings-survey__submit-message" data-rating-survey="submit-message">
-	<div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"/></svg>
-		<p>Thank for your feedback.</p>
-	</div>
-	<a href="https://www.surveymonkey.com/r/LRSSVGR" target="_blank">Tell us why</a>
-</section>
-</form>
