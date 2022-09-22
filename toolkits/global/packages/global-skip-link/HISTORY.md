@@ -1,6 +1,6 @@
 # History
 
-## 1.2.0 (2022-09-22)
+## 1.1.1 (2022-09-22)
     * Add z-index to springernature settings
 
 ## 1.1.0 (2022-07-28)
