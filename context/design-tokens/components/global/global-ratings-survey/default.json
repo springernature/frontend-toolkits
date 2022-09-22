@@ -1,0 +1,27 @@
+{
+	"global-ratings-survey": {
+		"form": {
+			"padding": {
+				"value": "{spacing.relative.400}"
+			}
+		},
+		"link": {
+			"margin": {
+				"value": "{spacing.relative.200}"
+			}
+		},
+		"heading": {
+			"margin": {
+				"value": "{spacing.relative.400}"
+			}
+		},
+		"icon": {
+			"margin": {
+				"value": "{spacing.relative.200}"
+			},
+			"size": {
+				"value": "{sizing.relative.600}"
+			}
+		}
+	}
+}

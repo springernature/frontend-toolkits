@@ -1,11 +1,10 @@
 .c-ratings-survey {
-	padding: spacing(16);
+	padding: $global-ratings-survey-form-padding;
 	overflow: hidden;
-	line-height: $context--line-height-base;
 }
 
 .c-ratings-survey__heading {
-	margin-bottom: spacing(16);
+	margin-bottom: $global-ratings-survey-heading-margin;
 }
 
 .c-ratings-survey__submit-message div {
@@ -15,9 +14,9 @@
 }
 
 .c-ratings-survey__submit-message svg {
-	width: 1.6rem;
-	height: 1.6rem;
-	margin-right: spacing(8);
+	width: $global-ratings-survey-icon-size;
+	height: $global-ratings-survey-icon-size;
+	margin-right: $global-ratings-survey-icon-margin;
 }
 
 .c-ratings-survey__submit-message p {
@@ -26,7 +25,7 @@
 
 .c-ratings-survey a {
 	display: inline-block;
-	margin-top: spacing(8);
+	margin-top: $global-ratings-survey-link-margin;
 	// TODO: Remove this once we apply underline from default brand context
 	text-decoration: underline;
 }
