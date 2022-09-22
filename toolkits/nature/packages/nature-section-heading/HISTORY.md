@@ -1,5 +1,8 @@
 # History
 
+## 3.1.1 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 3.1.0 (2022-07-28)
     * UPDATE: brand-context v25.0.0
 

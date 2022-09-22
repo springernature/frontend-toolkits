@@ -1,5 +1,8 @@
 # History
 
+## 4.1.2 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 4.1.1 (2022-09-13)
     * even icon spacing for longform content
 

@@ -1,5 +1,8 @@
 # History
 
+## 7.2.2 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 7.2.1 (2022-08-10)
     * Match different logo heights
 
