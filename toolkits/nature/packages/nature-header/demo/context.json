@@ -38,6 +38,7 @@
 	"alertsLink": "/some-url/",
 	"rssLink": "/some-url/",
 	"logo": {
+		"srcset": "../img/logo-nature.svg",
 		"src": "../img/logo-nature.svg",
 		"alt": "Nature",
 		"link": "https://www.nature.com/"

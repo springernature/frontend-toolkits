@@ -266,10 +266,8 @@ h6, h5, h4 {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -304,12 +302,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -317,10 +312,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -337,12 +330,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -360,10 +350,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -413,14 +401,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -428,8 +412,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -438,8 +421,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -488,18 +470,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -522,10 +498,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -541,10 +515,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -559,10 +531,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -1460,8 +1430,7 @@ p:empty {
   display: block;
   width: 100%;
   min-width: 150px;
-  max-width: 100%;
-  /* useful when width is set to anything other than 100% */
+  max-width: 100%; /* useful when width is set to anything other than 100% */
   margin: 0;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   appearance: none;
@@ -1830,7 +1799,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-xs,
 .js .u-js-show-at-xs {
     display: block;
@@ -1843,7 +1811,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-sm,
 .js .u-js-show-at-sm {
     display: block;
@@ -1856,7 +1823,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-md,
 .js .u-js-show-at-md {
     display: block;
@@ -1869,7 +1835,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-lg,
 .js .u-js-show-at-lg {
     display: block;
@@ -1882,7 +1847,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-xl,
 .js .u-js-show-at-xl {
     display: block;
@@ -2332,6 +2296,7 @@ p:empty {
 						<div class="c-header__logo-container">
 							<a href="https://www.nature.com/">
 								<picture class="c-header__logo">
+									<source srcset="../img/logo-nature.svg" media="(min-width: 875px)">
 									<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMxIiBoZWlnaHQ9IjMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04LjQgNS41MmwuMDggNS41MmguMTZjMS4xMi0zLjEyIDMuOTItNS42OCA4LTUuNjggNS4yOCAwIDYuODggMi42NCA2Ljg4IDcuNjh2OS45MmMwIDMuMDQuMTYgNi4xNi44OCA4LjQ4aC04LjU2Yy43Mi0yLjI0LjgtNC45Ni44LTguMjR2LTkuNDRjMC0yLjMyLS44OC0zLjM2LTMuNDQtMy4zNi0xLjkyIDAtMy4zNi41Ni00LjQ4IDEuNTJ2MTEuMzZjMCAzLjI4LjA4IDYgLjggOC4yNEgxLjA0Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjI4YzAtMi40OC0uODgtNC43Mi0xLjkyLTUuODRsOC40LTIuNHptMzAuNzIgMjEuMDR2LTkuMjhjLS41Ni44LTEuMiAxLjI4LTMuMDQgMi4wOC0yLjQgMS4yLTMuMjggMi40OC0zLjI4IDUuMTIgMCAyLjI0IDEuMjggMy42OCAzLjIgMy42OCAxLjkyLjA4IDIuNTYtLjY0IDMuMTItMS42ek0zNi44OCA1LjQ0YzYuNTYgMCA5LjA0IDIuNjQgOS4wNCA4djExLjJjMCAyIC44IDIuNjQgMi40IDIuNjQuMjQgMCAxLjEyLS4xNiAxLjM2LS40LS4xNi44LS4yNCAxLjItLjQgMS42LS44IDIuMjQtMi4xNiAzLjUyLTQuODggMy41Mi0zLjI4IDAtNC44OC0yLjMyLTQuOTYtNC42NGgtLjA4QzM4LjI0IDMwLjY0IDM2LjE2IDMyIDMyLjggMzJjLTQuMDggMC02LjcyLTIuNDgtNi43Mi02LjMyIDAtNC4wOCAzLjY4LTUuODQgNy41Mi03LjI4IDMuNjgtMS40NCA1LjYtMi40OCA1LjYtNS4xMnYtLjU2YzAtMi44OC0uODgtNC4zMi0zLjYtNC4zMi0xLjY4IDAtMi4zMi44LTIuNjQgMi40LS41NiAyLjQ4LTEuNTIgMy4zNi0zLjEyIDMuMzYtMS40NCAwLTIuOC0uOTYtMi44LTIuOC0uMTYtMy41MiA0LjgtNS45MiA5Ljg0LTUuOTJ6bTI3LjY4IDIzLjJjLS44OCAyLTMuMDQgMy4zNi02LjA4IDMuMzYtNS4yIDAtNy4yOC0yLjY0LTcuMjgtNy40NFY5LjUyaC0yLjQ4di0uMTZMNTcuNzYgMGwuMTYuMDhWNmg2LjU2bC0uNjQgMy42SDU4djEzLjkyYzAgMi42NCAxLjEyIDMuNzYgMy41MiAzLjc2IDEuODQgMCAyLjgtLjI0IDMuNjgtLjcyLS4yNC44OC0uMzIgMS4zNi0uNjQgMi4wOHptOS4zNi0yMi44djE3LjZjMCAyLjY0IDEuMDQgNC4wOCAzLjYgNC4wOCAyLjE2IDAgMy43Ni0uNzIgNC43Mi0xLjkyVjEzLjY4YzAtMi42NC0uMjQtNC44LTEuMTItNy4wNGw3Ljg0LS44djE4YzAgNCAuNCA1Ljc2IDEuMDQgNy42OGgtNy42OFYyNi40aC0uMDhjLTEuMTIgMy4yOC0zLjIgNS42LTcuNiA1LjYtNS41MiAwLTcuNi0zLjM2LTcuNi04LjMydi0xMGMwLTIuNjQtLjI0LTQuOC0xLjEyLTcuMDRsOC0uOHptMjUuNzYgNi4wOGMxLjEyLTQuNzIgMy4yOC02LjU2IDYuMTYtNi41NiAyLjY0IDAgNCAxLjM2IDQgMy41MiAwIDEuOTItMS4xMiAzLjUyLTMuMTIgMy41Mi0xLjIgMC0xLjkyLS41Ni0yLjQtMS4wNC0uNTYtLjU2LS45Ni0xLjEyLTEuNi0xLjEyLTEuMzYgMC0yLjg4IDIuMzItMi44OCA2LjE2djYuNGMwIDMuMTIuMjQgNi4yNC44OCA4LjY0aC04LjQ4Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjJjMC0yLjQ4LS44OC00LjcyLTEuOTItNS44NGw4LjMyLTIuNC4wOC4wOFYxMmwuMDgtLjA4em0xNi4wOCAzLjc2bDguNTYtLjhjLS4wOC00LjA4LS43Mi02LjQ4LTMuNTItNi40OC0yLjg4LjA4LTQuNTYgMi40LTUuMDQgNy4yOHpNMTIwLjg4IDMyYy02LjU2IDAtMTEuOTItNC4zMi0xMS45Mi0xMi42NCAwLTguNCA1LjEyLTE0LjA4IDEyLjA4LTE0LjA4IDYuNTYgMCA5LjY4IDQuMTYgOS42OCAxMi4wOGgtMTQuOTZ2LjhjMCA2LjMyIDMuMjggOC44OCA3Ljc2IDguODggNC4wOCAwIDUuODQtMS42IDcuMDQtMi44bC4xNi40Yy0xLjEyIDMuODQtNC4xNiA3LjM2LTkuODQgNy4zNnoiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg==" alt="Nature" height="32">
 								</picture>
 							</a>
