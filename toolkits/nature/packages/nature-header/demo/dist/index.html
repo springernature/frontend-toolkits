@@ -567,17 +567,12 @@ template {
   display: none;
 }
 
-/**
- * Basic
- * Some default CSS styles
- */
 body {
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #006699;
 }
 
 a:hover,
@@ -587,6 +582,26 @@ a:focus {
 
 button {
   cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg[aria-hidden] {
+  width: 1rem;
+  height: 1rem;
+}
+
+/**
+ * Basic
+ * Some default CSS styles
+ */
+a {
+  color: #006699;
 }
 
 h1 {
@@ -613,38 +628,9 @@ ins {
   text-decoration: none;
 }
 
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   border-radius: 0;
-}
-
-/* accessible focus styles */
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-p:focus,
-div:focus,
-ul:focus,
-ol:focus,
-li:focus,
-dl:focus,
-dt:focus,
-dd:focus,
-span:focus,
-i:focus,
-b:focus,
-em:focus,
-strong:focus {
-  outline: none;
 }
 
 /**
@@ -941,38 +927,6 @@ figure {
   margin: 0;
 }
 
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  margin: 0;
-  padding: 0;
-}
-
 abbr[title] {
   text-decoration: none;
 }
@@ -1090,6 +1044,34 @@ body {
   font-size: 1.125rem;
 }
 
+/* spacing algorithm */
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+  margin-block-start: 16px;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 32px;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 8px;
+}
+
+h2 + * {
+  margin-block-start: 16px;
+}
+
+h1 + * {
+  margin-block-start: 48px;
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+  margin-block-start: 0;
+}
+
 /**
  * Typographic
  * Standard text and heading formatting
@@ -1099,18 +1081,35 @@ body {
  * default margin 28px to match line height
  * this is used for mainting vertical rhythm on the page
  */
-p,
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
 /*
  * Headings
  */
 p:empty {
   display: none;
+}
+
+* {
+  margin-block: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + * {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
 }
 
 .c-header {
@@ -1197,7 +1196,7 @@ p:empty {
 
 .c-header__menu--journal {
   font-size: 0.875rem;
-  margin: 8px 8px 8px -8px;
+  margin: 8px 0 8px -8px;
 }
 @media only screen and (min-width: 540px) {
   .c-header__menu--journal {
@@ -2329,36 +2328,34 @@ p:empty {
 			<div class="c-header__row">
 				<div class="c-header__container">
 					<div class="c-header__split">
-						<div class="c-header__split">
-							<ul class="c-header__menu c-header__menu--journal">
-								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#explore" class="c-header__link" data-header-expander="">
-										<span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-								</li>
-								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#about-the-journal" class="c-header__link" data-header-expander="">
-										<span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-								</li>
-								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#publish-with-us" class="c-header__link c-header__link--dropdown-menu" data-header-expander="">
-										<span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-								</li>
-							</ul>
-							<div class="c-header__item c-header__item--pipe c-header__item--hide-lg-max">
+						<ul class="c-header__menu c-header__menu--journal">
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#explore" class="c-header__link" data-header-expander="">
+									<span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#about-the-journal" class="c-header__link" data-header-expander="">
+									<span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#publish-with-us" class="c-header__link c-header__link--dropdown-menu" data-header-expander="">
+									<span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--pipe c-header__item--hide-lg-max">
 								<a class="c-header__link" href="https://www.nature.com/nature/subscribe">
 									<span>Subscribe</span>
 								</a>
-							</div>
-						</div>
+							</li>
+						</ul>
 						<ul class="c-header__menu c-header__menu--hide-lg-max">
 							<li class="c-header__item">
 								<a class="c-header__link" href="https://www.nature.com/my-account/alerts/subscribe-journal?list-id=1" rel="nofollow">
