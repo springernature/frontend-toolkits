@@ -1,5 +1,11 @@
 # History
 
+## 9.0.1 (2022-09-26)
+    UPDATE:
+        * Move subscribe link into menu list and remove redundant div container in template
+        * Remove margin right on menu to inline menu items sooner as viewport gets wider
+        * Update brand-context v28.0.1 
+
 ## 9.0.0 (2022-09-01)
     * BREAKING:
         * Removes header-expander.scss and move styles as part of header.scss
