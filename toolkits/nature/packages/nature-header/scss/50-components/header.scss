@@ -73,7 +73,7 @@
 
 .c-header__menu--journal {
 	font-size: .875rem;
-	margin: spacing(8) spacing(8) spacing(8) (0 - spacing(8));
+	margin: spacing(8) 0 spacing(8) (0 - spacing(8));
 
 	@include media-query('sm') {
 		flex-wrap: nowrap;
