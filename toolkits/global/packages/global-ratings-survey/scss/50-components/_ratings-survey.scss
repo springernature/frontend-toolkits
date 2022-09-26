@@ -1,6 +1,6 @@
 .c-ratings-survey {
-	padding: $global-ratings-survey-form-padding;
 	overflow: hidden;
+	font-size: $global-ratings-survey-font-size;
 }
 
 .c-ratings-survey__heading {
@@ -38,4 +38,20 @@
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+/* Override Global Forms Styles */
+.c-ratings-survey--vertical .c-forms__fieldset {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0;
+}
+
+.c-ratings-survey--vertical label.c-forms__label {
+	flex-direction: row;
+}
+
+.c-ratings-survey .c-forms__label--pictographic-radio svg {
+	width: 2rem;
+	height: 2rem;
 }

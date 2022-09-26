@@ -1,4 +1,4 @@
-<form action="" method="POST" class="u-hide u-js-show c-ratings-survey" data-ratings-survey="{{id}}">
+<form action="" method="POST" class="u-hide u-js-show c-ratings-survey{{#if verticalLayout}} c-ratings-survey--vertical{{/if}}" data-ratings-survey="{{id}}" {{#if iconSize}}style="--forms--pictographic-radio-icon-size:{{iconSize}}"{{/if}}>
 	<h{{headingLevel}} class="c-ratings-survey__heading">{{heading}}</h{{headingLevel}}>
 	{{#with globalFormData}}
 		{{> globalFormFieldset }}
@@ -11,8 +11,7 @@
 			<p>{{submitMessageText}}</p>
 		</div>
 		{{#if questionUrl}}
-			<a href="{{questionUrl}}" target="_blank">{{questionText}}<span class="c-ratings-survey__visually-hidden"> (this opens a new browser window)</span></a>
+			<a href="{{questionUrl}}?id={{id}}" target="_blank">{{questionText}}<span class="c-ratings-survey__visually-hidden"> (this opens a new browser window)</span></a>
 		{{/if}}
 	</section>
 </form>
-<script>window.dataLayer=[{"foo":"bar"}]</script>

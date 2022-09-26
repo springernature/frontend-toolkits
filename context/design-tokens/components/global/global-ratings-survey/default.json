@@ -1,10 +1,5 @@
 {
 	"global-ratings-survey": {
-		"form": {
-			"padding": {
-				"value": "{spacing.relative.400}"
-			}
-		},
 		"link": {
 			"margin": {
 				"value": "{spacing.relative.200}"
@@ -21,6 +16,11 @@
 			},
 			"size": {
 				"value": "{sizing.relative.600}"
+			}
+		},
+		"font": {
+			"size": {
+				"value": "{font-size.400}"
 			}
 		}
 	}
