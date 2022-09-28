@@ -1,7 +1,7 @@
 # History
 ## 28.1.0 (2022-09-28)
     * Updates border alias design tokens to use grayscale.500 for input borders
-    * Updates Global Form compponent design tokens to use border.color.input for pictographic radio unchecked icon border color
+    * Updates Global Form component design tokens to use border.color.input for pictographic radio unchecked icon border color
 ## 28.0.1 (2022-09-15)
     * BUG: Fixes previous overwritten nature basic.scss file
 ## 28.0.0 (2022-09-14)
