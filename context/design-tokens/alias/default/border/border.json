@@ -5,7 +5,7 @@
 				"value": "{color.grayscale.800}"
 			},
 			"input": {
-				"value": "{color.grayscale.700}"
+				"value": "{color.grayscale.500}"
 			},
 			"button": {
 				"value": "{color.primary.universal-dark-blue}"
