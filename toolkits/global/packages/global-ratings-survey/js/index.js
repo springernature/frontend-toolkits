@@ -1,11 +1,11 @@
 import {RatingsSurvey} from './ratings-survey';
 
 const init = () => {
-	const forms = document.querySelectorAll('form[data-ratings-survey]');
+	const asides = document.querySelectorAll('aside[data-ratings-survey]');
 
-	forms.forEach(form => {
+	asides.forEach(aside => {
 		/* eslint-disable no-new */
-		new RatingsSurvey(form);
+		new RatingsSurvey(aside);
 		/* eslint-enable no-new */
 	});
 };

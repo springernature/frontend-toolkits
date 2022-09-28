@@ -1,13 +1,11 @@
 {
 	"ratingsSurveyData1": {
-		"id": "srepSubmissionGuidelinesSidebar",
-		"heading": "How was your experience today?",
+		"userJourneys": "contentDiscovery",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
 		"submitMessageText": "Thank you for your feedback.",
 		"iconUrl": "../img/circle-tick.svg#i-circle-tick",
-		"verticalLayout": true,
 		"globalFormData": {
 			"fields": [
 				{
@@ -80,8 +78,7 @@
 		}
 	},
 	"ratingsSurveyData2": {
-		"id": "srepSubmissionGuidelinesMainContent",
-		"heading": "How was your experience today?",
+		"userJourneys": "getPubslished",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
@@ -159,8 +156,7 @@
 		}
 	},
 	"ratingsSurveyData3": {
-		"id": "srepSubmissionGuidelinesAboveFooter",
-		"heading": "How was your experience today?",
+		"userJourneys": "contentDiscovery-getPublished",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",

@@ -1,5 +1,10 @@
 {
 	"global-ratings-survey": {
+		"container": {
+			"padding": {
+				"value": "{spacing.relative.400}"
+			}
+		},
 		"link": {
 			"margin": {
 				"value": "{spacing.relative.200}"

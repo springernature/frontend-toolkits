@@ -1,6 +1,7 @@
 .c-ratings-survey {
 	overflow: hidden;
 	font-size: $global-ratings-survey-font-size;
+	padding: $global-ratings-survey-container-padding;
 }
 
 .c-ratings-survey__heading {
@@ -21,6 +22,7 @@
 
 .c-ratings-survey__submit-message p {
 	margin: 0;
+	line-height: 1.4;
 }
 
 .c-ratings-survey a {
@@ -41,16 +43,6 @@
 }
 
 /* Override Global Forms Styles */
-.c-ratings-survey--vertical .c-forms__fieldset {
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 0;
-}
-
-.c-ratings-survey--vertical label.c-forms__label {
-	flex-direction: row;
-}
-
 .c-ratings-survey .c-forms__label--pictographic-radio svg {
 	width: 2rem;
 	height: 2rem;

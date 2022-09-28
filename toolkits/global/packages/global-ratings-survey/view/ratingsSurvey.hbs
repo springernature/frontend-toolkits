@@ -1,17 +1,19 @@
-<form action="" method="POST" class="u-hide u-js-show c-ratings-survey{{#if verticalLayout}} c-ratings-survey--vertical{{/if}}" data-ratings-survey="{{id}}" {{#if iconSize}}style="--forms--pictographic-radio-icon-size:{{iconSize}}"{{/if}}>
-	<h{{headingLevel}} class="c-ratings-survey__heading">{{heading}}</h{{headingLevel}}>
-	{{#with globalFormData}}
-		{{> globalFormFieldset }}
-	{{/with}}
-	<section class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
-		<div>
-			<svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-				<use xlink:href="{{iconUrl}}"></use>
-			</svg>
-			<p>{{submitMessageText}}</p>
-		</div>
-		{{#if questionUrl}}
-			<a href="{{questionUrl}}?id={{id}}" target="_blank">{{questionText}}<span class="c-ratings-survey__visually-hidden"> (this opens a new browser window)</span></a>
-		{{/if}}
-	</section>
-</form>
+<aside class="u-hide u-js-show c-ratings-survey{{#if verticalLayout}} c-ratings-survey--vertical{{/if}}" data-ratings-survey="{{userJourneys}}" {{#if iconSize}}style="--forms--pictographic-radio-icon-size:{{iconSize}}"{{/if}}>
+	<form class="c-ratings-survey__form" action="#" method="POST" >
+		<h{{headingLevel}} class="c-ratings-survey__heading">How was your experience today?</h{{headingLevel}}>
+		{{#with globalFormData}}
+			{{> globalFormFieldset }}
+		{{/with}}
+		<section class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
+			<div>
+				<svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+					<use xlink:href="{{iconUrl}}"></use>
+				</svg>
+				<p>{{submitMessageText}}</p>
+			</div>
+			{{#if questionUrl}}
+				<a href="{{questionUrl}}?id={{id}}" target="_blank">{{questionText}}<span class="c-ratings-survey__visually-hidden"> (this opens a new browser window)</span></a>
+			{{/if}}
+		</section>
+	</form>
+</aside>
