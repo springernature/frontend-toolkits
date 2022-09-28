@@ -42,13 +42,8 @@ Import the installed component code in your `scss` file:
 
 ```scss
 @import '@springernature/nature-header/scss/50-components/header';
-@import '@springernature/nature-header/scss/50-components/header-expander';
 
-@import '@springernature/brand-context/default/scss/60-utilities/buttons.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/display.scss';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/lists.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 Then import the JavaScript as follows: 
@@ -73,10 +68,9 @@ The loops and conditional statements show which parts of the component contain d
 
 In the oscar-sites-nature application, the color of the border on each journal’s header is defined from Pubserv. It will override the Header’s default black border.
 
-For ease of maintenance, the `scss` for this component is separated into 2 classnames and contained in 2 separate files:
+### Header logo
 
-- `c-header-expander` - for all interactive Header parts that users can open and close, like dropdown menus and pop-out modals
-- `c-header` - for all other parts of the Header
+In the oscar-sites-nature application, some journals will have a compact variant of their logo shown at narrower viewports and swapped with another variant at wider viewports. An example of this is observable in [Nature Cardiovascular Research](https://www.nature.com/natcardiovascres/) journal's header.
 
 ### Header expander
 
@@ -91,19 +85,25 @@ When a user selects the trigger, the Global expander component opens and closes 
 
 There are 2 ways to apply keylines to menu items.
 
-If your menu is static - meaning it can’t be changed from another source, like a CMS - use the `c-header-expander__item–keyline`  classname to apply a keyline above a menu item. For example:
+If your menu is static - meaning it can’t be changed from another source, like a CMS - use the `c-header__item--keyline`  classname to apply a keyline above a menu item. For example:
 
 ```html
-<li class="c-header-expander__item c-header-expander__item--keyline">
+<li class="c-header__item c-header__item--keyline">
     <a href="some url">Some text</a>
 </li>
 ```
 
-If the items in your menu are dynamic, you can use the `c-header-expander__item–keyline-first-item-only` classname to apply a keyline above the first menu item in a group.
+If there is more than one group in a menu, a keyline is applied above the first menu item for all groups after the first group. For example, you may want to keep social media links grouped together, and visually separated from the other menu items:
 
-For example, you may want to keep social media links grouped together, visually separated from the other menu items.
-
-In these instances, you can apply `c-header-expander__item–keyline-first-item-only` to a group of list items, so the first item in that group always has a keyline above it.
+```html
+<ul class="c-header__list">
+    <li class="c-header__item"><a href="#">Site link</a></li>
+</ul>
+<ul class="c-header__list">
+    <li class="c-header__item"><a href="#">Social network 1</a></li>
+    <li class="c-header__item"><a href="#">Social network 2</a></li>
+</ul>
+```
 
 ## Research on this component
 

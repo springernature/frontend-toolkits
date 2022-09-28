@@ -266,10 +266,8 @@ h6, h5, h4 {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -304,12 +302,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -317,10 +312,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -337,12 +330,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -360,10 +350,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -413,14 +401,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -428,8 +412,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -438,8 +421,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -488,18 +470,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -522,10 +498,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -541,10 +515,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -559,10 +531,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -597,17 +567,12 @@ template {
   display: none;
 }
 
-/**
- * Basic
- * Some default CSS styles
- */
 body {
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #006699;
 }
 
 a:hover,
@@ -617,6 +582,26 @@ a:focus {
 
 button {
   cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg[aria-hidden] {
+  width: 1rem;
+  height: 1rem;
+}
+
+/**
+ * Basic
+ * Some default CSS styles
+ */
+a {
+  color: #006699;
 }
 
 h1 {
@@ -643,38 +628,9 @@ ins {
   text-decoration: none;
 }
 
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   border-radius: 0;
-}
-
-/* accessible focus styles */
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-p:focus,
-div:focus,
-ul:focus,
-ol:focus,
-li:focus,
-dl:focus,
-dt:focus,
-dd:focus,
-span:focus,
-i:focus,
-b:focus,
-em:focus,
-strong:focus {
-  outline: none;
 }
 
 /**
@@ -971,38 +927,6 @@ figure {
   margin: 0;
 }
 
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  margin: 0;
-  padding: 0;
-}
-
 abbr[title] {
   text-decoration: none;
 }
@@ -1120,6 +1044,34 @@ body {
   font-size: 1.125rem;
 }
 
+/* spacing algorithm */
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
+  margin-block-start: 16px;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 32px;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 8px;
+}
+
+h2 + * {
+  margin-block-start: 16px;
+}
+
+h1 + * {
+  margin-block-start: 48px;
+}
+
+/* Not applicable after hidden elements */
+[hidden] + *,
+[style*="display:none"] + *,
+[style*="display: none"] + * {
+  margin-block-start: 0;
+}
+
 /**
  * Typographic
  * Standard text and heading formatting
@@ -1129,18 +1081,35 @@ body {
  * default margin 28px to match line height
  * this is used for mainting vertical rhythm on the page
  */
-p,
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
 /*
  * Headings
  */
 p:empty {
   display: none;
+}
+
+* {
+  margin-block: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + * {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
 }
 
 .c-header {
@@ -1153,14 +1122,10 @@ p:empty {
 
 .c-header__row {
   position: relative;
-  padding: 8px 0;
+  padding: 0;
 }
 .c-header__row:not(:last-child) {
   border-bottom: 1px solid #eeeeee;
-}
-
-.c-header__row--flush {
-  padding: 0;
 }
 
 .c-header__split {
@@ -1171,7 +1136,7 @@ p:empty {
 
 .c-header__logo-container {
   flex: 1 1 0;
-  margin-right: 24px;
+  margin: 8px 24px 8px 0;
   line-height: 0;
 }
 
@@ -1193,6 +1158,7 @@ p:empty {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 8px;
   align-items: center;
   flex-wrap: wrap;
   flex: 0 1 auto;
@@ -1200,23 +1166,37 @@ p:empty {
   line-height: 1.4;
   margin: 0 -8px;
 }
+@media print {
+  .c-header__menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .c-header__menu--hide-lg-max {
+    display: none;
+    visibility: hidden;
+  }
+}
 
 .c-header__menu--global {
   font-weight: 400;
   justify-content: flex-end;
 }
-
-.c-header__menu--global .c-header__item svg {
+.c-header__menu--global svg {
   display: none;
+  visibility: hidden;
 }
 @media only screen and (min-width: 540px) {
-  .c-header__menu--global .c-header__item svg {
+  .c-header__menu--global svg {
     display: block;
+    visibility: visible;
   }
 }
 
 .c-header__menu--journal {
   font-size: 0.875rem;
+  margin: 8px 0 8px -8px;
 }
 @media only screen and (min-width: 540px) {
   .c-header__menu--journal {
@@ -1229,19 +1209,10 @@ p:empty {
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .c-header__menu--tools {
-    display: none;
-  }
-}
-
 .c-header__item {
-  display: flex;
-}
-@media only screen and (min-width: 540px) {
-  .c-header__item:not(:first-child) {
-    margin-left: 8px;
-  }
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .c-header__item--pipe {
@@ -1249,22 +1220,44 @@ p:empty {
   padding-left: 8px;
 }
 
-@media only screen and (max-width: 767px) {
-  .c-header__item--nature-research {
-    display: none;
+.c-header__item--padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 540px) {
+  .c-header__item--dropdown-menu {
+    position: relative;
   }
 }
 
-.c-header__row--flush .c-header__item {
-  padding-top: 8px;
-  padding-bottom: 8px;
+@media only screen and (min-width: 1024px) {
+  .c-header__item--hide-lg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .c-header__item--hide-lg-max {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .c-header__item--hide-md-max {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .c-header__link {
   color: inherit;
   padding: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 4px;
   white-space: nowrap;
 }
 .c-header__link.visited, .c-header__link:visited {
@@ -1276,23 +1269,181 @@ p:empty {
 .c-header__link ::first-letter {
   text-transform: capitalize;
 }
-.c-header__link > svg {
-  margin-left: 2px;
+.c-header__link svg {
   transition-duration: 0.2s;
-}
-@media only screen and (min-width: 540px) {
-  .c-header__link > svg {
-    margin-left: 4px;
-  }
 }
 
 .c-header__show-text {
   display: none;
+  visibility: hidden;
 }
 @media only screen and (min-width: 540px) {
   .c-header__show-text {
     display: inline;
+    visibility: visible;
   }
+}
+
+.c-header__dropdown {
+  background-color: black;
+  border-bottom: 1px solid #2f2f2f;
+  color: #eeeeee;
+  padding: 16px 0;
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+@media print {
+  .c-header__dropdown {
+    display: none;
+  }
+}
+
+.c-header__heading {
+  display: inline-block;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.c-header__heading--keyline {
+  border-top: 1px solid #d5d5d5;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-color: #2f2f2f;
+  width: 100%;
+}
+
+.c-header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+  margin: 0 -8px;
+}
+
+.c-header__flush {
+  margin: 0 -8px;
+}
+
+.c-header__visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+/**
+ Search form
+ */
+.c-header__search-form {
+  margin-bottom: 8px;
+}
+
+.c-header__search-layout {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.c-header__search-layout > *:first-child {
+  flex: 999 1 auto;
+}
+.c-header__search-layout > * {
+  flex: 1 1 auto;
+}
+
+.c-header__search-layout--max-width {
+  max-width: 720px;
+}
+
+.c-header__search-button {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  justify-content: center;
+  padding: 8px;
+  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  border-radius: 2px;
+  color: #006699;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #006699;
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  line-height: 1.15;
+  padding: 8px 16px;
+}
+.c-header__search-button svg {
+  fill: currentColor;
+}
+.c-header__search-button:visited {
+  color: #006699;
+}
+.c-header__search-button:hover {
+  border: 1px solid #006699;
+}
+.c-header__search-button:focus {
+  border: 1px solid #006699;
+}
+.c-header__search-button:hover, .c-header__search-button:focus {
+  color: white;
+  background-color: #006699;
+  background-image: none;
+}
+.c-header__search-button:hover svg path, .c-header__search-button:focus svg path {
+  fill: white;
+}
+.c-header__search-button:focus, .c-header__search-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.c-header__input,
+.c-header__select {
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c-header__select {
+  display: block;
+  width: 100%;
+  min-width: 150px;
+  max-width: 100%; /* useful when width is set to anything other than 100% */
+  margin: 0;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z' fill='%23333' fill-rule='evenodd' transform='matrix(0 1 -1 0 11 3)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+  background-position: right 0.7em top 50%;
+  /* icon size, then gradient */
+  background-size: 1em auto;
+  /* Hide arrow icon in IE browsers */
+}
+.c-header__select::-ms-expand {
+  display: none;
+  visibility: hidden;
 }
 
 /**
@@ -1308,112 +1459,24 @@ p:empty {
   fill: currentColor;
 }
 
-@media only screen and (min-width: 540px) {
-  .c-header__item--dropdown-menu {
-    position: relative;
-  }
-}
 .c-header__item--dropdown-menu .c-header__link.is-open svg {
   transform: rotate(180deg);
 }
 
 @media only screen and (min-width: 540px) {
-  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header-expander.has-tethered {
+  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
     left: auto;
     right: 0;
   }
 }
 @media only screen and (min-width: 768px) {
-  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header-expander.has-tethered {
+  .c-header__menu--journal .c-header__item--dropdown-menu:last-child .c-header__dropdown.has-tethered {
     left: 0;
     right: auto;
   }
 }
 
-.c-header-expander {
-  background-color: black;
-  border-bottom: 1px solid #2f2f2f;
-  color: #eeeeee;
-  padding: 16px 0;
-  font-size: 0.875rem;
-  line-height: 1.2;
-}
-.c-header-expander a {
-  color: inherit;
-}
-.c-header-expander a.visited, .c-header-expander a:visited {
-  color: inherit;
-}
-.c-header-expander a.hover, .c-header-expander a:hover {
-  color: inherit;
-}
-.c-header-expander button {
-  border: 1px solid white;
-  color: white;
-  background-color: transparent;
-}
-.c-header-expander button:hover {
-  background-color: white;
-  color: black;
-}
-
-.c-header-expander__container {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 16px;
-}
-
-.c-header-expander__keyline {
-  border-bottom: 1px solid #555555;
-  padding-bottom: 16px;
-  margin-bottom: 0;
-}
-
-.c-header-expander__heading {
-  display: inline-block;
-  line-height: 1.4;
-  font-size: 1.25rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 400;
-}
-
-.c-header-expander__list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.c-header-expander__item {
-  margin: 0 16px 8px 0;
-}
-
-.c-header-expander__link {
-  color: inherit;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-.c-header-expander__link.visited, .c-header-expander__link:visited {
-  color: inherit;
-}
-.c-header-expander__link.hover, .c-header-expander__link:hover {
-  color: inherit;
-}
-.c-header-expander__link > svg {
-  margin-left: 8px;
-}
-
-@media only screen and (min-width: 768px) {
-  .c-header-expander__form {
-    max-width: 600px;
-  }
-}
-
-/**
- JavaScript Enhancements
- */
-.c-header-expander.has-tethered {
+.c-header__dropdown.has-tethered {
   position: absolute;
   top: 100%;
   transform: translateY(5px);
@@ -1424,37 +1487,35 @@ p:empty {
   border-bottom: 0;
 }
 @media only screen and (min-width: 540px) {
-  .c-header-expander.has-tethered {
+  .c-header__dropdown.has-tethered {
     transform: translateY(8px);
     width: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .c-header-expander.has-tethered {
+  .c-header__dropdown.has-tethered {
     min-width: 225px;
   }
 }
-.c-header-expander.has-tethered .c-header-expander__list {
-  display: block;
-}
-.c-header-expander.has-tethered .c-header-expander__item {
-  margin: 0;
-  padding: 8px 0;
-}
-.c-header-expander.has-tethered .c-header-expander__item--keyline {
-  border-top: 1px solid white;
-  padding-top: 16px;
-  margin-top: 8px;
-}
-.c-header-expander.has-tethered .c-header-expander__item--keyline-first-item-only ~ .c-header-expander__item--keyline-first-item-only {
-  border-top: none;
-  padding-top: 0;
-}
 
-.c-header-expander--tray.has-tethered {
+.c-header__dropdown--full-width.has-tethered {
   width: 100%;
   padding: 32px 0 24px;
   transform: none;
+}
+
+.has-tethered .c-header__heading--js-hide {
+  display: none;
+  visibility: hidden;
+}
+.has-tethered .c-header__list--js-stack {
+  flex-direction: column;
+}
+.has-tethered .c-header__item--keyline,
+.has-tethered .c-header__list ~ .c-header__list .c-header__item:first-child {
+  border-top: 1px solid #d5d5d5;
+  padding-top: 8px;
+  margin-top: 8px;
 }
 
 /**
@@ -1737,7 +1798,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-xs,
 .js .u-js-show-at-xs {
     display: block;
@@ -1750,7 +1810,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-sm,
 .js .u-js-show-at-sm {
     display: block;
@@ -1763,7 +1822,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-md,
 .js .u-js-show-at-md {
     display: block;
@@ -1776,7 +1834,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-lg,
 .js .u-js-show-at-lg {
     display: block;
@@ -1789,7 +1846,6 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
   .u-show-at-xl,
 .js .u-js-show-at-xl {
     display: block;
@@ -2232,65 +2288,28 @@ p:empty {
 		</style>
 	</head>
 	<body style="padding:2%">
-		<header class="c-header" id="header" data-header="nature-150-split-header&quot;" style="border-color:#000">
-			<div class="c-header__row c-header__row--flush">
+		<header class="c-header" id="header" data-header="">
+			<div class="c-header__row">
 				<div class="c-header__container">
 					<div class="c-header__split">
-						<h1 class="c-header__logo-container u-mb-0">
-							<a href="/">
+						<div class="c-header__logo-container">
+							<a href="https://www.nature.com/">
 								<picture class="c-header__logo">
-									<source srcset="https://media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" media="(min-width: 875px)">
-									<img src="https://media.springernature.com/full/nature-cms/uploads/product/nature/header-86f1267ea01eccd46b530284be10585e.svg" alt="Nature">
+									<source srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMxIiBoZWlnaHQ9IjMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04LjQgNS41MmwuMDggNS41MmguMTZjMS4xMi0zLjEyIDMuOTItNS42OCA4LTUuNjggNS4yOCAwIDYuODggMi42NCA2Ljg4IDcuNjh2OS45MmMwIDMuMDQuMTYgNi4xNi44OCA4LjQ4aC04LjU2Yy43Mi0yLjI0LjgtNC45Ni44LTguMjR2LTkuNDRjMC0yLjMyLS44OC0zLjM2LTMuNDQtMy4zNi0xLjkyIDAtMy4zNi41Ni00LjQ4IDEuNTJ2MTEuMzZjMCAzLjI4LjA4IDYgLjggOC4yNEgxLjA0Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjI4YzAtMi40OC0uODgtNC43Mi0xLjkyLTUuODRsOC40LTIuNHptMzAuNzIgMjEuMDR2LTkuMjhjLS41Ni44LTEuMiAxLjI4LTMuMDQgMi4wOC0yLjQgMS4yLTMuMjggMi40OC0zLjI4IDUuMTIgMCAyLjI0IDEuMjggMy42OCAzLjIgMy42OCAxLjkyLjA4IDIuNTYtLjY0IDMuMTItMS42ek0zNi44OCA1LjQ0YzYuNTYgMCA5LjA0IDIuNjQgOS4wNCA4djExLjJjMCAyIC44IDIuNjQgMi40IDIuNjQuMjQgMCAxLjEyLS4xNiAxLjM2LS40LS4xNi44LS4yNCAxLjItLjQgMS42LS44IDIuMjQtMi4xNiAzLjUyLTQuODggMy41Mi0zLjI4IDAtNC44OC0yLjMyLTQuOTYtNC42NGgtLjA4QzM4LjI0IDMwLjY0IDM2LjE2IDMyIDMyLjggMzJjLTQuMDggMC02LjcyLTIuNDgtNi43Mi02LjMyIDAtNC4wOCAzLjY4LTUuODQgNy41Mi03LjI4IDMuNjgtMS40NCA1LjYtMi40OCA1LjYtNS4xMnYtLjU2YzAtMi44OC0uODgtNC4zMi0zLjYtNC4zMi0xLjY4IDAtMi4zMi44LTIuNjQgMi40LS41NiAyLjQ4LTEuNTIgMy4zNi0zLjEyIDMuMzYtMS40NCAwLTIuOC0uOTYtMi44LTIuOC0uMTYtMy41MiA0LjgtNS45MiA5Ljg0LTUuOTJ6bTI3LjY4IDIzLjJjLS44OCAyLTMuMDQgMy4zNi02LjA4IDMuMzYtNS4yIDAtNy4yOC0yLjY0LTcuMjgtNy40NFY5LjUyaC0yLjQ4di0uMTZMNTcuNzYgMGwuMTYuMDhWNmg2LjU2bC0uNjQgMy42SDU4djEzLjkyYzAgMi42NCAxLjEyIDMuNzYgMy41MiAzLjc2IDEuODQgMCAyLjgtLjI0IDMuNjgtLjcyLS4yNC44OC0uMzIgMS4zNi0uNjQgMi4wOHptOS4zNi0yMi44djE3LjZjMCAyLjY0IDEuMDQgNC4wOCAzLjYgNC4wOCAyLjE2IDAgMy43Ni0uNzIgNC43Mi0xLjkyVjEzLjY4YzAtMi42NC0uMjQtNC44LTEuMTItNy4wNGw3Ljg0LS44djE4YzAgNCAuNCA1Ljc2IDEuMDQgNy42OGgtNy42OFYyNi40aC0uMDhjLTEuMTIgMy4yOC0zLjIgNS42LTcuNiA1LjYtNS41MiAwLTcuNi0zLjM2LTcuNi04LjMydi0xMGMwLTIuNjQtLjI0LTQuOC0xLjEyLTcuMDRsOC0uOHptMjUuNzYgNi4wOGMxLjEyLTQuNzIgMy4yOC02LjU2IDYuMTYtNi41NiAyLjY0IDAgNCAxLjM2IDQgMy41MiAwIDEuOTItMS4xMiAzLjUyLTMuMTIgMy41Mi0xLjIgMC0xLjkyLS41Ni0yLjQtMS4wNC0uNTYtLjU2LS45Ni0xLjEyLTEuNi0xLjEyLTEuMzYgMC0yLjg4IDIuMzItMi44OCA2LjE2djYuNGMwIDMuMTIuMjQgNi4yNC44OCA4LjY0aC04LjQ4Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjJjMC0yLjQ4LS44OC00LjcyLTEuOTItNS44NGw4LjMyLTIuNC4wOC4wOFYxMmwuMDgtLjA4em0xNi4wOCAzLjc2bDguNTYtLjhjLS4wOC00LjA4LS43Mi02LjQ4LTMuNTItNi40OC0yLjg4LjA4LTQuNTYgMi40LTUuMDQgNy4yOHpNMTIwLjg4IDMyYy02LjU2IDAtMTEuOTItNC4zMi0xMS45Mi0xMi42NCAwLTguNCA1LjEyLTE0LjA4IDEyLjA4LTE0LjA4IDYuNTYgMCA5LjY4IDQuMTYgOS42OCAxMi4wOGgtMTQuOTZ2LjhjMCA2LjMyIDMuMjggOC44OCA3Ljc2IDguODggNC4wOCAwIDUuODQtMS42IDcuMDQtMi44bC4xNi40Yy0xLjEyIDMuODQtNC4xNiA3LjM2LTkuODQgNy4zNnoiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg==" media="(min-width: 875px)">
+									<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMxIiBoZWlnaHQ9IjMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04LjQgNS41MmwuMDggNS41MmguMTZjMS4xMi0zLjEyIDMuOTItNS42OCA4LTUuNjggNS4yOCAwIDYuODggMi42NCA2Ljg4IDcuNjh2OS45MmMwIDMuMDQuMTYgNi4xNi44OCA4LjQ4aC04LjU2Yy43Mi0yLjI0LjgtNC45Ni44LTguMjR2LTkuNDRjMC0yLjMyLS44OC0zLjM2LTMuNDQtMy4zNi0xLjkyIDAtMy4zNi41Ni00LjQ4IDEuNTJ2MTEuMzZjMCAzLjI4LjA4IDYgLjggOC4yNEgxLjA0Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjI4YzAtMi40OC0uODgtNC43Mi0xLjkyLTUuODRsOC40LTIuNHptMzAuNzIgMjEuMDR2LTkuMjhjLS41Ni44LTEuMiAxLjI4LTMuMDQgMi4wOC0yLjQgMS4yLTMuMjggMi40OC0zLjI4IDUuMTIgMCAyLjI0IDEuMjggMy42OCAzLjIgMy42OCAxLjkyLjA4IDIuNTYtLjY0IDMuMTItMS42ek0zNi44OCA1LjQ0YzYuNTYgMCA5LjA0IDIuNjQgOS4wNCA4djExLjJjMCAyIC44IDIuNjQgMi40IDIuNjQuMjQgMCAxLjEyLS4xNiAxLjM2LS40LS4xNi44LS4yNCAxLjItLjQgMS42LS44IDIuMjQtMi4xNiAzLjUyLTQuODggMy41Mi0zLjI4IDAtNC44OC0yLjMyLTQuOTYtNC42NGgtLjA4QzM4LjI0IDMwLjY0IDM2LjE2IDMyIDMyLjggMzJjLTQuMDggMC02LjcyLTIuNDgtNi43Mi02LjMyIDAtNC4wOCAzLjY4LTUuODQgNy41Mi03LjI4IDMuNjgtMS40NCA1LjYtMi40OCA1LjYtNS4xMnYtLjU2YzAtMi44OC0uODgtNC4zMi0zLjYtNC4zMi0xLjY4IDAtMi4zMi44LTIuNjQgMi40LS41NiAyLjQ4LTEuNTIgMy4zNi0zLjEyIDMuMzYtMS40NCAwLTIuOC0uOTYtMi44LTIuOC0uMTYtMy41MiA0LjgtNS45MiA5Ljg0LTUuOTJ6bTI3LjY4IDIzLjJjLS44OCAyLTMuMDQgMy4zNi02LjA4IDMuMzYtNS4yIDAtNy4yOC0yLjY0LTcuMjgtNy40NFY5LjUyaC0yLjQ4di0uMTZMNTcuNzYgMGwuMTYuMDhWNmg2LjU2bC0uNjQgMy42SDU4djEzLjkyYzAgMi42NCAxLjEyIDMuNzYgMy41MiAzLjc2IDEuODQgMCAyLjgtLjI0IDMuNjgtLjcyLS4yNC44OC0uMzIgMS4zNi0uNjQgMi4wOHptOS4zNi0yMi44djE3LjZjMCAyLjY0IDEuMDQgNC4wOCAzLjYgNC4wOCAyLjE2IDAgMy43Ni0uNzIgNC43Mi0xLjkyVjEzLjY4YzAtMi42NC0uMjQtNC44LTEuMTItNy4wNGw3Ljg0LS44djE4YzAgNCAuNCA1Ljc2IDEuMDQgNy42OGgtNy42OFYyNi40aC0uMDhjLTEuMTIgMy4yOC0zLjIgNS42LTcuNiA1LjYtNS41MiAwLTcuNi0zLjM2LTcuNi04LjMydi0xMGMwLTIuNjQtLjI0LTQuOC0xLjEyLTcuMDRsOC0uOHptMjUuNzYgNi4wOGMxLjEyLTQuNzIgMy4yOC02LjU2IDYuMTYtNi41NiAyLjY0IDAgNCAxLjM2IDQgMy41MiAwIDEuOTItMS4xMiAzLjUyLTMuMTIgMy41Mi0xLjIgMC0xLjkyLS41Ni0yLjQtMS4wNC0uNTYtLjU2LS45Ni0xLjEyLTEuNi0xLjEyLTEuMzYgMC0yLjg4IDIuMzItMi44OCA2LjE2djYuNGMwIDMuMTIuMjQgNi4yNC44OCA4LjY0aC04LjQ4Yy44LTIuMzIuODgtNS41Mi44OC04LjQ4di05LjJjMC0yLjQ4LS44OC00LjcyLTEuOTItNS44NGw4LjMyLTIuNC4wOC4wOFYxMmwuMDgtLjA4em0xNi4wOCAzLjc2bDguNTYtLjhjLS4wOC00LjA4LS43Mi02LjQ4LTMuNTItNi40OC0yLjg4LjA4LTQuNTYgMi40LTUuMDQgNy4yOHpNMTIwLjg4IDMyYy02LjU2IDAtMTEuOTItNC4zMi0xMS45Mi0xMi42NCAwLTguNCA1LjEyLTE0LjA4IDEyLjA4LTE0LjA4IDYuNTYgMCA5LjY4IDQuMTYgOS42OCAxMi4wOGgtMTQuOTZ2LjhjMCA2LjMyIDMuMjggOC44OCA3Ljc2IDguODggNC4wOCAwIDUuODQtMS42IDcuMDQtMi44bC4xNi40Yy0xLjEyIDMuODQtNC4xNiA3LjM2LTkuODQgNy4zNnoiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg==" alt="Nature" height="32">
 								</picture>
 							</a>
-						</h1>
+						</div>
 						<ul class="c-header__menu c-header__menu--global">
-							<li class="c-header__item c-header__item--nature-research">
+							<li class="c-header__item c-header__item--padding c-header__item--hide-md-max">
 								<a class="c-header__link" href="https://www.nature.com/siteindex"><span>View all journals</span></a>
 							</li>
-							<li class="c-header__item c-header__item--pipe">
-								<a class="c-header__link" href="#search-menu" data-header-expander="" role="button" aria-haspopup="true" aria-expanded="false"><span>Search</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+							<li class="c-header__item c-header__item--padding c-header__item--pipe">
+								<a class="c-header__link" href="#search-menu" data-header-expander=""><span>Search</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 										<path d="M16.48 15.455c.283.282.29.749.007 1.032a.738.738 0 01-1.032-.007l-3.045-3.044a7 7 0 111.026-1.026zM8 14A6 6 0 108 2a6 6 0 000 12z"></path>
 									</svg></a>
-								<div id="search-menu" class="c-header-expander c-header-expander--tray u-hide-print has-tethered u-js-hide" hidden="">
-									<div class="c-header-expander__container">
-										<h2 class="u-visually-hidden">Search</h2>
-										<div>
-											<div class="c-search c-search--max-width u-mb-16">
-												<form action="/search" method="get" role="search" autocomplete="off">
-													<label class="c-header-expander__heading u-mb-8" for="keywords">Search articles by subject, keyword or author</label>
-													<div class="c-search__field">
-														<div class="c-search__input-container c-search__input-container--md">
-															<input type="text" required="" class="c-search__input" id="keywords" name="q" value="">
-														</div>
-														<div class="c-search__select-container">
-															<label for="results-from" class="u-visually-hidden">Show results from</label>
-															<select id="results-from" name="journal" class="c-search__select">
-																<option value="" selected="">All journals</option>
-																<option value="nature">This journal</option>
-															</select>
-														</div>
-														<div class="c-search__button-container">
-															<button type="submit" class="u-button u-button--primary u-button--full-width">Search</button>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-										<div class="c-header-expander__keyline u-mb-16">
-											<p class="u-ma-0"><a href="/search/advanced">Advanced search</a></p>
-										</div>
-										<h3 class="c-header-expander__heading">Quick links</h3>
-										<ul class="u-list-reset">
-											<li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/subjects">Explore articles by subject</a></li>
-											<li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/naturecareers">Find a job</a></li>
-											<li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/authors/index.html">Guide to authors</a></li>
-											<li class="u-display-inline-block u-mr-24 u-mb-16"><a href="/authors/editorial_policies/">Editorial policies</a></li>
-										</ul>
-									</div>
-								</div>
 							</li>
-							<li class="c-header__item">
+							<li class="c-header__item c-header__item--padding">
 								<a href="/nams/svc/myaccount" id="my-account" class="c-header__link placeholder" style="display: none;">
 									<span>My Account</span><svg role="img" aria-hidden="true" focusable="false" height="22" width="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 										<path d="M10.238 16.905a7.96 7.96 0 003.53-1.48c-.874-2.514-2.065-3.936-3.768-4.319V9.83a3.001 3.001 0 10-2 0v1.277c-1.703.383-2.894 1.805-3.767 4.319A7.96 7.96 0 009 17c.419 0 .832-.032 1.238-.095zm4.342-2.172a8 8 0 10-11.16 0c.757-2.017 1.84-3.608 3.49-4.322a4 4 0 114.182 0c1.649.714 2.731 2.305 3.488 4.322zM9 18A9 9 0 119 0a9 9 0 010 18z" fill="#333" fill-rule="evenodd"></path>
@@ -2309,101 +2328,35 @@ p:empty {
 			<div class="c-header__row">
 				<div class="c-header__container">
 					<div class="c-header__split">
-						<div class="c-header__split">
-							<ul class="c-header__menu c-header__menu--journal">
-								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#explore" class="c-header__link c-header__link--chevron" data-header-expander="" role="button" aria-haspopup="true" aria-expanded="false">
-										<span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-									<nav class="u-hide-print c-header-expander has-tethered u-js-hide" aria-labelledby="Explore-content" id="explore" hidden="">
-										<div class="c-header-expander__container">
-											<h2 id="Explore-content" class="c-header-expander__heading u-js-hide">Explore content</h2>
-											<ul class="c-header-expander__list">
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link one</a>
-												</li>
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link two</a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
-													<a class="c-header-expander__link" href="/some-url/">Follow us on Facebook</a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only">
-													<a class="c-header-expander__link" href="/some-url/">Follow us on Twitter</a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
-													<a class="c-header-expander__link&quot;" href="https://www.nature.com/999/subscribe"><span>Subscribe</span></a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
-													<a class="c-header-expander__link" href="/some-url/" rel="nofollow">Sign up for alerts<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-															<path d="m4 10h2.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-3.08578644l-1.12132034 1.1213203c-.18753638.1875364-.29289322.4418903-.29289322.7071068v.1715729h14v-.1715729c0-.2652165-.1053568-.5195704-.2928932-.7071068l-1.7071068-1.7071067v-3.4142136c0-2.76142375-2.2385763-5-5-5-2.76142375 0-5 2.23857625-5 5zm3 4c0 1.1045695.8954305 2 2 2s2-.8954305 2-2zm-5 0c-.55228475 0-1-.4477153-1-1v-.1715729c0-.530433.21071368-1.0391408.58578644-1.4142135l1.41421356-1.4142136v-3c0-3.3137085 2.6862915-6 6-6s6 2.6862915 6 6v3l1.4142136 1.4142136c.3750727.3750727.5857864.8837805.5857864 1.4142135v.1715729c0 .5522847-.4477153 1-1 1h-4c0 1.6568542-1.3431458 3-3 3-1.65685425 0-3-1.3431458-3-3z" fill="#fff"></path>
-														</svg></a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline c-header-expander__item--keyline-first-item-only u-hide-at-lg">
-													<a class="c-header-expander__link" href="/some-url/"><span>RSS feed</span></a>
-												</li>
-											</ul>
-										</div>
-									</nav>
-								</li>
-								<li class="c-header__item c-header__item--dropdown-menu">
-									<a href="#about-the-journal" class="c-header__link c-header__link--chevron" data-header-expander="" role="button" aria-haspopup="true" aria-expanded="false">
-										<span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-									<nav class="u-hide-print c-header-expander has-tethered u-js-hide" aria-labelledby="about-the-journal" id="about-the-journal" hidden="">
-										<div class="c-header-expander__container">
-											<h2 id="About-the-journal" class="c-header-expander__heading u-js-hide">About the journal</h2>
-											<ul class="c-header-expander__list">
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link one</a>
-												</li>
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link two</a>
-												</li>
-											</ul>
-										</div>
-									</nav>
-								</li>
-								<li class="c-header__item c-header__item--dropdown-menu u-mr-2">
-									<a href="#publish-with-us" class="c-header__link c-header__link--chevron c-header__link--dropdown-menu" data-header-expander="" role="button" aria-haspopup="true" aria-expanded="false">
-										<span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-											<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
-										</svg>
-									</a>
-									<nav class="u-hide-print c-header-expander has-tethered u-js-hide" aria-labelledby="Publish-with-us-label" id="publish-with-us" hidden="">
-										<div class="c-header-expander__container">
-											<h2 id="Publish-with-us-label" class="c-header-expander__heading u-js-hide">Publish with us</h2>
-											<ul class="c-header-expander__list">
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link one</a>
-												</li>
-												<li class="c-header-expander__item">
-													<a class="c-header-expander__link" href="/some-url/">link two</a>
-												</li>
-												<li class="c-header-expander__item c-header-expander__item--keyline">
-													<a class="c-header-expander__link" href="/some-url/">Submit manuscript<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-															<path d="m15 0c1.1045695 0 2 .8954305 2 2v5.5c0 .27614237-.2238576.5-.5.5s-.5-.22385763-.5-.5v-5.5c0-.51283584-.3860402-.93550716-.8833789-.99327227l-.1166211-.00672773h-9v3c0 1.1045695-.8954305 2-2 2h-3v10c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h7.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-7.5c-1.1045695 0-2-.8954305-2-2v-10.17157288c0-.53043297.21071368-1.0391408.58578644-1.41421356l3.82842712-3.82842712c.37507276-.37507276.88378059-.58578644 1.41421356-.58578644zm-.5442863 8.18867991 3.3545404 3.35454039c.2508994.2508994.2538696.6596433.0035959.909917-.2429543.2429542-.6561449.2462671-.9065387-.0089489l-2.2609825-2.3045251.0010427 7.2231989c0 .3569916-.2898381.6371378-.6473715.6371378-.3470771 0-.6473715-.2852563-.6473715-.6371378l-.0010428-7.2231995-2.2611222 2.3046654c-.2531661.2580415-.6562868.2592444-.9065605.0089707-.24295423-.2429542-.24865597-.6576651.0036132-.9099343l3.3546673-3.35466731c.2509089-.25090888.6612706-.25227691.9135302-.00001728zm-.9557137-3.18867991c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5zm-8.5-3.587-3.587 3.587h2.587c.55228475 0 1-.44771525 1-1zm8.5 1.587c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5z" fill="#fff"></path>
-														</svg>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</nav>
-								</li>
-							</ul>
-							<div class="c-header__menu u-ml-16 u-show-lg u-hide u-show-at-lg">
-								<div class="c-header__item c-header__item--pipe">
-									<a class="c-header__link" href="https://www.nature.com/nature/subscribe">
-										<span>Subscribe</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<ul class="c-header__menu c-header__menu--tools">
+						<ul class="c-header__menu c-header__menu--journal">
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#explore" class="c-header__link" data-header-expander="">
+									<span><span class="c-header__show-text">Explore</span> content</span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#about-the-journal" class="c-header__link" data-header-expander="">
+									<span>About <span class="c-header__show-text">the journal</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--dropdown-menu">
+								<a href="#publish-with-us" class="c-header__link c-header__link--dropdown-menu" data-header-expander="">
+									<span>Publish <span class="c-header__show-text">with us</span></span><svg role="img" aria-hidden="true" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+										<path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" transform="matrix(0 1 -1 0 11 3)"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="c-header__item c-header__item--pipe c-header__item--hide-lg-max">
+								<a class="c-header__link" href="https://www.nature.com/nature/subscribe">
+									<span>Subscribe</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="c-header__menu c-header__menu--hide-lg-max">
 							<li class="c-header__item">
 								<a class="c-header__link" href="https://www.nature.com/my-account/alerts/subscribe-journal?list-id=1" rel="nofollow">
 									<span>Sign up for alerts</span><svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -2420,7 +2373,115 @@ p:empty {
 					</div>
 				</div>
 			</div>
-		</header>		<script>
+		</header>
+
+
+		<div id="search-menu" class="c-header__dropdown c-header__dropdown--full-width">
+			<div class="c-header__container">
+				<h2 class="c-header__visually-hidden">Search</h2>
+
+				<form class="c-header__search-form" action="/search" method="get" role="search" autocomplete="off">
+					<label class="c-header__heading" for="keywords">Search articles by subject, keyword or author</label>
+					<div class="c-header__search-layout c-header__search-layout--max-width">
+						<div>
+							<input type="text" required="" class="c-header__input" id="keywords" name="q" value="">
+						</div>
+						<div class="c-header__search-layout">
+							<div>
+								<label for="results-from" class="c-header__visually-hidden">Show results from</label>
+								<select id="results-from" name="journal" class="c-header__select">
+									<option value="" selected="">All journals</option>
+									<option value="nature">This journal</option>
+								</select>
+							</div>
+							<div>
+								<button type="submit" class="c-header__search-button">Search</button>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<div class="c-header__flush">
+					<a class="c-header__link" href="/search/advanced">Advanced search</a>
+				</div>
+
+				<h3 class="c-header__heading c-header__heading--keyline">Quick links</h3>
+				<ul class="c-header__list">
+					<li><a class="c-header__link" href="/subjects">Explore articles by subject</a></li>
+					<li><a class="c-header__link" href="/naturecareers">Find a job</a></li>
+					<li><a class="c-header__link" href="/authors/index.html">Guide to authors</a></li>
+					<li><a class="c-header__link" href="/authors/editorial_policies/">Editorial policies</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<nav class="c-header__dropdown" aria-labelledby="Explore-content" id="explore">
+			<div class="c-header__container">
+				<h2 id="Explore-content" class="c-header__heading c-header__heading--js-hide">Explore content</h2>
+				<ul class="c-header__list c-header__list--js-stack">
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link one</a>
+						</li>
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link two</a>
+						</li>
+				</ul>
+				<ul class="c-header__list c-header__list--js-stack">
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">Follow us on Facebook</a>
+						</li>
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">Follow us on Twitter</a>
+						</li>
+						<li class="c-header__item c-header__item--hide-lg">
+							<a class="c-header__link" href="https://www.nature.com/999/subscribe"><span>Subscribe</span></a>
+						</li>
+						<li class="c-header__item c-header__item--hide-lg">
+							<a class="c-header__link" href="/some-url/" rel="nofollow">Sign up for alerts<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+								<path d="m4 10h2.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-3.08578644l-1.12132034 1.1213203c-.18753638.1875364-.29289322.4418903-.29289322.7071068v.1715729h14v-.1715729c0-.2652165-.1053568-.5195704-.2928932-.7071068l-1.7071068-1.7071067v-3.4142136c0-2.76142375-2.2385763-5-5-5-2.76142375 0-5 2.23857625-5 5zm3 4c0 1.1045695.8954305 2 2 2s2-.8954305 2-2zm-5 0c-.55228475 0-1-.4477153-1-1v-.1715729c0-.530433.21071368-1.0391408.58578644-1.4142135l1.41421356-1.4142136v-3c0-3.3137085 2.6862915-6 6-6s6 2.6862915 6 6v3l1.4142136 1.4142136c.3750727.3750727.5857864.8837805.5857864 1.4142135v.1715729c0 .5522847-.4477153 1-1 1h-4c0 1.6568542-1.3431458 3-3 3-1.65685425 0-3-1.3431458-3-3z" fill="#fff"></path>
+							</svg></a>
+						</li>
+						<li class="c-header__item c-header__item--hide-lg">
+							<a class="c-header__link" href="/some-url/"><span>RSS feed</span></a>
+						</li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav class="c-header__dropdown" aria-labelledby="About-the-journal" id="about-the-journal">
+			<div class="c-header__container">
+				<h2 id="About-the-journal" class="c-header__heading c-header__heading--js-hide">About the journal</h2>
+				<ul class="c-header__list c-header__list--js-stack">
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link one</a>
+						</li>
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link two</a>
+						</li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav class="c-header__dropdown" aria-labelledby="Publish-with-us-label" id="publish-with-us">
+			<div class="c-header__container">
+				<h2 id="Publish-with-us-label" class="c-header__heading c-header__heading--js-hide">Publish with us</h2>
+				<ul class="c-header__list c-header__list--js-stack">
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link one</a>
+						</li>
+						<li class="c-header__item">
+							<a class="c-header__link" href="/some-url/">link two</a>
+						</li>
+						<li class="c-header__item c-header__item--keyline">
+							<a class="c-header__link" href="/some-url/">Submit manuscript<svg role="img" aria-hidden="true" focusable="false" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+								<path d="m15 0c1.1045695 0 2 .8954305 2 2v5.5c0 .27614237-.2238576.5-.5.5s-.5-.22385763-.5-.5v-5.5c0-.51283584-.3860402-.93550716-.8833789-.99327227l-.1166211-.00672773h-9v3c0 1.1045695-.8954305 2-2 2h-3v10c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h7.5c.27614237 0 .5.2238576.5.5s-.22385763.5-.5.5h-7.5c-1.1045695 0-2-.8954305-2-2v-10.17157288c0-.53043297.21071368-1.0391408.58578644-1.41421356l3.82842712-3.82842712c.37507276-.37507276.88378059-.58578644 1.41421356-.58578644zm-.5442863 8.18867991 3.3545404 3.35454039c.2508994.2508994.2538696.6596433.0035959.909917-.2429543.2429542-.6561449.2462671-.9065387-.0089489l-2.2609825-2.3045251.0010427 7.2231989c0 .3569916-.2898381.6371378-.6473715.6371378-.3470771 0-.6473715-.2852563-.6473715-.6371378l-.0010428-7.2231995-2.2611222 2.3046654c-.2531661.2580415-.6562868.2592444-.9065605.0089707-.24295423-.2429542-.24865597-.6576651.0036132-.9099343l3.3546673-3.35466731c.2509089-.25090888.6612706-.25227691.9135302-.00001728zm-.9557137-3.18867991c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5zm-8.5-3.587-3.587 3.587h2.587c.55228475 0 1-.44771525 1-1zm8.5 1.587c.2761424 0 .5.22385763.5.5s-.2238576.5-.5.5h-6c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5z" fill="#fff"></path>
+							</svg>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</nav>
+		<script>
 			(function () {
 	'use strict';
 
@@ -2823,18 +2884,18 @@ p:empty {
 	};
 
 	var header = function header() {
-	  var triggers = document.querySelectorAll(selectors.DATA_COMPONENT);
-	  var header = document.querySelector(selectors.HEADER);
+	  var triggerElements = document.querySelectorAll(selectors.DATA_COMPONENT);
+	  var headerElement = document.querySelector(selectors.HEADER);
 	  var triggerAttributes = [{
 	    name: 'role',
 	    value: 'button'
 	  }];
 
-	  if (triggers.length === 0 || !header) {
+	  if (triggerElements.length === 0 || !headerElement) {
 	    return;
 	  }
 
-	  makeArray(triggers).forEach(function (trigger) {
+	  makeArray(triggerElements).forEach(function (trigger) {
 	    var targetElement = findTarget(trigger.hash);
 
 	    if (!targetElement) {
@@ -2859,5 +2920,5 @@ p:empty {
 })();
 
 		</script>
-	
+
 </body></html>

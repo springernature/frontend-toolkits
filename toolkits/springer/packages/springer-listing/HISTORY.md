@@ -1,5 +1,8 @@
 # History
 
+## 6.0.1 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
 ## 6.0.0 (2022-08-02)
     * BREAKING:
         * line-clamping now _opt in_

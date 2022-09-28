@@ -9,7 +9,7 @@
 			{
 				"label": "SpringerLink shop",
 				"href": "/path/to/1",
-				"iconUrl": "../../img/shop.svg#i-shop"
+				"iconUrl": "../img/shop.svg#i-shop"
 			}
 		],
 		"navMenu": [
@@ -37,14 +37,14 @@
 			{
 				"label": "SpringerLink shop",
 				"href": "/path/to/1",
-				"iconUrl": "../../img/shop.svg#i-shop"
+				"iconUrl": "../img/shop.svg#i-shop"
 			}
 		],
 		"search": {
 			"action": "/search",
 			"inputLabel": "Search this site",
 			"inputName": "search",
-			"iconUrl": "../../img/search.svg#i-search",
+			"iconUrl": "../img/search.svg#i-search",
 			"springerLinkUrl": "#",
 			"springerLinkText": "Search our products and science on SpringerLink"
 		},
