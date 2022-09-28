@@ -1,7 +1,7 @@
 {
 	"ratingsSurveyData1": {
 		"userJourneys": "contentDiscovery",
-		"headingLevel": "3",
+		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
 		"submitMessageText": "Thank you for your feedback.",
@@ -79,7 +79,7 @@
 	},
 	"ratingsSurveyData2": {
 		"userJourneys": "getPubslished",
-		"headingLevel": "3",
+		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
 		"submitMessageText": "Thank you for your feedback.",
@@ -157,7 +157,7 @@
 	},
 	"ratingsSurveyData3": {
 		"userJourneys": "contentDiscovery-getPublished",
-		"headingLevel": "3",
+		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
 		"submitMessageText": "Thank you for your feedback.",

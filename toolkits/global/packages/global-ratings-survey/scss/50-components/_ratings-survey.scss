@@ -1,7 +1,12 @@
 .c-ratings-survey {
-	overflow: hidden;
 	font-size: $global-ratings-survey-font-size;
 	padding: $global-ratings-survey-container-padding;
+	overflow: hidden;
+}
+
+.c-ratings-survey__container {
+	display: flex;
+	justify-content: center;
 }
 
 .c-ratings-survey__heading {
@@ -25,6 +30,12 @@
 	line-height: 1.4;
 }
 
+.c-ratings-survey__button {
+	@include button-default;
+	@include button-full-width;
+	margin-top: 16px;
+}
+
 .c-ratings-survey a {
 	display: inline-block;
 	margin-top: $global-ratings-survey-link-margin;
@@ -32,7 +43,8 @@
 	text-decoration: underline;
 }
 
-.c-ratings-survey__visually-hidden {
+.c-ratings-survey__visually-hidden,
+.c-ratings-survey legend.c-forms__label {
 	/* hide visually, not to assistive tech */
 	clip-path: inset(50%);
 	height: 1px;
@@ -46,4 +58,8 @@
 .c-ratings-survey .c-forms__label--pictographic-radio svg {
 	width: 2rem;
 	height: 2rem;
+}
+
+.c-ratings-survey .c-forms__fieldset--pictographic-radios {
+	justify-content: center;
 }
