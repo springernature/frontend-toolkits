@@ -1,5 +1,17 @@
 # History
 
+## 0.2.3 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
+## 0.2.2 (2022-08-04)
+    * Remove redundant utility class
+
+## 0.2.1 (2022-08-03)
+    * Alignment of chevron icon to baseline
+
+## 0.2.0 (2022-07-28)
+    * Upgrade the brand-context v25.0.0
+    
 ## 0.1.4 (2022-03-11)
     * Align left side of details content with left side of heading
     * Increase spacing between details components

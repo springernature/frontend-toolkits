@@ -1,5 +1,11 @@
 # History
 
+## 4.1.1 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
+# 4.1.0 (2022-07-28)
+    * Upgrade to brand-context v25.0.0
+
 ## 4.0.0 (2022-03-30)
     * UPDATE: brand-context v20.1.1
         * global-javascript and global-expander now come from brand-context

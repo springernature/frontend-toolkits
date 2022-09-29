@@ -1,43 +1,49 @@
 {
-  "exploreContent": [
-    {
-      "slug": "/some-url/",
-      "text": "link one"
-    },
-    {
-      "slug": "/some-url/",
-      "text": "link two"
-    }
-  ],
-  "aboutJournalContent": [
-    {
-      "slug": "/some-url/",
-      "text": "link one"
-    },
-    {
-      "slug": "/some-url/",
-      "text": "link two"
-    }
-  ],
-  "publishWithUsContent": [
-    {
-      "slug": "/some-url/",
-      "text": "link one"
-    },
-    {
-      "slug": "/some-url/",
-      "text": "link two"
-    }
-  ],
-  "publishWithUs": true,
-  "submissionLink": "/some-url/",
-  "facebookUri": "/some-url/",
-  "twitterUri": "/some-url/",
-  "showSubscribeButton": true,
-  "pcode": "999",
-  "alertsLink": "/some-url/",
-  "rssLink": "/some-url/",
-  "dynamicPartials": {
-    "nature-header": "./toolkits/nature/packages/nature-header/view/header.hbs"
-  }
+	"exploreContent": [
+		{
+			"slug": "/some-url/",
+			"text": "link one"
+		},
+		{
+			"slug": "/some-url/",
+			"text": "link two"
+		}
+	],
+	"aboutJournalContent": [
+		{
+			"slug": "/some-url/",
+			"text": "link one"
+		},
+		{
+			"slug": "/some-url/",
+			"text": "link two"
+		}
+	],
+	"publishWithUsContent": [
+		{
+			"slug": "/some-url/",
+			"text": "link one"
+		},
+		{
+			"slug": "/some-url/",
+			"text": "link two"
+		}
+	],
+	"publishWithUs": true,
+	"submissionLink": "/some-url/",
+	"facebookUri": "/some-url/",
+	"twitterUri": "/some-url/",
+	"showSubscribeButton": true,
+	"pcode": "999",
+	"alertsLink": "/some-url/",
+	"rssLink": "/some-url/",
+	"logo": {
+		"srcset": "../img/logo-nature.svg",
+		"src": "../img/logo-nature.svg",
+		"alt": "Nature",
+		"link": "https://www.nature.com/"
+	},
+	"dynamicPartials": {
+		"nature-header": "./toolkits/nature/packages/nature-header/view/header.hbs"
+	}
 }

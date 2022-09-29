@@ -1,7 +1,7 @@
-{{> label}}
+{{> globalFormLabel}}
 {{#if error}}
-	{{> error}}
+	{{> globalFormError}}
 {{/if}}
 <input type="file" class="c-forms__input c-forms__input--file"
-	   {{> inputCommonAttributes}}
+	   {{> globalFormAttributes}}
 >

@@ -1,0 +1,18 @@
+{{#if inputs}}
+	<fieldset class="c-forms__fieldset c-forms__field c-forms__radios {{#if pictographic}}c-forms__fieldset--pictographic-radios{{/if}}" {{#unless legend}}{{#unless label}} role="presentation"{{/unless}}{{/unless}} {{> globalFormAttributes}}>
+		{{#if legend}}
+			<legend class="c-forms__label">{{legend}}<span class="c-form__label--visually-hidden">{{#if groupDescription}}. {{groupDescription}}{{/if}}</span></legend>
+		{{else}}
+			{{#if label}}
+				<legend class="c-forms__label">{{label}}<span class="c-form__label--visually-hidden">{{#if groupDescription}}. {{groupDescription}}{{/if}}</span></legend>
+			{{/if}}
+		{{/if}}
+		{{#if error}}
+			{{> globalFormError}}
+		{{/if}}
+
+		{{#each inputs}}
+			{{> globalFormRadio name=../name pictographic=../pictographic boxed=../boxed}}
+		{{/each}}
+	</fieldset>
+{{/if}}

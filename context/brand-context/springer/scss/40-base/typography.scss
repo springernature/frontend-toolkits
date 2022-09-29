@@ -1,11 +1,3 @@
-h1,
-h2,
-h3,
-h4{
-	line-height: 1.4;
-	margin-top: 0;
-}
-
 h1 {
 	@include u-h1;
 }
@@ -27,13 +19,6 @@ h6 {
 	@include u-h5;
 }
 
-p,
-ol,
-ul,
-dl {
-	margin-top: 0;
-}
-
 /* Basic lists should be aligned to the left */
 ul:not([class]),
 ol:not([class]) {
@@ -43,18 +28,6 @@ ol:not([class]) {
 
 dd {
 	margin: 0;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-p:last-child {
-	margin-bottom: 0;
-}
-
-p:empty {
-	display: none;
 }
 
 cite {

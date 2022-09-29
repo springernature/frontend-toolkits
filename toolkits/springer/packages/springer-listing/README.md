@@ -112,4 +112,4 @@ The component supports teaser text using the `content` property, truncated with 
 "lines": "3"
 ```
 
-The value `"none"` turns line-clamping off.
+Omitting the property turns line-clamping off. The full text is displayed instead.

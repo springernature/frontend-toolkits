@@ -1,8 +1,8 @@
-{{> label}}
+{{> globalFormLabel}}
 {{#if error}}
-	{{> error}}
+	{{> globalFormError}}
 {{/if}}
 <textarea
 	class="c-forms__input c-forms__input--textarea"
-	{{> inputCommonAttributes}}
+	{{> globalFormAttributes}}
 >{{value}}</textarea>

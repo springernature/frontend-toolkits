@@ -1,0 +1,8 @@
+<fieldset class="c-forms__fieldset">
+	{{#if legend}}
+		<legend class="c-forms__legend">{{{legend}}}</legend>
+	{{/if}}
+	{{#each fields}}
+		{{> globalFormField}}
+	{{/each}}
+</fieldset>

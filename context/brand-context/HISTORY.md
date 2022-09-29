@@ -1,11 +1,36 @@
 # History
+## 28.1.0 (2022-09-28)
+    * Updates border alias design tokens to use grayscale.500 for input borders
+    * Updates Global Form component design tokens to use border.color.input for pictographic radio unchecked icon border color
+## 28.0.1 (2022-09-15)
+    * BUG: Fixes previous overwritten nature basic.scss file
+## 28.0.0 (2022-09-14)
+    * BREAKING:
+        * New universal block spacing (inter-element margin) for flow content
+    * block-spacing alias design tokens
+    * spacing applied to heading utility classes
+    * “accessible focus styles” removed (redundant `outline: none` on non-interactive elements)
+## 27.1.0 (2022-09-14)
+    * Abstracts shared styles from brand basic.css files into a default basic.scss file
+    * Sets a sensible default width and height for aria-hidden inline SVGs in the core styles to reduce the core experience looking broken
+## 27.0.0 (2022-09-09)
+    * BREAKING:
+      * Springer Nature: Updates body font family to Merriweather Sans.
+    * UPDATES:
+      * regenerated Design Tokens.
+## 26.0.0 (2022-08-10)
+    * BREAKING:
+      * Springer: erroneous use of placeholders removed to fix cascade
+	  * Springer: new spacing algorithm for flow elements
+    * Removal of `outline: none` for non-interactive elements (redundant)
+
 ## 25.0.0 (2022-06-29)
     * UDPATES:
       * updates generated Sass from Design Tokens
 	  * Long form hex codes for Design Tokens - allows design tool integration
 ## 24.1.0 (2022-06-29)
     * UPDATES:
-      * Normalizer from v5 to v8 inline with our own IE support matrix.  
+      * Normalizer from v5 to v8 inline with our own IE support matrix.
 ## 24.0.0 (2022-06-28)
     * UPDATES:
       * adds border width design tokens

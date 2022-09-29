@@ -1,5 +1,16 @@
 # History
 
+## 6.0.1 (2022-09-20)
+    * BUG: fixes SVGs not displaying correctly in demo
+
+## 6.0.0 (2022-08-02)
+    * BREAKING:
+        * line-clamping now _opt in_
+        * Debug removed
+
+## 5.1.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 5.0.3 (2022-03-15)
     * Support teaser text with `line-clamp` for truncation
 

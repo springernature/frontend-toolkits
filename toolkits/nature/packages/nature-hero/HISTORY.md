@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2022-07-28)
+    * UPDATE: brand-context v25.0.0
+
 ## 3.0.0 (2022-06-29)
     * BREAKING: 
         * Update brand-context (Node Sass to Dart Sass)

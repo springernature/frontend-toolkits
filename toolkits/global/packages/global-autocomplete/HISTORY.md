@@ -1,5 +1,8 @@
 # History
 
+## 6.1.0 (2022-07-28)
+    * Upgrade to brand-context v25.0.0
+    
 ## 6.0.0 (2022-03-31)
     * BREAKING: Bump brand-context from version 4.2.2 to 20.1.1 (Moved from node sass to dart sass)
     * Option to select list item with tab

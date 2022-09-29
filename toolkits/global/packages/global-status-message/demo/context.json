@@ -1,6 +1,33 @@
 {
-	"message": "This is a the status message",
-	"type": "warning",
-	"boxed": true,
-	"iconURL": "../../img/warning.svg#warning"
+	"warning": {
+		"id": "warning",
+		"message": "This is a warning message",
+		"type": "warning",
+		"boxed": true,
+		"iconURL": "../img/warning.svg#i-warning"
+	},
+	"error": {
+		"id": "error",
+		"message": "This is an error message",
+		"type": "error",
+		"boxed": true,
+		"iconURL": "../img/error.svg#i-error"
+	},
+	"success": {
+		"id": "success",
+		"message": "This is a success message",
+		"type": "success",
+		"boxed": true,
+		"iconURL": "../img/success.svg#i-success"
+	},
+	"info": {
+		"id": "info",
+		"message": "This is an info message",
+		"type": "info",
+		"boxed": true,
+		"iconURL": "../img/info.svg#i-info"
+	},
+	"dynamicPartials": {
+		"globalStatusMessage": "./toolkits/global/packages/global-status-message/view/globalStatusMessage.hbs"
+	}
 }
