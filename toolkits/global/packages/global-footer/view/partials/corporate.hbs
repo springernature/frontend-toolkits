@@ -4,8 +4,8 @@
 			<ul class="c-footer__links">
 				{{#each links}}
 				<li>
-					{{#if uri}}
-						<a class="c-footer__link" href="{{uri}}">{{text}}</a>
+					{{#if this.url}}
+						<a class="c-footer__link" href="{{this.url}}">{{text}}</a>
 					{{/if}}
 					{{#if buttonProperties}}
 						<button class="c-footer__link" {{{buttonProperties}}}>{{text}}</button>

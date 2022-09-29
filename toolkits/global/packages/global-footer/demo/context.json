@@ -8,11 +8,11 @@
 				},
 				{
 					"text": "Accessibility statement",
-					"uri": "https://www.springernature.com/gp/info/accessibility"
+					"url": "https://www.springernature.com/gp/info/accessibility"
 				},
 				{
 					"text": "Privacy policy",
-					"uri": "/uri/to/your/privacy/policy"
+					"url": "/url/to/your/privacy/policy"
 				}
 			]
 		},
