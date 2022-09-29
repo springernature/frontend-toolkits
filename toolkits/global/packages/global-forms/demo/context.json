@@ -76,6 +76,12 @@
 						"name": "select-animals",
 						"options": [
 							{
+								"label": "Please select an option",
+								"value": "",
+								"selected": true,
+								"disabled": true
+							},
+							{
 								"label": "Horse",
 								"value": "Horse"
 							},
@@ -85,8 +91,7 @@
 							},
 							{
 								"label": "Platypus",
-								"value": "Platypus",
-								"selected": true
+								"value": "Platypus"
 							}
 						]
 					},
