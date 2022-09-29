@@ -162,13 +162,9 @@ label+.c-forms__error,
 }
 
 .c-forms__label--inline {
-	display: inline;
-	font-weight: $global-forms-label-inline-font-weight;
-}
-
-.c-forms__label--inline {
 	display: flex;
 	align-items: center;
+	font-weight: $global-forms-label-inline-font-weight;
 	cursor: pointer;
 	padding: 0;
 }
