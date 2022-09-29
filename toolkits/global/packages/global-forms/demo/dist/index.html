@@ -1851,13 +1851,9 @@ label + .c-forms__error,
 }
 
 .c-forms__label--inline {
-  display: inline;
-  font-weight: 400;
-}
-
-.c-forms__label--inline {
   display: flex;
   align-items: center;
+  font-weight: 400;
   cursor: pointer;
   padding: 0;
 }
@@ -1897,15 +1893,15 @@ label + .c-forms__error,
   background-color: #ffffff;
 }
 
-.c-forms__label--boxed-icon svg {
-  padding: 0.5rem;
-  border: 1px solid #01324b;
-}
-
 :checked + .c-forms__label--pictographic-radio svg {
   fill: #01324b;
   background-color: #01324b;
   stroke: #ffffff;
+}
+
+.c-forms__label--boxed-icon svg {
+  padding: 0.5rem;
+  border: 2px solid #999999;
 }
 
 :checked + .c-forms__label--boxed-icon svg {
@@ -2044,16 +2040,16 @@ label + .c-forms__error,
 				<fieldset class="c-forms__fieldset">
 						<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
 						<div class="c-forms__field">
-							<label for="your-name-2" class="c-forms__label">
+							<label for="your-name" class="c-forms__label">
 								Your name (simple)
 							</label>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-2" name="your-name-2" autocomplete="off" data-test="someValue">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
 						</div>
 						<div class="c-forms__field">
-							<label for="password-2" class="c-forms__label">
+							<label for="password" class="c-forms__label">
 								Your password
 							</label>
-							<input type="password" class="c-forms__input c-forms__input--text" id="password-2" name="password-2" value="123456" autocomplete="off">
+							<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" autocomplete="off">
 						</div>
 						<div class="c-forms__field">
 							<label for="your-name-hint" class="c-forms__label">
