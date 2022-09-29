@@ -162,13 +162,9 @@ label+.c-forms__error,
 }
 
 .c-forms__label--inline {
-	display: inline;
-	font-weight: $global-forms-label-inline-font-weight;
-}
-
-.c-forms__label--inline {
 	display: flex;
 	align-items: center;
+	font-weight: $global-forms-label-inline-font-weight;
 	cursor: pointer;
 	padding: 0;
 }
@@ -209,15 +205,15 @@ label+.c-forms__error,
 	background-color: $global-forms-pictographic-radio-unchecked-icon-background;
 }
 
-.c-forms__label--boxed-icon svg {
-	padding: $global-forms-input-padding-inline;
-	border: 1px solid $global-forms-pictographic-radio-unchecked-icon-border;
-}
-
 :checked+.c-forms__label--pictographic-radio svg {
 	fill: $global-forms-pictographic-radio-checked-icon-fill;
 	background-color: $global-forms-pictographic-radio-checked-icon-background;
 	stroke: $global-forms-pictographic-radio-checked-icon-stroke;
+}
+
+.c-forms__label--boxed-icon svg {
+	padding: $global-forms-input-padding-inline;
+	border: 2px solid $global-forms-pictographic-radio-unchecked-icon-border;
 }
 
 :checked+.c-forms__label--boxed-icon svg {
