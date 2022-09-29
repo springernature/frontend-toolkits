@@ -34,23 +34,23 @@
 				},
 				{
 					"text": "Accessibility statement",
-					"uri": "https://www.springernature.com/gp/info/accessibility"
+					"url": "https://www.springernature.com/gp/info/accessibility"
 				},
 				{
 					"text": "Privacy policy",
-					"uri": "/uri/to/your/privacy/policy"
+					"url": "/url/to/your/privacy/policy"
 				},
 				{
 					"text": "California privacy statement (Optional)",
-					"uri": "https://www.springernature.com/gp/legal/ccpa"
+					"url": "https://www.springernature.com/gp/legal/ccpa"
 				},
 				{
 					"text": "Terms and conditions",
-					"uri": "/uri/to/your/terms"
+					"url": "/url/to/your/terms"
 				},
 				{
 					"text": "Help and support",
-					"uri": "/uri/to/your/help/and/support"
+					"url": "/url/to/your/help/and/support"
 				}
 			]
 		},
@@ -72,23 +72,23 @@
 				},
 				{
 					"text": "Accessibility statement",
-					"uri": "https://www.springernature.com/gp/info/accessibility"
+					"url": "https://www.springernature.com/gp/info/accessibility"
 				},
 				{
 					"text": "Privacy policy",
-					"uri": "/uri/to/your/privacy/policy"
+					"url": "/url/to/your/privacy/policy"
 				},
 				{
 					"text": "California privacy statement (Optional)",
-					"uri": "https://www.springernature.com/gp/legal/ccpa"
+					"url": "https://www.springernature.com/gp/legal/ccpa"
 				},
 				{
 					"text": "Terms and conditions",
-					"uri": "/uri/to/your/terms"
+					"url": "/url/to/your/terms"
 				},
 				{
 					"text": "Help and support",
-					"uri": "/uri/to/your/help/and/support"
+					"url": "/url/to/your/help/and/support"
 				}
 			]
 		},
@@ -97,27 +97,27 @@
 				"title": "Discover content",
 				"items": [
 					{
-						"uri": "https://www.nature.com/siteindex",
+						"url": "https://www.nature.com/siteindex",
 						"text": "Journals A-Z",
 						"dataTrackAction": "journals a-z"
 					},
 					{
-						"uri": "https://www.nature.com/subjects/",
+						"url": "https://www.nature.com/subjects/",
 						"text": "Articles by subject",
 						"dataTrackAction": "article by subject"
 					},
 					{
-						"uri": "https://nano.nature.com/",
+						"url": "https://nano.nature.com/",
 						"text": "Nano",
 						"dataTrackAction": "nano"
 					},
 					{
-						"uri": "https://www.nature.com/protocolexchange/",
+						"url": "https://www.nature.com/protocolexchange/",
 						"text": "Protocol exchange",
 						"dataTrackAction": "protocol exchange"
 					},
 					{
-						"uri": "https://www.natureindex.com/",
+						"url": "https://www.natureindex.com/",
 						"text": "Nature Index",
 						"dataTrackAction": "nature index"
 					}
@@ -127,12 +127,12 @@
 				"title": "Publishing policies",
 				"items": [
 					{
-						"uri": "https://www.nature.com/authors/editorial_policies/",
+						"url": "https://www.nature.com/authors/editorial_policies/",
 						"text": "Nature portfolio policies",
 						"dataTrackAction": "nature portfolio policies"
 					},
 					{
-						"uri": "https://www.nature.com/nature-research/open-access",
+						"url": "https://www.nature.com/nature-research/open-access",
 						"text": "Open access",
 						"dataTrackAction": "open access"
 					}
@@ -142,37 +142,37 @@
 				"title": "Author & Researcher services",
 				"items": [
 					{
-						"uri": "https://www.nature.com/reprints/",
+						"url": "https://www.nature.com/reprints/",
 						"text": "Reprints & permissions",
 						"dataTrackAction": "reprints and permissions"
 					},
 					{
-						"uri": "https://www.springernature.com/gp/authors/research-data",
+						"url": "https://www.springernature.com/gp/authors/research-data",
 						"text": "Research data",
 						"dataTrackAction": "research data"
 					},
 					{
-						"uri": "https://authorservices.springernature.com/go/nr",
+						"url": "https://authorservices.springernature.com/go/nr",
 						"text": "Language editing",
 						"dataTrackAction": "language editing"
 					},
 					{
-						"uri": "https://authorservices.springernature.com/scientific-editing/",
+						"url": "https://authorservices.springernature.com/scientific-editing/",
 						"text": "Scientific editing",
 						"dataTrackAction": "scientific editing"
 					},
 					{
-						"uri": "https://masterclasses.nature.com/",
+						"url": "https://masterclasses.nature.com/",
 						"text": "Nature Masterclasses",
 						"dataTrackAction": "nature Masterclasses"
 					},
 					{
-						"uri": "https://partnerships.nature.com/product/researcher-training/",
+						"url": "https://partnerships.nature.com/product/researcher-training/",
 						"text": "Nature Research Academies",
 						"dataTrackAction": "nature research academies"
 					},
 					{
-						"uri": "https://solutions.springernature.com/",
+						"url": "https://solutions.springernature.com/",
 						"text": "Research Solutions",
 						"dataTrackAction": "research solutions"
 					}
@@ -182,22 +182,22 @@
 				"title": "Libraries & institutions",
 				"items": [
 					{
-						"uri": "https://www.springernature.com/gp/librarians/tools-services/",
+						"url": "https://www.springernature.com/gp/librarians/tools-services/",
 						"text": "Librarian service & tools",
 						"dataTrackAction": "librarian service and tools"
 					},
 					{
-						"uri": "https://www.springernature.com/gp/librarians/manage-your-account/librarianportal",
+						"url": "https://www.springernature.com/gp/librarians/manage-your-account/librarianportal",
 						"text": "Librarian portal",
 						"dataTrackAction": "librarian portal"
 					},
 					{
-						"uri": "https://www.nature.com/openresearch/about-open-access/information-for-institutions/",
+						"url": "https://www.nature.com/openresearch/about-open-access/information-for-institutions/",
 						"text": "Open research",
 						"dataTrackAction": "open research"
 					},
 					{
-						"uri": "https://www.springernature.com/gp/librarians/recommend-to-your-library",
+						"url": "https://www.springernature.com/gp/librarians/recommend-to-your-library",
 						"text": "Recommend to library",
 						"dataTrackAction": "recommend to library"
 					}
@@ -207,22 +207,22 @@
 				"title": "Advertising & partnerships",
 				"items": [
 					{
-						"uri": "https://partnerships.nature.com/product/digital-advertising/",
+						"url": "https://partnerships.nature.com/product/digital-advertising/",
 						"text": "Advertising",
 						"dataTrackAction": "advertising"
 					},
 					{
-						"uri": "https://partnerships.nature.com/",
+						"url": "https://partnerships.nature.com/",
 						"text": "Partnerships & Services",
 						"dataTrackAction": "partnerships and services"
 					},
 					{
-						"uri": "https://partnerships.nature.com/media-kits/",
+						"url": "https://partnerships.nature.com/media-kits/",
 						"text": "Media kits",
 						"dataTrackAction": "media kits"
 					},
 					{
-						"uri": "https://partnerships.nature.com/product/branded-content-native-advertising/",
+						"url": "https://partnerships.nature.com/product/branded-content-native-advertising/",
 						"text": "Branded content",
 						"dataTrackAction": "branded content"
 					}
@@ -232,17 +232,17 @@
 				"title": "Career development",
 				"items": [
 					{
-						"uri": "https://www.nature.com/naturecareers",
+						"url": "https://www.nature.com/naturecareers",
 						"text": "Nature Careers",
 						"dataTrackAction": "nature careers"
 					},
 					{
-						"uri": "https://conferences.nature.com/",
+						"url": "https://conferences.nature.com/",
 						"text": "Nature Conferences",
 						"dataTrackAction": "nature conferences"
 					},
 					{
-						"uri": "https://www.nature.com/natureevents/",
+						"url": "https://www.nature.com/natureevents/",
 						"text": "Nature events",
 						"dataTrackAction": "nature events"
 					}

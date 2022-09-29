@@ -6,7 +6,7 @@
                 <h3 class="c-footer__heading">{{siteNavItem.title}}</h3>
                 <ul class="c-footer__list">
                     {{#each siteNavItem.items}}
-                    <li class="c-footer__item"><a class="c-footer__link" href="{{this.uri}}"{{#if this.dataTrackAction}} data-track="click" data-track-action="{{this.dataTrackAction}}" data-track-label="link"{{/if}}>{{this.text}}</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="{{this.url}}"{{#if this.dataTrackAction}} data-track="click" data-track-action="{{this.dataTrackAction}}" data-track-label="link"{{/if}}>{{this.text}}</a></li>
                     {{/each}}
                 </ul>
             </div>
