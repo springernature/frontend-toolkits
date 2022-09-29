@@ -1445,13 +1445,9 @@ label + .c-forms__error,
 }
 
 .c-forms__label--inline {
-  display: inline;
-  font-weight: 400;
-}
-
-.c-forms__label--inline {
   display: flex;
   align-items: center;
+  font-weight: 400;
   cursor: pointer;
   padding: 0;
 }
@@ -1491,15 +1487,15 @@ label + .c-forms__error,
   background-color: #ffffff;
 }
 
-.c-forms__label--boxed-icon svg {
-  padding: 0.5rem;
-  border: 1px solid #01324b;
-}
-
 :checked + .c-forms__label--pictographic-radio svg {
   fill: #01324b;
   background-color: #01324b;
   stroke: #ffffff;
+}
+
+.c-forms__label--boxed-icon svg {
+  padding: 0.5rem;
+  border: 2px solid #999999;
 }
 
 :checked + .c-forms__label--boxed-icon svg {
