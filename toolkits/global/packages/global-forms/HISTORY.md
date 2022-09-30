@@ -3,6 +3,7 @@
 ## 5.0.0-rc.10 (2022-09-30)
     * Removes margin-top from form labels used on pictographic radios when in horizontal layout
     * Fixes layout issue with display of error information for pictographic radio groups
+    * Supports `disabled` on `<option>` elements for `<select>`
 
 ## 5.0.0-rc.9 (2022-09-28)
     * Increases thickness of pictographic radio icon borders to 2px
