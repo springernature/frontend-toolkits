@@ -2041,9 +2041,9 @@ label + .c-forms__error,
 						<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
 						<div class="c-forms__field">
 							<label for="your-name" class="c-forms__label">
-								Your name (simple)
+								Your name (simple) <span aria-hidden="true">*</span>
 							</label>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" required="" aria-required="true" autocomplete="off" data-test="someValue">
 						</div>
 						<div class="c-forms__field">
 							<label for="password" class="c-forms__label">

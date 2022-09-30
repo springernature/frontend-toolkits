@@ -22,6 +22,8 @@
 					{
 						"template": "globalFormText",
 						"label": "Your name (simple)",
+						"required": true,
+						"requiredSuffix": "<span aria-hidden=\"true\">*</span>",
 						"id": "your-name",
 						"name": "your-name",
 						"dataAttrs": {
