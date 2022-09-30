@@ -182,8 +182,13 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -193,69 +198,73 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
  * Colors
  * Maps for color values & greyscale settings
- *
  */
 /**
  * Typography
  * Font settings
  */
 /**
+ *  @springernature/global-button
  *  Button settings
- *  Nature
  *
  */
 /**
- * Style
- * Cosmetic styling settings
+ * Button Themes
+ * Variables to set themes styles
  *
  */
 /**
- * Global
- * Main brand settings
+ * Default link style
+ *
+ */
+/**
+ * Link Text
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
 }
 
 h3 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
 }
 
-h6, h5, h4 {
+h4 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -630,37 +639,12 @@ svg[aria-hidden] {
  * Basic
  * Some default CSS styles
  */
+body {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 a {
-  color: #006699;
-}
-
-h1 {
-  font-size: 1.875rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.063rem;
-}
-
-h4 {
-  font-size: 0.875rem;
-}
-
-cite {
-  font-style: normal;
-}
-
-ins {
-  text-decoration: none;
-}
-
-button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  border-radius: 0;
+  color: #025e8d;
 }
 
 /**
@@ -837,8 +821,13 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -848,274 +837,168 @@ h6, h5, h4 {
  * These files don’t output any CSS when compiled
  */
 /**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
  * Colors
  * Maps for color values & greyscale settings
- *
  */
 /**
  * Typography
  * Font settings
  */
 /**
+ *  @springernature/global-button
  *  Button settings
- *  Nature
  *
  */
 /**
- * Style
- * Cosmetic styling settings
+ * Button Themes
+ * Variables to set themes styles
  *
  */
 /**
- * Global
- * Main brand settings
+ * Default link style
+ *
+ */
+/**
+ * Link Text
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
 }
 
 h3 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
 }
 
-h6, h5, h4 {
+h4 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
 }
 
-/**
- * Forms
- * Default form styles
- */
-fieldset {
-  border: 0;
-}
-
-input:focus,
-button:focus,
-select:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-button:active {
-  outline: 0;
-}
-
-input + label {
-  padding-left: 0.5em;
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
 }
 
 /*
+ * Headings
+ */
+/**
  * Layout
  * Universal layout styles
  */
 html {
   height: 100%;
   overflow-y: scroll;
+  font-size: 100%;
 }
 
 body {
   min-height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.76;
+  font-size: 1em;
+  line-height: 1.875;
   color: #222222;
-  background: #eeeeee;
+  background: #f8f8f8;
+  letter-spacing: 0.01em;
 }
 
-figure {
-  margin: 0;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 abbr[title] {
   text-decoration: none;
 }
 
-[contenteditable]:focus,
-[tabindex="0"]:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-/**
- * Links
- * Basic link styles
- */
 a {
-  text-decoration: none;
-  vertical-align: baseline;
-  color: #006699;
-}
-a:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-a:hover {
+  color: #025e8d;
   text-decoration: underline;
-  -webkit-text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
 }
-
-a:active {
-  outline: 0;
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #01324b;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #222222;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
 }
 
-/**
- * Lists
- * Default list styles
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/**
- * Tables
- * Default table styles
- */
 table {
-  width: 100%;
-  margin-bottom: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.875;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 th,
 td {
-  padding: 4px 7px;
-  border-right: 1px solid #d5d5d5;
-  text-align: left;
-  line-height: 1.15;
+  padding: 8px;
+  vertical-align: top;
 }
 
 th {
-  vertical-align: top;
+  text-align: left;
+  border-bottom: 3px solid #01324b;
 }
 
 td {
-  vertical-align: middle;
-}
-
-th[valign=top] {
-  vertical-align: top;
-}
-
-th[valign=middle] {
-  vertical-align: middle;
-}
-
-thead tr {
-  border-bottom: 1px solid #d5d5d5;
-}
-
-tbody tr {
-  border-top: 1px solid #d5d5d5;
-}
-
-tbody tr:first-child {
-  border-top: 0;
-}
-
-th {
-  background: #eeeeee;
-}
-
-tfoot tr {
-  border-top: 2px solid #d5d5d5;
-}
-
-tfoot td {
-  font-weight: bold;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 2px solid #dadada;
 }
 
 /**
- * Typography
- * Set base font size
+ * Forms
+ * Default form styles
  */
-html {
-  font-size: 100%;
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+[contenteditable]:focus {
+  outline: 3px solid #ffcc00;
 }
 
-body {
-  font-size: 1.125rem;
-}
-
-/* spacing algorithm */
-:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
-  margin-block-start: 16px;
-}
-
-* + :is(h2, h3, h4, h5) {
-  margin-block-start: 32px;
-}
-
-:is(h3, h4, h5) + * {
-  margin-block-start: 8px;
-}
-
-h2 + * {
-  margin-block-start: 16px;
-}
-
-h1 + * {
-  margin-block-start: 48px;
-}
-
-/* Not applicable after hidden elements */
-[hidden] + *,
-[style*="display:none"] + *,
-[style*="display: none"] + * {
-  margin-block-start: 0;
-}
-
-/**
- * Typographic
- * Standard text and heading formatting
- */
-/*
- * Default spacing
- * default margin 28px to match line height
- * this is used for mainting vertical rhythm on the page
- */
-/*
- * Headings
- */
-p:empty {
-  display: none;
+input[type=file]:focus-within {
+  outline: 3px solid #ffcc00;
 }
 
 * {
@@ -1142,148 +1025,6 @@ h1 + * {
   margin-block-start: 3rem;
 }
 
-.u-display-none {
-  display: none;
-}
-
-/* hide from both screenreaders and browsers */
-.u-hide,
-.js .u-js-hide {
-  display: none;
-  visibility: hidden;
-}
-
-/* show to both screenreaders and browsers */
-.u-show,
-.js .u-js-show {
-  display: block;
-  visibility: visible;
-}
-
-.u-show-inline,
-.js .u-js-show-inline {
-  display: inline;
-  visibility: visible;
-}
-
-/* hide only visually, but have it available for screenreaders */
-.u-visually-hidden,
-.js .u-js-visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -100%;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-}
-.u-visually-hidden--off,
-.js .u-js-visually-hidden--off {
-  border: 0;
-  clip: initial;
-  height: auto;
-  margin: 0;
-  overflow: auto;
-  padding: 0;
-  position: relative;
-  width: auto;
-}
-
-/* make invisible but retain dimensions */
-.u-invisible {
-  visibility: hidden;
-}
-
-/* hide only the text, keep element visible */
-.u-hide-text,
-.js .u-js-hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  direction: ltr;
-  vertical-align: bottom;
-}
-
-/* hiding overflow */
-.u-hide-overflow {
-  overflow: hidden;
-}
-
-@media print {
-  .u-hide-print {
-    display: none;
-  }
-}
-/**
- * media-query hiding
- * intentionally avoids 'max' and 'range' to prevent bloat
- */
-@media only screen and (min-width: 320px) {
-  .u-hide-at-xs,
-.js .u-js-hide-at-xs {
-    display: none;
-    visibility: hidden;
-  }
-
-  .u-show-at-xs,
-.js .u-js-show-at-xs {
-    display: block;
-    visibility: visible;
-  }
-}
-@media only screen and (min-width: 540px) {
-  .u-hide-at-sm,
-.js .u-js-hide-at-sm {
-    display: none;
-    visibility: hidden;
-  }
-
-  .u-show-at-sm,
-.js .u-js-show-at-sm {
-    display: block;
-    visibility: visible;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .u-hide-at-md,
-.js .u-js-hide-at-md {
-    display: none;
-    visibility: hidden;
-  }
-
-  .u-show-at-md,
-.js .u-js-show-at-md {
-    display: block;
-    visibility: visible;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .u-hide-at-lg,
-.js .u-js-hide-at-lg {
-    display: none;
-    visibility: hidden;
-  }
-
-  .u-show-at-lg,
-.js .u-js-show-at-lg {
-    display: block;
-    visibility: visible;
-  }
-}
-@media only screen and (min-width: 1220px) {
-  .u-hide-at-xl,
-.js .u-js-hide-at-xl {
-    display: none;
-    visibility: hidden;
-  }
-
-  .u-show-at-xl,
-.js .u-js-show-at-xl {
-    display: block;
-    visibility: visible;
-  }
-}
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
@@ -1334,7 +1075,7 @@ h1 + * {
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 480px) {
   .c-forms__fieldset--pictographic-radios {
     flex-direction: row;
   }
@@ -1471,7 +1212,7 @@ label + .c-forms__error,
   cursor: pointer;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 480px) {
   .c-forms__label--pictographic-radio {
     flex-direction: column;
     justify-content: space-between;
@@ -1689,47 +1430,26 @@ html {
 }
 
 .c-ratings-survey__button {
-  align-items: center;
-  cursor: pointer;
-  display: inline-flex;
-  margin: 0;
   position: relative;
-  text-decoration: none;
-  width: auto;
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.3;
-  justify-content: center;
-  padding: 8px;
-  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  border-radius: 2px;
-  color: #006699;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #006699;
   display: flex;
-  width: 100%;
-  margin-top: 16px;
-}
-.c-ratings-survey__button svg {
-  fill: currentColor;
-}
-.c-ratings-survey__button:visited {
-  color: #006699;
-}
-.c-ratings-survey__button:hover {
-  border: 1px solid #006699;
-}
-.c-ratings-survey__button:focus {
-  border: 1px solid #006699;
-}
-.c-ratings-survey__button:hover, .c-ratings-survey__button:focus {
-  color: white;
-  background-color: #006699;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   background-image: none;
-}
-.c-ratings-survey__button:hover svg path, .c-ratings-survey__button:focus svg path {
-  fill: white;
+  border-radius: 32px;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
+  color: #01324b;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 1.3;
+  margin: 16px 0 0 0;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 100%;
 }
 
 .c-ratings-survey a {
@@ -1758,6 +1478,532 @@ html {
 .c-ratings-survey .c-forms__fieldset--pictographic-radios {
   justify-content: center;
 }
+
+.c-ratings-survey .c-forms__label + .c-forms__label {
+  margin-top: 0;
+}
+
+.u-display-none {
+  display: none;
+}
+
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+  display: none;
+  visibility: hidden;
+}
+
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+  display: block;
+  visibility: visible;
+}
+
+.u-show-inline,
+.js .u-js-show-inline {
+  display: inline;
+  visibility: visible;
+}
+
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+  border: 0;
+  clip: initial;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+/* make invisible but retain dimensions */
+.u-invisible {
+  visibility: hidden;
+}
+
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: ltr;
+  vertical-align: bottom;
+}
+
+/* hiding overflow */
+.u-hide-overflow {
+  overflow: hidden;
+}
+
+@media print {
+  .u-hide-print {
+    display: none;
+  }
+}
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 480px) {
+  .u-hide-at-xs,
+.js .u-js-hide-at-xs {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xs,
+.js .u-js-show-at-xs {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-hide-at-sm,
+.js .u-js-hide-at-sm {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-sm,
+.js .u-js-show-at-sm {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 876px) {
+  .u-hide-at-md,
+.js .u-js-hide-at-md {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-md,
+.js .u-js-show-at-md {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .u-hide-at-lg,
+.js .u-js-hide-at-lg {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-lg,
+.js .u-js-show-at-lg {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .u-hide-at-xl,
+.js .u-js-hide-at-xl {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xl,
+.js .u-js-show-at-xl {
+    display: block;
+    visibility: visible;
+  }
+}
+.u-ma-0 {
+  margin: 0;
+}
+
+.u-ma-2 {
+  margin: 2px;
+}
+
+.u-ma-4 {
+  margin: 4px;
+}
+
+.u-ma-8 {
+  margin: 8px;
+}
+
+.u-ma-16 {
+  margin: 16px;
+}
+
+.u-ma-24 {
+  margin: 24px;
+}
+
+.u-ma-32 {
+  margin: 32px;
+}
+
+.u-ma-48 {
+  margin: 48px;
+}
+
+.u-ma-64 {
+  margin: 64px;
+}
+
+.u-ma-auto {
+  margin: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-2 {
+  margin-top: 2px;
+}
+
+.u-mt-4 {
+  margin-top: 4px;
+}
+
+.u-mt-8 {
+  margin-top: 8px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-48 {
+  margin-top: 48px;
+}
+
+.u-mt-64 {
+  margin-top: 64px;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0;
+}
+
+.u-mr-2 {
+  margin-right: 2px;
+}
+
+.u-mr-4 {
+  margin-right: 4px;
+}
+
+.u-mr-8 {
+  margin-right: 8px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-mr-48 {
+  margin-right: 48px;
+}
+
+.u-mr-64 {
+  margin-right: 64px;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
+.u-mb-2 {
+  margin-bottom: 2px;
+}
+
+.u-mb-4 {
+  margin-bottom: 4px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-32 {
+  margin-bottom: 32px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-mb-64 {
+  margin-bottom: 64px;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0;
+}
+
+.u-ml-2 {
+  margin-left: 2px;
+}
+
+.u-ml-4 {
+  margin-left: 4px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-16 {
+  margin-left: 16px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-ml-32 {
+  margin-left: 32px;
+}
+
+.u-ml-48 {
+  margin-left: 48px;
+}
+
+.u-ml-64 {
+  margin-left: 64px;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-pa-0 {
+  padding: 0;
+}
+
+.u-pa-2 {
+  padding: 2px;
+}
+
+.u-pa-4 {
+  padding: 4px;
+}
+
+.u-pa-8 {
+  padding: 8px;
+}
+
+.u-pa-16 {
+  padding: 16px;
+}
+
+.u-pa-24 {
+  padding: 24px;
+}
+
+.u-pa-32 {
+  padding: 32px;
+}
+
+.u-pa-48 {
+  padding: 48px;
+}
+
+.u-pa-64 {
+  padding: 64px;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pt-2 {
+  padding-top: 2px;
+}
+
+.u-pt-4 {
+  padding-top: 4px;
+}
+
+.u-pt-8 {
+  padding-top: 8px;
+}
+
+.u-pt-16 {
+  padding-top: 16px;
+}
+
+.u-pt-24 {
+  padding-top: 24px;
+}
+
+.u-pt-32 {
+  padding-top: 32px;
+}
+
+.u-pt-48 {
+  padding-top: 48px;
+}
+
+.u-pt-64 {
+  padding-top: 64px;
+}
+
+.u-pr-0 {
+  padding-right: 0;
+}
+
+.u-pr-2 {
+  padding-right: 2px;
+}
+
+.u-pr-4 {
+  padding-right: 4px;
+}
+
+.u-pr-8 {
+  padding-right: 8px;
+}
+
+.u-pr-16 {
+  padding-right: 16px;
+}
+
+.u-pr-24 {
+  padding-right: 24px;
+}
+
+.u-pr-32 {
+  padding-right: 32px;
+}
+
+.u-pr-48 {
+  padding-right: 48px;
+}
+
+.u-pr-64 {
+  padding-right: 64px;
+}
+
+.u-pb-0 {
+  padding-bottom: 0;
+}
+
+.u-pb-2 {
+  padding-bottom: 2px;
+}
+
+.u-pb-4 {
+  padding-bottom: 4px;
+}
+
+.u-pb-8 {
+  padding-bottom: 8px;
+}
+
+.u-pb-16 {
+  padding-bottom: 16px;
+}
+
+.u-pb-24 {
+  padding-bottom: 24px;
+}
+
+.u-pb-32 {
+  padding-bottom: 32px;
+}
+
+.u-pb-48 {
+  padding-bottom: 48px;
+}
+
+.u-pb-64 {
+  padding-bottom: 64px;
+}
+
+.u-pl-0 {
+  padding-left: 0;
+}
+
+.u-pl-2 {
+  padding-left: 2px;
+}
+
+.u-pl-4 {
+  padding-left: 4px;
+}
+
+.u-pl-8 {
+  padding-left: 8px;
+}
+
+.u-pl-16 {
+  padding-left: 16px;
+}
+
+.u-pl-24 {
+  padding-left: 24px;
+}
+
+.u-pl-32 {
+  padding-left: 32px;
+}
+
+.u-pl-48 {
+  padding-left: 48px;
+}
+
+.u-pl-64 {
+  padding-left: 64px;
+}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -1783,11 +2029,19 @@ html {
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 									<fieldset class="c-forms__fieldset">
 											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios2" name="ratings-survey-radios" autocomplete="off">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios2" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios2" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
+															<small class="c-forms__error" id="error-ratings-survey-radios2">
+																<span class="c-forms__icon c-forms__icon--error">
+																	<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																		<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																	</svg>
+																</span>
+																Please select one rating
+															</small>
 												
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-terrible2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -1795,7 +2049,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-bad2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -1803,7 +2057,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-ok2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -1811,7 +2065,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-good2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -1819,7 +2073,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-great2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -1837,7 +2091,7 @@ html {
 										</svg>
 										<p>Thank you for your feedback.</p>
 									</div>
-										<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (open in a new tab)</a>
+										<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -1853,11 +2107,19 @@ html {
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 									<fieldset class="c-forms__fieldset">
 											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios1" name="ratings-survey-radios" autocomplete="off">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios1" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios1" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
+															<small class="c-forms__error" id="error-ratings-survey-radios1">
+																<span class="c-forms__icon c-forms__icon--error">
+																	<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																		<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																	</svg>
+																</span>
+																Please select one rating
+															</small>
 												
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-terrible1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -1865,7 +2127,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-bad1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -1873,7 +2135,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-ok1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -1881,7 +2143,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-good1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -1889,7 +2151,7 @@ html {
 																	</label>
 															</div>
 															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																	<label for="radio-great1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 																		<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -1907,7 +2169,7 @@ html {
 										</svg>
 										<p>Thank you for your feedback.</p>
 									</div>
-										<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (open in a new tab)</a>
+										<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -1921,11 +2183,19 @@ html {
 					<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 						<fieldset class="c-forms__fieldset">
 								<div class="c-forms__field">
-										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios3" name="ratings-survey-radios" autocomplete="off">
+										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios3" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios3" autocomplete="off">
 													<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
+												<small class="c-forms__error" id="error-ratings-survey-radios3">
+													<span class="c-forms__icon c-forms__icon--error">
+														<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+															<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+														</svg>
+													</span>
+													Please select one rating
+												</small>
 									
 												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 														<label for="radio-terrible3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 13"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 															<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -1933,7 +2203,7 @@ html {
 														</label>
 												</div>
 												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 														<label for="radio-bad3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 															<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -1941,7 +2211,7 @@ html {
 														</label>
 												</div>
 												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 														<label for="radio-ok3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 															<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -1949,7 +2219,7 @@ html {
 														</label>
 												</div>
 												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 														<label for="radio-good3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 															<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -1957,7 +2227,7 @@ html {
 														</label>
 												</div>
 												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 														<label for="radio-great3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 															<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -1975,7 +2245,7 @@ html {
 							</svg>
 							<p>Thank you for your feedback.</p>
 						</div>
-							<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (open in a new tab)</a>
+							<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
 					</div>
 				</form>
 			</div>
@@ -2024,7 +2294,9 @@ html {
       this._aside = aside;
       this._form = this._aside.querySelector('form');
       this._formRadioFieldset = this._form.querySelector('fieldset');
+      this._formRadios = this._form.querySelectorAll('[data-ratings-survey="radio"]');
       this._formRadioLabels = this._form.querySelectorAll('[data-ratings-survey="radio"]+label');
+      this._submitButton = this._form.querySelector('button[type="submit"]');
       this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
       this._permissibleUserJourneys = ['getPublished', 'contentDiscovery'];
 
@@ -2032,9 +2304,11 @@ html {
     }
 
     _createClass(RatingsSurvey, [{
-      key: "_getRadioValue",
-      value: function _getRadioValue(label) {
-        return document.querySelector("#".concat(label.getAttribute('for'))).value;
+      key: "_getCheckedRadioValue",
+      value: function _getCheckedRadioValue() {
+        Array.from(this._formRadios).find(function (element) {
+          return element.checked;
+        });
       }
     }, {
       key: "_getUserJourneys",
@@ -2061,15 +2335,13 @@ html {
       }
     }, {
       key: "_dispatchDataLayerEvent",
-      value: function _dispatchDataLayerEvent(label) {
+      value: function _dispatchDataLayerEvent(radioValue) {
         if (!window.dataLayer) {
           console.error('Attempt to send Global Ratings Survey event failed. window.dataLayer does not exist.');
           return;
         }
 
         var userJourneys = this._getUserJourneys();
-
-        var radioValue = this._getRadioValue(label);
 
         if (userJourneys && radioValue) {
           window.dataLayer.push({
@@ -2083,6 +2355,8 @@ html {
     }, {
       key: "_displayMessage",
       value: function _displayMessage() {
+        this._submitButton.classList.add('u-hide');
+
         this._formRadioFieldset.classList.add('u-hide');
 
         this._submitMessage.classList.remove('u-hide');
@@ -2090,15 +2364,28 @@ html {
     }, {
       key: "_bindEvents",
       value: function _bindEvents() {
-        var _this2 = this;
-
         this._formRadioLabels.forEach(function (label) {
-          label.addEventListener('click', function () {
-            _this2._dispatchDataLayerEvent(label);
-
-            _this2._displayMessage();
+          label.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+              event.preventDefault();
+              event.stopPropagation();
+            }
           });
         });
+
+        this._form.addEventListener('submit', function (event) {
+          event.preventDefault();
+        }); // ['click', 'keydown'].forEach(eventType => {
+        // 	this._submitButton.addEventListener(eventType, event => {
+        // 		if (/Enter|Space/.test(event.key) || event.type === 'click') {
+        // 			event.preventDefault();
+        // 			event.stopPropagation();
+        // 			this._dispatchDataLayerEvent(this._getCheckedRadioValue());
+        // 			this._displayMessage();
+        // 		}
+        // 	});
+        // });
+
       }
     }]);
 

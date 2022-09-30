@@ -31,9 +31,26 @@
 }
 
 .c-ratings-survey__button {
-	@include button-default;
-	@include button-full-width;
-	margin-top: 16px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	background-image: none;
+	border-radius: 32px;
+	border: 4px solid white;
+	box-shadow: 0 0 0 1px #01324b;
+	color: #01324b;
+	cursor: pointer;
+	font-size: 0.875rem;
+	font-weight: 700;
+	letter-spacing: 0.7px;
+	line-height: 1.3;
+	margin: 16px 0 0 0;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: all 0.2s;
+	width: 100%;
 }
 
 .c-ratings-survey a {
@@ -62,4 +79,8 @@
 
 .c-ratings-survey .c-forms__fieldset--pictographic-radios {
 	justify-content: center;
+}
+
+.c-ratings-survey .c-forms__label + .c-forms__label {
+	margin-top: 0;
 }
