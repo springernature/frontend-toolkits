@@ -3,7 +3,7 @@ class RatingsSurvey {
 		this._aside = aside;
 		this._form = this._aside.querySelector('form');
 		this._formRadioFieldset = this._form.querySelector('fieldset');
-		this._formRadios = this._form.querySelectorAll('[data-ratings-survey="radio"]');
+		this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
 		this._formRadioLabels = this._form.querySelectorAll('[data-ratings-survey="radio"]+label');
 		this._submitButton = this._form.querySelector('button[type="submit"]');
 		this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
@@ -12,7 +12,7 @@ class RatingsSurvey {
 	}
 
 	_getCheckedRadioValue() {
-		Array.from(this._formRadios).find(element => {
+		this._formRadios.find(element => {
 			return element.checked;
 		});
 	}
@@ -67,16 +67,34 @@ class RatingsSurvey {
 		this._form.addEventListener('submit', event => {
 			event.preventDefault();
 		});
-		// ['click', 'keydown'].forEach(eventType => {
-		// 	this._submitButton.addEventListener(eventType, event => {
-		// 		if (/Enter|Space/.test(event.key) || event.type === 'click') {
-		// 			event.preventDefault();
-		// 			event.stopPropagation();
-		// 			this._dispatchDataLayerEvent(this._getCheckedRadioValue());
-		// 			this._displayMessage();
-		// 		}
-		// 	});
-		// });
+		['click', 'keydown'].forEach(eventType => {
+			this._submitButton.addEventListener(eventType, event => {
+				if (/Enter|Space/.test(event.key) || event.type === 'click') {
+					event.preventDefault();
+					event.stopPropagation();
+					const validForm = this._validateForm();
+					if (validForm) {
+						this._dispatchDataLayerEvent(this._getCheckedRadioValue());
+						this._displayMessage();
+						return;
+					}
+					this._displayError();
+				}
+			});
+		});
+	}
+
+	_validateForm() {
+		return this._formRadios.some(element => {
+			return element.checked;
+		});
+	}
+
+	_displayError() {
+		if (this._form.classList.contains('c-ratings-survey--show-error')) {
+			return;
+		}
+		this._form.classList.add('c-ratings-survey--show-error');
 	}
 }
 

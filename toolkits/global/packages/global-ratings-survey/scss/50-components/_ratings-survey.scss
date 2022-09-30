@@ -42,6 +42,14 @@
 	text-decoration: underline;
 }
 
+.c-ratings-survey .c-forms__error {
+	display: none;
+}
+
+.c-ratings-survey--show-error .c-forms__error {
+	display: flex;
+}
+
 .c-ratings-survey__visually-hidden,
 .c-ratings-survey legend.c-forms__label {
 	/* hide visually, not to assistive tech */
@@ -65,4 +73,8 @@
 
 .c-ratings-survey .c-forms__label + .c-forms__label {
 	margin-top: 0;
+}
+
+.c-ratings-survey .c-forms__fieldset {
+	margin: 0;
 }
