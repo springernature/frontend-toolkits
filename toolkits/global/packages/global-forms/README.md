@@ -9,12 +9,6 @@ The component does not include any JavaScript. States (such as an invalid/error 
 First, include the necessary Sass files in your project.
 
 ```scss
-// Include this with your tokens
-@import '../scss/00-tokens/default.tokens.scss';
-
-// Include this with your settings
-@import '@springernature/global-forms/scss/10-settings/default';
-
 // Include this with your other components
 @import '@springernature/global-forms/scss/50-components/forms';
 
