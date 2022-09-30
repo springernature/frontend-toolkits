@@ -43,7 +43,7 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
-.c-forms__fieldset--pictographic-radios {
+.c-forms__pictographic-radios {
 	display: flex;
 	flex-direction: column;
 	gap: $global-forms-pictographic-radio-spacing;
@@ -51,8 +51,12 @@
 }
 
 @include media-query('xs') {
-	.c-forms__fieldset--pictographic-radios {
+	.c-forms__pictographic-radios {
 		flex-direction: row;
+	}
+
+	.c-forms__pictographic-radios .c-forms__label + .c-forms__label {
+		margin-top: 0;
 	}
 }
 

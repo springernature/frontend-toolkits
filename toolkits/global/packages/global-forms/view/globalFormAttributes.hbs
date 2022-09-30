@@ -3,7 +3,7 @@
 {{#if value}} value="{{value}}"{{/if}}
 {{#if error}} invalid aria-invalid="true"{{/if}}
 {{#if error}} aria-describedby="error-{{id}}"{{/if}}
-{{#if required}} required aria-required="true"{{/if}}
+{{#unless optional}} required aria-required="true"{{/unless}}
 {{#if disabled}} disabled{{/if}}
 {{#if readonly}} readonly{{/if}}
 {{#if checked}} checked{{/if}}

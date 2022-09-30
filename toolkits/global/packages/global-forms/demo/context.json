@@ -22,8 +22,6 @@
 					{
 						"template": "globalFormText",
 						"label": "Your name (simple)",
-						"required": true,
-						"requiredSuffix": "<span aria-hidden=\"true\">*</span>",
 						"id": "your-name",
 						"name": "your-name",
 						"dataAttrs": {
@@ -43,6 +41,13 @@
 						"hint": "Your name is on your passport",
 						"id": "your-name-hint",
 						"name": "your-name-hint"
+					},
+					{
+						"template": "globalFormText",
+						"label": "An unimportant field",
+						"optional": true,
+						"id": "unimportant",
+						"name": "unimportant"
 					},
 					{
 						"template": "globalFormHTML",
@@ -165,12 +170,13 @@
 				"fields": [
 					{
 						"template": "globalFormRadios",
-						"label": "Rating",
+						"label": "Rating (with error)",
 						"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.",
 						"id": "radios-rating",
 						"name": "radios-rating",
 						"pictographic": true,
 						"boxed": true,
+						"error": "Please select one rating",
 						"inputs": [
 							{
 								"label": "Terrible",
