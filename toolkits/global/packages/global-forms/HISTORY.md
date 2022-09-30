@@ -1,7 +1,11 @@
 # History
 
 ## 5.0.0 (2022-09-29)
+    * BREAKING:
+        * Removal of `optional` property; can be handled as part of the label or hint instead
     * Support `disabled` property on select options
+    * `requiredSuffix` property for adding an asterisk or equivalent
+    
 ## 5.0.0-rc.9 (2022-09-28)
     * Increases thickness of pictographic radio icon borders to 2px
     * Bumps Brand Context to v28.1.0
