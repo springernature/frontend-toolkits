@@ -1,6 +1,6 @@
 # Global Forms
 
-This component includes a number of form fields and related templates. It is designed to make it as simple as possible to create an HTML form.
+This component includes a number of form fields and related templates.
 
 The component does not include any JavaScript. States (such as an invalid/error state) are defined at a data level. If you're using client-side processing, you might benefit from compiling the form’s handlebars template in the browser.
 
