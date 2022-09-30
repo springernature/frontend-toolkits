@@ -1,7 +1,5 @@
 # Global Forms
 
-**IMPORTANT:** _This is a **release candidate** representing an ambitious reworking of the global-forms component, including design tokens integration, at a component level, for the first time. It is expected to need some additional work before a full release can be made. Tokens are generated to the `scss/00-tokens` folder and cannot be edited directly. If you need to temporarily add or override variables, please do this in a `10-settings` folder, one level down. The Elements Design System team will assess these changes for making these variables tokens later._
-
 This component includes a number of form fields and related templates. It is designed to make it as simple as possible to create an HTML form.
 
 The component does not include any JavaScript. States (such as an invalid/error state) are defined at a data level. If you're using client-side processing, you might benefit from compiling the form’s handlebars template in the browser.
@@ -11,6 +9,9 @@ The component does not include any JavaScript. States (such as an invalid/error 
 First, include the necessary Sass files in your project.
 
 ```scss
+// Include this with your tokens
+@import '../scss/00-tokens/default.tokens.scss';
+
 // Include this with your settings
 @import '@springernature/global-forms/scss/10-settings/default';
 
@@ -80,10 +81,10 @@ The `hint` property adds hint text under the main label text but _inside_ the `<
 "hint": "This will be the email address you used when registering"
 ```
 
-The `optional` property adds _“(optional)”_ to the label text.
+To accompany the `required` property, there is `requiredSuffix`. You can use this to add an indicator after the label text, such as an asterisk. HTML is permitted, meaning you can hide the asterisk from assistive technologies using `aria-hidden`. The presence of the `required` attribute on the input itself suffices for screen reader software.
 
 ```json
-"optional": true
+"requiredSuffix": "<span aria-hidden=\"true\">*</span>"
 ```
 
 In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
