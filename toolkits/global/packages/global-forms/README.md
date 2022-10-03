@@ -69,17 +69,23 @@ This component supports a wide range of standard form field attributes. For exam
 }
 ```
 
+#### Hints
+
 The `hint` property adds hint text under the main label text but _inside_ the `<label>`. This means it is automatically available to screen reader software.
 
 ```json
 "hint": "This will be the email address you used when registering"
 ```
 
-To accompany the `required` property, there is `requiredSuffix`. You can use this to add an indicator after the label text, such as an asterisk. HTML is permitted, meaning you can hide the asterisk from assistive technologies using `aria-hidden`. The presence of the `required` attribute on the input itself suffices for screen reader software.
+#### Required
 
-```json
-"requiredSuffix": "<span aria-hidden=\"true\">*</span>"
-```
+Fields are required by default, because you should not be asking for unnecessary data. 
+
+The `required` and `aria-required="true"` attribution is applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
+
+In the rare cases a field _is_ optional, it can be marked as such using `optional: true`. This will remove `required` and `aria-required="true"` as well as appending the text “(optional)” to the field label. This is the agreed way to communicate a field can be skipped.
+
+#### Data properties
 
 In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
 
@@ -97,7 +103,7 @@ In addition to these top-level properties, you can add data properties as a `dat
 
 This would create the following attribution: `data-test: someValue`.
 
-### Errors
+#### Errors
 
 Each field can have an `error` property. The inclusion of the property means the field is in an error state. The property value (a string) defines the error message the user sees.
 
@@ -129,8 +135,6 @@ You can summarise errors using a top level `errorSummary` property. Each error i
     ]
 }
 ```
-
-### Making choices
 
 #### Select fields
 
@@ -263,7 +267,7 @@ Unlike radios, which are always used in sets of two or more, you can have a sing
 }
 ```
 
-### Hidden fields
+#### Hidden fields
 
 You can hide any field from visibility (also from screen reader software and keyboard interaction) using `hidden: true`. If you want to use a field of `type="hidden"`, you need to use `template: globalFormHidden`. It is recommended you also apply `hidden: true` to such fields because it will remove the inter-field margin. In the following example, note the `label` is omitted since hidden fields are not user facing.
 
