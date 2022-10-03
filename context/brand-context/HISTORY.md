@@ -1,23 +1,33 @@
 # History
+
+## 28.1.1 (2022-10-03)
+    * PATCH: Move default abstract import into the brand abstracts file
+        * Simplifies the process of compiling static component CSS
+
 ## 28.1.0 (2022-09-28)
     * Updates border alias design tokens to use grayscale.500 for input borders
     * Updates Global Form component design tokens to use border.color.input for pictographic radio unchecked icon border color
+
 ## 28.0.1 (2022-09-15)
     * BUG: Fixes previous overwritten nature basic.scss file
+
 ## 28.0.0 (2022-09-14)
     * BREAKING:
         * New universal block spacing (inter-element margin) for flow content
     * block-spacing alias design tokens
     * spacing applied to heading utility classes
     * “accessible focus styles” removed (redundant `outline: none` on non-interactive elements)
+
 ## 27.1.0 (2022-09-14)
     * Abstracts shared styles from brand basic.css files into a default basic.scss file
     * Sets a sensible default width and height for aria-hidden inline SVGs in the core styles to reduce the core experience looking broken
+
 ## 27.0.0 (2022-09-09)
     * BREAKING:
       * Springer Nature: Updates body font family to Merriweather Sans.
     * UPDATES:
       * regenerated Design Tokens.
+
 ## 26.0.0 (2022-08-10)
     * BREAKING:
       * Springer: erroneous use of placeholders removed to fix cascade
@@ -28,29 +38,37 @@
     * UDPATES:
       * updates generated Sass from Design Tokens
 	  * Long form hex codes for Design Tokens - allows design tool integration
+
 ## 24.1.0 (2022-06-29)
     * UPDATES:
       * Normalizer from v5 to v8 inline with our own IE support matrix.
+
 ## 24.0.0 (2022-06-28)
     * UPDATES:
       * adds border width design tokens
     * BREAKING:
       * removes exisiting relative spacing and sizing tokens
       * creates new namespaced 'relative' and 'absolute' spacing and sizing tokens
+
 ## 23.0.0 (2022-06-10)
     * UPDATES:
       * updates alias color tokens to match recent updates in Sketch.
     * BREAKING:
       * removes options 4 and 5 of nature illustration colours available.
+
 ## 22.2.0 (2022-06-10)
     * BUG: Springer Nature brand-context media queires were using old breakpoint keys instead of news ones introduced in v22.0.0
+
 ## 22.1.0 (2022-06-08)
     * Adds u-hide-print mixin
+
 ## 22.0.0 (2022-05-24)
     * BREAKING
       * Updates SpringerNature brand-context breakpoints keys to match default brand-context
+
 ## 21.1.1 (2022-05-23)
     * Left aligns basic lists in the springer context
+
 ## 21.1.0 (2022-05-10)
     * Adds a new icon for the use of expanding images
 
@@ -96,6 +114,7 @@
     * FEATURE: adds javascript helpers for use in components
         * Includes helpers that used to live in `global-javascript`
         * Includes code that used to live in `global-expander`
+
 ## 20.0.3 (2022-03-11)
     * PATCH: share SN corporate colours via the default context. Non-destructive.
 
@@ -105,6 +124,7 @@
 ## 20.0.1 (2022-02-09)
     * BUG
         * Add missing functions and mixins to default branding abstracts
+
 ## 20.0.0 (2022-01-14)
     * BREAKING
         * Switch SASS compiler from Node Sass to Dart Sass
@@ -121,7 +141,6 @@
 ## 18.1.2 (2021-12-10)
     * BUG
         * fixes font size set in em, not rem and also thinking root size was 62.5%
-
 
 ## 18.1.1
     * FEATURE
