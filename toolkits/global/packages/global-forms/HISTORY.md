@@ -2,7 +2,7 @@
 
 ## 5.0.0 (2022-09-29)
     * BREAKING:
-        * Feels required by default; required removed with `optional` set to `true`
+        * Fields required by default; required removed with `optional` set to `true`
     
 ## 5.0.0-rc.10 (2022-09-30)
     * Removes margin-top from form labels used on pictographic radios when in horizontal layout
