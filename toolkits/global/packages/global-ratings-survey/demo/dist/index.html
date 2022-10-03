@@ -18,6 +18,11 @@
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -192,11 +197,6 @@ h5 {
   font-weight: 700;
 }
 
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
 /**
  * Breakpoints
  * Shared media query values
@@ -657,6 +657,11 @@ a {
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -831,11 +836,6 @@ h5 {
   font-weight: 700;
 }
 
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
 /**
  * Breakpoints
  * Shared media query values
@@ -1068,7 +1068,7 @@ h1 + * {
   max-width: 70ch;
 }
 
-.c-forms__fieldset--pictographic-radios {
+.c-forms__pictographic-radios {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -1076,8 +1076,12 @@ h1 + * {
 }
 
 @media only screen and (min-width: 480px) {
-  .c-forms__fieldset--pictographic-radios {
+  .c-forms__pictographic-radios {
     flex-direction: row;
+  }
+
+  .c-forms__pictographic-radios .c-forms__label + .c-forms__label {
+    margin-top: 0;
   }
 }
 * + .c-forms__error-summary,
@@ -1409,7 +1413,7 @@ html {
 }
 
 .c-ratings-survey__heading {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .c-ratings-survey__submit-message div {
@@ -1470,6 +1474,7 @@ html {
 
 .c-ratings-survey .c-forms__error {
   display: none;
+  margin-bottom: 0.5rem;
 }
 
 .c-ratings-survey--show-error .c-forms__error {
@@ -2045,13 +2050,13 @@ html {
 				<p>Donec commodo placerat turpis, et aliquet neque aliquet id. Maecenas nibh libero, tristique ornare iaculis non, placerat a urna. Nulla eu pharetra ex. Nunc auctor sem et ligula imperdiet tincidunt. Donec ut neque posuere, tempus justo quis, iaculis neque. Pellentesque venenatis sapien eu quam tincidunt pretium. Ut sapien turpis, semper a urna quis, pulvinar eleifend lectus. Nulla sed diam molestie, mattis nibh volutpat, ultricies lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ut ultricies nunc. Proin sed imperdiet nunc, non blandit turpis. Quisque eget nisi eget risus fringilla facilisis sit amet vitae odio.</p>
 				<p>Aliquam sed fermentum dui. Vestibulum vitae iaculis sem. Praesent porta tellus nibh. Aenean at ex id enim varius tincidunt. Etiam mi risus, ornare commodo augue vel, varius tempor neque. Mauris eget lectus imperdiet, sagittis mauris id, rutrum est. Nam eu aliquet ligula. Integer venenatis quam eget scelerisque finibus. Integer maximus massa ac mauris mattis elementum. Nulla a sagittis nisi. Suspendisse ac magna bibendum, bibendum ex a, bibendum neque. Integer ac venenatis quam, vel volutpat tellus. Phasellus dictum nunc in metus placerat, vel rutrum nibh sollicitudin. Duis vel scelerisque sapien, vitae molestie odio.</p>
 				<p>Vestibulum risus enim, rutrum vitae leo vel, luctus congue odio. Nam felis massa, volutpat sit amet sodales id, mattis quis dolor. Fusce feugiat diam vitae libero dapibus, ac suscipit velit bibendum. Praesent sodales ante justo, in dapibus mauris rhoncus efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eu consectetur ante, id sagittis metus. Integer at fringilla mi, non suscipit velit.</p>
-					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="getPubslished">
+					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="getPublished">
 						<div class="c-ratings-survey__container">
 							<form class="c-ratings-survey__form" action="#" method="POST">
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 									<fieldset class="c-forms__fieldset">
 											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios2" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios2" autocomplete="off">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios2" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios2" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 															<small class="c-forms__error" id="error-ratings-survey-radios2">
 																<span class="c-forms__icon c-forms__icon--error">
@@ -2061,47 +2066,48 @@ html {
 																</span>
 																Please select one rating
 															</small>
-												
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-terrible2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
-																		<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-bad2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-ok2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-good2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-great2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
-																		<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
-																	</label>
-															</div>
+														<div class="c-forms__pictographic-radios">
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-terrible2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
+																			<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-bad2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-ok2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-good2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-great2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+																			<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+																		</label>
+																</div>
+														</div>
 													</fieldset>
 											</div>
 									</fieldset>
@@ -2129,7 +2135,7 @@ html {
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 									<fieldset class="c-forms__fieldset">
 											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios1" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios1" autocomplete="off">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios1" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios1" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 															<small class="c-forms__error" id="error-ratings-survey-radios1">
 																<span class="c-forms__icon c-forms__icon--error">
@@ -2139,47 +2145,48 @@ html {
 																</span>
 																Please select one rating
 															</small>
-												
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-terrible1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
-																		<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-bad1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-ok1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-good1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
-																		<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
-																	</label>
-															</div>
-															<div class="c-forms__label c-forms__label--wrapper">
-																<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
-																	<label for="radio-great1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
-																		<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
-																		<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
-																	</label>
-															</div>
+														<div class="c-forms__pictographic-radios">
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-terrible1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
+																			<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-bad1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-ok1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-good1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
+																			<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+																		</label>
+																</div>
+																<div class="c-forms__label c-forms__label--wrapper">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																		<label for="radio-great1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
+																			<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+																			<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+																		</label>
+																</div>
+														</div>
 													</fieldset>
 											</div>
 									</fieldset>
@@ -2205,7 +2212,7 @@ html {
 					<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
 						<fieldset class="c-forms__fieldset">
 								<div class="c-forms__field">
-										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="ratings-survey-radios3" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios3" autocomplete="off">
+										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios3" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios3" autocomplete="off">
 													<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 												<small class="c-forms__error" id="error-ratings-survey-radios3">
 													<span class="c-forms__icon c-forms__icon--error">
@@ -2215,47 +2222,48 @@ html {
 													</span>
 													Please select one rating
 												</small>
-									
-												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
-														<label for="radio-terrible3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 13"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
-															<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
-															<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
-														</label>
-												</div>
-												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
-														<label for="radio-bad3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-															<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
-															<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
-														</label>
-												</div>
-												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
-														<label for="radio-ok3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
-															<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
-															<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
-														</label>
-												</div>
-												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
-														<label for="radio-good3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-															<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
-															<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
-														</label>
-												</div>
-												<div class="c-forms__label c-forms__label--wrapper">
-													<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
-														<label for="radio-great3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
-															<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
-															<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
-														</label>
-												</div>
+											<div class="c-forms__pictographic-radios">
+													<div class="c-forms__label c-forms__label--wrapper">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+															<label for="radio-terrible3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 13"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
+																<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
+																<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
+															</label>
+													</div>
+													<div class="c-forms__label c-forms__label--wrapper">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+															<label for="radio-bad3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
+																<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+															</label>
+													</div>
+													<div class="c-forms__label c-forms__label--wrapper">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+															<label for="radio-ok3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
+																<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
+																<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+															</label>
+													</div>
+													<div class="c-forms__label c-forms__label--wrapper">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+															<label for="radio-good3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+																<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
+																<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+															</label>
+													</div>
+													<div class="c-forms__label c-forms__label--wrapper">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+															<label for="radio-great3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
+																<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+																<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+															</label>
+													</div>
+											</div>
 										</fieldset>
 								</div>
 						</fieldset>
@@ -2317,7 +2325,6 @@ html {
       this._form = this._aside.querySelector('form');
       this._formRadioFieldset = this._form.querySelector('fieldset');
       this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
-      this._formRadioLabels = this._form.querySelectorAll('[data-ratings-survey="radio"]+label');
       this._submitButton = this._form.querySelector('button[type="submit"]');
       this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
       this._permissibleUserJourneys = ['getPublished', 'contentDiscovery'];
@@ -2328,9 +2335,9 @@ html {
     _createClass(RatingsSurvey, [{
       key: "_getCheckedRadioValue",
       value: function _getCheckedRadioValue() {
-        this._formRadios.find(function (element) {
+        return this._formRadios.find(function (element) {
           return element.checked;
-        });
+        }).value;
       }
     }, {
       key: "_getUserJourneys",
@@ -2338,7 +2345,7 @@ html {
         var _this = this;
 
         if (!this._aside.dataset.ratingsSurvey) {
-          console.error('Global Ratings Survey component failed to initialise. Value not found for User Journeys.');
+          console.error('Attempt to send Global Ratings Survey event failed. Value not found for User Journeys.');
           return;
         }
 
@@ -2352,7 +2359,7 @@ html {
           return this._aside.dataset.ratingsSurvey;
         }
 
-        console.error('Global Ratings Survey component failed to initialise. One or more of the user journeys provided are not permissible values.');
+        console.error('Attempt to send Global Ratings Survey event failed. One or more of the user journeys provided are not permissible values.');
         return false;
       }
     }, {
@@ -2388,17 +2395,9 @@ html {
       value: function _bindEvents() {
         var _this2 = this;
 
-        this._formRadioLabels.forEach(function (label) {
-          label.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-          });
-        });
-
         this._form.addEventListener('submit', function (event) {
           event.preventDefault();
+          event.stopPropagation();
         });
 
         ['click', 'keydown'].forEach(function (eventType) {

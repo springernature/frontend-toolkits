@@ -44,6 +44,7 @@
 
 .c-ratings-survey .c-forms__error {
 	display: none;
+	margin-bottom: $global-ratings-survey-error-margin;
 }
 
 .c-ratings-survey--show-error .c-forms__error {

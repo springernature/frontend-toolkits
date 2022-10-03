@@ -7,6 +7,6 @@
   "author": "Springer Nature",
   "brandContext": "^28.1.0",
   "dependencies": {
-    "@springernature/global-forms": "^5.0.0-rc.9"
+    "@springernature/global-forms": "^5.0.0-rc.10"
   }
 }

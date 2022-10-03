@@ -12,7 +12,12 @@
 		},
 		"heading": {
 			"margin": {
-				"value": "{spacing.relative.400}"
+				"value": "{spacing.relative.200}"
+			}
+		},
+		"error": {
+			"margin": {
+				"value": "{spacing.relative.200}"
 			}
 		},
 		"icon": {

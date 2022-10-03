@@ -79,7 +79,7 @@
 		}
 	},
 	"ratingsSurveyData2": {
-		"userJourneys": "getPubslished",
+		"userJourneys": "getPublished",
 		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",

@@ -4,7 +4,6 @@ class RatingsSurvey {
 		this._form = this._aside.querySelector('form');
 		this._formRadioFieldset = this._form.querySelector('fieldset');
 		this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
-		this._formRadioLabels = this._form.querySelectorAll('[data-ratings-survey="radio"]+label');
 		this._submitButton = this._form.querySelector('button[type="submit"]');
 		this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
 		this._permissibleUserJourneys = ['getPublished', 'contentDiscovery'];
@@ -12,14 +11,12 @@ class RatingsSurvey {
 	}
 
 	_getCheckedRadioValue() {
-		this._formRadios.find(element => {
-			return element.checked;
-		});
+		return this._formRadios.find(element => element.checked).value;
 	}
 
 	_getUserJourneys() {
 		if (!this._aside.dataset.ratingsSurvey) {
-			console.error('Global Ratings Survey component failed to initialise. Value not found for User Journeys.');
+			console.error('Attempt to send Global Ratings Survey event failed. Value not found for User Journeys.');
 			return;
 		}
 		const userJourneyStrings = this._aside.dataset.ratingsSurvey.split('-');
@@ -29,7 +26,7 @@ class RatingsSurvey {
 		if (containsPermissibleUserJourneys) {
 			return this._aside.dataset.ratingsSurvey;
 		}
-		console.error('Global Ratings Survey component failed to initialise. One or more of the user journeys provided are not permissible values.');
+		console.error('Attempt to send Global Ratings Survey event failed. One or more of the user journeys provided are not permissible values.');
 		return false;
 	}
 
@@ -56,16 +53,9 @@ class RatingsSurvey {
 	}
 
 	_bindEvents() {
-		this._formRadioLabels.forEach(label => {
-			label.addEventListener('keydown', event => {
-				if (event.key === 'Enter') {
-					event.preventDefault();
-					event.stopPropagation();
-				}
-			});
-		});
 		this._form.addEventListener('submit', event => {
 			event.preventDefault();
+			event.stopPropagation();
 		});
 		['click', 'keydown'].forEach(eventType => {
 			this._submitButton.addEventListener(eventType, event => {
