@@ -83,7 +83,7 @@ Fields are required by default. Avoid asking for information you don't really ne
 
 The `required` and `aria-required="true"` attribution is applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
 
-In the rare cases a field _is_ optional, it can be marked as such using `optional: true`. This will remove `required` and `aria-required="true"` as well as appending the text “(optional)” to the field label. This is the agreed way to communicate a field can be skipped.
+If you do need to ask for optional information, set `optional: true`. This will remove `required` and `aria-required="true"` as well as appending the text “(optional)” to the field label. 
 
 #### Data properties
 
