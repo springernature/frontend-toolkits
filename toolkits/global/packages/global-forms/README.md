@@ -79,7 +79,7 @@ The `hint` property adds hint text under the main label text but _inside_ the `<
 
 #### Required
 
-Fields are required by default, because you should not be asking for unnecessary data. 
+Fields are required by default. Avoid asking for information you don't really need. 
 
 The `required` and `aria-required="true"` attribution is applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
 
