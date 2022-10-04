@@ -1,11 +1,5 @@
-<div class="c-forms__field c-forms__buttons">
+<div class="c-forms__field c-forms__inline-fields">
 	{{#each buttons}}
-		<button
-			{{#if type}}type="{{type}}"{{else}}type="button"{{/if}}
-			class="u-button{{#each modifiers}} u-button--{{.}}{{/each}}"
-			{{> globalFormAttributes}}
-		>
-			{{label}}
-		</button>
+		{{> globalFormButton}}
 	{{/each}}
 </div>

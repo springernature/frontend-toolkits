@@ -127,6 +127,56 @@
 				]
 			},
 			{
+				"legend": "<h2>Inline fields</h2>",
+				"fields": [
+					{
+						"template": "globalFormInlineFields",
+						"fields": [
+							{
+								"template": "globalFormText",
+								"name": "search",
+								"id": "search",
+								"label": "Search",
+								"hideLabel": true
+							},
+							{
+								"template": "globalFormButton",
+								"type": "submit",
+								"label": "Search",
+								"modifiers": ["primary"]
+							}
+						]
+					},
+					{
+						"template": "globalFormInlineFields",
+						"nowrap": true,
+						"fields": [
+							{
+								"template": "globalFormText",
+								"name": "day",
+								"id": "day",
+								"label": "Day",
+								"placeholder": "DD"
+							},
+							{
+								"template": "globalFormText",
+								"name": "month",
+								"id": "month",
+								"label": "Month",
+								"placeholder": "MM"
+							},
+							{
+								"template": "globalFormText",
+								"name": "year",
+								"id": "year",
+								"label": "Year",
+								"placeholder": "YY"
+							}
+						]
+					}
+				]
+			},
+			{
 				"legend": "<h2>Radios</h2>",
 				"fields": [
 					{
@@ -306,6 +356,7 @@
 	"dynamicPartials": {
 		"globalFormField": "./toolkits/global/packages/global-forms/view/globalFormField.hbs",
 		"globalFormFieldset": "./toolkits/global/packages/global-forms/view/globalFormFieldset.hbs",
+		"globalFormInlineFields": "./toolkits/global/packages/global-forms/view/globalFormInlineFields.hbs",
 		"globalFormLabel": "./toolkits/global/packages/global-forms/view/globalFormLabel.hbs",
 		"globalFormError": "./toolkits/global/packages/global-forms/view/globalFormError.hbs",
 		"globalFormErrorSummary": "./toolkits/global/packages/global-forms/view/globalFormErrorSummary.hbs",
@@ -321,6 +372,7 @@
 		"globalFormRadios": "./toolkits/global/packages/global-forms/view/fields/globalFormRadios.hbs",
 		"globalFormRadio": "./toolkits/global/packages/global-forms/view/fields/globalFormRadio.hbs",
 		"globalFormHTML": "./toolkits/global/packages/global-forms/view/fields/globalFormHTML.hbs",
+		"globalFormButton": "./toolkits/global/packages/global-forms/view/fields/globalFormButton.hbs",
 		"globalFormButtons": "./toolkits/global/packages/global-forms/view/fields/globalFormButtons.hbs",
 		"globalFormIconError": "./toolkits/global/packages/global-forms/view/globalFormIconError.hbs",
 		"globalFormIconSelect": "./toolkits/global/packages/global-forms/view/globalFormIconSelect.hbs"

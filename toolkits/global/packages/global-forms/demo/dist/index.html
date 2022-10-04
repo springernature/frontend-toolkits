@@ -18,6 +18,11 @@
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -187,11 +192,6 @@ h6, h5, h4 {
   font-weight: 700;
 }
 
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
 /**
  * Colors
  * Maps for color values & greyscale settings
@@ -673,6 +673,11 @@ button {
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -842,11 +847,6 @@ h6, h5, h4 {
   font-weight: 700;
 }
 
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
 /**
  * Colors
  * Maps for color values & greyscale settings
@@ -1690,6 +1690,148 @@ h1 + * {
   margin-left: 8px;
 }
 
+.u-display-none {
+  display: none;
+}
+
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+  display: none;
+  visibility: hidden;
+}
+
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+  display: block;
+  visibility: visible;
+}
+
+.u-show-inline,
+.js .u-js-show-inline {
+  display: inline;
+  visibility: visible;
+}
+
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+  border: 0;
+  clip: initial;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+/* make invisible but retain dimensions */
+.u-invisible {
+  visibility: hidden;
+}
+
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: ltr;
+  vertical-align: bottom;
+}
+
+/* hiding overflow */
+.u-hide-overflow {
+  overflow: hidden;
+}
+
+@media print {
+  .u-hide-print {
+    display: none;
+  }
+}
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 320px) {
+  .u-hide-at-xs,
+.js .u-js-hide-at-xs {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xs,
+.js .u-js-show-at-xs {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .u-hide-at-sm,
+.js .u-js-hide-at-sm {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-sm,
+.js .u-js-show-at-sm {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-hide-at-md,
+.js .u-js-hide-at-md {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-md,
+.js .u-js-show-at-md {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .u-hide-at-lg,
+.js .u-js-hide-at-lg {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-lg,
+.js .u-js-show-at-lg {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .u-hide-at-xl,
+.js .u-js-hide-at-xl {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xl,
+.js .u-js-show-at-xl {
+    display: block;
+    visibility: visible;
+  }
+}
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
@@ -1708,7 +1850,8 @@ h1 + * {
 
 .c-forms__fieldset,
 .c-forms__error-summary,
-.c-forms__field {
+.c-forms__field,
+.c-forms__field * {
   line-height: 1.4;
 }
 
@@ -1733,6 +1876,26 @@ h1 + * {
   max-width: 70ch;
 }
 
+.c-forms__inline-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--global-form-inline-gap, 0.5rem);
+}
+
+.c-forms__inline-fields--nowrap {
+  flex-wrap: nowrap;
+}
+
+.c-forms__inline-fields .c-forms__field--globalFormText {
+  /* ↓ Make it max out the available space with a super high value */
+  flex-grow: 666;
+}
+
+.c-forms__inline-fields .c-forms__input {
+  height: 100%;
+}
+
 .c-forms__pictographic-radios {
   display: flex;
   flex-direction: column;
@@ -1753,6 +1916,14 @@ h1 + * {
 * + .c-forms__fieldset,
 * + .c-forms__field {
   margin-top: 1.5rem;
+}
+
+.c-forms__inline-fields * {
+  margin: 0;
+}
+
+.c-forms__field .u-visually-hidden + * {
+  margin-top: 0;
 }
 
 .c-forms__legend * {
@@ -2010,12 +2181,6 @@ label + .c-forms__error,
 .c-forms__error-summary-errors li + li {
   margin-top: 0.25rem;
 }
-
-.c-forms__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -2040,39 +2205,39 @@ label + .c-forms__error,
 						</ul>
 				</div>
 			</aside>
-			<div class="c-forms__field">
+			<div class="c-forms__field c-forms__field--globalFormFieldset">
 				<fieldset class="c-forms__fieldset">
 						<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name" class="c-forms__label">
 								Your name (simple)
 							</label>
 							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" required="" aria-required="true" autocomplete="off" data-test="someValue">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormPassword">
 							<label for="password" class="c-forms__label">
 								Your password
 							</label>
 							<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-hint" class="c-forms__label">
 								Your name (with hint)
 									<small class="c-forms__hint">Your name is on your passport</small>
 							</label>
 							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="unimportant" class="c-forms__label">
 								An unimportant field
 										(optional)
 							</label>
 							<input type="text" class="c-forms__input c-forms__input--text" id="unimportant" name="unimportant" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormHTML">
 							<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-error" class="c-forms__label">
 								Your name (with error)
 									<small class="c-forms__hint">Your name is on your passport</small>
@@ -2087,7 +2252,7 @@ label + .c-forms__error,
 								</small>
 							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-disabled" class="c-forms__label">
 								Your name (disabled)
 							</label>
@@ -2097,7 +2262,7 @@ label + .c-forms__error,
 			</div>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Selects</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormSelect">
 						<label for="select-animals" class="c-forms__label">
 							Animal (simple)
 						</label>
@@ -2123,7 +2288,7 @@ label + .c-forms__error,
 							</span>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormSelect">
 						<label for="select-animals-hint" class="c-forms__label">
 							Animal (with hint)
 								<small class="c-forms__hint">Which is your favorite?</small>
@@ -2149,8 +2314,48 @@ label + .c-forms__error,
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Inline fields</h2></legend>
+					<div class="c-forms__field c-forms__field--globalFormInlineFields">
+							<div class="c-forms__inline-fields">
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="search" class="c-forms__label u-visually-hidden">
+											Search
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="search" name="search" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormButton">
+										<button type="submit" class="u-button u-button--primary" required="" aria-required="true" autocomplete="off">
+											Search
+										</button>
+									</div>
+							</div>
+					</div>
+					<div class="c-forms__field c-forms__field--globalFormInlineFields">
+							<div class="c-forms__inline-fields c-forms__inline-fields--nowrap">
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="day" class="c-forms__label">
+											Day
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="day" name="day" placeholder="DD" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="month" class="c-forms__label">
+											Month
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="month" name="month" placeholder="MM" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="year" class="c-forms__label">
+											Year
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="year" name="year" placeholder="YY" required="" aria-required="true" autocomplete="off">
+									</div>
+							</div>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormRadios">
 							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-animals" name="radios-animals" required="" aria-required="true" autocomplete="off">
 										<legend class="c-forms__label">Animal<span class="c-form__label--visually-hidden"></span></legend>
 								<div>
@@ -2189,7 +2394,7 @@ label + .c-forms__error,
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Pictographic Radios</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormRadios">
 							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-rating" name="radios-rating" invalid="" aria-invalid="true" aria-describedby="error-radios-rating" required="" aria-required="true" autocomplete="off">
 										<legend class="c-forms__label">Rating (with error)<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.</span></legend>
 									<small class="c-forms__error" id="error-radios-rating">
@@ -2247,7 +2452,7 @@ label + .c-forms__error,
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Textareas</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormTextarea">
 						<label for="textarea-example" class="c-forms__label">
 							Enter some text
 						</label>
@@ -2256,14 +2461,14 @@ label + .c-forms__error,
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" required="" aria-required="true" autocomplete="off">
 							<label for="checkbox-terms-hint" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 							<small class="c-forms__error" id="error-checkbox-terms-error">
 								<span class="c-forms__icon c-forms__icon--error">
 									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
@@ -2278,7 +2483,7 @@ label + .c-forms__error,
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 						<div class="c-forms__label c-forms__label--wrapper">
 							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-sup" name="checkbox-sup" required="" aria-required="true" autocomplete="off">
 							<label for="checkbox-sup" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Checkbox with supplementary field</label>
@@ -2295,7 +2500,7 @@ label + .c-forms__error,
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>File upload</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormFile">
 						<label for="file-upload" class="c-forms__label">
 							Journal upload
 						</label>
@@ -2303,8 +2508,8 @@ label + .c-forms__error,
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
-					<div class="c-forms__field">
-						<div class="c-forms__field c-forms__buttons">
+					<div class="c-forms__field c-forms__field--globalFormButtons">
+						<div class="c-forms__field c-forms__inline-fields">
 								<button type="submit" class="u-button u-button--primary" required="" aria-required="true" autocomplete="off">
 									Submit
 								</button>
