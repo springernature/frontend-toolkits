@@ -1,5 +1,10 @@
 # History
 
+## 29.0.0 (2022-10-05)
+    * BREAKING:
+        * Link underlines by default
+    * Added component wrappers (`c-` elements) to block spacing algorithm
+
 ## 28.1.1 (2022-10-03)
     * PATCH: Move default abstract import into the brand abstracts file
         * Simplifies the process of compiling static component CSS

@@ -5,15 +5,11 @@
 
 a {
 	@include u-focus-outline();
-	text-decoration: none;
-	vertical-align: baseline;
-	color: color('blue');
-}
-
-a:hover {
 	text-decoration: underline;
 	-webkit-text-decoration-skip: skip;
 	text-decoration-skip-ink: auto;
+	vertical-align: baseline;
+	color: color('blue');
 }
 
 a:active {
