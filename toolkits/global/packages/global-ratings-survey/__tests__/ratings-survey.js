@@ -2,7 +2,7 @@
 import {ratingSurveys} from '../js/index.js';
 
 const fixture = `
-<aside class="u-hide u-js-show" data-ratings-survey="content discovery">
+<aside class="u-hide u-js-show" data-ratings-survey="" data-ratings-survey-user-journeys="content discovery">
 	<form>
 		<fieldset>
 			<div>
@@ -110,45 +110,48 @@ describe('Global Ratings Survey', () => {
 		button.click();
 		const expectedValue =
 			[{
+				additionalInfo: null,
 				event: 'survey.track',
-				userJourneys: 'content discovery',
-				radioValue: '1'
+				radioValue: '1',
+				userJourneys: 'content discovery'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should trim and lowercase user journey values before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurvey = ' CONTENT DISCOVERY ';
+		aside.dataset.ratingsSurveyUserJourneys = ' CONTENT DISCOVERY ';
 		ratingSurveys();
 		label.click();
 		button.click();
 		const expectedValue =
 			[{
+				additionalInfo: null,
 				event: 'survey.track',
-				userJourneys: 'content discovery',
-				radioValue: '1'
+				radioValue: '1',
+				userJourneys: 'content discovery'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should process comma separated user journey values correctly before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurvey = 'content discovery, get published';
+		aside.dataset.ratingsSurveyUserJourneys = 'content discovery, get published';
 		ratingSurveys();
 		label.click();
 		button.click();
 		const expectedValue =
 			[{
+				additionalInfo: null,
 				event: 'survey.track',
-				userJourneys: 'content discovery,get published',
-				radioValue: '1'
+				radioValue: '1',
+				userJourneys: 'content discovery,get published'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should produce console error if no user journey parameter passed to component', () => {
-		aside.dataset.ratingsSurvey = '';
+		aside.dataset.ratingsSurveyUserJourneys = '';
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
 		ratingSurveys();
@@ -162,7 +165,7 @@ describe('Global Ratings Survey', () => {
 	});
 
 	test('Should produce console error if impermissible user journey parameter passed to component', () => {
-		aside.dataset.ratingsSurvey = 'steve';
+		aside.dataset.ratingsSurveyUserJourneys = 'steve';
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
 		ratingSurveys();
