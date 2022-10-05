@@ -6,7 +6,7 @@ class RatingsSurvey {
 		this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
 		this._submitButton = this._form.querySelector('button[type="submit"]');
 		this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
-		this._permissibleUserJourneys = ['getPublished', 'contentDiscovery'];
+		this._permissibleUserJourneys = ['get published', 'content discovery'];
 		this._bindEvents();
 	}
 
@@ -15,16 +15,17 @@ class RatingsSurvey {
 	}
 
 	_getUserJourneys() {
-		if (!this._aside.dataset.ratingsSurvey) {
+		if (!this._aside.dataset.ratingsSurveyUserJourneys) {
 			console.error('Attempt to send Global Ratings Survey event failed. Value not found for User Journeys.');
 			return;
 		}
-		const userJourneyStrings = this._aside.dataset.ratingsSurvey.split('-');
-		const containsPermissibleUserJourneys = userJourneyStrings.every(string => {
+		const userJourneyStrings = this._aside.dataset.ratingsSurveyUserJourneys.split(',');
+		const sanitisedUserJourneyStrings = userJourneyStrings.map(string => string.trim().toLowerCase());
+		const containsPermissibleUserJourneys = sanitisedUserJourneyStrings.every(string => {
 			return this._permissibleUserJourneys.includes(string);
 		});
 		if (containsPermissibleUserJourneys) {
-			return this._aside.dataset.ratingsSurvey;
+			return sanitisedUserJourneyStrings.join(',');
 		}
 		console.error('Attempt to send Global Ratings Survey event failed. One or more of the user journeys provided are not permissible values.');
 		return false;
@@ -41,7 +42,8 @@ class RatingsSurvey {
 				// this event name corresponds to the GTM trigger setup for this solution
 				event: 'survey.track',
 				userJourneys: userJourneys,
-				radioValue: radioValue
+				radioValue: radioValue,
+				additionalInfo: this._aside.dataset.ratingsSurveyAdditionalInfo || null
 			});
 		}
 	}

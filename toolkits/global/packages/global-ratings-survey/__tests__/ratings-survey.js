@@ -2,7 +2,7 @@
 import {ratingSurveys} from '../js/index.js';
 
 const fixture = `
-<aside class="u-hide u-js-show" data-ratings-survey="contentDiscovery">
+<aside class="u-hide u-js-show" data-ratings-survey="content discovery">
 	<form>
 		<fieldset>
 			<div>
@@ -111,7 +111,37 @@ describe('Global Ratings Survey', () => {
 		const expectedValue =
 			[{
 				event: 'survey.track',
-				userJourneys: 'contentDiscovery',
+				userJourneys: 'content discovery',
+				radioValue: '1'
+			}];
+		expect(window.dataLayer).toEqual(expectedValue);
+	});
+
+	test('Should trim and lowercase user journey values before dispatching them in a dataLayer event', () => {
+		expect(window.dataLayer).toEqual([]);
+		aside.dataset.ratingsSurvey = ' CONTENT DISCOVERY ';
+		ratingSurveys();
+		label.click();
+		button.click();
+		const expectedValue =
+			[{
+				event: 'survey.track',
+				userJourneys: 'content discovery',
+				radioValue: '1'
+			}];
+		expect(window.dataLayer).toEqual(expectedValue);
+	});
+
+	test('Should process comma separated user journey values correctly before dispatching them in a dataLayer event', () => {
+		expect(window.dataLayer).toEqual([]);
+		aside.dataset.ratingsSurvey = 'content discovery, get published';
+		ratingSurveys();
+		label.click();
+		button.click();
+		const expectedValue =
+			[{
+				event: 'survey.track',
+				userJourneys: 'content discovery,get published',
 				radioValue: '1'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);

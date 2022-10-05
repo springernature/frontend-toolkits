@@ -2050,7 +2050,7 @@ html {
 				<p>Donec commodo placerat turpis, et aliquet neque aliquet id. Maecenas nibh libero, tristique ornare iaculis non, placerat a urna. Nulla eu pharetra ex. Nunc auctor sem et ligula imperdiet tincidunt. Donec ut neque posuere, tempus justo quis, iaculis neque. Pellentesque venenatis sapien eu quam tincidunt pretium. Ut sapien turpis, semper a urna quis, pulvinar eleifend lectus. Nulla sed diam molestie, mattis nibh volutpat, ultricies lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ut ultricies nunc. Proin sed imperdiet nunc, non blandit turpis. Quisque eget nisi eget risus fringilla facilisis sit amet vitae odio.</p>
 				<p>Aliquam sed fermentum dui. Vestibulum vitae iaculis sem. Praesent porta tellus nibh. Aenean at ex id enim varius tincidunt. Etiam mi risus, ornare commodo augue vel, varius tempor neque. Mauris eget lectus imperdiet, sagittis mauris id, rutrum est. Nam eu aliquet ligula. Integer venenatis quam eget scelerisque finibus. Integer maximus massa ac mauris mattis elementum. Nulla a sagittis nisi. Suspendisse ac magna bibendum, bibendum ex a, bibendum neque. Integer ac venenatis quam, vel volutpat tellus. Phasellus dictum nunc in metus placerat, vel rutrum nibh sollicitudin. Duis vel scelerisque sapien, vitae molestie odio.</p>
 				<p>Vestibulum risus enim, rutrum vitae leo vel, luctus congue odio. Nam felis massa, volutpat sit amet sodales id, mattis quis dolor. Fusce feugiat diam vitae libero dapibus, ac suscipit velit bibendum. Praesent sodales ante justo, in dapibus mauris rhoncus efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eu consectetur ante, id sagittis metus. Integer at fringilla mi, non suscipit velit.</p>
-					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="getPublished">
+					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="" data-ratings-survey-user-journeys="get published">
 						<div class="c-ratings-survey__container">
 							<form class="c-ratings-survey__form" action="#" method="POST">
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
@@ -2129,7 +2129,7 @@ html {
 				<h2>Sidebar content</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta, nunc vel dignissim pulvinar, turpis sem sodales nibh, sed tincidunt quam dui ac lectus. Fusce tempor tempor elit, a finibus tellus vulputate non. In at felis vitae urna vestibulum gravida. Nam sed justo massa. Sed nec facilisis sem, sed eleifend.</p>
 				<p>Sed euismod libero in est dignissim placerat. Cras in ipsum sit amet diam malesuada convallis hendrerit vel tortor.</p>
-					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="contentDiscovery">
+					<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="" data-ratings-survey-user-journeys="content discovery">
 						<div class="c-ratings-survey__container">
 							<form class="c-ratings-survey__form" action="#" method="POST">
 								<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
@@ -2206,7 +2206,7 @@ html {
 			</div>
 		</div>
 	</div>
-		<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="contentDiscovery-getPublished">
+		<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey="" data-ratings-survey-user-journeys="Content Discovery, Get Published" data-ratings-survey-additional-info="AB test version B">
 			<div class="c-ratings-survey__container">
 				<form class="c-ratings-survey__form" action="#" method="POST">
 					<h4 class="c-ratings-survey__heading">How was your experience today?</h4>
@@ -2327,7 +2327,7 @@ html {
       this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
       this._submitButton = this._form.querySelector('button[type="submit"]');
       this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
-      this._permissibleUserJourneys = ['getPublished', 'contentDiscovery'];
+      this._permissibleUserJourneys = ['get published', 'content discovery'];
 
       this._bindEvents();
     }
@@ -2344,19 +2344,22 @@ html {
       value: function _getUserJourneys() {
         var _this = this;
 
-        if (!this._aside.dataset.ratingsSurvey) {
+        if (!this._aside.dataset.ratingsSurveyUserJourneys) {
           console.error('Attempt to send Global Ratings Survey event failed. Value not found for User Journeys.');
           return;
         }
 
-        var userJourneyStrings = this._aside.dataset.ratingsSurvey.split('-');
+        var userJourneyStrings = this._aside.dataset.ratingsSurveyUserJourneys.split(',');
 
-        var containsPermissibleUserJourneys = userJourneyStrings.every(function (string) {
+        var sanitisedUserJourneyStrings = userJourneyStrings.map(function (string) {
+          return string.trim().toLowerCase();
+        });
+        var containsPermissibleUserJourneys = sanitisedUserJourneyStrings.every(function (string) {
           return _this._permissibleUserJourneys.includes(string);
         });
 
         if (containsPermissibleUserJourneys) {
-          return this._aside.dataset.ratingsSurvey;
+          return sanitisedUserJourneyStrings.join(',');
         }
 
         console.error('Attempt to send Global Ratings Survey event failed. One or more of the user journeys provided are not permissible values.');
@@ -2377,7 +2380,8 @@ html {
             // this event name corresponds to the GTM trigger setup for this solution
             event: 'survey.track',
             userJourneys: userJourneys,
-            radioValue: radioValue
+            radioValue: radioValue,
+            additionalInfo: this._aside.dataset.ratingsSurveyAdditionalInfo || null
           });
         }
       }

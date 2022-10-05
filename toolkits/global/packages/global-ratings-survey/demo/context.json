@@ -1,6 +1,6 @@
 {
 	"ratingsSurveyData1": {
-		"userJourneys": "contentDiscovery",
+		"userJourneys": "content discovery",
 		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
@@ -79,7 +79,7 @@
 		}
 	},
 	"ratingsSurveyData2": {
-		"userJourneys": "getPublished",
+		"userJourneys": "get published",
 		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
@@ -158,12 +158,13 @@
 		}
 	},
 	"ratingsSurveyData3": {
-		"userJourneys": "contentDiscovery-getPublished",
+		"userJourneys": "Content Discovery, Get Published",
 		"headingLevel": "4",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
 		"submitMessageText": "Thank you for your feedback.",
 		"iconUrl": "../img/circle-tick.svg#i-circle-tick",
+		"additionalInfo": "AB test version B",
 		"globalFormData": {
 			"fields": [
 				{
