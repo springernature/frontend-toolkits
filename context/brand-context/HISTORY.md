@@ -5,6 +5,9 @@
         * Link underlines by default
     * Added component wrappers (`c-` elements) to block spacing algorithm
 
+## 28.2.0
+    * Add support for dash as a list style
+
 ## 28.1.1 (2022-10-03)
     * PATCH: Move default abstract import into the brand abstracts file
         * Simplifies the process of compiling static component CSS

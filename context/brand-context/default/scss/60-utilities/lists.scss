@@ -6,6 +6,12 @@
 	list-style-type: disc;
 }
 
+.u-list-style-dash > ::marker {
+	content: '– ';
+	font-size: 1.2em;
+	line-height: 1;
+}
+
 .u-list-style-none {
 	list-style-type: none;
 }
