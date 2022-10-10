@@ -16,7 +16,7 @@
 		},
 		"4x3": {
 			"name": "4x3",
-			"value": "1.3333333333333333",
+			"value": "4/3",
 			"description": "This is to make an item 4:3",
 			"type": "ratio",
 			"category": "aspect-ratio",
@@ -30,7 +30,7 @@
 		},
 		"16x9": {
 			"name": "16x9",
-			"value": "1.7777777777777777",
+			"value": "16/9",
 			"description": "This is to make an item 16:9",
 			"type": "ratio",
 			"category": "aspect-ratio",
