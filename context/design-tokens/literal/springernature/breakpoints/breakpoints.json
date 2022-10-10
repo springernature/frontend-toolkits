@@ -8,6 +8,7 @@
 			"category": "breakpoints",
 			"themeable": false,
 			"meta": {
+				"brand": "breakpoints",
 				"public": true,
 				"depracted": false,
 				"SassVariable": true,
@@ -22,6 +23,7 @@
 			"category": "breakpoints",
 			"themeable": false,
 			"meta": {
+				"brand": "breakpoints",
 				"public": true,
 				"depracted": false,
 				"SassVariable": true,
@@ -36,6 +38,7 @@
 			"category": "breakpoints",
 			"themeable": false,
 			"meta": {
+				"brand": "breakpoints",
 				"public": true,
 				"depracted": false,
 				"SassVariable": true,
@@ -50,6 +53,7 @@
 			"category": "breakpoints",
 			"themeable": false,
 			"meta": {
+				"brand": "breakpoints",
 				"public": true,
 				"depracted": false,
 				"SassVariable": true,

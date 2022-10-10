@@ -22,6 +22,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -36,6 +37,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -50,6 +52,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -66,6 +69,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -80,6 +84,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -94,6 +99,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "nature",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,

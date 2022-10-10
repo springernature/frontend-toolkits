@@ -9,6 +9,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "springer",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -23,6 +24,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "springer",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,
@@ -37,6 +39,7 @@
 				"category": "color",
 				"themeable": false,
 				"meta": {
+					"brand": "springer",
 					"public": true,
 					"depracted": false,
 					"SassVariable": true,

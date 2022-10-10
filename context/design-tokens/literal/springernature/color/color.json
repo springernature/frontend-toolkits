@@ -2,19 +2,79 @@
 	"color": {
 		"research": {
 			"orange": {
-				"value": "#C75301"
+				"name": "research-orange",
+				"value": "#C75301",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"forest": {
-				"value": "#007373"
+				"name": "research-orest",
+				"value": "#007373",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"purple": {
-				"value": "#785BA7"
+				"name": "research-purple",
+				"value": "#785BA7",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"blue": {
-				"value": "#0070a8"
+				"name": "research-blue",
+				"value": "#0070a8",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"red": {
-				"value": "#be1818"
+				"name": "research-red",
+				"value": "#be1818",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}
