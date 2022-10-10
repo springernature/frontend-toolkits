@@ -2,7 +2,7 @@
 	"typography": {
 		"heading": {
 			"font-family": {
-				"name": "typography-heading-font-family	",
+				"name": "typography-heading-font-family",
 				"value": "{font-family.serif}",
 				"description": "Font family for headings",
 				"type": "font-size",
