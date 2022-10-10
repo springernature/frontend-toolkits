@@ -18,14 +18,13 @@ StyleDictionaryPackage.registerFormat({
 	formatter: function ({ dictionary, platform, options, file }) {
 		return JSON.stringify(
 			{
-				properties: dictionary.allTokens,
+				properties: dictionary.allTokens
 			},
 			null,
-			2
+			1
 		);
 	}
-})
-
+});
 
 StyleDictionaryPackage.registerTransform({
 	name: 'name/cti/kebab',
@@ -39,18 +38,19 @@ function getStyleDictionaryConfig(brand, categories) {
 	let destination = `../../context/brand-context/${brand}/scss`;
 
 	return {
+		include: [`${__dirname}/literal/**/*.json`],
 		source: [
-			`${__dirname}/literal/${brand}/**/*.json`,
+			`${__dirname}/literal/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
 				transform: 'name/cti/kebab',
 				prefix: 'tokens',
-				buildPath: `./00-tokens/`,
+				buildPath: `./documentation/`,
 				files: categories.map(category => {
 					return {
-						destination: `_${category}.docs.json`,
+						destination: `${category}.docs.json`,
 						format: 'myCustomFormat',
 						filter: tokenFilter(brand, category)
 					};
