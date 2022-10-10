@@ -1,33 +1,132 @@
 {
 	"background": {
 		"page": {
-			"value": "{color.greyscale.200}"
+			"name": "background-page",
+			"value": "{color.greyscale.200}",
+			"description": "Background color of the page",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"container": {
-			"value": "{color.white}"
+			"name": "background-container",
+			"value": "{color.white}",
+			"description": "Background color of the container",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"container-inverted": {
-			"value": "{color.greyscale.800}"
+			"name": "background-container-inverted",
+			"value": "{color.greyscale.800}",
+			"description": "Background color of the container when inverted",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	},
 	"facet": {
-		"value": "{color.greyscale.300}"
+		"name": "facet",
+		"value": "{color.greyscale.300}",
+		"description": "Background color of the facet",
+		"type": "color",
+		"category": "color",
+		"themeable": true,
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"SassVariable": true,
+			"CSSCustomProperty": false
+		}
 	},
 	"footer": {
-		"value": "{color.primary.universal-dark-blue}"
+		"name": "footer",
+		"value": "{color.primary.universal-dark-blue}",
+		"description": "Background color of the footer",
+		"type": "color",
+		"category": "color",
+		"themeable": true,
+		"meta": {
+			"public": true,
+			"depracted": false,
+			"SassVariable": true,
+			"CSSCustomProperty": false
+		}
 	},
 	"table": {
 		"heading": {
-			"value": "{color.greyscale.600}"
+			"name": "table-heading",
+			"value": "{color.greyscale.600}",
+			"description": "Background color of the table heading",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"table-heading": {
-			"value": "{color.greyscale.600}"
+			"name": "table-heading",
+			"value": "{color.greyscale.600}",
+			"description": "Background color of the table heading",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"table-row-odd": {
-			"value": "{color.primary.grey-blue-light-2}"
+			"name": "table-row-odd",
+			"value": "{color.primary.grey-blue-light-2}",
+			"description": "Background color of the odd table rows",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"table-row-even": {
-			"value": "{color.primary.grey-blue-light-1}"
+			"name": "table-row-even",
+			"value": "{color.primary.grey-blue-light-1}",
+			"description": "Background color of the even table rows",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

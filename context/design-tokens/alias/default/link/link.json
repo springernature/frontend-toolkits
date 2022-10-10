@@ -1,16 +1,60 @@
 {
 	"link": {
 		"color": {
-			"value": "{color.primary.medium-blue}"
+			"name": "link-color",
+			"value": "{color.primary.medium-blue}",
+			"description": "The color of the link text.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"hover": {
-			"value": "{color.primary.universal-dark-blue}"
+			"name": "link-hover",
+			"value": "{color.primary.universal-dark-blue}",
+			"description": "The color of the link text when hovered.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"visited": {
-			"value": "{color.primary.universal-dark-blue}"
+			"name": "link-visited",
+			"value": "{color.primary.universal-dark-blue}",
+			"description": "The color of the link text when visited.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"focus": {
-			"value": "{color.primary.bright-blue}"
+			"name": "link-focus",
+			"value": "{color.primary.bright-blue}",
+			"description": "The color of the link text when focused.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

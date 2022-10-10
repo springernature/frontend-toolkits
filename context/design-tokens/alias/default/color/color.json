@@ -2,50 +2,204 @@
 	"color": {
 		"primary": {
 			"universal-dark-blue": {
-				"value": "{color.blue.900}"
+				"name": "color-primary-universal-dark-blue",
+				"value": "{color.blue.900}",
+				"description": "Primary blue color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"medium-blue": {
-				"value": "{color.blue.400}"
+				"name": "color-primary-medium-blue",
+				"value": "{color.blue.400}",
+				"description": "Secondary blue color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"bright-blue": {
-				"value": "{color.blue.300}"
+				"name": "color-primary-bright-blue",
+				"value": "{color.blue.300}",
+				"description": "Tertiary blue color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"grey-blue-light-1": {
-				"value": "{color.blue.100}"
+				"name": "color-primary-grey-blue-light-1",
+				"value": "{color.blue.100}",
+				"description": "Primary light blue color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"grey-blue-light-2": {
-				"value": "{color.blue.200}"
+				"name": "color-primary-grey-blue-light-2",
+				"value": "{color.blue.200}",
+				"description": "Secondary light blue color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"black": {
-				"value": "{color.black}"
+				"name": "color-primary-black",
+				"value": "{color.black}",
+				"description": "Primary black color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"white": {
-				"value": "{color.white}"
+				"name": "color-primary-white",
+				"value": "{color.white}",
+				"description": "Primary white color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"information": {
 			"red": {
-				"value": "#C40606"
+				"name": "color-information-red",
+				"value": "#C40606",
+				"description": "Primary color for the information theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"orange": {
-				"value": "#F58220"
+				"name": "color-information-orange",
+				"value": "#F58220",
+				"description": "Secondary color for the information theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"blue": {
-				"value": "{color.blue.700"
+				"name": "color-information-blue",
+				"value": "{color.blue.700",
+				"description": "Tertiary color for the information theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"green": {
-				"value": "#00A69D"
+				"name": "color-information-green",
+				"value": "#00A69D",
+				"description": "Primary green color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"interaction": {
 			"hover": {
-				"value": "{color.blue.400}"
+				"name": "color-interaction-hover",
+				"value": "{color.blue.400}",
+				"description": "Primary hover color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"visited": {
-				"value": "#A345C9"
+				"name": "color-interaction-visited",
+				"value": "#A345C9",
+				"description": "Primary visited color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"focus": {
-				"value": "#FFCC00"
+				"name": "color-interaction-focus",
+				"value": "#FFCC00",
+				"description": "Primary focus color for the theme",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}

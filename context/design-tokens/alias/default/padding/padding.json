@@ -3,267 +3,339 @@
 		"0": {
 			"name": "padding-inline-0",
 			"value": "{spacing.relative.0}",
+			"description": "sets the logical inline padding of an element to zero width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to zero width.",
-				"sassVariableName": "$padding-inline-0"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"100": {
 			"name": "padding-inline-100",
 			"value": "{spacing.relative.100}",
+			"description": "sets the logical inline padding of an element to .25rem (4px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to .25rem (4px) width.",
-				"sassVariableName": "$padding-inline-100"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"200": {
 			"name": "padding-inline-200",
 			"value": "{spacing.relative.200}",
+			"description": "sets the logical inline padding of an element to .5rem (8px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to .5rem (8px) width.",
-				"sassVariableName": "$padding-inline-200"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"400": {
 			"name": "padding-inline-400",
 			"value": "{spacing.relative.400}",
+			"description": "sets the logical inline padding of an element to 1rem (16px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to 1rem (16px) width.",
-				"sassVariableName": "$padding-inline-400"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"600": {
 			"name": "padding-inline-600",
 			"value": "{spacing.relative.600}",
+			"description": "sets the logical inline padding of an element to 1.5rem (24px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to 1.5rem (24px) width.",
-				"sassVariableName": "$padding-inline-600"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"800": {
 			"name": "padding-inline-800",
 			"value": "{spacing.relative.800}",
+			"description": "sets the logical inline padding of an element to 2rem (32px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to 2rem (32px) width.",
-				"sassVariableName": "$padding-inline-800"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"1200": {
 			"name": "padding-inline-1200",
 			"value": "{spacing.relative.1200}",
+			"description": "sets the logical inline padding of an element to 3rem (48px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to 3rem (48px) width.",
-				"sassVariableName": "$padding-inline-1200"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"1600": {
 			"name": "padding-inline-1600",
 			"value": "{spacing.relative.1600}",
+			"description": "sets the logical inline padding of an element to 4rem (64px) width.",
 			"type": "dimension",
+			"category": "padding",
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"depracted": false,
-				"description": "sets the logical inline padding of an element to 4rem (64px) width.",
-				"sassVariableName": "$padding-inline-1600"
+				"SassVariable": true,
+				"CSSCustomProperty": false
 			}
 		},
 		"inline": {
 			"0": {
 				"name": "padding-inline-0",
 				"value": "{spacing.relative.0}",
+				"description": "sets the logical inline padding of an element to zero width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to zero width.",
-					"sassVariableName": "$padding-inline-0"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"100": {
 				"name": "padding-inline-100",
 				"value": "{spacing.relative.100}",
+				"description": "sets the logical inline padding of an element to .25rem (4px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to .25rem (4px) width.",
-					"sassVariableName": "$padding-inline-100"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"200": {
 				"name": "padding-inline-200",
 				"value": "{spacing.relative.200}",
+				"description": "sets the logical inline padding of an element to .5rem (8px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to .5rem (8px) width.",
-					"sassVariableName": "$padding-inline-200"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"400": {
 				"name": "padding-inline-400",
 				"value": "{spacing.relative.400}",
+				"description": "sets the logical inline padding of an element to 1rem (16px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to 1rem (16px) width.",
-					"sassVariableName": "$padding-inline-400"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"600": {
 				"name": "padding-inline-600",
 				"value": "{spacing.relative.600}",
+				"description": "sets the logical inline padding of an element to 1.5rem (24px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to 1.5rem (24px) width.",
-					"sassVariableName": "$padding-inline-600"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"800": {
 				"name": "padding-inline-800",
 				"value": "{spacing.relative.800}",
+				"description": "sets the logical inline padding of an element to 2rem (32px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to 2rem (32px) width.",
-					"sassVariableName": "$padding-inline-800"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"1200": {
 				"name": "padding-inline-1200",
 				"value": "{spacing.relative.1200}",
+				"description": "sets the logical inline padding of an element to 3rem (48px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to 3rem (48px) width.",
-					"sassVariableName": "$padding-inline-1200"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"1600": {
 				"name": "padding-inline-1600",
 				"value": "{spacing.relative.1600}",
+				"description": "sets the logical inline padding of an element to 4rem (64px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical inline padding of an element to 4rem (64px) width.",
-					"sassVariableName": "$padding-inline-1600"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"start": {
 				"0": {
 					"name": "padding-inline-start-0",
 					"value": "{spacing.relative.0}",
+					"description": "sets the logical inline start padding of an element to zero width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to zero width.",
-						"sassVariableName": "$padding-inline-start-0"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"100": {
 					"name": "padding-inline-start-100",
 					"value": "{spacing.relative.100}",
+					"description": "sets the logical inline start padding of an element to .25rem (4px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to .25rem (4px) width.",
-						"sassVariableName": "$padding-inline-start-100"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"200": {
 					"name": "padding-inline-start-200",
 					"value": "{spacing.relative.200}",
+					"description": "sets the logical inline start padding of an element to .5rem (8px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to .5rem (8px) width.",
-						"sassVariableName": "$padding-inline-start-200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"400": {
 					"name": "padding-inline-start-400",
 					"value": "{spacing.relative.400}",
+					"description": "sets the logical inline start padding of an element to 1rem (16px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to 1rem (16px) width.",
-						"sassVariableName": "$padding-inline-start-400"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"600": {
 					"name": "padding-inline-start-600",
 					"value": "{spacing.relative.600}",
+					"description": "sets the logical inline start padding of an element to 1.5rem (24px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to 1.5rem (24px) width.",
-						"sassVariableName": "$padding-inline-start-600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"800": {
 					"name": "padding-inline-start-800",
 					"value": "{spacing.relative.800}",
+					"description": "sets the logical inline start padding of an element to 2rem (32px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to 2rem (32px) width.",
-						"sassVariableName": "$padding-inline-start-800"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1200": {
 					"name": "padding-inline-start-1200",
 					"value": "{spacing.relative.1200}",
+					"description": "sets the logical inline start padding of an element to 3rem (48px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to 3rem (48px) width.",
-						"sassVariableName": "$padding-inline-start-1200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1600": {
 					"name": "padding-inline-start-1600",
 					"value": "{spacing.relative.1600}",
+					"description": "sets the logical inline start padding of an element to 4rem (64px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline start padding of an element to 4rem (64px) width.",
-						"sassVariableName": "$padding-inline-start-1600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				}
 			},
@@ -271,89 +343,113 @@
 				"0": {
 					"name": "padding-inline-end-0",
 					"value": "{spacing.relative.0}",
+					"description": "sets the logical inline end padding of an element to zero width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to zero width.",
-						"sassVariableName": "$padding-inline-end-0"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"100": {
 					"name": "padding-inline-end-100",
 					"value": "{spacing.relative.100}",
+					"description": "sets the logical inline end padding of an element to .25rem (4px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to .25rem (4px) width.",
-						"sassVariableName": "$padding-inline-end-100"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"200": {
 					"name": "padding-inline-end-200",
 					"value": "{spacing.relative.200}",
+					"description": "sets the logical inline end padding of an element to .5rem (8px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to .5rem (8px) width.",
-						"sassVariableName": "$padding-inline-end-200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"400": {
 					"name": "padding-inline-end-400",
 					"value": "{spacing.relative.400}",
+					"description": "sets the logical inline end padding of an element to 1rem (16px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to 1rem (16px) width.",
-						"sassVariableName": "$padding-inline-end-400"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"600": {
 					"name": "padding-inline-end-600",
 					"value": "{spacing.relative.600}",
+					"description": "sets the logical inline end padding of an element to 1.5rem (24px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to 1.5rem (24px) width.",
-						"sassVariableName": "$padding-inline-end-600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"800": {
 					"name": "padding-inline-end-800",
 					"value": "{spacing.relative.800}",
+					"description": "sets the logical inline end padding of an element to 2rem (32px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to 2rem (32px) width.",
-						"sassVariableName": "$padding-inline-end-800"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1200": {
 					"name": "padding-inline-end-1200",
 					"value": "{spacing.relative.1200}",
+					"description": "sets the logical inline end padding of an element to 3rem (48px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to 3rem (48px) width.",
-						"sassVariableName": "$padding-inline-end-1200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1600": {
 					"name": "padding-inline-end-1600",
 					"value": "{spacing.relative.1600}",
+					"description": "sets the logical inline end padding of an element to 4rem (64px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical inline end padding of an element to 4rem (64px) width.",
-						"sassVariableName": "$padding-inline-end-1600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				}
 			}
@@ -362,178 +458,226 @@
 			"0": {
 				"name": "padding-block-0",
 				"value": "{spacing.relative.0}",
+				"description": "sets the logical block padding of an element to zero width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to zero width.",
-					"sassVariableName": "$padding-block-0"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"100": {
 				"name": "padding-block-100",
 				"value": "{spacing.relative.100}",
+				"description": "sets the logical block padding of an element to .25rem (4px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to .25rem (4px) width.",
-					"sassVariableName": "$padding-block-100"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"200": {
 				"name": "padding-block-200",
 				"value": "{spacing.relative.200}",
+				"description": "sets the logical block padding of an element to .5rem (8px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to .5rem (8px) width.",
-					"sassVariableName": "$padding-block-200"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"400": {
 				"name": "padding-block-400",
 				"value": "{spacing.relative.400}",
+				"description": "sets the logical block padding of an element to 1rem (16px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to 1rem (16px) width.",
-					"sassVariableName": "$padding-block-400"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"600": {
 				"name": "padding-block-600",
 				"value": "{spacing.relative.600}",
+				"description": "sets the logical block padding of an element to 1.5rem (24px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to 1.5rem (24px) width.",
-					"sassVariableName": "$padding-block-600"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"800": {
 				"name": "padding-block-800",
 				"value": "{spacing.relative.800}",
+				"description": "sets the logical block padding of an element to 2rem (32px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to 2rem (32px) width.",
-					"sassVariableName": "$padding-block-800"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"1200": {
 				"name": "padding-block-1200",
 				"value": "{spacing.relative.1200}",
+				"description": "sets the logical block padding of an element to 3rem (48px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to 3rem (48px) width.",
-					"sassVariableName": "$padding-block-1200"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"1600": {
 				"name": "padding-block-1600",
 				"value": "{spacing.relative.1600}",
+				"description": "sets the logical block padding of an element to 4rem (64px) width.",
 				"type": "dimension",
+				"category": "padding",
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"depracted": false,
-					"description": "sets the logical block padding of an element to 4rem (64px) width.",
-					"sassVariableName": "$padding-block-1600"
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
 			"start": {
 				"0": {
 					"name": "padding-block-start-0",
 					"value": "{spacing.relative.0}",
+					"description": "sets the logical block start padding of an element to zero width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to zero width.",
-						"sassVariableName": "$padding-start-block-0"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"100": {
 					"name": "padding-block-start-100",
 					"value": "{spacing.relative.100}",
+					"description": "sets the logical block start padding of an element to .25rem (4px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to .25rem (4px) width.",
-						"sassVariableName": "$padding-start-block-100"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"200": {
 					"name": "padding-block-start-200",
 					"value": "{spacing.relative.200}",
+					"description": "sets the logical block start padding of an element to .5rem (8px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to .5rem (8px) width.",
-						"sassVariableName": "$padding-start-block-200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"400": {
 					"name": "padding-block-start-400",
 					"value": "{spacing.relative.400}",
+					"description": "sets the logical block start padding of an element to 1rem (16px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to 1rem (16px) width.",
-						"sassVariableName": "$padding-start-block-400"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"600": {
 					"name": "padding-block-start-600",
 					"value": "{spacing.relative.600}",
+					"description": "sets the logical block start padding of an element to 1.5rem (24px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to 1.5rem (24px) width.",
-						"sassVariableName": "$padding-start-block-600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"800": {
 					"name": "padding-block-start-800",
 					"value": "{spacing.relative.800}",
+					"description": "sets the logical block start padding of an element to 2rem (32px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to 2rem (32px) width.",
-						"sassVariableName": "$padding-start-block-800"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1200": {
 					"name": "padding-block-start-1200",
 					"value": "{spacing.relative.1200}",
+					"description": "sets the logical block start padding of an element to 3rem (48px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to 3rem (48px) width.",
-						"sassVariableName": "$padding-start-block-1200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1600": {
 					"name": "padding-block-start-1600",
 					"value": "{spacing.relative.1600}",
+					"description": "sets the logical block start padding of an element to 4rem (64px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block start padding of an element to 4rem (64px) width.",
-						"sassVariableName": "$padding-start-block-1600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				}
 			},
@@ -541,89 +685,113 @@
 				"0": {
 					"name": "padding-block-end-0",
 					"value": "{spacing.relative.0}",
+					"description": "sets the logical block end padding of an element to zero width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to zero width.",
-						"sassVariableName": "$padding-end-block-0"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"100": {
 					"name": "padding-block-end-100",
 					"value": "{spacing.relative.100}",
+					"description": "sets the logical block end padding of an element to .25rem (4px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to .25rem (4px) width.",
-						"sassVariableName": "$padding-end-block-100"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"200": {
 					"name": "padding-block-end-200",
 					"value": "{spacing.relative.200}",
+					"description": "sets the logical block end padding of an element to .5rem (8px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to .5rem (8px) width.",
-						"sassVariableName": "$padding-end-block-200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"400": {
 					"name": "padding-block-end-400",
 					"value": "{spacing.relative.400}",
+					"description": "sets the logical block end padding of an element to 1rem (16px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to 1rem (16px) width.",
-						"sassVariableName": "$padding-end-block-400"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"600": {
 					"name": "padding-block-end-600",
 					"value": "{spacing.relative.600}",
+					"description": "sets the logical block end padding of an element to 1.5rem (24px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to 1.5rem (24px) width.",
-						"sassVariableName": "$padding-end-block-600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"800": {
 					"name": "padding-block-end-800",
 					"value": "{spacing.relative.800}",
+					"description": "sets the logical block end padding of an element to 2rem (32px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to 2rem (32px) width.",
-						"sassVariableName": "$padding-end-block-800"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1200": {
 					"name": "padding-block-end-1200",
 					"value": "{spacing.relative.1200}",
+					"description": "sets the logical block end padding of an element to 3rem (48px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to 3rem (48px) width.",
-						"sassVariableName": "$padding-end-block-1200"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				},
 				"1600": {
 					"name": "padding-block-end-1600",
 					"value": "{spacing.relative.1600}",
+					"description": "sets the logical block end padding of an element to 4rem (64px) width.",
 					"type": "dimension",
+					"category": "padding",
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"depracted": false,
-						"description": "sets the logical block end padding of an element to 4rem (64px) width.",
-						"sassVariableName": "$padding-end-block-1600"
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				}
 			}
