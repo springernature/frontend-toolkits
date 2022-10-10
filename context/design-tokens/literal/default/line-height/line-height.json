@@ -16,7 +16,8 @@
 		},
 		"md": {
 			"name": "md",
-			"value": "1.5""type": "number",
+			"value": "1.5",
+			"type": "number",
 			"description": "For body text",
 			"category": "line-height",
 			"themeable": false,

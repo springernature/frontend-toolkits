@@ -208,7 +208,7 @@
 			"fluid": {
 				"font-size": {
 					"name": "typography-heading-level-4-fluid-font-size",
-					"value": "clamp({font-size.450.value}, 4vw, {typography.heading.level-4.default.font-size.value})",
+					"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})",
 					"description": "Fluid font size for level 4 headings",
 					"type": "font-size",
 					"category": "font-size",
