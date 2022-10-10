@@ -1,28 +1,104 @@
 {
 	"nature-color": {
 		"black": {
-			"value": "{color.greyscale.800}"
+			"name": "black",
+			"value": "Black",
+			"type": "color",
+			"category": "color",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"depracted": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"gunmetal": {
 			"800": {
-				"value": "#29303C"
+				"name": "gunmetal-800",
+				"value": "#29303C",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"500": {
-				"value": "#536179"
+				"name": "gunmetal-500",
+				"value": "#536179",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"300": {
-				"value": "#c2c9d6"
+				"name": "gunmetal-300",
+				"value": "#c2c9d6",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"red": {
 			"800": {
-				"value": "#940720"
+				"name": "red-800",
+				"value": "#940720",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"500": {
-				"value": "#ed1C24"
+				"name": "red-500",
+				"value": "#ed1C24",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"300": {
-				"value": "#f15a40"
+				"name": "red-300",
+				"value": "#f15a40",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}
