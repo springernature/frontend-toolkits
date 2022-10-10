@@ -69,7 +69,7 @@ context/**/package-lock.json
 
 # package and context distribution files
 context/**/dist
-toolkits/**/demo/dist/
+toolkits/**/dist/
 
 # IDE
 /.idea/
