@@ -23,6 +23,7 @@
     "bootstrap:local": "npm run context && lerna bootstrap --nohoist=** --no-ci",
     "build": "npm run lint && npm run test && npm run validate",
     "build:ci": "npm run lint && npm run test:ci && npm run validate -- -n",
+    "compile": "sn-package-compile",
     "context": "sn-context-installer -p ./toolkits/",
     "create": "sn-package-create",
     "demo": "sn-package-demo",
