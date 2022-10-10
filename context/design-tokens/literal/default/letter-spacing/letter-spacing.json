@@ -1,8 +1,17 @@
 {
 	"letter-spacing": {
 		"080": {
+			"name": "080",
 			"value": "0.2rem",
-			"comment": "0.32px"
+			"description": "0.32px",
+			"type": "length",
+			"categoray": "letter-spacing",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
-}

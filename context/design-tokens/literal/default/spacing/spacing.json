@@ -2,86 +2,230 @@
 	"spacing": {
 		"relative": {
 			"0": {
+				"name": "",
 				"value": "0",
+				"description": "no spacing, zero.",
 				"type": "dimension",
-				"description": "no spacing, zero."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
+				"name": "",
 				"value": ".25rem",
+				"description": ".25rem, 4px.",
 				"type": "dimension",
-				"description": ".25rem, 4px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
+				"name": "",
 				"value": ".5rem",
+				"description": ".5rem, 8px.",
 				"type": "dimension",
-				"description": ".5rem, 8px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
+				"name": "",
 				"value": "1rem",
+				"description": "1rem, 16px.",
 				"type": "dimension",
-				"description": "1rem, 16px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"600": {
+				"name": "",
 				"value": "1.5rem",
+				"description": "1.5rem, 24px.",
 				"type": "dimension",
-				"description": "1.5rem, 24px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"800": {
+				"name": "",
 				"value": "2rem",
+				"description": "2rem, 32px.",
 				"type": "dimension",
-				"description": "2rem, 32px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1200": {
+				"name": "",
 				"value": "3rem",
+				"description": "3rem, 48px.",
 				"type": "dimension",
-				"description": "3rem, 48px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1600": {
+				"name": "",
 				"value": "4rem",
+				"description": "4rem, 64px.",
 				"type": "dimension",
-				"description": "4rem, 64px."
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"absolute": {
 			"0": {
+				"name": "",
 				"value": "0",
+				"description": "no spacing, zero.",
 				"type": "dimension",
-				"description": "no spacing, zero."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
+				"name": "",
 				"value": "4px",
+				"description": "4px.",
 				"type": "dimension",
-				"description": "4px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
+				"name": "",
 				"value": "8px",
+				"description": "8px.",
 				"type": "dimension",
-				"description": "8px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
+				"name": "",
 				"value": "16px",
+				"description": " 16px.",
 				"type": "dimension",
-				"description": " 16px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"600": {
+				"name": "",
 				"value": "24px",
+				"description": "24px.",
 				"type": "dimension",
-				"description": "24px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"800": {
+				"name": "",
 				"value": "32px",
+				"description": "32px.",
 				"type": "dimension",
-				"description": "32px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1200": {
+				"name": "",
 				"value": "48px",
+				"description": "48px.",
 				"type": "dimension",
-				"description": "48px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1600": {
+				"name": "",
 				"value": "64px",
+				"description": "64px.",
 				"type": "dimension",
-				"description": "64px."
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}
