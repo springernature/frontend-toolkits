@@ -1,5 +1,10 @@
 # History
 
+## 29.0.0 (2022-10-05)
+    * BREAKING:
+        * Link underlines by default
+    * Added component wrappers (`c-` elements) to block spacing algorithm
+
 ## 28.2.0
     * Add support for dash as a list style
 
