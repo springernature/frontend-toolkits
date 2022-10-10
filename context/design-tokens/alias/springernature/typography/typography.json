@@ -2,81 +2,295 @@
 	"typography": {
 		"heading": {
 			"font-family": {
-				"value": "{font-family.serif}"
+				"name": "typography-heading-font-family",
+				"value": "{font-family.serif}",
+				"description": "Font family for headings",
+				"type": "font-family",
+				"category": "typography",
+				"themeable": true,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"letter-spacing": {
-				"value": "{letter-spacing.080}"
+				"name": "typography-heading-letter-spacing",
+				"value": "{letter-spacing.080}",
+				"description": "Letter spacing for headings",
+				"type": "letter-spacing",
+				"category": "typography",
+				"themeable": true,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"line-height": {
-				"value": "{line-height.tighter}"
+				"name": "typography-heading-line-height",
+				"value": "{line-height.tighter}",
+				"description": "Line height for headings",
+				"type": "line-height",
+				"category": "typography",
+				"themeable": true,
+				"meta": {
+					"brand": "springerNature",
+					"public": true,
+					"depracted": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"level-1": {
 				"default": {
 					"font-size": {
-						"value": "{font-size.875}"
+						"name": "typography-heading-level-1-default-font-size",
+						"value": "{font-size.875}",
+						"description": "Font size for level 1 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"font-weight": {
-						"value": "{font-weight.light}"
+						"name": "typography-heading-level-1-default-font-weight",
+						"value": "{font-weight.light}",
+						"description": "Font weight for level 1 headings",
+						"type": "font-weight",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.600}, 4vw, {font-size.875})"
+						"name": "typography-heading-level-1-fluid-font-size",
+						"value": "clamp({font-size.600}, 4vw, {font-size.875})",
+						"description": "Fluid font size for level 1 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"font-weight": {
+						"name": "typography-heading-level-1-fluid-font-weight",
 						"value": "{font-weight.regular}",
-						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
+						"description": "To be changed at the lg({breakpoints.lg}) breakpoint",
+						"type": "font-weight",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"level-2": {
 				"default": {
 					"font-size": {
-						"value": "{font-size.600}"
+						"name": "typography-heading-level-2-default-font-size",
+						"value": "{font-size.600}",
+						"description": "Font size for level 2 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"font-weight": {
-						"value": "{font-weight.regular.value}"
+						"name": "typography-heading-level-2-default-font-weight",
+						"value": "{font-weight.regular.value}",
+						"description": "Font weight for level 2 headings",
+						"type": "font-weight",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.500}, 4vw, {font-size.600})"
+						"name": "typography-heading-level-2-fluid-font-size",
+						"value": "clamp({font-size.500}, 4vw, {font-size.600})",
+						"description": "Fluid font size for level 2 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"font-weight": {
+						"name": "typography-heading-level-2-fluid-font-weight",
 						"value": "{font-weight.bold.value}",
-						"comment": "To be changed at the lg({breakpoints.lg}) breakpoint"
+						"description": "To be changed at the lg({breakpoints.lg}) breakpoint",
+						"type": "font-weight",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"level-3": {
 				"default": {
 					"font-size": {
-						"value": "{font-size.500.value}"
+						"name": "typography-heading-level-3-default-font-size",
+						"value": "{font-size.500.value}",
+						"description": "Font size for level 3 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"font-weight": {
-						"value": "{font-weight.bold.value}"
+						"name": "typography-heading-level-3-default-font-weight",
+						"value": "{font-weight.bold.value}",
+						"description": "Font weight for level 3 headings",
+						"type": "font-weight",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				},
 				"fluid": {
 					"font-size": {
-						"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})"
+						"name": "typography-heading-level-3-fluid-font-size",
+						"value": "clamp({font-size.450.value}, 4vw, {font-size.500.value})",
+						"description": "Fluid font size for level 3 headings",
+						"type": "font-size",
+						"category": "typography",
+						"themeable": true,
+						"meta": {
+							"brand": "springerNature",
+							"public": true,
+							"depracted": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"level-4": {
 				"font-size": {
-					"value": "{font-size.450.value}"
+					"name": "typography-heading-level-4-font-size",
+					"value": "{font-size.450.value}",
+					"description": "Font size for level 4 headings",
+					"type": "font-size",
+					"category": "typography",
+					"themeable": true,
+					"meta": {
+						"brand": "springerNature",
+						"public": true,
+						"depracted": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"font-weight": {
-					"value": "{font-weight.bold.value}"
+					"name": "typography-heading-level-4-font-weight",
+					"value": "{font-weight.bold.value}",
+					"description": "Font weight for level 4 headings",
+					"type": "font-weight",
+					"category": "typography",
+					"themeable": true,
+					"meta": {
+						"brand": "springerNature",
+						"public": true,
+						"depracted": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"level-5": {
 				"font-size": {
-					"value": "{font-size.400.value}"
+					"name": "typography-heading-level-5-font-size",
+					"value": "{font-size.400.value}",
+					"description": "Font size for level 5 headings",
+					"type": "font-size",
+					"category": "typography",
+					"themeable": true,
+					"meta": {
+						"brand": "springerNature",
+						"public": true,
+						"depracted": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"font-weight": {
-					"value": "{font-weight.bold.value}"
+					"name": "typography-heading-level-5-font-weight",
+					"value": "{font-weight.bold.value}",
+					"description": "Font weight for level 5 headings",
+					"type": "font-weight",
+					"category": "typography",
+					"themeable": true,
+					"meta": {
+						"brand": "springerNature",
+						"public": true,
+						"depracted": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		}
