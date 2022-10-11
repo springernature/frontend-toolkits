@@ -9,7 +9,7 @@
 			"themeable": true,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -24,7 +24,7 @@
 			"themeable": true,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -39,7 +39,7 @@
 			"themeable": true,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -54,7 +54,7 @@
 			"themeable": true,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -69,7 +69,7 @@
 			"themeable": true,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false

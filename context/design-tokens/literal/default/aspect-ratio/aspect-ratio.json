@@ -9,7 +9,7 @@
 			"themeable": false,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -23,8 +23,9 @@
 			"category": "aspect-ratio",
 			"themeable": false,
 			"meta": {
+				"brand": "nature",
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
@@ -39,7 +40,7 @@
 			"themeable": false,
 			"meta": {
 				"public": true,
-				"depracted": false,
+				"deprecated": false,
 				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false

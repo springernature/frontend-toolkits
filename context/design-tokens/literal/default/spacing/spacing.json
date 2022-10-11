@@ -10,7 +10,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -25,7 +25,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -40,7 +40,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -55,7 +55,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -70,7 +70,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -85,7 +85,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -100,7 +100,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -115,7 +115,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -132,7 +132,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -147,7 +147,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -162,7 +162,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -177,7 +177,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -192,7 +192,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -207,7 +207,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -222,7 +222,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -237,7 +237,7 @@
 				"themeable": false,
 				"meta": {
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false

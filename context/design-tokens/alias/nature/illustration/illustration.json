@@ -11,7 +11,7 @@
 				"meta": {
 					"brand": "nature",
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -27,7 +27,7 @@
 				"meta": {
 					"brand": "nature",
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
@@ -43,7 +43,7 @@
 				"meta": {
 					"brand": "nature",
 					"public": true,
-					"depracted": false,
+					"deprecated": false,
 					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
