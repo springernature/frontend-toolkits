@@ -3,6 +3,11 @@
 		"container": {
 			"padding": {
 				"value": "{spacing.relative.400}"
+			},
+			"background": {
+				"color": {
+					"value": "{color.grayscale.300}"
+				}
 			}
 		},
 		"link": {
@@ -12,7 +17,18 @@
 		},
 		"heading": {
 			"margin": {
-				"value": "{spacing.relative.200}"
+				"value": "{spacing.relative.400}"
+			},
+			"font": {
+				"size": {
+					"value": "{font-size.400}"
+				},
+				"family": {
+					"value": "{font-family.sans}"
+				},
+				"weight": {
+					"value": "{font-weight.bold}"
+				}
 			}
 		},
 		"error": {
@@ -28,10 +44,8 @@
 				"value": "{sizing.relative.600}"
 			}
 		},
-		"font": {
-			"size": {
-				"value": "{font-size.400}"
-			}
+		"line-height": {
+			"value": "{line-height.tight}"
 		}
 	}
 }
