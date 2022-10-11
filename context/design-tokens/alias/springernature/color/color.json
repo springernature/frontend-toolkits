@@ -8,9 +8,10 @@
 			"category": "color-gradient",
 			"themeable": true,
 			"meta": {
-				"brand": "nature",
+				"brand": "springernature",
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -23,9 +24,10 @@
 			"category": "color-gradient",
 			"themeable": true,
 			"meta": {
-				"brand": "nature",
+				"brand": "springernature",
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -38,9 +40,10 @@
 			"category": "color-gradient",
 			"themeable": true,
 			"meta": {
-				"brand": "nature",
+				"brand": "springernature",
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}

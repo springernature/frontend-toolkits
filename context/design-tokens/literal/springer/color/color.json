@@ -12,6 +12,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -27,6 +28,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -42,6 +44,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}

@@ -12,6 +12,7 @@
 					"brand": "nature",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -27,6 +28,7 @@
 					"brand": "nature",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -42,6 +44,7 @@
 					"brand": "nature",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -57,6 +60,7 @@
 					"brand": "nature",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -74,6 +78,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -91,6 +96,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -110,6 +116,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -127,6 +134,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -146,6 +154,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -165,6 +174,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -184,6 +194,7 @@
 							"brand": "nature",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}

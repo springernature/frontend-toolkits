@@ -12,6 +12,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -27,6 +28,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -42,6 +44,7 @@
 					"brand": "springer",
 					"public": true,
 					"depracted": false,
+					"documented": true,
 					"SassVariable": true,
 					"CSSCustomProperty": false
 				}
@@ -59,6 +62,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -74,6 +78,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -91,6 +96,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -110,6 +116,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -125,6 +132,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -142,6 +150,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -161,6 +170,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -169,7 +179,7 @@
 				"fluid": {
 					"font-size": {
 						"name": "typography-heading-level-3-fluid-font-size",
-						"value": "clamp({font-size.500.value}, 4vw, {typography.heading.level-3.default.font-size.value})",
+						"value": "clamp({font-size.500.value}, 4vw, {font-size.600.value})",
 						"description": "Font size for level 3 headings",
 						"type": "font-size",
 						"category": "typography",
@@ -178,6 +188,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -196,6 +207,7 @@
 						"brand": "springer",
 						"public": true,
 						"depracted": false,
+						"documented": true,
 						"SassVariable": true,
 						"CSSCustomProperty": false
 					}
@@ -212,6 +224,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -229,6 +242,7 @@
 							"brand": "springer",
 							"public": true,
 							"depracted": false,
+							"documented": true,
 							"SassVariable": true,
 							"CSSCustomProperty": false
 						}
@@ -245,6 +259,7 @@
 						"brand": "springer",
 						"public": true,
 						"depracted": false,
+						"documented": true,
 						"SassVariable": true,
 						"CSSCustomProperty": false
 					}
@@ -262,6 +277,7 @@
 						"brand": "springer",
 						"public": true,
 						"depracted": false,
+						"documented": true,
 						"SassVariable": true,
 						"CSSCustomProperty": false
 					}
@@ -277,6 +293,7 @@
 						"brand": "springer",
 						"public": true,
 						"depracted": false,
+						"documented": true,
 						"SassVariable": true,
 						"CSSCustomProperty": false
 					}
@@ -292,6 +309,7 @@
 						"brand": "springer",
 						"public": true,
 						"depracted": false,
+						"documented": true,
 						"SassVariable": true,
 						"CSSCustomProperty": false
 					}

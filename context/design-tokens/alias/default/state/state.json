@@ -10,6 +10,7 @@
 			"meta": {
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -24,6 +25,7 @@
 			"meta": {
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -38,6 +40,7 @@
 			"meta": {
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -52,6 +55,7 @@
 			"meta": {
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -66,6 +70,7 @@
 			"meta": {
 				"public": true,
 				"depracted": false,
+				"documented": true,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
