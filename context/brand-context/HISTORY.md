@@ -1,5 +1,8 @@
 # History
 
+## 29.0.1 (2022-10-11)
+    * PATCH: Removes default SVG sizing from core styles as it was overriding classname styles for icons and html width and height attributes
+
 ## 29.0.0 (2022-10-05)
     * BREAKING:
         * Link underlines by default
