@@ -1,6 +1,6 @@
 const { readdirSync } = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
-const _ = require('./node_modules/style-dictionary/lib/utils/es6_');
+const _ = require('style-dictionary/lib/utils/es6_');
 
 // this will return a filtering function based on brand and category
 function tokenFilter(brand, category) {
