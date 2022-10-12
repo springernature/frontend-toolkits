@@ -1,5 +1,16 @@
 # History
 
+## 29.0.1 (2022-10-11)
+    * PATCH: Removes default SVG sizing from core styles as it was overriding classname styles for icons and html width and height attributes
+
+## 29.0.0 (2022-10-05)
+    * BREAKING:
+        * Link underlines by default
+    * Added component wrappers (`c-` elements) to block spacing algorithm
+
+## 28.2.0
+    * Add support for dash as a list style
+
 ## 28.1.1 (2022-10-03)
     * PATCH: Move default abstract import into the brand abstracts file
         * Simplifies the process of compiling static component CSS
