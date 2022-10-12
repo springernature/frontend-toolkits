@@ -7,6 +7,11 @@
 			(optional)
 		{{/if}}
 	{{/if}}
+	{{#unless optional}}
+		{{#if requiredSuffix}}
+			{{{requiredSuffix}}}
+		{{/if}}
+	{{/unless}}
 	{{#if hint}}
 		<small class="c-forms__hint">{{hint}}</small>
 	{{/if}}

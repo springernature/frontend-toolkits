@@ -156,21 +156,21 @@
 								"name": "day",
 								"id": "day",
 								"label": "Day",
-								"placeholder": "DD"
+								"hint": "In the format: DD"
 							},
 							{
 								"template": "globalFormText",
 								"name": "month",
 								"id": "month",
 								"label": "Month",
-								"placeholder": "MM"
+								"hint": "In the format: MM"
 							},
 							{
 								"template": "globalFormText",
 								"name": "year",
 								"id": "year",
 								"label": "Year",
-								"placeholder": "YY"
+								"hint": "In the format: YY"
 							}
 						]
 					}

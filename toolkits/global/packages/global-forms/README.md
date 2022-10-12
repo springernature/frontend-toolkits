@@ -55,7 +55,7 @@ For this example, you might have two simple inputs for a name and password:
 
 ### Fields
 
-The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the **view/fields/globalFormText.hbs** template as. Aim to make the `template`, `id`, and `name` properties mandatory parts of your data schema.
+The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the **view/fields/globalFormText.hbs** template as. Aim to make the `template`, `id`, `label`, and `name` properties mandatory parts of your data schema.
 
 This component supports a wide range of standard form field attributes. For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
@@ -79,9 +79,13 @@ The `hint` property adds hint text under the main label text but _inside_ the `<
 
 #### Required
 
-Fields are required by default. Avoid asking for information you don't really need. 
+Fields are required by default. Avoid asking for information you don't really need. To explicitly mark fields as required, `requiredSuffix` will append text—such as an asterisk—to the label. This property permits HTML, meaning you can hide the asterisk character from screen readers.
 
-The `required` and `aria-required="true"` attribution is applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
+```
+"requiredSuffix": "<span aria-hidden=\"true\">*</span>"
+```
+
+The `required` and `aria-required="true"` attributes are applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
 
 If you do need to ask for optional information, set `optional: true`. This will remove `required` and `aria-required="true"` as well as appending the text “(optional)” to the field label. 
 
@@ -279,6 +283,43 @@ You can hide any field from visibility (also from screen reader software and key
     "hidden": true,
 }
 ```
+
+#### Inline fields
+
+It is possible to display fields in a horizontal line, using the following `template` value:
+
+```json
+"template": "globalFormInlineFields"
+```
+
+For example, here’s a possible field definition for a search bar, comprising an input and submit button:
+
+```json
+{
+    "template": "globalFormInlineFields",
+    "gap": "1em",
+    "fields": [
+        {
+            "template": "globalFormText",
+            "name": "search",
+            "id": "search",
+            "label": "Search",
+            "hideLabel": true
+        },
+        {
+            "template": "globalFormButton",
+            "type": "submit",
+            "label": "Search",
+            "modifiers": ["primary"]
+        }
+    ]
+}
+```
+
+* **`fields`**: Individual fields are defined in a `fields` array.
+* **`gap`**: The gap between the fields; any valid `gap` value.
+* **`hideLabel`**: You can visually hide labels with the `hideLabel` property _without_ removing them from screen reader output. Only do this if there is another visual form of label (the “Search” label of the submit button in this case). 
+* **`nowrap`**: Not used in the previous example. Stop the individual fields from wrapping (beware of narrow viewports).
 
 ### Supplementary fields
 
