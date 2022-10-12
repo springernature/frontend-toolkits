@@ -1,5 +1,8 @@
 # History
 
+## 6.0.2 (2022-10-05)
+    * Underline reinstated on title (see brand-context 29.0.0)
+
 ## 6.0.1 (2022-09-20)
     * BUG: fixes SVGs not displaying correctly in demo
 

@@ -4,6 +4,9 @@
  * These files don’t output any CSS when compiled
  */
 
+// Default setting, functions, mixins
+@import '../../default/scss/abstracts';
+
 // Design Tokens need to be imported first
 @import '00-tokens/';
 
