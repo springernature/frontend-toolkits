@@ -25,23 +25,23 @@ To delete all of the generated `scss` files from the front-end toolkits and the 
 ```bash
 npm run tokens:clean-all
 ```
-To delete all of the generated `scss` files from the brand context folders, run:
+To delete all of the generated `scss` files from the theme brand context folders, run:
 ```bash
 npm run tokens:clean-context
 ```
-To delete all of the generated `scss` files from the default brand context folder, run:
+To delete all of the generated `scss` files from the default themes brand context folder, run:
 ```bash
 npm run tokens:clean-default
 ```
-To delete all of the generated `scss` files from the Nature brand context folder, run:
+To delete all of the generated `scss` files from the Nature themes brand context folder, run:
 ```bash
 npm run tokens:clean-nature
 ```
-To delete all of the generated `scss` files from the Springer brand context folder, run:
+To delete all of the generated `scss` files from the Springer themes brand context folder, run:
 ```bash
 npm run tokens:clean-springer
 ```
-To delete all of the generated `scss` files from the Springer Nature brand context folder, run:
+To delete all of the generated `scss` files from the Springer Nature themes brand context folder, run:
 ```bash
 npm run tokens:clean-springe-rnature
 ```
@@ -49,7 +49,7 @@ To delete all of the generated `scss` files from the all of the components, run:
 ```bash
 npm run tokens:clean-components
 ```
-#### Compiling Design Tokens for the front-end toolkits brand context
+#### Compiling Design Tokens for the front-end toolkits themes
 
 To generate the relevant `scss` files for the front-end toolkits from the literal Design Tokens, run:
 ```bash
@@ -83,7 +83,7 @@ note: this will override any and all existing `scss` files for the components.
 
 To generate the `scss` file for a specific component for a specific theme the front-end tooolkits from the Design Tokens, run:
 ```bash
-npm run tokens:component -- --component=component-name --theme=brand-context-theme
+npm run tokens:component -- --component=component-name --theme=theme-context-theme
 ```
 #### Generating Design Tokens documentation `json` files (experimental)
 
@@ -150,16 +150,56 @@ There are three tiers of Design Tokens:
 - `component`: The set of tokens that are used to build the rest of the tokens.
 
 ### Literal Design Tokens
-These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Alias Design Tokens that can be used in developing components.
+These are the ‘locked’ tokens, that hold a value that should not change. The literal Design Tokens are defined in the `tokens/literal` folder. The literal Design Tokens are used to create the Alias Design Tokens.
+
+### Alias Design Tokens
+These are the ‘unlocked’ tokens, that hold a value that can change. The Alias Design Tokens are defined in the `tokens/alias` folder. The Alias Design Tokens are used to create the Component Design Tokens.
+
+### Component Design Tokens
+These are the ‘unlocked’ tokens, that hold a value that can change. The Component Design Tokens are defined in the `tokens/components` folder. The Component Design Tokens are used to create the Component Design Tokens.
 ## Design Token Naming Convention
 
+With three tiers of Design Tokens, there are three naming conventions for the Design Tokens. These naming conventions include all possible options for the name but they do not all need to be used and will depend on the resulting value of the Design Token to determine which optione are used.
 
+The naming convention for the Design Tokens is as follows:
 ### Literal Tokens
+The literal tokens are named using the following convention:
 
+`<category>-<property>-<value>`
+
+Where:
+- `<category>` is the category of the token (eg: spacing).
+- `<property>` is the property of the token (eg: color).
+- `<value>` is the value of the token (eg: 2rem).
+
+The `<category>`, `<property>` and `<value>` are separated by a hyphen (`-`). Depending on the design property you may use either `<category>` or `<prooperty>` or both.
+
+For example, the `color` design property does not have a `<category>` and only has a `<property>` of `color`. The `spacing` design property uses a `<category>` of `spacing` and has no `<property`>.
 ### Alias Tokens
+The alias tokens are named using the following convention:
 
+`<property>-<category>-<priority>-<type>-<value>`
+
+Where:
+- `<property>` is the property of the token (eg: color).
+- `<category>` is the category of the token (eg: spacing).
+- `<priority>` is the priority of the token (eg: primary).
+- `<type>` is the type of the token (eg: solid).
+- `<value>` is the value of the token (eg: 2rem).
 ### Component Tokens
+The component tokens are named using the following convention:
 
+`<component>-<property>-<category>-<priority>-<type>-<state>-<validation>-<value>`
+
+Where:
+- `<component>` is the component of the token (eg: button).
+- `<property>` is the property of the token (eg: color).
+- `<category>` is the category of the token (eg: spacing).
+- `<priority>` is the priority of the token (eg: primary).
+- `<type>` is the type of the token (eg: solid).
+- `<state>` is the state of the token (eg: hover).
+- `<validation>` is the validation of the token (eg: valid).
+- `<value>` is the value of the token (eg: 2rem).
 
 
 ---
