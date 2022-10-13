@@ -1,0 +1,180 @@
+{
+ "properties": [
+  {
+   "name": "tokens--breakpoints-tablet-width",
+   "value": "480px",
+   "description": "tablet-width",
+   "type": "length",
+   "category": "breakpoints",
+   "themeable": false,
+   "meta": {
+    "brand": "breakpoints",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/breakpoints/breakpoints.json",
+   "isSource": true,
+   "original": {
+    "name": "480px",
+    "value": "480px",
+    "description": "tablet-width",
+    "type": "length",
+    "category": "breakpoints",
+    "themeable": false,
+    "meta": {
+     "brand": "breakpoints",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "breakpoints",
+    "type": "tablet-width"
+   },
+   "path": [
+    "breakpoints",
+    "tablet-width"
+   ]
+  },
+  {
+   "name": "tokens--breakpoints-tablet-wide-width",
+   "value": "768px",
+   "description": "tablet-wide-width",
+   "type": "length",
+   "category": "breakpoints",
+   "themeable": false,
+   "meta": {
+    "brand": "breakpoints",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/breakpoints/breakpoints.json",
+   "isSource": true,
+   "original": {
+    "name": "768px",
+    "value": "768px",
+    "description": "tablet-wide-width",
+    "type": "length",
+    "category": "breakpoints",
+    "themeable": false,
+    "meta": {
+     "brand": "breakpoints",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "breakpoints",
+    "type": "tablet-wide-width"
+   },
+   "path": [
+    "breakpoints",
+    "tablet-wide-width"
+   ]
+  },
+  {
+   "name": "tokens--breakpoints-wide-layout",
+   "value": "876px",
+   "description": "wide-layout",
+   "type": "length",
+   "category": "breakpoints",
+   "themeable": false,
+   "meta": {
+    "brand": "breakpoints",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/breakpoints/breakpoints.json",
+   "isSource": true,
+   "original": {
+    "name": "876px",
+    "value": "876px",
+    "description": "wide-layout",
+    "type": "length",
+    "category": "breakpoints",
+    "themeable": false,
+    "meta": {
+     "brand": "breakpoints",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "breakpoints",
+    "type": "wide-layout"
+   },
+   "path": [
+    "breakpoints",
+    "wide-layout"
+   ]
+  },
+  {
+   "name": "tokens--breakpoints-desktop-width",
+   "value": "1024px",
+   "description": "desktop-width",
+   "type": "length",
+   "category": "breakpoints",
+   "themeable": false,
+   "meta": {
+    "brand": "breakpoints",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/breakpoints/breakpoints.json",
+   "isSource": true,
+   "original": {
+    "name": "1024px",
+    "value": "1024px",
+    "description": "desktop-width",
+    "type": "length",
+    "category": "breakpoints",
+    "themeable": false,
+    "meta": {
+     "brand": "breakpoints",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "breakpoints",
+    "type": "desktop-width"
+   },
+   "path": [
+    "breakpoints",
+    "desktop-width"
+   ]
+  }
+ ]
+}

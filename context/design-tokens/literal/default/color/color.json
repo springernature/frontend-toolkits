@@ -2,66 +2,246 @@
 	"color": {
 		"white": {
 			"name": "white",
-			"value": "#fff"
+			"value": "#fff",
+			"description": "a color",
+			"type": "color",
+			"category": "color",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"black": {
 			"name": "black",
-			"value": "#000"
+			"value": "#000",
+			"description": "a color",
+			"type": "color",
+			"category": "color",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
-		"grayscale": {
+		"greyscale": {
 			"200": {
-				"name": "grayscale-200",
-				"value": "#f8f8f8"
+				"name": "greyscale-200",
+				"value": "#f8f8f8",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"300": {
-				"name": "grayscale-300",
-				"value": "#f3f3f3"
+				"name": "greyscale-300",
+				"value": "#f3f3f3",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
-				"name": "grayscale-400",
-				"value": "#dadada"
+				"name": "greyscale-400",
+				"value": "#dadada",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"500": {
-				"name": "grayscale-500",
-				"value": "#999"
+				"name": "greyscale-500",
+				"value": "#999",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"600": {
-				"name": "grayscale-600",
-				"value": "#666"
+				"name": "greyscale-600",
+				"value": "#666",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"700": {
-				"name": "grayscale-700",
-				"value": "#555"
+				"name": "greyscale-700",
+				"value": "#555",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"800": {
-				"name": "grayscale-800",
-				"value": "#222"
+				"name": "greyscale-800",
+				"value": "#222",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"blue": {
 			"100": {
 				"name": "blue-100",
-				"value": "#EBF1F5"
+				"value": "#EBF1F5",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
 				"name": "blue-200",
-				"value": "#CEDBE0"
+				"value": "#CEDBE0",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"300": {
 				"name": "blue-300",
-				"value": "#08C"
+				"value": "#08C",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
 				"name": "blue-600",
-				"value": "#025E8D"
+				"value": "#025E8D",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"700": {
 				"name": "blue-700",
-				"value": "#003F8D"
+				"value": "#003F8D",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"900": {
 				"name": "blue-900",
-				"value": "#01324B"
+				"value": "#01324B",
+				"description": "a color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}

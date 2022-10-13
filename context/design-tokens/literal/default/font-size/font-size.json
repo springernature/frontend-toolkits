@@ -1,40 +1,148 @@
 {
 	"font-size": {
 		"350": {
+			"name": "350",
 			"value": ".875rem",
-			"comment": "14px"
+			"description": "14px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"400": {
+			"name": "400",
 			"value": "1rem",
-			"comment": "16px"
+			"description": "16px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"450": {
+			"name": "450",
 			"value": "1.125rem",
-			"comment": "18px"
+			"description": "18px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"500": {
+			"name": "500",
 			"value": "1.25rem",
-			"comment": "20px"
+			"description": "20px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"600": {
+			"name": "600",
 			"value": "1.5rem",
-			"comment": "24px"
+			"description": "24px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"650": {
+			"name": "650",
 			"value": "1.875rem",
-			"comment": "28px"
+			"description": "28px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"800": {
+			"name": "800",
 			"value": "2rem",
-			"comment": "32px"
+			"description": "32px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"875": {
+			"name": "875",
 			"value": "2.1875rem",
-			"comment": "35px"
+			"description": "35px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"900": {
+			"name": "900",
 			"value": "2.5rem",
-			"comment": "36px"
+			"description": "36px",
+			"type": "length",
+			"category": "font-size",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

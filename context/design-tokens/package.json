@@ -1,0 +1,39 @@
+{
+  "name": "design-tokens",
+  "version": "0.0.1",
+  "description": "Design Tokens for Springer Nature Dgitial Brands",
+  "main": "build.js",
+  "scripts": {
+    "tokens:clean-all": "npx rimraf ../../**/00-tokens/",
+    "tokens:clean-context": "npx rimraf ../../context/brand-context/**/00-tokens/",
+    "tokens:clean-default": "npx rimraf ../../context/brand-context/default/scss/00-tokens/",
+    "tokens:clean-nature": "npx rimraf ../../context/brand-context/nature/scss/00-tokens/",
+    "tokens:clean-springer": "npx rimraf ../../context/brand-context/springer/scss/00-tokens/",
+    "tokens:clean-springer-nature": "npx rimraf ../../context/brand-context/springernature/scss/00-tokens/",
+    "tokens:clean-components": "npx rimraf ../../**/toolkits/**/00-tokens/",
+    "tokens:literal": "node build-literal.js",
+    "tokens:alias": "node build-alias.js",
+    "tokens:docs": "node build-documentation.js",
+    "tokens:delete-index": "npx rimraf ../../context/brand-context/**/00-tokens/_index.scss",
+    "tokens:build-index": "npm run tokens:delete-index && node build-index.js",
+    "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
+    "tokens:global-components": "node build-component-global.js",
+    "tokens:brand-components": "node build-components.js",
+    "tokens:component": "node build-component.js -- component theme",
+    "tokens:figma": "node build-figma.js"
+  },
+  "keywords": [
+    "design",
+    "tokens",
+    "css",
+    "sass",
+    "design",
+    "systems"
+  ],
+  "author": "Stuart Robson",
+  "license": "MIT",
+  "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "^0.2.0",
+    "style-dictionary": "^3.7.1"
+  }
+}

@@ -1,6 +1,6 @@
 const { readdirSync } = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
-const _ = require('./node_modules/style-dictionary/lib/utils/es6_');
+const _ = require('style-dictionary/lib/utils/es6_');
 
 // this will return a filtering function based on brand and category
 function tokenFilter(brand, category) {
@@ -12,6 +12,19 @@ function tokenFilter(brand, category) {
 		);
 	};
 }
+
+StyleDictionaryPackage.registerFormat({
+	name: 'myCustomFormat',
+	formatter: function ({ dictionary, platform, options, file }) {
+		return JSON.stringify(
+			{
+				properties: dictionary.allTokens
+			},
+			null,
+			1
+		);
+	}
+});
 
 StyleDictionaryPackage.registerTransform({
 	name: 'name/cti/kebab',
@@ -25,21 +38,20 @@ function getStyleDictionaryConfig(brand, categories) {
 	let destination = `../../context/brand-context/${brand}/scss`;
 
 	return {
+		include: [`${__dirname}/literal/**/*.json`],
 		source: [
-			`${__dirname}/literal/${brand}/font-weight/font-weight.json`,
-			`${__dirname}/literal/${brand}/spacing/spacing.json`,
-			`${__dirname}/literal/${brand}/breakpoints/breakpoints.json`
+			`${__dirname}/literal/${brand}/**/*.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
 				transform: 'name/cti/kebab',
 				prefix: 'tokens',
-				buildPath: `${destination}/00-tokens/`,
+				buildPath: `./documentation/`,
 				files: categories.map(category => {
 					return {
-						destination: `_${category}.variables.scss`,
-						format: 'scss/variables',
+						destination: `${category}.docs.json`,
+						format: 'myCustomFormat',
 						filter: tokenFilter(brand, category)
 					};
 				})

@@ -2,70 +2,262 @@
 	"spacing": {
 		"relative": {
 			"0": {
+				"name": "",
 				"value": "0",
-				"comment": "no spacing, zero."
+				"description": "no spacing, zero.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
+				"name": "",
 				"value": ".25rem",
-				"comment": ".25rem, 4px."
+				"description": ".25rem, 4px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
+				"name": "",
 				"value": ".5rem",
-				"comment": ".5rem, 8px."
+				"description": ".5rem, 8px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
+				"name": "",
 				"value": "1rem",
-				"comment": "1rem, 16px."
+				"description": "1rem, 16px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"600": {
+				"name": "",
 				"value": "1.5rem",
-				"comment": "1.5rem, 24px."
+				"description": "1.5rem, 24px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"800": {
+				"name": "",
 				"value": "2rem",
-				"comment": "2rem, 32px."
+				"description": "2rem, 32px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1200": {
+				"name": "",
 				"value": "3rem",
-				"comment": "3rem, 48px."
+				"description": "3rem, 48px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1600": {
+				"name": "",
 				"value": "4rem",
-				"comment": "4rem, 64px."
+				"description": "4rem, 64px.",
+				"type": "dimension",
+				"category": "spacing-relative",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"absolute": {
 			"0": {
+				"name": "",
 				"value": "0",
-				"comment": "no spacing, zero."
+				"description": "no spacing, zero.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
+				"name": "",
 				"value": "4px",
-				"comment": ".25rem, 4px."
+				"description": "4px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
+				"name": "",
 				"value": "8px",
-				"comment": ".5rem, 8px."
+				"description": "8px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"400": {
+				"name": "",
 				"value": "16px",
-				"comment": "1rem, 16px."
+				"description": " 16px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"600": {
+				"name": "",
 				"value": "24px",
-				"comment": "1.5rem, 24px."
+				"description": "24px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"800": {
+				"name": "",
 				"value": "32px",
-				"comment": "2rem, 32px."
+				"description": "32px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1200": {
+				"name": "",
 				"value": "48px",
-				"comment": "3rem, 48px."
+				"description": "48px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"1600": {
+				"name": "",
 				"value": "64px",
-				"comment": "4rem, 64px."
+				"description": "64px.",
+				"type": "dimension",
+				"category": "spacing-absolute",
+				"themeable": false,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}

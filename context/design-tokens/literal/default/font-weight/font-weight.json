@@ -1,20 +1,64 @@
 {
 	"font-weight": {
 		"light": {
+			"name": "",
 			"value": "300",
-			"comment": "normal"
+			"despcription": "normal",
+			"type": "number",
+			"category": "font-weight",
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"normal": {
+			"name": "",
 			"value": "400",
-			"comment": "The normal, or ‘regular’, font weight."
+			"despcription": "The normal, or ‘regular’, font weight.",
+			"type": "number",
+			"category": "font-weight",
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"regular": {
+			"name": "",
 			"value": "400",
-			"comment": "The normal, or ‘regular’, font weight."
+			"despcription": "The normal, or ‘regular’, font weight.",
+			"type": "number",
+			"category": "font-weight",
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"bold": {
+			"name": "",
 			"value": "700",
-			"comment": "The bold font weight."
+			"despcription": "The bold font weight.",
+			"type": "number",
+			"category": "font-weight",
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

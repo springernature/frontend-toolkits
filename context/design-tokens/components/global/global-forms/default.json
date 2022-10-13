@@ -1,11 +1,13 @@
 {
 	"global-forms": {
 		"line-height": {
+			"name": "global-forms-line-height",
 			"value": "{line-height.tight}"
 		},
 		"field": {
 			"stack": {
 				"spacing": {
+					"name": "global-forms-field-stack-spacing",
 					"value": "{spacing.relative.600}"
 				}
 			}
@@ -13,29 +15,27 @@
 		"label": {
 			"font": {
 				"size": {
+					"name": "global-forms-label-font-size",
 					"value": "{ui.font-size}"
 				},
 				"weight": {
+					"name": "global-forms-label-font-weight",
 					"value": "{font-weight.bold}"
 				}
 			},
 			"color": {
+				"name": "global-forms-label-color",
 				"value": "{text.primary}"
-			},
-			"inline": {
-				"font": {
-					"weight": {
-						"value": "{font-weight.regular}"
-					}
-				}
 			}
 		},
 		"hint": {
 			"color": {
-				"value": "{color.grayscale.600}"
+				"name": "global-forms-hint-color",
+				"value": "{color.greyscale.600}"
 			},
 			"font": {
 				"weight": {
+					"name": "global-forms-hint-font-weight",
 					"value": "{font-weight.regular}"
 				}
 			}
@@ -43,19 +43,23 @@
 		"message": {
 			"color": {
 				"error": {
+					"name": "global-forms-message-color-error",
 					"value": "{state.error}"
 				}
 			},
 			"icon": {
 				"color": {
 					"resting": {
+						"name": "global-forms-message-icon-color-resting",
 						"value": "{text.primary}"
 					},
 					"error": {
+						"name": "global-forms-message-icon-color-error",
 						"value": "{state.error}"
 					}
 				},
 				"size": {
+					"name": "global-forms-message-icon-size",
 					"value": "{sizing.relative.400}"
 				}
 			}
@@ -63,36 +67,44 @@
 		"input": {
 			"padding": {
 				"inline": {
+					"name": "global-forms-input-padding-inline",
 					"value": "{spacing.relative.200.value}"
 				},
 				"block": {
+					"name": "global-forms-input-padding-block",
 					"value": "{spacing.relative.200.value}"
 				}
 			},
 			"stack": {
 				"spacing": {
+					"name": "global-forms-input-stack-spacing",
 					"value": "{spacing.relative.100}"
 				}
 			},
 			"border": {
 				"color": {
 					"resting": {
+						"name": "global-forms-input-border-color-resting",
 						"value": "{border.color.primary}"
 					},
 					"error": {
+						"name": "global-forms-input-border-color-error",
 						"value": "{state.error}"
 					},
 					"disabled": {
-						"value": "{color.grayscale.400}"
+						"name": "global-forms-input-border-color-disabled",
+						"value": "{color.greyscale.400}"
 					}
 				},
 				"width": {
+					"name": "global-forms-input-border-width",
 					"value": "{border.width.25}"
 				}
 			},
 			"focus": {
 				"outline": {
 					"color": {
+						"name": "global-forms-input-focus-outline-color",
 						"value": "{ui.focus.outline.color}",
 						"description": "TODO: needs to be coming from an alias or literal token"
 					}
@@ -100,22 +112,27 @@
 			},
 			"font": {
 				"size": {
+					"name": "global-forms-input-font-size",
 					"value": "{ui.font-size}"
 				},
 				"weight": {
+					"name": "global-forms-input-font-weight",
 					"value": "{font-weight.regular}"
 				},
 				"color": {
+					"name": "global-forms-input-color",
 					"value": "{text.primary}"
 				}
 			},
 			"background": {
 				"color": {
+					"name": "global-forms-input-background-color",
 					"value": "{background.container}"
 				}
 			},
 			"width": {
 				"maximum": {
+					"name": "global-forms-input-width-maximum",
 					"value": "{ui.content-width}",
 					"description": "TODO: needs to be coming from an alias or literal token"
 				}
@@ -124,82 +141,49 @@
 		"indent": {
 			"border": {
 				"color": {
+					"name": "global-forms-indent-border-color",
 					"value": "{border.color.indent}"
 				},
 				"radius": {
+					"name": "",
 					"value": "{border.radius.100}"
 				}
 			}
 		},
 		"checkbox": {
 			"size": {
+				"name": "global-forms-checkbox-size",
 				"value": "{sizing.relative.600}",
 				"type": "sizing"
 			},
 			"spacing": {
+				"name": "global-forms-checkbox-spacing",
 				"value": "{sizing.relative.200}"
 			},
 			"border": {
 				"size": {
+					"name": "global-forms-checkbox-border-size",
 					"value": "{border.width.50}"
 				},
 				"color": {
+					"name": "global-forms-checkbox-border-color",
 					"value": "{color.grayscale.500}"
 				}
 			},
 			"checked": {
 				"icon": {
 					"stroke": {
+						"name": "global-forms-checkbox-checked-icon-stroke",
 						"value": "{color.primary.universal-dark-blue}"
 					},
 					"fill": {
+						"name": "global-forms-checkbox-checked-icon-fill",
 						"value": "{color.primary.universal-dark-blue}"
 					},
 					"data uri": {
+						"name": "global-forms-checkbox-checked-icon-data-uri",
 						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
 					}
-				}
-			}
-		},
-		"pictographic-radio": {
-			"spacing": {
-				"value": "{spacing.relative.400}"
-			},
-			"checked": {
-				"icon": {
-					"background": {
-						"value": "{color.primary.universal-dark-blue}"
-					},
-					"border": {
-						"value": "{color.primary.white}"
-					},
-					"fill": {
-						"value": "{color.primary.universal-dark-blue}"
-					},
-					"stroke": {
-						"value": "{color.primary.white}"
-					}
-				}
-			},
-			"unchecked": {
-				"icon": {
-					"background": {
-						"value": "{color.primary.white}"
-					},
-					"border": {
-						"value": "{border.color.input}"
-					},
-					"fill": {
-						"value": "{color.primary.white}"
-					},
-					"stroke": {
-						"value": "{color.primary.universal-dark-blue}"
-					}
-				}
-			},
-			"icon": {
-				"size": {
-					"value": "{sizing.relative.1600}"
 				}
 			}
 		}

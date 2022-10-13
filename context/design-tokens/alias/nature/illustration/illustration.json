@@ -2,16 +2,55 @@
 	"illustration": {
 		"background": {
 			"001": {
+				"name": "illustration-background-001",
 				"value": "{nature-color.gunmetal.800}",
-				"description": "background color for illustrations"
+				"description": "background color for illustrations",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "nature",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"002": {
+				"name": "illustration-background-002",
 				"value": "{nature-color.gunmetal.500}",
-				"description": "background color for illustrations"
+				"description": "background color for illustrations",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "nature",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"003": {
+				"name": "illustration-background-003",
 				"value": "{nature-color.gunmetal.300}",
-				"description": "background color for illustrations"
+				"description": "background color for illustrations",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "nature",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}
