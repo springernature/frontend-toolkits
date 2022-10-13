@@ -3,13 +3,13 @@ const { readdirSync } = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 
 const componentX = process.env.npm_config_component;
-let contextX = process.env.npm_config_context;
+let theme = process.env.npm_config_theme
 const brandX = componentX.split('-')[0];
 
-if (!contextX && brandX === 'global') {
-	contextX = 'default';
-} else if (!contextX && brandX !== 'global') {
-	contextX = brandX;
+if (!theme && brandX === 'global') {
+	theme = 'default';
+} else if (!theme && brandX !== 'global') {
+	theme = brandX;
 }
 
 function tokenFilter(brand, component) {
@@ -34,7 +34,7 @@ function getStyleDictionaryConfig(brand, components) {
 		],
 		// for each brand want to generate the Sass variables from this components tokens file
 		source: [
-			`${__dirname}/components/${brandX}/${componentX}/${contextX}.json`
+			`${__dirname}/components/${brandX}/${componentX}/${theme}.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -42,7 +42,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${componentX}/scss/00-tokens/_${contextX}.tokens.scss`,
+						destination: `${componentX}/scss/00-tokens/_${theme}.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -57,17 +57,17 @@ function getStyleDictionaryConfig(brand, components) {
 }
 
 const styleDictionary = StyleDictionaryPackage.extend(
-	getStyleDictionaryConfig([contextX], [componentX])
+	getStyleDictionaryConfig([theme], [componentX])
 );
 
 styleDictionary.buildAllPlatforms();
 
-const filePath = `../../toolkits/${brandX}/packages/${componentX}/scss/00-tokens/_${contextX}.tokens.scss`;
+const filePath = `../../toolkits/${brandX}/packages/${componentX}/scss/00-tokens/_${theme}.tokens.scss`;
 const content = fs.readFileSync(filePath, 'utf8');
 const sortedContent = content.split('\n').sort().join('\n');
 
 const replacedContent = sortedContent.replace(/: \$/g, ': $t-');
 
-const GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brandX}/${componentX}/${contextX}.json\n// DO NOT edit directly\n\n${replacedContent}`;
+const GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brandX}/${componentX}/${theme}.json\n// DO NOT edit directly\n\n${replacedContent}`;
 
 fs.writeFileSync(filePath, GeneratedContent, 'utf8');
