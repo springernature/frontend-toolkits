@@ -1,5 +1,8 @@
 # History
 
+## 29.0.2 (2022-10-12)
+    * PATCH: Add a utility class for resetting `margin-block-start`  
+
 ## 29.0.1 (2022-10-11)
     * PATCH: Removes default SVG sizing from core styles as it was overriding classname styles for icons and html width and height attributes
 

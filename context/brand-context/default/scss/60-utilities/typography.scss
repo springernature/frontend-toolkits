@@ -100,3 +100,7 @@
 .u-h1+* {
 	margin-block-start: $tokens--typography-block-spacing-x-large;
 }
+
+.u-mbs-0 {
+	margin-block-start: 0 !important;
+}

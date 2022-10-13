@@ -1,5 +1,8 @@
 # History
 
+## 4.0.5 (2022-10-12)
+    * Temporarily fix size of chevron to override default svg sizing from brand-context
+
 ## 4.0.4 (2022-09-20)
     * BUG: fixes SVGs not displaying correctly in demo
 
