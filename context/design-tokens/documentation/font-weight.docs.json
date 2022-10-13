@@ -1,0 +1,164 @@
+{
+  "properties": [
+    {
+      "name": "tokens--font-weight-light",
+      "value": "300",
+      "despcription": "normal",
+      "type": "number",
+      "category": "font-weight",
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-weight/font-weight.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "300",
+        "despcription": "normal",
+        "type": "number",
+        "category": "font-weight",
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-weight",
+        "type": "light"
+      },
+      "path": [
+        "font-weight",
+        "light"
+      ]
+    },
+    {
+      "name": "tokens--font-weight-normal",
+      "value": "400",
+      "despcription": "The normal, or ‘regular’, font weight.",
+      "type": "number",
+      "category": "font-weight",
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-weight/font-weight.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "400",
+        "despcription": "The normal, or ‘regular’, font weight.",
+        "type": "number",
+        "category": "font-weight",
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-weight",
+        "type": "normal"
+      },
+      "path": [
+        "font-weight",
+        "normal"
+      ]
+    },
+    {
+      "name": "tokens--font-weight-regular",
+      "value": "400",
+      "despcription": "The normal, or ‘regular’, font weight.",
+      "type": "number",
+      "category": "font-weight",
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-weight/font-weight.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "400",
+        "despcription": "The normal, or ‘regular’, font weight.",
+        "type": "number",
+        "category": "font-weight",
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-weight",
+        "type": "regular"
+      },
+      "path": [
+        "font-weight",
+        "regular"
+      ]
+    },
+    {
+      "name": "tokens--font-weight-bold",
+      "value": "700",
+      "despcription": "The bold font weight.",
+      "type": "number",
+      "category": "font-weight",
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-weight/font-weight.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "700",
+        "despcription": "The bold font weight.",
+        "type": "number",
+        "category": "font-weight",
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-weight",
+        "type": "bold"
+      },
+      "path": [
+        "font-weight",
+        "bold"
+      ]
+    }
+  ]
+}

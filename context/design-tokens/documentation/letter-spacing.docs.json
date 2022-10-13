@@ -1,0 +1,46 @@
+{
+  "properties": [
+    {
+      "name": "tokens--letter-spacing-080",
+      "value": "0.2rem",
+      "description": "0.32px",
+      "type": "length",
+      "categoray": "letter-spacing",
+      "themeable": false,
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/letter-spacing/letter-spacing.json",
+      "isSource": true,
+      "original": {
+        "name": "080",
+        "value": "0.2rem",
+        "description": "0.32px",
+        "type": "length",
+        "categoray": "letter-spacing",
+        "themeable": false,
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "letter-spacing",
+        "type": "080"
+      },
+      "path": [
+        "letter-spacing",
+        "080"
+      ]
+    }
+  ]
+}

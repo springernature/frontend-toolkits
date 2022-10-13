@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "name": "tokens--font-family-serif",
+      "value": "serif",
+      "description": "The serif font family",
+      "type": "family-name",
+      "categoray": "font-family",
+      "themeable": false,
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-family/font-family.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "serif",
+        "description": "The serif font family",
+        "type": "family-name",
+        "categoray": "font-family",
+        "themeable": false,
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-family",
+        "type": "serif"
+      },
+      "path": [
+        "font-family",
+        "serif"
+      ]
+    },
+    {
+      "name": "tokens--font-family-sans",
+      "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+      "description": "The sans-serif font family",
+      "type": "family-name",
+      "categoray": "font-family",
+      "themeable": false,
+      "meta": {
+        "public": true,
+        "deprecated": false,
+        "documented": true,
+        "experimental": false,
+        "SassVariable": true,
+        "CSSCustomProperty": false
+      },
+      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-family/font-family.json",
+      "isSource": true,
+      "original": {
+        "name": "",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+        "description": "The sans-serif font family",
+        "type": "family-name",
+        "categoray": "font-family",
+        "themeable": false,
+        "meta": {
+          "public": true,
+          "deprecated": false,
+          "documented": true,
+          "experimental": false,
+          "SassVariable": true,
+          "CSSCustomProperty": false
+        }
+      },
+      "attributes": {
+        "category": "font-family",
+        "type": "sans"
+      },
+      "path": [
+        "font-family",
+        "sans"
+      ]
+    }
+  ]
+}
