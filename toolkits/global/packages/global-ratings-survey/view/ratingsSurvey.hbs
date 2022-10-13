@@ -1,9 +1,8 @@
-<aside class="u-hide u-js-show c-ratings-survey" {{#if iconSize}}style="--forms--pictographic-radio-icon-size:{{iconSize}}"{{/if}}
-	   data-ratings-survey=""
+<aside class="u-hide u-js-show c-ratings-survey" data-ratings-survey=""
 	   data-ratings-survey-user-journeys="{{userJourneys}}"
 	   {{#if additionalInfo}}data-ratings-survey-additional-info="{{additionalInfo}}"{{/if}}>
 	<div class="c-ratings-survey__container">
-		<form class="c-ratings-survey__form" action="#" method="POST" >
+		<form class="c-ratings-survey__form">
 			<h{{headingLevel}} class="c-ratings-survey__heading">How was your experience today?</h{{headingLevel}}>
 			{{#with globalFormData}}
 				{{> globalFormFieldset }}
