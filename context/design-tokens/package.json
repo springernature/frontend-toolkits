@@ -19,7 +19,7 @@
     "tokens:components": "npm run tokens:global-components && npm run tokens:brand-components",
     "tokens:global-components": "node build-component-global.js",
     "tokens:brand-components": "node build-components.js",
-    "tokens:component": "node build-component.js -- component context",
+    "tokens:component": "node build-component.js -- component theme",
     "tokens:figma": "node build-figma.js"
   },
   "keywords": [
