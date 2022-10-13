@@ -12,6 +12,7 @@
 				"public": true,
 				"deprecated": false,
 				"documented": true,
+				"experimental": false,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -28,6 +29,7 @@
 				"public": true,
 				"deprecated": false,
 				"documented": true,
+				"experimental": false,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -44,6 +46,7 @@
 				"public": true,
 				"deprecated": false,
 				"documented": true,
+				"experimental": false,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
@@ -60,6 +63,7 @@
 				"public": true,
 				"deprecated": false,
 				"documented": true,
+				"experimental": false,
 				"SassVariable": true,
 				"CSSCustomProperty": false
 			}
