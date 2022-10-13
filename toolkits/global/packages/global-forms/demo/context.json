@@ -181,7 +181,7 @@
 				"fields": [
 					{
 						"template": "globalFormRadios",
-						"label": "Animal",
+						"legend": "Animal",
 						"id": "radios-animals",
 						"name": "radios-animals",
 						"inputs": [
