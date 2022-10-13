@@ -40,7 +40,7 @@ then the skip link should look like this:
 ATTENTION:
 1. The target section must be focusable.
 You will need to add a negative tabindex in order to improve screen reader accessibility for browsers like IE11.
-It's advised to do so via [JavaScript](https://codepen.io/200ok/pen/jvNBMP) and not directly in the html because:
+It's advised to do so via [JavaScript](https://codepen.io/200ok/pen/jvNBMP) and not directly in the HTML because:
 * Some apps will display the browser's default focus styles around the main element
 * When clicking anywhere in the page, focus will return back to the top
 
