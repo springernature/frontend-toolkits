@@ -19,7 +19,7 @@
 			},
 			"input": {
 				"name": "border-color-input",
-				"value": "{color.greyscale.700}",
+				"value": "{color.greyscale.500}",
 				"description": "Input border color",
 				"type": "color",
 				"category": "border-color",
