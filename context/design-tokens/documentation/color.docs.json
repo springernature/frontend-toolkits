@@ -1,234 +1,234 @@
 {
-  "properties": [
-    {
-      "name": "tokens--color-research-orange",
-      "value": "#c75301",
-      "description": "a color",
-      "type": "color",
-      "category": "color",
-      "themeable": false,
-      "meta": {
-        "brand": "springerNature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
-      "isSource": false,
-      "original": {
-        "name": "research-orange",
-        "value": "#C75301",
-        "description": "a color",
-        "type": "color",
-        "category": "color",
-        "themeable": false,
-        "meta": {
-          "brand": "springerNature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "color",
-        "type": "research",
-        "item": "orange"
-      },
-      "path": [
-        "color",
-        "research",
-        "orange"
-      ]
-    },
-    {
-      "name": "tokens--color-research-forest",
-      "value": "#007373",
-      "description": "a color",
-      "type": "color",
-      "category": "color",
-      "themeable": false,
-      "meta": {
-        "brand": "springerNature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
-      "isSource": false,
-      "original": {
-        "name": "research-orest",
-        "value": "#007373",
-        "description": "a color",
-        "type": "color",
-        "category": "color",
-        "themeable": false,
-        "meta": {
-          "brand": "springerNature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "color",
-        "type": "research",
-        "item": "forest"
-      },
-      "path": [
-        "color",
-        "research",
-        "forest"
-      ]
-    },
-    {
-      "name": "tokens--color-research-purple",
-      "value": "#785ba7",
-      "description": "a color",
-      "type": "color",
-      "category": "color",
-      "themeable": false,
-      "meta": {
-        "brand": "springerNature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
-      "isSource": false,
-      "original": {
-        "name": "research-purple",
-        "value": "#785BA7",
-        "description": "a color",
-        "type": "color",
-        "category": "color",
-        "themeable": false,
-        "meta": {
-          "brand": "springerNature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "color",
-        "type": "research",
-        "item": "purple"
-      },
-      "path": [
-        "color",
-        "research",
-        "purple"
-      ]
-    },
-    {
-      "name": "tokens--color-research-blue",
-      "value": "#0070a8",
-      "description": "a color",
-      "type": "color",
-      "category": "color",
-      "themeable": false,
-      "meta": {
-        "brand": "springerNature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
-      "isSource": false,
-      "original": {
-        "name": "research-blue",
-        "value": "#0070a8",
-        "description": "a color",
-        "type": "color",
-        "category": "color",
-        "themeable": false,
-        "meta": {
-          "brand": "springerNature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "color",
-        "type": "research",
-        "item": "blue"
-      },
-      "path": [
-        "color",
-        "research",
-        "blue"
-      ]
-    },
-    {
-      "name": "tokens--color-research-red",
-      "value": "#be1818",
-      "description": "a color",
-      "type": "color",
-      "category": "color",
-      "themeable": false,
-      "meta": {
-        "brand": "springerNature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
-      "isSource": false,
-      "original": {
-        "name": "research-red",
-        "value": "#be1818",
-        "description": "a color",
-        "type": "color",
-        "category": "color",
-        "themeable": false,
-        "meta": {
-          "brand": "springerNature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "color",
-        "type": "research",
-        "item": "red"
-      },
-      "path": [
-        "color",
-        "research",
-        "red"
-      ]
+ "properties": [
+  {
+   "name": "tokens--color-research-orange",
+   "value": "#c75301",
+   "description": "a color",
+   "type": "color",
+   "category": "color",
+   "themeable": false,
+   "meta": {
+    "brand": "springerNature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
+   "isSource": false,
+   "original": {
+    "name": "research-orange",
+    "value": "#C75301",
+    "description": "a color",
+    "type": "color",
+    "category": "color",
+    "themeable": false,
+    "meta": {
+     "brand": "springerNature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
     }
-  ]
+   },
+   "attributes": {
+    "category": "color",
+    "type": "research",
+    "item": "orange"
+   },
+   "path": [
+    "color",
+    "research",
+    "orange"
+   ]
+  },
+  {
+   "name": "tokens--color-research-forest",
+   "value": "#007373",
+   "description": "a color",
+   "type": "color",
+   "category": "color",
+   "themeable": false,
+   "meta": {
+    "brand": "springerNature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
+   "isSource": false,
+   "original": {
+    "name": "research-orest",
+    "value": "#007373",
+    "description": "a color",
+    "type": "color",
+    "category": "color",
+    "themeable": false,
+    "meta": {
+     "brand": "springerNature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "color",
+    "type": "research",
+    "item": "forest"
+   },
+   "path": [
+    "color",
+    "research",
+    "forest"
+   ]
+  },
+  {
+   "name": "tokens--color-research-purple",
+   "value": "#785ba7",
+   "description": "a color",
+   "type": "color",
+   "category": "color",
+   "themeable": false,
+   "meta": {
+    "brand": "springerNature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
+   "isSource": false,
+   "original": {
+    "name": "research-purple",
+    "value": "#785BA7",
+    "description": "a color",
+    "type": "color",
+    "category": "color",
+    "themeable": false,
+    "meta": {
+     "brand": "springerNature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "color",
+    "type": "research",
+    "item": "purple"
+   },
+   "path": [
+    "color",
+    "research",
+    "purple"
+   ]
+  },
+  {
+   "name": "tokens--color-research-blue",
+   "value": "#0070a8",
+   "description": "a color",
+   "type": "color",
+   "category": "color",
+   "themeable": false,
+   "meta": {
+    "brand": "springerNature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
+   "isSource": false,
+   "original": {
+    "name": "research-blue",
+    "value": "#0070a8",
+    "description": "a color",
+    "type": "color",
+    "category": "color",
+    "themeable": false,
+    "meta": {
+     "brand": "springerNature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "color",
+    "type": "research",
+    "item": "blue"
+   },
+   "path": [
+    "color",
+    "research",
+    "blue"
+   ]
+  },
+  {
+   "name": "tokens--color-research-red",
+   "value": "#be1818",
+   "description": "a color",
+   "type": "color",
+   "category": "color",
+   "themeable": false,
+   "meta": {
+    "brand": "springerNature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/springernature/color/color.json",
+   "isSource": false,
+   "original": {
+    "name": "research-red",
+    "value": "#be1818",
+    "description": "a color",
+    "type": "color",
+    "category": "color",
+    "themeable": false,
+    "meta": {
+     "brand": "springerNature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "color",
+    "type": "research",
+    "item": "red"
+   },
+   "path": [
+    "color",
+    "research",
+    "red"
+   ]
+  }
+ ]
 }

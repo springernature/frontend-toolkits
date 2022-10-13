@@ -1,132 +1,132 @@
 {
-  "properties": [
-    {
-      "name": "tokens--aspect-ratio-1x1",
-      "value": "1",
-      "description": "This is to make an item square",
-      "type": "ratio",
-      "category": "aspect-ratio",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
-      "isSource": true,
-      "original": {
-        "name": "1x1",
-        "value": "1",
-        "description": "This is to make an item square",
-        "type": "ratio",
-        "category": "aspect-ratio",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "aspect-ratio",
-        "type": "1x1"
-      },
-      "path": [
-        "aspect-ratio",
-        "1x1"
-      ]
-    },
-    {
-      "name": "tokens--aspect-ratio-4x3",
-      "value": "4/3",
-      "description": "This is to make an item 4:3",
-      "type": "ratio",
-      "category": "aspect-ratio",
-      "themeable": false,
-      "meta": {
-        "brand": "nature",
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
-      "isSource": true,
-      "original": {
-        "name": "4x3",
-        "value": "4/3",
-        "description": "This is to make an item 4:3",
-        "type": "ratio",
-        "category": "aspect-ratio",
-        "themeable": false,
-        "meta": {
-          "brand": "nature",
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "aspect-ratio",
-        "type": "4x3"
-      },
-      "path": [
-        "aspect-ratio",
-        "4x3"
-      ]
-    },
-    {
-      "name": "tokens--aspect-ratio-16x9",
-      "value": "16/9",
-      "description": "This is to make an item 16:9",
-      "type": "ratio",
-      "category": "aspect-ratio",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
-      "isSource": true,
-      "original": {
-        "name": "16x9",
-        "value": "16/9",
-        "description": "This is to make an item 16:9",
-        "type": "ratio",
-        "category": "aspect-ratio",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "aspect-ratio",
-        "type": "16x9"
-      },
-      "path": [
-        "aspect-ratio",
-        "16x9"
-      ]
+ "properties": [
+  {
+   "name": "tokens--aspect-ratio-1x1",
+   "value": "1",
+   "description": "This is to make an item square",
+   "type": "ratio",
+   "category": "aspect-ratio",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
+   "isSource": true,
+   "original": {
+    "name": "1x1",
+    "value": "1",
+    "description": "This is to make an item square",
+    "type": "ratio",
+    "category": "aspect-ratio",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
     }
-  ]
+   },
+   "attributes": {
+    "category": "aspect-ratio",
+    "type": "1x1"
+   },
+   "path": [
+    "aspect-ratio",
+    "1x1"
+   ]
+  },
+  {
+   "name": "tokens--aspect-ratio-4x3",
+   "value": "4/3",
+   "description": "This is to make an item 4:3",
+   "type": "ratio",
+   "category": "aspect-ratio",
+   "themeable": false,
+   "meta": {
+    "brand": "nature",
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
+   "isSource": true,
+   "original": {
+    "name": "4x3",
+    "value": "4/3",
+    "description": "This is to make an item 4:3",
+    "type": "ratio",
+    "category": "aspect-ratio",
+    "themeable": false,
+    "meta": {
+     "brand": "nature",
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "aspect-ratio",
+    "type": "4x3"
+   },
+   "path": [
+    "aspect-ratio",
+    "4x3"
+   ]
+  },
+  {
+   "name": "tokens--aspect-ratio-16x9",
+   "value": "16/9",
+   "description": "This is to make an item 16:9",
+   "type": "ratio",
+   "category": "aspect-ratio",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/aspect-ratio/aspect-ratio.json",
+   "isSource": true,
+   "original": {
+    "name": "16x9",
+    "value": "16/9",
+    "description": "This is to make an item 16:9",
+    "type": "ratio",
+    "category": "aspect-ratio",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "aspect-ratio",
+    "type": "16x9"
+   },
+   "path": [
+    "aspect-ratio",
+    "16x9"
+   ]
+  }
+ ]
 }

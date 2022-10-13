@@ -1,382 +1,382 @@
 {
-  "properties": [
-    {
-      "name": "tokens--font-size-350",
-      "value": ".875rem",
-      "description": "14px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "350",
-        "value": ".875rem",
-        "description": "14px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "350"
-      },
-      "path": [
-        "font-size",
-        "350"
-      ]
-    },
-    {
-      "name": "tokens--font-size-400",
-      "value": "1rem",
-      "description": "16px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "400",
-        "value": "1rem",
-        "description": "16px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "400"
-      },
-      "path": [
-        "font-size",
-        "400"
-      ]
-    },
-    {
-      "name": "tokens--font-size-450",
-      "value": "1.125rem",
-      "description": "18px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "450",
-        "value": "1.125rem",
-        "description": "18px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "450"
-      },
-      "path": [
-        "font-size",
-        "450"
-      ]
-    },
-    {
-      "name": "tokens--font-size-500",
-      "value": "1.25rem",
-      "description": "20px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "500",
-        "value": "1.25rem",
-        "description": "20px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "500"
-      },
-      "path": [
-        "font-size",
-        "500"
-      ]
-    },
-    {
-      "name": "tokens--font-size-600",
-      "value": "1.5rem",
-      "description": "24px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "600",
-        "value": "1.5rem",
-        "description": "24px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "600"
-      },
-      "path": [
-        "font-size",
-        "600"
-      ]
-    },
-    {
-      "name": "tokens--font-size-650",
-      "value": "1.875rem",
-      "description": "28px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "650",
-        "value": "1.875rem",
-        "description": "28px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "650"
-      },
-      "path": [
-        "font-size",
-        "650"
-      ]
-    },
-    {
-      "name": "tokens--font-size-800",
-      "value": "2rem",
-      "description": "32px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "800",
-        "value": "2rem",
-        "description": "32px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "800"
-      },
-      "path": [
-        "font-size",
-        "800"
-      ]
-    },
-    {
-      "name": "tokens--font-size-875",
-      "value": "2.1875rem",
-      "description": "35px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "875",
-        "value": "2.1875rem",
-        "description": "35px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "875"
-      },
-      "path": [
-        "font-size",
-        "875"
-      ]
-    },
-    {
-      "name": "tokens--font-size-900",
-      "value": "2.5rem",
-      "description": "36px",
-      "type": "length",
-      "category": "font-size",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
-      "isSource": true,
-      "original": {
-        "name": "900",
-        "value": "2.5rem",
-        "description": "36px",
-        "type": "length",
-        "category": "font-size",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "font-size",
-        "type": "900"
-      },
-      "path": [
-        "font-size",
-        "900"
-      ]
+ "properties": [
+  {
+   "name": "tokens--font-size-350",
+   "value": ".875rem",
+   "description": "14px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "350",
+    "value": ".875rem",
+    "description": "14px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
     }
-  ]
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "350"
+   },
+   "path": [
+    "font-size",
+    "350"
+   ]
+  },
+  {
+   "name": "tokens--font-size-400",
+   "value": "1rem",
+   "description": "16px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "400",
+    "value": "1rem",
+    "description": "16px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "400"
+   },
+   "path": [
+    "font-size",
+    "400"
+   ]
+  },
+  {
+   "name": "tokens--font-size-450",
+   "value": "1.125rem",
+   "description": "18px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "450",
+    "value": "1.125rem",
+    "description": "18px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "450"
+   },
+   "path": [
+    "font-size",
+    "450"
+   ]
+  },
+  {
+   "name": "tokens--font-size-500",
+   "value": "1.25rem",
+   "description": "20px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "500",
+    "value": "1.25rem",
+    "description": "20px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "500"
+   },
+   "path": [
+    "font-size",
+    "500"
+   ]
+  },
+  {
+   "name": "tokens--font-size-600",
+   "value": "1.5rem",
+   "description": "24px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "600",
+    "value": "1.5rem",
+    "description": "24px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "600"
+   },
+   "path": [
+    "font-size",
+    "600"
+   ]
+  },
+  {
+   "name": "tokens--font-size-650",
+   "value": "1.875rem",
+   "description": "28px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "650",
+    "value": "1.875rem",
+    "description": "28px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "650"
+   },
+   "path": [
+    "font-size",
+    "650"
+   ]
+  },
+  {
+   "name": "tokens--font-size-800",
+   "value": "2rem",
+   "description": "32px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "800",
+    "value": "2rem",
+    "description": "32px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "800"
+   },
+   "path": [
+    "font-size",
+    "800"
+   ]
+  },
+  {
+   "name": "tokens--font-size-875",
+   "value": "2.1875rem",
+   "description": "35px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "875",
+    "value": "2.1875rem",
+    "description": "35px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "875"
+   },
+   "path": [
+    "font-size",
+    "875"
+   ]
+  },
+  {
+   "name": "tokens--font-size-900",
+   "value": "2.5rem",
+   "description": "36px",
+   "type": "length",
+   "category": "font-size",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/font-size/font-size.json",
+   "isSource": true,
+   "original": {
+    "name": "900",
+    "value": "2.5rem",
+    "description": "36px",
+    "type": "length",
+    "category": "font-size",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "font-size",
+    "type": "900"
+   },
+   "path": [
+    "font-size",
+    "900"
+   ]
+  }
+ ]
 }

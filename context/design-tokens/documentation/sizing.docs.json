@@ -1,884 +1,884 @@
 {
-  "properties": [
-    {
-      "name": "tokens--sizing-relative-0",
-      "value": "0",
-      "description": "no spacing, zero.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "0",
-        "description": "no spacing, zero.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "0"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "0"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-25",
-      "value": ".0625",
-      "description": ".0625rem, 1px",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": ".0625",
-        "description": ".0625rem, 1px",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "25"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "25"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-50",
-      "value": ".125rem",
-      "description": ".125rem, 2px",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": ".125rem",
-        "description": ".125rem, 2px",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "50"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "50"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-100",
-      "value": ".25rem",
-      "description": ".25rem, 4px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": ".25rem",
-        "description": ".25rem, 4px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "100"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "100"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-200",
-      "value": ".5rem",
-      "description": ".5rem, 8px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": ".5rem",
-        "description": ".5rem, 8px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "200"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "200"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-400",
-      "value": "1rem",
-      "description": "1rem, 16px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "1rem",
-        "description": "1rem, 16px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "400"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "400"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-600",
-      "value": "1.5rem",
-      "description": "1.5rem, 24px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "1.5rem",
-        "description": "1.5rem, 24px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "600"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "600"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-800",
-      "value": "2rem",
-      "description": "2rem, 32px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "2rem",
-        "description": "2rem, 32px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "800"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "800"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-1200",
-      "value": "3rem",
-      "description": "3rem, 48px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "3rem",
-        "description": "3rem, 48px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "1200"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "1200"
-      ]
-    },
-    {
-      "name": "tokens--sizing-relative-1600",
-      "value": "4rem",
-      "description": "4rem, 64px.",
-      "type": "number",
-      "category": "sizing-relative",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "4rem",
-        "description": "4rem, 64px.",
-        "type": "number",
-        "category": "sizing-relative",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "relative",
-        "item": "1600"
-      },
-      "path": [
-        "sizing",
-        "relative",
-        "1600"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-0",
-      "value": "0",
-      "description": "no spacing, zero.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "0",
-        "description": "no spacing, zero.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "0"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "0"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-25",
-      "value": "1px",
-      "description": ".0625rem, 1px",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "1px",
-        "description": ".0625rem, 1px",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "25"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "25"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-50",
-      "value": "2px",
-      "description": ".125rem, 2px",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "2px",
-        "description": ".125rem, 2px",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "50"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "50"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-100",
-      "value": "4px",
-      "description": ".25rem, 4px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "4px",
-        "description": ".25rem, 4px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "100"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "100"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-200",
-      "value": "8px",
-      "description": ".5rem, 8px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "8px",
-        "description": ".5rem, 8px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "200"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "200"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-400",
-      "value": "16px",
-      "description": "1rem, 16px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "16px",
-        "description": "1rem, 16px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "400"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "400"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-600",
-      "value": "24px",
-      "description": "1.5rem, 24px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "24px",
-        "description": "1.5rem, 24px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "600"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "600"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-800",
-      "value": "32px",
-      "description": "2rem, 32px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "32px",
-        "description": "2rem, 32px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "800"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "800"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-1200",
-      "value": "48px",
-      "description": "3rem, 48px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "48px",
-        "description": "3rem, 48px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "1200"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "1200"
-      ]
-    },
-    {
-      "name": "tokens--sizing-absolute-1600",
-      "value": "64px",
-      "description": "4rem, 64px.",
-      "type": "number",
-      "category": "sizing-absolute",
-      "themeable": false,
-      "meta": {
-        "public": true,
-        "deprecated": false,
-        "documented": true,
-        "experimental": false,
-        "SassVariable": true,
-        "CSSCustomProperty": false
-      },
-      "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
-      "isSource": true,
-      "original": {
-        "name": "",
-        "value": "64px",
-        "description": "4rem, 64px.",
-        "type": "number",
-        "category": "sizing-absolute",
-        "themeable": false,
-        "meta": {
-          "public": true,
-          "deprecated": false,
-          "documented": true,
-          "experimental": false,
-          "SassVariable": true,
-          "CSSCustomProperty": false
-        }
-      },
-      "attributes": {
-        "category": "sizing",
-        "type": "absolute",
-        "item": "1600"
-      },
-      "path": [
-        "sizing",
-        "absolute",
-        "1600"
-      ]
+ "properties": [
+  {
+   "name": "tokens--sizing-relative-0",
+   "value": "0",
+   "description": "no spacing, zero.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "0",
+    "description": "no spacing, zero.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
     }
-  ]
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "0"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "0"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-25",
+   "value": ".0625",
+   "description": ".0625rem, 1px",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": ".0625",
+    "description": ".0625rem, 1px",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "25"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "25"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-50",
+   "value": ".125rem",
+   "description": ".125rem, 2px",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": ".125rem",
+    "description": ".125rem, 2px",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "50"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "50"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-100",
+   "value": ".25rem",
+   "description": ".25rem, 4px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": ".25rem",
+    "description": ".25rem, 4px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "100"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "100"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-200",
+   "value": ".5rem",
+   "description": ".5rem, 8px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": ".5rem",
+    "description": ".5rem, 8px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "200"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "200"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-400",
+   "value": "1rem",
+   "description": "1rem, 16px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "1rem",
+    "description": "1rem, 16px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "400"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "400"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-600",
+   "value": "1.5rem",
+   "description": "1.5rem, 24px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "1.5rem",
+    "description": "1.5rem, 24px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "600"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "600"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-800",
+   "value": "2rem",
+   "description": "2rem, 32px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "2rem",
+    "description": "2rem, 32px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "800"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "800"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-1200",
+   "value": "3rem",
+   "description": "3rem, 48px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "3rem",
+    "description": "3rem, 48px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "1200"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "1200"
+   ]
+  },
+  {
+   "name": "tokens--sizing-relative-1600",
+   "value": "4rem",
+   "description": "4rem, 64px.",
+   "type": "number",
+   "category": "sizing-relative",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "4rem",
+    "description": "4rem, 64px.",
+    "type": "number",
+    "category": "sizing-relative",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "relative",
+    "item": "1600"
+   },
+   "path": [
+    "sizing",
+    "relative",
+    "1600"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-0",
+   "value": "0",
+   "description": "no spacing, zero.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "0",
+    "description": "no spacing, zero.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "0"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "0"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-25",
+   "value": "1px",
+   "description": ".0625rem, 1px",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "1px",
+    "description": ".0625rem, 1px",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "25"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "25"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-50",
+   "value": "2px",
+   "description": ".125rem, 2px",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "2px",
+    "description": ".125rem, 2px",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "50"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "50"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-100",
+   "value": "4px",
+   "description": ".25rem, 4px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "4px",
+    "description": ".25rem, 4px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "100"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "100"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-200",
+   "value": "8px",
+   "description": ".5rem, 8px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "8px",
+    "description": ".5rem, 8px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "200"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "200"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-400",
+   "value": "16px",
+   "description": "1rem, 16px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "16px",
+    "description": "1rem, 16px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "400"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "400"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-600",
+   "value": "24px",
+   "description": "1.5rem, 24px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "24px",
+    "description": "1.5rem, 24px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "600"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "600"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-800",
+   "value": "32px",
+   "description": "2rem, 32px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "32px",
+    "description": "2rem, 32px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "800"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "800"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-1200",
+   "value": "48px",
+   "description": "3rem, 48px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "48px",
+    "description": "3rem, 48px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "1200"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "1200"
+   ]
+  },
+  {
+   "name": "tokens--sizing-absolute-1600",
+   "value": "64px",
+   "description": "4rem, 64px.",
+   "type": "number",
+   "category": "sizing-absolute",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/sizing/sizing.json",
+   "isSource": true,
+   "original": {
+    "name": "",
+    "value": "64px",
+    "description": "4rem, 64px.",
+    "type": "number",
+    "category": "sizing-absolute",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "sizing",
+    "type": "absolute",
+    "item": "1600"
+   },
+   "path": [
+    "sizing",
+    "absolute",
+    "1600"
+   ]
+  }
+ ]
 }
