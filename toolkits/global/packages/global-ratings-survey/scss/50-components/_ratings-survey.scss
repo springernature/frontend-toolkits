@@ -24,14 +24,15 @@
 }
 
 .c-ratings-survey__submit-message svg {
-	width: $global-ratings-survey-icon-size;
-	height: $global-ratings-survey-icon-size;
-	margin-right: $global-ratings-survey-icon-margin;
+	width: $global-ratings-survey-message-icon-size;
+	height: $global-ratings-survey-message-icon-size;
+	margin-right: $global-ratings-survey-message-icon-margin;
 }
 
 .c-ratings-survey__submit-message p {
 	margin: 0;
 	line-height: $global-ratings-survey-line-height;
+	font-size: $global-ratings-survey-message-font-size;
 }
 
 .c-ratings-survey__button {
@@ -42,8 +43,7 @@
 .c-ratings-survey a {
 	display: inline-block;
 	margin-top: $global-ratings-survey-link-margin;
-	// TODO: Remove this once we apply underline from default brand context
-	text-decoration: underline;
+	font-size: $global-ratings-survey-message-font-size;
 }
 
 .c-ratings-survey__visually-hidden,
@@ -59,34 +59,34 @@
 
 /* Override Global Forms Styles */
 .c-ratings-survey .c-forms__label--pictographic-radio svg {
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0.3rem;
-	border-radius: 2px;
+	width: $global-ratings-survey-radio-icon-size-narrow;
+	height: $global-ratings-survey-radio-icon-size-narrow;
+	padding: $global-ratings-survey-radio-icon-spacing-narrow;
+	border-radius: $global-ratings-survey-radio-icon-border-radius;
 }
 
 .c-ratings-survey .c-forms__pictographic-radios {
-	gap: 0.5rem;
+	gap: $global-ratings-survey-radio-spacing-narrow;
 	justify-content: center;
 }
 
 .c-ratings-survey .c-forms__label {
-	font-size: 0.6rem;
+	font-size: $global-ratings-survey-radio-label-font-size-narrow;
 }
 
 @include media-query('sm') {
 	.c-ratings-survey .c-forms__label--pictographic-radio svg {
-		width: 2rem;
-		height: 2rem;
-		padding: 0.5rem;
+		width: $global-ratings-survey-radio-icon-size-desktop;
+		height: $global-ratings-survey-radio-icon-size-desktop;
+		padding: $global-ratings-survey-radio-icon-spacing-desktop;
 	}
 
 	.c-ratings-survey .c-forms__pictographic-radios {
-		gap: 1rem;
+		gap: $global-ratings-survey-radio-spacing-desktop;
 	}
 
 	.c-ratings-survey .c-forms__label {
-		font-size: 0.875rem;
+		font-size: $global-ratings-survey-radio-label-font-size-desktop;
 	}
 }
 

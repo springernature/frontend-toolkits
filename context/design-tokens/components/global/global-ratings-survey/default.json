@@ -13,11 +13,16 @@
 		"link": {
 			"margin": {
 				"value": "{spacing.relative.200}"
+			},
+			"font": {
+				"size": {
+					"value": "{font-size.400}"
+				}
 			}
 		},
 		"heading": {
 			"margin": {
-				"value": "{spacing.relative.400}"
+				"value": "{spacing.relative.200}"
 			},
 			"font": {
 				"size": {
@@ -36,16 +41,68 @@
 				"value": "{spacing.relative.200}"
 			}
 		},
-		"icon": {
-			"margin": {
-				"value": "{spacing.relative.200}"
-			},
-			"size": {
-				"value": "{sizing.relative.600}"
-			}
-		},
 		"line-height": {
 			"value": "{line-height.tight}"
+		},
+		"message": {
+			"font": {
+				"size": {
+					"value": "{font-size.400}"
+				}
+			},
+			"icon": {
+				"margin": {
+					"value": "{spacing.relative.200}"
+				},
+				"size": {
+					"value": "{sizing.relative.600}"
+				}
+			}
+		},
+		"radio": {
+			"spacing": {
+				"narrow": {
+					"value": "0.45rem"
+				},
+				"desktop": {
+					"value": "{spacing.relative.400}"
+				}
+			},
+			"label": {
+				"font": {
+					"size": {
+						"narrow": {
+							"value": "0.7rem"
+						},
+						"desktop": {
+							"value": "0.875rem"
+						}
+					}
+				}
+			},
+			"icon": {
+				"size": {
+					"narrow": {
+						"value": "1.3rem"
+					},
+					"desktop": {
+						"value": "{sizing.relative.600}"
+					}
+				},
+				"spacing": {
+					"narrow": {
+						"value": "0.3rem"
+					},
+					"desktop": {
+						"value": "{spacing.relative.200}"
+					}
+				},
+				"border": {
+					"radius": {
+						"value": "{border.radius.50}"
+					}
+				}
+			}
 		}
 	}
 }
