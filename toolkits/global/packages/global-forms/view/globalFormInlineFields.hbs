@@ -1,0 +1,7 @@
+{{#if fields}}
+	<div class="c-forms__inline-fields{{#if nowrap}} c-forms__inline-fields--nowrap{{/if}}"{{#if gap}} style="--global-form-inline-gap: {{gap}}"{{/if}}>
+		{{#each fields}}
+			{{> globalFormField}}
+		{{/each}}
+	</div>
+{{/if}}
