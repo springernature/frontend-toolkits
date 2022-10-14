@@ -15,8 +15,8 @@ When contributing to an existing package, or building a new one, work should:
 - Good pull requests - patches, improvements, new features - should remain focused in scope and avoid containing unrelated commits. You should follow the guidelines in the [front-end playbook](https://github.com/springernature/frontend-playbook/blob/master/practices/code-review.md)
 - Please adhere to the coding conventions used throughout a project (indentation, accurate comments, etc.) and any other requirements (such as test coverage)
 - Merging pull requests should be done via [squash and merge](https://help.github.com/articles/about-pull-request-merges/#squash-and-merge-your-pull-request-commits)
-- Once your pull request has been merged back to the master branch, you can follow the [versioning guidelines](#versioning) below to publish your changes.
- 
+- Once your pull request has been merged back to the default branch, you can follow the [versioning guidelines](#versioning) below to publish your changes.
+
     **Note**: It is preferable to include version changes with the package update PR - this is a monorepo, and if you publish the version commit separately from the PR containing the changes, then there is a chance that changes to a different package might sandwich your commits, which makes the Github history confusing.
 
 ### Linting
