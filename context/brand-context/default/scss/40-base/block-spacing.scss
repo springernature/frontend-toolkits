@@ -3,7 +3,7 @@
 }
 
 :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + *,
-[class*="c-"]:not([class*="__"]) + * {
+[class^="c-"]:not([class*="__"]) + * {
 	margin-block-start: $tokens--typography-block-spacing-medium;
 }
 

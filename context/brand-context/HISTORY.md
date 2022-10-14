@@ -1,5 +1,8 @@
 # History
 
+## 29.0.3 (2022-10-12)
+    * PATCH: Change CSS selector for 'c-' used in block spacing to use the start with instead of the include pattern
+
 ## 29.0.2 (2022-10-12)
     * PATCH: Add a utility class for resetting `margin-block-start`  
 
