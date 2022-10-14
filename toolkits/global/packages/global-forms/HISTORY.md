@@ -6,6 +6,7 @@
     * `requiredSuffix` for marking required field explicitly
     * Ability to visually hide labels
     * Inline fields (sets of fields laid out horizontally)
+    * Fieldsets without legends now use `div` (suppresses pa11y false positive)
     
 ## 5.0.0-rc.10 (2022-09-30)
     * Removes margin-top from form labels used on pictographic radios when in horizontal layout

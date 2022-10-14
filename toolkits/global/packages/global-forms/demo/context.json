@@ -17,6 +17,51 @@
 		"fields": [
 			{
 				"template": "globalFormFieldset",
+				"legend": "Test, should not inherit",
+				"fields": [
+					{
+						"template": "globalFormFieldset",
+						"fields": [
+							{
+								"template": "globalFormRadios",
+								"legend": "Animal",
+								"id": "radios-animals",
+								"name": "radios-animals",
+								"inputs": [
+									{
+										"label": "Horse",
+										"value": "Horse",
+										"id": "radio-horse"
+									},
+									{
+										"label": "Monkey",
+										"value": "Monkey",
+										"id": "radio-monkey",
+										"fields": [
+											{
+												"template": "globalFormText",
+												"label": "What type of monkey?",
+												"id": "monkey-type",
+												"name": "monkey-type",
+												"hint": "Chimps are not monkeys",
+												"error": "Choose a monkey already!"
+											}
+										]
+									},
+									{
+										"label": "Platypus",
+										"value": "Platypus",
+										"id": "radio-platypus",
+										"checked": true
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"template": "globalFormFieldset",
 				"legend": "<h2>Text inputs</h2>",
 				"fields": [
 					{
