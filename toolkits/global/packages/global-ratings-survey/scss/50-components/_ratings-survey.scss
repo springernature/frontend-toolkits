@@ -2,6 +2,7 @@
 	padding: $global-ratings-survey-container-padding;
 	background-color: $global-ratings-survey-container-background-color;
 	overflow: hidden;
+	font-family: $global-ratings-survey-font-family;
 }
 
 .c-ratings-survey__container {
@@ -10,9 +11,9 @@
 }
 
 .c-ratings-survey__heading {
-	margin-bottom: $global-ratings-survey-heading-margin;
+	margin: 0 0 $global-ratings-survey-heading-margin;
+	font-family: inherit;
 	font-size: $global-ratings-survey-heading-font-size;
-	font-family: $global-ratings-survey-heading-font-family;
 	line-height: $global-ratings-survey-line-height;
 	font-weight: $global-ratings-survey-heading-font-weight;
 }
@@ -32,6 +33,7 @@
 .c-ratings-survey__submit-message p {
 	margin: 0;
 	line-height: $global-ratings-survey-line-height;
+	font-family: inherit;
 	font-size: $global-ratings-survey-message-font-size;
 }
 
@@ -43,6 +45,7 @@
 .c-ratings-survey a {
 	display: inline-block;
 	margin-top: $global-ratings-survey-link-margin;
+	font-family: inherit;
 	font-size: $global-ratings-survey-message-font-size;
 }
 
@@ -71,6 +74,7 @@
 }
 
 .c-ratings-survey .c-forms__label {
+	font-family: inherit;
 	font-size: $global-ratings-survey-radio-label-font-size-narrow;
 }
 

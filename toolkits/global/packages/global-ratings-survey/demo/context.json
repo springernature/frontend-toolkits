@@ -4,7 +4,6 @@
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
-		"submitMessageText": "Thank you for your feedback.",
 		"globalFormData": {
 			"fields": [
 				{
@@ -82,7 +81,6 @@
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
-		"submitMessageText": "Thank you for your feedback.",
 		"globalFormData": {
 			"fields": [
 				{
@@ -160,7 +158,6 @@
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
-		"submitMessageText": "Thank you for your feedback.",
 		"additionalInfo": "AB test version B",
 		"globalFormData": {
 			"fields": [

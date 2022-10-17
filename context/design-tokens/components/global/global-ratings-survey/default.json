@@ -1,5 +1,10 @@
 {
 	"global-ratings-survey": {
+		"font": {
+			"family": {
+				"value": "{font-family.sans}"
+			}
+		},
 		"container": {
 			"padding": {
 				"value": "{spacing.absolute.400}"
@@ -27,9 +32,6 @@
 			"font": {
 				"size": {
 					"value": "16px"
-				},
-				"family": {
-					"value": "{font-family.sans}"
 				},
 				"weight": {
 					"value": "{font-weight.bold}"
