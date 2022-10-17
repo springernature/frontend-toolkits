@@ -6,1073 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>@springernature/global-ratings-survey</title>
 		<style>
-			@charset "UTF-8";
-/**
- * Core
- * Styles for all pages, included on pages that
- * both do and dont cut the mustard, keep to a minimum
- */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- *
- */
-/**
- * Shared colors
- * Applicable to all brands and not to be overwritten
- *
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Default
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Map deep get
- * @author Hugo Giraudel
- * @private
- *
- * @param {Map} $map - Map
- * @param {Arglist} $keys - Key chain
- * @return {*} - Desired value
- *
- */
-/**
- * Map key get
- * Check if a key exists in a map, return it
- * @private
- *
- * @param {Map} $map - Map
- * @param {String} $value - Key name
- * @return {*} - Key name, if found
- *
- */
-/**
- * Style mixins
- *
- */
-/**
- * Breakpoints
- * Media query helper
- * @group 30-mixins
- */
-/**
- * Colour palette
- *
- */
-/**
- * Color and gray scales
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- *  Button settings
- *  Springer
- *
- */
-/**
- * Generates utility classnames for base and each breakpoint
- *
- * Example:
- * @include class-stack('u-text-right') would output
- * u-text-right { @content }
- * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Alternative link color
- *
- */
-/**
- * Deemphasised link color
- *
- */
-/**
- * Unvisited
- *
- */
-/**
- * Link like
- * Style non-links to look like links
- * Remember to add aria
- *
- */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-body {
-  line-height: 1.5;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-/**
- * Basic
- * Some default CSS styles
- */
-body {
-  font-size: 0.813rem;
-}
-
-* {
-  margin: 0;
-}
-
-a {
-  color: #069;
-}
-
-h1 {
-  font-size: 1.875rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.0625rem;
-}
-
-h4 {
-  font-size: 0.875rem;
-}
-
-cite {
-  font-style: normal;
-}
-
-ins {
-  text-decoration: none;
-}
-
-button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  border-radius: 0;
-}
-
-/**
- * Enhanced
- * Bootstrap the rest of the styles on cut the mustard
- */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
- * Breakpoints
- * Shared media query values
- */
-/**
- * Colors
- * Maps for color values & greyscale settings
- *
- */
-/**
- * Shared colors
- * Applicable to all brands and not to be overwritten
- *
- */
-/**
- * Typography
- * Font settings
- */
-/**
- *  Button settings
- *  Default
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Return a greyscale color based on $context--greyscale-base
- *
- * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
- * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
- *
- */
-/**
- * Return a color from a color palette
- *
- * @param {String} $name - name of the color to insert
- * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
- *
- */
-/**
- * Returns either a dark or light foreground color when given the background color
- *
- * @param {Integer|String} $bgcolor - number for grays, string for colors
- * @param {Map} $map - the color map to use
- *
- */
-/**
- * Calculates the sRGB luma of a colour
- * @private
- *
- * @param {*} $c - Color value
- *
- * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
- * http://robots.thoughtbot.com/closer-look-color-lightness
- *
- */
-/**
- * Map deep get
- * @author Hugo Giraudel
- * @private
- *
- * @param {Map} $map - Map
- * @param {Arglist} $keys - Key chain
- * @return {*} - Desired value
- *
- */
-/**
- * Map key get
- * Check if a key exists in a map, return it
- * @private
- *
- * @param {Map} $map - Map
- * @param {String} $value - Key name
- * @return {*} - Key name, if found
- *
- */
-/**
- * Style mixins
- *
- */
-/**
- * Breakpoints
- * Media query helper
- * @group 30-mixins
- */
-/**
- * Colour palette
- *
- */
-/**
- * Color and gray scales
- *
- */
-/**
- * Style
- * Cosmetic styling settings
- *
- */
-/**
- *  Button settings
- *  Springer
- *
- */
-/**
- * Generates utility classnames for base and each breakpoint
- *
- * Example:
- * @include class-stack('u-text-right') would output
- * u-text-right { @content }
- * @include media-query('xs') { u-text-right-at-lt-xs { @content } }
- *
- */
-/**
- * Default link style
- *
- */
-/**
- * Alternative link color
- *
- */
-/**
- * Deemphasised link color
- *
- */
-/**
- * Unvisited
- *
- */
-/**
- * Link like
- * Style non-links to look like links
- * Remember to add aria
- *
- */
-button {
-  line-height: inherit;
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 4px solid #ffcc00;
-}
-
-input[type=file]:focus-within {
-  outline: 4px solid #ffcc00;
-}
-
-button:disabled:focus,
-input:disabled:focus,
-select:disabled:focus,
-textarea:disabled:focus {
-  outline: none;
-}
-
-label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-/*
- * Layout
- * Universal layout styles
- */
-html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  height: 100%;
-  overflow-y: scroll;
-  font-size: 100%;
-  box-sizing: border-box;
-  color: #333333;
-  line-height: 1.6180339888;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  max-width: 100%;
-  min-height: 100%;
-  background: #fcfcfc;
-  font-size: 1.125rem;
-  /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
-}
-
-figure {
-  margin: 0;
-}
-
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-abbr[title] {
-  text-decoration: none;
-}
-
-[contenteditable]:focus,
-[tabindex="0"]:focus {
-  outline: 4px solid #ffcc00;
-}
-
-a {
-  color: #004b83;
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-a.visited, a:visited {
-  color: #a345c9;
-}
-a.hover, a:hover {
-  color: #0061a9;
-}
-a.active, a:active {
-  color: #003b84;
-  text-decoration: none;
-}
-a.focus, a:focus {
-  outline: 4px solid #ffcc00;
-}
-a > img {
-  vertical-align: middle;
-}
-
-table {
-  border: 1px solid #a6a6a6;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-th,
-td {
-  font-size: 1rem;
-  border: 1px solid #a6a6a6;
-  padding: 0.3em 0.6em;
-  vertical-align: top;
-}
-
-th {
-  background: #e6e6e6;
-  text-align: left;
-}
-
-h1 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 2.25rem;
-  font-size: min(max(1.75rem, 4vw), 2.25rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h1 a.active, h1 a:active, h1 a.hover, h1 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h2 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.75rem;
-  font-size: min(max(1.5rem, 3.5vw), 1.75rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h2 a.active, h2 a:active, h2 a.hover, h2 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h3 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3vw), 1.5rem);
-  font-family: Georgia, Palatino, serif;
-  font-weight: 400;
-}
-h3 a.active, h3 a:active, h3 a.hover, h3 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h4 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 2.5vw), 1.25rem);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-}
-h4 a.active, h4 a:active, h4 a.hover, h4 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-h5,
-h6 {
-  font-style: normal;
-  line-height: 1.4;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-}
-h5 a.active, h5 a:active, h5 a.hover, h5 a:hover,
-h6 a.active,
-h6 a:active,
-h6 a.hover,
-h6 a:hover {
-  text-decoration: underline;
-  text-decoration-skip-ink: auto;
-}
-
-/* Basic lists should be aligned to the left */
-ul:not([class]),
-ol:not([class]) {
-  /* Allow for bullet itself */
-  padding-left: 0.9em;
-}
-
-dd {
-  margin: 0;
-}
-
-cite {
-  font-style: normal;
-}
-
-* {
-  margin-block: 0;
-}
-
-:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + *,
-[class^=c-]:not([class*=__]) + * {
-  margin-block-start: 1rem;
-}
-
-* + :is(h2, h3, h4, h5) {
-  margin-block-start: 2rem;
-}
-
-:is(h3, h4, h5) + * {
-  margin-block-start: 0.5rem;
-}
-
-h2 + * {
-  margin-block-start: 1rem;
-}
-
-h1 + * {
-  margin-block-start: 3rem;
-}
-
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
@@ -1091,7 +24,8 @@ h1 + * {
 
 .c-forms__fieldset,
 .c-forms__error-summary,
-.c-forms__field {
+.c-forms__field,
+.c-forms__field * {
   line-height: 1.4;
 }
 
@@ -1116,6 +50,26 @@ h1 + * {
   max-width: 70ch;
 }
 
+.c-forms__inline-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--global-form-inline-gap, 0.5rem);
+}
+
+.c-forms__inline-fields--nowrap {
+  flex-wrap: nowrap;
+}
+
+.c-forms__inline-fields .c-forms__field--globalFormText {
+  /* ↓ Make it max out the available space with a super high value */
+  flex-grow: 666;
+}
+
+.c-forms__inline-fields .c-forms__input {
+  height: 100%;
+}
+
 .c-forms__pictographic-radios {
   display: flex;
   flex-direction: column;
@@ -1136,6 +90,14 @@ h1 + * {
 * + .c-forms__fieldset,
 * + .c-forms__field {
   margin-top: 1.5rem;
+}
+
+.c-forms__inline-fields * {
+  margin: 0;
+}
+
+.c-forms__field .u-visually-hidden + * {
+  margin-top: 0;
 }
 
 .c-forms__legend * {
@@ -1394,63 +356,8 @@ label + .c-forms__error,
   margin-top: 0.25rem;
 }
 
-.c-forms__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit;
-}
-
-.c-page-layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  grid-template-columns: 1fr;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  max-width: 1280px;
-}
-
-.c-page-layout__header,
-.c-page-layout__main,
-.c-page-layout__sidebar,
-.c-page-layout__footer {
-  border: 1px dashed #ccc;
-  min-height: 100px;
-  width: 100%;
-}
-
-.c-page-layout__container {
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.c-page-layout__main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-}
-
-.c-page-layout__sidebar {
-  flex-grow: 1;
-  flex-basis: 454px;
-}
-
-.c-page-layout__main > :not(.c-page-layout__sidebar) {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: 53%;
-}
-
 .c-ratings-survey {
-  padding: 1rem;
+  padding: 16px;
   background-color: #f3f3f3;
   overflow: hidden;
 }
@@ -1461,8 +368,8 @@ html {
 }
 
 .c-ratings-survey__heading {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+  margin-bottom: 8px;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: 1.4;
   font-weight: 700;
@@ -1475,15 +382,15 @@ html {
 }
 
 .c-ratings-survey__submit-message svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 .c-ratings-survey__submit-message p {
   margin: 0;
   line-height: 1.4;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .c-ratings-survey__button {
@@ -1497,7 +404,7 @@ html {
   box-shadow: 0 0 0 1px #01324b;
   color: #01324b;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.3;
   margin: 16px 0 0 0;
@@ -1520,8 +427,8 @@ html {
 
 .c-ratings-survey a {
   display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  margin-top: 8px;
+  font-size: 16px;
 }
 
 .c-ratings-survey__visually-hidden,
@@ -1537,34 +444,34 @@ html {
 
 /* Override Global Forms Styles */
 .c-ratings-survey .c-forms__label--pictographic-radio svg {
-  width: 1.3rem;
-  height: 1.3rem;
-  padding: 0.3rem;
+  width: 20.8px;
+  height: 20.8px;
+  padding: 4.8px;
   border-radius: 2px;
 }
 
 .c-ratings-survey .c-forms__pictographic-radios {
-  gap: 0.45rem;
+  gap: 7.2px;
   justify-content: center;
 }
 
 .c-ratings-survey .c-forms__label {
-  font-size: 0.7rem;
+  font-size: 11.2px;
 }
 
 @media only screen and (min-width: 540px) {
   .c-ratings-survey .c-forms__label--pictographic-radio svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.5rem;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
   }
 
   .c-ratings-survey .c-forms__pictographic-radios {
-    gap: 1rem;
+    gap: 16px;
   }
 
   .c-ratings-survey .c-forms__label {
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 }
 .c-ratings-survey .c-forms__fieldset--pictographic-radios {
@@ -1581,7 +488,7 @@ html {
 
 .c-ratings-survey .c-forms__error {
   display: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .c-ratings-survey--show-error .c-forms__error {
@@ -2132,9 +1039,9 @@ html {
 						<div class="c-ratings-survey__container">
 							<form class="c-ratings-survey__form">
 								<h3 class="c-ratings-survey__heading">How was your experience today?</h3>
-									<fieldset class="c-forms__fieldset">
-											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios2" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios2" autocomplete="off">
+									<div class="c-forms__fieldset">
+											<div class="c-forms__field c-forms__field--globalFormRadios">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios2" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios2" required="" aria-required="true" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 															<small class="c-forms__error" id="error-ratings-survey-radios2">
 																<span class="c-forms__icon c-forms__icon--error">
@@ -2146,7 +1053,7 @@ html {
 															</small>
 														<div class="c-forms__pictographic-radios">
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible2" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-terrible2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -2154,7 +1061,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad2" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-bad2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -2162,7 +1069,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok2" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-ok2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -2170,7 +1077,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good2" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-good2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb2"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb2)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb2)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -2178,7 +1085,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great2" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-great2" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina2"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina2)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -2188,7 +1095,7 @@ html {
 														</div>
 													</fieldset>
 											</div>
-									</fieldset>
+									</div>
 								<button class="c-ratings-survey__button" type="submit">Send feedback</button>
 								<div class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
 									<div>
@@ -2209,9 +1116,9 @@ html {
 						<div class="c-ratings-survey__container">
 							<form class="c-ratings-survey__form">
 								<h3 class="c-ratings-survey__heading">How was your experience today?</h3>
-									<fieldset class="c-forms__fieldset">
-											<div class="c-forms__field">
-													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios1" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios1" autocomplete="off">
+									<div class="c-forms__fieldset">
+											<div class="c-forms__field c-forms__field--globalFormRadios">
+													<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios1" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios1" required="" aria-required="true" autocomplete="off">
 																<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 															<small class="c-forms__error" id="error-ratings-survey-radios1">
 																<span class="c-forms__icon c-forms__icon--error">
@@ -2223,7 +1130,7 @@ html {
 															</small>
 														<div class="c-forms__pictographic-radios">
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible1" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-terrible1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false"> <clipPath id="a"> <path d="M24 0v24H0V0z"></path> </clipPath> <g stroke-width="1.8" clip-path="url(#a)"> <path d="M12 22c5.5228475 0 10-4.4771525 10-10S17.5228475 2 12 2 2 6.4771525 2 12s4.4771525 10 10 10z" stroke-miterlimit="10"></path> <g stroke-linecap="round"> <path d="M8 17c.5-5.33333333 7.5-5.33333333 8 0z" stroke-linejoin="round"></path> <path d="m9 9-2 1M17 10l-2-1" stroke-miterlimit="10"></path> </g> </g></svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -2231,7 +1138,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad1" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-bad1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -2239,7 +1146,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok1" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-ok1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -2247,7 +1154,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good1" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-good1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -2255,7 +1162,7 @@ html {
 																		</label>
 																</div>
 																<div class="c-forms__label c-forms__label--wrapper">
-																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+																	<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great1" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 																		<label for="radio-great1" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																			<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 																			<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -2265,7 +1172,7 @@ html {
 														</div>
 													</fieldset>
 											</div>
-									</fieldset>
+									</div>
 								<button class="c-ratings-survey__button" type="submit">Send feedback</button>
 								<div class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
 									<div>
@@ -2284,9 +1191,9 @@ html {
 			<div class="c-ratings-survey__container">
 				<form class="c-ratings-survey__form">
 					<h3 class="c-ratings-survey__heading">How was your experience today?</h3>
-						<fieldset class="c-forms__fieldset">
-								<div class="c-forms__field">
-										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios3" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios3" autocomplete="off">
+						<div class="c-forms__fieldset">
+								<div class="c-forms__field c-forms__field--globalFormRadios">
+										<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="ratings-survey-radios3" name="ratings-survey-radios" invalid="" aria-invalid="true" aria-describedby="error-ratings-survey-radios3" required="" aria-required="true" autocomplete="off">
 													<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.</span></legend>
 												<small class="c-forms__error" id="error-ratings-survey-radios3">
 													<span class="c-forms__icon c-forms__icon--error">
@@ -2298,7 +1205,7 @@ html {
 												</small>
 											<div class="c-forms__pictographic-radios">
 													<div class="c-forms__label c-forms__label--wrapper">
-														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" autocomplete="off" data-ratings-survey="radio">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible3" name="ratings-survey-radios" value="1" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 															<label for="radio-terrible3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 13"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
 																<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
@@ -2306,7 +1213,7 @@ html {
 															</label>
 													</div>
 													<div class="c-forms__label c-forms__label--wrapper">
-														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" autocomplete="off" data-ratings-survey="radio">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad3" name="ratings-survey-radios" value="2" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 															<label for="radio-bad3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
@@ -2314,7 +1221,7 @@ html {
 															</label>
 													</div>
 													<div class="c-forms__label c-forms__label--wrapper">
-														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" autocomplete="off" data-ratings-survey="radio">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok3" name="ratings-survey-radios" value="3" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 															<label for="radio-ok3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
 																<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
@@ -2322,7 +1229,7 @@ html {
 															</label>
 													</div>
 													<div class="c-forms__label c-forms__label--wrapper">
-														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" autocomplete="off" data-ratings-survey="radio">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good3" name="ratings-survey-radios" value="4" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 															<label for="radio-good3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb3"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb3)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb3)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
 																<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
@@ -2330,7 +1237,7 @@ html {
 															</label>
 													</div>
 													<div class="c-forms__label c-forms__label--wrapper">
-														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" autocomplete="off" data-ratings-survey="radio">
+														<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great3" name="ratings-survey-radios" value="5" required="" aria-required="true" autocomplete="off" data-ratings-survey="radio">
 															<label for="radio-great3" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
 																<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina3"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina3)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
 																<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
@@ -2340,7 +1247,7 @@ html {
 											</div>
 										</fieldset>
 								</div>
-						</fieldset>
+						</div>
 					<button class="c-ratings-survey__button" type="submit">Send feedback</button>
 					<div class="u-hide c-ratings-survey__submit-message" data-ratings-survey="submit-message">
 						<div>
@@ -2532,5 +1439,5 @@ html {
 })();
 
 		</script>
-	
+
 </body></html>

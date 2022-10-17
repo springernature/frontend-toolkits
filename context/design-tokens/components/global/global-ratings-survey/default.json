@@ -2,7 +2,7 @@
 	"global-ratings-survey": {
 		"container": {
 			"padding": {
-				"value": "{spacing.relative.400}"
+				"value": "{spacing.absolute.400}"
 			},
 			"background": {
 				"color": {
@@ -12,21 +12,21 @@
 		},
 		"link": {
 			"margin": {
-				"value": "{spacing.relative.200}"
+				"value": "{spacing.absolute.200}"
 			},
 			"font": {
 				"size": {
-					"value": "{font-size.400}"
+					"value": "16px"
 				}
 			}
 		},
 		"heading": {
 			"margin": {
-				"value": "{spacing.relative.200}"
+				"value": "{spacing.absolute.200}"
 			},
 			"font": {
 				"size": {
-					"value": "{font-size.400}"
+					"value": "16px"
 				},
 				"family": {
 					"value": "{font-family.sans}"
@@ -38,7 +38,7 @@
 		},
 		"error": {
 			"margin": {
-				"value": "{spacing.relative.200}"
+				"value": "{spacing.absolute.200}"
 			}
 		},
 		"line-height": {
@@ -47,35 +47,35 @@
 		"message": {
 			"font": {
 				"size": {
-					"value": "{font-size.400}"
+					"value": "16px"
 				}
 			},
 			"icon": {
 				"margin": {
-					"value": "{spacing.relative.200}"
+					"value": "{spacing.absolute.200}"
 				},
 				"size": {
-					"value": "{sizing.relative.600}"
+					"value": "{sizing.absolute.600}"
 				}
 			}
 		},
 		"radio": {
 			"spacing": {
 				"narrow": {
-					"value": "0.45rem"
+					"value": "7.2px"
 				},
 				"desktop": {
-					"value": "{spacing.relative.400}"
+					"value": "{spacing.absolute.400}"
 				}
 			},
 			"label": {
 				"font": {
 					"size": {
 						"narrow": {
-							"value": "0.7rem"
+							"value": "11.2px"
 						},
 						"desktop": {
-							"value": "0.875rem"
+							"value": "14px"
 						}
 					}
 				}
@@ -83,18 +83,18 @@
 			"icon": {
 				"size": {
 					"narrow": {
-						"value": "1.3rem"
+						"value": "20.8px"
 					},
 					"desktop": {
-						"value": "{sizing.relative.600}"
+						"value": "{sizing.absolute.600}"
 					}
 				},
 				"spacing": {
 					"narrow": {
-						"value": "0.3rem"
+						"value": "4.8px"
 					},
 					"desktop": {
-						"value": "{spacing.relative.200}"
+						"value": "{spacing.absolute.200}"
 					}
 				},
 				"border": {
