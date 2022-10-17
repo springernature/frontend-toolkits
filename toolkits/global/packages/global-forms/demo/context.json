@@ -17,6 +17,51 @@
 		"fields": [
 			{
 				"template": "globalFormFieldset",
+				"legend": "Test, should not inherit",
+				"fields": [
+					{
+						"template": "globalFormFieldset",
+						"fields": [
+							{
+								"template": "globalFormRadios",
+								"legend": "Animal",
+								"id": "radios-animals",
+								"name": "radios-animals",
+								"inputs": [
+									{
+										"label": "Horse",
+										"value": "Horse",
+										"id": "radio-horse"
+									},
+									{
+										"label": "Monkey",
+										"value": "Monkey",
+										"id": "radio-monkey",
+										"fields": [
+											{
+												"template": "globalFormText",
+												"label": "What type of monkey?",
+												"id": "monkey-type",
+												"name": "monkey-type",
+												"hint": "Chimps are not monkeys",
+												"error": "Choose a monkey already!"
+											}
+										]
+									},
+									{
+										"label": "Platypus",
+										"value": "Platypus",
+										"id": "radio-platypus",
+										"checked": true
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"template": "globalFormFieldset",
 				"legend": "<h2>Text inputs</h2>",
 				"fields": [
 					{
@@ -41,6 +86,13 @@
 						"hint": "Your name is on your passport",
 						"id": "your-name-hint",
 						"name": "your-name-hint"
+					},
+					{
+						"template": "globalFormText",
+						"label": "An unimportant field",
+						"optional": true,
+						"id": "unimportant",
+						"name": "unimportant"
 					},
 					{
 						"template": "globalFormHTML",
@@ -76,6 +128,12 @@
 						"name": "select-animals",
 						"options": [
 							{
+								"label": "Please select an option",
+								"value": "",
+								"selected": true,
+								"disabled": true
+							},
+							{
 								"label": "Horse",
 								"value": "Horse"
 							},
@@ -85,8 +143,7 @@
 							},
 							{
 								"label": "Platypus",
-								"value": "Platypus",
-								"selected": true
+								"value": "Platypus"
 							}
 						]
 					},
@@ -115,11 +172,61 @@
 				]
 			},
 			{
+				"legend": "<h2>Inline fields</h2>",
+				"fields": [
+					{
+						"template": "globalFormInlineFields",
+						"fields": [
+							{
+								"template": "globalFormText",
+								"name": "search",
+								"id": "search",
+								"label": "Search",
+								"hideLabel": true
+							},
+							{
+								"template": "globalFormButton",
+								"type": "submit",
+								"label": "Search",
+								"modifiers": ["primary"]
+							}
+						]
+					},
+					{
+						"template": "globalFormInlineFields",
+						"nowrap": true,
+						"fields": [
+							{
+								"template": "globalFormText",
+								"name": "day",
+								"id": "day",
+								"label": "Day",
+								"hint": "In the format: DD"
+							},
+							{
+								"template": "globalFormText",
+								"name": "month",
+								"id": "month",
+								"label": "Month",
+								"hint": "In the format: MM"
+							},
+							{
+								"template": "globalFormText",
+								"name": "year",
+								"id": "year",
+								"label": "Year",
+								"hint": "In the format: YY"
+							}
+						]
+					}
+				]
+			},
+			{
 				"legend": "<h2>Radios</h2>",
 				"fields": [
 					{
 						"template": "globalFormRadios",
-						"label": "Animal",
+						"legend": "Animal",
 						"id": "radios-animals",
 						"name": "radios-animals",
 						"inputs": [
@@ -294,6 +401,7 @@
 	"dynamicPartials": {
 		"globalFormField": "./toolkits/global/packages/global-forms/view/globalFormField.hbs",
 		"globalFormFieldset": "./toolkits/global/packages/global-forms/view/globalFormFieldset.hbs",
+		"globalFormInlineFields": "./toolkits/global/packages/global-forms/view/globalFormInlineFields.hbs",
 		"globalFormLabel": "./toolkits/global/packages/global-forms/view/globalFormLabel.hbs",
 		"globalFormError": "./toolkits/global/packages/global-forms/view/globalFormError.hbs",
 		"globalFormErrorSummary": "./toolkits/global/packages/global-forms/view/globalFormErrorSummary.hbs",
@@ -309,6 +417,7 @@
 		"globalFormRadios": "./toolkits/global/packages/global-forms/view/fields/globalFormRadios.hbs",
 		"globalFormRadio": "./toolkits/global/packages/global-forms/view/fields/globalFormRadio.hbs",
 		"globalFormHTML": "./toolkits/global/packages/global-forms/view/fields/globalFormHTML.hbs",
+		"globalFormButton": "./toolkits/global/packages/global-forms/view/fields/globalFormButton.hbs",
 		"globalFormButtons": "./toolkits/global/packages/global-forms/view/fields/globalFormButtons.hbs",
 		"globalFormIconError": "./toolkits/global/packages/global-forms/view/globalFormIconError.hbs",
 		"globalFormIconSelect": "./toolkits/global/packages/global-forms/view/globalFormIconSelect.hbs"

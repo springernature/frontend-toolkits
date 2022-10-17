@@ -1,8 +1,6 @@
 # Global Forms
 
-**IMPORTANT:** _This is a **release candidate** representing an ambitious reworking of the global-forms component, including design tokens integration, at a component level, for the first time. It is expected to need some additional work before a full release can be made. Tokens are generated to the `scss/00-tokens` folder and cannot be edited directly. If you need to temporarily add or override variables, please do this in a `10-settings` folder, one level down. The Elements Design System team will assess these changes for making these variables tokens later._
-
-This component includes a number of form fields and related templates. It is designed to make it as simple as possible to create an HTML form.
+This component includes a number of form fields and related templates.
 
 The component does not include any JavaScript. States (such as an invalid/error state) are defined at a data level. If you're using client-side processing, you might benefit from compiling the form’s handlebars template in the browser.
 
@@ -11,9 +9,6 @@ The component does not include any JavaScript. States (such as an invalid/error 
 First, include the necessary Sass files in your project.
 
 ```scss
-// Include this with your settings
-@import '@springernature/global-forms/scss/10-settings/default';
-
 // Include this with your other components
 @import '@springernature/global-forms/scss/50-components/forms';
 
@@ -60,7 +55,7 @@ For this example, you might have two simple inputs for a name and password:
 
 ### Fields
 
-The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the **view/fields/globalFormText.hbs** template as. Aim to make the `template`, `id`, and `name` properties mandatory parts of your data schema.
+The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the **view/fields/globalFormText.hbs** template as. Aim to make the `template`, `id`, `label`, and `name` properties mandatory parts of your data schema.
 
 This component supports a wide range of standard form field attributes. For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
@@ -74,17 +69,27 @@ This component supports a wide range of standard form field attributes. For exam
 }
 ```
 
+#### Hints
+
 The `hint` property adds hint text under the main label text but _inside_ the `<label>`. This means it is automatically available to screen reader software.
 
 ```json
 "hint": "This will be the email address you used when registering"
 ```
 
-The `optional` property adds _“(optional)”_ to the label text.
+#### Required
 
-```json
-"optional": true
+Fields are required by default. Avoid asking for information you don't really need. To explicitly mark fields as required, `requiredSuffix` will append text—such as an asterisk—to the label. This property permits HTML, meaning you can hide the asterisk character from screen readers.
+
 ```
+"requiredSuffix": "<span aria-hidden=\"true\">*</span>"
+```
+
+The `required` and `aria-required="true"` attributes are applied automatically. Unless `novalidate: true` is applied on the field’s data, browser validation will warn the user when they have not filled out the field upon submission.
+
+If you do need to ask for optional information, set `optional: true`. This will remove `required` and `aria-required="true"` as well as appending the text “(optional)” to the field label. 
+
+#### Data properties
 
 In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
 
@@ -102,7 +107,7 @@ In addition to these top-level properties, you can add data properties as a `dat
 
 This would create the following attribution: `data-test: someValue`.
 
-### Errors
+#### Errors
 
 Each field can have an `error` property. The inclusion of the property means the field is in an error state. The property value (a string) defines the error message the user sees.
 
@@ -134,8 +139,6 @@ You can summarise errors using a top level `errorSummary` property. Each error i
     ]
 }
 ```
-
-### Making choices
 
 #### Select fields
 
@@ -268,7 +271,7 @@ Unlike radios, which are always used in sets of two or more, you can have a sing
 }
 ```
 
-### Hidden fields
+#### Hidden fields
 
 You can hide any field from visibility (also from screen reader software and keyboard interaction) using `hidden: true`. If you want to use a field of `type="hidden"`, you need to use `template: globalFormHidden`. It is recommended you also apply `hidden: true` to such fields because it will remove the inter-field margin. In the following example, note the `label` is omitted since hidden fields are not user facing.
 
@@ -280,6 +283,43 @@ You can hide any field from visibility (also from screen reader software and key
     "hidden": true,
 }
 ```
+
+#### Inline fields
+
+It is possible to display fields in a horizontal line, using the following `template` value:
+
+```json
+"template": "globalFormInlineFields"
+```
+
+For example, here’s a possible field definition for a search bar, comprising an input and submit button:
+
+```json
+{
+    "template": "globalFormInlineFields",
+    "gap": "1em",
+    "fields": [
+        {
+            "template": "globalFormText",
+            "name": "search",
+            "id": "search",
+            "label": "Search",
+            "hideLabel": true
+        },
+        {
+            "template": "globalFormButton",
+            "type": "submit",
+            "label": "Search",
+            "modifiers": ["primary"]
+        }
+    ]
+}
+```
+
+* **`fields`**: Individual fields are defined in a `fields` array.
+* **`gap`**: The gap between the fields; any valid `gap` value.
+* **`hideLabel`**: You can visually hide labels with the `hideLabel` property _without_ removing them from screen reader output. Only do this if there is another visual form of label (the “Search” label of the submit button in this case). 
+* **`nowrap`**: Not used in the previous example. Stop the individual fields from wrapping (beware of narrow viewports).
 
 ### Supplementary fields
 

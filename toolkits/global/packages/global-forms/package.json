@@ -1,6 +1,6 @@
 {
 	"name": "@springernature/global-forms",
-	"version": "5.0.0-rc.10",
+	"version": "5.0.0",
 	"license": "MIT",
 	"description": "form component",
 	"keywords": [
