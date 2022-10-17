@@ -32,6 +32,7 @@ The question can be not changed
 - Where it goes on the page (e.g. right hand column may only be used in contexts where the content is very long)
 
 ## Usage
+In order to use the component the instructions in all of the following sections must be carried out.
 ### Install
 Install the Global Ratings Survey package:
 ```shell
@@ -68,12 +69,23 @@ ratingSurveys();
 ```
 
 ### HTML
-Add the component HTML to your project. It is assumed your project is able to consume the component's Handlebars view template found the in `/view/` directory of this package.
+Add the component HTML to your project by consuming and rendering the component's view template. It is assumed your project is able to consume the component's Handlebars view template found in the `/view/` directory.
 
-If you are unable to consume view templates in your project you can still use this component. You can use the component to demo to generate the HTML that you need. The following process is suggested to generate your HTML:
+If you are unable to consume view templates in your project you can still use this component. You can use the component demo to generate the HTML that you need. The following process is suggested to generate your HTML:
 
 1. Edit the JSON data file found at `/demo/context.json` and define the data you need for your instance (see below Data section) 
 2. Run `npm run demo -- -p global-ratings-survey`
-3. Copy the `<aside>` and its contents from the generated demo file at `/demo/dist/index.html`
+3. Copy the `<aside>` and its contents from the generated demo file at `/demo/dist/index.html` and paste it into the relevant location in your project
+
+### Data
+The component's view template requires a data model to be passed to it. An example of the data model can be seen in the component's demo. This can be found in `/demo/context.json`.
+
+> **Note**
+> Some of the data for this component is considered static and should **not** be edited. This concerns all of the data that is passed to the Global Forms component. 
+
+#### Editable data properties
+The following data properties exist for the component:
+
+
 
 ## Template
