@@ -64,7 +64,7 @@
 		"radio": {
 			"spacing": {
 				"narrow": {
-					"value": "7.2px"
+					"value": "{sizing.absolute.200}"
 				},
 				"desktop": {
 					"value": "{spacing.absolute.400}"
@@ -74,7 +74,7 @@
 				"font": {
 					"size": {
 						"narrow": {
-							"value": "11.2px"
+							"value": "12px"
 						},
 						"desktop": {
 							"value": "14px"
@@ -85,18 +85,18 @@
 			"icon": {
 				"size": {
 					"narrow": {
-						"value": "20.8px"
+						"value": "21px"
 					},
 					"desktop": {
-						"value": "{sizing.absolute.600}"
+						"value": "24px"
 					}
 				},
 				"spacing": {
 					"narrow": {
-						"value": "4.8px"
+						"value": "6px"
 					},
 					"desktop": {
-						"value": "{spacing.absolute.200}"
+						"value": "8px"
 					}
 				},
 				"border": {

@@ -10,19 +10,19 @@
 					"template": "globalFormRadios",
 					"error": "Please select one rating",
 					"label": "Rating",
-					"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.",
+					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
 					"id": "ratings-survey-radios1",
 					"name": "ratings-survey-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
 						{
-							"label": "Terrible",
+							"label": "Awful",
 							"value": "1",
-							"id": "radio-terrible1",
+							"id": "radio-awful1",
 							"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\"> <clipPath id=\"a\"> <path d=\"M24 0v24H0V0z\"></path> </clipPath> <g stroke-width=\"1.8\" clip-path=\"url(#a)\"> <path d=\"M12 22c5.5228475 0 10-4.4771525 10-10S17.5228475 2 12 2 2 6.4771525 2 12s4.4771525 10 10 10z\" stroke-miterlimit=\"10\"></path> <g stroke-linecap=\"round\"> <path d=\"M8 17c.5-5.33333333 7.5-5.33333333 8 0z\" stroke-linejoin=\"round\"></path> <path d=\"m9 9-2 1M17 10l-2-1\" stroke-miterlimit=\"10\"></path> </g> </g></svg>",
 							"showLabel": true,
-							"imageDescription": "An image of a cartoon face that is crying.",
+							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
 								"ratings-survey": "radio"
 							}
@@ -87,19 +87,19 @@
 					"template": "globalFormRadios",
 					"error": "Please select one rating",
 					"label": "Rating",
-					"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.",
+					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
 					"id": "ratings-survey-radios2",
 					"name": "ratings-survey-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
 						{
-							"label": "Terrible",
+							"label": "Awful",
 							"value": "1",
-							"id": "radio-terrible2",
-							"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"crya2\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> </defs> <g clip-path=\"url(#crya2)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M6.5 20.4A10 10 0 1 0 2 12\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1\"/> </g> </svg>",
+							"id": "radio-awful2",
+							"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"awfula2\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> </defs> <g clip-path=\"url(#awfula2)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M6.5 20.4A10 10 0 1 0 2 12\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1\"/> </g> </svg>",
 							"showLabel": true,
-							"imageDescription": "An image of a cartoon face that is crying.",
+							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
 								"ratings-survey": "radio"
 							}
@@ -165,19 +165,19 @@
 					"template": "globalFormRadios",
 					"error": "Please select one rating",
 					"label": "Rating",
-					"groupDescription": "A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about your experience today.",
+					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
 					"id": "ratings-survey-radios3",
 					"name": "ratings-survey-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
 						{
-							"label": "Terrible",
+							"label": "Awful",
 							"value": "1",
-							"id": "radio-terrible3",
-							"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"crya3\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> </defs> <g clip-path=\"url(#crya3)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M6.5 20.4A10 10 0 1 0 2 13\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1\"/> </g> </svg>",
+							"id": "radio-awful3",
+							"svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"transparent\" stroke=\"currentColor\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"> <defs> <clipPath id=\"awfula3\"> <path d=\"M24 0v24H0V0h24Z\"/> </clipPath> </defs> <g clip-path=\"url(#awfula3)\"> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M6.5 20.4A10 10 0 1 0 2 13\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M9 17c1-2.7 5-2.7 6 0\"/> <path stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"1.8\" stroke-linejoin=\"round\" d=\"M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1\"/> </g> </svg>",
 							"showLabel": true,
-							"imageDescription": "An image of a cartoon face that is crying.",
+							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
 								"ratings-survey": "radio"
 							}
