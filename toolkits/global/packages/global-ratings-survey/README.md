@@ -31,6 +31,49 @@ The question can be not changed
 - Document what we discuss with Roland on how to get setup
 - Where it goes on the page (e.g. right hand column may only be used in contexts where the content is very long)
 
-## Installation
+## Usage
+### Install
+Install the Global Ratings Survey package:
+```shell
+npm install @springernature/global-ratings-survey
+```
+You will also need to ensure you have its dependencies installed. These are Brand Context and Global Forms:
+```shell
+npm install @springernature/brand-context
+```
+```shell
+npm install @springernature/global-forms
+```
+
+### Sass
+Include the necessary Sass files in your project in this order (if they are not already there!):
+```sass
+@import '@springernature/brand-context/[YOUR BRAND HERE]/scss/core.scss';
+@import '@springernature/brand-context/[YOUR BRAND HERE]/scss/enhanced.scss';
+@import '@springernature/global-forms/scss/00-tokens/default.tokens.scss';
+@import '@springernature/global-ratings-survey/scss/00-tokens/default.tokens.scss';
+@import '@springernature/global-ratings-survey/scss/30-mixins/ratings-survey-button';
+@import '@springernature/global-forms/scss/50-components/forms';
+@import '@springernature/global-ratings-survey/scss/50-components/ratings-survey';
+@import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+```
+
+### JavaScript
+Include the component JavaScript in your application bundle:
+```js
+import {ratingSurveys} from '@springernature/global-ratings-survey';
+
+ratingSurveys();
+```
+
+### HTML
+Add the component HTML to your project. It is assumed your project is able to consume the component's Handlebars view template found the in `/view/` directory of this package.
+
+If you are unable to consume view templates in your project you can still use this component. You can use the component to demo to generate the HTML that you need. The following process is suggested to generate your HTML:
+
+1. Edit the JSON data file found at `/demo/context.json` and define the data you need for your instance (see below Data section) 
+2. Run `npm run demo -- -p global-ratings-survey`
+3. Copy the `<aside>` and its contents from the generated demo file at `/demo/dist/index.html`
 
 ## Template
