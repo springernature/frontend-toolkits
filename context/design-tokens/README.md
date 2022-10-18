@@ -85,7 +85,7 @@ To generate the `scss` file for a specific component for a specific theme the fr
 ```bash
 npm run tokens:component -- component-name theme
 ```
-#### Generating Design Tokens documentation `json` files (experimental)
+#### Generating design tokens documentation `json` files (experimental)
 
 To generate the `json` files for the Design Tokens documentation for the Elements Design System, run:
 ```bash
