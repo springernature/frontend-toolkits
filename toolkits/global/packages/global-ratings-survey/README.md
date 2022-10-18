@@ -9,7 +9,6 @@ Component README follows Elements’ template, covering:
 - Installation
 - Template
 - Research on this component
-```
 
 ## Description
 - Designed to be used at multiple points in a journey
@@ -30,9 +29,9 @@ The question can be not changed
 - Research ops?
 - Document what we discuss with Roland on how to get setup
 - Where it goes on the page (e.g. right hand column may only be used in contexts where the content is very long)
+```
 
 ## Usage
-In order to use the component the instructions in all of the following sections must be carried out.
 ### Install
 Install the Global Ratings Survey package:
 ```shell
@@ -113,5 +112,3 @@ A string that defines the link text for any survey you wish to link to after a u
 This component has a dependency on another component: [Global Forms](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-forms). See [package.json](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-ratings-survey/package.json#L10) which defines the version of Global Forms that this component is dependent on.
 
 The view template for Global Ratings Survey includes the Global Forms fieldset partial which requires a data model. The data to support the Global Forms partial is considered static data. This can be found in `/demo/context.json` as the JSON object `"globalFormData"` and should be defined with the same name in your project. The data is also provided [here in JSON](https://gist.github.com/benjclark/8c77fce1ab83a1c3fd8b9ed21be9f366) for your convenience.
-
-## Template
