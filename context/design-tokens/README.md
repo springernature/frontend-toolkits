@@ -7,7 +7,7 @@
 > Salesforce, Lightning Design System
 ## The Design Tokens Workflow
 
-Make sure you are in the `design-tokens` directory. You will then need to make sure you are using the correct version of node and that all dependencies are installed.
+Make sure you are in the `design-tokens` directory. You will then need to make sure you are using the correct version of node (`12.0.0`) and that all dependencies are installed.
 
 ```bash
 nvm use
@@ -21,31 +21,31 @@ npm install
 There are several npm scripts available that can be run to generate the design tokens.
 
 #### Deleting existing Design Tokens
-To delete all of the generated `scss` files from the front-end toolkits and the components, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the front-end toolkits and the components, run:
 ```bash
 npm run tokens:clean-all
 ```
-To delete all of the generated `scss` files from the theme brand context folders, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the theme brand context folders, run:
 ```bash
 npm run tokens:clean-context
 ```
-To delete all of the generated `scss` files from the default themes brand context folder, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the default themes brand context folder, run:
 ```bash
 npm run tokens:clean-default
 ```
-To delete all of the generated `scss` files from the Nature themes brand context folder, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the Nature themes brand context folder, run:
 ```bash
 npm run tokens:clean-nature
 ```
-To delete all of the generated `scss` files from the Springer themes brand context folder, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the Springer themes brand context folder, run:
 ```bash
 npm run tokens:clean-springer
 ```
-To delete all of the generated `scss` files from the Springer Nature themes brand context folder, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the Springer Nature themes brand context folder, run:
 ```bash
 npm run tokens:clean-springe-rnature
 ```
-To delete all of the generated `scss` files from the all of the components, run:
+To delete all of the generated `scss` files in the `00-tokens` folder from the all of the components, run:
 ```bash
 npm run tokens:clean-components
 ```
