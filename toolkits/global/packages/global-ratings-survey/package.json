@@ -1,12 +1,12 @@
 {
   "name": "@springernature/global-ratings-survey",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "html form based component for gathering user rating data",
   "keywords": [],
   "author": "Springer Nature",
   "brandContext": "^29.0.3",
   "dependencies": {
-    "@springernature/global-forms": "^5.0.0-rc.10"
+    "@springernature/global-forms": "^5.0.0"
   }
 }
