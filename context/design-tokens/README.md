@@ -162,7 +162,7 @@ These are the ‘unlocked’ tokens, that hold a value that can change. The Comp
 With three tiers of Design Tokens, there are three naming conventions for the Design Tokens. These naming conventions include all possible options for the name but they do not all need to be used and will depend on the resulting value of the Design Token to determine which optione are used.
 
 The naming convention for the Design Tokens is as follows:
-### Literal Tokens
+### Literal design tokens
 The literal tokens are named using the following convention:
 
 `<category>-<property>-<value>`
