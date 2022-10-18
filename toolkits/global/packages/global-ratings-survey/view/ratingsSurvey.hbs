@@ -14,7 +14,9 @@
 					<p>Thank you for your feedback.</p>
 				</div>
 				{{#if questionUrl}}
-					<a href="{{questionUrl}}?id={{id}}" target="_blank">{{questionText}} (opens in a new tab)</a>
+					{{#if questionText}}
+						<a href="{{questionUrl}}?id={{id}}" target="_blank">{{questionText}} (opens in a new tab)</a>
+					{{/if}}
 				{{/if}}
 			</div>
 		</form>
