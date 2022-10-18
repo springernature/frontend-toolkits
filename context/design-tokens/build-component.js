@@ -2,8 +2,8 @@ const fs = require('fs');
 const { readdirSync } = require('fs');
 const StyleDictionaryPackage = require('style-dictionary');
 
-const componentX = process.env.npm_config_component;
-let theme = process.env.npm_config_theme
+const componentX = process.argv[5];
+const theme = process.argv[6];
 const brandX = componentX.split('-')[0];
 
 if (!theme && brandX === 'global') {
