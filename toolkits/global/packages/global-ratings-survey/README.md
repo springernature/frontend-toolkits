@@ -111,6 +111,10 @@ A string that defines the link href for any survey you wish to link to after a u
 
 A string that defines the link text for any survey you wish to link to after a user has submitted a rating, e.g. `"questionText": "Tell us why"`. A link will only display if both questionUrl and questionText have been defined.
 
+**additionalInfo** (Optional)
+
+A string that can be used to define additional data that you would like to be captured with the user's rating. This property aims to future-proof this component to ensure we can capture additional meaning if needed.
+
 #### Global Forms Data (Mandatory)
 
 This component has a dependency on another component: [Global Forms](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-forms). See [package.json](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-ratings-survey/package.json#L10) which defines the version of Global Forms that this component is dependent on.
