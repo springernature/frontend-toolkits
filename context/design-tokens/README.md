@@ -20,7 +20,7 @@ npm install
 
 There are several npm scripts available that can be run to generate the design tokens.
 
-#### Deleting existing Design Tokens
+#### Deleting existing design tokens
 To delete all of the generated `scss` files in the `00-tokens` folder from the front-end toolkits and the components, run:
 ```bash
 npm run tokens:clean-all
