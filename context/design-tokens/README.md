@@ -159,7 +159,7 @@ These are the ‘unlocked’ tokens, that hold a value that can change. The Alia
 These are the ‘unlocked’ tokens, that hold a value that can change. The Component Design Tokens are defined in the `tokens/components` folder. The Component Design Tokens are used to create the Component Design Tokens.
 ## Design Token Naming Convention
 
-With three tiers of Design Tokens, there are three naming conventions for the Design Tokens. These naming conventions include all possible options for the name but they do not all need to be used and will depend on the resulting value of the Design Token to determine which optione are used.
+With three tiers of Design Tokens, there are three naming conventions for the design tokens. These naming conventions include all possible options for the name but they do not all need to be used. The resulting value of the design token determine which options are used.
 
 The naming convention for the Design Tokens is as follows:
 ### Literal design tokens
