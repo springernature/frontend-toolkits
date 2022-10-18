@@ -93,6 +93,9 @@ Currently, only the following values are permissible:
 - get published
 - content discovery
 
+> **Note**
+> Permissible values are managed in the component's javascript file found out `/js/ratings-survey.js`. Please do not edit these without consultation with UXD (Niamh Walsh at the time of writing).
+
 You may define multiple user journeys separated by commas e.g. `"userJourneys":"get published, content discovery"`. If a non-permissible value is entered an error will be logged to the browser console and data will not be sent to the Big Query database. Case handling has been implemented, ensuring any value is converted to lowercase prior to data being sent to Big Query.
 
 **headingLevel** (Mandatory)
@@ -111,4 +114,4 @@ A string that defines the link text for any survey you wish to link to after a u
 
 This component has a dependency on another component: [Global Forms](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-forms). See [package.json](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-ratings-survey/package.json#L10) which defines the version of Global Forms that this component is dependent on.
 
-The view template for Global Ratings Survey includes the Global Forms fieldset partial which requires a data model. The data to support the Global Forms partial is considered static data. This can be found in `/demo/context.json` as the JSON object `"globalFormData"` and should be defined with the same name in your project. The data is also provided [here in JSON](https://gist.github.com/benjclark/8c77fce1ab83a1c3fd8b9ed21be9f366) for your convenience.
+The view template for Global Ratings Survey includes the Global Forms fieldset partial which requires a data model suitable for Global Forms. The data to support the Global Forms partial is considered static data. This can be found in `/demo/context.json` as the JSON object `"globalFormData"` and should be defined with the same names, structure and values in your project. The data is also provided [here in JSON](https://gist.github.com/benjclark/8c77fce1ab83a1c3fd8b9ed21be9f366) for your convenience.
