@@ -141,7 +141,7 @@ The Design Tokens are defined in a `.json` file. The Design Tokens `json` is a s
     }
 }
 ```
-## Design Token Tiering System
+## Design token tiers
 
 There are three tiers of Design Tokens:
 
