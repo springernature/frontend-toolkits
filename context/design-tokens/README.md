@@ -91,7 +91,7 @@ To generate the `json` files for the Design Tokens documentation for the Element
 ```bash
 npm run tokens:docs
 ```
-#### Generating Design Tokens `json` for the figma tokens plugin (experimental)
+#### Generating design tokens `json` for the Figma tokens plugin (experimental)
 
 To generate the `json` files for the figma-tokens plugin for Figma, run:
 ```bash
