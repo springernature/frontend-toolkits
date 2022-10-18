@@ -150,7 +150,7 @@ There are three tiers of Design Tokens:
 - `component`: The set of tokens that are used to build the rest of the tokens.
 
 ### Literal Design Tokens
-These are the ‘locked’ tokens, that hold a value that should not change. The literal Design Tokens are defined in the `tokens/literal` folder. The literal Design Tokens are used to create the Alias Design Tokens.
+These are the ‘locked’ tokens, that hold a value that should not change. Literal design tokens are defined in the `tokens/literal` folder. The literal design tokens are used to create alias design tokens.
 
 ### Alias Design Tokens
 These are the ‘unlocked’ tokens, that hold a value that can change. The Alias Design Tokens are defined in the `tokens/alias` folder. The Alias Design Tokens are used to create the Component Design Tokens.
