@@ -197,7 +197,7 @@
 					},
 					"disabled": {
 						"name": "Input Border Color Disabled",
-						"value": "{color.grayscale.400}",
+						"value": "{color.greyscale.400}",
 						"description": "This is to set the border color of the form input when disabled.",
 						"type": "color",
 						"category": "border-color",
@@ -388,7 +388,7 @@
 				},
 				"color": {
 					"name": "Checkbox Border Color",
-					"value": "{color.grayscale.500}",
+					"value": "{color.greyscale.500}",
 					"description": "This is to set the border color of the checkbox.",
 					"type": "color",
 					"category": "border-color",
@@ -495,7 +495,7 @@
 		"hint": {
 			"color": {
 				"name": "Hint Color",
-				"value": "{color.grayscale.600}",
+				"value": "{color.greyscale.600}",
 				"description": "This is to set the color of the hint.",
 				"type": "color",
 				"category": "color",
