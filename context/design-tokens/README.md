@@ -83,7 +83,7 @@ note: this will override any and all existing `scss` files for the components.
 
 To generate the `scss` file for a specific component for a specific theme the front-end tooolkits from the Design Tokens, run:
 ```bash
-npm run tokens:component -- --component=component-name --theme=theme-context-theme
+npm run tokens:component -- component-name theme
 ```
 #### Generating Design Tokens documentation `json` files (experimental)
 
