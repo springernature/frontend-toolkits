@@ -1,205 +1,774 @@
 {
 	"global-forms": {
 		"line-height": {
-			"value": "{line-height.tight}"
+			"name": "Line Height",
+			"value": "{line-height.tight}",
+			"description": "This is a line height reset for all form elements.",
+			"type": "length",
+			"category": "line-height",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"field": {
 			"stack": {
 				"spacing": {
-					"value": "{spacing.relative.600}"
+					"name": "Field Stack Spacing",
+					"value": "{spacing.relative.600}",
+					"description": "This is the stack spacing between elements in a form field.",
+					"type": "length",
+					"category": "spacing",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		},
 		"label": {
 			"font": {
 				"size": {
-					"value": "{ui.font-size}"
+					"name": "Label Font Size",
+					"value": "{ui.font-size}",
+					"description": "This is to set the font size of the form label.",
+					"type": "length",
+					"category": "font-size",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"weight": {
-					"value": "{font-weight.bold}"
+					"name": "Label Font Weight",
+					"value": "{font-weight.bold}",
+					"description": "This is to set the font weight of the form label.",
+					"type": "number",
+					"category": "font-weight",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"color": {
-				"value": "{text.primary}"
+				"name": "Label Color",
+				"value": "{text.primary}",
+				"description": "This is to set the color of the form label.",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"inline": {
 				"font": {
 					"weight": {
-						"value": "{font-weight.regular}"
+						"name": "Inline Label Font Weight",
+						"value": "{font-weight.regular}",
+						"description": "This is to set the font weight of the inline form label.",
+						"type": "number",
+						"category": "font-weight",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
-				}
-			}
-		},
-		"hint": {
-			"color": {
-				"value": "{color.grayscale.600}"
-			},
-			"font": {
-				"weight": {
-					"value": "{font-weight.regular}"
-				}
-			}
-		},
-		"message": {
-			"color": {
-				"error": {
-					"value": "{state.error}"
-				}
-			},
-			"icon": {
-				"color": {
-					"resting": {
-						"value": "{text.primary}"
-					},
-					"error": {
-						"value": "{state.error}"
-					}
-				},
-				"size": {
-					"value": "{sizing.relative.400}"
 				}
 			}
 		},
 		"input": {
 			"padding": {
 				"inline": {
-					"value": "{spacing.relative.200.value}"
+					"name": "Inline Input Padding",
+					"value": "{spacing.relative.200.value}",
+					"description": "This is to set the padding of the inline form input.",
+					"type": "length",
+					"category": "spacing",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"block": {
-					"value": "{spacing.relative.200.value}"
+					"name": "Block Input Padding",
+					"value": "{spacing.relative.200.value}",
+					"description": "This is to set the padding of the block form input.",
+					"type": "length",
+					"category": "spacing",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"stack": {
 				"spacing": {
-					"value": "{spacing.relative.100}"
+					"name": "Input Stack Spacing",
+					"value": "{spacing.relative.100}",
+					"description": "This is to set the stack spacing of the form input.",
+					"type": "length",
+					"category": "spacing",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"border": {
 				"color": {
 					"resting": {
-						"value": "{border.color.primary}"
+						"name": "Input Border Color",
+						"value": "{border.color.primary}",
+						"description": "This is to set the border color of the form input.",
+						"type": "color",
+						"category": "border-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"error": {
-						"value": "{state.error}"
+						"name": "Input Border Color Error",
+						"value": "{state.error}",
+						"description": "This is to set the border color of the form input when in error state.",
+						"type": "color",
+						"category": "border-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"disabled": {
-						"value": "{color.grayscale.400}"
+						"name": "Input Border Color Disabled",
+						"value": "{color.grayscale.400}",
+						"description": "This is to set the border color of the form input when disabled.",
+						"type": "color",
+						"category": "border-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				},
 				"width": {
-					"value": "{border.width.25}"
+					"name": "Input Border Width",
+					"value": "{border.width.25}",
+					"description": "This is to set the border width of the form input.",
+					"type": "length",
+					"category": "border-width",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"focus": {
 				"outline": {
 					"color": {
+						"name": "Input Focus Outline Color",
 						"value": "{ui.focus.outline.color}",
-						"description": "TODO: needs to be coming from an alias or literal token"
+						"description": "This is to set the focus outline color of the form input.",
+						"type": "color",
+						"category": "focus-outline-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"font": {
 				"size": {
-					"value": "{ui.font-size}"
+					"name": "Input Font Size",
+					"value": "{ui.font-size}",
+					"description": "This is to set the font size of the form input.",
+					"type": "length",
+					"category": "font-size",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"weight": {
-					"value": "{font-weight.regular}"
+					"name": "Input Font Weight",
+					"value": "{font-weight.regular}",
+					"description": "This is to set the font weight of the form input.",
+					"type": "font-weight",
+					"category": "font-weight",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"color": {
-					"value": "{text.primary}"
+					"name": "Input Font Color",
+					"value": "{text.primary}",
+					"description": "This is to set the font color of the form input.",
+					"type": "color",
+					"category": "color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"background": {
 				"color": {
-					"value": "{background.container}"
+					"name": "Input Background Color",
+					"value": "{background.container}",
+					"description": "This is to set the background color of the form input.",
+					"type": "color",
+					"category": "background-color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			},
 			"width": {
 				"maximum": {
+					"name": "Input Maximum Width",
 					"value": "{ui.content-width}",
-					"description": "TODO: needs to be coming from an alias or literal token"
+					"description": "This is to set the maximum width of the form input.",
+					"type": "length",
+					"category": "width",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				}
+			}
+		},
+		"checkbox": {
+			"size": {
+				"name": "Checkbox Size",
+				"value": "{sizing.relative.600}",
+				"description": "This is to set the size of the checkbox.",
+				"type": "length",
+				"category": "size",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			},
+			"spacing": {
+				"name": "Checkbox Spacing",
+				"value": "{sizing.relative.200}",
+				"description": "This is to set the spacing between the checkbox and the label.",
+				"type": "length",
+				"category": "spacing",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			},
+			"border": {
+				"size": {
+					"name": "Checkbox Border Size",
+					"value": "{border.width.50}",
+					"description": "This is to set the border size of the checkbox.",
+					"type": "length",
+					"category": "border-width",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				},
+				"color": {
+					"name": "Checkbox Border Color",
+					"value": "{color.grayscale.500}",
+					"description": "This is to set the border color of the checkbox.",
+					"type": "color",
+					"category": "border-color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				}
+			},
+			"checked": {
+				"icon": {
+					"stroke": {
+						"name": "Checkbox Checked Icon Stroke",
+						"value": "{color.primary.universal-dark-blue}",
+						"description": "This is to make the stroke of the checked icon of the checkbox.",
+						"type": "color",
+						"category": "stroke",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
+					},
+					"fill": {
+						"name": "Checkbox Checked Icon Fill",
+						"value": "{color.primary.universal-dark-blue}",
+						"description": "This is to make the fill of the checked icon of the checkbox.",
+						"type": "color",
+						"category": "fill",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
+					},
+					"data uri": {
+						"name": "Checkbox Checked Icon SVG Data URI",
+						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'",
+						"description": "This is to set the SVG data URI of the checked icon of the checkbox.",
+						"type": "string",
+						"category": "data-uri",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
+					}
 				}
 			}
 		},
 		"indent": {
 			"border": {
 				"color": {
-					"value": "{border.color.indent}"
+					"name": "Indent Border Color",
+					"value": "{border.color.indent}",
+					"description": "This is to set the border color of the indent.",
+					"type": "color",
+					"category": "border-color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"radius": {
-					"value": "{border.radius.100}"
+					"name": "Indent Border Radius",
+					"value": "{border.radius.100}",
+					"description": "This is to set the border radius of the indent.",
+					"type": "length",
+					"category": "border-radius",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		},
-		"checkbox": {
-			"size": {
-				"value": "{sizing.relative.600}",
-				"type": "sizing"
-			},
-			"spacing": {
-				"value": "{sizing.relative.200}"
-			},
-			"border": {
-				"size": {
-					"value": "{border.width.50}"
-				},
-				"color": {
-					"value": "{color.grayscale.500}"
+		"hint": {
+			"color": {
+				"name": "Hint Color",
+				"value": "{color.grayscale.600}",
+				"description": "This is to set the color of the hint.",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
 				}
 			},
-			"checked": {
-				"icon": {
-					"stroke": {
-						"value": "{color.primary.universal-dark-blue}"
+			"font": {
+				"weight": {
+					"name": "Hint Font Weight",
+					"value": "{font-weight.regular}",
+					"description": "This is to set the font weight of the hint.",
+					"type": "font-weight",
+					"category": "font-weight",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				}
+			}
+		},
+		"message": {
+			"color": {
+				"error": {
+					"name": "Message Error Color",
+					"value": "{state.error}",
+					"description": "This is to set the color of the error message.",
+					"type": "color",
+					"category": "color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				}
+			},
+			"icon": {
+				"color": {
+					"resting": {
+						"name": "Message Icon Color Resting",
+						"value": "{text.primary}",
+						"description": "This is to set the color of the message icon when it is in the resting state.",
+						"type": "color",
+						"category": "color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
-					"fill": {
-						"value": "{color.primary.universal-dark-blue}"
-					},
-					"data uri": {
-						"value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"white\" stroke-linejoin=\"round\" fill=\"none\" stroke-linecap=\"round\" viewBox=\"0 0 20 20\"><path d=\"M4.5,11 10,15 16,5\"></path></svg>'"
+					"error": {
+						"name": "Message Icon Color Error",
+						"value": "{state.error}",
+						"description": "This is to set the color of the message icon when it is in the error state.",
+						"type": "color",
+						"category": "color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
+					}
+				},
+				"size": {
+					"name": "Message Icon Size",
+					"value": "{sizing.relative.400}",
+					"description": "This is to set the size of the message icon.",
+					"type": "length",
+					"category": "size",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
 					}
 				}
 			}
 		},
 		"pictographic-radio": {
 			"spacing": {
-				"value": "{spacing.relative.400}"
+				"name": "Pictographic Radio Spacing",
+				"value": "{spacing.relative.400}",
+				"description": "This is to set the spacing between the pictographic radio and the label.",
+				"type": "length",
+				"category": "spacing",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"checked": {
 				"icon": {
 					"background": {
-						"value": "{color.primary.universal-dark-blue}"
+						"name": "Pictographic Radio Checked Icon Background",
+						"value": "{color.primary.universal-dark-blue}",
+						"description": "This is to set the background color of the pictographic radio icon when it is checked.",
+						"type": "color",
+						"category": "color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"border": {
-						"value": "{color.primary.white}"
+						"name": "Pictographic Radio Checked Icon Border",
+						"value": "{color.primary.white}",
+						"description": "This is to set the border color of the pictographic radio icon when it is checked.",
+						"type": "color",
+						"category": "border-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"fill": {
-						"value": "{color.primary.universal-dark-blue}"
+						"name": "Pictographic Radio Checked Icon Fill",
+						"value": "{color.primary.universal-dark-blue}",
+						"description": "This is to set the fill color of the pictographic radio icon when it is checked.",
+						"type": "color",
+						"category": "fill-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"stroke": {
-						"value": "{color.primary.white}"
+						"name": "Pictographic Radio Checked Icon Stroke",
+						"value": "{color.primary.white}",
+						"description": "This is to set the stroke color of the pictographic radio icon when it is checked.",
+						"type": "color",
+						"category": "stroke-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"unchecked": {
 				"icon": {
 					"background": {
-						"value": "{color.primary.white}"
+						"name": "Pictographic Radio Unchecked Icon Background",
+						"value": "{color.primary.white}",
+						"description": "This is to set the background color of the pictographic radio icon when it is unchecked.",
+						"type": "color",
+						"category": "color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"border": {
-						"value": "{border.color.input}"
+						"name": "Pictographic Radio Unchecked Icon Border",
+						"value": "{border.color.input}",
+						"description": "This is to set the border color of the pictographic radio icon when it is unchecked.",
+						"type": "color",
+						"category": "border-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"fill": {
-						"value": "{color.primary.white}"
+						"name": "Pictographic Radio Unchecked Icon Fill",
+						"value": "{color.primary.white}",
+						"description": "This is to set the fill color of the pictographic radio icon when it is unchecked.",
+						"type": "color",
+						"category": "fill-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					},
 					"stroke": {
-						"value": "{color.primary.universal-dark-blue}"
+						"name": "Pictographic Radio Unchecked Icon Stroke",
+						"value": "{color.primary.universal-dark-blue}",
+						"description": "This is to set the stroke color of the pictographic radio icon when it is unchecked.",
+						"type": "color",
+						"category": "stroke-color",
+						"themeable": true,
+						"meta": {
+							"public": true,
+							"deprecated": false,
+							"documented": true,
+							"experimental": false,
+							"SassVariable": true,
+							"CSSCustomProperty": false
+						}
 					}
 				}
 			},
 			"icon": {
 				"size": {
-					"value": "{sizing.relative.1600}"
+					"name": "Pictographic Radio Icon Size",
+					"value": "{sizing.relative.1600}",
+					"description": "This is to set the size of the pictographic radio icon.",
+					"type": "size",
+					"category": "size",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		}
