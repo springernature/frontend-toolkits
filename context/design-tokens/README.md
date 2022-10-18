@@ -69,7 +69,7 @@ To generate new `index.scss` files, run:
 ```bash
 npm run tokens:build-index
 ```
-#### Compiling Design Tokens for the front-end toolkits components
+#### Compiling design tokens for the frontend toolkits components
 
 To generate the all `scss` files for the front-end toolkits brand components from the Design Tokens, run:
 ```bash
