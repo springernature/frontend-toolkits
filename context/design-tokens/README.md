@@ -18,7 +18,7 @@ npm install
 ```
 ### Design Tokens NPM Scripts
 
-There are several NPM scripts available that can be run to generate the design tokens.
+There are several npm scripts available that can be run to generate the design tokens.
 
 #### Deleting existing Design Tokens
 To delete all of the generated `scss` files from the front-end toolkits and the components, run:
