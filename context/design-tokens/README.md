@@ -16,7 +16,7 @@ nvm use
 ```bash
 npm install
 ```
-### Design Tokens NPM Scripts
+### Design tokens npm scripts
 
 There are several npm scripts available that can be run to generate the design tokens.
 
