@@ -1,5 +1,17 @@
-<label for="{{id}}" class="c-forms__label">
-	{{label}}{{#if optional}} (optional){{/if}}
+<label for="{{id}}" class="c-forms__label{{#if hideLabel}} u-visually-hidden{{/if}}">
+	{{label}}
+	{{#if optional}}
+		{{#if optionalSuffix}}
+			{{{optionalSuffix}}}
+		{{else}}
+			(optional)
+		{{/if}}
+	{{/if}}
+	{{#unless optional}}
+		{{#if requiredSuffix}}
+			{{{requiredSuffix}}}
+		{{/if}}
+	{{/unless}}
 	{{#if hint}}
 		<small class="c-forms__hint">{{hint}}</small>
 	{{/if}}

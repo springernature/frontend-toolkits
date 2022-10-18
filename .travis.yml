@@ -16,7 +16,7 @@ cache:
 # Restrict builds on branches
 branches:
   only:
-    - master
+    - main
     - /^\d+\.\d+\.\d+$/
 
 # build notification

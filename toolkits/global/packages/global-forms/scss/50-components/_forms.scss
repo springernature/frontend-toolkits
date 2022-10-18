@@ -18,7 +18,8 @@
 
 .c-forms__fieldset,
 .c-forms__error-summary,
-.c-forms__field {
+.c-forms__field,
+.c-forms__field * {
 	line-height: $global-forms-line-height;
 }
 
@@ -43,6 +44,26 @@
 	max-width: $global-forms-input-width-maximum;
 }
 
+.c-forms__inline-fields {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: var(--global-form-inline-gap, #{$global-forms-input-padding-inline});
+}
+
+.c-forms__inline-fields--nowrap {
+	flex-wrap: nowrap;
+}
+
+.c-forms__inline-fields .c-forms__field--globalFormText {
+	/* ↓ Make it max out the available space with a super high value */
+	flex-grow: 666;
+}
+
+.c-forms__inline-fields .c-forms__input {
+	height: 100%;
+}
+
 .c-forms__pictographic-radios {
 	display: flex;
 	flex-direction: column;
@@ -64,6 +85,14 @@
 * + .c-forms__fieldset,
 * + .c-forms__field {
 	margin-top: $global-forms-field-stack-spacing;
+}
+
+.c-forms__inline-fields * {
+	margin: 0;
+}
+
+.c-forms__field .u-visually-hidden + * {
+	margin-top: 0;
 }
 
 .c-forms__legend * {
@@ -321,10 +350,4 @@ label+.c-forms__error,
 
 .c-forms__error-summary-errors li+li {
 	margin-top: $global-forms-input-stack-spacing;
-}
-
-.c-forms__buttons {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
 }
