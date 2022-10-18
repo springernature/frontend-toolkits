@@ -99,7 +99,7 @@ npm run tokens:figma
 ```
 ## Design Tokens Schema
 
-The Design Tokens are defined in a `.json` file. The Design Tokens `json` is a set of nested json objects. The main `json` object (`aspect-ratio` in the above example) is the logical group of design properties. The first array of objects (`1x1` in the above example) is the name of the design property. Inside this object is the definition of the design property with all its necessary information, as described below:
+The design tokens are defined in a `.json` file. The design tokens `json` is a set of nested json objects. The main `json` object (`aspect-ratio` in the above example) is the logical group of design properties. The first array of objects (`1x1` in the above example) is the name of the design property. Inside this object is the definition of the design property with all its necessary information, as described below:
 ### Design tokens object
 
 - **name:** The name of the design token
