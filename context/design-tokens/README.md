@@ -97,7 +97,7 @@ To generate the `json` files for the figma-tokens plugin for Figma, run:
 ```bash
 npm run tokens:figma
 ```
-## Design Tokens Schema
+## Design tokens cchema
 
 The design tokens are defined in a `.json` file. The design tokens `json` is a set of nested json objects. The main `json` object (`aspect-ratio` in the above example) is the logical group of design properties. The first array of objects (`1x1` in the above example) is the name of the design property. Inside this object is the definition of the design property with all its necessary information, as described below:
 ### Design tokens object
