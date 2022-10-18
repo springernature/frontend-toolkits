@@ -75,7 +75,7 @@ To generate the all `scss` files for the front-end toolkits brand components fro
 ```bash
 npm run tokens:brand-components
 ```
-To generate the all `scss` files for the front-end toolkits components from the Design Tokens, run:
+To generate the all `scss` files for the frontend toolkits components from the design tokens, run:
 ```bash
 npm run tokens:components
 ```
