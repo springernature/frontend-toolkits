@@ -186,7 +186,7 @@ Where:
 - `<priority>` is the priority of the token (eg: primary).
 - `<type>` is the type of the token (eg: solid).
 - `<value>` is the value of the token (eg: 2rem).
-### Component Tokens
+### Component design tokens
 The component tokens are named using the following convention:
 
 `<component>-<property>-<category>-<priority>-<type>-<state>-<validation>-<value>`
