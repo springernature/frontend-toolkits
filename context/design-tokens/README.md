@@ -143,7 +143,7 @@ The Design Tokens are defined in a `.json` file. The Design Tokens `json` is a s
 ```
 ## Design token tiers
 
-There are three tiers of Design Tokens:
+There are three tiers of design tokens:
 
 - `literal`: The base set of tokens that are used to build the rest of the tokens.
 - `alias`: The set of tokens that are used to build the rest of the tokens.
