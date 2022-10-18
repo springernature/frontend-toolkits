@@ -172,7 +172,7 @@ Where:
 - `<property>` is the property of the token (eg: color).
 - `<value>` is the value of the token (eg: 2rem).
 
-The `<category>`, `<property>` and `<value>` are separated by a hyphen (`-`). Depending on the design property you may use either `<category>` or `<prooperty>` or both.
+The `<category>`, `<property>` and `<value>` are separated by a hyphen (`-`). Depending on the design property you may use either `<category>` or `<property>` or both.
 
 For example, the `color` design property does not have a `<category>` and only has a `<property>` of `color`. The `spacing` design property uses a `<category>` of `spacing` and has no `<property`>.
 ### Alias design tokens
