@@ -175,7 +175,7 @@ Where:
 The `<category>`, `<property>` and `<value>` are separated by a hyphen (`-`). Depending on the design property you may use either `<category>` or `<prooperty>` or both.
 
 For example, the `color` design property does not have a `<category>` and only has a `<property>` of `color`. The `spacing` design property uses a `<category>` of `spacing` and has no `<property`>.
-### Alias Tokens
+### Alias design tokens
 The alias tokens are named using the following convention:
 
 `<property>-<category>-<priority>-<type>-<value>`
