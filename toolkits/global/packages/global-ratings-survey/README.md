@@ -32,6 +32,7 @@ The question can be not changed
 ```
 
 ## Usage
+This documents how to implement this component on your website. If your project does not use Elements yet you can still use this component, see refer to the `Projects that do not use Elements` section below.
 ### Install
 Install the Global Ratings Survey package:
 ```shell
@@ -115,3 +116,15 @@ A string that defines the link text for any survey you wish to link to after a u
 This component has a dependency on another component: [Global Forms](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-forms). See [package.json](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-ratings-survey/package.json#L10) which defines the version of Global Forms that this component is dependent on.
 
 The view template for Global Ratings Survey includes the Global Forms fieldset partial which requires a data model suitable for Global Forms. The data to support the Global Forms partial is considered static data. This can be found in `/demo/context.json` as the JSON object `"globalFormData"` and should be defined with the same names, structure and values in your project. The data is also provided [here in JSON](https://gist.github.com/benjclark/8c77fce1ab83a1c3fd8b9ed21be9f366) for your convenience.
+
+### Projects that do not use Elements
+
+If you do not use the Elements design system you are still able to use this component:
+
+1. You can copy the source files from this repository into your project.
+or
+2. You can generate a component demo using the editing `/demo/context.json` and using the command `npm run demo -- -p global-ratings-survey`. Then, copy the compiled code from `/demo/dist/index.html` in to your project.
+
+> **Warning**
+> These approaches are **not** preferred and should only be used in exceptional circumstances where Elements cannot be used in your application. If you use either of these approaches you **must** ensure you have adequate means of staying up to date with any new version releases for this component. 
+
