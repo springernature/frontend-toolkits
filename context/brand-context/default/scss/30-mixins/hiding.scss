@@ -1,6 +1,9 @@
 @mixin u-hide {
 	display: none;
 	visibility: hidden;
+	&:first-child + * {
+		margin-block-start: 0;
+	}
 }
 
 @mixin u-show {

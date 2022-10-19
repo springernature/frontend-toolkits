@@ -9,8 +9,8 @@
 	margin-block-start: $tokens--typography-block-spacing-medium;
 }
 
-// <div> elements found among semantic content likely need similar margin applied.
-// The specificity is that of two element selectors; utility classes can override
+// <div> elements found among basic semantic content likely need similar margin applied.
+// The specificity is that of two element selectors; a utility class can override it
 :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
 div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
 	margin-block-start: $tokens--typography-block-spacing-medium;
@@ -18,7 +18,7 @@ div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
 
 // Headings have differing margins to other flow elements.
 // No matter the type of sibling elements, these margins should be applied.
-// The specificity is equal to one element selector
+// The specificity is equal to one element selector; a utility class can override it
 * + :is(h2, h3, h4, h5) {
 	margin-block-start: $tokens--typography-block-spacing-large;
 }
@@ -36,7 +36,7 @@ h1 + * {
 }
 
 // Remove margin applied to hidden first-child elements.
-// Otherwise redundant margin appear at the top of the container.
+// Otherwise redundant margin appears at the top of the containing parent.
 [hidden]:first-child + *,
 [style*="display:none"]:first-child + *,
 [style*="display: none"]:first-child + * {
