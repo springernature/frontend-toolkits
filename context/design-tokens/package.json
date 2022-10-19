@@ -20,7 +20,8 @@
     "tokens:global-components": "node build-component-global.js",
     "tokens:brand-components": "node build-components.js",
     "tokens:component": "node build-component.js -- component theme",
-    "tokens:figma": "node build-figma.js"
+    "tokens:figma": "node build-figma.js",
+    "tokens:utilities": "node build-utilities.js"
   },
   "keywords": [
     "design",
