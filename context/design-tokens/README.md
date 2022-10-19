@@ -156,7 +156,7 @@ These are the ‘locked’ tokens, that hold a value that should not change. Lit
 These are the ‘unlocked’ tokens, that hold a value that can change. Alias design tokens are defined in the `tokens/alias` folder. The alias design tokens are used to create the component design tokens.
 
 ### Component design tokens
-These are the ‘unlocked’ tokens, that hold a value that can change. The Component Design Tokens are defined in the `tokens/components` folder. The Component Design Tokens are used to create the Component Design Tokens.
+These are the ‘unlocked’ tokens, that hold a value that can change. Component design tokens are defined in the `tokens/components` folder. The component design tokens are used to create the component design tokens.
 ## Naming design tokens
 
 With three tiers of Design Tokens, there are three naming conventions for the design tokens. These naming conventions include all possible options for the name but they do not all need to be used. The resulting value of the design token determine which options are used.
