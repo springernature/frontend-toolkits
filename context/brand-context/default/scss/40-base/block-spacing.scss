@@ -7,6 +7,11 @@
 	margin-block-start: $tokens--typography-block-spacing-medium;
 }
 
+:is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
+div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
+	margin-block-start: $tokens--typography-block-spacing-medium;
+}
+
 * + :is(h2, h3, h4, h5) {
 	margin-block-start: $tokens--typography-block-spacing-large;
 }

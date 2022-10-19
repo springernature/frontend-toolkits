@@ -1,5 +1,8 @@
 # History
 
+## 29.0.4 (2022-10-18)
+    * Reduce scope of block spacing
+
 ## 29.0.3 (2022-10-12)
     * PATCH: Change CSS selector for 'c-' used in block spacing to use the start with instead of the include pattern
 
