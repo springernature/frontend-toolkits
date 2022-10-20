@@ -11,7 +11,7 @@ StyleDictionary.registerFormat({
 			utilities.forEach(function (utility) {
 				if (tokenType === utility.tokenType) {
 					var utilityClass = "u-" + utility.name + "-" + prop.path[1];
-					output += `.${utilityClass} {${utility.CSSprop}: ${prop.value};}\n`
+					output += `.${utilityClass} {${utility.CSSprop}: ${prop.value} !important;}\n`
 				}
 			});
 		});
@@ -19,10 +19,19 @@ StyleDictionary.registerFormat({
 	}
 });
 
+// if the json object contains "UtilityClass": true then it will be added to the utilityClass file
+StyleDictionary.registerFilter({
+	name: 'utilityClass',
+	matcher: function (prop) {
+		return prop.attributes.UtilityClass;
+	}
+});
+
 StyleDictionary.extend({
 	include: [`${__dirname}/literal/**/*.json`],
 	platforms: {
 		css: {
+			filter: 'utilityClass',
 			buildPath: '../brand-context/default/scss/60-utilities/',
 			transformGroup: 'scss',
 			files: [{

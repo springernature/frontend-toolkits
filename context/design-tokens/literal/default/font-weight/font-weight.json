@@ -12,7 +12,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"normal": {
@@ -27,7 +28,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"regular": {
@@ -42,7 +44,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"bold": {
@@ -57,7 +60,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		}
 	}

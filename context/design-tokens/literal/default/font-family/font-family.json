@@ -13,7 +13,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"sans": {
@@ -29,7 +30,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		}
 	}

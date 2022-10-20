@@ -13,7 +13,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"4x3": {
@@ -30,7 +31,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"16x9": {
@@ -46,7 +48,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		}
 	}

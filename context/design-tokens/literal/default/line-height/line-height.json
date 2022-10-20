@@ -13,7 +13,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"md": {
@@ -29,7 +30,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"tight": {
@@ -45,7 +47,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"tighter": {
@@ -61,7 +64,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		}
 	}

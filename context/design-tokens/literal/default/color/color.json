@@ -13,7 +13,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"black": {
@@ -29,7 +30,8 @@
 				"documented": true,
 				"experimental": false,
 				"SassVariable": true,
-				"CSSCustomProperty": false
+				"CSSCustomProperty": false,
+				"UtilityClass": true
 			}
 		},
 		"greyscale": {
@@ -46,7 +48,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"300": {
@@ -62,7 +65,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"400": {
@@ -78,7 +82,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"500": {
@@ -94,7 +99,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"600": {
@@ -110,7 +116,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"700": {
@@ -126,7 +133,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"800": {
@@ -142,7 +150,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			}
 		},
@@ -160,7 +169,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"200": {
@@ -176,7 +186,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"300": {
@@ -192,7 +203,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"400": {
@@ -208,7 +220,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"700": {
@@ -224,7 +237,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			},
 			"900": {
@@ -240,7 +254,8 @@
 					"documented": true,
 					"experimental": false,
 					"SassVariable": true,
-					"CSSCustomProperty": false
+					"CSSCustomProperty": false,
+					"UtilityClass": true
 				}
 			}
 		}
