@@ -92,6 +92,8 @@ To generate the `json` files for the Design Tokens documentation for the Element
 npm run tokens:docs
 ```
 #### Generating design tokens `json` for the Figma tokens plugin (experimental)
+Although Springer Nature Digital Design mostly still use Sketch, they have been discussing moving to Figma. Unlike Sketch (currently) it is possible to use a plugin in Figma that would pull in the `json` files created in this script to make sure the design tokens stay in sync between the tool and the HTML code that will be built using them. At this point the Figma script is a proof of concept.
+
 
 To generate the `json` files for the figma-tokens plugin for Figma, run:
 ```bash
@@ -99,6 +101,9 @@ npm run tokens:figma
 ```
 
 #### Generating CSS utility classes (experimental)
+This currently only generates utility classes for spacing.
+
+
 To generate the CSS utility classes from the design tokens, run:
 ```bash
 npm run tokens:utilities
@@ -163,7 +168,7 @@ These are the ‘locked’ tokens, that hold a value that should not change. Lit
 These are the ‘unlocked’ tokens, that hold a value that can change. Alias design tokens are defined in the `tokens/alias` folder. The alias design tokens are used to create the component design tokens.
 
 ### Component design tokens
-These are the ‘unlocked’ tokens, that hold a value that can change. Component design tokens are defined in the `tokens/components` folder. The component design tokens are used to create the component design tokens.
+These are the ‘unlocked’ tokens, that hold a value that can change. Component design tokens are defined in the `tokens/components` folder. The component design tokens are used to create a component specific set of Sass variables in a `scss` file in the components folder.
 ## Naming design tokens
 
 With three tiers of Design Tokens, there are three naming conventions for the design tokens. These naming conventions include all possible options for the name but they do not all need to be used. The resulting value of the design token determine which options are used.
