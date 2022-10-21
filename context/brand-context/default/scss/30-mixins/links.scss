@@ -14,11 +14,6 @@
 
 @mixin u-link-underline() {
 	text-decoration: underline;
-
-	&.hover,
-	&:hover {
-		text-decoration: none;
-	}
 }
 
 @mixin u-link-faux-block() {
@@ -33,8 +28,6 @@
 }
 
 @mixin u-link-interface() {
-	text-decoration: none;
-
 	&.active,
 	&:active,
 	&.hover,
