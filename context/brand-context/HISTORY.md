@@ -1,7 +1,10 @@
 # History
 
-## 29.1.0 (2022-19-21)
-    * UPDATES: regenerated `00-tokens` files which have their dates updated`
+## 30.0.0 (2022-19-21)
+    * BREAKING:
+      * Design Tokens:
+        * replaces grayscale with   greyscale
+        * replaces `tokens-` with `t-`
 
 ## 29.0.3 (2022-10-12)
     * PATCH: Change CSS selector for 'c-' used in block spacing to use the start with instead of the include pattern
