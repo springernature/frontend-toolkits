@@ -153,7 +153,8 @@ The design tokens are defined in a `.json` file. The design tokens `json` is a s
                 "documented": true,
                 "experimental": false,
                 "SassVariable": true,
-                "CSSCustomProperty": false
+                "CSSCustomProperty": false,
+                "UtilityClass": true
             }
         }
     }
