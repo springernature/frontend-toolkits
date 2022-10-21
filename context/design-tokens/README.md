@@ -85,7 +85,7 @@ npm run tokens:components
 ```
 note: this will override any and all existing `scss` files for the components.
 
-To generate the `scss` file for a specific component for a specific theme in the Elements from the design tokens, run:
+To generate the `scss` file for a specific component for a specific brand from the design tokens, run:
 ```bash
 npm run tokens:component -- component-name theme
 ```
