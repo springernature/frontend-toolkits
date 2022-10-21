@@ -165,7 +165,7 @@ There are three tiers of design tokens:
 - `alias`: The set of design decisions as design tokens that are used to build the component design tokens.
 - `component`: The set of tokens that are to generate the component specific `scss` files.
 
-### Literal Design Tokens
+### Literal design tokens
 These are the ‘locked’ tokens, that hold a value that should not change. Literal design tokens are defined in the `tokens/literal` folder. The literal design tokens are used to create alias design tokens.
 
 ### Alias design tokens
