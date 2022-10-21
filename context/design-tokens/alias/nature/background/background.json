@@ -1,0 +1,21 @@
+{
+	"background": {
+		"page": {
+			"name": "background-page",
+			"value": "{color.white}",
+			"description": "Background color of the page",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"brand": "nature",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
+		}
+	}
+}

@@ -1,19 +1,84 @@
 {
 	"state": {
 		"focus": {
-			"value": "{color.interaction.focus}"
+			"name": "state-focus",
+			"value": "{color.interaction.focus}",
+			"description": "The color of the focus ring.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"error": {
-			"value": "{color.information.red}"
+			"name": "state-error",
+			"value": "{color.information.red}",
+			"description": "The color of the error state.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"warning": {
-			"value": "{color.information.orange}"
+			"name": "state-warning",
+			"value": "{color.information.orange}",
+			"description": "The color of the warning state.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"success": {
-			"value": "{color.information.green}"
+			"name": "state-success",
+			"value": "{color.information.green}",
+			"description": "The color of the success state.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"information": {
-			"value": "{color.information.blue}"
+			"name": "state-information",
+			"value": "{color.information.blue}",
+			"description": "The color of the information state.",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }
