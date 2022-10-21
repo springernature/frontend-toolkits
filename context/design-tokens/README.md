@@ -7,10 +7,10 @@
 > Salesforce, Lightning Design System
 ## The design tokens workflow
 
-Make sure that: 
+Make sure that:
 
 - you are in the `design-tokens` directory
-- you are using the correct version of node (`12.0.0`) 
+- you are using the correct version of node (`12.0.0`)
 - all dependencies are installed
 
 ```bash
@@ -75,11 +75,13 @@ npm run tokens:build-index
 ```
 #### Compiling design tokens for the Elements components
 
-To generate the all `scss` files for Elements components from the design tokens, run:
+To generate the all `scss` files for the Elements brand themed components from the design tokens, run:
 ```bash
 npm run tokens:brand-components
 ```
-To generate the all `scss` files for the Elements components from the design tokens, run:
+note: this will override any and all existing `scss` files for the components.
+
+To generate the all `scss` files for the Elements global themed components from the design tokens, run:
 ```bash
 npm run tokens:components
 ```
