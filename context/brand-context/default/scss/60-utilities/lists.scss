@@ -6,7 +6,7 @@
 	list-style-type: disc;
 }
 
-.u-list-style-dash > ::marker {
+.u-list-style-dash {
 	@include u-list-dash;
 }
 
