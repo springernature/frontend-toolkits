@@ -53,7 +53,7 @@ To delete all of the generated `scss` files in the `00-tokens` folder from the a
 ```bash
 npm run tokens:clean-components
 ```
-#### Compiling Design Tokens for the Elements themes
+#### Compiling design tokens for general styling
 
 To generate the relevant `scss` files for the Elements components from the literal Design Tokens, run:
 ```bash
