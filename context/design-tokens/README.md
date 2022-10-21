@@ -96,7 +96,7 @@ To generate the `json` files for the Design Tokens documentation for the Element
 npm run tokens:docs
 ```
 #### Generating design tokens `json` for the Figma tokens plugin (experimental)
-Although Springer Nature Digital Design mostly still use Sketch, they have been discussing moving to Figma. Unlike Sketch (currently) it is possible to use a plugin in Figma that would pull in the `json` files created in this script to make sure the design tokens stay in sync between the tool and the HTML code that will be built using them. At this point the Figma script is a proof of concept.
+If you're using Figma, you can use a plugin that pulls in the `json` files created in this script. This keeps design tokens in Figma in sync with the HTML code that will be built using them. At this point the Figma script is a proof of concept.
 
 
 To generate the `json` files for the figma-tokens plugin for Figma, run:
