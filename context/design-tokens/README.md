@@ -75,7 +75,7 @@ npm run tokens:build-index
 ```
 #### Compiling design tokens for the Elements components
 
-To generate the all `scss` files for the Elements components brand components from the design tokens, run:
+To generate the all `scss` files for Elements components from the design tokens, run:
 ```bash
 npm run tokens:brand-components
 ```
