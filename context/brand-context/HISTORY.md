@@ -1,4 +1,9 @@
 # History
+## 25.1.0 (2022-10-21)
+    * PATCH: Patching old context version with the following:
+        * FEATURE: Updates link styles across brands
+        * FEATURE: Add new list type using marker
+        * FEATURE: Updates Springer Nature font
 ## 25.0.0 (2022-06-29)
     * UDPATES:
       * updates generated Sass from Design Tokens
