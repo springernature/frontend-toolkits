@@ -73,7 +73,7 @@ To generate new `index.scss` files, run:
 ```bash
 npm run tokens:build-index
 ```
-#### Compiling design tokens for the Elements components
+#### Compiling design tokens for the components
 
 To generate the all `scss` files for the Elements brand themed components from the design tokens, run:
 ```bash
