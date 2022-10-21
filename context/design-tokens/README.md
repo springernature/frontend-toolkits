@@ -91,7 +91,7 @@ npm run tokens:component -- component-name theme
 ```
 #### Generating design tokens documentation `json` files (experimental)
 
-To generate the `json` files for the Design Tokens documentation for the Elements Design System, run:
+To generate the `json` files for the design tokens documentation for the Elements Design System, run:
 ```bash
 npm run tokens:docs
 ```
