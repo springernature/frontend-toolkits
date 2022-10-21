@@ -59,7 +59,7 @@ To generate the relevant `scss` files for the Elements components from the liter
 ```bash
 npm run tokens:compile-literal
 ```
-To generate the relevant `scss` files for the Elements components from the alias Design Tokens, run:
+To generate the relevant `scss` files for the Elements components from the alias design tokens, run:
 ```bash
 npm run tokens:compile-alias
 ```
