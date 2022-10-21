@@ -55,7 +55,7 @@ npm run tokens:clean-components
 ```
 #### Compiling design tokens for general styling
 
-To generate the relevant `scss` files for the Elements components from the literal Design Tokens, run:
+To generate the relevant `scss` files for the Elements components from the literal design tokens, run:
 ```bash
 npm run tokens:compile-literal
 ```
