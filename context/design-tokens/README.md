@@ -7,7 +7,11 @@
 > Salesforce, Lightning Design System
 ## The design tokens workflow
 
-Make sure you are in the `design-tokens` directory. You will then need to make sure you are using the correct version of node (`12.0.0`) and that all dependencies are installed.
+Make sure that: 
+
+- you are in the `design-tokens` directory
+- you are using the correct version of node (`12.0.0`) 
+- all dependencies are installed
 
 ```bash
 nvm use
