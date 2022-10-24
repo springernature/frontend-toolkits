@@ -1,6 +1,11 @@
 # History
 
-## 30.0.0 (2022-19-21)
+## 30.0.1 (2022-10-24)
+    * BUG:
+      * removes erroneous `u-[object Object].scss` file
+      * removes `u-spacing.scss` file as the compiled utility naming convention was broken.
+
+## 30.0.0 (2022-10-21)
     * BREAKING:
       * Design Tokens:
         * replaces grayscale with   greyscale
