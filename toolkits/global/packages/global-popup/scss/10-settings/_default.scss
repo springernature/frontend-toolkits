@@ -8,7 +8,7 @@ $popup--padding: spacing(16, 32, 16, 24);
 $popup--close-top: spacing(16);
 $popup--close-right: spacing(16);
 $popup--box-shadow: 0 0 5px 0 greyscale(50, 0.1);
-$popup--border-color: rgba(85, 85, 85);
+$popup--border-color: $t-border-color-primary;
 $popup--border-radius: spacing(2);
 $popup--background-color: #fff;
 $popup--zindex: 100;
