@@ -141,8 +141,6 @@ You can see an example in the [`demo` folder](https://github.com/springernature/
 
 ### Template configuration
 
-#### Using the Corporate footer
-
 #### Template partials
 
 The main template (`index.hbs`) wraps partials includes for the product and corporate footer sections. These partials are dynamic and their locations are stored in variables passed with the data - `productFooter` and `corporateFooter`. An example of this can be seen below and in the `demo`'s `context.json` file.
