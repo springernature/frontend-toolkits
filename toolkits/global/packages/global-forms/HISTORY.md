@@ -1,5 +1,10 @@
 # History
 
+## 5.0.0-rc.9 (2022-09-28)
+    * Increases thickness of pictographic radio icon borders to 2px
+    * Bumps Brand Context to v28.1.0
+    * Re-generates component's demo and it's scss settings file from design tokens
+
 ## 5.0.0-rc.8 (2022-09-16)
     * BREAKING:
         * Creation of field partial (`globalFormField.hbs)` to allow for iterating over fields without fieldsets
