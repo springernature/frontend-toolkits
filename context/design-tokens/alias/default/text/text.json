@@ -1,13 +1,52 @@
 {
 	"text": {
 		"primary": {
-			"value": "{color.black}"
+			"name": "text-primary",
+			"value": "{color.black}",
+			"description": "Primary text color",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"secondary": {
-			"value": "{color.grayscale.600}"
+			"name": "text-secondary",
+			"value": "{color.greyscale.600}",
+			"description": "Secondary text color",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"reversed": {
-			"value": "{color.white}"
+			"name": "text-reversed",
+			"value": "{color.white}",
+			"description": "Reversed text color",
+			"type": "color",
+			"category": "color",
+			"themeable": true,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

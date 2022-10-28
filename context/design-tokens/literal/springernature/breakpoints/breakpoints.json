@@ -1,20 +1,72 @@
 {
 	"breakpoints": {
 		"tablet-width": {
+			"name": "480px",
 			"value": "480px",
-			"comment": "tablet-width"
+			"description": "tablet-width",
+			"type": "length",
+			"category": "breakpoints",
+			"themeable": false,
+			"meta": {
+				"brand": "breakpoints",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"tablet-wide-width": {
+			"name": "768px",
 			"value": "768px",
-			"comment": "tablet-wide-width"
+			"description": "tablet-wide-width",
+			"type": "length",
+			"category": "breakpoints",
+			"themeable": false,
+			"meta": {
+				"brand": "breakpoints",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"wide-layout": {
+			"name": "876px",
 			"value": "876px",
-			"comment": "wide-layout"
+			"description": "wide-layout",
+			"type": "length",
+			"category": "breakpoints",
+			"themeable": false,
+			"meta": {
+				"brand": "breakpoints",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"desktop-width": {
+			"name": "1024px",
 			"value": "1024px",
-			"comment": "desktop-width"
+			"description": "desktop-width",
+			"type": "length",
+			"category": "breakpoints",
+			"themeable": false,
+			"meta": {
+				"brand": "breakpoints",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

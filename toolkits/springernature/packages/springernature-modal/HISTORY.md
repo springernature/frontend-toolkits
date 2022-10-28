@@ -1,5 +1,8 @@
 # History
 
+## 4.0.2 (2022-10-03)
+    * BUG: add missing `main` key to the package.json
+
 ## 4.0.1 (2022-02-18)
     * Remove post install step that was causing issues with CI
 

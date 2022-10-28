@@ -18,6 +18,11 @@
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -182,80 +187,84 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
   font-weight: 700;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
+ * Breakpoints
+ * Shared media query values
  */
 /**
  * Colors
  * Maps for color values & greyscale settings
- *
  */
 /**
  * Typography
  * Font settings
  */
 /**
+ *  @springernature/global-button
  *  Button settings
- *  Nature
  *
  */
 /**
- * Style
- * Cosmetic styling settings
+ * Button Themes
+ * Variables to set themes styles
  *
  */
 /**
- * Global
- * Main brand settings
+ * Default link style
+ *
+ */
+/**
+ * Link Text
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
 }
 
 h3 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
 }
 
-h6, h5, h4 {
+h4 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -630,42 +639,22 @@ svg[aria-hidden] {
  * Basic
  * Some default CSS styles
  */
+body {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 a {
-  color: #006699;
-}
-
-h1 {
-  font-size: 1.875rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.063rem;
-}
-
-h4 {
-  font-size: 0.875rem;
-}
-
-cite {
-  font-style: normal;
-}
-
-ins {
-  text-decoration: none;
-}
-
-button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  border-radius: 0;
+  color: #025e8d;
 }
 
 /**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
  */
 /**
  * Abstracts
@@ -837,285 +826,179 @@ h3 {
   font-weight: 700;
 }
 
-h6, h5, h4 {
+h4 {
   font-size: 1.125rem;
   font-weight: 700;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 /**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
+ * Breakpoints
+ * Shared media query values
  */
 /**
  * Colors
  * Maps for color values & greyscale settings
- *
  */
 /**
  * Typography
  * Font settings
  */
 /**
+ *  @springernature/global-button
  *  Button settings
- *  Nature
  *
  */
 /**
- * Style
- * Cosmetic styling settings
+ * Button Themes
+ * Variables to set themes styles
  *
  */
 /**
- * Global
- * Main brand settings
+ * Default link style
+ *
+ */
+/**
+ * Link Text
  */
 h1 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-size: min(max(1.5rem, 4vw), 2rem);
-  letter-spacing: -0.0390625rem;
-  letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
-  line-height: 2.25rem;
-  line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 2.188rem;
+  font-size: min(max(1.5rem, 4vw), 2.188rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(2rem, 4vw), 2.625rem);
 }
 
 h2 {
-  font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-size: min(max(1.25rem, 3.5vw), 1.5rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.6rem;
-  line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: min(max(1.25rem, 4vw), 1.5rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.75rem, 4vw), 2rem);
 }
 
 h3 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.25rem;
-  font-size: min(max(1.125rem, 3.0vw), 1.25rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.25rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.75rem);
 }
 
-h6, h5, h4 {
+h4 {
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1.125rem;
-  font-size: min(max(1rem, 2.5vw), 1.125rem);
-  letter-spacing: -0.011715625rem;
-  line-height: 1.4rem;
-  margin-bottom: 8px;
+  font-size: min(max(1.125rem, 4vw), 1.125rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.5rem, 4vw), 1.5rem);
 }
 
-/**
- * Forms
- * Default form styles
- */
-fieldset {
-  border: 0;
-}
-
-input:focus,
-button:focus,
-select:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-button:active {
-  outline: 0;
-}
-
-input + label {
-  padding-left: 0.5em;
+h5 {
+  font-weight: 700;
+  font-size: min(max(1rem, 4vw), 1rem);
+  margin-bottom: 16px;
+  font-family: "Merriweather", serif;
+  line-height: min(max(1.375rem, 4vw), 1.375rem);
 }
 
 /*
+ * Headings
+ */
+/**
  * Layout
  * Universal layout styles
  */
 html {
   height: 100%;
   overflow-y: scroll;
+  font-size: 100%;
 }
 
 body {
   min-height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  line-height: 1.76;
+  font-size: 1em;
+  line-height: 1.875;
   color: #222222;
-  background: #eeeeee;
+  background: #f8f8f8;
+  letter-spacing: 0.01em;
 }
 
-figure {
-  margin: 0;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 abbr[title] {
   text-decoration: none;
 }
 
-[contenteditable]:focus,
-[tabindex="0"]:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-/**
- * Links
- * Basic link styles
- */
 a {
-  text-decoration: none;
-  vertical-align: baseline;
-  color: #006699;
-}
-a:focus {
-  outline: 3px solid #fece3e;
-  will-change: transform;
-}
-
-a:hover {
+  color: #025e8d;
   text-decoration: underline;
-  -webkit-text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
 }
-
-a:active {
-  outline: 0;
+a.visited, a:visited {
+  color: #a345c9;
+}
+a.hover, a:hover {
+  color: #01324b;
+  text-decoration: none;
+}
+a.active, a:active {
+  color: #222222;
+}
+a.focus, a:focus {
+  outline: 4px solid #ffcc00;
 }
 
-/**
- * Lists
- * Default list styles
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/**
- * Tables
- * Default table styles
- */
 table {
-  width: 100%;
-  margin-bottom: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.875;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 th,
 td {
-  padding: 4px 7px;
-  border-right: 1px solid #d5d5d5;
-  text-align: left;
-  line-height: 1.15;
+  padding: 8px;
+  vertical-align: top;
 }
 
 th {
-  vertical-align: top;
+  text-align: left;
+  border-bottom: 3px solid #01324b;
 }
 
 td {
-  vertical-align: middle;
-}
-
-th[valign=top] {
-  vertical-align: top;
-}
-
-th[valign=middle] {
-  vertical-align: middle;
-}
-
-thead tr {
-  border-bottom: 1px solid #d5d5d5;
-}
-
-tbody tr {
-  border-top: 1px solid #d5d5d5;
-}
-
-tbody tr:first-child {
-  border-top: 0;
-}
-
-th {
-  background: #eeeeee;
-}
-
-tfoot tr {
-  border-top: 2px solid #d5d5d5;
-}
-
-tfoot td {
-  font-weight: bold;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 2px solid #dadada;
 }
 
 /**
- * Typography
- * Set base font size
+ * Forms
+ * Default form styles
  */
-html {
-  font-size: 100%;
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+[contenteditable]:focus {
+  outline: 3px solid #ffcc00;
 }
 
-body {
-  font-size: 1.125rem;
-}
-
-/* spacing algorithm */
-:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img) + * {
-  margin-block-start: 16px;
-}
-
-* + :is(h2, h3, h4, h5) {
-  margin-block-start: 32px;
-}
-
-:is(h3, h4, h5) + * {
-  margin-block-start: 8px;
-}
-
-h2 + * {
-  margin-block-start: 16px;
-}
-
-h1 + * {
-  margin-block-start: 48px;
-}
-
-/* Not applicable after hidden elements */
-[hidden] + *,
-[style*="display:none"] + *,
-[style*="display: none"] + * {
-  margin-block-start: 0;
-}
-
-/**
- * Typographic
- * Standard text and heading formatting
- */
-/*
- * Default spacing
- * default margin 28px to match line height
- * this is used for mainting vertical rhythm on the page
- */
-/*
- * Headings
- */
-p:empty {
-  display: none;
+input[type=file]:focus-within {
+  outline: 3px solid #ffcc00;
 }
 
 * {
@@ -1534,44 +1417,54 @@ h1 + * {
   position: relative;
   text-decoration: none;
   width: auto;
-  font-family: sans-serif;
-  font-size: 1rem;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.3;
   justify-content: center;
-  padding: 8px;
-  transition: 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  border-radius: 2px;
-  color: #006699;
-  background-color: transparent;
+  padding: 16px 32px;
+  transition: all 0.2s;
+  border-radius: 32px;
+  letter-spacing: 0.7px;
+  color: white;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid #006699;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button svg {
   fill: currentColor;
 }
 .u-button:visited {
-  color: #006699;
+  color: white;
 }
 .u-button:hover {
-  border: 1px solid #006699;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
+  text-decoration: none;
 }
 .u-button:focus {
-  border: 1px solid #006699;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
 }
 .u-button:hover, .u-button:focus {
-  color: white;
-  background-color: #006699;
+  color: #01324b;
+  background-color: white;
   background-image: none;
 }
 .u-button:hover svg path, .u-button:focus svg path {
-  fill: white;
+  fill: #01324b;
 }
 
 .u-button--primary {
   color: white;
-  background-color: #006699;
+  background-color: #01324b;
   background-image: none;
-  border: 1px solid #006699;
+  border: 4px solid transparent;
+  box-shadow: 0 0 0 1px #01324b;
+  font-weight: 700;
 }
 .u-button--primary svg {
   fill: currentColor;
@@ -1580,18 +1473,72 @@ h1 + * {
   color: white;
 }
 .u-button--primary:hover {
-  border: 1px solid #006699;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #01324b;
+  text-decoration: none;
 }
 .u-button--primary:focus {
-  border: 1px solid #006699;
+  border: 4px solid #ffcc00;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
 }
 .u-button--primary:hover, .u-button--primary:focus {
-  color: #006699;
+  color: #01324b;
   background-color: white;
   background-image: none;
 }
 .u-button--primary:hover svg path, .u-button--primary:focus svg path {
-  fill: #006699;
+  fill: #01324b;
+}
+
+.u-button--secondary {
+  color: #01324b;
+  background-color: white;
+  border: 4px solid white;
+  font-weight: 700;
+}
+.u-button--secondary svg {
+  fill: currentColor;
+}
+.u-button--secondary:visited {
+  color: #01324b;
+}
+.u-button--secondary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--secondary:hover, .u-button--secondary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--secondary:hover svg path, .u-button--secondary:focus svg path {
+  fill: white;
+}
+
+.u-button--tertiary {
+  color: #666666;
+  background-color: #ebf1f5;
+  border: 4px solid transparent;
+  box-shadow: none;
+  font-weight: 700;
+}
+.u-button--tertiary svg {
+  fill: currentColor;
+}
+.u-button--tertiary:visited {
+  color: #666666;
+}
+.u-button--tertiary:hover {
+  border: 4px solid #01324b;
+  box-shadow: none;
+}
+.u-button--tertiary:hover, .u-button--tertiary:focus {
+  color: white;
+  background-color: #01324b;
+}
+.u-button--tertiary:hover svg path, .u-button--tertiary:focus svg path {
+  fill: white;
 }
 
 .u-button--contrast {
@@ -1624,10 +1571,11 @@ h1 + * {
 
 .u-button--disabled,
 .u-button:disabled {
-  color: #222222;
+  color: black;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #eeeeee;
+  border: 1px solid #cccccc;
+  font-weight: normal;
   opacity: 0.7;
   cursor: default;
 }
@@ -1637,44 +1585,44 @@ h1 + * {
 }
 .u-button--disabled:visited,
 .u-button:disabled:visited {
-  color: #222222;
+  color: black;
 }
 .u-button--disabled:hover,
 .u-button:disabled:hover {
-  border: 1px solid #eeeeee;
+  border: 1px solid #cccccc;
   text-decoration: none;
 }
 .u-button--disabled:focus,
 .u-button:disabled:focus {
-  border: 1px solid #eeeeee;
+  border: 1px solid #cccccc;
   text-decoration: none;
 }
 .u-button--disabled:hover, .u-button--disabled:focus,
 .u-button:disabled:hover,
 .u-button:disabled:focus {
-  color: #222222;
+  color: black;
   background-color: transparent;
   background-image: none;
 }
 .u-button--disabled:hover svg path, .u-button--disabled:focus svg path,
 .u-button:disabled:hover svg path,
 .u-button:disabled:focus svg path {
-  fill: #222222;
+  fill: black;
 }
 
 .u-button--xsmall {
   font-size: 0.875rem;
-  padding: 2px;
+  padding: 2px 8px;
 }
 
 .u-button--small {
   font-size: 0.875rem;
-  padding: inherit;
+  padding: 8px 16px;
 }
 
 .u-button--large {
   font-size: 1.125rem;
-  padding: 16px;
+  padding: 10px 35px;
 }
 
 .u-button--full-width {
@@ -1690,6 +1638,148 @@ h1 + * {
   margin-left: 8px;
 }
 
+.u-display-none {
+  display: none;
+}
+
+/* hide from both screenreaders and browsers */
+.u-hide,
+.js .u-js-hide {
+  display: none;
+  visibility: hidden;
+}
+
+/* show to both screenreaders and browsers */
+.u-show,
+.js .u-js-show {
+  display: block;
+  visibility: visible;
+}
+
+.u-show-inline,
+.js .u-js-show-inline {
+  display: inline;
+  visibility: visible;
+}
+
+/* hide only visually, but have it available for screenreaders */
+.u-visually-hidden,
+.js .u-js-visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.u-visually-hidden--off,
+.js .u-js-visually-hidden--off {
+  border: 0;
+  clip: initial;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+
+/* make invisible but retain dimensions */
+.u-invisible {
+  visibility: hidden;
+}
+
+/* hide only the text, keep element visible */
+.u-hide-text,
+.js .u-js-hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: ltr;
+  vertical-align: bottom;
+}
+
+/* hiding overflow */
+.u-hide-overflow {
+  overflow: hidden;
+}
+
+@media print {
+  .u-hide-print {
+    display: none;
+  }
+}
+/**
+ * media-query hiding
+ * intentionally avoids 'max' and 'range' to prevent bloat
+ */
+@media only screen and (min-width: 480px) {
+  .u-hide-at-xs,
+.js .u-js-hide-at-xs {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xs,
+.js .u-js-show-at-xs {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-hide-at-sm,
+.js .u-js-hide-at-sm {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-sm,
+.js .u-js-show-at-sm {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 876px) {
+  .u-hide-at-md,
+.js .u-js-hide-at-md {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-md,
+.js .u-js-show-at-md {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .u-hide-at-lg,
+.js .u-js-hide-at-lg {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-lg,
+.js .u-js-show-at-lg {
+    display: block;
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .u-hide-at-xl,
+.js .u-js-hide-at-xl {
+    display: none;
+    visibility: hidden;
+  }
+
+  .u-show-at-xl,
+.js .u-js-show-at-xl {
+    display: block;
+    visibility: visible;
+  }
+}
 .c-forms__label,
 .c-forms__hint,
 .c-forms__error,
@@ -1708,7 +1798,8 @@ h1 + * {
 
 .c-forms__fieldset,
 .c-forms__error-summary,
-.c-forms__field {
+.c-forms__field,
+.c-forms__field * {
   line-height: 1.4;
 }
 
@@ -1733,22 +1824,54 @@ h1 + * {
   max-width: 70ch;
 }
 
-.c-forms__fieldset--pictographic-radios {
+.c-forms__inline-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--global-form-inline-gap, 0.5rem);
+}
+
+.c-forms__inline-fields--nowrap {
+  flex-wrap: nowrap;
+}
+
+.c-forms__inline-fields .c-forms__field--globalFormText {
+  /* ↓ Make it max out the available space with a super high value */
+  flex-grow: 666;
+}
+
+.c-forms__inline-fields .c-forms__input {
+  height: 100%;
+}
+
+.c-forms__pictographic-radios {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 320px) {
-  .c-forms__fieldset--pictographic-radios {
+@media only screen and (min-width: 480px) {
+  .c-forms__pictographic-radios {
     flex-direction: row;
+  }
+
+  .c-forms__pictographic-radios .c-forms__label + .c-forms__label {
+    margin-top: 0;
   }
 }
 * + .c-forms__error-summary,
 * + .c-forms__fieldset,
 * + .c-forms__field {
   margin-top: 1.5rem;
+}
+
+.c-forms__inline-fields * {
+  margin: 0;
+}
+
+.c-forms__field .u-visually-hidden + * {
+  margin-top: 0;
 }
 
 .c-forms__legend * {
@@ -1877,7 +2000,7 @@ label + .c-forms__error,
   cursor: pointer;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 480px) {
   .c-forms__label--pictographic-radio {
     flex-direction: column;
     justify-content: space-between;
@@ -2006,12 +2129,6 @@ label + .c-forms__error,
 .c-forms__error-summary-errors li + li {
   margin-top: 0.25rem;
 }
-
-.c-forms__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
 		</style>
 	</head>
 	<body style="padding:2%">
@@ -2036,32 +2153,84 @@ label + .c-forms__error,
 						</ul>
 				</div>
 			</aside>
-			<div class="c-forms__field">
+			<div class="c-forms__field c-forms__field--globalFormFieldset">
+				<fieldset class="c-forms__fieldset">
+						<legend class="c-forms__legend">Test, should not inherit</legend>
+						<div class="c-forms__field c-forms__field--globalFormFieldset">
+							<div class="c-forms__fieldset">
+									<div class="c-forms__field c-forms__field--globalFormRadios">
+											<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-animals" name="radios-animals" required="" aria-required="true" autocomplete="off">
+													<legend class="c-forms__label">Animal<span class="c-form__label--visually-hidden"></span></legend>
+												<div>
+														<div class="c-forms__label c-forms__label--wrapper">
+															<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" required="" aria-required="true" autocomplete="off">
+																<label for="radio-horse" class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</label>
+														</div>
+														<div class="c-forms__label c-forms__label--wrapper">
+															<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" required="" aria-required="true" autocomplete="off">
+																<label for="radio-monkey" class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</label>
+																<fieldset class="c-forms__fieldset c-forms__sub-fields">
+																		<div class="c-forms__field">
+																			<label for="monkey-type" class="c-forms__label">
+																				What type of monkey?
+																					<small class="c-forms__hint">Chimps are not monkeys</small>
+																			</label>
+																				<small class="c-forms__error" id="error-monkey-type">
+																					<span class="c-forms__icon c-forms__icon--error">
+																						<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																							<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																						</svg>
+																					</span>
+																					Choose a monkey already!
+																				</small>
+																			<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" required="" aria-required="true" autocomplete="off">
+																		</div>
+																</fieldset>
+														</div>
+														<div class="c-forms__label c-forms__label--wrapper">
+															<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" required="" aria-required="true" checked="" autocomplete="off">
+																<label for="radio-platypus" class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</label>
+														</div>
+												</div>
+											</fieldset>
+									</div>
+							</div>
+						</div>
+				</fieldset>
+			</div>
+			<div class="c-forms__field c-forms__field--globalFormFieldset">
 				<fieldset class="c-forms__fieldset">
 						<legend class="c-forms__legend"><h2>Text inputs</h2></legend>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name" class="c-forms__label">
 								Your name (simple)
 							</label>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" autocomplete="off" data-test="someValue">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name" name="your-name" required="" aria-required="true" autocomplete="off" data-test="someValue">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormPassword">
 							<label for="password" class="c-forms__label">
 								Your password
 							</label>
-							<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" autocomplete="off">
+							<input type="password" class="c-forms__input c-forms__input--text" id="password" name="password" value="123456" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-hint" class="c-forms__label">
 								Your name (with hint)
 									<small class="c-forms__hint">Your name is on your passport</small>
 							</label>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" autocomplete="off">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-hint" name="your-name-hint" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
+							<label for="unimportant" class="c-forms__label">
+								An unimportant field
+										(optional)
+							</label>
+							<input type="text" class="c-forms__input c-forms__input--text" id="unimportant" name="unimportant" autocomplete="off">
+						</div>
+						<div class="c-forms__field c-forms__field--globalFormHTML">
 							<p>Here is some content appearing between fields. You can put any HTML here that you wish.</p>
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-error" class="c-forms__label">
 								Your name (with error)
 									<small class="c-forms__hint">Your name is on your passport</small>
@@ -2074,31 +2243,34 @@ label + .c-forms__error,
 									</span>
 									Enter your name
 								</small>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" autocomplete="off">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-error" name="your-name-error" value="987364" invalid="" aria-invalid="true" aria-describedby="error-your-name-error" required="" aria-required="true" autocomplete="off">
 						</div>
-						<div class="c-forms__field">
+						<div class="c-forms__field c-forms__field--globalFormText">
 							<label for="your-name-disabled" class="c-forms__label">
 								Your name (disabled)
 							</label>
-							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-disabled" name="your-name-disabled" disabled="" autocomplete="off">
+							<input type="text" class="c-forms__input c-forms__input--text" id="your-name-disabled" name="your-name-disabled" required="" aria-required="true" disabled="" autocomplete="off">
 						</div>
 				</fieldset>
 			</div>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Selects</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormSelect">
 						<label for="select-animals" class="c-forms__label">
 							Animal (simple)
 						</label>
 						<div class="c-forms__input-container c-forms__input-container--select">
-							<select class="c-forms__input c-forms__input--select" id="select-animals" name="select-animals" autocomplete="off">
+							<select class="c-forms__input c-forms__input--select" id="select-animals" name="select-animals" required="" aria-required="true" autocomplete="off">
+									<option value="" selected="" disabled="">
+										Please select an option
+									</option>
 									<option value="Horse">
 										Horse
 									</option>
 									<option value="Monkey">
 										Monkey
 									</option>
-									<option value="Platypus" selected="">
+									<option value="Platypus">
 										Platypus
 									</option>
 							</select>
@@ -2109,13 +2281,13 @@ label + .c-forms__error,
 							</span>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormSelect">
 						<label for="select-animals-hint" class="c-forms__label">
 							Animal (with hint)
 								<small class="c-forms__hint">Which is your favorite?</small>
 						</label>
 						<div class="c-forms__input-container c-forms__input-container--select">
-							<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" autocomplete="off">
+							<select class="c-forms__input c-forms__input--select" id="select-animals-hint" name="select-animals-hint" required="" aria-required="true" autocomplete="off">
 									<option value="Horse">
 										Horse
 									</option>
@@ -2135,111 +2307,164 @@ label + .c-forms__error,
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
+					<legend class="c-forms__legend"><h2>Inline fields</h2></legend>
+					<div class="c-forms__field c-forms__field--globalFormInlineFields">
+							<div class="c-forms__inline-fields">
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="search" class="c-forms__label u-visually-hidden">
+											Search
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="search" name="search" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormButton">
+										<button type="submit" class="u-button u-button--primary" required="" aria-required="true" autocomplete="off">
+											Search
+										</button>
+									</div>
+							</div>
+					</div>
+					<div class="c-forms__field c-forms__field--globalFormInlineFields">
+							<div class="c-forms__inline-fields c-forms__inline-fields--nowrap">
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="day" class="c-forms__label">
+											Day
+												<small class="c-forms__hint">In the format: DD</small>
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="day" name="day" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="month" class="c-forms__label">
+											Month
+												<small class="c-forms__hint">In the format: MM</small>
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="month" name="month" required="" aria-required="true" autocomplete="off">
+									</div>
+									<div class="c-forms__field c-forms__field--globalFormText">
+										<label for="year" class="c-forms__label">
+											Year
+												<small class="c-forms__hint">In the format: YY</small>
+										</label>
+										<input type="text" class="c-forms__input c-forms__input--text" id="year" name="year" required="" aria-required="true" autocomplete="off">
+									</div>
+							</div>
+					</div>
+			</fieldset>
+			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Radios</h2></legend>
-					<div class="c-forms__field">
-							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios " id="radios-animals" name="radios-animals" autocomplete="off">
-										<legend class="c-forms__label">Animal<span class="c-form__label--visually-hidden"></span></legend>
-						
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" autocomplete="off">
-											<label for="radio-horse" class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</label>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" autocomplete="off">
-											<label for="radio-monkey" class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</label>
-											<fieldset class="c-forms__fieldset c-forms__sub-fields">
-													<div class="c-forms__field">
-														<label for="monkey-type" class="c-forms__label">
-															What type of monkey?
-																<small class="c-forms__hint">Chimps are not monkeys</small>
-														</label>
-															<small class="c-forms__error" id="error-monkey-type">
-																<span class="c-forms__icon c-forms__icon--error">
-																	<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-																		<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
-																	</svg>
-																</span>
-																Choose a monkey already!
-															</small>
-														<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" autocomplete="off">
-													</div>
-											</fieldset>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" checked="" autocomplete="off">
-											<label for="radio-platypus" class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</label>
-									</div>
+					<div class="c-forms__field c-forms__field--globalFormRadios">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-animals" name="radios-animals" required="" aria-required="true" autocomplete="off">
+									<legend class="c-forms__label">Animal<span class="c-form__label--visually-hidden"></span></legend>
+								<div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-horse" name="radios-animals" value="Horse" required="" aria-required="true" autocomplete="off">
+												<label for="radio-horse" class="c-forms__label c-forms__label--inline c-forms__label--radio">Horse</label>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-monkey" name="radios-animals" value="Monkey" required="" aria-required="true" autocomplete="off">
+												<label for="radio-monkey" class="c-forms__label c-forms__label--inline c-forms__label--radio">Monkey</label>
+												<fieldset class="c-forms__fieldset c-forms__sub-fields">
+														<div class="c-forms__field">
+															<label for="monkey-type" class="c-forms__label">
+																What type of monkey?
+																	<small class="c-forms__hint">Chimps are not monkeys</small>
+															</label>
+																<small class="c-forms__error" id="error-monkey-type">
+																	<span class="c-forms__icon c-forms__icon--error">
+																		<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+																			<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+																		</svg>
+																	</span>
+																	Choose a monkey already!
+																</small>
+															<input type="text" class="c-forms__input c-forms__input--text" id="monkey-type" name="monkey-type" invalid="" aria-invalid="true" aria-describedby="error-monkey-type" required="" aria-required="true" autocomplete="off">
+														</div>
+												</fieldset>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-platypus" name="radios-animals" value="Platypus" required="" aria-required="true" checked="" autocomplete="off">
+												<label for="radio-platypus" class="c-forms__label c-forms__label--inline c-forms__label--radio">Platypus</label>
+										</div>
+								</div>
 							</fieldset>
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Pictographic Radios</h2></legend>
-					<div class="c-forms__field">
-							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios c-forms__fieldset--pictographic-radios" id="radios-rating" name="radios-rating" autocomplete="off">
-										<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.</span></legend>
-						
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible" name="radios-rating" value="Terrible" autocomplete="off">
-											<label for="radio-terrible" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
-												<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
-												<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
-											</label>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad" name="radios-rating" value="Bad" autocomplete="off">
-											<label for="radio-bad" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-												<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
-												<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
-											</label>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok" name="radios-rating" value="OK" autocomplete="off">
-											<label for="radio-ok" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
-												<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
-												<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
-											</label>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good" name="radios-rating" value="Good" autocomplete="off">
-											<label for="radio-good" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
-												<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
-												<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
-											</label>
-									</div>
-									<div class="c-forms__label c-forms__label--wrapper">
-										<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great" name="radios-rating" value="Great" autocomplete="off">
-											<label for="radio-great" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
-												<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
-												<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
-											</label>
-									</div>
+					<div class="c-forms__field c-forms__field--globalFormRadios">
+							<fieldset class="c-forms__fieldset c-forms__field c-forms__radios" id="radios-rating" name="radios-rating" invalid="" aria-invalid="true" aria-describedby="error-radios-rating" required="" aria-required="true" autocomplete="off">
+										<legend class="c-forms__label">Rating (with error)<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from terrible to great. The feelings represent how you feel about this page.</span></legend>
+									<small class="c-forms__error" id="error-radios-rating">
+										<span class="c-forms__icon c-forms__icon--error">
+											<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
+												<svg id="i-error" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path></svg>
+											</svg>
+										</span>
+										Please select one rating
+									</small>
+								<div class="c-forms__pictographic-radios">
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-terrible" name="radios-rating" value="Terrible" required="" aria-required="true" autocomplete="off">
+												<label for="radio-terrible" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="crya"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#crya)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M6.5 20.4A10 10 0 1 0 2 12"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M2.7 18.3a2 2 0 0 1-.7-2.8c.4-.6 1.5-1.1 3.2-1.5.6 1.7.7 2.9.3 3.5a2 2 0 0 1-2.8.8ZM9 10l-2 1M17 11l-2-1"></path> </g> </svg>
+													<span class="c-form__label--visually-hidden">An image of a cartoon face that is crying.</span>
+													<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Terrible</span>
+												</label>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad" name="radios-rating" value="Bad" required="" aria-required="true" autocomplete="off">
+												<label for="radio-bad" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="frowna"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="frownb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#frowna)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path> <g clip-path="url(#frownb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#frownb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+													<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
+													<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+												</label>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok" name="radios-rating" value="OK" required="" aria-required="true" autocomplete="off">
+												<label for="radio-ok" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="neutrala"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="neutralb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#neutrala)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <g clip-path="url(#neutralb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#neutralb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path> </g> </svg>
+													<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
+													<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+												</label>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good" name="radios-rating" value="Good" required="" aria-required="true" autocomplete="off">
+												<label for="radio-good" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="smilea"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> <clipPath id="smileb"> <path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path> </clipPath> </defs> <g clip-path="url(#smilea)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path> <g clip-path="url(#smileb)" transform="translate(8 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> <g clip-path="url(#smileb)" transform="translate(14 8)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path> </g> </g> </svg>
+													<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
+													<span class="c-form__label--visually-hidden"><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+												</label>
+										</div>
+										<div class="c-forms__label c-forms__label--wrapper">
+											<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great" name="radios-rating" value="Great" required="" aria-required="true" autocomplete="off">
+												<label for="radio-great" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+													<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"> <defs> <clipPath id="grina"> <path d="M24 0v24H0V0h24Z"></path> </clipPath> </defs> <g clip-path="url(#grina)"> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path> <path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path> </g> </svg>
+													<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+													<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+												</label>
+										</div>
+								</div>
 							</fieldset>
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Textareas</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormTextarea">
 						<label for="textarea-example" class="c-forms__label">
 							Enter some text
 						</label>
-						<textarea class="c-forms__input c-forms__input--textarea" id="textarea-example" name="textarea-example" value="This has been entered already" autocomplete="off" rows="5">This has been entered already</textarea>
+						<textarea class="c-forms__input c-forms__input--textarea" id="textarea-example" name="textarea-example" value="This has been entered already" required="" aria-required="true" autocomplete="off" rows="5">This has been entered already</textarea>
 					</div>
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>Checkboxes</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 						<div class="c-forms__label c-forms__label--wrapper">
-							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" autocomplete="off">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-hint" name="checkbox-terms-hint" required="" aria-required="true" autocomplete="off">
 							<label for="checkbox-terms-hint" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with hint)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 							<small class="c-forms__error" id="error-checkbox-terms-error">
 								<span class="c-forms__icon c-forms__icon--error">
 									<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
@@ -2249,21 +2474,21 @@ label + .c-forms__error,
 								Agree to the terms to continue
 							</small>
 						<div class="c-forms__label c-forms__label--wrapper">
-							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" autocomplete="off">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-terms-error" name="checkbox-terms-error" invalid="" aria-invalid="true" aria-describedby="error-checkbox-terms-error" required="" aria-required="true" autocomplete="off">
 							<label for="checkbox-terms-error" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Agree to our terms (with error)</label>
 								<small class="c-forms__hint c-forms__hint--inline">You should have read these. Read them, then agree to them.</small>
 						</div>
 					</div>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormCheckbox">
 						<div class="c-forms__label c-forms__label--wrapper">
-							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-sup" name="checkbox-sup" autocomplete="off">
+							<input class="c-forms__input c-forms__input--checkbox" type="checkbox" id="checkbox-sup" name="checkbox-sup" required="" aria-required="true" autocomplete="off">
 							<label for="checkbox-sup" class="c-forms__label c-forms__label--inline c-forms__label--checkbox">Checkbox with supplementary field</label>
 								<fieldset class="c-forms__fieldset c-forms__sub-fields">
 										<div class="c-forms__field">
 											<label for="checkbox-membership" class="c-forms__label">
 												What is your membership number?
 											</label>
-											<input type="text" class="c-forms__input c-forms__input--text" id="checkbox-membership" name="checkbox-membership" autocomplete="off">
+											<input type="text" class="c-forms__input c-forms__input--text" id="checkbox-membership" name="checkbox-membership" required="" aria-required="true" autocomplete="off">
 										</div>
 								</fieldset>
 						</div>
@@ -2271,25 +2496,25 @@ label + .c-forms__error,
 			</fieldset>
 			<fieldset class="c-forms__fieldset">
 					<legend class="c-forms__legend"><h2>File upload</h2></legend>
-					<div class="c-forms__field">
+					<div class="c-forms__field c-forms__field--globalFormFile">
 						<label for="file-upload" class="c-forms__label">
 							Journal upload
 						</label>
-						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" autocomplete="off">
+						<input type="file" class="c-forms__input c-forms__input--file" id="file-upload" name="file-upload" required="" aria-required="true" autocomplete="off">
 					</div>
 			</fieldset>
-			<fieldset class="c-forms__fieldset">
-					<div class="c-forms__field">
-						<div class="c-forms__field c-forms__buttons">
-								<button type="submit" class="u-button u-button--primary" autocomplete="off">
+			<div class="c-forms__fieldset">
+					<div class="c-forms__field c-forms__field--globalFormButtons">
+						<div class="c-forms__field c-forms__inline-fields">
+								<button type="submit" class="u-button u-button--primary" required="" aria-required="true" autocomplete="off">
 									Submit
 								</button>
-								<button type="cancel" class="u-button" autocomplete="off">
+								<button type="cancel" class="u-button" required="" aria-required="true" autocomplete="off">
 									Clear
 								</button>
 						</div>
 					</div>
-			</fieldset>
+			</div>
 </form>
 
 		<script>

@@ -16,7 +16,9 @@
 	}
 }
 
-.c-breadcrumbs__chevron {
+svg.c-breadcrumbs__chevron {
 	margin: $breadcrumbs-chevron-spacing;
 	fill: $breadcrumbs-chevron-color;
+	width: 10px;
+	height: 10px;
 }

@@ -2,13 +2,55 @@
 	"color": {
 		"springer": {
 			"oxford-blue": {
-				"value": "#00285A"
+				"name": "",
+				"value": "#00285A",
+				"description": "a springer color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springer",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"french-blue": {
-				"value": "#0176C3"
+				"name": "",
+				"value": "#0176C3",
+				"description": "a springer color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springer",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"alice-blue": {
-				"value": "#EBF6FF"
+				"name": "",
+				"value": "#EBF6FF",
+				"description": "a springer color",
+				"type": "color",
+				"category": "color",
+				"themeable": false,
+				"meta": {
+					"brand": "springer",
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}

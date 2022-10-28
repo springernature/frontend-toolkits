@@ -1,30 +1,40 @@
 const fs = require('fs');
-const StyleDictionaryPackage = require('style-dictionary');
 const { readdirSync } = require('fs');
+const StyleDictionaryPackage = require('style-dictionary');
 
-// this will return a filtering function based on brand and component
+const componentX = process.argv[5];
+const theme = process.argv[6];
+const brandX = componentX.split('-')[0];
+
+if (!theme && brandX === 'global') {
+	theme = 'default';
+} else if (!theme && brandX !== 'global') {
+	theme = brandX;
+}
+
 function tokenFilter(brand, component) {
 	return function (token) {
 		return (
-			// Added in 3.0: filePath to help with filtering
-			// So this will only include tokens of a given brand
 			token.filePath.includes(brand) && token.attributes.category === component
 		);
 	};
 }
 
 function getStyleDictionaryConfig(brand, components) {
-	let dest = `./toolkits/${brand}/packages/`;
+
+	let dest = `../../toolkits/${brandX}/packages/`;
 
 	return {
+		// we want to include the default tokens first and override them with brand tokens if available
 		include: [
 			`${__dirname}/literal/default/**/*.json`,
-			`${__dirname}/literal/${brand}/**/*.json`,
+			`${__dirname}/literal/${brandX}/${componentX}/*.json`,
 			`${__dirname}/alias/default/**/*.json`,
-			`${__dirname}/alias/${brand}/**/*.json`
+			`${__dirname}/alias/${brandX}/${componentX}/*.json`
 		],
+		// for each brand want to generate the Sass variables from this components tokens file
 		source: [
-			`${__dirname}/components/${brand}/**/*.json`
+			`${__dirname}/components/${brandX}/${componentX}/${theme}.json`
 		],
 		platforms: {
 			scssVariables: {
@@ -32,7 +42,7 @@ function getStyleDictionaryConfig(brand, components) {
 				buildPath: `${dest}/`,
 				files: components.map(component => {
 					return {
-						destination: `${component}/scss/00-tokens/_${component}.tokens.scss`,
+						destination: `${componentX}/scss/00-tokens/_${theme}.tokens.scss`,
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
@@ -46,33 +56,18 @@ function getStyleDictionaryConfig(brand, components) {
 	}
 }
 
-console.log('Build started...');
+const styleDictionary = StyleDictionaryPackage.extend(
+	getStyleDictionaryConfig([theme], [componentX])
+);
 
-// // the following array needs to be manually updated when more brand speicifc components are added to brands not on this list. Otherwise this will not build. This is why it is currently not part of
-// [''].map(function (brand) {
+styleDictionary.buildAllPlatforms();
 
-// 	let dir = `${__dirname}/components/${brand}`
-// 	const components = readdirSync(dir);
-// 	const brands = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand, components));
+const filePath = `../../toolkits/${brandX}/packages/${componentX}/scss/00-tokens/_${theme}.tokens.scss`;
+const content = fs.readFileSync(filePath, 'utf8');
+const sortedContent = content.split('\n').sort().join('\n');
 
-// 	brands.buildAllPlatforms();
+const replacedContent = sortedContent.replace(/: \$/g, ': $t-');
 
-// 	components.map(component => {
-// 		let dir = `./toolkits/${brand}/packages/${component}/scss/00-tokens`
-// 		const files = readdirSync(dir);
+const GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brandX}/${componentX}/${theme}.json\n// DO NOT edit directly\n\n${replacedContent}`;
 
-// 		files.map(file => {
-// 			let filePath = `${dir}/${file}`
-// 			let content = fs.readFileSync(filePath, 'utf8');
-// 			let sortedContent = content.split('\n').sort().join('\n');
-// 			fs.writeFileSync(filePath, sortedContent);
-// 			let date = new Date();
-// 			let dateString = date.toLocaleString();
-// 			let newContent = `// Created: ${dateString}\n// Source: design-tokens/componenets/${brand}/${component}/${brand}.json\n// DO NOT edit directly\n\n${sortedContent}`;
-// 			let addedContent = newContent.replace(/: \$/g, ': $tokens--');
-// 			fs.writeFileSync(filePath, addedContent);
-// 		})
-// 	});
-
-// 	console.log('\nEnd processing');
-// });
+fs.writeFileSync(filePath, GeneratedContent, 'utf8');

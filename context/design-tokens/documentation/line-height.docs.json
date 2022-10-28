@@ -1,0 +1,172 @@
+{
+ "properties": [
+  {
+   "name": "tokens--line-height-base",
+   "value": "1.875",
+   "description": "For body text",
+   "type": "number",
+   "category": "line-height",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/line-height/line-height.json",
+   "isSource": true,
+   "original": {
+    "name": "base",
+    "value": "1.875",
+    "description": "For body text",
+    "type": "number",
+    "category": "line-height",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "line-height",
+    "type": "base"
+   },
+   "path": [
+    "line-height",
+    "base"
+   ]
+  },
+  {
+   "name": "tokens--line-height-md",
+   "value": "1.5",
+   "type": "number",
+   "description": "For body text",
+   "category": "line-height",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/line-height/line-height.json",
+   "isSource": true,
+   "original": {
+    "name": "md",
+    "value": "1.5",
+    "type": "number",
+    "description": "For body text",
+    "category": "line-height",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "line-height",
+    "type": "md"
+   },
+   "path": [
+    "line-height",
+    "md"
+   ]
+  },
+  {
+   "name": "tokens--line-height-tight",
+   "value": "1.4",
+   "description": "Tight line-height",
+   "type": "number",
+   "category": "line-height",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/line-height/line-height.json",
+   "isSource": true,
+   "original": {
+    "name": "tight",
+    "value": "1.4",
+    "description": "Tight line-height",
+    "type": "number",
+    "category": "line-height",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "line-height",
+    "type": "tight"
+   },
+   "path": [
+    "line-height",
+    "tight"
+   ]
+  },
+  {
+   "name": "tokens--line-height-tighter",
+   "value": "1.2",
+   "description": "Tighter line-height",
+   "type": "number",
+   "category": "line-height",
+   "themeable": false,
+   "meta": {
+    "public": true,
+    "deprecated": false,
+    "documented": true,
+    "experimental": false,
+    "SassVariable": true,
+    "CSSCustomProperty": false
+   },
+   "filePath": "/Users/sr/Sites/Clients/Springer/frontend-toolkits/context/design-tokens/literal/default/line-height/line-height.json",
+   "isSource": true,
+   "original": {
+    "name": "tighter",
+    "value": "1.2",
+    "description": "Tighter line-height",
+    "type": "number",
+    "category": "line-height",
+    "themeable": false,
+    "meta": {
+     "public": true,
+     "deprecated": false,
+     "documented": true,
+     "experimental": false,
+     "SassVariable": true,
+     "CSSCustomProperty": false
+    }
+   },
+   "attributes": {
+    "category": "line-height",
+    "type": "tighter"
+   },
+   "path": [
+    "line-height",
+    "tighter"
+   ]
+  }
+ ]
+}

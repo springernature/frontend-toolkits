@@ -1,19 +1,72 @@
 {
 	"line-height": {
 		"base": {
+			"name": "base",
 			"value": "1.875",
-			"comment": "For body text"
+			"description": "For body text",
+			"type": "number",
+			"category": "line-height",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"md": {
-			"value": "1.5"
+			"name": "md",
+			"value": "1.5",
+			"type": "number",
+			"description": "For body text",
+			"category": "line-height",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"tight": {
+			"name": "tight",
 			"value": "1.4",
-			"comment": "Tight line-height"
+			"description": "Tight line-height",
+			"type": "number",
+			"category": "line-height",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"tighter": {
+			"name": "tighter",
 			"value": "1.2",
-			"comment": "Tighter line-height"
+			"description": "Tighter line-height",
+			"type": "number",
+			"category": "line-height",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		}
 	}
 }

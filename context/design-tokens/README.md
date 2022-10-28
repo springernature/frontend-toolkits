@@ -1,157 +1,225 @@
 # Design Tokens
 
-## What Are Design Tokens
-
+## What are design tokens?
 
 > Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
 >
 > Salesforce, Lightning Design System
+## The design tokens workflow
 
-The Design Tokens are generated from several `.json` files which are (currently) compiled into various Sass files are needed.
-## Running The Design Tokens Workflow
+Make sure that:
 
-To get this up and running you will need to be in the root of this repo and have ran `npm install`.
+- you are in the `design-tokens` directory
+- you are using the correct version of node (`12.0.0`)
+- all dependencies are installed
 
-### Generate Design Tokens
-
-To generate the tokens run `npm run tokens:generate`.
-
-This will run the `tokens:clean` script and then take the `.json` files in the `design-tokens` folder and generate the relevant `.scss` files in a folder called `00-tokens` in the `brand-context` folder. It will also generate an `index.scss` file based on the created files inside the `00-tokens` folders.
-
-### Cleaning Generated Design Tokens
-
-To clean the generated design tokens `.scss` files that are created in the `00-tokens` folder you can run `npm run tokens:clean`. This will remove the `00-tokens` folder and its contents. This script is part of the `npm run tokens:generate` script.
-
----
-## Design Tokens Naming Conventions
-### Literal Design Tokens
-These are the ‘locked’ tokens, that hold a value that should not change. These are primarily used to to create the Alias Design Tokens that can be used in developing components.
-The Design values we have integrated into a Design Tokens workflow are:
-#### Colour
-The `color` Design Tokens will be used for any Alias Design Token defined.
-As the current colour palettes used are relatively small we will name most of the colours. For the grayscale colours we will apply a numerical scale to go from white to black, `100` to `900`. This naming convention allows for additional grayscale colours to be added over time if needed.
-There are four categories for the colour palettes used across Springer Nature:
-1. UI - These are used for the foreground and background colours of the web page. The page background, the header background, the footer background. As well as interactive states of text links and buttons.
-2. grayscales - These are used for border colours, text colours, and backgrounds.
-3. Information - These are used for different states like the error state of a form input, or the focus state of a text link.
-4. Brand Specific Colours - These are specific to the various brands across Springer Nature and could be used for text, border, background colour etc.
-##### Example
+```bash
+nvm use
 ```
+
+```bash
+npm install
+```
+### Design tokens npm scripts
+
+Use the following npm scripts to manage your design tokens.
+
+#### Deleting existing design tokens
+To delete all of the generated `scss` files in the `00-tokens` folder from the Elements components and the components, run:
+```bash
+npm run tokens:clean-all
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the theme brand context folders, run:
+```bash
+npm run tokens:clean-context
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the default themes brand context folder, run:
+```bash
+npm run tokens:clean-default
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the Nature themes brand context folder, run:
+```bash
+npm run tokens:clean-nature
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the Springer themes brand context folder, run:
+```bash
+npm run tokens:clean-springer
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the Springer Nature themes brand context folder, run:
+```bash
+npm run tokens:clean-springe-rnature
+```
+To delete all of the generated `scss` files in the `00-tokens` folder from the all of the components, run:
+```bash
+npm run tokens:clean-components
+```
+#### Compiling design tokens for general styling
+
+To generate the relevant `scss` files for the Elements components from the literal design tokens, run:
+```bash
+npm run tokens:compile-literal
+```
+To generate the relevant `scss` files for the Elements components from the alias design tokens, run:
+```bash
+npm run tokens:compile-alias
+```
+When these are run you may need to delete or rebuild the `index.scss` file that `@import`s all of the `scss` files in the folder. This is because the `index.scss` file is not automatically updated when the `scss` files are generated.
+
+To delete any existing `index.scss` files, run:
+```bash
+npm run tokens:delete-index
+```
+To generate new `index.scss` files, run:
+```bash
+npm run tokens:build-index
+```
+#### Compiling design tokens for the components
+
+To generate the all `scss` files for the Elements brand themed components from the design tokens, run:
+```bash
+npm run tokens:brand-components
+```
+note: this will override any and all existing `scss` files for the components.
+
+To generate the all `scss` files for the Elements global themed components from the design tokens, run:
+```bash
+npm run tokens:components
+```
+note: this will override any and all existing `scss` files for the components.
+
+To generate the `scss` file for a specific component for a specific brand from the design tokens, run:
+```bash
+npm run tokens:component -- component-name theme
+```
+#### Generating design tokens documentation `json` files (experimental)
+
+To generate the `json` files for the design tokens documentation for the Elements Design System, run:
+```bash
+npm run tokens:docs
+```
+#### Generating design tokens `json` for the Figma tokens plugin (experimental)
+If you're using Figma, you can use a plugin that pulls in the `json` files created in this script. This keeps design tokens in Figma in sync with the HTML code that will be built using them. At this point the Figma script is a proof of concept.
+
+
+To generate the `json` files for the figma-tokens plugin for Figma, run:
+```bash
+npm run tokens:figma
+```
+
+#### Generating CSS utility classes (experimental)
+This currently only generates utility classes for spacing.
+
+
+To generate the CSS utility classes from the design tokens, run:
+```bash
+npm run tokens:utilities
+```
+## Design tokens schema
+
+The design tokens are defined in a `.json` file. The design tokens `json` is a set of nested json objects. The main `json` object (`aspect-ratio` in the above example) is the logical group of design properties. The first array of objects (`1x1` in the above example) is the name of the design property. Inside this object is the definition of the design property with all its necessary information, as described below:
+### Design tokens object
+
+- **name:** The name of the design token
+- **value:** The value of the design token
+- **description:** A description of the design token
+- **type:** The type of the design token
+- **category:** The category of the design token
+- **themeable:** Whether the design token is themeable or not.
+- **meta:**
+  - **brand:** if the token is for a specific brand (springer, nature, springernature). If it’s a default theme, this can be omitted.
+  - **public:** means that the design token will be generated by SD
+  - **deprecated:** means if it’s deprecated there would be a message pointing to new value
+  - **documented:** means that the design token will show up in the tokens documentation
+  - **experimental:** if the token is part of a trial, user research, and subject to change.
+  - **SassVariable:** A Sass variable is generated by SD and the value is shown in the documentation
+  - **CSSCustomProperty:** A CSS Custom Property is generated by SD and the value is shown in the documentation.
+  - **UtilityClass** A CSS utility class is generated by Style Dictionary.
+
+#### Example
+
+```json
 {
-  "color": {
-		"ui": {
-			"universal-dark-blue": {
-				"value": "#01324b"
-			}
-		},
-		"grayscale": {
-			"100": {
-				"name": "grayscale-100",
-				"value": "#ffffff"
-  		},
-			"200": {
-				"name": "grayscale-200",
-				"value": "#f8f8f8"
-			}
-		}
-  }
-}
-```
-#### Typography
-There are several Literal Design Tokens for typography. They include:
-- the `font-family` which defines the preferred typeface to be used, and for the web a group of fallbacks.
-- the `font-size`. These will be defined in using the `rem` unit and will also make use of a numerical scale where `400` is the same as `1rem` or `16px`. Again, this helps to add font sizes to the scale if needed in the future.
-- the `font-weight`. These will be defined using the existing numeric keyword values
-- the `line-height`. These will be defined with unitless values and will use descriptive names like ‘tight’ and ‘loose’.
-- the `letter-spacing`. These will be defined using the `rem` unit and will use a numerical scale. As `letter-spacing` is tiny in comparison to `font-size` we use a similar scale but with `10`s prefixed with a `0`.
-##### Example
-```
-{
-	"font": {
-		"family": {
-			"sans": {
-            "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
-      },
-		"size": {
-			"600": {
-  			"value": "1.5rem"
-			}
-		},
-		"weight": {
-			"700": {
-				"value": "700"
-			}
-		},
-		"line-height": {
-			"tight": {
-				"value": "1.25"
-			}
-		},
-		"letter-spacing": {
-			"080": {
-				"value": "0.2rem"
-			}
-		}
-  }
-}
-```
-#### Space
-The spacing design tokens are to be used to manage the `margin`, `padding`, and `gap` of a component or layout.
-They are defined using the `rem` unit and use a numerical scale like the `font-size` tokens where the number `400` would be equal to `1rem` (16px).
-##### Example
-```
-{
-  "spacing": {
-	  "0" : {
-      "value": "0rem",
-      "comment": "no spacing, zero."
-    },
-    "100" : {
-      "value": ".25rem",
-      "comment": ".25rem, 4px."
-    },
-    "200" : {
-      "value": ".5rem",
-      "comment": ".5rem, 8px."
+    "aspect-ratio": {
+        "1x1": {
+            "name": "1x1",
+            "value": "1",
+            "description": "This is to make an item square",
+            "type": "ratio",
+            "category": "aspect-ratio",
+            "themeable": false,
+            "meta": {
+                "public": true,
+                "deprecated": false,
+                "documented": true,
+                "experimental": false,
+                "SassVariable": true,
+                "CSSCustomProperty": false,
+                "UtilityClass": true
+            }
+        }
     }
-  }
 }
 ```
-#### Breakpoints
-The breakpoint values are defined using the `em` CSS unit. They are used to manage changes in the design of the web page or component depending on the screen size. The naming convention used is based on t-shirt sizing.
+## Design token tiers
 
-```
-{
-	"breakpoints": {
-		"xs": {
-			"value": "320px",
-			"comment": "mobile"
-		},
-		"md": {
-			"value": "768px",
-			"comment": "tablet"
-		},
-		"lg": {
-			"value": "1024px",
-			"comment": "small desktop"
-		}
-	}
-}
-```
+There are three tiers of design tokens:
 
-#todo
-- These are also used to generate the styling utility classes
-- These will be expanded upon with values for `z-index`, `box-shadow`, `border` properties (and more).
-- - -
-### Alias Design Tokens
-Alias Design Tokens are ‘locked’ tokens that hold a literal design tokens, and not a value.
-#todo
-- This is part of 'phase 2' of the Design Tokens Epic
+- `literal`: The base set of tokens that are used to build utility classes and inform the alias and component design tokens.
+- `alias`: The set of design decisions as design tokens that are used to build the component design tokens.
+- `component`: The set of tokens that are to generate the component specific `scss` files.
 
-### Component Design Tokens
-Component Design Tokens are 'locked' tokens that hold a Alias design token, and not a literal token or value.
-#todo
-- This is part of 'phase 3' of the Design Tokens Epic
+### Literal design tokens
+These are the ‘locked’ tokens, that hold a value that should not change. Literal design tokens are defined in the `tokens/literal` folder. The literal design tokens are used to create alias design tokens.
+
+### Alias design tokens
+These are the ‘unlocked’ tokens, that hold a value that can change. Alias design tokens are defined in the `tokens/alias` folder. The alias design tokens are used to create the component design tokens.
+
+### Component design tokens
+These are the ‘unlocked’ tokens, that hold a value that can change. Component design tokens are defined in the `tokens/components` folder. The component design tokens are used to create a component specific set of Sass variables in a `scss` file in the components folder.
+## Naming design tokens
+
+With three tiers of Design Tokens, there are three naming conventions for the design tokens. These naming conventions include all possible options for the name but they do not all need to be used. The resulting value of the design token determine which options are used.
+
+The naming convention for the Design Tokens is as follows:
+### Literal design tokens
+The literal tokens are named using the following convention:
+
+`<category>-<property>-<value>`
+
+Where:
+- `<category>` is the category of the token (eg: spacing).
+- `<property>` is the property of the token (eg: color).
+- `<value>` is the value of the token (eg: 2rem).
+
+The `<category>`, `<property>` and `<value>` are separated by a hyphen (`-`). Depending on the design property you may use either `<category>` or `<property>` or both.
+
+For example, the `color` design property does not have a `<category>` and only has a `<property>` of `color`. The `spacing` design property uses a `<category>` of `spacing` and has no `<property`>.
+### Alias design tokens
+The alias tokens are named using the following convention:
+
+`<property>-<category>-<priority>-<type>-<value>`
+
+Where:
+- `<property>` is the property of the token (eg: color).
+- `<category>` is the category of the token (eg: spacing).
+- `<priority>` is the priority of the token (eg: primary).
+- `<type>` is the type of the token (eg: solid).
+- `<value>` is the value of the token (eg: 2rem).
+### Component design tokens
+The component tokens are named using the following convention:
+
+`<component>-<property>-<category>-<priority>-<type>-<state>-<validation>-<value>`
+
+Where:
+- `<component>` is the component of the token (eg: button).
+- `<property>` is the property of the token (eg: color).
+- `<category>` is the category of the token (eg: spacing).
+- `<priority>` is the priority of the token (eg: primary).
+- `<type>` is the type of the token (eg: solid).
+- `<state>` is the state of the token (eg: hover).
+- `<validation>` is the validation of the token (eg: valid).
+- `<value>` is the value of the token (eg: 2rem).
+
 
 ---
 ## Sketch File
