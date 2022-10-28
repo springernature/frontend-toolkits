@@ -1,266 +1,266 @@
 {
-	"default": {
-		"navigation": {
-			"links": [
-				{
-					"text": "Manage cookies / Do not sell my data",
-					"buttonProperties": "data-cc-action=\"preferences\""
-				},
-				{
-					"text": "Accessibility statement",
-					"url": "https://www.springernature.com/gp/info/accessibility"
-				},
-				{
-					"text": "Privacy policy",
-					"url": "/url/to/your/privacy/policy"
-				}
-			]
-		},
-		"image": {
-			"src": "../img/logo-springernature_white.svg",
-			"alt": "Springer Nature",
-			"link": "https://www.springernature.com/"
-		},
-		"currentYear": 2022,
+  "default": {
+    "navigation": {
+      "links": [
+        {
+          "text": "Manage cookies / Do not sell my data",
+          "buttonProperties": "data-cc-action=\"preferences\""
+        },
+        {
+          "text": "Accessibility statement",
+          "url": "https://www.springernature.com/gp/info/accessibility"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "/url/to/your/privacy/policy"
+        }
+      ]
+    },
+    "image": {
+      "src": "../img/logo-springernature_white.svg",
+      "alt": "Springer Nature",
+      "link": "https://www.springernature.com/"
+    },
+    "currentYear": 2022,
     "productFooter": "product-footer",
     "corporateFooter": "corporate-footer"
-	},
-	"extended": {
-		"navigation": {
-			"links": [
-				{
-					"text": "Manage cookies / Do not sell my data",
-					"buttonProperties": "data-cc-action=\"preferences\""
-				},
-				{
-					"text": "Accessibility statement",
-					"url": "https://www.springernature.com/gp/info/accessibility"
-				},
-				{
-					"text": "Privacy policy",
-					"url": "/url/to/your/privacy/policy"
-				},
-				{
-					"text": "California privacy statement (Optional)",
-					"url": "https://www.springernature.com/gp/legal/ccpa"
-				},
-				{
-					"text": "Terms and conditions",
-					"url": "/url/to/your/terms"
-				},
-				{
-					"text": "Help and support",
-					"url": "/url/to/your/help/and/support"
-				}
-			]
-		},
-		"image": {
-			"src": "../img/logo-springernature_white.svg",
-			"alt": "Springer Nature",
-			"link": "https://www.springernature.com/"
-		},
-		"currentYear": 2022,
+  },
+  "extended": {
+    "navigation": {
+      "links": [
+        {
+          "text": "Manage cookies / Do not sell my data",
+          "buttonProperties": "data-cc-action=\"preferences\""
+        },
+        {
+          "text": "Accessibility statement",
+          "url": "https://www.springernature.com/gp/info/accessibility"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "/url/to/your/privacy/policy"
+        },
+        {
+          "text": "California privacy statement (Optional)",
+          "url": "https://www.springernature.com/gp/legal/ccpa"
+        },
+        {
+          "text": "Terms and conditions",
+          "url": "/url/to/your/terms"
+        },
+        {
+          "text": "Help and support",
+          "url": "/url/to/your/help/and/support"
+        }
+      ]
+    },
+    "image": {
+      "src": "../img/logo-springernature_white.svg",
+      "alt": "Springer Nature",
+      "link": "https://www.springernature.com/"
+    },
+    "currentYear": 2022,
     "productFooter": "product-footer",
     "corporateFooter": "corporate-footer"
-	},
-	"product": {
-		"navigation": {
-			"links": [
-				{
-					"text": "Manage cookies / Do not sell my data",
-					"buttonProperties": "data-cc-action=\"preferences\""
-				},
-				{
-					"text": "Accessibility statement",
-					"url": "https://www.springernature.com/gp/info/accessibility"
-				},
-				{
-					"text": "Privacy policy",
-					"url": "/url/to/your/privacy/policy"
-				},
-				{
-					"text": "California privacy statement (Optional)",
-					"url": "https://www.springernature.com/gp/legal/ccpa"
-				},
-				{
-					"text": "Terms and conditions",
-					"url": "/url/to/your/terms"
-				},
-				{
-					"text": "Help and support",
-					"url": "/url/to/your/help/and/support"
-				}
-			]
-		},
-		"productGroups": [
-			{
-				"title": "Discover content",
-				"items": [
-					{
-						"url": "https://www.nature.com/siteindex",
-						"text": "Journals A-Z",
-						"dataTrackAction": "journals a-z"
-					},
-					{
-						"url": "https://www.nature.com/subjects/",
-						"text": "Articles by subject",
-						"dataTrackAction": "article by subject"
-					},
-					{
-						"url": "https://nano.nature.com/",
-						"text": "Nano",
-						"dataTrackAction": "nano"
-					},
-					{
-						"url": "https://www.nature.com/protocolexchange/",
-						"text": "Protocol exchange",
-						"dataTrackAction": "protocol exchange"
-					},
-					{
-						"url": "https://www.natureindex.com/",
-						"text": "Nature Index",
-						"dataTrackAction": "nature index"
-					}
-				]
-			},
-			{
-				"title": "Publishing policies",
-				"items": [
-					{
-						"url": "https://www.nature.com/authors/editorial_policies/",
-						"text": "Nature portfolio policies",
-						"dataTrackAction": "nature portfolio policies"
-					},
-					{
-						"url": "https://www.nature.com/nature-research/open-access",
-						"text": "Open access",
-						"dataTrackAction": "open access"
-					}
-				]
-			},
-			{
-				"title": "Author & Researcher services",
-				"items": [
-					{
-						"url": "https://www.nature.com/reprints/",
-						"text": "Reprints & permissions",
-						"dataTrackAction": "reprints and permissions"
-					},
-					{
-						"url": "https://www.springernature.com/gp/authors/research-data",
-						"text": "Research data",
-						"dataTrackAction": "research data"
-					},
-					{
-						"url": "https://authorservices.springernature.com/go/nr",
-						"text": "Language editing",
-						"dataTrackAction": "language editing"
-					},
-					{
-						"url": "https://authorservices.springernature.com/scientific-editing/",
-						"text": "Scientific editing",
-						"dataTrackAction": "scientific editing"
-					},
-					{
-						"url": "https://masterclasses.nature.com/",
-						"text": "Nature Masterclasses",
-						"dataTrackAction": "nature Masterclasses"
-					},
-					{
-						"url": "https://partnerships.nature.com/product/researcher-training/",
-						"text": "Nature Research Academies",
-						"dataTrackAction": "nature research academies"
-					},
-					{
-						"url": "https://solutions.springernature.com/",
-						"text": "Research Solutions",
-						"dataTrackAction": "research solutions"
-					}
-				]
-			},
-			{
-				"title": "Libraries & institutions",
-				"items": [
-					{
-						"url": "https://www.springernature.com/gp/librarians/tools-services/",
-						"text": "Librarian service & tools",
-						"dataTrackAction": "librarian service and tools"
-					},
-					{
-						"url": "https://www.springernature.com/gp/librarians/manage-your-account/librarianportal",
-						"text": "Librarian portal",
-						"dataTrackAction": "librarian portal"
-					},
-					{
-						"url": "https://www.nature.com/openresearch/about-open-access/information-for-institutions/",
-						"text": "Open research",
-						"dataTrackAction": "open research"
-					},
-					{
-						"url": "https://www.springernature.com/gp/librarians/recommend-to-your-library",
-						"text": "Recommend to library",
-						"dataTrackAction": "recommend to library"
-					}
-				]
-			},
-			{
-				"title": "Advertising & partnerships",
-				"items": [
-					{
-						"url": "https://partnerships.nature.com/product/digital-advertising/",
-						"text": "Advertising",
-						"dataTrackAction": "advertising"
-					},
-					{
-						"url": "https://partnerships.nature.com/",
-						"text": "Partnerships & Services",
-						"dataTrackAction": "partnerships and services"
-					},
-					{
-						"url": "https://partnerships.nature.com/media-kits/",
-						"text": "Media kits",
-						"dataTrackAction": "media kits"
-					},
-					{
-						"url": "https://partnerships.nature.com/product/branded-content-native-advertising/",
-						"text": "Branded content",
-						"dataTrackAction": "branded content"
-					}
-				]
-			},
-			{
-				"title": "Career development",
-				"items": [
-					{
-						"url": "https://www.nature.com/naturecareers",
-						"text": "Nature Careers",
-						"dataTrackAction": "nature careers"
-					},
-					{
-						"url": "https://conferences.nature.com/",
-						"text": "Nature Conferences",
-						"dataTrackAction": "nature conferences"
-					},
-					{
-						"url": "https://www.nature.com/natureevents/",
-						"text": "Nature events",
-						"dataTrackAction": "nature events"
-					}
-				]
-			}
-		],
-		"image": {
-			"src": "../img/logo-springernature_white.svg",
-			"alt": "Springer Nature",
-			"link": "https://www.springernature.com/"
-		},
-		"currentYear": 2022,
+  },
+  "product": {
+    "navigation": {
+      "links": [
+        {
+          "text": "Manage cookies / Do not sell my data",
+          "buttonProperties": "data-cc-action=\"preferences\""
+        },
+        {
+          "text": "Accessibility statement",
+          "url": "https://www.springernature.com/gp/info/accessibility"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "/url/to/your/privacy/policy"
+        },
+        {
+          "text": "California privacy statement (Optional)",
+          "url": "https://www.springernature.com/gp/legal/ccpa"
+        },
+        {
+          "text": "Terms and conditions",
+          "url": "/url/to/your/terms"
+        },
+        {
+          "text": "Help and support",
+          "url": "/url/to/your/help/and/support"
+        }
+      ]
+    },
+    "productGroups": [
+      {
+        "title": "Discover content",
+        "items": [
+          {
+            "url": "https://www.nature.com/siteindex",
+            "text": "Journals A-Z",
+            "dataTrackAction": "journals a-z"
+          },
+          {
+            "url": "https://www.nature.com/subjects/",
+            "text": "Articles by subject",
+            "dataTrackAction": "article by subject"
+          },
+          {
+            "url": "https://nano.nature.com/",
+            "text": "Nano",
+            "dataTrackAction": "nano"
+          },
+          {
+            "url": "https://www.nature.com/protocolexchange/",
+            "text": "Protocol exchange",
+            "dataTrackAction": "protocol exchange"
+          },
+          {
+            "url": "https://www.natureindex.com/",
+            "text": "Nature Index",
+            "dataTrackAction": "nature index"
+          }
+        ]
+      },
+      {
+        "title": "Publishing policies",
+        "items": [
+          {
+            "url": "https://www.nature.com/authors/editorial_policies/",
+            "text": "Nature portfolio policies",
+            "dataTrackAction": "nature portfolio policies"
+          },
+          {
+            "url": "https://www.nature.com/nature-research/open-access",
+            "text": "Open access",
+            "dataTrackAction": "open access"
+          }
+        ]
+      },
+      {
+        "title": "Author & Researcher services",
+        "items": [
+          {
+            "url": "https://www.nature.com/reprints/",
+            "text": "Reprints & permissions",
+            "dataTrackAction": "reprints and permissions"
+          },
+          {
+            "url": "https://www.springernature.com/gp/authors/research-data",
+            "text": "Research data",
+            "dataTrackAction": "research data"
+          },
+          {
+            "url": "https://authorservices.springernature.com/go/nr",
+            "text": "Language editing",
+            "dataTrackAction": "language editing"
+          },
+          {
+            "url": "https://authorservices.springernature.com/scientific-editing/",
+            "text": "Scientific editing",
+            "dataTrackAction": "scientific editing"
+          },
+          {
+            "url": "https://masterclasses.nature.com/",
+            "text": "Nature Masterclasses",
+            "dataTrackAction": "nature Masterclasses"
+          },
+          {
+            "url": "https://partnerships.nature.com/product/researcher-training/",
+            "text": "Nature Research Academies",
+            "dataTrackAction": "nature research academies"
+          },
+          {
+            "url": "https://solutions.springernature.com/",
+            "text": "Research Solutions",
+            "dataTrackAction": "research solutions"
+          }
+        ]
+      },
+      {
+        "title": "Libraries & institutions",
+        "items": [
+          {
+            "url": "https://www.springernature.com/gp/librarians/tools-services/",
+            "text": "Librarian service & tools",
+            "dataTrackAction": "librarian service and tools"
+          },
+          {
+            "url": "https://www.springernature.com/gp/librarians/manage-your-account/librarianportal",
+            "text": "Librarian portal",
+            "dataTrackAction": "librarian portal"
+          },
+          {
+            "url": "https://www.nature.com/openresearch/about-open-access/information-for-institutions/",
+            "text": "Open research",
+            "dataTrackAction": "open research"
+          },
+          {
+            "url": "https://www.springernature.com/gp/librarians/recommend-to-your-library",
+            "text": "Recommend to library",
+            "dataTrackAction": "recommend to library"
+          }
+        ]
+      },
+      {
+        "title": "Advertising & partnerships",
+        "items": [
+          {
+            "url": "https://partnerships.nature.com/product/digital-advertising/",
+            "text": "Advertising",
+            "dataTrackAction": "advertising"
+          },
+          {
+            "url": "https://partnerships.nature.com/",
+            "text": "Partnerships & Services",
+            "dataTrackAction": "partnerships and services"
+          },
+          {
+            "url": "https://partnerships.nature.com/media-kits/",
+            "text": "Media kits",
+            "dataTrackAction": "media kits"
+          },
+          {
+            "url": "https://partnerships.nature.com/product/branded-content-native-advertising/",
+            "text": "Branded content",
+            "dataTrackAction": "branded content"
+          }
+        ]
+      },
+      {
+        "title": "Career development",
+        "items": [
+          {
+            "url": "https://www.nature.com/naturecareers",
+            "text": "Nature Careers",
+            "dataTrackAction": "nature careers"
+          },
+          {
+            "url": "https://conferences.nature.com/",
+            "text": "Nature Conferences",
+            "dataTrackAction": "nature conferences"
+          },
+          {
+            "url": "https://www.nature.com/natureevents/",
+            "text": "Nature events",
+            "dataTrackAction": "nature events"
+          }
+        ]
+      }
+    ],
+    "image": {
+      "src": "../img/logo-springernature_white.svg",
+      "alt": "Springer Nature",
+      "link": "https://www.springernature.com/"
+    },
+    "currentYear": 2022,
     "productFooter": "product-footer",
     "corporateFooter": "corporate-footer"
-	},
-	"dynamicPartials": {
-		"corporate-footer": "./toolkits/global/packages/global-footer/view/partials/corporate.hbs",
-		"product-footer": "./toolkits/global/packages/global-footer/view/partials/product.hbs",
-		"footer": "./toolkits/global/packages/global-footer/view/index.hbs"
-	}
+  },
+  "dynamicPartials": {
+    "corporate-footer": "./toolkits/global/packages/global-footer/view/partials/corporate.hbs",
+    "product-footer": "./toolkits/global/packages/global-footer/view/partials/product.hbs",
+    "footer": "./toolkits/global/packages/global-footer/view/index.hbs"
+  }
 }
