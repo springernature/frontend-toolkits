@@ -3,6 +3,10 @@
 > **Warning**
 > This component is currently [an experimental version](https://github.com/springernature/frontend-elements-docs/blob/main/user-guide/versioning.md#component-state). Please do not use this component on production at this time.
 
+The Global Ratings Survey component is the frontend for an overall solution for gathering customer satisfaction feedback, the documentation for which can be found here: https://customer-satisfaction-survey.public.springernature.app/docs/introduction.
+
+The component comprises a set of 5 pictographic radio inputs used to collect ratings score data from our customers. It is a JavaScript dependent component. When a user interacts with the component an event is dispatched to `window.dataLayer` allowing ratings score data and context data scraped from the page to be sent to Google Tag Manager and Google Cloud Big Query. 
+
 ## Usage
 This documents how to implement this component on your website. If your project does not use Elements yet you can still use this component, see refer to the `Projects that do not use Elements` section below.
 ### Install
