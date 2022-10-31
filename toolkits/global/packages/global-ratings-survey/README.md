@@ -9,10 +9,10 @@ npm install @springernature/global-ratings-survey
 ```
 You will also need to ensure you have its dependencies installed. These are Brand Context and Global Forms:
 ```shell
-npm install @springernature/brand-context
+npm install @springernature/brand-context@29.0.3
 ```
 ```shell
-npm install @springernature/global-forms
+npm install @springernature/global-forms@5.0.0
 ```
 
 ### Sass
