@@ -1,24 +1,89 @@
 {
 	"breakpoints": {
 		"xs": {
+			"name": "xs",
 			"value": "320px",
-			"comment": "mobile"
+			"description": "mobile",
+			"type": "size",
+			"category": "media-query",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"sm": {
+			"name": "sm",
 			"value": "580px",
-			"comment": "small tablet"
+			"description": "small tablet",
+			"type": "size",
+			"category": "media-query",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"md": {
+			"name": "md",
 			"value": "768px",
-			"comment": "tablet"
+			"description": "tablet",
+			"type": "size",
+			"category": "media-query",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"lg": {
+			"name": "lg",
 			"value": "1024px",
-			"comment": "small desktop"
+			"description": "small desktop",
+			"type": "size",
+			"category": "media-query",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"xl": {
+			"name": "xl",
 			"value": "1220px",
-			"comment": "desktop"
+			"description": "desktop",
+			"type": "size",
+			"category": "media-query",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		}
 	}
 }

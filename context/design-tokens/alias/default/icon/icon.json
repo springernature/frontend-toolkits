@@ -3,16 +3,55 @@
 		"checkbox": {
 			"checked": {
 				"stroke": {
-					"value": "{color.white}"
+					"name": "icon-checkbox-checked-stroke",
+					"value": "{color.white}",
+					"description": "The stroke color of the checked icon.",
+					"type": "color",
+					"category": "color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				},
 				"fill": {
-					"value": "{color.primary.universal-dark-blue}"
+					"name": "icon-checkbox-checked-fill",
+					"value": "{color.primary.universal-dark-blue}",
+					"description": "The fill color of the checked icon.",
+					"type": "color",
+					"category": "color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		},
 		"select": {
 			"stroke": {
-				"value": "{color.black}"
+				"name": "icon-select-stroke",
+				"value": "{color.black}",
+				"description": "The stroke color of the select icon.",
+				"type": "color",
+				"category": "color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}
