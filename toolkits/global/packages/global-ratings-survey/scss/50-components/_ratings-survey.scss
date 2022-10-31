@@ -17,16 +17,13 @@
 	justify-content: center;
 }
 
-// Specificity score increased to ensure overrides heading styles on all of our imprint sites
-.c-ratings-survey h1.c-ratings-survey__heading,
-.c-ratings-survey h2.c-ratings-survey__heading,
-.c-ratings-survey h3.c-ratings-survey__heading,
-.c-ratings-survey h4.c-ratings-survey__heading {
-	margin: 0 0 $global-ratings-survey-heading-margin;
-	font-family: inherit;
-	font-size: $global-ratings-survey-heading-font-size;
-	line-height: $global-ratings-survey-line-height;
-	font-weight: $global-ratings-survey-heading-font-weight;
+// !important used to ensure overrides heading styles on all of our imprint sites
+.c-ratings-survey__heading {
+	margin: 0 0 $global-ratings-survey-heading-margin !important;
+	font-family: inherit !important;
+	font-size: $global-ratings-survey-heading-font-size !important;
+	line-height: $global-ratings-survey-line-height !important;
+	font-weight: $global-ratings-survey-heading-font-weight !important;
 }
 
 .c-ratings-survey__submit-message div {
