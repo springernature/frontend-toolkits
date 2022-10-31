@@ -2,7 +2,7 @@
 import {ratingSurveys} from '../js/index.js';
 
 const fixture = `
-<aside class="u-hide u-js-show" data-ratings-survey="" data-ratings-survey-user-journeys="content discovery">
+<aside class="u-hide u-js-show" data-ratings-survey="" data-ratings-survey-user-journeys="get prepared to publish">
 	<form>
 		<fieldset>
 			<div>
@@ -113,14 +113,14 @@ describe('Global Ratings Survey', () => {
 				additionalInfo: null,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'content discovery'
+				userJourneys: 'get prepared to publish'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should trim and lowercase user journey values before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurveyUserJourneys = ' CONTENT DISCOVERY ';
+		aside.dataset.ratingsSurveyUserJourneys = ' GET PREPARED TO PUBLISH ';
 		ratingSurveys();
 		label.click();
 		button.click();
@@ -129,14 +129,14 @@ describe('Global Ratings Survey', () => {
 				additionalInfo: null,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'content discovery'
+				userJourneys: 'get prepared to publish'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should process comma separated user journey values correctly before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurveyUserJourneys = 'content discovery, get published';
+		aside.dataset.ratingsSurveyUserJourneys = 'get prepared to publish, get published';
 		ratingSurveys();
 		label.click();
 		button.click();
@@ -145,7 +145,7 @@ describe('Global Ratings Survey', () => {
 				additionalInfo: null,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'content discovery,get published'
+				userJourneys: 'get prepared to publish,get published'
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
