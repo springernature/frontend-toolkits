@@ -1,15 +1,8 @@
 .c-ratings-survey {
 	padding: $global-ratings-survey-container-padding;
-	margin: 0 calc(0px - #{$global-ratings-survey-container-padding});
 	background-color: $global-ratings-survey-container-background-color;
 	overflow: hidden;
 	font-family: $global-ratings-survey-font-family;
-}
-
-@include media-query('sm') {
-	.c-ratings-survey {
-		margin: 0;
-	}
 }
 
 .c-ratings-survey__container {

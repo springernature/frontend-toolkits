@@ -64,7 +64,7 @@
 		"radio": {
 			"spacing": {
 				"narrow": {
-					"value": "{sizing.absolute.200}"
+					"value": "5px"
 				},
 				"desktop": {
 					"value": "{spacing.absolute.400}"
