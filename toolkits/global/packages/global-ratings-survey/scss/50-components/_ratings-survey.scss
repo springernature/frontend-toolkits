@@ -1,6 +1,6 @@
 .c-ratings-survey {
 	padding: $global-ratings-survey-container-padding;
-	margin: 0 (0 - $global-ratings-survey-container-padding);
+	margin: 0 calc(0px - #{$global-ratings-survey-container-padding});
 	background-color: $global-ratings-survey-container-background-color;
 	overflow: hidden;
 	font-family: $global-ratings-survey-font-family;

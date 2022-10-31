@@ -1474,7 +1474,7 @@ html {
 
 .c-ratings-survey {
   padding: 16px;
-  margin: 0 -16px;
+  margin: 0 calc(0px - 16px);
   background-color: #f3f3f3;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -1490,15 +1490,12 @@ html {
   justify-content: center;
 }
 
-.c-ratings-survey h1.c-ratings-survey__heading,
-.c-ratings-survey h2.c-ratings-survey__heading,
-.c-ratings-survey h3.c-ratings-survey__heading,
-.c-ratings-survey h4.c-ratings-survey__heading {
-  margin: 0 0 8px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: 700;
+.c-ratings-survey__heading {
+  margin: 0 0 8px !important;
+  font-family: inherit !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
 }
 
 .c-ratings-survey__submit-message div {
