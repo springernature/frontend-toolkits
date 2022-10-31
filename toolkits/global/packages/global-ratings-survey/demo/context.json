@@ -1,6 +1,6 @@
 {
 	"ratingsSurveyData1": {
-		"userJourneys": "content discovery",
+		"userJourneys": "get prepared to publish",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
@@ -154,7 +154,7 @@
 		}
 	},
 	"ratingsSurveyData3": {
-		"userJourneys": "Content Discovery, Get Published",
+		"userJourneys": "Get Prepared to Publish, Get Published",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
 		"questionText": "Tell us why",
