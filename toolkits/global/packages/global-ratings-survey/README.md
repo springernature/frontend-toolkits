@@ -1,5 +1,8 @@
 # Global Ratings Survey
 
+> **Warning**
+> This component is currently [an experimental version](https://github.com/springernature/frontend-elements-docs/blob/main/user-guide/versioning.md#component-state). Please do not use this component on production at this time.
+
 ## Usage
 This documents how to implement this component on your website. If your project does not use Elements yet you can still use this component, see refer to the `Projects that do not use Elements` section below.
 ### Install
@@ -8,6 +11,10 @@ Install the Global Ratings Survey package:
 npm install @springernature/global-ratings-survey
 ```
 You will also need to ensure you have its dependencies installed. These are Brand Context and Global Forms:
+
+> **Warning**
+> This component violates [the design system rule](https://github.com/springernature/frontend-elements-docs/blob/main/user-guide/dependencies.md#dependencies) that states a component must not have a dependency on another component. Please do not follow this pattern in any other component you are building.
+
 ```shell
 npm install @springernature/brand-context@29.0.3
 ```
