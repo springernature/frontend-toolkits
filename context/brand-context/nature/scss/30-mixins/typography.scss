@@ -21,7 +21,6 @@
 	letter-spacing: unquote('min(max(#{$context--letter-spacing-min}, 4vw), #{$context--letter-spacing})');
 	line-height: $context--line-height-h1;
 	line-height: unquote('min(max(#{$context--line-height-h1-min}, 4vw), #{$context--line-height-h1})');
-	margin-bottom: spacing(24);
 }
 
 %u-h2 {
@@ -32,7 +31,6 @@
 	letter-spacing: $context--letter-spacing-min;
 	line-height: $context--line-height-h2;
 	line-height: unquote('min(max(#{$context--line-height-h2-min}, 3.5vw), #{$context--line-height-h2})');
-	margin-bottom: spacing(8);
 }
 
 %u-h3 {
@@ -42,7 +40,6 @@
 	font-size: unquote('min(max(#{$context--font-size-h3-min}, 3.0vw), #{$context--font-size-h3})');
 	letter-spacing: $context--letter-spacing-min;
 	line-height: $context--line-height-h3;
-	margin-bottom: spacing(8);
 }
 
 %u-h4 {
@@ -52,5 +49,4 @@
 	font-size: unquote('min(max(#{$context--font-size-h4-min}, 2.5vw), #{$context--font-size-h4})');
 	letter-spacing: $context--letter-spacing-min;
 	line-height: $context--line-height-h4;
-	margin-bottom: spacing(8);
 }
