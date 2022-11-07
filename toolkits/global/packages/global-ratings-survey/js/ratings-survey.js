@@ -7,11 +7,16 @@ class RatingsSurvey {
 		this._submitButton = this._form.querySelector('button[type="submit"]');
 		this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
 		this._permissibleUserJourneys = ['get prepared to publish', 'get published', 'discover relevant scholarly content', 'manage my editorial work', 'manage my peer reviews', 'promote my work', 'evaluate the performance of scholarly work', 'manage an apc', 'buy something', 'access what i am entitled to', 'librarian get the information i need', 'librarian assess the performance and use of my portfolio', 'librarian buy something'];
+		this._appendReferrer();
 		this._bindEvents();
 	}
 
 	_getCheckedRadioValue() {
 		return this._formRadios.find(element => element.checked).value;
+	}
+
+	_appendReferrer() {
+		const location = window.location.href;
 	}
 
 	_getUserJourneys() {
