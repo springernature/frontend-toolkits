@@ -27,7 +27,9 @@ const fixture = `
 			</div>
 		</fieldset>
 		<button class="u-hide" type="submit"></button>
-		<div class="u-hide" data-ratings-survey="submit-message"></div>
+		<div class="u-hide" data-ratings-survey="submit-message">
+			<a href="surveymonkey.com" data-ratings-survey="survey-link"></a>
+		</div>
 	</form>
 </aside>`;
 
@@ -49,7 +51,7 @@ function createKeydownEvent(key) {
 }
 
 describe('Global Ratings Survey', () => {
-	let aside, form, fieldset, button, label, input, message;
+	let aside, form, fieldset, button, label, input, message, surveyLink;
 
 	beforeEach(() => {
 		document.body.innerHTML = fixture;
@@ -61,6 +63,7 @@ describe('Global Ratings Survey', () => {
 		label = document.querySelector('label');
 		input = document.querySelector('input');
 		message = document.querySelector('[data-ratings-survey="submit-message"]');
+		surveyLink = document.querySelector('[data-ratings-survey="survey-link"]');
 		jest.spyOn(global.console, 'error').mockImplementation(() => {});
 	});
 
@@ -191,4 +194,10 @@ describe('Global Ratings Survey', () => {
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
 	});
+
+	test('Should get the current location and join survey link', () => {
+		expect(surveyLink.href === "http://localhost/surveymonkey.com").toBe(true);
+		ratingSurveys();
+		expect(surveyLink.href === "http://localhost/surveymonkey.com?location=http://localhost/").toBe(true);
+	})
 });
