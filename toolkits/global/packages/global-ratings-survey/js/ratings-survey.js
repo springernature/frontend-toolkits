@@ -4,6 +4,7 @@ class RatingsSurvey {
 		this._form = this._aside.querySelector('form');
 		this._formRadioFieldset = this._form.querySelector('fieldset');
 		this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
+		this._surveyLink = this._form.querySelector('[data-ratings-survey="survey-link"]');
 		this._submitButton = this._form.querySelector('button[type="submit"]');
 		this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
 		this._permissibleUserJourneys = ['get prepared to publish', 'get published', 'discover relevant scholarly content', 'manage my editorial work', 'manage my peer reviews', 'promote my work', 'evaluate the performance of scholarly work', 'manage an apc', 'buy something', 'access what i am entitled to', 'librarian get the information i need', 'librarian assess the performance and use of my portfolio', 'librarian buy something'];
@@ -17,6 +18,9 @@ class RatingsSurvey {
 
 	_appendReferrer() {
 		const location = window.location.href;
+		if (location) {
+			this._surveyLink.href = this._surveyLink.href + '?location=' + location;
+		}
 	}
 
 	_getUserJourneys() {

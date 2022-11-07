@@ -2183,7 +2183,7 @@ html {
 										<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path></svg>
 										<p>Thank you for your feedback.</p>
 									</div>
-											<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
+											<a href="https://www.surveymonkey.com/r/97W8JW7" data-ratings-survey="survey-link" target="_blank">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -2260,7 +2260,7 @@ html {
 										<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path></svg>
 										<p>Thank you for your feedback.</p>
 									</div>
-											<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
+											<a href="https://www.surveymonkey.com/r/97W8JW7" data-ratings-survey="survey-link" target="_blank">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -2335,7 +2335,7 @@ html {
 							<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path></svg>
 							<p>Thank you for your feedback.</p>
 						</div>
-								<a href="https://www.surveymonkey.com/r/97W8JW7?id=" target="_blank">Tell us why (opens in a new tab)</a>
+								<a href="https://www.surveymonkey.com/r/97W8JW7" data-ratings-survey="survey-link" target="_blank">Tell us why (opens in a new tab)</a>
 					</div>
 				</form>
 			</div>
@@ -2385,6 +2385,7 @@ html {
       this._form = this._aside.querySelector('form');
       this._formRadioFieldset = this._form.querySelector('fieldset');
       this._formRadios = Array.from(this._form.querySelectorAll('[data-ratings-survey="radio"]'));
+      this._surveyLink = this._form.querySelector('[data-ratings-survey="survey-link"]');
       this._submitButton = this._form.querySelector('button[type="submit"]');
       this._submitMessage = this._form.querySelector('[data-ratings-survey="submit-message"]');
       this._permissibleUserJourneys = ['get prepared to publish', 'get published', 'discover relevant scholarly content', 'manage my editorial work', 'manage my peer reviews', 'promote my work', 'evaluate the performance of scholarly work', 'manage an apc', 'buy something', 'access what i am entitled to', 'librarian get the information i need', 'librarian assess the performance and use of my portfolio', 'librarian buy something'];
@@ -2405,7 +2406,10 @@ html {
       key: "_appendReferrer",
       value: function _appendReferrer() {
         var location = window.location.href;
-        console.log(location);
+
+        if (location) {
+          this._surveyLink.href = this._surveyLink.href + '?location=' + location;
+        }
       }
     }, {
       key: "_getUserJourneys",
