@@ -28,7 +28,7 @@ const fixture = `
 		</fieldset>
 		<button class="u-hide" type="submit"></button>
 		<div class="u-hide" data-ratings-survey="submit-message">
-			<a href="surveymonkey.com" data-ratings-survey="survey-link"></a>
+			<a href="https://www.surveymonkey.com/1" data-ratings-survey="survey-link"></a>
 		</div>
 	</form>
 </aside>`;
@@ -196,8 +196,8 @@ describe('Global Ratings Survey', () => {
 	});
 
 	test('Should get the current location and join survey link', () => {
-		expect(surveyLink.href === "http://localhost/surveymonkey.com").toBe(true);
+		expect(surveyLink.href === "https://www.surveymonkey.com/1").toBe(true);
 		ratingSurveys();
-		expect(surveyLink.href === "http://localhost/surveymonkey.com?location=http://localhost/").toBe(true);
+		expect(surveyLink.href === "https://www.surveymonkey.com/1?location=http://localhost/").toBe(true);
 	})
 });
