@@ -18,9 +18,7 @@ class RatingsSurvey {
 
 	_appendReferrer() {
 		const location = window.location.href;
-		if (location) {
-			this._surveyLink.href = this._surveyLink.href + '?location=' + location;
-		}
+		this._surveyLink.href = this._surveyLink.href + '?location=' + location;
 	}
 
 	_getUserJourneys() {
