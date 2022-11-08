@@ -196,8 +196,8 @@ describe('Global Ratings Survey', () => {
 	});
 
 	test('Should get the current location and join survey link', () => {
-		expect(surveyLink.href === "https://www.surveymonkey.com/1").toBe(true);
+		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
 		ratingSurveys();
-		expect(surveyLink.href === "https://www.surveymonkey.com/1?location=http://localhost/").toBe(true);
+		expect(surveyLink.href === 'https://www.surveymonkey.com/1?location=http://localhost/').toBe(true);
 	})
 });
