@@ -2,6 +2,10 @@
 	margin-block: 0;
 }
 
+h1, h2, h3, h4, h5 {
+	margin: 0; // This resets the default margins from the core experience to allow them to be handled by the block spacing for enhanced view
+}
+
 // Arbitrary semantic elements are likely to be CMS generated and need default margin applied.
 // The specificity is that of one element selector.
 :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) +
