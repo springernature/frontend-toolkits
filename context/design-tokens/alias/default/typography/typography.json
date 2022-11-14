@@ -265,55 +265,55 @@
 					"CSSCustomProperty": false
 				}
 			}
-		}
-	},
-	"level-5": {
-		"font-family": {
-			"name": "typography-heading-level-5-font-family",
-			"value": "{font-family.sans}",
-			"description": "Font family for level 5 headings",
-			"type": "font-size",
-			"category": "font-size",
-			"themeable": true,
-			"meta": {
-				"public": true,
-				"deprecated": false,
-				"documented": true,
-				"experimental": false,
-				"SassVariable": true,
-				"CSSCustomProperty": false
-			}
 		},
-		"font-size": {
-			"name": "typography-heading-level-5-font-size",
-			"value": "{font-size.450.value}",
-			"description": "Font size for level 5 headings",
-			"type": "font-size",
-			"category": "font-size",
-			"themeable": true,
-			"meta": {
-				"public": true,
-				"deprecated": false,
-				"documented": true,
-				"experimental": false,
-				"SassVariable": true,
-				"CSSCustomProperty": false
-			}
-		},
-		"font-weight": {
-			"name": "typography-heading-font-weight",
-			"value": "{font-weight.bold.value}",
-			"description": "Font weight for level 5 headings",
-			"type": "font-size",
-			"category": "font-size",
-			"themeable": true,
-			"meta": {
-				"public": true,
-				"deprecated": false,
-				"documented": true,
-				"experimental": false,
-				"SassVariable": true,
-				"CSSCustomProperty": false
+		"level-5": {
+			"font-family": {
+				"name": "typography-heading-level-5-font-family",
+				"value": "{font-family.sans}",
+				"description": "Font family for level 5 headings",
+				"type": "font-size",
+				"category": "font-size",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			},
+			"font-size": {
+				"name": "typography-heading-level-5-font-size",
+				"value": "{font-size.450.value}",
+				"description": "Font size for level 5 headings",
+				"type": "font-size",
+				"category": "font-size",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			},
+			"font-weight": {
+				"name": "typography-heading-font-weight",
+				"value": "{font-weight.bold.value}",
+				"description": "Font weight for level 5 headings",
+				"type": "font-size",
+				"category": "font-size",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"block-spacing": {
