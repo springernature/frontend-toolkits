@@ -6,7 +6,7 @@ The footer gives copyright, licensing and other information about your service a
 
 ## When to use this component
 
-Use this footer on all Springer, Nature Portfolio and Springer Nature products and services.
+Use this footer on all Springer, Nature Portfolio, and Springer Nature products and services.
 
 ## How it works
 
