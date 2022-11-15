@@ -4,21 +4,21 @@
 
 :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + *,
 [class^="c-"]:not([class*="__"]) + * {
-	margin-block-start: $t--typography-block-spacing-medium;
+	margin-block-start: $t-typography-block-spacing-medium;
 }
 
 * + :is(h2, h3, h4, h5) {
-	margin-block-start: $t--typography-block-spacing-large;
+	margin-block-start: $t-typography-block-spacing-large;
 }
 
 :is(h3, h4, h5) + * {
-	margin-block-start: $t--typography-block-spacing-small;
+	margin-block-start: $t-typography-block-spacing-small;
 }
 
 h2 + * {
-	margin-block-start: $t--typography-block-spacing-medium;
+	margin-block-start: $t-typography-block-spacing-medium;
 }
 
 h1 + * {
-	margin-block-start: $t--typography-block-spacing-x-large;
+	margin-block-start: $t-typography-block-spacing-x-large;
 }
