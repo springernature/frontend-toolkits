@@ -1,0 +1,117 @@
+.c-ratings-survey {
+	padding: $global-ratings-survey-container-padding;
+	background-color: $global-ratings-survey-container-background-color;
+	overflow: hidden;
+	font-family: $global-ratings-survey-font-family;
+}
+
+.c-ratings-survey__container {
+	display: flex;
+	justify-content: center;
+}
+
+// !important used to ensure overrides heading styles on all of our imprint sites
+.c-ratings-survey__heading {
+	margin: 0 0 $global-ratings-survey-heading-margin !important;
+	font-family: inherit !important;
+	font-size: $global-ratings-survey-heading-font-size !important;
+	line-height: $global-ratings-survey-line-height !important;
+	font-weight: $global-ratings-survey-heading-font-weight !important;
+}
+
+.c-ratings-survey__submit-message div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.c-ratings-survey__submit-message svg {
+	width: $global-ratings-survey-message-icon-size;
+	height: $global-ratings-survey-message-icon-size;
+	margin-right: $global-ratings-survey-message-icon-margin;
+}
+
+.c-ratings-survey__submit-message p {
+	margin: 0;
+	line-height: $global-ratings-survey-line-height;
+	font-family: inherit;
+	font-size: $global-ratings-survey-message-font-size;
+}
+
+.c-ratings-survey__button {
+	// TODO: Remove this mixin and replace with Brand Context button styles once work to improve them has been carried out
+	@include global-ratings-survey-button;
+}
+
+.c-ratings-survey a {
+	display: inline-block;
+	margin-top: $global-ratings-survey-link-margin;
+	font-family: inherit;
+	font-size: $global-ratings-survey-message-font-size;
+}
+
+.c-ratings-survey__visually-hidden,
+.c-ratings-survey legend.c-forms__label {
+	/* hide visually, not to assistive tech */
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Override Global Forms Styles */
+.c-ratings-survey .c-forms__label--pictographic-radio svg {
+	width: $global-ratings-survey-radio-icon-size-narrow;
+	height: $global-ratings-survey-radio-icon-size-narrow;
+	padding: $global-ratings-survey-radio-icon-spacing-narrow;
+	border-radius: $global-ratings-survey-radio-icon-border-radius;
+}
+
+.c-ratings-survey .c-forms__pictographic-radios {
+	gap: $global-ratings-survey-radio-spacing-narrow;
+	justify-content: center;
+}
+
+.c-ratings-survey .c-forms__label {
+	font-family: inherit;
+	font-size: $global-ratings-survey-radio-label-font-size-narrow;
+}
+
+@include media-query('sm') {
+	.c-ratings-survey .c-forms__label--pictographic-radio svg {
+		width: $global-ratings-survey-radio-icon-size-desktop;
+		height: $global-ratings-survey-radio-icon-size-desktop;
+		padding: $global-ratings-survey-radio-icon-spacing-desktop;
+	}
+
+	.c-ratings-survey .c-forms__pictographic-radios {
+		gap: $global-ratings-survey-radio-spacing-desktop;
+	}
+
+	.c-ratings-survey .c-forms__label {
+		font-size: $global-ratings-survey-radio-label-font-size-desktop;
+	}
+}
+
+.c-ratings-survey .c-forms__fieldset--pictographic-radios {
+	justify-content: center;
+}
+
+.c-ratings-survey .c-forms__label + .c-forms__label {
+	margin-top: 0;
+}
+
+.c-ratings-survey .c-forms__fieldset {
+	margin: 0;
+}
+
+.c-ratings-survey .c-forms__error {
+	display: none;
+	margin-bottom: $global-ratings-survey-error-margin;
+}
+
+.c-ratings-survey--show-error .c-forms__error {
+	display: flex;
+}
