@@ -1,0 +1,32 @@
+/**
+ * @springernature/global-footer
+ * Default skin settings
+ *
+ */
+
+$footer--vertical-rhythm: spacing(32);
+$footer--spacing-small: 8px;
+$footer--spacing-medium: 16px;
+$footer--spacing-large: 24px;
+
+$footer--margin-bottom: spacing(0);
+$footer--border: 2px solid #fff;
+$footer--padding-top: $footer--vertical-rhythm;
+$footer--padding-bottom: $footer--vertical-rhythm;
+$footer--font-family: $context--font-family-sans;
+$footer--background-color: $context--universal-blue;
+$footer--font-size: 1rem;
+$footer--text-color: #fff;
+$footer--heading-font-family: $context--font-family-sans;
+
+$footer--links-margin-bottom: $footer--vertical-rhythm;
+
+$footer--legal-margin-top: spacing(4);
+
+$footer--item-margin-right: spacing(24);
+$footer--item-line-height: 2;
+
+$footer--menu-line-height: 1.3;
+$footer--menu-font-size: 1rem;
+$footer--menu-font-family: $context--font-family-sans;
+
