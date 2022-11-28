@@ -1,6 +1,6 @@
 <div class="c-products">
-	<ul class="c-products__list">
-		{{#each .}}
+	<ul class="c-products__list{{#if grid}} c-products__list--grid{{/if}}">
+		{{#each products}}
 			<li class="c-products__list-item">
 				{{> globalProduct }}
 			</li>

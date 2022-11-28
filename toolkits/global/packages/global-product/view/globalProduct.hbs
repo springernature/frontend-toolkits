@@ -5,10 +5,12 @@
 	<div class="c-product__body">
 		<div class="c-product__copy">
 			<h3 class="c-product__title"{{#if level}} aria-level="{{level}}"{{/if}}>
-				{{title}}{{#if issue}}, <em>{{issue}}</em>{{/if}}
+				{{#if href}}<a href="{{href}}">{{/if}}
+					{{title}}{{#if subtitle}}, <em>{{subtitle}}</em>{{/if}}
+				{{#if href}}</a>{{/if}}
 			</h3>
-			{{#if subtitle}}
-				<small class="c-product__subtitle">{{subtitle}}</small>
+			{{#if openAccess}}
+				<small class="c-product__subtitle">Open access</small>
 			{{/if}}
 			{{#if description}}
 				<div class="c-product__description">
