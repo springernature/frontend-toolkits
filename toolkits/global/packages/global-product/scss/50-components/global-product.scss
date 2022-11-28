@@ -96,3 +96,7 @@
 	padding: $global-product-description-spacing;
 }
 
+.c-products__list--grid .c-product__actions {
+	flex-direction: column;
+	gap: $global-product-description-spacing;
+}
