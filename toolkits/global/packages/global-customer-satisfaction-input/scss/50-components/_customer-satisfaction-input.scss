@@ -1,8 +1,8 @@
 .c-customer-satisfaction-input {
-	padding: $global-ratings-survey-container-padding;
-	background-color: $global-ratings-survey-container-background-color;
+	padding: $global-customer-satisfaction-input-container-padding;
+	background-color: $global-customer-satisfaction-input-container-background-color;
 	overflow: hidden;
-	font-family: $global-ratings-survey-font-family;
+	font-family: $global-customer-satisfaction-input-font-family;
 }
 
 .c-customer-satisfaction-input__container {
@@ -12,11 +12,11 @@
 
 // !important used to ensure overrides heading styles on all of our imprint sites
 .c-customer-satisfaction-input__heading {
-	margin: 0 0 $global-ratings-survey-heading-margin !important;
+	margin: 0 0 $global-customer-satisfaction-input-heading-margin !important;
 	font-family: inherit !important;
-	font-size: $global-ratings-survey-heading-font-size !important;
-	line-height: $global-ratings-survey-line-height !important;
-	font-weight: $global-ratings-survey-heading-font-weight !important;
+	font-size: $global-customer-satisfaction-input-heading-font-size !important;
+	line-height: $global-customer-satisfaction-input-line-height !important;
+	font-weight: $global-customer-satisfaction-input-heading-font-weight !important;
 }
 
 .c-customer-satisfaction-input__submit-message div {
@@ -26,16 +26,16 @@
 }
 
 .c-customer-satisfaction-input__submit-message svg {
-	width: $global-ratings-survey-message-icon-size;
-	height: $global-ratings-survey-message-icon-size;
-	margin-right: $global-ratings-survey-message-icon-margin;
+	width: $global-customer-satisfaction-input-message-icon-size;
+	height: $global-customer-satisfaction-input-message-icon-size;
+	margin-right: $global-customer-satisfaction-input-message-icon-margin;
 }
 
 .c-customer-satisfaction-input__submit-message p {
 	margin: 0;
-	line-height: $global-ratings-survey-line-height;
+	line-height: $global-customer-satisfaction-input-line-height;
 	font-family: inherit;
-	font-size: $global-ratings-survey-message-font-size;
+	font-size: $global-customer-satisfaction-input-message-font-size;
 }
 
 .c-customer-satisfaction-input__button {
@@ -45,9 +45,9 @@
 
 .c-customer-satisfaction-input a {
 	display: inline-block;
-	margin-top: $global-ratings-survey-link-margin;
+	margin-top: $global-customer-satisfaction-input-link-margin;
 	font-family: inherit;
-	font-size: $global-ratings-survey-message-font-size;
+	font-size: $global-customer-satisfaction-input-message-font-size;
 }
 
 .c-customer-satisfaction-input__visually-hidden,
@@ -63,35 +63,35 @@
 
 /* Override Global Forms Styles */
 .c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
-	width: $global-ratings-survey-radio-icon-size-narrow;
-	height: $global-ratings-survey-radio-icon-size-narrow;
-	padding: $global-ratings-survey-radio-icon-spacing-narrow;
-	border-radius: $global-ratings-survey-radio-icon-border-radius;
+	width: $global-customer-satisfaction-input-radio-icon-size-narrow;
+	height: $global-customer-satisfaction-input-radio-icon-size-narrow;
+	padding: $global-customer-satisfaction-input-radio-icon-spacing-narrow;
+	border-radius: $global-customer-satisfaction-input-radio-icon-border-radius;
 }
 
 .c-customer-satisfaction-input .c-forms__pictographic-radios {
-	gap: $global-ratings-survey-radio-spacing-narrow;
+	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
 	justify-content: center;
 }
 
 .c-customer-satisfaction-input .c-forms__label {
 	font-family: inherit;
-	font-size: $global-ratings-survey-radio-label-font-size-narrow;
+	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
 }
 
 @include media-query('sm') {
 	.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
-		width: $global-ratings-survey-radio-icon-size-desktop;
-		height: $global-ratings-survey-radio-icon-size-desktop;
-		padding: $global-ratings-survey-radio-icon-spacing-desktop;
+		width: $global-customer-satisfaction-input-radio-icon-size-desktop;
+		height: $global-customer-satisfaction-input-radio-icon-size-desktop;
+		padding: $global-customer-satisfaction-input-radio-icon-spacing-desktop;
 	}
 
 	.c-customer-satisfaction-input .c-forms__pictographic-radios {
-		gap: $global-ratings-survey-radio-spacing-desktop;
+		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
 	}
 
 	.c-customer-satisfaction-input .c-forms__label {
-		font-size: $global-ratings-survey-radio-label-font-size-desktop;
+		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
 	}
 }
 
@@ -109,7 +109,7 @@
 
 .c-customer-satisfaction-input .c-forms__error {
 	display: none;
-	margin-bottom: $global-ratings-survey-error-margin;
+	margin-bottom: $global-customer-satisfaction-input-error-margin;
 }
 
 .c-customer-satisfaction-input--show-error .c-forms__error {
