@@ -5,10 +5,12 @@
 
 The Global Customer Satisfaction Input component is the frontend for an overall solution for gathering customer satisfaction feedback, the documentation for which can be found here: https://customer-satisfaction-survey.public.springernature.app/docs/introduction.
 
-The component comprises a set of 5 pictographic radio inputs used to collect ratings score data from our customers. It is a JavaScript dependent component. When a user interacts with the component an event is dispatched to `window.dataLayer` allowing ratings score data and context data scraped from the page to be sent to Google Tag Manager and Google Cloud Big Query. 
+The component comprises a set of 5 pictographic radio inputs used to collect a satisfaction score from our customers. The user is able to submit one of the following scores: Awful, Bad, OK, Good, Great.
+
+It is a JavaScript dependent component. When a user interacts with the component an event is dispatched to `window.dataLayer` allowing customer satisfaction score data and context data scraped from the page to be sent to Google Tag Manager and Google Cloud Big Query. 
 
 ## Usage
-This documents how to implement this component on your website. If your project does not use Elements yet you can still use this component, see refer to the `Projects that do not use Elements` section below.
+This documents how to implement this component on your website. If your project does not use Elements you can still use this component, see refer to the `Projects that do not use Elements` section below.
 ### Install
 Install the Global Customer Satisfaction Input package:
 ```shell
@@ -98,15 +100,15 @@ A string that represents the heading level number, e.g. `"headingLevel":"3"`. Pl
 
 **questionUrl** (Optional)
 
-A string that defines the link href for any survey you wish to link to after a user has submitted a rating, e.g. `"questionUrl": "https://www.surveymonkey.com/r/97W8JW7"`. A link will only display if both questionUrl and questionText have been defined.
+A string that defines the link href for any survey you wish to link to after a user has submitted a customer satisfaction score, e.g. `"questionUrl": "https://www.surveymonkey.com/r/97W8JW7"`. A link will only display if both questionUrl and questionText have been defined.
 
 **questionText** (Optional)
 
-A string that defines the link text for any survey you wish to link to after a user has submitted a rating, e.g. `"questionText": "Tell us why"`. A link will only display if both questionUrl and questionText have been defined.
+A string that defines the link text for any survey you wish to link to after a user has submitted a customer satisfaction score, e.g. `"questionText": "Tell us why"`. A link will only display if both questionUrl and questionText have been defined.
 
 **additionalInfo** (Optional)
 
-A string that can be used to define additional data that you would like to be captured with the user's rating. This property aims to future-proof this component to ensure we can capture additional meaning if needed.
+A string that can be used to define additional data that you would like to be captured with the user's customer satisfaction score. This property aims to future-proof this component to ensure we can capture additional meaning if needed.
 
 #### Global Forms Data (Mandatory)
 
