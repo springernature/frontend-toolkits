@@ -1,0 +1,24 @@
+<aside class="u-hide u-js-show c-customer-satisfaction-input" data-customer-satisfaction-input=""
+	   data-customer-satisfaction-input-user-journeys="{{userJourneys}}"
+	   {{#if additionalInfo}}data-customer-satisfaction-input-additional-info="{{additionalInfo}}"{{/if}}>
+	<div class="c-customer-satisfaction-input__container">
+		<form class="c-customer-satisfaction-input__form">
+			<h{{headingLevel}} class="c-customer-satisfaction-input__heading">How was your experience today?</h{{headingLevel}}>
+			{{#with globalFormData}}
+				{{> globalFormFieldset }}
+			{{/with}}
+			<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
+			<div class="u-hide c-customer-satisfaction-input__submit-message" data-customer-satisfaction-input="submit-message">
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"/></svg>
+					<p>Thank you for your feedback.</p>
+				</div>
+				{{#if questionUrl}}
+					{{#if questionText}}
+						<a href="{{questionUrl}}" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">{{questionText}} (opens in a new tab)</a>
+					{{/if}}
+				{{/if}}
+			</div>
+		</form>
+	</div>
+</aside>
