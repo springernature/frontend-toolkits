@@ -17,7 +17,7 @@ StyleDictionaryPackage.registerTransform({
 	name: 'name/cti/kebab',
 	type: 'name',
 	transformer: function (token, options) {
-		return `${options.prefix}--${_.kebabCase(token.path.join(' '))}`;
+		return `${options.prefix}-${_.kebabCase(token.path.join(' '))}`;
 	}
 });
 
@@ -34,7 +34,7 @@ function getStyleDictionaryConfig(brand, categories) {
 			scssVariables: {
 				transformGroup: 'web',
 				transform: 'name/cti/kebab',
-				prefix: 'tokens',
+				prefix: 't',
 				buildPath: `${destination}/00-tokens/`,
 				files: categories.map(category => {
 					return {
