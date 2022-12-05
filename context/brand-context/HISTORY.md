@@ -1,4 +1,7 @@
 # History
+## 30.0.5 (2022-12-05)
+    * BUG:
+      * last fixes for additional alias token variables from `t--` to `t-` in utilities.
 
 ## 30.0.4 (2022-11-15)
     * BUG:
