@@ -12,19 +12,19 @@
 	}
 }
 
-.c-header__site-logo,
-.c-header__journal-logo {
-	width: auto;
-	height: auto;
-	min-width: 130px;
-	max-width: 209px;
-}
-
 .c-header__site-logo {
+	@include media-query('md') {
+		width: 158px;
+		height: 45px;
+	}
+	
 	padding-right: 20px;
 }
 
 .c-header__journal-logo {
+	width: auto;
+	height: auto;
+	min-width: 130px;
 	max-width: 100%;
 	height: 24px;
 
@@ -60,4 +60,16 @@
 			flex-basis: 75%;
 		}
 	}
+}
+
+.c-header__journal-title {
+	@include media-query('md') {
+		font-size: 1.375rem;
+	}
+	
+	@include media-query('lg') {
+		font-size: 1.6875rem;
+	}
+	
+	font-family: $context--font-family-serif;
 }
