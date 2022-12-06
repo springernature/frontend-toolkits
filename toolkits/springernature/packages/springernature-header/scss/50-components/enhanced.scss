@@ -14,8 +14,8 @@
 
 .c-header__site-logo {
 	@include media-query('md') {
-		width: 158px;
-		height: 45px;
+		width: $header__site-logo-width;
+		height: $header__site-logo-height;
 	}
 	
 	padding-right: 20px;
