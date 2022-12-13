@@ -2,7 +2,7 @@
 	"global-product": {
 		"spacing": {
 			"name": "Spacing",
-			"value": "{spacing.relative.1200}",
+			"value": "{gap.1200}",
 			"description": "This is the spacing between the main parts of a product component",
 			"type": "length",
 			"category": "spacing",
@@ -19,7 +19,7 @@
 		"actions": {
 			"spacing": {
 				"name": "Actions spacing",
-				"value": "{spacing.relative.800}",
+				"value": "{gap.800}",
 				"description": "This is the spacing between the actions links",
 				"type": "length",
 				"category": "spacing",
@@ -37,10 +37,64 @@
 		"description": {
 			"spacing": {
 				"name": "Description spacing",
-				"value": "{spacing.relative.400}",
+				"value": "{gap.400}",
 				"description": "The spacing around the description",
 				"type": "length",
 				"category": "spacing",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			}
+		},
+		"list": {
+			"border": {
+				"color": {
+					"name": "Product list border color",
+					"value": "{color.greyscale.400}",
+					"description": "The color of the border between product items",
+					"type": "color",
+					"category": "color",
+					"themeable": true,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
+				}
+			}
+		},
+		"grid": {
+			"spacing": {
+				"name": "Grid spacing",
+				"value": "{gap.1600}",
+				"description": "The gap (gutter) between grid cells",
+				"type": "length",
+				"category": "spacing",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
+			},
+			"background-color": {
+				"name": "Grid background color",
+				"value": "{color.greyscale.200}",
+				"description": "The background color of the product image container",
+				"type": "color",
+				"category": "color",
 				"themeable": true,
 				"meta": {
 					"public": true,

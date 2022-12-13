@@ -1,153 +1,282 @@
 {
 	"productsList": {
+		"products": [
+			{
+				"title": "Journal Of Analytical Science And Technology",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
+				"image": {
+					"src": "img/journal_of_analytical_science_and_technology.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					},
+					{
+						"href": "#",
+						"label": "Contact the journal"
+					},
+					{
+						"href": "#",
+						"label": "Call for papers"
+					}
+				]
+			},
+			{
+				"title": "Beiträge zur Algebra und Geometrie / Contributions To Algebra And Geometry",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
+				"image": {
+					"src": "img/contributions_to_algebra.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					}
+				]
+			},
+			{
+				"title": "Intensive Care Medicine",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"subtitle": "Vol 48, Issue 11, Nov 22",
+				"description": "Vestibulum ut eros sit amet neque egestas aliquam. Donec condimentum, tortor at scelerisque rutrum, elit tortor hendrerit ligula, vitae euismod urna massa ac augue. Etiam venenatis erat sit amet pellentesque mollis. Nulla gravida risus at dapibus scelerisque. Etiam venenatis libero arcu, at consectetur nisi pharetra sed.",
+				"image": {
+					"src": "img/intensive_care_medicine.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					},
+					{
+						"href": "#",
+						"label": "Contact the journal"
+					},
+					{
+						"href": "#",
+						"label": "Call for papers"
+					}
+				]
+			},
+			{
+				"type": "series",
+				"title": "Journal Of Analytical Science And Technology",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
+				"image": {
+					"src": "img/journal_of_analytical_science_and_technology.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					}
+				]
+			},
+			{
+				"type": "series",
+				"title": "Beiträge zur Algebra und Geometrie / Contributions To Algebra And Geometry",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
+				"image": {
+					"src": "img/contributions_to_algebra.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					},
+					{
+						"href": "#",
+						"label": "Contact the journal"
+					},
+					{
+						"href": "#",
+						"label": "Call for papers"
+					}
+				]
+			},
+			{
+				"type": "series",
+				"title": "Intensive Care Medicine",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
+				"href": "#",
+				"openAccess": true,
+				"subtitle": "Vol 48, Issue 11, Nov 22",
+				"description": "Vestibulum ut eros sit amet neque egestas aliquam. Donec condimentum, tortor at scelerisque rutrum, elit tortor hendrerit ligula, vitae euismod urna massa ac augue. Etiam venenatis erat sit amet pellentesque mollis. Nulla gravida risus at dapibus scelerisque. Etiam venenatis libero arcu, at consectetur nisi pharetra sed.",
+				"image": {
+					"src": "img/intensive_care_medicine.png"
+				},
+				"actions": [
+					{
+						"href": "#",
+						"label": "Submission guidelines",
+						"modifiers": [
+							"secondary",
+							"full-width"
+						]
+					}
+				]
+			}
+		]
+	},
+	"productsListGrid": {
+		"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 		"grid": true,
 		"products": [
 			{
 				"title": "Journal Of Analytical Science And Technology",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
 				"image": {
-					"src": "../img/journal_of_analytical_science_and_technology.png"
+					"src": "img/journal_of_analytical_science_and_technology.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
-					},
-					{
-						"href": "#",
-						"label": "Contact the journal"
-					},
-					{
-						"href": "#",
-						"label": "Call for papers"
 					}
 				]
 			},
 			{
 				"title": "Beiträge zur Algebra und Geometrie / Contributions To Algebra And Geometry",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
 				"image": {
-					"src": "../img/contributions_to_algebra.png"
+					"src": "img/contributions_to_algebra.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
-					},
-					{
-						"href": "#",
-						"label": "Contact the journal"
-					},
-					{
-						"href": "#",
-						"label": "Call for papers"
 					}
 				]
 			},
 			{
 				"title": "Intensive Care Medicine",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"subtitle": "Vol 48, Issue 11, Nov 22",
 				"description": "Vestibulum ut eros sit amet neque egestas aliquam. Donec condimentum, tortor at scelerisque rutrum, elit tortor hendrerit ligula, vitae euismod urna massa ac augue. Etiam venenatis erat sit amet pellentesque mollis. Nulla gravida risus at dapibus scelerisque. Etiam venenatis libero arcu, at consectetur nisi pharetra sed.",
 				"image": {
-					"src": "../img/intensive_care_medicine.png"
+					"src": "img/intensive_care_medicine.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
-					},
-					{
-						"href": "#",
-						"label": "Contact the journal"
-					},
-					{
-						"href": "#",
-						"label": "Call for papers"
 					}
 				]
 			},
 			{
+				"type": "series",
 				"title": "Journal Of Analytical Science And Technology",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
 				"image": {
-					"src": "../img/journal_of_analytical_science_and_technology.png"
+					"src": "img/journal_of_analytical_science_and_technology.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
-					},
-					{
-						"href": "#",
-						"label": "Contact the journal"
-					},
-					{
-						"href": "#",
-						"label": "Call for papers"
 					}
 				]
 			},
 			{
+				"type": "series",
 				"title": "Beiträge zur Algebra und Geometrie / Contributions To Algebra And Geometry",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"description": "Aenean quis egestas mauris. Nulla venenatis orci vitae ligula ullamcorper, sit amet volutpat neque tincidunt. Sed sollicitudin leo ligula, sit amet pharetra nisi pharetra in. Aliquam fringilla ex vitae quam facilisis euismod. Vestibulum vitae sapien blandit, egestas sem vel, ultricies velit.",
 				"image": {
-					"src": "../img/contributions_to_algebra.png"
+					"src": "img/contributions_to_algebra.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
-					},
-					{
-						"href": "#",
-						"label": "Contact the journal"
-					},
-					{
-						"href": "#",
-						"label": "Call for papers"
 					}
 				]
 			},
 			{
+				"type": "series",
 				"title": "Intensive Care Medicine",
+				"openAccessIcon": "img/tick-circle.svg#i-tick-circle",
 				"href": "#",
 				"openAccess": true,
 				"subtitle": "Vol 48, Issue 11, Nov 22",
 				"description": "Vestibulum ut eros sit amet neque egestas aliquam. Donec condimentum, tortor at scelerisque rutrum, elit tortor hendrerit ligula, vitae euismod urna massa ac augue. Etiam venenatis erat sit amet pellentesque mollis. Nulla gravida risus at dapibus scelerisque. Etiam venenatis libero arcu, at consectetur nisi pharetra sed.",
 				"image": {
-					"src": "../img/intensive_care_medicine.png"
+					"src": "img/intensive_care_medicine.png"
 				},
 				"actions": [
 					{
 						"href": "#",
 						"label": "Submission guidelines",
 						"modifiers": [
-							"secondary"
+							"secondary",
+							"full-width"
 						]
 					},
 					{

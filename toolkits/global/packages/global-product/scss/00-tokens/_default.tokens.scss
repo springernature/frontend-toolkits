@@ -1,7 +1,10 @@
-// Generated on 25/11/2022, 09:48:57
+// Generated on 06/12/2022, 15:31:20
 // Source: design-tokens/components/global/global-product/default.json
 // DO NOT edit directly
 
-$global-product-actions-spacing: $tokens--spacing-relative-800 !default;
-$global-product-description-spacing: $tokens--spacing-relative-400 !default;
-$global-product-spacing: $tokens--spacing-relative-1200 !default;
+$global-product-actions-spacing: $t-gap-800 !default;
+$global-product-description-spacing: $t-gap-400 !default;
+$global-product-grid-background-color: $t-color-greyscale-200 !default;
+$global-product-grid-spacing: $t-gap-1600 !default;
+$global-product-list-border-color: $t-color-greyscale-400 !default;
+$global-product-spacing: $t-gap-1200 !default;
