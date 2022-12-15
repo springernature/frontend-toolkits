@@ -70,7 +70,7 @@ you should use the absolute path to their binaries.
 	font-family: 'Merriweather';
 	src: url('/PUBLIC-PATH-TO-FONTS-FOLDER/Merriweather-Variable.woff2') format('woff2 supports variations'),
 	url('/PUBLIC-PATH-TO-FONTS-FOLDER/Merriweather-Variable.woff2') format('woff2-variations');
-	font-weight: 300 700;
+	font-weight: 400 700;
 	font-display: swap;
 }
 
@@ -78,7 +78,7 @@ you should use the absolute path to their binaries.
 	font-family: 'Merriweather Sans';
 	src: url('/PUBLIC-PATH-TO-FONTS-FOLDER/MerriweatherSans-Variable.woff2') format('woff2 supports variations'),
 	url('/PUBLIC-PATH-TO-FONTS-FOLDER/MerriweatherSans-Variable.woff2') format('woff2-variations');
-	font-weight: 300 700;
+	font-weight: 400 700;
 	font-display: swap;
 }
 ```
