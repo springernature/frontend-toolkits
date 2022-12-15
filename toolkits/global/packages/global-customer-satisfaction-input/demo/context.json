@@ -1,5 +1,5 @@
 {
-	"ratingsSurveyData1": {
+	"customerSatisfactionInputData1": {
 		"userJourneys": "get prepared to publish",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
@@ -11,8 +11,8 @@
 					"error": "Please select one rating",
 					"label": "Rating",
 					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
-					"id": "ratings-survey-radios1",
-					"name": "ratings-survey-radios",
+					"id": "customer-satisfaction-input-radios1",
+					"name": "customer-satisfaction-input-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
@@ -24,7 +24,7 @@
 							"showLabel": true,
 							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -35,7 +35,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a frown.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -46,7 +46,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a neutral expression.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -57,7 +57,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a smile.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -68,7 +68,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with an open mouth grin.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						}
 					]
@@ -76,7 +76,7 @@
 			]
 		}
 	},
-	"ratingsSurveyData2": {
+	"customerSatisfactionInputData2": {
 		"userJourneys": "get published",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
@@ -88,8 +88,8 @@
 					"error": "Please select one rating",
 					"label": "Rating",
 					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
-					"id": "ratings-survey-radios2",
-					"name": "ratings-survey-radios",
+					"id": "customer-satisfaction-input-radios2",
+					"name": "customer-satisfaction-input-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
@@ -101,7 +101,7 @@
 							"showLabel": true,
 							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -112,7 +112,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a frown.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -123,7 +123,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a neutral expression.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -134,7 +134,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a smile.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -145,7 +145,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with an open mouth grin.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						}
 					]
@@ -153,7 +153,7 @@
 			]
 		}
 	},
-	"ratingsSurveyData3": {
+	"customerSatisfactionInputData3": {
 		"userJourneys": "Get Prepared to Publish, Get Published",
 		"headingLevel": "3",
 		"questionUrl": "https://www.surveymonkey.com/r/97W8JW7",
@@ -166,8 +166,8 @@
 					"error": "Please select one rating",
 					"label": "Rating",
 					"groupDescription": "A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.",
-					"id": "ratings-survey-radios3",
-					"name": "ratings-survey-radios",
+					"id": "customer-satisfaction-input-radios3",
+					"name": "customer-satisfaction-input-radios",
 					"pictographic": true,
 					"boxed": true,
 					"inputs": [
@@ -179,7 +179,7 @@
 							"showLabel": true,
 							"imageDescription": "An image of a cartoon face that is very unhappy.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -190,7 +190,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a frown.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -201,7 +201,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a neutral expression.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -212,7 +212,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with a smile.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						},
 						{
@@ -223,7 +223,7 @@
 							"showLabel":  true,
 							"imageDescription": "An image of a cartoon face with an open mouth grin.",
 							"dataAttrs": {
-								"ratings-survey": "radio"
+								"customer-satisfaction-input": "radio"
 							}
 						}
 					]
@@ -232,14 +232,14 @@
 		}
 	},
 	"dynamicPartials": {
-		"ratingsSurvey": "./toolkits/global/packages/global-ratings-survey/view/ratingsSurvey.hbs",
-		"globalFormField": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormField.hbs",
-		"globalFormFieldset": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormFieldset.hbs",
-		"globalFormLabel": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormLabel.hbs",
-		"globalFormAttributes": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormAttributes.hbs",
-		"globalFormRadios": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/fields/globalFormRadios.hbs",
-		"globalFormRadio": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/fields/globalFormRadio.hbs",
-		"globalFormIconError": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormIconError.hbs",
-		"globalFormError": "./toolkits/global/packages/global-ratings-survey/node_modules/@springernature/global-forms/view/globalFormError.hbs"
+		"customerSatisfactionInput": "./toolkits/global/packages/global-customer-satisfaction-input/view/customerSatisfactionInput.hbs",
+		"globalFormField": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormField.hbs",
+		"globalFormFieldset": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormFieldset.hbs",
+		"globalFormLabel": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormLabel.hbs",
+		"globalFormAttributes": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormAttributes.hbs",
+		"globalFormRadios": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/fields/globalFormRadios.hbs",
+		"globalFormRadio": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/fields/globalFormRadio.hbs",
+		"globalFormIconError": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormIconError.hbs",
+		"globalFormError": "./toolkits/global/packages/global-customer-satisfaction-input/node_modules/@springernature/global-forms/view/globalFormError.hbs"
 	}
 }

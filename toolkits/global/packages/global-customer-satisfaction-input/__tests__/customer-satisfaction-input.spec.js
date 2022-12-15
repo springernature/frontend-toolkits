@@ -1,34 +1,34 @@
 'use strict';
-import {ratingSurveys} from '../js/index.js';
+import {customerSatisfactionInput} from '../js/index.js';
 
 const fixture = `
-<aside class="u-hide u-js-show" data-ratings-survey="" data-ratings-survey-user-journeys="get prepared to publish">
+<aside class="u-hide u-js-show" data-customer-satisfaction-input="" data-customer-satisfaction-input-user-journeys="get prepared to publish">
 	<form>
 		<fieldset>
 			<div>
-				<input type="radio" id="1" value="1" data-ratings-survey="radio">
+				<input type="radio" id="1" value="1" data-customer-satisfaction-input="radio">
 				<label for="1"></label>
 			</div>
 			<div>
-				<input type="radio" id="2" value="2" data-ratings-survey="radio">
+				<input type="radio" id="2" value="2" data-customer-satisfaction-input="radio">
 				<label for="2"></label>
 			</div>
 			<div>
-				<input type="radio" id="3" value="3" data-ratings-survey="radio">
+				<input type="radio" id="3" value="3" data-customer-satisfaction-input="radio">
 				<label for="3"></label>
 			</div>
 			<div>
-				<input type="radio" id="4" value="4" data-ratings-survey="radio">
+				<input type="radio" id="4" value="4" data-customer-satisfaction-input="radio">
 				<label for="4"></label>
 			</div>
 			<div>
-				<input type="radio" id="5" value="5" data-ratings-survey="radio">
+				<input type="radio" id="5" value="5" data-customer-satisfaction-input="radio">
 				<label for="5"></label>
 			</div>
 		</fieldset>
 		<button class="u-hide" type="submit"></button>
-		<div class="u-hide" data-ratings-survey="submit-message">
-			<a href="https://www.surveymonkey.com/1" data-ratings-survey="survey-link"></a>
+		<div class="u-hide" data-customer-satisfaction-input="submit-message">
+			<a href="https://www.surveymonkey.com/1" data-customer-satisfaction-input="survey-link"></a>
 		</div>
 	</form>
 </aside>`;
@@ -50,7 +50,7 @@ function createKeydownEvent(key) {
 	return event;
 }
 
-describe('Global Ratings Survey', () => {
+describe('Global Customer Satisfaction Input', () => {
 	let aside, form, fieldset, button, label, input, message, surveyLink;
 
 	beforeEach(() => {
@@ -62,8 +62,8 @@ describe('Global Ratings Survey', () => {
 		button = document.querySelector('button');
 		label = document.querySelector('label');
 		input = document.querySelector('input');
-		message = document.querySelector('[data-ratings-survey="submit-message"]');
-		surveyLink = document.querySelector('[data-ratings-survey="survey-link"]');
+		message = document.querySelector('[data-customer-satisfaction-input="submit-message"]');
+		surveyLink = document.querySelector('[data-customer-satisfaction-input="survey-link"]');
 		jest.spyOn(global.console, 'error').mockImplementation(() => {});
 	});
 
@@ -75,7 +75,7 @@ describe('Global Ratings Survey', () => {
 	test('Should hide pictographic radios and display submit message if pictographic radio clicked and form submitted', () => {
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
@@ -85,30 +85,30 @@ describe('Global Ratings Survey', () => {
 	test('Should hide pictographic radios and display submit message if pictographic radio selected form submitted by keyboard SPACE on submit button', () => {
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		input.checked = true;
 		const keydownSpace = createKeydownEvent('Space');
 		button.dispatchEvent(keydownSpace);
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
-		ratingSurveys();
+		customerSatisfactionInput();
 	});
 
 	test('Should hide pictographic radios and display submit message if pictographic radio selected form submitted by keyboard ENTER on submit button', () => {
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		input.checked = true;
 		const keydownEnter = createKeydownEvent('Enter');
 		button.dispatchEvent(keydownEnter);
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
-		ratingSurveys();
+		customerSatisfactionInput();
 	});
 
 	test('Should dispatch event to dataLayer if pictographic radio selected and form submitted', () => {
 		expect(window.dataLayer).toEqual([]);
-		ratingSurveys();
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		const expectedValue =
@@ -123,8 +123,8 @@ describe('Global Ratings Survey', () => {
 
 	test('Should trim and lowercase user journey values before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurveyUserJourneys = ' GET PREPARED TO PUBLISH ';
-		ratingSurveys();
+		aside.dataset.customerSatisfactionInputUserJourneys = ' GET PREPARED TO PUBLISH ';
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		const expectedValue =
@@ -139,8 +139,8 @@ describe('Global Ratings Survey', () => {
 
 	test('Should process comma separated user journey values correctly before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.ratingsSurveyUserJourneys = 'get prepared to publish, get published';
-		ratingSurveys();
+		aside.dataset.customerSatisfactionInputUserJourneys = 'get prepared to publish, get published';
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		const expectedValue =
@@ -154,28 +154,28 @@ describe('Global Ratings Survey', () => {
 	});
 
 	test('Should produce console error if no user journey parameter passed to component', () => {
-		aside.dataset.ratingsSurveyUserJourneys = '';
+		aside.dataset.customerSatisfactionInputUserJourneys = '';
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		expect(console.error).toBeCalledTimes(1);
-		expect(console.error).toBeCalledWith('Attempt to send Global Ratings Survey event failed. Value not found for User Journeys.');
+		expect(console.error).toBeCalledWith('Attempt to send Global Customer Satisfaction Input event failed. Value not found for User Journeys.');
 		// Also asserting that, from the user's perspective, it fails silently
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
 	});
 
 	test('Should produce console error if impermissible user journey parameter passed to component', () => {
-		aside.dataset.ratingsSurveyUserJourneys = 'steve';
+		aside.dataset.customerSatisfactionInputUserJourneys = 'steve';
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		expect(console.error).toBeCalledTimes(1);
-		expect(console.error).toBeCalledWith('Attempt to send Global Ratings Survey event failed. One or more of the user journeys provided are not permissible values.');
+		expect(console.error).toBeCalledWith('Attempt to send Global Customer Satisfaction Input event failed. One or more of the user journeys provided are not permissible values.');
 		// Also asserting that, from the user's perspective, it fails silently
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
@@ -185,11 +185,11 @@ describe('Global Ratings Survey', () => {
 		window.dataLayer = null;
 		expect(fieldset.classList.contains('u-hide')).toBe(false);
 		expect(message.classList.contains('u-hide')).toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		label.click();
 		button.click();
 		expect(console.error).toBeCalledTimes(1);
-		expect(console.error).toBeCalledWith('Attempt to send Global Ratings Survey event failed. window.dataLayer does not exist.');
+		expect(console.error).toBeCalledWith('Attempt to send Global Customer Satisfaction Input event failed. window.dataLayer does not exist.');
 		// Also asserting that, from the user's perspective, it fails silently
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
 		expect(message.classList.contains('u-hide')).toBe(false);
@@ -197,14 +197,14 @@ describe('Global Ratings Survey', () => {
 
 	test('Should get the current location and join survey link', () => {
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
-		ratingSurveys();
+		customerSatisfactionInput();
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1?location=http://localhost/').toBe(true);
 	})
 
 	test('Should generate URL parameters and append them to the survey link', () => {
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
 		window.location.href = 'http://localhost/?shafkjsahfh'
-		ratingSurveys();
+		customerSatisfactionInput();
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1?location=http://localhost/').toBe(true);
 	})
 });

@@ -1,6 +1,6 @@
 // October 2022: Temporary mixin, to be removed once button styles in Elements have been refactored. Unable to use existing button styles in Elements because there is not one type of button that is satisfactory across all imprints for this component.
 
-@mixin global-ratings-survey-button {
+@mixin global-customer-satisfaction-input-button {
 	position: relative;
 	display: flex;
 	justify-content: center;

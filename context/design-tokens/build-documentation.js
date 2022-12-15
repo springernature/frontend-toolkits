@@ -30,7 +30,7 @@ StyleDictionaryPackage.registerTransform({
 	name: 'name/cti/kebab',
 	type: 'name',
 	transformer: function (token, options) {
-		return `${options.prefix}--${_.kebabCase(token.path.join(' '))}`;
+		return `${options.prefix}-${_.kebabCase(token.path.join(' '))}`;
 	}
 });
 
