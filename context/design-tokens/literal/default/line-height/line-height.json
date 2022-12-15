@@ -2,26 +2,9 @@
 	"line-height": {
 		"base": {
 			"name": "base",
-			"value": "1.875",
-			"description": "For body text",
-			"type": "number",
-			"category": "line-height",
-			"themeable": false,
-			"meta": {
-				"public": true,
-				"deprecated": false,
-				"documented": true,
-				"experimental": false,
-				"SassVariable": true,
-				"CSSCustomProperty": false,
-				"UtilityClass": true
-			}
-		},
-		"md": {
-			"name": "md",
 			"value": "1.5",
-			"type": "number",
 			"description": "For body text",
+			"type": "number",
 			"category": "line-height",
 			"themeable": false,
 			"meta": {
