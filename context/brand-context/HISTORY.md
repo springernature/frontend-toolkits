@@ -1,6 +1,6 @@
 # History
 
-## 30.1.0
+## 30.1.0 (2023-01-03)
     * BREAKING:
         * Reduction of `line-height` values
 
