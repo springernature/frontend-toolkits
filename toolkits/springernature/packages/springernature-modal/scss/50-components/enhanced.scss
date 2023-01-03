@@ -17,7 +17,7 @@
 	&__title {
 		font-size: 1.125rem;
 		font-weight: 600;
-		line-height: 1.48;
+		line-height: $context--line-height-base;
 		margin-bottom: 20px;
 	}
 }
