@@ -1,4 +1,9 @@
 # History
+
+## 30.1.0
+    * BREAKING:
+        * Reduction of `line-height` values
+
 ## 30.0.5 (2022-12-05)
     * BUG:
       * last fixes for additional alias token variables from `t--` to `t-` in utilities.
