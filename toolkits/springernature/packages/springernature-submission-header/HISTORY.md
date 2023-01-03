@@ -1,5 +1,8 @@
 # History
 
+## 1.1.3 (2023-01-03)
+    * Use base `line-height`
+
 ## 1.1.2 (2022-04-08)
     * BUG: wrong component name in readme
 

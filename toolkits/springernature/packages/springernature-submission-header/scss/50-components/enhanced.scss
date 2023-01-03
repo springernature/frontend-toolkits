@@ -8,7 +8,7 @@
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 	border: 1px solid #173643;
 	border-left: 3px solid #173643;
-	line-height: 1.76;
+	line-height: $context--line-height-base;
 
 	&__author-list {
 		margin: 10px 0;
