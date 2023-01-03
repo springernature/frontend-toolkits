@@ -73,7 +73,7 @@
 					},
 					"font-weight": {
 						"name": "typography-heading-level-1-default-font-weight",
-						"value": "{font-weight.regular}",
+						"value": "{font-weight.light}",
 						"description": "Font weight for level 1 headings",
 						"type": "font-weight",
 						"category": "typography",
