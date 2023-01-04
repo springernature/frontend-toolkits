@@ -76,7 +76,7 @@ Form fields are made up of a control (the input) and an associated label. They c
 
 The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the view/fields/globalFormText.hbs template as. Aim to make the `template, id, label,` and `name` properties mandatory parts of your data schema.
 
-This component supports standard form field attributes. For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
+This component supports several [standard form field attributes](https://github.com/springernature/frontend-toolkits/blob/main/toolkits/global/packages/global-forms/view/globalFormAttributes.hbs). For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
 ```json
 {
@@ -561,3 +561,10 @@ For example, here’s a possible field definition for a search bar, comprising a
 - `gap`: The gap between the fields; any valid `gap` value.
 - `hideLabel`: You can visually hide labels with the `hideLabel` property without removing them from screen reader output. Only do this if there is another visual form of label (the “Search” label of the submit button in this case). 
 - `nowrap`: Not used in the previous example. Stop the individual fields from wrapping (beware of narrow viewports).
+
+
+## Help improve this page
+
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#ask-Elements Slack channel](https://springernature.slack.com/archives/CNBTFLBLP).
+
+
