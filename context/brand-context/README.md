@@ -9,8 +9,8 @@ The `brand-context` package contains baseline configurations that provide scaffo
 - Springer
 - SpringerNature
 
-> **Note**
-> As of brand-context `28.0.0`, all versions of Internet Explorer have been classfied for `core` browser support. Please refer to the latest [browser support guidelines](https://github.com/springernature/frontend-playbook/blob/main/practices/graded-browser-support.md) for help with how to include the brand-context in your application. To continue supporting IE11 as an enhanced browser, please use brand-context `<= 27.1.0`, and follow the [legacy browser support guidelines](https://github.com/springernature/frontend-playbook/blob/8b9df1bd729f0e737f33399238c1199a40034f30/practices/graded-browser-support.md)
+> **Note**  
+> As of brand-context `28.0.0`, all versions of Internet Explorer have been classfied for core browser support. Please refer to the latest [browser support guidelines](https://github.com/springernature/frontend-playbook/blob/main/practices/graded-browser-support.md) for help with how to include the brand-context in your application. To continue supporting IE11 as an enhanced browser, please use brand-context `<= 27.1.0`, and follow the [legacy browser support guidelines](https://github.com/springernature/frontend-playbook/blob/8b9df1bd729f0e737f33399238c1199a40034f30/practices/graded-browser-support.md)
 
 ## Using `brand-context` in your product
 
