@@ -1,5 +1,8 @@
 # History
 
+## 0.2.4 (2022-10-18)
+    * Tokenizes block spacing
+
 ## 0.2.3 (2022-09-20)
     * BUG: fixes SVGs not displaying correctly in demo
 
