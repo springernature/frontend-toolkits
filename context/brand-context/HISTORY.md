@@ -59,6 +59,8 @@
     * BUG: Fixes previous overwritten nature basic.scss file
 
 ## 28.0.0 (2022-09-14)
+    * BREAKING: Reclassify IE11 as a core browser to match the latest browser support gudielines
+		* https://github.com/springernature/frontend-playbook/blob/main/practices/graded-browser-support.md
     * BREAKING:
         * New universal block spacing (inter-element margin) for flow content
     * block-spacing alias design tokens
