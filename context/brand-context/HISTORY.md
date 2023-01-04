@@ -1,4 +1,9 @@
 # History
+
+## 31.0.0 (2023-01-05)
+    * Reduce scope of block spacing
+	* NOTE: This version replaces all versions >= 28.0.0
+
 ## 30.0.5 (2022-12-05)
     * BUG:
       * last fixes for additional alias token variables from `t--` to `t-` in utilities.
@@ -26,9 +31,6 @@
       * Design Tokens:
         * replaces grayscale with   greyscale
         * replaces `tokens-` with `t-`
-
-## 29.0.4 (2022-10-18)
-    * Reduce scope of block spacing
 
 ## 29.0.3 (2022-10-12)
     * PATCH: Change CSS selector for 'c-' used in block spacing to use the start with instead of the include pattern
