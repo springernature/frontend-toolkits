@@ -12,7 +12,7 @@ function tokenFilter(brand, component) {
 }
 
 function getStyleDictionaryConfig(brand, components) {
-	let dest = `./toolkits/global/packages/`;
+	let dest = `../../toolkits/global/packages/`;
 
 	let brand2 = brand;
 	// if brand2 equal global let brand2 equal default
@@ -42,7 +42,7 @@ function getStyleDictionaryConfig(brand, components) {
 						format: 'scss/variables',
 						filter: tokenFilter(brand, component),
 						"options": {
-							"outputReferences": false,
+							"outputReferences": true,
 							"showFileHeader": false
 						}
 					}
@@ -63,7 +63,7 @@ function getStyleDictionaryConfig(brand, components) {
 	brands.buildAllPlatforms();
 
 	components.map(component => {
-		let dir = `./toolkits/global/packages/${component}/scss/00-tokens`;
+		let dir = `../../toolkits/global/packages/${component}/scss/00-tokens`;
 		let brand2 = brand;
 		// if brand2 equal global let brand2 equal default
 		if (brand2 === 'global') {
@@ -75,9 +75,9 @@ function getStyleDictionaryConfig(brand, components) {
 			let content = fs.readFileSync(filePath, 'utf8');
 			let sortedContent = content.split('\n').sort().join('\n');
 
-			let replacedContent = sortedContent.replace(/: \$/g, ': $tokens--');
+			let replacedContent = sortedContent.replace(/: \$/g, ': $t-');
 
-			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/componenets/${brand}/${component}/${brand2}.json\n// DO NOT edit directly\n\n${replacedContent}`;
+			let GeneratedContent = `// Generated on ${new Date().toLocaleString()}\n// Source: design-tokens/components/${brand}/${component}/${brand2}.json\n// DO NOT edit directly\n\n${replacedContent}`;
 
 			fs.writeFileSync(filePath, GeneratedContent);
 
@@ -86,4 +86,3 @@ function getStyleDictionaryConfig(brand, components) {
 
 	console.log('\nEnd processing');
 });
-

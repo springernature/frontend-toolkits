@@ -7,8 +7,6 @@
 
 > Frontend Component Toolkits for the Elements Design System
 
-**Warning**: Publication of _new_ component packages is currently blocked. Updates to existing components are still permitted.
-
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
 	* [Using the correct `sass` version](#using-the-correct-sass-version)
@@ -22,6 +20,7 @@
 	* [SASS](#sass)
 	* [Javascript](#javascript)
 * [NPM Scripts](#npm-scripts)
+	* [Comparing component versions](#comparing-component-versions)
 * [Testing](#testing)
 * [Linting](#linting)
 * [Continuous integration](#continuous-integration)
@@ -213,6 +212,14 @@ The following script commands are available:
 * `npm run validate:springernature`
 
    Run the validate script, filtered by the springernature toolkit.
+
+### Comparing component versions
+
+In addition to the scripts above you can also use the [util-package-diff](https://github.com/springernature/frontend-toolkit-utilities/tree/main/packages/util-package-diff) tool to compare two versions of the same component (one from NPM, and the current local version). This is run via `npx` from the repository root, as in the example below
+
+```
+$ npx @springernature/util-package-diff -p global-corporate-footer@4.0.0
+```
 
 ## Testing
 

@@ -2,38 +2,168 @@
 	"border": {
 		"color": {
 			"primary": {
-				"value": "{color.grayscale.800}"
+				"name": "border-color-primary",
+				"value": "{color.greyscale.800}",
+				"description": "Primary border color",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"input": {
-				"value": "{color.grayscale.500}"
+				"name": "border-color-input",
+				"value": "{color.greyscale.500}",
+				"description": "Input border color",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"button": {
-				"value": "{color.primary.universal-dark-blue}"
+				"name": "border-color-button",
+				"value": "{color.primary.universal-dark-blue}",
+				"description": "Button border color",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"indent": {
-				"value": "{color.grayscale.400}"
+				"name": "border-color-indent",
+				"value": "{color.greyscale.400}",
+				"description": "Indent border color",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"radius": {
 			"50": {
-				"value": "{sizing.absolute.50}"
+				"name": "border-radius-50",
+				"value": "{sizing.absolute.50}",
+				"description": "Border radius 50",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
-				"value": "{sizing.absolute.100}"
+				"name": "border-radius-100",
+				"value": "{sizing.absolute.100}",
+				"description": "Border radius 100",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		},
 		"width": {
 			"25": {
-				"value": "{sizing.absolute.25}"
+				"name": "border-width-25",
+				"value": "{sizing.absolute.25}",
+				"description": "Border width 25",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"50": {
-				"value": "{sizing.absolute.50}"
+				"name": "border-width-50",
+				"value": "{sizing.absolute.50}",
+				"description": "Border width 50",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"100": {
-				"value": "{sizing.absolute.100}"
+				"name": "border-width-100",
+				"value": "{sizing.absolute.100}",
+				"description": "Border width 100",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			},
 			"200": {
-				"value": "{sizing.absolute.200}"
+				"name": "border-width-200",
+				"value": "{sizing.absolute.200}",
+				"description": "Border width 200",
+				"type": "color",
+				"category": "border-color",
+				"themeable": true,
+				"meta": {
+					"public": true,
+					"deprecated": false,
+					"documented": true,
+					"experimental": false,
+					"SassVariable": true,
+					"CSSCustomProperty": false
+				}
 			}
 		}
 	}

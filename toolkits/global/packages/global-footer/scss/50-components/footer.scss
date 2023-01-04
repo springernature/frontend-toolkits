@@ -1,0 +1,108 @@
+.c-footer {
+	background-color: $footer--background-color;
+	font-family: $footer--font-family;
+	padding-top: $footer--padding-top;
+	padding-bottom: $footer--padding-bottom;
+	color: $footer--text-color;
+	line-height: $footer--line-height;
+}
+
+.c-footer__container {
+	@include u-container;
+	@include u-hide-print;
+}
+
+.c-footer__links {
+	@include u-list-inline;
+	margin-bottom: $footer--links-margin-bottom;
+	line-height: $footer--item-line-height;
+
+	li:not(:last-child) {
+		margin-right: $footer--item-margin-right;
+	}
+}
+
+.c-footer__legal {
+	color: $footer--text-color;
+	font-size: $footer--font-size;
+	margin-top: $footer--legal-margin-top;
+	margin-bottom: $footer--margin-bottom;
+}
+
+.c-footer__link {
+	@include u-link-inherit;
+	white-space: nowrap;
+
+	&:focus {
+		outline: spacing(4) solid #fc0;
+	}
+
+	> img {
+		vertical-align: middle;
+	}
+}
+
+button.c-footer__link {
+	@include u-link-underline;
+	border: none;
+	padding: 0;
+	background: none;
+	font-family: $footer--font-family;
+}
+
+.c-footer__list {
+	@include u-list-reset();
+}
+
+.c-footer__grid {
+	display: flex;
+	flex-wrap: wrap;
+
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-column-gap: $footer--spacing-medium;
+		grid-row-gap: spacing(32);
+	}
+}
+
+.c-footer__group {
+	flex: 1 1 50%;
+	max-width: 50%;
+	padding-right: $footer--spacing-medium;
+	margin-bottom: $footer--spacing-medium;
+
+	@include media-query('lg') {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	@supports (display: grid) {
+		padding-right: 0;
+		max-width: none;
+		margin-bottom: 0;
+	}
+}
+
+.c-footer__group--separator {
+	border-bottom: $footer--border;
+	margin-bottom: spacing(32);
+	padding-bottom: spacing(32);
+}
+
+.c-footer__heading {
+	color: $footer--text-color;
+	margin-bottom: $footer--spacing-medium;
+	font-weight: bold;
+	font-family: $footer--heading-font-family;
+}
+
+.c-footer__heading--visually-hidden {
+	@include u-visually-hidden;
+}
+
+.c-footer__item {
+	&:not(:last-child) {
+		margin-bottom: $footer--spacing-medium;
+	}
+}

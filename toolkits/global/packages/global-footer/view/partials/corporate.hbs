@@ -1,0 +1,24 @@
+<div class="c-footer__container">
+	{{#with navigation}}
+		<nav>
+			<ul class="c-footer__links">
+				{{#each links}}
+				<li>
+					{{#if this.url}}
+						<a class="c-footer__link" href="{{this.url}}">{{text}}</a>
+					{{/if}}
+					{{#if buttonProperties}}
+						<button class="c-footer__link" {{{buttonProperties}}}>{{text}}</button>
+					{{/if}}
+				</li>
+				{{/each}}
+			</ul>
+		</nav>
+	{{/with}}
+	{{#with image}}
+		<a href="{{link}}" class="c-footer__link">
+			<img src="{{src}}" alt="{{alt}}" loading="lazy" width="200" height="20"/>
+		</a>
+	{{/with}}
+	<p class="c-footer__legal" data-test="copyright">&copy; {{currentYear}} Springer Nature</p>
+</div>

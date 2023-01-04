@@ -1,0 +1,55 @@
+{
+	"brand-gradient": {
+		"direction": {
+			"name": "brand-gradient-direction",
+			"value": "to right",
+			"description": "The direction of the gradient",
+			"type": "string",
+			"category": "color-gradient",
+			"themeable": true,
+			"meta": {
+				"brand": "springernature",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
+		},
+		"start-value": {
+			"name": "brand-gradient-start-value",
+			"value": "{color.research.blue}",
+			"description": "The start value of the gradient",
+			"type": "color",
+			"category": "color-gradient",
+			"themeable": true,
+			"meta": {
+				"brand": "springernature",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
+		},
+		"end-value": {
+			"name": "brand-gradient-end-value",
+			"value": "{color.blue.900}",
+			"description": "The end value of the gradient",
+			"type": "color",
+			"category": "color-gradient",
+			"themeable": true,
+			"meta": {
+				"brand": "springernature",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
+		}
+	}
+}

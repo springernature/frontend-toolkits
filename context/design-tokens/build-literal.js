@@ -1,7 +1,6 @@
-const fs = require('fs');
-const StyleDictionaryPackage = require('style-dictionary');
-const _ = require('../../node_modules/style-dictionary/lib/utils/es6_');
 const { readdirSync } = require('fs');
+const StyleDictionaryPackage = require('style-dictionary');
+const _ = require('./node_modules/style-dictionary/lib/utils/es6_');
 
 // this will return a filtering function based on brand and category
 function tokenFilter(brand, category) {
@@ -18,42 +17,43 @@ StyleDictionaryPackage.registerTransform({
 	name: 'name/cti/kebab',
 	type: 'name',
 	transformer: function (token, options) {
-		return `${options.prefix}--${_.kebabCase(token.path.join(' '))}`;
+		return `${options.prefix}-${_.kebabCase(token.path.join(' '))}`;
 	}
 });
 
 function getStyleDictionaryConfig(brand, categories) {
-	let dest = `./context/brand-context/${brand}/scss`;
+	let destination = `../../context/brand-context/${brand}/scss`;
 
 	return {
 		source: [
 			`${__dirname}/literal/${brand}/font-weight/font-weight.json`,
 			`${__dirname}/literal/${brand}/spacing/spacing.json`,
-			`${__dirname}/literal/${brand}/breakpoints/breakpoints.json`,
-			`${__dirname}/literal/${brand}/sizing/sizing.json`
+			`${__dirname}/literal/${brand}/breakpoints/breakpoints.json`
 		],
 		platforms: {
 			scssVariables: {
 				transformGroup: 'web',
 				transform: 'name/cti/kebab',
-				prefix: "tokens",
-				buildPath: `${dest}/00-tokens/`,
+				prefix: 't',
+				buildPath: `${destination}/00-tokens/`,
 				files: categories.map(category => {
 					return {
 						destination: `_${category}.variables.scss`,
 						format: 'scss/variables',
-						filter: tokenFilter(brand, category),
-					}
+						filter: tokenFilter(brand, category)
+					};
 				})
 			}
 		}
-	}
+	};
 }
 
 console.log('Build started...');
 
+// eslint-disable-next-line array-callback-return
 ['default', 'springernature', 'springer', 'nature'].map(function (brand) {
-	let dir = `${__dirname}/literal/${brand}`
+	// eslint-disable-next-line unicorn/prevent-abbreviations
+	let dir = `${__dirname}/literal/${brand}`;
 	const categories = readdirSync(dir);
 
 	console.log('\n==============================================');
@@ -66,10 +66,6 @@ console.log('Build started...');
 	console.log('\nEnd processing');
 	// StyleDictionary.buildPlatform(brand);
 });
-
-
-
-// we need to make sure the existing tokens are the same as what Design are using
 
 console.log('\n==============================================');
 console.log('\nBuild completed!');

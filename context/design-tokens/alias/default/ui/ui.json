@@ -1,17 +1,56 @@
 {
 	"ui": {
 		"font-size": {
-			"value": "{font-size.400}"
+			"name": "ui-font-size",
+			"value": "{font-size.400}",
+			"description": "The font size of the UI.",
+			"type": "font-size",
+			"category": "ui",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		},
 		"focus": {
 			"outline": {
 				"color": {
-					"value": "{color.primary.bright-blue}"
+					"name": "ui-focus-outline-color",
+					"value": "{color.primary.bright-blue}",
+					"description": "The color of the UI focus outline.",
+					"type": "color",
+					"category": "ui",
+					"themeable": false,
+					"meta": {
+						"public": true,
+						"deprecated": false,
+						"documented": true,
+						"experimental": false,
+						"SassVariable": true,
+						"CSSCustomProperty": false
+					}
 				}
 			}
 		},
 		"content-width": {
-			"value": "70ch"
+			"name": "ui-content-width",
+			"value": "70ch",
+			"description": "The width of the content area.",
+			"type": "length",
+			"category": "ui",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false
+			}
 		}
 	}
 }

@@ -2,15 +2,55 @@
 	"aspect-ratio": {
 		"1x1": {
 			"name": "1x1",
-			"value": "1"
+			"value": "1",
+			"description": "This is to make an item square",
+			"type": "ratio",
+			"category": "aspect-ratio",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"4x3": {
 			"name": "4x3",
-			"value": "4/3"
+			"value": "4/3",
+			"description": "This is to make an item 4:3",
+			"type": "ratio",
+			"category": "aspect-ratio",
+			"themeable": false,
+			"meta": {
+				"brand": "nature",
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		},
 		"16x9": {
 			"name": "16x9",
-			"value": "16/9"
+			"value": "16/9",
+			"description": "This is to make an item 16:9",
+			"type": "ratio",
+			"category": "aspect-ratio",
+			"themeable": false,
+			"meta": {
+				"public": true,
+				"deprecated": false,
+				"documented": true,
+				"experimental": false,
+				"SassVariable": true,
+				"CSSCustomProperty": false,
+				"UtilityClass": true
+			}
 		}
 	}
 }

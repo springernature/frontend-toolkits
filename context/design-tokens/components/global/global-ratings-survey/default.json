@@ -1,0 +1,110 @@
+{
+	"global-ratings-survey": {
+		"font": {
+			"family": {
+				"value": "{font-family.sans}"
+			}
+		},
+		"container": {
+			"padding": {
+				"value": "{spacing.absolute.400}"
+			},
+			"background": {
+				"color": {
+					"value": "{color.grayscale.300}"
+				}
+			}
+		},
+		"link": {
+			"margin": {
+				"value": "{spacing.absolute.200}"
+			},
+			"font": {
+				"size": {
+					"value": "16px"
+				}
+			}
+		},
+		"heading": {
+			"margin": {
+				"value": "{spacing.absolute.200}"
+			},
+			"font": {
+				"size": {
+					"value": "16px"
+				},
+				"weight": {
+					"value": "{font-weight.bold}"
+				}
+			}
+		},
+		"error": {
+			"margin": {
+				"value": "{spacing.absolute.200}"
+			}
+		},
+		"line-height": {
+			"value": "{line-height.tight}"
+		},
+		"message": {
+			"font": {
+				"size": {
+					"value": "16px"
+				}
+			},
+			"icon": {
+				"margin": {
+					"value": "{spacing.absolute.200}"
+				},
+				"size": {
+					"value": "{sizing.absolute.600}"
+				}
+			}
+		},
+		"radio": {
+			"spacing": {
+				"narrow": {
+					"value": "5px"
+				},
+				"desktop": {
+					"value": "{spacing.absolute.400}"
+				}
+			},
+			"label": {
+				"font": {
+					"size": {
+						"narrow": {
+							"value": "12px"
+						},
+						"desktop": {
+							"value": "14px"
+						}
+					}
+				}
+			},
+			"icon": {
+				"size": {
+					"narrow": {
+						"value": "21px"
+					},
+					"desktop": {
+						"value": "24px"
+					}
+				},
+				"spacing": {
+					"narrow": {
+						"value": "6px"
+					},
+					"desktop": {
+						"value": "8px"
+					}
+				},
+				"border": {
+					"radius": {
+						"value": "{border.radius.50}"
+					}
+				}
+			}
+		}
+	}
+}

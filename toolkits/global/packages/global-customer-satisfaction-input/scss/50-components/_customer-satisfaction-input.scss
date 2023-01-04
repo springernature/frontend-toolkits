@@ -1,0 +1,117 @@
+.c-customer-satisfaction-input {
+	padding: $global-customer-satisfaction-input-container-padding;
+	background-color: $global-customer-satisfaction-input-container-background-color;
+	overflow: hidden;
+	font-family: $global-customer-satisfaction-input-font-family;
+}
+
+.c-customer-satisfaction-input__container {
+	display: flex;
+	justify-content: center;
+}
+
+// !important used to ensure overrides heading styles on all of our imprint sites
+.c-customer-satisfaction-input__heading {
+	margin: 0 0 $global-customer-satisfaction-input-heading-margin !important;
+	font-family: inherit !important;
+	font-size: $global-customer-satisfaction-input-heading-font-size !important;
+	line-height: $global-customer-satisfaction-input-line-height !important;
+	font-weight: $global-customer-satisfaction-input-heading-font-weight !important;
+}
+
+.c-customer-satisfaction-input__submit-message div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.c-customer-satisfaction-input__submit-message svg {
+	width: $global-customer-satisfaction-input-message-icon-size;
+	height: $global-customer-satisfaction-input-message-icon-size;
+	margin-right: $global-customer-satisfaction-input-message-icon-margin;
+}
+
+.c-customer-satisfaction-input__submit-message p {
+	margin: 0;
+	line-height: $global-customer-satisfaction-input-line-height;
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-message-font-size;
+}
+
+.c-customer-satisfaction-input__button {
+	// TODO: Remove this mixin and replace with Brand Context button styles once work to improve them has been carried out
+	@include global-customer-satisfaction-input-button;
+}
+
+.c-customer-satisfaction-input a {
+	display: inline-block;
+	margin-top: $global-customer-satisfaction-input-link-margin;
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-message-font-size;
+}
+
+.c-customer-satisfaction-input__visually-hidden,
+.c-customer-satisfaction-input legend.c-forms__label {
+	/* hide visually, not to assistive tech */
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Override Global Forms Styles */
+.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
+	width: $global-customer-satisfaction-input-radio-icon-size-narrow;
+	height: $global-customer-satisfaction-input-radio-icon-size-narrow;
+	padding: $global-customer-satisfaction-input-radio-icon-spacing-narrow;
+	border-radius: $global-customer-satisfaction-input-radio-icon-border-radius;
+}
+
+.c-customer-satisfaction-input .c-forms__pictographic-radios {
+	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
+	justify-content: center;
+}
+
+.c-customer-satisfaction-input .c-forms__label {
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
+}
+
+@include media-query('sm') {
+	.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
+		width: $global-customer-satisfaction-input-radio-icon-size-desktop;
+		height: $global-customer-satisfaction-input-radio-icon-size-desktop;
+		padding: $global-customer-satisfaction-input-radio-icon-spacing-desktop;
+	}
+
+	.c-customer-satisfaction-input .c-forms__pictographic-radios {
+		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
+	}
+
+	.c-customer-satisfaction-input .c-forms__label {
+		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
+	}
+}
+
+.c-customer-satisfaction-input .c-forms__fieldset--pictographic-radios {
+	justify-content: center;
+}
+
+.c-customer-satisfaction-input .c-forms__label + .c-forms__label {
+	margin-top: 0;
+}
+
+.c-customer-satisfaction-input .c-forms__fieldset {
+	margin: 0;
+}
+
+.c-customer-satisfaction-input .c-forms__error {
+	display: none;
+	margin-bottom: $global-customer-satisfaction-input-error-margin;
+}
+
+.c-customer-satisfaction-input--show-error .c-forms__error {
+	display: flex;
+}
