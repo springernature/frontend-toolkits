@@ -1,6 +1,6 @@
 # History
 
-## 31.0.0 (2023-01-05)
+## 31.0.0 (2023-01-04)
     * Reduce scope of block spacing
 	* NOTE: This version replaces all versions >= 28.0.0
 
