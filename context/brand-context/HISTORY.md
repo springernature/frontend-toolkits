@@ -3,6 +3,7 @@
 ## 30.1.0 (2023-01-03)
     * BREAKING:
         * Reduction of `line-height` values
+    * 300 at start of variable font range for Merriweather in springernature README
 
 ## 30.0.5 (2022-12-05)
     * BUG:
