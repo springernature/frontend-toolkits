@@ -74,7 +74,7 @@ For this example, you might have 2 simple inputs for a name and password:
 
 Form fields are made up of a control (the input) and an associated label. They can also include hints that give extra guidance when filling out a field. 
 
-The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the view/fields/globalFormText.hbs template as. Aim to make the `template, id, label,` and `name` properties mandatory parts of your data schema.
+The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the view/fields/globalFormText.hbs template as.
 
 This component supports several [standard form field attributes](https://github.com/springernature/frontend-toolkits/blob/main/toolkits/global/packages/global-forms/view/globalFormAttributes.hbs). For example, to include a `readonly` attribute on your text input, you can include a property of the same name on the data:
 
