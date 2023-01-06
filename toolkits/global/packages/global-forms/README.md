@@ -404,7 +404,7 @@ Unlike radios, which are always used in sets of 2 or more, you can have a single
 
 ### When to use this form element
 
-Research shows that some [people find selects difficult to use](https://www.lukew.com/ff/entry.asp?1950).
+Research shows that [some people find selects difficult to use](https://www.lukew.com/ff/entry.asp?1950).
 
 Only use selects when there’s genuinely no other option.
 
