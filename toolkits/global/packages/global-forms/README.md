@@ -9,7 +9,6 @@ Use the forms component when users need to submit information or data. This coul
 ## How it works
 The forms component does not include any JavaScript. States (such as an invalid/error state) are defined at a data level. If you're using client-side processing, you might benefit from compiling the form’s handlebars template in the browser.
 
-- Data structure
 - Interdependencies
 - Registering partials
 
