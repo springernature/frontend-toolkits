@@ -250,7 +250,7 @@ Placing the hint text above the text input will prevent users from mistaking it 
 
 #### Data properties
 
-In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
+Data attributes are supported for unit testing purposes. You can add them using a `dataAttrs` array.
 
 ```json
 {
