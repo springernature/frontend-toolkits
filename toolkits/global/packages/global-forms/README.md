@@ -126,7 +126,7 @@ In this case, each fieldset is an object:
 ]
 ```
 
-And the accompanying template would include this:
+And the accompanying template would iterate over the fieldsets, applying the `globalFormFieldset` partial:
 
 ```html
 {{#each myFieldsets}}
@@ -157,7 +157,6 @@ Use HTML to style the legend and add semantic meaning. In most cases, legends sh
 For accessibility, do not use a fieldset without an accompanying legend. If a legend is not appropriate, neither is a fieldset; just use fields without a fieldset parent.
 
 A fieldset can include one or more nested fieldsets. If you are including headings in your fieldsets, be careful to use a heading level that reflects the nesting level. For example, if a fieldset’s legend uses `<h2>`, any child fieldset within it should use `<h3>` or no heading level at all.
-
 
 ## Validation
 
@@ -235,13 +234,13 @@ Placeholder text:
 - disappears when a user enters information - which makes it hard for some people to remember what it said
 - can be mistaken by some users for information they’ve entered
 
-Instead, add a hint above the input, when you need one. 
+Instead, add a hint above the input, when you need one, using a `hint` property.
 
 #### Hints
 
 ![Hints](https://user-images.githubusercontent.com/15365576/210446292-047bb015-34b4-4b50-a29a-567d95b41faa.png)
 
-The `hint` property adds hint text under the main label text but *inside* the `<label>`. This means it is automatically available to screen reader software. 
+The `hint` property adds hint text under the main label text but **inside** the `<label>`. This means it is automatically available to screen reader software.
 
 ```json
 "hint": "Add the funder(s) of your research for this manuscript"
