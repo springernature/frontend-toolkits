@@ -69,7 +69,7 @@ For this example, you might have 2 simple inputs for a name and password:
 
 ### Fields
 
-Form fields are made up of a control (the input) and an associated label. They can also include hints that give extra guidance when filling out a field. 
+Form fields are made up of a control (the input) and an associated label. They can also include hint text to provide extra guidance when filling out a field. 
 
 The `template` property sets the type of field - for example, `"template": "globalFormText"` renders a text input field if that is what you have registered the view/fields/globalFormText.hbs template as.
 
