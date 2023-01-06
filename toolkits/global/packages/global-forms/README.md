@@ -551,7 +551,7 @@ For example, here’s a possible field definition for a search bar, comprising a
             "template": "globalFormButton",
             "type": "submit",
             "label": "Search",
-            "modifiers": ["primary"]
+            "modifiers": ["secondary"]
         }
     ]
 }
