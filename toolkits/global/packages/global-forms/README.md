@@ -293,7 +293,7 @@ This builds a standard `datalist` field, with `options`, and associates it with 
 
 ### When to use this form element
 
-Use the radio input when users need to pick a single option from a list.
+Use the radios field (`globalFormRadios`) when users need to pick a single option from a list.
 
 ### How it works
 
