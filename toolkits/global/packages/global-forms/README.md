@@ -406,7 +406,7 @@ Unlike radios, which are always used in sets of 2 or more, you can have a single
 
 Research shows that [some people find selects difficult to use](https://www.lukew.com/ff/entry.asp?1950).
 
-Only use selects when there’s genuinely no other option.
+Only use selects when there’s no other option.
 
 ### When not to use this form element
 
