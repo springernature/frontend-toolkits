@@ -45,7 +45,7 @@ Here is an example base template implementation:
 
 For this example, you might have 2 simple inputs for a name and password:
 
-```html
+```json
 "myFields": {
     [
         {
@@ -109,7 +109,7 @@ There are 2 ways to add fieldsets to your form:
 #### (2) A fieldset array
 In this case, each fieldset is an object:
 
-```html
+```json
 "myFieldsets": [
     {
         "legend": "<h2>One fieldset</h2>",
@@ -141,7 +141,7 @@ Use HTML to style the legend and add semantic meaning. In most cases, legends sh
 
 ![Legends](https://user-images.githubusercontent.com/15365576/210399801-a3078572-c8cb-4826-93bb-02b2aabb9fbc.png)
 
-```html
+```json
 "fieldsets": {
     [
         {
@@ -197,7 +197,7 @@ Each field can have an `error` property. The inclusion of the property means the
 
 Summarise errors using a top level `errorSummary` property. Each error in the errors array must point to the `id` of the input it relates to and repeat its `error` message:
 
-```
+```json
 "errorSummary": {
     "id": "summary",
     "title": "There is a problem",
@@ -243,7 +243,7 @@ Instead, add a hint above the input, when you need one.
 
 The `hint` property adds hint text under the main label text but *inside* the `<label>`. This means it is automatically available to screen reader software.
 
-```
+```json
 "hint": "Add the funder(s) of your research for this manuscript"
 ```
 
@@ -366,7 +366,7 @@ Do not use checkboxes if users can only choose one option. Instead, use radios.
 
 Unlike radios, which are always used in sets of 2 or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
-```
+```json
 {
     "legend": "<h2>Which subject categories apply to your manuscript?</h2>",
     "fields": [
@@ -420,7 +420,7 @@ Aim to use alternatives such as:
 
 `Select` fields (using the `<select>` element) define the user’s options with an `options` property, which must be an array. The `selected` property can be used to preselect an option:
 
-```
+```json
 "options": [
     {
         "label": "Author affiliation",
@@ -465,7 +465,7 @@ Only use the primary button styling as the main call to action on a page.
 
 A `template` of `buttons` defines a set of button controls, displayed inline (using Flexbox and `gap` for tidy wrapping). The `type` property for each individual button corresponds to the `type` HTML attribute. For example, here is how you would include a submit button:
 
-```
+```json
 "fields": [
     ...
     {
@@ -499,7 +499,7 @@ The `modifiers` property is an array. Each value should match one of these modif
 ### How it works
 You can hide any field from visibility (also from screen reader software and keyboard interaction) using `hidden: true`. If you want to use a field of `type="hidden`", you need to use `template: globalFormHidden`. It is recommended you also apply `hidden: true` to such fields because it will remove the inter-field margin. In the following example, note the `label` is omitted since hidden fields are not user facing.
 
-```
+```json
 {
     "template": "globalFormHidden",
     "id": "hidden-field",
@@ -526,13 +526,13 @@ Don’t use inline fields for an entire form, as this will make it harder for us
 
 Display fields in a horizontal line using the following `template` value:
 
-```
+```json
 "template": "globalFormInlineFields"
 ```
 
 For example, here’s a possible field definition for a search bar, comprising an input and submit button:
 
-```
+```json
 {
     "template": "globalFormInlineFields",
     "gap": "1em",
