@@ -312,8 +312,8 @@ Radios define choices with an `inputs` array:
             "name": "contact"
         },
         {
-            "label": "Email",
-            "value": "Email",
+            "label": "Phone",
+            "value": "Phone",
             "name": "contact"
         }
     ]
