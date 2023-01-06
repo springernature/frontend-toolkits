@@ -241,7 +241,7 @@ Instead, add a hint above the input, when you need one, using a `hint` property.
 
 ![Hints](https://user-images.githubusercontent.com/15365576/210446292-047bb015-34b4-4b50-a29a-567d95b41faa.png)
 
-The `hint` property adds hint text under the main label text but *inside* the `<label>`. This means it is automatically available to screen reader software.
+The `hint` property adds hint text under the main label text but **inside** the `<label>`. This means it is automatically available to screen reader software.
 
 ```json
 "hint": "Add the funder(s) of your research for this manuscript"
