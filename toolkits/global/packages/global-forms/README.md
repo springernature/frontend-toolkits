@@ -514,7 +514,7 @@ You can hide any field from visibility (also from screen reader software and key
 
 ### When to use this form element
 
-Use inline fields when you need to ask users for information that is part of a continuous set, such as the date or credit card number.
+Use inline fields when you need to ask users for information that is part of a continuous set, such as a date or credit card number.
 
 ### When not to use this form element
 
