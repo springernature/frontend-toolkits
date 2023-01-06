@@ -235,7 +235,7 @@ Placeholder text:
 - disappears when a user enters information - which makes it hard for some people to remember what it said
 - can be mistaken by some users for information they’ve entered
 
-Instead, add a hint above the input, when you need one. 
+Instead, add a hint above the input, when you need one, using a `hint` property.
 
 #### Hints
 
