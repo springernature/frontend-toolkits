@@ -95,7 +95,7 @@ Use a fieldset to group fields together under its `fields` property. Use a `lege
 ![Panel](https://user-images.githubusercontent.com/15365576/209008283-cf253e6c-2ef8-4af1-8751-8a04da67c317.png)
 
 There are 2 ways to add fieldsets to your form:
-1. Create a field with the template value of globalFormFieldset and an array of fields using the fields property.
+1. Create a field with the template value of `globalFormFieldset` and an array of fields using its `fields` property.
 2. Create an array of fieldsets and loop over them, assigning the globalFormFieldset partial.
 
 #### (1) The fieldset field
