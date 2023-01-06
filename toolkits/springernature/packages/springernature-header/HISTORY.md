@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2022-12-06)
+    * Remove references to user-details component, and move some core styles to enhanced (media queries)
+
 ## 3.0.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 
