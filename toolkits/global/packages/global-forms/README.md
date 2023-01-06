@@ -241,13 +241,13 @@ Instead, add a hint above the input, when you need one.
 
 ![Hints](https://user-images.githubusercontent.com/15365576/210446292-047bb015-34b4-4b50-a29a-567d95b41faa.png)
 
-The `hint` property adds hint text under the main label text but *inside* the `<label>`. This means it is automatically available to screen reader software.
+The `hint` property adds hint text under the main label text but *inside* the `<label>`. This means it is automatically available to screen reader software. 
 
 ```json
 "hint": "Add the funder(s) of your research for this manuscript"
 ```
 
-Always place hint text above the text input instead of outside it. This will prevent users from mistaking it as a value and skipping the field.
+Placing the hint text above the text input will prevent users from mistaking it as a value and skipping the field.
 
 #### Data properties
 
