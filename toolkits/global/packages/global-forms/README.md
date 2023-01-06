@@ -90,7 +90,7 @@ This component supports several [standard form field attributes](https://github.
 
 ### Fieldsets
 
-Use a fieldset to group related inputs that are itemised under their `fields` property, with a legend to label the fieldset itself.  
+Use a fieldset to group fields together under its `fields` property. Use a `legend` property to label the fieldset itself.
 
 ![Panel](https://user-images.githubusercontent.com/15365576/209008283-cf253e6c-2ef8-4af1-8751-8a04da67c317.png)
 
