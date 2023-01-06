@@ -460,7 +460,7 @@ The standard `accept` attribute is supported. Use this for filtering out file ty
 Use a button to let a user perform an action such as:
 
 - Progressing to the next section of a form
-- Submit a completed form
+- Submitting a completed form
 
 Only use the primary style button as the main call to action on a page.
 
