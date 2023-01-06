@@ -518,7 +518,7 @@ Use inline fields when you need to ask users for information that is part of a c
 
 ### When not to use this form element
 
-Don’t use inline fields for an entire form, as this will make it harder for users to scan the page.
+Do not use inline fields for an entire form, as this will make it harder for users to scan the page.
 
 
 ### How it works
