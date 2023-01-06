@@ -527,7 +527,7 @@ Don’t use inline fields for an entire form, as this will make it harder for us
 
 ### How it works
 
-It is possible to display fields in a horizontal line, using the following `template` value:
+Display fields in a horizontal line using the following `template` value:
 
 ```
 "template": "globalFormInlineFields"
