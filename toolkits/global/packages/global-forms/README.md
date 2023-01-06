@@ -462,7 +462,7 @@ Use a button to let a user perform an action such as:
 - Progressing to the next section of a form
 - Submitting a completed form
 
-Only use the primary style button as the main call to action on a page.
+Only use the primary button styling as the main call to action on a page.
 
 ### How it works
 
