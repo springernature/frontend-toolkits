@@ -264,7 +264,7 @@ Data attributes are supported for unit testing purposes. You can add them using 
 }
 ```
 
-This would create the following attribution: `data-test: someValue.`
+This would create the following attribution: `data-test="someValue"`.
 
 #### Datalist
 
