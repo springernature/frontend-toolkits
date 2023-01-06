@@ -440,7 +440,7 @@ Aim to use alternatives such as:
 
 ### When to use this form element
 
-File upload allows users to select and upload a file of their choosing. Use this element when it is a necessary part of a service e.g. an author manuscript as part of the publication process.
+File upload allows users to select and upload a file of their choosing. Use this element when it is a necessary part of a service. For example, an author manuscript as part of the publication process.
 
 ### How it works
 
