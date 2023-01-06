@@ -6,7 +6,7 @@
 			"description": "Background color of the page",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"brand": "nature",
 				"public": true,

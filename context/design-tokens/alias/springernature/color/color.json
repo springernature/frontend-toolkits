@@ -6,7 +6,7 @@
 			"description": "The direction of the gradient",
 			"type": "string",
 			"category": "color-gradient",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"brand": "springernature",
 				"public": true,
@@ -23,7 +23,7 @@
 			"description": "The start value of the gradient",
 			"type": "color",
 			"category": "color-gradient",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"brand": "springernature",
 				"public": true,
@@ -40,7 +40,7 @@
 			"description": "The end value of the gradient",
 			"type": "color",
 			"category": "color-gradient",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"brand": "springernature",
 				"public": true,

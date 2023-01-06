@@ -20,7 +20,7 @@
 
 @mixin heading-base {
 	font-style: normal;
-	line-height: $context--line-height-tight;
+	line-height: $t-typography-heading-line-height;
 
 	a {
 		@include u-link-interface;

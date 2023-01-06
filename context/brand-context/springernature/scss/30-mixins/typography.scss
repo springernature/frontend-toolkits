@@ -6,7 +6,7 @@
 	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
 	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-	line-height: unquote('min(max(#{$context--line-height-h1-min}, 4vw), #{$context--line-height-h1})');
+	line-height: $t-typography-heading-line-height;
 }
 
 %u-h2 {
@@ -14,7 +14,7 @@
 	font-size: unquote('min(max(#{$context--font-size-h2-min}, 4vw), #{$context--font-size-h2})');
 	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-	line-height: unquote('min(max(#{$context--line-height-h2-min}, 4vw), #{$context--line-height-h2})');
+	line-height: $t-typography-heading-line-height;
 }
 
 %u-h3 {
@@ -22,7 +22,7 @@
 	font-size: unquote('min(max(#{$context--font-size-h3-min}, 4vw), #{$context--font-size-h3})');
 	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-	line-height: unquote('min(max(#{$context--line-height-h3-min}, 4vw), #{$context--line-height-h3})');
+	line-height: $t-typography-heading-line-height;
 }
 
 %u-h4 {
@@ -30,7 +30,7 @@
 	font-size: unquote('min(max(#{$context--font-size-h4-min}, 4vw), #{$context--font-size-h4})');
 	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-	line-height: unquote('min(max(#{$context--line-height-h4-min}, 4vw), #{$context--line-height-h4})');
+	line-height: $t-typography-heading-line-height;
 }
 
 %u-h5 {
@@ -38,7 +38,7 @@
 	font-size: unquote('min(max(#{$context--font-size-h5-min}, 4vw), #{$context--font-size-h5})');
 	margin-bottom: spacing(16);
 	font-family: $context--font-family-serif;
-	line-height: unquote('min(max(#{$context--line-height-h5-min}, 4vw), #{$context--line-height-h5})');
+	line-height: $t-typography-heading-line-height;
 }
 
 @mixin u-small() {

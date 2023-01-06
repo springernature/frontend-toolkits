@@ -6,7 +6,7 @@
 			"description": "Primary text color",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -22,7 +22,7 @@
 			"description": "Secondary text color",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -38,7 +38,7 @@
 			"description": "Reversed text color",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,

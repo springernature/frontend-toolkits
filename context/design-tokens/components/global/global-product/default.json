@@ -6,7 +6,7 @@
 			"description": "This is the spacing between the main parts of a product component",
 			"type": "length",
 			"category": "spacing",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -23,7 +23,7 @@
 				"description": "This is the spacing between the actions links",
 				"type": "length",
 				"category": "spacing",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -41,7 +41,7 @@
 				"description": "The spacing around the description",
 				"type": "length",
 				"category": "spacing",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,

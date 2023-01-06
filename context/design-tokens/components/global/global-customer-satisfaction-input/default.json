@@ -11,7 +11,7 @@
 			},
 			"background": {
 				"color": {
-					"value": "{color.grayscale.300}"
+					"value": "{color.greyscale.300}"
 				}
 			}
 		},

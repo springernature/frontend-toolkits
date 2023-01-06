@@ -6,7 +6,7 @@
 			"description": "Background color of the page",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -22,7 +22,7 @@
 			"description": "Background color of the container",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -38,7 +38,7 @@
 			"description": "Background color of the container when inverted",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -55,7 +55,7 @@
 		"description": "Background color of the facet",
 		"type": "color",
 		"category": "color",
-		"themeable": true,
+		"themeable": false,
 		"meta": {
 			"public": true,
 			"deprecated": false,
@@ -71,7 +71,7 @@
 		"description": "Background color of the footer",
 		"type": "color",
 		"category": "color",
-		"themeable": true,
+		"themeable": false,
 		"meta": {
 			"public": true,
 			"deprecated": false,
@@ -88,7 +88,7 @@
 			"description": "Background color of the table heading",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -104,7 +104,7 @@
 			"description": "Background color of the table heading",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -120,7 +120,7 @@
 			"description": "Background color of the odd table rows",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -136,7 +136,7 @@
 			"description": "Background color of the even table rows",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,

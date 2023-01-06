@@ -8,7 +8,7 @@
 					"description": "The stroke color of the checked icon.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -24,7 +24,7 @@
 					"description": "The fill color of the checked icon.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -43,7 +43,7 @@
 				"description": "The stroke color of the select icon.",
 				"type": "color",
 				"category": "color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
