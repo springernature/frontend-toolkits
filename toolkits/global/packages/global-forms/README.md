@@ -250,7 +250,7 @@ Placing the hint text above the text input will prevent users from mistaking it 
 
 #### Data properties
 
-In addition to these top-level properties, you can add data properties as a `dataAttrs` array, which can be useful for unit testing.
+Data attributes are supported for unit testing purposes. You can add them using a `dataAttrs` array.
 
 ```json
 {
@@ -264,7 +264,7 @@ In addition to these top-level properties, you can add data properties as a `dat
 }
 ```
 
-This would create the following attribution: `data-test: someValue.`
+This would create the following attribution: `data-test="someValue"`.
 
 #### Datalist
 
@@ -293,7 +293,7 @@ This builds a standard `datalist` field, with `options`, and associates it with 
 
 ### When to use this form element
 
-Use the radio input when users need to pick a single option from a list.
+Use the radios field (`globalFormRadios`) when users need to pick a single option from a list.
 
 ### How it works
 
