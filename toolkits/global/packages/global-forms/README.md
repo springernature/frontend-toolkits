@@ -558,7 +558,7 @@ For example, here’s a possible field definition for a search bar, comprising a
 ```
 
 - `fields`: Individual fields are defined in a `fields` array.
-- `gap`: The gap between the fields; any valid `gap` value.
+- `gap`: The gap between the fields; any valid CSS `gap` value.
 - `hideLabel`: You can visually hide labels with the `hideLabel` property without removing them from screen reader output. Only do this if there is another visual form of label (the “Search” label of the submit button in this case). 
 - `nowrap`: Not used in the previous example. Stop the individual fields from wrapping (beware of narrow viewports).
 
