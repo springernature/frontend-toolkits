@@ -1,9 +1,13 @@
 # History
 
-## 30.1.0 (2023-01-03)
+## 31.1.0 (2023-01-09)
     * BREAKING:
         * Reduction of `line-height` values
     * 300 at start of variable font range for Merriweather in springernature README
+
+## 31.0.0 (2023-01-04)
+    * Reduce scope of block spacing
+	* NOTE: This version replaces all versions >= 28.0.0
 
 ## 30.0.5 (2022-12-05)
     * BUG:
@@ -62,6 +66,8 @@
     * BUG: Fixes previous overwritten nature basic.scss file
 
 ## 28.0.0 (2022-09-14)
+    * BREAKING: Reclassify IE11 as a core browser to match the latest browser support gudielines
+		* https://github.com/springernature/frontend-playbook/blob/main/practices/graded-browser-support.md
     * BREAKING:
         * New universal block spacing (inter-element margin) for flow content
     * block-spacing alias design tokens
