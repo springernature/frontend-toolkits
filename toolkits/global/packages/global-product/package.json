@@ -1,9 +1,0 @@
-{
-  "name": "@springernature/global-product",
-  "version": "0.1.0",
-  "license": "MIT",
-  "description": "Universal component for presenting books, journals, articles, and series",
-  "keywords": [],
-  "author": "Heydon Pickering",
-  "brandContext": "30.0.4"
-}
