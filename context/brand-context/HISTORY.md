@@ -1,4 +1,9 @@
 # History
+
+## 31.0.0 (2023-01-04)
+    * Reduce scope of block spacing
+	* NOTE: This version replaces all versions >= 28.0.0
+
 ## 30.0.5 (2022-12-05)
     * BUG:
       * last fixes for additional alias token variables from `t--` to `t-` in utilities.
@@ -56,6 +61,8 @@
     * BUG: Fixes previous overwritten nature basic.scss file
 
 ## 28.0.0 (2022-09-14)
+    * BREAKING: Reclassify IE11 as a core browser to match the latest browser support gudielines
+		* https://github.com/springernature/frontend-playbook/blob/main/practices/graded-browser-support.md
     * BREAKING:
         * New universal block spacing (inter-element margin) for flow content
     * block-spacing alias design tokens
