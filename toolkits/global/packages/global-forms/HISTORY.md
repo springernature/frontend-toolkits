@@ -1,5 +1,8 @@
 # History
 
+## 5.1.0 (2023-01-10)
+    * Updated documentation in the readme.md file to inclue UX and Developer guidelines
+
 ## 5.0.0 (2022-09-29)
     * BREAKING:
         * Fields required by default; required removed with `optional` set to `true`
