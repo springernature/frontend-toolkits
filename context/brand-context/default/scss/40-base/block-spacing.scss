@@ -10,14 +10,14 @@ h1, h2, h3, h4, h5 {
 // The specificity is that of one element selector.
 :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) +
 :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) {
-	margin-block-start: $tokens--typography-block-spacing-medium;
+	margin-block-start: $t-typography-block-spacing-medium;
 }
 
 // <div> elements found among basic semantic content likely need similar margin applied.
 // The specificity is that of two element selectors; a utility class can override it
 :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
 div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
-	margin-block-start: $tokens--typography-block-spacing-medium;
+	margin-block-start: $t-typography-block-spacing-medium;
 }
 
 // Headings have differing margins to other flow elements.
