@@ -126,7 +126,7 @@ In this case, each fieldset is an object:
 ]
 ```
 
-And the accompanying template would iterate over the fieldsets, applying the `globalFormFieldset` partial:
+And the accompanying template would apply the `globalFormFieldset` partial to each fieldset:
 
 ```html
 {{#each myFieldsets}}
