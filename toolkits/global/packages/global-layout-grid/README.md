@@ -43,10 +43,10 @@ Note the use of list semantics. Collections of teasers/products should ordinaril
 
 ### Custom settings
 
-The component maps `$grid--basis` and `$grid--gap` to CSS custom properties, allowing you to adjust the values inline. In the following example, `--grid--gap` is set to `2em` and `--grid-basis` to `20ch`.
+The component maps `$grid--basis` and `$grid--gap` to CSS custom properties, allowing you to adjust the values inline. In the following example, `--grid--gap` is set to `2em` and `--grid--basis` to `20ch`.
 
 ```html
-<ul class="l-grid" style="--grid-gap: 2em; --grid-basis: min(20ch, 100%)">
+<ul class="l-grid" style="--grid--gap: 2em; --grid--basis: min(20ch, 100%)">
     <li>
         Item 1
     </li>
