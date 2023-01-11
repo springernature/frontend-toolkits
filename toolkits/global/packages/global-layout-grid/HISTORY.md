@@ -1,5 +1,8 @@
 # History
 
+## 0.3.1 (2023-01-11)
+    * fix: corrects spelling errors in documentation where there was a missing -
+
 ## 0.3.0 (2022-07-28)
     * Upgrade to brand-context v25.0.0
 
