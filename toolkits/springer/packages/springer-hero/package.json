@@ -4,6 +4,6 @@
   "license": "MIT",
   "description": "A hero component, principally for subject/discipline pages",
   "keywords": [],
-  "brandContext": "^25.0.0",
+  "brandContext": "^31.0.1",
   "author": "Springernature"
 }
