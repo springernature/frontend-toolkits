@@ -353,15 +353,15 @@ These fields can have any properties of a standard form field. Set these propert
 
 ![Checkboxes](https://user-images.githubusercontent.com/15365576/210582422-a2b6d806-b5bb-41c6-bb0e-a4dd914567ea.png)
 
-## When to use this form element
+### When to use this form element
 
 Use checkboxes to let users pick one or more options from a list.
 
-## When not to use this form element
+### When not to use this form element
 
 Do not use checkboxes if users can only choose one option. Instead, use radios.
 
-## How it works
+### How it works
 
 Unlike radios, which are always used in sets of 2 or more, you can have a single checkbox field. To give users a set of checkbox choices, organise the checkboxes into a `fieldset`:
 
