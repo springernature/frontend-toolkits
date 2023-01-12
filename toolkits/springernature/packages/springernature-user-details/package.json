@@ -5,5 +5,5 @@
   "description": "Springer Nature branded logged-in user details component",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": " v20.1.1"
+  "brandContext": "^31.0.1"
 }

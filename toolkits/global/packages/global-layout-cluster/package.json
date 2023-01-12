@@ -5,5 +5,5 @@
   "description": "A layout primitive for grouping elements together in an inline fashion but using Flexbox and gap to eliminate unneeded whitespace",
   "keywords": [],
   "author": "Springernature",
-  "brandContext": "^25.0.0"
+  "brandContext": "^31.0.1"
 }

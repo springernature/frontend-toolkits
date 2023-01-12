@@ -5,7 +5,7 @@
   "description": "HTML form based component for gathering customer satisfaction data",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^29.0.3",
+  "brandContext": "^31.0.1",
   "dependencies": {
     "@springernature/global-forms": "^5.0.0"
   }
