@@ -1,5 +1,8 @@
 # History
 
+## 5.1.1 (2023-01-12)
+    * Fix markdown error to change h2s to h3s in Checkboxes section of docs
+
 ## 5.1.0 (2023-01-10)
     * Updated documentation in the readme.md file to inclue UX and Developer guidelines
 
