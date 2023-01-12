@@ -1,5 +1,8 @@
 # History
 
+## 4.1.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 4.0.5 (2022-10-12)
     * Temporarily fix size of chevron to override default svg sizing from brand-context
 

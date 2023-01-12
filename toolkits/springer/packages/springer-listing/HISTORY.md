@@ -1,5 +1,8 @@
 # History
 
+## 6.1.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 6.0.2 (2022-10-05)
     * Underline reinstated on title (see brand-context 29.0.0)
 

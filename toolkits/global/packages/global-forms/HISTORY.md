@@ -1,5 +1,8 @@
 # History
 
+## 5.2.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 5.1.0 (2023-01-10)
     * Updated documentation in the readme.md file to inclue UX and Developer guidelines
 

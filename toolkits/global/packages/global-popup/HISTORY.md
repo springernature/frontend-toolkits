@@ -1,5 +1,8 @@
 # History
 
+## 5.2.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 5.1.1 (2022-10-25)
     * Fix popup border to be acessible 
 

@@ -1,5 +1,8 @@
 # History
 
+## 1.2.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 1.1.1 (2022-09-22)
     * Add z-index to springernature settings
 

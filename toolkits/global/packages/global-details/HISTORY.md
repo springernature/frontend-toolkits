@@ -1,5 +1,8 @@
 # History
 
+## 0.3.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 0.2.4 (2022-10-18)
     * Tokenizes block spacing
 

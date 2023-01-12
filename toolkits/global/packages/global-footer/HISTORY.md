@@ -1,5 +1,8 @@
 # History
 
+## 1.1.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 1.0.1 (2022-11-24)
     * adds a line-height for the c-footer and all within its cascade.
 

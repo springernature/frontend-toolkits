@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2023-01-12)
+    * Upgrade to brand-context v31.0.1
+
 ## 3.0.0 (2022-08-02)
     * BREAKING:
         * Further simplification of API
