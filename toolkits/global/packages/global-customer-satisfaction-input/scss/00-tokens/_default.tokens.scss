@@ -1,26 +1,26 @@
-// Generated on 12/01/2022, 16:04:00 PM
+// Generated on 09/01/2023, 13:28:25
 // Source: design-tokens/components/global/global-customer-satisfaction-input/default.json
 // DO NOT edit directly
 
-$global-customer-satisfaction-input-container-background-color: #f3f3f3;
-$global-customer-satisfaction-input-container-padding: 16px;
-$global-customer-satisfaction-input-error-margin: 8px;
-$global-customer-satisfaction-input-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$global-customer-satisfaction-input-container-background-color: $t-color-greyscale-300;
+$global-customer-satisfaction-input-container-padding: $t-spacing-absolute-400;
+$global-customer-satisfaction-input-error-margin: $t-spacing-absolute-200;
+$global-customer-satisfaction-input-font-family: $t-font-family-sans;
 $global-customer-satisfaction-input-heading-font-size: 16px;
-$global-customer-satisfaction-input-heading-font-weight: 700;
-$global-customer-satisfaction-input-heading-margin: 8px;
-$global-customer-satisfaction-input-line-height: 1.4;
+$global-customer-satisfaction-input-heading-font-weight: $t-font-weight-bold;
+$global-customer-satisfaction-input-heading-margin: $t-spacing-absolute-200;
+$global-customer-satisfaction-input-line-height: $t-line-height-tight;
 $global-customer-satisfaction-input-link-font-size: 16px;
-$global-customer-satisfaction-input-link-margin: 8px;
+$global-customer-satisfaction-input-link-margin: $t-spacing-absolute-200;
 $global-customer-satisfaction-input-message-font-size: 16px;
-$global-customer-satisfaction-input-message-icon-margin: 8px;
-$global-customer-satisfaction-input-message-icon-size: 24px;
-$global-customer-satisfaction-input-radio-icon-border-radius: 2px;
+$global-customer-satisfaction-input-message-icon-margin: $t-spacing-absolute-200;
+$global-customer-satisfaction-input-message-icon-size: $t-sizing-absolute-600;
+$global-customer-satisfaction-input-radio-icon-border-radius: $t-border-radius-50;
 $global-customer-satisfaction-input-radio-icon-size-desktop: 24px;
 $global-customer-satisfaction-input-radio-icon-size-narrow: 21px;
 $global-customer-satisfaction-input-radio-icon-spacing-desktop: 8px;
 $global-customer-satisfaction-input-radio-icon-spacing-narrow: 6px;
 $global-customer-satisfaction-input-radio-label-font-size-desktop: 14px;
 $global-customer-satisfaction-input-radio-label-font-size-narrow: 12px;
-$global-customer-satisfaction-input-radio-spacing-desktop: 16px;
+$global-customer-satisfaction-input-radio-spacing-desktop: $t-spacing-absolute-400;
 $global-customer-satisfaction-input-radio-spacing-narrow: 5px;

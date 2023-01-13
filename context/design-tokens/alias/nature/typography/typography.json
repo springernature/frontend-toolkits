@@ -7,7 +7,7 @@
 				"description": "Font family for headings",
 				"type": "font-family",
 				"category": "typography",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"brand": "nature",
 					"public": true,
@@ -24,7 +24,7 @@
 				"description": "Letter spacing for headings",
 				"type": "letter-spacing",
 				"category": "typography",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"brand": "nature",
 					"public": true,
@@ -41,7 +41,7 @@
 				"description": "Line height for headings",
 				"type": "line-height",
 				"category": "typography",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"brand": "nature",
 					"public": true,
@@ -58,7 +58,7 @@
 				"description": "Font weight for headings",
 				"type": "font-weight",
 				"category": "typography",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"brand": "nature",
 					"public": true,
@@ -77,7 +77,7 @@
 						"description": "Font size for level 1 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -96,7 +96,7 @@
 						"description": "fluid Font size for level 1 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -117,7 +117,7 @@
 						"description": "Font size for level 2 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -136,7 +136,7 @@
 						"description": "fluid Font size for level 2 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -157,7 +157,7 @@
 						"description": "Font size for level 3 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -178,7 +178,7 @@
 						"description": "Font size for level 4 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,
@@ -199,7 +199,7 @@
 						"description": "Font size for level 5 headings",
 						"type": "font-size",
 						"category": "typography",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"brand": "nature",
 							"public": true,

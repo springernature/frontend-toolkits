@@ -8,7 +8,7 @@
 					"description": "The background color of the primary button when it is in its default state.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -24,7 +24,7 @@
 					"description": "The background color of the primary button when it is hovered.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -42,7 +42,7 @@
 					"description": "The background color of the secondary button when it is in its default state.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -58,7 +58,7 @@
 					"description": "The background color of the secondary button when it is hovered.",
 					"type": "color",
 					"category": "color",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,

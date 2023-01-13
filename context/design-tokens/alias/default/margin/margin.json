@@ -6,7 +6,7 @@
 			"description": "sets the logical inline margin of an element to zero width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -22,7 +22,7 @@
 			"description": "sets the logical inline margin of an element to .25rem (4px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -38,7 +38,7 @@
 			"description": "sets the logical inline margin of an element to .5rem (8px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -54,7 +54,7 @@
 			"description": "sets the logical inline margin of an element to 1rem (16px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -70,7 +70,7 @@
 			"description": "sets the logical inline margin of an element to 1.5rem (24px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -86,7 +86,7 @@
 			"description": "sets the logical inline margin of an element to 2rem (32px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -102,7 +102,7 @@
 			"description": "sets the logical inline margin of an element to 3rem (48px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -118,7 +118,7 @@
 			"description": "sets the logical inline margin of an element to 4rem (64px) width.",
 			"type": "dimension",
 			"category": "margin",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -135,7 +135,7 @@
 				"description": "sets the logical inline margin of an element to zero width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -151,7 +151,7 @@
 				"description": "sets the logical inline margin of an element to .25rem (4px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -167,7 +167,7 @@
 				"description": "sets the logical inline margin of an element to .5rem (8px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -183,7 +183,7 @@
 				"description": "sets the logical inline margin of an element to 1rem (16px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -199,7 +199,7 @@
 				"description": "sets the logical inline margin of an element to 1.5rem (24px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -215,7 +215,7 @@
 				"description": "sets the logical inline margin of an element to 2rem (32px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -231,7 +231,7 @@
 				"description": "sets the logical inline margin of an element to 3rem (48px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -247,7 +247,7 @@
 				"description": "sets the logical inline margin of an element to 4rem (64px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -264,7 +264,7 @@
 					"description": "sets the logical inline start margin of an element to zero width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -280,7 +280,7 @@
 					"description": "sets the logical inline start margin of an element to .25rem (4px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -296,7 +296,7 @@
 					"description": "sets the logical inline start margin of an element to .5rem (8px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -312,7 +312,7 @@
 					"description": "sets the logical inline start margin of an element to 1rem (16px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -328,7 +328,7 @@
 					"description": "sets the logical inline start margin of an element to 1.5rem (24px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -344,7 +344,7 @@
 					"description": "sets the logical inline start margin of an element to 2rem (32px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -360,7 +360,7 @@
 					"description": "sets the logical inline start margin of an element to 3rem (48px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -376,7 +376,7 @@
 					"description": "sets the logical inline start margin of an element to 4rem (64px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -394,7 +394,7 @@
 					"description": "sets the logical inline end margin of an element to zero width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -410,7 +410,7 @@
 					"description": "sets the logical inline end margin of an element to .25rem (4px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -426,7 +426,7 @@
 					"description": "sets the logical inline end margin of an element to .5rem (8px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -442,7 +442,7 @@
 					"description": "sets the logical inline end margin of an element to 1rem (16px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -458,7 +458,7 @@
 					"description": "sets the logical inline end margin of an element to 1.5rem (24px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -474,7 +474,7 @@
 					"description": "sets the logical inline end margin of an element to 2rem (32px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -490,7 +490,7 @@
 					"description": "sets the logical inline end margin of an element to 3rem (48px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -506,7 +506,7 @@
 					"description": "sets the logical inline end margin of an element to 4rem (64px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -525,7 +525,7 @@
 				"description": "sets the logical block margin of an element to zero width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -541,7 +541,7 @@
 				"description": "sets the logical block margin of an element to .25rem (4px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -557,7 +557,7 @@
 				"description": "sets the logical block margin of an element to .5rem (8px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -573,7 +573,7 @@
 				"description": "sets the logical block margin of an element to 1rem (16px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -589,7 +589,7 @@
 				"description": "sets the logical block margin of an element to 1.5rem (24px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -605,7 +605,7 @@
 				"description": "sets the logical block margin of an element to 2rem (32px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -621,7 +621,7 @@
 				"description": "sets the logical block margin of an element to 3rem (48px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -637,7 +637,7 @@
 				"description": "sets the logical block margin of an element to 4rem (64px) width.",
 				"type": "dimension",
 				"category": "margin",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -654,7 +654,7 @@
 					"description": "sets the logical block start margin of an element to zero width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -670,7 +670,7 @@
 					"description": "sets the logical block start margin of an element to .25rem (4px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -686,7 +686,7 @@
 					"description": "sets the logical block start margin of an element to .5rem (8px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -702,7 +702,7 @@
 					"description": "sets the logical block start margin of an element to 1rem (16px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -718,7 +718,7 @@
 					"description": "sets the logical block start margin of an element to 1.5rem (24px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -734,7 +734,7 @@
 					"description": "sets the logical block start margin of an element to 2rem (32px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -750,7 +750,7 @@
 					"description": "sets the logical block start margin of an element to 3rem (48px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -766,7 +766,7 @@
 					"description": "sets the logical block start margin of an element to 4rem (64px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -784,7 +784,7 @@
 					"description": "sets the logical block end margin of an element to zero width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -800,7 +800,7 @@
 					"description": "sets the logical block end margin of an element to .25rem (4px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -816,7 +816,7 @@
 					"description": "sets the logical block end margin of an element to .5rem (8px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -832,7 +832,7 @@
 					"description": "sets the logical block end margin of an element to 1rem (16px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -848,7 +848,7 @@
 					"description": "sets the logical block end margin of an element to 1.5rem (24px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -864,7 +864,7 @@
 					"description": "sets the logical block end margin of an element to 2rem (32px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -880,7 +880,7 @@
 					"description": "sets the logical block end margin of an element to 3rem (48px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -896,7 +896,7 @@
 					"description": "sets the logical block end margin of an element to 4rem (64px) width.",
 					"type": "dimension",
 					"category": "margin",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,

@@ -58,7 +58,7 @@ you should use the absolute path to their binaries.
 
 1. Download Merriweather Sans font under the name of `MerriweatherSans-Variable.ttf`
 2. In the Terminal navigate to the folder you have just downloaded the font to
-3. Run `fonttools varLib.instancer ./MerriweatherSans-Variable.ttf wght=300:700`
+3. Run `fonttools varLib.instancer ./MerriweatherSans-Variable.ttf wght=00:700`
 4. Run `woff2_compress ./MerriweatherSans-Variable-partial.ttf`
 5. Run `mv ./MerriweatherSans-Variable-partial.woff2 ./MerriweatherSans-Variable.woff2`
 6. Copy `MerriweatherSans-Variable.woff2` to your app's font folder
@@ -78,7 +78,7 @@ you should use the absolute path to their binaries.
 	font-family: 'Merriweather Sans';
 	src: url('/PUBLIC-PATH-TO-FONTS-FOLDER/MerriweatherSans-Variable.woff2') format('woff2 supports variations'),
 	url('/PUBLIC-PATH-TO-FONTS-FOLDER/MerriweatherSans-Variable.woff2') format('woff2-variations');
-	font-weight: 300 700;
+	font-weight: 400 700;
 	font-display: swap;
 }
 ```

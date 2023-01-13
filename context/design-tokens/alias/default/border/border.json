@@ -7,7 +7,7 @@
 				"description": "Primary border color",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -23,7 +23,7 @@
 				"description": "Input border color",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -39,7 +39,7 @@
 				"description": "Button border color",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -55,7 +55,7 @@
 				"description": "Indent border color",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -73,7 +73,7 @@
 				"description": "Border radius 50",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -89,7 +89,7 @@
 				"description": "Border radius 100",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -107,7 +107,7 @@
 				"description": "Border width 25",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -123,7 +123,7 @@
 				"description": "Border width 50",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -139,7 +139,7 @@
 				"description": "Border width 100",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -155,7 +155,7 @@
 				"description": "Border width 200",
 				"type": "color",
 				"category": "border-color",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,

@@ -36,7 +36,7 @@
 		},
 		"tighter": {
 			"name": "tighter",
-			"value": "1.2",
+			"value": "1.25",
 			"description": "Tighter line-height",
 			"type": "number",
 			"category": "line-height",

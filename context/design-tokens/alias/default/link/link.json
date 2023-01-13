@@ -6,7 +6,7 @@
 			"description": "The color of the link text.",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -22,7 +22,7 @@
 			"description": "The color of the link text when hovered.",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -38,7 +38,7 @@
 			"description": "The color of the link text when visited.",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,
@@ -54,7 +54,7 @@
 			"description": "The color of the link text when focused.",
 			"type": "color",
 			"category": "color",
-			"themeable": true,
+			"themeable": false,
 			"meta": {
 				"public": true,
 				"deprecated": false,

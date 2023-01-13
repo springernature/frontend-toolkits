@@ -1,7 +1,7 @@
 {
   "name": "design-tokens",
-  "version": "0.0.1",
-  "description": "Design Tokens for Springer Nature Dgitial Brands",
+  "version": "0.0.3",
+  "description": "Design Tokens for Springer Nature Digital Brands",
   "main": "build.js",
   "scripts": {
     "tokens:clean-all": "npx rimraf ../../**/00-tokens/",

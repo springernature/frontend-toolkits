@@ -25,11 +25,11 @@ $context--font-size-h5: $context--font-size-md;
 // http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
 $context--font-size-base: 1em;
 
-$context--line-height-h1: 2.625rem;
-$context--line-height-h2: 2rem;
-$context--line-height-h3: 1.75rem;
-$context--line-height-h4: 1.5rem;
-$context--line-height-h5: 1.375rem;
+$context--line-height-h1: $t-typography-heading-line-height;
+$context--line-height-h2: $t-typography-heading-line-height;
+$context--line-height-h3: $t-typography-heading-line-height;
+$context--line-height-h4: $t-typography-heading-line-height;
+$context--line-height-h5: $t-typography-heading-line-height;
 
 // Fluid typography
 $context--font-size-h1-min: $context--font-size-h2;
@@ -47,6 +47,6 @@ $context--font-weight-light: 300;
 $context--font-weight-normal: 400;
 $context--font-weight-bold: 700;
 
-$context--line-height-base: 1.875; // For body text
+$context--line-height-base: 1.625; // For body text
 $context--line-height-md: 1.5;
 $context--line-height-tight: 1.4;

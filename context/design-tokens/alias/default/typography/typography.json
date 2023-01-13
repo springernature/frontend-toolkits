@@ -7,7 +7,7 @@
 				"description": "Font family for headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -23,7 +23,7 @@
 				"description": "Letter spacing for headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -39,7 +39,7 @@
 				"description": "Line height for headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -57,7 +57,7 @@
 						"description": "Font size for level 1 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -73,7 +73,7 @@
 						"description": "Font weight for level 1 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -91,7 +91,7 @@
 						"description": "Fluid font size for level 1 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -111,7 +111,7 @@
 						"description": "Font size for level 2 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -127,7 +127,7 @@
 						"description": "Font weight for level 2 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -145,7 +145,7 @@
 						"description": "Fluid font size for level 2 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -165,7 +165,7 @@
 						"description": "Font size for level 3 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -183,7 +183,7 @@
 						"description": "Fluid font size for level 3 headings",
 						"type": "font-size",
 						"category": "font-size",
-						"themeable": true,
+						"themeable": false,
 						"meta": {
 							"public": true,
 							"deprecated": false,
@@ -203,7 +203,7 @@
 				"description": "Font family for level 4 headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -220,7 +220,7 @@
 					"description": "Font size for level 4 headings",
 					"type": "font-size",
 					"category": "font-size",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -238,7 +238,7 @@
 					"description": "Fluid font size for level 4 headings",
 					"type": "font-size",
 					"category": "font-size",
-					"themeable": true,
+					"themeable": false,
 					"meta": {
 						"public": true,
 						"deprecated": false,
@@ -255,7 +255,7 @@
 				"description": "Font weight for level 4 headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -273,7 +273,7 @@
 				"description": "Font family for level 5 headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -289,7 +289,7 @@
 				"description": "Font size for level 5 headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
@@ -305,7 +305,7 @@
 				"description": "Font weight for level 5 headings",
 				"type": "font-size",
 				"category": "font-size",
-				"themeable": true,
+				"themeable": false,
 				"meta": {
 					"public": true,
 					"deprecated": false,
