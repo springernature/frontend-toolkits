@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-author-list",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "license": "MIT",
   "description": "Display a styled list of authors with comma separation. The list can be truncated and then accompanied with a toggle to be expanded/truncated",
   "keywords": [],
