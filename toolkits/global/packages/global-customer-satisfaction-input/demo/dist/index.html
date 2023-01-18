@@ -1021,8 +1021,16 @@ cite {
   margin-block: 0;
 }
 
-:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + *,
-[class^=c-]:not([class*=__]) + * {
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) {
+  margin-block-start: 1rem;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
+div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
   margin-block-start: 1rem;
 }
 
@@ -1040,6 +1048,12 @@ h2 + * {
 
 h1 + * {
   margin-block-start: 3rem;
+}
+
+[hidden]:first-child + *,
+[style*="display:none"]:first-child + *,
+[style*="display: none"]:first-child + * {
+  margin-block-start: 0;
 }
 
 .c-forms__label,
@@ -1591,6 +1605,10 @@ html {
   display: none;
   visibility: hidden;
 }
+.u-hide:first-child + *,
+.js .u-js-hide:first-child + * {
+  margin-block-start: 0;
+}
 
 /* show to both screenreaders and browsers */
 .u-show,
@@ -1664,6 +1682,10 @@ html {
     display: none;
     visibility: hidden;
   }
+  .u-hide-at-xs:first-child + *,
+.js .u-js-hide-at-xs:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-xs,
 .js .u-js-show-at-xs {
     display: block;
@@ -1675,6 +1697,10 @@ html {
 .js .u-js-hide-at-sm {
     display: none;
     visibility: hidden;
+  }
+  .u-hide-at-sm:first-child + *,
+.js .u-js-hide-at-sm:first-child + * {
+    margin-block-start: 0;
   }
   .u-show-at-sm,
 .js .u-js-show-at-sm {
@@ -1688,6 +1714,10 @@ html {
     display: none;
     visibility: hidden;
   }
+  .u-hide-at-md:first-child + *,
+.js .u-js-hide-at-md:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-md,
 .js .u-js-show-at-md {
     display: block;
@@ -1700,6 +1730,10 @@ html {
     display: none;
     visibility: hidden;
   }
+  .u-hide-at-lg:first-child + *,
+.js .u-js-hide-at-lg:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-lg,
 .js .u-js-show-at-lg {
     display: block;
@@ -1711,6 +1745,10 @@ html {
 .js .u-js-hide-at-xl {
     display: none;
     visibility: hidden;
+  }
+  .u-hide-at-xl:first-child + *,
+.js .u-js-hide-at-xl:first-child + * {
+    margin-block-start: 0;
   }
   .u-show-at-xl,
 .js .u-js-show-at-xl {
