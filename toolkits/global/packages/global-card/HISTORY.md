@@ -1,7 +1,7 @@
 # History
 
-## 8.4.0 (2023-01-12)
-    * Upgrade to brand-context v31.0.1
+## 9.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
 
 ## 8.3.2 (2022-09-13)
     * `overflow: hidden`
