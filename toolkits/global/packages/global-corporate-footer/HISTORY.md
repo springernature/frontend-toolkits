@@ -1,7 +1,7 @@
 # History
 
-## 5.3.0 (2023-01-12)
-    * Upgrade to brand-context v31.0.1
+## 6.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
 
 ## 5.2.1 (2022-09-05)
     * Use `this.url` for better compatibility
