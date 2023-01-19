@@ -321,6 +321,21 @@ template {
   display: none;
 }
 
+body {
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 /**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
@@ -490,6 +505,45 @@ html {
 
 body {
   font-size: 1.125rem;
+}
+
+* {
+  margin-block: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) {
+  margin-block-start: 1rem;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
+div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
+}
+
+[hidden]:first-child + *,
+[style*="display:none"]:first-child + *,
+[style*="display: none"]:first-child + * {
+  margin-block-start: 0;
 }
 
 /**
