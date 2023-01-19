@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springer-dropdown",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "license": "MIT",
   "description": "Display a contextual list of links controlled by a toggle",
   "keywords": [],
