@@ -1,6 +1,6 @@
 {
   "name": "@springernature/springernature-modal",
-  "version": "4.0.2",
+  "version": "5.0.0",
   "license": "MIT",
   "description": "Springer Nature branded modal pop-up window",
   "main": "./js/modal.js",
