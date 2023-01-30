@@ -1,5 +1,8 @@
 # History
 
+## 4.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
+
 ## 3.1.0 (2022-12-06)
     * Remove references to user-details component, and move some core styles to enhanced (media queries)
 

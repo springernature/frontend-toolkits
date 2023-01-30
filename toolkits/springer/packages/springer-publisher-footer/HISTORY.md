@@ -1,5 +1,8 @@
 # History
 
+## 6.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
+
 ## 5.4.0 (2022-08-05)
     * Columns for wide space from 5 to 4
 

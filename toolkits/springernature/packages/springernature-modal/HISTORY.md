@@ -1,5 +1,8 @@
 # History
 
+## 5.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
+
 ## 4.0.2 (2022-10-03)
     * BUG: add missing `main` key to the package.json
 

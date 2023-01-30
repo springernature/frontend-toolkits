@@ -1,5 +1,8 @@
 # History
 
+## 11.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
+
 ## 10.0.0 (2022-09-26)
     * BREAKING:
         * Update brand-context v28.0.1

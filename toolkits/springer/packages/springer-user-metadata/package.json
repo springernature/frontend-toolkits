@@ -1,9 +1,9 @@
 {
   "name": "@springernature/springer-user-metadata",
-  "version": "5.2.0",
+  "version": "6.0.0",
   "license": "MIT",
   "description": "Meta data for user such as login status, ip address, business partner associations and chinese icp licence status",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^25.0.0"
+  "brandContext": "^31.0.1"
 }

@@ -1,5 +1,9 @@
 # History
 
+
+## 6.0.0 (2023-01-18)
+    * BREAKING: Upgrade to brand-context v31.0.1
+    
 ## 5.1.1 (2023-01-12)
     * Fix markdown error to change h2s to h3s in Checkboxes section of docs
 

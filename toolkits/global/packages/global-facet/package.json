@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-facet",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^25.0.0"
+  "brandContext": "^31.0.1"
 }

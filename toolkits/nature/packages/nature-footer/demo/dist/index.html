@@ -18,6 +18,11 @@
  * These files don’t output any CSS when compiled
  */
 /**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
  * Breakpoints
  * Shared media query values
  */
@@ -188,11 +193,6 @@ h6, h5, h4 {
 }
 
 /**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
  * Colors
  * Maps for color values & greyscale settings
  *
@@ -224,7 +224,6 @@ h1 {
   letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
   line-height: 2.25rem;
   line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
 }
 
 h2 {
@@ -235,7 +234,6 @@ h2 {
   letter-spacing: -0.011715625rem;
   line-height: 1.6rem;
   line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
 }
 
 h3 {
@@ -245,7 +243,6 @@ h3 {
   font-size: min(max(1.125rem, 3.0vw), 1.25rem);
   letter-spacing: -0.011715625rem;
   line-height: 1.4rem;
-  margin-bottom: 8px;
 }
 
 h6, h5, h4 {
@@ -255,7 +252,6 @@ h6, h5, h4 {
   font-size: min(max(1rem, 2.5vw), 1.125rem);
   letter-spacing: -0.011715625rem;
   line-height: 1.4rem;
-  margin-bottom: 8px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -266,10 +262,8 @@ h6, h5, h4 {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -304,12 +298,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -317,10 +308,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -337,12 +326,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -360,10 +346,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -413,14 +397,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -428,8 +408,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -438,8 +417,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -488,18 +466,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -522,10 +494,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -541,10 +511,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -559,10 +527,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -597,26 +563,27 @@ template {
   display: none;
 }
 
-/**
- * Basic
- * Some default CSS styles
- */
 body {
   line-height: 1.5;
 }
 
-a {
-  text-decoration: none;
-  color: #006699;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
 button {
   cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
+ * Basic
+ * Some default CSS styles
+ */
+a {
+  color: #006699;
 }
 
 h1 {
@@ -643,43 +610,19 @@ ins {
   text-decoration: none;
 }
 
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   border-radius: 0;
 }
 
-/* accessible focus styles */
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-p:focus,
-div:focus,
-ul:focus,
-ol:focus,
-li:focus,
-dl:focus,
-dt:focus,
-dd:focus,
-span:focus,
-i:focus,
-b:focus,
-em:focus,
-strong:focus {
-  outline: none;
-}
-
 /**
  * Enhanced
  * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
  */
 /**
  * Abstracts
@@ -857,11 +800,6 @@ h6, h5, h4 {
 }
 
 /**
- * Abstracts
- * Sass tools, helper files, variables, functions, mixins and other config files
- * These files don’t output any CSS when compiled
- */
-/**
  * Colors
  * Maps for color values & greyscale settings
  *
@@ -893,7 +831,6 @@ h1 {
   letter-spacing: min(max(-0.011715625rem, 4vw), -0.0390625rem);
   line-height: 2.25rem;
   line-height: min(max(1.6rem, 4vw), 2.25rem);
-  margin-bottom: 24px;
 }
 
 h2 {
@@ -904,7 +841,6 @@ h2 {
   letter-spacing: -0.011715625rem;
   line-height: 1.6rem;
   line-height: min(max(1.4rem, 3.5vw), 1.6rem);
-  margin-bottom: 8px;
 }
 
 h3 {
@@ -914,7 +850,6 @@ h3 {
   font-size: min(max(1.125rem, 3.0vw), 1.25rem);
   letter-spacing: -0.011715625rem;
   line-height: 1.4rem;
-  margin-bottom: 8px;
 }
 
 h6, h5, h4 {
@@ -924,7 +859,6 @@ h6, h5, h4 {
   font-size: min(max(1rem, 2.5vw), 1.125rem);
   letter-spacing: -0.011715625rem;
   line-height: 1.4rem;
-  margin-bottom: 8px;
 }
 
 /**
@@ -971,38 +905,6 @@ figure {
   margin: 0;
 }
 
-body,
-div,
-dl,
-dt,
-dd,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-small {
-  margin: 0;
-  padding: 0;
-}
-
 abbr[title] {
   text-decoration: none;
 }
@@ -1018,19 +920,15 @@ abbr[title] {
  * Basic link styles
  */
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip-ink: auto;
   vertical-align: baseline;
   color: #006699;
 }
 a:focus {
   outline: 3px solid #fece3e;
   will-change: transform;
-}
-
-a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-skip: skip;
-  text-decoration-skip-ink: auto;
 }
 
 a:active {
@@ -1129,18 +1027,50 @@ body {
  * default margin 28px to match line height
  * this is used for mainting vertical rhythm on the page
  */
-p,
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-
 /*
  * Headings
  */
 p:empty {
   display: none;
+}
+
+* {
+  margin-block: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) + :is(p, ol, ul, dl, figure, blockquote, form, pre, table, img, video, aside, section, article) {
+  margin-block-start: 1rem;
+}
+
+:is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) + div,
+div + :is(p, ol, ul, dl, figure, blockquote, pre, table, img, video) {
+  margin-block-start: 1rem;
+}
+
+* + :is(h2, h3, h4, h5) {
+  margin-block-start: 2rem;
+}
+
+:is(h3, h4, h5) + * {
+  margin-block-start: 0.5rem;
+}
+
+h2 + * {
+  margin-block-start: 1rem;
+}
+
+h1 + * {
+  margin-block-start: 3rem;
+}
+
+[hidden]:first-child + *,
+[style*="display:none"]:first-child + *,
+[style*="display: none"]:first-child + * {
+  margin-block-start: 0;
 }
 
 .c-footer {
@@ -1321,6 +1251,10 @@ p:empty {
   display: none;
   visibility: hidden;
 }
+.u-hide:first-child + *,
+.js .u-js-hide:first-child + * {
+  margin-block-start: 0;
+}
 
 /* show to both screenreaders and browsers */
 .u-show,
@@ -1394,7 +1328,10 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
+  .u-hide-at-xs:first-child + *,
+.js .u-js-hide-at-xs:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-xs,
 .js .u-js-show-at-xs {
     display: block;
@@ -1407,7 +1344,10 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
+  .u-hide-at-sm:first-child + *,
+.js .u-js-hide-at-sm:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-sm,
 .js .u-js-show-at-sm {
     display: block;
@@ -1420,7 +1360,10 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
+  .u-hide-at-md:first-child + *,
+.js .u-js-hide-at-md:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-md,
 .js .u-js-show-at-md {
     display: block;
@@ -1433,7 +1376,10 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
+  .u-hide-at-lg:first-child + *,
+.js .u-js-hide-at-lg:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-lg,
 .js .u-js-show-at-lg {
     display: block;
@@ -1446,7 +1392,10 @@ p:empty {
     display: none;
     visibility: hidden;
   }
-
+  .u-hide-at-xl:first-child + *,
+.js .u-js-hide-at-xl:first-child + * {
+    margin-block-start: 0;
+  }
   .u-show-at-xl,
 .js .u-js-show-at-xl {
     display: block;
