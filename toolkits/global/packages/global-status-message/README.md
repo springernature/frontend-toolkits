@@ -109,7 +109,7 @@ If you change the message after the page has loaded, a screen reader would annou
 
 Supply an `id` in the data to make the status message focusable programmatically.
 
-Focusing the message ensures that it is visible in the viewport and a screen reader will announce it.
+Focusing the message ensures it is visible in the viewport and a screen reader will announce it. If it is not appropriate to move focus to the message, rely on the live region for announcement in screen readers.
 
 The status message will likely be the best focus position for continued keyboard interaction.
 
