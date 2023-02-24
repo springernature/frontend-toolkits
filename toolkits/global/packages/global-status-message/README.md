@@ -103,7 +103,7 @@ Add the message and icon to this empty state by populating the `message` and `ic
 
 #### Status changed
 
-If the status message changes, update the `message` and `type` properties. This means the screen reader will announce the new message. 
+If you change the message after the page has loaded, a screen reader would announce the new message.
 
 ### Focus
 
