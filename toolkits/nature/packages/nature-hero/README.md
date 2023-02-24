@@ -59,7 +59,7 @@ You can see an example in the [Hero's `demo` folder](https://github.com/springer
 
 ## Help improve this page
 
-If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#ask-elements Slack channel]().
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#ask-elements Slack channel](https://springernature.slack.com/archives/CNBTFLBLP).
 
 [info-npm]: https://www.npmjs.com/package/@springernature/nature-header
 [badge-npm]: https://img.shields.io/npm/v/@springernature/nature-header.svg
