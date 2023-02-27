@@ -1,5 +1,8 @@
 # History
 
+## 4.0.1 (2023-02-27)
+    * Update and improve component documentation
+
 ## 4.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 
