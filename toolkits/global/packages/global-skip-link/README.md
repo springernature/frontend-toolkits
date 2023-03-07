@@ -1,13 +1,26 @@
-# Skip Link
+# Skip link
 
-Full width link on top of the page that enables keyboard users and users of assistive technology to jump to the main content of the page and bring it immediately into view, without having to tab over all navigational items.
+Skip link lets keyboard and assistive technology users go to the main content of the page without having to tab through the navigation elements.
 
-## Branding
+## When to use this component
 
-To include `global-skip-link` in your application, you need to choose **ONE** brand from those available. The `DEFAULT` brand is included in all other brands, and any settings that are not configured will fall back to default.
+All web pages should have a skip link.
+
+## How it works
+
+The skip link is the first focusable element on the page. It stays visually hidden until it is focused by the first press of the tab key after page load. 
+
+### Installation
+
+To use the skip link component, enter the following command in your Terminal:
+
+`npm install @springernature\global-skip-link`
+
+Then, choose the brand you need and import the installed component code into your scss file:
 
 ```scss
-// Pick ONE of the brands below to include
+// Choose one of these brands to include with your settings:
+
 @import '@springernature/global-skip-link/scss/10-settings/default';
 @import '@springernature/global-skip-link/scss/10-settings/springernature';
 @import '@springernature/global-skip-link/scss/10-settings/nature';
@@ -17,11 +30,11 @@ To include `global-skip-link` in your application, you need to choose **ONE** br
 @import '@springernature/global-skip-link/scss/50-components/skip-link';
 ```
 
-## Usage
+### Link
 
-The skip-link is the first focusable element on the page.
-It is an <a> pointing to an id of the section it links to.
-For example if the main container is:
+The skip link should be a link to the main container of the page. You must supply an id for the link to point to.
+
+For example, if you supply `main` as the `id`:
 
 ```html
 <main id="main">
@@ -29,7 +42,7 @@ For example if the main container is:
 </main>
 ```
 
-then the skip link should look like this:
+then the link would be:
 
 ```html
 <a class="c-skip-link" href="#main">
@@ -37,20 +50,33 @@ then the skip link should look like this:
 </a>
 ```
 
-ATTENTION:
-1. The target section must be focusable.
-You will need to add a negative tabindex in order to improve screen reader accessibility for browsers like IE11.
-It's advised to do so via [JavaScript](https://codepen.io/200ok/pen/jvNBMP) and not directly in the HTML because:
-* Some apps will display the browser's default focus styles around the main element
-* When clicking anywhere in the page, focus will return back to the top
+### Focus
 
-Check the [GOV.UK Design System](https://github.com/alphagov/govuk-design-system-backlog/issues/66) for more.
+The target section must be focusable so that users can then continue to tab through content. Most browsers will do this automatically. However, Internet Explorer 11 does not.
 
-2. If there is an iframe in the page, it is highly recommended to add the skip link markup before it.
+To help skip link work for keyboard and assistive technology users in IE11, add a negative `tabindex` to the main element. 
 
-More resources:
-* https://webaim.org/techniques/skipnav/
-* https://css-tricks.com/how-to-create-a-skip-to-content-link/
-* https://axesslab.com/skip-links/
+```html
+<main id="main" tabindex="-1">
+```
 
+Some applications might display the browser's default focus styles around the main container. To prevent this, you can remove the focus styles programmatically.
+
+```css
+main:focus {
+  outline: none;
+}
+```
+
+### Iframe
+
+If there is an iframe in the page, you must add the skip link markup before it.
+
+## Template
+
+You can see an example in the [skip link `demo` folder](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-skip-link/demo).
+
+## Help improve this page
+
+If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#ask-elements Slack channel](https://springernature.slack.com/archives/CNBTFLBLP).
 
