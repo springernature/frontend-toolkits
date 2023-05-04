@@ -51,7 +51,7 @@ Somewhat unconventional, but the component can take it!
 
 ### Custom settings
 
-The `global-layout-with-sidebar` component’s settings are mapped to CSS custom properties, meaning you can alter them inline.
+The `global-layout-with-sidebar` component’s settings are mapped to CSS custom properties, meaning you can alter them inline. You can also set custom properties within your stylesheet and modify them using media queries to adjust for different view widths.
 
 In the following example, the `gap` between the columns is `2em`, the 1-column layout is triggered when the main content goes under `66.666%`, and the sidebar is `300px` wide in the 2-column layout.
 
