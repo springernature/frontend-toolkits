@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2023-05-16)
+    * BREAKING: Upgrade to brand-context v32
+    * Change the $details-spacing variable back to 1.5em now that block spacing styles are gone
+
 ## 1.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 
