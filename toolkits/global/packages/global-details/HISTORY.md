@@ -1,5 +1,9 @@
 # History
 
+## 2.0.0 (2023-05-17)
+    * BREAKING: Removes use of $tokens--typography-block-spacing-medium in springer settings and replaces with 1.5em
+    * BREAKING: Upgrade to brand-context v32.0.0 - the version that removes block-spacing styling
+
 ## 1.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 
