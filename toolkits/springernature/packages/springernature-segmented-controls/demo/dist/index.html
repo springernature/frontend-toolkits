@@ -1,0 +1,1310 @@
+<!DOCTYPE html><html lang="en"><head>
+		<script>
+    		(function(e){var t=e.documentElement,n=e.implementation;t.className='js';})(document)
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>@springernature/springernature-segmented-controls</title>
+		<style>
+			@charset "UTF-8";
+/**
+ * Basic
+ * Styles for all pages, included on pages that
+ * both do and dont cut the mustard, keep to a minimum
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
+ * Enhanced
+ * Bootstrap the rest of the styles on cut the mustard
+ */
+/**
+ * Abstracts
+ * Sass tools, helper files, variables, functions, mixins and other config files
+ * These files don’t output any CSS when compiled
+ */
+/**
+ * Breakpoints
+ * Shared media query values
+ */
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ *
+ */
+/**
+ * Shared colors
+ * Applicable to all brands and not to be overwritten
+ *
+ */
+/**
+ * Typography
+ * Font settings
+ */
+/**
+ *  Button settings
+ *  Default
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Style
+ * Cosmetic styling settings
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Return a greyscale color based on $context--greyscale-base
+ *
+ * @param {Integer} $val - lightness value between $context--greyscale-min and $context--greyscale-max
+ * @param {Float} $opacity - opacity value between 0.1 and 1, to one decimal place
+ *
+ */
+/**
+ * Return a color from a color palette
+ *
+ * @param {String} $name - name of the color to insert
+ * @param {Arglist} $keys - 0 to 2 paramaters defining map and opacity
+ *
+ */
+/**
+ * Returns either a dark or light foreground color when given the background color
+ *
+ * @param {Integer|String} $bgcolor - number for grays, string for colors
+ * @param {Map} $map - the color map to use
+ *
+ */
+/**
+ * Calculates the sRGB luma of a colour
+ * @private
+ *
+ * @param {*} $c - Color value
+ *
+ * https://lnikki.la/articles/sass-better-colour-based-on-brightness/
+ * http://robots.thoughtbot.com/closer-look-color-lightness
+ *
+ */
+/**
+ * Map deep get
+ * @author Hugo Giraudel
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {Arglist} $keys - Key chain
+ * @return {*} - Desired value
+ *
+ */
+/**
+ * Map key get
+ * Check if a key exists in a map, return it
+ * @private
+ *
+ * @param {Map} $map - Map
+ * @param {String} $value - Key name
+ * @return {*} - Key name, if found
+ *
+ */
+/**
+ * Style mixins
+ *
+ */
+/**
+ * Breakpoints
+ * Media query helper
+ * @group 30-mixins
+ */
+/**
+ * Typography
+ * Set base font size
+ */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+/**
+ * Colors
+ * Maps for color values & greyscale settings
+ */
+.c-segmented-controls {
+  display: inline-flex;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 4px 2px;
+  background-color: #ebf1f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.c-segmented-controls fieldset {
+  padding: 0;
+  border: 0;
+  display: inline-flex;
+}
+.c-segmented-controls legend,
+.c-segmented-controls input {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.c-segmented-controls label {
+  float: left;
+  display: block;
+  margin: 0px 2px;
+  border-radius: 4px;
+  border-width: 4px;
+  border-style: solid;
+  padding: 2px 16px;
+  line-height: 1.5;
+}
+.c-segmented-controls input + label:hover {
+  cursor: pointer;
+}
+.c-segmented-controls label {
+  color: #666;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px transparent;
+}
+.c-segmented-controls input:checked + label {
+  background-color: #01324b;
+  color: #fff;
+  box-shadow: 0 0 0 1px #01324b;
+}
+.c-segmented-controls input + label:hover {
+  color: #01324b;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px #01324b;
+}
+.c-segmented-controls input:focus + label {
+  border-color: #ffcc00;
+  box-shadow: none;
+}
+
+.c-segmented-controls--secondary {
+  display: inline-flex;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 4px 2px;
+  background-color: #ebf1f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.c-segmented-controls--secondary fieldset {
+  padding: 0;
+  border: 0;
+  display: inline-flex;
+}
+.c-segmented-controls--secondary legend,
+.c-segmented-controls--secondary input {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+.c-segmented-controls--secondary label {
+  float: left;
+  display: block;
+  margin: 0px 2px;
+  border-radius: 4px;
+  border-width: 4px;
+  border-style: solid;
+  padding: 2px 16px;
+  line-height: 1.5;
+}
+.c-segmented-controls--secondary input + label:hover {
+  cursor: pointer;
+}
+.c-segmented-controls--secondary label {
+  color: #666;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px transparent;
+}
+.c-segmented-controls--secondary input:checked + label {
+  background-color: #fff;
+  color: #01324b;
+  box-shadow: 0 0 0 1px #01324b;
+}
+.c-segmented-controls--secondary input + label:hover {
+  color: #fff;
+  background-color: #01324b;
+  box-shadow: 0 0 0 1px transparent;
+}
+.c-segmented-controls--secondary input:focus + label {
+  border-color: #ffcc00;
+  box-shadow: none;
+}
+
+.u-list-style-number {
+  list-style-type: decimal;
+}
+
+.u-list-style-bullet {
+  list-style-type: disc;
+}
+
+.u-list-style-dash > ::marker {
+  content: "– ";
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.u-list-style-none {
+  list-style-type: none;
+}
+
+.u-list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.u-list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.u-list-inline > li {
+  display: inline;
+}
+
+.u-custom-list-number {
+  float: left;
+  width: 3em;
+  padding-right: 0.5em;
+  margin-left: -3.5em;
+  text-align: right;
+}
+
+.u-list-comma-separated {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.u-list-comma-separated > li {
+  display: inline;
+}
+.u-list-comma-separated > li:not(:first-child):not(:last-child)::before {
+  content: ", ";
+}
+.u-list-comma-separated > li:not(:only-child):last-child::before {
+  content: " & ";
+}
+
+.u-list-truncated > li:not(:only-child):last-child::before {
+  content: " ... ";
+}
+
+.u-ma-0 {
+  margin: 0;
+}
+
+.u-ma-2 {
+  margin: 2px;
+}
+
+.u-ma-4 {
+  margin: 4px;
+}
+
+.u-ma-8 {
+  margin: 8px;
+}
+
+.u-ma-16 {
+  margin: 16px;
+}
+
+.u-ma-24 {
+  margin: 24px;
+}
+
+.u-ma-32 {
+  margin: 32px;
+}
+
+.u-ma-48 {
+  margin: 48px;
+}
+
+.u-ma-64 {
+  margin: 64px;
+}
+
+.u-ma-auto {
+  margin: auto;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mt-2 {
+  margin-top: 2px;
+}
+
+.u-mt-4 {
+  margin-top: 4px;
+}
+
+.u-mt-8 {
+  margin-top: 8px;
+}
+
+.u-mt-16 {
+  margin-top: 16px;
+}
+
+.u-mt-24 {
+  margin-top: 24px;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mt-48 {
+  margin-top: 48px;
+}
+
+.u-mt-64 {
+  margin-top: 64px;
+}
+
+.u-mt-auto {
+  margin-top: auto;
+}
+
+.u-mr-0 {
+  margin-right: 0;
+}
+
+.u-mr-2 {
+  margin-right: 2px;
+}
+
+.u-mr-4 {
+  margin-right: 4px;
+}
+
+.u-mr-8 {
+  margin-right: 8px;
+}
+
+.u-mr-16 {
+  margin-right: 16px;
+}
+
+.u-mr-24 {
+  margin-right: 24px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-mr-48 {
+  margin-right: 48px;
+}
+
+.u-mr-64 {
+  margin-right: 64px;
+}
+
+.u-mr-auto {
+  margin-right: auto;
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
+.u-mb-2 {
+  margin-bottom: 2px;
+}
+
+.u-mb-4 {
+  margin-bottom: 4px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mb-32 {
+  margin-bottom: 32px;
+}
+
+.u-mb-48 {
+  margin-bottom: 48px;
+}
+
+.u-mb-64 {
+  margin-bottom: 64px;
+}
+
+.u-mb-auto {
+  margin-bottom: auto;
+}
+
+.u-ml-0 {
+  margin-left: 0;
+}
+
+.u-ml-2 {
+  margin-left: 2px;
+}
+
+.u-ml-4 {
+  margin-left: 4px;
+}
+
+.u-ml-8 {
+  margin-left: 8px;
+}
+
+.u-ml-16 {
+  margin-left: 16px;
+}
+
+.u-ml-24 {
+  margin-left: 24px;
+}
+
+.u-ml-32 {
+  margin-left: 32px;
+}
+
+.u-ml-48 {
+  margin-left: 48px;
+}
+
+.u-ml-64 {
+  margin-left: 64px;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.u-pa-0 {
+  padding: 0;
+}
+
+.u-pa-2 {
+  padding: 2px;
+}
+
+.u-pa-4 {
+  padding: 4px;
+}
+
+.u-pa-8 {
+  padding: 8px;
+}
+
+.u-pa-16 {
+  padding: 16px;
+}
+
+.u-pa-24 {
+  padding: 24px;
+}
+
+.u-pa-32 {
+  padding: 32px;
+}
+
+.u-pa-48 {
+  padding: 48px;
+}
+
+.u-pa-64 {
+  padding: 64px;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pt-2 {
+  padding-top: 2px;
+}
+
+.u-pt-4 {
+  padding-top: 4px;
+}
+
+.u-pt-8 {
+  padding-top: 8px;
+}
+
+.u-pt-16 {
+  padding-top: 16px;
+}
+
+.u-pt-24 {
+  padding-top: 24px;
+}
+
+.u-pt-32 {
+  padding-top: 32px;
+}
+
+.u-pt-48 {
+  padding-top: 48px;
+}
+
+.u-pt-64 {
+  padding-top: 64px;
+}
+
+.u-pr-0 {
+  padding-right: 0;
+}
+
+.u-pr-2 {
+  padding-right: 2px;
+}
+
+.u-pr-4 {
+  padding-right: 4px;
+}
+
+.u-pr-8 {
+  padding-right: 8px;
+}
+
+.u-pr-16 {
+  padding-right: 16px;
+}
+
+.u-pr-24 {
+  padding-right: 24px;
+}
+
+.u-pr-32 {
+  padding-right: 32px;
+}
+
+.u-pr-48 {
+  padding-right: 48px;
+}
+
+.u-pr-64 {
+  padding-right: 64px;
+}
+
+.u-pb-0 {
+  padding-bottom: 0;
+}
+
+.u-pb-2 {
+  padding-bottom: 2px;
+}
+
+.u-pb-4 {
+  padding-bottom: 4px;
+}
+
+.u-pb-8 {
+  padding-bottom: 8px;
+}
+
+.u-pb-16 {
+  padding-bottom: 16px;
+}
+
+.u-pb-24 {
+  padding-bottom: 24px;
+}
+
+.u-pb-32 {
+  padding-bottom: 32px;
+}
+
+.u-pb-48 {
+  padding-bottom: 48px;
+}
+
+.u-pb-64 {
+  padding-bottom: 64px;
+}
+
+.u-pl-0 {
+  padding-left: 0;
+}
+
+.u-pl-2 {
+  padding-left: 2px;
+}
+
+.u-pl-4 {
+  padding-left: 4px;
+}
+
+.u-pl-8 {
+  padding-left: 8px;
+}
+
+.u-pl-16 {
+  padding-left: 16px;
+}
+
+.u-pl-24 {
+  padding-left: 24px;
+}
+
+.u-pl-32 {
+  padding-left: 32px;
+}
+
+.u-pl-48 {
+  padding-left: 48px;
+}
+
+.u-pl-64 {
+  padding-left: 64px;
+}
+		</style>
+	</head>
+	<body style="padding:2%">
+		<main class="u-container">
+	<ul class="u-list-style-none">
+		<li class="u-mb-24">
+			<span>Default Segmented controls with 2 options</span>
+			<div>
+					<div class="c-segmented-controls" data-test="segmented-controls" data-segmented-controls="">
+						<fieldset>
+							<legend class="c-segmented-controls__legend">
+								<span>Mode</span>
+							</legend>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="mode" value="light" id="mode-light" checked="">
+									<label for="mode-light">Light</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="mode" value="dark" id="mode-dark">
+									<label for="mode-dark">Dark</label>
+								</div>
+						</fieldset>
+					</div>
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Default Segmented controls with 3 options</span>
+			<div>
+					<div class="c-segmented-controls" data-test="segmented-controls" data-segmented-controls="">
+						<fieldset>
+							<legend class="c-segmented-controls__legend">
+								<span>Size</span>
+							</legend>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="size" value="small" id="size-small" checked="">
+									<label for="size-small">Small</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="size" value="medium" id="size-medium">
+									<label for="size-medium">Medium</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="size" value="large" id="size-large">
+									<label for="size-large">Large</label>
+								</div>
+						</fieldset>
+					</div>
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Secondary Segmented controls with 3 options</span>
+			<div>
+					<div class="c-segmented-controls c-segmented-controls--secondary" data-test="segmented-controls" data-segmented-controls="">
+						<fieldset>
+							<legend class="c-segmented-controls__legend">
+								<span>Show only</span>
+							</legend>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="show" value="todo" id="show-todo" checked="">
+									<label for="show-todo">To do</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="show" value="progress" id="show-progress">
+									<label for="show-progress">In progress</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="show" value="done" id="show-done">
+									<label for="show-done">Done</label>
+								</div>
+						</fieldset>
+					</div>
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Secondary Segmented controls with 2 options and Javascript</span>
+			<div>
+					<div class="c-segmented-controls c-segmented-controls--secondary" data-test="segmented-controls" data-segmented-controls="">
+						<fieldset>
+							<legend class="c-segmented-controls__legend">
+								<span>Frequency</span>
+							</legend>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="frequency" value="weekly" id="frequency-weekly" checked="">
+									<label for="frequency-weekly">Weekly</label>
+								</div>
+								<div class="c-segmented-controls__radio">
+									<input type="radio" name="frequency" value="monthly" id="frequency-monthly">
+									<label for="frequency-monthly">Monthly</label>
+								</div>
+						</fieldset>
+					</div>
+			</div>
+		</li>
+	</ul>
+</main>
+
+		<script>
+			(function () {
+  'use strict';
+
+  function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  }
+
+  function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+
+    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+
+  function _createForOfIteratorHelper(o, allowArrayLike) {
+    var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
+
+    if (!it) {
+      if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
+        if (it) o = it;
+        var i = 0;
+
+        var F = function () {};
+
+        return {
+          s: F,
+          n: function () {
+            if (i >= o.length) return {
+              done: true
+            };
+            return {
+              done: false,
+              value: o[i++]
+            };
+          },
+          e: function (e) {
+            throw e;
+          },
+          f: F
+        };
+      }
+
+      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+
+    var normalCompletion = true,
+        didErr = false,
+        err;
+    return {
+      s: function () {
+        it = it.call(o);
+      },
+      n: function () {
+        var step = it.next();
+        normalCompletion = step.done;
+        return step;
+      },
+      e: function (e) {
+        didErr = true;
+        err = e;
+      },
+      f: function () {
+        try {
+          if (!normalCompletion && it.return != null) it.return();
+        } finally {
+          if (didErr) throw err;
+        }
+      }
+    };
+  }
+
+  function segmentedControls(container, onCheckedRadioChange) {
+    var radioButtons;
+    var checkedValue;
+    return {
+      init: init
+    };
+
+    function init() {
+      if (!container || !onCheckedRadioChange) {
+        return;
+      }
+
+      if (typeof onCheckedRadioChange !== 'function') {
+        throw new TypeError('onChangeCallback should be a function');
+      }
+
+      radioButtons = container.querySelectorAll('input');
+      var checked = container.querySelector('input[checked]');
+      checkedValue = checked ? checked.value : null;
+      Array.prototype.forEach.call(radioButtons, function (element) {
+        element.addEventListener('click', onClickCallback); // In standby now since browser vendors seem to transfer keyboard
+        // interaction to the click handler.
+        // Caveat: This seems to not be the case of JSDOM (used underneath of Jest).
+        // element.addEventListener('keydown', function (event) {
+        // 	if (event.key === ' ' || event.key === 'Spacebar' || event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        // 		onClickCallback(event);
+        // 	}
+        // });
+      });
+    } // eslint-disable-next-line unicorn/consistent-function-scoping
+
+
+    function onClickCallback(_event) {
+      var _iterator = _createForOfIteratorHelper(radioButtons),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var radioButton = _step.value;
+
+          if (radioButton.checked) {
+            if (radioButton.value !== checkedValue) {
+              checkedValue = radioButton.value;
+              onCheckedRadioChange(checkedValue);
+              break;
+            }
+          }
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var frequencyInput = document.querySelector('[name="frequency"]');
+    var segmentedControlsContainer = frequencyInput.closest('[data-segmented-controls]');
+    segmentedControls(segmentedControlsContainer, function segmentedControlsCallback(checkedValue) {
+      var label = segmentedControlsContainer.querySelector('[for="frequency-' + checkedValue + '"]');
+      alert('You picked: ' + label.textContent.trim());
+    }).init();
+  });
+
+})();
+
+		</script>
+	
+</body></html>

@@ -1,0 +1,9 @@
+{
+  "name": "@springernature/springernature-segmented-controls",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Linear set of two or more segments, each of which functions as a button",
+  "keywords": [],
+  "author": "Springer Nature",
+  "brandContext": "^32.0.0"
+}
