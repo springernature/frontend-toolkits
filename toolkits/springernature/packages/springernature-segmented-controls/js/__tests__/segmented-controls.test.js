@@ -1,4 +1,4 @@
-const {segmentedControls} = require('../');
+const {segmentedControls} = require('../segmented-controls');
 
 const fixture = `
 <div data-segmented-controls class="c-segmented-controls">

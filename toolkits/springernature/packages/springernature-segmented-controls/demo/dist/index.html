@@ -1297,10 +1297,14 @@ body {
   document.addEventListener('DOMContentLoaded', function () {
     var frequencyInput = document.querySelector('[name="frequency"]');
     var segmentedControlsContainer = frequencyInput.closest('[data-segmented-controls]');
-    segmentedControls(segmentedControlsContainer, function segmentedControlsCallback(checkedValue) {
-      var label = segmentedControlsContainer.querySelector('[for="frequency-' + checkedValue + '"]');
+
+    function segmentedControlsCallback(checkedValue) {
+      var label = segmentedControlsContainer.querySelector('[for="frequency-' + checkedValue + '"]'); // eslint-disable-next-line no-alert
+
       alert('You picked: ' + label.textContent.trim());
-    }).init();
+    }
+
+    segmentedControls(segmentedControlsContainer, segmentedControlsCallback).init();
   });
 
 })();
