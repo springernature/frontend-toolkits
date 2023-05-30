@@ -73,15 +73,15 @@ The extended footer contains the same links as the default footer, with the opti
 
 #### Your US state privacy rights
 
-Your product or service needs to include a Your US state privacy rights if it meets one of the following criteria.
+Your product or service needs to include a "Your US state privacy rights" link if it meets one of the following criteria.
 
 1. It makes more than $25 million or more in annual revenue from California residents.
 2. It holds the personal data of more than 50,000 Californian "consumers, households or devices".
 3. It earns more than half of its annual revenue selling Californian consumers' personal data.
 
-Your Product Owner or Manager should be able to confirm whether or not you need a Your US state privacy rights. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
+Your Product Owner or Manager should be able to confirm whether or not you need a "Your US state privacy rights" link. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
 
-If you need to include a Your US state privacy rights link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-footer/demo/context.json).
+If you need to include a "Your US state privacy rights" link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-footer/demo/context.json).
 
 #### Terms and conditions
 
