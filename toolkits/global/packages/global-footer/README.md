@@ -24,13 +24,13 @@ Or you can use the extended footer option. This includes the same footer items, 
 
 Always include these items in your footer:
 
--   Manage cookies / Do not sell my data
+-   Your privacy choices/Manage cookies
 -   Accessibility statement
 -   Privacy policy
 
 You must use this exact wording for the footer links so that they're the same across our products.
 
-#### Manage cookies / Do not sell my data
+#### Your privacy choices/Manage cookies
 
 This item uses `JavaScript` to open a dialog window when a user clicks it. The window shows the user how to manage their cookie preferences.
 
@@ -50,11 +50,11 @@ CMP users don't need to link to a cookie policy from the footer as it's covered 
 
 See an example implementation in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-footer/demo).
 
-For One Trust, the generated HTML of the Manage cookies / Do not sell data interactive element looks like this:
+For One Trust, the generated HTML of the Your privacy choices/Manage cookies interactive element looks like this:
 
 ```html
 <button onclick="Optanon.ToggleInfoDisplay()" class="c-footer__link">
-    Manage cookies / Do not sell my data
+    Your privacy choices/Manage cookies
 </button>
 ```
 
@@ -76,21 +76,21 @@ If you're still not sure, email the Data Protection Manager, Quinton Creighton, 
 
 The extended footer contains the same links as the default footer, with the option to include:
 
--   California privacy statement
+-   Your US state privacy rights
 -   Terms and conditions
 -   Help and support
 
-#### California privacy statement
+#### Your US state privacy rights
 
-Your product or service needs to include a California privacy statement if it meets one of the following criteria.
+Your product or service needs to include a Your US state privacy rights if it meets one of the following criteria.
 
 1. It makes more than $25 million or more in annual revenue from California residents.
 2. It holds the personal data of more than 50,000 Californian "consumers, households or devices".
 3. It earns more than half of its annual revenue selling Californian consumers' personal data.
 
-Your Product Owner or Manager should be able to confirm whether or not you need a California privacy statement. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
+Your Product Owner or Manager should be able to confirm whether or not you need a Your US state privacy rights. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
 
-If you need to include a California Privacy Statement link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-footer/demo/context.json).
+If you need to include a Your US state privacy rights link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-footer/demo/context.json).
 
 #### Terms and conditions
 

@@ -3,7 +3,7 @@
 		"navigation": {
 			"links": [
 				{
-					"text": "Manage cookies / Do not sell my data",
+					"text": "Your privacy choices/Manage cookies",
 					"buttonProperties": "data-cc-action=\"preferences\""
 				},
 				{
@@ -27,7 +27,7 @@
 		"navigation": {
 			"links": [
 				{
-					"text": "Manage cookies / Do not sell my data",
+					"text": "Your privacy choices/Manage cookies",
 					"buttonProperties": "data-cc-action=\"preferences\""
 				},
 				{
@@ -39,7 +39,7 @@
 					"url": "/url/to/your/privacy/policy"
 				},
 				{
-					"text": "California privacy statement (Optional)",
+					"text": "Your US state privacy rights",
 					"url": "https://www.springernature.com/gp/legal/ccpa"
 				},
 				{
