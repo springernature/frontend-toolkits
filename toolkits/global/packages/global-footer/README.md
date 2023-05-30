@@ -82,7 +82,7 @@ The extended footer contains the same links as the default footer, with the opti
 
 #### Your US state privacy rights
 
-Your product or service needs to include a "Your US state privacy rights" llink if it meets one of the following criteria.
+Your product or service needs to include a "Your US state privacy rights" link if it meets one of the following criteria.
 
 1. It makes more than $25 million or more in annual revenue from California residents.
 2. It holds the personal data of more than 50,000 Californian "consumers, households or devices".
