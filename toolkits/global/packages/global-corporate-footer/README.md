@@ -36,10 +36,9 @@ For that reason, the component uses a `<button>` element rather than an `<a>` el
 
 You'll need to integrate the third party script of a cookie consent banner into your application.
 
-We use 2 main cookie consent banner providers at Springer Nature:
+We use our main cookie consent banner provider at Springer Nature:
 
-1. Springer Nature's custom [Consent Management Platform (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/) (Recommended)
-2. Third party One Trust cookie consent (this is being phased out in favour of the above)
+1. Springer Nature's custom [Consent Management Platform (CMP)](https://cookie-consent.public.springernature.app/docs/introduction/)
 
 For CMP, read how to implement the button in the [Preference Dialog Trigger section of the cookie consent
 documentation](https://cookie-consent.public.springernature.app/docs/getting-started/installation/#preference-dialog-trigger). 
@@ -48,11 +47,6 @@ CMP users don't need to link to a cookie policy from the footer as it's covered 
 
 See an example implementation in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo).
 
-For One Trust, the generated HTML of the Your privacy choices/Manage cookies interactive element looks like this:
-
-```html
-<button onclick="Optanon.ToggleInfoDisplay()" class="c-corporate-footer__link">Your privacy choices/Manage cookies</button>
-```
 If you've got any questions about your cookie policy, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com)
 
 ### Accessibility statement
