@@ -48,7 +48,7 @@ CMP users don't need to link to a cookie policy from the footer as it's covered 
 
 See an example implementation in the [`demo` folder](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo).
 
-For One Trust, the generated HTML of the Your privacy choices/Manage cookies interactive element looks like this:
+For One Trust, the generated HTML of the "Your privacy choices/Manage cookies" interactive element looks like this:
 
 ```html
 <button onclick="Optanon.ToggleInfoDisplay()" class="c-corporate-footer__link">Your privacy choices/Manage cookies</button>
@@ -83,9 +83,9 @@ Your product or service needs to include a Your US state privacy rights if it me
 2. It holds the personal data of more than 50,000 Californian "consumers, households or devices".
 3. It earns more than half of its annual revenue selling Californian consumers' personal data. 
 
-Your Product Owner or Manager should be able to confirm whether or not you need a Your US state privacy rights. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
+Your Product Owner or Manager should be able to confirm whether or not you need a "Your US state privacy rights" link. If you're still not sure, email the Data Protection Manager, Quinton Creighton, at [quinton.creighton@springernature.com](mailto:quinton.creighton@springernature.com).
 
-If you need to include a Your US state privacy rights link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
+If you need to include a "Your US state privacy rights" link, you must use the url in the [component demo's `context.json` file](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-corporate-footer/demo/context.json).
 
 #### Terms and conditions
 
