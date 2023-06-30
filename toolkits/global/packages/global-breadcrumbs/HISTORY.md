@@ -1,5 +1,8 @@
 # History
 
+## 5.1.0 (2023-06-29)
+    * Add new styles for small screen devices to only show last two levels
+    
 ## 5.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 

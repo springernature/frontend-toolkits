@@ -22,3 +22,16 @@ svg.c-breadcrumbs__chevron {
 	width: 10px;
 	height: 10px;
 }
+
+.c-breadcrumbs .c-breadcrumbs__item {
+	@include media-query('sm', 'max') {
+		display: none;
+	}
+}
+
+.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(1),
+.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(2) {
+	@include media-query('sm', 'max') {
+		display: inline;
+	}
+}
