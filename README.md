@@ -41,6 +41,10 @@ Ensure you have [`nvm` installed](https://github.com/creationix/nvm/blob/master/
 
 The components found within the toolkits are validated using the [`sass` package on NPM](https://www.npmjs.com/package/sass). You should use the same version within your application (currently `1.47.0`) build process.
 
+### Get bootstrapped for local development
+
+Lerna needs a little help beyond the usual `npm` install - run `npm run bootstrap:local` before you try anything else.
+
 ### Installing dependencies
 
 To install dependencies:

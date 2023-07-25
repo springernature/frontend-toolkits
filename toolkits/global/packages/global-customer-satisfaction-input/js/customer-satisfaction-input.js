@@ -16,10 +16,24 @@ class CustomerSatisfactionInput {
 		return this._formRadios.find(element => element.checked).value;
 	}
 
+	_updateSurveyLinkQueryString(parameterName, value) {
+		if (this._surveyLink) {
+			const url = new URL(this._surveyLink.href);
+			const parameters = url.searchParams;
+			parameters.set(parameterName, value);
+			url.search = parameters.toString();
+			this._surveyLink.href = url.toString();
+		}
+	}
+
 	_setSurveyLinkHref() {
 		if (this._surveyLink) {
 			this._surveyLink.href = this._surveyLink.href + '?location=' + window.location.href.split('?')[0];
 		}
+	}
+
+	_setSurveyLinkResponseRating(rating) {
+		this._updateSurveyLinkQueryString('responseRating', rating);
 	}
 
 	_getUserJourneys() {
@@ -74,6 +88,7 @@ class CustomerSatisfactionInput {
 					event.stopPropagation();
 					const validForm = this._validateForm();
 					if (validForm) {
+						this._setSurveyLinkResponseRating((this._getCheckedRadioValue()));
 						this._dispatchDataLayerEvent(this._getCheckedRadioValue());
 						this._displayMessage();
 						return;
