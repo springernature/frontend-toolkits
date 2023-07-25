@@ -16,6 +16,16 @@ class CustomerSatisfactionInput {
 		return this._formRadios.find(element => element.checked).value;
 	}
 
+	_updateSurveyLinkQueryString(parameterName, value) {
+		if (this._surveyLink) {
+			const url = new URL(this._surveyLink.href);
+			const parameters = url.searchParams;
+			parameters.set(parameterName, value);
+			url.search = parameters.toString();
+			this._surveyLink.href = url.toString();
+		}
+	}
+
 	_setSurveyLinkHref() {
 		if (this._surveyLink) {
 			this._surveyLink.href = this._surveyLink.href + '?location=' + window.location.href.split('?')[0];
@@ -23,9 +33,7 @@ class CustomerSatisfactionInput {
 	}
 
 	_setSurveyLinkResponseRating(rating) {
-		if (this._surveyLink) {
-			this._surveyLink.href = this._surveyLink.href + '&responseRating=' + rating;
-		}
+		this._updateSurveyLinkQueryString('responseRating', rating);
 	}
 
 	_getUserJourneys() {
