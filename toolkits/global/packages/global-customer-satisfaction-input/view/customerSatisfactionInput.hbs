@@ -5,16 +5,16 @@
 		<form class="c-customer-satisfaction-input__form">
 			<h{{headingLevel}} class="c-customer-satisfaction-input__heading">How was your experience today?
 			</h{{headingLevel}}>
-			<div class="c-forms__fieldset">
-				<div class="c-forms__field c-forms__field--globalFormRadios">
-					<fieldset class="c-forms__fieldset c-forms__field c-forms__radios"
+			<div class="c-customer-satisfaction-input__fieldset">
+				<div class="c-customer-satisfaction-input__field c-customer-satisfaction-input__field--globalFormRadios">
+					<fieldset class="c-customer-satisfaction-input__fieldset c-customer-satisfaction-input__field c-forms__radios"
 							  id="customer-satisfaction-input-radios{{#if id}}-{{id}}{{/if}}" name="customer-satisfaction-input-radios"
 							  invalid="" aria-invalid="true"
 							  aria-describedby="error-customer-satisfaction-input-radios1" required=""
 							  aria-required="true" autocomplete="off">
-						<legend class="c-forms__label">Rating<span class="c-form__label--visually-hidden">. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</span></legend>
-						<small class="c-forms__error" id="error-customer-satisfaction-input-radios{{#if id}}-{{id}}{{/if}}">
-							<span class="c-forms__icon c-forms__icon--error">
+						<legend class="c-customer-satisfaction-input__visually-hidden">Rating. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</legend>
+						<small class="c-customer-satisfaction-input__error" id="error-customer-satisfaction-input-radios{{#if id}}-{{id}}{{/if}}">
+							<span class="c-customer-satisfaction-input__icon c-customer-satisfaction-input__icon--error">
 								<svg class="u-icon u-mr-4" width="22" height="22"
 									 aria-hidden="true" focusable="false">
 									<svg id="i-error{{#if id}}-{{id}}{{/if}}" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -26,12 +26,12 @@
 							</span>
 							Please select one rating
 						</small>
-						<div class="c-forms__pictographic-radios">
-							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-awful{{#if id}}-{{id}}{{/if}}"
+						<div class="c-customer-satisfaction-input__pictographic-radios">
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-awful{{#if id}}-{{id}}{{/if}}"
 									   name="customer-satisfaction-input-radios" value="1" required=""
 									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-								<label for="radio-awful{{#if id}}-{{id}}{{/if}}" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+								<label for="radio-awful{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
 										<clipPath id="a{{#if id}}-{{id}}{{/if}}">
 											<path d="M24 0v24H0V0z"></path>
@@ -44,15 +44,15 @@
 											</g>
 										</g>
 									</svg>
-									<span class="c-form__label--visually-hidden">An image of a cartoon face that is very unhappy.</span>
-									<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Awful</span>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face that is very unhappy.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Awful</span>
 								</label>
 							</div>
-							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-bad{{#if id}}-{{id}}{{/if}}"
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-bad{{#if id}}-{{id}}{{/if}}"
 									   name="customer-satisfaction-input-radios" value="2" required=""
 									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-								<label for="radio-bad{{#if id}}-{{id}}{{/if}}" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+								<label for="radio-bad{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 										<defs>
 											<clipPath id="frowna{{#if id}}-{{id}}{{/if}}">
@@ -73,15 +73,15 @@
 											</g>
 										</g>
 									</svg>
-									<span class="c-form__label--visually-hidden">An image of a cartoon face with a frown.</span>
-									<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Bad</span>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a frown.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Bad</span>
 								</label>
 							</div>
-							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-ok{{#if id}}-{{id}}{{/if}}"
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-ok{{#if id}}-{{id}}{{/if}}"
 									   name="customer-satisfaction-input-radios" value="3" required=""
 									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-								<label for="radio-ok{{#if id}}-{{id}}{{/if}}" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+								<label for="radio-ok{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 										<defs>
 											<clipPath id="neutrala{{#if id}}-{{id}}{{/if}}">
@@ -102,15 +102,15 @@
 											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path>
 										</g>
 									</svg>
-									<span class="c-form__label--visually-hidden">An image of a cartoon face with a neutral expression.</span>
-									<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>OK</span>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a neutral expression.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>OK</span>
 								</label>
 							</div>
-							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-good{{#if id}}-{{id}}{{/if}}"
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-good{{#if id}}-{{id}}{{/if}}"
 									   name="customer-satisfaction-input-radios" value="4" required=""
 									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-								<label for="radio-good{{#if id}}-{{id}}{{/if}}" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+								<label for="radio-good{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 										<defs>
 											<clipPath id="smilea{{#if id}}-{{id}}{{/if}}">
@@ -131,15 +131,15 @@
 											</g>
 										</g>
 									</svg>
-									<span class="c-form__label--visually-hidden">An image of a cartoon face with a smile.</span>
-									<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Good</span>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a smile.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Good</span>
 								</label>
 							</div>
-							<div class="c-forms__label c-forms__label--wrapper">
-								<input class="c-forms__input c-forms__input--radio" type="radio" id="radio-great{{#if id}}-{{id}}{{/if}}"
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-great{{#if id}}-{{id}}{{/if}}"
 									   name="customer-satisfaction-input-radios" value="5" required=""
 									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-								<label for="radio-great{{#if id}}-{{id}}{{/if}}" class="c-forms__label c-forms__label--pictographic-radio c-forms__label--boxed-icon">
+								<label for="radio-great{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 										<defs>
 											<clipPath id="grina{{#if id}}-{{id}}{{/if}}">
@@ -151,8 +151,8 @@
 											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path>
 										</g>
 									</svg>
-									<span class="c-form__label--visually-hidden">An image of a cartoon face with an open mouth grin.</span>
-									<span><span class="c-form__label--visually-hidden"> The value of this radio input is: </span>Great</span>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Great</span>
 								</label>
 							</div>
 						</div>

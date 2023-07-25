@@ -3,6 +3,7 @@
 	background-color: $global-customer-satisfaction-input-container-background-color;
 	overflow: hidden;
 	font-family: $global-customer-satisfaction-input-font-family;
+	line-height: 1.4;
 }
 
 .c-customer-satisfaction-input__container {
@@ -25,12 +26,6 @@
 	align-items: center;
 }
 
-.c-customer-satisfaction-input__submit-message svg {
-	width: $global-customer-satisfaction-input-message-icon-size;
-	height: $global-customer-satisfaction-input-message-icon-size;
-	margin-right: $global-customer-satisfaction-input-message-icon-margin;
-}
-
 .c-customer-satisfaction-input__submit-message p {
 	margin: 0;
 	line-height: $global-customer-satisfaction-input-line-height;
@@ -50,9 +45,9 @@
 	font-size: $global-customer-satisfaction-input-message-font-size;
 }
 
-.c-customer-satisfaction-input__visually-hidden,
-.c-customer-satisfaction-input legend.c-forms__label {
-	/* hide visually, not to assistive tech */
+// hide things visually, for assistive technologies
+
+.c-customer-satisfaction-input__visually-hidden {
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
@@ -61,112 +56,67 @@
 	width: 1px;
 }
 
-.c-forms__label, .c-forms__error {
-	display: block;
-}
+// field
 
-.c-forms__error {
-	font-weight: normal;
-}
-
-.c-forms__fieldset, .c-forms__field, .c-forms__field * {
-	line-height: 1.4;
-}
-
-.c-forms__field {
+.c-customer-satisfaction-input__field {
 	font-size: 1rem;
 }
 
-.c-forms__field small {
+.c-customer-satisfaction-input__field small {
 	font-size: inherit;
 }
 
-.c-forms__fieldset {
+// fieldset
+
+.c-customer-satisfaction-input__fieldset {
 	padding: 0;
 	border: 0;
+	margin: 0;
 }
 
-.c-forms__field {
-	max-width: 70ch;
-}
+// input
 
-.c-forms__pictographic-radios {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	flex-wrap: wrap;
-}
-
-@media only screen and (min-width: 320px) {
-	.c-forms__pictographic-radios {
-		flex-direction: row;
-	}
-
-
-	.c-forms__pictographic-radios .c-forms__label + .c-forms__label {
-		margin-top: 0;
-	}
-
-
-}
-
-* + .c-forms__fieldset {
-	margin-top: 1.5rem;
-}
-
-.c-forms__input {
+.c-customer-satisfaction-input__input {
 	box-sizing: border-box;
 	border: 1px solid;
 	color: #000000;
 	width: 100%;
 	padding: 0.5rem 0.5rem;
-	background-color: #ffffff;
+	background-color: #fff;
 	font-weight: 400;
 }
 
-.c-forms__input:focus {
+.c-customer-satisfaction-input__input:focus {
 	outline: 3px solid #0088cc;
 }
 
-.c-forms__label {
-	font-size: 1rem;
+// pictographic radios
+
+.c-customer-satisfaction-input__pictographic-radios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
+	flex-wrap: wrap;
+}
+
+@include media-query('sm') {
+	.c-customer-satisfaction-input__pictographic-radios {
+		flex-direction: row;
+		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
+	}
+}
+
+// label
+.c-customer-satisfaction-input__label {
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
 	font-weight: 700;
 	color: #000000;
 	padding: 0;
 }
 
-.c-forms__label + .c-forms__label {
-	margin-top: 0.25rem;
-}
-
-.c-forms__error {
-	color: #c40606;
-	display: flex;
-	align-items: flex-start;
-}
-
-.c-forms__error .c-forms__icon {
-	color: #c40606;
-}
-
-.c-forms__icon svg {
-	height: 1rem;
-	width: 1rem;
-	vertical-align: calc((0.5rem / 8) * -1);
-	overflow: visible;
-	pointer-events: none;
-}
-
-.c-forms__input--radio, .c-form__label--visually-hidden {
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-.c-forms__label--pictographic-radio {
+.c-customer-satisfaction-input__label--pictographic-radio {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -175,95 +125,99 @@
 	cursor: pointer;
 }
 
+.c-customer-satisfaction-input__label + .c-customer-satisfaction-input__label {
+	margin-top: 0;
+}
+
 @media only screen and (min-width: 320px) {
-	.c-forms__label--pictographic-radio {
+	.c-customer-satisfaction-input__label {
+		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
+	}
+
+	.c-customer-satisfaction-input__label--pictographic-radio {
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
-
+	.c-customer-satisfaction-input__pictographic-radios .c-customer-satisfaction-input__label + .c-customer-satisfaction-input__label {
+		margin-top: 0;
+	}
 }
 
-.c-forms__label--pictographic-radio svg {
+// svg
+
+.c-customer-satisfaction-input__submit-message svg {
+	width: $global-customer-satisfaction-input-message-icon-size;
+	height: $global-customer-satisfaction-input-message-icon-size;
+	margin-right: $global-customer-satisfaction-input-message-icon-margin;
+}
+
+.c-customer-satisfaction-input__icon svg {
+	height: 1rem;
+	width: 1rem;
+	vertical-align: calc((0.5rem / 8) * -1);
+	overflow: visible;
+	pointer-events: none;
+}
+
+.c-customer-satisfaction-input__label--pictographic-radio svg {
 	box-sizing: content-box;
 	flex: 0 0 auto;
 	width: var(--forms--pictographic-radio-icon-size, 4rem);
 	height: var(--forms--pictographic-radio-icon-size, 4rem);
-	fill: #ffffff;
+	fill: #fff;
 	stroke: #01324b;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
-:checked + .c-forms__label--pictographic-radio svg {
+:checked + .c-customer-satisfaction-input__label--pictographic-radio svg {
 	fill: #01324b;
 	background-color: #01324b;
-	stroke: #ffffff;
+	stroke: #fff;
 }
 
-.c-forms__label--boxed-icon svg {
+.c-customer-satisfaction-input__label--boxed-icon svg {
 	padding: 0.5rem;
-	border: 2px solid #999999;
+	border: 2px solid #999;
 }
 
-:checked + .c-forms__label--boxed-icon svg {
-	border-color: #ffffff;
+:checked + .c-customer-satisfaction-input__label--boxed-icon svg {
+	border-color: #fff;
 }
 
-:focus + .c-forms__label--pictographic-radio svg, .c-forms__label--pictographic-radio:hover svg {
+:focus + .c-customer-satisfaction-input__label--pictographic-radio svg, .c-customer-satisfaction-input__label--pictographic-radio:hover svg {
 	box-shadow: 0 0 0 3px #0088cc;
 }
 
-/* Override Global Forms Styles */
-.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
+.c-customer-satisfaction-input__label--pictographic-radio svg {
 	width: $global-customer-satisfaction-input-radio-icon-size-narrow;
 	height: $global-customer-satisfaction-input-radio-icon-size-narrow;
 	padding: $global-customer-satisfaction-input-radio-icon-spacing-narrow;
 	border-radius: $global-customer-satisfaction-input-radio-icon-border-radius;
 }
 
-.c-customer-satisfaction-input .c-forms__pictographic-radios {
-	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
-	justify-content: center;
-}
-
-.c-customer-satisfaction-input .c-forms__label {
-	font-family: inherit;
-	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
-}
-
 @include media-query('sm') {
-	.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
+	.c-customer-satisfaction-input__label--pictographic-radio svg {
 		width: $global-customer-satisfaction-input-radio-icon-size-desktop;
 		height: $global-customer-satisfaction-input-radio-icon-size-desktop;
 		padding: $global-customer-satisfaction-input-radio-icon-spacing-desktop;
 	}
-
-	.c-customer-satisfaction-input .c-forms__pictographic-radios {
-		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
-	}
-
-	.c-customer-satisfaction-input .c-forms__label {
-		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
-	}
 }
 
-.c-customer-satisfaction-input .c-forms__fieldset--pictographic-radios {
-	justify-content: center;
-}
+// error
 
-.c-customer-satisfaction-input .c-forms__label + .c-forms__label {
-	margin-top: 0;
-}
-
-.c-customer-satisfaction-input .c-forms__fieldset {
-	margin: 0;
-}
-
-.c-customer-satisfaction-input .c-forms__error {
+.c-customer-satisfaction-input__error {
 	display: none;
+	color: #c40606;
+	font-weight: normal;
 	margin-bottom: $global-customer-satisfaction-input-error-margin;
 }
 
-.c-customer-satisfaction-input--show-error .c-forms__error {
+.c-customer-satisfaction-input--show-error .c-customer-satisfaction-input__error {
 	display: flex;
+	align-items: flex-start;
+}
+
+.c-customer-satisfaction-input__error .c-customer-satisfaction-input__icon {
+	color: #c40606;
 }
