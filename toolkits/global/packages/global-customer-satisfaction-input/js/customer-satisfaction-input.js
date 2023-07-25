@@ -22,6 +22,12 @@ class CustomerSatisfactionInput {
 		}
 	}
 
+	_setSurveyLinkResponseRating(rating) {
+		if (this._surveyLink) {
+			this._surveyLink.href = this._surveyLink.href + '&responseRating=' + rating;
+		}
+	}
+
 	_getUserJourneys() {
 		if (!this._aside.dataset.customerSatisfactionInputUserJourneys) {
 			console.error('Attempt to send Global Customer Satisfaction Input event failed. Value not found for User Journeys.');
@@ -74,6 +80,7 @@ class CustomerSatisfactionInput {
 					event.stopPropagation();
 					const validForm = this._validateForm();
 					if (validForm) {
+						this._setSurveyLinkResponseRating((this._getCheckedRadioValue()));
 						this._dispatchDataLayerEvent(this._getCheckedRadioValue());
 						this._displayMessage();
 						return;

@@ -195,16 +195,19 @@ describe('Global Customer Satisfaction Input', () => {
 		expect(message.classList.contains('u-hide')).toBe(false);
 	});
 
-	test('Should get the current location and join survey link', () => {
-		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
-		customerSatisfactionInput();
-		expect(surveyLink.href === 'https://www.surveymonkey.com/1?location=http://localhost/').toBe(true);
-	})
-
-	test('Should generate URL parameters and append them to the survey link', () => {
+	test('Should get the current location and add it as a query parameter to the survey link', () => {
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
 		window.location.href = 'http://localhost/?shafkjsahfh'
 		customerSatisfactionInput();
-		expect(surveyLink.href === 'https://www.surveymonkey.com/1?location=http://localhost/').toBe(true);
+		expect(surveyLink.href).toEqual('https://www.surveymonkey.com/1?location=http://localhost/');
+	})
+
+	test('Should get the selected and add it as a query parameter to the survey link', () => {
+		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
+		window.location.href = 'http://localhost/?shafkjsahfh'
+		customerSatisfactionInput();
+		label.click();
+		button.click();
+		expect(surveyLink.href).toEqual('https://www.surveymonkey.com/1?location=http://localhost/&responseRating=1');
 	})
 });
