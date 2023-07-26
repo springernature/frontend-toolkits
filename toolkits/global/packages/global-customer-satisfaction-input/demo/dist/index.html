@@ -1087,60 +1087,55 @@ html {
   font-weight: 700 !important;
 }
 
-.c-customer-satisfaction-input__submit-message div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.c-customer-satisfaction-input__form {
+  text-align: center;
 }
 
-.c-customer-satisfaction-input__submit-message p {
-  margin: 0;
-  line-height: 1.4;
-  font-family: inherit;
-  font-size: 16px;
-}
-
-.c-customer-satisfaction-input__button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 32px;
-  border: 4px solid white;
-  box-shadow: 0 0 0 1px #01324b;
-  color: #01324b;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 8px 0 0 0;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: all 0.2s;
-  width: 100%;
-}
-.c-customer-satisfaction-input__button:hover {
-  color: white;
-  background-color: #01324b;
-  border: 4px solid #01324b;
-  box-shadow: none;
-}
-.c-customer-satisfaction-input__button:focus {
-  border: 4px solid #ffcc00;
-  box-shadow: none;
-  outline: none;
-}
-
-.c-customer-satisfaction-input a {
+.c-customer-satisfaction-input__link {
   display: inline-block;
   margin-top: 8px;
   font-family: inherit;
   font-size: 16px;
 }
 
+.c-customer-satisfaction-input__button {
+  -webkit-appearance: button;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 32px;
+  border: 1px solid #01324b;
+  box-shadow: none;
+  color: #01324b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 12px 0 0;
+  overflow: visible;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s;
+  width: 75%;
+}
+
+.c-customer-satisfaction-input__submit-message-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-customer-satisfaction-input__submit-message {
+  margin: 0;
+  line-height: 1.4;
+  font-family: inherit;
+  font-size: 16px;
+}
+
 .c-customer-satisfaction-input__visually-hidden {
-  /* hide visually, not to assistive tech */
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -1166,7 +1161,7 @@ html {
 .c-customer-satisfaction-input__input {
   box-sizing: border-box;
   border: 1px solid;
-  color: #000000;
+  color: #000;
   width: 100%;
   padding: 0.5rem 0.5rem;
   background-color: #fff;
@@ -1179,7 +1174,7 @@ html {
 
 .c-customer-satisfaction-input__pictographic-radios {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   gap: 5px;
   flex-wrap: wrap;
@@ -1187,7 +1182,6 @@ html {
 
 @media only screen and (min-width: 540px) {
   .c-customer-satisfaction-input__pictographic-radios {
-    flex-direction: row;
     gap: 16px;
   }
 }
@@ -1195,7 +1189,7 @@ html {
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   padding: 0;
 }
 
@@ -1224,54 +1218,44 @@ html {
     margin-top: 0;
   }
 }
-.c-customer-satisfaction-input__submit-message svg {
+.c-customer-satisfaction-input__submit-message-container svg {
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  fill: #00a79d;
 }
 
-.c-customer-satisfaction-input__icon svg {
+.c-customer-satisfaction-input__error-icon svg {
   height: 1rem;
   width: 1rem;
   vertical-align: -0.0625rem;
   overflow: visible;
   pointer-events: none;
+  margin-right: 4px;
 }
 
 .c-customer-satisfaction-input__label--pictographic-radio svg {
-  box-sizing: content-box;
-  flex: 0 0 auto;
-  width: var(--forms--pictographic-radio-icon-size, 4rem);
-  height: var(--forms--pictographic-radio-icon-size, 4rem);
-  fill: #fff;
-  stroke: #01324b;
   background-color: #fff;
+  border-radius: 2px;
+  border: 2px solid #999;
+  box-sizing: content-box;
+  fill: #fff;
+  flex: 0 0 auto;
+  height: 21px;
+  padding: 6px;
+  stroke: #01324b;
+  width: 21px;
 }
 
 :checked + .c-customer-satisfaction-input__label--pictographic-radio svg {
   fill: #01324b;
   background-color: #01324b;
   stroke: #fff;
-}
-
-.c-customer-satisfaction-input__label--boxed-icon svg {
-  padding: 0.5rem;
-  border: 2px solid #999;
-}
-
-:checked + .c-customer-satisfaction-input__label--boxed-icon svg {
   border-color: #fff;
 }
 
 :focus + .c-customer-satisfaction-input__label--pictographic-radio svg, .c-customer-satisfaction-input__label--pictographic-radio:hover svg {
   box-shadow: 0 0 0 3px #0088cc;
-}
-
-.c-customer-satisfaction-input__label--pictographic-radio svg {
-  width: 21px;
-  height: 21px;
-  padding: 6px;
-  border-radius: 2px;
 }
 
 @media only screen and (min-width: 540px) {
@@ -1284,17 +1268,13 @@ html {
 .c-customer-satisfaction-input__error {
   display: none;
   color: #c40606;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .c-customer-satisfaction-input--show-error .c-customer-satisfaction-input__error {
   display: flex;
   align-items: flex-start;
-}
-
-.c-customer-satisfaction-input__error .c-customer-satisfaction-input__icon {
-  color: #c40606;
 }
 
 .u-display-none {
@@ -1859,18 +1839,15 @@ html {
 					<aside class="u-hide u-js-show c-customer-satisfaction-input" data-customer-satisfaction-input="" data-customer-satisfaction-input-user-journeys="get published">
 						<div class="c-customer-satisfaction-input__container">
 							<form class="c-customer-satisfaction-input__form">
-								<h3 class="c-customer-satisfaction-input__heading">How was your experience today?
-								</h3>
+								<h3 class="c-customer-satisfaction-input__heading">How was your experience today?</h3>
 								<div class="c-customer-satisfaction-input__fieldset">
 									<div class="c-customer-satisfaction-input__field c-customer-satisfaction-input__field--globalFormRadios">
 										<fieldset class="c-customer-satisfaction-input__fieldset c-customer-satisfaction-input__field c-forms__radios" id="customer-satisfaction-input-radios-2" name="customer-satisfaction-input-radios" invalid="" aria-invalid="true" aria-describedby="error-customer-satisfaction-input-radios1" required="" aria-required="true" autocomplete="off">
 											<legend class="c-customer-satisfaction-input__visually-hidden">Rating. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</legend>
 											<small class="c-customer-satisfaction-input__error" id="error-customer-satisfaction-input-radios-2">
-												<span class="c-customer-satisfaction-input__icon c-customer-satisfaction-input__icon--error">
-													<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-														<svg id="i-error-2" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-															<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
-														</svg>
+												<span class="c-customer-satisfaction-input__error-icon">
+													<svg id="i-error-2" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+														<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
 													</svg>
 												</span>
 												Please select one rating
@@ -1878,8 +1855,8 @@ html {
 											<div class="c-customer-satisfaction-input__pictographic-radios">
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-awful-2" name="customer-satisfaction-input-radios" value="1" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-awful-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
+													<label for="radio-awful-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
 															<clipPath id="a-2">
 																<path d="M24 0v24H0V0z"></path>
 															</clipPath>
@@ -1897,8 +1874,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-bad-2" name="customer-satisfaction-input-radios" value="2" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-bad-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-bad-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="frowna-2">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -1924,8 +1901,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-ok-2" name="customer-satisfaction-input-radios" value="3" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-ok-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-ok-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="neutrala-2">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -1951,8 +1928,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-good-2" name="customer-satisfaction-input-radios" value="4" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-good-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-good-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="smilea-2">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -1978,8 +1955,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-great-2" name="customer-satisfaction-input-radios" value="5" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-great-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-great-2" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="grina-2">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -1999,15 +1976,15 @@ html {
 									</div>
 								</div>
 								<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
-								<div class="u-hide c-customer-satisfaction-input__submit-message" data-customer-satisfaction-input="submit-message">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick-2" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d">
+								<div class="u-hide" data-customer-satisfaction-input="submit-message">
+									<div class="c-customer-satisfaction-input__submit-message-container">
+										<svg id="i-circle-tick-2" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
 											<path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
 											<path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path>
 										</svg>
-										<p>Thank you for your feedback.</p>
+										<p class="c-customer-satisfaction-input__submit-message">Thank you for your feedback.</p>
 									</div>
-											<a href="https://www.surveymonkey.co.uk/r/G3MBJPQ" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">Tell us why (opens in a new tab)</a>
+								<a class="c-customer-satisfaction-input__link" href="https://www.surveymonkey.co.uk/r/G3MBJPQ" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -2020,18 +1997,15 @@ html {
 					<aside class="u-hide u-js-show c-customer-satisfaction-input" data-customer-satisfaction-input="" data-customer-satisfaction-input-user-journeys="get prepared to publish">
 						<div class="c-customer-satisfaction-input__container">
 							<form class="c-customer-satisfaction-input__form">
-								<h3 class="c-customer-satisfaction-input__heading">How was your experience today?
-								</h3>
+								<h3 class="c-customer-satisfaction-input__heading">How was your experience today?</h3>
 								<div class="c-customer-satisfaction-input__fieldset">
 									<div class="c-customer-satisfaction-input__field c-customer-satisfaction-input__field--globalFormRadios">
 										<fieldset class="c-customer-satisfaction-input__fieldset c-customer-satisfaction-input__field c-forms__radios" id="customer-satisfaction-input-radios-1" name="customer-satisfaction-input-radios" invalid="" aria-invalid="true" aria-describedby="error-customer-satisfaction-input-radios1" required="" aria-required="true" autocomplete="off">
 											<legend class="c-customer-satisfaction-input__visually-hidden">Rating. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</legend>
 											<small class="c-customer-satisfaction-input__error" id="error-customer-satisfaction-input-radios-1">
-												<span class="c-customer-satisfaction-input__icon c-customer-satisfaction-input__icon--error">
-													<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-														<svg id="i-error-1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-															<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
-														</svg>
+												<span class="c-customer-satisfaction-input__error-icon">
+													<svg id="i-error-1" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+														<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
 													</svg>
 												</span>
 												Please select one rating
@@ -2039,8 +2013,8 @@ html {
 											<div class="c-customer-satisfaction-input__pictographic-radios">
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-awful-1" name="customer-satisfaction-input-radios" value="1" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-awful-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
+													<label for="radio-awful-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
 															<clipPath id="a-1">
 																<path d="M24 0v24H0V0z"></path>
 															</clipPath>
@@ -2058,8 +2032,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-bad-1" name="customer-satisfaction-input-radios" value="2" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-bad-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-bad-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="frowna-1">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -2085,8 +2059,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-ok-1" name="customer-satisfaction-input-radios" value="3" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-ok-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-ok-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="neutrala-1">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -2112,8 +2086,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-good-1" name="customer-satisfaction-input-radios" value="4" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-good-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-good-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="smilea-1">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -2139,8 +2113,8 @@ html {
 												</div>
 												<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 													<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-great-1" name="customer-satisfaction-input-radios" value="5" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-													<label for="radio-great-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+													<label for="radio-great-1" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+														<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 															<defs>
 																<clipPath id="grina-1">
 																	<path d="M24 0v24H0V0h24Z"></path>
@@ -2160,15 +2134,15 @@ html {
 									</div>
 								</div>
 								<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
-								<div class="u-hide c-customer-satisfaction-input__submit-message" data-customer-satisfaction-input="submit-message">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick-1" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d">
+								<div class="u-hide" data-customer-satisfaction-input="submit-message">
+									<div class="c-customer-satisfaction-input__submit-message-container">
+										<svg id="i-circle-tick-1" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
 											<path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
 											<path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path>
 										</svg>
-										<p>Thank you for your feedback.</p>
+										<p class="c-customer-satisfaction-input__submit-message">Thank you for your feedback.</p>
 									</div>
-											<a href="https://www.surveymonkey.co.uk/r/G3MBJPQ" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">Tell us why (opens in a new tab)</a>
+								<a class="c-customer-satisfaction-input__link" href="https://www.surveymonkey.co.uk/r/G3MBJPQ" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">Tell us why (opens in a new tab)</a>
 								</div>
 							</form>
 						</div>
@@ -2179,18 +2153,15 @@ html {
 		<aside class="u-hide u-js-show c-customer-satisfaction-input" data-customer-satisfaction-input="" data-customer-satisfaction-input-user-journeys="Get Prepared to Publish, Get Published" data-customer-satisfaction-input-additional-info="AB test version B">
 			<div class="c-customer-satisfaction-input__container">
 				<form class="c-customer-satisfaction-input__form">
-					<h3 class="c-customer-satisfaction-input__heading">How was your experience today?
-					</h3>
+					<h3 class="c-customer-satisfaction-input__heading">How was your experience today?</h3>
 					<div class="c-customer-satisfaction-input__fieldset">
 						<div class="c-customer-satisfaction-input__field c-customer-satisfaction-input__field--globalFormRadios">
 							<fieldset class="c-customer-satisfaction-input__fieldset c-customer-satisfaction-input__field c-forms__radios" id="customer-satisfaction-input-radios-3" name="customer-satisfaction-input-radios" invalid="" aria-invalid="true" aria-describedby="error-customer-satisfaction-input-radios1" required="" aria-required="true" autocomplete="off">
 								<legend class="c-customer-satisfaction-input__visually-hidden">Rating. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</legend>
 								<small class="c-customer-satisfaction-input__error" id="error-customer-satisfaction-input-radios-3">
-									<span class="c-customer-satisfaction-input__icon c-customer-satisfaction-input__icon--error">
-										<svg class="u-icon u-mr-4" width="22" height="22" aria-hidden="true" focusable="false">
-											<svg id="i-error-3" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-												<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
-											</svg>
+									<span class="c-customer-satisfaction-input__error-icon">
+										<svg id="i-error-3" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+											<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"></path>
 										</svg>
 									</span>
 									Please select one rating
@@ -2198,8 +2169,8 @@ html {
 								<div class="c-customer-satisfaction-input__pictographic-radios">
 									<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 										<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-awful-3" name="customer-satisfaction-input-radios" value="1" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-										<label for="radio-awful-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
+										<label for="radio-awful-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+											<svg viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
 												<clipPath id="a-3">
 													<path d="M24 0v24H0V0z"></path>
 												</clipPath>
@@ -2217,8 +2188,8 @@ html {
 									</div>
 									<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 										<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-bad-3" name="customer-satisfaction-input-radios" value="2" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-										<label for="radio-bad-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<label for="radio-bad-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+											<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 												<defs>
 													<clipPath id="frowna-3">
 														<path d="M24 0v24H0V0h24Z"></path>
@@ -2244,8 +2215,8 @@ html {
 									</div>
 									<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 										<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-ok-3" name="customer-satisfaction-input-radios" value="3" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-										<label for="radio-ok-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<label for="radio-ok-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+											<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 												<defs>
 													<clipPath id="neutrala-3">
 														<path d="M24 0v24H0V0h24Z"></path>
@@ -2271,8 +2242,8 @@ html {
 									</div>
 									<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 										<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-good-3" name="customer-satisfaction-input-radios" value="4" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-										<label for="radio-good-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<label for="radio-good-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+											<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 												<defs>
 													<clipPath id="smilea-3">
 														<path d="M24 0v24H0V0h24Z"></path>
@@ -2298,8 +2269,8 @@ html {
 									</div>
 									<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
 										<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-great-3" name="customer-satisfaction-input-radios" value="5" required="" aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
-										<label for="radio-great-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio c-customer-satisfaction-input__label--boxed-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<label for="radio-great-3" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+											<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
 												<defs>
 													<clipPath id="grina-3">
 														<path d="M24 0v24H0V0h24Z"></path>
@@ -2319,13 +2290,13 @@ html {
 						</div>
 					</div>
 					<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
-					<div class="u-hide c-customer-satisfaction-input__submit-message" data-customer-satisfaction-input="submit-message">
-						<div>
-							<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick-3" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d">
+					<div class="u-hide" data-customer-satisfaction-input="submit-message">
+						<div class="c-customer-satisfaction-input__submit-message-container">
+							<svg id="i-circle-tick-3" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
 								<path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"></path>
 								<path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"></path>
 							</svg>
-							<p>Thank you for your feedback.</p>
+							<p class="c-customer-satisfaction-input__submit-message">Thank you for your feedback.</p>
 						</div>
 					</div>
 				</form>
@@ -2395,11 +2366,27 @@ html {
         }).value;
       }
     }, {
+      key: "_updateSurveyLinkQueryString",
+      value: function _updateSurveyLinkQueryString(parameterName, value) {
+        if (this._surveyLink) {
+          var url = new URL(this._surveyLink.href);
+          var parameters = url.searchParams;
+          parameters.set(parameterName, value);
+          url.search = parameters.toString();
+          this._surveyLink.href = url.toString();
+        }
+      }
+    }, {
       key: "_setSurveyLinkHref",
       value: function _setSurveyLinkHref() {
         if (this._surveyLink) {
           this._surveyLink.href = this._surveyLink.href + '?location=' + window.location.href.split('?')[0];
         }
+      }
+    }, {
+      key: "_setSurveyLinkResponseRating",
+      value: function _setSurveyLinkResponseRating(rating) {
+        this._updateSurveyLinkQueryString('responseRating', rating);
       }
     }, {
       key: "_getUserJourneys",
@@ -2475,6 +2462,8 @@ html {
               var validForm = _this2._validateForm();
 
               if (validForm) {
+                _this2._setSurveyLinkResponseRating(_this2._getCheckedRadioValue());
+
                 _this2._dispatchDataLayerEvent(_this2._getCheckedRadioValue());
 
                 _this2._displayMessage();
