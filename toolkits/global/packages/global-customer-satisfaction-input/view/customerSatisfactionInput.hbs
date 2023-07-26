@@ -4,20 +4,171 @@
 	<div class="c-customer-satisfaction-input__container">
 		<form class="c-customer-satisfaction-input__form">
 			<h{{headingLevel}} class="c-customer-satisfaction-input__heading">How was your experience today?</h{{headingLevel}}>
-			{{#with globalFormData}}
-				{{> globalFormFieldset }}
-			{{/with}}
-			<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
-			<div class="u-hide c-customer-satisfaction-input__submit-message" data-customer-satisfaction-input="submit-message">
-				<div>
-					<svg xmlns="http://www.w3.org/2000/svg" id="i-circle-tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="#00a79d"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"/></svg>
-					<p>Thank you for your feedback.</p>
+			<div class="c-customer-satisfaction-input__fieldset">
+				<div class="c-customer-satisfaction-input__field c-customer-satisfaction-input__field--globalFormRadios">
+					<fieldset class="c-customer-satisfaction-input__fieldset c-customer-satisfaction-input__field c-forms__radios"
+							  id="customer-satisfaction-input-radios{{#if id}}-{{id}}{{/if}}" name="customer-satisfaction-input-radios"
+							  invalid="" aria-invalid="true"
+							  aria-describedby="error-customer-satisfaction-input-radios1" required=""
+							  aria-required="true" autocomplete="off">
+						<legend class="c-customer-satisfaction-input__visually-hidden">Rating. A scale of 5 feelings conveyed using images that range from awful to great. The feelings represent how you feel about your experience today.</legend>
+						<small class="c-customer-satisfaction-input__error" id="error-customer-satisfaction-input-radios{{#if id}}-{{id}}{{/if}}">
+							<span class="c-customer-satisfaction-input__error-icon">
+								<svg id="i-error{{#if id}}-{{id}}{{/if}}" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+									<path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z"
+									fill="currentColor"
+									fill-rule="evenodd"></path>
+								</svg>
+							</span>
+							Please select one rating
+						</small>
+						<div class="c-customer-satisfaction-input__pictographic-radios">
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-awful{{#if id}}-{{id}}{{/if}}"
+									   name="customer-satisfaction-input-radios" value="1" required=""
+									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
+								<label for="radio-awful{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+									<svg viewBox="0 0 24 24" fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false">
+										<clipPath id="a{{#if id}}-{{id}}{{/if}}">
+											<path d="M24 0v24H0V0z"></path>
+										</clipPath>
+										<g stroke-width="1.8" clip-path="url(#a{{#if id}}-{{id}}{{/if}})">
+											<path d="M12 22c5.5228475 0 10-4.4771525 10-10S17.5228475 2 12 2 2 6.4771525 2 12s4.4771525 10 10 10z" stroke-miterlimit="10"></path>
+											<g stroke-linecap="round">
+												<path d="M8 17c.5-5.33333333 7.5-5.33333333 8 0z" stroke-linejoin="round"></path>
+												<path d="m9 9-2 1M17 10l-2-1" stroke-miterlimit="10"></path>
+											</g>
+										</g>
+									</svg>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face that is very unhappy.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Awful</span>
+								</label>
+							</div>
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-bad{{#if id}}-{{id}}{{/if}}"
+									   name="customer-satisfaction-input-radios" value="2" required=""
+									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
+								<label for="radio-bad{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+									<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<defs>
+											<clipPath id="frowna{{#if id}}-{{id}}{{/if}}">
+												<path d="M24 0v24H0V0h24Z"></path>
+											</clipPath>
+											<clipPath id="frownb{{#if id}}-{{id}}{{/if}}">
+												<path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path>
+											</clipPath>
+										</defs>
+										<g clip-path="url(#frowna{{#if id}}-{{id}}{{/if}})">
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 17c1-2.7 5-2.7 6 0"></path>
+											<g clip-path="url(#frownb{{#if id}}-{{id}}{{/if}})" transform="translate(8 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+											<g clip-path="url(#frownb{{#if id}}-{{id}}{{/if}})" transform="translate(14 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+										</g>
+									</svg>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a frown.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Bad</span>
+								</label>
+							</div>
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-ok{{#if id}}-{{id}}{{/if}}"
+									   name="customer-satisfaction-input-radios" value="3" required=""
+									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
+								<label for="radio-ok{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+									<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<defs>
+											<clipPath id="neutrala{{#if id}}-{{id}}{{/if}}">
+												<path d="M24 0v24H0V0h24Z"></path>
+											</clipPath>
+											<clipPath id="neutralb{{#if id}}-{{id}}{{/if}}">
+												<path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path>
+											</clipPath>
+										</defs>
+										<g clip-path="url(#neutrala{{#if id}}-{{id}}{{/if}})">
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+											<g clip-path="url(#neutralb{{#if id}}-{{id}}{{/if}})" transform="translate(8 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+											<g clip-path="url(#neutralb{{#if id}}-{{id}}{{/if}})" transform="translate(14 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 16h6"></path>
+										</g>
+									</svg>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a neutral expression.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>OK</span>
+								</label>
+							</div>
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-good{{#if id}}-{{id}}{{/if}}"
+									   name="customer-satisfaction-input-radios" value="4" required=""
+									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
+								<label for="radio-good{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+									<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<defs>
+											<clipPath id="smilea{{#if id}}-{{id}}{{/if}}">
+												<path d="M24 0v24H0V0h24Z"></path>
+											</clipPath>
+											<clipPath id="smileb{{#if id}}-{{id}}{{/if}}">
+												<path d="M1 0c.6 0 1 .4 1 1v2a1 1 0 1 1-2 0V1c0-.6.4-1 1-1Z"></path>
+											</clipPath>
+										</defs>
+										<g clip-path="url(#smilea{{#if id}}-{{id}}{{/if}})">
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M9 15c1 2.7 5 2.7 6 0"></path>
+											<g clip-path="url(#smileb{{#if id}}-{{id}}{{/if}})" transform="translate(8 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+											<g clip-path="url(#smileb{{#if id}}-{{id}}{{/if}})" transform="translate(14 8)">
+												<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" d="M0 0h2v4H0V0z"></path>
+											</g>
+										</g>
+									</svg>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with a smile.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Good</span>
+								</label>
+							</div>
+							<div class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--wrapper">
+								<input class="c-customer-satisfaction-input__input c-customer-satisfaction-input__visually-hidden" type="radio" id="radio-great{{#if id}}-{{id}}{{/if}}"
+									   name="customer-satisfaction-input-radios" value="5" required=""
+									   aria-required="true" autocomplete="off" data-customer-satisfaction-input="radio">
+								<label for="radio-great{{#if id}}-{{id}}{{/if}}" class="c-customer-satisfaction-input__label c-customer-satisfaction-input__label--pictographic-radio">
+									<svg fill="transparent" stroke="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+										<defs>
+											<clipPath id="grina{{#if id}}-{{id}}{{/if}}">
+												<path d="M24 0v24H0V0h24Z"></path>
+											</clipPath>
+										</defs>
+										<g clip-path="url(#grina{{#if id}}-{{id}}{{/if}})">
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+											<path stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8" stroke-linejoin="round" d="M17.5 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M10 10v-.5a1.7 1.7 0 0 0-3.5 0v.5M8 14c.5 5 7.5 5 8 0H8Z"></path>
+										</g>
+									</svg>
+									<span class="c-customer-satisfaction-input__visually-hidden">An image of a cartoon face with an open mouth grin.</span>
+									<span><span class="c-customer-satisfaction-input__visually-hidden"> The value of this radio input is: </span>Great</span>
+								</label>
+							</div>
+						</div>
+					</fieldset>
 				</div>
-				{{#if questionUrl}}
-					{{#if questionText}}
-						<a href="{{questionUrl}}" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">{{questionText}} (opens in a new tab)</a>
-					{{/if}}
-				{{/if}}
+			</div>
+			<button class="c-customer-satisfaction-input__button" type="submit">Send feedback</button>
+			<div class="u-hide" data-customer-satisfaction-input="submit-message">
+				<div class="c-customer-satisfaction-input__submit-message-container">
+					<svg id="i-circle-tick{{#if id}}-{{id}}{{/if}}" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+						<path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/>
+						<path d="M15 5.5a1 1 0 0 0-.8.4l-5.4 6-3.1-2.6a1 1 0 0 0-1.5.1 1 1 0 0 0 .2 1.5l3.9 3.4c.4.3 1 .3 1.4-.1l6-7c.4-.4.4-1 0-1.5a1 1 0 0 0-.8-.2Z" fill="#fff"/>
+					</svg>
+					<p class="c-customer-satisfaction-input__submit-message">Thank you for your feedback.</p>
+				</div>
+		{{#if questionUrl}}
+			{{#if questionText}}
+			<a class="c-customer-satisfaction-input__link" href="{{questionUrl}}" data-customer-satisfaction-input="survey-link" target="_blank" rel="noopener">{{questionText}} (opens in a new tab)</a>
+			{{/if}}
+		{{/if}}
 			</div>
 		</form>
 	</div>

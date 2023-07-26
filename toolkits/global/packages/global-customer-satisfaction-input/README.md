@@ -1,8 +1,5 @@
 # Global Customer Satisfaction Input
 
-> **Warning**
-> This component is currently [an experimental version](https://github.com/springernature/frontend-elements-docs/blob/main/user-guide/versioning.md#component-state). Please do not use this component on production at this time.
-
 The Global Customer Satisfaction Input component is the frontend for an overall solution for gathering customer satisfaction feedback, the documentation for which can be found here: https://customer-satisfaction-survey.public.springernature.app/docs/introduction.
 
 The component comprises a set of 5 pictographic radio inputs used to collect a satisfaction score from our customers. The user is able to submit one of the following scores: Awful, Bad, OK, Good, Great.
@@ -16,16 +13,10 @@ Install the Global Customer Satisfaction Input package:
 ```shell
 npm install @springernature/global-customer-satisfaction-input
 ```
-You will also need to ensure you have its dependencies installed. These are Brand Context and Global Forms:
-
-> **Warning**
-> This component violates [the design system rule](https://github.com/springernature/frontend-elements-docs/blob/main/user-guide/dependencies.md#dependencies) that states a component must not have a dependency on another component. Please do not follow this pattern in any other component you are building.
+You will also need to ensure you have its dependencies installed: Brand Context.
 
 ```shell
-npm install @springernature/brand-context@30.0.4
-```
-```shell
-npm install @springernature/global-forms@5.0.0
+npm install @springernature/brand-context@32.0.0
 ```
 
 ### Sass
@@ -33,13 +24,9 @@ Include the necessary Sass files in your project in this order (if they are not 
 ```sass
 @import '@springernature/brand-context/[YOUR BRAND HERE]/scss/core.scss';
 @import '@springernature/brand-context/[YOUR BRAND HERE]/scss/enhanced.scss';
-@import '@springernature/global-forms/scss/00-tokens/default.tokens.scss';
-@import '@springernature/global-customer-satisfaction-input/scss/00-tokens/default.tokens.scss';
-@import '@springernature/global-customer-satisfaction-input/scss/30-mixins/customer-satisfaction-input-button';
-@import '@springernature/global-forms/scss/50-components/forms';
+@import '@springernature/global-customer-satisfaction-input/scss/10-settings/default.scss';
 @import '@springernature/global-customer-satisfaction-input/scss/50-components/customer-satisfaction-input';
 @import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 ### JavaScript
@@ -60,13 +47,13 @@ If you are unable to consume view templates in your project you can still use th
 3. Copy the `<aside>` and its contents from the generated demo file at `/demo/dist/index.html` and paste it into the relevant location in your project
 
 ### Data
-A data model is required to render the component's view template. An example of the data model can be seen in the component's demo. This can be found at `/demo/context.json`.
-
-> **Note**
-> Some of the data for this component is considered static, should be copied as defined in this document and should **not** be edited. This concerns all data that is passed to the Global Forms component. See below section on Global Forms Data.
+An example of the data model needed to render this component can be found at `/demo/context.json`.
 
 #### Configuring the component
 The component can be configured using the following data properties:
+
+> **Note**
+> Are you going to implement more than one CSAT component on the same page? Please refer to the 'id' data property if so.
 
 **userJourneys** (Mandatory)
 
@@ -110,11 +97,27 @@ A string that defines the link text for any survey you wish to link to after a u
 
 A string that can be used to define additional data that you would like to be captured with the user's customer satisfaction score. This property aims to future-proof this component to ensure we can capture additional meaning if needed.
 
-#### Global Forms Data (Mandatory)
+**additionalInfo** (Optional)
 
-This component has a dependency on another component: [Global Forms](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-forms). See [package.json](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-customer-satisfaction-input/package.json#L10) which defines the version of Global Forms that this component is dependent on.
+A string that can be used to define additional data that you would like to be captured with the user's customer satisfaction score. This property aims to future-proof this component to ensure we can capture additional meaning if needed.
 
-The view template for Global Customer Satisfaction Input includes the Global Forms fieldset partial which requires a data model suitable for Global Forms. The data to support the Global Forms partial is considered static data. This can be found in `/demo/context.json` as the JSON object `"globalFormData"` and should be defined with the same names, structure and values in your project. The data is also provided [here in JSON](https://gist.github.com/benjclark/8c77fce1ab83a1c3fd8b9ed21be9f366) for your convenience.
+**id** (Optional)
+
+Please define a unique value here if you are going to implement more than one CSAT component on the same page. This will ensure there are no duplicate id values in the page HTML.
+
+### Survey Link
+
+Please note that the JavaScript for this component appends data to your survey links as URL parameters, as follows:
+
+**location**
+
+This is the url of the page the user is on.
+
+**responseRating**
+
+This is the rating that the user chose when they submitted the form.
+
+These data can be used in your reporting system to filter your survey responses. For example, in Survey Monkey you can configure custom variables with your survey so that these can be used in reporting analysis and queries.
 
 ### Projects that do not use Elements
 

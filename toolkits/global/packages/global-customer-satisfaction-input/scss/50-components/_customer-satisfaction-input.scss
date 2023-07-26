@@ -3,6 +3,7 @@
 	background-color: $global-customer-satisfaction-input-container-background-color;
 	overflow: hidden;
 	font-family: $global-customer-satisfaction-input-font-family;
+	line-height: $global-customer-satisfaction-input-line-height;
 }
 
 .c-customer-satisfaction-input__container {
@@ -19,40 +20,57 @@
 	font-weight: $global-customer-satisfaction-input-heading-font-weight !important;
 }
 
-.c-customer-satisfaction-input__submit-message div {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+.c-customer-satisfaction-input__form {
+	text-align: center;
 }
 
-.c-customer-satisfaction-input__submit-message svg {
-	width: $global-customer-satisfaction-input-message-icon-size;
-	height: $global-customer-satisfaction-input-message-icon-size;
-	margin-right: $global-customer-satisfaction-input-message-icon-margin;
-}
-
-.c-customer-satisfaction-input__submit-message p {
-	margin: 0;
-	line-height: $global-customer-satisfaction-input-line-height;
-	font-family: inherit;
-	font-size: $global-customer-satisfaction-input-message-font-size;
-}
-
-.c-customer-satisfaction-input__button {
-	// TODO: Remove this mixin and replace with Brand Context button styles once work to improve them has been carried out
-	@include global-customer-satisfaction-input-button;
-}
-
-.c-customer-satisfaction-input a {
+.c-customer-satisfaction-input__link {
 	display: inline-block;
 	margin-top: $global-customer-satisfaction-input-link-margin;
 	font-family: inherit;
 	font-size: $global-customer-satisfaction-input-message-font-size;
 }
 
-.c-customer-satisfaction-input__visually-hidden,
-.c-customer-satisfaction-input legend.c-forms__label {
-	/* hide visually, not to assistive tech */
+.c-customer-satisfaction-input__button {
+	-webkit-appearance: button;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 32px;
+	border: 1px solid $global-customer-satisfaction-input-button-colour;
+	box-shadow: none;
+	color: $global-customer-satisfaction-input-button-colour;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-button-font-size;
+	font-weight: $global-customer-satisfaction-input-button-font-weight;
+	line-height: $global-customer-satisfaction-input-line-height;
+	margin: $global-customer-satisfaction-input-button-margin;
+	overflow: visible;
+	padding: $global-customer-satisfaction-input-button-padding;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	transition: all .2s;
+	width: $global-customer-satisfaction-input-button-width;
+}
+
+.c-customer-satisfaction-input__submit-message-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.c-customer-satisfaction-input__submit-message {
+	margin: 0;
+	line-height: $global-customer-satisfaction-input-line-height;
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-message-font-size;
+}
+
+// hide things visually, for assistive technologies
+
+.c-customer-satisfaction-input__visually-hidden {
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
@@ -61,57 +79,155 @@
 	width: 1px;
 }
 
-/* Override Global Forms Styles */
-.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
-	width: $global-customer-satisfaction-input-radio-icon-size-narrow;
-	height: $global-customer-satisfaction-input-radio-icon-size-narrow;
-	padding: $global-customer-satisfaction-input-radio-icon-spacing-narrow;
-	border-radius: $global-customer-satisfaction-input-radio-icon-border-radius;
+// field
+
+.c-customer-satisfaction-input__field {
+	font-size: $global-customer-satisfaction-input-field-font-size;
 }
 
-.c-customer-satisfaction-input .c-forms__pictographic-radios {
-	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
+.c-customer-satisfaction-input__field small {
+	font-size: inherit;
+}
+
+// fieldset
+
+.c-customer-satisfaction-input__fieldset {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+// input
+
+.c-customer-satisfaction-input__input {
+	box-sizing: border-box;
+	border: 1px solid;
+	color: $global-customer-satisfaction-input-input-color;
+	width: 100%;
+	padding: $global-customer-satisfaction-input-input-padding;
+	background-color: $global-customer-satisfaction-input-input-background-color;
+	font-weight: $global-customer-satisfaction-input-input-font-weight;
+}
+
+.c-customer-satisfaction-input__input:focus {
+	outline: $global-customer-satisfaction-input-input-focus-outline;
+}
+
+// pictographic radios
+
+.c-customer-satisfaction-input__pictographic-radios {
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
-}
-
-.c-customer-satisfaction-input .c-forms__label {
-	font-family: inherit;
-	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
+	gap: $global-customer-satisfaction-input-radio-spacing-narrow;
+	flex-wrap: wrap;
 }
 
 @include media-query('sm') {
-	.c-customer-satisfaction-input .c-forms__label--pictographic-radio svg {
+	.c-customer-satisfaction-input__pictographic-radios {
+		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
+	}
+}
+
+// label
+.c-customer-satisfaction-input__label {
+	font-family: inherit;
+	font-size: $global-customer-satisfaction-input-radio-label-font-size-narrow;
+	font-weight: $global-customer-satisfaction-input-label-font-weight;
+	color: $global-customer-satisfaction-input-label-color;
+	padding: 0;
+}
+
+.c-customer-satisfaction-input__label--pictographic-radio {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: $global-customer-satisfaction-input-pict-radio-label-gap;
+	font-weight: $global-customer-satisfaction-input-pict-radio-label-font-weight;
+	cursor: pointer;
+}
+
+.c-customer-satisfaction-input__label + .c-customer-satisfaction-input__label {
+	margin-top: 0;
+}
+
+@media only screen and (min-width: 320px) {
+	.c-customer-satisfaction-input__label {
+		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
+	}
+
+	.c-customer-satisfaction-input__label--pictographic-radio {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.c-customer-satisfaction-input__pictographic-radios .c-customer-satisfaction-input__label + .c-customer-satisfaction-input__label {
+		margin-top: 0;
+	}
+}
+
+// svg
+
+.c-customer-satisfaction-input__submit-message-container svg {
+	width: $global-customer-satisfaction-input-message-icon-size;
+	height: $global-customer-satisfaction-input-message-icon-size;
+	margin-right: $global-customer-satisfaction-input-message-icon-margin;
+	fill: $global-customer-satisfaction-input-message-icon-fill;
+}
+
+.c-customer-satisfaction-input__error-icon svg {
+	height: $global-customer-satisfaction-input-error-icon-size;
+	width: $global-customer-satisfaction-input-error-icon-size;
+	vertical-align: $global-customer-satisfaction-input-error-icon-vertical-align;
+	overflow: visible;
+	pointer-events: none;
+	margin-right: $global-customer-satisfaction-input-error-icon-margin-right;
+
+}
+
+.c-customer-satisfaction-input__label--pictographic-radio svg {
+	background-color: $global-customer-satisfaction-input-radio-icon-background-color;
+	border-radius: $global-customer-satisfaction-input-radio-icon-border-radius;
+	border: $global-customer-satisfaction-input-radio-icon-border;
+	box-sizing: content-box;
+	fill: $global-customer-satisfaction-input-radio-icon-fill;
+	flex: 0 0 auto;
+	height: $global-customer-satisfaction-input-radio-icon-size-narrow;
+	padding: $global-customer-satisfaction-input-radio-icon-spacing-narrow;
+	stroke: $global-customer-satisfaction-input-radio-icon-stroke;
+	width: $global-customer-satisfaction-input-radio-icon-size-narrow;
+}
+
+:checked + .c-customer-satisfaction-input__label--pictographic-radio svg {
+	fill: $global-customer-satisfaction-input-radio-icon-fill-checked;
+	background-color: $global-customer-satisfaction-input-radio-icon-background-color-checked;
+	stroke: $global-customer-satisfaction-input-radio-icon-stroke-checked;
+	border-color: $global-customer-satisfaction-input-radio-icon-border-color-checked;
+}
+
+:focus + .c-customer-satisfaction-input__label--pictographic-radio svg,
+.c-customer-satisfaction-input__label--pictographic-radio:hover svg {
+	box-shadow: $global-customer-satisfaction-input-radio-icon-box-shadow-focused;
+}
+
+@include media-query('sm') {
+	.c-customer-satisfaction-input__label--pictographic-radio svg {
 		width: $global-customer-satisfaction-input-radio-icon-size-desktop;
 		height: $global-customer-satisfaction-input-radio-icon-size-desktop;
 		padding: $global-customer-satisfaction-input-radio-icon-spacing-desktop;
 	}
-
-	.c-customer-satisfaction-input .c-forms__pictographic-radios {
-		gap: $global-customer-satisfaction-input-radio-spacing-desktop;
-	}
-
-	.c-customer-satisfaction-input .c-forms__label {
-		font-size: $global-customer-satisfaction-input-radio-label-font-size-desktop;
-	}
 }
 
-.c-customer-satisfaction-input .c-forms__fieldset--pictographic-radios {
-	justify-content: center;
-}
+// error
 
-.c-customer-satisfaction-input .c-forms__label + .c-forms__label {
-	margin-top: 0;
-}
-
-.c-customer-satisfaction-input .c-forms__fieldset {
-	margin: 0;
-}
-
-.c-customer-satisfaction-input .c-forms__error {
+.c-customer-satisfaction-input__error {
 	display: none;
+	color: $global-customer-satisfaction-input-error-color;
+	font-weight: $global-customer-satisfaction-input-error-font-weight;
 	margin-bottom: $global-customer-satisfaction-input-error-margin;
 }
 
-.c-customer-satisfaction-input--show-error .c-forms__error {
+.c-customer-satisfaction-input--show-error .c-customer-satisfaction-input__error {
 	display: flex;
+	align-items: flex-start;
 }

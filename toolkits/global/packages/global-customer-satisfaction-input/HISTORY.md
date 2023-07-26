@@ -1,5 +1,20 @@
 # History
 
+## 1.0.0 (2023-07-26)
+    * BREAKING
+        * Brings component up to date with v32.0.0 of Brand Context
+            * Note: Please ensure your application also uses v32.0.0 of Brand Context
+        * Removes dependency on Global Forms component. 
+            * Note: Please uninstall Global Forms if you do not use elsewhere in your application.
+            * Note: The data model needed for this component has been greatly simplified. Please consider updating your application view model where needed.
+        * Introduces new data field: id. 
+            * Note: Please refer to docs for more info. Please consider updating your application view model if needed.
+        * Removes CSAT component design tokens. 
+            * Note: Please update your import path from "00-tokens/default.tokens.scss" to "10-settings/default.scss"
+        * Major refactor of component's HTML and Sass. 
+            * Note: If you do not consume the HTML directly from the installed package please update the HTML in your application.
+        * New functionality: now appends responseRating URL param to survey question link href. Refer to the docs for more info.
+
 ## 0.0.3 (2023-03-28)
     * Fixes issue with js error when not including questionUrl in data
 
