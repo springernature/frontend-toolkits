@@ -105,6 +105,20 @@ A string that can be used to define additional data that you would like to be ca
 
 Please define a unique value here if you are going to implement more than one CSAT component on the same page. This will ensure there are no duplicate id values in the page HTML.
 
+### Survey Link
+
+Please note that the JavaScript for this component appends data to your survey links as URL parameters, as follows:
+
+**location**
+
+This is the url of the page the user is on.
+
+**responseRating**
+
+This is the rating that the user chose when they submitted the form.
+
+These data can be used in your reporting system to filter your survey responses. For example, in Survey Monkey you can configure custom variables with your survey so that these can be used in reporting analysis and queries.
+
 ### Projects that do not use Elements
 
 If you do not use the Elements design system you are still able to use this component:
