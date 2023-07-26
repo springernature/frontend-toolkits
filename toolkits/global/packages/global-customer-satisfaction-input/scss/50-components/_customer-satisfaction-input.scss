@@ -110,7 +110,7 @@
 }
 
 .c-customer-satisfaction-input__input:focus {
-	outline: $global-customer-satisfaction-input-input-focus-outline
+	outline: $global-customer-satisfaction-input-input-focus-outline;
 }
 
 // pictographic radios
@@ -205,7 +205,8 @@
 	border-color: $global-customer-satisfaction-input-radio-icon-border-color-checked;
 }
 
-:focus + .c-customer-satisfaction-input__label--pictographic-radio svg, .c-customer-satisfaction-input__label--pictographic-radio:hover svg {
+:focus + .c-customer-satisfaction-input__label--pictographic-radio svg,
+.c-customer-satisfaction-input__label--pictographic-radio:hover svg {
 	box-shadow: $global-customer-satisfaction-input-radio-icon-box-shadow-focused;
 }
 
