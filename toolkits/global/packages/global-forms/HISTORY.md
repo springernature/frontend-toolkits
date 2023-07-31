@@ -1,4 +1,6 @@
 # History
+## 6.0.1 (2023-07-31)
+    * Adds support for spellcheck attribute
 
 
 ## 6.0.0 (2023-01-18)
