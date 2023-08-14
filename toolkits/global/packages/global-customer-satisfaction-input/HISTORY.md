@@ -1,5 +1,8 @@
 # History
 
+## 1.0.1 (2023-08-14)
+    * Removes aria-required and aria-invalid as were redundant. This will fix accessibility test warnings/errors about the same.
+
 ## 1.0.0 (2023-07-26)
     * BREAKING
         * Brings component up to date with v32.0.0 of Brand Context
