@@ -1,6 +1,6 @@
 {
   "name": "@springernature/global-customer-satisfaction-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "HTML form based component for gathering customer satisfaction data",
   "keywords": [],
