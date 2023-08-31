@@ -10,7 +10,7 @@
 Make sure that:
 
 - you are in the `design-tokens` directory
-- you are using the correct version of node (`12.0.0`)
+- you have [`nvm`](https://github.com/nvm-sh/nvm) installed
 - all dependencies are installed
 
 ```bash
