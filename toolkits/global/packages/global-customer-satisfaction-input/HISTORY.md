@@ -1,5 +1,9 @@
 # History
 
+## 1.0.2 (2023-08-24)
+    * Fixes issue with SVG not rendering correctly in Firefox. Ids used in HTML have been refactored and properly namespaced.
+    * Fixes issue with aria-described-by value related to error messaging not corresponding to the error html ID
+
 ## 1.0.1 (2023-08-14)
     * Removes aria-required and aria-invalid as were redundant. This will fix accessibility test warnings/errors about the same.
 
