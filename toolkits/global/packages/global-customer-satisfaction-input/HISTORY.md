@@ -1,5 +1,8 @@
 # History
 
+## 1.0.3 (2023-09-18)
+    * Fixes issue with visually hidden elements causing an overflow due to absolute positioning.
+
 ## 1.0.2 (2023-08-24)
     * Fixes issue with SVG not rendering correctly in Firefox. Ids used in HTML have been refactored and properly namespaced.
     * Fixes issue with aria-described-by value related to error messaging not corresponding to the error html ID
