@@ -33,10 +33,10 @@ jobs:
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
       - name: Checkout repository for code diffing
+      # - name: Get changed files
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Get changed files
         env:
           COMMIT_RANGE: ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
           CHANGED_FILES: $(git diff --name-only $COMMIT_RANGE)
