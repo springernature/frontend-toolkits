@@ -39,11 +39,11 @@ jobs:
       - name: Get changed files
         id: changes
         run: |
-          echo "CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_OUTPUT
+          echo "CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_ENV
         # run: |
         #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
       - name: Run build (test, validate)
-        run: echo ${{ steps.changes.outputs.CHANGED_FILES }}
+        run: echo "${{ env.CHANGED_FILES }}"
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
