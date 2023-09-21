@@ -19,27 +19,32 @@ jobs:
           - ubuntu-latest
         node-version:
           - 14.x
+    outputs:
+      all: ${{steps.changes.outputs.all}}
     steps:
       - name: 'Set up Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v1
         with:
           node-version: '${{ matrix.node-version }}'
-      - name: Cache multiple paths
-        uses: actions/cache@v2
+      - name: Cache node modules
+        uses: actions/cache@v3
         with:
-          path: |-
-            node_modules
-            $HOME/.npm
-          key: '${{ runner.os }}-${{ hashFiles(''TODO'') }}'
-      - uses: actions/checkout@v4
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+      - name: Checkout repository for code diffing
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: tj-actions/changed-files@v39
-        with:
-          since_last_remote_commit: true
-      # - run: 'npm ci'
-      - run: 'echo $steps.changed-files.outputs.all_changed_files'
-      # - run: 'npm run bootstrap && npm run build:ci'
+      - name: Get changed files
+        id: changes
+        # Set outputs using the command.
+        run: |
+          echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
+      - name: Run build (test, validate)
+        run: echo ${{steps.changes.outputs.all}}
+        # run: 'npm ci'
+        # run: 'npm run bootstrap && npm run build:ci'
   publish:
     runs-on: '${{ matrix.os }}'
     strategy:
