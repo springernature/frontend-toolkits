@@ -16,7 +16,7 @@ jobs:
           - 14.x
     steps:
       - name: 'Set up Node.js ${{ matrix.node-version }}'
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node-version }}'
 
@@ -56,29 +56,3 @@ jobs:
       - name: Publish Package(s)
         if: github.ref == 'refs/heads/main'
         run: 'npm run publish'
-  publish:
-    runs-on: '${{ matrix.os }}'
-    strategy:
-      matrix:
-        os:
-          - ubuntu-latest
-        node-version:
-          - 14.x
-    # if: ${{ github.event_name != 'pull_request' }}
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Publish Package(s)
-        run: 'npm run publish'
-      
-
-# run: |
-        #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
-
-# from travis
-#      - run: >-
-#          if [[ $TRAVIS_PULL_REQUEST = "false" ]]; then PUBLISH_PACKAGE=true;
-#          else PUBLISH_PACKAGE=false; fi
-#      - run: >-
-#          echo "Pull Request: $TRAVIS_PULL_REQUEST" && echo "Node:
-#          $TRAVIS_NODE_VERSION" && echo "Publish? $PUBLISH_PACKAGE"
-#      - run: 'if [ $PUBLISH_PACKAGE = "true" ]; then npm run publish; fi'
