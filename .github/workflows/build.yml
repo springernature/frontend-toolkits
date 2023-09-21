@@ -54,14 +54,18 @@ jobs:
             echo "$file was changed"
           done
 
+      - name: push to env
+        run: |
+           echo "CHANGED_FILES=$steps.changed-files.outputs.all_changed_files" >> $GITHUB_ENV
+
     #   - name: Get changeset
     #     run: |
     #       echo 'CHANGED_FILES<<EOF' >> $GITHUB_ENV
     #       $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}) >> $GITHUB_ENV
     #       echo 'EOF' >> $GITHUB_ENV
 
-    #   - name: Test1
-    #     run: echo $CHANGED_FILES
+      - name: Test1
+        run: echo $CHANGED_FILES
     #   - name: Test2
     #     run: echo env.CHANGED_FILES
 
