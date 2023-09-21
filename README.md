@@ -1,5 +1,7 @@
 > [!IMPORTANT] 
-> There is a newer version of the [Elements Design System](https://github.com/springernature/elements/). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
+> There is a newer version of the [Elements Design System](https://github.com/springernature/elements/)  
+> Please make sure you are using the correct one  
+> If you are unsure speak to the Design System Team
 
 # Frontend Toolkits
 
