@@ -32,7 +32,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get changed files
+      - name: Get changed files list
         id: changed_files
         uses: tj-actions/changed-files@v39
         with:
@@ -43,18 +43,19 @@ jobs:
           csv=""
           for result in ${{ steps.changed_files.outputs.all_changed_files }}; do
             file="$result"
-            csv="${csv}${csv:+,}$file"
+            csv="${csv}${csv:+\n}$file"
           done
           echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
-      - name: Test1
-        run: env
-    #   - name: Test2
-    #     run: echo env.CHANGED_FILES
+      - name: Install dependencies via npm ci
+        run: 'npm ci'
 
-      # - name: Run build (test, validate)
-        # run: 'npm ci'
-        # run: 'npm run bootstrap && npm run build:ci'
+      - name: Run build (test, validate)
+        run: 'npm run bootstrap && npm run build:ci'
+
+      - name: Publish Package(s)
+        if: github.ref == 'refs/heads/main'
+        run: 'npm run publish'
   publish:
     runs-on: '${{ matrix.os }}'
     strategy:
