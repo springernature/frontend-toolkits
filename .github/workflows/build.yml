@@ -37,9 +37,9 @@ jobs:
       - uses: tj-actions/changed-files@v39
         with:
           since_last_remote_commit: true
-      - run: 'npm ci'
-      - run: 'echo ${{ steps.changed-files.outputs.all_changed_files }}'
-      - run: 'npm run bootstrap && npm run build:ci'
+      # - run: 'npm ci'
+      - run: 'echo $steps.changed-files.outputs.all_changed_files'
+      # - run: 'npm run bootstrap && npm run build:ci'
   publish:
     runs-on: '${{ matrix.os }}'
     strategy:
