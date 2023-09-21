@@ -6,6 +6,7 @@ on:
     branches:
       - main
 
+# from travis
 # env:
 #   CHANGED_FILES: $(git diff --name-only $TRAVIS_COMMIT_RANGE)
 
@@ -51,6 +52,7 @@ jobs:
         run: 'npm run publish'
       
 
+# from travis
 #      - run: >-
 #          if [[ $TRAVIS_PULL_REQUEST = "false" ]]; then PUBLISH_PACKAGE=true;
 #          else PUBLISH_PACKAGE=false; fi
