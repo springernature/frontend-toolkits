@@ -48,10 +48,13 @@ jobs:
           echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
       - name: Export npm token to env
-        run: echo "NPM_TOKEN=$secrets.NPM_TOKEN" >> $GITHUB_ENV
+        run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}" >> $GITHUB_ENV
 
       - name: TEST
         run: env
+
+      - name: TEST2
+        run: echo ${{ secrets.NPM_TOKEN }}
 
       - name: Install dependencies
         run: 'npm ci'
