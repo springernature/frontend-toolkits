@@ -1,0 +1,60 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# env:
+#   CHANGED_FILES: $(git diff --name-only $TRAVIS_COMMIT_RANGE)
+
+jobs:
+  test:
+    runs-on: '${{ matrix.os }}'
+    strategy:
+      matrix:
+        os:
+          - ubuntu-18.04
+        node-version:
+          - 14.x
+    steps:
+      - name: 'Set up Node.js ${{ matrix.node-version }}'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '${{ matrix.node-version }}'
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |-
+            node_modules
+            $HOME/.npm
+          key: '${{ runner.os }}-${{ hashFiles(''TODO'') }}'
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          since_last_remote_commit: true
+      - run: 'echo ${{ steps.changed-files.outputs.all_changed_files }}'
+      - run: 'npm run bootstrap && npm run build:ci'
+  publish:
+    runs-on: '${{ matrix.os }}'
+    strategy:
+      matrix:
+        os:
+          - ubuntu-18.04
+        node-version:
+          - 14.x
+    # if: ${{ github.event_name != 'pull_request' }}
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Publish Package(s)
+        run: 'npm run publish'
+      
+
+#      - run: >-
+#          if [[ $TRAVIS_PULL_REQUEST = "false" ]]; then PUBLISH_PACKAGE=true;
+#          else PUBLISH_PACKAGE=false; fi
+#      - run: >-
+#          echo "Pull Request: $TRAVIS_PULL_REQUEST" && echo "Node:
+#          $TRAVIS_NODE_VERSION" && echo "Publish? $PUBLISH_PACKAGE"
+#      - run: 'if [ $PUBLISH_PACKAGE = "true" ]; then npm run publish; fi'
