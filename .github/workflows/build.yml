@@ -19,8 +19,8 @@ jobs:
           - ubuntu-latest
         node-version:
           - 14.x
-    outputs:
-      all: ${{steps.changes.outputs.all}}
+    # outputs:
+    #   all: ${{steps.changes.outputs.all}}
     steps:
       - name: 'Set up Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v1
@@ -39,10 +39,12 @@ jobs:
       - name: Get changed files
         id: changes
         # Set outputs using the command.
-        run: |
-          echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
+        run: echo "$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $CHANGED_FILES
+        # run: |
+        #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
       - name: Run build (test, validate)
-        run: echo ${{steps.changes.outputs.all}}
+        run: echo ${{CHANGED_FILES}}
+        run: echo $CHANGED_FILES
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
