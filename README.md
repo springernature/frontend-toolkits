@@ -1,4 +1,4 @@
-[!WARNING] This is a warning about newer version of Elements 7
+[!WARNING] This is a warning about newer version of Elements 8
 
 # Frontend Toolkits
 

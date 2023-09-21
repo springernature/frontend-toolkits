@@ -20,7 +20,7 @@ jobs:
         node-version:
           - 14.x
     # outputs:
-    #   all: ${{steps.changes.outputs.all}}
+    #   files_changed: ${{ steps.changed_files.outputs.files_changed }}
     steps:
       - name: 'Set up Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v1
@@ -43,20 +43,20 @@ jobs:
         #   CHANGED_FILES_LIST: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
 
       - name: Get changed files
-        id: changed-files
+        id: changed_files
         uses: tj-actions/changed-files@v39
         with:
           since_last_remote_commit: true 
 
       - name: List all changed files
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
             echo "$file was changed"
           done
 
       - name: push to env
         run: |
-           echo "CHANGED_FILES=$steps.changed-files.outputs.all_changed_files" >> $GITHUB_ENV
+           echo "CHANGED_FILES=${{ steps.changed_files.outputs.all_changed_files }}" >> $GITHUB_ENV
 
     #   - name: Get changeset
     #     run: |
