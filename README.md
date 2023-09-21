@@ -1,11 +1,13 @@
 # Frontend Toolkits
 
-[![Build Status][badge-build]][info-build]
+![Build Status][badge-build]
 [![MIT licensed][badge-license]][info-license]
 [![Node version][badge-node]][info-node]
 [![SASS version][badge-sass]][info-sass]
 
 > Frontend Component Toolkits for the Elements Design System
+
+[!IMPORTANT] There is a newer version of the [Elements Design System](https://github.com/springernature/elements/tree/main). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
 
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
@@ -63,7 +65,7 @@ Packages are bundles of front-end assets (HTML, CSS, JS, images, tests etc...) t
 
 ## Writing a package
 
-All packages are validated on our CI server (Travis) to ensure they conform to certain naming conventions, file/folder structure, and that certain required files are present.
+All packages are validated on GitHub Actions CI to ensure they conform to certain naming conventions, file/folder structure, and that certain required files are present.
 
 The validation is configurable in the `package-manager.json` files that can be found in the [repository root](package-manager.json) (this config is shared across all toolkits), and in the root folder for each toolkit.
 
@@ -73,7 +75,7 @@ You can validate all the packages by running `npm run validate` from within the 
 
 The creation, validation and publication of packages is controlled via the [Frontend Package Manager](https://github.com/springernature/frontend-package-manager).
 
-The `README` for that repository provides information on the package creation wizard, which can be run with `npm run create`, as well as detailing additional options for package validation, as well how packages are [automatically published via Travis](#publishing).
+The `README` for that repository provides information on the package creation wizard, which can be run with `npm run create`, as well as detailing additional options for package validation, as well how packages are [automatically published via GitHub Actions](#publishing).
 
 ### Package structure
 
@@ -241,11 +243,11 @@ Javascript linting is enforced using the [Springer Nature Eslint config](https:/
 
 ## Continuous integration
 
-This repository uses [Travis CI](https://travis-ci.com/) and builds are run on all Pull Requests. On each build Travis will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
+This repository uses GitHub Actions and builds are run on all Pull Requests. On each build GitHub will boostrap all of the package dependencies using `Lerna Boostrap`, before running linting and all tests.
 
 ### Publishing
 
-To publish a new package please follow the [contributing guidelines](CONTRIBUTING.md). Publishing to NPM is done automatically on Travis, which detects a new version in a packages `package.json` file, and a corresponding entry in the `HISTORY.md` file.
+To publish a new package please follow the [contributing guidelines](CONTRIBUTING.md). Publishing to NPM is done automatically via GitHub Actions, which detects a new version in a packages `package.json` file, and a corresponding entry in the `HISTORY.md` file.
 
 ## License
 
@@ -255,9 +257,8 @@ Copyright &copy; 2020, Springer Nature
 
 [info-license]: LICENCE
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
-[info-build]: https://travis-ci.com/springernature/frontend-toolkits
-[badge-build]: https://badgen.net/travis/springernature/frontend-toolkits?icon=travis
+[badge-build]: https://github.com/springernature/frontend-toolkits/actions/workflows/build.yml/badge.svg
 [info-node]: .nvmrc
-[badge-node]: https://img.shields.io/badge/node--lts-%3E%3D%2014.19.1-brightgreen
+[badge-node]: https://img.shields.io/badge/node--lts-%3E%3D%2018.x-brightgreen
 [info-sass]: #using-the-correct-sass-version
 [badge-sass]: https://img.shields.io/badge/SASS-1.47.0-green.svg

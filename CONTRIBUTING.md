@@ -36,7 +36,7 @@ To publish a new version of a package, or to publish a new package:
 1. Version commits _should_ be managed as part of your package update PR in most cases
 2. Increment either the major, minor, or patch version in the relevant `package.json`. If you're unsure which, have a chat about it or re-read the semver docs
     * Development versions of a package should start at version `0.1.0` as per the [semver documentation](https://semver.org/#spec-item-4)
-3. Add an entry to the relevant `HISTORY.md` file outlining the changes in the new version. Take your time, this log should be useful to developers – it should help them make decisions about whether they can upgrade. If this file is not updated then travis will fail the build.
+3. Add an entry to the relevant `HISTORY.md` file outlining the changes in the new version. Take your time, this log should be useful to developers – it should help them make decisions about whether they can upgrade. If this file is not updated then GitHub Actions will fail the build.
 4. (Make sure you only publish one package at a time)
 6. Code review your pull request and merge
 7. The build system will automatically publish your new version based on the `package.json` version
