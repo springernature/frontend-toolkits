@@ -38,7 +38,7 @@ jobs:
         with:
           since_last_remote_commit: true 
 
-      - name: Save changed files to environment variable
+      - name: Save changed files to env
         run: |
           csv=""
           for result in ${{ steps.changed_files.outputs.all_changed_files }}; do
