@@ -43,7 +43,7 @@ jobs:
         # run: |
         #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
       - name: Run build (test, validate)
-        run: echo ${{ steps.version.outputs.CHANGED_FILES }}
+        run: echo ${{ steps.changes.outputs.CHANGED_FILES }}
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
