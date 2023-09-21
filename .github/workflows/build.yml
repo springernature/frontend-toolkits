@@ -42,7 +42,7 @@ jobs:
       - name: Get changeset
         run: |
           echo "CHANGED_FILES<<EOF" >> $GITHUB_ENV
-          echo $CHANGED_FILES_LIST >> $GITHUB_ENV
+          $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}) >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
       - name: Test1
         run: echo $CHANGED_FILES
