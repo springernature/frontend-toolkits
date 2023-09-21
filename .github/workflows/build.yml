@@ -50,13 +50,16 @@ jobs:
 
       - name: List all changed files
         run: |
-          for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
-            echo "$file was changed"
+          csv=""
+          for result in ${{ steps.changed_files.outputs.all_changed_files }}; do
+            file="$result"
+            csv="${csv}${csv:+,}$file"
           done
+          echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
-      - name: push to env
-        run: |
-           echo "CHANGED_FILES=${{ steps.changed_files.outputs.all_changed_files }}" >> $GITHUB_ENV
+    #   - name: push to env
+    #     run: |
+    #        echo "CHANGED_FILES=${{ steps.changed_files.outputs.all_changed_files }}" >> $GITHUB_ENV
 
     #   - name: Get changeset
     #     run: |
