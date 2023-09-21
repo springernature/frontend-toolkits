@@ -1,5 +1,3 @@
-[!WARNING] This is a warning about newer version of Elements 9
-
 # Frontend Toolkits
 
 [![Build Status][badge-build]][info-build]
