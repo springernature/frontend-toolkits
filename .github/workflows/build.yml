@@ -42,8 +42,8 @@ jobs:
           # CHANGED_FILES: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
         run: |
           echo "CHANGED_FILES=$(git diff --name-only $COMMIT_RANGE)" >> $GITHUB_ENV
-        run: echo $CHANGED_FILES
-        run: echo env
+          echo $CHANGED_FILES
+          echo env
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
