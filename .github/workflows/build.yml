@@ -32,19 +32,18 @@ jobs:
           path: ~/.npm
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
-      - name: Checkout repository get changed files
+      # - name: Checkout repository get changed files
+      - name: Run build (test, validate)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-        # run: |
-        #   echo "CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)" >> $GITHUB_ENV
-        # run: |
-        #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
-      - name: Run build (test, validate)
         env:
           COMMIT_RANGE: ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
-          CHANGED_FILES: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
+          # CHANGED_FILES: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
+        run: |
+          echo "CHANGED_FILES=$(git diff --name-only $COMMIT_RANGE)" >> $GITHUB_ENV
         run: echo $CHANGED_FILES
+        run: echo env
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
@@ -61,6 +60,9 @@ jobs:
       - name: Publish Package(s)
         run: 'npm run publish'
       
+
+# run: |
+        #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
 
 # from travis
 #      - run: >-
