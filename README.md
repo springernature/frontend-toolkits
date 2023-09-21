@@ -7,7 +7,8 @@
 
 > Frontend Component Toolkits for the Elements Design System
 
-[!IMPORTANT] There is a newer version of the [Elements Design System](https://github.com/springernature/elements/tree/main). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
+> [!IMPORTANT] 
+> There is a newer version of the [Elements Design System](https://github.com/springernature/elements/tree/main). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
 
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
