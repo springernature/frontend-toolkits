@@ -1,5 +1,5 @@
 # Frontend Toolkits
-2
+
 [![Build Status][badge-build]][info-build]
 [![MIT licensed][badge-license]][info-license]
 [![Node version][badge-node]][info-node]
