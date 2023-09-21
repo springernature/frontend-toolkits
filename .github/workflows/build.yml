@@ -38,15 +38,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-        # env:
+        env:
         #   COMMIT_RANGE: ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}
-        #   CHANGED_FILES_LIST: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
+          CHANGED_FILES_LIST: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
 
       - name: Get changeset
         run: |
           echo 'CHANGED_FILES<<EOF' >> $GITHUB_ENV
-          sed -e '$a\' $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}) >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
+        #   sed -e '$a\' $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}) >> $GITHUB_ENV
+		  echo sed -e '$a\' $CHANGED_FILES_LIST >> $GITHUB_ENV
+		  echo 'EOF' >> $GITHUB_ENV
 
       - name: Test1
         run: echo $CHANGED_FILES
