@@ -47,8 +47,8 @@ jobs:
         run: echo $CHANGED_FILES
       - name: Test2
         run: echo $CHANGED_FILES2
-      - name: Test3
-        run: env
+    #   - name: Test3
+    #     run: env
       # - name: Run build (test, validate)
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
