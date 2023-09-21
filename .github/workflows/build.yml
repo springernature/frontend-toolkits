@@ -48,7 +48,7 @@ jobs:
           echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
       - name: Test1
-        run: echo env
+        run: env
     #   - name: Test2
     #     run: echo env.CHANGED_FILES
 
