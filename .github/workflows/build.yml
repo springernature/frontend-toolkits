@@ -43,7 +43,7 @@ jobs:
           csv=""
           for result in ${{ steps.changed_files.outputs.all_changed_files }}; do
             file="$result"
-            csv="${csv}${csv:+\n}$file"
+            csv="${csv}${csv:+,}$file"
           done
           echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
