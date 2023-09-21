@@ -41,11 +41,11 @@ jobs:
           # CHANGED_FILES: $(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})
       - name: Get changeset
         run: |
-          echo "CHANGED_FILES=$(git diff --name-only $COMMIT_RANGE)" >> $GITHUB_ENV
+          echo "CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }})" >> $GITHUB_ENV
       - name: Test1
         run: echo $CHANGED_FILES
       - name: Test2
-        run: echo env
+        run: env
       # - name: Run build (test, validate)
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
