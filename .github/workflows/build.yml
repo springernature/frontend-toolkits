@@ -32,8 +32,7 @@ jobs:
           path: ~/.npm
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
-      - name: Checkout repository for code diffing
-      # - name: Get changed files
+      - name: Checkout repository get changed files
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -45,7 +44,7 @@ jobs:
         # run: |
         #   echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
       - name: Run build (test, validate)
-        run: echo "${{ env.CHANGED_FILES }}"
+        run: echo "${{ env }}"
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
   publish:
