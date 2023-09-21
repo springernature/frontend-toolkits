@@ -1,0 +1,61 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: '${{ matrix.os }}'
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+        node-version:
+          - 18.x
+    steps:
+      - name: 'Set up Node.js ${{ matrix.node-version }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node-version }}'
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v1-npm-deps-
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files list
+        id: changed_files
+        uses: tj-actions/changed-files@v39
+        with:
+          since_last_remote_commit: true 
+
+      - name: Export changed files to env
+        run: |
+          csv=""
+          for result in ${{ steps.changed_files.outputs.all_changed_files }}; do
+            file="$result"
+            csv="${csv}${csv:+,}$file"
+          done
+          echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
+
+      - name: Export npm token to env
+        run: echo "NPM_TOKEN=${{ secrets.NPM_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Install dependencies
+        run: 'npm ci'
+
+      - name: Run build (lint, test, validate)
+        run: 'npm run bootstrap && npm run build:ci'
+
+      - name: Publish Package(s)
+        if: github.ref == 'refs/heads/main'
+        run: 'npm run publish'
