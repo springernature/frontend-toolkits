@@ -47,10 +47,10 @@ jobs:
           done
           echo "CHANGED_FILES=$csv" >> $GITHUB_ENV
 
-      - name: Install dependencies via npm ci
+      - name: Install dependencies
         run: 'npm ci'
 
-      - name: Run build (test, validate)
+      - name: Run build (lint, test, validate)
         run: 'npm run bootstrap && npm run build:ci'
 
       - name: Publish Package(s)
