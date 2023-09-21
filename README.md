@@ -1,3 +1,6 @@
+> [!IMPORTANT] 
+> There is a newer version of the [Elements Design System](https://github.com/springernature/elements/). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
+
 # Frontend Toolkits
 
 ![Build Status][badge-build]
@@ -6,9 +9,6 @@
 [![SASS version][badge-sass]][info-sass]
 
 > Frontend Component Toolkits for the Elements Design System
-
-> [!IMPORTANT] 
-> There is a newer version of the [Elements Design System](https://github.com/springernature/elements/tree/main). Please make sure you are using the correct one. If you are unsure please speak to the Design System Team
 
 * [Installation](#installation)
 	* [Using the correct `node` & `npm` versions](#using-the-correct-node--npm-versions)
