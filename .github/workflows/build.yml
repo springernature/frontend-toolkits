@@ -43,9 +43,9 @@ jobs:
         run: |
           echo "CHANGED_FILES=$(git diff --name-only $COMMIT_RANGE)" >> $GITHUB_ENV
       - name: Test1
-          run: echo $CHANGED_FILES
+        run: echo $CHANGED_FILES
       - name: Test2
-          run: echo env
+        run: echo env
       # - name: Run build (test, validate)
         # run: 'npm ci'
         # run: 'npm run bootstrap && npm run build:ci'
