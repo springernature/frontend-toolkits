@@ -1,5 +1,8 @@
 # History
 
+## 1.3.0 (2024-11-10)
+    * Appends userJourneys and additionalInfo parameters to the generated survey URL if available.
+
 ## 1.0.3 (2023-09-18)
     * Fixes issue with visually hidden elements causing an overflow due to absolute positioning.
 
@@ -14,14 +17,14 @@
     * BREAKING
         * Brings component up to date with v32.0.0 of Brand Context
             * Note: Please ensure your application also uses v32.0.0 of Brand Context
-        * Removes dependency on Global Forms component. 
+        * Removes dependency on Global Forms component.
             * Note: Please uninstall Global Forms if you do not use elsewhere in your application.
             * Note: The data model needed for this component has been greatly simplified. Please consider updating your application view model where needed.
-        * Introduces new data field: id. 
+        * Introduces new data field: id.
             * Note: Please refer to docs for more info. Please consider updating your application view model if needed.
-        * Removes CSAT component design tokens. 
+        * Removes CSAT component design tokens.
             * Note: Please update your import path from "00-tokens/default.tokens.scss" to "10-settings/default.scss"
-        * Major refactor of component's HTML and Sass. 
+        * Major refactor of component's HTML and Sass.
             * Note: If you do not consume the HTML directly from the installed package please update the HTML in your application.
         * New functionality: now appends responseRating URL param to survey question link href. Refer to the docs for more info.
 
