@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "license": "MIT",
   "description": "HTML form based component for gathering customer satisfaction data",
-  "keywords": ["survey"],
+  "keywords": ["survey", "customer"],
   "author": "Springer Nature",
   "brandContext": "^32.0.0"
 }
