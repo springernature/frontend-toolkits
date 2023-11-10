@@ -2,8 +2,11 @@
 import {customerSatisfactionInput} from '../js/index.js';
 import * as qs from 'querystring';
 
+const additionalInfo = 'some additional info';
+const userJourneys = 'get prepared to publish';
+
 const fixture = `
-<aside class="u-hide u-js-show" data-customer-satisfaction-input="" data-customer-satisfaction-input-user-journeys="get prepared to publish">
+<aside class="u-hide u-js-show" data-customer-satisfaction-input="" data-customer-satisfaction-input-additional-info="${additionalInfo}" data-customer-satisfaction-input-user-journeys="${userJourneys}">
 	<form>
 		<fieldset>
 			<div>
@@ -114,42 +117,42 @@ describe('Global Customer Satisfaction Input', () => {
 		button.click();
 		const expectedValue =
 			[{
-				additionalInfo: null,
+				additionalInfo,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'get prepared to publish'
+				userJourneys
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should trim and lowercase user journey values before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.customerSatisfactionInputUserJourneys = ' GET PREPARED TO PUBLISH ';
+		aside.dataset.customerSatisfactionInputUserJourneys = ` ${userJourneys.toUpperCase()} `;
 		customerSatisfactionInput();
 		label.click();
 		button.click();
 		const expectedValue =
 			[{
-				additionalInfo: null,
+				additionalInfo,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'get prepared to publish'
+				userJourneys
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
 
 	test('Should process comma separated user journey values correctly before dispatching them in a dataLayer event', () => {
 		expect(window.dataLayer).toEqual([]);
-		aside.dataset.customerSatisfactionInputUserJourneys = 'get prepared to publish, get published';
+		aside.dataset.customerSatisfactionInputUserJourneys = `${userJourneys}, get published`;
 		customerSatisfactionInput();
 		label.click();
 		button.click();
 		const expectedValue =
 			[{
-				additionalInfo: null,
+				additionalInfo,
 				event: 'survey.track',
 				radioValue: '1',
-				userJourneys: 'get prepared to publish,get published'
+				userJourneys: `${userJourneys},get published`
 			}];
 		expect(window.dataLayer).toEqual(expectedValue);
 	});
@@ -161,7 +164,7 @@ describe('Global Customer Satisfaction Input', () => {
 		customerSatisfactionInput();
 		label.click();
 		button.click();
-		expect(console.error).toBeCalledTimes(1);
+		expect(console.error).toBeCalledTimes(2);
 		expect(console.error).toBeCalledWith('Attempt to send Global Customer Satisfaction Input event failed. Value not found for User Journeys.');
 		// Also asserting that, from the user's perspective, it fails silently
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
@@ -175,7 +178,7 @@ describe('Global Customer Satisfaction Input', () => {
 		customerSatisfactionInput();
 		label.click();
 		button.click();
-		expect(console.error).toBeCalledTimes(1);
+		expect(console.error).toBeCalledTimes(2);
 		expect(console.error).toBeCalledWith('Attempt to send Global Customer Satisfaction Input event failed. One or more of the user journeys provided are not permissible values.');
 		// Also asserting that, from the user's perspective, it fails silently
 		expect(fieldset.classList.contains('u-hide')).toBe(true);
@@ -198,18 +201,37 @@ describe('Global Customer Satisfaction Input', () => {
 
 	test('Should get the current location and add it as a query parameter to the survey link', () => {
 		expect(surveyLink.href === 'https://www.surveymonkey.com/1').toBe(true);
-		window.location.href = 'http://localhost/?shafkjsahfh'
+		const location = 'http://localhost/';
+		window.location.href = `${location}?shafkjsahfh`;
 		customerSatisfactionInput();
-		expect(surveyLink.href).toEqual('https://www.surveymonkey.com/1?location=http://localhost/');
+		const url = new URL(surveyLink.href);
+		expect(url.searchParams.get('location')).toEqual(location);
 	})
 
-	test('Should get the selected and add it as a query parameter to the survey link', () => {
+	test('Should get the selected rating and add it as a query parameter to the survey link', () => {
 		const rating = 3
 		customerSatisfactionInput();
 
 		clickOnRating(rating)
 		button.click();
 		expect(surveyLink.href).toContain(`responseRating=${rating}`);
+	})
+
+
+	test('Should get the additional info and add it as a query parameter to the survey link', () => {
+		customerSatisfactionInput();
+		label.click();
+		button.click();
+		const url = new URL(surveyLink.href);
+		expect(url.searchParams.get('additionalInfo')).toEqual(additionalInfo);
+	})
+
+	test('Should get the user journeys and add it as a query parameter to the survey link', () => {
+		customerSatisfactionInput();
+		label.click();
+		button.click();
+		const url = new URL(surveyLink.href);
+		expect(url.searchParams.get('userJourneys')).toEqual(userJourneys);
 	})
 
 	function clickOnRating(rating) {
