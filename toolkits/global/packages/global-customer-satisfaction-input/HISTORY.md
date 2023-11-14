@@ -1,7 +1,7 @@
 # History
 
 ## 1.1.0 (2024-11-10)
-    * Appends userJourneys and additionalInfo parameters to the generated survey URL if available
+    * Appends "userJourneys" and "additionalInfo" parameters to the generated survey URL if not empty
 
 ## 1.0.3 (2023-09-18)
     * Fixes issue with visually hidden elements causing an overflow due to absolute positioning.
