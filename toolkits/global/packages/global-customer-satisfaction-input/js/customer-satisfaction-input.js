@@ -137,7 +137,6 @@ class CustomerSatisfactionInput {
 
 		const eventTypes = ['click', 'keydown'];
 
-		// ['click', 'keydown'].forEach((eventType) => {
 		for (const eventType of eventTypes) {
 			this._submitButton.addEventListener(eventType, event => {
 				if (/Enter|Space/.test(event.key) || event.type === 'click') {
