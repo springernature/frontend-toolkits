@@ -1,6 +1,6 @@
 # History
 
-## 1.3.0 (2024-11-10)
+## 1.1.0 (2024-11-10)
     * Appends userJourneys and additionalInfo parameters to the generated survey URL if available
 
 ## 1.0.3 (2023-09-18)
