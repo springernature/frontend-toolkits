@@ -1,0 +1,13 @@
+<div class="c-segmented-controls{{#modifierClass}} {{.}}{{/modifierClass}}" data-test="segmented-controls" data-segmented-controls>
+	<fieldset>
+		<legend class="c-segmented-controls__legend">
+			<span>{{legend}}</span>
+		</legend>
+		{{#options}}
+			<div class="c-segmented-controls__radio">
+				<input type="radio" name="{{../name}}" value="{{value}}" id="{{id}}" {{#checked}}checked{{/checked}}>
+				<label for="{{id}}">{{label}}</label>
+			</div>
+		{{/options}}
+	</fieldset>
+</div>

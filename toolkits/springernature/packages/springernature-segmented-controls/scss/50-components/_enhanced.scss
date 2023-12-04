@@ -1,0 +1,113 @@
+$segmented-controls--border-radius: 4px;
+$segmented-controls--container-background-color: $context--grey-blue-light1;
+$segmented-controls--container-border-color: map-get($context--colors, 'grey-mid1');
+
+$segmented-controls--container-border-width-style: 1px solid;
+$segmented-controls--container-padding: spacing(4) spacing(2);
+$segmented-controls--label-margin: spacing(0) spacing(2);
+$segmented-controls--label-padding: spacing(2) spacing(16);
+$segmented-controls--label-border-width: spacing(4);
+
+$segmented-controls--default-label: (
+	'color': map-get($context--colors, 'grey-dark2'),
+	'borderColor': transparent,
+	'boxShadow': 0 0 0 1px transparent,
+	'checkedColor': map-get($context--colors, 'white'),
+	'checkedBackgroundColor': $context--universal-blue,
+	'checkedBoxShadow': 0 0 0 1px $context--universal-blue,
+	'hoverColor': $context--universal-blue,
+	'hoverBackgroundColor': map-get($context--colors, 'white'),
+	'hoverBoxShadow': 0 0 0 1px $context--universal-blue,
+	'focusBorderColor': $context--focus-color,
+	'focusBoxShadow': none
+);
+
+$segmented-controls--secondary-label: (
+	'color': map-get($context--colors, 'grey-dark2'),
+	'borderColor': transparent,
+	'boxShadow': 0 0 0 1px transparent,
+	'checkedColor': $context--universal-blue,
+	'checkedBackgroundColor': map-get($context--colors, 'white'),
+	'checkedBoxShadow': 0 0 0 1px $context--universal-blue,
+	'hoverColor': map-get($context--colors, 'white'),
+	'hoverBackgroundColor': $context--universal-blue,
+	'hoverBoxShadow': 0 0 0 1px transparent,
+	'focusBorderColor': $context--focus-color,
+	'focusBoxShadow': none
+);
+
+@mixin segmented-controls-base {
+	display: inline-flex;
+	border: $segmented-controls--container-border-width-style $segmented-controls--container-border-color;
+	border-radius: $segmented-controls--border-radius;
+	padding: $segmented-controls--container-padding;
+	background-color: $segmented-controls--container-background-color;
+	font-family: $context--font-family-sans;
+
+	fieldset {
+		padding: 0;
+		border: 0;
+		display: inline-flex;
+	}
+
+	legend,
+	input {
+		@include u-visually-hidden;
+	}
+
+	label {
+		float: left;
+		display: block;
+		margin: $segmented-controls--label-margin;
+		border-radius: $segmented-controls--border-radius;
+		border-width: $segmented-controls--label-border-width;
+		border-style: solid;
+		padding: $segmented-controls--label-padding;
+		line-height: 1.5;
+	}
+
+	input + label:hover {
+		cursor: pointer;
+	}
+}
+
+@mixin segmented-controls-theme($theme) {
+	label {
+		color: map-get($theme, 'color');
+		border-color: map-get($theme, 'borderColor');
+		box-shadow: map-get($theme, 'boxShadow');
+	}
+
+	input:checked + label {
+		background-color: map-get($theme, 'checkedBackgroundColor');
+		color: map-get($theme, 'checkedColor');
+		box-shadow: map-get($theme, 'checkedBoxShadow');
+	}
+
+	input + label:hover {
+		color: map-get($theme, 'hoverColor');
+		background-color: map-get($theme, 'hoverBackgroundColor');
+		box-shadow: map-get($theme, 'hoverBoxShadow');
+	}
+
+	input:focus + label {
+		border-color: map-get($theme, 'focusBorderColor');
+		box-shadow: map-get($theme, 'focusBoxShadow');
+	}
+}
+
+@mixin segmented-control($theme: false) {
+	@include segmented-controls-base;
+
+	@if $theme {
+		@include segmented-controls-theme($theme);
+	}
+}
+
+.c-segmented-controls {
+	@include segmented-control($segmented-controls--default-label);
+}
+
+.c-segmented-controls--secondary {
+	@include segmented-control($segmented-controls--secondary-label);
+}
