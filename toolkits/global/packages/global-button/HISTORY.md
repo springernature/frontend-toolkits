@@ -1,5 +1,8 @@
 # History
 
+## 1.0.1 (2023-01-19)
+	* PATCH: Publish version without NPX command
+
 ## 1.0.0 (2020-05-22)
 	* BREAKING: Switch to use new `brand-context` dependency
 	* BREAKING: Add branding for default, springer, nature
