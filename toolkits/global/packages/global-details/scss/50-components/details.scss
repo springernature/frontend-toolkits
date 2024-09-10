@@ -59,7 +59,7 @@
 
 /* ↓ Complex selector necessary to ensure
 nested icons are not rotated */
-.c-details > [open] > summary > div > .u-icon {
+.c-details > [open] > summary > .u-icon {
 	transform: rotate(90deg);
 }
 

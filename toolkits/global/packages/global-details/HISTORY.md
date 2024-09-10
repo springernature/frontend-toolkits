@@ -1,5 +1,8 @@
 # History
 
+## 2.0.1 (2024-09-10)
+    * Use a span inside the summary rather than div
+
 ## 2.0.0 (2023-05-17)
     * BREAKING: Removes use of $tokens--typography-block-spacing-medium in springer settings and replaces with 1.5em
     * BREAKING: Upgrade to brand-context v32.0.0 - the version that removes block-spacing styling
