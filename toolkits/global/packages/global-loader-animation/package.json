@@ -5,5 +5,6 @@
   "description": "Loader animation to show when making requests",
   "keywords": [],
   "author": "Springernature",
-  "brandContext": "^31.0.1"
+  "brandContext": "^31.0.1",
+  "type": "module"
 }
