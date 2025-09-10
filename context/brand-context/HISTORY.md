@@ -1,5 +1,8 @@
 # History
 
+## 32.0.1 (2025-09-10)
+    * FIX: Use WCAG compliant focus color for Nature brand.
+
 ## 32.0.0 (2023-05-16)
     * BREAKING: Removes block-spacing styles from frontend-toolkits.
 
