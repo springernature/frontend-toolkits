@@ -1,5 +1,8 @@
 # History
 
+## 3.1.0 (2025-09-22)
+    * Add nature setting for pagination to override selected background color
+
 ## 3.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 
