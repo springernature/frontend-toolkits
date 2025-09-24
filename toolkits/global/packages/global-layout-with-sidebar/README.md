@@ -51,7 +51,17 @@ Somewhat unconventional, but the component can take it!
 
 ### Custom settings
 
-The `global-layout-with-sidebar` component’s settings are mapped to CSS custom properties, meaning you can alter them inline.
+The `global-layout-with-sidebar` component’s settings are mapped to CSS custom properties which can be modified within your stylesheet. For example:
+
+```css
+.eds-c-summary {
+  // this will target the css custom property for the sidebar, and any child elements (because of the Cascade).
+  --with-sidebar--basis: 34rem;
+}
+
+```
+You can also change --with-sidebar--gap if needed too.
+
 
 In the following example, the `gap` between the columns is `2em`, the 1-column layout is triggered when the main content goes under `66.666%`, and the sidebar is `300px` wide in the 2-column layout.
 
