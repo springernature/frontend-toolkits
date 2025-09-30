@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 (2025-09-30)
+    * removes focus on component to inherit focus from page
+
 ## 2.0.1 (2023-05-30)
     * update compoent documentation and examples 
 

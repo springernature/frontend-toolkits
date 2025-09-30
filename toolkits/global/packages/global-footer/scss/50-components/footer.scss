@@ -33,10 +33,6 @@
 	@include u-link-inherit;
 	white-space: nowrap;
 
-	&:focus {
-		outline: spacing(4) solid #fc0;
-	}
-
 	> img {
 		vertical-align: middle;
 	}
