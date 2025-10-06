@@ -132,10 +132,6 @@
 	gap: spacing(4);
 	white-space: nowrap;
 
-	::first-letter {
-		text-transform: capitalize;
-	}
-
 	svg {
 		transition-duration: 0.2s;
 	}
@@ -147,6 +143,15 @@
 	@include media-query('sm') {
 		display: inline;
 		visibility: visible;
+	}
+}
+
+.c-header__show-text-sm {
+	display: inline;
+	visibility: visible;
+
+	@include media-query('sm') {
+		@include u-hide;
 	}
 }
 
