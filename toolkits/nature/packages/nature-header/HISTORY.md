@@ -1,5 +1,8 @@
 # History
 
+## 11.0.1 (2025-10-06)
+    * Fix mangeled text for Navigation item "Explore content/Content" in Safari. Toggle between two text spans and no longer using :first-letter.
+
 ## 11.0.0 (2023-01-18)
     * BREAKING: Upgrade to brand-context v31.0.1
 
