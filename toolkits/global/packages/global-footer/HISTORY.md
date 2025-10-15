@@ -1,5 +1,10 @@
 # History
 
+## 2.0.3 (2025-10-15)
+    * prevent horizontal scroll
+        * allow manage cookie button to wrap
+        * overflow hidden on container 
+
 ## 2.0.2 (2025-09-30)
     * removes focus on component to inherit focus from page
 
