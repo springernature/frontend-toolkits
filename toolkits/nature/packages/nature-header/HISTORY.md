@@ -1,5 +1,8 @@
 # History
 
+## 11.0.2 (2025-10-15)
+    * Adjust margin on element to avoid horizontal scroll
+
 ## 11.0.1 (2025-10-06)
     * Fix mangeled text for Navigation item "Explore content/Content" in Safari. Toggle between two text spans and no longer using :first-letter.
 
