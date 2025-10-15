@@ -5,6 +5,7 @@
 	padding-bottom: $footer--padding-bottom;
 	color: $footer--text-color;
 	line-height: $footer--line-height;
+	overflow: hidden;
 }
 
 .c-footer__container {
@@ -44,6 +45,8 @@ button.c-footer__link {
 	padding: 0;
 	background: none;
 	font-family: $footer--font-family;
+	text-align: left;
+	white-space: normal;
 }
 
 .c-footer__list {
