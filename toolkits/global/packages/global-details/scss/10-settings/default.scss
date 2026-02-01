@@ -1,3 +1,5 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 $details--padding: spacing(16);
 $details--content-padding: spacing(16) 0 0 0;
 $details--icon-margin: spacing(8);

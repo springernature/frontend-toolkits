@@ -5,8 +5,8 @@ Show a loading animation for async stuff, like requests etc
 ```scss
 
 // Include this with your other components
-@import '@springernature/global-loader-animation/scss/10-settings/default';
-@import '@springernature/global-loader-animation/scss/50-components/loader';
+@use '@springernature/global-loader-animation/scss/10-settings/default';
+@use '@springernature/global-loader-animation/scss/50-components/loader';
 ```
 
 ### Basic usage

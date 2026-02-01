@@ -1,3 +1,9 @@
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../../context/brand-context/springer/scss/30-mixins/triangle' as *;
+@use '../../../../../../context/brand-context/springer/scss/30-mixins/typography' as *;
+@use '../10-settings/media' as *;
+
 .c-media {
 	display: block;
 

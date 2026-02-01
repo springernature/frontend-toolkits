@@ -1,12 +1,14 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@forward 'default';
+
 /**
  * Meta
  * Springer branding for component
  */
 
-// Default setting
-@import 'default';
-
-$meta--font-size: 1rem;
+$meta--font-size: .875rem;
 $meta--font-family: $context--font-family-sans;
 $meta--color: greyscale(40);
 $meta--keyline-spacing: spacing(8);

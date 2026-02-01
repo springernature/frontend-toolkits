@@ -1,121 +1,125 @@
 # Global status message
 
-Status message lets you add different types of message banners to a page. These can either be always on the page or appear based on certain conditions or events.
+## Branding
 
-## When to use this component
-
-Use a status message when you need to tell the user something that is additional to the main content of the page. 
-
-For example, use a: 
-
-- success status message to tell the user that something they did has been successful
-- warning status message to tell the user something they need to know about the content or service
-- info status message to give the user extra information about the content they are looking at
-- error status message to tell the user that something is not working
-
-## When not to use this component
-
-Do not use an error status message for form validation. Instead, use the validation and error summary from the [global forms component](https://elements.springernature.com/springernature/components/global-forms#validation).
-
-## How it works
-
-Use status messages sparingly. People often miss them and using them frequently will likely make this worse.
-
-### Installation
-
-To use the status message component, enter the following command in your Terminal:
-
-`npm install @springernature/global-status-message`
-
-Then, import the installed component code into your `scss` file:
+The `global-status-message` component uses the `DEFAULT` branding across _all_ of our products.
 
 ```scss
 // Include this with your settings
-@import '@springernature/global-status-message/scss/10-settings/default';
+@use '@springernature/global-status-message/scss/10-settings/default';
 
 // Include this with your other components
-@import '@springernature/global-status-message/scss/50-components/status-message';
+@use '@springernature/global-status-message/scss/50-components/status-message';
 ```
 
-### Message types
+## Usage
 
-Set the style of the message type by adding one of these modifiers.
+#### HTML 
 
-**Warning**
+```html
+<div class="c-status-message">
+    Your text example
+</div>
 
-```json
-"type": "warning"
+<!-- With Icon -->
+<div class="c-status-message">
+    <svg class="c-status-message__icon" width="24" height="24" aria-hidden="true" focusable="false">
+        <use xlink:href="#icon-success"></use>
+    </svg>Your text
+</div>
 ```
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/default.png" />
+</p>
+
+
+### Modifiers
+
+**Boxed** 
+
+Sets a border and padding around the status message.
+
+```html
+<div class="c-status-message c-status-message--boxed">...</div>
+```
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/boxed-default.png" />
+</p>
+
 
 **Success**
 
-```json
-"type": "success"
+```html
+<!-- Default -->
+<div class="c-status-message c-status-message--success">...</div>
 ```
-**Info**
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/success.png" />
+</p>
 
-```json
-"type": "info"
+```html
+<!-- Boxed -->
+<div class="c-status-message c-status-message--success c-status-message--boxed">...</div>
 ```
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/boxed-success.png" />
+</p>
+
+**Warning** 
+
+```html
+<!-- Default -->
+<div class="c-status-message c-status-message--warning">...</div>
+```
+
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/warning.png" />
+</p>
+
+```html
+<!-- Boxed -->
+<div class="c-status-message c-status-message--warning c-status-message--boxed">...</div>
+```
+
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/boxed-warning.png" />
+</p>
+
 **Error**
 
-```json
-"type": "error"
+```html
+<!-- Default -->
+<div class="c-status-message c-status-message--error">...</div>
 ```
-
-To set a border and padding around a status message, use:
-
-```json
-"boxed": "true"
-```
-
-### Live region
-
-If your status message appears or changes based on JavaScript events, then you need to use ARIA live region. This means that screen readers will announce the message when it appears or changes.
-
-```json
-"liveRegion": "true"
-```
-
-#### Status added
-
-Add the live region to the page before the icon and message inside it.
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/error.png" />
+</p>
 
 ```html
-<!-- first add the wrapper -->
-<div class="c-status-message" role="status" aria-live="polite">
-</div>
+<!-- Boxed -->
+<div class="c-status-message c-status-message--error c-status-message--boxed">...</div>
 ```
 
-Add the message and icon to this empty state by populating the `message` and `iconURL` properties in the data.
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/boxed-error.png" />
+</p>
+
+**Info** 
 
 ```html
-<!-- then add the contents -->
-<div class="c-status-message" role="status" aria-live="polite">
-    <svg class="c-status-message__icon" width="24" height="24" role="img" aria-label="warning:" focusable="false">
-        <use xlink:href="path/to/warning.svg#i-warning"></use>
-    </svg>
-	<div class="c-status-message__message" tabindex="-1"{{#if id}} id="{{id}}-message"{{/if}}>
-		A new warning message
-	</div>
-</div>
+<!-- Default -->
+<div class="c-status-message c-status-message--info">...</div>
 ```
 
-#### Status changed
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/info.png" />
+</p>
 
-If you change the message after the page has loaded, a screen reader would announce the new message.
+```html
+<!-- Boxed -->
+<div class="c-status-message c-status-message--info c-status-message--boxed">...</div>
+```
 
-### Focus
-
-Supply an `id` in the data to make the status message focusable programmatically.
-
-Focusing the message ensures it is visible in the viewport and a screen reader will announce it. If it is not appropriate to move focus to the message, rely on the live region for announcement in screen readers.
-
-
-## Template
-
-Find a configurable template in the [status message view folder](https://github.com/springernature/frontend-toolkits/tree/main/toolkits/global/packages/global-status-message/view).
-
-## Help improve this page
-
-If you’ve got a question, idea or suggestion about how to improve this component or guidance, post in the [#ask-elements Slack channel](https://springernature.slack.com/archives/CNBTFLBLP).
+<p>
+    <img width="300" src="https://github.com/springernature/frontend-toolkits/blob/global-status-message/toolkits/global/packages/global-status-message/img/boxed-info.png" />
+</p>

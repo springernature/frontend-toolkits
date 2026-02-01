@@ -1,3 +1,5 @@
+@use '../10-settings/keyframes' as *;
+
 /// Check for a valid keyframe name.
 ///
 /// @parameter {string} $name - the name of the keyframe set

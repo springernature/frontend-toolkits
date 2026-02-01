@@ -6,12 +6,12 @@ To include `global-breadcrumbs` in your application, you need to choose ONE bran
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-breadcrumbs/scss/10-settings/default';
-@import '@springernature/global-breadcrumbs/scss/10-settings/nature';
-@import '@springernature/global-breadcrumbs/scss/10-settings/springernature';
+@use '@springernature/global-breadcrumbs/scss/10-settings/default';
+@use '@springernature/global-breadcrumbs/scss/10-settings/nature';
+@use '@springernature/global-breadcrumbs/scss/10-settings/springernature';
 
 // Include this with your other components
-@import '@springernature/global-breadcrumbs/scss/50-components/breadcrumbs';
+@use '@springernature/global-breadcrumbs/scss/50-components/breadcrumbs';
 ```
 
 ## Usage

@@ -6,11 +6,11 @@ To include `global-pill` in your application, you need to choose **ONE** brand f
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-pill/scss/10-settings/default';
-@import '@springernature/global-pill/scss/10-settings/nature';
+@use '@springernature/global-pill/scss/10-settings/default';
+@use '@springernature/global-pill/scss/10-settings/nature';
 
 // Include this with your other components
-@import '@springernature/global-pill/scss/50-components/pill';
+@use '@springernature/global-pill/scss/50-components/pill';
 ```
 
 ## Modifiers

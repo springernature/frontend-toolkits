@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../10-settings/sort-by' as *;
+
 .c-sort-by {
 	font-size: $sort-by--font-size;
 	line-height: $sort-by--line-height;

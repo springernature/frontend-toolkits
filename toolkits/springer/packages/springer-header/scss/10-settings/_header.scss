@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $header--background-color: #fff;
 $header--padding-y: spacing(16);
 $header--padding-x: 0;

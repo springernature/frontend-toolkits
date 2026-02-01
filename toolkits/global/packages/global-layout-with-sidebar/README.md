@@ -13,8 +13,8 @@ The purpose of the `global-layout-with-sidebar` is to enable responsive 1-2 colu
 The `global-layout-with-sidebar` component can be used in any brand context. You just need to import the component itself:
 
 ```scss
-@import '@springernature/global-layout-with-sidebar/scss/10-settings/default';
-@import '@springernature/global-layout-with-sidebar/scss/50-components/layout-with-sidebar';
+@use '@springernature/global-layout-with-sidebar/scss/10-settings/default';
+@use '@springernature/global-layout-with-sidebar/scss/50-components/layout-with-sidebar';
 ```
 
 ## Usage

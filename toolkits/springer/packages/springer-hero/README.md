@@ -7,8 +7,8 @@ Inspired by Nature’s hero component. Includes a less image-heavy mode for subj
 Import the Sass:
 
 ```scss
-@import '../node_modules/@springernature/springer-hero/scss/10-settings/springer-hero';
-@import '../node_modules/@springernature/springer-hero/scss/50-components/springer-hero';
+@use '../node_modules/@springernature/springer-hero/scss/10-settings/springer-hero';
+@use '../node_modules/@springernature/springer-hero/scss/50-components/springer-hero';
 ```
 
 Then compile the template located in the `./view` folder whenever the component is needed. See `./demo/context.json` for an example of the expected data.

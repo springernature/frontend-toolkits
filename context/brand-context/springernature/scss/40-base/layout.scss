@@ -1,3 +1,7 @@
+@use '../../../default/scss/10-settings/typography' as default-typography;
+@use '../10-settings/colors/default' as *;
+@use '../10-settings/typography' as springernature-typography;
+
 /**
  * Layout
  * Universal layout styles
@@ -6,14 +10,14 @@
 html {
 	height: 100%;
 	overflow-y: scroll;
-	font-size: $context--font-size-default;
+	font-size: default-typography.$context--font-size-default;
 }
 
 body {
 	min-height: 100%;
-	font-size: $context--font-size-base;
-	line-height: $context--line-height-base;
-	color: $context--primary-text-color;
+	font-size: springernature-typography.$context--font-size-base;
+	line-height: springernature-typography.$context--line-height-base;
+	color: springernature-typography.$context--primary-text-color;
 	background: $context--page-background-color;
 	letter-spacing: 0.01em;
 }

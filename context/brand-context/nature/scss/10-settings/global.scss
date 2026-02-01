@@ -3,6 +3,8 @@
  * Main brand settings
  */
 
+@use '../20-functions/colors' as *;
+
 $base-font-size: 16;
 $primary-text-color: greyscale();
 $secondary-text-color: greyscale(25);

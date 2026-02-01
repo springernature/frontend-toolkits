@@ -1,10 +1,10 @@
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * Card
  * Springer branding for component
  */
-
-// Default setting
-@import 'default';
 
 // Springer overrides
 $card--padding-x: 0;

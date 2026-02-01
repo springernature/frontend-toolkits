@@ -7,8 +7,8 @@ The Cluster component is a simple layout primitive for grouping (_clustering_) e
 The `global-layout-cluster` component can be used in any brand context. You just need to import the component itself:
 
 ```scss
-@import '@springernature/global-layout-stack/scss/10-settings/default';
-@import '@springernature/global-layout-stack/scss/50-components/layout-cluster';
+@use '@springernature/global-layout-stack/scss/10-settings/default';
+@use '@springernature/global-layout-stack/scss/50-components/layout-cluster';
 ```
 
 ## Usage

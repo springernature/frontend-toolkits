@@ -1,11 +1,15 @@
+@use '../../../default/scss/30-mixins/hiding' as default-hiding;
+@use '../30-mixins/hiding' as springer-hiding;
+@use '../30-mixins/class-stack' as *;
+
 @include class-stack('u-hide', $less-than: true) {
-	@include u-hide;
+	@include default-hiding.u-hide;
 }
 
 @include class-stack('u-visually-hidden', $less-than: true) {
-	@include u-visually-hidden;
+	@include default-hiding.u-visually-hidden;
 }
 
 .u-visually-hidden-focus {
-	@include visually-hidden-focus;
+	@include springer-hiding.visually-hidden-focus;
 }

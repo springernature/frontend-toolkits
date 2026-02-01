@@ -7,12 +7,12 @@ Publisher level header for Springer products.
 Import and compile the Sass. You need to ensure you are importing some utility stylesheets.
 
 ```scss
-@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/icons.scss';
-@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/buttons.scss';
-@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/flex.scss';
-@import '../node_modules/@springernature/brand-context/default/scss/60-utilities/spacing.scss';
-@import '../node_modules/@springernature/springer-header/scss/10-settings/header';
-@import '../node_modules/@springernature/springer-header/scss/50-components/header';
+@use '../node_modules/@springernature/brand-context/default/scss/60-utilities/icons.scss';
+@use '../node_modules/@springernature/brand-context/default/scss/60-utilities/buttons.scss';
+@use '../node_modules/@springernature/brand-context/default/scss/60-utilities/flex.scss';
+@use '../node_modules/@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+@use '../node_modules/@springernature/springer-header/scss/10-settings/header';
+@use '../node_modules/@springernature/springer-header/scss/50-components/header';
 ```
 
 Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see an example of the expected data.

@@ -1,7 +1,10 @@
+@use '../20-functions/colors' as *;
+
 /**
  * Typography
  * Font settings
  */
+
 
 $context--font-family-serif: 'Merriweather', serif;
 $context--font-family-sans: 'Merriweather Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

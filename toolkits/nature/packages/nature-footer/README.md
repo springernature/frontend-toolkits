@@ -17,13 +17,13 @@ npm install @springernature/nature-footer
 Import the installed component code in your `scss` file:
 
 ```scss
-@import '@springernature/nature-footer/scss/10-settings/footer';
-@import '@springernature/nature-footer/scss/50-components/footer';
+@use '@springernature/nature-footer/scss/10-settings/footer';
+@use '@springernature/nature-footer/scss/50-components/footer';
 
-@import '@springernature/brand-context/default/scss/60-utilities/container.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/icons.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/container.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/icons.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 > **NOTE** The component requires the use of the utility classes shown above

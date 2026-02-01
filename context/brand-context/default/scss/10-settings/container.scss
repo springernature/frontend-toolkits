@@ -1,4 +1,4 @@
-@import "../20-functions/spacing";
+@use "../20-functions/spacing" as *;
 
 $context--container-width: 1280px;
 $context--container-padding: spacing(16);

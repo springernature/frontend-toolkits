@@ -1,3 +1,9 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../../context/brand-context/nature/scss/30-mixins/typography' as *;
+@use '../10-settings/hero' as *;
+
 .c-hero {
 	position: relative;
 	color: $hero--color;
@@ -19,7 +25,7 @@
 }
 
 .c-hero__link {
-	@include u-link-faux-block;
+	@include u-link-faux-block();
 	color: inherit;
 
 	&:hover,
@@ -70,7 +76,7 @@
 }
 
 .c-hero__title {
-	@include u-h1;
+	@include u-h1();
 	margin-bottom: $hero--title-margin;
 
 	@include media-query('md') {

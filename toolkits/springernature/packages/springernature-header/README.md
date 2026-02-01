@@ -37,18 +37,18 @@ Import the core styles into your main stylesheet
 
 ```scss
 // core
-@import '@springernature/brand-context/springernature/scss/core';
+@use '@springernature/brand-context/springernature/scss/core';
 
-@import '@springernature/springernature-header/scss/10-settings/layout';
-@import '@springernature/springernature-header/scss/50-components/core';
+@use '@springernature/springernature-header/scss/10-settings/layout';
+@use '@springernature/springernature-header/scss/50-components/core';
 ```
 
 Import the enhanced settings and styles into your main stylesheet
 
 ```scss
 // enhanced.scss
-@import '@springernature/brand-context/springernature/scss/enhanced';
+@use '@springernature/brand-context/springernature/scss/enhanced';
 
-@import '@springernature/springernature-header/scss/10-settings/layout';
-@import '@springernature/springernature-header/scss/50-components/enhanced';
+@use '@springernature/springernature-header/scss/10-settings/layout';
+@use '@springernature/springernature-header/scss/50-components/enhanced';
 ```

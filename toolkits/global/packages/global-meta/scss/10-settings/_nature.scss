@@ -1,10 +1,11 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@forward 'default';
+
 /**
  * Meta
  * Nature branding for component
  */
-
-// Default setting
-@import 'default';
 
 $meta--font-family: $context--font-family-sans;
 $meta--font-size: $context--font-size-xs;

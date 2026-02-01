@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/icons' as *;
+@use '../10-settings/default' as *;
+
 .c-status-message {
 	display: flex;
 	align-items: center;
@@ -30,14 +34,6 @@
 	@include u-icon($status-message--icon-size, $status-message--icon-size);
 	flex: 0 0 auto;
 	margin-right: $status-message--gutter-icon;
-}
-
-.c-status-message__message :first-child {
-	margin-top: 0;
-}
-
-.c-status-message__message :last-child {
-	margin-top: 0;
 }
 
 .c-status-message__icon--top {

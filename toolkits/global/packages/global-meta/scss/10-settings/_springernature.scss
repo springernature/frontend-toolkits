@@ -1,10 +1,11 @@
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * Meta
  * Springer Nature branding for component
  */
-
-// Default setting
-@import 'default';
 
 $meta--font-size: $context--font-size-md;
 $meta--font-family: $context--font-family-sans;

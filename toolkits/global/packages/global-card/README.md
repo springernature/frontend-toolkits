@@ -10,13 +10,13 @@ First include the styling to be compiled:
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-card/scss/10-settings/default';
-@import '@springernature/global-card/scss/10-settings/nature';
-@import '@springernature/global-card/scss/10-settings/springer';
-@import '@springernature/global-card/scss/10-settings/springernature';
+@use '@springernature/global-card/scss/10-settings/default';
+@use '@springernature/global-card/scss/10-settings/nature';
+@use '@springernature/global-card/scss/10-settings/springer';
+@use '@springernature/global-card/scss/10-settings/springernature';
 
 // Include this with your other components
-@import '@springernature/global-card/scss/50-components/card';
+@use '@springernature/global-card/scss/50-components/card';
 ```
 
 Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see what the data would look like. 

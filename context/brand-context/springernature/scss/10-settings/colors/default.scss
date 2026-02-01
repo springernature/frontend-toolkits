@@ -1,3 +1,5 @@
+@use '../../../../default/scss/10-settings/colors/shared' as default-colors;
+
 /**
  * Colors
  * Maps for color values & greyscale settings
@@ -29,13 +31,21 @@ $context--colors: (
 	'research-orange': #c75301,
 
 	// SN Corporate colours
-	'universal-blue': $context--universal-blue,
-	'grey-blue-light1': $context--grey-blue-light1,
-	'grey-blue-light2': $context--grey-blue-light2
+	'universal-blue': default-colors.$context--universal-blue,
+	'grey-blue-light1': default-colors.$context--grey-blue-light1,
+	'grey-blue-light2': default-colors.$context--grey-blue-light2
 );
 
-$context--page-background-color: color('grey-light1');
-$context--border-color: color('grey-mid1');
-$context--focus-color: color('yellow');
-$context--error-color: color('red');
-$context--success-color: color('green');
+$context--page-background-color: #f8f8f8;
+$context--border-color: #dadada;
+$context--focus-color: #fc0;
+$context--error-color: #c40606;
+$context--success-color: #00a69d;
+
+$context--greyscale-base: black;
+$context--greyscale-min: 0;
+$context--greyscale-max: 100;
+$context--greyscale-stops: 5;
+$context--foreground-dark: black;
+$context--foreground-light: white;
+$context--focus-color: red;

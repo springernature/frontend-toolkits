@@ -5,7 +5,6 @@
 		@if not unitless($number) {
 			@return math.div($number, $number * 0 + 1);
 		}
-		@warn "#{$number} is already unitless, is this function call necessary?";
 		@return $number;
 	}
 	@warn "#{$number} is not a number, returning null.";

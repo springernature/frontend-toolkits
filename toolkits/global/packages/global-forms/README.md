@@ -21,11 +21,11 @@ Then include the necessary Sass files in your project:
 
 ```scss
 // Include this with your other components
-@import '@springernature/global-forms/scss/50-components/forms';
+@use '@springernature/global-forms/scss/50-components/forms';
 
 // Include these with your utilities (if not already there)
-@import '@springernature/brand-context/default/scss/60-utilities/buttons.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/buttons.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 Then you will need to register the handlebars partials in the `/view` folder. There are 2 options for rendering form fields: 

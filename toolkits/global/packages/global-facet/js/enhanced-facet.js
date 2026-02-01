@@ -1,4 +1,5 @@
-import {makeArray, Expander} from '@springernature/brand-context';
+import {makeArray} from '@springernature/global-javascript/src/helpers';
+import {Expander} from '@springernature/global-expander/js/expander';
 
 /**
  * Constants

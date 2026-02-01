@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/style' as *;
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 // Columned list
 $global-list-columned--column-gap: spacing(24);
 $global-list-columned--margin-bottom: 12px;

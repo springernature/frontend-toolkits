@@ -1,10 +1,11 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * @springernature/global-skip-link
  * Springernature skin settings
  */
-
-// Default setting
-@import 'default';
 
 $skip-link--padding-y: spacing(8);
 $skip-link--font-size: 1rem;

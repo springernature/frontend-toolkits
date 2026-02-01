@@ -1,7 +1,10 @@
+@use '../30-mixins/focus' as *;
+
 /**
  * Forms
  * Default form styles
  */
+
 
 fieldset {
 	border: 0;

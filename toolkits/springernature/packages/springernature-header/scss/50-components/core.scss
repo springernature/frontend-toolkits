@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+@use '../10-settings/layout' as *;
+
 .c-header {
 	position: relative;
 	background-color: #fff;

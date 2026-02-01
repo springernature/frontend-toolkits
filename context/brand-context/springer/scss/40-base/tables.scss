@@ -1,3 +1,7 @@
+@use '../../../default/scss/20-functions/spacing' as *;
+@use '../10-settings/typography' as *;
+@use '../20-functions/colors' as *;
+
 table {
 	border: 1px solid greyscale(65);
 	width: 100%;

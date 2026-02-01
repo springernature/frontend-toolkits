@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 $breadcrumbs-font-family: $context--font-family-sans;
 $breadcrumbs-font-size: 1rem;
 $breadcrumbs-color: black;

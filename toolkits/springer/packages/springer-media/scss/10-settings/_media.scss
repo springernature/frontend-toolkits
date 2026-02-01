@@ -1,3 +1,5 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 $media--play-bg: #000;
 $media--play-arrow-color: #fff;
 $media--title-bottom-spacing: spacing(16);

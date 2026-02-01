@@ -1,3 +1,5 @@
+@use '../10-settings/default' as *;
+
 .l-cluster {
 	display: flex;
 	flex-wrap: wrap;

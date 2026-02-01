@@ -22,11 +22,11 @@ npm install @springernature/brand-context@32.0.0
 ### Sass
 Include the necessary Sass files in your project in this order (if they are not already there!):
 ```sass
-@import '@springernature/brand-context/[YOUR BRAND HERE]/scss/core.scss';
-@import '@springernature/brand-context/[YOUR BRAND HERE]/scss/enhanced.scss';
-@import '@springernature/global-customer-satisfaction-input/scss/10-settings/default.scss';
-@import '@springernature/global-customer-satisfaction-input/scss/50-components/customer-satisfaction-input';
-@import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@use '@springernature/brand-context/[YOUR BRAND HERE]/scss/core.scss';
+@use '@springernature/brand-context/[YOUR BRAND HERE]/scss/enhanced.scss';
+@use '@springernature/global-customer-satisfaction-input/scss/10-settings/default.scss';
+@use '@springernature/global-customer-satisfaction-input/scss/50-components/customer-satisfaction-input';
+@use '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
 ```
 
 ### JavaScript

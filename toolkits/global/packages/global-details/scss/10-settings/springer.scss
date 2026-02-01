@@ -1,5 +1,7 @@
-// Default setting
-@import 'default';
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+@forward 'default';
 
 $details--border-color: greyscale(80);
 $details--border-width: 0;

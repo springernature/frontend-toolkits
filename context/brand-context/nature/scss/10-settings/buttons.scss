@@ -4,6 +4,10 @@
  *
  */
 
+@use '../../../default/scss/10-settings/buttons' as default-buttons;
+@use '../20-functions/colors' as *;
+@use '../../../default/scss/20-functions/spacing' as *;
+
 // Button Themes
 // Variables to set themes styles
 
@@ -11,40 +15,40 @@ $context--button-default: (
 	'color': color('blue'),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'border': $context--button-border-width-style color('blue'),
+	'border': default-buttons.$context--button-border-width-style color('blue'),
 	'visitedColor': color('blue'),
 	'hoverColor': white,
-	'hoverBorder': $context--button-border-width-style color('blue'),
+	'hoverBorder': default-buttons.$context--button-border-width-style color('blue'),
 	'hoverBackgroundColor': color('blue'),
 	'hoverBackgroundImage': none,
-	'focusBorder': $context--button-border-width-style color('blue')
+	'focusBorder': default-buttons.$context--button-border-width-style color('blue')
 );
 
 $context--button-primary: (
 	'color': white,
 	'backgroundColor': color('blue'),
 	'backgroundImage': none,
-	'border': $context--button-border-width-style color('blue'),
+	'border': default-buttons.$context--button-border-width-style color('blue'),
 	'visitedColor': white,
 	'hoverColor': color('blue'),
-	'hoverBorder': $context--button-border-width-style color('blue'),
+	'hoverBorder': default-buttons.$context--button-border-width-style color('blue'),
 	'hoverBackgroundColor': white,
 	'hoverBackgroundImage': none,
-	'focusBorder': $context--button-border-width-style color('blue')
+	'focusBorder': default-buttons.$context--button-border-width-style color('blue')
 );
 
 $context--button-disabled: (
 	'color': greyscale(),
 	'backgroundColor': transparent,
 	'backgroundImage': none,
-	'border': $context--button-border-width-style greyscale(80),
+	'border': default-buttons.$context--button-border-width-style greyscale(80),
 	'visitedColor': greyscale(),
 	'opacity': 0.7,
 	'hoverColor': greyscale(),
-	'hoverBorder': $context--button-border-width-style greyscale(80),
+	'hoverBorder': default-buttons.$context--button-border-width-style greyscale(80),
 	'hoverBackgroundColor': transparent,
 	'hoverBackgroundImage': none,
 	'hoverTextDecoration': none,
-	'focusBorder': $context--button-border-width-style greyscale(80),
+	'focusBorder': default-buttons.$context--button-border-width-style greyscale(80),
 	'focusTextDecoration': none
 );

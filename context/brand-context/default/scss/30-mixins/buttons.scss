@@ -1,3 +1,5 @@
+@use '../10-settings/buttons' as *;
+
 // Default button
 
 @mixin button-default {
@@ -7,39 +9,27 @@
 // Button themes
 
 @mixin button-primary {
-	@if variable-exists('context--button-primary') {
-		@include button-theme($context--button-primary);
-	}
+	@include button-theme($context--button-primary);
 }
 
 @mixin button-secondary {
-	@if variable-exists('context--button-secondary') {
-		@include button-theme($context--button-secondary);
-	}
+	@include button-theme($context--button-secondary);
 }
 
 @mixin button-tertiary {
-	@if variable-exists('context--button-tertiary') {
-		@include button-theme($context--button-tertiary);
-	}
+	@include button-theme($context--button-tertiary);
 }
 
 @mixin button-contrast {
-	@if variable-exists('context--button-contrast') {
-		@include button-theme($context--button-contrast);
-	}
+	@include button-theme($context--button-contrast);
 }
 
 @mixin button-ghost {
-	@if variable-exists('context--button-ghost') {
-		@include button-theme($context--button-ghost);
-	}
+	@include button-theme($context--button-ghost);
 }
 
 @mixin button-disabled {
-	@if variable-exists('context--button-disabled') {
-		@include button-theme($context--button-disabled);
-	}
+	@include button-theme($context--button-disabled);
 }
 
 // Button variants

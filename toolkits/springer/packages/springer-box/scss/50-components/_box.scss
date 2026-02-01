@@ -1,3 +1,8 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as default-links;
+@use '../../../../../../context/brand-context/springer/scss/30-mixins/links' as springer-links;
+@use '../10-settings/box' as *;
+
 .c-box {
 	background-color: $box--background-color;
 	border-radius: $box--border-radius;
@@ -27,8 +32,8 @@
 
 .c-box__item {
 	@include u-text-interface;
-	@include unvisited-link;
-	@include u-link-interface;
+	@include springer-links.unvisited-link;
+	@include default-links.u-link-interface;
 	display: block;
 	margin-bottom: $box--margin-bottom;
 }

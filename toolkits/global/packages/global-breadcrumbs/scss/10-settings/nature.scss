@@ -1,3 +1,5 @@
-@import 'default';
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@forward 'default';
 
 $breadcrumbs-link-color: #666;
+$breadcrumbs-chevron-color: $breadcrumbs-link-color;

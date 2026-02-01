@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-details",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "A JS-independent, accessible disclosure component",
   "keywords": [],
-  "brandContext": "^32.0.0",
+  "brandContext": "^31.0.1",
   "author": "SpringerNature"
 }

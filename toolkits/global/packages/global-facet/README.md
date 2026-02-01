@@ -8,12 +8,12 @@ Include the SCSS in your application
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-facet/scss/10-settings/default';
-@import '@springernature/global-facet/scss/10-settings/nature';
+@use '@springernature/global-facet/scss/10-settings/default';
+@use '@springernature/global-facet/scss/10-settings/nature';
 
 // Include this with your other components
-@import '@springernature/global-facet/scss/50-components/facet';
-@import '@springernature/global-facet/scss/50-components/facet-expander';
+@use '@springernature/global-facet/scss/50-components/facet';
+@use '@springernature/global-facet/scss/50-components/facet-expander';
 ```
 
 ## Example usage
@@ -72,8 +72,8 @@ Include the SCSS in your application
 
 ### Enhanced facet
 
-The enhanced facet makes use of [expander](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/js/README.md#expander) 
-and [makeArray](https://github.com/springernature/frontend-toolkits/blob/master/context/brand-context/default/js/README.md##makearray) from the `brand-context`.
+Enhanced facet makes use of [global-expander](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-expander) 
+and [makeArray](https://github.com/springernature/frontend-toolkits/tree/master/toolkits/global/packages/global-javascript#makearray) in global-javascript.
 
 `id` in expander container should match `href` in trigger for enhanced-facet to find and append to facet item.
 

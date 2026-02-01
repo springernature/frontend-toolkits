@@ -1,3 +1,11 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/style' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/typography' as *; // this needs to be default
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../10-settings/dropdown' as *;
+@use '../30-mixins/triangle' as *;
+
 .c-dropdown {
 	position: relative;
 	display: inline-block;

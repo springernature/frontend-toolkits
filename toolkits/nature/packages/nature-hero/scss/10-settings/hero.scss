@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/container' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+
 $hero--color: white;
 $hero--image-min-height: 260px;
 $hero--container-margin-left: -$context--container-padding;

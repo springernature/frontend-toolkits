@@ -1,0 +1,23 @@
+@use '../10-settings/nature' as *;
+
+.c-pill {
+	display: inline-block;
+	padding: $pill--padding;
+	border: 1px solid $pill--color;
+	border-radius: $pill--border-radius;
+	color: $pill--color;
+	background-color: $pill--background-color;
+	font-weight: $pill--font-weight;
+	margin-right: $pill--margin-right;
+	margin-bottom: $pill--margin-bottom;
+}
+
+.c-pill--secondary {
+	color: $pill--secondary-color;
+	border-color: $pill--secondary-color;
+	background-color: $pill--secondary-background-color;
+}
+
+.c-pill--borderless {
+	border: none;
+}

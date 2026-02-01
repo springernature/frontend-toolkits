@@ -1,3 +1,4 @@
-@import '_background.variables.scss';
-@import '_illustration.variables.scss';
-@import '_typography.variables.scss';
+@forward '_background.variables.scss';
+@forward '_illustration.variables.scss';
+@forward '_typography.variables.scss';
+

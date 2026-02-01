@@ -1,3 +1,14 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/container' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/hiding' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/style' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/buttons' as *;
+
 .c-header {
 	background-color: white;
 	border-bottom: 5px solid black;
@@ -175,7 +186,7 @@
 }
 
 .c-header__heading--keyline {
-	@include u-keyline($direction: top);
+	@include u-keyline($direction: top, $spacing: 16);
 	border-color: greyscale(5);
 	width: 100%;
 }

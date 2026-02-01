@@ -1,3 +1,5 @@
+@use '../../../../brand-context/springernature/scss/30-mixins/links' as *;
+
 a {
 	@include base-link;
 }

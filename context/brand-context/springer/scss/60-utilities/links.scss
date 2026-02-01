@@ -1,10 +1,13 @@
+@use '../../../default/scss/30-mixins/links' as default-links;
+@use '../30-mixins/links' as springer-links;
+
 /**
  * Default link style
  *
  */
 
 .u-base-link {
-	@include base-link;
+	@include springer-links.base-link;
 }
 
 /**
@@ -13,7 +16,7 @@
  */
 
 .u-interface-link {
-	@include u-link-interface;
+	@include default-links.u-link-interface;
 }
 
 /**
@@ -22,11 +25,11 @@
  */
 
 .u-gray-link {
-	@include gray-link;
+	@include springer-links.gray-link;
 }
 
 .u-deemphasised-link {
-	@include deemphasised-link;
+	@include springer-links.deemphasised-link;
 }
 
 /**
@@ -36,7 +39,7 @@
  */
 
 .u-unvisited {
-	@include unvisited-link;
+	@include springer-links.unvisited-link;
 }
 
 /**
@@ -46,7 +49,7 @@
  */
 
 .u-link-inherit {
-	@include u-link-inherit;
+	@include default-links.u-link-inherit;
 }
 
 /**
@@ -56,6 +59,6 @@
  */
 
 .u-link-like {
-	@include link-like;
+	@include springer-links.link-like;
 }
 

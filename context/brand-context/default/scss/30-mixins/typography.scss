@@ -1,3 +1,5 @@
+@use '../10-settings/typography' as *;
+
 @mixin u-double-underline {
 	text-decoration: underline;
 	-webkit-text-decoration-skip: skip;

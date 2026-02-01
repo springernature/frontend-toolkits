@@ -1,3 +1,5 @@
+@use '../30-mixins/typography' as *;
+
 /**
  * Typographic
  * Standard text and heading formatting
@@ -14,27 +16,27 @@
  */
 
 h1 {
-	@include u-h1();
+	@extend %u-h1;
 }
 
 h2 {
-	@include u-h2();
+	@extend %u-h2;
 }
 
 h3 {
-	@include u-h3();
+	@extend %u-h3;
 }
 
 h4 {
-	@include u-h4();
+	@extend %u-h4;
 }
 
 h5 {
-	@include u-h4();
+	@extend %u-h4;
 }
 
 h6 {
-	@include u-h4();
+	@extend %u-h4;
 }
 
 p:empty {

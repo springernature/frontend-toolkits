@@ -1,7 +1,13 @@
+@use '../../../default/scss/20-functions/spacing' as *;
+@use '../10-settings/links' as *;
+@use '../10-settings/colors/default' as *;
+@use '../10-settings/typography' as *;
+
 /**
  * Default link style
  *
  */
+
 
 @mixin base-link {
 	color: $context--link-color;

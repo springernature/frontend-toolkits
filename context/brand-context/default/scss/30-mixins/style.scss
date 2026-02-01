@@ -1,3 +1,7 @@
+@use '../10-settings/style' as *;
+@use '../20-functions/spacing' as *;
+@use '../20-functions/strip-unit' as *;
+
 @mixin u-keyline($direction: bottom, $spacing: $context--keyline-spacing, $thickness: 1px) {
 	$valid-directions: (top, right, bottom, left);
 	// strips the units from the $spacing variable

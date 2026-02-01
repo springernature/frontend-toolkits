@@ -1,3 +1,6 @@
+@use '../10-settings/typography' as *;
+@use '../20-functions/colors' as *;
+
 $context--link-color: color('medium-blue');
 $context--link-hover-color: color('universal-blue');
 $context--link-visited-color: color('purple');

@@ -1,3 +1,8 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *; // this need to be default
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+@use '../10-settings/layout' as *;
+
 .c-header__content {
 	position: relative;
 
@@ -17,7 +22,7 @@
 		width: $header__site-logo-width;
 		height: $header__site-logo-height;
 	}
-	
+
 	padding-right: 20px;
 }
 
@@ -66,10 +71,10 @@
 	@include media-query('md') {
 		font-size: 1.375rem;
 	}
-	
+
 	@include media-query('lg') {
 		font-size: 1.6875rem;
 	}
-	
+
 	font-family: $context--font-family-serif;
 }

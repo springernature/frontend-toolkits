@@ -8,13 +8,13 @@ To include `global-meta` in your application, you need to choose **ONE** brand f
 
 ```scss
 // Pick ONE of the brands below to include
-@import '@springernature/global-meta/scss/10-settings/default';
-@import '@springernature/global-meta/scss/10-settings/nature';
-@import '@springernature/global-meta/scss/10-settings/springer';
-@import '@springernature/global-meta/scss/10-settings/springernature';
+@use '@springernature/global-meta/scss/10-settings/default';
+@use '@springernature/global-meta/scss/10-settings/nature';
+@use '@springernature/global-meta/scss/10-settings/springer';
+@use '@springernature/global-meta/scss/10-settings/springernature';
 
 // Include this with your other components
-@import '@springernature/global-meta/scss/50-components/meta';
+@use '@springernature/global-meta/scss/50-components/meta';
 ```
 
 ## Usage

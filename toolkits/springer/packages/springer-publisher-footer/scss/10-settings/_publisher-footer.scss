@@ -1,3 +1,8 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/10-settings/colors/shared' as *;
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $publisher-footer--background-color: $context--universal-blue;
 $publisher-footer--border: 2px solid #fff;
 $publisher-footer--columns-at-narrow: 2;

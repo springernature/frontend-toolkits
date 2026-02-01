@@ -1,3 +1,5 @@
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $hero--background-color: color('corporate');
 $hero--content-padding-inline: 2.25rem;
 $hero--content-padding-block: 2.25rem;

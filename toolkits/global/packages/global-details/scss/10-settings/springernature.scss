@@ -1,5 +1,5 @@
-// Default setting
-@import 'default';
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/colors/default' as *;
+@forward 'default';
 
 $details--icon-size: 1em;
 $details--focus-underline-color: $context--focus-color;

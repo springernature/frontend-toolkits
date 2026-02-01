@@ -46,27 +46,27 @@ Import the styles into your main stylesheet
 
 ```scss
 // core.scss
-@import '@springernature/springernature-submission-header/scss/50-components/core';
+@use '@springernature/springernature-submission-header/scss/50-components/core';
 ```
 
 
 ```scss
 // enhanced.scss
-@import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
-@import '@springernature/springernature-submission-header/scss/10-settings/icons';
-@import '@springernature/springernature-submission-header/scss/10-settings/spacing';
-@import '@springernature/brand-context/default/scss/10-settings/typography';
-@import '@springernature/brand-context/default/scss/10-settings/breakpoints';
+@use '@springernature/brand-context/springernature/scss/10-settings/colors/default';
+@use '@springernature/springernature-submission-header/scss/10-settings/icons';
+@use '@springernature/springernature-submission-header/scss/10-settings/spacing';
+@use '@springernature/brand-context/default/scss/10-settings/typography';
+@use '@springernature/brand-context/default/scss/10-settings/breakpoints';
 
-@import '@springernature/brand-context/default/scss/30-mixins/arrow';
-@import '@springernature/brand-context/springer/scss/30-mixins/links';
-@import '@springernature/brand-context/default/scss/30-mixins/media-query';
+@use '@springernature/brand-context/default/scss/30-mixins/arrow';
+@use '@springernature/brand-context/springer/scss/30-mixins/links';
+@use '@springernature/brand-context/default/scss/30-mixins/media-query';
 
-@import '@springernature/springernature-submission-header/scss/50-components/enhanced';
+@use '@springernature/springernature-submission-header/scss/50-components/enhanced';
 
-@import '@springernature/brand-context/default/scss/60-utilities/display';
-@import '@springernature/brand-context/default/scss/60-utilities/flex';
-@import '@springernature/brand-context/default/scss/60-utilities/hiding';
+@use '@springernature/brand-context/default/scss/60-utilities/display';
+@use '@springernature/brand-context/default/scss/60-utilities/flex';
+@use '@springernature/brand-context/default/scss/60-utilities/hiding';
 
 The component CSS specifies several icons, the email icon, and the warning icon, both of  which can be found in the brand context. The invalid email icon is the email icon with a red fill.
 ```

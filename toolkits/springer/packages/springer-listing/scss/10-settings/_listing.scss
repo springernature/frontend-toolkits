@@ -1,8 +1,10 @@
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $listing--spacing: 1.5em;
 $listing--text-color-light: greyscale(80);
 $listing--image-width: 200px;
 $listing--content-min-width: 60%;
 $listing--content-spacing: 0.75rem;
-$listing--image-border: 1px solid greyscale(80);
+$listing--image-border: 1px solid as greyscale(80);
 $listing--view-options-margin-right: 0.25em;
 $listing--view-options-icon-margin-right: 0.25em;

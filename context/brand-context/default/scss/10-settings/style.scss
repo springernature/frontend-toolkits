@@ -1,10 +1,11 @@
+@use '../20-functions/colors' as *;
+@use '../20-functions/spacing' as *;
+
 /**
  * Style
  * Cosmetic styling settings
  *
  */
-
-@import '../20-functions/colors';
 
 // Keyline
 $context--keyline-spacing: spacing(16);

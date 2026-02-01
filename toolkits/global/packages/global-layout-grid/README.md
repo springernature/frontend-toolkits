@@ -12,8 +12,8 @@ The purpose of `global-layout-grid` is to enable basic grid layouts—suitable f
 The `global-layout-grid` component can be used in any brand context. You just need to import the component itself:
 
 ```scss
-@import '@springernature/global-layout-grid/scss/10-settings/default';
-@import '@springernature/global-layout-grid/scss/50-components/layout-grid';
+@use '@springernature/global-layout-grid/scss/10-settings/default';
+@use '@springernature/global-layout-grid/scss/50-components/layout-grid';
 ```
 
 ## Usage

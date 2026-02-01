@@ -1,11 +1,11 @@
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * @springernature/global-skip-link
  * Springer skin settings
  *
  */
-
-// Default setting
-@import 'default';
 
 $skip-link--font-size: .875rem;
 $skip-link--color: color('action-base');

@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $user-metadata--padding-y: spacing(24);
 $user-metadata--font-size: $context--font-size-sm;
 $user-metadata--font-colour: greyscale(40);

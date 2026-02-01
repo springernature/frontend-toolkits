@@ -1,3 +1,5 @@
+@use '../10-settings/colors/shared' as *;
+
 .u-color-open-access {
 	color: $context--open-access-color;
 }

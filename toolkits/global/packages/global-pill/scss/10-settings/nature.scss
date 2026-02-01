@@ -1,10 +1,12 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/colors/default' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * @springernature/global-pill
  * Nature skin settings
  */
-
-// Default setting
-@import 'default';
 
 $pill--background-color: color('light-blue');
 $pill--color: color('action-base');

@@ -7,8 +7,8 @@ The `global-details` component is for collapsing sections of content and making 
 First, import the `global-details` styles—selecting the brand settings you require.
 
 ```scss
-@import '../node_modules/@springernature/global-details/scss/10-settings/default';
-@import '../node_modules/@springernature/global-details/scss/50-components/details';
+@use '../node_modules/@springernature/global-details/scss/10-settings/default';
+@use '../node_modules/@springernature/global-details/scss/50-components/details';
 ```
 
 Then compile the template located in the `./view` folder whenever the component is needed. See the `./demo/context.json` to see an example of the expected data.

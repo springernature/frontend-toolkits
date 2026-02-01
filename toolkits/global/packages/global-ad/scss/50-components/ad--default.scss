@@ -1,0 +1,93 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../10-settings/default' as *;
+
+.c-ad {
+	text-align: center;
+
+	@include media-query('xs') {
+		padding: $ad--padding;
+	}
+}
+
+.c-ad--728x90,
+.c-ad--970x90 {
+	// Leaderboards
+	display: none;
+	background-color: $ad--leaderboard-bg-color;
+
+	.c-ad__inner {
+		min-height: $ad--leaderboard-ad-inner-min-height;
+	}
+
+	iframe {
+		max-width: 970px;
+		height: $ad--leaderboard-height;
+	}
+}
+
+.js .c-ad--728x90 {
+	@include media-query('md') {
+		display: none;
+	}
+}
+
+.js .u-show-following-ad + .c-ad--728x90 {
+	@include media-query('md') {
+		display: block;
+	}
+}
+
+.c-ad--160x600 {
+	// Skyscraper
+	display: none;
+	padding: 0;
+	text-align: left;
+
+	iframe {
+		width: 160px;
+		height: 600px;
+	}
+}
+
+.js .c-ad--160x600 {
+	@include media-query('md') {
+		display: block;
+	}
+}
+
+.c-ad--300x250 {
+	// MPU
+	display: none;
+	background-color: $ad--mpu-background-color;
+	padding: $ad--mpu-padding;
+
+	iframe {
+		width: 300px;
+		height: $ad--mpu-height;
+	}
+
+	.c-ad__inner {
+		min-height: $ad--mpu-ad-inner-min-height;
+	}
+}
+
+.js .c-ad--300x250 {
+	@include media-query('xs') {
+		display: block;
+	}
+}
+
+.c-ad iframe {
+	border: none;
+	overflow: auto;
+	vertical-align: top;
+}
+
+.c-ad__label {
+	font-size: $ad--font-size;
+	font-family: $ad--font-family;
+	font-weight: $ad--font-weight;
+	margin-bottom: $ad--label-margin-bottom;
+	color: $ad--label-color;
+	line-height: $ad--label-line-height;
+}

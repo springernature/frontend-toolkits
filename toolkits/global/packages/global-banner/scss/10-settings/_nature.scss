@@ -1,10 +1,13 @@
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@forward 'default';
+
 /**
  * @springernature/global-banner
  * Nature skin settings
  */
 
 // Default setting
-@import 'default';
 
 $banner--padding-y: spacing(8);
 $banner--padding-x: spacing(24);

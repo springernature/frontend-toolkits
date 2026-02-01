@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../10-settings/section-heading' as *;
+
 .c-section-heading {
 	border-top: $section-heading--border-top;
 	border-bottom: $section-heading--border-bottom;

@@ -1,3 +1,6 @@
-$sort-by--font-size: $context--font-size-xs;
-$sort-by--line-height: $context--line-height-tight;
-$sort-by--heading-font-weight: $context--font-weight-bold;
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as nature-typo;
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as default-typo;
+
+$sort-by--font-size: nature-typo.$context--font-size-xs;
+$sort-by--line-height: default-typo.$context--line-height-tight;
+$sort-by--heading-font-weight: nature-typo.$context--font-weight-bold;

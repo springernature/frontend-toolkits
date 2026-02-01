@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $box--background-color: white;
 $box--background-color-grey: greyscale(95);
 $box--box-shadow: 0 0 5px 0 greyscale(50, 0.1);

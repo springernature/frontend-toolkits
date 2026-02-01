@@ -228,7 +228,7 @@ The button utility classes are an exception to how utilities usually work, as th
 
 ```scss
 // Include the button utility classes
-@import '@springernature/brand-context/default/scss/60-utilities/buttons';
+@use '@springernature/brand-context/default/scss/60-utilities/buttons';
 ```
 
 #### Basic usage

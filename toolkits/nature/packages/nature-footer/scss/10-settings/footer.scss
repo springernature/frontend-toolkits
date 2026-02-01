@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+
 $footer--background-color: greyscale(5);
 $footer--text-color: greyscale(70);
 $footer--font-size: .875rem;

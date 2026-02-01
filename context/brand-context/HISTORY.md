@@ -151,7 +151,7 @@
     * FEATURE:
       * Introduces Design Tokens as a way to manage and create Sass variables from Design decisions.
     * BREAKING CHANGE:
-      * Adds the relevant `@import` statements to each brands `abstracts.scss` file.
+      * Adds the relevant `@use` statements to each brands `abstracts.scss` file.
 ## 20.1.6 (2022-04-25)
     * Amended h3 and h5 line height to correct rem units for Springer Nature
 

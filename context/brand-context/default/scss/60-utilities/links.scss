@@ -1,3 +1,5 @@
+@use '../30-mixins/links' as *;
+
 .u-link-inherit {
 	@include u-link-inherit();
 }

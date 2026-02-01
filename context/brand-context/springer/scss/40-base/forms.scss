@@ -1,3 +1,6 @@
+@use '../10-settings/typography' as *;
+@use '../20-functions/colors' as *;
+
 button {
 	line-height: inherit; // override the global normalize
 }

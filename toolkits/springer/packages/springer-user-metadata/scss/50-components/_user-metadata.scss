@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/springer/scss/10-settings/typography' as *;
+@use '../10-settings/user-metadata' as *;
+
 .c-user-metadata {
 	font-family: $context--font-family-sans;
 	font-size: $user-metadata--font-size;

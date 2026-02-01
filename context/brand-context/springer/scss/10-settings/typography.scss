@@ -1,4 +1,9 @@
+@use '../../../default/scss/10-settings/typography' as default-typography; // this needs to be namespaced
+
 $context--font-family-serif: Georgia, Palatino, serif;
+$context--font-family-sans: default-typography.$context--font-family-sans;
+$context--font-weight-bold: default-typography.$context--font-weight-bold;
+$context--line-height-tight: default-typography.$context--line-height-tight;
 
 $context--font-size-xxs: .75rem;
 $context--font-size-xs: .875rem;
@@ -21,5 +26,5 @@ $context--font-size-h3-min: $context--font-size-h4;
 $context--font-size-h4-min: $context--font-size-h5;
 $context--font-size-h5-min: 1rem;
 
-$context--font-size-furniture: $context--font-size-base;
-$context--font-size-interface: $context--font-size-base;
+$context--font-size-furniture: default-typography.$context--font-size-base;
+$context--font-size-interface: default-typography.$context--font-size-base;

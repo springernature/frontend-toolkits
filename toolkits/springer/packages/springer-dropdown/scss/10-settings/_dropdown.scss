@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
 $dropdown--menu-padding-x: spacing(16);
 $dropdown--menu-padding-y: spacing(8);
 $dropdown--menu-background-color: white;
@@ -13,6 +16,6 @@ $dropdown--button-caret-color: currentColor;
 
 $dropdown--link-padding: spacing(4) $dropdown--menu-padding-x;
 $dropdown--link-background-color: transparent;
-$dropdown--link-background-color-hover: color('action-light');
-$dropdown--link-color: color('action-base');
+$dropdown--link-background-color-hover: color('blue');
+$dropdown--link-color: color('blue');
 $dropdown--link-color-hover: white;

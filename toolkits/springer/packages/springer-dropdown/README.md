@@ -87,10 +87,10 @@ Add styling for the Dropdown by incorporating the settings and component into yo
 // enhanced.scss
 
 // 10-settings
-@import '@springernature/springer-dropdown/scss/10-settings/dropdown';
+@use '@springernature/springer-dropdown/scss/10-settings/dropdown';
 
 // 50-components
-@import '@springernature/springer-dropdown/scss/50-components/enhanced';
+@use '@springernature/springer-dropdown/scss/50-components/enhanced';
 ```
 
 ## Create Dropdown

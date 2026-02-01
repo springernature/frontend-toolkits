@@ -1,3 +1,5 @@
+@use '../20-functions/colors' as *;
+
 $context--keyframes: (
 	transparent-to-yellow: (
 		0%: (

@@ -1,3 +1,5 @@
+@use '../10-settings/layers' as *;
+
 @function z($layer-name, $layer-variant: null, $map: $context--z-layers) {
 	@if not map-has-key($map, $layer) {
 		@warn "No z-index found in $context--z-layers map for `#{$layer}`. Property omitted.";

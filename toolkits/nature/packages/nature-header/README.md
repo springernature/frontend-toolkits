@@ -41,9 +41,9 @@ npm install @springernature/nature-header
 Import the installed component code in your `scss` file:
 
 ```scss
-@import '@springernature/nature-header/scss/50-components/header';
+@use '@springernature/nature-header/scss/50-components/header';
 
-@import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
 ```
 
 Then import the JavaScript as follows: 

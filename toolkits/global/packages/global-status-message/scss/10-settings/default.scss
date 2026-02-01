@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as * ;
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as * ;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as * ;
+
 /**
  * Status Message
  * Default branding for component
@@ -18,6 +22,6 @@ $status-message--background-color: white;
 $status-message--border: 1px solid greyscale(80);
 $status-message--line-height: $context--line-height-tight;
 $status-message--gutter: spacing(16);
-$status-message--gutter-icon: spacing(16);
+$status-message--gutter-icon: spacing(8);
 $status-message--icon-size: 1.5em;
 $status-message--font-weight: $context--font-weight-bold;

@@ -11,21 +11,21 @@ Import the SCSS you need in your application
 
 ```scss
 // Include this with your settings
-@import '@springernature/springernature-forms/scss/10-settings/forms';
+@use '@springernature/springernature-forms/scss/10-settings/forms';
 
 // Include this with your mixins
-@import '@springernature/springernature-forms/scss/30-mixins/forms';
+@use '@springernature/springernature-forms/scss/30-mixins/forms';
 
 // Include this with your base
-@import '@springernature/springernature-forms/scss/40-base/forms';
+@use '@springernature/springernature-forms/scss/40-base/forms';
 
 // Include this with your other components
-@import '@springernature/springernature-forms/scss/50-components/forms';
-@import '@springernature/springernature-forms/scss/50-components/errors';
+@use '@springernature/springernature-forms/scss/50-components/forms';
+@use '@springernature/springernature-forms/scss/50-components/errors';
 
 // Include this with your other utilities, since icons and buttons are needed.
-@import '@springernature/brand-context/default/scss/60-utilities/icons';
-@import '@springernature/brand-context/default/scss/60-utilities/buttons';
+@use '@springernature/brand-context/default/scss/60-utilities/icons';
+@use '@springernature/brand-context/default/scss/60-utilities/buttons';
 ```
 
 ## Components

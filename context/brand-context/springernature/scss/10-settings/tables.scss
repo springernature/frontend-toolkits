@@ -1,3 +1,8 @@
+@use '../../../default/scss/20-functions/spacing' as *;
+@use '../10-settings/typography' as *;
+@use '../10-settings/colors/default' as *;
+@use '../20-functions/colors' as *;
+
 $context--table-header-border-bottom: 3px solid color('universal-blue');
 $context--table-row-border-bottom: 2px solid $context--border-color;
 $context--table-border: none;

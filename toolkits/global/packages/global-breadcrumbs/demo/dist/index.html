@@ -571,6 +571,19 @@ svg.c-breadcrumbs__chevron {
   width: 10px;
   height: 10px;
 }
+
+@media only screen and (max-width: 539px) {
+  .c-breadcrumbs .c-breadcrumbs__item {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .c-breadcrumbs .c-breadcrumbs__item:nth-last-child(1),
+.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(2) {
+    display: inline;
+  }
+}
 		</style>
 	</head>
 	<body style="padding:2%">

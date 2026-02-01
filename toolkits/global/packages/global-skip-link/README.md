@@ -21,13 +21,13 @@ Then, choose the brand you need and import the installed component code into you
 ```scss
 // Choose one of these brands to include with your settings:
 
-@import '@springernature/global-skip-link/scss/10-settings/default';
-@import '@springernature/global-skip-link/scss/10-settings/springernature';
-@import '@springernature/global-skip-link/scss/10-settings/nature';
-@import '@springernature/global-skip-link/scss/10-settings/springer';
+@use '@springernature/global-skip-link/scss/10-settings/default';
+@use '@springernature/global-skip-link/scss/10-settings/springernature';
+@use '@springernature/global-skip-link/scss/10-settings/nature';
+@use '@springernature/global-skip-link/scss/10-settings/springer';
 
 // Include this with your other components
-@import '@springernature/global-skip-link/scss/50-components/skip-link';
+@use '@springernature/global-skip-link/scss/50-components/skip-link';
 ```
 
 ### Link

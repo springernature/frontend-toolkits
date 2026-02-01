@@ -1,7 +1,7 @@
-import {Expander} from '@springernature/brand-context';
+import {Expander} from '../../global-expander/js/expander';
 import {dropdown} from '../js';
 
-jest.mock('@springernature/brand-context');
+jest.mock('../../global-expander/js/expander');
 
 describe('Dropdown init', () => {
 	beforeEach(() => {

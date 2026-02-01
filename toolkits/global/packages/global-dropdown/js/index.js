@@ -1,4 +1,4 @@
-import {Expander} from '@springernature/brand-context';
+import {Expander} from '../../global-expander/js/expander';
 
 const DATA_COMPONENT = 'data-dropdown';
 

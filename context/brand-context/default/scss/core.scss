@@ -4,5 +4,6 @@
  * both do and dont cut the mustard, keep to a minimum
  */
 
-@import '40-base/normalize';
-@import '40-base/basic';
+@forward 'abstracts';
+@forward '40-base/normalize';
+@forward '40-base/basic';

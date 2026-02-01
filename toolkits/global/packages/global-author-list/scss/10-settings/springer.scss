@@ -1,11 +1,10 @@
+@forward 'default';
+
 /**
  * @springernature/global-author-list
  * Springer skin settings
  *
  */
-
-// Default setting
-@import 'default';
 
 // base
 $global-author-list--color: #333;

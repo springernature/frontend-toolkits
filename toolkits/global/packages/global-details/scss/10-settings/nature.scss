@@ -1,4 +1,4 @@
-// Default setting
-@import 'default';
+@use '../../../../../../context/brand-context/nature/scss/10-settings/colors/default' as *;
+@forward 'default';
 
 $details--focus-underline-color: $context--focus-color;

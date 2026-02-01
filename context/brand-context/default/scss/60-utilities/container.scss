@@ -1,3 +1,5 @@
+@use '../30-mixins/container' as *;
+
 .u-container {
 	@include u-container();
 }

@@ -1,10 +1,9 @@
+@forward 'default';
+
 /**
  * @springernature/global-layout-with-sidebar
  * Nature skin settings
  */
-
-// Default setting
-@import 'default';
 
 $with-sidebar--gap: 64px;
 $with-sidebar--min: 53%;

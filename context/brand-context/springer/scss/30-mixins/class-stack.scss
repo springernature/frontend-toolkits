@@ -1,3 +1,7 @@
+@use '../../../default/scss/10-settings/breakpoints' as *;
+@use '../../../default/scss/30-mixins/media-query' as *;
+@use '../10-settings/typography' as *;
+
 /**
  * Generates utility classnames for base and each breakpoint
  *

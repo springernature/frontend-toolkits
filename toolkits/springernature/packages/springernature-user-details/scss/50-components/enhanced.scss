@@ -1,3 +1,10 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/arrow' as *;
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/colors/default' as *;
+@use '../../../../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+@use '../10-settings/layout' as *;
+@use '../10-settings/colours' as *;
+
 .js .c-user-details {
 	height: 30px;
 	font-family: $context--font-family-sans;

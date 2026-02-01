@@ -1,0 +1,11 @@
+@use '../../../../../../context/brand-context/springernature/scss/30-mixins/links' as *;
+
+@mixin link-like {
+	@include base-link;
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+}

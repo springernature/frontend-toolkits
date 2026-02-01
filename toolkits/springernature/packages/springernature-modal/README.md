@@ -50,15 +50,15 @@ Import the core styles into your main stylesheet
 
 ```scss
 // core.scss
-@import '@springernature/springernature-modal/scss/50-components/core';
+@use '@springernature/springernature-modal/scss/50-components/core';
 ```
 
 Import the enhanced settings and styles into your main stylesheet
 
 ```scss
 // enhanced.scss
-@import '@springernature/springernature-modal/scss/10-settings/springernature';
-@import '@springernature/springernature-modal/scss/50-components/enhanced';
+@use '@springernature/springernature-modal/scss/10-settings/springernature';
+@use '@springernature/springernature-modal/scss/50-components/enhanced';
 ```
 
 #### Required markup and attributes

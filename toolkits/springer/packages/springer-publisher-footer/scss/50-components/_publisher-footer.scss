@@ -1,3 +1,10 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/container' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../../context/brand-context/springer/scss/30-mixins/typography' as *;
+@use '../10-settings/publisher-footer' as *;
+
 .c-publisher-footer {
 	@include u-text-furniture;
 	color: #fff;

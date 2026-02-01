@@ -4,24 +4,26 @@
  * These files don’t output any CSS when compiled
  */
 
-// Default setting, functions, mixins
-@import '../../default/scss/abstracts';
-
-// Design Tokens need to be imported first
-@import '00-tokens/';
+// Design Tokens need to be forwarded first
+@forward '00-tokens/_index';
 
 // These settings must come first, as other settings can reference them
-@import '10-settings/colors/default';
-@import '10-settings/style';
-@import '10-settings/typography';
-@import '10-settings/buttons';
-@import '10-settings/keyframes';
+@forward '10-settings/colors/default';
+@forward '10-settings/style';
+@forward '10-settings/typography';
+@forward '10-settings/buttons';
+@forward '10-settings/keyframes';
 
-@import '20-functions/em';
+@forward '20-functions/em';
+@forward '20-functions/colors';
+@forward '../../default/scss/20-functions/spacing';
 
-@import '30-mixins/class-stack';
-@import '30-mixins/triangle';
-@import '30-mixins/wrap';
-@import '30-mixins/hiding';
-@import '30-mixins/links';
-@import '30-mixins/typography';
+@forward '30-mixins/class-stack';
+@forward '30-mixins/triangle';
+@forward '30-mixins/wrap';
+@forward '30-mixins/hiding';
+@forward '30-mixins/links';
+@forward '30-mixins/typography';
+@forward '../../default/scss/30-mixins/media-query';
+@forward '../../default/scss/30-mixins/container';
+@forward '../../default/scss/30-mixins/lists';

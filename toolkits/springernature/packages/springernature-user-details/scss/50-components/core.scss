@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/focus' as *;
+@use '../10-settings/typography' as *;
+
 .c-user-details {
 	align-self: center;
 	text-align: right;

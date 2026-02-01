@@ -1,3 +1,6 @@
+@use '../10-settings/breakpoints' as *;
+@use '../../../default/scss/30-mixins/media-query' as *;
+
 @mixin from-tablet {
 	@include media-query('xs', 'min', $context--breakpoints) {
 		@content;

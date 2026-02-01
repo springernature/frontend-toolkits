@@ -1,23 +1,28 @@
+@use '../../../default/scss/10-settings/buttons' as *;
+@use '../../../default/scss/10-settings/typography' as default-typography;
+@use '../10-settings/typography' as springer-typography;
+@use '../20-functions/colors' as *;
+
 /**
  *  Button settings
  *  Springer
  *
  */
 
-$context--button-font-family: $context--font-family-sans;
-$context--button-font-size-small: $context--font-size-xs;
-$context--button-font-size-normal: $context--font-size-sm;
-$context--button-font-size-large: $context--font-size-sm;
+$context--button-font-family: default-typography.$context--font-family-sans;
+$context--button-font-size-small: springer-typography.$context--font-size-xs;
+$context--button-font-size-normal: springer-typography.$context--font-size-sm;
+$context--button-font-size-large: springer-typography.$context--font-size-sm;
 
 // Button Themes
 // Variables to set themes styles
 
 $context--button-default: (
-	'color': color('action-base'),
+	'color': color(action-base),
 	'backgroundColor': greyscale(95),
 	'backgroundImage': linear-gradient(to bottom, white, greyscale(95)),
 	'border': $context--button-border-width-style greyscale(80),
-	'visitedColor': color('action-base'),
+	'visitedColor': color(action-base),
 	'hoverColor': white,
 	'hoverBorder': $context--button-border-width-style greyscale(40),
 	'hoverBackgroundColor': greyscale(40),
@@ -29,15 +34,15 @@ $context--button-default: (
 
 $context--button-primary: (
 	'color': white,
-	'backgroundColor': mix(white, color('corporate-light'), 20%),
-	'backgroundImage': linear-gradient(to bottom, mix(white, color('corporate-light'), 30%), mix(white, color('corporate-light'), 20%)),
-	'border': $context--button-border-width-style color('corporate-light', 0.5),
+	'backgroundColor': mix(white, color(corporate-light), 20%),
+	'backgroundImage': linear-gradient(to bottom, mix(white, color(corporate-light), 30%), mix(white, color(corporate-light), 20%)),
+	'border': $context--button-border-width-style color(corporate-light, 0.5),
 	'visitedColor': white,
 	'hoverColor': white,
-	'hoverBorder': $context--button-border-width-style color('action-light'),
-	'hoverBackgroundColor': color('action-light'),
+	'hoverBorder': $context--button-border-width-style color(action-light),
+	'hoverBackgroundColor': color(action-light),
 	'hoverBackgroundImage': none,
-	'focusBorder': $context--button-border-width-style color('action-light')
+	'focusBorder': $context--button-border-width-style color(action-light)
 );
 
 $context--button-ghost: (

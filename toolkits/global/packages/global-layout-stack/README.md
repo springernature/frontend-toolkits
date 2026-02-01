@@ -7,8 +7,8 @@ The Stack component (see [Every Layout](https://every-layout.dev/layouts/stack/)
 The `global-layout-stack` component can be used in any brand context. You just need to import the component itself:
 
 ```scss
-@import '@springernature/global-layout-stack/scss/10-settings/default';
-@import '@springernature/global-layout-stack/scss/50-components/layout-stack';
+@use '@springernature/global-layout-stack/scss/10-settings/default';
+@use '@springernature/global-layout-stack/scss/50-components/layout-stack';
 ```
 
 ## Usage

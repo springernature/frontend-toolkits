@@ -118,10 +118,10 @@ The footer component is designed to be the same across all brands. Because of th
 Import the installed component code in your `scss` file:
 
 ```scss
-@import "@springernature/global-footer/scss/10-settings/default";
+@use "@springernature/global-footer/scss/10-settings/default";
 
 // Include this with your other components
-@import "@springernature/global-footer/scss/50-components/footer";
+@use "@springernature/global-footer/scss/50-components/footer";
 ```
 
 ## Template

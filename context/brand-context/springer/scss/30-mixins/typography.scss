@@ -1,11 +1,15 @@
+@use '../../../default/scss/10-settings/typography' as default-typo;
+@use '../../../default/scss/30-mixins/links' as *;
+@use '../10-settings/typography' as springer-typo;
+
 @mixin u-text-font-smoothing {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 @mixin u-text-furniture {
-	font-family: $context--font-family-sans;
-	font-size: $context--font-size-furniture;
+	font-family: springer-typo.$context--font-family-sans;
+	font-size: springer-typo.$context--font-size-furniture;
 }
 
 @mixin u-text-right {
@@ -20,7 +24,7 @@
 
 @mixin heading-base {
 	font-style: normal;
-	line-height: $context--line-height-tight;
+	line-height: springer-typo.$context--line-height-tight;
 
 	a {
 		@include u-link-interface;
@@ -29,42 +33,42 @@
 
 @mixin u-h1 {
 	@include heading-base;
-	font-size: $context--font-size-h1;
-	font-size: unquote('min(max(#{$context--font-size-h1-min}, 4vw), #{$context--font-size-h1})');
-	font-family: $context--font-family-serif;
-	font-weight: $context--font-weight-normal;
+	font-size: springer-typo.$context--font-size-h1;
+	font-size: unquote('min(max(#{springer-typo.$context--font-size-h1-min}, 4vw), #{springer-typo.$context--font-size-h1})');
+	font-family: springer-typo.$context--font-family-serif;
+	font-weight: default-typo.$context--font-weight-normal;
 }
 
 @mixin u-h2 {
 	@include heading-base;
-	font-size: $context--font-size-h2;
-	font-size: unquote('min(max(#{$context--font-size-h2-min}, 3.5vw), #{$context--font-size-h2})');
-	font-family: $context--font-family-serif;
-	font-weight: $context--font-weight-normal;
+	font-size: springer-typo.$context--font-size-h2;
+	font-size: unquote('min(max(#{springer-typo.$context--font-size-h2-min}, 3.5vw), #{springer-typo.$context--font-size-h2})');
+	font-family: springer-typo.$context--font-family-serif;
+	font-weight: default-typo.$context--font-weight-normal;
 }
 
 @mixin u-h3 {
 	@include heading-base;
-	font-size: $context--font-size-h3;
-	font-size: unquote('min(max(#{$context--font-size-h3-min}, 3vw), #{$context--font-size-h3})');
-	font-family: $context--font-family-serif;
-	font-weight: $context--font-weight-normal;
+	font-size: springer-typo.$context--font-size-h3;
+	font-size: unquote('min(max(#{springer-typo.$context--font-size-h3-min}, 3vw), #{springer-typo.$context--font-size-h3})');
+	font-family: springer-typo.$context--font-family-serif;
+	font-weight: default-typo.$context--font-weight-normal;
 }
 
 @mixin u-h4 {
 	@include heading-base;
-	font-size: $context--font-size-h4;
-	font-size: unquote('min(max(#{$context--font-size-h4-min}, 2.5vw), #{$context--font-size-h4})');
-	font-family: $context--font-family-sans;
-	font-weight: $context--font-weight-bold;
+	font-size: springer-typo.$context--font-size-h4;
+	font-size: unquote('min(max(#{springer-typo.$context--font-size-h4-min}, 2.5vw), #{springer-typo.$context--font-size-h4})');
+	font-family: springer-typo.$context--font-family-sans;
+	font-weight: springer-typo.$context--font-weight-bold;
 }
 
 @mixin u-h5 {
 	@include heading-base;
-	font-size: $context--font-size-h5;
-	font-size: unquote('min(max(#{$context--font-size-h5-min}, 2.5vw), #{$context--font-size-h5})');
-	font-family: $context--font-family-sans;
-	font-weight: $context--font-weight-bold;
+	font-size: springer-typo.$context--font-size-h5;
+	font-size: unquote('min(max(#{springer-typo.$context--font-size-h5-min}, 2.5vw), #{springer-typo.$context--font-size-h5})');
+	font-family: springer-typo.$context--font-family-sans;
+	font-weight: springer-typo.$context--font-weight-bold;
 }
 
 

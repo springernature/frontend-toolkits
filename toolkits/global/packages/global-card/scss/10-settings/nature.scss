@@ -1,10 +1,9 @@
+@forward 'default';
+
 /**
  * Card
  * Nature branding for component
  */
-
-// Default setting
-@import 'default';
 
 // Nature overrides
 $card--padding-x: 0;

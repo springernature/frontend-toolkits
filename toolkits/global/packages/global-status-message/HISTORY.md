@@ -1,28 +1,5 @@
 # History
 
-## 5.0.1 (2023-02-27)
-    * Update and improve component documentation
-
-## 5.0.0 (2023-01-18)
-    * BREAKING: Upgrade to brand-context v31.0.1
-
-## 4.1.2 (2022-09-20)
-    * BUG: fixes SVGs not displaying correctly in demo
-
-## 4.1.1 (2022-09-13)
-    * even icon spacing for longform content
-
-## 4.1.0 (2022-09-02)
-    * `<aside>` by default
-
-## 4.0.0 (2022-08-31)
-    * Message section now permits more than plain text
-    * Message now focusable programmatically
-    * Support for live regions
-
-## 3.3.0 (2022-07-28)
-    * UPDATE: brand-context v25.0.0
-
 ## 3.2.2 (2022-02-18)
     * Remove post install step that was causing issues with CI
 

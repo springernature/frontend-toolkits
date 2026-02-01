@@ -1,3 +1,5 @@
+@use '../30-mixins/style' as *;
+
 .u-keyline {
 	@include u-keyline;
 }

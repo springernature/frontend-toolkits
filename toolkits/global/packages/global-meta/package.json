@@ -1,9 +1,9 @@
 {
   "name": "@springernature/global-meta",
-  "version": "7.0.0",
+  "version": "6.0.4",
   "license": "MIT",
   "description": "Brief information about the content",
   "keywords": [],
   "author": "Springer Nature",
-  "brandContext": "^31.0.1"
+  "brandContext": "^18.1.1"
 }

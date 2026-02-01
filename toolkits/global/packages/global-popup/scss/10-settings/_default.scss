@@ -1,3 +1,8 @@
+@use '../../../../../../context/brand-context/default/scss/00-tokens/border.variables' as *;
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 /**
  * Popup
  * Default branding for component

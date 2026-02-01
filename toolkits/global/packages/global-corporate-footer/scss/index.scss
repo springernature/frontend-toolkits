@@ -1,4 +1,4 @@
 @charset "UTF-8";
 
-@import './10-settings/default';
-@import './50-components/corporate-footer';
+@forward './10-settings/default';
+@forward './50-components/corporate-footer';

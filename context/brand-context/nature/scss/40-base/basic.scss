@@ -3,6 +3,9 @@
  * Some default CSS styles
  */
 
+@use '../10-settings/typography' as *;
+@use '../20-functions/colors' as *;
+
 a {
 	color: color('blue');
 }

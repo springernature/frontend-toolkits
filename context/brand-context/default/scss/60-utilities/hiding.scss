@@ -1,3 +1,7 @@
+@use '../10-settings/breakpoints' as *;
+@use '../30-mixins/hiding' as *;
+@use '../30-mixins/media-query' as *;
+
 .u-display-none {
 	display: none;
 }

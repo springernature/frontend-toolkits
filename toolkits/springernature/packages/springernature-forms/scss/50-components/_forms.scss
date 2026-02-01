@@ -1,3 +1,7 @@
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springernature/scss/30-mixins/media-query' as *;
+@use '../10-settings/forms' as *;
+
 @mixin forms--input {
 	display: block;
 	width: 100%;

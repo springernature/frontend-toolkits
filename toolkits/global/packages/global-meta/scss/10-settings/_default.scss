@@ -1,9 +1,11 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 /**
  * Meta
  * Default branding for component
  */
 
-$meta--font-size: 1rem;
+$meta--font-size: .813rem;
 $meta--font-size-large: 1rem;
 $meta--font-family: inherit;
 $meta--line-height: inherit;

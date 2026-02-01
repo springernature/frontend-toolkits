@@ -29,10 +29,10 @@ npm install @springernature/springer-media
 Import the Sass:
 
 ```scss
-@import '@springernature/springer-media/scss/10-settings/media';
-@import '@springernature/springer-media/scss/50-components/media';
+@use '@springernature/springer-media/scss/10-settings/media';
+@use '@springernature/springer-media/scss/50-components/media';
 
-@import '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/hiding.scss';
 ```
 
 ## How it works

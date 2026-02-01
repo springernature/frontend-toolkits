@@ -1,12 +1,11 @@
+@use '../20-functions/colors' as *;
+@use '../20-functions/spacing' as *;
+
 /**
  *  Button settings
  *  Default
  *
  */
-
-// Function dependencies
-@import '../20-functions/colors';
-@import '../20-functions/spacing';
 
 $context--button-border-width-style: 1px solid;
 $context--button-line-height: 1.3;

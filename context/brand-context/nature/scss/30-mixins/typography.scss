@@ -1,3 +1,5 @@
+@use '../10-settings/typography' as *;
+
 @mixin u-font-smoothing() {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -49,4 +51,28 @@
 	font-size: unquote('min(max(#{$context--font-size-h4-min}, 2.5vw), #{$context--font-size-h4})');
 	letter-spacing: $context--letter-spacing-min;
 	line-height: $context--line-height-h4;
+}
+
+@mixin u-heading($arg) {
+	@extend %u-#{$arg};
+}
+
+@mixin u-h1 {
+	@extend %u-h1;
+}
+
+@mixin u-h2 {
+	@extend %u-h2;
+}
+
+@mixin u-h3 {
+	@extend %u-h3;
+}
+
+@mixin u-h4 {
+	@extend %u-h4;
+}
+
+@mixin u-h5 {
+	@extend %u-h5;
 }

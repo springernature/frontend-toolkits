@@ -1,3 +1,4 @@
+@use '../10-settings/forms' as *;
 
 .c-forms__error-summary {
 	border: $forms--errors-summary-border;

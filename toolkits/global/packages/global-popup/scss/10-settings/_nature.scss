@@ -1,9 +1,9 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@forward 'default';
+
 /**
  * @springernature/global-popup
  * Nature skin settings
  */
-
-// Default setting
-@import 'default';
 
 $popup--font-family: $context--font-family-primary;

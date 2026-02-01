@@ -1,3 +1,11 @@
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/colors/default' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *; // this need to be default
+@use '../../../../../../context/brand-context/default/scss/30-mixins/arrow' as *;
+@use '../10-settings/icons' as *;
+@use '../10-settings/spacing' as *;
+@use '../30-mixins/links' as *;
+
 .c-submission-details-header {
 	background-color: #fff;
 	font-family: $context--font-family-sans;
@@ -61,7 +69,7 @@
 		}
 
 		&.invalid {
-			color: $red;
+			color: #ff0000;
 		}
 	}
 

@@ -7,8 +7,8 @@ Springer branded site footer.
 ### Import the Sass
 
 ```scss
-@import '../node_modules/@springernature/springer-publisher-footer/scss/10-settings/publisher-footer';
-@import '../node_modules/@springernature/springer-publisher-footer/scss/50-components/publisher-footer';
+@use '../node_modules/@springernature/springer-publisher-footer/scss/10-settings/publisher-footer';
+@use '../node_modules/@springernature/springer-publisher-footer/scss/50-components/publisher-footer';
 ```
 
 ### Template

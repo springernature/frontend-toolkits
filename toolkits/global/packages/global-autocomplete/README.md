@@ -8,10 +8,10 @@ The `global-autocomplete` component currently uses the `DEFAULT` brand only.
 
 ```scss
 // Inlcude this with your settings
-@import '@springernature/global-autocomplete/scss/10-settings/default';
+@use '@springernature/global-autocomplete/scss/10-settings/default';
 
 // Include this with your other components
-@import '@springernature/global-autocomplete/scss/50-components/autocomplete';
+@use '@springernature/global-autocomplete/scss/50-components/autocomplete';
 ```
 
 ## Example usage

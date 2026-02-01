@@ -1,3 +1,5 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
 $section-heading--border-top: 5px solid black;
 $section-heading--border-bottom: 1px solid black;
 $section-heading--padding--top: spacing(8);

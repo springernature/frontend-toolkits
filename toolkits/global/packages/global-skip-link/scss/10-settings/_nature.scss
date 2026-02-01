@@ -1,11 +1,10 @@
+@forward 'default';
+
 /**
  * @springernature/global-skip-link
  * Default skin settings
  *
  */
-
-// Default setting
-@import 'default';
 
 $skip-link--font-size: .875rem;
 $skip-link--color: white;

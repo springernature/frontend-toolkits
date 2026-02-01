@@ -4,24 +4,24 @@
  * These files don’t output any CSS when compiled
  */
 
-// Default setting, functions, mixins
-@import '../../default/scss/abstracts';
-
-// Design Tokens need to be imported first
-@import '00-tokens/';
+// Design Tokens need to be forwarded first
+@forward '00-tokens/_index';
 
 // 10-settings
 // These settings must come first, as other settings can reference them
-@import '10-settings/breakpoints';
-@import '10-settings/colors/default';
-@import '10-settings/typography';
-@import '10-settings/container';
+@forward '10-settings/breakpoints';
+@forward '10-settings/colors/default';
+@forward '10-settings/typography';
+@forward '10-settings/container';
 // needs to appear after colors & typography
-@import '10-settings/buttons';
-@import '10-settings/links';
-@import '10-settings/tables';
+@forward '10-settings/buttons';
+@forward '10-settings/links';
+@forward '10-settings/tables';
+
+// 20-functions
+@forward '20-functions/colors';
 
 // 30-mixins
-@import '30-mixins/links';
-@import '30-mixins/media-query';
-@import '30-mixins/typography';
+@forward '30-mixins/links';
+@forward '30-mixins/media-query';
+@forward '30-mixins/typography';

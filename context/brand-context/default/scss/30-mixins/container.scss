@@ -1,3 +1,5 @@
+@use '../10-settings/container' as *;
+
 @mixin u-container() {
 	margin: 0 auto;
 	max-width: $context--container-width;

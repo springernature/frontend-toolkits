@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../10-settings/listing' as *;
+
 .c-listing {
 	list-style: none;
 	padding: 0;

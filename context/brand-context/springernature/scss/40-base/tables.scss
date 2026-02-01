@@ -1,3 +1,6 @@
+@use '../10-settings/tables' as *;
+@use '../10-settings/typography' as *;
+
 table {
 	font-size: $context--table-font-size;
 	line-height: $context--table-line-height;

@@ -1,7 +1,11 @@
+@use '../20-functions/colors' as *;
+@use '../30-mixins/focus' as *;
+
 /**
  * Links
  * Basic link styles
  */
+
 
 a {
 	@include u-focus-outline();

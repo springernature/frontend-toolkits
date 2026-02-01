@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use '../00-tokens/default.tokens' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
 
 .c-forms__label,
 .c-forms__hint,

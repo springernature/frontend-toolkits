@@ -1,11 +1,11 @@
+@use '../../../../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@forward 'default';
+
 /**
  * @springernature/global-author-list
  * SpringerNature skin settings
  *
  */
-
-// Default setting
-@import 'default';
 
 // base
 $global-author-list--font-size: $context--font-size-md;

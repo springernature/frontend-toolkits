@@ -1,3 +1,5 @@
+@use '../10-settings/spacing' as *;
+
 @function _get-spacing-utility-value($value) {
 	$value: if(type-of($value) == string, unquote($value), $value);
 

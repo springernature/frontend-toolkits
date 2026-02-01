@@ -1,5 +1,4 @@
-// Default setting
-@import 'default';
+@forward 'default';
 
 $dropdown--button-color: black;
 $dropdown--button-border: 1px solid $dropdown--button-color;

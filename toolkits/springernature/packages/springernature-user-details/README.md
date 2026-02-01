@@ -41,19 +41,19 @@ Import the core styles into your main stylesheet
 
 ```scss
 // core.scss
-@import '@springernature/brand-context/springernature/scss/10-settings/colors/default';
-@import '@springernature/brand-context/default/scss/30-mixins/focus';
-@import '@springernature/springernature-user-details/scss/10-settings/colours';
-@import '@springernature/springernature-user-details/scss/10-settings/typography';
-@import '@springernature/springernature-user-details/scss/50-components/core';
+@use '@springernature/brand-context/springernature/scss/10-settings/colors/default';
+@use '@springernature/brand-context/default/scss/30-mixins/focus';
+@use '@springernature/springernature-user-details/scss/10-settings/colours';
+@use '@springernature/springernature-user-details/scss/10-settings/typography';
+@use '@springernature/springernature-user-details/scss/50-components/core';
 ```
 
 Import the enhanced settings and styles into your main stylesheet
 
 ```scss
 // enhanced.scss
-@import '@springernature/brand-context/default/scss/enhanced';
-@import '@springernature/springernature-user-details/scss/10-settings/layout';
-@import '@springernature/brand-context/default/scss/30-mixins/arrow';
-@import '@springernature/springernature-user-details/scss/50-components/enhanced';
+@use '@springernature/brand-context/default/scss/enhanced';
+@use '@springernature/springernature-user-details/scss/10-settings/layout';
+@use '@springernature/brand-context/default/scss/30-mixins/arrow';
+@use '@springernature/springernature-user-details/scss/50-components/enhanced';
 ```

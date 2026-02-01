@@ -1,3 +1,5 @@
+@use '../30-mixins/typography' as *;
+
 .u-h1 {
   @include u-h1();
 }

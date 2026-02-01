@@ -1,3 +1,5 @@
+@use '../10-settings/spacing' as *;
+
 @function spacing($keys...) {
 	@if length($context--spacing) == 0 {
 		@error 'No values found in $context--spacing.';

@@ -1,10 +1,13 @@
+@use '../../../default/scss/10-settings/typography' as default-typography; // this needs to be namespaced
+
 /**
  * Typography
  * Font settings
  */
 
 $is-nature-branded: false !default;
-$context--font-family-serif: if($is-nature-branded, (Harding, Palatino, serif), $context--font-family-serif);
+$context--font-family-serif: if($is-nature-branded, (Harding, Palatino, serif), default-typography.$context--font-family-serif);
+$context--font-family-sans: default-typography.$context--font-family-sans;
 $context--font-family-primary: if($is-nature-branded, $context--font-family-serif, $context--font-family-sans);
 $context--font-family-secondary: $context--font-family-sans;
 
@@ -44,4 +47,5 @@ $context--font-weight-normal: 400;
 $context--font-weight-bold: 700;
 $context--font-weight-heading: $context--font-weight-bold;
 
-$context--line-height-heading: $context--line-height-tight;
+$context--line-height-heading: default-typography.$context--line-height-tight;
+$context--line-height-tight: default-typography.$context--line-height-tight;

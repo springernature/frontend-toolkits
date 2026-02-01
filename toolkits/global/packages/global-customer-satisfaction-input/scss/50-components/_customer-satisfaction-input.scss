@@ -1,3 +1,6 @@
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../10-settings/default' as *;
+
 .c-customer-satisfaction-input {
 	position: relative;
 	padding: $global-customer-satisfaction-input-container-padding;

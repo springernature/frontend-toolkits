@@ -1,16 +1,22 @@
+@use '../../../default/scss/10-settings/typography' as default-typo;
+@use '../../../springer/scss/10-settings/colors/default' as *;
+@use '../10-settings/typography' as springer-typo;
+@use '../20-functions/colors' as springer-colors;
+
 /*
  * Layout
  * Universal layout styles
  */
 
+
 html {
-	font-family: $context--font-family-sans;
+	font-family: springer-typo.$context--font-family-sans;
 	height: 100%;
 	overflow-y: scroll;
-	font-size: $context--font-size-default;
+	font-size: default-typo.$context--font-size-default;
 	box-sizing: border-box;
-	color: greyscale($context--greyscale-min);
-	line-height: $context--line-height-base;
+	color: springer-colors.greyscale($context--greyscale-min);
+	line-height: default-typo.$context--line-height-base;
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
@@ -24,7 +30,7 @@ html {
 body {
 	max-width: 100%;
 	min-height: 100%;
-	background: $context--page-background;
+	background: white;
 	font-size: 1.125rem; /* fixes chrome rems bug - http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag */
 }
 
@@ -59,6 +65,6 @@ abbr[title] {
 [contenteditable],
 [tabindex="0"] {
 	&:focus {
-		outline: 4px solid color('action-focus');
+		outline: 4px solid springer-colors.color('action-focus');
 	}
 }

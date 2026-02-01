@@ -19,14 +19,14 @@ Pick a context brand to use in your product and make sure it is the first thing 
 
 ```scss
 // core.scss
-@import '@springernature/brand-context/nature/scss/core';
+@use '@springernature/brand-context/nature/scss/core';
 
 // components and product imports...
 ```
 
 ```scss
 // enhanced.scss
-@import '@springernature/brand-context/nature/scss/enhanced';
+@use '@springernature/brand-context/nature/scss/enhanced';
 
 // components and product imports...
 ```

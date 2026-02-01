@@ -1,8 +1,11 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+
 /**
  * @springernature/global-banner
  * Default skin settings
  *
  */
+
 
 $banner--padding-y: 12px;
 $banner--padding-x: 12px;

@@ -1,3 +1,5 @@
+@use '../10-settings/default' as *;
+
 @keyframes lds-ripple {
 	0% {
 		top: 84px;

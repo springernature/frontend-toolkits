@@ -1,3 +1,4 @@
-@import '_breakpoints.variables.scss';
-@import '_color.variables.scss';
-@import '_typography.variables.scss';
+@forward '_breakpoints.variables.scss';
+@forward '_color.variables.scss';
+@forward '_typography.variables.scss';
+

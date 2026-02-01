@@ -23,12 +23,12 @@ npm install @springernature/nature-hero
 Then, import the installed component code in your `scss` file:
 
 ```scss
-@import '@springernature/nature-hero/scss/10-settings/hero';
-@import '@springernature/nature-hero/scss/50-components/hero';
+@use '@springernature/nature-hero/scss/10-settings/hero';
+@use '@springernature/nature-hero/scss/50-components/hero';
 
-@import '@springernature/brand-context/default/scss/60-utilities/links.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/positioning.scss';
-@import '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/links.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/positioning.scss';
+@use '@springernature/brand-context/default/scss/60-utilities/spacing.scss';
 ```
 
 ### Title

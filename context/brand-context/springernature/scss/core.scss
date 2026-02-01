@@ -4,10 +4,8 @@
  * both do and dont cut the mustard, keep to a minimum
  */
 
-// Springernature settings, functions, mixins
-@import 'abstracts';
-
 // 40-base
-@import '../../default/scss/40-base/normalize';
-@import '../../default/scss/40-base/basic';
-@import '40-base/basic';
+@forward 'abstracts';
+@forward '../../default/scss/40-base/normalize';
+@forward '../../default/scss/40-base/basic';
+@forward '40-base/basic';

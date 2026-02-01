@@ -1,10 +1,12 @@
+@use '../../../../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * Facet
  * Nature branding for component
  */
-
-// Default setting
-@import 'default';
 
 // Nature overrides
 $facet--background-color: greyscale(80);

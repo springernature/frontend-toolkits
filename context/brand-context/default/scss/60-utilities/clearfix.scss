@@ -1,3 +1,5 @@
+@use '../30-mixins/clearfix' as *;
+
 .u-clearfix {
 	@include u-clearfix;
 }

@@ -1,11 +1,11 @@
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@forward 'default';
+
 /**
  * @springernature/global-author-list
  * Nature skin settings
  *
  */
-
-// Default setting
-@import 'default';
 
 // base
 $global-author-list--color: greyscale(30);

@@ -23,8 +23,8 @@ sortBy();
 ```
 
 ```scss
-@import '@springernature/nature-sort-by/scss/10-settings/sort-by';
-@import '@springernature/nature-sort-by/scss/50-components/sort-by';
+@use '@springernature/nature-sort-by/scss/10-settings/sort-by';
+@use '@springernature/nature-sort-by/scss/50-components/sort-by';
 ```
 
 Insert the component's HTML inside an HTML form in your application. See an example [template](#template) below.
