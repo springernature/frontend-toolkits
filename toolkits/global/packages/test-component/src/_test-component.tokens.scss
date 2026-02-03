@@ -1,0 +1,5 @@
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../context/brand-context/nature/scss/20-functions/colors' as *;
+
+$test-component--padding: spacing(16) !default;
+$test-component--color: color('light-blue') !default;

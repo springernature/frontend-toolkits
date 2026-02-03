@@ -1,0 +1,10 @@
+@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '_test-component.tokens' as *;
+
+.test-component {
+	@include media-query('sm') {
+		color: $test-component--color;
+		padding: $test-component--padding;
+	}
+}
