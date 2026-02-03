@@ -1,9 +1,16 @@
-@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
 @use '../../../../../context/brand-context/default/scss/20-functions/colors' as *;
-@use '_test-component.tokens' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+
+// Component Sass variables must be defined in the file with !default, we cannot import them from a settings/tokens file
+$test-component--padding: spacing(16) !default;
+$test-component--color: color('light-blue') !default;
+$test-component--font: $context--font-family-sans !default;
 
 .test-component {
 	@include media-query('sm') {
+		font-family: $test-component--font;
 		color: $test-component--color;
 		padding: $test-component--padding;
 	}

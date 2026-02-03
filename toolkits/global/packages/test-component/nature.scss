@@ -1,7 +1,9 @@
+@use '../../../../context/brand-context/nature/scss/10-settings/typography' as *;
 @use '../../../../context/brand-context/default/scss/20-functions/spacing' as *;
 @use '../../../../context/brand-context/nature/scss/20-functions/colors' as *;
 
 @forward 'src/test-component' as nature-* with (
 	$test-component--padding: spacing(16),
-	$test-component--color: color('light-blue')
+	$test-component--color: color('light-blue'),
+	$test-component--font: $context--font-family-sans
 );
