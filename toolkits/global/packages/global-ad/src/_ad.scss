@@ -1,5 +1,26 @@
-@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
-@use '../10-settings/nature' as *;
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+
+/**
+ * @springernature/global-ad
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$ad--font-family: $context--font-family-sans !default;
+$ad--font-size: .875rem !default;
+$ad--font-weight: normal !default;
+$ad--label-margin-bottom: spacing(4) !default;
+$ad--label-color: #333 !default;
+$ad--label-line-height: 1.5 !default;
+$ad--padding: spacing(8) !default;
+$ad--leaderboard-bg-color: #ccc !default;
+$ad--leaderboard-height: 90px !default;
+$ad--leaderboard-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--label-margin-bottom} + #{$ad--leaderboard-height}) !default;
+$ad--mpu-background-color: #f2f2f2 !default;
+$ad--mpu-height: 250px !default;
+$ad--mpu-ad-inner-min-height: calc(#{$ad--label-line-height}em + #{$ad--label-margin-bottom} + #{$ad--mpu-height}) !default;
+$ad--mpu-padding: $ad--padding !default;
 
 .c-ad {
 	text-align: center;

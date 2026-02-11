@@ -1,0 +1,4 @@
+@forward 'src/ad' as nature-* with (
+	$ad--mpu-padding: 0,
+	$ad--mpu-background-color: transparent
+);
