@@ -1,0 +1,3 @@
+@forward 'src/lists' as nature-* with (
+	$global-list-description--margin-bottom: 0
+);

@@ -1,0 +1,53 @@
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+
+/**
+ * @springernature/global-skip-link
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$skip-link--padding-y: 8px !default;
+$skip-link--font: $context--font-family-sans !default;
+$skip-link--font-size: 1rem !default;
+$skip-link--color: white !default;
+$skip-link--hover-color: white !default;
+$skip-link--background-color: #000 !default;
+$skip-link--z-index: auto !default;
+
+/**
+ * @springernature/global-skip-link
+ * A full width link which is hidden for mouse users
+ *
+ */
+
+.c-skip-link {
+	background: $skip-link--background-color;
+	color: $skip-link--color;
+	font-size: $skip-link--font-size;
+	font-family: $skip-link--font;
+	text-align: center;
+	padding: $skip-link--padding-y;
+	position: absolute;
+	inset: 0;
+	bottom: auto;
+	z-index: $skip-link--z-index;
+	transform: translateY(-100%);
+
+	@media (prefers-reduced-motion: reduce) {
+		transition: top .3s ease-in-out;
+	}
+
+	@media print {
+		display: none;
+	}
+
+	&:link,
+	&:active,
+	&:visited,
+	&:hover {
+		color: $skip-link--hover-color;
+	}
+
+	&:focus {
+		transform: translateY(0%);
+	}
+}

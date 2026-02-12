@@ -1,0 +1,134 @@
+@use '../../../../../context/brand-context/default/scss/10-settings/style' as *;
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/typography' as *;
+
+/**
+ * Lists (columned, description, group, header)
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+// Columned list
+$global-list-columned--column-gap: spacing(24) !default;
+$global-list-columned--margin-bottom: 12px !default;
+
+// Description list
+$global-list-description--wrapper-margin-bottom: spacing(24) !default;
+$global-list-description--font-weight: $context--font-weight-bold !default;
+$global-list-description--font-size: 1rem !default;
+$global-list-description--line-height: $context--line-height-tight !default;
+$global-list-description--margin-bottom: 12px !default;
+
+// Grouped list
+$global-list-group--border-color: #ccc !default;
+$global-list-group--padding-xs: spacing(4) 0 !default;
+$global-list-group--padding-sm: spacing(8) 0 !default;
+$global-list-group--padding-md: spacing(16) 0 !default;
+$global-list-group--padding-lg: spacing(24) 0 !default;
+$global-list-group--line-height: $context--line-height-tight !default;
+$global-list-group--is-interface: false !default;
+
+$global-list-header--keyline-gap: spacing(16) !default;
+$global-list-header--keyline-color: $context--keyline-border-color !default;
+$global-list-header--font-size: .875rem !default;
+$global-list-header--font-family: $context--font-family-sans !default;
+
+.c-list-columned {
+	column-gap: $global-list-columned--column-gap;
+
+	@include media-query('sm') {
+		column-count: 2;
+	}
+
+	@include media-query('md') {
+		column-count: 3;
+	}
+}
+
+.c-list-columned__item {
+	margin-bottom: $global-list-columned--margin-bottom;
+}
+
+.c-list-description {
+	@include u-text-interface;
+	margin-bottom: 0;
+	width: 100%; // fix text breaking layout in IE10
+}
+
+.c-list-description__item {
+	margin-bottom: $global-list-description--wrapper-margin-bottom;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.c-list-description__term {
+	font-weight: $global-list-description--font-weight;
+	margin-bottom: $global-list-description--margin-bottom;
+}
+
+.c-list-description__details {
+	display: block;
+}
+
+.c-list-description__details p {
+	display: block;
+	margin-bottom:  $global-list-description--margin-bottom;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.c-list-group {
+	@include u-list-reset;
+	line-height: $global-list-group--line-height;
+}
+
+@if ($global-list-group--is-interface == true) {
+	.c-list-group__item > a {
+		@include u-link-interface;
+	}
+}
+
+.c-list-group--xs .c-list-group__item {
+	padding: $global-list-group--padding-xs;
+}
+
+.c-list-group--sm .c-list-group__item {
+	padding: $global-list-group--padding-sm;
+}
+
+.c-list-group--md .c-list-group__item {
+	padding: $global-list-group--padding-md;
+}
+
+.c-list-group--lg .c-list-group__item {
+	padding: $global-list-group--padding-lg;
+}
+
+.c-list-group--bordered .c-list-group__item:not(:last-child) {
+	border-bottom: 1px solid $global-list-group--border-color;
+}
+
+.c-list-group--flush .c-list-group__item:first-child {
+	padding-top: 0;
+}
+
+.c-list-group--flush .c-list-group__item:last-child {
+	padding-bottom: 0;
+}
+
+.c-list-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: $global-list-header--keyline-gap;
+	border-bottom: 2px solid $global-list-header--keyline-color;
+	padding-bottom: spacing(4);
+	font-size: $global-list-header--font-size;
+	font-family: $global-list-header--font-family;
+}

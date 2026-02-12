@@ -1,0 +1,38 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+
+/**
+ * @springernature/global-corporate-footer
+ * Default skin settings
+ *
+ */
+
+$default-corporate-footer--font-family: $context--font-family-sans !default;
+$default-corporate-footer--background-color: white !default;
+$default-corporate-footer--border: 1px solid lightgrey !default;
+$default-corporate-footer--legal-padding-top: spacing(4) !default;
+$default-corporate-footer--font-size: 1rem !default;
+$default-corporate-footer--text-color: black !default;
+$default-corporate-footer--margin-bottom: spacing(0) !default;
+$default-corporate-footer--padding-top: spacing(16) !default;
+$default-corporate-footer--padding-bottom: spacing(24) !default;
+
+.c-corporate-footer {
+	background-color: $default-corporate-footer--background-color;
+	border-top: $default-corporate-footer--border;
+	font-family: $default-corporate-footer--font-family;
+	padding-top: $default-corporate-footer--padding-top;
+	padding-bottom: $default-corporate-footer--padding-bottom;
+}
+
+.c-corporate-footer__legal {
+	color: $default-corporate-footer--text-color;
+	font-size: $default-corporate-footer--font-size;
+	margin-bottom: $default-corporate-footer--margin-bottom;
+	padding-top: $default-corporate-footer--legal-padding-top;
+}
+
+.c-corporate-footer__link {
+	@include u-link-inherit;
+}

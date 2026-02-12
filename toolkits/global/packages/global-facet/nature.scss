@@ -1,0 +1,13 @@
+@use '../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../context/brand-context/nature/scss/20-functions/colors' as *;
+
+@forward 'src/facet' as nature-* with (
+	$facet--background-color: greyscale(80),
+	$facet--font-bold: $context--font-weight-bold,
+	$facet--button-color-disabled: greyscale(65),
+	$facet--button-border-disabled: 1px solid greyscale(65),
+	$facet--submit-background-color: color('blue'),
+	$facet--submit-border: 1px solid color('blue'),
+	$facet--submit-color-hover: color('blue'),
+	$facet-expander--list-color: greyscale(35)
+);

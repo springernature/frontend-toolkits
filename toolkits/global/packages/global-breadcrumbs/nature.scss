@@ -1,0 +1,4 @@
+@forward 'src/breadcrumbs' as default-* with (
+	$default-breadcrumbs-link-color: #666,
+	$default-breadcrumbs-chevron-color: #666
+);

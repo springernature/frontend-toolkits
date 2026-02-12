@@ -1,0 +1,11 @@
+@use '../../../../context/brand-context/springer/scss/20-functions/colors';
+
+@forward 'src/card' as default-* with (
+	$default-card--background: #fff,
+	$default-card--dark-background: colors.color('dark-blue'),
+	$default-card--dark-color: #fff,
+	$default-card--title-font-weight: normal,
+	$default-card--title-heading: h3,
+	$default-card--border: 1px solid colors.greyscale(80),
+	$default-card--font-size: 1rem
+);

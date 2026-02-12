@@ -1,0 +1,7 @@
+@forward 'src/card' as default-* with (
+	$default-card--dark-background: #29303c,
+	$default-card--dark-color: #e3e4e5,
+	$default-card--title-font-weight: null,
+	$default-card--title-heading: h3,
+	$default-card--title-letter-spacing: -0.01875rem
+);

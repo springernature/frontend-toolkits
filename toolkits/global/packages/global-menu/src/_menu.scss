@@ -1,0 +1,137 @@
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+
+/**
+ * @springernature/global-menu
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+// Base Settings
+$menu--font-size: 1rem !default;
+$menu--font-family: $context--font-family-sans !default;
+$menu--link-color: inherit !default;
+$menu--link-color-hover: $menu--link-color !default;
+$menu--spacing: 16px !default;
+$menu--line-height: 1.3 !default;
+
+// Modifier Settings
+$menu--small-font-size: .875rem !default;
+$menu--keyline-border: 1px solid greyscale(80) !default;
+$menu--vertical-spacing: $menu--spacing !default;
+$menu--padded-spacing: $menu--spacing !default;
+$menu--padded-link-background-color-hover: greyscale(80) !default;
+
+/**
+ * Default menu
+ *
+ */
+
+.c-menu {
+	@include u-list-reset();
+	font-size: $menu--font-size;
+	font-family: $menu--font-family;
+	display: flex;
+	line-height: $menu--line-height;
+}
+
+.c-menu__item:not(:last-child) {
+	margin-right: $menu--spacing;
+}
+
+.c-menu__link {
+	display: inline-block;
+	text-decoration: none;
+	color: $menu--link-color;
+
+	&:visited,
+	&:active {
+		color: $menu--link-color;
+	}
+
+	&:hover {
+		text-decoration: underline;
+		$color: $menu--link-color-hover;
+	}
+}
+
+/**
+ * Small menu
+ *
+ */
+
+.c-menu--small {
+	font-size: $menu--small-font-size;
+}
+
+/**
+ * Vertical menu
+ *
+ */
+
+.c-menu--vertical {
+	flex-direction: column;
+}
+
+.c-menu--vertical .c-menu__item:not(:last-child) {
+	margin-bottom: $menu--vertical-spacing;
+	margin-left: 0;
+}
+
+/**
+ * Keyline menu
+ *
+ */
+
+.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin-right: $menu--spacing;
+	padding-right: $menu--spacing;
+	border-right: $menu--keyline-border;
+}
+
+/**
+ * Vertical Keyline menu
+ *
+ */
+
+.c-menu--vertical.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin: 0 0 $menu--vertical-spacing;
+	padding: 0 0 $menu--vertical-spacing;
+	border-right: none;
+	border-bottom: $menu--keyline-border;
+}
+
+/**
+ * Padded menu
+ *
+ */
+
+.c-menu--padded .c-menu__item:not(:last-child),
+.c-menu--padded.c-menu--keyline .c-menu__item:not(:last-child) {
+	margin: 0;
+	padding: 0;
+}
+
+.c-menu--padded .c-menu__link {
+	padding: $menu--padded-spacing;
+	display: block;
+
+	&:hover {
+		background-color: $menu--padded-link-background-color-hover;
+	}
+}
+
+/**
+ * Vertical Padded menu
+ *
+ */
+
+.c-menu--vertical.c-menu--padded .c-menu__item:not(:last-child) {
+	margin: 0;
+	padding: 0;
+}
+
+.c-menu--inherit .c-menu__link {
+	@include u-link-inherit();
+}

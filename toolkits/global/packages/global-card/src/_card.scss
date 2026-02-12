@@ -1,0 +1,170 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/typography' as *;
+
+/**
+ * Card
+ * Default branding for component
+ */
+
+$default-card--border: none !default;
+$default-card--box-shadow: none !default;
+$default-card--font-family: inherit !default;
+$default-card--font-size: 14px !default;
+$default-card--spacing: 8px !default;
+$default-card--padding: 16px !default;
+$default-card--padding-x: 0 !default;
+$default-card--background: transparent !default;
+$default-card--title-font-weight: $context--font-weight-normal !default;
+$default-card--title-heading: h4 !default;
+$default-card--title-letter-spacing: normal !default;
+$default-card--image-aspect-ratio: #{16 / 9} !default;
+
+// --major
+$default-card--major-font-size: 1rem !default;
+$default-card--major-title-heading: h2 !default;
+
+// --dark
+$default-card--dark-background: #000 !default;
+$default-card--dark-color: #fff !default;
+$default-card--dark-title-color: white !default;
+
+.c-card {
+	display: flex;
+	background-color: $default-card--background;
+	flex-direction: column;
+	font-size: $default-card--font-size;
+	min-width: 0;
+	padding: $default-card--padding-x;
+	position: relative;
+	border: $default-card--border;
+	box-shadow: $default-card--box-shadow;
+	overflow: hidden;
+}
+
+.c-card--no-shape {
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+
+.c-card__image {
+	position: relative;
+	display: flex;
+	// Center image horizontally
+	// (may cause overflow — not a problem)
+	justify-content: center;
+	overflow: hidden;
+	// 16:9 aspect ratio fallback
+	padding-bottom: 56.25%;
+	@supports (aspect-ratio: 1 / 1) {
+		padding-bottom: 0;
+		// Customizable aspect ratio
+		aspect-ratio: var(--card--image-aspect-ratio, #{$default-card--image-aspect-ratio});
+	}
+
+	// Not direct child due to picture element usage
+	img {
+		position: absolute;
+		left: 0;
+		// Maintain aspect ratio but overflow container
+		// possibly in both dimensions
+		min-width: 100%;
+		min-height: 100%;
+		@supports (object-fit: cover) {
+			width: 100%;
+			height: 100%;
+			// Maintain aspect ratio
+			// but only overflow in on dimension
+			object-fit: cover;
+		}
+	}
+}
+
+.c-card__body {
+	padding: $default-card--padding;
+	flex: 1 1 auto;
+}
+
+.c-card--no-shape .c-card__body {
+	padding: 0;
+}
+
+.c-card--no-shape .c-card__body:not(:first-child) {
+	padding-top: $default-card--padding;
+}
+
+.c-card__title {
+	@include u-heading($default-card--title-heading);
+	@if $default-card--title-font-weight != null {
+		font-weight: $default-card--title-font-weight;
+	}
+	margin-top: 0;
+	margin-bottom: $default-card--spacing;
+	letter-spacing: $default-card--title-letter-spacing;
+}
+
+[lang="de"] .c-card__title {
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.c-card__summary {
+	line-height: 1.4;
+
+	> p {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		// WCAG 1.4.1 Use of Color
+		text-decoration: underline;
+	}
+}
+
+.c-card__link:not(.c-card__link--no-block-link) {
+	@include u-link-faux-block();
+}
+
+// modifiers
+// ---------
+
+.c-card--flush {
+	.c-card__body {
+		padding: 0;
+	}
+}
+
+// --major
+.c-card--major {
+	font-size: $default-card--major-font-size;
+
+	.c-card__title {
+		@include u-heading($default-card--major-title-heading);
+	}
+}
+
+// --dark
+.c-card--dark {
+	background-color: $default-card--dark-background;
+	color: $default-card--dark-color;
+	border-width: 0;
+
+	.c-card__title {
+		color: $default-card--dark-title-color;
+	}
+
+	.c-card__link {
+		color: inherit;
+	}
+
+	.c-card__summary {
+		a {
+			color: inherit;
+		}
+	}
+}

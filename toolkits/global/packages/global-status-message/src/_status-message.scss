@@ -1,0 +1,78 @@
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as * ;
+@use '../../../../../context/brand-context/default/scss/20-functions/colors' as * ;
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as * ;
+@use '../../../../../context/brand-context/default/scss/30-mixins/icons' as *;
+
+/**
+ * Status Message
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$status-message-theme: (
+	"info": #003f8d,
+	"error": #c40606,
+	"success": #00b8b0,
+	"warning": #edbc53
+) !default;
+
+$status-message--font-family: $context--font-family-sans !default;
+$status-message--font-size: $context--font-size-sm !default;
+$status-message--border-radius: 2px !default;
+$status-message--boxed-border: 4px !default;
+$status-message--background-color: white !default;
+$status-message--border: 1px solid greyscale(80) !default;
+$status-message--line-height: $context--line-height-tight !default;
+$status-message--gutter: spacing(16) !default;
+$status-message--gutter-icon: spacing(8) !default;
+$status-message--icon-size: 1.5em !default;
+$status-message--font-weight: $context--font-weight-bold !default;
+
+.c-status-message {
+	display: flex;
+	align-items: center;
+	font-family: $status-message--font-family;
+	font-size: $status-message--font-size;
+	position: relative;
+	width: 100%; // Caters for an ie bug with nested flex when child is a column
+	box-sizing: border-box; // Compensates for the above RE padding
+
+	*:last-child {
+		margin-bottom: spacing(0);
+	}
+}
+
+.c-status-message--boxed {
+	background-color: $status-message--background-color;
+	border-radius: $status-message--border-radius;
+	border: $status-message--border;
+	line-height: $status-message--line-height;
+	padding: $status-message--gutter;
+}
+
+.c-status-message__heading {
+	font-family: $status-message--font-family;
+	font-size: $status-message--font-size;
+	font-weight: $status-message--font-weight;
+}
+
+.c-status-message__icon {
+	@include u-icon($status-message--icon-size, $status-message--icon-size);
+	flex: 0 0 auto;
+	margin-right: $status-message--gutter-icon;
+}
+
+.c-status-message__icon--top {
+	align-self: flex-start;
+}
+
+@each $color, $value in $status-message-theme {
+	.c-status-message--#{$color} {
+		.c-status-message__icon {
+			color: $value;
+		}
+	}
+
+	.c-status-message--boxed.c-status-message--#{$color} {
+		border-bottom: $status-message--boxed-border solid $value;
+	}
+}

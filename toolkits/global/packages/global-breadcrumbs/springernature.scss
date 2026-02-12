@@ -1,0 +1,6 @@
+@use '../../../../context/brand-context/springernature/scss/20-functions/colors';
+
+@forward 'src/breadcrumbs' as default-* with (
+	$default-breadcrumbs-color: colors.color('grey-dark2'),
+	$default-breadcrumbs-link-color: colors.color('grey-dark2')
+);

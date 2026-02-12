@@ -1,0 +1,5 @@
+@forward 'src/layout-with-sidebar' as default-* with (
+	$default-with-sidebar--gap: 64px,
+	$default-with-sidebar--min: 53%,
+	$default-with-sidebar--basis: 454px
+);

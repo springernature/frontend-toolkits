@@ -1,0 +1,10 @@
+@use '../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+
+@forward 'src/skip-link' as springernature-* with (
+	$skip-link--padding-y: spacing(8),
+	$skip-link--color: color('white'),
+	$skip-link--hover-color: color('white'),
+	$skip-link--background-color: color('universal-blue'),
+	$skip-link--z-index: 9999
+);

@@ -1,0 +1,96 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
+$default-details--padding: spacing(16) !default;
+$default-details--content-padding: spacing(16) 0 0 0 !default;
+$default-details--icon-margin: spacing(8) !default;
+$default-details--border-color: currentColor !default;
+$default-details--border-width: 1px !default;
+$default-details--spacing: 0 !default;
+$default-details--title-color: inherit !default;
+$default-details--icon-size: 0.75em !default;
+$default-details--icon-color: currentColor !default;
+$default-details--focus-underline-color: currentColor !default;
+$default-details--title-font-family: inherit !default;
+
+.c-details {
+	padding: $default-details--padding 0;
+	border-style: solid;
+	border-color: $default-details--border-color;
+	border-width: $default-details--border-width 0;
+	/* In case it's a list item */
+	list-style: none;
+}
+
+.c-details + .c-details {
+	/* for successive details instances, don't double the border */
+	border-top: 0;
+	margin-top: $default-details--spacing;
+}
+
+.c-details__details {
+	/* For IE11 (unknown element) */
+	display: block;
+}
+
+.c-details__summary {
+	cursor: pointer;
+	/* For IE11 (unknown element) */
+	display: block;
+	/* remove marker in Firefox */
+	list-style-type: none;
+}
+
+/* remove marker in other browsers */
+.c-details__summary::marker,
+.c-details__summary::-webkit-details-marker {
+	display: none;
+}
+
+/* enhance focus styles */
+@supports (text-decoration-color: #000) {
+	.c-details__summary:focus {
+		outline: none;
+	}
+
+	.c-details__summary:focus .c-details__title {
+		text-decoration: underline;
+		text-decoration-color: $default-details--focus-underline-color;
+		text-decoration-thickness: 3px;
+	}
+}
+
+.c-details__header {
+	display: flex;
+	align-items: baseline;
+}
+
+.c-details__header .u-icon {
+	flex-shrink: 0;
+	width: $default-details--icon-size;
+	height: $default-details--icon-size;
+	color: $default-details--icon-color;
+}
+
+/* ↓ Complex selector necessary to ensure
+nested icons are not rotated */
+.c-details > [open] > summary > div > .u-icon {
+	transform: rotate(90deg);
+}
+
+.c-details__title {
+	margin-left: $default-details--icon-margin;
+	font-family: $default-details--title-font-family;
+	font-size: $context--font-size-h3;
+	color: $default-details--title-color;
+	line-height: 1.25;
+}
+
+.c-details__content {
+	padding: $default-details--content-padding;
+}
+
+/* Remove excess margin from (for example) paragraphs */
+.c-details__content > :last-child {
+	margin-bottom: 0;
+}

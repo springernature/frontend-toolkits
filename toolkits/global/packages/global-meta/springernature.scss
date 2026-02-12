@@ -1,0 +1,10 @@
+@use '../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+@use '../../../context/brand-context/springernature/scss/20-functions/colors' as *;
+
+@forward 'src/meta' as springernature-* with (
+	$meta--font-size: $context--font-size-md,
+	$meta--font-family: $context--font-family-sans,
+	$meta--line-height: $context--line-height-md,
+	$meta--color: color('grey-dark2'),
+	$meta--text-transform: none
+);

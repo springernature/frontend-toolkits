@@ -1,0 +1,33 @@
+/**
+ * @springernature/global-layout-grid
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$grid--gap: 1em !default;
+/* ↓ Necessary since non-Dart Sass chokes
+on the min() function */
+$grid--basis: unquote('min(300px, 100%)') !default;
+
+.l-grid {
+	list-style: none;
+	padding: 0;
+}
+
+.l-grid > * + * {
+	margin-top: $grid--gap;
+	margin-top: var(--grid--gap, #{$grid--gap});
+}
+
+
+@supports (display: grid) {
+	.l-grid > * {
+		margin: 0;
+	}
+
+	.l-grid {
+		display: grid;
+		gap: $grid--gap;
+		gap: var(--grid--gap, #{$grid--gap});
+		grid-template-columns: repeat(auto-fit, minmax(var(--grid--basis, #{$grid--basis}), 1fr));
+	}
+}

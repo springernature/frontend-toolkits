@@ -1,0 +1,38 @@
+@use '../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+
+/**
+ * @springernature/global-pill
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$pill--background-color: greyscale(60) !default;
+$pill--border-radius: 20px !default;
+$pill--padding: 5px 10px !default;
+$pill--font-weight: 700 !default;
+$pill--color: #fff !default;
+$pill--margin-right: 4px !default;
+$pill--margin-bottom: 10px !default;
+$pill--secondary-color: greyscale(40) !default;
+$pill--secondary-background-color: greyscale(95) !default;
+
+.c-pill {
+	display: inline-block;
+	padding: $pill--padding;
+	border: 1px solid $pill--color;
+	border-radius: $pill--border-radius;
+	color: $pill--color;
+	background-color: $pill--background-color;
+	font-weight: $pill--font-weight;
+	margin-right: $pill--margin-right;
+	margin-bottom: $pill--margin-bottom;
+}
+
+.c-pill--secondary {
+	color: $pill--secondary-color;
+	border-color: $pill--secondary-color;
+	background-color: $pill--secondary-background-color;
+}
+
+.c-pill--borderless {
+	border: none;
+}

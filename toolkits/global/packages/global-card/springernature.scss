@@ -1,0 +1,8 @@
+@use '../../../../context/brand-context/default/scss/10-settings/typography';
+@use '../../../../context/brand-context/springernature/scss/20-functions/colors';
+
+@forward 'src/card' as default-* with (
+	$default-card--title-font-weight: typography.$context--font-weight-normal,
+	$default-card--title-letter-spacing: 0.02em,
+	$default-card--dark-background: colors.color('universal-blue')
+);

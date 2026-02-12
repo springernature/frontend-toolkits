@@ -1,0 +1,8 @@
+@use '../../../context/brand-context/springer/scss/20-functions/colors' as *;
+
+@forward 'src/lists' as springer-* with (
+	$global-list-group--is-interface: true,
+	$global-list-group--border-color: greyscale(80),
+	$global-list-description--margin-bottom: 0,
+	$global-list-columned--margin-bottom: 0.25em
+);

@@ -1,0 +1,8 @@
+@use '../../../context/brand-context/springernature/scss/10-settings/typography' as *;
+
+@forward 'src/author-list' as springernature-* with (
+	$global-author-list--font-size: $context--font-size-md,
+	$global-author-list--color: $context--primary-text-color,
+	$global-author-list--line-height: $context--line-height-md,
+	$global-author-list--font-family: $context--font-family-sans
+);

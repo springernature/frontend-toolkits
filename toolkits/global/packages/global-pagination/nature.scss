@@ -1,0 +1,6 @@
+@use '../../../context/brand-context/nature/scss/20-functions/colors' as *;
+
+@forward 'src/pagination' as nature-* with (
+	$pagination--link-active-border-color: color('blue'),
+	$pagination--link-active-background-color: color('blue')
+);

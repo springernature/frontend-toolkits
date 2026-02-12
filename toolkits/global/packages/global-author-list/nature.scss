@@ -1,0 +1,5 @@
+@use '../../../context/brand-context/default/scss/20-functions/colors' as *;
+
+@forward 'src/author-list' as nature-* with (
+	$global-author-list--color: greyscale(30)
+);

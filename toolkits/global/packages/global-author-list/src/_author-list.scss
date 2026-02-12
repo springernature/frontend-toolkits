@@ -1,0 +1,44 @@
+@use '../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/hiding' as *;
+
+/**
+ * @springernature/global-author-list
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+// base
+$global-author-list--font-size: 1rem !default;
+$global-author-list--color: black !default;
+$global-author-list--line-height: inherit !default;
+$global-author-list--font-family: inherit !default;
+
+// --compact
+$global-author-list--compact-font-size: .875rem !default;
+$global-author-list--compact-line-height: 1.4 !default;
+
+.c-author-list {
+	@include u-list-comma-separated;
+	font-size: $global-author-list--font-size;
+	font-family: $global-author-list--font-family;
+	color: $global-author-list--color;
+	line-height: $global-author-list--line-height;
+}
+
+.c-author-list--compact {
+	line-height: $global-author-list--compact-line-height;
+	font-size: $global-author-list--compact-font-size;
+}
+
+.c-author-list--truncated {
+	@include u-list-truncated;
+}
+
+.js {
+	.c-author-list {
+		display: inline;
+	}
+
+	.c-author-list__hide {
+		@include u-hide;
+	}
+}

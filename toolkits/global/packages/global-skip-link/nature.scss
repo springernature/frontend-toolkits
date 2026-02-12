@@ -1,0 +1,5 @@
+@forward 'src/skip-link' as nature-* with (
+	$skip-link--font-size: .875rem,
+	$skip-link--background-color: #069,
+	$skip-link--z-index: 9999
+);

@@ -1,0 +1,69 @@
+@use '../../../../../context/brand-context/default/scss/00-tokens/border.variables' as *;
+@use '../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/hiding' as *;
+
+/**
+ * Popup
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$popup--font-family: $context--font-family-serif !default;
+$popup--padding: spacing(16, 32, 16, 24) !default;
+$popup--close-top: spacing(16) !default;
+$popup--close-right: spacing(16) !default;
+$popup--box-shadow: 0 0 5px 0 greyscale(50, 0.1) !default;
+$popup--border-color: $t-border-color-primary !default;
+$popup--border-radius: spacing(2) !default;
+$popup--background-color: #fff !default;
+$popup--zindex: 100 !default;
+
+.js {
+	.c-popup {
+		position: absolute;
+		font-family: $popup--font-family;
+		z-index: $popup--zindex;
+		padding: $popup--padding;
+		border: 1px solid $popup--border-color;
+		box-shadow: $popup--box-shadow;
+		width: auto;
+		border-radius: $popup--border-radius;
+		background-color: $popup--background-color;
+	}
+
+	.c-popup__close {
+		position: absolute;
+		display: block;
+		top: $popup--close-top;
+		right: $popup--close-right;
+		height: 16px;
+		background: url("data:image/svg+xml,%0A%3Csvg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m2.29679575 12.2772478c-.39658757.3965876-.39438847 1.0328109-.00062148 1.4265779.39651227.3965123 1.03246768.3934888 1.42657791-.0006214l4.27724782-4.27724787 4.2772478 4.27724787c.3965876.3965875 1.0328109.3943884 1.4265779.0006214.3965123-.3965122.3934888-1.0324677-.0006214-1.4265779l-4.27724787-4.2772478 4.27724787-4.27724782c.3965875-.39658757.3943884-1.03281091.0006214-1.42657791-.3965122-.39651226-1.0324677-.39348875-1.4265779.00062148l-4.2772478 4.27724782-4.27724782-4.27724782c-.39658757-.39658757-1.03281091-.39438847-1.42657791-.00062148-.39651226.39651227-.39348875 1.03246768.00062148 1.42657791l4.27724782 4.27724782z' fill='%23666' fill-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+		border: none;
+		padding-right: 16px;
+	}
+
+	.c-popup__close-text {
+		@include u-visually-hidden;
+	}
+
+	.c-popup__arrow {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-color: $popup--background-color;
+		border-top: 1px solid $popup--border-color;
+		border-left: 1px solid $popup--border-color;
+	}
+
+	.c-popup__arrow--above {
+		bottom: -11px;
+		transform: rotate(225deg);
+	}
+
+	.c-popup__arrow--below {
+		top: -11px;
+		transform: rotate(45deg);
+	}
+}

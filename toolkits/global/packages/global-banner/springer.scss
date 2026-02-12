@@ -1,0 +1,14 @@
+@use '../../../../context/brand-context/springer/scss/20-functions/colors';
+@use '../../../../context/brand-context/default/scss/20-functions/spacing';
+
+@forward 'src/banner' as default-* with (
+	$default-banner--padding-y: spacing.spacing(16),
+	$default-banner--compact-padding-y: spacing.spacing(4),
+	$default-banner--font-size-small: .875em,
+	$default-banner--link-color: colors.color('action-base'),
+	$default-banner--background-color: colors.color('action-background-light'),
+	$default-banner--border: 1px solid colors.color('corporate-light'),
+	$default-banner--marketing-background-color: colors.color('action-base'),
+	$default-banner--marketing-border: 0,
+	$default-banner--marketing-color: white
+);

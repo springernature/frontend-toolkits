@@ -1,0 +1,46 @@
+/**
+ * @springernature/global-layout-with-sidebar
+ * Default skin settings
+ *
+ */
+
+$default-with-sidebar--gap: 1em !default;
+$default-with-sidebar--min: 50% !default;
+$default-with-sidebar--basis: 400px !default;
+
+.l-with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.l-with-sidebar > * {
+	// Sidebar children should not retain margin
+	margin: 0;
+}
+
+.l-with-sidebar__sidebar {
+	flex-grow: 1;
+	flex-basis: $default-with-sidebar--basis; /* fallback static value for IE */
+	flex-basis: var(--with-sidebar--basis, #{$default-with-sidebar--basis});
+}
+
+.l-with-sidebar > :not(.l-with-sidebar__sidebar) {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: $default-with-sidebar--min; /* fallback static value for IE */
+	min-width: var(--with-sidebar--min, #{$default-with-sidebar--min});
+}
+
+.l-with-sidebar > :first-child {
+	padding-right: $default-with-sidebar--gap; /* gap for IE11 (so desktop) */
+}
+
+@supports (gap: 1em) {
+	.l-with-sidebar > :first-child {
+		padding-right: 0;
+	}
+
+	.l-with-sidebar {
+		gap: var(--with-sidebar--gap, #{$default-with-sidebar--gap});
+	}
+}

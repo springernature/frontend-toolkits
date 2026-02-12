@@ -1,0 +1,7 @@
+@use '../../../../context/brand-context/springer/scss/20-functions/colors';
+
+@forward 'src/corporate-footer' as default-* with (
+	$default-corporate-footer--background-color: colors.greyscale(95),
+	$default-corporate-footer--border: 1px solid colors.greyscale(80),
+	$default-corporate-footer--text-color: colors.greyscale(40)
+);

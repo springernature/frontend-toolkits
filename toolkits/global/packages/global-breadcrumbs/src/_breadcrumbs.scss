@@ -1,0 +1,50 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+
+$default-breadcrumbs-font-family: $context--font-family-sans !default;
+$default-breadcrumbs-font-size: 1rem !default;
+$default-breadcrumbs-color: black !default;
+$default-breadcrumbs-link-color: greyscale(40) !default;
+$default-breadcrumbs-chevron-spacing: spacing(4) spacing(4) 0 !default;
+$default-breadcrumbs-chevron-color: $default-breadcrumbs-link-color !default;
+
+.c-breadcrumbs {
+	@include u-list-inline;
+	font-size: $default-breadcrumbs-font-size;
+	font-family: $default-breadcrumbs-font-family;
+	color: $default-breadcrumbs-color;
+}
+
+.c-breadcrumbs__link {
+	color: $default-breadcrumbs-link-color;
+
+	&.visited,
+	&:visited,
+	&.hover,
+	&:hover {
+		color: $default-breadcrumbs-link-color;
+	}
+}
+
+svg.c-breadcrumbs__chevron {
+	margin: $default-breadcrumbs-chevron-spacing;
+	fill: $default-breadcrumbs-chevron-color;
+	width: 10px;
+	height: 10px;
+}
+
+.c-breadcrumbs .c-breadcrumbs__item {
+	@include media-query('sm', 'max') {
+		display: none;
+	}
+}
+
+.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(1),
+.c-breadcrumbs .c-breadcrumbs__item:nth-last-child(2) {
+	@include media-query('sm', 'max') {
+		display: inline;
+	}
+}

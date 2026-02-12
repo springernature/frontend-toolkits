@@ -1,0 +1,5 @@
+@use '../../../../context/brand-context/nature/scss/10-settings/colors/default';
+
+@forward 'src/details' as default-* with (
+	$default-details--focus-underline-color: default.$context--focus-color
+);

@@ -1,0 +1,112 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+
+/**
+ * @springernature/global-banner
+ * A container with text and link
+ *
+ */
+
+$default-banner--padding-y: 12px !default;
+$default-banner--padding-x: 12px !default;
+$default-banner--font: $context--font-family-sans !default;
+$default-banner--font-size: 1rem !default;
+$default-banner--font-size-small: .875rem !default;
+$default-banner--link-color: gray !default;
+$default-banner--background-color: white !default;
+$default-banner--border: 1px solid lightgray !default;
+
+// --compact
+$default-banner--compact-padding-y: 4px !default;
+$default-banner--compact-padding-x: 4px !default;
+
+// --contrast
+$default-banner--contrast-background-color: black !default;
+$default-banner--contrast-color: white !default;
+
+// --marketing
+$default-banner--marketing-background-color: ghostwhite !default;
+$default-banner--marketing-border: 1px solid lightblue !default;
+$default-banner--marketing-color: black !default;
+
+.c-banner {
+	border-bottom: $default-banner--border;
+	background-color: $default-banner--background-color;
+	padding: $default-banner--padding-y $default-banner--padding-x;
+	font-family: $default-banner--font;
+	font-size: $default-banner--font-size;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.c-banner--compact {
+	font-size: $default-banner--font-size-small;
+	padding: $default-banner--compact-padding-y $default-banner--compact-padding-x;
+}
+
+.c-banner--contrast {
+	background-color: $default-banner--contrast-background-color;
+	color: $default-banner--contrast-color;
+
+	.c-banner__link {
+		color: $default-banner--contrast-color;
+
+		&:hover,
+		&:visited {
+			color: $default-banner--contrast-color;
+		}
+	}
+}
+
+.c-banner--marketing {
+	background-color: $default-banner--marketing-background-color;
+	border-bottom: $default-banner--marketing-border;
+	color: $default-banner--marketing-color;
+
+	.c-banner__link {
+		color: $default-banner--marketing-color;
+
+		&:hover,
+		&:visited {
+			color: $default-banner--marketing-color;
+		}
+	}
+}
+
+.c-banner--flush {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.c-banner__container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.c-banner__container > :only-child {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.c-banner__container--center {
+	justify-content: center;
+}
+
+.c-banner__item {
+	flex: 0 1 auto;
+	margin: 0;
+}
+
+.c-banner__link {
+	@include u-link-underline();
+	color: $default-banner--link-color;
+
+	&:visited,
+	&:hover {
+		color: $default-banner--link-color;
+	}
+}

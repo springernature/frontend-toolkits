@@ -1,0 +1,79 @@
+@use '../../../../../../context/brand-context/default/scss/10-settings/typography' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/colors' as *;
+@use '../../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/buttons' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+
+/**
+ * @springernature/global-pagination
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+
+$pagination--padding: spacing(16) !default;
+$pagination--font-size: $context--font-size-sm !default;
+
+$pagination--link-active-color: white !default;
+$pagination--link-active-border-color: greyscale(40) !default;
+$pagination--link-active-background-color: greyscale(40) !default;
+
+$pagination--item-margin-right: spacing(16) !default;
+$pagination--item-margin-bottom: spacing(8) !default;
+$pagination--item-width: 30px !default;
+
+$pagination--icon-color: greyscale(60) !default;
+$pagination--icon-clickable-color: color('blue') !default;
+$pagination--icon-width: 16px !default;
+$pagination--icon-height: 12px !default;
+
+
+.c-pagination {
+	@include u-list-reset;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: $pagination--font-size;
+	padding: $pagination--padding;
+	@include media-query('sm') {
+		justify-content: center;
+	}
+}
+.c-pagination__item {
+	margin-right: $pagination--item-margin-right;
+	margin-bottom: $pagination--item-margin-bottom;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.c-pagination__link {
+	@include button-default;
+	min-width: $pagination--item-width;
+	text-align: center;
+}
+.c-pagination__link--disabled {
+	@include button-default;
+	@include button-disabled;
+}
+.c-pagination__link--active {
+	color: $pagination--link-active-color;
+	border-color: $pagination--link-active-border-color;
+	background-color: $pagination--link-active-background-color;
+	background-image: none;
+	cursor: default;
+}
+.c-pagination__ellipsis {
+	background: none;
+	border: 0;
+	min-width: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+.c-pagination__icon {
+	fill: $pagination--icon-color;
+	width: $pagination--icon-width;
+	height: $pagination--icon-height;
+}
+.c-pagination__icon--active {
+	fill: $pagination--icon-clickable-color;
+}

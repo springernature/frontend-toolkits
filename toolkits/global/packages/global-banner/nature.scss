@@ -1,0 +1,15 @@
+@use '../../../../context/brand-context/nature/scss/20-functions/colors';
+@use '../../../../context/brand-context/default/scss/20-functions/spacing';
+
+@forward 'src/banner' as default-* with (
+	$default-banner--padding-y: spacing.spacing(8),
+	$default-banner--padding-x: spacing.spacing(24),
+	$default-banner--border: 0,
+	$default-banner--link-color: colors.greyscale(25),
+	$default-banner--compact-padding-y: spacing.spacing(4),
+	$default-banner--compact-padding-x: spacing.spacing(4),
+	$default-banner--contrast-background-color: colors.greyscale(5),
+	$default-banner--marketing-background-color: colors.color('action-base'),
+	$default-banner--marketing-border: 0,
+	$default-banner--marketing-color: white
+);

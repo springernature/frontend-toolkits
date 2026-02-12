@@ -1,0 +1,159 @@
+@use '../../../../../context/brand-context/default/scss/20-functions/spacing' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/icons' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/links' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/lists' as *;
+@use '../../../../../context/brand-context/default/scss/30-mixins/media-query' as *;
+
+/**
+ * @springernature/global-dropdown
+ * Component variables with !default to allow theming via @forward...with
+ */
+
+$dropdown--background-color: lightgrey !default;
+$dropdown--color: black !default;
+$dropdown--line-height: 1.5 !default;
+$dropdown--spacing-x-small: spacing(4) !default;
+$dropdown--spacing-small: spacing(8) !default;
+$dropdown--spacing-medium: spacing(16) !default;
+$dropdown--spacing-large: spacing(24) !default;
+
+$dropdown--font-size-x-small: .75rem !default;
+$dropdown--font-size-small: .875rem !default;
+$dropdown--font-size: 1rem !default;
+$dropdown--font-weight: 700 !default;
+
+$dropdown--button-color: black !default;
+$dropdown--button-background-color: white !default;
+$dropdown--button-border: 1px solid $dropdown--button-color !default;
+$dropdown--button-border-radius: 3px !default;
+$dropdown--button-focus-color: #fece3e !default;
+
+$dropdown--menu-background-color: white !default;
+$dropdown--menu-border-radius: 3px !default;
+$dropdown--menu-box-shadow: 0 0 5px 0 #ccc !default;
+$dropdown--menu-min-width: 290px !default;
+
+$dropdown__menu-link-color: black !default;
+$dropdown__menu-link-hover-background-color: #29303c !default;
+$dropdown__menu-link-hover-color: white !default;
+
+$dropdown__icon-size: $dropdown--font-size-x-small !default;
+
+.c-dropdown {
+	background-color: $dropdown--background-color;
+	color: $dropdown--color;
+	padding: $dropdown--spacing-medium;
+	line-height: $dropdown--line-height;
+
+	.js & {
+		background: none;
+		padding: 0;
+		position: relative;
+	}
+}
+
+.c-dropdown__label {
+	display: block;
+	font-weight: $dropdown--font-weight;
+	white-space: nowrap;
+	margin-bottom: $dropdown--spacing-small;
+	font-size: $dropdown--font-size-small;
+
+	.js & {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.c-dropdown__menu {
+	@include u-list-reset();
+
+	.js & {
+		background-color: $dropdown--menu-background-color;
+		border-radius: $dropdown--menu-border-radius;
+		box-shadow: $dropdown--menu-box-shadow;
+		box-sizing: border-box;
+		padding: $dropdown--spacing-small 0;
+		position: absolute;
+		transform: translateY($dropdown--spacing-small);
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+
+		@include media-query('sm') {
+			transform: translateY($dropdown--spacing-medium);
+			min-width: $dropdown--menu-min-width;
+		}
+	}
+}
+
+.c-dropdown__link {
+	@include u-link-underline;
+	font-size: $dropdown--font-size-small;
+
+	.js & {
+		color: $dropdown__menu-link-color;
+		padding: $dropdown--spacing-x-small $dropdown--spacing-medium;
+		font-size: $dropdown--font-size;
+		display: block;
+		text-decoration: none;
+
+		&:hover {
+			outline: 0;
+			background-color: $dropdown__menu-link-hover-background-color;
+			color: $dropdown__menu-link-hover-color;
+		}
+
+		&:focus {
+			outline: 3px solid $dropdown--button-focus-color;
+		}
+	}
+}
+
+.c-dropdown__button {
+	display: none;
+	visibility: hidden;
+
+	.js & {
+		align-items: center;
+		background: $dropdown--button-background-color;
+		border: $dropdown--button-border;
+		border-radius: $dropdown--button-border-radius;
+		color: $dropdown--button-color;
+		display: flex;
+		font-size: $dropdown--font-size;
+		height: 34px;
+		justify-content: space-between;
+		padding: 0 $dropdown--spacing-small;
+		visibility: visible;
+		width: 100%;
+
+		> svg {
+			transition-duration: 0.2s;
+		}
+
+		&.is-open {
+			outline: 3px solid $dropdown--button-focus-color;
+
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+
+		span {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
+
+.js .c-dropdown__icon {
+	@include u-icon();
+	vertical-align: middle;
+	margin-left: $dropdown--spacing-large;
+	transform: translateY(6%);
+	font-size: $dropdown__icon-size;
+	flex: 0 0 auto;
+}

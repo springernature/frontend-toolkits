@@ -1,0 +1,3 @@
+@forward 'src/author-list' as springer-* with (
+	$global-author-list--color: #333
+);

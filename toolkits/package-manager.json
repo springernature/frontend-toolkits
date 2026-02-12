@@ -46,7 +46,8 @@
     "src": [
       "js",
       "json",
-      "md"
+      "md",
+      "scss"
     ],
     "dist": [
       "css",

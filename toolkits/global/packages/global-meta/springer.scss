@@ -1,0 +1,12 @@
+@use '../../../context/brand-context/nature/scss/10-settings/typography' as *;
+@use '../../../context/brand-context/nature/scss/20-functions/colors' as *;
+@use '../../../context/brand-context/default/scss/20-functions/spacing' as *;
+
+@forward 'src/meta' as springer-* with (
+	$meta--font-size: .875rem,
+	$meta--font-family: $context--font-family-sans,
+	$meta--color: greyscale(40),
+	$meta--keyline-spacing: spacing(8),
+	$meta--margin-bottom: spacing(4),
+	$meta--margin-bottom-large: spacing(8)
+);
