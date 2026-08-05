@@ -1,0 +1,33 @@
+name: "AppSec Tooling"
+
+on:
+  # Uncomment below to also trigger on every push or pull request to main/master
+  #  push:
+  #    branches: [ "main", "master" ]
+  #  pull_request:
+  #    branches: [ "main", "master" ]
+  schedule:
+    - cron: '33 2 * * *' # Randomized per repository, daily runs somewhere between 22:00 and 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  appsec-tooling:
+    name: AppSec Tooling
+    runs-on: ee-runner
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
+    env:
+      ARTIFACTORY_USERNAME: ${{ secrets.EE_ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_PASSWORD: ${{ secrets.EE_ARTIFACTORY_PASSWORD }}
+      ARTIFACTORY_URL: ${{ secrets.EE_ARTIFACTORY_URL }}
+      VAULT_ROLE_ID: ${{ secrets.VAULT_ROLE_ID }}
+      VAULT_SECRET_ID: ${{ secrets.VAULT_SECRET_ID }}
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: springernature/appsec-tooling@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
