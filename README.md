@@ -40,7 +40,11 @@ To try and ensure that installs are consistent, we all use the same version of `
 
 ### Using the correct `node` & `npm` versions
 
-Ensure you have [`nvm` installed](https://github.com/creationix/nvm/blob/master/README.md), then in the root of the repo run `nvm use`. This will read the version of `node` (and therefore `npm`) to use from the `.nvmrc` and ensure you are using the correct versions.
+This repository uses Node.js 24 LTS and the version of npm that comes with it. GitHub Actions reads the pinned version from `.nvmrc`.
+
+1. Install [`nvm`](https://github.com/nvm-sh/nvm).
+2. From the repository root, run `nvm install` to install the pinned Node.js version.
+3. Run `nvm use` to select that version.
 
 ### Using the correct `sass` version
 
@@ -262,6 +266,6 @@ Copyright &copy; 2020, Springer Nature
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [badge-build]: https://github.com/springernature/frontend-toolkits/actions/workflows/build.yml/badge.svg
 [info-node]: .nvmrc
-[badge-node]: https://img.shields.io/badge/node--lts-%3E%3D%2018.x-brightgreen
+[badge-node]: https://img.shields.io/badge/node--lts-24.x-brightgreen
 [info-sass]: #using-the-correct-sass-version
 [badge-sass]: https://img.shields.io/badge/SASS-1.47.0-green.svg
