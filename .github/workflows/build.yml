@@ -12,13 +12,16 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-        node-version:
-          - 18.x
     steps:
-      - name: 'Set up Node.js ${{ matrix.node-version }}'
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node-version }}'
+          node-version-file: '.nvmrc'
 
       - name: Cache node modules
         uses: actions/cache@v3
@@ -26,11 +29,6 @@ jobs:
           path: ~/.npm
           key: v1-npm-deps-${{ hashFiles('**/package-lock.json') }}
           restore-keys: v1-npm-deps-
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Get changed files list
         id: changed_files
