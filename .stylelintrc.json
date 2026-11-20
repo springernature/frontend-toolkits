@@ -1,0 +1,4 @@
+{
+  "extends": ["@springernature/stylelint-config"],
+  "defaultSeverity": "warning"
+}

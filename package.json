@@ -27,7 +27,7 @@
     "create": "sn-package-create",
     "demo": "sn-package-demo",
     "lint": "util-eslint-runner --name 'lint:js' --pattern 'toolkits/**/packages/**/*.js' && npm run lint:sass",
-    "lint:sass": "sass-lint 'toolkits/**/packages/**/scss/**/*.scss' --verbose --no-exit",
+    "lint:sass": "stylelint 'toolkits/**/packages/**/scss/**/*.scss'",
     "lint:js": "eslint 'toolkits/**/packages/**/*.js'",
     "node_modules:clean": "npx rimraf node_modules/",
     "publish": "sn-package-publish",
@@ -49,7 +49,7 @@
     "@babel/runtime": "^7.6.3",
     "@springernature/eslint-config": "^4.0.1",
     "@springernature/frontend-package-manager": "^9.0.0",
-    "@springernature/sasslint-config": "^1.2.1",
+    "@springernature/stylelint-config": "^4.0.0",
     "@springernature/util-context-installer": "^0.3.0",
     "@springernature/util-eslint-runner": "^0.0.3",
     "eslint": "^6.4.0",
@@ -61,7 +61,9 @@
     "eslint-plugin-unicorn": "^13.0.0",
     "jest": "^26.4.2",
     "lerna": "^3.18.3",
-    "sass-lint": "^1.13.1"
+    "stylelint": "^17.12.0",
+    "stylelint-config-recommended-scss": "^17.0.1",
+    "stylelint-order": "^8.1.1"
   },
   "jest": {
     "testURL": "http://localhost/",
@@ -81,6 +83,5 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!(@springernature/global-context))/"
     ]
-  },
-  "sasslintConfig": "./.sass-lint.yml"
+  }
 }
