@@ -1,0 +1,36 @@
+<main class="u-container">
+	<ul class="u-list-style-none">
+		<li class="u-mb-24">
+			<span>Default Segmented controls with 2 options</span>
+			<div>
+				{{#with defaultWith2Options}}
+					{{> segmentedControls}}
+				{{/with}}
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Default Segmented controls with 3 options</span>
+			<div>
+				{{#with defaultWith3Options}}
+					{{> segmentedControls}}
+				{{/with}}
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Secondary Segmented controls with 3 options</span>
+			<div>
+				{{#with secondaryWith3Options}}
+					{{> segmentedControls}}
+				{{/with}}
+			</div>
+		</li>
+		<li class="u-mb-24">
+			<span>Secondary Segmented controls with 2 options and Javascript</span>
+			<div>
+				{{#with secondaryWith2OptionsAndJavascript}}
+					{{> segmentedControls}}
+				{{/with}}
+			</div>
+		</li>
+	</ul>
+</main>

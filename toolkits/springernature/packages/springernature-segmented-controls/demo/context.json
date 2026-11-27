@@ -1,0 +1,91 @@
+{
+	"defaultWith2Options": {
+		"legend":"Mode",
+		"name":"mode",
+		"options":[
+			{
+				"value":"light",
+				"id":"mode-light",
+				"label":"Light",
+				"checked":true
+			},
+			{
+				"value":"dark",
+				"id":"mode-dark",
+				"label":"Dark",
+				"checked":false
+			}
+		]
+	},
+	"defaultWith3Options": {
+		"legend":"Size",
+		"name":"size",
+		"options":[
+			{
+				"value":"small",
+				"id":"size-small",
+				"label":"Small",
+				"checked":true
+			},
+			{
+				"value":"medium",
+				"id":"size-medium",
+				"label":"Medium",
+				"checked":false
+			},
+			{
+				"value":"large",
+				"id":"size-large",
+				"label":"Large",
+				"checked":false
+			}
+		]
+	},
+	"secondaryWith3Options": {
+		"legend":"Show only",
+		"modifierClass":"c-segmented-controls--secondary",
+		"name":"show",
+		"options":[
+			{
+				"value":"todo",
+				"id":"show-todo",
+				"label":"To do",
+				"checked":true
+			},
+			{
+				"value":"progress",
+				"id":"show-progress",
+				"label":"In progress",
+				"checked":false
+			},
+			{
+				"value":"done",
+				"id":"show-done",
+				"label":"Done",
+				"checked":false
+			}
+		]
+	},
+	"secondaryWith2OptionsAndJavascript": {
+		"legend":"Frequency",
+		"modifierClass":"c-segmented-controls--secondary",
+		"name":"frequency",
+		"options":[
+			{
+				"value":"weekly",
+				"id":"frequency-weekly",
+				"label":"Weekly",
+				"checked":true
+			},
+			{
+				"value":"monthly",
+				"id":"frequency-monthly",
+				"label":"Monthly",
+				"checked":false
+			}
+		]
+	},
+	"dynamicPartials": {
+		"segmentedControls": "./toolkits/springernature/packages/springernature-segmented-controls/view/segmentedControls.hbs"
+	}
+}
